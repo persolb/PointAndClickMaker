@@ -1,0 +1,39 @@
+{
+  "changes": [
+    {
+      "action": "add",
+      "createScene": {
+        "dialogueGraphs": [
+          {
+            "id": "SCN_113_INTAKE_FORMS_RACK",
+            "nodes": [
+              {
+                "id": "N_FORMS_LOOK_1",
+                "next": "N_FORMS_LOOK_2",
+                "speakerId": "NARRATOR",
+                "text": "The rack is divided into categories with comforting names.\n\u201cMisrouted Cargo,\u201d \u201cLabel Failure,\u201d \u201cUnclaimed Attachments.\u201d",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_FORMS_LOOK_2",
+                "next": "END_FORMS_LOOKED",
+                "speakerId": "NARRATOR",
+                "text": "Someone has highlighted a line on one template:\n\u201cASSOCIATED MASS (DO NOT DESCRIBE).\u201d",
+                "type": "npc_line"
+              },
+              {
+                "id": "END_FORMS_LOOKED",
+                "outcomeId": "intake_forms_rack_inspected",
+                "type": "end"
+              }
+            ],
+            "sceneId": "SCN-113",
+            "startNodeId": "N_FORMS_LOOK_1"
+          }
+        ]
+      },
+      "op": "create_scene"
+    }
+  ],
+  "sceneId": "SCN-113"
+}

@@ -1,0 +1,73 @@
+{
+  "screen_id": "HUB-11",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Main console",
+      "slug": "main_console",
+      "file": "story_specific_gen/images/HUB-11-mask-main_console.png",
+      "boxes": [
+        {
+          "label": "Main console",
+          "box_2d": [
+            343,
+            298,
+            792,
+            706
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Alarm panel",
+      "slug": "alarm_panel",
+      "file": "story_specific_gen/images/HUB-11-mask-alarm_panel.png",
+      "boxes": [
+        {
+          "label": "Alarm panel",
+          "box_2d": [
+            357,
+            172,
+            626,
+            303
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Log printer tray",
+      "slug": "log_printer_tray",
+      "file": "story_specific_gen/images/HUB-11-mask-log_printer_tray.png",
+      "boxes": [
+        {
+          "label": "Log printer tray",
+          "box_2d": [
+            599,
+            755,
+            792,
+            824
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Procedure binder",
+      "slug": "procedure_binder",
+      "file": "story_specific_gen/images/HUB-11-mask-procedure_binder.png",
+      "boxes": [
+        {
+          "label": "Procedure binder",
+          "box_2d": [
+            486,
+            826,
+            650,
+            971
+          ]
+        }
+      ]
+    }
+  ]
+}

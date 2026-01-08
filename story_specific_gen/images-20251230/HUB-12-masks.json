@@ -1,0 +1,99 @@
+{
+  "screen_id": "HUB-12",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Reflectivity test station",
+      "slug": "reflectivity_test_station",
+      "file": "story_specific_gen/images/HUB-12-mask-reflectivity_test_station.png",
+      "boxes": [
+        {
+          "label": "Reflectivity Test Station",
+          "box_2d": [
+            188,
+            203,
+            629,
+            831
+          ]
+        },
+        {
+          "label": "Right Component of Reflectivity Test Station",
+          "box_2d": [
+            291,
+            584,
+            532,
+            747
+          ]
+        },
+        {
+          "label": "Left Component of Reflectivity Test Station",
+          "box_2d": [
+            232,
+            237,
+            532,
+            401
+          ]
+        },
+        {
+          "label": "Central Spherical Object of Reflectivity Test Station",
+          "box_2d": [
+            308,
+            423,
+            513,
+            577
+          ]
+        },
+        {
+          "label": "Central Mechanism of Reflectivity Test Station",
+          "box_2d": [
+            245,
+            412,
+            534,
+            600
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Calibration puck",
+      "slug": "calibration_puck",
+      "file": "story_specific_gen/images/HUB-12-mask-calibration_puck.png",
+      "boxes": []
+    },
+    {
+      "type": "hotspot",
+      "name": "Return canister tray",
+      "slug": "return_canister_tray",
+      "file": "story_specific_gen/images/HUB-12-mask-return_canister_tray.png",
+      "boxes": [
+        {
+          "label": "Return canister tray",
+          "box_2d": [
+            719,
+            680,
+            892,
+            915
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Observation window latch",
+      "slug": "observation_window_latch",
+      "file": "story_specific_gen/images/HUB-12-mask-observation_window_latch.png",
+      "boxes": [
+        {
+          "label": "Observation window latch",
+          "box_2d": [
+            156,
+            477,
+            219,
+            536
+          ]
+        }
+      ]
+    }
+  ]
+}

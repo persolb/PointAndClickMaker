@@ -1,0 +1,56 @@
+{
+  "screen_id": "HUB-16",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Rumor board",
+      "slug": "rumor_board",
+      "file": "images/HUB-16-mask-rumor_board.png",
+      "boxes": [
+        {
+          "label": "Rumor board",
+          "box_2d": [
+            156,
+            503,
+            477,
+            843
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Keyed locker",
+      "slug": "keyed_locker",
+      "file": "images/HUB-16-mask-keyed_locker.png",
+      "boxes": [
+        {
+          "label": "Keyed locker",
+          "box_2d": [
+            228,
+            843,
+            672,
+            1000
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Backroom doorway",
+      "slug": "backroom_doorway",
+      "file": "images/HUB-16-mask-backroom_doorway.png",
+      "boxes": [
+        {
+          "label": "Backroom doorway",
+          "box_2d": [
+            156,
+            260,
+            588,
+            492
+          ]
+        }
+      ]
+    }
+  ]
+}

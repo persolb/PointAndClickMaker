@@ -1,0 +1,274 @@
+{
+  "nodes": [
+    {
+      "scene": "SCN_SCN-060.json",
+      "id": "N_SUP_HOLD",
+      "priorLine": "Interconnection Bay Staging: a bright, over-labeled room pretending it\u0019s temporary.\nThe AMR reader loop hums with the confidence of something that has never been cross-examined.\nA clipboard station sits under a sign that says PLEASE PRINT, as if handwriting is the primary hazard.",
+      "lineToEdit": "Hold.\nBefore you touch anything, I need to see three items are present in the work envelope.\nNot \u001cfor my comfort.\u001d For the record that survives me.",
+      "nextLine": "IWO issued. Slot token collected. AMR issued.\nGood. That means we can stage.\nStaging. Not\u001c any other verb.",
+      "revisedLine": "Hold up. (pause) Hands off a sec. (pause) I need the work envelope. (pause) Three items in there. (pause) In front of me. (pause) If it's not in the file, (pause) it didn't happen.",
+      "changeSummary": "Made the hold feel immediate and pressured; shifted to file/log survival without the formal aside. | Split into short beats with (pause) to meet word limit. Removed extra commas by rephrasing the 'Three items' sentence; kept one comma in the file line. Cleaned stray characters without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-060.json",
+      "id": "N_SUP_PREREQ",
+      "priorLine": "Hold.\nBefore you touch anything, I need to see three items are present in the work envelope.\nNot \u001cfor my comfort.\u001d For the record that survives me.",
+      "lineToEdit": "IWO issued. Slot token collected. AMR issued.\nGood. That means we can stage.\nStaging. Not\u001c any other verb.",
+      "nextLine": "",
+      "revisedLine": "Alright, IWO's on the sheet. (pause) Slot token's here. (pause) AMR's issued. (pause) Good. We stage. (pause) Keep calling it staging.",
+      "changeSummary": "Tightened into quick checklist confirmation; kept the \u001cstaging\u001d language directive without the speechy qualifier. | Split into short beats with (pause) and replaced extra commas with periods to meet beat and comma limits."
+    },
+    {
+      "scene": "SCN_SCN-060.json",
+      "id": "N_SUP_MISSING",
+      "priorLine": "ask: What\u0019s missing?",
+      "lineToEdit": "Nothing is missing.\nThings are simply not yet recorded as present in the correct order.\nYou will: clip the AMR into the reader loop, seat the dummy mass, then set the test load panel.\nAfter that, you will initial the clipboard station so I can say you did it.\nNot because I doubt you\u0014because paper is what the building believes.",
+      "nextLine": "",
+      "revisedLine": "Nothing's missing. (pause)\nIt's just not on the page yet\u2014in order. (pause)\nClip the AMR into the reader loop. (pause)\nSeat the dummy mass. (pause)\nThen set the test load panel. (pause)\nThen initial at the clipboard station. (pause)\nI need something I can point to. (pause)\nIn review.",
+      "changeSummary": "Removed the preachy closer and kept it focused on order, actions, and audit-proof documentation. | Split into short beats with (pause) to meet max beat length; removed commas by breaking steps into separate sentences; corrected apostrophes while preserving meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-060.json",
+      "id": "N_SUP_BALANCED",
+      "priorLine": "ask: Define \u001cbalanced.\u001d",
+      "lineToEdit": "Balanced means the test load is within tolerance for the phase-lock window.\nWhich is a maintenance window.\nWe do not \u001ctrigger\u001d anything. We verify that the system does not exceed spec while it does what it was already going to do.\nThat distinction matters in depositions.",
+      "nextLine": "",
+      "revisedLine": "Balanced: test load stays inside tolerance (pause) for the phase-lock window. (pause) That\u2019s the maintenance window. (pause) We just watch it stay in spec (pause) while it does its thing. (pause) And don\u2019t put \"trigger\" in anyone\u2019s mouth (pause) depositions love that word.",
+      "changeSummary": "Kept the same technical meaning but made it sound like a stressed correction to phrasing and paperwork risk. | Split into short beats with (pause) markers to meet beat length. Replaced \u201cmeans\u201d with a colon to keep intent without an explainer hit. Cleaned punctuation and kept meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-060.json",
+      "id": "N_SUP_RUNNING",
+      "priorLine": "ask: It looks like it\u0019s already running.",
+      "lineToEdit": "It is not \u001calready\u001d running.\nIt is operating continuously.\n\u001cAlready\u001d implies you expected it to stop, which implies intent, which implies oversight.\nYou are here to correct routing. Reverse. With authorization.",
+      "nextLine": "",
+      "revisedLine": "Yeah, it runs. (pause)\nJust don't say 'already'. (pause)\nPeople hear that and start asking why. (pause)\nIt 'should' have stopped. (pause)\nYou're here to correct routing\u2014reverse\u2014with authorization.",
+      "changeSummary": "Shifted from logical ladder to reactive word-policing; preserved the routing/reverse/authorization facts. | Split the line into short beats using (pause) so each beat stays under 8 words; normalized quotes/apostrophes and used dashes instead of stray characters; kept meaning and cadence intact while keeping commas to one."
+    },
+    {
+      "scene": "SCN_SCN-060.json",
+      "id": "N_SUP_SHOW_AMR",
+      "priorLine": "ask: Show me where you want the AMR.",
+      "lineToEdit": "Reader loop is the brass oval, waist height.\nYou clip the AMR tag so the arrow points toward the hinge.\nIf it\u0019s upside down, the system will still read it\u0014\nbut the log will look like you were improvising.\nImprovisation is how we get \u001cunexpected reflective behavior\u001d again.",
+      "nextLine": "",
+      "revisedLine": "Brass oval at waist height. (pause) That\u2019s the reader loop. (pause)\nClip the AMR so the arrow (pause) points toward the hinge. (pause)\nIt\u2019ll read either way. (pause) Upside down makes the log (pause) look like you were winging it. (pause)\nAnd we\u2019ve had enough (pause) \u201cunexpected reflective behavior\u201d.",
+      "changeSummary": "Kept placement/orientation instructions; made the warning sound like a tired, practical gripe. | Split the line into sub-8-word beats using (pause) markers. Cleaned up corrupted apostrophes/quotes while keeping the same meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-060.json",
+      "id": "N_SUP_PAPERWORK",
+      "priorLine": "show: Show the IWO, token, and AMR issuance record.",
+      "lineToEdit": "I\u0019m not \u001capproving\u001d anything.\nI\u0019m recording validity and sequence.\nIf it has to survive review, it has to be boring.",
+      "nextLine": "",
+      "revisedLine": "I don\u2019t sign off on this. (pause) I log what\u2019s valid and in what order. (pause) If it\u2019s going to survive review (pause) it needs to read like wallpaper.",
+      "changeSummary": "Reduced formal compliance tone; kept the same intent (log validity/sequence; boring survives review). | Inserted (pause) breaks so each beat stays under 8 words, and removed commas to meet the max_comma limit without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-060.json",
+      "id": "N_SUP_WORK",
+      "priorLine": "use: Let me work.",
+      "lineToEdit": "Work is fine. Sequence matters.\nAnd don\u0019t say the quiet words at the equipment.\nMachines don\u0019t listen. People do.",
+      "nextLine": "",
+      "revisedLine": "Work. Sure. (pause) Stay in sequence. (pause)\nWatch what you say at the equipment. (pause)\nThe machine won\u2019t care. (pause) But somebody will.",
+      "changeSummary": "Made it more clipped and in-the-moment while preserving the sequence and \u001cquiet words\u001d warning. | Removed extra commas and split the line with (pause) beats to keep each beat under 8 words, while preserving meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-060.json",
+      "id": "N_SUP_PERSUADE_PASS",
+      "priorLine": "",
+      "lineToEdit": "You\u0019re OLEA, so you think clearance is a thing I can \u001cgive.\u001d\nWhat I can do is confirm: AMR recognized, token present, IWO valid\u0014then, when you finish the checklist, load balanced to staging tolerance.\nThat confirmation opens the next door without opening my throat in a hearing.",
+      "nextLine": "",
+      "revisedLine": "You're OLEA. (pause)\nSo you want me to clear you. (pause)\nI can confirm what's on the sheet. (pause)\nAMR recognized. Token present. IWO valid. (pause)\nYou finish the checklist. (pause)\nLoad hits staging tolerance. (pause)\nI confirm that too. (pause)\nThat opens the next door. (pause)\nWithout landing me in a hearing.",
+      "changeSummary": "Kept all required confirmations and the door/hearing consequence; made it sound like a guarded boundary-setting response. | Split the line into short beats with (pause) markers to keep each beat under 8 words. Replaced commas and the colon with periods to stay under the comma limit while preserving the same procedural meaning."
+    },
+    {
+      "scene": "SCN_SCN-060.json",
+      "id": "N_SUP_PERSUADE_FAIL",
+      "priorLine": "",
+      "lineToEdit": "I don\u0019t take \u001cclear me\u001d as an instruction.\nDo the sequence. Make the record clean. Then the door behaves.",
+      "nextLine": "",
+      "revisedLine": "Clear me doesn't do anything here. (pause)\nRun the sequence. (pause)\nKeep the record clean. (pause)\nThen the door behaves.",
+      "changeSummary": "Made the refusal more immediate and conversational; preserved the same gating condition. | Split the line into shorter beats using (pause) so no beat exceeds 8 words; removed stray control characters without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-060.json",
+      "id": "N_AMR_CLIPPED_SUP",
+      "priorLine": "The tag seats with a small click.\nThe loop chirps once\u0014polite, like it\u0019s acknowledging a witness, not a worker.",
+      "lineToEdit": "AMR recognized.\nThat does not mean approved. It means recorded.\nApproval is a separate conversation that never happens in this room.",
+      "nextLine": "",
+      "revisedLine": "AMR recognized. (pause)\nI'm logging it. That's all. (pause)\nApproval lives elsewhere\u2014 not in this room.",
+      "changeSummary": "Removed the tidy definition swap; kept the key distinction (recognized/recorded vs approval) in a more guarded voice. | Added pauses to split the line into shorter beats under 8 words; tightened the last sentence while preserving meaning and cadence; avoided commas and explainer phrasing."
+    },
+    {
+      "scene": "SCN_SCN-060.json",
+      "id": "N_AMR_ALREADY",
+      "priorLine": "use: Check the AMR tag seating again.",
+      "lineToEdit": "It\u0019s seated.\nDon\u0019t add motion just to feel progress. Motion creates logs.",
+      "nextLine": "",
+      "revisedLine": "It's seated. Leave it. Fiddling just adds entries.",
+      "changeSummary": "Shortened and naturalized while keeping the \u001cdon\u0019t create logs\u001d intent. | Trimmed the last sentence to reduce the total beat word count while keeping the same meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-060.json",
+      "id": "N_AMR_AUTH",
+      "priorLine": "ask: What does the AMR actually authorize?",
+      "lineToEdit": "It authorizes you to be the person who touched the thing when the logs are printed.\nIt also authorizes the system to treat your touch as maintenance, not interference.\nThe machine doesn\u0019t care. The committees do.",
+      "nextLine": "",
+      "revisedLine": "It puts your name on the touch (pause) when the logs print. (pause)\nIt tags the touch as maintenance (pause) so it doesn\u2019t read as interference. (pause)\nThe machine couldn\u2019t care less. (pause) Committees do.",
+      "changeSummary": "Kept the same function of AMR; tightened into log-focused shorthand. | Added (pause) breaks to keep each beat under 8 words. Kept meaning and cadence; cleaned the apostrophe in \u201cdoesn\u2019t.\u201d"
+    },
+    {
+      "scene": "SCN_SCN-060.json",
+      "id": "N_AMR_ARROW",
+      "priorLine": "ask: If it reads either way, why the arrow?",
+      "lineToEdit": "Because we do not train the equipment.\nWe train the story.\nThe arrow makes the story consistent. Consistency makes it boring.\nBoring is what keeps sites open long enough to close them.",
+      "nextLine": "",
+      "revisedLine": "Because the arrow keeps the log consistent. (pause)\nOne way. Every time. (pause)\nConsistent reads boring. (pause)\nBoring keeps the site open. (pause)\nLong enough to finish.",
+      "changeSummary": "Collapsed metaphor into log/consistency pressure; preserved the \u001cboring keeps us operating\u001d idea. | Inserted (pause) breaks to keep each beat under 8 words, without changing meaning or tone. No commas added; kept explainer hits within limit."
+    },
+    {
+      "scene": "SCN_SCN-060.json",
+      "id": "N_DUMMY_SEATED_SUP",
+      "priorLine": "You align the pins and lock the mass in place.\nThe latch resists, then gives\u0014like it\u0019s deciding whether to cooperate.",
+      "lineToEdit": "Dummy mass seated.\nWe call it dummy because \u001ccounterweight for non-local event\u001d upsets people.\nKeep your fingers clear of the latch; it bites when it feels judged.",
+      "nextLine": "",
+      "revisedLine": "Dummy mass seated. (pause)\nWrite \u201cdummy\u201d on the form. (pause)\nDon\u2019t write \u201ccounterweight for non-local event.\u201d (pause)\nPeople panic. (pause)\nKeep your fingers out of the latch. (pause)\nIt bites.",
+      "changeSummary": "Kept the same naming rationale and safety warning; made it terser and more in-the-room. | Split the line into short beats with (pause) so each beat is \u22648 words. Removed comma usage and rephrased the middle to keep the same meaning while staying within limits."
+    },
+    {
+      "scene": "SCN_SCN-060.json",
+      "id": "N_OOS_DUMMY",
+      "priorLine": "use: Seat the dummy mass fixture now (out of sequence).",
+      "lineToEdit": "No.\nAMR first.\nIf you touch the mass before the reader records you, it reads as untracked adjustment.\nUntracked becomes \u001cinterference.\u001d",
+      "nextLine": "",
+      "revisedLine": "No. (pause) AMR first. (pause) Touch the mass. (pause) Before the loop records you. (pause) It reads as untracked adjustment. (pause) Then it\u2019s \u201cinterference\u201d on paper.",
+      "changeSummary": "Preserved the sequence gate and the \u001cuntracked\u001d \u001cinterference\u001d consequence; made it more blunt. | Added (pause) breaks to keep each beat under 8 words, while preserving the original meaning and cadence; standardized the quotation marks around \u201cinterference.\u201d"
+    },
+    {
+      "scene": "SCN_SCN-060.json",
+      "id": "N_DUMMY_ALREADY",
+      "priorLine": "use: Re-check the dummy mass latch.",
+      "lineToEdit": "It\u0019s seated.\nDon\u0019t give the latch a reason to bite just to reassure yourself.",
+      "nextLine": "",
+      "revisedLine": "It\u0019s seated.\nDon\u0019t poke the latch again.",
+      "changeSummary": "Cut the explanatory tail; kept the same stop-action intent."
+    },
+    {
+      "scene": "SCN_SCN-060.json",
+      "id": "N_DUMMY_UNITS",
+      "priorLine": "ask: Who changed the units?",
+      "lineToEdit": "Multiple responsible parties over multiple decades.\nThe important part is not which unit is correct.\nThe important part is that the final number matches the last audited number.\nPhysics can be wrong; paperwork can\u0019t be inconsistent.",
+      "nextLine": "",
+      "revisedLine": "Who knows. Different hands. Different decades. (pause) Don't chase it. (pause) Make the final number match. (pause) Make it match the last audited number. (pause) If the paperwork doesn't line up, (pause) I'm the one explaining it.",
+      "changeSummary": "Dropped the aphorism; kept the same practical directive (match last audited number) and liability pressure. | Split into short beats with (pause) to meet the 8-word limit, removed an extra comma by breaking the first thought into sentences, and cleaned up apostrophes without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-060.json",
+      "id": "N_DUMMY_LIGHT",
+      "priorLine": "ask: What happens if it\u0019s light?",
+      "lineToEdit": "If it\u0019s light, the system compensates.\nCompensation looks like \u001cinstability\u001d in the report.\nInstability becomes an investigation. Investigations become budgets.\nBudgets become visitors.\nSeat it to spec. No visitors.",
+      "nextLine": "",
+      "revisedLine": "If it's light (pause) the system compensates. (pause) The report calls it 'instability'. (pause) That becomes questions. (pause) Then a budget line. (pause) Then visitors. (pause) Seat it to spec. (pause) I don't need visitors.",
+      "changeSummary": "Kept the same cause chain; made it sound like a weary, practical warning. | Split into short beats using (pause) and removed commas while preserving meaning, tone, and sequence."
+    },
+    {
+      "scene": "SCN_SCN-060.json",
+      "id": "N_LOAD_SET_SUP",
+      "priorLine": "You set the toggles to the posted profile.\nThe panel vibrates faintly, like it\u0019s clearing its throat.",
+      "lineToEdit": "Load engaged.\nNow we can say the system was under controlled demand during the correction.\nControlled means we wrote it down before it happened.\nThat\u0019s the only definition that holds up.",
+      "nextLine": "",
+      "revisedLine": "Load engaged. (pause)\nFile reads \"controlled demand\" in correction. (pause)\nControlled: written down before you flipped anything. (pause)\nThat\u2019s what holds up.",
+      "changeSummary": "Shifted from formal definition to file-centered shorthand; kept the meaning of \u001ccontrolled\u001d as pre-documented. | Split into short beats using (pause), tightened phrasing to stay under 8 words per beat, and swapped \"means\" for a colon to keep the same meaning with fewer explainer hits."
+    },
+    {
+      "scene": "SCN_SCN-060.json",
+      "id": "N_OOS_LOAD",
+      "priorLine": "use: Set the test load now (out of sequence).",
+      "lineToEdit": "Not yet.\nMass first.\nWithout the mass seated, your load profile reads as an intentional stress test.\nWe don\u0019t do stress tests. We do maintenance.",
+      "nextLine": "",
+      "revisedLine": "Not yet.(pause) Mass first.(pause) Without the mass,(pause) that load profile looks intentional.(pause) Like a stress test.(pause) I\u2019m not putting my name near that.",
+      "changeSummary": "Preserved the sequencing rule and \u001cstress test\u001d risk; replaced the slogan with personal liability pressure. | Split the long line into short beats using (pause) markers, kept the single comma, and fixed the corrupted character in \u201cI\u2019m\u201d without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-060.json",
+      "id": "N_LOAD_ALREADY",
+      "priorLine": "use: Re-check the toggle positions.",
+      "lineToEdit": "It\u0019s set.\nDon\u0019t be tempted to \u001coptimize.\u001d Optimization becomes discovery.",
+      "nextLine": "",
+      "revisedLine": "It\u2019s set. (pause) Don\u2019t start tuning it. (pause) Or discoveries go in the log.",
+      "changeSummary": "Kept the warning against optimization/discovery; made it more conversational and log-focused. | Added pauses to keep each beat under 8 words, and tightened the last sentence while preserving the same warning and outcome."
+    },
+    {
+      "scene": "SCN_SCN-060.json",
+      "id": "N_LOAD_PROFILE",
+      "priorLine": "ask: What\u0019s the staging profile here?",
+      "lineToEdit": "Enough load to keep the loop honest, not enough to make it show off.\nYou want the readings to look like maintenance, not discovery.\nDiscovery is how you get assigned a liaison and a new vocabulary.",
+      "nextLine": "",
+      "revisedLine": "Enough load to keep the loop honest. (pause) Nothing that makes it show off. (pause)\nWe want readings that look like maintenance. (pause)\nOnce it reads like discovery, (pause) you get a liaison (pause) and a whole new vocabulary.",
+      "changeSummary": "Maintained the same staging intent; reduced the polished contrast and kept the bureaucratic consequence. | Split the line into shorter beats by adding (pause) markers so each beat stays under 8 words; kept wording and meaning intact, retained the single comma."
+    },
+    {
+      "scene": "SCN_SCN-060.json",
+      "id": "N_LOAD_HEROIC",
+      "priorLine": "ask: Who wrote \u001cheroic\u001d?",
+      "lineToEdit": "Someone who tried to be useful without authorization.\nVery competent. Very fast.\nNow they\u0019re a footnote with a confidentiality clause.\nDon\u0019t be heroic.",
+      "nextLine": "",
+      "revisedLine": "Somebody got ambitious without authorization. (pause)\nSmart. Fast. (pause)\nNow they're a footnote, with a confidentiality clause. (pause)\nDon't do \"heroic\" in here.",
+      "changeSummary": "Kept all story facts; made it more muttered and situational. | Inserted (pause) breaks to keep each beat under 8 words, normalized apostrophes/quotes, and added a single comma while preserving meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-060.json",
+      "id": "N_CLIP_INIT_SUP",
+      "priorLine": "You initial in the box labeled TECH PRESENT.\nThe paper absorbs it greedily, like it\u0019s been hungry.",
+      "lineToEdit": "Good.\nNow I can say you did what you did, when you did it, with valid authorizations in hand.\nThat\u0019s staging. That\u0019s all staging is.\nAnyone telling you it\u0019s more is trying to sell you a problem.",
+      "nextLine": "",
+      "revisedLine": "Good. (pause) Now I've got a clean line: (pause) You did it when you did it (pause) with valid authorizations in hand. (pause) That's staging. (pause) Keep it that small\u2014 (pause) anyone making it bigger is shopping (pause) for trouble.",
+      "changeSummary": "Kept the definition-through-paperwork angle but made it less speechy and more defensive. | Added (pause) breaks to keep each beat under 8 words. Removed extra commas by rephrasing \"you did it, when you did it\" to \"You did it when you did it\" without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-060.json",
+      "id": "N_OOS_CLIP",
+      "priorLine": "use: Initial now (out of sequence).",
+      "lineToEdit": "No.\nInitials come after the system is under the recorded load.\nOtherwise it reads like you signed for an outcome, not a procedure.",
+      "nextLine": "",
+      "revisedLine": "No. (pause) Put initials after the load is on record. (pause) Otherwise it reads like you signed the outcome.",
+      "changeSummary": "Tightened phrasing; preserved the same reason (avoid signing for results). | Added pause breaks to keep each beat under 8 words, while preserving meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-060.json",
+      "id": "N_CLIP_ALREADY",
+      "priorLine": "use: Check the carbon copy alignment.",
+      "lineToEdit": "You\u0019ve already initialed.\nDon\u0019t double-mark. It creates two timelines.",
+      "nextLine": "",
+      "revisedLine": "You already initialed. (pause) Don\u2019t mark it twice. (pause) Then I\u2019ve got two timelines (pause) to reconcile.",
+      "changeSummary": "More natural cadence; kept the \u001ctwo timelines\u001d paperwork hazard. | Added (pause) breaks to keep each beat under 8 words; corrected apostrophes."
+    },
+    {
+      "scene": "SCN_SCN-060.json",
+      "id": "N_CLIP_SIGN",
+      "priorLine": "ask: You going to sign too?",
+      "lineToEdit": "I will sign as observer.\nObserver means I witnessed compliance, not outcomes.\nOutcomes are\u001c a separate topic.\nI don\u0019t do outcomes on paper unless Legal asks first.",
+      "nextLine": "",
+      "revisedLine": "I\u2019ll sign as observer. (pause)\nI saw the procedure, that\u2019s it. (pause)\nOutcomes stay off my paper unless Legal asks.",
+      "changeSummary": "Reduced formal definition language; maintained observer vs outcomes distinction and Legal constraint. | Inserted pauses to keep each beat under 8 words, tightened phrasing, and kept meaning intact with only one comma."
+    },
+    {
+      "scene": "SCN_SCN-060.json",
+      "id": "N_CLIP_PROCEED",
+      "priorLine": "ask: This is just to proceed to the aperture bay, right?",
+      "lineToEdit": "It is to proceed to the next controlled area.\n\u001cJust\u001d is risky language.\nThe aperture bay is a work zone with an energized surface.\nWe are not going anywhere. We are remaining on task in a different location.",
+      "nextLine": "",
+      "revisedLine": "It gets us into the next controlled area. (pause) Don\u2019t say \u201cjust.\u201d (pause) Aperture bay\u2019s an energized work zone. (pause) We\u2019re staying on task\u2014just farther in.",
+      "changeSummary": "Kept the same safety/legal framing; made it sound like a quick correction under pressure. | Added (pause) breaks to keep each beat at 8 words or fewer; corrected encoding/apostrophes and quotes without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-060.json",
+      "id": "N_FINAL_SUP",
+      "priorLine": "The staging indicators settle into a steady pattern that looks like calm if you don\u0019t ask what it cost.",
+      "lineToEdit": "Staging requirements recognized.\nYou may proceed to the aperture bay once the test load is balanced\u0014\nwhich it now is, per what we just did, per what you just initialed.\nDo not call it anything interesting on the way there.",
+      "nextLine": "",
+      "revisedLine": "Staging reads green.\n(pause)Test load is balanced.\n(pause)Proceed to the aperture bay.\n(pause)You\u2019ve initialed.\n(pause)On the way, keep the language boring.",
+      "changeSummary": "Made the clearance feel immediate and log-driven; preserved balance/initial gating and the \u001cboring language\u001d warning. | Broke the long instruction into shorter beats with added pauses, and replaced the mid-sentence clause to remove an extra comma while keeping the same meaning."
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "screen_id": "LIM-02",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Window 0: Intake (TER)",
+      "slug": "window_0_intake_ter",
+      "file": "story_specific_gen/images/LIM-02-mask-window_0_intake_ter.png",
+      "boxes": [
+        {
+          "label": "Window 0: Intake (TER)",
+          "box_2d": [
+            382,
+            198,
+            622,
+            296
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Window 3: Orientation",
+      "slug": "window_3_orientation",
+      "file": "story_specific_gen/images/LIM-02-mask-window_3_orientation.png",
+      "boxes": [
+        {
+          "label": "Window 3 Orientation Compass Icon",
+          "box_2d": [
+            311,
+            329,
+            376,
+            370
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Window 5: Safety",
+      "slug": "window_5_safety",
+      "file": "story_specific_gen/images/LIM-02-mask-window_5_safety.png",
+      "boxes": []
+    },
+    {
+      "type": "hotspot",
+      "name": "Window 7: Property",
+      "slug": "window_7_property",
+      "file": "story_specific_gen/images/LIM-02-mask-window_7_property.png",
+      "boxes": [
+        {
+          "label": "Window 7: Property - Service Booth",
+          "box_2d": [
+            382,
+            597,
+            617,
+            686
+          ]
+        },
+        {
+          "label": "Window 7: Property - Signage",
+          "box_2d": [
+            238,
+            574,
+            381,
+            706
+          ]
+        },
+        {
+          "label": "Window 7: Property - Box Icon",
+          "box_2d": [
+            323,
+            626,
+            368,
+            663
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Window 9: Complaints",
+      "slug": "window_9_complaints",
+      "file": "story_specific_gen/images/LIM-02-mask-window_9_complaints.png",
+      "boxes": [
+        {
+          "label": "Sign: Window 9 Complaints",
+          "box_2d": [
+            232,
+            600,
+            303,
+            703
+          ]
+        },
+        {
+          "label": "Megaphone icon for Window 9 Complaints",
+          "box_2d": [
+            308,
+            723,
+            370,
+            763
+          ]
+        },
+        {
+          "label": "Window 9 service window",
+          "box_2d": [
+            383,
+            600,
+            526,
+            686
+          ]
+        },
+        {
+          "label": "Counter for Window 9 with stamp",
+          "box_2d": [
+            385,
+            309,
+            528,
+            394
+          ]
+        },
+        {
+          "label": "Window 9 counter",
+          "box_2d": [
+            520,
+            206,
+            616,
+            292
+          ]
+        },
+        {
+          "label": "Window 9 counter with a stamp",
+          "box_2d": [
+            516,
+            308,
+            616,
+            393
+          ]
+        },
+        {
+          "label": "Window 9 counter with a stamp",
+          "box_2d": [
+            520,
+            506,
+            618,
+            588
+          ]
+        },
+        {
+          "label": "Window 9 counter with a stamp",
+          "box_2d": [
+            516,
+            600,
+            616,
+            685
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Forms rack (misrouted cargo templates)",
+      "slug": "forms_rack_misrouted_cargo_templates",
+      "file": "story_specific_gen/images/LIM-02-mask-forms_rack_misrouted_cargo_templates.png",
+      "boxes": [
+        {
+          "label": "Forms rack with misrouted cargo templates",
+          "box_2d": [
+            693,
+            377,
+            1000,
+            615
+          ]
+        }
+      ]
+    }
+  ]
+}

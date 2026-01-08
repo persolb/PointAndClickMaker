@@ -1,0 +1,164 @@
+{
+  "screen_id": "HUB-05",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Ventilation access panel",
+      "slug": "ventilation_access_panel",
+      "file": "story_specific_gen/images/HUB-05-mask-ventilation_access_panel.png",
+      "boxes": [
+        {
+          "label": "Ventilation access panel",
+          "box_2d": [
+            270,
+            94,
+            804,
+            271
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Operations wing service door",
+      "slug": "operations_wing_service_door",
+      "file": "story_specific_gen/images/HUB-05-mask-operations_wing_service_door.png",
+      "boxes": [
+        {
+          "label": "Operations wing service door",
+          "box_2d": [
+            420,
+            555,
+            706,
+            663
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Cable tray label cluster",
+      "slug": "cable_tray_label_cluster",
+      "file": "story_specific_gen/images/HUB-05-mask-cable_tray_label_cluster.png",
+      "boxes": [
+        {
+          "label": "Cable tray label: ACCESS PANEL",
+          "box_2d": [
+            135,
+            269,
+            185,
+            303
+          ]
+        },
+        {
+          "label": "Cable tray label: WIRING",
+          "box_2d": [
+            188,
+            307,
+            219,
+            329
+          ]
+        },
+        {
+          "label": "Cable tray label: POWER",
+          "box_2d": [
+            212,
+            332,
+            241,
+            355
+          ]
+        },
+        {
+          "label": "Cable tray label: HVAC",
+          "box_2d": [
+            248,
+            360,
+            276,
+            381
+          ]
+        },
+        {
+          "label": "Cable tray label: COMMS",
+          "box_2d": [
+            273,
+            382,
+            304,
+            403
+          ]
+        },
+        {
+          "label": "Cable tray label: SAFETY",
+          "box_2d": [
+            295,
+            404,
+            321,
+            423
+          ]
+        },
+        {
+          "label": "Cable tray label: CCTV",
+          "box_2d": [
+            316,
+            426,
+            339,
+            442
+          ]
+        },
+        {
+          "label": "Cable tray label: SENSORS",
+          "box_2d": [
+            330,
+            447,
+            350,
+            461
+          ]
+        },
+        {
+          "label": "Cable tray label: MONITORING",
+          "box_2d": [
+            343,
+            461,
+            361,
+            474
+          ]
+        },
+        {
+          "label": "Cable tray label: ALARMS",
+          "box_2d": [
+            357,
+            477,
+            373,
+            490
+          ]
+        },
+        {
+          "label": "Cable tray label: WARNING",
+          "box_2d": [
+            366,
+            490,
+            382,
+            502
+          ]
+        },
+        {
+          "label": "Cable tray label: MAIN LOBBY SERVICE ENTRY",
+          "box_2d": [
+            151,
+            803,
+            190,
+            843
+          ]
+        },
+        {
+          "label": "Cable tray label: RESTRICTED ACCESS",
+          "box_2d": [
+            232,
+            747,
+            269,
+            786
+          ]
+        }
+      ]
+    }
+  ]
+}

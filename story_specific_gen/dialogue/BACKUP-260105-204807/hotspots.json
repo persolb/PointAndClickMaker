@@ -1,0 +1,7145 @@
+{
+  "hotspotsByScreen": [
+    {
+      "screenId": "HUB-01",
+      "hotspots": [
+        {
+          "id": "CAR_TRUNK_CASE",
+          "name": "Car trunk / equipment case",
+          "geometry": {
+            "type": "rect",
+            "x": 90,
+            "y": 650,
+            "w": 560,
+            "h": 360
+          },
+          "priority": 5,
+          "states": [
+            {
+              "id": "KIT_NOT_COLLECTED",
+              "conditions": [
+                {
+                  "key": "inventory.kitCollected",
+                  "op": "==",
+                  "value": false
+                }
+              ],
+              "label": "Equipment case",
+              "cursor": "pickup",
+              "defaultVerb": "pickup",
+              "interactions": [
+                {
+                  "verb": "pickup",
+                  "sceneId": "SCN-002"
+                },
+                {
+                  "verb": "look",
+                  "sceneId": "SCN-002"
+                }
+              ]
+            },
+            {
+              "id": "KIT_COLLECTED",
+              "conditions": [
+                {
+                  "key": "inventory.kitCollected",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "label": "Trunk",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "world.trunkCheckedAfterKit",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "GATE_KEYPAD",
+          "name": "Gate keypad and receipt slot",
+          "geometry": {
+            "type": "rect",
+            "x": 1080,
+            "y": 410,
+            "w": 140,
+            "h": 210
+          },
+          "priority": 10,
+          "states": [
+            {
+              "id": "RECEIPT_AVAILABLE",
+              "conditions": [
+                {
+                  "key": "paperwork.gateAttemptReceiptCollected",
+                  "op": "==",
+                  "value": false
+                }
+              ],
+              "label": "Keypad",
+              "cursor": "use",
+              "defaultVerb": "use",
+              "interactions": [
+                {
+                  "verb": "use",
+                  "sceneId": "SCN-003"
+                },
+                {
+                  "verb": "look",
+                  "sceneId": "SCN-003"
+                }
+              ]
+            },
+            {
+              "id": "RECEIPT_COLLECTED",
+              "conditions": [
+                {
+                  "key": "paperwork.gateAttemptReceiptCollected",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "label": "Keypad",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "world.keypadRechecked",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                },
+                {
+                  "verb": "use",
+                  "effects": [
+                    {
+                      "key": "world.keypadUsedAgain",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "SIGNPOST_LAYERED",
+          "name": "Layered signpost",
+          "geometry": {
+            "type": "rect",
+            "x": 310,
+            "y": 240,
+            "w": 260,
+            "h": 520
+          },
+          "priority": 4,
+          "states": [
+            {
+              "id": "NOT_INSPECTED",
+              "conditions": [
+                {
+                  "key": "compliance.signConflictInspected",
+                  "op": "==",
+                  "value": false
+                }
+              ],
+              "label": "Signs",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "sceneId": "SCN-004"
+                }
+              ]
+            },
+            {
+              "id": "INSPECTED",
+              "conditions": [
+                {
+                  "key": "compliance.signConflictInspected",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "label": "Signs",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "world.signpostRevisited",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "DEBRIS_PILE",
+          "name": "Debris pile by fence line",
+          "geometry": {
+            "type": "rect",
+            "x": 610,
+            "y": 520,
+            "w": 320,
+            "h": 260
+          },
+          "priority": 2,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "Debris",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "world.debrisInspected",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                },
+                {
+                  "verb": "use",
+                  "effects": [
+                    {
+                      "key": "world.debrisDisturbed",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "INSTRUMENT_BOX",
+          "name": "Instrument conduit box",
+          "geometry": {
+            "type": "rect",
+            "x": 1320,
+            "y": 310,
+            "w": 260,
+            "h": 260
+          },
+          "priority": 3,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "Conduit box",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "compliance.newConduitNoted",
+                      "action": "set",
+                      "value": true
+                    },
+                    {
+                      "key": "paperwork.toDo",
+                      "action": "add",
+                      "value": "Verify newer conduit run/instrument box power source."
+                    }
+                  ]
+                },
+                {
+                  "verb": "use",
+                  "conditions": [
+                    {
+                      "key": "inventory.items",
+                      "op": "in",
+                      "value": [
+                        "ITEM_MULTIMETER"
+                      ]
+                    }
+                  ],
+                  "effects": [
+                    {
+                      "key": "world.instrumentBoxTested",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "GROUND_SERVICE_HATCH",
+          "name": "Exterior ground service hatch",
+          "geometry": {
+            "type": "rect",
+            "x": 770,
+            "y": 855,
+            "w": 420,
+            "h": 190
+          },
+          "priority": 6,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "Service hatch",
+              "cursor": "use",
+              "defaultVerb": "use",
+              "interactions": [
+                {
+                  "verb": "use",
+                  "transitionToScreen": "HUB-04",
+                  "effects": [
+                    {
+                      "key": "world.groundServiceHatchOpened",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                },
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "world.groundServiceHatchInspected",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "PATH_RIGHT_GUARD_SHACK",
+          "name": "Path along fence to guard shack",
+          "geometry": {
+            "type": "rect",
+            "x": 1700,
+            "y": 260,
+            "w": 220,
+            "h": 720
+          },
+          "priority": 1,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "Along the fence",
+              "cursor": "go",
+              "defaultVerb": "go",
+              "interactions": [
+                {
+                  "verb": "go",
+                  "transitionToScreen": "HUB-02"
+                },
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "world.fenceLineFollowed",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "MAIN_GATE",
+          "name": "Main sliding gate",
+          "geometry": {
+            "type": "rect",
+            "x": 680,
+            "y": 230,
+            "w": 720,
+            "h": 520
+          },
+          "priority": 0,
+          "states": [
+            {
+              "id": "GATE_OPEN",
+              "conditions": [
+                {
+                  "key": "world.mainGateOpen",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "label": "Gate",
+              "cursor": "go",
+              "defaultVerb": "go",
+              "interactions": [
+                {
+                  "verb": "go",
+                  "transitionToScreen": "HUB-06"
+                },
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "world.gateCheckedOpen",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GATE_LOCKED",
+              "conditions": [
+                {
+                  "key": "world.mainGateOpen",
+                  "op": "!=",
+                  "value": true
+                }
+              ],
+              "label": "Chained gate",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "objectives.getRecordsAuthorization",
+                      "action": "set",
+                      "value": true
+                    },
+                    {
+                      "key": "world.gateConfirmedChained",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                },
+                {
+                  "verb": "use",
+                  "effects": [
+                    {
+                      "key": "world.gateTugged",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "screenId": "HUB-02",
+      "hotspots": [
+        {
+          "id": "EXIT_TO_GATE",
+          "name": "Back to Gate (HUB-01)",
+          "geometry": {
+            "type": "rect",
+            "x": 0,
+            "y": 0,
+            "w": 220,
+            "h": 1080
+          },
+          "priority": 1,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "Back to gate",
+              "cursor": "go",
+              "defaultVerb": "go",
+              "interactions": [
+                {
+                  "verb": "go",
+                  "transitionToScreen": "HUB-01",
+                  "playAnimation": "walk_back_to_gate"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "GUARD_SHACK_DOOR",
+          "name": "Guard shack door",
+          "geometry": {
+            "type": "rect",
+            "x": 1120,
+            "y": 260,
+            "w": 420,
+            "h": 740
+          },
+          "priority": 5,
+          "states": [
+            {
+              "id": "UNLOCKED",
+              "conditions": [
+                {
+                  "key": "world.guardShackUnlocked",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "label": "Enter shack",
+              "cursor": "go",
+              "defaultVerb": "go",
+              "interactions": [
+                {
+                  "verb": "go",
+                  "transitionToScreen": "HUB-03",
+                  "playAnimation": "enter_shack"
+                },
+                {
+                  "verb": "look",
+                  "sceneId": "SCN-005"
+                }
+              ]
+            },
+            {
+              "id": "LOCKED",
+              "conditions": [],
+              "label": "Guard shack door",
+              "cursor": "use",
+              "defaultVerb": "use",
+              "interactions": [
+                {
+                  "verb": "use",
+                  "sceneId": "SCN-005"
+                },
+                {
+                  "verb": "look",
+                  "sceneId": "SCN-005"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "CARD_READER",
+          "name": "Card reader",
+          "geometry": {
+            "type": "rect",
+            "x": 1465,
+            "y": 505,
+            "w": 110,
+            "h": 210
+          },
+          "priority": 10,
+          "states": [
+            {
+              "id": "POWERED_NEEDS_TRAINING_SLIP",
+              "conditions": [
+                {
+                  "key": "power.auxLive",
+                  "op": "==",
+                  "value": true
+                },
+                {
+                  "key": "paperwork.trainingSlipCollected",
+                  "op": "==",
+                  "value": false
+                }
+              ],
+              "label": "Card reader",
+              "cursor": "use",
+              "defaultVerb": "use",
+              "interactions": [
+                {
+                  "verb": "use",
+                  "sceneId": "SCN-013"
+                },
+                {
+                  "verb": "look",
+                  "sceneId": "SCN-005"
+                }
+              ]
+            },
+            {
+              "id": "POWERED_ALREADY_RESOLVED",
+              "conditions": [
+                {
+                  "key": "power.auxLive",
+                  "op": "==",
+                  "value": true
+                },
+                {
+                  "key": "paperwork.trainingSlipCollected",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "label": "Card reader",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "sceneId": "SCN-005"
+                },
+                {
+                  "verb": "use",
+                  "sceneId": "SCN-005"
+                }
+              ]
+            },
+            {
+              "id": "UNPOWERED",
+              "conditions": [],
+              "label": "Card reader",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "sceneId": "SCN-005"
+                },
+                {
+                  "verb": "use",
+                  "sceneId": "SCN-005"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "CALL_BOX",
+          "name": "Call box speaker and button",
+          "geometry": {
+            "type": "rect",
+            "x": 820,
+            "y": 410,
+            "w": 230,
+            "h": 320
+          },
+          "priority": 6,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "Call box",
+              "cursor": "talk",
+              "defaultVerb": "talk",
+              "interactions": [
+                {
+                  "verb": "talk",
+                  "sceneId": "SCN-006"
+                },
+                {
+                  "verb": "use",
+                  "sceneId": "SCN-006"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "TUBE_LABEL_PLATE",
+          "name": "Pneumatic tube label plate",
+          "geometry": {
+            "type": "rect",
+            "x": 1270,
+            "y": 720,
+            "w": 260,
+            "h": 140
+          },
+          "priority": 4,
+          "states": [
+            {
+              "id": "NOT_NOTED",
+              "conditions": [
+                {
+                  "key": "knowledge.tubeRoutesNoted",
+                  "op": "==",
+                  "value": false
+                }
+              ],
+              "label": "Tube label plate",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "sceneId": "SCN-007"
+                }
+              ]
+            },
+            {
+              "id": "ALREADY_NOTED",
+              "conditions": [
+                {
+                  "key": "knowledge.tubeRoutesNoted",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "label": "Tube label plate",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "playSound": "inspect_metal_plate"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "screenId": "HUB-03",
+      "hotspots": [
+        {
+          "id": "BADGE_DISPENSER",
+          "name": "Badge insert dispenser",
+          "geometry": {
+            "type": "mask",
+            "maskId": "HUB-03_BADGE_DISPENSER_MASK"
+          },
+          "priority": 5,
+          "states": [
+            {
+              "id": "AVAILABLE_UNSET",
+              "conditions": [
+                {
+                  "key": "paperwork.badgeInsertCollected",
+                  "op": "not_exists"
+                }
+              ],
+              "label": "Badge Inserts",
+              "cursor": "pickup",
+              "defaultVerb": "pickup",
+              "interactions": [
+                {
+                  "verb": "pickup",
+                  "sceneId": "SCN-009"
+                }
+              ]
+            },
+            {
+              "id": "AVAILABLE",
+              "conditions": [
+                {
+                  "key": "paperwork.badgeInsertCollected",
+                  "op": "==",
+                  "value": false
+                }
+              ],
+              "label": "Badge Inserts",
+              "cursor": "pickup",
+              "defaultVerb": "pickup",
+              "interactions": [
+                {
+                  "verb": "pickup",
+                  "sceneId": "SCN-009"
+                }
+              ]
+            },
+            {
+              "id": "EMPTY",
+              "conditions": [
+                {
+                  "key": "paperwork.badgeInsertCollected",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "label": "Empty Dispenser",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "effects": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "DESK_DRAWER_OLD_BADGES",
+          "name": "Desk drawer (old badges)",
+          "geometry": {
+            "type": "mask",
+            "maskId": "HUB-03_DESK_DRAWER_MASK"
+          },
+          "priority": 5,
+          "states": [
+            {
+              "id": "HAS_BADGE_UNSET",
+              "conditions": [
+                {
+                  "key": "paperwork.contractorBadgeCollected",
+                  "op": "not_exists"
+                }
+              ],
+              "label": "Desk Drawer",
+              "cursor": "use",
+              "defaultVerb": "use",
+              "interactions": [
+                {
+                  "verb": "use",
+                  "sceneId": "SCN-010"
+                }
+              ]
+            },
+            {
+              "id": "HAS_BADGE",
+              "conditions": [
+                {
+                  "key": "paperwork.contractorBadgeCollected",
+                  "op": "==",
+                  "value": false
+                }
+              ],
+              "label": "Desk Drawer",
+              "cursor": "use",
+              "defaultVerb": "use",
+              "interactions": [
+                {
+                  "verb": "use",
+                  "sceneId": "SCN-010"
+                }
+              ]
+            },
+            {
+              "id": "EMPTY",
+              "conditions": [
+                {
+                  "key": "paperwork.contractorBadgeCollected",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "label": "Desk Drawer",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "effects": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "SPEAKER_INTERCOM",
+          "name": "Speaker / intercom",
+          "geometry": {
+            "type": "mask",
+            "maskId": "HUB-03_INTERCOM_MASK"
+          },
+          "priority": 3,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "Intercom",
+              "cursor": "use",
+              "defaultVerb": "use",
+              "interactions": [
+                {
+                  "verb": "use",
+                  "effects": []
+                },
+                {
+                  "verb": "look",
+                  "effects": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "DEAD_TUBE_PORT_COVER",
+          "name": "Dead tube port cover",
+          "geometry": {
+            "type": "mask",
+            "maskId": "HUB-03_TUBE_PORT_COVER_MASK"
+          },
+          "priority": 3,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "Tube Port Cover",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "effects": []
+                },
+                {
+                  "verb": "use",
+                  "effects": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "EXIT_TO_HUB_02",
+          "name": "Exit to Porch",
+          "geometry": {
+            "type": "mask",
+            "maskId": "HUB-03_EXIT_DOWN_TO_HUB-02_MASK"
+          },
+          "priority": 10,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "Exit",
+              "cursor": "go",
+              "defaultVerb": "go",
+              "interactions": [
+                {
+                  "verb": "go",
+                  "transitionToScreen": "HUB-02"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "GO_TO_HUB_06",
+          "name": "To Admin Entry",
+          "geometry": {
+            "type": "mask",
+            "maskId": "HUB-03_EXIT_RIGHT_TO_HUB-06_MASK"
+          },
+          "priority": 10,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "Admin Entry",
+              "cursor": "go",
+              "defaultVerb": "go",
+              "interactions": [
+                {
+                  "verb": "go",
+                  "transitionToScreen": "HUB-06"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "screenId": "HUB-04",
+      "hotspots": [
+        {
+          "id": "HATCH_LID_RING",
+          "name": "Hatch lid and lifting ring",
+          "geometry": {
+            "type": "rect",
+            "x": 280,
+            "y": 330,
+            "w": 780,
+            "h": 260
+          },
+          "priority": 1,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "Hatch ring",
+              "cursor": "use",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "playSound": "ui_inspect"
+                },
+                {
+                  "verb": "use",
+                  "playSound": "sfx_metal_ring_clink"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ACCESS_LADDER_STEPS",
+          "name": "Access ladder/steps",
+          "geometry": {
+            "type": "rect",
+            "x": 470,
+            "y": 520,
+            "w": 520,
+            "h": 520
+          },
+          "priority": 2,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "Ladder",
+              "cursor": "go",
+              "defaultVerb": "go",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "playSound": "ui_inspect"
+                },
+                {
+                  "verb": "climb",
+                  "transitionToScreen": "HUB-01"
+                },
+                {
+                  "verb": "go",
+                  "transitionToScreen": "HUB-01"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "SERVICE_DOOR",
+          "name": "Service door",
+          "geometry": {
+            "type": "rect",
+            "x": 1340,
+            "y": 240,
+            "w": 500,
+            "h": 700
+          },
+          "priority": 3,
+          "states": [
+            {
+              "id": "AUX_OFF",
+              "conditions": [
+                {
+                  "key": "power.auxLive",
+                  "op": "==",
+                  "value": false
+                }
+              ],
+              "label": "Service door",
+              "cursor": "use",
+              "defaultVerb": "use",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "playSound": "ui_inspect"
+                },
+                {
+                  "verb": "use",
+                  "sceneId": "SCN-012"
+                }
+              ]
+            },
+            {
+              "id": "AUX_ON",
+              "conditions": [
+                {
+                  "key": "power.auxLive",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "label": "Service door",
+              "cursor": "go",
+              "defaultVerb": "open",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "playSound": "ui_inspect"
+                },
+                {
+                  "verb": "open",
+                  "transitionToScreen": "HUB-05"
+                },
+                {
+                  "verb": "go",
+                  "transitionToScreen": "HUB-05"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "screenId": "HUB-05",
+      "hotspots": [
+        {
+          "id": "VENT_PANEL",
+          "name": "Ventilation access panel",
+          "geometry": {
+            "type": "rect",
+            "x": 960,
+            "y": 360,
+            "w": 260,
+            "h": 210
+          },
+          "priority": 2,
+          "states": [
+            {
+              "id": "NEED_OPEN",
+              "conditions": [
+                {
+                  "key": "ops.ventRequirementKnown",
+                  "op": "==",
+                  "value": true
+                },
+                {
+                  "key": "ops.ventDamperOpen",
+                  "op": "==",
+                  "value": false
+                }
+              ],
+              "label": "Vent access (damper)",
+              "cursor": "use",
+              "defaultVerb": "use",
+              "interactions": [
+                {
+                  "verb": "use",
+                  "conditions": [
+                    {
+                      "key": "ops.ventRequirementKnown",
+                      "op": "==",
+                      "value": true
+                    },
+                    {
+                      "key": "ops.ventDamperOpen",
+                      "op": "==",
+                      "value": false
+                    }
+                  ],
+                  "sceneId": "SCN-035"
+                },
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "lore.looked.ventPanel",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ALREADY_OPEN",
+              "conditions": [
+                {
+                  "key": "ops.ventDamperOpen",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "label": "Vent access (OPEN)",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "lore.looked.ventPanelOpen",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                },
+                {
+                  "verb": "use",
+                  "effects": [
+                    {
+                      "key": "ops.ventPanelRechecked",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "UNKNOWN",
+              "label": "Ventilation access panel",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "lore.looked.ventPanel",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "OPS_SERVICE_DOOR",
+          "name": "Operations wing service door",
+          "geometry": {
+            "type": "rect",
+            "x": 1280,
+            "y": 230,
+            "w": 340,
+            "h": 690
+          },
+          "priority": 3,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "Operations service door",
+              "cursor": "go",
+              "defaultVerb": "go",
+              "interactions": [
+                {
+                  "verb": "go",
+                  "transitionToScreen": "HUB-10"
+                },
+                {
+                  "verb": "use",
+                  "transitionToScreen": "HUB-10"
+                },
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "lore.looked.opsDoorPlacard",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ADMIN_SERVICE_DOOR",
+          "name": "Door to admin wing service entry",
+          "geometry": {
+            "type": "rect",
+            "x": 1660,
+            "y": 240,
+            "w": 240,
+            "h": 700
+          },
+          "priority": 2,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "Admin service entry",
+              "cursor": "go",
+              "defaultVerb": "go",
+              "interactions": [
+                {
+                  "verb": "go",
+                  "transitionToScreen": "HUB-06"
+                },
+                {
+                  "verb": "use",
+                  "transitionToScreen": "HUB-06"
+                },
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "lore.looked.adminServiceDoor",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "CABLE_TRAY_LABELS",
+          "name": "Cable tray label cluster",
+          "geometry": {
+            "type": "rect",
+            "x": 300,
+            "y": 120,
+            "w": 320,
+            "h": 170
+          },
+          "priority": 1,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "Cable tray labels",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "puzzle.cableLabelsNoted",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "EXIT_TO_HUB04",
+          "name": "Return to meter room",
+          "geometry": {
+            "type": "rect",
+            "x": 0,
+            "y": 740,
+            "w": 260,
+            "h": 340
+          },
+          "priority": 0,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "Back to meter room",
+              "cursor": "go",
+              "defaultVerb": "go",
+              "interactions": [
+                {
+                  "verb": "go",
+                  "transitionToScreen": "HUB-04"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "screenId": "HUB-06",
+      "hotspots": [
+        {
+          "id": "HUB06_KIOSK_TERMINAL",
+          "name": "Lobby kiosk terminal",
+          "geometry": {
+            "type": "rect",
+            "x": 780,
+            "y": 340,
+            "w": 360,
+            "h": 420
+          },
+          "states": [
+            {
+              "id": "KIOSK_CAN_ISSUE_TPR",
+              "conditions": [
+                {
+                  "key": "staffing.tprIssued",
+                  "op": "==",
+                  "value": false
+                },
+                {
+                  "key": "paperwork.minimumBinderAssembled",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "label": "Kiosk terminal",
+              "cursor": "use",
+              "defaultVerb": "use",
+              "interactions": [
+                {
+                  "verb": "use",
+                  "sceneId": "SCN-025"
+                },
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "knowledge.lobbyKioskLimited",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "KIOSK_MISSING_PAPERWORK",
+              "conditions": [
+                {
+                  "key": "paperwork.minimumBinderAssembled",
+                  "op": "==",
+                  "value": false
+                }
+              ],
+              "label": "Kiosk terminal",
+              "cursor": "use",
+              "defaultVerb": "use",
+              "interactions": [
+                {
+                  "verb": "use",
+                  "effects": [
+                    {
+                      "key": "paperwork.notes",
+                      "action": "add",
+                      "value": "Kiosk requires a scannable badge and supervisor reference; you are missing required paperwork."
+                    }
+                  ]
+                },
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "knowledge.lobbyKioskLimited",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "KIOSK_ALREADY_DONE",
+              "conditions": [
+                {
+                  "key": "staffing.tprIssued",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "label": "Kiosk terminal",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "paperwork.notes",
+                      "action": "add",
+                      "value": "A Temporary Presence Receipt has already been issued from this kiosk."
+                    }
+                  ]
+                },
+                {
+                  "verb": "use",
+                  "effects": [
+                    {
+                      "key": "paperwork.notes",
+                      "action": "add",
+                      "value": "The kiosk menu loops back to the presence/ID flow; nothing else useful is offered."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "HUB06_WALL_PHONE_LIST",
+          "name": "Wall phone list",
+          "geometry": {
+            "type": "rect",
+            "x": 140,
+            "y": 220,
+            "w": 260,
+            "h": 360
+          },
+          "states": [
+            {
+              "id": "PHONE_LIST_NOT_NOTED",
+              "conditions": [
+                {
+                  "key": "paperwork.legalExtensionNoted",
+                  "op": "==",
+                  "value": false
+                }
+              ],
+              "label": "Phone list",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "sceneId": "SCN-015"
+                },
+                {
+                  "verb": "use",
+                  "sceneId": "SCN-015"
+                }
+              ]
+            },
+            {
+              "id": "PHONE_LIST_CAN_CALL_LEGAL",
+              "conditions": [
+                {
+                  "key": "paperwork.legalExtensionNoted",
+                  "op": "==",
+                  "value": true
+                },
+                {
+                  "key": "paperwork.workOrderRequested",
+                  "op": "==",
+                  "value": false
+                }
+              ],
+              "label": "Phone list",
+              "cursor": "talk",
+              "defaultVerb": "talk",
+              "interactions": [
+                {
+                  "verb": "talk",
+                  "sceneId": "SCN-018"
+                },
+                {
+                  "verb": "use",
+                  "sceneId": "SCN-018"
+                },
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "paperwork.notes",
+                      "action": "add",
+                      "value": "The phone list includes a still-routing line to OLEA Legal; usable as a supervisor/escalation reference."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "PHONE_LIST_AFTER_WORKORDER",
+              "conditions": [
+                {
+                  "key": "paperwork.workOrderRequested",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "label": "Phone list",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "talk",
+                  "effects": [
+                    {
+                      "key": "paperwork.notes",
+                      "action": "add",
+                      "value": "You already requested a Work Order from Legal; calling again would only generate more disclaimers."
+                    }
+                  ]
+                },
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "paperwork.notes",
+                      "action": "add",
+                      "value": "Most extensions dead-end; the Legal line is the only one that behaves like a real escalation path."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "HUB06_ASSET_PLAQUE",
+          "name": "Faded asset plaque",
+          "geometry": {
+            "type": "rect",
+            "x": 540,
+            "y": 470,
+            "w": 200,
+            "h": 120
+          },
+          "states": [
+            {
+              "id": "PLAQUE_UNRECORDED",
+              "conditions": [
+                {
+                  "key": "paperwork.assetIdRecorded",
+                  "op": "==",
+                  "value": false
+                }
+              ],
+              "label": "Asset plaque",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "sceneId": "SCN-016"
+                },
+                {
+                  "verb": "use",
+                  "sceneId": "SCN-016"
+                }
+              ]
+            },
+            {
+              "id": "PLAQUE_RECORDED",
+              "conditions": [
+                {
+                  "key": "paperwork.assetIdRecorded",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "label": "Asset plaque",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "paperwork.notes",
+                      "action": "add",
+                      "value": "Asset plaque: S.P.I.N.D.L.E. Node SP-01 (already recorded)."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "HUB06_RECEPTION_DRAWERS",
+          "name": "Reception desk drawers",
+          "geometry": {
+            "type": "rect",
+            "x": 1320,
+            "y": 520,
+            "w": 420,
+            "h": 340
+          },
+          "states": [
+            {
+              "id": "DRAWERS_UNSEARCHED",
+              "conditions": [
+                {
+                  "key": "tools.magnetFound",
+                  "op": "==",
+                  "value": false
+                }
+              ],
+              "label": "Desk drawers",
+              "cursor": "use",
+              "defaultVerb": "use",
+              "interactions": [
+                {
+                  "verb": "use",
+                  "sceneId": "SCN-017"
+                },
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "paperwork.notes",
+                      "action": "add",
+                      "value": "The reception drawers look like the kind of place old badge hardware and office salvage ends up."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "DRAWERS_ALREADY_LOOTED",
+              "conditions": [
+                {
+                  "key": "tools.magnetFound",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "label": "Desk drawers",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "use",
+                  "effects": [
+                    {
+                      "key": "paperwork.notes",
+                      "action": "add",
+                      "value": "You already pulled anything useful from the drawers."
+                    }
+                  ]
+                },
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "paperwork.notes",
+                      "action": "add",
+                      "value": "Miscellaneous office debris; nothing else stands out."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "HUB06_EXIT_TO_SHACK",
+          "name": "Exit to Guard Shack",
+          "geometry": {
+            "type": "rect",
+            "x": 0,
+            "y": 360,
+            "w": 220,
+            "h": 520
+          },
+          "states": [
+            {
+              "id": "GO",
+              "label": "Back to Shack",
+              "cursor": "go",
+              "defaultVerb": "go",
+              "interactions": [
+                {
+                  "verb": "go",
+                  "transitionToScreen": "HUB-03"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "HUB06_EXIT_TO_RECORDS_HALL",
+          "name": "Door to Records Hall",
+          "geometry": {
+            "type": "rect",
+            "x": 880,
+            "y": 120,
+            "w": 220,
+            "h": 340
+          },
+          "states": [
+            {
+              "id": "GO",
+              "label": "To Records",
+              "cursor": "go",
+              "defaultVerb": "go",
+              "interactions": [
+                {
+                  "verb": "go",
+                  "transitionToScreen": "HUB-07"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "HUB06_EXIT_TO_CONFERENCE",
+          "name": "Door to Conference Room",
+          "geometry": {
+            "type": "rect",
+            "x": 1640,
+            "y": 250,
+            "w": 280,
+            "h": 520
+          },
+          "states": [
+            {
+              "id": "GO",
+              "label": "Conference",
+              "cursor": "go",
+              "defaultVerb": "go",
+              "interactions": [
+                {
+                  "verb": "go",
+                  "transitionToScreen": "HUB-09"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "HUB06_EXIT_TO_NOTICES",
+          "name": "Door to Notices Room",
+          "geometry": {
+            "type": "rect",
+            "x": 820,
+            "y": 860,
+            "w": 280,
+            "h": 220
+          },
+          "states": [
+            {
+              "id": "GO",
+              "label": "Notices",
+              "cursor": "go",
+              "defaultVerb": "go",
+              "interactions": [
+                {
+                  "verb": "go",
+                  "transitionToScreen": "HUB-14"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "screenId": "HUB-07",
+      "hotspots": [
+        {
+          "id": "RECORDS_DOOR",
+          "name": "Records door",
+          "geometry": {
+            "type": "rect",
+            "x": 220,
+            "y": 180,
+            "w": 420,
+            "h": 720
+          },
+          "priority": 5,
+          "states": [
+            {
+              "id": "EVIDENCE_ENTRY_AVAILABLE",
+              "conditions": [
+                {
+                  "key": "act3.varianceAcknowledged",
+                  "op": "==",
+                  "value": true
+                },
+                {
+                  "key": "act3.presenceProofPrinted",
+                  "op": "==",
+                  "value": true
+                },
+                {
+                  "key": "act3.recordsEvidenceCollected",
+                  "op": "==",
+                  "value": false
+                }
+              ],
+              "label": "Records",
+              "cursor": "use",
+              "defaultVerb": "use",
+              "interactions": [
+                {
+                  "verb": "use",
+                  "sceneId": "SCN-068"
+                },
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "world.recordsDoorLocked",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "EVIDENCE_ALREADY_COLLECTED",
+              "conditions": [
+                {
+                  "key": "act3.recordsEvidenceCollected",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "label": "Records (resealed)",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "world.recordsDoorLocked",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                },
+                {
+                  "verb": "use",
+                  "effects": [
+                    {
+                      "key": "world.recordsDoorLocked",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "LOCKED_DEFAULT",
+              "label": "Records",
+              "cursor": "use",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "world.recordsDoorLocked",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                },
+                {
+                  "verb": "use",
+                  "effects": [
+                    {
+                      "key": "world.recordsDoorLocked",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "PNEUMATIC_TUBE_STATION",
+          "name": "Pneumatic tube station",
+          "geometry": {
+            "type": "rect",
+            "x": 1200,
+            "y": 360,
+            "w": 520,
+            "h": 520
+          },
+          "priority": 4,
+          "states": [
+            {
+              "id": "ACT3_NOTICE_AVAILABLE",
+              "conditions": [
+                {
+                  "key": "story.act",
+                  "op": "==",
+                  "value": 3
+                },
+                {
+                  "key": "act3.mtaNoticeReceived",
+                  "op": "==",
+                  "value": false
+                }
+              ],
+              "label": "Tube station",
+              "cursor": "use",
+              "defaultVerb": "use",
+              "interactions": [
+                {
+                  "verb": "use",
+                  "sceneId": "SCN-065"
+                },
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "world.tubeStationInspected",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "DEFAULT",
+              "label": "Tube station",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "world.tubeStationInspected",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                },
+                {
+                  "verb": "use",
+                  "effects": [
+                    {
+                      "key": "world.tubeStationInspected",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "FIRE_PANEL_NOTE",
+          "name": "Fire panel note",
+          "geometry": {
+            "type": "rect",
+            "x": 1040,
+            "y": 240,
+            "w": 260,
+            "h": 220
+          },
+          "priority": 6,
+          "states": [
+            {
+              "id": "KEYS_AVAILABLE",
+              "conditions": [
+                {
+                  "key": "paperwork.temporaryKeysCollected",
+                  "op": "==",
+                  "value": false
+                }
+              ],
+              "label": "Fire panel note",
+              "cursor": "pickup",
+              "defaultVerb": "pickup",
+              "interactions": [
+                {
+                  "verb": "pickup",
+                  "sceneId": "SCN-020"
+                },
+                {
+                  "verb": "use",
+                  "sceneId": "SCN-020"
+                },
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "world.firePanelNoteRead",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "KEYS_TAKEN",
+              "conditions": [
+                {
+                  "key": "paperwork.temporaryKeysCollected",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "label": "Fire panel note",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "world.firePanelNoteRead",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                },
+                {
+                  "verb": "use",
+                  "effects": [
+                    {
+                      "key": "world.firePanelNoteRead",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "WALL_FAX_PLACARD",
+          "name": "Wall fax placard",
+          "geometry": {
+            "type": "rect",
+            "x": 760,
+            "y": 220,
+            "w": 240,
+            "h": 180
+          },
+          "priority": 3,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "Fax placard",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "world.faxPlacardRead",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "EXIT_TO_HUB06",
+          "name": "Back to Lobby",
+          "geometry": {
+            "type": "rect",
+            "x": 700,
+            "y": 930,
+            "w": 520,
+            "h": 150
+          },
+          "priority": 1,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "Lobby",
+              "cursor": "go",
+              "defaultVerb": "go",
+              "interactions": [
+                {
+                  "verb": "go",
+                  "transitionToScreen": "HUB-06"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "EXIT_TO_HUB08",
+          "name": "To Copy/Fax Room",
+          "geometry": {
+            "type": "rect",
+            "x": 1800,
+            "y": 300,
+            "w": 120,
+            "h": 480
+          },
+          "priority": 1,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "Copy/Fax",
+              "cursor": "go",
+              "defaultVerb": "go",
+              "interactions": [
+                {
+                  "verb": "go",
+                  "transitionToScreen": "HUB-08"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "EXIT_TO_HUB10",
+          "name": "Forward to Ops Corridor",
+          "geometry": {
+            "type": "rect",
+            "x": 880,
+            "y": 360,
+            "w": 220,
+            "h": 380
+          },
+          "priority": 1,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "Ops corridor",
+              "cursor": "go",
+              "defaultVerb": "go",
+              "interactions": [
+                {
+                  "verb": "go",
+                  "transitionToScreen": "HUB-10"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "EXIT_TO_HUB12",
+          "name": "To Tube Bay Walkway",
+          "geometry": {
+            "type": "rect",
+            "x": 0,
+            "y": 300,
+            "w": 120,
+            "h": 480
+          },
+          "priority": 1,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "Tube bay",
+              "cursor": "go",
+              "defaultVerb": "go",
+              "interactions": [
+                {
+                  "verb": "go",
+                  "transitionToScreen": "HUB-12"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "screenId": "HUB-08",
+      "hotspots": [
+        {
+          "id": "COPIER_CONTROL_PANEL",
+          "name": "Copier control panel",
+          "geometry": {
+            "type": "rect",
+            "x": 760,
+            "y": 260,
+            "w": 460,
+            "h": 300
+          },
+          "priority": 2,
+          "states": [
+            {
+              "id": "EVIDENCE_PACKET_AVAILABLE",
+              "conditions": [
+                {
+                  "key": "act3.recordsEvidenceCollected",
+                  "op": "==",
+                  "value": true
+                },
+                {
+                  "key": "act3.evidencePacketCompiled",
+                  "op": "==",
+                  "value": false
+                }
+              ],
+              "label": "Copier panel (compile packet)",
+              "cursor": "use",
+              "defaultVerb": "use",
+              "interactions": [
+                {
+                  "verb": "use",
+                  "sceneId": "SCN-069"
+                },
+                {
+                  "verb": "look",
+                  "playSound": "sfx_ui_inspect"
+                }
+              ]
+            },
+            {
+              "id": "SERVICE_CODE_LOCKED",
+              "conditions": [
+                {
+                  "key": "paperwork.copierServiceCodeKnown",
+                  "op": "==",
+                  "value": false
+                }
+              ],
+              "label": "Copier panel (service code required)",
+              "cursor": "use",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "playSound": "sfx_copier_error_beep"
+                },
+                {
+                  "verb": "use",
+                  "playSound": "sfx_copier_error_beep"
+                }
+              ]
+            },
+            {
+              "id": "READY",
+              "conditions": [],
+              "label": "Copier panel",
+              "cursor": "use",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "playSound": "sfx_ui_inspect"
+                },
+                {
+                  "verb": "use",
+                  "playSound": "sfx_copier_ready_chime"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "SERVICE_CODE_STICKER_STACK",
+          "name": "Service code sticker stack",
+          "geometry": {
+            "type": "rect",
+            "x": 700,
+            "y": 560,
+            "w": 360,
+            "h": 240
+          },
+          "priority": 3,
+          "states": [
+            {
+              "id": "CAN_RECOVER_CODE",
+              "conditions": [
+                {
+                  "key": "paperwork.copierServiceCodeKnown",
+                  "op": "==",
+                  "value": false
+                },
+                {
+                  "key": "tools.labelMakerCharged",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "label": "Sticker stack (peel/tag)",
+              "cursor": "use",
+              "defaultVerb": "use",
+              "interactions": [
+                {
+                  "verb": "use",
+                  "sceneId": "SCN-023"
+                },
+                {
+                  "verb": "look",
+                  "playSound": "sfx_ui_inspect"
+                }
+              ]
+            },
+            {
+              "id": "CODE_ALREADY_KNOWN",
+              "conditions": [
+                {
+                  "key": "paperwork.copierServiceCodeKnown",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "label": "Sticker stack (older layer exposed)",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "playSound": "sfx_ui_inspect"
+                },
+                {
+                  "verb": "use",
+                  "playSound": "sfx_paper_tap"
+                }
+              ]
+            },
+            {
+              "id": "SEALED",
+              "conditions": [],
+              "label": "Sticker stack",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "playSound": "sfx_ui_inspect"
+                },
+                {
+                  "verb": "use",
+                  "playSound": "sfx_tape_stuck"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "FAX_MACHINE_TRAY",
+          "name": "Fax machine tray",
+          "geometry": {
+            "type": "rect",
+            "x": 1260,
+            "y": 460,
+            "w": 540,
+            "h": 300
+          },
+          "priority": 2,
+          "states": [
+            {
+              "id": "WORK_ORDER_READY",
+              "conditions": [
+                {
+                  "key": "paperwork.workOrderRequested",
+                  "op": "==",
+                  "value": true
+                },
+                {
+                  "key": "paperwork.workOrderReceived",
+                  "op": "==",
+                  "value": false
+                }
+              ],
+              "label": "Fax tray (work order pages)",
+              "cursor": "use",
+              "defaultVerb": "use",
+              "interactions": [
+                {
+                  "verb": "use",
+                  "sceneId": "SCN-022"
+                },
+                {
+                  "verb": "look",
+                  "playSound": "sfx_fax_beep"
+                }
+              ]
+            },
+            {
+              "id": "SIGNED_WAIVER_READY",
+              "conditions": [
+                {
+                  "key": "paperwork.trainingWaiverTemplateCollected",
+                  "op": "==",
+                  "value": true
+                },
+                {
+                  "key": "paperwork.trainingWaiverSigned",
+                  "op": "==",
+                  "value": false
+                }
+              ],
+              "label": "Fax tray (signed waiver)",
+              "cursor": "use",
+              "defaultVerb": "use",
+              "interactions": [
+                {
+                  "verb": "use",
+                  "sceneId": "SCN-030"
+                },
+                {
+                  "verb": "look",
+                  "playSound": "sfx_fax_beep"
+                }
+              ]
+            },
+            {
+              "id": "IDLE",
+              "conditions": [],
+              "label": "Fax tray",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "playSound": "sfx_ui_inspect"
+                },
+                {
+                  "verb": "use",
+                  "playSound": "sfx_fax_idle_click"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "BINDER_SUPPLIES_SHELF",
+          "name": "Binder supplies shelf",
+          "geometry": {
+            "type": "rect",
+            "x": 120,
+            "y": 220,
+            "w": 520,
+            "h": 720
+          },
+          "priority": 1,
+          "states": [
+            {
+              "id": "ASSEMBLE_MINIMUM_BINDER",
+              "conditions": [
+                {
+                  "key": "paperwork.minimumBinderAssembled",
+                  "op": "==",
+                  "value": false
+                },
+                {
+                  "key": "paperwork.workOrderReceived",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "label": "Binder supplies (assemble package)",
+              "cursor": "use",
+              "defaultVerb": "use",
+              "interactions": [
+                {
+                  "verb": "use",
+                  "sceneId": "SCN-024"
+                },
+                {
+                  "verb": "look",
+                  "playSound": "sfx_ui_inspect"
+                }
+              ]
+            },
+            {
+              "id": "SUPPLIES",
+              "conditions": [],
+              "label": "Binder supplies shelf",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "playSound": "sfx_ui_inspect"
+                },
+                {
+                  "verb": "use",
+                  "playSound": "sfx_paper_shuffle"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "EXIT_LEFT_TO_HUB_07",
+          "name": "Exit left to Records Hall",
+          "geometry": {
+            "type": "rect",
+            "x": 0,
+            "y": 160,
+            "w": 140,
+            "h": 820
+          },
+          "priority": 0,
+          "states": [
+            {
+              "id": "GO_LEFT",
+              "conditions": [],
+              "label": "Exit (Records Hall)",
+              "cursor": "go",
+              "defaultVerb": "go",
+              "interactions": [
+                {
+                  "verb": "go",
+                  "transitionToScreen": "HUB-07"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "EXIT_DOWN_TO_HUB_14",
+          "name": "Exit down to Notices Corridor",
+          "geometry": {
+            "type": "rect",
+            "x": 720,
+            "y": 960,
+            "w": 480,
+            "h": 120
+          },
+          "priority": 0,
+          "states": [
+            {
+              "id": "GO_DOWN",
+              "conditions": [],
+              "label": "Exit (Notices Corridor)",
+              "cursor": "go",
+              "defaultVerb": "go",
+              "interactions": [
+                {
+                  "verb": "go",
+                  "transitionToScreen": "HUB-14"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "screenId": "HUB-09",
+      "hotspots": [
+        {
+          "id": "HUB09_PRINTER_TRAY",
+          "name": "EAC Finding Slip printer tray",
+          "geometry": {
+            "type": "rect",
+            "x": 1370,
+            "y": 620,
+            "w": 430,
+            "h": 260
+          },
+          "priority": 2,
+          "states": [
+            {
+              "id": "SLIP_NOT_YET_ISSUED",
+              "conditions": [
+                {
+                  "key": "paperwork.eacFindingIssued",
+                  "op": "==",
+                  "value": false
+                }
+              ],
+              "label": "Printer tray",
+              "cursor": "use",
+              "defaultVerb": "use",
+              "interactions": [
+                {
+                  "verb": "use",
+                  "sceneId": "SCN-027"
+                },
+                {
+                  "verb": "look",
+                  "sceneId": "SCN-027"
+                }
+              ]
+            },
+            {
+              "id": "SLIP_ALREADY_ISSUED",
+              "conditions": [
+                {
+                  "key": "paperwork.eacFindingIssued",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "label": "Finding Slip tray",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "paperwork.eacFindingReminderViewed",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "HUB09_CHECKLIST_FOLDER",
+          "name": "Checklist folder",
+          "geometry": {
+            "type": "rect",
+            "x": 820,
+            "y": 600,
+            "w": 460,
+            "h": 320
+          },
+          "priority": 2,
+          "states": [
+            {
+              "id": "CLOSURE_MEMO_AVAILABLE",
+              "conditions": [
+                {
+                  "key": "act3.evidencePacketCompiled",
+                  "op": "==",
+                  "value": true
+                },
+                {
+                  "key": "act3.closurePathMemoDrafted",
+                  "op": "==",
+                  "value": false
+                }
+              ],
+              "label": "Checklist folder",
+              "cursor": "use",
+              "defaultVerb": "use",
+              "interactions": [
+                {
+                  "verb": "use",
+                  "sceneId": "SCN-070"
+                },
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "clues.checklistBrowsed",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "DEFAULT",
+              "label": "Checklist folder",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "clues.checklistNoted",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                },
+                {
+                  "verb": "use",
+                  "effects": [
+                    {
+                      "key": "clues.checklistOpened",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "HUB09_WHITEBOARD_NOTES",
+          "name": "Whiteboard notes",
+          "geometry": {
+            "type": "rect",
+            "x": 220,
+            "y": 170,
+            "w": 600,
+            "h": 390
+          },
+          "priority": 1,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "Whiteboard notes",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "clues.whiteboardNotesRead",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                },
+                {
+                  "verb": "use",
+                  "effects": [
+                    {
+                      "key": "clues.whiteboardTermsCopied",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "HUB09_EXIT_LEFT",
+          "name": "Exit to Lobby",
+          "geometry": {
+            "type": "rect",
+            "x": 0,
+            "y": 260,
+            "w": 170,
+            "h": 620
+          },
+          "priority": 10,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "To Lobby",
+              "cursor": "go",
+              "defaultVerb": "go",
+              "interactions": [
+                {
+                  "verb": "go",
+                  "transitionToScreen": "HUB-06",
+                  "playAnimation": "exit_to_lobby"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "screenId": "HUB-10",
+      "hotspots": [
+        {
+          "id": "TRAINING_INTERLOCK_PANEL",
+          "name": "Training date interlock panel",
+          "geometry": {
+            "type": "rect",
+            "x": 1050,
+            "y": 220,
+            "w": 520,
+            "h": 430
+          },
+          "priority": 20,
+          "states": [
+            {
+              "id": "NOT_CLEARED",
+              "conditions": [
+                {
+                  "key": "ops.trainingGateCleared",
+                  "op": "!=",
+                  "value": true
+                }
+              ],
+              "label": "Training Date Interlock",
+              "cursor": "use",
+              "defaultVerb": "use",
+              "interactions": [
+                {
+                  "verb": "use",
+                  "sceneId": "SCN-032"
+                },
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "knowledge.trainingGateObserved",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "CLEARED",
+              "conditions": [
+                {
+                  "key": "ops.trainingGateCleared",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "label": "Interlock (Cleared)",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "knowledge.trainingGateClearedConfirmed",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                },
+                {
+                  "verb": "use",
+                  "playSound": "interlock_ok_beep"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "LOTO_MAIN_LOCK_POINT",
+          "name": "LOTO main lock point",
+          "geometry": {
+            "type": "rect",
+            "x": 1100,
+            "y": 665,
+            "w": 520,
+            "h": 310
+          },
+          "priority": 18,
+          "states": [
+            {
+              "id": "NEEDS_TRAINING_GATE",
+              "conditions": [
+                {
+                  "key": "ops.trainingGateCleared",
+                  "op": "!=",
+                  "value": true
+                }
+              ],
+              "label": "LOTO Hasp (Interlock First)",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "knowledge.lotoPointObserved",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                },
+                {
+                  "verb": "use",
+                  "playSound": "denied_click"
+                }
+              ]
+            },
+            {
+              "id": "NOT_TAGGED",
+              "conditions": [
+                {
+                  "key": "ops.trainingGateCleared",
+                  "op": "==",
+                  "value": true
+                },
+                {
+                  "key": "ops.lotoTagged",
+                  "op": "!=",
+                  "value": true
+                }
+              ],
+              "label": "LOTO Main Point",
+              "cursor": "use",
+              "defaultVerb": "use",
+              "interactions": [
+                {
+                  "verb": "use",
+                  "sceneId": "SCN-033"
+                },
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "knowledge.lotoRequirementsConsidered",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "TAGGED",
+              "conditions": [
+                {
+                  "key": "ops.lotoTagged",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "label": "LOTO (Tagged)",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "knowledge.lotoTaggedConfirmed",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                },
+                {
+                  "verb": "use",
+                  "playSound": "tag_rustle"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "VENT_STATUS_INDICATOR",
+          "name": "Ventilation status indicator",
+          "geometry": {
+            "type": "rect",
+            "x": 1370,
+            "y": 115,
+            "w": 340,
+            "h": 190
+          },
+          "priority": 16,
+          "states": [
+            {
+              "id": "REQ_UNKNOWN",
+              "conditions": [
+                {
+                  "key": "ops.ventRequirementKnown",
+                  "op": "!=",
+                  "value": true
+                }
+              ],
+              "label": "Vent Status Light",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "sceneId": "SCN-034"
+                },
+                {
+                  "verb": "use",
+                  "sceneId": "SCN-034"
+                }
+              ]
+            },
+            {
+              "id": "REQ_KNOWN",
+              "conditions": [
+                {
+                  "key": "ops.ventRequirementKnown",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "label": "Vent Status (Damper Must Be OPEN)",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "knowledge.ventRequirementReminderSeen",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "PROCEDURE_PLACARD_STACK",
+          "name": "Procedure placard stack",
+          "geometry": {
+            "type": "rect",
+            "x": 650,
+            "y": 255,
+            "w": 360,
+            "h": 420
+          },
+          "priority": 10,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "Procedure Placards",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "knowledge.placardConflictNoted",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                },
+                {
+                  "verb": "use",
+                  "playSound": "paper_flick"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "DOOR_TO_CONTROL_ROOM",
+          "name": "Door to Control Room",
+          "geometry": {
+            "type": "rect",
+            "x": 1605,
+            "y": 150,
+            "w": 300,
+            "h": 800
+          },
+          "priority": 30,
+          "states": [
+            {
+              "id": "BLOCKED_BY_TRAINING_GATE",
+              "conditions": [
+                {
+                  "key": "ops.trainingGateCleared",
+                  "op": "!=",
+                  "value": true
+                }
+              ],
+              "label": "Control Room Door (Interlocked)",
+              "cursor": "go",
+              "defaultVerb": "go",
+              "interactions": [
+                {
+                  "verb": "go",
+                  "playSound": "locked_door_rattle"
+                },
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "knowledge.controlRoomDoorInterlocked",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "READY",
+              "conditions": [
+                {
+                  "key": "ops.trainingGateCleared",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "label": "Enter Control Room",
+              "cursor": "go",
+              "defaultVerb": "go",
+              "interactions": [
+                {
+                  "verb": "go",
+                  "transitionToScreen": "HUB-11"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "EXIT_LEFT_TO_HUB_05",
+          "name": "Exit to Service Corridor",
+          "geometry": {
+            "type": "rect",
+            "x": 0,
+            "y": 0,
+            "w": 210,
+            "h": 1080
+          },
+          "priority": 5,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "Back to Service Corridor",
+              "cursor": "go",
+              "defaultVerb": "go",
+              "interactions": [
+                {
+                  "verb": "go",
+                  "transitionToScreen": "HUB-05"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "EXIT_DOWN_TO_HUB_07",
+          "name": "Return to Records Hall",
+          "geometry": {
+            "type": "rect",
+            "x": 700,
+            "y": 910,
+            "w": 520,
+            "h": 170
+          },
+          "priority": 5,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "Back to Records Hall",
+              "cursor": "go",
+              "defaultVerb": "go",
+              "interactions": [
+                {
+                  "verb": "go",
+                  "transitionToScreen": "HUB-07"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "screenId": "HUB-11",
+      "hotspots": [
+        {
+          "id": "MAIN_CONSOLE",
+          "name": "Main console",
+          "geometry": {
+            "type": "rect",
+            "x": 340,
+            "y": 520,
+            "w": 1240,
+            "h": 520
+          },
+          "priority": 5,
+          "states": [
+            {
+              "id": "ALIGNMENT_SEQUENCE_AVAILABLE",
+              "conditions": [
+                {
+                  "key": "ops.loadSheddingEventActive",
+                  "op": "==",
+                  "value": true
+                },
+                {
+                  "key": "ops.alignmentSequenceInitiated",
+                  "op": "==",
+                  "value": false
+                }
+              ],
+              "label": "Reroute breakers",
+              "cursor": "use",
+              "defaultVerb": "use",
+              "interactions": [
+                {
+                  "verb": "use",
+                  "sceneId": "SCN-043"
+                },
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "world.examined.mainConsole",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "DEFAULT",
+              "label": "Main console",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "world.examined.mainConsole",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ALARM_PANEL",
+          "name": "Alarm panel",
+          "geometry": {
+            "type": "rect",
+            "x": 1460,
+            "y": 210,
+            "w": 300,
+            "h": 360
+          },
+          "priority": 6,
+          "states": [
+            {
+              "id": "LOAD_SHEDDING_TRIGGER_AVAILABLE",
+              "conditions": [
+                {
+                  "key": "ops.operationalVerificationStarted",
+                  "op": "==",
+                  "value": true
+                },
+                {
+                  "key": "ops.loadSheddingEventActive",
+                  "op": "==",
+                  "value": false
+                }
+              ],
+              "label": "Alarm panel",
+              "cursor": "use",
+              "defaultVerb": "use",
+              "interactions": [
+                {
+                  "verb": "use",
+                  "sceneId": "SCN-042"
+                },
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "world.examined.alarmPanel",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "DEFAULT",
+              "label": "Alarm panel",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "world.examined.alarmPanel",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "LOG_PRINTER_TRAY",
+          "name": "Log printer tray",
+          "geometry": {
+            "type": "rect",
+            "x": 120,
+            "y": 610,
+            "w": 380,
+            "h": 340
+          },
+          "priority": 7,
+          "states": [
+            {
+              "id": "PRINT_PRESENCE_PROOF",
+              "conditions": [
+                {
+                  "key": "story.act",
+                  "op": "==",
+                  "value": 3
+                },
+                {
+                  "key": "act3.presenceProofPrinted",
+                  "op": "==",
+                  "value": false
+                }
+              ],
+              "label": "Pull fresh printout",
+              "cursor": "pickup",
+              "defaultVerb": "pickup",
+              "interactions": [
+                {
+                  "verb": "pickup",
+                  "sceneId": "SCN-064"
+                },
+                {
+                  "verb": "use",
+                  "sceneId": "SCN-064"
+                }
+              ]
+            },
+            {
+              "id": "START_BASELINE_LOGS",
+              "conditions": [
+                {
+                  "key": "paperwork.baselineLoggingActive",
+                  "op": "==",
+                  "value": false
+                }
+              ],
+              "label": "Start baseline logs",
+              "cursor": "use",
+              "defaultVerb": "use",
+              "interactions": [
+                {
+                  "verb": "use",
+                  "sceneId": "SCN-037"
+                },
+                {
+                  "verb": "pickup",
+                  "sceneId": "SCN-037"
+                }
+              ]
+            },
+            {
+              "id": "DEFAULT",
+              "label": "Log printer tray",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "world.examined.logPrinter",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "PROCEDURE_BINDER",
+          "name": "Procedure binder",
+          "geometry": {
+            "type": "rect",
+            "x": 1210,
+            "y": 700,
+            "w": 420,
+            "h": 280
+          },
+          "priority": 6,
+          "states": [
+            {
+              "id": "START_OPERATIONAL_VERIFICATION",
+              "conditions": [
+                {
+                  "key": "ops.operationalVerificationStarted",
+                  "op": "==",
+                  "value": false
+                },
+                {
+                  "key": "ops.trainingGateCleared",
+                  "op": "==",
+                  "value": true
+                },
+                {
+                  "key": "ops.lotoTagged",
+                  "op": "==",
+                  "value": true
+                },
+                {
+                  "key": "ops.ventDamperOpen",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "label": "Procedure binder",
+              "cursor": "use",
+              "defaultVerb": "use",
+              "interactions": [
+                {
+                  "verb": "use",
+                  "sceneId": "SCN-038"
+                },
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "world.examined.procedureBinder",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "DEFAULT",
+              "label": "Procedure binder",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "world.examined.procedureBinder",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "EXIT_TO_OPS_CORRIDOR",
+          "name": "Exit to Ops Corridor",
+          "geometry": {
+            "type": "rect",
+            "x": 0,
+            "y": 980,
+            "w": 1920,
+            "h": 100
+          },
+          "priority": 1,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "To Ops Corridor",
+              "cursor": "go",
+              "defaultVerb": "go",
+              "interactions": [
+                {
+                  "verb": "go",
+                  "transitionToScreen": "HUB-10"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "DOOR_TO_OBSERVATION_DECK",
+          "name": "Door to Observation Deck",
+          "geometry": {
+            "type": "rect",
+            "x": 1680,
+            "y": 520,
+            "w": 220,
+            "h": 430
+          },
+          "priority": 2,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "Observation Deck",
+              "cursor": "go",
+              "defaultVerb": "go",
+              "interactions": [
+                {
+                  "verb": "go",
+                  "transitionToScreen": "HUB-12"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "screenId": "HUB-12",
+      "hotspots": [
+        {
+          "id": "REFLECTIVITY_TEST_STATION",
+          "name": "Reflectivity test station",
+          "geometry": {
+            "type": "rect",
+            "x": 520,
+            "y": 650,
+            "w": 520,
+            "h": 300
+          },
+          "priority": 1,
+          "states": [
+            {
+              "id": "READY",
+              "conditions": [
+                {
+                  "key": "ops.operationalVerificationStarted",
+                  "op": "==",
+                  "value": true
+                },
+                {
+                  "key": "ops.reflectivityTestCompleted",
+                  "op": "==",
+                  "value": false
+                }
+              ],
+              "label": "Run reflectivity test",
+              "cursor": "use",
+              "defaultVerb": "use",
+              "interactions": [
+                {
+                  "verb": "use",
+                  "sceneId": "SCN-040"
+                }
+              ]
+            },
+            {
+              "id": "INACTIVE",
+              "conditions": [
+                {
+                  "key": "ops.operationalVerificationStarted",
+                  "op": "!=",
+                  "value": true
+                }
+              ],
+              "label": "Reflectivity test station",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "effects": []
+                }
+              ]
+            },
+            {
+              "id": "COMPLETED",
+              "conditions": [
+                {
+                  "key": "ops.reflectivityTestCompleted",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "label": "Test station (completed)",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "effects": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "CALIBRATION_PUCK",
+          "name": "Calibration puck",
+          "geometry": {
+            "type": "rect",
+            "x": 760,
+            "y": 720,
+            "w": 120,
+            "h": 120
+          },
+          "priority": 2,
+          "states": [
+            {
+              "id": "AVAILABLE",
+              "conditions": [
+                {
+                  "key": "ops.reflectivityTestCompleted",
+                  "op": "==",
+                  "value": false
+                }
+              ],
+              "label": "Calibration puck",
+              "cursor": "use",
+              "defaultVerb": "use",
+              "interactions": [
+                {
+                  "verb": "use",
+                  "conditions": [
+                    {
+                      "key": "ops.operationalVerificationStarted",
+                      "op": "==",
+                      "value": true
+                    },
+                    {
+                      "key": "ops.reflectivityTestCompleted",
+                      "op": "==",
+                      "value": false
+                    }
+                  ],
+                  "sceneId": "SCN-040"
+                },
+                {
+                  "verb": "look",
+                  "effects": []
+                }
+              ]
+            },
+            {
+              "id": "MISSING",
+              "conditions": [
+                {
+                  "key": "ops.reflectivityTestCompleted",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "label": "Puck (missing)",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "effects": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "RETURN_CANISTER_TRAY",
+          "name": "Return canister tray",
+          "geometry": {
+            "type": "rect",
+            "x": 1380,
+            "y": 700,
+            "w": 420,
+            "h": 260
+          },
+          "priority": 1,
+          "states": [
+            {
+              "id": "EMPTY",
+              "conditions": [
+                {
+                  "key": "ops.reflectivityTestCompleted",
+                  "op": "==",
+                  "value": false
+                }
+              ],
+              "label": "Return canister tray (empty)",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "effects": []
+                }
+              ]
+            },
+            {
+              "id": "POST_TEST",
+              "conditions": [
+                {
+                  "key": "ops.reflectivityTestCompleted",
+                  "op": "==",
+                  "value": true
+                },
+                {
+                  "key": "inventory.items",
+                  "op": "in",
+                  "value": "ITEM_MISROUTED_CANISTER_RETURN_LABEL"
+                }
+              ],
+              "label": "Misrouted return label",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "effects": []
+                }
+              ]
+            },
+            {
+              "id": "COMPLETED_NO_ITEM",
+              "conditions": [
+                {
+                  "key": "ops.reflectivityTestCompleted",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "label": "Return canister tray",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "effects": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "OBSERVATION_WINDOW_LATCH",
+          "name": "Observation window latch",
+          "geometry": {
+            "type": "rect",
+            "x": 950,
+            "y": 330,
+            "w": 120,
+            "h": 180
+          },
+          "priority": 1,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "Window latch",
+              "cursor": "use",
+              "defaultVerb": "use",
+              "interactions": [
+                {
+                  "verb": "use",
+                  "transitionToScreen": "HUB-13"
+                },
+                {
+                  "verb": "look",
+                  "effects": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "NAV_LEFT_TO_TUBE_BAY",
+          "name": "Walkway left (Tube Bay Return Walkway)",
+          "geometry": {
+            "type": "rect",
+            "x": 0,
+            "y": 200,
+            "w": 140,
+            "h": 760
+          },
+          "priority": 0,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "Go left",
+              "cursor": "go",
+              "defaultVerb": "go",
+              "interactions": [
+                {
+                  "verb": "go",
+                  "transitionToScreen": "HUB-07"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "NAV_DOWN_TO_CONTROL_ROOM",
+          "name": "Stairs down (Control Room)",
+          "geometry": {
+            "type": "rect",
+            "x": 760,
+            "y": 960,
+            "w": 400,
+            "h": 120
+          },
+          "priority": 0,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "Go down",
+              "cursor": "go",
+              "defaultVerb": "go",
+              "interactions": [
+                {
+                  "verb": "go",
+                  "transitionToScreen": "HUB-11"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "screenId": "HUB-13",
+      "hotspots": [
+        {
+          "id": "SPHERE_SURFACE",
+          "name": "Containment sphere surface",
+          "geometry": {
+            "type": "rect",
+            "x": 640,
+            "y": 150,
+            "w": 640,
+            "h": 760
+          },
+          "priority": 10,
+          "states": [
+            {
+              "id": "ACT3_FLICKER",
+              "conditions": [
+                {
+                  "key": "story.act",
+                  "op": "==",
+                  "value": 3
+                }
+              ],
+              "label": "Flickering containment sphere",
+              "cursor": "use",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "playSound": "ui.inspect"
+                },
+                {
+                  "verb": "go",
+                  "conditions": [
+                    {
+                      "key": "world.sphereMirrorFlicker",
+                      "op": "==",
+                      "value": true
+                    }
+                  ],
+                  "transitionToScreen": "LIM-01",
+                  "playAnimation": "phase_lock_routing"
+                }
+              ]
+            },
+            {
+              "id": "ACT1_PHASE_LOCK_ROUTE",
+              "conditions": [
+                {
+                  "key": "story.act",
+                  "op": "==",
+                  "value": 1
+                }
+              ],
+              "label": "Containment sphere",
+              "cursor": "use",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "playSound": "ui.inspect"
+                },
+                {
+                  "verb": "use",
+                  "conditions": [
+                    {
+                      "key": "ops.alignmentSequenceInitiated",
+                      "op": "==",
+                      "value": true
+                    },
+                    {
+                      "key": "paperwork.reflectiveBehaviorDocumented",
+                      "op": "==",
+                      "value": true
+                    },
+                    {
+                      "key": "story.act",
+                      "op": "==",
+                      "value": 1
+                    }
+                  ],
+                  "sceneId": "SCN-044"
+                }
+              ]
+            },
+            {
+              "id": "DEFAULT",
+              "label": "Containment sphere",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "playSound": "ui.inspect"
+                },
+                {
+                  "verb": "go",
+                  "conditions": [
+                    {
+                      "key": "story.act",
+                      "op": "!=",
+                      "value": 1
+                    }
+                  ],
+                  "transitionToScreen": "LIM-01",
+                  "playAnimation": "phase_lock_routing"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "STATUS_CLUSTER",
+          "name": "Status indicator cluster",
+          "geometry": {
+            "type": "rect",
+            "x": 240,
+            "y": 260,
+            "w": 320,
+            "h": 260
+          },
+          "priority": 5,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "Status indicators",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "playSound": "ui.inspect"
+                },
+                {
+                  "verb": "use",
+                  "playAnimation": "panel_cycle_status"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "SCAN_PANEL",
+          "name": "Interface scan panel",
+          "geometry": {
+            "type": "rect",
+            "x": 1410,
+            "y": 330,
+            "w": 360,
+            "h": 300
+          },
+          "priority": 8,
+          "states": [
+            {
+              "id": "ACT3_SUBMIT_VARIANCE",
+              "conditions": [
+                {
+                  "key": "act3.varianceTemplateFound",
+                  "op": "==",
+                  "value": true
+                },
+                {
+                  "key": "act3.varianceSubmitted",
+                  "op": "==",
+                  "value": false
+                },
+                {
+                  "key": "world.sphereMirrorFlicker",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "label": "Scan panel (submit variance)",
+              "cursor": "use",
+              "defaultVerb": "use",
+              "interactions": [
+                {
+                  "verb": "use",
+                  "sceneId": "SCN-067"
+                },
+                {
+                  "verb": "look",
+                  "playSound": "ui.inspect"
+                }
+              ]
+            },
+            {
+              "id": "DEFAULT",
+              "label": "Interface scan panel",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "playSound": "ui.inspect"
+                },
+                {
+                  "verb": "use",
+                  "playSound": "ui.error_denied"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "EMERGENCY_STOP",
+          "name": "Emergency stop",
+          "geometry": {
+            "type": "rect",
+            "x": 1485,
+            "y": 650,
+            "w": 210,
+            "h": 210
+          },
+          "priority": 7,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "Emergency stop",
+              "cursor": "use",
+              "defaultVerb": "use",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "playSound": "ui.inspect"
+                },
+                {
+                  "verb": "use",
+                  "playAnimation": "emergency_stop_press",
+                  "playSound": "sfx.emergency_stop_click"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "WITNESS_TAPE_PERIMETER",
+          "name": "Witness marker tape (safe perimeter)",
+          "geometry": {
+            "type": "rect",
+            "x": 140,
+            "y": 840,
+            "w": 1640,
+            "h": 170
+          },
+          "priority": 2,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "Witness marker tape",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "playSound": "ui.inspect"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "EXIT_TO_HUB_12",
+          "name": "Stairs up to observation level",
+          "geometry": {
+            "type": "rect",
+            "x": 780,
+            "y": 990,
+            "w": 360,
+            "h": 90
+          },
+          "priority": 1,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "Up to observation level",
+              "cursor": "go",
+              "defaultVerb": "go",
+              "interactions": [
+                {
+                  "verb": "go",
+                  "transitionToScreen": "HUB-12",
+                  "playAnimation": "ascend_to_observation"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "screenId": "HUB-14",
+      "hotspots": [
+        {
+          "id": "FORMS_RACK",
+          "name": "Forms rack (misfit templates)",
+          "geometry": {
+            "type": "rect",
+            "x": 140,
+            "y": 330,
+            "w": 520,
+            "h": 520
+          },
+          "priority": 2,
+          "states": [
+            {
+              "id": "TEMPLATE_AVAILABLE",
+              "conditions": [
+                {
+                  "key": "paperwork.trainingWaiverTemplateCollected",
+                  "op": "==",
+                  "value": false
+                }
+              ],
+              "label": "Forms rack",
+              "cursor": "pickup",
+              "defaultVerb": "pickup",
+              "interactions": [
+                {
+                  "verb": "pickup",
+                  "sceneId": "SCN-029"
+                },
+                {
+                  "verb": "look",
+                  "playSound": "ui_paper_rustle"
+                }
+              ]
+            },
+            {
+              "id": "TEMPLATE_TAKEN",
+              "conditions": [
+                {
+                  "key": "paperwork.trainingWaiverTemplateCollected",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "label": "Forms rack",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "playSound": "ui_paper_rustle"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ENVELOPE_STACK",
+          "name": "Envelope stack",
+          "geometry": {
+            "type": "rect",
+            "x": 760,
+            "y": 740,
+            "w": 520,
+            "h": 260
+          },
+          "priority": 1,
+          "states": [
+            {
+              "id": "FIRST_NOTE",
+              "conditions": [
+                {
+                  "key": "knowledge.envelopeStackNoted",
+                  "op": "not_exists"
+                }
+              ],
+              "label": "Envelope stack",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "knowledge.envelopeStackNoted",
+                      "action": "set",
+                      "value": true
+                    },
+                    {
+                      "key": "paperwork.notes",
+                      "action": "add",
+                      "value": "Envelope stack: unusually new, clean edges; separated like it expects to be used soon."
+                    }
+                  ],
+                  "playSound": "ui_paper_tap"
+                }
+              ]
+            },
+            {
+              "id": "REPEAT",
+              "label": "Envelope stack",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "playSound": "ui_paper_tap"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "BARCODE_NOTICE",
+          "name": "Notice with unfamiliar barcode format",
+          "geometry": {
+            "type": "rect",
+            "x": 1160,
+            "y": 240,
+            "w": 620,
+            "h": 520
+          },
+          "priority": 3,
+          "states": [
+            {
+              "id": "ACT3_REINTERPRET",
+              "conditions": [
+                {
+                  "key": "act3.mtaNoticeReceived",
+                  "op": "==",
+                  "value": true
+                },
+                {
+                  "key": "act3.nonLocalNoticesReinterpreted",
+                  "op": "==",
+                  "value": false
+                }
+              ],
+              "label": "Unfamiliar barcode notice",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "sceneId": "SCN-066"
+                }
+              ]
+            },
+            {
+              "id": "FIRST_EXAM",
+              "conditions": [
+                {
+                  "key": "knowledge.barcodeNoticeExamined",
+                  "op": "not_exists"
+                }
+              ],
+              "label": "Barcode notice",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "knowledge.barcodeNoticeExamined",
+                      "action": "set",
+                      "value": true
+                    },
+                    {
+                      "key": "paperwork.notes",
+                      "action": "add",
+                      "value": "Notices wall: one barcode format is too crisp/standardized to belong with the rest."
+                    }
+                  ],
+                  "playSound": "ui_scan_beep_soft"
+                }
+              ]
+            },
+            {
+              "id": "GENERIC",
+              "label": "Barcode notice",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "playSound": "ui_scan_beep_soft"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "EXIT_TO_LOBBY",
+          "name": "Exit to Lobby",
+          "geometry": {
+            "type": "rect",
+            "x": 0,
+            "y": 220,
+            "w": 170,
+            "h": 780
+          },
+          "priority": 0,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "To Lobby",
+              "cursor": "go",
+              "defaultVerb": "go",
+              "interactions": [
+                {
+                  "verb": "go",
+                  "transitionToScreen": "HUB-06",
+                  "playAnimation": "exit_to_lobby"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "EXIT_TO_COPY_CORRIDOR",
+          "name": "Back corridor to Copy Room",
+          "geometry": {
+            "type": "rect",
+            "x": 1750,
+            "y": 260,
+            "w": 170,
+            "h": 720
+          },
+          "priority": 0,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "To Copy Room",
+              "cursor": "go",
+              "defaultVerb": "go",
+              "interactions": [
+                {
+                  "verb": "go",
+                  "transitionToScreen": "HUB-08",
+                  "playAnimation": "back_corridor_to_copy_room"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "screenId": "LIM-01",
+      "hotspots": [
+        {
+          "id": "BARCODE_KIOSK",
+          "name": "Barcode kiosk (unallocated mass)",
+          "geometry": {
+            "type": "rect",
+            "x": 780,
+            "y": 280,
+            "w": 360,
+            "h": 470
+          },
+          "priority": 2,
+          "states": [
+            {
+              "id": "READY_TO_SCAN",
+              "conditions": [
+                {
+                  "key": "paperwork.unallocatedMassSlipIssued",
+                  "op": "==",
+                  "value": false
+                },
+                {
+                  "key": "inventory.items",
+                  "op": "in",
+                  "value": [
+                    "ITEM_MISROUTED_CANISTER_RETURN_LABEL"
+                  ]
+                }
+              ],
+              "label": "Scan misrouted-item barcode",
+              "cursor": "use",
+              "defaultVerb": "use",
+              "interactions": [
+                {
+                  "verb": "use",
+                  "sceneId": "SCN-046"
+                }
+              ]
+            },
+            {
+              "id": "NEEDS_BARCODE",
+              "conditions": [
+                {
+                  "key": "paperwork.unallocatedMassSlipIssued",
+                  "op": "==",
+                  "value": false
+                },
+                {
+                  "key": "inventory.items",
+                  "op": "not_in",
+                  "value": [
+                    "ITEM_MISROUTED_CANISTER_RETURN_LABEL"
+                  ]
+                }
+              ],
+              "label": "Barcode kiosk",
+              "cursor": "use",
+              "defaultVerb": "use",
+              "interactions": [
+                {
+                  "verb": "use",
+                  "playSound": "kiosk_denied"
+                }
+              ]
+            },
+            {
+              "id": "SLIP_ALREADY_PRINTED",
+              "conditions": [
+                {
+                  "key": "paperwork.unallocatedMassSlipIssued",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "label": "Barcode kiosk (slip already issued)",
+              "cursor": "use",
+              "defaultVerb": "use",
+              "interactions": [
+                {
+                  "verb": "use",
+                  "playSound": "kiosk_repeat_beep"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "INCIDENT_QUEUE_STANCHIONS",
+          "name": "Incident queue stanchions",
+          "geometry": {
+            "type": "rect",
+            "x": 520,
+            "y": 660,
+            "w": 900,
+            "h": 360
+          },
+          "priority": 0,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "Queue toward Intake Hall",
+              "cursor": "go",
+              "defaultVerb": "go",
+              "interactions": [
+                {
+                  "verb": "go",
+                  "transitionToScreen": "LIM-02"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "SEALED_BAY_DOOR",
+          "name": "Sealed bay door (aperture side)",
+          "geometry": {
+            "type": "rect",
+            "x": 40,
+            "y": 220,
+            "w": 520,
+            "h": 700
+          },
+          "priority": 1,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "Aperture bay door",
+              "cursor": "go",
+              "defaultVerb": "go",
+              "interactions": [
+                {
+                  "verb": "go",
+                  "transitionToScreen": "LIM-08"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "EXIT_TO_INTAKE_HALL",
+          "name": "Exit right to Intake Hall",
+          "geometry": {
+            "type": "rect",
+            "x": 1580,
+            "y": 210,
+            "w": 320,
+            "h": 780
+          },
+          "priority": 3,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "To Intake Hall",
+              "cursor": "go",
+              "defaultVerb": "go",
+              "interactions": [
+                {
+                  "verb": "go",
+                  "transitionToScreen": "LIM-02"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "SERVICE_CORRIDOR_ACCESS",
+          "name": "Service corridors access",
+          "geometry": {
+            "type": "rect",
+            "x": 1210,
+            "y": 260,
+            "w": 310,
+            "h": 520
+          },
+          "priority": 1,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "Service corridors",
+              "cursor": "go",
+              "defaultVerb": "go",
+              "interactions": [
+                {
+                  "verb": "go",
+                  "transitionToScreen": "LIM-03"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "screenId": "LIM-02",
+      "hotspots": [
+        {
+          "id": "EXIT_LEFT",
+          "name": "Return to Concourse (Left)",
+          "geometry": {
+            "type": "rect",
+            "x": 0,
+            "y": 420,
+            "w": 220,
+            "h": 660
+          },
+          "priority": 1,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "Concourse",
+              "cursor": "go",
+              "defaultVerb": "go",
+              "interactions": [
+                {
+                  "verb": "go",
+                  "transitionToScreen": "LIM-01"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "EXIT_RIGHT",
+          "name": "Door to Archive (Right)",
+          "geometry": {
+            "type": "rect",
+            "x": 1700,
+            "y": 400,
+            "w": 220,
+            "h": 680
+          },
+          "priority": 1,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "Archive",
+              "cursor": "go",
+              "defaultVerb": "go",
+              "interactions": [
+                {
+                  "verb": "go",
+                  "transitionToScreen": "LIM-04"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "DOOR_BACK_CORRIDOR",
+          "name": "Back Corridor Access",
+          "geometry": {
+            "type": "rect",
+            "x": 1380,
+            "y": 300,
+            "w": 260,
+            "h": 340
+          },
+          "priority": 2,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "Back corridor",
+              "cursor": "go",
+              "defaultVerb": "go",
+              "interactions": [
+                {
+                  "verb": "go",
+                  "transitionToScreen": "LIM-03"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "WIN0_INTAKE",
+          "name": "Window 0: Intake (TER)",
+          "geometry": {
+            "type": "rect",
+            "x": 140,
+            "y": 120,
+            "w": 320,
+            "h": 270
+          },
+          "priority": 5,
+          "states": [
+            {
+              "id": "CAN_ISSUE_TER",
+              "conditions": [
+                {
+                  "key": "act2.terIssued",
+                  "op": "==",
+                  "value": false
+                },
+                {
+                  "key": "paperwork.unallocatedMassSlipIssued",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "label": "Window 0: Intake",
+              "cursor": "use",
+              "defaultVerb": "use",
+              "interactions": [
+                {
+                  "verb": "use",
+                  "sceneId": "SCN-048"
+                },
+                {
+                  "verb": "look",
+                  "playSound": "ui_hover_paper"
+                }
+              ]
+            },
+            {
+              "id": "NEEDS_CATEGORY_SLIP",
+              "conditions": [
+                {
+                  "key": "act2.terIssued",
+                  "op": "==",
+                  "value": false
+                },
+                {
+                  "key": "paperwork.unallocatedMassSlipIssued",
+                  "op": "!=",
+                  "value": true
+                }
+              ],
+              "label": "Window 0: Intake (needs category slip)",
+              "cursor": "use",
+              "defaultVerb": "use",
+              "interactions": [
+                {
+                  "verb": "use",
+                  "playSound": "ui_denied_buzz"
+                },
+                {
+                  "verb": "look",
+                  "playSound": "ui_hover_paper"
+                }
+              ]
+            },
+            {
+              "id": "TER_ALREADY_ISSUED",
+              "conditions": [
+                {
+                  "key": "act2.terIssued",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "label": "Window 0: Intake (filed)",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "playSound": "ui_hover_paper"
+                },
+                {
+                  "verb": "use",
+                  "playSound": "window_idle_click"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "WIN3_ORIENTATION",
+          "name": "Window 3: Orientation",
+          "geometry": {
+            "type": "rect",
+            "x": 500,
+            "y": 120,
+            "w": 320,
+            "h": 270
+          },
+          "priority": 5,
+          "states": [
+            {
+              "id": "COLLECT_PAMPHLET",
+              "conditions": [
+                {
+                  "key": "act2.terIssued",
+                  "op": "==",
+                  "value": true
+                },
+                {
+                  "key": "act2.orientationPamphletCollected",
+                  "op": "==",
+                  "value": false
+                }
+              ],
+              "label": "Window 3: Orientation",
+              "cursor": "use",
+              "defaultVerb": "use",
+              "interactions": [
+                {
+                  "verb": "use",
+                  "sceneId": "SCN-049"
+                },
+                {
+                  "verb": "look",
+                  "playSound": "ui_hover_paper"
+                }
+              ]
+            },
+            {
+              "id": "LOCKED_NO_TER",
+              "conditions": [
+                {
+                  "key": "act2.terIssued",
+                  "op": "==",
+                  "value": false
+                }
+              ],
+              "label": "Window 3: Orientation (requires TER)",
+              "cursor": "use",
+              "defaultVerb": "use",
+              "interactions": [
+                {
+                  "verb": "use",
+                  "playSound": "ui_denied_buzz"
+                },
+                {
+                  "verb": "look",
+                  "playSound": "ui_hover_paper"
+                }
+              ]
+            },
+            {
+              "id": "ALREADY_COLLECTED",
+              "conditions": [
+                {
+                  "key": "act2.terIssued",
+                  "op": "==",
+                  "value": true
+                },
+                {
+                  "key": "act2.orientationPamphletCollected",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "label": "Window 3: Orientation (empty)",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "playSound": "ui_hover_paper"
+                },
+                {
+                  "verb": "use",
+                  "playSound": "window_idle_click"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "WIN5_SAFETY",
+          "name": "Window 5: Safety",
+          "geometry": {
+            "type": "rect",
+            "x": 860,
+            "y": 120,
+            "w": 320,
+            "h": 270
+          },
+          "priority": 5,
+          "states": [
+            {
+              "id": "COLLECT_GLOVE_TAG",
+              "conditions": [
+                {
+                  "key": "act2.terIssued",
+                  "op": "==",
+                  "value": true
+                },
+                {
+                  "key": "act2.gloveTagCollected",
+                  "op": "==",
+                  "value": false
+                }
+              ],
+              "label": "Window 5: Safety",
+              "cursor": "use",
+              "defaultVerb": "use",
+              "interactions": [
+                {
+                  "verb": "use",
+                  "sceneId": "SCN-050"
+                },
+                {
+                  "verb": "look",
+                  "playSound": "ui_hover_plastic"
+                }
+              ]
+            },
+            {
+              "id": "LOCKED_NO_TER",
+              "conditions": [
+                {
+                  "key": "act2.terIssued",
+                  "op": "==",
+                  "value": false
+                }
+              ],
+              "label": "Window 5: Safety (requires TER)",
+              "cursor": "use",
+              "defaultVerb": "use",
+              "interactions": [
+                {
+                  "verb": "use",
+                  "playSound": "ui_denied_buzz"
+                },
+                {
+                  "verb": "look",
+                  "playSound": "ui_hover_plastic"
+                }
+              ]
+            },
+            {
+              "id": "ALREADY_COLLECTED",
+              "conditions": [
+                {
+                  "key": "act2.terIssued",
+                  "op": "==",
+                  "value": true
+                },
+                {
+                  "key": "act2.gloveTagCollected",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "label": "Window 5: Safety (issued)",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "playSound": "ui_hover_plastic"
+                },
+                {
+                  "verb": "use",
+                  "playSound": "window_idle_click"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "WIN7_PROPERTY",
+          "name": "Window 7: Property",
+          "geometry": {
+            "type": "rect",
+            "x": 1220,
+            "y": 120,
+            "w": 320,
+            "h": 270
+          },
+          "priority": 5,
+          "states": [
+            {
+              "id": "COLLECT_CLAIM_STUB",
+              "conditions": [
+                {
+                  "key": "act2.terIssued",
+                  "op": "==",
+                  "value": true
+                },
+                {
+                  "key": "act2.propertyClaimStubCollected",
+                  "op": "==",
+                  "value": false
+                }
+              ],
+              "label": "Window 7: Property",
+              "cursor": "use",
+              "defaultVerb": "use",
+              "interactions": [
+                {
+                  "verb": "use",
+                  "sceneId": "SCN-051"
+                },
+                {
+                  "verb": "look",
+                  "playSound": "ui_hover_paper"
+                }
+              ]
+            },
+            {
+              "id": "LOCKED_NO_TER",
+              "conditions": [
+                {
+                  "key": "act2.terIssued",
+                  "op": "==",
+                  "value": false
+                }
+              ],
+              "label": "Window 7: Property (requires TER)",
+              "cursor": "use",
+              "defaultVerb": "use",
+              "interactions": [
+                {
+                  "verb": "use",
+                  "playSound": "ui_denied_buzz"
+                },
+                {
+                  "verb": "look",
+                  "playSound": "ui_hover_paper"
+                }
+              ]
+            },
+            {
+              "id": "ALREADY_COLLECTED",
+              "conditions": [
+                {
+                  "key": "act2.terIssued",
+                  "op": "==",
+                  "value": true
+                },
+                {
+                  "key": "act2.propertyClaimStubCollected",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "label": "Window 7: Property (stub issued)",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "playSound": "ui_hover_paper"
+                },
+                {
+                  "verb": "use",
+                  "playSound": "window_idle_click"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "WIN9_COMPLAINTS",
+          "name": "Window 9: Complaints",
+          "geometry": {
+            "type": "rect",
+            "x": 1580,
+            "y": 120,
+            "w": 320,
+            "h": 270
+          },
+          "priority": 5,
+          "states": [
+            {
+              "id": "COLLECT_STAMP",
+              "conditions": [
+                {
+                  "key": "act2.terIssued",
+                  "op": "==",
+                  "value": true
+                },
+                {
+                  "key": "act2.complaintStampCollected",
+                  "op": "==",
+                  "value": false
+                }
+              ],
+              "label": "Window 9: Complaints",
+              "cursor": "use",
+              "defaultVerb": "use",
+              "interactions": [
+                {
+                  "verb": "use",
+                  "sceneId": "SCN-052"
+                },
+                {
+                  "verb": "look",
+                  "playSound": "ui_hover_stamp"
+                }
+              ]
+            },
+            {
+              "id": "LOCKED_NO_TER",
+              "conditions": [
+                {
+                  "key": "act2.terIssued",
+                  "op": "==",
+                  "value": false
+                }
+              ],
+              "label": "Window 9: Complaints (requires TER)",
+              "cursor": "use",
+              "defaultVerb": "use",
+              "interactions": [
+                {
+                  "verb": "use",
+                  "playSound": "ui_denied_buzz"
+                },
+                {
+                  "verb": "look",
+                  "playSound": "ui_hover_stamp"
+                }
+              ]
+            },
+            {
+              "id": "ALREADY_COLLECTED",
+              "conditions": [
+                {
+                  "key": "act2.terIssued",
+                  "op": "==",
+                  "value": true
+                },
+                {
+                  "key": "act2.complaintStampCollected",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "label": "Window 9: Complaints (processed)",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "playSound": "ui_hover_stamp"
+                },
+                {
+                  "verb": "use",
+                  "playSound": "window_idle_click"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "FORMS_RACK",
+          "name": "Forms rack (incident templates)",
+          "geometry": {
+            "type": "rect",
+            "x": 760,
+            "y": 420,
+            "w": 400,
+            "h": 480
+          },
+          "priority": 3,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "Forms rack",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "playSound": "ui_rustle_forms"
+                },
+                {
+                  "verb": "use",
+                  "playSound": "ui_rustle_forms"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "SIDE_KIOSK_TER",
+          "name": "Side kiosk (prints TER / routing slips)",
+          "geometry": {
+            "type": "rect",
+            "x": 320,
+            "y": 520,
+            "w": 260,
+            "h": 340
+          },
+          "priority": 2,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "Print kiosk",
+              "cursor": "use",
+              "defaultVerb": "use",
+              "interactions": [
+                {
+                  "verb": "use",
+                  "playSound": "kiosk_beep_print"
+                },
+                {
+                  "verb": "look",
+                  "playSound": "ui_hover_metal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "screenId": "LIM-03",
+      "hotspots": [
+        {
+          "id": "MAP_KIOSK",
+          "name": "Map kiosk",
+          "geometry": {
+            "type": "rect",
+            "x": 780,
+            "y": 250,
+            "w": 360,
+            "h": 610
+          },
+          "priority": 5,
+          "states": [
+            {
+              "id": "PRINT_AVAILABLE",
+              "conditions": [
+                {
+                  "key": "act2.terIssued",
+                  "op": "==",
+                  "value": true
+                },
+                {
+                  "key": "act2.mapFragment1Printed",
+                  "op": "==",
+                  "value": false
+                }
+              ],
+              "label": "Map kiosk",
+              "cursor": "use",
+              "defaultVerb": "use",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "playSound": "ui_focus_soft"
+                },
+                {
+                  "verb": "use",
+                  "sceneId": "SCN-053"
+                }
+              ]
+            },
+            {
+              "id": "DEFAULT",
+              "label": "Map kiosk",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "playSound": "ui_focus_soft"
+                },
+                {
+                  "verb": "use",
+                  "playSound": "ui_error_denied"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "BADGE_VALIDATOR",
+          "name": "Badge validator",
+          "geometry": {
+            "type": "rect",
+            "x": 560,
+            "y": 440,
+            "w": 170,
+            "h": 260
+          },
+          "priority": 4,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "Badge validator",
+              "cursor": "use",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "playSound": "ui_focus_soft"
+                },
+                {
+                  "verb": "use",
+                  "playSound": "device_beep_neutral"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "SERVICE_ROUTE_READER_LOOP",
+          "name": "Service-route reader loop",
+          "geometry": {
+            "type": "rect",
+            "x": 1200,
+            "y": 430,
+            "w": 240,
+            "h": 280
+          },
+          "priority": 4,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "Reader loop",
+              "cursor": "use",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "playSound": "ui_focus_soft"
+                },
+                {
+                  "verb": "use",
+                  "playSound": "device_beep_neutral"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "EXIT_TO_CONCOURSE",
+          "name": "Return to concourse",
+          "geometry": {
+            "type": "rect",
+            "x": 700,
+            "y": 900,
+            "w": 520,
+            "h": 180
+          },
+          "priority": 1,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "To Concourse",
+              "cursor": "go",
+              "defaultVerb": "go",
+              "interactions": [
+                {
+                  "verb": "go",
+                  "transitionToScreen": "LIM-01"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "DOOR_TO_INTAKE_HALL",
+          "name": "Door to Intake Hall",
+          "geometry": {
+            "type": "rect",
+            "x": 380,
+            "y": 200,
+            "w": 300,
+            "h": 680
+          },
+          "priority": 2,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "To Intake Hall",
+              "cursor": "go",
+              "defaultVerb": "go",
+              "interactions": [
+                {
+                  "verb": "go",
+                  "transitionToScreen": "LIM-02"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "DOOR_TO_ARCHIVE",
+          "name": "Door to Archive",
+          "geometry": {
+            "type": "rect",
+            "x": 1240,
+            "y": 200,
+            "w": 300,
+            "h": 680
+          },
+          "priority": 2,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "To Archive",
+              "cursor": "go",
+              "defaultVerb": "go",
+              "interactions": [
+                {
+                  "verb": "go",
+                  "transitionToScreen": "LIM-04"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "DOOR_TO_SCHEDULING_COUNTER",
+          "name": "Door to Scheduling Counter",
+          "geometry": {
+            "type": "rect",
+            "x": 0,
+            "y": 200,
+            "w": 260,
+            "h": 680
+          },
+          "priority": 1,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "To Scheduling",
+              "cursor": "go",
+              "defaultVerb": "go",
+              "interactions": [
+                {
+                  "verb": "go",
+                  "transitionToScreen": "LIM-06"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "DOOR_TO_MAINTENANCE_TRIAGE",
+          "name": "Door to Maintenance Triage",
+          "geometry": {
+            "type": "rect",
+            "x": 1660,
+            "y": 200,
+            "w": 260,
+            "h": 680
+          },
+          "priority": 1,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "To Maintenance",
+              "cursor": "go",
+              "defaultVerb": "go",
+              "interactions": [
+                {
+                  "verb": "go",
+                  "transitionToScreen": "LIM-05"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "screenId": "LIM-04",
+      "hotspots": [
+        {
+          "id": "CATALOG_TERMINAL",
+          "name": "Catalog terminal",
+          "geometry": {
+            "type": "rect",
+            "x": 700,
+            "y": 520,
+            "w": 520,
+            "h": 420
+          },
+          "priority": 10,
+          "states": [
+            {
+              "id": "METADATA_AVAILABLE",
+              "conditions": [
+                {
+                  "key": "act2.terIssued",
+                  "op": "==",
+                  "value": true
+                },
+                {
+                  "key": "act2.legacyMetadataSeen",
+                  "op": "==",
+                  "value": false
+                }
+              ],
+              "label": "Catalog terminal",
+              "cursor": "use",
+              "defaultVerb": "use",
+              "interactions": [
+                {
+                  "verb": "use",
+                  "sceneId": "SCN-054"
+                },
+                {
+                  "verb": "look",
+                  "playSound": "ui_hover"
+                }
+              ]
+            },
+            {
+              "id": "METADATA_ALREADY_SEEN",
+              "conditions": [
+                {
+                  "key": "act2.terIssued",
+                  "op": "==",
+                  "value": true
+                },
+                {
+                  "key": "act2.legacyMetadataSeen",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "label": "Catalog terminal",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "playSound": "ui_hover"
+                },
+                {
+                  "verb": "use",
+                  "playSound": "ui_error_already_scanned"
+                }
+              ]
+            },
+            {
+              "id": "LOCKED_NO_TER",
+              "conditions": [
+                {
+                  "key": "act2.terIssued",
+                  "op": "==",
+                  "value": false
+                }
+              ],
+              "label": "Catalog terminal",
+              "cursor": "use",
+              "defaultVerb": "use",
+              "interactions": [
+                {
+                  "verb": "use",
+                  "playSound": "ui_error_locked"
+                },
+                {
+                  "verb": "look",
+                  "playSound": "ui_hover"
+                }
+              ]
+            },
+            {
+              "id": "DEFAULT",
+              "label": "Catalog terminal",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "playSound": "ui_hover"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "INDEX_RULES_PLACARDS",
+          "name": "Index rules placards",
+          "geometry": {
+            "type": "rect",
+            "x": 610,
+            "y": 110,
+            "w": 700,
+            "h": 280
+          },
+          "priority": 5,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "Index rules placards",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "playSound": "ui_read"
+                },
+                {
+                  "verb": "use",
+                  "playSound": "ui_read"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "LEGACY_DRAWER_BANK",
+          "name": "Legacy drawer bank",
+          "geometry": {
+            "type": "rect",
+            "x": 1380,
+            "y": 340,
+            "w": 460,
+            "h": 600
+          },
+          "priority": 6,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "Legacy drawer bank",
+              "cursor": "use",
+              "defaultVerb": "use",
+              "interactions": [
+                {
+                  "verb": "use",
+                  "playAnimation": "drawer_rattle"
+                },
+                {
+                  "verb": "look",
+                  "playSound": "ui_hover"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "EXIT_LEFT",
+          "name": "Return to Intake Hall",
+          "geometry": {
+            "type": "rect",
+            "x": 0,
+            "y": 0,
+            "w": 140,
+            "h": 1080
+          },
+          "priority": -5,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "To Intake Hall",
+              "cursor": "go",
+              "defaultVerb": "go",
+              "interactions": [
+                {
+                  "verb": "go",
+                  "transitionToScreen": "LIM-02"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "EXIT_RIGHT",
+          "name": "Back Corridor to Triage",
+          "geometry": {
+            "type": "rect",
+            "x": 1780,
+            "y": 0,
+            "w": 140,
+            "h": 1080
+          },
+          "priority": -5,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "To Triage",
+              "cursor": "go",
+              "defaultVerb": "go",
+              "interactions": [
+                {
+                  "verb": "go",
+                  "transitionToScreen": "LIM-05"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "EXIT_DOWN",
+          "name": "Exit to Corridors",
+          "geometry": {
+            "type": "rect",
+            "x": 0,
+            "y": 950,
+            "w": 1920,
+            "h": 130
+          },
+          "priority": -10,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "To Corridors",
+              "cursor": "go",
+              "defaultVerb": "go",
+              "interactions": [
+                {
+                  "verb": "go",
+                  "transitionToScreen": "LIM-03"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "screenId": "LIM-05",
+      "hotspots": [
+        {
+          "id": "LIM05_EXIT_LEFT",
+          "name": "Exit to Corridors (Left)",
+          "geometry": {
+            "type": "rect",
+            "x": 0,
+            "y": 0,
+            "w": 160,
+            "h": 1080
+          },
+          "priority": 5,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "Corridors",
+              "cursor": "go",
+              "defaultVerb": "go",
+              "interactions": [
+                {
+                  "verb": "go",
+                  "transitionToScreen": "LIM-03"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "LIM05_EXIT_DOWN",
+          "name": "Return to Archive (Down)",
+          "geometry": {
+            "type": "rect",
+            "x": 0,
+            "y": 980,
+            "w": 1920,
+            "h": 100
+          },
+          "priority": 4,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "Archive",
+              "cursor": "go",
+              "defaultVerb": "go",
+              "interactions": [
+                {
+                  "verb": "go",
+                  "transitionToScreen": "LIM-04"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "LIM05_EXIT_BAY_DOOR",
+          "name": "Bay Access Door",
+          "geometry": {
+            "type": "rect",
+            "x": 1650,
+            "y": 240,
+            "w": 270,
+            "h": 740
+          },
+          "priority": 6,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "Bay staging",
+              "cursor": "go",
+              "defaultVerb": "go",
+              "interactions": [
+                {
+                  "verb": "go",
+                  "transitionToScreen": "LIM-07"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "LIM05_AMR_READER",
+          "name": "AMR registry reader",
+          "geometry": {
+            "type": "rect",
+            "x": 1450,
+            "y": 520,
+            "w": 330,
+            "h": 260
+          },
+          "priority": 10,
+          "states": [
+            {
+              "id": "ISSUE_AMR",
+              "conditions": [
+                {
+                  "key": "act2.amrIssued",
+                  "op": "==",
+                  "value": false
+                },
+                {
+                  "key": "act2.legacyMetadataSeen",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "label": "AMR registry reader",
+              "cursor": "use",
+              "defaultVerb": "use",
+              "interactions": [
+                {
+                  "verb": "use",
+                  "sceneId": "SCN-055"
+                },
+                {
+                  "verb": "look",
+                  "playSound": "SFX_READER_HUM"
+                }
+              ]
+            },
+            {
+              "id": "POST_ISSUE",
+              "conditions": [
+                {
+                  "key": "act2.amrIssued",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "label": "AMR registry reader",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "playSound": "SFX_READER_HUM"
+                },
+                {
+                  "verb": "use",
+                  "playSound": "SFX_READER_BEEP_OK",
+                  "playAnimation": "AMR_READER_STATUS_BLINK"
+                }
+              ]
+            },
+            {
+              "id": "LOCKED",
+              "label": "AMR registry reader",
+              "cursor": "use",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "playSound": "SFX_READER_HUM"
+                },
+                {
+                  "verb": "use",
+                  "playSound": "SFX_READER_BEEP_ERROR",
+                  "playAnimation": "AMR_READER_STATUS_RED"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "LIM05_TOOL_FIXTURE",
+          "name": "Workbench tool fixture",
+          "geometry": {
+            "type": "rect",
+            "x": 520,
+            "y": 560,
+            "w": 760,
+            "h": 380
+          },
+          "priority": 7,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "Tool fixture",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "playSound": "SFX_TOOL_RATTLE_SOFT"
+                },
+                {
+                  "verb": "use",
+                  "playSound": "SFX_TOOL_CLACK",
+                  "playAnimation": "TOOL_FIXTURE_TAP"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "LIM05_SCOPE_BOARD",
+          "name": "Scope board",
+          "geometry": {
+            "type": "rect",
+            "x": 650,
+            "y": 180,
+            "w": 650,
+            "h": 300
+          },
+          "priority": 6,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "Scope board",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "playSound": "SFX_PAPER_RUSTLE"
+                },
+                {
+                  "verb": "use",
+                  "playAnimation": "SCOPE_BOARD_ZOOM_IN",
+                  "playSound": "SFX_UI_TAP"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "screenId": "LIM-06",
+      "hotspots": [
+        {
+          "id": "CAGED_SCHED_WINDOW",
+          "name": "Caged scheduling window",
+          "geometry": {
+            "type": "rect",
+            "x": 520,
+            "y": 150,
+            "w": 900,
+            "h": 560
+          },
+          "priority": 5,
+          "states": [
+            {
+              "id": "NEED_AMR",
+              "conditions": [
+                {
+                  "key": "act2.amrIssued",
+                  "op": "==",
+                  "value": false
+                }
+              ],
+              "label": "Scheduling window",
+              "cursor": "talk",
+              "defaultVerb": "talk",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "effects": []
+                },
+                {
+                  "verb": "talk",
+                  "effects": []
+                },
+                {
+                  "verb": "use",
+                  "effects": []
+                }
+              ]
+            },
+            {
+              "id": "NEED_TER",
+              "conditions": [
+                {
+                  "key": "act2.terIssued",
+                  "op": "==",
+                  "value": false
+                }
+              ],
+              "label": "Scheduling window",
+              "cursor": "talk",
+              "defaultVerb": "talk",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "effects": []
+                },
+                {
+                  "verb": "talk",
+                  "effects": []
+                },
+                {
+                  "verb": "use",
+                  "effects": []
+                }
+              ]
+            },
+            {
+              "id": "NEED_SLOT_TOKEN",
+              "conditions": [
+                {
+                  "key": "act2.slotTokenCollected",
+                  "op": "==",
+                  "value": false
+                }
+              ],
+              "label": "Scheduling window",
+              "cursor": "talk",
+              "defaultVerb": "talk",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "effects": []
+                },
+                {
+                  "verb": "talk",
+                  "effects": []
+                },
+                {
+                  "verb": "use",
+                  "effects": []
+                }
+              ]
+            },
+            {
+              "id": "SUBMIT_IWO",
+              "conditions": [
+                {
+                  "key": "act2.iwoIssued",
+                  "op": "==",
+                  "value": false
+                },
+                {
+                  "key": "act2.slotTokenCollected",
+                  "op": "==",
+                  "value": true
+                },
+                {
+                  "key": "act2.amrIssued",
+                  "op": "==",
+                  "value": true
+                },
+                {
+                  "key": "act2.terIssued",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "label": "Scheduling window",
+              "cursor": "use",
+              "defaultVerb": "use",
+              "interactions": [
+                {
+                  "verb": "use",
+                  "sceneId": "SCN-059"
+                },
+                {
+                  "verb": "talk",
+                  "effects": []
+                },
+                {
+                  "verb": "look",
+                  "effects": []
+                }
+              ]
+            },
+            {
+              "id": "AFTER_IWO",
+              "conditions": [
+                {
+                  "key": "act2.iwoIssued",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "label": "Scheduling window",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "effects": []
+                },
+                {
+                  "verb": "talk",
+                  "effects": []
+                },
+                {
+                  "verb": "use",
+                  "effects": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "NOSHOW_RECOVERY_BIN",
+          "name": "No-show recovery bin",
+          "geometry": {
+            "type": "rect",
+            "x": 1410,
+            "y": 560,
+            "w": 420,
+            "h": 360
+          },
+          "priority": 6,
+          "states": [
+            {
+              "id": "AVAILABLE",
+              "conditions": [
+                {
+                  "key": "act2.slotTokenCollected",
+                  "op": "==",
+                  "value": false
+                },
+                {
+                  "key": "act2.amrIssued",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "label": "No-show recovery bin",
+              "cursor": "pickup",
+              "defaultVerb": "pickup",
+              "interactions": [
+                {
+                  "verb": "pickup",
+                  "sceneId": "SCN-057"
+                },
+                {
+                  "verb": "look",
+                  "effects": []
+                },
+                {
+                  "verb": "use",
+                  "effects": []
+                }
+              ]
+            },
+            {
+              "id": "EMPTY",
+              "conditions": [
+                {
+                  "key": "act2.slotTokenCollected",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "label": "Recovery bin (empty)",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "effects": []
+                },
+                {
+                  "verb": "use",
+                  "effects": []
+                }
+              ]
+            },
+            {
+              "id": "SEALED",
+              "conditions": [
+                {
+                  "key": "act2.amrIssued",
+                  "op": "==",
+                  "value": false
+                }
+              ],
+              "label": "Recovery bin",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "effects": []
+                },
+                {
+                  "verb": "use",
+                  "effects": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "STAMP_SUBSTITUTION_BOARD",
+          "name": "Stamp substitution board",
+          "geometry": {
+            "type": "rect",
+            "x": 140,
+            "y": 250,
+            "w": 420,
+            "h": 520
+          },
+          "priority": 5,
+          "states": [
+            {
+              "id": "UNLEARNED",
+              "conditions": [
+                {
+                  "key": "act2.substitutionRuleLearned",
+                  "op": "==",
+                  "value": false
+                }
+              ],
+              "label": "Stamp substitution board",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "sceneId": "SCN-058"
+                },
+                {
+                  "verb": "use",
+                  "sceneId": "SCN-058"
+                }
+              ]
+            },
+            {
+              "id": "LEARNED",
+              "conditions": [
+                {
+                  "key": "act2.substitutionRuleLearned",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "label": "Stamp substitution board",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "effects": []
+                },
+                {
+                  "verb": "use",
+                  "effects": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "SLOT_TOKEN_PRESS",
+          "name": "Slot token press",
+          "geometry": {
+            "type": "rect",
+            "x": 690,
+            "y": 740,
+            "w": 560,
+            "h": 300
+          },
+          "priority": 4,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "Slot token press",
+              "cursor": "use",
+              "defaultVerb": "use",
+              "interactions": [
+                {
+                  "verb": "use",
+                  "playSound": "SFX_LEVER_CLUNK"
+                },
+                {
+                  "verb": "look",
+                  "effects": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "EXIT_TO_LIM_07",
+          "name": "Exit to Staging",
+          "geometry": {
+            "type": "rect",
+            "x": 0,
+            "y": 0,
+            "w": 110,
+            "h": 1080
+          },
+          "priority": -5,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "To staging",
+              "cursor": "go",
+              "defaultVerb": "go",
+              "interactions": [
+                {
+                  "verb": "go",
+                  "transitionToScreen": "LIM-07"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "EXIT_TO_LIM_03",
+          "name": "Exit to Corridors",
+          "geometry": {
+            "type": "rect",
+            "x": 1810,
+            "y": 0,
+            "w": 110,
+            "h": 1080
+          },
+          "priority": -5,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "To corridors",
+              "cursor": "go",
+              "defaultVerb": "go",
+              "interactions": [
+                {
+                  "verb": "go",
+                  "transitionToScreen": "LIM-03"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "screenId": "LIM-07",
+      "hotspots": [
+        {
+          "id": "AMR_READER_LOOP",
+          "name": "AMR reader loop",
+          "priority": 3,
+          "geometry": {
+            "type": "rect",
+            "x": 520,
+            "y": 390,
+            "w": 260,
+            "h": 240
+          },
+          "states": [
+            {
+              "id": "UNCLIPPED",
+              "conditions": [
+                {
+                  "key": "act2.amrClipped",
+                  "op": "!=",
+                  "value": true
+                }
+              ],
+              "label": "AMR reader loop",
+              "cursor": "use",
+              "defaultVerb": "use",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "act2.amrLoopInspected",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                },
+                {
+                  "verb": "use",
+                  "effects": [
+                    {
+                      "key": "act2.amrClipped",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "CLIPPED",
+              "conditions": [
+                {
+                  "key": "act2.amrClipped",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "label": "AMR tag (clipped)",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "act2.amrLoopInspected",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                },
+                {
+                  "verb": "use",
+                  "effects": [
+                    {
+                      "key": "act2.amrClipped",
+                      "action": "set",
+                      "value": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "DUMMY_MASS_FIXTURE",
+          "name": "Dummy mass fixture",
+          "priority": 3,
+          "geometry": {
+            "type": "rect",
+            "x": 700,
+            "y": 560,
+            "w": 520,
+            "h": 320
+          },
+          "states": [
+            {
+              "id": "UNSET",
+              "conditions": [
+                {
+                  "key": "act2.dummyMassSet",
+                  "op": "!=",
+                  "value": true
+                }
+              ],
+              "label": "Dummy mass fixture",
+              "cursor": "use",
+              "defaultVerb": "use",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "act2.dummyMassInspected",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                },
+                {
+                  "verb": "use",
+                  "effects": [
+                    {
+                      "key": "act2.dummyMassSet",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "SET",
+              "conditions": [
+                {
+                  "key": "act2.dummyMassSet",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "label": "Dummy mass fixture (set)",
+              "cursor": "use",
+              "defaultVerb": "use",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "act2.dummyMassInspected",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                },
+                {
+                  "verb": "use",
+                  "effects": [
+                    {
+                      "key": "act2.dummyMassCalibrated",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "TEST_LOAD_PANEL",
+          "name": "Test load panel",
+          "priority": 3,
+          "geometry": {
+            "type": "rect",
+            "x": 1340,
+            "y": 420,
+            "w": 360,
+            "h": 420
+          },
+          "states": [
+            {
+              "id": "BALANCED",
+              "conditions": [
+                {
+                  "key": "act2.testLoadBalanced",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "label": "Test load panel (balanced)",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "act2.testLoadInspected",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                },
+                {
+                  "verb": "use",
+                  "effects": [
+                    {
+                      "key": "act2.testLoadVerified",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "MISSING_AMR",
+              "conditions": [
+                {
+                  "key": "act2.testLoadBalanced",
+                  "op": "!=",
+                  "value": true
+                },
+                {
+                  "key": "act2.amrClipped",
+                  "op": "!=",
+                  "value": true
+                }
+              ],
+              "label": "Test load panel (needs AMR tag)",
+              "cursor": "use",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "act2.testLoadInspected",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                },
+                {
+                  "verb": "use",
+                  "effects": [
+                    {
+                      "key": "act2.testLoadBlocked",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "MISSING_DUMMY",
+              "conditions": [
+                {
+                  "key": "act2.testLoadBalanced",
+                  "op": "!=",
+                  "value": true
+                },
+                {
+                  "key": "act2.amrClipped",
+                  "op": "==",
+                  "value": true
+                },
+                {
+                  "key": "act2.dummyMassSet",
+                  "op": "!=",
+                  "value": true
+                }
+              ],
+              "label": "Test load panel (needs dummy mass)",
+              "cursor": "use",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "act2.testLoadInspected",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                },
+                {
+                  "verb": "use",
+                  "effects": [
+                    {
+                      "key": "act2.testLoadBlocked",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "NOT_CLEARED",
+              "conditions": [
+                {
+                  "key": "act2.testLoadBalanced",
+                  "op": "!=",
+                  "value": true
+                },
+                {
+                  "key": "act2.amrClipped",
+                  "op": "==",
+                  "value": true
+                },
+                {
+                  "key": "act2.dummyMassSet",
+                  "op": "==",
+                  "value": true
+                },
+                {
+                  "key": "act2.stagingEntered",
+                  "op": "!=",
+                  "value": true
+                }
+              ],
+              "label": "Test load panel (awaiting clearance)",
+              "cursor": "use",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "act2.testLoadInspected",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                },
+                {
+                  "verb": "use",
+                  "effects": [
+                    {
+                      "key": "act2.testLoadBlocked",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "READY_TO_BALANCE",
+              "conditions": [
+                {
+                  "key": "act2.testLoadBalanced",
+                  "op": "!=",
+                  "value": true
+                },
+                {
+                  "key": "act2.amrClipped",
+                  "op": "==",
+                  "value": true
+                },
+                {
+                  "key": "act2.dummyMassSet",
+                  "op": "==",
+                  "value": true
+                },
+                {
+                  "key": "act2.stagingEntered",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "label": "Test load panel",
+              "cursor": "use",
+              "defaultVerb": "use",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "act2.testLoadInspected",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                },
+                {
+                  "verb": "use",
+                  "effects": [
+                    {
+                      "key": "act2.testLoadBalanced",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "SUPERVISOR_STATION",
+          "name": "Supervisor clipboard station",
+          "priority": 3,
+          "geometry": {
+            "type": "rect",
+            "x": 1210,
+            "y": 120,
+            "w": 420,
+            "h": 260
+          },
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "Supervisor clipboard station",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "act2.clipboardInspected",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                },
+                {
+                  "verb": "use",
+                  "effects": [
+                    {
+                      "key": "act2.iwoReviewed",
+                      "action": "set",
+                      "value": true
+                    },
+                    {
+                      "key": "act2.reverseRoutingNoted",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "APERTURE_ACCESS_DOOR",
+          "name": "Aperture bay access",
+          "priority": 5,
+          "geometry": {
+            "type": "rect",
+            "x": 1700,
+            "y": 280,
+            "w": 200,
+            "h": 560
+          },
+          "states": [
+            {
+              "id": "OPEN",
+              "conditions": [
+                {
+                  "key": "act2.testLoadBalanced",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "label": "To aperture bay",
+              "cursor": "go",
+              "defaultVerb": "go",
+              "interactions": [
+                {
+                  "verb": "go",
+                  "transitionToScreen": "LIM-08"
+                },
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "act2.apertureDoorChecked",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "LOCKED",
+              "conditions": [
+                {
+                  "key": "act2.testLoadBalanced",
+                  "op": "!=",
+                  "value": true
+                }
+              ],
+              "label": "Aperture bay access (locked)",
+              "cursor": "use",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "act2.apertureDoorChecked",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                },
+                {
+                  "verb": "use",
+                  "playSound": "sfx_denied",
+                  "effects": [
+                    {
+                      "key": "act2.apertureDenied",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "EXIT_LEFT_LIM06",
+          "name": "To Scheduling (left)",
+          "priority": 1,
+          "geometry": {
+            "type": "rect",
+            "x": 0,
+            "y": 0,
+            "w": 120,
+            "h": 1080
+          },
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "To scheduling",
+              "cursor": "go",
+              "defaultVerb": "go",
+              "interactions": [
+                {
+                  "verb": "go",
+                  "transitionToScreen": "LIM-06"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "EXIT_DOWN_LIM05",
+          "name": "Back to Triage (down)",
+          "priority": 1,
+          "geometry": {
+            "type": "rect",
+            "x": 0,
+            "y": 940,
+            "w": 1920,
+            "h": 140
+          },
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "Back to triage",
+              "cursor": "go",
+              "defaultVerb": "go",
+              "interactions": [
+                {
+                  "verb": "go",
+                  "transitionToScreen": "LIM-05"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "screenId": "LIM-08",
+      "hotspots": [
+        {
+          "id": "LIM08_APERTURE",
+          "name": "Mirror-surface aperture",
+          "geometry": {
+            "type": "rect",
+            "x": 740,
+            "y": 150,
+            "w": 460,
+            "h": 720
+          },
+          "priority": 10,
+          "states": [
+            {
+              "id": "READY_REVERSE_ROUTE",
+              "conditions": [
+                {
+                  "key": "act2.iwoIssued",
+                  "op": "==",
+                  "value": true
+                },
+                {
+                  "key": "act2.slotTokenCollected",
+                  "op": "==",
+                  "value": true
+                },
+                {
+                  "key": "act2.amrIssued",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "label": "Aperture",
+              "cursor": "use",
+              "defaultVerb": "use",
+              "interactions": [
+                {
+                  "verb": "use",
+                  "sceneId": "SCN-061"
+                },
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "knowledge.apertureObserved",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "DEFAULT",
+              "label": "Aperture",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "knowledge.apertureObserved",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "LIM08_SHROUD_LABEL",
+          "name": "Control shroud label",
+          "geometry": {
+            "type": "rect",
+            "x": 520,
+            "y": 250,
+            "w": 260,
+            "h": 170
+          },
+          "priority": 6,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "Control shroud",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "knowledge.reverseRoutingLabelRead",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "LIM08_RADIO_MARK",
+          "name": "Radio sweet-spot floor mark",
+          "geometry": {
+            "type": "rect",
+            "x": 800,
+            "y": 880,
+            "w": 320,
+            "h": 160
+          },
+          "priority": 5,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "Painted floor mark",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "knowledge.radioSweetSpotSpotted",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "LIM08_PACKET_CHUTE",
+          "name": "Outgoing packet chute",
+          "geometry": {
+            "type": "rect",
+            "x": 1340,
+            "y": 500,
+            "w": 420,
+            "h": 300
+          },
+          "priority": 4,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "Packet chute",
+              "cursor": "look",
+              "defaultVerb": "look",
+              "interactions": [
+                {
+                  "verb": "look",
+                  "effects": [
+                    {
+                      "key": "knowledge.outgoingPacketChuteNoted",
+                      "action": "set",
+                      "value": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "LIM08_EXIT_DOWN",
+          "name": "Exit to staging (down)",
+          "geometry": {
+            "type": "rect",
+            "x": 0,
+            "y": 980,
+            "w": 1920,
+            "h": 100
+          },
+          "priority": 1,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "Down",
+              "cursor": "go",
+              "defaultVerb": "go",
+              "interactions": [
+                {
+                  "verb": "go",
+                  "transitionToScreen": "LIM-07"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "LIM08_EXIT_RIGHT",
+          "name": "Exit to concourse (right)",
+          "geometry": {
+            "type": "rect",
+            "x": 1820,
+            "y": 0,
+            "w": 100,
+            "h": 1080
+          },
+          "priority": 1,
+          "states": [
+            {
+              "id": "DEFAULT",
+              "label": "Right",
+              "cursor": "go",
+              "defaultVerb": "go",
+              "interactions": [
+                {
+                  "verb": "go",
+                  "transitionToScreen": "LIM-01"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "changes": [
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_LOOK_FORMS",
+        "nodeId": "N_MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_FORMS_INTRO",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_FORMS_MENU",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_STANDING_EXPLAIN",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_STANDING_MENU",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_FORMS_SKIM",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_FORMS_SKIM_MENU",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_LOOK_ENVELOPES",
+        "nodeId": "N_MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_ENVELOPES_INTRO",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_ENVELOPES_MENU",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_POCKET_ENVELOPE_LINE",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_POCKET_ENVELOPE_MENU",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_LEAVE_ENVELOPES_LINE",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_LEAVE_ENVELOPES_MENU",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_LOOK_NOTICE",
+        "nodeId": "N_MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_LEAVE_LOBBY",
+        "nodeId": "N_MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_LEAVE_COPYFAX",
+        "nodeId": "N_MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_LEAVE_COPYFAX_LINE",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "END_LEAVE_COPYFAX",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    }
+  ],
+  "sceneId": "SCN-028"
+}

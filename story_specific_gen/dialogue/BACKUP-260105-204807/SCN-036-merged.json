@@ -1,0 +1,317 @@
+{
+  "changes": [
+    {
+      "action": "modify",
+      "details": {
+        "choiceId": "LEAVE_CORRIDOR",
+        "nodeId": "MENU",
+        "text": "Leave"
+      },
+      "op": "update_choice_text"
+    },
+    {
+      "action": "modify",
+      "details": {
+        "choiceId": "LEAVE_DECK",
+        "nodeId": "MENU",
+        "text": "Leave"
+      },
+      "op": "update_choice_text"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "LOOK_CONSOLE",
+        "nodeId": "MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "CONSOLE_DESC",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "CONSOLE_PLAYER_RUNNING",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "CONSOLE_LIAISON_LANGUAGE",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "CONSOLE_CHOICES",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "CONSOLE_ASK_PLAYER",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "CONSOLE_ASK_LIAISON",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "TO_MENU",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "LOOK_ALARM",
+        "nodeId": "MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "ALARM_DESC",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "ALARM_PLAYER_ACTIVE",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "ALARM_LIAISON_TERMS",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "ALARM_CHOICES",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "ALARM_WHICH_LIAISON",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "ALARM_FOLLOWUP",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "ALARM_SUPPRESSED_LIAISON",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "LOOK_PRINTER",
+        "nodeId": "MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "PRINTER_DESC",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "PRINTER_NOTICE",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "PRINTER_PLAYER_NONLOCAL",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "PRINTER_LIAISON_TEMPLATE",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "PRINTER_CHOICES",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "PRINTER_SHOW_NARRATOR",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "PRINTER_SHOW_LIAISON",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "LOOK_BINDER",
+        "nodeId": "MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "BINDER_DESC",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "BINDER_PLAYER",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "BINDER_LIAISON_MISSING",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "BINDER_CHOICES",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "BINDER_PROCEED_LIAISON",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "LEAVE_CORRIDOR",
+        "nodeId": "MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "LEAVE_CORRIDOR_DESC",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "END_LEAVE_CORRIDOR",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "LEAVE_DECK",
+        "nodeId": "MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "LEAVE_DECK_DESC",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "END_LEAVE_DECK",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    }
+  ],
+  "sceneId": "SCN-036"
+}

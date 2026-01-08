@@ -1,0 +1,159 @@
+{
+  "changes": [
+    {
+      "action": "add",
+      "createScene": {
+        "dialogueGraphs": [
+          {
+            "id": "DG_SCN023_COPIER_CONTROL_PANEL",
+            "nodes": [
+              {
+                "id": "N_ENTRY",
+                "next": "N_MENU",
+                "speakerId": "NARRATOR",
+                "text": "The copier screen is bright, polite, and locked.\nIt offers options it won\u2019t let you touch.\n\nOn-screen: USER COPY (disabled). SERVICE FUNCTIONS (requires code). PRINT STATUS (empty queue).\nA tiny camera lens watches your hands like it\u2019s documenting intent.",
+                "type": "npc_line"
+              },
+              {
+                "choices": [
+                  {
+                    "id": "C_COPIER_0000",
+                    "next": "N_COPIER_0000",
+                    "text": "Try \u20180000\u2019."
+                  },
+                  {
+                    "id": "C_COPIER_1234",
+                    "next": "N_COPIER_1234",
+                    "text": "Try \u20181234\u2019."
+                  },
+                  {
+                    "id": "C_COPIER_DATE",
+                    "next": "N_COPIER_DATE",
+                    "text": "Try the date on the last inspection tag."
+                  },
+                  {
+                    "id": "C_COPIER_WHY_DISABLED",
+                    "next": "N_COPIER_DISABLED",
+                    "text": "Why is User Copy disabled?"
+                  },
+                  {
+                    "id": "C_COPIER_HINTS",
+                    "next": "N_COPIER_HINTS",
+                    "text": "Inspect the service-code prompt and any hints."
+                  },
+                  {
+                    "id": "C_BACK",
+                    "next": "END_BACK",
+                    "text": "Back."
+                  }
+                ],
+                "id": "N_MENU",
+                "speakerId": "PLAYER",
+                "type": "player_choice"
+              },
+              {
+                "id": "N_COPIER_0000",
+                "next": "N_MENU",
+                "speakerId": "NARRATOR",
+                "text": "The copier accepts the digits, pauses, then rejects them with a tone that sounds trained.\n\nINVALID CODE. CONTACT AUTHORIZED SERVICE.\n\nThe screen stays friendly. It does not become helpful.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_COPIER_1234",
+                "next": "N_MENU",
+                "speakerId": "NARRATOR",
+                "text": "INVALID CODE.\nThe copier prints nothing, but you still feel judged.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_COPIER_DATE",
+                "next": "N_COPIER_DATE_PLAYER",
+                "speakerId": "NARRATOR",
+                "text": "The copier rejects it faster, like it\u2019s tired of this game.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_COPIER_DATE_PLAYER",
+                "next": "N_MENU",
+                "speakerId": "PLAYER",
+                "text": "So it remembers.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_COPIER_DISABLED",
+                "next": "N_MENU",
+                "speakerId": "NARRATOR",
+                "text": "The copier does not answer.\nA small label under the screen does: PROPERTY OF FACILITY SUPPORT. UNAUTHORIZED COPYING PROHIBITED.\nThe label is newer than the dust around it.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_COPIER_HINTS",
+                "next": "N_COPIER_HINTS_MENU",
+                "speakerId": "NARRATOR",
+                "text": "In the corner: a faded vendor logo, half-scraped away.\nUnder it, a blank line where a phone number used to be\u2014peeled off, then re-stickered, then peeled again.",
+                "type": "npc_line"
+              },
+              {
+                "choices": [
+                  {
+                    "id": "C_TO_STICKERS",
+                    "next": "END_TO_STICKERS",
+                    "text": "Look at the service code sticker stack."
+                  },
+                  {
+                    "id": "C_HINTS_BACK",
+                    "next": "END_BACK",
+                    "text": "Back."
+                  }
+                ],
+                "id": "N_COPIER_HINTS_MENU",
+                "speakerId": "PLAYER",
+                "type": "player_choice"
+              },
+              {
+                "id": "N_COPIER_UNLOCKED",
+                "next": "N_COPIER_UNLOCKED_PLAYER",
+                "speakerId": "NARRATOR",
+                "text": "The copier accepts the code without gratitude.\nSERVICE FUNCTIONS unlock.\n\nA menu appears: CALIBRATION. MAINTENANCE LOG. CONSUMABLES OVERRIDE. PRINT TEST PAGE.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_COPIER_UNLOCKED_PLAYER",
+                "next": "N_COPIER_UNLOCKED_MENU",
+                "speakerId": "PLAYER",
+                "text": "Good.",
+                "type": "npc_line"
+              },
+              {
+                "choices": [
+                  {
+                    "id": "C_UNLOCKED_BACK",
+                    "next": "END_BACK",
+                    "text": "Back."
+                  }
+                ],
+                "id": "N_COPIER_UNLOCKED_MENU",
+                "speakerId": "PLAYER",
+                "type": "player_choice"
+              },
+              {
+                "id": "END_TO_STICKERS",
+                "outcomeId": "copier_to_stickers",
+                "type": "end"
+              },
+              {
+                "id": "END_BACK",
+                "outcomeId": "copier_back",
+                "type": "end"
+              }
+            ],
+            "sceneId": "SCN-023",
+            "startNodeId": "N_ENTRY"
+          }
+        ]
+      },
+      "op": "create_scene"
+    }
+  ],
+  "sceneId": "SCN-023"
+}

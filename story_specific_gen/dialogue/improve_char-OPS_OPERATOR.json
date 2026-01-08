@@ -1,0 +1,1381 @@
+{
+  "nodes": [
+    {
+      "scene": "SCN_SCN-042-orig.json",
+      "id": "N_OPS_WARN",
+      "priorLine": "The alarm panel is already lit with the soft, constant status of a system proving it is allowed to exist. A new banner overlays the verification checklist: DEMAND EVENT \u0014 LOAD SHED REQUESTED.",
+      "lineToEdit": "That\u0019s a demand event. It is not an alarm-alarm. It\u0019s a request with consequences.\nAnd before you say anything: don\u0019t say \u001cemergency.\u001d The word \u001cemergency\u001d drags in different people.",
+      "nextLine": "Control Room, this is Utility Dispatch. Timestamp 14:17:09.\nWe\u0019re issuing a load-shedding request for your node. Confirm receipt and give me your action record ID.",
+      "revisedLine": "Demand event. (pause) Dispatch wants a shed, and it sticks. (pause) And don't say \"emergency\" on the line\u2014 (pause) different desks light up.",
+      "changeSummary": "Made it more immediate and cautious; removed binary framing; kept focus on transcript/liability. | Inserted (pause) breaks to keep each beat under 8 words. Corrected corrupted apostrophes/quotes and standardized the dash without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-042-orig.json",
+      "id": "N_OPS_COACH",
+      "priorLine": "Control Room, this is Utility Dispatch. Timestamp 14:17:09.\nWe\u0019re issuing a load-shedding request for your node. Confirm receipt and give me your action record ID.",
+      "lineToEdit": "Confirm what, specifically.\nSay you \u001cacknowledge the demand event\u001d and you\u0019re \u001cinitiating a load-shed response.\u001d It matters because the transcript outlives us.",
+      "nextLine": "The panel shows three quick links: VIEW DETAILS, PRINT EVENT, ACKNOWLEDGE/RESPOND.",
+      "revisedLine": "Confirm the words they\u2019re recording. (pause) Say: \u201cacknowledge the demand event.\u201d (pause) And: \u201cinitiating a load-shed response.\u201d (pause) Keep it clean for the transcript.",
+      "changeSummary": "Shifted from explanatory to in-the-moment coaching under recording pressure. | Inserted (pause) breaks so each beat stays under 8 words. Cleaned up quoting and apostrophe characters without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-042-orig.json",
+      "id": "N_ACK_OPS",
+      "priorLine": "Acknowledged at 14:17:22. Provide your action record ID.\nAnd confirm you will maintain stability. I need that stated, not implied.",
+      "lineToEdit": "They always say \u001cmaintain stability\u001d like it\u0019s a separate switch.\nAnswer it. Then we generate the ID off the printer header. If you freestyle an ID, auditors treat it like fiction.",
+      "nextLine": "",
+      "revisedLine": "Yeah (pause) maintain stability (pause) like you've got a knob. (pause)\nJust say it. (pause) Then we pull the ID (pause) off the printer header. (pause)\nDon't make one up. (pause) Auditors eat that alive.",
+      "changeSummary": "More reactive, clipped; kept auditor/paper trail point without a lecture. | Added (pause) breaks so each beat stays under 8 words; removed stray characters and avoided commas while keeping wording and meaning intact."
+    },
+    {
+      "scene": "SCN_SCN-042-orig.json",
+      "id": "N_AUTH_OPS",
+      "priorLine": "Accepted. Timestamp 14:17:26.\nProvide the record ID when available. Report shed amount and start time when you act.",
+      "lineToEdit": "Good. Standard language, no new nouns.\nNow we move loads\u0014after we have paper.",
+      "nextLine": "",
+      "revisedLine": "Good. Keep vanilla.\nPaper first, then move load.",
+      "changeSummary": "Tightened and made task-forward; reduced stylized phrasing. | Cut one word and combined the last two sentences with a single comma to meet the 8-word max while keeping the same instructions and cadence."
+    },
+    {
+      "scene": "SCN_SCN-042-orig.json",
+      "id": "N_MAINTAIN_OPS",
+      "priorLine": "Good. Timestamp 14:17:31.\nConstraint: do not introduce oscillatory loading. If you don\u0019t know what\u0019s oscillatory on your side, assume it is.\nCall back with shed amount and start time.",
+      "lineToEdit": "\u001cAssume it is\u001d is my favorite engineering instruction.\nPrint the banner. Staple it. Then we move loads. In that order.",
+      "nextLine": "The scene holds on the blinking ACK light, like it wants a signature.",
+      "revisedLine": "Assume it is. (pause) Sure. (pause) Print the banner. (pause) Staple it. (pause) Then we shed. Don\u2019t skip steps.",
+      "changeSummary": "Kept the sarcasm muted; pushed urgency and order-of-ops without speechifying. | Split the long beat with (pause) breaks, removed extra commas, and kept the same directives and clipped cadence."
+    },
+    {
+      "scene": "SCN_SCN-042-orig.json",
+      "id": "N_DEFINE_OPS",
+      "priorLine": "Stability means your node does not create a problem I have to name.\nVoltage within band, frequency support unchanged, no step-load chatter, no cycling.\nAnd\u0014because it comes up\u0014no undocumented behavior. That\u0019s not technical. That\u0019s legal.",
+      "lineToEdit": "See? It\u0019s a feelings category with numbers attached.\nWe can comply. We just have to choose what we call \u001cnoncritical.\u001d",
+      "nextLine": "",
+      "revisedLine": "There. (pause) Stability is whatever keeps them off our backs. (pause) We can comply. (pause) We just have to decide (pause) what we\u2019re calling \u201cnoncritical\u201d (pause) and stand on it.",
+      "changeSummary": "Less aphoristic, more defensive; preserved intent about naming/labels and compliance. | Split the line into short beats using (pause) so each stays within 8 words. Kept meaning and cadence, with no commas and no added explainer phrasing."
+    },
+    {
+      "scene": "SCN_SCN-042-orig.json",
+      "id": "N_TARGET_OPS",
+      "priorLine": "Target is twelve megawatts reduction at the node. Duration unknown\u0014minimum twenty minutes, reassess at the half-hour mark.\nDo not shed anything that causes a restart surge. If it \u001cauto-recovers,\u001d it\u0019s not a shed.",
+      "lineToEdit": "\u001cAuto-recovers\u001d is a trap category.\nWe shed clean if we redefine what counts as essential to verification. The checklist will complain. Let it.",
+      "nextLine": "",
+      "revisedLine": "\u201cAuto-recovers\u201d is where they ding you. (pause) Pick something that stays down. (pause) If we must re-tag \u201cessential\u201d for verification, fine. (pause) The checklist can complain.",
+      "changeSummary": "More conversational and tactical; kept the same operational plan and constraints. | Added pauses to keep each beat under 8 words. Trimmed phrasing while preserving meaning and kept commas to one."
+    },
+    {
+      "scene": "SCN_SCN-042-orig.json",
+      "id": "N_COMMIT_DIRECT_OPS",
+      "priorLine": "Timestamp 14:18:06. Logged.\nI still need your action record ID. If you can\u0019t generate one, give me the printer header serial. Something attributable.",
+      "lineToEdit": "That\u0019s fair, unfortunately.\nUse the printer. The tray is not optional. The tray is our alibi.",
+      "nextLine": "",
+      "revisedLine": "Yeah, that's fair. (pause) Use the printer. (pause) Get it in the tray. (pause) That's what we point at later.",
+      "changeSummary": "Removed slogan-y cadence; kept attribution/paper trail pressure. | Inserted (pause) breaks to keep each beat under 8 words, and corrected the apostrophe character without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-042-orig.json",
+      "id": "N_DETAILS_OPS",
+      "priorLine": "Good. Timestamp 14:17:12.\nTarget is twelve megawatts reduction at the node, duration unknown\u0014minimum twenty minutes, reassess at the half-hour mark.\nDo not shed anything that causes a restart surge. If it \u001cauto-recovers,\u001d it\u0019s not a shed.",
+      "lineToEdit": "\u001cAuto-recovers\u001d is a trap category.\nWe can shed clean if we redefine what counts as essential to verification. Which is going to irritate the checklist.",
+      "nextLine": "",
+      "revisedLine": "Auto-recovers\u2014yeah that's a gotcha. (pause) We can do a clean shed. (pause) We'll have to re-tag what counts as essential. (pause) The checklist will whine.",
+      "changeSummary": "Made it sound like a live response; kept meaning about redefinition and checklist irritation. | Split into short beats with (pause) markers and removed a comma to meet limits without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-042-orig.json",
+      "id": "N_DETAILS_ACK_OPS",
+      "priorLine": "Timestamp 14:17:26. Logged.\nI still need your action record ID. If you can\u0019t generate one, give me the printer header serial. Something attributable.",
+      "lineToEdit": "That\u0019s fair, unfortunately.\nUse the printer. The tray is not optional. The tray is our alibi.",
+      "nextLine": "",
+      "revisedLine": "Can\u2019t argue that. (pause) Print it. (pause) Make sure it lands in the tray. (pause) That\u2019s our cover.",
+      "changeSummary": "Varied phrasing while keeping the same instruction and liability intent. | Split the line into shorter beats with (pause) markers to meet the 8-word limit per beat, and cleaned up apostrophes/encoding without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-042-orig.json",
+      "id": "N_STAGED_OPS",
+      "priorLine": "Prefer staged if it does not introduce chatter. Avoid cycling loads.\nFirst action should be clean and attributable. Then we reassess at the half-hour mark.",
+      "lineToEdit": "Staged is fine. It also means more timestamps.\nPrint first. Then we touch hardware.",
+      "nextLine": "",
+      "revisedLine": "Staged is fine. (pause) More timestamps to babysit. (pause) Print first. (pause) Then we touch hardware.",
+      "changeSummary": "Kept the same plan; sharpened tone and removed polish. | Split the line into shorter beats with (pause) and trimmed \u201cJust means\u201d to keep meaning while meeting the 8-words-per-beat limit."
+    },
+    {
+      "scene": "SCN_SCN-042-orig.json",
+      "id": "N_NOTICE_OPS",
+      "priorLine": "It\u0019s Demand Event UTIL-DS-4419. Timestamp 14:17:15.\nAnd for clarity: this is a directive under the stability clause. Not a suggestion.\nConfirm you are acting.",
+      "lineToEdit": "They said \u001cdirective.\u001d That\u0019s their comfort word.\nSay yes. Then print. Then we touch hardware.",
+      "nextLine": "",
+      "revisedLine": "Directive. Fine. Confirm acting. Print. Then touch hardware.",
+      "changeSummary": "More clipped and reactive; kept sequence and intent. | Cut the beat from 10 to 8 words by trimming \u201cyou\u2019re\u201d while keeping the same commands and cadence."
+    },
+    {
+      "scene": "SCN_SCN-042-orig.json",
+      "id": "N_BARGAIN_OPS",
+      "priorLine": "It is in writing. It\u0019s recorded, timestamped, and mirrored to the daily log.\nIf you mean an email: you\u0019ll get it when the system feels like it.\nConfirm action now.",
+      "lineToEdit": "Don\u0019t fight their delivery method. Fight their ambiguity.\nGet the number on paper and then comply loudly.",
+      "nextLine": "",
+      "revisedLine": "Don\u2019t waste time fighting how they send it. (pause) Get the event number on paper. (pause) Then say you\u2019re acting clear, on-record.",
+      "changeSummary": "Reduced rhetorical structure; kept emphasis on attribution and clear confirmation. | Split into shorter beats with (pause) to meet max beat words, corrected punctuation/encoding, and kept comma count to one while preserving meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-042-orig.json",
+      "id": "N_PRINT_OPS",
+      "priorLine": "The log printer wakes up like it was pretending not to hear you. A strip of paper curls into the tray: DEMAND EVENT UTIL-DS-4419, time-stamped, with a header serial number.",
+      "lineToEdit": "Thank you. Staple that to the verification packet.\nNot because it helps. Because it proves you weren\u0019t improvising alone.",
+      "nextLine": "Control Room, confirm receipt. Timestamp 14:17:19.\nAnd give me your record ID.",
+      "revisedLine": "Good. (pause) Staple that into the verification packet. (pause) If this gets questioned later, (pause) that page says you weren\u2019t freelancing.",
+      "changeSummary": "Removed banned contrast construction; kept the same paperwork/defensibility purpose. | Added (pause) breaks so each beat stays under 8 words; kept wording and meaning intact while preserving the single comma."
+    },
+    {
+      "scene": "SCN_SCN-042-orig.json",
+      "id": "N_READBACK_OPS",
+      "priorLine": "Received. Timestamp 14:17:28.\nThat\u0019s attributable. Proceed with shed. Report first action time.",
+      "lineToEdit": "Now we can do the dangerous part with a warm feeling in our pocket.\nGo to the console when you\u0019re ready.",
+      "nextLine": "",
+      "revisedLine": "Alright. Something\u2019s attributable. Console when you\u2019re set.",
+      "changeSummary": "Dropped poetic phrasing; kept the move-forward beat and caution. | Condensed phrasing to fit the 8-word beat limit while preserving meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-042-orig.json",
+      "id": "N_PRINT_ACK_OPS",
+      "priorLine": "Logged. Timestamp 14:17:33.\nConfirm you will maintain stability. And provide a record ID when available.",
+      "lineToEdit": "Answer stability. Then we move.\nIf you already have the header serial, use it. Attributable beats elegant.",
+      "nextLine": "",
+      "revisedLine": "Say \"stability maintained.\" (pause) Then we move. (pause) Use the header serial if you've got it. (pause) They want attributable, not pretty.",
+      "changeSummary": "More natural under pressure; preserved instruction and priority. | Added (pause) breaks to keep each beat under 8 words; cleaned up punctuation and apostrophes without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-042-orig.json",
+      "id": "N_REVIEW_OPS",
+      "priorLine": "The demand event detail page is mostly disclaimers: \u001cbest effort,\u001d \u001cno guarantee,\u001d \u001coperator responsible.\u001d The shed target is clear; the definitions are not.",
+      "lineToEdit": "You can read that all day and it will not become kinder.\nWe comply, and we annotate. That\u0019s the whole job.",
+      "nextLine": "",
+      "revisedLine": "Stare at those disclaimers all day. (pause) They\u2019re not changing. (pause) We do the shed. (pause) We leave notes. (pause) Keep it moving.",
+      "changeSummary": "Less quotable, more situational; kept meaning about disclaimers and annotation. | Shortened the opening and added (pause) breaks so each beat stays under 8 words while keeping the same meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-042-orig.json",
+      "id": "N_STEP_AWAY_OPS",
+      "priorLine": "You step back. The demand event banner stays up, patiently escalating itself in the background.",
+      "lineToEdit": "You can walk away from the panel. You can\u0019t walk away from the timestamp.\nWhen you\u0019re ready, we answer the nice person on the speaker and we become a record.",
+      "nextLine": "",
+      "revisedLine": "Step back if you need. (pause) The timestamp keeps rolling. (pause) When you're ready answer Dispatch. (pause) Keep it on the record.",
+      "changeSummary": "Trimmed repetition and softened the aphorism into a practical warning. | Split the line into shorter beats with pauses to meet the 8-word limit, removed the comma, and corrected \u201cyou\u0019re\u201d to \u201cyou're\u201d without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-042.json",
+      "id": "N_OPS_WARN",
+      "priorLine": "The alarm panel is already lit with the soft, constant status of a system proving it is allowed to exist. A new banner overlays the verification checklist: DEMAND EVENT \u0014 LOAD SHED REQUESTED.",
+      "lineToEdit": "That\u0019s a demand event. It is not an alarm-alarm. It\u0019s a request with consequences.\nAnd before you say anything: don\u0019t say \u001cemergency.\u001d The word \u001cemergency\u001d drags in different people.",
+      "nextLine": "Control Room, this is Utility Dispatch. (pause) Timestamp 14:17:09. (pause) Issuing load-shedding request for your node. (pause) Confirm receipt. (pause) Provide your action record ID.",
+      "revisedLine": "Demand event. (pause) Dispatch wants a shed, (pause) and it sticks. (pause) And don't say \u201cemergency\u201d\u2014 (pause) different people get dragged in.",
+      "changeSummary": "Made delivery more in-the-moment; removed binary contrast; preserved warning about the word choice. | Split the line with (pause) markers to keep each beat under 8 words. Cleaned encoding glitches and standardized quotes/dash without changing meaning; kept comma count to one."
+    },
+    {
+      "scene": "SCN_SCN-042.json",
+      "id": "N_OPS_COACH",
+      "priorLine": "Control Room, this is Utility Dispatch. (pause) Timestamp 14:17:09. (pause) Issuing load-shedding request for your node. (pause) Confirm receipt. (pause) Provide your action record ID.",
+      "lineToEdit": "Confirm what, specifically.\nSay you \u001cacknowledge the demand event\u001d and you\u0019re \u001cinitiating a load-shed response.\u001d It matters because the transcript outlives us.",
+      "nextLine": "The panel shows three quick links: VIEW DETAILS, PRINT EVENT, ACKNOWLEDGE/RESPOND.",
+      "revisedLine": "Confirm the phrasing not your feelings. (pause) Say: \"acknowledge the demand event.\" (pause) And: \"initiating a load-shed response.\" (pause) It must read clean in transcript.",
+      "changeSummary": "Sharper, more defensive; kept exact required phrases and transcript concern. | Split into short (pause) beats under 8 words each. Kept wording and intent while tightening for transcript readability."
+    },
+    {
+      "scene": "SCN_SCN-042.json",
+      "id": "N_ACK_OPS",
+      "priorLine": "Acknowledged at 14:17:22. (pause) Provide your action record ID. (pause) Confirm you will maintain stability. (pause) I need that stated, not implied.",
+      "lineToEdit": "They always say \u001cmaintain stability\u001d like it\u0019s a separate switch.\nAnswer it. Then we generate the ID off the printer header. If you freestyle an ID, auditors treat it like fiction.",
+      "nextLine": "",
+      "revisedLine": "Yeah. Maintain stability. They want it said. (pause) Say it. (pause) Then use the printer header for the ID. (pause) Don\u2019t freestyle an ID. (pause) Auditors love that kind of blood.",
+      "changeSummary": "More conversational under stress; kept sequence and audit risk. | Split the line into short beats with (pause) breaks to meet the 8-word limit, removed the extra comma, and cleaned up the garbled characters while keeping the same meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-042.json",
+      "id": "N_AUTH_OPS",
+      "priorLine": "Accepted. Timestamp 14:17:26. (pause) Send the record ID when available. (pause) When you act, report shed amount. (pause) Report start time.",
+      "lineToEdit": "Good. Standard language, no new nouns.\nNow we move loads\u0014after we have paper.",
+      "nextLine": "",
+      "revisedLine": "Good. Don't add words. Get paper, move load.",
+      "changeSummary": "Cut polish and tightened urgency; preserved intent and ordering. | Cut \"extra\" and \"then\" to fit the 8-word limit while keeping the same instruction; corrected the apostrophe."
+    },
+    {
+      "scene": "SCN_SCN-042.json",
+      "id": "N_MAINTAIN_OPS",
+      "priorLine": "Good. (pause) Timestamp 14:17:31. (pause) Constraint: do not introduce oscillatory loading. (pause) If you don\u0019t know what\u0019s oscillatory, (pause) assume it is. (pause) Call back with shed amount and start time.",
+      "lineToEdit": "\u001cAssume it is\u001d is my favorite engineering instruction.\nPrint the banner. Staple it. Then we move loads. In that order.",
+      "nextLine": "The scene holds on the blinking ACK light, like it wants a signature.",
+      "revisedLine": "Assume it is. (pause) Right. (pause) Print the banner. Staple it. Then we shed. (pause) Same order every time.",
+      "changeSummary": "More grounded and procedural; removed performative humor while keeping tone. | Split the action into shorter beats with (pause) breaks and removed commas by using short sentences, keeping the same sequence and tone."
+    },
+    {
+      "scene": "SCN_SCN-042.json",
+      "id": "N_DEFINE_OPS",
+      "priorLine": "Stability means: no problem I must name. (pause)\nVoltage stays within band. (pause)\nFrequency support stays unchanged. (pause)\nNo step-load chatter. (pause)\nNo cycling. (pause)\nAnd\u0014because it comes up\u0014no undocumented behavior. (pause)\nThat\u0019s not technical. (pause)\nThat\u0019s legal.",
+      "lineToEdit": "See? It\u0019s a feelings category with numbers attached.\nWe can comply. We just have to choose what we call \u001cnoncritical.\u001d",
+      "nextLine": "",
+      "revisedLine": "Yeah. It\u2019s vibes with a meter readout. (pause) We can comply\u2014 (pause) we pick what gets tagged \u201cnoncritical,\u201d (pause) and stick to it.",
+      "changeSummary": "Made it speakable and immediate; kept same point about classification choice. | Added (pause) breaks to keep each beat under 8 words, fixed garbled characters, and kept meaning while staying under the comma limit."
+    },
+    {
+      "scene": "SCN_SCN-042.json",
+      "id": "N_TARGET_OPS",
+      "priorLine": "Target: twelve megawatts reduction at the node. (pause) Duration unknown. Minimum twenty minutes. (pause) Reassess at the half-hour mark. (pause) Do not shed anything that causes restart surge. (pause) If it auto-recovers it is not a shed.",
+      "lineToEdit": "\u001cAuto-recovers\u001d is a trap category.\nWe shed clean if we redefine what counts as essential to verification. The checklist will complain. Let it.",
+      "nextLine": "",
+      "revisedLine": "\u201cAuto-recovers\u201d is where they call it noncompliance. (pause) We shed what stays down. (pause) If that means re-tagging what\u2019s essential (pause) for verification, so be it.",
+      "changeSummary": "Reduced slogan tone; kept operational strategy and risk framing. | Added pauses to keep each beat under 8 words, tightened the last sentence by splitting it, standardized quotes, and limited punctuation to one comma while preserving meaning."
+    },
+    {
+      "scene": "SCN_SCN-042.json",
+      "id": "N_COMMIT_DIRECT_OPS",
+      "priorLine": "Timestamp 14:18:06. Logged.(pause) I still need your action record ID.(pause) If you can\u0019t generate one,(pause) give me the printer header serial.(pause) Something attributable.",
+      "lineToEdit": "That\u0019s fair, unfortunately.\nUse the printer. The tray is not optional. The tray is our alibi.",
+      "nextLine": "",
+      "revisedLine": "Yeah. Fair. (pause) Use the printer. (pause) Make sure it lands in the tray. (pause) That's our cover.",
+      "changeSummary": "More natural, less mantra-like; preserved the paper-trail requirement. | Split the line into shorter beats with (pause) so no beat exceeds 8 words; cleaned up the corrupted apostrophe in \u201cthat\u2019s\u201d without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-042.json",
+      "id": "N_DETAILS_OPS",
+      "priorLine": "Good. (pause) Timestamp 14:17:12. (pause) Target: twelve-megawatt reduction at the node. (pause) Duration unknown. (pause) Minimum twenty minutes. (pause) Reassess at the half-hour mark. (pause) Do not shed anything. (pause) Nothing that causes restart surge. (pause) If it auto-recovers, it's not a shed.",
+      "lineToEdit": "\u001cAuto-recovers\u001d is a trap category.\nWe can shed clean if we redefine what counts as essential to verification. Which is going to irritate the checklist.",
+      "nextLine": "",
+      "revisedLine": "Auto-recovers. They'll use that against us. (pause) We can do a clean shed, (pause) but we have to re-tag (pause) what's \"essential.\" (pause) Checklist won't be happy.",
+      "changeSummary": "Kept meaning; made it sound like live ops talk under scrutiny. | Split into short beats with (pause) to meet max_beat_words; cleaned punctuation/quotes without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-042.json",
+      "id": "N_DETAILS_ACK_OPS",
+      "priorLine": "Timestamp 14:17:26. (pause) Logged. (pause) I still need your action record ID. (pause) If you can\u0019t generate one (pause) give me the printer header serial. (pause) Something attributable.",
+      "lineToEdit": "That\u0019s fair, unfortunately.\nUse the printer. The tray is not optional. The tray is our alibi.",
+      "nextLine": "",
+      "revisedLine": "Yeah. Fair. (pause) Print the header. (pause) Tray needs to catch it. (pause) Otherwise we\u2019ve got nothing to point at.",
+      "changeSummary": "Varied wording; retained the same attribution insistence. | Added (pause) breaks to keep each beat under 8 words and cleaned up corrupted characters without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-042.json",
+      "id": "N_STAGED_OPS",
+      "priorLine": "Prefer staged if it adds no chatter. (pause) Avoid cycling loads. (pause) First action: clean, attributable. (pause) Reassess at the half-hour mark.",
+      "lineToEdit": "Staged is fine. It also means more timestamps.\nPrint first. Then we touch hardware.",
+      "nextLine": "",
+      "revisedLine": "Staged is fine. More timestamps, more babysitting. (pause) Print first. Then touch hardware.",
+      "changeSummary": "More clipped and reactive; kept staged/timestamps/paper-first order. | Inserted a (pause) to split the line into two beats, each under 8 words, without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-042.json",
+      "id": "N_NOTICE_OPS",
+      "priorLine": "It\u0019s Demand Event UTIL-DS-4419. (pause) Timestamp 14:17:15. (pause) For clarity: directive under the stability clause. (pause) Not a suggestion. (pause) Confirm you are acting.",
+      "lineToEdit": "They said \u001cdirective.\u001d That\u0019s their comfort word.\nSay yes. Then print. Then we touch hardware.",
+      "nextLine": "",
+      "revisedLine": "Directive: fine. Confirm you\u2019re acting. Print. Touch hardware.",
+      "changeSummary": "Reduced commentary; preserved compliance-driven sequence. | Cut \u201cThen\u201d to bring total beat word count from 9 to 8 without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-042.json",
+      "id": "N_BARGAIN_OPS",
+      "priorLine": "It\u0019s in writing. (pause) Recorded and timestamped; mirrored to the daily log. (pause) Email? You\u0019ll get it (pause) when the system feels like it. (pause) Confirm action now.",
+      "lineToEdit": "Don\u0019t fight their delivery method. Fight their ambiguity.\nGet the number on paper and then comply loudly.",
+      "nextLine": "",
+      "revisedLine": "Don\u2019t argue about delivery. (pause)\nGet the number down. (pause)\nConfirm action out loud and on-record.",
+      "changeSummary": "More situational; preserved focus on reducing ambiguity and creating record. | Split the line into three (pause) beats so each beat stays under 8 words, without changing meaning or tone."
+    },
+    {
+      "scene": "SCN_SCN-042.json",
+      "id": "N_PRINT_OPS",
+      "priorLine": "The log printer wakes up like it was pretending not to hear you. A strip of paper curls into the tray: DEMAND EVENT UTIL-DS-4419, time-stamped, with a header serial number.",
+      "lineToEdit": "Thank you. Staple that to the verification packet.\nNot because it helps. Because it proves you weren\u0019t improvising alone.",
+      "nextLine": "Control Room, confirm receipt. (pause) Timestamp 14:17:19. (pause) Give me your record ID.",
+      "revisedLine": "Good. (pause) Staple that to the verification packet. (pause) That's your receipt. (pause) This was real, not you making it up. (pause) In the room.",
+      "changeSummary": "Removed banned contrast phrasing; kept same proof/attribution intent. | Inserted (pause) breaks so each beat is 8 words or fewer, corrected the apostrophe in \u201cThat\u2019s,\u201d and kept comma use to one while preserving meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-042.json",
+      "id": "N_READBACK_OPS",
+      "priorLine": "Received. Timestamp 14:17:28. (pause) That\u0019s attributable. Proceed with shed. (pause) Report first action time.",
+      "lineToEdit": "Now we can do the dangerous part with a warm feeling in our pocket.\nGo to the console when you\u0019re ready.",
+      "nextLine": "",
+      "revisedLine": "Alright. (pause) We\u2019ve got attribution. (pause) Go to the console when you\u2019re ready.",
+      "changeSummary": "Cut poetic language; kept pacing and instruction. | Inserted pauses to split the line into shorter beats under 8 words without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-042.json",
+      "id": "N_PRINT_ACK_OPS",
+      "priorLine": "Logged. Timestamp 14:17:33. (pause) Confirm you will maintain stability. (pause) And send a record ID when available.",
+      "lineToEdit": "Answer stability. Then we move.\nIf you already have the header serial, use it. Attributable beats elegant.",
+      "nextLine": "",
+      "revisedLine": "Say \u201cstability maintained.\u201d Then we move. (pause) If you have the header serial, use it. (pause) \u201cAttributable\u201d wins.",
+      "changeSummary": "Made it more speakable and less polished; preserved the same priorities. | Added (pause) breaks so each beat stays within 8 words; kept meaning and kept the single comma."
+    },
+    {
+      "scene": "SCN_SCN-042.json",
+      "id": "N_REVIEW_OPS",
+      "priorLine": "The demand event detail page is mostly disclaimers: \u001cbest effort,\u001d \u001cno guarantee,\u001d \u001coperator responsible.\u001d The shed target is clear; the definitions are not.",
+      "lineToEdit": "You can read that all day and it will not become kinder.\nWe comply, and we annotate. That\u0019s the whole job.",
+      "nextLine": "",
+      "revisedLine": "Yeah\u2014disclaimers wall to wall. (pause) Do the shed. (pause) Annotate what you did, then move on.",
+      "changeSummary": "More reactive and concise; retained compliance + notes requirement. | Split into three beats with (pause) to meet max beat words, removed one comma by restructuring, and cleaned up the stray character after \u201cYeah\u201d without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-042.json",
+      "id": "N_STEP_AWAY_OPS",
+      "priorLine": "You step back. The demand event banner stays up, patiently escalating itself in the background.",
+      "lineToEdit": "You can walk away from the panel. You can\u0019t walk away from the timestamp.\nWhen you\u0019re ready, we answer the nice person on the speaker and we become a record.",
+      "nextLine": "",
+      "revisedLine": "Walk away if you need a second. (pause) Timestamp still runs. (pause)\nWhen you're ready, answer Dispatch. (pause) Keep it record-clean.",
+      "changeSummary": "Reduced aphoristic repetition; kept record/timestamp pressure. | Added (pause) breaks to keep each beat under 8 words, split the final clause into its own beat, and kept wording and meaning intact with only one comma."
+    },
+    {
+      "scene": "SCN_SCN-043-orig.json",
+      "id": "N_OPS_COACH",
+      "priorLine": "Control Room, Utility Dispatch. Timestamp 14:22:04.\nConfirm you are acting on the demand event. And I need your action record ID when you have it.\nAlso\u0014state you will maintain stability. Stated, not assumed.",
+      "lineToEdit": "Don\u0019t say \u001cemergency.\u001d Don\u0019t say \u001cwe\u0019ll try.\u001d\nSay: you acknowledge the demand event, you are initiating response, stability maintained per interlocks. It\u0019s ugly. It survives transcripts.",
+      "nextLine": "The console shows big, friendly buttons that all look like liability: VIEW LOAD MAP. PRINT ACTION HEADER. CONFIGURE SHED. EXECUTE ROUTING.",
+      "revisedLine": "Don\u2019t give them \u201cemergency.\u201d (pause) Don\u2019t give them \u201cwe\u2019ll try.\u201d (pause) Say: \u201cacknowledge the demand event.\u201d (pause) \u201cinitiating response.\u201d (pause) \u201cstability maintained per interlocks.\u201d (pause) Keep it ugly. (pause) Keep it on the tape.",
+      "changeSummary": "More in-the-moment and defensive; retained required phrases and transcript survival intent. | Split into short beats with (pause) markers to meet max beat length. Removed list commas by using separate quoted fragments with periods; wording and meaning unchanged."
+    },
+    {
+      "scene": "SCN_SCN-043-orig.json",
+      "id": "N_AUTH_OPS",
+      "priorLine": "Accepted. Timestamp 14:22:11.\nProvide the record ID when available. Report shed start time when the first action occurs.",
+      "lineToEdit": "Good. Standard language, no new nouns. Now we make the console do something attributable.",
+      "nextLine": "",
+      "revisedLine": "Good. Don\u2019t add new words. (pause) Now make the console spit out something attributable.",
+      "changeSummary": "Tightened and made more colloquial; preserved attribution goal. | Inserted a (pause) to split the line into two beats under 8 words each, and corrected the apostrophe encoding in \u201cDon\u2019t.\u201d"
+    },
+    {
+      "scene": "SCN_SCN-043-orig.json",
+      "id": "N_THREAT_PASS_OPS",
+      "priorLine": "Noted. Timestamp 14:22:14.\nDirective stands. Execute shed now, avoid cycling and step-load chatter. Provide record ID and shed start time.",
+      "lineToEdit": "That works because it\u0019s still a request for clarity, not a new fight. Now comply loudly and print something we can staple.",
+      "nextLine": "",
+      "revisedLine": "Alright. They heard you. (pause) Confirm you're acting. Print something to staple.",
+      "changeSummary": "Removed explanatory rationale; kept the intended next actions (confirm + print). | Split into two beats with a pause and tightened phrasing so each beat stays under 8 words without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-043-orig.json",
+      "id": "N_THREAT_FAIL_OPS",
+      "priorLine": "Negative. Timestamp 14:22:16.\nDirective is documented via recording and log mirror. Confirm action now. Do not delay shed for process language.",
+      "lineToEdit": "They\u0019re right about the recording. You\u0019re right about attribution.\nPrint the header. Then act. Don\u0019t burn time on tone.",
+      "nextLine": "",
+      "revisedLine": "Yeah it's recorded. (pause) Still need the header. (pause) Print it then act. (pause) Don\u2019t burn time arguing tone.",
+      "changeSummary": "More immediate and clipped; preserved balancing recording vs attribution. | Removed commas to meet the one-comma limit and added (pause) breaks so each beat stays under 8 words without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-043-orig.json",
+      "id": "N_MAP_OPS",
+      "priorLine": "The screen redraws into a block diagram: feeder names, breaker groups, and three categories of load with mismatched fonts.\nCRITICAL includes chamber environmental, rotation frame lubrication, and a box labeled VERIFICATION SUPPORT that is, unhelpfully, most of the building.",
+      "lineToEdit": "That label is doing emotional work. The checklist treats VERIFICATION SUPPORT as untouchable because it wants a stable baseline.\nThe grid treats it as discretionary because it\u0019s not a hospital. Both are correct in their own court.",
+      "nextLine": "",
+      "revisedLine": "VERIFICATION SUPPORT (pause) Of course it is. (pause) Checklist wants a stable baseline. (pause) It treats that box like glass. (pause) Dispatch sees it as discretionary. (pause) Either way somebody complains.",
+      "changeSummary": "Condensed the explanation into reactive shorthand; kept baseline vs discretionary tension. | Split the line into short beats with (pause), removed commas, and replaced the cause-and-effect clause with a standalone sentence to preserve meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-043-orig.json",
+      "id": "N_MAP_ASK_OPS",
+      "priorLine": "Three shed presets highlight. None meet the target alone.",
+      "lineToEdit": "You can shed some without touching it. Not twelve megawatts.\nTo hit the target cleanly, you either redefine support, or you shed something that will auto-recover and Dispatch will call it noncompliance.",
+      "nextLine": "",
+      "revisedLine": "We can drop some (pause) without touching VERIFICATION SUPPORT. (pause) Twelve megawatts? (pause) No. (pause) To hit target clean (pause) we reclass support (pause) or we shed something (pause) that bounces back (pause) and Dispatch calls it noncompliance.",
+      "changeSummary": "Kept the same choice set; made it more like live ops talk. | Added (pause) breaks to keep each beat under 8 words. Removed the comma after \u201cclean\u201d and the stray character after \u201csupport,\u201d without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-043-orig.json",
+      "id": "N_DEFINE_OPS",
+      "priorLine": "Stability means your node does not create a problem I have to name. Voltage in band. No step-load chatter. No cycling.\nAnd\u0014because it comes up\u0014no undocumented behavior. That\u0019s not technical. That\u0019s legal.",
+      "lineToEdit": "Hear that? \u001cUndocumented.\u001d That\u0019s the real interlock.\nThe console can do staged shed with timestamps. Or single-step. The cleanest path to \u001cno chatter\u001d is the macro the checklist hates.",
+      "nextLine": "",
+      "revisedLine": "You hear \"undocumented\"? That's the landmine. (pause)\nWe can stage it with timestamps. (pause)\nOr do single-step. (pause)\nThe no-chatter macro. (pause)\nThat's the one the checklist will gripe about.",
+      "changeSummary": "More reactive; preserved options and the paperwork risk around 'undocumented.' | Split the line into short beats using (pause) so no beat exceeds 8 words; removed the comma while preserving meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-043-orig.json",
+      "id": "N_CONFIG_OPS",
+      "priorLine": "A configuration pane opens: TARGET SHED: 12 MW. The slider is disabled; only presets can be accepted.\nTwo tabs: STAGED and SINGLE-STEP. The cursor blinks like it wants a signature.",
+      "lineToEdit": "Staged gives you more timestamps. More timestamps means more places to hide competence.\nSingle-step is cleaner electrically. Also cleaner for blame.",
+      "nextLine": "",
+      "revisedLine": "Staged means more timestamps. (pause) Single-step is cleaner electrically. (pause) And yeah, cleaner for blame too.",
+      "changeSummary": "Cut the flourish; kept the same tradeoff and tone. | Split into shorter beats with (pause) to meet the 8-word limit, removed the stray character, and kept the original cadence and meaning."
+    },
+    {
+      "scene": "SCN_SCN-043-orig.json",
+      "id": "N_STAGED_OPS",
+      "priorLine": "The console assembles three staged groups. The third is marked: VERIFICATION SUPPORT \u0014 TEMPORARY RECLASS REQUIRED.",
+      "lineToEdit": "There it is. The box that decides whether you\u0019re \u001cfollowing procedure\u001d or \u001cmaking decisions.\u001d\nDon\u0019t invent a new category. Reclass with an existing code.",
+      "nextLine": "Confirm you\u0019re acting. I don\u0019t need your philosophy. I need a time stamp and a stable response.",
+      "revisedLine": "There it is. (pause) Verification Support wants a reclass. (pause) Use an existing code. (pause) Don\u2019t get creative.",
+      "changeSummary": "Removed binary framing; kept instruction to use existing code and avoid new categories. | Split the line into shorter beats using (pause), and cleaned up stray characters while preserving meaning and tone."
+    },
+    {
+      "scene": "SCN_SCN-043-orig.json",
+      "id": "N_STAGED_CONFIRM_OPS",
+      "priorLine": "Timestamp 14:22:31. Logged.\nProvide action record ID when available. Report first step time when it occurs.",
+      "lineToEdit": "Good. Now make the reclass legitimate, or this becomes \u001ccycling in disguise.\u001d",
+      "nextLine": "",
+      "revisedLine": "Good. (pause) Make that reclass clean, or they\u2019ll say cycling.",
+      "changeSummary": "Made it more direct and less stylized; preserved warning about optics/compliance. | Added a pause to split beats under 8 words, and tightened 'call it' to 'say' to reduce word count without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-043-orig.json",
+      "id": "N_RECLASS_OPS",
+      "priorLine": "A dialog box appears with a legal tone and a petty request: SELECT JUSTIFICATION CODE.\nThe available codes are pre-filled. None are kind.",
+      "lineToEdit": "Pick the code that already exists. Don\u0019t invent a new justification. New justifications become meetings.",
+      "nextLine": "",
+      "revisedLine": "Pick a pre-filled code. (pause) No custom justification. (pause) That\u2019s how you end up in meetings.",
+      "changeSummary": "More speakable and pressured; retained 'existing code only' constraint. | Split the line into three (pause) beats to keep each under 8 words, corrected punctuation/encoding, and preserved the original meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-043-orig.json",
+      "id": "N_RECLASS_DONE_OPS",
+      "priorLine": "VERIFICATION SUPPORT flips from CRITICAL to NONCRITICAL with no animation, like it\u0019s ashamed.",
+      "lineToEdit": "Good. Now it\u0019s not a deviation. It\u0019s a classification update. Words matter because they\u0019re what survives.",
+      "nextLine": "",
+      "revisedLine": "Good. Note: classification update in the notes. (pause) The wording survives review.",
+      "changeSummary": "Removed banned contrast; kept emphasis on precise wording for later scrutiny. | Inserted a pause to split beats under 8 words; tightened phrasing without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-043-orig.json",
+      "id": "N_SINGLESTEP_OPS",
+      "priorLine": "The console offers one macro: EXECUTE ROUTING: ALIGNMENT-SEQUENCE LOAD ROUTING (12 MW CLEAN).\nA warning line beneath it: NOTE: MAY ALTER VERIFICATION BASELINE. The word \u001cmay\u001d is doing too much work.",
+      "lineToEdit": "That\u0019s the one. It keeps interlocks happy by nudging the rotation frames into a tighter relationship.\nThe checklist will call it \u001cbaseline alteration.\u001d Dispatch will call it \u001cstable.\u001d You will call it \u001cdocumented.\u001d",
+      "nextLine": "",
+      "revisedLine": "That\u2019s the macro. (pause) It keeps interlocks calm, tightening rotation frames. (pause) The checklist can grumble about \u201cbaseline.\u201d (pause) We just make sure it\u2019s documented.",
+      "changeSummary": "Less essay-like and less triadic; preserved technical effect and competing interpretations. | Split into short (pause) beats to meet the 8-word limit, fixed apostrophes/quotes, and kept meaning while using only one comma."
+    },
+    {
+      "scene": "SCN_SCN-043-orig.json",
+      "id": "N_ALIGNNAME_OPS",
+      "priorLine": "Why \u001calignment-sequence\u001d?",
+      "lineToEdit": "Because someone once tried to describe what the control law does, and then Legal made them put it back in the drawer.\nOperationally: it balances load without chatter by coordinating the frames. That\u0019s all we need to say out loud.",
+      "nextLine": "",
+      "revisedLine": "Because Legal didn\u2019t want the real description (pause) in plain sight. (pause) Operationally it balances load (pause) without chatter by coordinating the frames. (pause) That\u2019s all you say.",
+      "changeSummary": "Kept the same reason and operational description; made it terser and more spoken. | Added pauses to keep each beat under 8 words, removed the colon, and kept meaning and cadence while staying within comma and explainer limits."
+    },
+    {
+      "scene": "SCN_SCN-043-orig.json",
+      "id": "N_POST_ACK_OPS",
+      "priorLine": "Timestamp 14:22:57. Confirm you are acting and will maintain stability.",
+      "lineToEdit": "Say it clean. Then we watch the numbers.",
+      "nextLine": "Acting. Stability maintained per interlocks.",
+      "revisedLine": "Say the line. Then watch the meters.",
+      "changeSummary": "Minor tightening; kept cadence and intent."
+    },
+    {
+      "scene": "SCN_SCN-043-orig.json",
+      "id": "N_ARMED_OPS",
+      "priorLine": "The containment sphere\u0019s surface flickers\u0014matte to reflective, reflective to matte\u0014like a thought it isn\u0019t allowed to have.\nThe console continues counting down routing steps as if nothing visual is relevant.",
+      "lineToEdit": "\u001cArmed\u001d is a terrible word. It implies intent.\nWe did not give it intent. We gave it permission.",
+      "nextLine": "",
+      "revisedLine": "Armed. (pause) Hate that word. (pause) But that's what the panel calls it. (pause) We gave it permission, that's all.",
+      "changeSummary": "Made it less philosophical and more situational; kept the same distinction about intent/permission. | Split the line into shorter beats using (pause) so no beat exceeds 8 words; cleaned up stray characters while keeping the same wording and meaning."
+    },
+    {
+      "scene": "SCN_SCN-043-orig.json",
+      "id": "N_PRINT_OPS",
+      "priorLine": "The log printer wakes with a reluctant whine. A strip curls into the tray:\nACTION HEADER \u0014 CONTROL ROOM CONSOLE, with a serial and timestamp.",
+      "lineToEdit": "Thank you. That\u0019s attributable. That\u0019s the difference between \u001cyou did it\u001d and \u001cthe room did it.\u001d",
+      "nextLine": "",
+      "revisedLine": "Good. Serial and timestamp. That's attribution. (pause) If this gets reviewed, it points. (pause) At the console log. (pause) Not a vibe.",
+      "changeSummary": "Removed binary contrast punchline; kept point about attribution shifting blame surface. | Split into short beats with (pause) and removed extra wording so each beat stays under 8 words, while keeping only one comma and preserving meaning."
+    },
+    {
+      "scene": "SCN_SCN-043-orig.json",
+      "id": "N_STEP_AWAY_OPS",
+      "priorLine": "You step back. The demand banner stays pinned, politely escalating itself at the edge of your vision.",
+      "lineToEdit": "You can walk away from the screen. You can\u0019t walk away from the timestamp.\nWhen you\u0019re ready, come back and do it in a way that can be stapled.",
+      "nextLine": "",
+      "revisedLine": "Step back if you need. (pause) The timestamp still runs. (pause) Come back and do it. (pause) Paper in the tray.",
+      "changeSummary": "More immediate; kept timestamp pressure and 'staple-able' paperwork framing. | Split into four short beats using (pause) to keep each under 8 words while preserving meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-043.json",
+      "id": "N_OPS_COACH",
+      "priorLine": "Control Room. Utility Dispatch. (pause) Timestamp 14:22:04. (pause) Confirm you're acting on the demand event. (pause) I need your action record ID. (pause) Send it when you have it. (pause) Also\u0014state you will maintain stability. (pause) Stated. Not assumed.",
+      "lineToEdit": "Don\u0019t say \u001cemergency.\u001d Don\u0019t say \u001cwe\u0019ll try.\u001d\nSay: you acknowledge the demand event, you are initiating response, stability maintained per interlocks. It\u0019s ugly. It survives transcripts.",
+      "nextLine": "The console shows big, friendly buttons that all look like liability: VIEW LOAD MAP. PRINT ACTION HEADER. CONFIGURE SHED. EXECUTE ROUTING.",
+      "revisedLine": "Don\u2019t say \u201cemergency\u201d. (pause) Don\u2019t say \u201cwe\u2019ll try.\u201d (pause) Say: \u201cacknowledge the demand event.\u201d (pause) Say: \u201cinitiating response.\u201d (pause) Say: \u201cstability maintained per interlocks.\u201d (pause) Keep it ugly for the transcript.",
+      "changeSummary": "Kept required wording; reduced commentary and made it sound like live prompting. | Split into short beats using (pause) to meet max beat length. Removed list commas by switching to repeated \u201cSay:\u201d lines while keeping the same required phrases and intent."
+    },
+    {
+      "scene": "SCN_SCN-043.json",
+      "id": "N_AUTH_OPS",
+      "priorLine": "Accepted. (pause) Timestamp 14:22:11. (pause) Provide the record ID when available. (pause) Report shed start time when first action occurs.",
+      "lineToEdit": "Good. Standard language, no new nouns. Now we make the console do something attributable.",
+      "nextLine": "",
+      "revisedLine": "Good. Keep it standard. (pause)\nNow get the console to output (pause)\nsomething attributable.",
+      "changeSummary": "More conversational; preserved intent and jargon. | Shortened the second sentence to 8 words by replacing \u201cto give us\u201d with \u201cto output,\u201d keeping the same intent and tone. | Added two (pause) breaks to keep each beat under 8 words; meaning and tone unchanged."
+    },
+    {
+      "scene": "SCN_SCN-043.json",
+      "id": "N_THREAT_PASS_OPS",
+      "priorLine": "Noted. Timestamp 14:22:14. (pause) Directive stands. Execute shed now. (pause) Avoid cycling and step-load chatter. (pause) Provide record ID. (pause) Provide shed start time.",
+      "lineToEdit": "That works because it\u0019s still a request for clarity, not a new fight. Now comply loudly and print something we can staple.",
+      "nextLine": "",
+      "revisedLine": "Okay. (pause) Don\u2019t push it further. (pause) Confirm action, then print. (pause) Something we can staple.",
+      "changeSummary": "Removed explanatory setup; kept pragmatic next steps. | Inserted (pause) breaks to keep each beat under 8 words; kept wording and the single comma while preserving meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-043.json",
+      "id": "N_THREAT_FAIL_OPS",
+      "priorLine": "Negative. (pause) Timestamp 14:22:16. (pause) Directive is documented via recording and log mirror. (pause) Confirm action now. (pause) Do not delay shed for process language.",
+      "lineToEdit": "They\u0019re right about the recording. You\u0019re right about attribution.\nPrint the header. Then act. Don\u0019t burn time on tone.",
+      "nextLine": "",
+      "revisedLine": "Yeah, it\u2019s recorded. (pause) Still need that header. (pause) Print it. Then act. (pause) Don\u2019t burn time on tone.",
+      "changeSummary": "Clipped and reactive; preserved priority order and rationale. | Added (pause) breaks so each beat stays under 8 words; kept wording and meaning the same, and cleaned the apostrophe encoding."
+    },
+    {
+      "scene": "SCN_SCN-043.json",
+      "id": "N_MAP_OPS",
+      "priorLine": "The screen redraws into a block diagram: feeder names, breaker groups, and three categories of load with mismatched fonts.\nCRITICAL includes chamber environmental, rotation frame lubrication, and a box labeled VERIFICATION SUPPORT that is, unhelpfully, most of the building.",
+      "lineToEdit": "That label is doing emotional work. The checklist treats VERIFICATION SUPPORT as untouchable because it wants a stable baseline.\nThe grid treats it as discretionary because it\u0019s not a hospital. Both are correct in their own court.",
+      "nextLine": "",
+      "revisedLine": "VERIFICATION SUPPORT. Great. (pause) Checklist wants a stable baseline. (pause) It treats it as untouchable. (pause) Dispatch sees it as discretionary. (pause) Pick your courtroom.",
+      "changeSummary": "More immediate, less essay-like; retained the same institutional conflict. | Split the line into short beats using pauses, removed the comma and the causal connector to meet word, comma, and explainer limits while keeping meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-043.json",
+      "id": "N_MAP_ASK_OPS",
+      "priorLine": "Three shed presets highlight. None meet the target alone.",
+      "lineToEdit": "You can shed some without touching it. Not twelve megawatts.\nTo hit the target cleanly, you either redefine support, or you shed something that will auto-recover and Dispatch will call it noncompliance.",
+      "nextLine": "",
+      "revisedLine": "We can shed a little (pause) without touching it. (pause) Twelve megawatts won't happen that way. (pause) To hit target clean, (pause) we reclass support\u2014or (pause) we drop something that auto-recovers (pause) and Dispatch calls it a miss.",
+      "changeSummary": "Made it more spoken; preserved the same constraints and consequences. | Split into short beats using (pause) to meet max beat length; corrected encoding issues (won't, support\u2014or); kept meaning and limited commas to one."
+    },
+    {
+      "scene": "SCN_SCN-043.json",
+      "id": "N_DEFINE_OPS",
+      "priorLine": "Stability means your node doesn't create a problem. (pause) I don't have to name. (pause) Voltage in band. (pause) No step-load chatter. (pause) No cycling. (pause) And\u0014because it comes up\u0014no undocumented behavior. (pause) That's not technical. (pause) That's legal.",
+      "lineToEdit": "Hear that? \u001cUndocumented.\u001d That\u0019s the real interlock.\nThe console can do staged shed with timestamps. Or single-step. The cleanest path to \u001cno chatter\u001d is the macro the checklist hates.",
+      "nextLine": "",
+      "revisedLine": "Undocumented. (pause) That's the word that matters. (pause) We can stage it with timestamps, (pause) or single-step it. (pause) The no-chatter macro is the one (pause) the checklist won't like.",
+      "changeSummary": "More direct and less performative; kept the same operational options and political cost. | Split the line into shorter beats using (pause) so each beat stays under 8 words. Kept only one comma and preserved the original meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-043.json",
+      "id": "N_CONFIG_OPS",
+      "priorLine": "A configuration pane opens: TARGET SHED: 12 MW. The slider is disabled; only presets can be accepted.\nTwo tabs: STAGED and SINGLE-STEP. The cursor blinks like it wants a signature.",
+      "lineToEdit": "Staged gives you more timestamps. More timestamps means more places to hide competence.\nSingle-step is cleaner electrically. Also cleaner for blame.",
+      "nextLine": "",
+      "revisedLine": "Staged buys you more timestamps. (pause) Single-step's cleaner electrically\u2014and whoever signs it, wears it.",
+      "changeSummary": "Reduced quippy abstraction; preserved blame/attribution implication. | Inserted a (pause) to split the line into shorter beats; tightened \u201cSingle-step is\u201d to \u201cSingle-step\u2019s\u201d to meet beat word limit; added one comma for readability without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-043.json",
+      "id": "N_STAGED_OPS",
+      "priorLine": "The console assembles three staged groups. The third is marked: VERIFICATION SUPPORT \u0014 TEMPORARY RECLASS REQUIRED.",
+      "lineToEdit": "There it is. The box that decides whether you\u0019re \u001cfollowing procedure\u001d or \u001cmaking decisions.\u001d\nDon\u0019t invent a new category. Reclass with an existing code.",
+      "nextLine": "Confirm you\u0019re acting. (pause) I don\u0019t need your philosophy. (pause) I need a time stamp. (pause) And a stable response.",
+      "revisedLine": "There it is. TEMPORARY RECLASS REQUIRED. (pause) Use an existing code. (pause) Don\u2019t invent a category under pressure.",
+      "changeSummary": "Removed binary contrast; kept instruction and risk framing. | Added (pause) breaks to keep each beat under 8 words; cleaned stray characters and standardized punctuation without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-043.json",
+      "id": "N_STAGED_CONFIRM_OPS",
+      "priorLine": "Timestamp 14:22:31. Logged. (pause) Provide action record ID when available. (pause) Report first step time when it occurs.",
+      "lineToEdit": "Good. Now make the reclass legitimate, or this becomes \u001ccycling in disguise.\u001d",
+      "nextLine": "",
+      "revisedLine": "Good. Make the reclass airtight. (pause) Or they write \"cycling\" on you.",
+      "changeSummary": "More defensive and specific; preserved compliance risk. | Split into two beats with a (pause) to meet the 8-word beat limit; changed \"someone\" to \"they\" without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-043.json",
+      "id": "N_RECLASS_OPS",
+      "priorLine": "A dialog box appears with a legal tone and a petty request: SELECT JUSTIFICATION CODE.\nThe available codes are pre-filled. None are kind.",
+      "lineToEdit": "Pick the code that already exists. Don\u0019t invent a new justification. New justifications become meetings.",
+      "nextLine": "",
+      "revisedLine": "Pick a code that already exists. (pause) Don\u2019t write a new justification. (pause) That\u2019s a meeting you\u2019ll lose.",
+      "changeSummary": "More spoken and urgent; kept 'existing code only' and consequences. | Split the line into shorter beats with (pause) markers to meet the 8-word limit, and corrected apostrophe/encoding without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-043.json",
+      "id": "N_RECLASS_DONE_OPS",
+      "priorLine": "VERIFICATION SUPPORT flips from CRITICAL to NONCRITICAL with no animation, like it\u0019s ashamed.",
+      "lineToEdit": "Good. Now it\u0019s not a deviation. It\u0019s a classification update. Words matter because they\u0019re what survives.",
+      "nextLine": "",
+      "revisedLine": "Good. (pause) Put classification update in the notes. (pause) That wording is what survives.",
+      "changeSummary": "Removed banned contrast; kept emphasis on survivable language. | Added pauses to split the line into shorter beats under 8 words without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-043.json",
+      "id": "N_SINGLESTEP_OPS",
+      "priorLine": "The console offers one macro: EXECUTE ROUTING: ALIGNMENT-SEQUENCE LOAD ROUTING (12 MW CLEAN).\nA warning line beneath it: NOTE: MAY ALTER VERIFICATION BASELINE. The word \u001cmay\u001d is doing too much work.",
+      "lineToEdit": "That\u0019s the one. It keeps interlocks happy by nudging the rotation frames into a tighter relationship.\nThe checklist will call it \u001cbaseline alteration.\u001d Dispatch will call it \u001cstable.\u001d You will call it \u001cdocumented.\u001d",
+      "nextLine": "",
+      "revisedLine": "That\u2019s the one. (pause) Keeps the interlocks happy. (pause) Tightens up the rotation frames. (pause) Checklist will gripe about \u201cbaseline.\u201d (pause) We just keep it documented.",
+      "changeSummary": "More reactive and less list-like; preserved technical meaning and stakeholder reactions. | Split the long sentence into short beats with (pause) to meet the 8-word limit, removed the causal phrasing, and cleaned up punctuation/quotes without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-043.json",
+      "id": "N_ALIGNNAME_OPS",
+      "priorLine": "Why \u001calignment-sequence\u001d?",
+      "lineToEdit": "Because someone once tried to describe what the control law does, and then Legal made them put it back in the drawer.\nOperationally: it balances load without chatter by coordinating the frames. That\u0019s all we need to say out loud.",
+      "nextLine": "",
+      "revisedLine": "Because Legal didn\u2019t want anyone describing it. (pause) In detail. (pause) Operationally: it balances load. (pause) Without chatter, it coordinates the frames. (pause) That\u2019s all we say.",
+      "changeSummary": "Made it less narrative and more pragmatic; kept the same facts. | Split into short beats with (pause) to meet max beat length; kept meaning intact; used only one comma and retained a single explainer hit (\u201cBecause\u201d)."
+    },
+    {
+      "scene": "SCN_SCN-043.json",
+      "id": "N_POST_ACK_OPS",
+      "priorLine": "Timestamp 14:22:57. Confirm you're acting. (pause) Confirm you'll maintain stability.",
+      "lineToEdit": "Say it clean. Then we watch the numbers.",
+      "nextLine": "Acting. Stability maintained per interlocks.",
+      "revisedLine": "Say it clean. Then watch the numbers.",
+      "changeSummary": "Minimal change; line already fit the moment."
+    },
+    {
+      "scene": "SCN_SCN-043.json",
+      "id": "N_ARMED_OPS",
+      "priorLine": "The containment sphere\u0019s surface flickers\u0014matte to reflective, reflective to matte\u0014like a thought it isn\u0019t allowed to have.\nThe console continues counting down routing steps as if nothing visual is relevant.",
+      "lineToEdit": "\u001cArmed\u001d is a terrible word. It implies intent.\nWe did not give it intent. We gave it permission.",
+      "nextLine": "",
+      "revisedLine": "Armed is a lousy word. (pause) But it\u2019s what the panel prints. (pause) We gave it permission, that\u2019s all.",
+      "changeSummary": "Less philosophical; kept the same idea about intent vs permission under labeling. | Added (pause) breaks to keep each beat under 8 words; preserved wording and the single comma."
+    },
+    {
+      "scene": "SCN_SCN-043.json",
+      "id": "N_PRINT_OPS",
+      "priorLine": "The log printer wakes with a reluctant whine. A strip curls into the tray:\nACTION HEADER \u0014 CONTROL ROOM CONSOLE, with a serial and timestamp.",
+      "lineToEdit": "Thank you. That\u0019s attributable. That\u0019s the difference between \u001cyou did it\u001d and \u001cthe room did it.\u001d",
+      "nextLine": "",
+      "revisedLine": "Good. Serial and timestamp\u2014that\u2019s attribution. (pause) It stays tied to the console record. (pause) Right where it belongs.",
+      "changeSummary": "Removed punchline contrast; preserved attribution purpose. | Added pauses to keep each beat under 8 words, cleaned up the timestamp punctuation, and split the second sentence without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-043.json",
+      "id": "N_STEP_AWAY_OPS",
+      "priorLine": "You step back. The demand banner stays pinned, politely escalating itself at the edge of your vision.",
+      "lineToEdit": "You can walk away from the screen. You can\u0019t walk away from the timestamp.\nWhen you\u0019re ready, come back and do it in a way that can be stapled.",
+      "nextLine": "",
+      "revisedLine": "Walk off if you need to breathe. (pause) Timestamp still runs. (pause) Come back. (pause) Do it with something we can staple.",
+      "changeSummary": "More human and pressured; kept paperwork-driven framing. | Added (pause) breaks and split the last sentence to keep each beat under 8 words while preserving meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-062.json",
+      "id": "N_SPHERE_OPS_WARN",
+      "priorLine": "Up close, the sphere is mostly matte\u0014industrial, honest, designed to be ignored.\nThen it catches the room wrong. The reflection isn\u0019t you from any angle you can stand in.\nIt flickers back to matte before your eyes finish reporting it.",
+      "lineToEdit": "Before you name it\u0014\nDon\u0019t call it a \u001cmirror.\u001d Don\u0019t call it \u001cresponsive.\u001d\n\u001cReflective behavior\u001d is the phrase in the legacy report. It\u0019s not better. It\u0019s just already filed.",
+      "nextLine": "",
+      "revisedLine": "Hold it. (pause) Watch your words. (pause) Don\u2019t put \u201cmirror\u201d or \u201cresponsive\u201d in the log. (pause) Use \u201creflective behavior.\u201d (pause) That\u2019s legacy-report language. (pause) Already filed.",
+      "changeSummary": "More immediate and defensive; preserved the required terminology and filing logic. | Split the line into multiple (pause) beats to keep each beat under 8 words, removed the comma by splitting the last clause into its own sentence, and kept wording and intent intact."
+    },
+    {
+      "scene": "SCN_SCN-062.json",
+      "id": "N_SPHERE_HELD_OPS",
+      "priorLine": "ask: \u001cHeld state?\u001d",
+      "lineToEdit": "\u001cHeld\u001d is a compliance word, not an operations word.\nOperations has \u001cstable,\u001d \u001carmed,\u001d \u001cinhibit,\u001d and \u001coperator error.\u001d\nCompliance has \u001cheld,\u001d because \u001cheld\u001d implies someone is responsible for holding it.\nWhich\u0014just for my peace of mind\u0014is not me.",
+      "nextLine": "",
+      "revisedLine": "\u2018Held\u2019? That\u2019s compliance talk. (pause)\nWe say stable/armed/inhibit/operator error. (pause)\n\u2018Held\u2019 reads like someone\u2019s actively holding it. (pause)\nAnd no, that\u2019s not me.",
+      "changeSummary": "Cut the taxonomy lecture down to spoken shorthand; kept the responsibility concern. | Split the line into short beats with (pause) markers to meet max beat length. Removed extra punctuation to stay within the comma limit while keeping the same meaning."
+    },
+    {
+      "scene": "SCN_SCN-062.json",
+      "id": "N_SPHERE_SAFE_OPS",
+      "priorLine": "ask: \u001cIs it safe to stand here?\u001d",
+      "lineToEdit": "Safe is a category that triggers people.\nSo: there is no proximity interlock violation on my panel.\nIf the surface goes fully reflective and stays there, you step back and you say \u001cvisual condition change.\u001d\nNot \u001csomething happened.\u001d Not \u001cit looked at me.\u001d You\u0019d be surprised what becomes testimony.",
+      "nextLine": "",
+      "revisedLine": "Don't say \"safe\" (pause) it summons a crowd. (pause) My panel shows no proximity interlock violation. (pause) If it goes fully reflective and stays (pause) step back (pause) and log \"visual condition change.\" (pause) Keep it boring. (pause) Boring survives testimony.",
+      "changeSummary": "More reactive; kept interlock status and the exact phrase to use. | Split into short beats with (pause) markers to keep each under 8 words. Normalized quotes and encoding without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-062.json",
+      "id": "N_SPHERE_LOG_OPS",
+      "priorLine": "talk: \u001cLogging: reflective behavior observed.\u001d",
+      "lineToEdit": "Good. Add time, location, and that you remained outside the barrier stripe.\n\u001cI didn\u0019t cross the line\u001d is the kind of sentence that keeps you employed.",
+      "nextLine": "",
+      "revisedLine": "Good. Add time and location. (pause) Say you stayed outside the barrier stripe. (pause) That sentence keeps you employed.",
+      "changeSummary": "Tightened and made more spoken; preserved the protective logging instruction. | Split into shorter beats with (pause) markers and removed commas by rephrasing without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-062.json",
+      "id": "N_STATUS_OPS_CORRECT",
+      "priorLine": "That\u0019s new.",
+      "lineToEdit": "It\u0019s not new. It\u0019s newly visible.\n\u001cNew\u001d implies the system changed.\nThis implies we noticed.",
+      "nextLine": "",
+      "revisedLine": "Careful with \u201cnew.\u201d (pause) It implies we changed something. (pause) Say \u201cnewly visible.\u201d (pause) It says we noticed.",
+      "changeSummary": "Removed binary cadence; kept the liability-sensitive wording guidance. | Split into four short beats with pauses to meet the 8-word limit. Replaced \u201creads like\u201d with \u201cimplies\u201d to keep meaning and reduce explainer language."
+    },
+    {
+      "scene": "SCN_SCN-062.json",
+      "id": "N_STATUS_WHO_OPS",
+      "priorLine": "ask: \u001cHOLD by who?\u001d",
+      "lineToEdit": "There isn\u0019t a \u001cwho\u001d field on my screen.\nThere\u0019s an \u001cauthority\u001d field and a blank space where my weekend used to be.\nIf it\u0019s what I think it is, you\u0019re going to want the notice number before you do anything brave.",
+      "nextLine": "",
+      "revisedLine": "No who field. Just authority. (pause) Get the notice number first, before heroics.",
+      "changeSummary": "Cut the aside; kept the same constraint and caution about acting without the notice number. | Added a (pause) to split the line into two shorter beats and tightened the last clause to keep the same meaning within the beat word limit."
+    },
+    {
+      "scene": "SCN_SCN-062.json",
+      "id": "N_STATUS_CLEAR_OPS",
+      "priorLine": "ask: \u001cCan I clear it locally?\u001d",
+      "lineToEdit": "You can clear alarms locally. You can\u0019t clear holds locally.\nHolds are how remote offices say \u001cdon\u0019t make this my fault\u001d without using those words.",
+      "nextLine": "",
+      "revisedLine": "Alarms, sure. Clear those here. (pause) A hold won\u2019t clear local. (pause) That\u2019s remote-office insurance.",
+      "changeSummary": "Avoided hard contrast phrasing; kept meaning about local limits and blame-shifting. | Split into shorter beats with pauses to meet max beat word count; cleaned punctuation while keeping meaning."
+    },
+    {
+      "scene": "SCN_SCN-062.json",
+      "id": "N_SCAN_OPS_COACH",
+      "priorLine": "The interface scan panel is a waist-high slab of glass with a keypad that assumes obedience.\nIts prompt is cheerful in the way compliance software is cheerful:\nENTER TARGET / SELECT FORM / SUBMIT.",
+      "lineToEdit": "Use it like a document scanner.\nNot like a conversation.\nIf you make it a conversation, you\u0019ve created a stakeholder.",
+      "nextLine": "",
+      "revisedLine": "Treat it like a copier. Scan. Submit. Done. (pause) Start talking to it. (pause) Suddenly, you\u2019ve got stakeholders.",
+      "changeSummary": "More natural and slightly irritated; preserved warning about anthropomorphizing/system ownership. | Split into short beats with (pause), removed extra commas by breaking the list into sentences, and tightened wording while keeping meaning."
+    },
+    {
+      "scene": "SCN_SCN-062.json",
+      "id": "N_REF_EXPAND_OPS",
+      "priorLine": "You expand the reference field.\nThe digits reflow to fit, like the system was waiting for permission to be specific.",
+      "lineToEdit": "Read it back out loud. Then print it.\nI want the room to know you didn\u0019t invent the number.\nThat\u0019s how we survive \u001clater.\u001d",
+      "nextLine": "",
+      "revisedLine": "Read the number back. (pause) Out loud. (pause) Then print it. (pause) Everyone needs to hear you didn't invent it.",
+      "changeSummary": "Removed slogan ending; kept attribution/anti-invention intent. | Added (pause) breaks to keep each beat at 8 words or fewer and corrected the apostrophe in \u201cdidn't.\u201d"
+    },
+    {
+      "scene": "SCN_SCN-062.json",
+      "id": "N_STANDING_OPS_EXPLAIN",
+      "priorLine": "ask: What does \u001cstanding\u001d mean here?",
+      "lineToEdit": "In local operations, standing means \u001cbadge works.\u001d\nIn non-local compliance, standing means \u001celigible to be processed.\u001d\nWhich is a phrase I hate, because it treats people like forms.\nBut it\u0019s their phrase, and their phrases are sticky.",
+      "nextLine": "",
+      "revisedLine": "Standing depends on who\u2019s judging. (pause) Local your badge works. (pause) Non local: eligible to be processed. (pause) Yeah. (pause) Use their phrase. Don\u2019t polish it.",
+      "changeSummary": "Less essay-like; kept both definitions and the pragmatic need to use their wording. | Split the line into short beats with pauses to meet the 8-word limit per beat. Removed extra phrasing and kept the original local vs non-local distinction and the directive to use their exact wording."
+    },
+    {
+      "scene": "SCN_SCN-062.json",
+      "id": "N_PRINT_NOTICE_OPS",
+      "priorLine": "The nearby printer wakes like it\u0019s been pretending not to exist.\nA dot-matrix page tears out, barcodes crisp enough to feel insulting.\nThe header reads like a contractor letter until you get to MTA.",
+      "lineToEdit": "Good. Keep that.\nDon\u0019t summarize it from memory. Attach the original. Let the machine accuse itself.",
+      "nextLine": "",
+      "revisedLine": "Good. Keep the original. (pause) Don\u2019t paraphrase it from memory. (pause) Attach the page. (pause) Let the machine own it.",
+      "changeSummary": "More spoken and defensive; preserved instruction to attach original for liability. | Split the line into shorter beats using (pause) markers to meet the 8-word limit, and cleaned up the punctuation/encoding without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-062.json",
+      "id": "N_PULL_LAST_OPS",
+      "priorLine": "Okay.",
+      "lineToEdit": "That\u0019s the correct emotional response.\nNow make it attributable: print it, annotate it, and attach it to whatever closure packet you still think you\u0019re finishing.",
+      "nextLine": "",
+      "revisedLine": "Yeah. Now make it attributable: print it. (pause) Annotate it. (pause) Stick it in the closure packet.",
+      "changeSummary": "Removed coaching tone; kept same action list and purpose. | Split the instruction into three beats with pauses to keep each beat under 8 words. Removed list commas by converting the list into short imperative sentences while preserving meaning."
+    },
+    {
+      "scene": "SCN_SCN-062.json",
+      "id": "N_PRESENCE_OPS",
+      "priorLine": "Submitting presence note. OLEA signatory. On-site, in control.",
+      "lineToEdit": "Good\u0014keep it boring.\n\u001cOn-site\u001d is a physical claim. Physical claims are defensible.\nDon\u0019t add motives. Don\u0019t add theories. Just existence.",
+      "nextLine": "The panel accepts the note without celebrating.\nA confirmation code appears, then immediately asks if you want a hard copy.",
+      "revisedLine": "Good. Keep it boring. (pause) On-site is a physical claim. (pause) Defensible. No motives. No theories. (pause) Just that you're here.",
+      "changeSummary": "Trimmed repetition; kept the legal/defensible focus and constraints on wording. | Added (pause) breaks to keep each beat under 8 words. Removed the dash and tightened punctuation without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-062.json",
+      "id": "N_PRINT_CONFIRM_OPS",
+      "priorLine": "The printer produces a thin receipt that looks like nothing.\nThe kind of nothing that wins arguments.",
+      "lineToEdit": "Staple it to the front.\nNot because it fixes anything. Because it proves you were present when it didn\u0019t.",
+      "nextLine": "",
+      "revisedLine": "Staple it to the front. (pause) It proves you were present. (pause) When it didn\u2019t work.",
+      "changeSummary": "Removed banned contrast construction; kept same evidentiary function. | Inserted pauses to split the line into shorter beats while keeping the same meaning and tone."
+    },
+    {
+      "scene": "SCN_SCN-062.json",
+      "id": "N_ESTOP_OPS_WARN",
+      "priorLine": "The emergency stop is a red mushroom button under a clear flip cover.\nThe cover is scuffed from hands that stopped just short of being responsible.",
+      "lineToEdit": "You can press it. You can.\nBut pressing it is a declaration. Declarations summon committees.\nIf you touch it, I need a reason phrase and a time stamp. Not a feeling.",
+      "nextLine": "",
+      "revisedLine": "You can hit it yeah. (pause) Once you do (pause) you've made a declaration. (pause) Committees love declarations. (pause) If you touch it (pause) I need a reason phrase (pause) and a timestamp\u2014nothing emotional.",
+      "changeSummary": "More speakable and pressured; preserved warning about consequences and required documentation. | Inserted (pause) breaks to keep each beat under 8 words. Removed extra commas and tightened punctuation without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-062.json",
+      "id": "N_ESTOP_EXPLAIN_OPS",
+      "priorLine": "ask: \u001cWhat does it actually stop?\u001d",
+      "lineToEdit": "It stops local motion control and trips local breakers.\nIt does not stop non-local holds. It does not stop paperwork.\nIt mostly stops you from claiming you were following the planned sequence.",
+      "nextLine": "",
+      "revisedLine": "It drops local motion control. (pause) Trips the local breakers. (pause)\nThe non-local hold stays. (pause) The paperwork stays. (pause)\nAnd your planned sequence argument goes away.",
+      "changeSummary": "Kept technical facts; tightened phrasing and reduced lecture tone. | Added (pause) breaks to keep each beat under 8 words; removed stray formatting around \u201cplanned sequence\u201d without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-067.json",
+      "id": "N_SPHERE_OPS_WARN",
+      "priorLine": "Up close, the sphere is mostly matte\u0014industrial, honest, designed to be ignored.\nThen it catches the room wrong. The reflection doesn\u0019t resolve into any angle you\u0019re standing in.\nIt flickers back to matte before your eyes finish reporting it.",
+      "lineToEdit": "Before you name it\u0014don\u0019t.\n\u001cReflective behavior\u001d is the phrase in the legacy report.\nIt\u0019s not better. It\u0019s just already filed.",
+      "nextLine": "",
+      "revisedLine": "Don't name it. (pause) Log \"reflective behavior\"\u2014legacy wording. (pause) Already filed.",
+      "changeSummary": "More clipped and immediate; preserved the exact preferred term and reason. | Inserted pause breaks to keep each beat under 8 words and cleaned up formatting/characters without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-067.json",
+      "id": "N_SPHERE_HOW_OFTEN_OPS",
+      "priorLine": "ask: \u001cHow often?\u001d",
+      "lineToEdit": "It\u0019s intermittent. Which is a word I like because it doesn\u0019t imply intent.\nWe do not say \u001cit\u0019s trying.\u001d We say \u001ccondition observed.\u001d\nSame result, less blame.",
+      "nextLine": "The sphere flickers once more, like a clerical correction applied to light.",
+      "revisedLine": "Intermittent. (pause) Don\u2019t give it motives. (pause) Log \u201ccondition observed.\u201d (pause) Less blame that way.",
+      "changeSummary": "Reduced explanation; kept the liability-safe wording guidance. | Split the line into shorter beats with (pause) to meet max_beat_words, and corrected punctuation/encoding without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-067.json",
+      "id": "N_SPHERE_LOG_OPS",
+      "priorLine": "talk: \u001cLogging reflective behavior.\u001d",
+      "lineToEdit": "Good. Add time. Add distance. Add that you stayed outside the barrier stripe.\n\u001cI did not cross the line\u001d is the kind of sentence that keeps your badge working.",
+      "nextLine": "The sphere flickers once more, like a clerical correction applied to light.",
+      "revisedLine": "Good. Time and distance noted. (pause) You stayed outside the barrier stripe. (pause) Keep that sentence. (pause) It keeps your badge working.",
+      "changeSummary": "More spoken; retained the same protective log details. | Split the line into shorter beats with (pause) markers and removed extra commas by rephrasing while keeping the same meaning."
+    },
+    {
+      "scene": "SCN_SCN-067.json",
+      "id": "N_STATUS_OPS_CORRECT",
+      "priorLine": "That\u0019s new.",
+      "lineToEdit": "It\u0019s not new. It\u0019s newly visible.\n\u001cNew\u001d implies the system changed. This implies we noticed.",
+      "nextLine": "",
+      "revisedLine": "Don\u2019t say \u201cnew.\u201d (pause) Say \u201cnewly visible.\u201d (pause) One sounds like a system change. (pause) One sounds like we noticed.",
+      "changeSummary": "Avoided the original binary rhythm; preserved the legal/wording distinction. | Inserted pauses to split the line into shorter beats (\u22648 words each) without changing meaning, tone, or facts."
+    },
+    {
+      "scene": "SCN_SCN-067.json",
+      "id": "N_STATUS_CLEAR_OPS",
+      "priorLine": "ask: \u001cCan I clear it locally?\u001d",
+      "lineToEdit": "You can clear alarms locally. You cannot clear holds locally.\nHolds are how remote offices say \u001cdon\u0019t make this my fault\u001d without using those words.",
+      "nextLine": "",
+      "revisedLine": "Clear an alarm locally. (pause) A hold won\u2019t clear here. (pause) Remote-office insurance.",
+      "changeSummary": "More clipped; kept same operational limitation and implied blame-shielding. | Broke the line into short beats with (pause) and tightened phrasing while preserving meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-067.json",
+      "id": "N_STATUS_WHO_OPS",
+      "priorLine": "ask: \u001cHeld by who?\u001d",
+      "lineToEdit": "There isn\u0019t a who field on my screen.\nThere\u0019s an authority field and a blank space where my weekend used to be.\nIf you\u0019re doing anything today, you want it to end in a reference number.",
+      "nextLine": "",
+      "revisedLine": "No 'who' field. (pause) Just an authority tag. (pause)\nIf you do anything today, (pause) make sure it ends (pause) with a reference number.",
+      "changeSummary": "Cut the aside; preserved constraint and emphasis on traceability. | Added (pause) breaks to keep each beat under 8 words; kept wording and meaning the same."
+    },
+    {
+      "scene": "SCN_SCN-067.json",
+      "id": "N_ESTOP_OPS_WARN",
+      "priorLine": "The emergency stop is a red mushroom button under a clear flip cover.\nThe cover is scuffed from hands that stopped just short of being responsible.",
+      "lineToEdit": "You can press it. You can.\nBut pressing it is a declaration. Declarations summon committees.\nIf you touch it, I need a reason phrase and a time stamp. Not a feeling.",
+      "nextLine": "",
+      "revisedLine": "You can press it. (pause)\nJust know what you're doing. (pause)\nThat's a declaration. (pause)\nCommittees love those. (pause)\nIf you touch it I need. (pause)\nA reason phrase. (pause)\nAnd a timestamp.",
+      "changeSummary": "More direct and less performative; kept committee/paperwork consequence and requirements. | Added (pause) breaks to keep each beat under 8 words and split the final request into shorter beats. Cleaned up punctuation/characters without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-067.json",
+      "id": "N_ESTOP_WHAT_OPS",
+      "priorLine": "ask: \u001cWhat does it actually stop?\u001d",
+      "lineToEdit": "It stops local motion control and trips local breakers.\nIt does not stop non-local holds. It does not stop paperwork.\nMostly it stops you from claiming you followed the planned sequence.",
+      "nextLine": "",
+      "revisedLine": "It stops local motion control (pause) and trips the local breakers. (pause) Non-local holds stay. (pause) Paperwork stays. (pause) And it kills the story. (pause) \u201cWe followed the planned sequence.\u201d",
+      "changeSummary": "Kept meaning; made it more spoken and sharper. | Inserted (pause) breaks to keep each beat under 8 words. Split the final sentence into two beats while preserving meaning, and replaced stray control characters with standard quotation marks."
+    },
+    {
+      "scene": "SCN_SCN-067.json",
+      "id": "N_SCAN_OPS_COACH",
+      "priorLine": "The interface scan panel is a waist-high slab of glass with a keypad that assumes obedience.\nIts prompt is cheerful in the way compliance software is cheerful: SELECT FORM / SUBMIT.",
+      "lineToEdit": "Use it like a document scanner. Not like a conversation.\nIf you make it a conversation, you\u0019ve created a stakeholder.",
+      "nextLine": "The panel offers a short list. One entry is already highlighted, like it\u0019s been waiting for you:\nTEMPORARY OPERATING VARIANCE \u0014 HOLD CONDITION (NON-LOCAL).",
+      "revisedLine": "Treat it like a scanner. (pause) Pick the form. Submit. (pause) Start talking to it. (pause) You just created a stakeholder.",
+      "changeSummary": "More natural and tense; preserved warning about creating ownership. | Added (pause) breaks to keep each beat under 8 words. Removed the extra comma by splitting the last sentence into two short sentences, keeping the same meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-067.json",
+      "id": "N_ATTACH_REF_OPS",
+      "priorLine": "The panel accepts the string too quickly, like it wanted to believe you.\nA secondary field appears: QUEUE POSITION (READ-ONLY).\nIt remains blank, which is its own kind of answer.",
+      "lineToEdit": "Print that screen when you\u0019re done.\nNot because it\u0019s meaningful. Because it proves the machine agreed you typed what you typed.",
+      "nextLine": "",
+      "revisedLine": "When you're done, print that screen. (pause) It shows the machine accepted your string. (pause) That's the whole point.",
+      "changeSummary": "Removed banned contrast phrasing; kept evidentiary purpose of printing. | Inserted (pause) breaks to keep each beat under 8 words; kept meaning and tone; removed extra wording without adding commas or explainer phrases."
+    },
+    {
+      "scene": "SCN_SCN-067.json",
+      "id": "N_SIGNATORY_OPS",
+      "priorLine": "OLEA signatory. On-site. Custody acknowledged.",
+      "lineToEdit": "Good\u0014keep it boring.\n\u001cOn-site\u001d is a physical claim. Physical claims are defensible.\nDon\u0019t add motives. Don\u0019t add theories. Just existence.",
+      "nextLine": "The panel adds a line item: PRESENCE ATTESTATION \u0014 RECEIVED.\nIt does not say accepted. It says received, like it\u0019s protecting itself.",
+      "revisedLine": "Good. Keep it boring. (pause) On-site is defensible. (pause) Don\u2019t add motives or theories. (pause) Just the fact of presence.",
+      "changeSummary": "Tightened and kept focus on defensible claims; preserved constraints. | Split the line with (pause) breaks so each beat is 8 words or fewer. Cleaned up punctuation and removed stray characters without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-067.json",
+      "id": "N_LOAD_TEMPLATE_OPS",
+      "priorLine": "You place the variance template against the glass, not because it needs to \u001csee\u001d paper\u0014\nbecause you want the act recorded as procedural, not improvised.\n\nThe panel chirps once, pleased with itself.\nThe form renders with fields mapped into non-local language.",
+      "lineToEdit": "Don\u0019t explain.\nExplanations invite questions. Questions invite ownership.",
+      "nextLine": "",
+      "revisedLine": "Don\u2019t explain. (pause) Explanations become questions. (pause) Questions become you owning it.",
+      "changeSummary": "Kept the same warning; made it more colloquial and pressured. | Added (pause) breaks to keep beats under 8 words; swapped \u201cturn into\u201d to \u201cbecome\u201d without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-067.json",
+      "id": "N_SUBMIT_WITH_NOTE_OPS",
+      "priorLine": "You add one sentence. Clinical. Time-stamped.\n\u001cReflective behavior ongoing.\u001d\nNot because it will help them understand\u0014because it proves you saw it and didn\u0019t rename it.",
+      "lineToEdit": "Fine. One sentence is still a form.\nTwo sentences becomes a story. Stories get assigned authors.",
+      "nextLine": "The panel pauses\u0014long enough to feel like judgment, short enough to remain deniable.\nThen:\nSUBMISSION RECEIVED. STATUS: PROCESSING.",
+      "revisedLine": "Fine. One sentence is still a form. (pause) Don't add a second. (pause) A second makes a story. (pause) Then it has an author.",
+      "changeSummary": "More immediate; preserved constraint about keeping it to one sentence to avoid liability. | Split into short beats with pauses, removed the comma, and corrected the apostrophe in \"Don't\" while keeping meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-071-orig.json",
+      "id": "N_OPS_RULES",
+      "priorLine": "SPINDLE Chamber Floor. The containment sphere fills the center of the room like an oversized insulator\u0014until it doesn\u0019t.\nA status indicator cluster ticks through load, interlocks, and an authority field you didn\u0019t enter.\nThe interface scan panel waits with the patience of a copier.",
+      "lineToEdit": "Before you touch anything\u0014keep your language clean.\nNo \u001cemergency.\u001d No \u001cit\u0019s trying.\u001d No \u001cstill.\u001d\nPrint headers. Then act. In that order. I\u0019m not being precious. I\u0019m being employable.",
+      "nextLine": "",
+      "revisedLine": "Hold up\u2014watch your words. (pause) No \"emergency.\" No \"it's trying.\" (pause) No \"still.\" Print the header, then act. (pause) I like staying employable.",
+      "changeSummary": "More in-the-moment and less speechy; preserved forbidden terms and print-before-action rule. | Added (pause) breaks to keep each beat under 8 words; normalized the quoted phrases while preserving meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-071-orig.json",
+      "id": "N_OPS_STATUS",
+      "priorLine": "ask: Status?",
+      "lineToEdit": "Local motion control: permissive.\nProximity: no interlock violation.\nNon-local: there\u0019s a hold. Which is not my category.\nAnd logs are live. Don\u0019t make me chase your timestamps.",
+      "nextLine": "",
+      "revisedLine": "Local motion: permissive. (pause) Proximity is clear. (pause) Non-local shows a hold. (pause) Above my pay grade. (pause) And the log is live, (pause) don\u2019t make me chase times.",
+      "changeSummary": "Made it sound more spoken; kept same status fields and timestamp pressure. | Split into short (pause) beats to meet the 8-word limit, fixed encoding artifacts, and kept only one comma."
+    },
+    {
+      "scene": "SCN_SCN-071-orig.json",
+      "id": "N_OPS_ATTRIBUTION_PUSH",
+      "priorLine": "NOTICE \u0014 NON-LOCAL COMPLIANCE CONDITION.\nSUBJECT NODE: SOL\u0011EARTH\u0011LOCAL.\nACTION: HOLD STATE PENDING DOCUMENTATION.\nMANAGING AUTHORITY: METASTABLE TRANSFER AUTHORITY (MTA).\nREFERENCE: [scrolling reference string].",
+      "lineToEdit": "You can\u0019t clear it locally, but you can comply loudly.\nGet the reference number off that panel. Read it back. Then print it. I want attribution.",
+      "nextLine": "",
+      "revisedLine": "We can\u2019t clear it locally. Fine. (pause) Read the reference off the panel. (pause) Then print it. (pause) I want a number we can point at.",
+      "changeSummary": "Less rhetorical; preserved instructions to read back and print for attribution. | Inserted (pause) breaks and split the instruction into shorter beats to meet the 8-word max per beat, while keeping wording and intent intact."
+    },
+    {
+      "scene": "SCN_SCN-071-orig.json",
+      "id": "N_OPS_REF_INSTRUCTIONS",
+      "priorLine": "MTA_NOTICE_REF: [full string].\nSubmission log: [log string].\nQueue position: [value].\nProcessing window: active.",
+      "lineToEdit": "Good. Don\u0019t summarize it from memory. Attach the original. Let the machine accuse itself.\nPrint it. Tray, not screenshot. Screenshots become opinions.",
+      "nextLine": "",
+      "revisedLine": "Good. (pause) Don't paraphrase. Attach the original. (pause) Print it from the tray. (pause) Screenshots turn into arguments.",
+      "changeSummary": "Removed slogan endings; kept instruction to print original and avoid screenshots. | Fixed garbled characters, split the line with (pause) markers to keep each beat under 8 words, and preserved meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-071-orig.json",
+      "id": "N_OPS_PERSONALITY_NOTE",
+      "priorLine": "On-site status acknowledged as a physical claim.\nStanding evaluation remains pending.",
+      "lineToEdit": "They heard you. They did not accept you. That\u0019s their whole personality.",
+      "nextLine": "",
+      "revisedLine": "Yeah, they received it. (pause) They didn\u2019t accept it. (pause) That\u2019s how they operate.",
+      "changeSummary": "More grounded and less quotable; preserved meaning about acknowledgement vs acceptance. | Inserted (pause) breaks to keep each beat under 8 words; kept wording and tone the same."
+    },
+    {
+      "scene": "SCN_SCN-071-orig.json",
+      "id": "N_OPS_DEFENSIBLE",
+      "priorLine": "talk: Ops, what\u0019s the defensible move?",
+      "lineToEdit": "Make the next action look like it was always the next action.\nUse the official sequence. Keep logging on. Print before and after.\nIf you hit the big red button, you\u0019ve declared a story. Stories get authors.",
+      "nextLine": "And the hold?",
+      "revisedLine": "Make the next action look routine. (pause)\nRun the official sequence. (pause)\nKeep logging. (pause)\nPrint before and after. (pause)\nIf you slap the big red button, (pause)\nyou just volunteered to author (pause)\nthe incident report.",
+      "changeSummary": "Kept same advice; made it sound like stressed ops guidance rather than a maxim. | Split the long line into short beats using (pause) to meet the 8-word limit, and replaced extra commas with periods so only one comma remains while preserving meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-071-orig.json",
+      "id": "N_OPS_HOLD_REALITY",
+      "priorLine": "And the hold?",
+      "lineToEdit": "We don\u0019t clear holds. We document around them until someone upstream gets bored.\nOr until you collapse routes so hard the hold becomes\u001a academic.\nI didn\u0019t say that. The printer did.",
+      "nextLine": "",
+      "revisedLine": "We don\u2019t clear holds. (pause) We paper around them. (pause) Until someone upstream relents. (pause) Or you collapse routes. (pause) Until the hold doesn\u2019t matter. (pause) You didn\u2019t hear that from me.",
+      "changeSummary": "Less jokey, more defensive; preserved both outcomes and the deniability beat. | Split the long first beat into shorter beats by adding pauses and breaking sentences, keeping the original meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-071-orig.json",
+      "id": "N_OPS_ATTRIBUTABLE_THANKS",
+      "priorLine": "Initiating terminal shutdown per retirement checklist as risk-limiting containment; maintaining interlocks and continuous logging; operator present on-site.",
+      "lineToEdit": "Thank you. That\u0019s attributable.\nPrint that screen when it echoes back. Not because it matters. Because later, someone will pretend it did.",
+      "nextLine": "And do not add a second sentence. Two sentences becomes a story.",
+      "revisedLine": "Good. That\u2019s attributable. (pause) When it echoes back, print the screen. (pause) People get real selective later.",
+      "changeSummary": "Removed banned contrast construction; kept instruction to print echo-back for later review. | Split the line with (pause) markers so each beat stays under 8 words; corrected the apostrophe in \u201cThat\u2019s\u201d without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-071-orig.json",
+      "id": "N_OPS_STAPLE_IT",
+      "priorLine": "The printer in the wall stutters awake like it resents being included.\nA banner prints with the notice header and the reference string, crisp enough to be weaponized.",
+      "lineToEdit": "Staple it to the front.\nNot because it fixes anything. Because it proves you were present when it didn\u0019t.",
+      "nextLine": "",
+      "revisedLine": "Staple it to the front. (pause) It proves you were here (pause) when it didn\u2019t fix itself.",
+      "changeSummary": "Removed banned contrast; preserved evidentiary purpose. | Added two (pause) breaks to keep each beat under 8 words; corrected the apostrophe in \u201cdidn\u2019t\u201d without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-071-orig.json",
+      "id": "N_OPS_VISUAL_CHANGE",
+      "priorLine": "The sphere\u0019s surface is mostly matte\u0014until a thin band goes smooth and reflective, catching angles the room doesn\u0019t offer.\nIt doesn\u0019t brighten. It clarifies.",
+      "lineToEdit": "Visual condition change. Time and distance.\nAnd\u0014say it out loud\u0014confirm you stayed outside the barrier stripe.",
+      "nextLine": "Outside the stripe.",
+      "revisedLine": "Say: visual condition change. (pause) Add time and distance. (pause) Say you stayed outside the barrier stripe.",
+      "changeSummary": "More natural imperative; kept exact logging phrase and required details. | Inserted pauses to keep each beat under 8 words; cleaned punctuation without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-071-orig.json",
+      "id": "N_OPS_BADGE_LINE",
+      "priorLine": "Outside the stripe.",
+      "lineToEdit": "Good. That sentence keeps your badge working.",
+      "nextLine": "",
+      "revisedLine": "Good. Keep that exact sentence.",
+      "changeSummary": "Less folksy; preserved intent about repeatable defensible wording."
+    },
+    {
+      "scene": "SCN_SCN-071-orig.json",
+      "id": "N_OPS_ARMED_WORD",
+      "priorLine": "Indicators: ROTATION FRAMES \u0014 SYNCH TIGHT.\nINTERLOCKS \u0014 ARMED.\nAUTHORITY \u0014 NON-LOCAL.\nA small light labeled RETIREMENT CHECKLIST blinks like it\u0019s asking permission.",
+      "lineToEdit": "\u001cArmed\u001d is a terrible word. It implies intent.\nBut it\u0019s the label we inherited, so it\u0019s the label we get judged by.",
+      "nextLine": "",
+      "revisedLine": "Armed is a lousy label. (pause) Still, we inherited it. (pause) They\u2019ll quote it back at us.",
+      "changeSummary": "More spoken and wary; kept same meaning about inherited terminology and scrutiny. | Split into three beats with pauses to meet beat limit; removed one comma by rephrasing the middle clause while keeping meaning."
+    },
+    {
+      "scene": "SCN_SCN-071-orig.json",
+      "id": "N_OPS_TIMESTAMP_WARNING",
+      "priorLine": "You step toward the stairs. The chamber doesn\u0019t follow you.\nThe panel continues to wait, as if you only paused a sentence.",
+      "lineToEdit": "You can walk away from the panel. You can\u0019t walk away from the timestamp.\nCome back when you\u0019re ready to be a record.",
+      "nextLine": "",
+      "revisedLine": "Walk away if you need to. (pause) The timestamp keeps running. (pause) Come back when you're ready. (pause) Do it on the record.",
+      "changeSummary": "Reduced aphorism feel; kept the same warning about time/record. | Added (pause) breaks to keep each beat under 8 words and corrected the apostrophe in \"you're\"."
+    },
+    {
+      "scene": "SCN_SCN-071-orig.json",
+      "id": "N_OPS_DONT_CALL_IT",
+      "priorLine": "Emergency stop.",
+      "lineToEdit": "Don\u0019t call it that in the log.\nCall it: \u001cLocal motion control trip.\u001d Reason phrase. Time stamp.\nBecause right now you\u0019re not stopping a machine. You\u0019re starting a meeting.",
+      "nextLine": "Local interruption acknowledged.\nHold state remains. Standing evaluation pending. Processing window active.",
+      "revisedLine": "Don't write \"emergency stop\" in the log. (pause) Write \"Local motion control trip\". (pause) Add a reason phrase and timestamp. (pause) That entry starts a meeting either way. (pause) Make it defensible.",
+      "changeSummary": "Kept required replacement term; made it more defensive and less punchline-y. | Split into short beats with (pause), fixed punctuation/quotes, and kept the original meaning while staying under the word and comma limits."
+    },
+    {
+      "scene": "SCN_SCN-071-orig.json",
+      "id": "N_OPS_READ_ONCE_MORE",
+      "priorLine": "Run the sequence.",
+      "lineToEdit": "Read the reason phrase one more time.\nThen do it. And don\u0019t improvise halfway through because you got bored.",
+      "nextLine": "Initiating terminal shutdown per retirement checklist as risk-limiting containment; maintaining interlocks and continuous logging; operator present on-site.",
+      "revisedLine": "Read the reason phrase again. (pause) Then run it\u2014no mid-sequence freelancing.",
+      "changeSummary": "More concise and tense; preserved instruction and anti-improvisation warning. | Split into two beats with a pause and tightened wording to keep each beat under 8 words without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-071-orig.json",
+      "id": "N_OPS_NO_IMPROV",
+      "priorLine": "Run the sequence.",
+      "lineToEdit": "Do it in the order the console expects.\nIf it wants a reason phrase, give it a reason phrase. If it wants a time stamp, give it a time stamp.",
+      "nextLine": "Terminal shutdown per checklist. Operator on-site. Logging maintained.",
+      "revisedLine": "Do it in the console\u2019s order. (pause) Add the reason phrase on prompt. (pause) Add the timestamp on prompt.",
+      "changeSummary": "Removed repetitive structure; kept exact procedural meaning. | Split the line into three short beats using (pause) and tightened phrasing while keeping the same instructions."
+    },
+    {
+      "scene": "SCN_SCN-071-orig.json",
+      "id": "N_OPS_PRINT_POSTSTATE",
+      "priorLine": "You confirm. The panel accepts it the way a form accepts ink: without agreement, with permanence.\nThe status indicator cluster steps down in clean increments.\nRoutes collapse\u0014not dramatically, just decisively\u0014like doors closing in adjacent rooms you can\u0019t see.",
+      "lineToEdit": "There. That\u0019s the sound of fewer options.\nPrint the post-state. Staple it.\nAnd stay where you are. Presence is part of the record.",
+      "nextLine": "",
+      "revisedLine": "Alright. Routes just collapsed. (pause) Print the post-state. Staple it. (pause) Stay put\u2014your presence is part of the record.",
+      "changeSummary": "More immediate and less poetic; kept instructions and record-keeping emphasis. | Split into short beats with (pause) markers to meet max beat length. Cleaned the stray character and kept wording and tone intact."
+    },
+    {
+      "scene": "SCN_SCN-071.json",
+      "id": "N_OPS_RULES",
+      "priorLine": "SPINDLE Chamber Floor. The containment sphere fills the center of the room like an oversized insulator\u0014until it doesn\u0019t.\nA status indicator cluster ticks through load, interlocks, and an authority field you didn\u0019t enter.\nThe interface scan panel waits with the patience of a copier.",
+      "lineToEdit": "Before you touch anything\u0014keep your language clean.\nNo \u001cemergency.\u001d No \u001cit\u0019s trying.\u001d No \u001cstill.\u001d\nPrint headers. Then act. In that order. I\u0019m not being precious. I\u0019m being employable.",
+      "nextLine": "",
+      "revisedLine": "Hold up. (pause) Watch your words. (pause) No emergency. (pause) No it's trying. (pause) No still. (pause) Print the header. (pause) Then act. (pause) I like my job.",
+      "changeSummary": "Same content, more spoken; reinforced print-before-action under pressure. | Split the line into short beats using (pause) so each beat stays under 8 words. Removed the comma by breaking \u201cPrint the header, then act\u201d into two sentences. Kept the same meaning and clipped cadence."
+    },
+    {
+      "scene": "SCN_SCN-071.json",
+      "id": "N_OPS_STATUS",
+      "priorLine": "ask: Status?",
+      "lineToEdit": "Local motion control: permissive.\nProximity: no interlock violation.\nNon-local: there\u0019s a hold. Which is not my category.\nAnd logs are live. Don\u0019t make me chase your timestamps.",
+      "nextLine": "",
+      "revisedLine": "Local motion: permissive. (pause) Proximity is clear. (pause)\nNon-local shows a hold. (pause) Not my category. (pause)\nLogs are live. (pause) Don't make me chase timestamps.",
+      "changeSummary": "More clipped; preserved exact status and logging pressure. | Inserted (pause) breaks to keep each beat under 8 words, and cleaned up corrupted characters without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-071.json",
+      "id": "N_OPS_ATTRIBUTION_PUSH",
+      "priorLine": "NOTICE \u0014 NON-LOCAL COMPLIANCE CONDITION.\nSUBJECT NODE: SOL\u0011EARTH\u0011LOCAL.\nACTION: HOLD STATE PENDING DOCUMENTATION.\nMANAGING AUTHORITY: METASTABLE TRANSFER AUTHORITY (MTA).\nREFERENCE: [scrolling reference string].",
+      "lineToEdit": "You can\u0019t clear it locally, but you can comply loudly.\nGet the reference number off that panel. Read it back. Then print it. I want attribution.",
+      "nextLine": "",
+      "revisedLine": "We can\u2019t clear it locally. (pause) So we document. (pause) Read the reference number back. (pause) Then print it. (pause) I want attribution.",
+      "changeSummary": "Shifted to action pressure; kept readback/print requirement. | Added (pause) breaks to keep each beat under 8 words; normalized the apostrophe in \u201ccan\u2019t\u201d without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-071.json",
+      "id": "N_OPS_REF_INSTRUCTIONS",
+      "priorLine": "MTA_NOTICE_REF: [full string].\nSubmission log: [log string].\nQueue position: [value].\nProcessing window: active.",
+      "lineToEdit": "Good. Don\u0019t summarize it from memory. Attach the original. Let the machine accuse itself.\nPrint it. Tray, not screenshot. Screenshots become opinions.",
+      "nextLine": "",
+      "revisedLine": "Good. Don\u2019t summarize. Attach the original. (pause) Print it from the tray. (pause) Screenshots turn into debates.",
+      "changeSummary": "Less stylized; preserved anti-paraphrase and print-from-tray intent. | Split the line into shorter beats with pauses; kept wording and meaning intact while normalizing punctuation."
+    },
+    {
+      "scene": "SCN_SCN-071.json",
+      "id": "N_OPS_PERSONALITY_NOTE",
+      "priorLine": "On-site status acknowledged as a physical claim.\nStanding evaluation remains pending.",
+      "lineToEdit": "They heard you. They did not accept you. That\u0019s their whole personality.",
+      "nextLine": "",
+      "revisedLine": "They heard you. (pause) They're still sitting on 'standing.' (pause) That's how they work.",
+      "changeSummary": "Less quotable; preserved meaning about acknowledgement without acceptance. | Added (pause) breaks to keep each beat under 8 words and corrected apostrophe encoding without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-071.json",
+      "id": "N_OPS_DEFENSIBLE",
+      "priorLine": "talk: Ops, what\u0019s the defensible move?",
+      "lineToEdit": "Make the next action look like it was always the next action.\nUse the official sequence. Keep logging on. Print before and after.\nIf you hit the big red button, you\u0019ve declared a story. Stories get authors.",
+      "nextLine": "And the hold?",
+      "revisedLine": "Make the next step look routine. (pause)\nUse the official sequence. (pause)\nKeep logging. Print before and after. (pause)\nHit the big red button. (pause)\nYou just signed up to be the author.",
+      "changeSummary": "More in-the-moment and defensive; preserved same guidance and consequence. | Split into short beats with pauses, removed commas, and kept all original actions and emphasis."
+    },
+    {
+      "scene": "SCN_SCN-071.json",
+      "id": "N_OPS_HOLD_REALITY",
+      "priorLine": "And the hold?",
+      "lineToEdit": "We don\u0019t clear holds. We document around them until someone upstream gets bored.\nOr until you collapse routes so hard the hold becomes\u001a academic.\nI didn\u0019t say that. The printer did.",
+      "nextLine": "",
+      "revisedLine": "We don\u2019t clear holds. (pause) We document around them. (pause) Until someone upstream relents. (pause) Or you collapse routes. (pause) Until the hold is basically irrelevant. (pause) That didn\u2019t come from me.",
+      "changeSummary": "Kept both options; made deniability sound more natural. | Split the long first beat into shorter beats with added pauses to keep each beat under 8 words, while preserving meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-071.json",
+      "id": "N_OPS_ATTRIBUTABLE_THANKS",
+      "priorLine": "Initiating terminal shutdown per retirement checklist as risk-limiting containment; maintaining interlocks and continuous logging; operator present on-site.",
+      "lineToEdit": "Thank you. That\u0019s attributable.\nPrint that screen when it echoes back. Not because it matters. Because later, someone will pretend it did.",
+      "nextLine": "And stop at one sentence. (pause) Add a second. (pause) It turns into a narrative.",
+      "revisedLine": "Good. That's attributable. (pause) When it echoes back, print it. (pause) People rewrite history later.",
+      "changeSummary": "Removed banned contrast; preserved instruction to print echo-back as protection. | Inserted (pause) breaks to keep each beat under 8 words; preserved original wording and single comma."
+    },
+    {
+      "scene": "SCN_SCN-071.json",
+      "id": "N_OPS_STAPLE_IT",
+      "priorLine": "The printer in the wall stutters awake like it resents being included.\nA banner prints with the notice header and the reference string, crisp enough to be weaponized.",
+      "lineToEdit": "Staple it to the front.\nNot because it fixes anything. Because it proves you were present when it didn\u0019t.",
+      "nextLine": "",
+      "revisedLine": "Staple it to the front. (pause) Proof you were there. (pause) When it didn't fix itself.",
+      "changeSummary": "Removed banned contrast; kept same evidentiary point. | Inserted pauses to keep each beat under 8 words, kept meaning and cadence, and corrected the apostrophe in \"didn't.\""
+    },
+    {
+      "scene": "SCN_SCN-071.json",
+      "id": "N_OPS_VISUAL_CHANGE",
+      "priorLine": "The sphere\u0019s surface is mostly matte\u0014until a thin band goes smooth and reflective, catching angles the room doesn\u0019t offer.\nIt doesn\u0019t brighten. It clarifies.",
+      "lineToEdit": "Visual condition change. Time and distance.\nAnd\u0014say it out loud\u0014confirm you stayed outside the barrier stripe.",
+      "nextLine": "Outside the stripe.",
+      "revisedLine": "Log visual condition change. (pause) Note time and distance. (pause) Say you stayed outside the barrier stripe.",
+      "changeSummary": "More direct; preserved required phrase and details. | Split the line into three (pause) beats and tightened phrasing so each beat stays under 8 words without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-071.json",
+      "id": "N_OPS_BADGE_LINE",
+      "priorLine": "Outside the stripe.",
+      "lineToEdit": "Good. That sentence keeps your badge working.",
+      "nextLine": "",
+      "revisedLine": "Good. Don\u0019t change that wording.",
+      "changeSummary": "Kept intent; made it less aphoristic."
+    },
+    {
+      "scene": "SCN_SCN-071.json",
+      "id": "N_OPS_ARMED_WORD",
+      "priorLine": "Indicators: ROTATION FRAMES \u0014 SYNCH TIGHT.\nINTERLOCKS \u0014 ARMED.\nAUTHORITY \u0014 NON-LOCAL.\nA small light labeled RETIREMENT CHECKLIST blinks like it\u0019s asking permission.",
+      "lineToEdit": "\u001cArmed\u001d is a terrible word. It implies intent.\nBut it\u0019s the label we inherited, so it\u0019s the label we get judged by.",
+      "nextLine": "",
+      "revisedLine": "Armed is a bad label. (pause) Still, the panel prints it. (pause) We get judged on it.",
+      "changeSummary": "More conversational; preserved meaning about intent implication and inherited label. | Split into three short beats with (pause) to stay under 8 words per beat, and rewrote the second clause to remove an extra comma while keeping the same meaning."
+    },
+    {
+      "scene": "SCN_SCN-071.json",
+      "id": "N_OPS_TIMESTAMP_WARNING",
+      "priorLine": "You step toward the stairs. The chamber doesn\u0019t follow you.\nThe panel continues to wait, as if you only paused a sentence.",
+      "lineToEdit": "You can walk away from the panel. You can\u0019t walk away from the timestamp.\nCome back when you\u0019re ready to be a record.",
+      "nextLine": "",
+      "revisedLine": "Walk away if you need to. (pause) Timestamp keeps running. (pause) Come back when you're ready. (pause) Do it on the record.",
+      "changeSummary": "Kept message; smoothed into a more natural warning. | Added pauses to split into short beats under 8 words, and trimmed phrasing slightly while keeping the same meaning."
+    },
+    {
+      "scene": "SCN_SCN-071.json",
+      "id": "N_OPS_DONT_CALL_IT",
+      "priorLine": "Emergency stop.",
+      "lineToEdit": "Don\u0019t call it that in the log.\nCall it: \u001cLocal motion control trip.\u001d Reason phrase. Time stamp.\nBecause right now you\u0019re not stopping a machine. You\u0019re starting a meeting.",
+      "nextLine": "Local interruption acknowledged.\nHold state remains. Standing evaluation pending. Processing window active.",
+      "revisedLine": "Don\u2019t write \u201cemergency stop\u201d in the log. (pause) Write \u201cLocal motion control trip\u201d. (pause) Add a reason phrase and timestamp. (pause) That entry starts a meeting. (pause) Make it defensible.",
+      "changeSummary": "More defensive and pragmatic; preserved required terminology and documentation steps. | Split the line into short beats using (pause) so each beat stays under 8 words. Removed the comma and kept the same instructions and tone."
+    },
+    {
+      "scene": "SCN_SCN-071.json",
+      "id": "N_OPS_READ_ONCE_MORE",
+      "priorLine": "Run the sequence.",
+      "lineToEdit": "Read the reason phrase one more time.\nThen do it. And don\u0019t improvise halfway through because you got bored.",
+      "nextLine": "Initiating terminal shutdown per retirement checklist as risk-limiting containment; maintaining interlocks and continuous logging; operator present on-site.",
+      "revisedLine": "Read the reason phrase again. (pause) Then run it. (pause) No improvising halfway through.",
+      "changeSummary": "Removed snark; kept instruction and risk focus. | Split the line into three beats using (pause) so each beat stays under 8 words; meaning and tone unchanged."
+    },
+    {
+      "scene": "SCN_SCN-071.json",
+      "id": "N_OPS_NO_IMPROV",
+      "priorLine": "Run the sequence.",
+      "lineToEdit": "Do it in the order the console expects.\nIf it wants a reason phrase, give it a reason phrase. If it wants a time stamp, give it a time stamp.",
+      "nextLine": "Terminal shutdown per checklist. Operator on-site. Logging maintained.",
+      "revisedLine": "Do it in the order the console expects. (pause) Give a reason phrase when it asks. (pause) Add a timestamp when it asks.",
+      "changeSummary": "Reduced repetitive structure; preserved exact operational intent. | Inserted (pause) breaks and made minor verb tweaks to keep each beat under 8 words without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-071.json",
+      "id": "N_OPS_PRINT_POSTSTATE",
+      "priorLine": "You confirm. The panel accepts it the way a form accepts ink: without agreement, with permanence.\nThe status indicator cluster steps down in clean increments.\nRoutes collapse\u0014not dramatically, just decisively\u0014like doors closing in adjacent rooms you can\u0019t see.",
+      "lineToEdit": "There. That\u0019s the sound of fewer options.\nPrint the post-state. Staple it.\nAnd stay where you are. Presence is part of the record.",
+      "nextLine": "",
+      "revisedLine": "Alright. (pause) Fewer options now. (pause) Print the post-state, staple it. (pause) Stay where you are. (pause) Presence goes in the record.",
+      "changeSummary": "More clipped; preserved printing/stapling and presence-as-record requirement. | Split the line with (pause) markers to keep each beat under 8 words and removed the stray character between \u201care\u201d and \u201cpresence.\u201d"
+    },
+    {
+      "scene": "SCN_SCN-072-orig-orig.json",
+      "id": "N_OPS0",
+      "priorLine": "Control Room. The main console sits in an administrative state: a compliance hold banner, a draft memo queued, and a blinking field that wants a reason phrase more than it wants the truth.",
+      "lineToEdit": "Logs are live. Printer has paper. Tray is empty, which I\u0019m mentioning because later someone will pretend it matters.",
+      "nextLine": "Before you touch a verb: remember this is closure processing. Not a reclassification event. I know that sounds like the same thing. Finance does not.",
+      "revisedLine": "Logs are live. Printer's loaded. (pause) And yeah the tray's empty. (pause) I'm saying it now, (pause) so nobody pins it on you later.",
+      "changeSummary": "More conversational and defensive; kept the same operational facts and future-blame concern. | Inserted pauses to keep each beat under 8 words, corrected apostrophes, and used a single comma while preserving the original meaning and cadence. | Removed the comma after \u201cyeah\u201d to meet the one-comma limit; kept all wording, pauses, and meaning intact."
+    },
+    {
+      "scene": "SCN_SCN-072-orig-orig.json",
+      "id": "N_LEAVE_O",
+      "priorLine": "You step back. The room keeps humming like it has a union contract.",
+      "lineToEdit": "You can walk away from the panel. You can\u0019t walk away from the timestamp. Come back when you\u0019re ready to be a record.",
+      "nextLine": "",
+      "revisedLine": "Walk away if you need to. (pause) Timestamp keeps running. (pause) Come back when you're ready. (pause) Do it on the record.",
+      "changeSummary": "Less aphoristic; preserved timestamp/record pressure. | Added pauses to keep each beat under 8 words, and split the final sentence without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-072-orig-orig.json",
+      "id": "N_ASKAUTH_O",
+      "priorLine": "Notice the verbs: \u001cacknowledgment,\u001d \u001cacceptance.\u001d Those are safer than \u001cauthorization,\u001d and still operationally binding, which is a fun contradiction we will not discuss.",
+      "lineToEdit": "And whatever you type, print before and after. Screenshots become opinions. Paper becomes alibis.",
+      "nextLine": "The console opens AUTHORITY CHAIN: \u001cAdd signatory / add attachment / echo-back text.\u001d",
+      "revisedLine": "Whatever you type, print it. (pause) Before and after from the tray. (pause) Screenshots get argued. (pause) Paper sits there and wins.",
+      "changeSummary": "Removed slogan-y contrast; kept the instruction and rationale. | Split the line into shorter beats using (pause), removed the stray character in 'afterfrom', and tightened phrasing while keeping the meaning and cadence. | Removed one comma in the second beat to meet the max_commas limit without changing meaning or cadence."
+    },
+    {
+      "scene": "SCN_SCN-072-orig-orig.json",
+      "id": "N_REF_O",
+      "priorLine": "MTA_NOTICE_REF: [string]. Submission log: [string]. Queue position: maintained. Processing window: active.",
+      "lineToEdit": "Print that. Tray. Not a photo. Not a transcription. The machine gets to accuse itself.",
+      "nextLine": "The printer chatters. A header sheet slides into the tray.",
+      "revisedLine": "Print it from the tray. (pause) No photo, no retyping. (pause) Let the machine own the reference.",
+      "changeSummary": "More spoken; removed banned contrast construction while keeping intent. | Inserted two (pause) breaks between sentences so each beat stays under 8 words; meaning and cadence preserved."
+    },
+    {
+      "scene": "SCN_SCN-072-orig-orig.json",
+      "id": "N_ADDLEGAL_O",
+      "priorLine": "OLEA Legal acknowledges submission for category update as a retirement processing instrument, limited purpose. Accepts the licensed relationship classification for SOL\u0011EARTH\u0011LOCAL under municipal legacy infrastructure service class. No admission of novelty. Continuous logging maintained. Operator present on-site.",
+      "lineToEdit": "Print that echo-back screen when it posts. Not because it\u0019s sacred. Because later someone will pretend you paraphrased.",
+      "nextLine": "Acknowledgment received. Proceed to submit attachments and operator-of-record identification.",
+      "revisedLine": "When that echo-back posts, print it. (pause) Otherwise someone will swear. (pause) You paraphrased the legal language.",
+      "changeSummary": "Removed banned contrast; preserved instruction and fear of later reinterpretation. | Inserted (pause) breaks and split the second sentence into two shorter beats to stay under 8 words per beat without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-072-orig-orig.json",
+      "id": "N_PROCESS_O",
+      "priorLine": "Standing: satisfied for limited-purpose licensed relationship. Service class: municipal legacy infrastructure. Action: SOL\u0011EARTH\u0011LOCAL reclassified into licensed relationship. Interconnection operational under new category.",
+      "lineToEdit": "Staple it. Front of the packet. Not because it fixes anything. Because it proves the universe agreed, briefly, to be filed.",
+      "nextLine": "",
+      "revisedLine": "Staple it to the front of the packet. (pause) It proves the system produced a filed outcome.",
+      "changeSummary": "Removed banned contrast; kept the same evidentiary purpose. | Inserted a (pause) to split the line into two beats of 8 words or fewer, without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-072-orig.json",
+      "id": "N_OPS0",
+      "priorLine": "Control Room. The main console sits in an administrative state: a compliance hold banner, a draft memo queued, and a blinking field that wants a reason phrase more than it wants the truth.",
+      "lineToEdit": "Logs are live. Printer has paper. Tray is empty, which I\u0019m mentioning because later someone will pretend it matters.",
+      "nextLine": "Hold up\u0014before you type: keep closure processing. (pause) Don\u0019t drift into a reclassification event. (pause) Yeah, it sounds like the same. (pause) Finance won\u0019t treat it that way.",
+      "revisedLine": "Logs are live. (pause) Printer's got paper. (pause) Tray's empty\u2014 clock that now, (pause) so it doesn't become your problem later.",
+      "changeSummary": "More immediate, less performative; preserved the same facts and blame-shielding. | Added pauses to keep each beat under 8 words; kept meaning and tone; retained only one comma."
+    },
+    {
+      "scene": "SCN_SCN-072-orig.json",
+      "id": "N_LEAVE_O",
+      "priorLine": "You step back. The room keeps humming like it has a union contract.",
+      "lineToEdit": "You can walk away from the panel. You can\u0019t walk away from the timestamp. Come back when you\u0019re ready to be a record.",
+      "nextLine": "",
+      "revisedLine": "Walk away if you need to. (pause) The timestamp keeps running. (pause) Come back when you're ready. (pause) Put it on the record.",
+      "changeSummary": "Tightened; preserved meaning. | Split the line into shorter beats with pauses to meet the 8-word max, while keeping the original meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-072-orig.json",
+      "id": "N_ASKAUTH_O",
+      "priorLine": "Notice the verbs: \u001cacknowledgment,\u001d \u001cacceptance.\u001d Those are safer than \u001cauthorization,\u001d and still operationally binding, which is a fun contradiction we will not discuss.",
+      "lineToEdit": "And whatever you type, print before and after. Screenshots become opinions. Paper becomes alibis.",
+      "nextLine": "The console opens AUTHORITY CHAIN: \u001cAdd signatory / add attachment / echo-back text.\u001d",
+      "revisedLine": "Whatever you type: print before and after. (pause) Skip screenshots. They get debated. (pause) Paper doesn\u2019t.",
+      "changeSummary": "More natural and defensive; kept print-before/after and screenshot skepticism. | Split into shorter beats with pauses; tightened wording while keeping meaning; removed comma and kept cadence."
+    },
+    {
+      "scene": "SCN_SCN-072-orig.json",
+      "id": "N_REF_O",
+      "priorLine": "MTA_NOTICE_REF: [string]. Submission log: [string]. Queue position: maintained. Processing window: active.",
+      "lineToEdit": "Print that. Tray. Not a photo. Not a transcription. The machine gets to accuse itself.",
+      "nextLine": "The printer chatters. A header sheet slides into the tray.",
+      "revisedLine": "Print it from the tray. (pause) Don't retype it. (pause) Let the machine own the reference string.",
+      "changeSummary": "Less list-y; preserved instruction and rationale. | Added (pause) breaks to keep each beat under 8 words; fixed the apostrophe in \u201cDon't.\u201d"
+    },
+    {
+      "scene": "SCN_SCN-072-orig.json",
+      "id": "N_ADDLEGAL_O",
+      "priorLine": "OLEA Legal acknowledges submission for category update as a retirement processing instrument, limited purpose. Accepts the licensed relationship classification for SOL\u0011EARTH\u0011LOCAL under municipal legacy infrastructure service class. No admission of novelty. Continuous logging maintained. Operator present on-site.",
+      "lineToEdit": "Print that echo-back screen when it posts. Not because it\u0019s sacred. Because later someone will pretend you paraphrased.",
+      "nextLine": "Acknowledgment received. Proceed to submit attachments and operator-of-record identification.",
+      "revisedLine": "When the echo-back posts, print it. (pause) Otherwise you'll be accused of paraphrasing.",
+      "changeSummary": "More clipped; kept the same liability reason for printing. | Added a (pause) to split into two beats under 8 words each; standardized the apostrophe in \"you'll\" and kept meaning and cadence. | Removed the comma after \"Otherwise\" to meet the one-comma limit while keeping the original meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-072-orig.json",
+      "id": "N_PROCESS_O",
+      "priorLine": "Standing: satisfied for limited-purpose licensed relationship. Service class: municipal legacy infrastructure. Action: SOL\u0011EARTH\u0011LOCAL reclassified into licensed relationship. Interconnection operational under new category.",
+      "lineToEdit": "Staple it. Front of the packet. Not because it fixes anything. Because it proves the universe agreed, briefly, to be filed.",
+      "nextLine": "",
+      "revisedLine": "Staple it to the packet front. (pause) Proof: the file existed five minutes. (pause) And it said what it said.",
+      "changeSummary": "Removed banned contrast; retained proof-of-filing intent. | Added pauses to split the line into shorter beats under 8 words, while keeping the same meaning and tone."
+    },
+    {
+      "scene": "SCN_SCN-072.json",
+      "id": "N_OPS0",
+      "priorLine": "Control Room. The main console sits in an administrative state: a compliance hold banner, a draft memo queued, and a blinking field that wants a reason phrase more than it wants the truth.",
+      "lineToEdit": "Logs are live. Printer has paper. Tray is empty, which I\u0019m mentioning because later someone will pretend it matters.",
+      "nextLine": "Before you touch a verb\u0014closure processing. (pause)\nDon\u0019t hand Finance a reclassification event. (pause)\nI know it sounds the same. (pause)\nFinance won\u0019t hear it that way.",
+      "revisedLine": "Logs are live. (pause) Printer's got paper. (pause) Tray's empty\u2014 noted now. (pause) It doesn't turn into a fight later.",
+      "changeSummary": "More immediate; preserved operational facts and blame-preemption. | Split the line into shorter beats with (pause) to meet the 8-word limit, fixed apostrophes, and tightened punctuation while keeping the same meaning."
+    },
+    {
+      "scene": "SCN_SCN-072.json",
+      "id": "N_LEAVE_O",
+      "priorLine": "You step back. The room keeps humming like it has a union contract.",
+      "lineToEdit": "You can walk away from the panel. You can\u0019t walk away from the timestamp. Come back when you\u0019re ready to be a record.",
+      "nextLine": "",
+      "revisedLine": "Walk away if you need to. (pause) Timestamp keeps running. (pause) Come back when you're ready. (pause) Do it on the record.",
+      "changeSummary": "Tightened to sound spoken; same meaning. | Added (pause) breaks to keep each beat under 8 words; corrected the apostrophe in \"you're\" without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-072.json",
+      "id": "N_ASKAUTH_O",
+      "priorLine": "Watch the verbs. (pause) \u001cAcknowledgment.\u001d \u001cAcceptance.\u001d (pause) Use those. (pause) \u001cAuthorization\u001d drags in baggage. (pause) And yeah it still binds operationally. (pause) We\u0019re not unpacking that right now.",
+      "lineToEdit": "And whatever you type, print before and after. Screenshots become opinions. Paper becomes alibis.",
+      "nextLine": "The console opens AUTHORITY CHAIN: \u001cAdd signatory / add attachment / echo-back text.\u001d",
+      "revisedLine": "Type anything, print before and after. Skip screenshots. (pause) They turn into opinions. (pause) In a room full of lawyers.",
+      "changeSummary": "More defensive and situational; preserved print-before/after guidance. | Split the second sentence into shorter beats with (pause) and removed the stray character, keeping meaning and tone. | Trimmed the first beat from 9 words to 8 by changing \u201cWhatever you type\u201d to \u201cType anything,\u201d while keeping the same meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-072.json",
+      "id": "N_REF_O",
+      "priorLine": "MTA_NOTICE_REF: [string]. Submission log: [string]. Queue position: maintained. Processing window: active.",
+      "lineToEdit": "Print that. Tray. Not a photo. Not a transcription. The machine gets to accuse itself.",
+      "nextLine": "The printer chatters. A header sheet slides into the tray.",
+      "revisedLine": "Print it from the tray. (pause) No photos, no retyping. (pause) Let the machine own the string.",
+      "changeSummary": "More spoken; retained intent and constraints. | Split the line into three beats using (pause) so each beat stays under 8 words; kept wording and meaning the same."
+    },
+    {
+      "scene": "SCN_SCN-072.json",
+      "id": "N_ADDLEGAL_O",
+      "priorLine": "OLEA Legal acknowledges the submission. (pause) Category update filed as retirement instrument. (pause) Limited purpose only. (pause) Accepts licensed relationship classification for SOL\u0011EARTH\u0011LOCAL. (pause) Under municipal legacy infrastructure service class. (pause) No admission of novelty. (pause) Continuous logging maintained. (pause) Operator present on-site.",
+      "lineToEdit": "Print that echo-back screen when it posts. Not because it\u0019s sacred. Because later someone will pretend you paraphrased.",
+      "nextLine": "Acknowledgment received. Proceed to submit attachments and operator-of-record identification.",
+      "revisedLine": "When that echo-back screen posts (pause) print it (pause) Otherwise you'll get accused (pause) of paraphrasing the legal part.",
+      "changeSummary": "Removed banned contrast; preserved practical legal defense rationale. | Split the line into shorter beats using (pause) so each beat stays under 8 words. Kept wording and meaning the same and avoided adding commas or explainer phrases."
+    },
+    {
+      "scene": "SCN_SCN-072.json",
+      "id": "N_PROCESS_O",
+      "priorLine": "Standing: satisfied for limited-purpose licensed relationship. Service class: municipal legacy infrastructure. Action: SOL\u0011EARTH\u0011LOCAL reclassified into licensed relationship. Interconnection operational under new category.",
+      "lineToEdit": "Staple it. Front of the packet. Not because it fixes anything. Because it proves the universe agreed, briefly, to be filed.",
+      "nextLine": "",
+      "revisedLine": "Staple it to the front of the packet. (pause)\nIt proves the system signed off. (pause)\nAt least on paper.",
+      "changeSummary": "Removed banned contrast; kept the proof-of-approval filing intent. | Added pause breaks to keep each beat under 8 words. Removed the comma while preserving meaning and cadence."
+    }
+  ]
+}

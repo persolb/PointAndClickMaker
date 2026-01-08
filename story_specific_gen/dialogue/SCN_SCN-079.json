@@ -1,0 +1,245 @@
+{
+  "dialogueGraphs": [
+    {
+      "id": "DG_SCN_079_SPEAKER_INTERCOM",
+      "nodes": [
+        {
+          "id": "N_INTERCOM_0",
+          "next": "N_INTERCOM_1",
+          "speakerId": "NARRATOR",
+          "text": "The speaker grille is clean in the center from repeated use.",
+          "type": "npc_line"
+        },
+        {
+          "id": "N_INTERCOM_1",
+          "next": "N_INTERCOM_MENU",
+          "speakerId": "NARRATOR",
+          "text": "A label plate beneath it is sun-faded: SECV \u2014 REMOTE ATTENDANCE.",
+          "type": "npc_line"
+        },
+        {
+          "choices": [
+            {
+              "checks": [],
+              "id": "USE_PRESS",
+              "next": "N_SECV_0",
+              "text": "(use) Press the call button."
+            },
+            {
+              "checks": [],
+              "id": "LEAVE_END",
+              "next": "N_END",
+              "text": "(leave) Back."
+            }
+          ],
+          "id": "N_INTERCOM_MENU",
+          "speakerId": "PLAYER",
+          "type": "player_choice"
+        },
+        {
+          "id": "N_SECV_0",
+          "next": "N_SECV_MENU",
+          "speakerId": "SECV_OPERATOR",
+          "text": "SECV remote attendance. (pause) Recorded line quality and liability, (pause) you know the deal. (pause) Tell me what\u2019s happening. (pause) so nobody gets hurt. (pause) and I don\u2019t end up writing it up.",
+          "type": "npc_line"
+        },
+        {
+          "choices": [
+            {
+              "checks": [],
+              "id": "ASK_ONSITE",
+              "next": "N_SECV_ONSITE_1",
+              "text": "(ask) I\u2019m in the vestibule. What counts as \u201consite\u201d here?"
+            },
+            {
+              "checks": [],
+              "id": "ASK_BADGES",
+              "next": "N_SECV_BADGES_1",
+              "text": "(ask) I found old badges and a sign-in sheet. Does that help?"
+            },
+            {
+              "checks": [],
+              "conditions": [
+                {
+                  "key": "player.factions",
+                  "op": "in",
+                  "value": [
+                    "OLEA"
+                  ]
+                }
+              ],
+              "id": "PERSUADE_OLEA",
+              "next": "N_SECV_OLEA_1",
+              "text": "(persuade) I\u2019m OLEA. I\u2019m collecting closure artifacts. You can note me as present."
+            },
+            {
+              "checks": [],
+              "id": "LEAVE_ENDCALL",
+              "next": "N_SECV_ENDCALL_1",
+              "text": "(leave) End call."
+            }
+          ],
+          "id": "N_SECV_MENU",
+          "speakerId": "PLAYER",
+          "type": "player_choice"
+        },
+        {
+          "id": "N_SECV_ONSITE_1",
+          "next": "N_SECV_ONSITE_2",
+          "speakerId": "SECV_OPERATOR",
+          "text": "Vestibule doesn\u2019t count as onsite in the system.",
+          "type": "npc_line"
+        },
+        {
+          "id": "N_SECV_ONSITE_2",
+          "next": "N_SECV_ONSITE_3",
+          "speakerId": "SECV_OPERATOR",
+          "text": "It\u2019s basically a buffer room. (pause) You\u2019re contained. (pause) Still not showing up as here.",
+          "type": "npc_line"
+        },
+        {
+          "id": "N_SECV_ONSITE_3",
+          "next": "N_SECV_ONSITE_MENU",
+          "speakerId": "SECV_OPERATOR",
+          "text": "Onsite means a timestamp (pause) and an accountable name (pause) in the log. (pause) If I can't tie door action to it, (pause) I can't open it.",
+          "type": "npc_line"
+        },
+        {
+          "choices": [
+            {
+              "checks": [],
+              "id": "ASK_WITH_ROOM",
+              "next": "N_SECV_ROOM_1",
+              "text": "(ask) So what do I do with what\u2019s in this room?"
+            },
+            {
+              "checks": [],
+              "id": "LEAVE_ENDCALL",
+              "next": "N_SECV_ENDCALL_1",
+              "text": "(leave) End call."
+            }
+          ],
+          "id": "N_SECV_ONSITE_MENU",
+          "speakerId": "PLAYER",
+          "type": "player_choice"
+        },
+        {
+          "id": "N_SECV_ROOM_1",
+          "next": "N_SECV_ROOM_2",
+          "speakerId": "SECV_OPERATOR",
+          "text": "Use what\u2019s there; get something Records accepts.",
+          "type": "npc_line"
+        },
+        {
+          "id": "N_SECV_ROOM_2",
+          "next": "N_SECV_ROOM_3",
+          "speakerId": "SECV_OPERATOR",
+          "text": "A Presence Receipt. (pause) A stamp. (pause) A kiosk printout. (pause) Anything that gives me a legit condition (pause) to hang a door unlock on.",
+          "type": "npc_line"
+        },
+        {
+          "id": "N_SECV_ROOM_3",
+          "next": "N_END",
+          "speakerId": "SECV_OPERATOR",
+          "text": "I help when there\u2019s paper. Can\u2019t be it.",
+          "type": "npc_line"
+        },
+        {
+          "id": "N_SECV_BADGES_1",
+          "next": "N_SECV_BADGES_2",
+          "speakerId": "SECV_OPERATOR",
+          "text": "Like any blank form, it takes a mark.",
+          "type": "npc_line"
+        },
+        {
+          "id": "N_SECV_BADGES_2",
+          "next": "N_SECV_BADGES_3",
+          "speakerId": "SECV_OPERATOR",
+          "text": "It won\u2019t authorize you. (pause) But it gives you something on record. (pause) Later you can say: I followed procedure. (pause) Sort of.",
+          "type": "npc_line"
+        },
+        {
+          "id": "N_SECV_BADGES_3",
+          "next": "N_SECV_BADGES_4",
+          "speakerId": "SECV_OPERATOR",
+          "text": "If you can get a Records marker (pause) onto one of those\u2014stamp or kiosk or whatever\u2014(pause) then I can treat you as accountable (pause) and run doors.",
+          "type": "npc_line"
+        },
+        {
+          "id": "N_SECV_BADGES_4",
+          "next": "N_END",
+          "speakerId": "PLAYER",
+          "text": "Understood.",
+          "type": "npc_line"
+        },
+        {
+          "id": "N_SECV_OLEA_1",
+          "next": "N_SECV_OLEA_2",
+          "speakerId": "SECV_OPERATOR",
+          "text": "I can log that you called. (pause) I can\u2019t log you onsite from this box.",
+          "type": "npc_line"
+        },
+        {
+          "id": "N_SECV_OLEA_2",
+          "next": "N_SECV_OLEA_3",
+          "speakerId": "SECV_OPERATOR",
+          "text": "That onsite flag comes from Records. (pause) Or the kiosk workflow. (pause) It\u2019s database fields. (pause) Not something I can take on faith. (pause) Over audio.",
+          "type": "npc_line"
+        },
+        {
+          "id": "N_SECV_OLEA_3",
+          "next": "N_SECV_OLEA_MENU",
+          "speakerId": "SECV_OPERATOR",
+          "text": "If I mark you present without it (pause) the audit trail points at me. (pause) I'm only cleared to respond (pause) to a record, not create one.",
+          "type": "npc_line"
+        },
+        {
+          "choices": [
+            {
+              "checks": [],
+              "id": "ASK_MIN",
+              "next": "N_SECV_MIN_1",
+              "text": "(ask) Fine. Minimum requirement?"
+            },
+            {
+              "checks": [],
+              "id": "LEAVE_ENDCALL",
+              "next": "N_SECV_ENDCALL_1",
+              "text": "(leave) End call."
+            }
+          ],
+          "id": "N_SECV_OLEA_MENU",
+          "speakerId": "PLAYER",
+          "type": "player_choice"
+        },
+        {
+          "id": "N_SECV_MIN_1",
+          "next": "N_SECV_MIN_2",
+          "speakerId": "SECV_OPERATOR",
+          "text": "Minimum: name/date/type; site=onsite; Records authority marker.",
+          "type": "npc_line"
+        },
+        {
+          "id": "N_SECV_MIN_2",
+          "next": "N_END",
+          "speakerId": "SECV_OPERATOR",
+          "text": "Stamp is best. (pause) Kiosk receipt works. (pause) Handwritten note: people love it. (pause) It falls apart fast if anyone pushes.",
+          "type": "npc_line"
+        },
+        {
+          "id": "N_SECV_ENDCALL_1",
+          "next": "N_END",
+          "speakerId": "SECV_OPERATOR",
+          "text": "Okay. (pause) Call me back when you're marked onsite. (pause) I know you're boxed in right now. (pause) Stay safe.",
+          "type": "npc_line"
+        },
+        {
+          "id": "N_END",
+          "type": "end"
+        }
+      ],
+      "sceneId": "SCN-079",
+      "startNodeId": "N_INTERCOM_0"
+    }
+  ]
+}

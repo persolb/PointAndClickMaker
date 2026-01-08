@@ -1,0 +1,116 @@
+{
+  "screen_id": "HUB-01",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Car trunk / equipment case",
+      "slug": "car_trunk_equipment_case",
+      "file": "story_specific_gen/images/HUB-01-mask-car_trunk_equipment_case.png",
+      "boxes": [
+        {
+          "label": "Car trunk / equipment case",
+          "box_2d": [
+            507,
+            0,
+            966,
+            347
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Gate keypad and receipt slot",
+      "slug": "gate_keypad_and_receipt_slot",
+      "file": "story_specific_gen/images/HUB-01-mask-gate_keypad_and_receipt_slot.png",
+      "boxes": [
+        {
+          "label": "receipt slot",
+          "box_2d": [
+            343,
+            178,
+            396,
+            203
+          ]
+        },
+        {
+          "label": "gate keypad",
+          "box_2d": [
+            253,
+            216,
+            381,
+            247
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Layered signpost",
+      "slug": "layered_signpost",
+      "file": "story_specific_gen/images/HUB-01-mask-layered_signpost.png",
+      "boxes": [
+        {
+          "label": "Layered signpost",
+          "box_2d": [
+            238,
+            41,
+            419,
+            178
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Debris pile by fence line",
+      "slug": "debris_pile_by_fence_line",
+      "file": "story_specific_gen/images/HUB-01-mask-debris_pile_by_fence_line.png",
+      "boxes": [
+        {
+          "label": "Debris pile by fence line",
+          "box_2d": [
+            330,
+            580,
+            563,
+            856
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Instrument conduit box",
+      "slug": "instrument_conduit_box",
+      "file": "story_specific_gen/images/HUB-01-mask-instrument_conduit_box.png",
+      "boxes": [
+        {
+          "label": "Instrument conduit box",
+          "box_2d": [
+            339,
+            922,
+            381,
+            971
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Exterior ground service hatch",
+      "slug": "exterior_ground_service_hatch",
+      "file": "story_specific_gen/images/HUB-01-mask-exterior_ground_service_hatch.png",
+      "boxes": [
+        {
+          "label": "Exterior ground service hatch",
+          "box_2d": [
+            755,
+            417,
+            908,
+            608
+          ]
+        }
+      ]
+    }
+  ]
+}

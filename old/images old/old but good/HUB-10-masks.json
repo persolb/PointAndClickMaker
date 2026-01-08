@@ -1,0 +1,39 @@
+{
+  "screen_id": "HUB-10",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Jam tray",
+      "slug": "jam_tray",
+      "file": "images/HUB-10-mask-jam_tray.png",
+      "boxes": [
+        {
+          "label": "Jam tray",
+          "box_2d": [
+            680,
+            345,
+            829,
+            536
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Deck map poster",
+      "slug": "deck_map_poster",
+      "file": "images/HUB-10-mask-deck_map_poster.png",
+      "boxes": [
+        {
+          "label": "deck map poster",
+          "box_2d": [
+            100,
+            634,
+            321,
+            782
+          ]
+        }
+      ]
+    }
+  ]
+}

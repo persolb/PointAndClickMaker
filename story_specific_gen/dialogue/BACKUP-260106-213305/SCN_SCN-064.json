@@ -1,0 +1,323 @@
+{
+  "dialogueGraphs": [
+    {
+      "id": "DG_SCN_064_LOG_PRINTER_TRAY",
+      "sceneId": "SCN-064",
+      "startNodeId": "N0_INTRO1",
+      "nodes": [
+        {
+          "id": "N0_INTRO1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The log printer tray holds a single fresh sheet, still warm at the edge.\nBlack dot-matrix ink. Crisp timestamp.\nIt looks boring enough to survive a meeting.",
+          "next": "N1_INTRO2"
+        },
+        {
+          "id": "N1_INTRO2",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The header reads: \u201cCONTROL ROOM EVENT LOG \u2014 CONTINUOUS OUTPUT.\u201d\nA footer line repeats in small type: \u201cNON-LOCAL COMPLIANCE NOTICE: RETAIN FOR COMPARABILITY.\u201d",
+          "next": "N2_PLAYER_OK"
+        },
+        {
+          "id": "N2_PLAYER_OK",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "\u2026Okay.",
+          "next": "N3_MENU"
+        },
+        {
+          "id": "N3_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_LOOK",
+              "text": "(look) Read the printout.",
+              "next": "N10_LOOK1"
+            },
+            {
+              "id": "C_USE",
+              "text": "(use) Pull the fresh page.",
+              "next": "N30_TAKE1"
+            },
+            {
+              "id": "C_USE_OLEA",
+              "text": "(use) [OLEA] Pull the page for the decommissioning record.",
+              "conditions": [
+                {
+                  "key": "player.factions",
+                  "op": "in",
+                  "value": "OLEA"
+                }
+              ],
+              "next": "N40_TAKE_OLEA1"
+            },
+            {
+              "id": "C_ASK",
+              "text": "(ask) Why is it printing continuously?",
+              "next": "N20_ASK1"
+            },
+            {
+              "id": "C_LEAVE",
+              "text": "(leave) Back.",
+              "next": "END_BACK"
+            }
+          ]
+        },
+        {
+          "id": "N10_LOOK1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You scan the top third. The timestamp is precise to the second.\nThe entry is plain enough to be weaponized later.",
+          "next": "N11_LOOK2"
+        },
+        {
+          "id": "N11_LOOK2",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "Lines include:\n- \u201cSHIFT STATUS: UNATTENDED \u2014 CONTINUITY MODE\u201d\n- \u201cOPERATOR PRESENCE: NOT REQUIRED\u201d\n- \u201cCONSOLE INTERACTION: REGISTERED\u201d\nAnd, again, the footer: \u201cNON-LOCAL COMPLIANCE NOTICE: RETAIN FOR COMPARABILITY.\u201d",
+          "next": "N12_PLAYER_COMMENT"
+        },
+        {
+          "id": "N12_PLAYER_COMMENT",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "\u201cOperator presence: not required.\u201d Of course.",
+          "next": "N13_LOOK_MENU"
+        },
+        {
+          "id": "N13_LOOK_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_USE_TAKE",
+              "text": "(use) Take it.",
+              "next": "N30_TAKE1"
+            },
+            {
+              "id": "C_ASK_NONLOCAL",
+              "text": "(ask) Who is \u2018non-local\u2019?",
+              "next": "N25_NONLOCAL1"
+            },
+            {
+              "id": "C_LEAVE_STEP",
+              "text": "(leave) Leave it and step back.",
+              "next": "N50_STEPBACK1"
+            }
+          ]
+        },
+        {
+          "id": "N20_ASK1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "A soft mechanical clack answers you: the printer advances a fraction, as if to demonstrate compliance.",
+          "next": "N21_ASK_FOOTER1"
+        },
+        {
+          "id": "N21_ASK_FOOTER1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "[PRINTER FOOTER TEXT]\n\u201cCONTINUOUS OUTPUT IS A RETENTION FEATURE.\nDISCONTINUOUS OUTPUT CREATES GAPS.\nGAPS CREATE QUESTIONS.\u201d",
+          "next": "N22_PLAYER_QUEST"
+        },
+        {
+          "id": "N22_PLAYER_QUEST",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Questions for who?",
+          "next": "N23_ASK_FOOTER2"
+        },
+        {
+          "id": "N23_ASK_FOOTER2",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "[PRINTER FOOTER TEXT]\n\u201cQUESTIONS ARE NON-LOCAL.\nTHIS FORMAT IS COMPARABLE.\u201d",
+          "next": "N24_ASK_WRAP"
+        },
+        {
+          "id": "N24_ASK_WRAP",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The sheet sits there, pretending not to be an argument.",
+          "next": "N26_ASK_MENU"
+        },
+        {
+          "id": "N26_ASK_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_LOOK_FROM_ASK",
+              "text": "(look) Read the printout.",
+              "next": "N10_LOOK1"
+            },
+            {
+              "id": "C_USE_FROM_ASK",
+              "text": "(use) Pull the fresh page.",
+              "next": "N30_TAKE1"
+            },
+            {
+              "id": "C_LEAVE_FROM_ASK",
+              "text": "(leave) Back.",
+              "next": "N3_MENU"
+            }
+          ]
+        },
+        {
+          "id": "N25_NONLOCAL1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "[PRINTER FOOTER TEXT]\n\u201cNON-LOCAL: OUTSIDE THE RESPONSIBLE WORKGROUP.\nWORKGROUP: SUBJECT TO CHANGE WITHOUT NOTICE.\nNOTICE: PROVIDED HEREBY.\u201d",
+          "next": "N26_PLAYER_NO"
+        },
+        {
+          "id": "N26_PLAYER_NO",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "That doesn\u2019t answer it.",
+          "next": "N27_FOOTER_NEWREC"
+        },
+        {
+          "id": "N27_FOOTER_NEWREC",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "[PRINTER FOOTER TEXT]\n\u201cANSWERING CREATES A NEW RECORD.\nNEW RECORDS REQUIRE A FRAMEWORK.\u201d",
+          "next": "N28_NARRATOR_QUIET"
+        },
+        {
+          "id": "N28_NARRATOR_QUIET",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The printer goes quiet, decisively, like it has concluded the conversation correctly.",
+          "next": "N29_NONLOCAL_MENU"
+        },
+        {
+          "id": "N29_NONLOCAL_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_USE_TAKE_FROM_NONLOCAL",
+              "text": "(use) Take the page.",
+              "next": "N30_TAKE1"
+            },
+            {
+              "id": "C_LEAVE_FROM_NONLOCAL",
+              "text": "(leave) Back.",
+              "next": "N3_MENU"
+            }
+          ]
+        },
+        {
+          "id": "N50_STEPBACK1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You let the page sit in the tray, accumulating legitimacy without you.\nThe printer hums faintly, like it\u2019s keeping time out of spite.",
+          "next": "N51_STEPBACK_MENU"
+        },
+        {
+          "id": "N51_STEPBACK_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_USE_TAKE_FROM_STEPBACK",
+              "text": "(use) Take it.",
+              "next": "N30_TAKE1"
+            },
+            {
+              "id": "C_LOOK_AGAIN",
+              "text": "(look) Read it again.",
+              "next": "N10_LOOK1"
+            },
+            {
+              "id": "C_LEAVE_BACK_TO_MENU",
+              "text": "(leave) Back.",
+              "next": "N3_MENU"
+            }
+          ]
+        },
+        {
+          "id": "N30_TAKE1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You pinch the perforation and lift. The paper separates with a dry tear that sounds louder than it should.\nFor a moment, you feel almost grateful it\u2019s physical.",
+          "next": "N31_TAKE2"
+        },
+        {
+          "id": "N31_TAKE2",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The timestamp is legible. The ink doesn\u2019t smear.\nIt will fit in a binder without you having to explain why it\u2019s weird.",
+          "next": "N32_PLAYER_GOOD"
+        },
+        {
+          "id": "N32_PLAYER_GOOD",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Good.",
+          "next": "N33_TAKE3"
+        },
+        {
+          "id": "N33_TAKE3",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You fold it once, on purpose, and keep it.",
+          "next": "END_PRINT_PRESENCE_PROOF"
+        },
+        {
+          "id": "N40_TAKE_OLEA1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You take it the way you were trained to take evidence you\u2019re not calling evidence.\nClean tear. No flourish. Just a record moving from tray to custody.",
+          "next": "N41_TAKE_OLEA2"
+        },
+        {
+          "id": "N41_TAKE_OLEA2",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The footer\u2019s \u201cNON-LOCAL COMPLIANCE\u201d line looks wrong for OLEA templates.\nYou don\u2019t react to it. That\u2019s the point.",
+          "next": "N42_PLAYER_FILED"
+        },
+        {
+          "id": "N42_PLAYER_FILED",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Filed.",
+          "next": "N43_NARRATOR_KEEP"
+        },
+        {
+          "id": "N43_NARRATOR_KEEP",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You fold it once and keep it.",
+          "next": "END_PRINT_PRESENCE_PROOF"
+        },
+        {
+          "id": "END_PRINT_PRESENCE_PROOF",
+          "type": "end",
+          "outcomeId": "print_presence_proof",
+          "effects": [
+            {
+              "key": "act3.presenceProofPrinted",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "inventory.items",
+              "action": "add",
+              "value": "ITEM_PRESENCE_PROOF_PRINTOUT"
+            }
+          ]
+        },
+        {
+          "id": "END_BACK",
+          "type": "end",
+          "text": "You step away from the tray. The Control Room stays exactly as it was: labeled, lit, and unwilling to testify."
+        }
+      ]
+    }
+  ]
+}

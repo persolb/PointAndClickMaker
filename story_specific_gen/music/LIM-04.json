@@ -1,0 +1,849 @@
+{
+  "format": "pattern-midi.v1",
+  "global": {
+    "ticks_per_quarter": 480,
+    "time_signature": [
+      4,
+      4
+    ],
+    "tempo_bpm": 100,
+    "bars": 16,
+    "loop": true
+  },
+  "instruments": {
+    "drums": {
+      "channel": 10,
+      "program": null
+    },
+    "ep": {
+      "channel": 1,
+      "program": 4
+    },
+    "bass": {
+      "channel": 2,
+      "program": 39
+    },
+    "vibes": {
+      "channel": 3,
+      "program": 11
+    },
+    "brass": {
+      "channel": 4,
+      "program": 59
+    }
+  },
+  "patterns": {
+    "dr_tick_A": {
+      "length_beats": 4,
+      "drum_grid": {
+        "resolution": 16,
+        "lanes": {
+          "kick": {
+            "pitch": 36,
+            "vel": 64,
+            "steps": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "rim": {
+            "pitch": 37,
+            "vel": 52,
+            "steps": [
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ]
+          },
+          "snare_brush": {
+            "pitch": 38,
+            "vel": 44,
+            "steps": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "hat_q": {
+            "pitch": 42,
+            "vel": 46,
+            "steps": [
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    },
+    "dr_tick_B": {
+      "length_beats": 4,
+      "drum_grid": {
+        "resolution": 16,
+        "lanes": {
+          "kick": {
+            "pitch": 36,
+            "vel": 64,
+            "steps": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "rim": {
+            "pitch": 37,
+            "vel": 52,
+            "steps": [
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ]
+          },
+          "snare_brush": {
+            "pitch": 38,
+            "vel": 44,
+            "steps": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "hat_q": {
+            "pitch": 42,
+            "vel": 46,
+            "steps": [
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    },
+    "dr_hat_MC": {
+      "length_beats": 4,
+      "drum_grid": {
+        "resolution": 16,
+        "lanes": {
+          "kick": {
+            "pitch": 36,
+            "vel": 64,
+            "steps": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "rim": {
+            "pitch": 37,
+            "vel": 52,
+            "steps": [
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ]
+          },
+          "snare_brush": {
+            "pitch": 38,
+            "vel": 44,
+            "steps": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "hat_q": {
+            "pitch": 42,
+            "vel": 46,
+            "steps": [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0
+            ]
+          }
+        }
+      }
+    },
+    "bs_C": {
+      "length_beats": 4,
+      "notes": [
+        {
+          "instrument": "bass",
+          "beat": 0,
+          "dur": 4,
+          "pitch": 36,
+          "vel": 40
+        }
+      ]
+    },
+    "bs_A": {
+      "length_beats": 4,
+      "notes": [
+        {
+          "instrument": "bass",
+          "beat": 0,
+          "dur": 4,
+          "pitch": 33,
+          "vel": 40
+        }
+      ]
+    },
+    "bs_D": {
+      "length_beats": 4,
+      "notes": [
+        {
+          "instrument": "bass",
+          "beat": 0,
+          "dur": 4,
+          "pitch": 38,
+          "vel": 40
+        }
+      ]
+    },
+    "bs_Ab": {
+      "length_beats": 4,
+      "notes": [
+        {
+          "instrument": "bass",
+          "beat": 0,
+          "dur": 4,
+          "pitch": 32,
+          "vel": 40
+        }
+      ]
+    },
+    "bs_F": {
+      "length_beats": 4,
+      "notes": [
+        {
+          "instrument": "bass",
+          "beat": 0,
+          "dur": 4,
+          "pitch": 41,
+          "vel": 40
+        }
+      ]
+    },
+    "bs_E": {
+      "length_beats": 4,
+      "notes": [
+        {
+          "instrument": "bass",
+          "beat": 0,
+          "dur": 4,
+          "pitch": 40,
+          "vel": 40
+        }
+      ]
+    },
+    "ep_dyad_off15": {
+      "length_beats": 4,
+      "notes": [
+        {
+          "instrument": "ep",
+          "beat": 1.5,
+          "dur": 2.75,
+          "pitch": 64,
+          "vel": 48
+        },
+        {
+          "instrument": "ep",
+          "beat": 1.5,
+          "dur": 2.75,
+          "pitch": 67,
+          "vel": 48
+        }
+      ]
+    },
+    "ep_dyad_off05": {
+      "length_beats": 4,
+      "notes": [
+        {
+          "instrument": "ep",
+          "beat": 0.5,
+          "dur": 3,
+          "pitch": 64,
+          "vel": 48
+        },
+        {
+          "instrument": "ep",
+          "beat": 0.5,
+          "dur": 3,
+          "pitch": 67,
+          "vel": 48
+        }
+      ]
+    },
+    "ep_dyad_off10": {
+      "length_beats": 4,
+      "notes": [
+        {
+          "instrument": "ep",
+          "beat": 1,
+          "dur": 2.75,
+          "pitch": 64,
+          "vel": 48
+        },
+        {
+          "instrument": "ep",
+          "beat": 1,
+          "dur": 2.75,
+          "pitch": 67,
+          "vel": 48
+        }
+      ]
+    },
+    "ep_dyad_off25": {
+      "length_beats": 4,
+      "notes": [
+        {
+          "instrument": "ep",
+          "beat": 2.5,
+          "dur": 1.75,
+          "pitch": 64,
+          "vel": 48
+        },
+        {
+          "instrument": "ep",
+          "beat": 2.5,
+          "dur": 1.75,
+          "pitch": 67,
+          "vel": 48
+        }
+      ]
+    },
+    "ep_dyad_off35": {
+      "length_beats": 4,
+      "notes": [
+        {
+          "instrument": "ep",
+          "beat": 3.5,
+          "dur": 0.6,
+          "pitch": 64,
+          "vel": 48
+        },
+        {
+          "instrument": "ep",
+          "beat": 3.5,
+          "dur": 0.6,
+          "pitch": 67,
+          "vel": 48
+        }
+      ]
+    },
+    "ep_dyad_beat0": {
+      "length_beats": 4,
+      "notes": [
+        {
+          "instrument": "ep",
+          "beat": 0,
+          "dur": 3.5,
+          "pitch": 64,
+          "vel": 48
+        },
+        {
+          "instrument": "ep",
+          "beat": 0,
+          "dur": 3.5,
+          "pitch": 67,
+          "vel": 48
+        }
+      ]
+    },
+    "ep_borrow_ivH": {
+      "length_beats": 4,
+      "notes": [
+        {
+          "instrument": "ep",
+          "beat": 1.5,
+          "dur": 2.5,
+          "pitch": 65,
+          "vel": 48
+        },
+        {
+          "instrument": "ep",
+          "beat": 1.5,
+          "dur": 2.5,
+          "pitch": 68,
+          "vel": 48
+        }
+      ]
+    },
+    "ep_inner_MA": {
+      "length_beats": 4,
+      "notes": [
+        {
+          "instrument": "ep",
+          "beat": 0.5,
+          "dur": 0.4,
+          "pitch": 62,
+          "vel": 40
+        },
+        {
+          "instrument": "ep",
+          "beat": 1,
+          "dur": 0.4,
+          "pitch": 63,
+          "vel": 40
+        },
+        {
+          "instrument": "ep",
+          "beat": 1.5,
+          "dur": 0.4,
+          "pitch": 65,
+          "vel": 40
+        },
+        {
+          "instrument": "ep",
+          "beat": 2,
+          "dur": 0.4,
+          "pitch": 63,
+          "vel": 40
+        },
+        {
+          "instrument": "ep",
+          "beat": 2.5,
+          "dur": 0.4,
+          "pitch": 62,
+          "vel": 40
+        }
+      ]
+    },
+    "vibes_tick": {
+      "length_beats": 4,
+      "notes": [
+        {
+          "instrument": "vibes",
+          "beat": 0,
+          "dur": 0.25,
+          "pitch": 79,
+          "vel": 46
+        }
+      ]
+    },
+    "vibes_tick2": {
+      "length_beats": 4,
+      "notes": [
+        {
+          "instrument": "vibes",
+          "beat": 0,
+          "dur": 0.25,
+          "pitch": 79,
+          "vel": 46
+        },
+        {
+          "instrument": "vibes",
+          "beat": 2,
+          "dur": 0.25,
+          "pitch": 76,
+          "vel": 46
+        }
+      ]
+    },
+    "vibes_frag_low": {
+      "length_beats": 4,
+      "notes": [
+        {
+          "instrument": "vibes",
+          "beat": 0,
+          "dur": 0.25,
+          "pitch": 76,
+          "vel": 34
+        },
+        {
+          "instrument": "vibes",
+          "beat": 1,
+          "dur": 0.25,
+          "pitch": 77,
+          "vel": 34
+        }
+      ]
+    },
+    "br_hit": {
+      "length_beats": 4,
+      "notes": [
+        {
+          "instrument": "brass",
+          "beat": 0,
+          "dur": 0.5,
+          "pitch": 70,
+          "vel": 62
+        }
+      ]
+    }
+  },
+  "arrangement": [
+    {
+      "pattern": "dr_tick_A",
+      "start_bar": 0,
+      "repeat": 4
+    },
+    {
+      "pattern": "dr_tick_B",
+      "start_bar": 4,
+      "repeat": 2
+    },
+    {
+      "pattern": "dr_hat_MC",
+      "start_bar": 6,
+      "repeat": 1
+    },
+    {
+      "pattern": "dr_tick_A",
+      "start_bar": 7,
+      "repeat": 3
+    },
+    {
+      "pattern": "dr_tick_B",
+      "start_bar": 10,
+      "repeat": 2
+    },
+    {
+      "pattern": "dr_tick_A",
+      "start_bar": 12,
+      "repeat": 4
+    },
+    {
+      "pattern": "bs_C",
+      "start_bar": 0,
+      "repeat": 1
+    },
+    {
+      "pattern": "bs_A",
+      "start_bar": 1,
+      "repeat": 1
+    },
+    {
+      "pattern": "bs_D",
+      "start_bar": 2,
+      "repeat": 1
+    },
+    {
+      "pattern": "bs_Ab",
+      "start_bar": 3,
+      "repeat": 1
+    },
+    {
+      "pattern": "bs_F",
+      "start_bar": 4,
+      "repeat": 2
+    },
+    {
+      "pattern": "bs_D",
+      "start_bar": 6,
+      "repeat": 1
+    },
+    {
+      "pattern": "bs_C",
+      "start_bar": 7,
+      "repeat": 1
+    },
+    {
+      "pattern": "bs_E",
+      "start_bar": 8,
+      "repeat": 1
+    },
+    {
+      "pattern": "bs_Ab",
+      "start_bar": 9,
+      "repeat": 1
+    },
+    {
+      "pattern": "bs_F",
+      "start_bar": 10,
+      "repeat": 1
+    },
+    {
+      "pattern": "bs_C",
+      "start_bar": 11,
+      "repeat": 1
+    },
+    {
+      "pattern": "bs_D",
+      "start_bar": 12,
+      "repeat": 1
+    },
+    {
+      "pattern": "bs_A",
+      "start_bar": 13,
+      "repeat": 1
+    },
+    {
+      "pattern": "bs_D",
+      "start_bar": 14,
+      "repeat": 1
+    },
+    {
+      "pattern": "bs_A",
+      "start_bar": 15,
+      "repeat": 1
+    },
+    {
+      "pattern": "ep_dyad_off15",
+      "start_bar": 0,
+      "repeat": 1
+    },
+    {
+      "pattern": "ep_dyad_off05",
+      "start_bar": 1,
+      "repeat": 1
+    },
+    {
+      "pattern": "ep_dyad_off10",
+      "start_bar": 2,
+      "repeat": 1
+    },
+    {
+      "pattern": "ep_dyad_off35",
+      "start_bar": 3,
+      "repeat": 1
+    },
+    {
+      "pattern": "ep_dyad_beat0",
+      "start_bar": 4,
+      "repeat": 1
+    },
+    {
+      "pattern": "ep_dyad_off25",
+      "start_bar": 5,
+      "repeat": 1
+    },
+    {
+      "pattern": "ep_dyad_off15",
+      "start_bar": 6,
+      "repeat": 1
+    },
+    {
+      "pattern": "ep_dyad_off15",
+      "start_bar": 7,
+      "repeat": 1
+    },
+    {
+      "pattern": "ep_dyad_off05",
+      "start_bar": 8,
+      "repeat": 1
+    },
+    {
+      "pattern": "ep_dyad_off35",
+      "start_bar": 9,
+      "repeat": 1
+    },
+    {
+      "pattern": "ep_borrow_ivH",
+      "start_bar": 10,
+      "repeat": 1
+    },
+    {
+      "pattern": "ep_inner_MA",
+      "start_bar": 11,
+      "repeat": 1
+    },
+    {
+      "pattern": "ep_dyad_off25",
+      "start_bar": 13,
+      "repeat": 1
+    },
+    {
+      "pattern": "ep_dyad_beat0",
+      "start_bar": 14,
+      "repeat": 1
+    },
+    {
+      "pattern": "ep_dyad_off15",
+      "start_bar": 15,
+      "repeat": 1
+    },
+    {
+      "pattern": "vibes_frag_low",
+      "start_bar": 2,
+      "repeat": 1
+    },
+    {
+      "pattern": "vibes_tick",
+      "start_bar": 5,
+      "repeat": 1
+    },
+    {
+      "pattern": "vibes_tick2",
+      "start_bar": 7,
+      "repeat": 1
+    },
+    {
+      "pattern": "vibes_tick",
+      "start_bar": 8,
+      "repeat": 1
+    },
+    {
+      "pattern": "vibes_tick2",
+      "start_bar": 14,
+      "repeat": 1
+    },
+    {
+      "pattern": "br_hit",
+      "start_bar": 3,
+      "repeat": 1
+    },
+    {
+      "pattern": "br_hit",
+      "start_bar": 9,
+      "repeat": 1
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "screen_id": "HUB-08",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Copier control panel",
+      "slug": "copier_control_panel",
+      "file": "story_specific_gen/images/HUB-08-mask-copier_control_panel.png",
+      "boxes": [
+        {
+          "label": "Copier control panel",
+          "box_2d": [
+            531,
+            313,
+            627,
+            471
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Service code sticker stack",
+      "slug": "service_code_sticker_stack",
+      "file": "story_specific_gen/images/HUB-08-mask-service_code_sticker_stack.png",
+      "boxes": [
+        {
+          "label": "Service code sticker stack",
+          "box_2d": [
+            632,
+            317,
+            747,
+            396
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Fax machine tray",
+      "slug": "fax_machine_tray",
+      "file": "story_specific_gen/images/HUB-08-mask-fax_machine_tray.png",
+      "boxes": [
+        {
+          "label": "Fax machine paper output tray",
+          "box_2d": [
+            637,
+            563,
+            672,
+            695
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Binder supplies shelf",
+      "slug": "binder_supplies_shelf",
+      "file": "story_specific_gen/images/HUB-08-mask-binder_supplies_shelf.png",
+      "boxes": [
+        {
+          "label": "Binder supplies shelf",
+          "box_2d": [
+            247,
+            497,
+            480,
+            751
+          ]
+        }
+      ]
+    }
+  ]
+}

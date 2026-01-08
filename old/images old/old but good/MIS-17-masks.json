@@ -1,0 +1,65 @@
+{
+  "screen_id": "MIS-17",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Gear selection pile",
+      "slug": "gear_selection_pile",
+      "file": "images/MIS-17-mask-gear_selection_pile.png",
+      "boxes": [
+        {
+          "label": "gear selection pile",
+          "box_2d": [
+            503,
+            0,
+            1000,
+            399
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Checklist table",
+      "slug": "checklist_table",
+      "file": "images/MIS-17-mask-checklist_table.png",
+      "boxes": [
+        {
+          "label": "Checklist table",
+          "box_2d": [
+            580,
+            608,
+            650,
+            706
+          ]
+        },
+        {
+          "label": "Checklist table",
+          "box_2d": [
+            595,
+            495,
+            679,
+            597
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Companion selection area",
+      "slug": "companion_selection_area",
+      "file": "images/MIS-17-mask-companion_selection_area.png",
+      "boxes": [
+        {
+          "label": "Companion selection area",
+          "box_2d": [
+            569,
+            584,
+            655,
+            707
+          ]
+        }
+      ]
+    }
+  ]
+}

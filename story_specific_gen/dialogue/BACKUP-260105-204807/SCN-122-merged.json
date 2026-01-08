@@ -1,0 +1,86 @@
+{
+  "changes": [
+    {
+      "action": "add",
+      "createScene": {
+        "dialogueGraphs": [
+          {
+            "id": "DG_SCN_122_SPHERE_SURFACE_ACT3",
+            "nodes": [
+              {
+                "id": "N_ENTER",
+                "next": "N_SPHERE_OPS_WARN",
+                "speakerId": "NARRATOR",
+                "text": "Up close, the sphere is mostly matte\u2014industrial, honest, designed to be ignored.\nThen it catches the room wrong. The reflection isn\u2019t you from any angle you can stand in.\nIt flickers back to matte before your eyes finish reporting it.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_SPHERE_OPS_WARN",
+                "next": "N_SPHERE_MENU",
+                "speakerId": "OPS_OPERATOR",
+                "text": "Hold it. (pause) Watch your words. (pause) Don\u2019t put \u201cmirror\u201d or \u201cresponsive\u201d in the log. (pause) Use \u201creflective behavior.\u201d (pause) That\u2019s legacy-report language. (pause) Already filed.",
+                "type": "npc_line"
+              },
+              {
+                "choices": [
+                  {
+                    "id": "C_SPHERE_HELD",
+                    "next": "N_SPHERE_HELD_OPS",
+                    "text": "ask: \u201cHeld state?\u201d"
+                  },
+                  {
+                    "id": "C_SPHERE_SAFE",
+                    "next": "N_SPHERE_SAFE_OPS",
+                    "text": "ask: \u201cIs it safe to stand here?\u201d"
+                  },
+                  {
+                    "id": "C_SPHERE_LOG",
+                    "next": "N_SPHERE_LOG_OPS",
+                    "text": "talk: \u201cLogging: reflective behavior observed.\u201d"
+                  },
+                  {
+                    "id": "C_SPHERE_BACK",
+                    "next": "END_RETURN",
+                    "text": "leave: Back."
+                  }
+                ],
+                "id": "N_SPHERE_MENU",
+                "speakerId": "PLAYER",
+                "type": "player_choice"
+              },
+              {
+                "id": "N_SPHERE_HELD_OPS",
+                "next": "N_SPHERE_MENU",
+                "speakerId": "OPS_OPERATOR",
+                "text": "\u2018Held\u2019? That\u2019s compliance talk. (pause)\nWe say stable/armed/inhibit/operator error. (pause)\n\u2018Held\u2019 reads like someone\u2019s actively holding it. (pause)\nAnd no, that\u2019s not me.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_SPHERE_SAFE_OPS",
+                "next": "N_SPHERE_MENU",
+                "speakerId": "OPS_OPERATOR",
+                "text": "Don't say \"safe\" (pause) it summons a crowd. (pause) My panel shows no proximity interlock violation. (pause) If it goes fully reflective and stays (pause) step back (pause) and log \"visual condition change.\" (pause) Keep it boring. (pause) Boring survives testimony.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_SPHERE_LOG_OPS",
+                "next": "N_SPHERE_MENU",
+                "speakerId": "OPS_OPERATOR",
+                "text": "Good. Add time and location. (pause) Say you stayed outside the barrier stripe. (pause) That sentence keeps you employed.",
+                "type": "npc_line"
+              },
+              {
+                "id": "END_RETURN",
+                "type": "end"
+              }
+            ],
+            "sceneId": "SCN-122",
+            "startNodeId": "N_ENTER"
+          }
+        ]
+      },
+      "op": "create_scene"
+    }
+  ],
+  "sceneId": "SCN-122"
+}

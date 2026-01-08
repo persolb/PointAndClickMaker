@@ -1,0 +1,73 @@
+{
+  "screen_id": "HUB-07",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Records door",
+      "slug": "records_door",
+      "file": "story_specific_gen/images/HUB-07-mask-records_door.png",
+      "boxes": [
+        {
+          "label": "Records door",
+          "box_2d": [
+            259,
+            185,
+            759,
+            348
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Pneumatic tube station",
+      "slug": "pneumatic_tube_station",
+      "file": "story_specific_gen/images/HUB-07-mask-pneumatic_tube_station.png",
+      "boxes": [
+        {
+          "label": "Pneumatic tube station",
+          "box_2d": [
+            291,
+            396,
+            576,
+            498
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Fire panel note",
+      "slug": "fire_panel_note",
+      "file": "story_specific_gen/images/HUB-07-mask-fire_panel_note.png",
+      "boxes": [
+        {
+          "label": "Key Storage Notice poster under fire panel",
+          "box_2d": [
+            569,
+            537,
+            692,
+            597
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Wall fax placard",
+      "slug": "wall_fax_placard",
+      "file": "story_specific_gen/images/HUB-07-mask-wall_fax_placard.png",
+      "boxes": [
+        {
+          "label": "Wall fax placard",
+          "box_2d": [
+            334,
+            18,
+            521,
+            126
+          ]
+        }
+      ]
+    }
+  ]
+}

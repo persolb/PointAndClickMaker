@@ -1,0 +1,73 @@
+{
+  "changes": [
+    {
+      "action": "modify",
+      "details": {
+        "node": {
+          "conditions": [
+            {
+              "key": "inventory.kitCollected",
+              "op": "==",
+              "value": false
+            }
+          ],
+          "id": "START",
+          "next": "MENU",
+          "speakerId": "NARRATOR",
+          "text": "The car trunk is open. An equipment case sits inside like it has been waiting to be blamed.\nNext to it: a binder shell. White plastic. Hand-labeled: \u201cClosure Package \u2013 SPINDLE Site (Draft).\u201d The label is slightly off-center.",
+          "type": "npc_line"
+        },
+        "op": "update_node"
+      },
+      "op": "update_node"
+    },
+    {
+      "action": "modify",
+      "details": {
+        "node": {
+          "choices": [
+            {
+              "id": "LOOK_CASE",
+              "next": "CASE_DESC",
+              "text": "look: Equipment case."
+            },
+            {
+              "id": "LOOK_BINDER",
+              "next": "BINDER_DESC",
+              "text": "look: Binder shell."
+            },
+            {
+              "id": "USE_COLLECT",
+              "next": "COLLECT_LINE",
+              "text": "Collect the starter kit."
+            },
+            {
+              "checks": [
+                {
+                  "key": "site.perimeterCrossed",
+                  "type": "flag",
+                  "value": true
+                }
+              ],
+              "id": "SHOW_PPE",
+              "onFailNext": "PPE_FAIL",
+              "onPassNext": "PPE_PASS",
+              "text": "Put on PPE here."
+            },
+            {
+              "id": "LEAVE_CLOSE",
+              "next": "LEAVE_LINE",
+              "text": "Close the trunk."
+            }
+          ],
+          "id": "MENU",
+          "speakerId": "PLAYER",
+          "type": "player_choice"
+        },
+        "op": "update_node"
+      },
+      "op": "update_node"
+    }
+  ],
+  "sceneId": "SCN-002"
+}

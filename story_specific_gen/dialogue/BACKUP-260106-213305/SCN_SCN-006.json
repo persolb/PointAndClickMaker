@@ -1,0 +1,361 @@
+{
+  "dialogueGraphs": [
+    {
+      "id": "DG_SCN_006_CALLBOX",
+      "sceneId": "SCN-006",
+      "startNodeId": "N0",
+      "nodes": [
+        {
+          "id": "N0",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The guard shack door has a handle that implies consent. The call box does not.",
+          "next": "N1"
+        },
+        {
+          "id": "N1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "A label plate beneath the speaker is sun-faded: SECV \u2014 REMOTE ATTENDANCE.",
+          "next": "N2"
+        },
+        {
+          "id": "N2",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "USE_CALLBOX",
+              "text": "(use) Call box speaker and button.",
+              "checks": [],
+              "next": "N3"
+            },
+            {
+              "id": "LEAVE",
+              "text": "(leave) Step away.",
+              "checks": [],
+              "next": "N_END_NOOUTCOME"
+            }
+          ]
+        },
+        {
+          "id": "N3",
+          "type": "npc_line",
+          "speakerId": "SECV_OPERATOR",
+          "text": "SECV remote attendance. (pause) You're on a recorded line\u2014quality and yeah liability. (pause) Alright. (pause) What do you need (pause) so you stay safe (pause) and this doesn't land in my lap?",
+          "next": "N4"
+        },
+        {
+          "id": "N4",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "OPEN",
+              "text": "(ask) Open the vestibule.",
+              "checks": [],
+              "next": "N_OPEN_1"
+            },
+            {
+              "id": "VERIFY",
+              "text": "(ask) Verify me.",
+              "checks": [],
+              "next": "N_VERIFY_1"
+            },
+            {
+              "id": "SCHEDULED",
+              "text": "(ask) Am I scheduled?",
+              "checks": [],
+              "next": "N_SCHED_1"
+            },
+            {
+              "id": "END_CALL",
+              "text": "(leave) End call.",
+              "checks": [],
+              "next": "N_END_CALL_LINE"
+            }
+          ]
+        },
+        {
+          "id": "N_OPEN_1",
+          "type": "npc_line",
+          "speakerId": "SECV_OPERATOR",
+          "text": "I can't pop the vestibule (pause) just because you asked. (pause) I need the system to show (pause) an authorized onsite presence first. (pause) Otherwise it's my name (pause) on the why.",
+          "next": "N_MAIN_MENU"
+        },
+        {
+          "id": "N_VERIFY_1",
+          "type": "npc_line",
+          "speakerId": "SECV_OPERATOR",
+          "text": "I can't verify identity over the speaker. (pause) I can check the schedule for your name. (pause) That's all. (pause) It keeps the paper happy.",
+          "next": "N_MAIN_MENU"
+        },
+        {
+          "id": "N_SCHED_1",
+          "type": "npc_line",
+          "speakerId": "SECV_OPERATOR",
+          "text": "Yeah. (pause) You\u2019re scheduled today under OLEA closeout. (pause) Activity. (pause) That\u2019s your name in the system, anyway. (pause) Anything past that gets sticky for me.",
+          "next": "N_SCHED_2"
+        },
+        {
+          "id": "N_SCHED_2",
+          "type": "npc_line",
+          "speakerId": "SECV_OPERATOR",
+          "text": "Scheduled doesn't flip you to onsite. (pause)\nOnsite is the box with a timestamp. (pause)\nSomething I can point to later. (pause)\nWithout it I'm not opening a door. (pause)\nThen explaining how you got hurt. (pause)\nWith no record.",
+          "next": "N_MAIN_MENU"
+        },
+        {
+          "id": "N_MAIN_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "UNLOCK_ANYWAY",
+              "text": "(ask) Unlock it anyway.",
+              "checks": [],
+              "next": "N_UNLOCKA_1"
+            },
+            {
+              "id": "NEED_FROM_RECORDS",
+              "text": "(ask) What exactly do I need from Records?",
+              "checks": [],
+              "next": "N_REQ_1"
+            },
+            {
+              "id": "CONFIRM_DETAILS",
+              "text": "(ask) Confirm my schedule details. I need a trail.",
+              "checks": [],
+              "next": "N_DETAILS_1"
+            },
+            {
+              "id": "OLEA_LEVERAGE",
+              "text": "(persuade) I\u2019m OLEA. This is closure. You can rely on the work order.",
+              "conditions": [
+                {
+                  "key": "player.factions",
+                  "op": "in",
+                  "value": [
+                    "OLEA"
+                  ]
+                }
+              ],
+              "checks": [],
+              "next": "N_OLEA_1"
+            },
+            {
+              "id": "END_CALL",
+              "text": "(leave) End call.",
+              "checks": [],
+              "next": "N_END_CALL_LINE"
+            }
+          ]
+        },
+        {
+          "id": "N_UNLOCKA_1",
+          "type": "npc_line",
+          "speakerId": "SECV_OPERATOR",
+          "text": "I can't. (pause) If I unlock it on a call, (pause) the log tags me as authorization. (pause) I don't have clearance for that.",
+          "next": "N_UNLOCKA_2"
+        },
+        {
+          "id": "N_UNLOCKA_2",
+          "type": "npc_line",
+          "speakerId": "SECV_OPERATOR",
+          "text": "If there's a clean onsite record, sure. (pause) Right now it's just a voice. (pause) On a speaker. (pause) And for what it's worth you've been polite. (pause) Thanks.",
+          "next": "N_UNLOCKA_MENU"
+        },
+        {
+          "id": "N_UNLOCKA_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "BACK_MAIN",
+              "text": "(ask) Then what can you do?",
+              "checks": [],
+              "next": "N_MAIN_MENU"
+            },
+            {
+              "id": "REPEAT",
+              "text": "(ask) Unlock it anyway.",
+              "checks": [],
+              "next": "N_UNLOCKA_1"
+            },
+            {
+              "id": "END_CALL",
+              "text": "(leave) End call.",
+              "checks": [],
+              "next": "N_END_CALL_LINE"
+            }
+          ]
+        },
+        {
+          "id": "N_REQ_1",
+          "type": "npc_line",
+          "speakerId": "SECV_OPERATOR",
+          "text": "Temporary Presence Receipt, or whatever it\u2019s called now.",
+          "next": "N_REQ_2"
+        },
+        {
+          "id": "N_REQ_2",
+          "type": "npc_line",
+          "speakerId": "SECV_OPERATOR",
+          "text": "It needs your name and date. (pause) Activity type too. (pause) The site field must read 'onsite'. (pause) Not 'expected'. (pause) Once it's in the file, (pause) I can hit the vestibule door. (pause) No making you up in the log.",
+          "next": "N_REQ_3"
+        },
+        {
+          "id": "N_REQ_3",
+          "type": "npc_line",
+          "speakerId": "SECV_OPERATOR",
+          "text": "Used to be you walked there. (pause) To the Records window. (pause) Now it\u2019s: find whoever has Records authority. (pause) Or find the stamp. (pause) Or follow pneumatic tube instructions. (pause) They act like Records still has staff. (pause) I\u2019m not joking. (pause) That\u2019s the procedure.",
+          "next": "N_REQ_MENU"
+        },
+        {
+          "id": "N_REQ_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "CONFIRM_PLAN",
+              "text": "(ask) So: get marked onsite. Then call you.",
+              "checks": [],
+              "next": "N_REQ_CONFIRM_1"
+            },
+            {
+              "id": "BACK_MAIN",
+              "text": "(ask) Understood. Back up a step.",
+              "checks": [],
+              "next": "N_MAIN_MENU"
+            },
+            {
+              "id": "END_CALL",
+              "text": "(leave) End call.",
+              "checks": [],
+              "next": "N_END_CALL_LINE"
+            }
+          ]
+        },
+        {
+          "id": "N_REQ_CONFIRM_1",
+          "type": "npc_line",
+          "speakerId": "SECV_OPERATOR",
+          "text": "Yeah. (pause) Get the onsite mark, then call me. (pause) I can't move a door without paper. (pause) It says you're here.",
+          "next": "N_NARR_COMMIT_1"
+        },
+        {
+          "id": "N_DETAILS_1",
+          "type": "npc_line",
+          "speakerId": "SECV_OPERATOR",
+          "text": "What I\u2019m seeing: Field Systems Specialist, OLEA. (pause) Closure verification. (pause) Staged shutdown prep. (pause) Today through end-of-day. (pause) Tagged \u201csubject to onsite confirmation.\u201d (pause) That tag is the only reason. (pause) I can even say this much.",
+          "next": "N_DETAILS_2"
+        },
+        {
+          "id": "N_DETAILS_2",
+          "type": "npc_line",
+          "speakerId": "SECV_OPERATOR",
+          "text": "I can't read personal schedule details. (pause) Not to an unverified caller. (pause) Get a Presence Receipt from Records marked onsite. (pause) I can attach it to that event. (pause) Then it's treated as ops.",
+          "next": "N_DETAILS_MENU"
+        },
+        {
+          "id": "N_DETAILS_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "COMMIT",
+              "text": "(ask) Records again. Understood.",
+              "checks": [],
+              "next": "N_NARR_COMMIT_1"
+            },
+            {
+              "id": "BACK_MAIN",
+              "text": "(ask) Back.",
+              "checks": [],
+              "next": "N_MAIN_MENU"
+            },
+            {
+              "id": "END_CALL",
+              "text": "(leave) End call.",
+              "checks": [],
+              "next": "N_END_CALL_LINE"
+            }
+          ]
+        },
+        {
+          "id": "N_OLEA_1",
+          "type": "npc_line",
+          "speakerId": "SECV_OPERATOR",
+          "text": "I'm looking at the work order. (pause) It tells me you're scheduled. (pause) Over this speaker I can't act. (pause) It doesn't give me anything usable. (pause) I need Records to tag you onsite. (pause) Then the work order has somewhere to land.",
+          "next": "N_OLEA_2"
+        },
+        {
+          "id": "N_OLEA_2",
+          "type": "npc_line",
+          "speakerId": "SECV_OPERATOR",
+          "text": "Once Records flips you to onsite (pause) I can do doors and cameras (pause) and timed unlocks. (pause) Until then (pause) I'm stuck on the phone (pause) and I'm about out of bandwidth.",
+          "next": "N_OLEA_MENU"
+        },
+        {
+          "id": "N_OLEA_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "COMMIT",
+              "text": "(ask) Then my task is to get marked onsite.",
+              "checks": [],
+              "next": "N_NARR_COMMIT_1"
+            },
+            {
+              "id": "BACK_MAIN",
+              "text": "(ask) Back.",
+              "checks": [],
+              "next": "N_MAIN_MENU"
+            },
+            {
+              "id": "END_CALL",
+              "text": "(leave) End call.",
+              "checks": [],
+              "next": "N_END_CALL_LINE"
+            }
+          ]
+        },
+        {
+          "id": "N_NARR_COMMIT_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You have your next step: get marked onsite by Records\u2014 because the facility only recognizes people once it can file them.",
+          "next": "N_COMMIT_OUTCOME"
+        },
+        {
+          "id": "N_COMMIT_OUTCOME",
+          "type": "end",
+          "outcomeId": "security_vendor_advice",
+          "effects": [
+            {
+              "key": "knowledge.presenceIsPaperwork",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "objectives.obtainPresenceProof",
+              "action": "set",
+              "value": true
+            }
+          ]
+        },
+        {
+          "id": "N_END_CALL_LINE",
+          "type": "npc_line",
+          "speakerId": "SECV_OPERATOR",
+          "text": "Alright. (pause) Call back once you're marked onsite. (pause) I get it. (pause) You can't do that from where you are. (pause) Stay safe.",
+          "next": "N_END_NOOUTCOME"
+        },
+        {
+          "id": "N_END_NOOUTCOME",
+          "type": "end"
+        }
+      ]
+    }
+  ]
+}

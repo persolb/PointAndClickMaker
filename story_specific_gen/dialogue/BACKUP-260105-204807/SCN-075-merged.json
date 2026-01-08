@@ -1,0 +1,271 @@
+{
+  "changes": [
+    {
+      "action": "add",
+      "createScene": {
+        "dialogueGraphs": [
+          {
+            "id": "DG_SPINDLE_GATE_INTERCOM",
+            "nodes": [
+              {
+                "id": "N_INTERCOM_DESC",
+                "next": "N_INTERCOM_PLAYER_CALL",
+                "speakerId": "NARRATOR",
+                "text": "A brushed-metal speaker grille sits above the keypad. It looks newer than the fence.\nA small sticker says: FOR ASSISTANCE, PRESS AND STATE PURPOSE. The sticker has been re-applied at least twice.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_INTERCOM_PLAYER_CALL",
+                "next": "N_SECURITY_GREETING",
+                "speakerId": "PLAYER",
+                "text": "Gate assistance.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_SECURITY_GREETING",
+                "next": "N_INTERCOM_MENU",
+                "speakerId": "SECURITY_DISPATCH",
+                "text": "Okay\u2014hi\u2014one moment. I\u2019m going to note you initiated contact, for the record.\nState your name, your organization, and whether you are attempting entry for work or for access.",
+                "type": "npc_line"
+              },
+              {
+                "choices": [
+                  {
+                    "id": "C_ASK_DIFF",
+                    "next": "N_PLAYER_ASK_DIFF",
+                    "text": "ask Is there a difference?"
+                  },
+                  {
+                    "conditions": [
+                      {
+                        "key": "player.factions",
+                        "op": "in",
+                        "value": "OLEA"
+                      }
+                    ],
+                    "id": "C_SHOW_BADGE",
+                    "next": "N_PLAYER_SHOW_BADGE",
+                    "text": "show OLEA work order and badge."
+                  },
+                  {
+                    "id": "C_ASK_SIGNS_INTERCOM",
+                    "next": "N_PLAYER_ASK_SIGNS",
+                    "text": "ask Why is the signage contradictory?"
+                  },
+                  {
+                    "id": "C_USE_KEYPAD_INTERCOM",
+                    "next": "N_SECURITY_USE_KEYPAD",
+                    "text": "use I\u2019m using the keypad."
+                  }
+                ],
+                "id": "N_INTERCOM_MENU",
+                "speakerId": "PLAYER",
+                "type": "player_choice"
+              },
+              {
+                "id": "N_PLAYER_ASK_DIFF",
+                "next": "N_SECURITY_DIFF",
+                "speakerId": "PLAYER",
+                "text": "Is there a difference?",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_SECURITY_DIFF",
+                "next": "N_INTERCOM_MENU",
+                "speakerId": "SECURITY_DISPATCH",
+                "text": "Yes. Not practically\u2014procedurally.\nWork implies an assigned scope with a dispatch number. Access implies you are here to be on site.\nI don\u2019t decide which you are. I just label the call so nobody later says I \u201cauthorized\u201d something.\nAlso: if you say access, it triggers the visitor script and I hate the visitor script.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_PLAYER_SHOW_BADGE",
+                "next": "N_SECURITY_BADGE_A",
+                "speakerId": "PLAYER",
+                "text": "OLEA. Work order\u2019s current.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_SECURITY_BADGE_A",
+                "next": "N_SECURITY_BADGE_B",
+                "speakerId": "SECURITY_DISPATCH",
+                "text": "Copy. OLEA field systems. That\u2019s\u2026 better than vendor, on paper.\nHold the badge to the camera\u2014slowly. The camera is temperamental, and if it fails it becomes an incident, which is a whole different folder.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_SECURITY_BADGE_B",
+                "next": "N_SECURITY_BADGE_C",
+                "speakerId": "NARRATOR",
+                "text": "You hold your badge up to a small dome camera. The lens clicks as it tries to focus.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_SECURITY_BADGE_C",
+                "next": "N_INTERCOM_MENU_VERIFIED",
+                "speakerId": "SECURITY_DISPATCH",
+                "text": "Got it. I\u2019m logging verification attempted. Not verified.\nBecause the camera doesn\u2019t do attestations. It does images.",
+                "type": "npc_line"
+              },
+              {
+                "choices": [
+                  {
+                    "id": "C_ASK_OPEN_GATE",
+                    "next": "N_PLAYER_ASK_OPEN_GATE",
+                    "text": "ask Can you open the gate?"
+                  },
+                  {
+                    "checks": [
+                      {
+                        "dc": 12,
+                        "skill": "bureaucracy",
+                        "type": "skill"
+                      }
+                    ],
+                    "id": "C_PERSUADE_CYCLE",
+                    "onFailNext": "N_SECURITY_CYCLE_FAIL",
+                    "onPassNext": "N_SECURITY_CYCLE_PASS",
+                    "text": "persuade Request a gate cycle now."
+                  },
+                  {
+                    "id": "C_ASK_SIGNS_VERIFIED",
+                    "next": "N_PLAYER_ASK_SIGNS",
+                    "text": "ask Why do the signs conflict?"
+                  },
+                  {
+                    "id": "C_USE_KEYPAD_VERIFIED",
+                    "next": "N_SECURITY_USE_KEYPAD",
+                    "text": "use Keypad."
+                  }
+                ],
+                "id": "N_INTERCOM_MENU_VERIFIED",
+                "speakerId": "PLAYER",
+                "type": "player_choice"
+              },
+              {
+                "id": "N_PLAYER_ASK_OPEN_GATE",
+                "next": "N_SECURITY_OPEN_GATE",
+                "speakerId": "PLAYER",
+                "text": "Can you open the gate?",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_SECURITY_OPEN_GATE",
+                "next": "N_INTERCOM_MENU_VERIFIED",
+                "speakerId": "SECURITY_DISPATCH",
+                "text": "I can request a cycle. I cannot open it.\nIf I open it, I\u2019m the last human decision in the chain, and then my name is in a deposition slideshow.\nUse the keypad. It prints a receipt. The receipt proves you didn\u2019t slip in, which\u2014again\u2014becomes my problem.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_SECURITY_CYCLE_PASS",
+                "next": "N_INTERCOM_MENU_VERIFIED",
+                "speakerId": "SECURITY_DISPATCH",
+                "text": "Okay. I submitted a cycle request. That is me requesting, not authorizing.\nIf the gate controller accepts it, you\u2019ll hear a relay click. If it ignores it, that\u2019s also a valid outcome, technically.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_SECURITY_CYCLE_FAIL",
+                "next": "N_INTERCOM_MENU_VERIFIED",
+                "speakerId": "SECURITY_DISPATCH",
+                "text": "No. If I put my hands on a cycle request without a matching dispatch entry, it auto-flags as discretionary.\nDiscretionary is how you get invited to explain yourself to people with clipboards.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_PLAYER_ASK_SIGNS",
+                "next": "N_SECURITY_LAYERED",
+                "speakerId": "PLAYER",
+                "text": "Why is the signage contradictory?",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_SECURITY_LAYERED",
+                "next": "N_INTERCOM_SIGNS_MENU",
+                "speakerId": "SECURITY_DISPATCH",
+                "text": "It\u2019s not contradictory. It\u2019s layered. There\u2019s a difference.\nSite Closed is the status. Authorized Personnel is the exception. Visitor Check-in is\u2026 historical.\nFacilities won\u2019t remove signs without a removal form. Compliance won\u2019t approve removal without photos of the current state.\nSo we preserve the current state.\nWhich is: all signs remain. Forever. Like sediment.",
+                "type": "npc_line"
+              },
+              {
+                "choices": [
+                  {
+                    "conditions": [
+                      {
+                        "key": "compliance.signConflictLogged",
+                        "op": "!=",
+                        "value": true
+                      }
+                    ],
+                    "effects": [
+                      {
+                        "action": "set",
+                        "key": "story.act",
+                        "value": 1
+                      },
+                      {
+                        "action": "set",
+                        "key": "compliance.signConflictLogged",
+                        "value": true
+                      },
+                      {
+                        "action": "set",
+                        "key": "objectives.resolveSignageConflict",
+                        "value": true
+                      }
+                    ],
+                    "id": "C_USE_LOG_FROM_INTERCOM",
+                    "next": "END_LOG_SIGN_CONFLICT",
+                    "text": "use Log signage conflict."
+                  },
+                  {
+                    "id": "C_ASK_PHOTOS",
+                    "next": "N_PLAYER_ASK_PHOTOS",
+                    "text": "ask Who do I send the photos to?"
+                  },
+                  {
+                    "id": "C_USE_KEYPAD_FROM_SIGNS",
+                    "next": "END_USE_KEYPAD",
+                    "text": "use Keypad."
+                  }
+                ],
+                "id": "N_INTERCOM_SIGNS_MENU",
+                "speakerId": "PLAYER",
+                "type": "player_choice"
+              },
+              {
+                "id": "N_PLAYER_ASK_PHOTOS",
+                "next": "N_SECURITY_PHOTOS",
+                "speakerId": "PLAYER",
+                "text": "Who gets the photos?",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_SECURITY_PHOTOS",
+                "next": "N_INTERCOM_SIGNS_MENU",
+                "speakerId": "SECURITY_DISPATCH",
+                "text": "Not me. Respectfully.\nIf you send them to me, I receive notice, and then I\u2019m obligated to act, and then I can\u2019t, and then I\u2019m noncompliant.\nSend to your OLEA compliance mailbox, whatever it\u2019s called this week. Attach the gate location.\nAnd\u2014small thing\u2014please don\u2019t call it a hazard unless someone is actively bleeding. Hazard triggers alarms.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_SECURITY_USE_KEYPAD",
+                "next": "END_USE_KEYPAD",
+                "speakerId": "SECURITY_DISPATCH",
+                "text": "Copy. Use the keypad and keep the receipt.\nThe receipt is the only part of this process that doesn\u2019t argue back later.",
+                "type": "npc_line"
+              },
+              {
+                "exitTo": "Gate keypad and receipt slot",
+                "id": "END_USE_KEYPAD",
+                "type": "end"
+              },
+              {
+                "exitTo": "Layered signpost",
+                "id": "END_LOG_SIGN_CONFLICT",
+                "type": "end"
+              }
+            ],
+            "sceneId": "SCN-075",
+            "startNodeId": "N_INTERCOM_DESC"
+          }
+        ]
+      },
+      "op": "create_scene"
+    }
+  ],
+  "sceneId": "SCN-075"
+}

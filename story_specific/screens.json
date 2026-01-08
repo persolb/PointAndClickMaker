@@ -1,0 +1,913 @@
+{
+  "variants": [
+    {
+      "id": "V_ACT1_ARRIVAL",
+      "base_scene": "HUB-01",
+      "state": "arrival",
+      "notes": "Gate chained; conflicting signs visible; trunk kit available."
+    },
+    {
+      "id": "V_ACT1_MINIMAL_POWER",
+      "base_scene": "HUB-04",
+      "state": "aux_power_live",
+      "notes": "Aux loads live; label maker can be charged; card reader indicator visible."
+    },
+    {
+      "id": "V_ACT2_TER_ACTIVE",
+      "base_scene": "LIM-02",
+      "state": "ter_issued",
+      "notes": "Temporary Existence Receipt issued; standard doors and map kiosk respond."
+    },
+    {
+      "id": "V_ACT3_HELD_OPEN",
+      "base_scene": "HUB-13",
+      "state": "held_open_notice",
+      "notes": "Mirror-state flicker persists; upstream hold implied; logging becomes critical."
+    }
+  ],
+  "screens": [
+	{
+	  "id": "HUB-01",
+	  "name": "Approach Road and Main Gate",
+	  "category": "act1_exterior_hub",
+	  "importance": 5,
+	  "art": {
+	    "shot_type": "exterior wide establishing",
+	    "camera": "2D side-on; shallow depth; mild convergence toward gate",
+	    "lighting": "overcast daylight; soft shadows",
+	    "composition": "Primary read: cracked road → chained sliding gate. Secondary reads: guard shack visible inside/right of the fence line; behind it, the admin lobby block (HUB-06) is visible through/behind fence as a 1979 office façade. Foreground includes a flush ground service hatch near the road edge that reads as an intentional access point."
+	  },
+	  "elements": [
+	    "Cracked asphalt approach road with converging wear lines",
+	    "Chain-link fence and main sliding gate with barbed-wire silhouette",
+	    "Layered signage: official site sign, safety sign, sun-bleached contractor notice",
+	    "Distant facility silhouette softened by haze; thin ridge security lights (80s build language)",
+	    "Newer-than-everything conduit run to a small instrument box",
+	    "Guard shack (HUB-02) visible behind the fence line to the right, with porch overhang silhouette",
+	    "Admin lobby block (HUB-06) visible beyond/behind the guard shack on the far side of the fence; reads as 1979 office construction (beige panels, narrow windows)",
+	    "Exterior ground service hatch (HUB-04) near foreground/road edge; flush cover with lifting ring and stenciled ID"
+	  ],
+	  "key_props": [
+	    "Car trunk / equipment case (starter kit)",
+	    "Gate keypad receipt printer",
+	    "Binder shell: Closure Package – SPINDLE Site (Draft)",
+	    "Exterior ground service hatch cover (access to HUB-04)"
+	  ],
+	  "hotspots": [
+	    {
+	      "name": "Car trunk / equipment case",
+	      "readability": "Foreground silhouette; highest contrast; isolated from other props"
+	    },
+	    {
+	      "name": "Gate keypad and receipt slot",
+	      "readability": "Centered at hand height; small paper curl catches light"
+	    },
+	    {
+	      "name": "Layered signpost",
+	      "readability": "Stacked rectangles with mismatched fonts; readable at a glance"
+	    },
+	    {
+	      "name": "Debris pile by fence line",
+	      "readability": "Clean outline against fence; separated from clutter"
+	    },
+	    {
+	      "name": "Instrument conduit box",
+	      "readability": "Fresh paint and straight lines; looks newer than surroundings"
+	    },
+	    {
+	      "name": "Exterior ground service hatch",
+	      "readability": "Flush rectangle in clean ground space; lifting ring and stencil make it unmistakable"
+	    }
+	  ],
+	  "connections": [
+	    {
+	      "to": "HUB-02",
+	      "direction": "right",
+	      "transition": "walk_along_fence",
+	      "continuity": [
+	        "Fence line continues; guard shack grows from background element to primary subject"
+	      ]
+	    },
+	    {
+	      "to": "HUB-04",
+	      "direction": "down",
+	      "transition": "open_ground_service_hatch",
+	      "continuity": [
+	        "Hatch location remains consistent relative to road cracks and fence post landmarks"
+	      ]
+	    },
+	    {
+	      "to": "HUB-06",
+	      "direction": "hotspot",
+	      "transition": "walk_through_gate",
+	      "continuity": [
+	        "Admin lobby block seen behind fence becomes reachable as an interior entry; guard shack remains nearby behind fence"
+	      ]
+	    }
+	  ]
+	},
+    {
+      "id": "HUB-02",
+      "name": "Guard Shack Exterior",
+      "category": "act1_exterior",
+      "importance": 4,
+      "art": {
+        "shot_type": "exterior medium",
+        "camera": "2D side-on; shallow depth; mild convergence toward shack door",
+        "lighting": "overcast daylight; muted reflections",
+        "composition": "Shack sits off the main road with a small porch; door and reader are the visual focal points"
+      },
+      "elements": [
+        "Small guard shack with porch overhang",
+        "Door with card reader; indicator barely lit",
+        "Call box on post with tangled conduit",
+        "Dead pneumatic-tube label plate mounted near the door"
+      ],
+      "key_props": [
+        "Call box (security vendor)",
+        "Pneumatic tube station label (dead but labeled)"
+      ],
+      "hotspots": [
+        { "name": "Guard shack door", "readability": "Strong frame; door handle catches highlight" },
+        { "name": "Card reader", "readability": "Single dim LED; placed beside handle" },
+        { "name": "Call box speaker and button", "readability": "High contrast button; cable drape points to it" },
+        { "name": "Pneumatic tube label plate", "readability": "Clean metal plate with arrows; looks official and wrong" }
+      ],
+      "connections": [
+        { "to": "HUB-01", "direction": "left", "transition": "walk_back_to_gate", "continuity": ["Gate and signage return to main read"] },
+        { "to": "HUB-03", "direction": "hotspot", "transition": "enter_shack", "continuity": ["Door reader remains the focal point"] }
+      ]
+    },
+    {
+      "id": "HUB-03",
+      "name": "Guard Shack Vestibule",
+      "category": "act1_interior",
+      "importance": 4,
+      "art": {
+        "shot_type": "interior small room",
+        "camera": "2D side-on; shallow depth; tight framing on desk and badge station",
+        "lighting": "low-power emergency glow; cold tint",
+        "composition": "Desk clutter is controlled; badge dispenser and speaker are staged for fast reading"
+      },
+      "elements": [
+        "Security desk with drawers and an old badge reader",
+        "Wall badge insert dispenser with expired stock",
+        "Speaker grill tied to offsite vendor system",
+        "Dead tube port cover plate with routing arrows"
+      ],
+      "key_props": [
+        "Visitor badge insert (expired)",
+        "Demagnetized contractor badge (for later restore)"
+      ],
+      "hotspots": [
+        { "name": "Badge insert dispenser", "readability": "Neat stack; one insert slightly protruding" },
+        { "name": "Desk drawer (old badges)", "readability": "Drawer gap and label tab invite interaction" },
+        { "name": "Speaker / intercom", "readability": "Single lit indicator; centered on wall plate" },
+        { "name": "Dead tube port cover", "readability": "Arrow graphics stand out; looks maintained but inactive" }
+      ],
+      "connections": [
+        { "to": "HUB-02", "direction": "left", "transition": "exit_shack", "continuity": ["Exterior porch returns; overcast light resumes"] },
+        { "to": "HUB-06", "direction": "right", "transition": "walk_to_admin_entry", "continuity": ["Fence line yields to facility frontage"] }
+      ]
+    },
+	{
+	  "id": "HUB-04",
+	  "name": "Exterior Ground Service Hatch",
+	  "category": "act1_service_exterior",
+	  "importance": 4,
+	  "art": {
+	    "shot_type": "exterior close / utility access",
+	    "camera": "2D side-on; shallow depth; framing tight on hatch and immediate surroundings",
+	    "lighting": "overcast daylight; darker cavity value under hatch lid",
+	    "composition": "Hatch opening dominates foreground; the fence base and road edge provide orientation back to HUB-01. Interior ladder/steps and a lit service door are visible, clearly implying a path deeper inside."
+	  },
+	  "elements": [
+	    "Flush ground service hatch with lifting ring and stenciled identifier",
+	    "Shallow access pit with ladder/steps and conduit runs",
+	    "Small service landing with a single exterior-rated door leading to the service corridor",
+	    "Era cues: 80s industrial hardware and conduit; newer patchwork labels layered over older paint"
+	  ],
+	  "key_props": [
+	    "Access ladder/steps",
+	    "Service door to HUB-05"
+	  ],
+	  "hotspots": [
+	    {
+	      "name": "Hatch lid and lifting ring",
+	      "readability": "High-contrast metal ring; clear hand interaction point"
+	    },
+	    {
+	      "name": "Access ladder/steps",
+	      "readability": "Strong vertical lines; shadowed depth cue"
+	    },
+	    {
+	      "name": "Service door",
+	      "readability": "Single door with bright perimeter seal; obvious destination"
+	    }
+	  ],
+	  "connections": [
+	    {
+	      "to": "HUB-01",
+	      "direction": "hotspot",
+	      "transition": "climb_out_of_hatch",
+	      "continuity": [
+	        "Road edge, fence posts, and hatch surround align with HUB-01 placement"
+	      ]
+	    },
+	    {
+	      "to": "HUB-05",
+	      "direction": "right",
+	      "transition": "door",
+	      "continuity": [
+	        "Conduit bundles and label style continue into the corridor; exterior light falls off behind the player"
+	      ]
+	    }
+	  ]
+	},
+    {
+      "id": "HUB-05",
+      "name": "Service Corridor and Duct Access",
+      "category": "act1_service",
+      "importance": 3,
+      "art": {
+        "shot_type": "interior corridor",
+        "camera": "2D side-on; shallow depth; long corridor for depth cues",
+        "lighting": "industrial fluorescents; some dead tubes",
+        "composition": "Corridor lines pull toward two doors; a duct panel sits as a clean, clickable rectangle"
+      },
+      "elements": [
+        "Service corridor with cable trays and duct runs",
+        "Ventilation access panel for damper task",
+        "Door to admin wing service entry",
+        "Door to operations wing (scope-labeled)"
+      ],
+      "key_props": [
+        "Vent damper access (reports OPEN)",
+        "Scope-labeled operations door"
+      ],
+      "hotspots": [
+        { "name": "Ventilation access panel", "readability": "Clean rectangle with screws; unobstructed silhouette" },
+        { "name": "Operations wing service door", "readability": "Large warning placard with scope language" },
+        { "name": "Cable tray label cluster", "readability": "Multiple label fonts; points to mismatch theme" }
+      ],
+      "connections": [
+        { "to": "HUB-04", "direction": "left", "transition": "door", "continuity": ["Panel hum fades in"] },
+        { "to": "HUB-06", "direction": "right", "transition": "hallway to admin_service_entry", "continuity": ["Utility textures shift to office finishes"] },
+        { "to": "HUB-10", "direction": "hotspot", "transition": "door to ops_service_entry", "continuity": ["Corridor signage shifts to interlock warnings"] }
+      ]
+    },
+	{
+	  "id": "HUB-06",
+	  "name": "Admin Lobby and Kiosk",
+	  "category": "act1_interior_hub",
+	  "importance": 5,
+	  "art": {
+	    "shot_type": "interior wide",
+	    "camera": "2D side-on; shallow depth; clear read of kiosk and doors",
+	    "lighting": "fluorescent office light; slightly too bright",
+	    "composition": "Reads as 1979 office construction directly behind the guard shack: beige panels, narrow windows, older fixtures. Door layout is simple and legible: kiosk centered; doors to Records hall, Conference, and Notices room are spaced as distinct exits."
+	  },
+	  "elements": [
+	    "Lobby kiosk with limited menu and barcode scanner",
+	    "Reception desk nook with drawers and phone list board",
+	    "Door frames labeled with inconsistent terminology",
+	    "Faded asset plaque partially covered by contractor stickers",
+	    "1979 office finishes: textured wall panels, bulky baseboards, dated fluorescent troffers",
+	    "1980s facility overlays: later safety placards, newer label stock applied over older signage"
+	  ],
+	  "key_props": [
+	    "Outdated phone list (Legal extension)",
+	    "Asset plaque: SPINDLE Node SP-01 (partially obscured)",
+	    "Visitor registration / presence receipt printer"
+	  ],
+	  "hotspots": [
+	    {
+	      "name": "Lobby kiosk terminal",
+	      "readability": "Lit screen; audible boot loop; central placement"
+	    },
+	    {
+	      "name": "Wall phone list",
+	      "readability": "High-contrast text block; curled laminated corner"
+	    },
+	    {
+	      "name": "Faded asset plaque",
+	      "readability": "Metal plate with partially hidden identifier"
+	    },
+	    {
+	      "name": "Reception desk drawers",
+	      "readability": "Label tabs and gaps indicate interactable storage"
+	    }
+	  ],
+	  "connections": [
+	    {
+	      "to": "HUB-03",
+	      "direction": "left",
+	      "transition": "walk_back_to_shack",
+	      "continuity": [
+	        "Proximity cue: lobby is directly behind the guard shack; exterior light and porch geometry reappear quickly"
+	      ]
+	    },
+	    {
+	      "to": "HUB-07",
+	      "direction": "hotspot",
+	      "transition": "hallway to records_hall",
+	      "continuity": [
+	        "Office finishes transition to archive corridor materials; signage shifts toward Records/tube routing"
+	      ]
+	    },
+	    {
+	      "to": "HUB-09",
+	      "direction": "right",
+	      "transition": "door to conference_room",
+	      "continuity": [
+	        "Kiosk hum fades; voices carry"
+	      ]
+	    },
+	    {
+	      "to": "HUB-14",
+	      "direction": "hotspot",
+	      "transition": "door to notices_room",
+	      "continuity": [
+	        "Paper walls and compliance posters dominate"
+	      ]
+	    }
+	  ]
+	},
+    {
+      "id": "HUB-07",
+      "name": "Records Hallway and Tube Station",
+      "category": "act1_interior",
+      "importance": 5,
+      "art": {
+        "shot_type": "interior corridor",
+        "camera": "2D side-on; shallow depth; doors and station readable",
+        "lighting": "office dim with occasional indicator LEDs",
+        "composition": "Records door anchors the scene; tube station and fire panel note are staged as secondary reads"
+      },
+      "elements": [
+        "Locked Records door with official seal strip",
+        "Pneumatic tube station with labeled routes",
+        "Fire panel and SOP note about key storage",
+        "Wall placard with dead fax number and routing arrows"
+      ],
+      "key_props": [
+        "Key ring labeled TEMPORARY (from fire panel)",
+        "Records authorization barrier",
+        "Tube station canister tray"
+      ],
+      "hotspots": [
+        { "name": "Records door", "readability": "Large seal strip; warning tag at eye level" },
+        { "name": "Pneumatic tube station", "readability": "Clear slots and labeled ports; empty tray invites return event" },
+        { "name": "Fire panel note", "readability": "Handwritten addendum on official paper; taped crookedly" },
+        { "name": "Wall fax placard", "readability": "Bold number block; looks important and useless" }
+      ],
+      "connections": [
+        { "to": "HUB-06", "direction": "left", "transition": "hallway to lobby", "continuity": ["Kiosk glow returns; office ambience resumes"] },
+        { "to": "HUB-08", "direction": "hotspot", "transition": "door to copy_fax_room", "continuity": ["Paper stacks and machines dominate"] },
+        { "to": "HUB-10", "direction": "hotspot", "transition": "hallway to ops_corridor", "continuity": ["Signage shifts to interlocks and LOTO warnings"] },
+        { "to": "HUB-12", "direction": "right", "transition": "walkway", "continuity": ["Tube routing arrows repeat; hum changes to industrial"] }
+      ]
+    },
+    {
+      "id": "HUB-08",
+      "name": "Copy and Fax Room",
+      "category": "act1_interior",
+      "importance": 4,
+      "art": {
+        "shot_type": "interior medium",
+        "camera": "2D side-on; shallow depth; machines and sticker puzzle readable",
+        "lighting": "office fluorescent; copier status LEDs",
+        "composition": "Copier and fax form a clean two-object puzzle layout; sticker layers are close to the focal plane"
+      },
+      "elements": [
+        "Copier with service-code prompt",
+        "Fax machine with low toner warning",
+        "Supply shelves with paper, toner, tabs, binders",
+        "Sticker-over-sticker layer on service code label"
+      ],
+      "key_props": [
+        "Fax output: fragmented work order pages",
+        "Copier service code sticker stack",
+        "Binder tabs and placeholders"
+      ],
+      "hotspots": [
+        { "name": "Copier control panel", "readability": "Bright screen; error banner; centered" },
+        { "name": "Service code sticker stack", "readability": "Peeling corner reveals older code layer" },
+        { "name": "Fax machine tray", "readability": "Paper curl and blinking light; audible beep" },
+        { "name": "Binder supplies shelf", "readability": "Neat rows; empty slot highlights missing piece" }
+      ],
+      "connections": [
+        { "to": "HUB-07", "direction": "left", "transition": "door to records_hall", "continuity": ["Records seal strip visible again"] },
+        { "to": "HUB-14", "direction": "right", "transition": "hallway to corridor_to_notices", "continuity": ["Compliance posters begin to dominate"] }
+      ]
+    },
+    {
+      "id": "HUB-09",
+      "name": "Conference Room (EAC Liaison)",
+      "category": "act1_interior",
+      "importance": 4,
+      "art": {
+        "shot_type": "interior medium",
+        "camera": "2D side-on; shallow depth; table as interaction surface",
+        "lighting": "office neutral; slightly flatter than hallway",
+        "composition": "Table is the interaction plane; liaison’s paperwork stack is staged as a clean hotspot cluster"
+      },
+      "elements": [
+        "Long table with chairs and one active desk lamp",
+        "Printer tray for finding slips",
+        "Whiteboard with process terms and crossed-out headings"
+      ],
+      "key_props": [
+        "EAC Finding Slip (blocks sign-off paths)",
+        "Comparability checklist (misframed but useful prompts)"
+      ],
+      "hotspots": [
+        { "name": "EAC Finding Slip printer tray", "readability": "Single sheet protruding; red stamp mark visible" },
+        { "name": "Checklist folder", "readability": "Thick tabbed binder; looks newly placed" },
+        { "name": "Whiteboard notes", "readability": "Large block letters; one key phrase circled" }
+      ],
+      "connections": [
+        { "to": "HUB-06", "direction": "left", "transition": "door to lobby", "continuity": ["Kiosk hum returns; doors re-space as exits"] }
+      ]
+    },
+    {
+      "id": "HUB-10",
+      "name": "Operations Corridor (Interlocks and LOTO)",
+      "category": "act1_operations",
+      "importance": 5,
+      "art": {
+        "shot_type": "interior corridor",
+        "camera": "2D side-on; shallow depth; interlock panels readable",
+        "lighting": "industrial fluorescent; occasional warning strobes",
+        "composition": "Interlock panel and door are the primary read; LOTO points are placed in a clean sequence along the wall"
+      },
+      "elements": [
+        "Door interlock that demands training date token",
+        "LOTO lock points for main and subpoints",
+        "Panel labels with conflicting terms across eras",
+        "Ventilation status indicator tied to damper"
+      ],
+      "key_props": [
+        "Training date gate (waiver or token sticker)",
+        "LOTO tags (1 real + printed temporary tags)",
+        "Vent damper status requirement"
+      ],
+      "hotspots": [
+        { "name": "Training date interlock panel", "readability": "Large status lights; single blank field draws attention" },
+        { "name": "LOTO main lock point", "readability": "Oversized hasp; empty tag loop invites action" },
+        { "name": "Ventilation status indicator", "readability": "Simple OPEN/CLOSED legend; one stuck state" },
+        { "name": "Procedure placard stack", "readability": "Three placards disagree; aligned so conflict is obvious" }
+      ],
+      "connections": [
+        { "to": "HUB-07", "direction": "hotspot", "transition": "hallway to_records_hall", "continuity": ["Records seal and tube station reappear"] },
+        { "to": "HUB-11", "direction": "right", "transition": "enter_control_room", "continuity": ["Ambient hum changes to equipment whine"] },
+        { "to": "HUB-05", "direction": "left", "transition": "service_corridor_return", "continuity": ["Duct access and cable trays come back into view"] }
+      ]
+    },
+    {
+      "id": "HUB-11",
+      "name": "Control Room",
+      "category": "act1_operations",
+      "importance": 5,
+      "art": {
+        "shot_type": "interior wide",
+        "camera": "2D side-on; shallow depth; consoles layered foreground-to-midground",
+        "lighting": "monitor glow with overhead fluorescents",
+        "composition": "Main console is foreground; printer and alarm panel flank it; a single door leads to the observation deck"
+      },
+      "elements": [
+        "Main control console with mismatched labeling",
+        "Alarm panel that triggers load-shedding event",
+        "Baseline log printer (paper trail)",
+        "Breaker map binder and outdated procedure book"
+      ],
+      "key_props": [
+        "Operational status verification checklist trigger",
+        "Baseline logs (time-stamped protection)",
+        "Load-shedding alarm beat"
+      ],
+      "hotspots": [
+        { "name": "Main console", "readability": "Brightest object; clustered buttons; one labeled incorrectly" },
+        { "name": "Alarm panel", "readability": "Red indicators; audible tick; positioned at eye level" },
+        { "name": "Log printer tray", "readability": "Paper feed motion; clear take-away action" },
+        { "name": "Procedure binder", "readability": "Thick tabs; one tab missing" }
+      ],
+      "connections": [
+        { "to": "HUB-10", "direction": "left", "transition": "exit_to_ops_corridor", "continuity": ["Interlock and LOTO wall returns"] },
+        { "to": "HUB-12", "direction": "hotspot", "transition": "enter_observation_deck", "continuity": ["Rotating frames become visible through glazing"] }
+      ]
+    },
+    {
+      "id": "HUB-12",
+      "name": "SPINDLE Chamber Observation Deck",
+      "category": "act1_core",
+      "importance": 5,
+      "art": {
+        "shot_type": "interior wide overlooking machinery",
+        "camera": "2D side-on; shallow depth; machinery framed as background mass",
+        "lighting": "industrial white with occasional arc-like reflections during alignment flicker",
+        "composition": "Observation window frames the rotating frames and central sphere; test bench and tube tray sit in the foreground"
+      },
+      "elements": [
+        "Observation window and safety rail",
+        "Three independent rotating frames with mismatched maintenance markings",
+        "Central sphere (matte in nominal state)",
+        "Reflectivity test bench with calibration puck tray",
+        "Tube station tray for returned canister event"
+      ],
+      "key_props": [
+        "Calibration puck (reflectivity test)",
+        "Returned canister chute (misrouted label artifact)",
+        "Alignment flicker visual cue"
+      ],
+      "hotspots": [
+        { "name": "Reflectivity test station", "readability": "Clean bench surface; spotlight circle; single object tray" },
+        { "name": "Calibration puck", "readability": "Small but isolated; bright edge highlight" },
+        { "name": "Return canister tray", "readability": "Empty tray with label outline; placed foreground right" },
+        { "name": "Observation window latch", "readability": "Single handle; safety sticker points to it" }
+      ],
+      "connections": [
+        { "to": "HUB-11", "direction": "hotspot", "transition": "return_to_control_room", "continuity": ["Console glow returns; printer audible"] },
+        { "to": "HUB-13", "direction": "hotspot", "transition": "descend_to_chamber_floor", "continuity": ["Sphere grows to dominate frame; sound deepens"] },
+        { "to": "HUB-07", "direction": "left", "transition": "walkway", "continuity": ["Tube routing arrows repeat; records corridor materials return"] }
+      ]
+    },
+	{
+	  "id": "HUB-13",
+	  "name": "SPINDLE Chamber Floor (Containment Sphere)",
+	  "category": "act1_core",
+	  "importance": 5,
+	  "art": {
+	    "shot_type": "interior dramatic wide",
+	    "camera": "2D side-on; shallow depth; sphere centered as primary mass",
+	    "lighting": "industrial with intermittent mirror-state glints during phase-lock",
+	    "composition": "Containment sphere is centered and set into a shallow recessed cradle/pit so the player stands slightly above its equator. Overall machine height reads ~12 ft (about twice the player), with the recess giving it weight and containment context. Witness marker tape defines the safe perimeter; one interface panel reads as the action point."
+	  },
+	  "elements": [
+	    "Containment sphere centered in chamber, seated in a shallow recessed cradle/pit",
+	    "Floor witness marker tape and hazard tags",
+	    "Emergency stop and status indicator cluster",
+	    "Interface panel with barcode-like scan area (human labeling, inconsistent)"
+	  ],
+	  "key_props": [
+	    "Phase-lock event trigger point",
+	    "Witness requirement zone (player must stand near device)",
+	    "Addressable-surface scan behavior (later Act III use)"
+	  ],
+	  "hotspots": [
+	    {
+	      "name": "Containment sphere surface",
+	      "readability": "Largest object; surface behavior shifts are obvious; recess edge frames the interaction zone"
+	    },
+	    {
+	      "name": "Status indicator cluster",
+	      "readability": "Bright legend; one term contradicts another panel"
+	    },
+	    {
+	      "name": "Interface scan panel",
+	      "readability": "Framed panel; fresh screws; looks recently serviced"
+	    },
+	    {
+	      "name": "Emergency stop",
+	      "readability": "High contrast cap; safety collar ring"
+	    }
+	  ],
+	  "connections": [
+	    {
+	      "to": "HUB-12",
+	      "direction": "hotspot",
+	      "transition": "ascend_to_observation",
+	      "continuity": [
+	        "Machinery recedes; test bench returns"
+	      ]
+	    },
+	    {
+	      "to": "LIM-01",
+	      "direction": "hotspot",
+	      "transition": "phase_lock_routing",
+	      "continuity": [
+	        "Mirror-state takes over; local reference breaks"
+	      ]
+	    }
+	  ]
+	},
+    {
+      "id": "HUB-14",
+      "name": "Non-Local Compliance Notices Room",
+      "category": "act1_interior",
+      "importance": 3,
+      "art": {
+        "shot_type": "interior medium",
+        "camera": "2D side-on; shallow depth; wall text as texture, not readable blocks",
+        "lighting": "office flat; slightly warmer than corridors",
+        "composition": "A dense wall of notices forms the backdrop; one clean forms rack and a sealed envelope stand out as interactable"
+      },
+      "elements": [
+        "Room lined with generic compliance notices and postings",
+        "Forms racks with standardized templates",
+        "Stack of preprinted envelopes and routing sleeves",
+        "One notice set that looks out-of-place but is filed as ordinary"
+      ],
+      "key_props": [
+        "Generic notices (later revealed as upstream origin)",
+        "Template language for temporary operating variance (Act III payoff)"
+      ],
+      "hotspots": [
+        { "name": "Forms rack (misfit templates)", "readability": "Neat grid; one slot labeled with unusual term" },
+        { "name": "Envelope stack", "readability": "Clean edges; looks new; placed alone on table" },
+        { "name": "Notice with unfamiliar barcode format", "readability": "Barcode block is high contrast; repeats later motif" }
+      ],
+      "connections": [
+        { "to": "HUB-06", "direction": "hotspot", "transition": "exit_to_lobby", "continuity": ["Kiosk glow and door layout return"] },
+        { "to": "HUB-08", "direction": "left", "transition": "back_corridor_to_copy_room", "continuity": ["Copier LEDs and paper stacks return"] }
+      ]
+    },
+
+    {
+      "id": "LIM-01",
+      "name": "Overflow Intake Concourse",
+      "category": "act2_hub",
+      "importance": 5,
+      "art": {
+        "shot_type": "interior wide civic-industrial",
+        "camera": "2D side-on; shallow depth; concourse depth shown by repeating pillars",
+        "lighting": "clean, even municipal lighting; no shadows that hide exits",
+        "composition": "Aperture-bay shutter sits to one side; a kiosk and directional railings guide the player toward Intake Hall"
+      },
+      "elements": [
+        "Clean service concourse with industrial finishes",
+        "Barcode kiosk labeled for incident processing",
+        "Directional railings and queue stanchions",
+        "A sealed bay door leading toward the mirror-surface aperture"
+      ],
+      "key_props": [
+        "Scan point for misrouted-item barcode (Act I artifact)",
+        "Radio works only near aperture bay (range-limited)"
+      ],
+      "hotspots": [
+        { "name": "Barcode kiosk (unallocated mass)", "readability": "Bright screen; scan bed highlighted; central" },
+        { "name": "Incident queue stanchions", "readability": "Clear path markers; spacing guides navigation" },
+        { "name": "Sealed bay door (aperture side)", "readability": "Heavier materials; warning banding suggests restricted access" }
+      ],
+      "connections": [
+        { "to": "LIM-02", "direction": "right", "transition": "walk_to_intake_hall", "continuity": ["Queue rails continue; kiosk remains visible"] },
+        { "to": "LIM-03", "direction": "hotspot", "transition": "enter_service_corridors", "continuity": ["Finishes shift to back-of-house; signage becomes token-focused"] },
+        { "to": "LIM-08", "direction": "left", "transition": "secured_aperture_bay_door", "continuity": ["Ambient hum deepens; radio hint becomes relevant"] }
+      ]
+    },
+    {
+      "id": "LIM-02",
+      "name": "Intake Hall (Windows 0/3/5/7/9)",
+      "category": "act2_interior",
+      "importance": 5,
+      "art": {
+        "shot_type": "interior wide service counter",
+        "camera": "2D side-on; shallow depth; counters spaced as distinct hotspots",
+        "lighting": "bright civic interior; readable labels; sterile calm",
+        "composition": "Five windows line the back wall; each has a unique icon and a stamp tray; forms rack sits midground as the puzzle resource"
+      },
+      "elements": [
+        "Service counter wall with five windows and queue markings",
+        "Forms rack with incident templates and category sheets",
+        "Stamp trays and badge sleeve dispenser",
+        "A small side kiosk that prints TER and routing slips"
+      ],
+      "key_props": [
+        "Temporary Existence Receipt (TER)",
+        "Temporary badge sleeve / badge",
+        "Orientation pamphlet (with sketch on back)",
+        "Glove tag (acts as service-route token)",
+        "Property claim stub",
+        "Complaint stamp (policy substitute)"
+      ],
+      "hotspots": [
+        { "name": "Window 0: Intake (TER)", "readability": "Largest window label; printer slot below; central" },
+        { "name": "Window 3: Orientation", "readability": "Icon shows map lines; pamphlet rack behind glass" },
+        { "name": "Window 5: Safety", "readability": "Icon shows glove; tag printer visible" },
+        { "name": "Window 7: Property", "readability": "Icon shows clip/tag; claim-stub tray prominent" },
+        { "name": "Window 9: Complaints", "readability": "Icon shows stamp; big PROCESSED stamp pad visible" },
+        { "name": "Forms rack (misrouted cargo templates)", "readability": "Neat grid; one empty slot signals needed form" }
+      ],
+      "connections": [
+        { "to": "LIM-01", "direction": "left", "transition": "return_to_concourse", "continuity": ["Queue rails and kiosk return to view"] },
+        { "to": "LIM-03", "direction": "right", "transition": "back_corridor_access", "continuity": ["Token slots and badge validators become common"] },
+        { "to": "LIM-04", "direction": "hotspot", "transition": "door_to_archive", "continuity": ["Signs shift from service windows to indexing rules"] }
+      ]
+    },
+    {
+      "id": "LIM-03",
+      "name": "Concourse Service Corridors and Map Kiosk",
+      "category": "act2_interior",
+      "importance": 4,
+      "art": {
+        "shot_type": "interior corridor hub",
+        "camera": "2D side-on; shallow depth; corridor branches clearly readable",
+        "lighting": "clean but slightly dimmer back-of-house lighting",
+        "composition": "Map kiosk sits center; three corridor doors branch with distinct token slots and signage"
+      },
+      "elements": [
+        "Map kiosk that prints corridor fragments",
+        "Badge validator pedestal",
+        "Token-slot doors with simple iconography",
+        "Service-route reader loop for glove tag"
+      ],
+      "key_props": [
+        "Map Fragment #1 (concourse and service corridors)",
+        "Service-route token behavior (glove tag)"
+      ],
+      "hotspots": [
+        { "name": "Map kiosk", "readability": "Bright screen; paper output slot; central placement" },
+        { "name": "Badge validator", "readability": "Single green/red lens; placed beside corridor fork" },
+        { "name": "Service-route reader loop", "readability": "Physical loop shape; looks made to accept a tag" }
+      ],
+      "connections": [
+        { "to": "LIM-01", "direction": "hotspot", "transition": "return_to_concourse", "continuity": ["Main concourse lighting returns"] },
+        {
+		  "to": "LIM-02",
+		  "direction": "left",
+		  "transition": "return_to_intake_hall",
+		  "continuity": [
+			"Public-facing counters and window icons reappear; queue markings resume"
+		  ]
+		},
+        { "to": "LIM-06", "direction": "hotspot", "transition": "enter_scheduling_counter", "continuity": ["Queue markings shift to time-asset language"] },
+        { "to": "LIM-04", "direction": "right", "transition": "enter_archive", "continuity": ["Corridor quiets; indexing placards appear"] },
+        { "to": "LIM-05", "direction": "hotspot", "transition": "enter_maintenance_triage", "continuity": ["Workshop sounds; scope tags visible"] }
+      ]
+    },
+    {
+      "id": "LIM-04",
+      "name": "Legacy Interconnections Archive",
+      "category": "act2_archive",
+      "importance": 5,
+      "art": {
+        "shot_type": "interior library-like",
+        "camera": "2D side-on; shallow depth; stacks as background geometry",
+        "lighting": "soft, even; quieter than concourse",
+        "composition": "Catalog terminal is foreground; stacks form a structured backdrop; rules placards dominate the wall space"
+      },
+      "elements": [
+        "Catalog terminal with barcode scan bed",
+        "Index rules placards and filing constraints",
+        "Drawer bank for legacy records and reels",
+        "Quiet service bell with a single instruction label"
+      ],
+      "key_props": [
+        "Legacy metadata pull (SOL-EARTH-LOCAL reference)",
+        "Managing authority hint (named late in Act II)",
+        "Map Fragment #2 (archive and triage access points)"
+      ],
+      "hotspots": [
+        { "name": "Catalog terminal", "readability": "Bright UI; scan bed highlighted; central" },
+        { "name": "Index rules placards", "readability": "Large text blocks; too formal to ignore" },
+        { "name": "Legacy drawer bank", "readability": "Repeating handles; one drawer slightly ajar" }
+      ],
+      "connections": [
+        { "to": "LIM-03", "direction": "left", "transition": "exit_to_corridors", "continuity": ["Map kiosk glow returns; branching doors reappear"] },
+        { "to": "LIM-02", "direction": "hotspot", "transition": "door_to_intake_hall", "continuity": ["Service windows and forms racks return"] },
+        { "to": "LIM-05", "direction": "right", "transition": "back_corridor_to_triage", "continuity": ["Scope tags and workshop surfaces appear"] }
+      ]
+    },
+    {
+      "id": "LIM-05",
+      "name": "Interconnection Maintenance Triage",
+      "category": "act2_operations",
+      "importance": 5,
+      "art": {
+        "shot_type": "interior workshop",
+        "camera": "2D side-on; shallow depth; bench as interaction plane",
+        "lighting": "task lighting pools on bench; ambient dimmer",
+        "composition": "Workbench is foreground; scope board and warranty postings are midground; bay access door is a clear exit"
+      },
+      "elements": [
+        "Workbench with tool fixtures and seal punch",
+        "Scope tags and warranty postings",
+        "Registry reader that accepts AMR tag",
+        "Parts bins labeled by service class, not by function"
+      ],
+      "key_props": [
+        "Attached Mass Registry (AMR) tag and printout",
+        "Scope-limited tool (barcode probe or seal punch)",
+        "Map Fragment #2 continuation (triage access)"
+      ],
+      "hotspots": [
+        { "name": "AMR registry reader", "readability": "Single slot with clip icon; status light above" },
+        { "name": "Workbench tool fixture", "readability": "Clean silhouette tools; one missing outline matches future tool" },
+        { "name": "Scope board", "readability": "Big scope labels; boxed sections; easy to parse" }
+      ],
+      "connections": [
+        { "to": "LIM-03", "direction": "hotspot", "transition": "exit_to_corridors", "continuity": ["Map kiosk and token doors return"] },
+        { "to": "LIM-07", "direction": "hotspot", "transition": "enter_bay_staging", "continuity": ["Industrial bay scale increases; floor rails appear"] },
+        { "to": "LIM-04", "direction": "left", "transition": "return_to_archive", "continuity": ["Quiet returns; filing rules dominate"] }
+      ]
+    },
+    {
+      "id": "LIM-06",
+      "name": "Scheduling Counter (Time-Asset Cage)",
+      "category": "act2_bureaucracy",
+      "importance": 4,
+      "art": {
+        "shot_type": "interior service counter",
+        "camera": "2D side-on; shallow depth; cage window as focal plane",
+        "lighting": "bright counter lighting; controlled reflections on glass",
+        "composition": "A caged window dominates; no-show recovery bin and stamp substitution board sit as adjacent hotspots"
+      },
+      "elements": [
+        "Caged scheduling window",
+        "No-show recovery bin",
+        "Stamp substitution board",
+        "Slot token press area with a single blank chit outline"
+      ],
+      "key_props": [
+        "Slot token (time asset)",
+        "Clearance chain stamps",
+        "Policy substitution mechanic (complaint stamp use)"
+      ],
+      "hotspots": [
+        { "name": "Caged scheduling window", "readability": "Largest object; speaking slot centered" },
+        { "name": "No-show recovery bin", "readability": "Open bin; labels imply a claimable slot" },
+        { "name": "Stamp substitution board", "readability": "Clear grid; one approved substitute highlighted" },
+        { "name": "Slot token press", "readability": "Empty outline of chit; lever handle stands out" }
+      ],
+      "connections": [
+        { "to": "LIM-03", "direction": "hotspot", "transition": "return_to_corridors", "continuity": ["Map kiosk and branching doors reappear"] },
+        {
+		  "to": "LIM-07",
+		  "direction": "right",
+		  "transition": "walk_to_staging",
+		  "continuity": [
+		    "Caged counter gives way to industrial bay scale; AMR loop and staging fixtures reappear"
+		  ]
+		}
+      ]
+    },
+    {
+      "id": "LIM-07",
+      "name": "Interconnection Bay Staging",
+      "category": "act2_core",
+      "importance": 5,
+      "art": {
+        "shot_type": "interior industrial staging",
+        "camera": "2D side-on; shallow depth; big equipment shapes for readability",
+        "lighting": "industrial high-bays; strong highlights on metal edges",
+        "composition": "AMR reader loop and dummy load fixture are staged as the main interaction set; aperture access is a clear door"
+      },
+      "elements": [
+        "AMR tag reader loop (physical interface)",
+        "Dummy mass fixture and balancing hardware",
+        "Resistor bank / test load panel",
+        "Supervisor station with clipped work orders"
+      ],
+      "key_props": [
+        "Interconnection Work Order (IWO) / clearance packet",
+        "Controlled phase-lock under supervision",
+        "Route classification: reverse routing correction"
+      ],
+      "hotspots": [
+        { "name": "AMR reader loop", "readability": "Distinct loop shape; icon shows clip/tag" },
+        { "name": "Dummy mass fixture", "readability": "Largest bench object; calibration marks visible" },
+        { "name": "Test load panel", "readability": "Big switches; simple meter faces" },
+        { "name": "Supervisor clipboard station", "readability": "Single clipped packet; stamp marks visible" }
+      ],
+      "connections": [
+        { "to": "LIM-05", "direction": "hotspot", "transition": "return_to_triage", "continuity": ["Workshop bench scale returns; scope tags visible"] },
+        { "to": "LIM-06", "direction": "left", "transition": "walk_to_scheduling", "continuity": ["Cage window and token press return"] },
+        { "to": "LIM-08", "direction": "right", "transition": "enter_aperture_bay", "continuity": ["Ambient hum deepens; radio window becomes relevant"] }
+      ]
+    },
+    {
+      "id": "LIM-08",
+      "name": "Aperture Bay (Mirror Surface)",
+      "category": "act2_core",
+      "importance": 5,
+      "art": {
+        "shot_type": "interior dramatic industrial bay",
+        "camera": "2D side-on; shallow depth; aperture centered as impossible object",
+        "lighting": "industrial with localized glare near aperture edge",
+        "composition": "Mirror-surface aperture is the primary read; a control shroud with wording avoids the word travel; radio sweet spot is a visible floor mark"
+      },
+      "elements": [
+        "Mirror-surface aperture behind a control shroud",
+        "Control shroud labeled reverse routing correction",
+        "Floor mark indicating where radio works",
+        "Outgoing packet chute and status light stack"
+      ],
+      "key_props": [
+        "Return route trigger (reverse routing)",
+        "Radio fragments near the aperture",
+        "Final gate: slot token + AMR + active IWO"
+      ],
+      "hotspots": [
+        { "name": "Mirror-surface aperture", "readability": "Dominant object; surface reflects impossible angles" },
+        { "name": "Control shroud label", "readability": "Large block letters; defensive wording stands out" },
+        { "name": "Radio sweet-spot floor mark", "readability": "Painted ring on floor; isolated" },
+        { "name": "Outgoing packet chute", "readability": "Open mouth shape; clear directionality" }
+      ],
+      "connections": [
+        { "to": "LIM-07", "direction": "left", "transition": "return_to_staging", "continuity": ["AMR loop and test load fixture return"] },
+        { "to": "LIM-01", "direction": "right", "transition": "secured_door_to_concourse", "continuity": ["Concourse kiosk glow returns; queue rails visible"] },
+        { "to": "HUB-13", "direction": "hotspot", "transition": "reverse_routing_return", "continuity": ["Mirror-state takes over; reference shifts back to Earth node"] }
+      ]
+    }
+  ]
+}

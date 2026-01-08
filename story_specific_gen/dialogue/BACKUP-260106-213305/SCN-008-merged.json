@@ -1,0 +1,435 @@
+{
+  "changes": [
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "LOOK_DRAWER",
+        "nodeId": "N_MAIN_MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_DRAWER_0",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_DRAWER_1",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_DRAWER_PLAYER_1",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_DRAWER_2",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_DRAWER_MENU",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_DRAWER_EXAMINE_1",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_DRAWER_EXAMINE_2",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_DRAWER_EXAMINE_3",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_DRAWER_TAKE_1",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_DRAWER_TAKE_2",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_DRAWER_HEADER_1",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_DRAWER_HEADER_2",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_DRAWER_EXAMINE_AGAIN_1",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_DRAWER_TAKE_AGAIN_1",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "TALK_INTERCOM",
+        "nodeId": "N_MAIN_MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_INTERCOM_0",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_INTERCOM_1",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_INTERCOM_MENU",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_SECV_0",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_SECV_MENU",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_SECV_ONSITE_1",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_SECV_ONSITE_2",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_SECV_ONSITE_3",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_SECV_ONSITE_MENU",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_SECV_ROOM_1",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_SECV_ROOM_2",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_SECV_ROOM_3",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_SECV_BADGES_1",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_SECV_BADGES_2",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_SECV_BADGES_3",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_SECV_BADGES_4",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_SECV_OLEA_1",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_SECV_OLEA_2",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_SECV_OLEA_3",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_SECV_OLEA_MENU",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_SECV_MIN_1",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_SECV_MIN_2",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_SECV_ENDCALL_1",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "LOOK_TUBE",
+        "nodeId": "N_MAIN_MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_TUBE_0",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_TUBE_1",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_TUBE_MENU",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_TUBE_LOOK_1",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_TUBE_LOOK_2",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_TUBE_LOOK_3",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_TUBE_USE_1",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_TUBE_USE_2",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "LEAVE_DOWN",
+        "nodeId": "N_MAIN_MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "LEAVE_RIGHT",
+        "nodeId": "N_MAIN_MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_END_LEAVE_DOWN",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_END_LEAVE_RIGHT",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "LEAVE_RIGHT",
+        "nodeId": "N_MAIN_MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    }
+  ],
+  "sceneId": "SCN-008"
+}

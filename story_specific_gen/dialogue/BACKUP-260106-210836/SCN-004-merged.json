@@ -1,0 +1,123 @@
+{
+  "changes": [
+    {
+      "action": "modify",
+      "details": {
+        "dialogue": {
+          "dialogueGraphs": [
+            {
+              "id": "DG_SPINDLE_GATE_SIGNPOST",
+              "nodes": [
+                {
+                  "id": "N_SIGNPOST_DESC",
+                  "next": "N_SIGNPOST_MENU",
+                  "speakerId": "NARRATOR",
+                  "text": "The top placard reads: SITE CLOSED \u2014 NO ENTRY \u2014 ACCESS BY APPOINTMENT ONLY.\nUnder it, partially visible: AUTHORIZED PERSONNEL \u2014 USE KEYPAD \u2014 PRINT RECEIPT.\nUnder that, older still: VISITOR CHECK-IN THIS WAY, with an arrow pointing directly at the locked gate.\n\nNone of these are damaged. They are simply all true at once, which is not a category compliance recognizes.",
+                  "type": "npc_line"
+                },
+                {
+                  "choices": [
+                    {
+                      "conditions": [
+                        {
+                          "key": "compliance.signConflictLogged",
+                          "op": "!=",
+                          "value": true
+                        }
+                      ],
+                      "effects": [
+                        {
+                          "action": "set",
+                          "key": "story.act",
+                          "value": 1
+                        },
+                        {
+                          "action": "set",
+                          "key": "compliance.signConflictLogged",
+                          "value": true
+                        },
+                        {
+                          "action": "set",
+                          "key": "objectives.resolveSignageConflict",
+                          "value": true
+                        }
+                      ],
+                      "id": "C_USE_LOG_CONFLICT",
+                      "next": "N_LOG_1",
+                      "text": "Log this as a signage conflict."
+                    },
+                    {
+                      "id": "C_ASK_SIGNAGE_OWNER",
+                      "next": "N_ASK_SIGNAGE_OWNER_PLAYER",
+                      "text": "Who owns site signage?"
+                    }
+                  ],
+                  "id": "N_SIGNPOST_MENU",
+                  "speakerId": "PLAYER",
+                  "type": "player_choice"
+                },
+                {
+                  "id": "N_ASK_SIGNAGE_OWNER_PLAYER",
+                  "next": "N_ASK_SIGNAGE_OWNER_NARR",
+                  "speakerId": "PLAYER",
+                  "text": "Who owns site signage?",
+                  "type": "npc_line"
+                },
+                {
+                  "id": "N_ASK_SIGNAGE_OWNER_NARR",
+                  "next": "N_SIGNPOST_MENU",
+                  "speakerId": "NARRATOR",
+                  "text": "There\u2019s no label indicating department, revision, or issuer. Someone removed the corners where that information usually lives.",
+                  "type": "npc_line"
+                },
+                {
+                  "id": "N_LOG_1",
+                  "next": "N_LOG_2",
+                  "speakerId": "NARRATOR",
+                  "text": "You frame the signpost in your camera, making sure the contradictory lines are legible in the same shot. Your thumb hesitates half a second before you attach the note anyway.",
+                  "type": "npc_line"
+                },
+                {
+                  "id": "N_LOG_2",
+                  "next": "N_LOG_3",
+                  "speakerId": "NARRATOR",
+                  "text": "You file: Nonconforming signage \u2014 contradictory access instruction at primary gate.\nCategory: Compliance / Public-facing instruction conflict.\nPriority: Routine. You pick it because \u201curgent\u201d invites meetings.",
+                  "type": "npc_line"
+                },
+                {
+                  "id": "N_LOG_3",
+                  "next": "N_POST_LOG_MENU",
+                  "speakerId": "NARRATOR",
+                  "text": "A new objective appears: Resolve signage conflict.\nThe site remains shut. The record now exists.",
+                  "type": "npc_line"
+                },
+                {
+                  "choices": [
+                    {
+                      "id": "C_LEAVE_BACK_POSTLOG",
+                      "next": "END_BACK_TO_GATE",
+                      "text": "Back."
+                    }
+                  ],
+                  "id": "N_POST_LOG_MENU",
+                  "speakerId": "PLAYER",
+                  "type": "player_choice"
+                },
+                {
+                  "exitTo": "Back to Gate",
+                  "id": "END_BACK_TO_GATE",
+                  "type": "end"
+                }
+              ],
+              "sceneId": "SCN-004",
+              "startNodeId": "N_SIGNPOST_DESC"
+            }
+          ]
+        },
+        "op": "createScene"
+      },
+      "op": "createScene"
+    }
+  ],
+  "sceneId": "SCN-004"
+}

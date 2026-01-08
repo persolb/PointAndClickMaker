@@ -1,0 +1,33 @@
+{
+  "generated_at_unix": 1766789128,
+  "provider": "gemini",
+  "model": "gemini-3-pro-image-preview",
+  "size": "1536x1024",
+  "quality": "high",
+  "output_format": "png",
+  "screens": [
+    {
+      "screen_id": "HUB-01",
+      "prompt_path": "prompts/001_HUB-01.md",
+      "output_path": "images/HUB-01.png",
+      "raw_output_path": "images/raw/HUB-01-raw.png",
+      "skipped": false,
+      "variants": [
+        {
+          "variant": 1,
+          "raw_output_path": "images/raw/HUB-01-raw-v1.png",
+          "output_path": "images/HUB-01-v1.png",
+          "model": "gemini-3-pro-image-preview",
+          "used_reference_images": [
+            "prompts/001_HUB-01-sample.png",
+            "images/HUB-02.png",
+            "images/HUB-03.png",
+            "images/HUB-04.png",
+            "images/HUB-15.png"
+          ]
+        }
+      ],
+      "selected_variant": 1
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "changes": [
+    {
+      "action": "add",
+      "createScene": {
+        "dialogueGraphs": [
+          {
+            "id": "DG_SCN_088_ASSET_PLAQUE",
+            "nodes": [
+              {
+                "id": "N_PLAQUE_INTRO",
+                "next": "N_PLAQUE_MENU",
+                "speakerId": "NARRATOR",
+                "text": "The plaque is bolted to the wall like it\u2019s holding the building\u2019s identity in place.\nA corner is scuffed clean where someone\u2019s hand must have worried it, again and again.\n\nThe text is bureaucratic, not commemorative\u2014meant to outlast argument.",
+                "type": "npc_line"
+              },
+              {
+                "id": "R_TO_PLAQUE_MENU",
+                "target": "N_PLAQUE_MENU",
+                "type": "redirect"
+              },
+              {
+                "choices": [
+                  {
+                    "id": "LOOK_DESIGNATION",
+                    "next": "N_PLAQUE_DESIGNATION",
+                    "text": "look \"Read the designation line.\""
+                  },
+                  {
+                    "id": "LOOK_OWNERSHIP",
+                    "next": "N_PLAQUE_OWNERSHIP",
+                    "text": "look \"Read the ownership / agency line.\""
+                  },
+                  {
+                    "id": "LOOK_TAG",
+                    "next": "N_PLAQUE_TAG",
+                    "text": "look \"Look for an asset tag.\""
+                  }
+                ],
+                "id": "N_PLAQUE_MENU",
+                "speakerId": "PLAYER",
+                "type": "player_choice"
+              },
+              {
+                "id": "N_PLAQUE_DESIGNATION",
+                "next": "R_TO_PLAQUE_MENU",
+                "speakerId": "NARRATOR",
+                "text": "S.P.I.N.D.L.E. \u2014 Spatial Power Inertial Node for Distributed Load Equalization.\nThe acronym is confident. The expansion is defensive.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_PLAQUE_OWNERSHIP",
+                "next": "R_TO_PLAQUE_MENU",
+                "speakerId": "NARRATOR",
+                "text": "An ownership chain rendered in tiny stamped text: municipal authority, then OLEA stewardship language, then a clause about \u201ccontinued operation pending retirement.\u201d\nIt\u2019s written like closure is a moral act.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_PLAQUE_TAG",
+                "next": "R_TO_PLAQUE_MENU",
+                "speakerId": "NARRATOR",
+                "text": "An asset ID is present, partially abraded, but still legible enough to cite.\nNext to it: a seal that implies someone once checked a box and thereby made the machine real.",
+                "type": "npc_line"
+              }
+            ],
+            "sceneId": "SCN-088",
+            "startNodeId": "N_PLAQUE_INTRO"
+          }
+        ]
+      },
+      "op": "create_scene"
+    },
+    {
+      "action": "modify",
+      "details": {
+        "op": "set_start",
+        "startNodeId": "N_PLAQUE_INTRO"
+      },
+      "op": "set_start"
+    }
+  ],
+  "sceneId": "SCN-088"
+}

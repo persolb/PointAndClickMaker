@@ -1,0 +1,128 @@
+{
+  "screen_id": "HUB-11",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Breaker panel",
+      "slug": "breaker_panel",
+      "file": "images/HUB-11-mask-breaker_panel.png",
+      "boxes": [
+        {
+          "label": "Breaker panel",
+          "box_2d": [
+            226,
+            355,
+            735,
+            649
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Valve wheel",
+      "slug": "valve_wheel",
+      "file": "images/HUB-11-mask-valve_wheel.png",
+      "boxes": [
+        {
+          "label": "Valve wheel",
+          "box_2d": [
+            140,
+            71,
+            305,
+            118
+          ]
+        },
+        {
+          "label": "Valve wheel",
+          "box_2d": [
+            423,
+            271,
+            492,
+            303
+          ]
+        },
+        {
+          "label": "Valve wheel",
+          "box_2d": [
+            431,
+            239,
+            483,
+            269
+          ]
+        },
+        {
+          "label": "Valve wheel",
+          "box_2d": [
+            386,
+            622,
+            517,
+            706
+          ]
+        },
+        {
+          "label": "Valve wheel",
+          "box_2d": [
+            113,
+            769,
+            239,
+            866
+          ]
+        },
+        {
+          "label": "Valve wheel",
+          "box_2d": [
+            486,
+            314,
+            550,
+            334
+          ]
+        },
+        {
+          "label": "Valve wheel",
+          "box_2d": [
+            535,
+            601,
+            620,
+            642
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Lockout tags",
+      "slug": "lockout_tags",
+      "file": "images/HUB-11-mask-lockout_tags.png",
+      "boxes": [
+        {
+          "label": "lockout tags",
+          "box_2d": [
+            321,
+            471,
+            381,
+            520
+          ]
+        },
+        {
+          "label": "lockout tags",
+          "box_2d": [
+            342,
+            404,
+            400,
+            451
+          ]
+        },
+        {
+          "label": "lockout tags",
+          "box_2d": [
+            342,
+            558,
+            403,
+            634
+          ]
+        }
+      ]
+    }
+  ]
+}

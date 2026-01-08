@@ -1,0 +1,56 @@
+{
+  "screen_id": "HUB-04",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Inbox tray",
+      "slug": "inbox_tray",
+      "file": "images/HUB-04-mask-inbox_tray.png",
+      "boxes": [
+        {
+          "label": "Inbox tray",
+          "box_2d": [
+            763,
+            16,
+            856,
+            248
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Task board",
+      "slug": "task_board",
+      "file": "images/HUB-04-mask-task_board.png",
+      "boxes": [
+        {
+          "label": "Task board",
+          "box_2d": [
+            270,
+            335,
+            524,
+            692
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Parts ordering laptop",
+      "slug": "parts_ordering_laptop",
+      "file": "images/HUB-04-mask-parts_ordering_laptop.png",
+      "boxes": [
+        {
+          "label": "parts ordering laptop",
+          "box_2d": [
+            538,
+            74,
+            729,
+            270
+          ]
+        }
+      ]
+    }
+  ]
+}

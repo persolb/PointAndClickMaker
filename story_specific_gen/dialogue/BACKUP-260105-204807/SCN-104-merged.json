@@ -1,0 +1,69 @@
+{
+  "changes": [
+    {
+      "action": "add",
+      "createScene": {
+        "dialogueGraphs": [
+          {
+            "id": "CTRLROOM_PROCEDURE_BINDER",
+            "nodes": [
+              {
+                "id": "BINDER_DESC",
+                "next": "BINDER_PLAYER",
+                "speakerId": "NARRATOR",
+                "text": "The binder is tabbed, cross-referenced, and slightly swollen from humidity.\nThe cover sheet says: SPINDLE SITE \u2014 OPERATOR SHUTDOWN SEQUENCE (OFFICIAL).\nA sticky note at the top reads: \u201cREVISION CHECKED (I THINK).\u201d",
+                "type": "npc_line"
+              },
+              {
+                "id": "BINDER_PLAYER",
+                "next": "BINDER_LIAISON_MISSING",
+                "speakerId": "PLAYER",
+                "text": "This is the shutdown.",
+                "type": "npc_line"
+              },
+              {
+                "id": "BINDER_LIAISON_MISSING",
+                "next": "BINDER_CHOICES",
+                "speakerId": "EAC_LIAISON",
+                "text": "It is a shutdown. (pause)\nThe official one has a signature block. (pause)\nIt ties your hands. (pause)\nIt protects you later. (pause)\nThis one\u2014page seven is wrong. (pause)\nOr missing. (pause)\nOr replaced with a version meant right. (pause)\n\nPage seven is the control room access authorization. (pause)\nNot physical access\u2014everyone can enter, unfortunately. (pause)\nOperational access. (pause)\nLogging system access. (pause)\nThe part where you become the person. (pause)\nThe part where you did it.",
+                "type": "npc_line"
+              },
+              {
+                "choices": [
+                  {
+                    "id": "ASK_PROCEED",
+                    "next": "BINDER_PROCEED_LIAISON",
+                    "text": "Ask: Can I proceed without it?"
+                  },
+                  {
+                    "id": "BACK",
+                    "next": "END_BINDER",
+                    "text": "Look: Back"
+                  }
+                ],
+                "id": "BINDER_CHOICES",
+                "speakerId": "PLAYER",
+                "type": "player_choice"
+              },
+              {
+                "id": "BINDER_PROCEED_LIAISON",
+                "next": "BINDER_CHOICES",
+                "speakerId": "EAC_LIAISON",
+                "text": "You can proceed. (pause) The site will let you. (pause) The equipment doesn't care about forms. (pause) The audit trail will care. Long memory.",
+                "type": "npc_line"
+              },
+              {
+                "id": "END_BINDER",
+                "type": "end"
+              }
+            ],
+            "sceneId": "SCN-104",
+            "startNodeId": "BINDER_DESC"
+          }
+        ]
+      },
+      "op": "create_scene"
+    }
+  ],
+  "sceneId": "SCN-104"
+}

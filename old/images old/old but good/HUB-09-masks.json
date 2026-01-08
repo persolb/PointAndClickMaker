@@ -1,0 +1,56 @@
+{
+  "screen_id": "HUB-09",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Maintenance panel",
+      "slug": "maintenance_panel",
+      "file": "images/HUB-09-mask-maintenance_panel.png",
+      "boxes": [
+        {
+          "label": "Maintenance panel",
+          "box_2d": [
+            453,
+            696,
+            656,
+            796
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Ring brake housing",
+      "slug": "ring_brake_housing",
+      "file": "images/HUB-09-mask-ring_brake_housing.png",
+      "boxes": [
+        {
+          "label": "Ring brake housing",
+          "box_2d": [
+            121,
+            226,
+            781,
+            622
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Sensor port cluster",
+      "slug": "sensor_port_cluster",
+      "file": "images/HUB-09-mask-sensor_port_cluster.png",
+      "boxes": [
+        {
+          "label": "sensor port cluster",
+          "box_2d": [
+            478,
+            792,
+            555,
+            858
+          ]
+        }
+      ]
+    }
+  ]
+}

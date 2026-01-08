@@ -1,0 +1,56 @@
+{
+  "screen_id": "HUB-17",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Sign-in sheet",
+      "slug": "sign_in_sheet",
+      "file": "images/HUB-17-mask-sign_in_sheet.png",
+      "boxes": [
+        {
+          "label": "Sign-in sheet",
+          "box_2d": [
+            663,
+            41,
+            770,
+            237
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "File cabinet",
+      "slug": "file_cabinet",
+      "file": "images/HUB-17-mask-file_cabinet.png",
+      "boxes": [
+        {
+          "label": "file cabinet",
+          "box_2d": [
+            395,
+            622,
+            755,
+            770
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Meeting room door",
+      "slug": "meeting_room_door",
+      "file": "images/HUB-17-mask-meeting_room_door.png",
+      "boxes": [
+        {
+          "label": "meeting room door",
+          "box_2d": [
+            123,
+            818,
+            929,
+            936
+          ]
+        }
+      ]
+    }
+  ]
+}

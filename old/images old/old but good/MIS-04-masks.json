@@ -1,0 +1,57 @@
+{
+  "screen_id": "MIS-04",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Note wall",
+      "slug": "note_wall",
+      "file": "images/MIS-04-mask-note_wall.png",
+      "boxes": [
+        {
+          "label": "wall",
+          "box_2d": [
+            199,
+            44,
+            992,
+            230
+          ]
+        },
+        {
+          "label": "wall",
+          "box_2d": [
+            181,
+            260,
+            777,
+            836
+          ]
+        },
+        {
+          "label": "wall",
+          "box_2d": [
+            103,
+            804,
+            620,
+            1000
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Crude oscilloscope",
+      "slug": "crude_oscilloscope",
+      "file": "images/MIS-04-mask-crude_oscilloscope.png",
+      "boxes": [
+        {
+          "label": "Crude oscilloscope",
+          "box_2d": [
+            492,
+            696,
+            672,
+            882
+          ]
+        }
+      ]
+    }
+  ]
+}

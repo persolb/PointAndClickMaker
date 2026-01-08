@@ -1,0 +1,16 @@
+{
+  "generated_at_unix": 1767559179,
+  "provider": "gemini",
+  "model": "gemini-3-pro-image-preview",
+  "size": "1536x1024",
+  "quality": "high",
+  "output_format": "png",
+  "screens": [
+    {
+      "screen_id": "HUB-14",
+      "prompt_path": "story_specific_gen/prompts/022_HUB-14.md",
+      "output_path": "story_specific_gen/images/HUB-14.png",
+      "skipped": true
+    }
+  ]
+}

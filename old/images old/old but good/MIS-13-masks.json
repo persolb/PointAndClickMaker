@@ -1,0 +1,39 @@
+{
+  "screen_id": "MIS-13",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Control pedestal",
+      "slug": "control_pedestal",
+      "file": "images/MIS-13-mask-control_pedestal.png",
+      "boxes": [
+        {
+          "label": "Control pedestal",
+          "box_2d": [
+            389,
+            281,
+            770,
+            521
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Sensor swap port",
+      "slug": "sensor_swap_port",
+      "file": "images/MIS-13-mask-sensor_swap_port.png",
+      "boxes": [
+        {
+          "label": "Sensor swap port",
+          "box_2d": [
+            396,
+            674,
+            715,
+            831
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "pixel_art": {
+    "native_resolution_px": [
+      640,
+      480
+    ],
+    "aspect_ratio": "16:9",
+    "upscale_factor": 4,
+    "output_resolution_px": [
+      1280,
+      720
+    ],
+    "scaling_algorithm": "nearest-neighbor only",
+    "rendering_constraints": {
+      "anti_aliasing": false,
+      "subpixel_rendering": false,
+      "blur_filters": false,
+      "line_discipline": "Build forms with clean pixel clusters; avoid stray single pixels (orphans)."
+    },
+    "perspective_rules": {
+      "viewpoint": "2D side-on with shallow depth (classic adventure style).",
+      "horizon_line": "Upper third of the frame.",
+      "convergence": "Mild convergence toward the background to create depth; avoid full isometric.",
+      "walkable_area": "Must be visually separated from non-walkable space via value (brightness) or texture contrast."
+    },
+    "palette_and_shading": {
+      "scene_palette_target_colors": "24-32 distinct colors per scene (including UI-safe accents).",
+      "material_shading_ramps": "Maximum of 3 tones per material (base, shadow, highlight).",
+      "lighting_direction": "Upper-left light source; soft shadows cast to lower-right.",
+      "dither_usage": "Used sparingly. Permitted only for atmospheric haze/sky gradients or very worn asphalt. Do not dither solid objects.",
+      "gradient_policy": "No smooth airbrush gradients; use solid bands."
+    },
+    "outlines": "Selective outlining only. Use dark edges on high-contrast boundaries to separate depth planes. Avoid full black outlines around every object.",
+    "texture_vocabulary": {
+      "asphalt": "Chunky speckle clusters + defined cracks. Create 2\u20133 cluster shapes and reuse them to establish a visual vocabulary.",
+      "metal": "Repeating vertical rhythm, minimal internal detail. Rely on strong silhouettes + 1 highlight ramp.",
+      "vegetation": "Leaf masses defined as 3\u20135 pixel clusters. Strictly avoid single-pixel 'noise grass'.",
+      "micro_noise_policy": "Zero tolerance for random single-pixel noise (shimmers in motion)."
+    }
+  },
+  "signage": {
+    "text_style": "Blocky, pixel-perfect text. Must be readable at 4\u00d7 scale. Keep word count minimal.",
+    "tone": "Dry, bureaucratic, official, or neglected.",
+    "humor_rule": "Subtle environmental storytelling (e.g. contradictory rules); never overt slapstick."
+  },
+  "hotspots": {
+    "visual_rule": "Distinct silhouette required. Must have a 'value halo' (lighter background behind dark object, or vice-versa).",
+    "placement_strategy": "Keep hotspots clear of high-frequency background noise to ensure cursor readability."
+  }
+}

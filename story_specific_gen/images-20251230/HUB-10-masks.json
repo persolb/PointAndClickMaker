@@ -1,0 +1,118 @@
+{
+  "screen_id": "HUB-10",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Training date interlock panel",
+      "slug": "training_date_interlock_panel",
+      "file": "story_specific_gen/images/HUB-10-mask-training_date_interlock_panel.png",
+      "boxes": [
+        {
+          "label": "Training Date Interlock Panel Header",
+          "box_2d": [
+            334,
+            252,
+            389,
+            383
+          ]
+        },
+        {
+          "label": "Training Date Interlock Console",
+          "box_2d": [
+            386,
+            237,
+            568,
+            393
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "LOTO main lock point",
+      "slug": "loto_main_lock_point",
+      "file": "story_specific_gen/images/HUB-10-mask-loto_main_lock_point.png",
+      "boxes": [
+        {
+          "label": "LOTO main lock point",
+          "box_2d": [
+            599,
+            230,
+            642,
+            260
+          ]
+        },
+        {
+          "label": "LOTO main lock point",
+          "box_2d": [
+            599,
+            261,
+            642,
+            292
+          ]
+        },
+        {
+          "label": "LOTO main lock point",
+          "box_2d": [
+            599,
+            292,
+            642,
+            323
+          ]
+        },
+        {
+          "label": "LOTO main lock point",
+          "box_2d": [
+            599,
+            323,
+            642,
+            353
+          ]
+        },
+        {
+          "label": "LOTO main lock point",
+          "box_2d": [
+            599,
+            354,
+            642,
+            384
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Ventilation status indicator",
+      "slug": "ventilation_status_indicator",
+      "file": "story_specific_gen/images/HUB-10-mask-ventilation_status_indicator.png",
+      "boxes": [
+        {
+          "label": "Ventilation status indicator",
+          "box_2d": [
+            469,
+            799,
+            563,
+            879
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Procedure placard stack",
+      "slug": "procedure_placard_stack",
+      "file": "story_specific_gen/images/HUB-10-mask-procedure_placard_stack.png",
+      "boxes": [
+        {
+          "label": "procedure placard stack",
+          "box_2d": [
+            448,
+            726,
+            574,
+            792
+          ]
+        }
+      ]
+    }
+  ]
+}

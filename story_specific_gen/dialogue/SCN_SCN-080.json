@@ -1,0 +1,89 @@
+{
+  "dialogueGraphs": [
+    {
+      "id": "DG_SCN_080_DEAD_TUBE_PORT_COVER",
+      "nodes": [
+        {
+          "id": "N0",
+          "next": "N1",
+          "speakerId": "NARRATOR",
+          "text": "A pneumatic tube port, the kind that used to move decisions around faster than people.",
+          "type": "npc_line"
+        },
+        {
+          "id": "N1",
+          "next": "N_MENU",
+          "speakerId": "NARRATOR",
+          "text": "Someone has bolted a metal cover over it. The screws are mismatched, as if each one came from a different apology.",
+          "type": "npc_line"
+        },
+        {
+          "choices": [
+            {
+              "checks": [],
+              "id": "LOOK_ROUTING",
+              "next": "N_LOOK_1",
+              "text": "(look) Inspect the cover for labels or routing."
+            },
+            {
+              "checks": [],
+              "id": "USE_LOOSEN",
+              "next": "N_USE_1",
+              "text": "(use) Try to loosen the cover."
+            },
+            {
+              "checks": [],
+              "id": "LEAVE_BACK",
+              "next": "N_END",
+              "text": "(leave) Back."
+            }
+          ],
+          "id": "N_MENU",
+          "speakerId": "PLAYER",
+          "type": "player_choice"
+        },
+        {
+          "id": "N_LOOK_1",
+          "next": "N_LOOK_2",
+          "speakerId": "NARRATOR",
+          "text": "A paper routing chart is taped beside it, laminated, then cracked: \u201cRECORDS \u2192 ADMIN \u2192 SECURITY (REMOTE)\u201d with arrows that assume staffing like a religion.",
+          "type": "npc_line"
+        },
+        {
+          "id": "N_LOOK_2",
+          "next": "N_LOOK_3",
+          "speakerId": "PLAYER",
+          "text": "Everyone routed away.",
+          "type": "npc_line"
+        },
+        {
+          "id": "N_LOOK_3",
+          "next": "N_MENU",
+          "speakerId": "NARRATOR",
+          "text": "The chart ends with a box: \u201cIF UNSURE, FILE ANYWAY.\u201d",
+          "type": "npc_line"
+        },
+        {
+          "id": "N_USE_1",
+          "next": "N_USE_2",
+          "speakerId": "NARRATOR",
+          "text": "The screws turn a quarter rotation and stop\u2014painted over.",
+          "type": "npc_line"
+        },
+        {
+          "id": "N_USE_2",
+          "next": "N_MENU",
+          "speakerId": "NARRATOR",
+          "text": "It\u2019s not sealed for safety. It\u2019s sealed for finality, which is a different department.",
+          "type": "npc_line"
+        },
+        {
+          "id": "N_END",
+          "type": "end"
+        }
+      ],
+      "sceneId": "SCN-080",
+      "startNodeId": "N0"
+    }
+  ]
+}

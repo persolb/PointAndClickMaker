@@ -1,0 +1,56 @@
+{
+  "screen_id": "HUB-15",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Hardware store counter",
+      "slug": "hardware_store_counter",
+      "file": "images/HUB-15-mask-hardware_store_counter.png",
+      "boxes": [
+        {
+          "label": "Hardware store counter",
+          "box_2d": [
+            270,
+            560,
+            629,
+            755
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Bulletin board",
+      "slug": "bulletin_board",
+      "file": "images/HUB-15-mask-bulletin_board.png",
+      "boxes": [
+        {
+          "label": "bulletin board",
+          "box_2d": [
+            270,
+            856,
+            575,
+            999
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Payphone",
+      "slug": "payphone",
+      "file": "images/HUB-15-mask-payphone.png",
+      "boxes": [
+        {
+          "label": "Payphone booth",
+          "box_2d": [
+            420,
+            762,
+            725,
+            847
+          ]
+        }
+      ]
+    }
+  ]
+}

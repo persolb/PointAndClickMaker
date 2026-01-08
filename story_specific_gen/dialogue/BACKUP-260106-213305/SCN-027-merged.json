@@ -1,0 +1,14 @@
+{
+  "changes": [
+    {
+      "action": "modify",
+      "details": {
+        "choiceId": "LEAVE",
+        "nodeId": "MAIN_MENU",
+        "text": "Leave"
+      },
+      "op": "update_choice_text"
+    }
+  ],
+  "sceneId": "SCN-027"
+}

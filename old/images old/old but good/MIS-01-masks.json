@@ -1,0 +1,39 @@
+{
+  "screen_id": "MIS-01",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Beacon light (in view)",
+      "slug": "beacon_light_in_view",
+      "file": "images/MIS-01-mask-beacon_light_in_view.png",
+      "boxes": [
+        {
+          "label": "beacon light (in view)",
+          "box_2d": [
+            396,
+            461,
+            492,
+            521
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Workbench area",
+      "slug": "workbench_area",
+      "file": "images/MIS-01-mask-workbench_area.png",
+      "boxes": [
+        {
+          "label": "Workbench area",
+          "box_2d": [
+            474,
+            309,
+            584,
+            616
+          ]
+        }
+      ]
+    }
+  ]
+}

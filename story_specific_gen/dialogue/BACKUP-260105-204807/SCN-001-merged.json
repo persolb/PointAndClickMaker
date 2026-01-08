@@ -1,0 +1,539 @@
+{
+  "changes": [
+    {
+      "action": "modify",
+      "details": {
+        "choice": {
+          "id": "C_LOOK_SIGNPOST",
+          "next": "N_SIGNPOST_ROUTED",
+          "text": "look Signs."
+        },
+        "nodeId": "N_MAIN_MENU",
+        "op": "update_choice"
+      },
+      "op": "update_choice"
+    },
+    {
+      "action": "add",
+      "details": {
+        "node": {
+          "id": "N_SIGNPOST_ROUTED",
+          "next": "END_TO_SCN_004",
+          "speakerId": "NARRATOR",
+          "text": "The layered signpost is best handled up close.",
+          "type": "npc_line"
+        },
+        "op": "add_node"
+      },
+      "op": "add_node"
+    },
+    {
+      "action": "add",
+      "details": {
+        "node": {
+          "exitTo": "Layered signpost",
+          "id": "END_TO_SCN_004",
+          "outcomeId": "go_signpost_scene_scn_004",
+          "type": "end"
+        },
+        "op": "add_node"
+      },
+      "op": "add_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_SIGNPOST_DESC",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_SIGNPOST_MENU",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_ASK_SIGNAGE_OWNER_PLAYER",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_ASK_SIGNAGE_OWNER_NARR",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_LOG_1",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_LOG_2",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_LOG_3",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_POST_LOG_MENU",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "ignore-node_remove_vs_choice_change",
+      "details": {
+        "choice": {
+          "id": "C_USE_LOG_FROM_INTERCOM",
+          "next": "N_SIGNPOST_ROUTED",
+          "text": "use Log signage conflict (at the signpost)."
+        },
+        "nodeId": "N_INTERCOM_SIGNS_MENU",
+        "op": "update_choice"
+      },
+      "op": "update_choice"
+    },
+    {
+      "action": "modify",
+      "details": {
+        "choice": {
+          "id": "C_LOOK_SIGNPOST_FROM_MAINT",
+          "next": "N_SIGNPOST_ROUTED",
+          "text": "look Signs."
+        },
+        "nodeId": "N_KEYPAD_MAINT_MENU",
+        "op": "update_choice"
+      },
+      "op": "update_choice"
+    },
+    {
+      "action": "modify",
+      "details": {
+        "choice": {
+          "id": "C_LOOK_SIGNPOST_FROM_TABLET",
+          "next": "N_SIGNPOST_ROUTED",
+          "text": "look Signs."
+        },
+        "nodeId": "N_TRUNK_TABLET_MENU",
+        "op": "update_choice"
+      },
+      "op": "update_choice"
+    },
+    {
+      "action": "modify",
+      "details": {
+        "choice": {
+          "id": "C_LOOK_SIGNPOST_FROM_TAGS",
+          "next": "N_SIGNPOST_ROUTED",
+          "text": "look Signs."
+        },
+        "nodeId": "N_TRUNK_TAGS_MENU",
+        "op": "update_choice"
+      },
+      "op": "update_choice"
+    },
+    {
+      "action": "ignore-node_remove_vs_choice_change",
+      "details": {
+        "choice": {
+          "id": "C_LOOK_SIGNPOST_FROM_CONDUIT",
+          "next": "N_SIGNPOST_ROUTED",
+          "text": "look Signs."
+        },
+        "nodeId": "N_CONDUIT_MENU",
+        "op": "update_choice"
+      },
+      "op": "update_choice"
+    },
+    {
+      "action": "modify",
+      "details": {
+        "choice": {
+          "id": "C_USE_LOG_FIRST_ADMIN",
+          "next": "N_SIGNPOST_ROUTED",
+          "text": "use Go document the signpost first."
+        },
+        "nodeId": "N_LEAVE_CONFIRM_ADMIN_MENU",
+        "op": "update_choice"
+      },
+      "op": "update_choice"
+    },
+    {
+      "action": "modify",
+      "details": {
+        "choice": {
+          "id": "C_USE_LOG_FIRST_GUARD",
+          "next": "N_SIGNPOST_ROUTED",
+          "text": "use Go document the signpost first."
+        },
+        "nodeId": "N_LEAVE_CONFIRM_GUARD_MENU",
+        "op": "update_choice"
+      },
+      "op": "update_choice"
+    },
+    {
+      "action": "modify",
+      "details": {
+        "choice": {
+          "id": "C_USE_LOG_FIRST_HATCH",
+          "next": "N_SIGNPOST_ROUTED",
+          "text": "use Go document the signpost first."
+        },
+        "nodeId": "N_LEAVE_CONFIRM_HATCH_MENU",
+        "op": "update_choice"
+      },
+      "op": "update_choice"
+    },
+    {
+      "action": "modify",
+      "details": {
+        "choice": {
+          "id": "C_USE_KEYPAD",
+          "next": "N_KEYPAD_DESC",
+          "text": "use Gate keypad."
+        },
+        "nodeId": "N_MAIN_MENU",
+        "op": "update_choice"
+      },
+      "op": "update_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_TALK_INTERCOM",
+        "nodeId": "N_MAIN_MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_TALK_INTERCOM_FROM_SIGN",
+        "nodeId": "N_SIGNPOST_MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_TALK_INTERCOM_POSTLOG",
+        "nodeId": "N_POST_LOG_MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_TALK_INTERCOM_FROM_KEYPAD",
+        "nodeId": "N_KEYPAD_MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_TALK_INTERCOM_FROM_VISITOR",
+        "nodeId": "N_KEYPAD_VISITOR_MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_INTERCOM_DESC",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_INTERCOM_PLAYER_CALL",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_SECURITY_GREETING",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_INTERCOM_MENU",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_PLAYER_ASK_DIFF",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_SECURITY_DIFF",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_PLAYER_SHOW_BADGE",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_SECURITY_BADGE_A",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_SECURITY_BADGE_B",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_SECURITY_BADGE_C",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_INTERCOM_MENU_VERIFIED",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_PLAYER_ASK_OPEN_GATE",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_SECURITY_OPEN_GATE",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_SECURITY_CYCLE_PASS",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_SECURITY_CYCLE_FAIL",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_PLAYER_ASK_SIGNS",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_SECURITY_LAYERED",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_INTERCOM_SIGNS_MENU",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_PLAYER_ASK_PHOTOS",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_SECURITY_PHOTOS",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_SECURITY_USE_KEYPAD",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_LOOK_TRUNK",
+        "nodeId": "N_MAIN_MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_LOOK_DEBRIS",
+        "nodeId": "N_MAIN_MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_LOOK_CONDUIT",
+        "nodeId": "N_MAIN_MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_CONDUIT_DESC",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_CONDUIT_MENU",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_LOOK_HATCH",
+        "nodeId": "N_MAIN_MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_HATCH_DESC",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_HATCH_MENU",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_LEAVE_GUARD",
+        "nodeId": "N_MAIN_MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_LEAVE_ANYWAY_GUARD",
+        "nodeId": "N_LEAVE_CONFIRM_GUARD_MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "modify",
+      "details": {
+        "node": {
+          "id": "N_LEAVE_CONFIRM_GUARD",
+          "next": "N_LEAVE_CONFIRM_GUARD_MENU",
+          "speakerId": "NARRATOR",
+          "text": "You can walk over, sure. But if you don\u2019t document the gate instructions first, you\u2019ll be explaining later why you followed one sign and ignored another. Your throat tightens at the thought.\n\n(Use the path along the fence to reach the guard shack.)",
+          "type": "npc_line"
+        },
+        "op": "update_node"
+      },
+      "op": "update_node"
+    }
+  ],
+  "sceneId": "SCN-001"
+}

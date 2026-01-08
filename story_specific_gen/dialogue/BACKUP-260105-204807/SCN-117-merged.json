@@ -1,0 +1,70 @@
+{
+  "changes": [
+    {
+      "action": "add",
+      "createScene": {
+        "dialogueGraphs": [
+          {
+            "id": "SCN_117_WINDOW5_SAFETY",
+            "nodes": [
+              {
+                "id": "N_WIN5_1",
+                "next": "N_WIN5_2",
+                "speakerId": "NARRATOR",
+                "text": "Window 5 has a yellow light that never turns off.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_WIN5_2",
+                "next": "PC_WIN5_MENU",
+                "speakerId": "SAFETY_CLERK",
+                "text": "Safety handles incidents.\n\u201cIncident\u201d means a recorded deviation, not a feeling.\nIf you need a TER, you need Intake to record you first.\nWindow 0. Please do not workshop wording here.",
+                "type": "npc_line"
+              },
+              {
+                "choices": [
+                  {
+                    "id": "C_THREATEN_ESCALATE",
+                    "next": "N_WIN5_THREAT_1",
+                    "text": "threaten: If you won\u2019t help, I\u2019ll escalate."
+                  },
+                  {
+                    "id": "C_LEAVE_WIN5",
+                    "next": "END_BACK",
+                    "text": "leave: Back."
+                  }
+                ],
+                "id": "PC_WIN5_MENU",
+                "speakerId": "PLAYER",
+                "type": "player_choice"
+              },
+              {
+                "id": "N_WIN5_THREAT_1",
+                "next": "N_WIN5_THREAT_2",
+                "speakerId": "SAFETY_CLERK",
+                "text": "Escalation is also an incident.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_WIN5_THREAT_2",
+                "next": "END_BACK",
+                "speakerId": "SAFETY_CLERK",
+                "text": "I can\u2019t open an escalation without a category.\nYou do not want me choosing your category.\nGo to Intake. Window 0. Quietly.",
+                "type": "npc_line"
+              },
+              {
+                "id": "END_BACK",
+                "outcomeId": "window5_back",
+                "type": "end"
+              }
+            ],
+            "sceneId": "SCN-117",
+            "startNodeId": "N_WIN5_1"
+          }
+        ]
+      },
+      "op": "create_scene"
+    }
+  ],
+  "sceneId": "SCN-117"
+}

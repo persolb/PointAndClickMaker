@@ -1,0 +1,437 @@
+{
+  "dialogueGraphs": [
+    {
+      "id": "SCN_045_OVERFLOW_INTAKE",
+      "sceneId": "SCN-045",
+      "startNodeId": "N_INTRO_1",
+      "nodes": [
+        {
+          "id": "N_INTRO_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The Overflow Intake Concourse is lit like an apology.\nQueue stanchions form a maze that leads nowhere in particular.\nA barcode kiosk waits with the patience of a machine that has never been wrong.",
+          "next": "N_INTRO_2"
+        },
+        {
+          "id": "N_INTRO_2",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "Left: a sealed bay door labeled \u201cAPERTURE SIDE \u2014 AUTHORIZED TOKENED ENTRY ONLY.\u201d\nCenter: \u201cINCIDENT QUEUE\u201d stanchions with numbered placards that skip numbers.\nRight: a corridor sign points toward \u201cINTAKE HALL (WINDOWS 0/3/5/7/9).\u201d",
+          "next": "PC_MAIN"
+        },
+        {
+          "id": "PC_MAIN",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_TALK_CALL_OUT",
+              "text": "talk: Call out for staff.",
+              "next": "N_COACH_INTERCEPT_1"
+            },
+            {
+              "id": "C_USE_KIOSK",
+              "text": "use: Try the kiosk.",
+              "next": "N_USE_KIOSK_1"
+            },
+            {
+              "id": "C_LEAVE_INTAKE_HALL",
+              "text": "leave: Go right to Intake Hall.",
+              "next": "END_TO_INTAKE_HALL"
+            },
+            {
+              "id": "C_LEAVE_APERTURE_BAY",
+              "text": "leave: Go left toward Aperture Bay.",
+              "next": "END_TO_APERTURE_BAY"
+            },
+            {
+              "id": "C_LEAVE_REASSESS",
+              "text": "leave: Step back, reassess.",
+              "next": "END_REASSESS"
+            }
+          ]
+        },
+        {
+          "id": "N_COACH_INTERCEPT_1",
+          "type": "npc_line",
+          "speakerId": "PROCESS_COACH",
+          "text": "Don\u2019t do that. (pause) It works, and then staff are on you. (pause) And I\u2019ve got nothing I can file.",
+          "next": "N_COACH_INTERCEPT_2"
+        },
+        {
+          "id": "N_COACH_INTERCEPT_2",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "I need access.",
+          "next": "N_COACH_INTERCEPT_3"
+        },
+        {
+          "id": "N_COACH_INTERCEPT_3",
+          "type": "npc_line",
+          "speakerId": "PROCESS_COACH",
+          "text": "You need a token. (pause)\n\u201cAccess\u201d just gets people hovering at the door (pause) and slows everything down.",
+          "next": "PC_COACH_START"
+        },
+        {
+          "id": "PC_COACH_START",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_ASK_TOKEN_FOR_WHAT",
+              "text": "ask: Token for what?",
+              "next": "N_TOKEN_FOR_WHAT_1"
+            },
+            {
+              "id": "C_ASK_WHERE_TOKEN",
+              "text": "ask: Where do I get a token?",
+              "next": "N_GET_TOKEN_INFO_1"
+            },
+            {
+              "id": "C_ASK_WHATS_TER",
+              "text": "ask: What\u2019s a TER?",
+              "next": "N_WHATS_TER_1"
+            },
+            {
+              "id": "C_SHOW_OLEA",
+              "text": "show: Show OLEA credentials.",
+              "conditions": [
+                {
+                  "key": "player.hasFaction.OLEA",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "next": "N_SHOW_OLEA_1"
+            },
+            {
+              "id": "C_PERSUADE_CLOSURE",
+              "text": "persuade: I\u2019m here on a closure mandate.",
+              "checks": [
+                {
+                  "type": "skill",
+                  "skill": "persuasion",
+                  "dc": 13
+                }
+              ],
+              "onPassNext": "N_PERSUADE_PASS_1",
+              "onFailNext": "N_PERSUADE_FAIL_1"
+            },
+            {
+              "id": "C_LEAVE_LOOK_AROUND",
+              "text": "leave: Okay. I\u2019ll look around.",
+              "next": "R_LOOP_TO_MAIN"
+            }
+          ]
+        },
+        {
+          "id": "N_TOKEN_FOR_WHAT_1",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Token for what?",
+          "next": "N_TOKEN_FOR_WHAT_2"
+        },
+        {
+          "id": "N_TOKEN_FOR_WHAT_2",
+          "type": "npc_line",
+          "speakerId": "PROCESS_COACH",
+          "text": "For anything out here waving the \u201csafety\u201d flag. (pause)\nDoors. (pause)\nKiosks. (pause)\nWindow assignment. (pause)\nWhat you do gets tagged \u201cinquiry\u201d or \u201cinterference.\u201d (pause)\nUntil you\u2019ve got paper you\u2019re just extra. (pause)\nExtra in the line. (pause)\nThat\u2019s how the intake software got bought.",
+          "next": "PC_COACH_FOLLOW"
+        },
+        {
+          "id": "N_WHATS_TER_1",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "What\u2019s a TER?",
+          "next": "N_WHATS_TER_2"
+        },
+        {
+          "id": "N_WHATS_TER_2",
+          "type": "npc_line",
+          "speakerId": "PROCESS_COACH",
+          "text": "Transfer Entitlement Receipt. (pause)\nYeah. The words are backwards. (pause)\nLegal did that. Don\u2019t ask me. (pause)\nIt\u2019s the slip. (pause)\nIt lets the system count you. (pause)\nAccounted-for mass. (pause)\nNot a random narrative.",
+          "next": "N_WHATS_TER_3"
+        },
+        {
+          "id": "N_WHATS_TER_3",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "So I need to obtain a TER.",
+          "next": "N_WHATS_TER_4"
+        },
+        {
+          "id": "N_WHATS_TER_4",
+          "type": "npc_line",
+          "speakerId": "PROCESS_COACH",
+          "text": "You need a token (pause) that resolves to a TER (pause) when the door pings it. (pause)\nSay \u201caccess\u201d (pause) and people start looking around (pause) for who\u2019s responsible.",
+          "next": "PC_COACH_FOLLOW"
+        },
+        {
+          "id": "N_PERSUADE_PASS_1",
+          "type": "npc_line",
+          "speakerId": "PROCESS_COACH",
+          "text": "I believe you. (pause) Still can\u2019t shove a mandate (pause) through a door reader. (pause) You want this quiet? (pause) Get filed first. (pause) Then do your work.",
+          "next": "PC_COACH_FOLLOW"
+        },
+        {
+          "id": "N_PERSUADE_FAIL_1",
+          "type": "npc_line",
+          "speakerId": "PROCESS_COACH",
+          "text": "Don\u2019t say that where it can hear. (pause) \u201cMandate\u201d starts escalation loops. (pause) Someone has to own it. (pause) Tokens slide through, no name attached.",
+          "next": "PC_COACH_FOLLOW"
+        },
+        {
+          "id": "PC_COACH_FOLLOW",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_ASK_WHERE_TOKEN_FOLLOW",
+              "text": "ask: Where do I get a token?",
+              "next": "N_GET_TOKEN_INFO_1"
+            },
+            {
+              "id": "C_SHOW_OLEA_FOLLOW",
+              "text": "show: Show OLEA credentials.",
+              "conditions": [
+                {
+                  "key": "player.hasFaction.OLEA",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "next": "N_SHOW_OLEA_1"
+            },
+            {
+              "id": "C_LEAVE_BACK",
+              "text": "leave: Back to the concourse.",
+              "next": "R_LOOP_TO_MAIN"
+            }
+          ]
+        },
+        {
+          "id": "N_SHOW_OLEA_1",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "OLEA Field Systems. Closure engineer.",
+          "next": "N_SHOW_OLEA_2"
+        },
+        {
+          "id": "N_SHOW_OLEA_2",
+          "type": "npc_line",
+          "speakerId": "PROCESS_COACH",
+          "text": "Okay. OLEA Field Systems. (pause) Closure engineer. (pause) That helps me. (pause)\nThe kiosk still won\u2019t care. (pause) It wants an artifact. (pause)\nBe right all day. (pause) If you\u2019re not in the file, (pause) the door stays shut.",
+          "next": "N_SHOW_OLEA_3"
+        },
+        {
+          "id": "N_SHOW_OLEA_3",
+          "type": "npc_line",
+          "speakerId": "PROCESS_COACH",
+          "text": "Not you. (pause)\nSomething on you. Scannable. (pause)\nSomething that can take an incident category (pause)\nwithout crying about it.",
+          "next": "PC_SHOW_OLEA_MENU"
+        },
+        {
+          "id": "PC_SHOW_OLEA_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_ASK_CATEGORY",
+              "text": "ask: What category?",
+              "next": "N_CATEGORY_HINT_1"
+            },
+            {
+              "id": "C_ASK_WHERE_TER_OLEA",
+              "text": "ask: Where do I get the TER?",
+              "next": "N_GET_TOKEN_INFO_1"
+            },
+            {
+              "id": "C_LEAVE_HANDLE_IT",
+              "text": "leave: I\u2019ll handle it.",
+              "next": "R_LOOP_TO_MAIN"
+            }
+          ]
+        },
+        {
+          "id": "N_CATEGORY_HINT_1",
+          "type": "npc_line",
+          "speakerId": "PROCESS_COACH",
+          "text": "Keep it low. (pause) Call it a misrouted equipment transfer. (pause) Drop \u201cauthority\u201d and \u201cmandate.\u201d (pause) Don\u2019t fight the window (pause) while they\u2019re logging.\nGet the token. (pause) Save the importance for someplace (pause) that actually files it.",
+          "next": "PC_CATEGORY_FOLLOW"
+        },
+        {
+          "id": "PC_CATEGORY_FOLLOW",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_ASK_WHERE_TER_FROM_CATEGORY",
+              "text": "ask: Where do I get the TER?",
+              "next": "N_GET_TOKEN_INFO_1"
+            },
+            {
+              "id": "C_LEAVE_CATEGORY_BACK",
+              "text": "leave: Back to the concourse.",
+              "next": "R_LOOP_TO_MAIN"
+            }
+          ]
+        },
+        {
+          "id": "N_USE_KIOSK_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The kiosk wakes up halfway, like it\u2019s doing you a favor.\nA prompt appears: \u201cTOKEN REQUIRED FOR PERSONHOOD.\u201d",
+          "next": "N_USE_KIOSK_2"
+        },
+        {
+          "id": "N_USE_KIOSK_2",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "That\u2019s a sentence.",
+          "next": "N_USE_KIOSK_3"
+        },
+        {
+          "id": "N_USE_KIOSK_3",
+          "type": "npc_line",
+          "speakerId": "PROCESS_COACH",
+          "text": "It\u2019s a shortcut. (pause) If it spelled it all out, (pause) you\u2019d start negotiating with it\u2014 (pause) and then I\u2019m stuck logging (pause) a \u201cverbal incident.\u201d",
+          "next": "PC_KIOSK_MENU"
+        },
+        {
+          "id": "PC_KIOSK_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_ASK_VALID_INPUT",
+              "text": "ask: So how do I become valid input?",
+              "next": "N_GET_TOKEN_INFO_1"
+            },
+            {
+              "id": "C_ASK_FILE_EQUIP",
+              "text": "ask: Can I file as equipment?",
+              "next": "N_FILE_AS_EQUIP_1"
+            },
+            {
+              "id": "C_SHOW_OLEA_KIOSK",
+              "text": "show: Show OLEA credentials.",
+              "conditions": [
+                {
+                  "key": "player.hasFaction.OLEA",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "next": "N_SHOW_OLEA_1"
+            },
+            {
+              "id": "C_LEAVE_WALK_AWAY",
+              "text": "leave: Walk away.",
+              "next": "R_LOOP_TO_MAIN"
+            }
+          ]
+        },
+        {
+          "id": "N_FILE_AS_EQUIP_1",
+          "type": "npc_line",
+          "speakerId": "PROCESS_COACH",
+          "text": "Intake can file an object. (pause) It has a barcode. (pause) And an incident category. (pause) If you can\u2019t be listed. (pause) You attach to something that can. (pause) Then you\u2019re\u2014politely\u2014\u201cassociated mass.\u201d",
+          "next": "PC_FILE_EQUIP_FOLLOW"
+        },
+        {
+          "id": "PC_FILE_EQUIP_FOLLOW",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_ASK_WHERE_TOKEN_FROM_EQUIP",
+              "text": "ask: Where do I get the token?",
+              "next": "N_GET_TOKEN_INFO_1"
+            },
+            {
+              "id": "C_LEAVE_EQUIP_BACK",
+              "text": "leave: Back to the concourse.",
+              "next": "R_LOOP_TO_MAIN"
+            }
+          ]
+        },
+        {
+          "id": "N_GET_TOKEN_INFO_1",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Where do I get it?",
+          "next": "N_GET_TOKEN_INFO_2"
+        },
+        {
+          "id": "N_GET_TOKEN_INFO_2",
+          "type": "npc_line",
+          "speakerId": "PROCESS_COACH",
+          "text": "Intake Hall. (pause) Windows 0/3/5/7/9. (pause)\nPick the one. (pause)\nLooks least hungry. (pause)\nFor your life story. (pause)\nGive them an incident category. (pause)\nThe system will accept. (pause)\nThey spit out a token. (pause)\nThat\u2019s what the doors listen to.",
+          "next": "N_GET_TOKEN_INFO_3"
+        },
+        {
+          "id": "N_GET_TOKEN_INFO_3",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "And if I file myself?",
+          "next": "N_GET_TOKEN_INFO_4"
+        },
+        {
+          "id": "N_GET_TOKEN_INFO_4",
+          "type": "npc_line",
+          "speakerId": "PROCESS_COACH",
+          "text": "Intake can\u2019t file a person. (pause)\nNot listed in any jurisdiction. (pause)\nThey can file an object. (pause)\nWith a barcode. (pause)\nAnd an incident category. (pause)\nSo you attach yourself. (pause)\nTo the object. (pause)\nYou\u2019re\u2014politely\u2014\u201cassociated mass.\u201d (pause)\nThey won\u2019t call it dehumanizing. (pause)\nThey\u2019ll call it efficient. (pause)\nOn paper.",
+          "next": "N_GET_TOKEN_INFO_5"
+        },
+        {
+          "id": "N_GET_TOKEN_INFO_5",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The Coach points right, toward the Intake Hall signage, as if pointing is a legally safer form of escort.",
+          "next": "N_GET_TOKEN_INFO_6"
+        },
+        {
+          "id": "N_GET_TOKEN_INFO_6",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "On the kiosk, the prompt refreshes: \u201cPRESENT TOKEN.\u201d\nIt blinks once, like a reminder that the building has already moved on.",
+          "next": "END_COMMIT_TOKENS_RULE"
+        },
+        {
+          "id": "R_LOOP_TO_MAIN",
+          "type": "redirect",
+          "target": "PC_MAIN"
+        },
+        {
+          "id": "END_COMMIT_TOKENS_RULE",
+          "type": "end",
+          "outcomeId": "arrival_overflow_intake",
+          "effects": [
+            {
+              "key": "knowledge.act2TokensRule",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "objectives.obtainTER",
+              "action": "set",
+              "value": true
+            }
+          ]
+        },
+        {
+          "id": "END_TO_INTAKE_HALL",
+          "type": "end"
+        },
+        {
+          "id": "END_TO_APERTURE_BAY",
+          "type": "end"
+        },
+        {
+          "id": "END_REASSESS",
+          "type": "end"
+        }
+      ]
+    }
+  ]
+}

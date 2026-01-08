@@ -1,0 +1,520 @@
+{
+  "dialogueGraphs": [
+    {
+      "id": "SCN_048_WINDOW0_TER",
+      "sceneId": "SCN-048",
+      "startNodeId": "N_INTRO_1",
+      "nodes": [
+        {
+          "id": "N_INTRO_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "conditions": [
+            {
+              "key": "act2.terIssued",
+              "op": "==",
+              "value": false
+            },
+            {
+              "key": "paperwork.unallocatedMassSlipIssued",
+              "op": "==",
+              "value": true
+            }
+          ],
+          "text": "Window 0 is clean the way a form is clean\u2014because nothing personal has been allowed to touch it.",
+          "next": "N_INTRO_2"
+        },
+        {
+          "id": "N_INTRO_2",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The Intake Clerk\u2019s eyes track your Unallocated Mass Slip before they track you.",
+          "next": "N_CLERK_OPEN_1"
+        },
+        {
+          "id": "N_CLERK_OPEN_1",
+          "type": "npc_line",
+          "speakerId": "INTAKE_CLERK",
+          "text": "Intake. (pause) Category. (pause) Slip on the counter (pause) if you want to stay in sequence, (pause) in the normal sense.",
+          "next": "PC_MAIN"
+        },
+        {
+          "id": "PC_MAIN",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_TALK_HERE",
+              "text": "talk: \u201cHere.\u201d",
+              "next": "N_PRESENT_SLIP_1"
+            },
+            {
+              "id": "C_ASK_ACCEPTED",
+              "text": "ask: \u201cWhat categories are accepted?\u201d",
+              "next": "N_CATS_1"
+            },
+            {
+              "id": "C_ASK_PROPERTY_FIRST",
+              "text": "ask: \u201cCan I register property first?\u201d",
+              "next": "N_PROPERTY_1"
+            },
+            {
+              "id": "C_SHOW_OLEA",
+              "text": "show: \u201cOLEA credentials.\u201d",
+              "conditions": [
+                {
+                  "key": "player.hasFaction.OLEA",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "next": "N_OLEA_1"
+            },
+            {
+              "id": "C_PERSUADE_LEAST_ESC",
+              "text": "persuade: \u201cGive me the least-escalation wording.\u201d",
+              "checks": [
+                {
+                  "type": "skill",
+                  "skill": "persuasion",
+                  "dc": 12
+                }
+              ],
+              "onPassNext": "N_PERSUADE_PASS_1",
+              "onFailNext": "N_PERSUADE_FAIL_1"
+            },
+            {
+              "id": "C_BARGAIN_SHORT",
+              "text": "bargain: \u201cI\u2019ll keep it short. I need a receipt.\u201d",
+              "next": "N_BARGAIN_1"
+            },
+            {
+              "id": "C_TALK_PROCEED",
+              "text": "talk: \u201cProceed.\u201d",
+              "next": "N_PROCEED_1"
+            },
+            {
+              "id": "C_LEAVE_BACK",
+              "text": "leave: \u201cBack.\u201d",
+              "next": "END_BACK_OUT"
+            }
+          ]
+        },
+        {
+          "id": "N_PRESENT_SLIP_1",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Here.",
+          "next": "N_PRESENT_SLIP_2"
+        },
+        {
+          "id": "N_PRESENT_SLIP_2",
+          "type": "npc_line",
+          "speakerId": "INTAKE_CLERK",
+          "text": "Thanks. (pause)\nIt's paper. (pause)\nIt puts you down: unresolved mass. (pause)\nKeeps blame tidy, in normal sense. (pause)\nNow: category.",
+          "next": "R_TO_MAIN"
+        },
+        {
+          "id": "N_CATS_1",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "What categories are accepted?",
+          "next": "N_CATS_2"
+        },
+        {
+          "id": "N_CATS_2",
+          "type": "npc_line",
+          "speakerId": "INTAKE_CLERK",
+          "text": "Anything that doesn't kick you into review. (pause)\nDon't make me argue it. (pause)\n\"Misrouted equipment transfer\" usually slides through. (pause)\n\"Nonhazardous backfeed residue\" is on the sheet. (pause)\nRight now, wording's still moving. (pause)\n\"Unclaimed attachment\" is there. (pause)\nIt brings questions. (pause)\nQuestions become incidents.",
+          "next": "N_FORM_SLIDE_1"
+        },
+        {
+          "id": "N_PROPERTY_1",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Can I register property first?",
+          "next": "N_PROPERTY_2"
+        },
+        {
+          "id": "N_PROPERTY_2",
+          "type": "npc_line",
+          "speakerId": "INTAKE_CLERK",
+          "text": "Can't register property (pause)\nwithout a claimant on file. (pause)\nRight now (pause)\nyou're an accounting condition (pause)\nwith shoes. (pause)\nIntake is how the building lets you (pause)\nbe something fileable (pause)\nin the normal sense.",
+          "next": "R_TO_MAIN"
+        },
+        {
+          "id": "N_OLEA_1",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "OLEA Field Systems. Closure engineer.",
+          "next": "N_OLEA_2"
+        },
+        {
+          "id": "N_OLEA_2",
+          "type": "npc_line",
+          "speakerId": "INTAKE_CLERK",
+          "text": "OLEA. Sure. (pause)\nStill just context. (pause)\nI can't scan it. (pause)\nYou want recognition? (pause)\nGet filed as recordable mass first. (pause)\nAfter that, maybe another window cares. (pause)\nIn the normal sense.",
+          "next": "R_TO_MAIN"
+        },
+        {
+          "id": "N_PERSUADE_PASS_1",
+          "type": "npc_line",
+          "speakerId": "INTAKE_CLERK",
+          "text": "Write \"misrouted equipment transfer.\" (pause)\nAdd attachment language. (pause)\nUse \"associated mass.\" Do not describe. (pause)\nSkip adjectives. (pause)\nThat's how liability walks in. (pause)\nIn the normal sense.",
+          "next": "N_FORM_SLIDE_1"
+        },
+        {
+          "id": "N_PERSUADE_FAIL_1",
+          "type": "npc_line",
+          "speakerId": "INTAKE_CLERK",
+          "text": "I'm not signing off on custom wording. (pause) That's how incidents get born. (pause) Pick a category in the normal sense.",
+          "next": "R_TO_MAIN"
+        },
+        {
+          "id": "N_BARGAIN_1",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "I\u2019ll keep it short. I need a receipt.",
+          "next": "N_BARGAIN_2"
+        },
+        {
+          "id": "N_BARGAIN_2",
+          "type": "npc_line",
+          "speakerId": "INTAKE_CLERK",
+          "text": "Good. Less story.\nReceipt comes after filed.\nCategory.",
+          "next": "R_TO_MAIN"
+        },
+        {
+          "id": "N_PROCEED_1",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Proceed.",
+          "next": "N_PROCEED_2"
+        },
+        {
+          "id": "N_PROCEED_2",
+          "type": "npc_line",
+          "speakerId": "INTAKE_CLERK",
+          "text": "Then we go in sequence\u0014in the normal sense.",
+          "next": "N_FORM_SLIDE_1"
+        },
+        {
+          "id": "N_FORM_SLIDE_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The clerk slides a blank template forward, face-down, like it might learn you if you look directly at it.",
+          "next": "N_FORM_SLIDE_2"
+        },
+        {
+          "id": "N_FORM_SLIDE_2",
+          "type": "npc_line",
+          "speakerId": "INTAKE_CLERK",
+          "text": "You're unallocated mass. (pause) File it as an associated object. (pause) Anything extra goes down as 'associated'. (pause) Don't describe it. (pause) I need this moving.",
+          "next": "PC_FILING_MENU"
+        },
+        {
+          "id": "PC_FILING_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_ASK_NEED_OBJECT",
+              "text": "ask: \u201cSo I need an object.\u201d",
+              "next": "N_NEED_OBJECT_1"
+            },
+            {
+              "id": "C_ASK_PICK_WRONG",
+              "text": "ask: \u201cWhat happens if I pick wrong?\u201d",
+              "next": "N_PICK_WRONG_1"
+            },
+            {
+              "id": "C_ASK_BADGE_TEXT",
+              "text": "ask: \u201cWhat does the badge say?\u201d",
+              "next": "N_BADGE_1"
+            },
+            {
+              "id": "C_TALK_TOOLBAG",
+              "text": "talk: \u201cRegister my toolbag. I\u2019m attached accessory mass.\u201d",
+              "next": "N_TOOLBAG_1"
+            },
+            {
+              "id": "C_TALK_RESIDUE",
+              "text": "talk: \u201cFile me as backfeed residue. Persistent, nonhazardous.\u201d",
+              "next": "N_RESIDUE_1"
+            },
+            {
+              "id": "C_ASK_THIS_WEEK",
+              "text": "ask: \u201cWhat\u2019s acceptable this week?\u201d",
+              "next": "N_THIS_WEEK_1"
+            },
+            {
+              "id": "C_LEAVE_BACK_MAIN",
+              "text": "leave: \u201cBack.\u201d",
+              "next": "R_TO_MAIN"
+            }
+          ]
+        },
+        {
+          "id": "N_NEED_OBJECT_1",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "So I need an object.",
+          "next": "N_NEED_OBJECT_2"
+        },
+        {
+          "id": "N_NEED_OBJECT_2",
+          "type": "npc_line",
+          "speakerId": "INTAKE_CLERK",
+          "text": "You need something the system can read. (pause)\nBarcodes. Serials. A category. (pause)\nBelief is for Orientation. (pause)\nThis is Intake. Normal sense.",
+          "next": "R_TO_FILING_MENU"
+        },
+        {
+          "id": "N_PICK_WRONG_1",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "What happens if I pick wrong?",
+          "next": "N_PICK_WRONG_2"
+        },
+        {
+          "id": "N_PICK_WRONG_2",
+          "type": "npc_line",
+          "speakerId": "INTAKE_CLERK",
+          "text": "Pick wrong. (pause) You get bounced. (pause)\nWorst case. (pause) You sit in review. (pause)\nReview drags. (pause)\nPick something the building knows how to forget.",
+          "next": "R_TO_FILING_MENU"
+        },
+        {
+          "id": "N_BADGE_1",
+          "type": "npc_line",
+          "speakerId": "INTAKE_CLERK",
+          "text": "Temporary badge says you have an active receipt. (pause) It will not give you authority. (pause) It cuts down questions in the normal sense.",
+          "next": "N_BADGE_2"
+        },
+        {
+          "id": "N_BADGE_2",
+          "type": "npc_line",
+          "speakerId": "INTAKE_CLERK",
+          "text": "It prints the category code (pause) and the validity window. (pause) If you're looking for your name\u2014 (pause) we don't do names here.",
+          "next": "R_TO_FILING_MENU"
+        },
+        {
+          "id": "N_TOOLBAG_1",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Register my toolbag. I\u2019m attached accessory mass.",
+          "next": "N_TOOLBAG_2"
+        },
+        {
+          "id": "N_TOOLBAG_2",
+          "type": "npc_line",
+          "speakerId": "INTAKE_CLERK",
+          "text": "Toolbag. What are we calling it?",
+          "next": "N_TOOLBAG_3"
+        },
+        {
+          "id": "N_TOOLBAG_3",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Engineering service kit. Serialized.",
+          "next": "N_TOOLBAG_4"
+        },
+        {
+          "id": "N_TOOLBAG_4",
+          "type": "npc_line",
+          "speakerId": "INTAKE_CLERK",
+          "text": "Good. (pause)\nSerial means I can park it somewhere. (pause)\nI\u2019ll note \u201cassociated mass\u201d with no description. (pause)\nThat wording keeps both of us covered\u2014normal sense.",
+          "next": "N_TOOLBAG_5"
+        },
+        {
+          "id": "N_TOOLBAG_5",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The clerk stamps the form twice, like the second stamp is for the parts of you that won\u2019t fit on paper.",
+          "next": "END_TOOLBAG_PATH"
+        },
+        {
+          "id": "N_RESIDUE_1",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "File me as backfeed residue. Persistent, nonhazardous.",
+          "next": "N_RESIDUE_2"
+        },
+        {
+          "id": "N_RESIDUE_2",
+          "type": "npc_line",
+          "speakerId": "INTAKE_CLERK",
+          "text": "\u2018Residue\u2019 sounds like a process. (pause) I\u2019m not asking about that. (pause) Just checking the word, normal sense. (pause) \u2018Persistent\u2019 is fine. (pause) \u2018Nonhazardous\u2019 is fine.",
+          "next": "N_RESIDUE_3"
+        },
+        {
+          "id": "N_RESIDUE_3",
+          "type": "npc_line",
+          "speakerId": "INTAKE_CLERK",
+          "text": "On paper, the building can safely ignore you.",
+          "next": "N_RESIDUE_4"
+        },
+        {
+          "id": "N_RESIDUE_4",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The stamp lands with a soft finality, as if closing a file closes a door somewhere.",
+          "next": "END_RESIDUE_PATH"
+        },
+        {
+          "id": "N_THIS_WEEK_1",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "What\u2019s acceptable this week?",
+          "next": "N_THIS_WEEK_2"
+        },
+        {
+          "id": "N_THIS_WEEK_2",
+          "type": "npc_line",
+          "speakerId": "INTAKE_CLERK",
+          "text": "We don't have a \"this week\" box. (pause)\nYeah. Categories drift. (pause)\nBulletins come down. (pause)\nFor now: \"misrouted equipment transfer.\" (pause)\nNeed attachment language? (pause)\n\"associated mass (do not describe).\" (pause)\nSkip the adjectives, normal sense.",
+          "next": "PC_COACHED_COMMIT"
+        },
+        {
+          "id": "PC_COACHED_COMMIT",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_TALK_COACHED_COMMIT",
+              "text": "talk: \u201cMisrouted equipment transfer. Associated mass.\u201d",
+              "next": "N_COACHED_1"
+            },
+            {
+              "id": "C_LEAVE_BACK_FILING",
+              "text": "leave: \u201cBack.\u201d",
+              "next": "R_TO_FILING_MENU"
+            }
+          ]
+        },
+        {
+          "id": "N_COACHED_1",
+          "type": "npc_line",
+          "speakerId": "INTAKE_CLERK",
+          "text": "Accepted.\nThat won\u0019t make anyone curious. Good.",
+          "next": "N_COACHED_2"
+        },
+        {
+          "id": "N_COACHED_2",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The clerk feeds the paper into a slot that was built for envelopes and now eats definitions.",
+          "next": "END_COACHED_PATH"
+        },
+        {
+          "id": "R_TO_MAIN",
+          "type": "redirect",
+          "target": "PC_MAIN"
+        },
+        {
+          "id": "R_TO_FILING_MENU",
+          "type": "redirect",
+          "target": "PC_FILING_MENU"
+        },
+        {
+          "id": "END_TOOLBAG_PATH",
+          "type": "end",
+          "outcomeId": "ter_path_engineering_toolbag_first",
+          "effects": [
+            {
+              "key": "act2.terIssued",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "act2.toolbagRegistered",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "inventory.items",
+              "action": "add",
+              "value": "ITEM_TEMPORARY_EXISTENCE_RECEIPT_TER"
+            },
+            {
+              "key": "inventory.items",
+              "action": "add",
+              "value": "ITEM_TEMP_BADGE"
+            },
+            {
+              "key": "paperwork.act2MapAccess",
+              "action": "set",
+              "value": true
+            }
+          ]
+        },
+        {
+          "id": "END_RESIDUE_PATH",
+          "type": "end",
+          "outcomeId": "ter_path_bureaucratic_backfeed_residue",
+          "effects": [
+            {
+              "key": "act2.terIssued",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "act2.backfeedResidueFiled",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "inventory.items",
+              "action": "add",
+              "value": "ITEM_TEMPORARY_EXISTENCE_RECEIPT_TER"
+            },
+            {
+              "key": "inventory.items",
+              "action": "add",
+              "value": "ITEM_TEMP_BADGE"
+            },
+            {
+              "key": "paperwork.act2MapAccess",
+              "action": "set",
+              "value": true
+            }
+          ]
+        },
+        {
+          "id": "END_COACHED_PATH",
+          "type": "end",
+          "outcomeId": "ter_path_coached_category",
+          "effects": [
+            {
+              "key": "act2.terIssued",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "act2.coachedFilingUsed",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "inventory.items",
+              "action": "add",
+              "value": "ITEM_TEMPORARY_EXISTENCE_RECEIPT_TER"
+            },
+            {
+              "key": "inventory.items",
+              "action": "add",
+              "value": "ITEM_TEMP_BADGE"
+            },
+            {
+              "key": "paperwork.act2MapAccess",
+              "action": "set",
+              "value": true
+            }
+          ]
+        },
+        {
+          "id": "END_BACK_OUT",
+          "type": "end"
+        }
+      ]
+    }
+  ]
+}

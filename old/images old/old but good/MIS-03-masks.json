@@ -1,0 +1,39 @@
+{
+  "screen_id": "MIS-03",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Fuse box",
+      "slug": "fuse_box",
+      "file": "images/MIS-03-mask-fuse_box.png",
+      "boxes": [
+        {
+          "label": "Fuse box",
+          "box_2d": [
+            294,
+            194,
+            664,
+            388
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Maintenance hatch",
+      "slug": "maintenance_hatch",
+      "file": "images/MIS-03-mask-maintenance_hatch.png",
+      "boxes": [
+        {
+          "label": "Maintenance hatch",
+          "box_2d": [
+            367,
+            532,
+            747,
+            764
+          ]
+        }
+      ]
+    }
+  ]
+}

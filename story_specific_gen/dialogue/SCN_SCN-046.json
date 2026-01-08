@@ -1,0 +1,301 @@
+{
+  "dialogueGraphs": [
+    {
+      "id": "DG_UNALLOCATED_MASS_KIOSK",
+      "sceneId": "SCN-046",
+      "startNodeId": "N1_ESTABLISH",
+      "nodes": [
+        {
+          "id": "N1_ESTABLISH",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The barcode kiosk is bolted to a waist-high pedestal like it\u2019s part of the floor plan.\nA green \u201cREADY\u201d light blinks with practiced patience.\nA thermal printer sits under a plastic hood, already slightly curled from old output.",
+          "next": "N2_HAVE_LABEL"
+        },
+        {
+          "id": "N2_HAVE_LABEL",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You have the Misrouted Canister Return Label.",
+          "next": "N3_KIOSK_GREETING"
+        },
+        {
+          "id": "N3_KIOSK_GREETING",
+          "type": "npc_line",
+          "speakerId": "KIOSK",
+          "text": "OVERFLOW INTAKE \u2014 BARCODE INQUIRY.\nScan item. Do not narrate the scan. Narration complicates accountability.",
+          "next": "N_MAIN_MENU"
+        },
+        {
+          "id": "N_MAIN_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "CH_USE_SCAN",
+              "text": "Use: Scan the return label.",
+              "next": "N_USE_P1"
+            },
+            {
+              "id": "CH_ASK_UNALLOC",
+              "text": "Ask: What is \u201cunallocated mass\u201d?",
+              "next": "N_ASKM_P1"
+            },
+            {
+              "id": "CH_ASK_ARRIVAL",
+              "text": "Ask: Why does it think it never arrived?",
+              "next": "N_ASKA_P1"
+            },
+            {
+              "id": "CH_LOOK",
+              "text": "Look: Read the kiosk instructions.",
+              "next": "N_LOOK_N1"
+            },
+            {
+              "id": "CH_PERSUADE_OVERRIDE",
+              "text": "Persuade: Manual override. I\u2019m closing the site.",
+              "conditions": [
+                {
+                  "key": "player.factions",
+                  "op": "in",
+                  "value": [
+                    "OLEA"
+                  ]
+                }
+              ],
+              "next": "N_PERS_P1"
+            },
+            {
+              "id": "CH_LEAVE",
+              "text": "Leave.",
+              "next": "N_LEAVE_N1"
+            }
+          ]
+        },
+        {
+          "id": "N_LOOK_N1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "A laminated placard is taped beside the scanner. The tape has been replaced often; the placard hasn\u2019t.",
+          "next": "N_LOOK_K1"
+        },
+        {
+          "id": "N_LOOK_K1",
+          "type": "npc_line",
+          "speakerId": "KIOSK",
+          "text": "INSTRUCTIONS:\n1) Present barcode.\n2) Maintain a neutral facial expression. This is for camera consistency.\n3) Accept assigned routing. Do not self-route. Self-routing creates parallel truth.",
+          "next": "N_LOOK_N2"
+        },
+        {
+          "id": "N_LOOK_N2",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "Below that, in smaller print: \u201cUNALLOCATED MASS IS NOT AN ACCUSATION.\u201d\n\nThe READY light blinks as if trying not to blink too hard.",
+          "next": "R_BACK_TO_MENU_1"
+        },
+        {
+          "id": "R_BACK_TO_MENU_1",
+          "type": "redirect",
+          "target": "N_MAIN_MENU"
+        },
+        {
+          "id": "N_ASKM_P1",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Unallocated mass?",
+          "next": "N_ASKM_K1"
+        },
+        {
+          "id": "N_ASKM_K1",
+          "type": "npc_line",
+          "speakerId": "KIOSK",
+          "text": "UNALLOCATED MASS: mass with no confirmed custody endpoint.\nNot \u201cmissing.\u201d Missing implies a search obligation. This is a routing condition.",
+          "next": "N_ASKM_K2"
+        },
+        {
+          "id": "N_ASKM_K2",
+          "type": "npc_line",
+          "speakerId": "KIOSK",
+          "text": "Examples include:\n\u2014 Items that failed to arrive.\n\u2014 Items that arrived without arriving properly.\n\u2014 Items whose documentation arrived alone, which is preferable.",
+          "next": "N_ASKM_K3"
+        },
+        {
+          "id": "N_ASKM_K3",
+          "type": "npc_line",
+          "speakerId": "KIOSK",
+          "text": "If you are feeling blamed: that is a separate service window.",
+          "next": "R_BACK_TO_MENU_2"
+        },
+        {
+          "id": "R_BACK_TO_MENU_2",
+          "type": "redirect",
+          "target": "N_MAIN_MENU"
+        },
+        {
+          "id": "N_ASKA_P1",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Why does it think it didn\u2019t arrive?",
+          "next": "N_ASKA_K1"
+        },
+        {
+          "id": "N_ASKA_K1",
+          "type": "npc_line",
+          "speakerId": "KIOSK",
+          "text": "Because you are presenting a RETURN LABEL.\nReturns require an original INTAKE EVENT.\nNo intake event is recorded for this item at this facility.",
+          "next": "N_ASKA_K2"
+        },
+        {
+          "id": "N_ASKA_K2",
+          "type": "npc_line",
+          "speakerId": "KIOSK",
+          "text": "Therefore, the system must assume the item did not arrive.\nThis is not suspicion. This is database hygiene.",
+          "next": "N_ASKA_K3"
+        },
+        {
+          "id": "N_ASKA_K3",
+          "type": "npc_line",
+          "speakerId": "KIOSK",
+          "text": "If the item is physically present elsewhere, please do not confirm that here.\nThat would create a competing narrative.",
+          "next": "R_BACK_TO_MENU_3"
+        },
+        {
+          "id": "R_BACK_TO_MENU_3",
+          "type": "redirect",
+          "target": "N_MAIN_MENU"
+        },
+        {
+          "id": "N_PERS_P1",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Manual override. I\u2019m OLEA. I\u2019m closing the site.",
+          "next": "N_PERS_K1"
+        },
+        {
+          "id": "N_PERS_K1",
+          "type": "npc_line",
+          "speakerId": "KIOSK",
+          "text": "Acknowledged: OLEA-associated presence.\nClosure activities are categorized as \u201chigh sensitivity\u201d and \u201clow flexibility.\u201d",
+          "next": "N_PERS_K2"
+        },
+        {
+          "id": "N_PERS_K2",
+          "type": "npc_line",
+          "speakerId": "KIOSK",
+          "text": "Manual override is available only to:\n\u2014 Intake Supervisor (present)\n\u2014 Incident Clerk (unpanicked)\n\u2014 Authority Having Jurisdiction (undefined)",
+          "next": "N_PERS_K3"
+        },
+        {
+          "id": "N_PERS_K3",
+          "type": "npc_line",
+          "speakerId": "KIOSK",
+          "text": "You may request an override by taking a number.\nNumbers are issued after routing is assigned.",
+          "next": "N_PERS_K4"
+        },
+        {
+          "id": "N_PERS_K4",
+          "type": "npc_line",
+          "speakerId": "KIOSK",
+          "text": "This is for your protection.\nIf I override, I become involved. I am not staffed to be involved.",
+          "next": "R_BACK_TO_MENU_4"
+        },
+        {
+          "id": "R_BACK_TO_MENU_4",
+          "type": "redirect",
+          "target": "N_MAIN_MENU"
+        },
+        {
+          "id": "N_LEAVE_N1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You step back. The kiosk remains ready, like it\u2019s waiting to witness you make a better decision.",
+          "next": "END_LEAVE"
+        },
+        {
+          "id": "END_LEAVE",
+          "type": "end"
+        },
+        {
+          "id": "N_USE_P1",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Scan it.",
+          "next": "N_USE_N1"
+        },
+        {
+          "id": "N_USE_N1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You pass the Misrouted Canister Return Label under the scanner.",
+          "next": "N_USE_K1"
+        },
+        {
+          "id": "N_USE_K1",
+          "type": "npc_line",
+          "speakerId": "KIOSK",
+          "text": "BEEP.\nBarcode read: VALID.\nItem status: NOT PRESENT. Thank you for your honesty.",
+          "next": "N_USE_K2"
+        },
+        {
+          "id": "N_USE_K2",
+          "type": "npc_line",
+          "speakerId": "KIOSK",
+          "text": "Routing condition detected: FAILED ARRIVAL.\nGenerating paperwork to account for the portion of reality that did not cooperate.",
+          "next": "N_USE_N2"
+        },
+        {
+          "id": "N_USE_N2",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The printer whines, then snaps forward a strip of thermal paper.",
+          "next": "N_USE_K3"
+        },
+        {
+          "id": "N_USE_K3",
+          "type": "npc_line",
+          "speakerId": "KIOSK",
+          "text": "ROUTING SLIP ISSUED: UNALLOCATED MASS.\nDo not fold. Folding implies completion.",
+          "next": "N_USE_K4"
+        },
+        {
+          "id": "N_USE_K4",
+          "type": "npc_line",
+          "speakerId": "KIOSK",
+          "text": "Next step: Proceed to Incident Queue Stanchions.\nIf approached by staff, do not summarize. Present slip. Summaries create liability.",
+          "next": "N_USE_N3"
+        },
+        {
+          "id": "N_USE_N3",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The slip hangs half-torn from the dispenser, warm at the edge.",
+          "next": "N_USE_N4"
+        },
+        {
+          "id": "N_USE_N4",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You take it.",
+          "next": "END_ISSUE_SLIP"
+        },
+        {
+          "id": "END_ISSUE_SLIP",
+          "type": "end",
+          "outcomeId": "issue_unallocated_mass_slip",
+          "effects": [
+            {
+              "key": "paperwork.unallocatedMassSlipIssued",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "inventory.items",
+              "action": "add",
+              "value": "ITEM_ROUTING_SLIP_UNALLOCATED_MASS"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

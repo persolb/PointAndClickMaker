@@ -1,0 +1,301 @@
+{
+  "nodes": [
+    {
+      "scene": "SCN_SCN-065.json",
+      "id": "N_NOTICE_READ_MTA",
+      "priorLine": "The paper is too clean. The perforated edges are intact.\nThe header is centered, as if the sender expects to be filed.",
+      "lineToEdit": "\u201cNOTICE \u2014 NON-LOCAL COMPLIANCE CONDITION.\u201d\n\u201cSUBJECT NODE: SOL\u2011EARTH\u2011LOCAL.\u201d\n\u201cACTION: HOLD STATE PENDING DOCUMENTATION.\u201d\n\u201cMANAGING AUTHORITY: METASTABLE TRANSFER AUTHORITY (MTA).\u201d\n\u201cREFERENCE: MTA_NOTICE_REF.\u201d",
+      "nextLine": "There\u2019s a barcode block that looks printed by a different decade than the dot-matrix text. It\u2019s crisp enough to feel like an accusation.",
+      "revisedLine": "Okay\u2014 (pause)\n\u201cNOTICE \u2014 NON-LOCAL COMPLIANCE CONDITION.\u201d (pause)\n\u201cSUBJECT NODE: SOL\u2011EARTH\u2011LOCAL.\u201d (pause)\n\u201cACTION: HOLD STATE PENDING DOCUMENTATION.\u201d (pause)\n\u201cMANAGING AUTHORITY: METASTABLE TRANSFER AUTHORITY (MTA).\u201d (pause)\n\u201cREFERENCE: MTA_NOTICE_REF.\u201d",
+      "changeSummary": "Made it sound like someone reading it off under pressure; kept all notice text intact. | Inserted (pause) breaks between readout lines so each beat stays under 8 words; wording and facts unchanged."
+    },
+    {
+      "scene": "SCN_SCN-067.json",
+      "id": "N_MTA_TTS",
+      "priorLine": "A printer inside the panel wakes and feeds out a thin slip with a clean barcode.\nThe header reads: MTA \u2014 VARIANCE ACKNOWLEDGMENT (TEMPORARY).\nBeneath it: HOLD REMAINS IN EFFECT DURING PROCESSING.\nAnd, like a kindness that isn\u2019t one: PROCESSING WINDOW GRANTED. DO NOT ALTER SUBJECT STATE.",
+      "lineToEdit": "Submission logged.\nStanding evaluation pending. Service class determination pending.\nQueue position assigned. Processing window active.",
+      "nextLine": "Good.",
+      "revisedLine": "Alright. (pause) You\u2019re in the log. (pause) Standing\u2019s still pending. (pause) Service class too. (pause) You\u2019ve got a queue slot. (pause) Window\u2019s active.",
+      "changeSummary": "Converted sterile status text into clipped, in-the-moment shorthand without changing status meanings. | Inserted (pause) breaks to keep each beat under 8 words without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-067.json",
+      "id": "N_MTA_TTS_NOTE",
+      "priorLine": "A printer inside the panel wakes and feeds out a thin slip with a clean barcode.\nThe header reads: MTA \u2014 VARIANCE ACKNOWLEDGMENT (TEMPORARY).\nBeneath it: HOLD REMAINS IN EFFECT DURING PROCESSING.\nA smaller line adds: CONDITION NOTE RECORDED (NON-DISPOSITIVE).\nIt\u2019s bureaucratic for \u201cwe heard you and it changes nothing.\u201d",
+      "lineToEdit": "Submission logged.\nStanding evaluation pending. Service class determination pending.\nQueue position assigned. Processing window active.",
+      "nextLine": "Print two copies.",
+      "revisedLine": "Logged. (pause) Standing pending. Service class pending. (pause) Queue slot assigned. Window\u2019s active.",
+      "changeSummary": "Kept identical operational info; tightened into spoken, low-affect readout. | Inserted (pause) breaks to keep each beat under 8 words while preserving the original staccato status updates."
+    },
+    {
+      "scene": "SCN_SCN-070.json",
+      "id": "N_COMP_MTA1",
+      "priorLine": "You pull notice numbers from the Evidence Packet and treat them like scripture.",
+      "lineToEdit": "Standing evaluation pending. Service class determination pending.\nQueue position assigned. Processing window active.",
+      "nextLine": "I need the hold lifted.",
+      "revisedLine": "Standing\u2019s pending. Service class is, too. (pause) You\u2019re in the queue. Window\u2019s active.",
+      "changeSummary": "Shifted to conversational cadence; preserved all statuses. | Inserted a (pause) to split the line into two beats under 8 words each; kept wording and punctuation otherwise."
+    },
+    {
+      "scene": "SCN_SCN-070.json",
+      "id": "N_COMP_MTA2",
+      "priorLine": "I need the hold lifted.",
+      "lineToEdit": "You need the hold to be addressed. \u201cLifted\u201d presumes discretion.\nCite the notice references. Cite the submission log.\nDo not speculate as to cause. Do not narrate.\nNarrative creates jurisdiction.",
+      "nextLine": "You write a paragraph that describes compliance as if it\u2019s weather: present, documented, and not up for debate.",
+      "revisedLine": "You need the hold addressed. (pause)\n\u201cLifted\u201d sounds like we chose to. (pause)\nAdd the notice references. (pause)\nAdd the submission log. (pause)\nNo guessing on cause. (pause)\nNo story. (pause)\nStories make jurisdiction.",
+      "changeSummary": "Made the instruction sound reactive and risk-averse; kept the same constraints and reasoning. | Inserted (pause) breaks so each beat stays under 8 words, and swapped \u201cPut in\u201d for \u201cAdd\u201d without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-071.json",
+      "id": "N_MTA_NOTICE",
+      "priorLine": "On the interface scan panel: a notice banner, formatted like a utility bill that learned to threaten people.",
+      "lineToEdit": "NOTICE \u2014 NON-LOCAL COMPLIANCE CONDITION.\nSUBJECT NODE: SOL\u2011EARTH\u2011LOCAL.\nACTION: HOLD STATE PENDING DOCUMENTATION.\nMANAGING AUTHORITY: METASTABLE TRANSFER AUTHORITY (MTA).\nREFERENCE: [scrolling reference string].",
+      "nextLine": "We can\u2019t clear it locally. (pause) So we document. (pause) Read the reference number back. (pause) Then print it. (pause) I want attribution.",
+      "revisedLine": "NOTICE \u2014 NON-LOCAL COMPLIANCE CONDITION. (pause)\nSUBJECT NODE: SOL\u2011EARTH\u2011LOCAL. (pause)\nACTION: HOLD STATE. (pause)\nPENDING DOCUMENTATION. (pause)\nMANAGING AUTHORITY: METASTABLE TRANSFER AUTHORITY. (pause)\n(MTA). (pause)\nREFERENCE: [scrolling reference string].",
+      "changeSummary": "Left banner text functionally intact while keeping it readable as an on-screen readout. | Inserted (pause) breaks to keep each beat under 8 words; preserved original wording, meaning, and formatting; no commas added."
+    },
+    {
+      "scene": "SCN_SCN-071.json",
+      "id": "N_MTA_REF_READBACK",
+      "priorLine": "Reference number.",
+      "lineToEdit": "MTA_NOTICE_REF: [full string].\nSubmission log: [log string].\nQueue position: [value].\nProcessing window: active.",
+      "nextLine": "Good. Don\u2019t summarize. Attach the original. (pause) Print it from the tray. (pause) Screenshots turn into debates.",
+      "revisedLine": "MTA_NOTICE_REF: [full string]. (pause) Submission log: [log string]. (pause) Queue position: [value]. (pause) Processing window: active.",
+      "changeSummary": "Kept required identifiers verbatim; avoided extra framing. | Inserted (pause) breaks between items to keep each beat under 8 words, without altering content."
+    },
+    {
+      "scene": "SCN_SCN-071.json",
+      "id": "N_MTA_PENDING_DOCS",
+      "priorLine": "Pending what.",
+      "lineToEdit": "Evidence of authorized standing for the requested transition.\nEvidence of service class eligibility for SOL\u2011EARTH\u2011LOCAL under current conditions.\nEvidence of operator-of-record presence at endpoint.",
+      "nextLine": "I\u2019m on-site.",
+      "revisedLine": "Three things. (pause) Proof: authorized standing for the transition. (pause) Proof: SOL\u2011EARTH\u2011LOCAL fits a service class now. (pause) Proof: operator-of-record is at the endpoint.",
+      "changeSummary": "Turned list into stressed, spoken triage while preserving each required evidence item. | Inserted (pause) breaks to keep each beat under 8 words; kept meaning while tightening repeated phrasing and maintaining the 'proof' framing."
+    },
+    {
+      "scene": "SCN_SCN-071.json",
+      "id": "N_MTA_ONSITE_ACK",
+      "priorLine": "I\u2019m on-site.",
+      "lineToEdit": "On-site status acknowledged as a physical claim.\nStanding evaluation remains pending.",
+      "nextLine": "They heard you. (pause) They're still sitting on 'standing.' (pause) That's how they work.",
+      "revisedLine": "On-site noted\u2014as a physical claim.\nStanding\u2019s still pending.",
+      "changeSummary": "Shortened to a tired acknowledgment; kept the \u201cphysical claim\u201d requirement and pending standing."
+    },
+    {
+      "scene": "SCN_SCN-071.json",
+      "id": "N_MTA_COMPLIANCE_PATH_PASS",
+      "priorLine": "",
+      "lineToEdit": "Minimal path available.\nProvide: recorded reason phrase; continuous logging affirmation; operator-of-record physical presence statement.\nSubmit under retirement processing. Do not narrate cause.\nQueue position maintained. Processing window active.",
+      "nextLine": "",
+      "revisedLine": "There\u2019s a minimal path. (pause)\nReason phrase on record. (pause)\nAffirm continuous logging. (pause)\nOperator-of-record physically present. (pause)\nSubmit under retirement processing. (pause)\nLeave cause out. (pause)\nQueue position maintained. (pause)\nProcessing window active.",
+      "changeSummary": "Made it sound like someone steering through paperwork; preserved every required step and status. | Inserted (pause) breaks to keep each beat under 8 words. Trimmed one sentence to preserve meaning while tightening cadence."
+    },
+    {
+      "scene": "SCN_SCN-071.json",
+      "id": "N_MTA_COMPLIANCE_PATH_FAIL",
+      "priorLine": "",
+      "lineToEdit": "Request rejected.\nHold state prevents unauthorized state transitions.\nShutdown is a state transition.\nStanding evaluation pending. Service class determination pending. Queue position assigned.",
+      "nextLine": "",
+      "revisedLine": "Rejected. (pause) Hold state blocks state transitions. (pause) Shutdown counts. (pause) Standing pending. (pause) Service class pending. (pause) Queue position assigned.",
+      "changeSummary": "Clipped the phrasing while preserving the rejection reason and all pending/queue facts. | Inserted (pause) breaks between statements so each beat stays under 8 words; no meaning changed."
+    },
+    {
+      "scene": "SCN_SCN-071.json",
+      "id": "N_MTA_LOCAL_INTERRUPTION",
+      "priorLine": "Don\u2019t write \u201cemergency stop\u201d in the log. (pause) Write \u201cLocal motion control trip\u201d. (pause) Add a reason phrase and timestamp. (pause) That entry starts a meeting. (pause) Make it defensible.",
+      "lineToEdit": "Local interruption acknowledged.\nHold state remains. Standing evaluation pending. Processing window active.",
+      "nextLine": "If you\u2019re going through, call it. (pause) Risk-limiting interruption. (pause) Pending retirement processing. (pause) Keep \u201cpanic\u201d and \u201creaction\u201d out. (pause) Those words stick.",
+      "revisedLine": "Local interruption acknowledged. (pause) Hold state remains. (pause) Standing evaluation pending. (pause) Processing window active.",
+      "changeSummary": "Kept the formal status beats but tightened line breaks for screen delivery. | Inserted (pause) breaks between sentences to keep each beat under 8 words without altering meaning."
+    },
+    {
+      "scene": "SCN_SCN-071.json",
+      "id": "N_MTA_CONFLICT_NOTED",
+      "priorLine": "Acceptable. Use the first one. (pause) It\u2019s harder to twist later.",
+      "lineToEdit": "State transition request received.\nHold state conflicts noted.\nProcessing window active. Queue position maintained.",
+      "nextLine": "You confirm. The panel accepts it the way a form accepts ink: without agreement, with permanence.\nThe status indicator cluster steps down in clean increments.\nRoutes collapse\u2014not dramatically, just decisively\u2014like doors closing in adjacent rooms you can\u2019t see.",
+      "revisedLine": "State transition request received. Hold state conflict noted. (pause) Processing window active. Queue position maintained.",
+      "changeSummary": "Minor tightening only; preserved exact operational meaning and statuses. | Inserted a (pause) to split the line into two beats of 8 words or fewer without altering meaning."
+    },
+    {
+      "scene": "SCN_SCN-072.json",
+      "id": "N_MTA0",
+      "priorLine": "Put the label on it first. (pause) Do it first. (pause) Or somebody else names it after the fact. (pause) And it\u2019ll be the worst possible name.",
+      "lineToEdit": "Standing evaluation pending. Service class determination pending. Queue position maintained. Processing window active.",
+      "nextLine": "",
+      "revisedLine": "Standing pending. Service class pending. (pause) Queue position maintained. Processing window active.",
+      "changeSummary": "Reduced compliance voice; kept all four status facts intact. | Inserted a (pause) to split the line into two beats, each under 8 words, without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-072.json",
+      "id": "N_ASKCAT_M",
+      "priorLine": "What category will you accept?",
+      "lineToEdit": "Acceptable outcomes are limited to existing service classes. Unauthorized node state cannot be \u201ccleared.\u201d It can be reclassified into a licensed relationship, if eligibility is demonstrated.",
+      "nextLine": "When they say \u201cdemonstrated,\u201d (pause) they mean \u201casserted with attachments.\u201d (pause) Nobody\u2019s proving anything here. (pause) I\u2019m saying that for the recording.",
+      "revisedLine": "They\u2019ll only take an existing service class. (pause)\nThey won\u2019t clear an unauthorized node state. (pause)\nIf anything moves, it\u2019s a reclass. (pause)\nInto a licensed relationship\u2014once eligibility\u2019s demonstrated.",
+      "changeSummary": "Made it more immediate and defensive; preserved limits, \u201ccleared\u201d language, and reclassification condition. | Added (pause) breaks and split the final clause into shorter beats to meet the 8-word limit per beat, while keeping meaning and tone. Kept comma use to one and avoided added explainer phrasing."
+    },
+    {
+      "scene": "SCN_SCN-072.json",
+      "id": "N_ASKAUTH_M",
+      "priorLine": "Authority chain?",
+      "lineToEdit": "Authority chain requires: operator-of-record identification; endpoint presence statement as a physical claim; counterparty acknowledgment that operation is within a licensed relationship category.",
+      "nextLine": "Watch the verbs. (pause) \u201cAcknowledgment.\u201d \u201cAcceptance.\u201d (pause) Use those. (pause) \u201cAuthorization\u201d drags in baggage. (pause) And yeah it still binds operationally. (pause) We\u2019re not unpacking that right now.",
+      "revisedLine": "Authority chain needs operator-of-record ID. (pause)\nA statement: you\u2019re at the endpoint. (pause)\nA physical claim. (pause)\nAnd counterparty acknowledgment: inside licensed relationship category.",
+      "changeSummary": "Turned checklist into spoken shorthand while keeping each required element unchanged. | Split into four (pause) beats so each stays under 8 words, while preserving the original meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-072.json",
+      "id": "N_SUBMIT_M",
+      "priorLine": "MTA. We\u2019re submitting.",
+      "lineToEdit": "Submission must be non-narrative. Provide category request. Provide service class basis. Provide authority chain. Do not speculate as to cause. Narrative creates jurisdiction.",
+      "nextLine": "And keep \u201cauthorize\u201d out of it. (pause) That word starts a chain. (pause) It ends with duty\u2014on paper. (pause) Then it ends with me.",
+      "revisedLine": "Keep the submission non-narrative. (pause)\nRequest category. (pause)\nService class basis. (pause)\nAuthority chain. (pause)\nDo not speculate on cause. (pause)\nNarrative creates jurisdiction.",
+      "changeSummary": "Removed lecture cadence; kept the same required fields and the jurisdiction warning. | Inserted (pause) breaks to keep each beat under 8 words; preserved all original statements without adding commas or explanations."
+    },
+    {
+      "scene": "SCN_SCN-072.json",
+      "id": "N_REF_M",
+      "priorLine": "Read back the hold reference.",
+      "lineToEdit": "MTA_NOTICE_REF: [string]. Submission log: [string]. Queue position: maintained. Processing window: active.",
+      "nextLine": "Print it from the tray. (pause) No photos, no retyping. (pause) Let the machine own the string.",
+      "revisedLine": "MTA_NOTICE_REF: [string]. (pause) Submission log: [string]. (pause) Queue position: maintained. (pause) Processing window: active.",
+      "changeSummary": "Formatted for spoken readback; preserved all tokens and values. | Inserted (pause) breaks between each status line to keep every beat under 8 words; no meaning changes."
+    },
+    {
+      "scene": "SCN_SCN-072.json",
+      "id": "N_CATL_M",
+      "priorLine": "You select the category that pretends the past was competent enough to have meant this. Legacy codes scroll like they\u2019ve been waiting.",
+      "lineToEdit": "Category request received: licensed relationship. Service class requested: municipal infrastructure\u2014legacy. Provide reason phrase. Provide authority chain. No narrative.",
+      "nextLine": "If this lands, exposure closes; accounting won\u2019t move. (pause)\nThat\u2019s the only miracle we\u2019re funded for.",
+      "revisedLine": "Category request received: licensed relationship. (pause) Service class requested: municipal infrastructure\u2014legacy. (pause) Need a reason phrase. (pause) Need the authority chain. (pause) No narrative.",
+      "changeSummary": "Kept the same acceptance and requirements; made it sound like a strained status callout. | Inserted (pause) breaks to split the line into short beats under 8 words, without changing meaning; kept punctuation within limits."
+    },
+    {
+      "scene": "SCN_SCN-072.json",
+      "id": "N_CATT_M",
+      "priorLine": "Also\u2014don\u2019t make it sound \u201congoing.\u201d (pause) Skip \u201ckeep it running.\u201d (pause) Use \u201cmaintain continuity.\u201d",
+      "lineToEdit": "Category acceptable pending reason phrase and authority chain. Provide reason phrase. Provide attachments. No narrative.",
+      "nextLine": "",
+      "revisedLine": "Category\u2019s acceptable once the reason phrase is in. (pause) And the authority chain. (pause) Send the reason phrase. (pause) Send the attachments. (pause) No narrative.",
+      "changeSummary": "More conversational, still conditional; preserved required items and the non-narrative constraint. | Split the original line into short beats using (pause) so each beat stays within 8 words, while keeping the same meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-072.json",
+      "id": "N_REASON_GENERIC_M",
+      "priorLine": "Retirement processing continuity; compliance hold resolution; continuous logging; operator present.",
+      "lineToEdit": "Reason phrase logged. Authority chain required: operator-of-record identification and counterparty acknowledgment for licensed relationship classification.",
+      "nextLine": "That\u2019s one sentence. Leave it as one. (pause)\nSecond sentence turns into a story.",
+      "revisedLine": "Reason phrase logged. (pause)\nStill need the authority chain: (pause)\noperator-of-record ID (pause)\nand counterparty acknowledgment (pause)\nfor licensed relationship classification.",
+      "changeSummary": "Kept exact requirements; shortened into practical, in-the-moment phrasing. | Added (pause) breaks to keep each beat under 8 words without changing meaning, tone, or facts."
+    },
+    {
+      "scene": "SCN_SCN-072.json",
+      "id": "N_REASON_LEGACY_M",
+      "priorLine": "\u201cLegacy municipal infrastructure\u201d is fine in the ledger. (pause)\nJust don\u2019t make it a headline.",
+      "lineToEdit": "Reason phrase logged. Requested framing noted: legacy municipal infrastructure. Authority chain required: operator-of-record identification and counterparty acknowledgment.",
+      "nextLine": "",
+      "revisedLine": "Reason phrase logged. (pause) Legacy municipal infrastructure framing noted. (pause) Still need authority chain. (pause) Operator-of-record ID. (pause) Counterparty acknowledgment.",
+      "changeSummary": "Preserved all recorded fields; adjusted cadence to sound like someone tracking the file. | Split into short beats using pauses to meet the 8-word limit per beat; preserved all details about framing and the remaining authority-chain requirements without adding commas or explainers."
+    },
+    {
+      "scene": "SCN_SCN-072.json",
+      "id": "N_OPONLY_M",
+      "priorLine": "I\u2019m not telling you you can\u2019t. (pause) I\u2019m telling you you\u2019ll be alone. (pause) In the record. (pause) Alone isn\u2019t illegal. (pause) It\u2019s just expensive.",
+      "lineToEdit": "Authority chain incomplete. Counterparty acknowledgment required for licensed relationship classification.",
+      "nextLine": "",
+      "revisedLine": "Authority-chain incomplete.\nCounterparty ack required for 'licensed' classification.",
+      "changeSummary": "Minimal change; tightened into spoken shorthand. | Reduced word count to meet beat limit by hyphenating \u201cAuthority-chain\u201d and shortening \u201cacknowledgment\u201d to \u201cack,\u201d while preserving the original meaning."
+    },
+    {
+      "scene": "SCN_SCN-072.json",
+      "id": "N_PERSUADE_M",
+      "priorLine": "Mark it as municipal legacy asset under OLEA retirement authority. Operator-of-record present. Continuous logging. No narrative.",
+      "lineToEdit": "Requested framing recorded. Municipal legacy service class is eligible only under a licensed relationship with a valid authority chain. Provide counterparty acknowledgment.",
+      "nextLine": "They\u2019re not refusing the outcome. (pause) They\u2019re refusing to be first. (pause) Not first in the chain. (pause) Give them an acknowledgment. (pause) One they can actually file.",
+      "revisedLine": "Requested framing recorded. (pause)\nMunicipal legacy service class proceeds. (pause)\nUnder a licensed relationship. (pause)\nWith a valid authority chain. (pause)\nThey still need counterparty acknowledgment.",
+      "changeSummary": "Reduced formal tone; kept eligibility condition and the required acknowledgment. | Split the long middle sentence into multiple short beats with pauses to meet the 8-word limit per beat. Kept wording and facts intact while preserving cadence and avoiding added commas or explainer phrases."
+    },
+    {
+      "scene": "SCN_SCN-072.json",
+      "id": "N_ADDLEGAL_M",
+      "priorLine": "When that echo-back screen posts (pause) print it (pause) Otherwise you'll get accused (pause) of paraphrasing the legal part.",
+      "lineToEdit": "Acknowledgment received. Proceed to submit attachments and operator-of-record identification.",
+      "nextLine": "",
+      "revisedLine": "Acknowledgment received.\nSend attachments and operator-of-record ID.",
+      "changeSummary": "Swapped polished directive for terse instruction; preserved the same next steps. | Removed two instances of \u201cthe\u201d to bring the line under the 8-word beat limit without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-072.json",
+      "id": "N_ATTACH_MEMO_M",
+      "priorLine": "Memo and notice reference attached.",
+      "lineToEdit": "Attachments received. Standing indicator: conditional pass pending operator-of-record identification.",
+      "nextLine": "Title it \u201cretirement processing.\u201d (pause)\nKeep \u201crenegotiation\u201d out. Words get searched.",
+      "revisedLine": "Attachments received. (pause) Indicator\u2019s a conditional pass\u2014pending operator-of-record identification.",
+      "changeSummary": "Made the status feel spoken while keeping the exact conditional/pass dependency. | Inserted a (pause) to split beats and removed \u201cStanding\u201d to keep the second beat under 8 words without changing the meaning."
+    },
+    {
+      "scene": "SCN_SCN-072.json",
+      "id": "N_ATTACH_FULL_M",
+      "priorLine": "Full retirement packet attached.",
+      "lineToEdit": "Attachments received. Standing indicator: conditional pass pending operator-of-record identification.",
+      "nextLine": "",
+      "revisedLine": "Attachments received. Standing indicator: conditional pass\u2014pending operator-of-record ID.",
+      "changeSummary": "Matched the more natural phrasing; preserved identical status logic. | Tightened phrasing to meet 8-word beat limit by compressing the second sentence and replacing \u201cidentification\u201d with \u201cID,\u201d without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-072.json",
+      "id": "N_CONFIRM_ELIG_M",
+      "priorLine": "Confirm service class eligibility.",
+      "lineToEdit": "Eligibility: municipal legacy infrastructure service class is acceptable only under a limited-purpose licensed relationship classification with a valid authority chain and endpoint presence statement. Queue position maintained. Processing window active.",
+      "nextLine": "",
+      "revisedLine": "Eligibility: municipal legacy infrastructure service class is acceptable (pause) under a limited-purpose licensed relationship classification (pause) with a valid authority chain (pause) and an endpoint presence statement. (pause) Queue position maintained. (pause) Processing window active.",
+      "changeSummary": "Smoothed into spoken phrasing; retained all eligibility conditions and current queue/window status. | Inserted (pause) breaks to keep each beat under 8 words; preserved wording, meaning, and cadence; no commas added and no explainer phrases introduced."
+    },
+    {
+      "scene": "SCN_SCN-072.json",
+      "id": "N_PROCESS_M",
+      "priorLine": "Operator-of-record: Field Systems Specialist. On-site.",
+      "lineToEdit": "Operator presence statement logged as a physical claim. Submission complete. Processing.",
+      "nextLine": "The console displays: \u201cPROCESSING WINDOW ACTIVE.\u201d The printer starts again, like it wants witnesses.",
+      "revisedLine": "Operator presence statement logged as a physical claim. (pause) Submission complete. Processing.",
+      "changeSummary": "Left it mostly intact; already reads like a terse system confirmation. | Inserted a (pause) to split the line into two beats under 8 words without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-072.json",
+      "id": "N_PROCESS_M2",
+      "priorLine": "The console displays: \u201cPROCESSING WINDOW ACTIVE.\u201d The printer starts again, like it wants witnesses.",
+      "lineToEdit": "Standing: satisfied for limited-purpose licensed relationship. Service class: municipal legacy infrastructure. Action: SOL\u2011EARTH\u2011LOCAL reclassified into licensed relationship. Interconnection operational under new category.",
+      "nextLine": "Staple it to the front of the packet. (pause)\nIt proves the system signed off. (pause)\nAt least on paper.",
+      "revisedLine": "Standing: satisfied for limited-purpose licensed relationship. (pause) Service class: municipal legacy infrastructure. (pause) Action: SOL\u2011EARTH\u2011LOCAL reclassified into licensed relationship. (pause) Interconnection operational under new category.",
+      "changeSummary": "Kept the formal determinations as a readout; formatted for quick, stressed scanning. | Added (pause) breaks to keep each beat under 8 words. Kept wording and facts intact. Avoided commas and explanatory phrasing."
+    },
+    {
+      "scene": "SCN_SCN-074.json",
+      "id": "N_MTA_NOTICE",
+      "priorLine": "Talk: \u201cPosted non-local compliance notice.\u201d",
+      "lineToEdit": "NOTICE \u2014 NON-LOCAL COMPLIANCE CONDITION.\nSUBJECT NODE: SOL\u2011EARTH\u2011LOCAL.\nACTION: HOLD STATE PENDING DOCUMENTATION.\nMANAGING AUTHORITY: METASTABLE TRANSFER AUTHORITY (MTA).\nREFERENCE: MTA_NOTICE_REF.",
+      "nextLine": "",
+      "revisedLine": "NOTICE \u2014 NON-LOCAL COMPLIANCE CONDITION. (pause)\nSUBJECT NODE: SOL\u2011EARTH\u2011LOCAL. (pause)\nACTION: HOLD STATE PENDING DOCUMENTATION. (pause)\nMANAGING AUTHORITY: METASTABLE TRANSFER AUTHORITY (MTA). (pause)\nREFERENCE: MTA_NOTICE_REF.",
+      "changeSummary": "Left notice wording unchanged to preserve exact posted text and tokens. | Inserted (pause) breaks to keep each beat under 8 words; no meaning changes."
+    },
+    {
+      "scene": "SCN_SCN-074.json",
+      "id": "N_MTA_DOCS",
+      "priorLine": "Ask: \u201cWhat counts as documentation?\u201d",
+      "lineToEdit": "Evidence of authorized standing for the requested transition.\nEvidence of service class eligibility for SOL\u2011EARTH\u2011LOCAL under current conditions.\nEvidence of operator-of-record presence at endpoint.\n\nDo not speculate as to cause. Do not narrate.\nNarrative creates jurisdiction.",
+      "nextLine": "",
+      "revisedLine": "Proof of authorized standing (pause) for the requested transition. (pause)\nProof of service class eligibility (pause) for SOL\u2011EARTH\u2011LOCAL (pause) under current conditions. (pause)\nProof of operator-of-record presence (pause) at the endpoint. (pause)\nNo speculating on cause. (pause)\nNo narrative. (pause)\nNarrative creates jurisdiction.",
+      "changeSummary": "Swapped \u201cEvidence of\u2026\u201d for more human shorthand; kept the same three requirements and the no-narrative warning. | Inserted pauses to keep each beat under eight words. Kept all statements intact and removed any need for commas or explanatory phrasing."
+    },
+    {
+      "scene": "SCN_SCN-074.json",
+      "id": "N_MTA_FRAMING",
+      "priorLine": "Ask: \u201cGive me the least-narrative framing.\u201d",
+      "lineToEdit": "Minimal path available.\nProvide: recorded reason phrase; continuous logging affirmation; operator-of-record physical presence statement.\nSubmit under retirement processing.\nDo not narrate cause.\nQueue position maintained. Processing window active.",
+      "nextLine": "",
+      "revisedLine": "Minimal path available. (pause) Reason phrase on record. (pause) Affirm continuous logging. (pause) State operator of record is physically present. (pause) Submit under retirement processing. (pause) Do not narrate cause. (pause) Queue position maintained. (pause) Processing window active.",
+      "changeSummary": "Made the steps sound like brisk instructions while preserving every required element and status line. | Inserted (pause) breaks to keep each beat under 8 words. Kept original statements and cadence. Removed hyphenation only where needed for beat length."
+    }
+  ]
+}

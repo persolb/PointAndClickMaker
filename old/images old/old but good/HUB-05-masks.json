@@ -1,0 +1,56 @@
+{
+  "screen_id": "HUB-05",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Visitor book",
+      "slug": "visitor_book",
+      "file": "images/HUB-05-mask-visitor_book.png",
+      "boxes": [
+        {
+          "label": "Visitor book",
+          "box_2d": [
+            756,
+            49,
+            915,
+            404
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Safe / lockbox",
+      "slug": "safe_lockbox",
+      "file": "images/HUB-05-mask-safe_lockbox.png",
+      "boxes": [
+        {
+          "label": "Safe / lockbox",
+          "box_2d": [
+            238,
+            283,
+            735,
+            555
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Shred bin",
+      "slug": "shred_bin",
+      "file": "images/HUB-05-mask-shred_bin.png",
+      "boxes": [
+        {
+          "label": "Shred bin",
+          "box_2d": [
+            586,
+            584,
+            822,
+            725
+          ]
+        }
+      ]
+    }
+  ]
+}

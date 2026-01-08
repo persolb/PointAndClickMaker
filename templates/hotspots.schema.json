@@ -1,0 +1,270 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/hotspots.schema.json",
+  "title": "Hotspots Schema",
+  "description": "Defines interactive hotspots per screen as small state machines with geometry, conditions, and verb-driven interactions.",
+  "type": "object",
+  "required": ["hotspotsByScreen"],
+  "additionalProperties": false,
+
+  "properties": {
+    "hotspotsByScreen": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/hotspotsForScreen" }
+    }
+  },
+
+  "$defs": {
+    "hotspotsForScreen": {
+      "type": "object",
+      "required": ["screenId", "hotspots"],
+      "additionalProperties": true,
+      "properties": {
+        "screenId": {
+          "type": "string",
+          "description": "Screen id from screens.json (e.g., HUB-01)."
+        },
+        "variantId": {
+          "type": "string",
+          "description": "Optional: restrict these hotspots to a specific variant state (e.g., VAR-15C)."
+        },
+        "hotspots": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/hotspot" }
+        }
+      }
+    },
+
+    "hotspot": {
+      "type": "object",
+      "required": ["id", "name", "geometry", "states"],
+      "additionalProperties": true,
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Stable hotspot identifier.",
+          "pattern": "^[A-Z][A-Z0-9_\\-]{2,64}$"
+        },
+        "name": {
+          "type": "string",
+          "description": "Human-readable name."
+        },
+        "geometry": {
+          "$ref": "#/$defs/geometry"
+        },
+        "priority": {
+          "type": "integer",
+          "description": "Optional: tie-breaker when hotspots overlap (higher wins).",
+          "default": 0
+        },
+        "enabled": {
+          "type": "boolean",
+          "description": "Optional global enable/disable switch. If false, hotspot never activates.",
+          "default": true
+        },
+        "states": {
+          "type": "array",
+          "minItems": 1,
+          "description": "Ordered list; first matching state's conditions wins.",
+          "items": { "$ref": "#/$defs/hotspotState" }
+        }
+      }
+    },
+
+    "geometry": {
+      "type": "object",
+      "required": ["type"],
+      "additionalProperties": true,
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["rect", "poly", "mask"],
+          "description": "Geometry type used for hit-testing."
+        },
+
+        "x": { "type": "integer", "description": "Rect x (pixels in native resolution)." },
+        "y": { "type": "integer", "description": "Rect y (pixels in native resolution)." },
+        "w": { "type": "integer", "description": "Rect width (pixels)." },
+        "h": { "type": "integer", "description": "Rect height (pixels)." },
+
+        "points": {
+          "type": "array",
+          "description": "Polygon points (pixels in native resolution).",
+          "items": {
+            "type": "object",
+            "required": ["x", "y"],
+            "properties": {
+              "x": { "type": "integer" },
+              "y": { "type": "integer" }
+            },
+            "additionalProperties": false
+          },
+          "minItems": 3
+        },
+
+        "maskId": {
+          "type": "string",
+          "description": "Mask asset id/name for pixel-perfect hit-testing (engine-defined)."
+        }
+      },
+
+      "allOf": [
+        {
+          "if": { "properties": { "type": { "const": "rect" } } },
+          "then": { "required": ["x", "y", "w", "h"] }
+        },
+        {
+          "if": { "properties": { "type": { "const": "poly" } } },
+          "then": { "required": ["points"] }
+        },
+        {
+          "if": { "properties": { "type": { "const": "mask" } } },
+          "then": { "required": ["maskId"] }
+        }
+      ]
+    },
+
+    "hotspotState": {
+      "type": "object",
+      "required": ["id"],
+      "additionalProperties": true,
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "State id within hotspot.",
+          "pattern": "^[A-Z0-9][A-Z0-9_\\-]{0,64}$"
+        },
+
+        "conditions": {
+          "type": "array",
+          "description": "Conditions for this state to be active. If omitted/empty, always matches.",
+          "items": { "$ref": "#/$defs/condition" },
+          "default": []
+        },
+
+        "label": {
+          "type": "string",
+          "description": "Short UI label shown on hover/tap."
+        },
+
+        "cursor": {
+          "type": "string",
+          "description": "Optional cursor hint for UI (e.g., look, use, talk, go, pickup)."
+        },
+
+        "defaultVerb": {
+          "type": "string",
+          "description": "Optional: which verb the UI should treat as default on simple tap/click."
+        },
+
+        "interactions": {
+          "type": "array",
+          "minItems": 1,
+          "description": "Verb-driven interactions available in this state.",
+          "items": { "$ref": "#/$defs/interaction" }
+        }
+      }
+    },
+
+    "interaction": {
+      "type": "object",
+      "required": ["verb"],
+      "additionalProperties": true,
+      "properties": {
+        "verb": {
+          "type": "string",
+          "description": "Interaction verb name (engine-defined). Examples: look, use, talk, pickup, push, pull."
+        },
+
+        "conditions": {
+          "type": "array",
+          "description": "Optional: conditions for this specific interaction to appear/be allowed.",
+          "items": { "$ref": "#/$defs/condition" },
+          "default": []
+        },
+
+        "sceneId": {
+          "type": "string",
+          "description": "Preferred: triggers a scene (scenes.json)."
+        },
+
+        "transitionToScreen": {
+          "type": "string",
+          "description": "Optional: immediate navigation to another screen."
+        },
+
+        "effects": {
+          "type": "array",
+          "description": "Optional: state mutations applied on interaction (small, deterministic).",
+          "items": { "$ref": "#/$defs/effect" },
+          "default": []
+        },
+
+        "playAnimation": {
+          "type": "string",
+          "description": "Optional: animation id (engine-defined)."
+        },
+
+        "playSound": {
+          "type": "string",
+          "description": "Optional: sound id (engine-defined)."
+        }
+      },
+
+      "allOf": [
+        {
+          "description": "At least one action must be defined.",
+          "anyOf": [
+            { "required": ["sceneId"] },
+            { "required": ["transitionToScreen"] },
+            { "required": ["effects"] },
+            { "required": ["playAnimation"] },
+            { "required": ["playSound"] }
+          ]
+        }
+      ]
+    },
+
+    "condition": {
+      "type": "object",
+      "description": "A simple boolean gate expression. Engine defines key namespace and evaluation.",
+      "required": ["key", "op"],
+      "additionalProperties": true,
+      "properties": {
+        "key": { "type": "string" },
+        "op": {
+          "type": "string",
+          "enum": ["==", "!=", ">", ">=", "<", "<=", "in", "not_in", "exists", "not_exists"]
+        },
+        "value": { "type": ["string", "number", "boolean", "array", "null"] }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": { "op": { "enum": ["exists", "not_exists"] } }
+          },
+          "then": {},
+          "else": { "required": ["value"] }
+        }
+      ]
+    },
+
+    "effect": {
+      "type": "object",
+      "description": "A deterministic state mutation (same shape as scenes/dialogue effects).",
+      "required": ["key", "action"],
+      "additionalProperties": true,
+      "properties": {
+        "key": { "type": "string" },
+        "action": {
+          "type": "string",
+          "enum": ["set", "increment", "decrement", "add", "remove", "toggle"]
+        },
+        "value": { "type": ["string", "number", "boolean", "array", "null"] }
+      }
+    }
+  }
+}
+

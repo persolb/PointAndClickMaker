@@ -1,0 +1,39 @@
+{
+  "screen_id": "MIS-14",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Comparison jig",
+      "slug": "comparison_jig",
+      "file": "images/MIS-14-mask-comparison_jig.png",
+      "boxes": [
+        {
+          "label": "Comparison jig",
+          "box_2d": [
+            435,
+            151,
+            678,
+            303
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Photo station",
+      "slug": "photo_station",
+      "file": "images/MIS-14-mask-photo_station.png",
+      "boxes": [
+        {
+          "label": "Photo station",
+          "box_2d": [
+            260,
+            560,
+            608,
+            692
+          ]
+        }
+      ]
+    }
+  ]
+}

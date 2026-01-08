@@ -1,0 +1,74 @@
+{
+  "generated_at_unix": 1767148319,
+  "provider": "gemini",
+  "model": "gemini-3-pro-image-preview",
+  "size": "1536x1024",
+  "quality": "high",
+  "output_format": "png",
+  "screens": [
+    {
+      "screen_id": "HUB-14",
+      "prompt_path": "story_specific_gen/prompts/022_HUB-14-arrangement.md",
+      "output_path": "story_specific_gen/images/HUB-14.png",
+      "raw_output_path": "story_specific_gen/images/raw/HUB-14-raw.png",
+      "skipped": false,
+      "variants": [
+        {
+          "variant": 1,
+          "raw_output_path": "story_specific_gen/images/raw/HUB-14-raw-v1.png",
+          "output_path": "story_specific_gen/images/HUB-14-v1.png",
+          "logs": [
+            "Sending request via Gemini (3 reference image(s))...",
+            "  story_specific_gen/prompts/022_HUB-14-sample.png",
+            "  story_specific_gen/images/HUB-06.png",
+            "  story_specific_gen/images/HUB-08.png",
+            "Response received, writing image..."
+          ],
+          "model": "gemini-3-pro-image-preview",
+          "used_reference_images": [
+            "story_specific_gen/prompts/022_HUB-14-sample.png",
+            "story_specific_gen/images/HUB-06.png",
+            "story_specific_gen/images/HUB-08.png"
+          ]
+        },
+        {
+          "variant": 2,
+          "raw_output_path": "story_specific_gen/images/raw/HUB-14-raw-v2.png",
+          "output_path": "story_specific_gen/images/HUB-14-v2.png",
+          "logs": [
+            "Sending request via Gemini (3 reference image(s))...",
+            "  story_specific_gen/prompts/022_HUB-14-sample.png",
+            "  story_specific_gen/images/HUB-06.png",
+            "  story_specific_gen/images/HUB-08.png",
+            "Response received, writing image..."
+          ],
+          "model": "gemini-3-pro-image-preview",
+          "used_reference_images": [
+            "story_specific_gen/prompts/022_HUB-14-sample.png",
+            "story_specific_gen/images/HUB-06.png",
+            "story_specific_gen/images/HUB-08.png"
+          ]
+        },
+        {
+          "variant": 3,
+          "raw_output_path": "story_specific_gen/images/raw/HUB-14-raw-v3.png",
+          "output_path": "story_specific_gen/images/HUB-14-v3.png",
+          "logs": [
+            "Sending request via Gemini (3 reference image(s))...",
+            "  story_specific_gen/prompts/022_HUB-14-sample.png",
+            "  story_specific_gen/images/HUB-06.png",
+            "  story_specific_gen/images/HUB-08.png",
+            "Response received, writing image..."
+          ],
+          "model": "gemini-3-pro-image-preview",
+          "used_reference_images": [
+            "story_specific_gen/prompts/022_HUB-14-sample.png",
+            "story_specific_gen/images/HUB-06.png",
+            "story_specific_gen/images/HUB-08.png"
+          ]
+        }
+      ],
+      "selected_variant": 2
+    }
+  ]
+}

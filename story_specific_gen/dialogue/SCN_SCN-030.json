@@ -1,0 +1,391 @@
+{
+  "dialogueGraphs": [
+    {
+      "id": "DG_SCN030_TRAINING_WAIVER_RETURN",
+      "sceneId": "SCN-030",
+      "startNodeId": "N001_INTRO",
+      "nodes": [
+        {
+          "id": "N001_INTRO",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The Copy and Fax Room smells like hot plastic and old staples.\n\nThe fax machine sits under a laminated sign that says: \u201cTRANSMISSIONS ARE RECORDS.\u201d\n\nIn your hands: the training waiver template you pulled earlier\u2014blank where it matters.",
+          "conditions": [
+            {
+              "key": "paperwork.trainingWaiverTemplateCollected",
+              "op": "==",
+              "value": true
+            },
+            {
+              "key": "paperwork.trainingWaiverSigned",
+              "op": "==",
+              "value": false
+            }
+          ],
+          "next": "N010_MAIN_MENU"
+        },
+        {
+          "id": "N010_MAIN_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_USE_FAX",
+              "text": "use: Fax the waiver template to OLEA Legal for signature.",
+              "effects": [
+                {
+                  "key": "paperwork.trainingWaiverFaxed",
+                  "action": "set",
+                  "value": true
+                }
+              ],
+              "next": "N020_SEND_PLAYER"
+            },
+            {
+              "id": "C_LOOK_TEMPLATE",
+              "text": "look: Read the template language before you send it.",
+              "next": "N030_TEMPLATE_READ"
+            },
+            {
+              "id": "C_SHOW_STICKER",
+              "text": "show: Use a service code sticker to force a confirmation stamp and darker contrast.",
+              "conditions": [
+                {
+                  "key": "inventory.items",
+                  "op": "in",
+                  "value": [
+                    "ITEM_SERVICE_CODE_STICKER"
+                  ]
+                }
+              ],
+              "checks": [
+                {
+                  "type": "item",
+                  "itemId": "ITEM_SERVICE_CODE_STICKER",
+                  "has": true
+                }
+              ],
+              "onPassNext": "N040_SERVICE_MODE",
+              "onFailNext": "N050_SERVICE_FAIL"
+            },
+            {
+              "id": "C_SHOW_MEMORY",
+              "text": "show: Enter service mode from memory (force confirmation + contrast).",
+              "conditions": [
+                {
+                  "key": "inventory.items",
+                  "op": "not_in",
+                  "value": [
+                    "ITEM_SERVICE_CODE_STICKER"
+                  ]
+                }
+              ],
+              "checks": [
+                {
+                  "type": "skill",
+                  "skill": "PROCEDURE",
+                  "dc": 10
+                }
+              ],
+              "onPassNext": "N040_SERVICE_MODE",
+              "onFailNext": "N050_SERVICE_FAIL"
+            },
+            {
+              "id": "C_LEAVE",
+              "text": "leave: Step away.",
+              "next": "N900_END_LEAVE"
+            }
+          ]
+        },
+        {
+          "id": "N011_REDIRECT_MAIN",
+          "type": "redirect",
+          "target": "N010_MAIN_MENU"
+        },
+        {
+          "id": "N020_SEND_PLAYER",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Send it. Mark it urgent.",
+          "next": "N021_SEND_NARR"
+        },
+        {
+          "id": "N021_SEND_NARR",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The machine takes the first page like it\u2019s accepting blame.\n\nIt dials. It squeals. It goes quiet in a way that suggests \u201cquiet\u201d is also a setting with liability implications.",
+          "next": "N022_SEND_NARR2"
+        },
+        {
+          "id": "N022_SEND_NARR2",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "A minute later, the tray twitches.",
+          "next": "N100_RETURN_INTRO"
+        },
+        {
+          "id": "N030_TEMPLATE_READ",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The template is written in a tone that assumes someone will later ask why it existed.\n\nThe checkbox reads: \u201cI acknowledge receipt of required training materials.\u201d\n\nNot \u201cI completed.\u201d Not \u201cI understood.\u201d\n\nJust receipt\u2014like training is a package that can be delivered to a body.",
+          "next": "N031_AFTER_TEMPLATE_MENU"
+        },
+        {
+          "id": "N031_AFTER_TEMPLATE_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_USE_FAX_FROM_LOOK",
+              "text": "use: Fax the waiver template to OLEA Legal for signature.",
+              "effects": [
+                {
+                  "key": "paperwork.trainingWaiverFaxed",
+                  "action": "set",
+                  "value": true
+                }
+              ],
+              "next": "N020_SEND_PLAYER"
+            },
+            {
+              "id": "C_SHOW_STICKER_FROM_LOOK",
+              "text": "show: Use a service code sticker to force a confirmation stamp and darker contrast.",
+              "conditions": [
+                {
+                  "key": "inventory.items",
+                  "op": "in",
+                  "value": [
+                    "ITEM_SERVICE_CODE_STICKER"
+                  ]
+                }
+              ],
+              "checks": [
+                {
+                  "type": "item",
+                  "itemId": "ITEM_SERVICE_CODE_STICKER",
+                  "has": true
+                }
+              ],
+              "onPassNext": "N040_SERVICE_MODE",
+              "onFailNext": "N050_SERVICE_FAIL"
+            },
+            {
+              "id": "C_SHOW_MEMORY_FROM_LOOK",
+              "text": "show: Enter service mode from memory (force confirmation + contrast).",
+              "conditions": [
+                {
+                  "key": "inventory.items",
+                  "op": "not_in",
+                  "value": [
+                    "ITEM_SERVICE_CODE_STICKER"
+                  ]
+                }
+              ],
+              "checks": [
+                {
+                  "type": "skill",
+                  "skill": "PROCEDURE",
+                  "dc": 10
+                }
+              ],
+              "onPassNext": "N040_SERVICE_MODE",
+              "onFailNext": "N050_SERVICE_FAIL"
+            },
+            {
+              "id": "C_ASK_BACK_MAIN_FROM_LOOK",
+              "text": "ask: Back to the fax options.",
+              "next": "N011_REDIRECT_MAIN"
+            },
+            {
+              "id": "C_LEAVE_FROM_LOOK",
+              "text": "leave: Step away.",
+              "next": "N900_END_LEAVE"
+            }
+          ]
+        },
+        {
+          "id": "N040_SERVICE_MODE",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Service mode. Darker. Timestamp.",
+          "effects": [
+            {
+              "key": "fax.confirmationOn",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "fax.contrastBoost",
+              "action": "set",
+              "value": true
+            }
+          ],
+          "next": "N041_SERVICE_NARR"
+        },
+        {
+          "id": "N041_SERVICE_NARR",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You key in numbers the machine should not accept from you. It accepts them anyway.\n\nThe display adds \u201cCONFIRMATION: ON\u201d like it\u2019s a moral stance.",
+          "next": "N042_AFTER_SERVICE_MENU"
+        },
+        {
+          "id": "N042_AFTER_SERVICE_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_USE_FAX_FROM_SERVICE",
+              "text": "use: Fax the waiver template to OLEA Legal for signature.",
+              "effects": [
+                {
+                  "key": "paperwork.trainingWaiverFaxed",
+                  "action": "set",
+                  "value": true
+                }
+              ],
+              "next": "N020_SEND_PLAYER"
+            },
+            {
+              "id": "C_LOOK_TEMPLATE_FROM_SERVICE",
+              "text": "look: Read the template language again.",
+              "next": "N030_TEMPLATE_READ"
+            },
+            {
+              "id": "C_ASK_BACK_MAIN_FROM_SERVICE",
+              "text": "ask: Back to the fax options.",
+              "next": "N011_REDIRECT_MAIN"
+            },
+            {
+              "id": "C_LEAVE_FROM_SERVICE",
+              "text": "leave: Step away.",
+              "next": "N900_END_LEAVE"
+            }
+          ]
+        },
+        {
+          "id": "N050_SERVICE_FAIL",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You reach for the \u201cright numbers\u201d and come up short.\n\nEither you don\u2019t have the access, or you don\u2019t have the procedure clean enough to risk it. The machine keeps its bland, default contrast\u2014perfect for receipts, terrible for liability.",
+          "next": "N011_REDIRECT_MAIN"
+        },
+        {
+          "id": "N100_RETURN_INTRO",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The fax coughs out a return transmission\u2014two pages.\n\nThe first is your template, now signed. The second is a cover sheet that reads like a boundary dispute.",
+          "next": "N110_RETURN_MENU"
+        },
+        {
+          "id": "N110_RETURN_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_USE_PULL",
+              "text": "use: Pull the returned pages from the tray.",
+              "next": "N120_PULL_PLAYER"
+            },
+            {
+              "id": "C_LOOK_COVER",
+              "text": "look: Read the cover sheet first.",
+              "next": "N140_COVER_READ"
+            },
+            {
+              "id": "C_ASK_BACK_MAIN",
+              "text": "ask: Back to the fax options.",
+              "next": "N011_REDIRECT_MAIN"
+            },
+            {
+              "id": "C_LEAVE_RETURN",
+              "text": "leave: Leave it in the tray for now.",
+              "next": "N900_END_LEAVE"
+            }
+          ]
+        },
+        {
+          "id": "N120_PULL_PLAYER",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Take it.",
+          "next": "N121_PULL_NARR"
+        },
+        {
+          "id": "N121_PULL_NARR",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The pages are warm at the edges, as if heat counts as authentication.\n\nThe signature is real. The language around it is a fence.",
+          "next": "N122_CAVEATS"
+        },
+        {
+          "id": "N122_CAVEATS",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "\u201cTRAINING WAIVER \u2014 NARROW PURPOSE ACKNOWLEDGMENT.\u201d\n\n\u201cThis instrument does not certify completion of training. It permits site process to treat the undersigned as trained for closure-documentation tasks only.\u201d\n\n\u201cNo inference of competency, safety baseline, or authorization is created by this acknowledgment.\u201d\n\nThe word authorization is struck through and replaced with administrative accommodation in different ink.",
+          "next": "N130_END_SIGNED"
+        },
+        {
+          "id": "N130_END_SIGNED",
+          "type": "end",
+          "outcomeId": "receive_signed_training_waiver",
+          "effects": [
+            {
+              "key": "paperwork.trainingWaiverSigned",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "inventory.items",
+              "action": "add",
+              "value": "ITEM_TRAINING_WAIVER_SIGNED"
+            },
+            {
+              "key": "paperwork.completeness",
+              "action": "increment",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "id": "N140_COVER_READ",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The cover sheet is a memo pretending to be a courtesy.\n\n\u201cOLEA LEGAL TRANSMISSION \u2014 RECORD COPY.\u201d\n\n\u201cPlease note: \u2018trained\u2019 is an operational label, not a factual representation.\u201d\n\nThe sentence ends with a period that looks pressed too hard.",
+          "next": "N141_AFTER_COVER_MENU"
+        },
+        {
+          "id": "N141_AFTER_COVER_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_USE_PULL_AFTER_COVER",
+              "text": "use: Pull the signed waiver from the tray.",
+              "next": "N120_PULL_PLAYER"
+            },
+            {
+              "id": "C_ASK_BACK_RETURN",
+              "text": "ask: Back.",
+              "next": "N142_REDIRECT_RETURN_MENU"
+            },
+            {
+              "id": "C_LEAVE_AFTER_COVER",
+              "text": "leave: Step away.",
+              "next": "N900_END_LEAVE"
+            }
+          ]
+        },
+        {
+          "id": "N142_REDIRECT_RETURN_MENU",
+          "type": "redirect",
+          "target": "N110_RETURN_MENU"
+        },
+        {
+          "id": "N900_END_LEAVE",
+          "type": "end"
+        }
+      ]
+    }
+  ]
+}

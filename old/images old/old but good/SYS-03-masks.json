@@ -1,0 +1,56 @@
+{
+  "screen_id": "SYS-03",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Vise",
+      "slug": "vise",
+      "file": "images/SYS-03-mask-vise.png",
+      "boxes": [
+        {
+          "label": "vise",
+          "box_2d": [
+            587,
+            10,
+            856,
+            276
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Solder station",
+      "slug": "solder_station",
+      "file": "images/SYS-03-mask-solder_station.png",
+      "boxes": [
+        {
+          "label": "solder station",
+          "box_2d": [
+            492,
+            542,
+            608,
+            699
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Beacon parts",
+      "slug": "beacon_parts",
+      "file": "images/SYS-03-mask-beacon_parts.png",
+      "boxes": [
+        {
+          "label": "Beacon parts",
+          "box_2d": [
+            512,
+            539,
+            577,
+            572
+          ]
+        }
+      ]
+    }
+  ]
+}

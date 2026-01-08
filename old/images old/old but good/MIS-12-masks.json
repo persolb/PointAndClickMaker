@@ -1,0 +1,66 @@
+{
+  "screen_id": "MIS-12",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Cache lock",
+      "slug": "cache_lock",
+      "file": "images/MIS-12-mask-cache_lock.png",
+      "boxes": [
+        {
+          "label": "Cache lock",
+          "box_2d": [
+            486,
+            391,
+            555,
+            421
+          ]
+        },
+        {
+          "label": "Cache lock",
+          "box_2d": [
+            608,
+            327,
+            680,
+            359
+          ]
+        },
+        {
+          "label": "Cache lock",
+          "box_2d": [
+            606,
+            431,
+            680,
+            461
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Index cards",
+      "slug": "index_cards",
+      "file": "images/MIS-12-mask-index_cards.png",
+      "boxes": [
+        {
+          "label": "Index cards",
+          "box_2d": [
+            551,
+            592,
+            604,
+            642
+          ]
+        },
+        {
+          "label": "Index cards",
+          "box_2d": [
+            546,
+            513,
+            606,
+            577
+          ]
+        }
+      ]
+    }
+  ]
+}

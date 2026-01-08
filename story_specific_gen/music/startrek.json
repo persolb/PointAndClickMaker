@@ -1,0 +1,714 @@
+{
+  "format": "pattern-midi.v1",
+  "global": {
+    "ticks_per_quarter": 480,
+    "time_signature": [
+      4,
+      4
+    ],
+    "tempo_bpm": 78,
+    "bars": 16,
+    "loop": true
+  },
+  "instruments": {
+    "strings": {
+      "channel": 1,
+      "program": 48
+    },
+    "warm_pad": {
+      "channel": 2,
+      "program": 89
+    },
+    "soft_brass": {
+      "channel": 3,
+      "program": 61
+    },
+    "harp": {
+      "channel": 4,
+      "program": 46
+    },
+    "celesta": {
+      "channel": 5,
+      "program": 8
+    },
+    "bass": {
+      "channel": 6,
+      "program": 32
+    },
+    "perc": {
+      "channel": 10,
+      "program": null
+    }
+  },
+  "patterns": {
+    "harm_A_2bar": {
+      "length_beats": 8,
+      "notes": [
+        {
+          "instrument": "strings",
+          "beat": 0,
+          "dur": 4,
+          "pitch": 55,
+          "vel": 46
+        },
+        {
+          "instrument": "strings",
+          "beat": 0,
+          "dur": 4,
+          "pitch": 59,
+          "vel": 42
+        },
+        {
+          "instrument": "strings",
+          "beat": 0,
+          "dur": 4,
+          "pitch": 60,
+          "vel": 44
+        },
+        {
+          "instrument": "strings",
+          "beat": 0,
+          "dur": 4,
+          "pitch": 64,
+          "vel": 41
+        },
+        {
+          "instrument": "strings",
+          "beat": 0,
+          "dur": 4,
+          "pitch": 62,
+          "vel": 38
+        },
+        {
+          "instrument": "warm_pad",
+          "beat": 0,
+          "dur": 8,
+          "pitch": 48,
+          "vel": 34
+        },
+        {
+          "instrument": "warm_pad",
+          "beat": 0,
+          "dur": 8,
+          "pitch": 55,
+          "vel": 30
+        },
+        {
+          "instrument": "warm_pad",
+          "beat": 0,
+          "dur": 8,
+          "pitch": 62,
+          "vel": 26
+        },
+        {
+          "instrument": "soft_brass",
+          "beat": 0,
+          "dur": 8,
+          "pitch": 57,
+          "vel": 20
+        },
+        {
+          "instrument": "strings",
+          "beat": 4,
+          "dur": 4,
+          "pitch": 55,
+          "vel": 44
+        },
+        {
+          "instrument": "strings",
+          "beat": 4,
+          "dur": 4,
+          "pitch": 60,
+          "vel": 42
+        },
+        {
+          "instrument": "strings",
+          "beat": 4,
+          "dur": 4,
+          "pitch": 62,
+          "vel": 41
+        },
+        {
+          "instrument": "strings",
+          "beat": 4,
+          "dur": 4,
+          "pitch": 64,
+          "vel": 39
+        },
+        {
+          "instrument": "strings",
+          "beat": 4,
+          "dur": 4,
+          "pitch": 69,
+          "vel": 36
+        },
+        {
+          "instrument": "soft_brass",
+          "beat": 4,
+          "dur": 4,
+          "pitch": 62,
+          "vel": 18
+        }
+      ]
+    },
+    "harm_B_2bar": {
+      "length_beats": 8,
+      "notes": [
+        {
+          "instrument": "strings",
+          "beat": 0,
+          "dur": 4,
+          "pitch": 57,
+          "vel": 45
+        },
+        {
+          "instrument": "strings",
+          "beat": 0,
+          "dur": 4,
+          "pitch": 60,
+          "vel": 43
+        },
+        {
+          "instrument": "strings",
+          "beat": 0,
+          "dur": 4,
+          "pitch": 64,
+          "vel": 41
+        },
+        {
+          "instrument": "strings",
+          "beat": 0,
+          "dur": 4,
+          "pitch": 67,
+          "vel": 37
+        },
+        {
+          "instrument": "strings",
+          "beat": 0,
+          "dur": 4,
+          "pitch": 59,
+          "vel": 39
+        },
+        {
+          "instrument": "warm_pad",
+          "beat": 0,
+          "dur": 8,
+          "pitch": 45,
+          "vel": 32
+        },
+        {
+          "instrument": "warm_pad",
+          "beat": 0,
+          "dur": 8,
+          "pitch": 52,
+          "vel": 28
+        },
+        {
+          "instrument": "warm_pad",
+          "beat": 0,
+          "dur": 8,
+          "pitch": 59,
+          "vel": 24
+        },
+        {
+          "instrument": "soft_brass",
+          "beat": 0,
+          "dur": 8,
+          "pitch": 52,
+          "vel": 19
+        },
+        {
+          "instrument": "strings",
+          "beat": 4,
+          "dur": 4,
+          "pitch": 53,
+          "vel": 44
+        },
+        {
+          "instrument": "strings",
+          "beat": 4,
+          "dur": 4,
+          "pitch": 57,
+          "vel": 42
+        },
+        {
+          "instrument": "strings",
+          "beat": 4,
+          "dur": 4,
+          "pitch": 60,
+          "vel": 38
+        },
+        {
+          "instrument": "strings",
+          "beat": 4,
+          "dur": 4,
+          "pitch": 64,
+          "vel": 40
+        },
+        {
+          "instrument": "strings",
+          "beat": 4,
+          "dur": 4,
+          "pitch": 59,
+          "vel": 36
+        },
+        {
+          "instrument": "soft_brass",
+          "beat": 4,
+          "dur": 4,
+          "pitch": 60,
+          "vel": 17
+        }
+      ]
+    },
+    "harm_C_2bar": {
+      "length_beats": 8,
+      "notes": [
+        {
+          "instrument": "strings",
+          "beat": 0,
+          "dur": 4,
+          "pitch": 50,
+          "vel": 44
+        },
+        {
+          "instrument": "strings",
+          "beat": 0,
+          "dur": 4,
+          "pitch": 53,
+          "vel": 41
+        },
+        {
+          "instrument": "strings",
+          "beat": 0,
+          "dur": 4,
+          "pitch": 57,
+          "vel": 39
+        },
+        {
+          "instrument": "strings",
+          "beat": 0,
+          "dur": 4,
+          "pitch": 60,
+          "vel": 40
+        },
+        {
+          "instrument": "strings",
+          "beat": 0,
+          "dur": 4,
+          "pitch": 64,
+          "vel": 36
+        },
+        {
+          "instrument": "warm_pad",
+          "beat": 0,
+          "dur": 8,
+          "pitch": 50,
+          "vel": 30
+        },
+        {
+          "instrument": "warm_pad",
+          "beat": 0,
+          "dur": 8,
+          "pitch": 57,
+          "vel": 26
+        },
+        {
+          "instrument": "warm_pad",
+          "beat": 0,
+          "dur": 8,
+          "pitch": 62,
+          "vel": 22
+        },
+        {
+          "instrument": "soft_brass",
+          "beat": 0,
+          "dur": 8,
+          "pitch": 55,
+          "vel": 18
+        },
+        {
+          "instrument": "strings",
+          "beat": 4,
+          "dur": 4,
+          "pitch": 55,
+          "vel": 44
+        },
+        {
+          "instrument": "strings",
+          "beat": 4,
+          "dur": 4,
+          "pitch": 60,
+          "vel": 41
+        },
+        {
+          "instrument": "strings",
+          "beat": 4,
+          "dur": 4,
+          "pitch": 62,
+          "vel": 38
+        },
+        {
+          "instrument": "strings",
+          "beat": 4,
+          "dur": 4,
+          "pitch": 65,
+          "vel": 37
+        },
+        {
+          "instrument": "strings",
+          "beat": 4,
+          "dur": 4,
+          "pitch": 57,
+          "vel": 39
+        },
+        {
+          "instrument": "soft_brass",
+          "beat": 4,
+          "dur": 4,
+          "pitch": 62,
+          "vel": 16
+        }
+      ]
+    },
+    "bass_A_2bar": {
+      "length_beats": 8,
+      "notes": [
+        {
+          "instrument": "bass",
+          "beat": 0,
+          "dur": 3.6,
+          "pitch": 36,
+          "vel": 44
+        },
+        {
+          "instrument": "bass",
+          "beat": 4,
+          "dur": 3.6,
+          "pitch": 36,
+          "vel": 40
+        }
+      ]
+    },
+    "bass_B_2bar": {
+      "length_beats": 8,
+      "notes": [
+        {
+          "instrument": "bass",
+          "beat": 0,
+          "dur": 3.6,
+          "pitch": 33,
+          "vel": 43
+        },
+        {
+          "instrument": "bass",
+          "beat": 4,
+          "dur": 3.6,
+          "pitch": 41,
+          "vel": 39
+        }
+      ]
+    },
+    "bass_C_2bar": {
+      "length_beats": 8,
+      "notes": [
+        {
+          "instrument": "bass",
+          "beat": 0,
+          "dur": 3.6,
+          "pitch": 38,
+          "vel": 43
+        },
+        {
+          "instrument": "bass",
+          "beat": 4,
+          "dur": 3.6,
+          "pitch": 43,
+          "vel": 38
+        }
+      ]
+    },
+    "motif_1_2bar": {
+      "length_beats": 8,
+      "notes": [
+        {
+          "instrument": "celesta",
+          "beat": 1.5,
+          "dur": 0.25,
+          "pitch": 74,
+          "vel": 28
+        },
+        {
+          "instrument": "celesta",
+          "beat": 2.0,
+          "dur": 0.5,
+          "pitch": 71,
+          "vel": 24
+        },
+        {
+          "instrument": "harp",
+          "beat": 2.5,
+          "dur": 0.4,
+          "pitch": 67,
+          "vel": 26
+        },
+        {
+          "instrument": "celesta",
+          "beat": 5.25,
+          "dur": 0.25,
+          "pitch": 76,
+          "vel": 26
+        },
+        {
+          "instrument": "harp",
+          "beat": 5.75,
+          "dur": 0.4,
+          "pitch": 62,
+          "vel": 25
+        },
+        {
+          "instrument": "celesta",
+          "beat": 6.5,
+          "dur": 0.25,
+          "pitch": 74,
+          "vel": 23
+        }
+      ]
+    },
+    "motif_2_2bar": {
+      "length_beats": 8,
+      "notes": [
+        {
+          "instrument": "harp",
+          "beat": 0.75,
+          "dur": 0.35,
+          "pitch": 64,
+          "vel": 24
+        },
+        {
+          "instrument": "celesta",
+          "beat": 3.25,
+          "dur": 0.25,
+          "pitch": 72,
+          "vel": 25
+        },
+        {
+          "instrument": "celesta",
+          "beat": 3.75,
+          "dur": 0.5,
+          "pitch": 69,
+          "vel": 22
+        },
+        {
+          "instrument": "harp",
+          "beat": 6.0,
+          "dur": 0.35,
+          "pitch": 67,
+          "vel": 23
+        },
+        {
+          "instrument": "celesta",
+          "beat": 6.5,
+          "dur": 0.25,
+          "pitch": 71,
+          "vel": 21
+        }
+      ]
+    },
+    "perc_specks_2bar": {
+      "length_beats": 8,
+      "notes": [
+        {
+          "instrument": "perc",
+          "beat": 0,
+          "dur": 0.2,
+          "pitch": 81,
+          "vel": 22
+        },
+        {
+          "instrument": "perc",
+          "beat": 3.0,
+          "dur": 0.1,
+          "pitch": 42,
+          "vel": 14
+        },
+        {
+          "instrument": "perc",
+          "beat": 6.0,
+          "dur": 0.1,
+          "pitch": 42,
+          "vel": 12
+        },
+        {
+          "instrument": "perc",
+          "beat": 7.5,
+          "dur": 0.2,
+          "pitch": 80,
+          "vel": 18
+        }
+      ]
+    }
+  },
+  "arrangement": [
+    {
+      "pattern": "harm_A_2bar",
+      "start_bar": 0,
+      "repeat": 1
+    },
+    {
+      "pattern": "bass_A_2bar",
+      "start_bar": 0,
+      "repeat": 1,
+      "velocity_scale": 0.9
+    },
+    {
+      "pattern": "perc_specks_2bar",
+      "start_bar": 0,
+      "repeat": 1,
+      "velocity_scale": 0.8
+    },
+    {
+      "pattern": "harm_B_2bar",
+      "start_bar": 2,
+      "repeat": 1
+    },
+    {
+      "pattern": "bass_B_2bar",
+      "start_bar": 2,
+      "repeat": 1,
+      "velocity_scale": 0.9
+    },
+    {
+      "pattern": "perc_specks_2bar",
+      "start_bar": 2,
+      "repeat": 1,
+      "velocity_scale": 0.8
+    },
+    {
+      "pattern": "motif_1_2bar",
+      "start_bar": 2,
+      "repeat": 1,
+      "velocity_scale": 0.95
+    },
+    {
+      "pattern": "harm_C_2bar",
+      "start_bar": 4,
+      "repeat": 1
+    },
+    {
+      "pattern": "bass_C_2bar",
+      "start_bar": 4,
+      "repeat": 1,
+      "velocity_scale": 0.9
+    },
+    {
+      "pattern": "perc_specks_2bar",
+      "start_bar": 4,
+      "repeat": 1,
+      "velocity_scale": 0.75
+    },
+    {
+      "pattern": "harm_A_2bar",
+      "start_bar": 6,
+      "repeat": 1
+    },
+    {
+      "pattern": "bass_A_2bar",
+      "start_bar": 6,
+      "repeat": 1,
+      "velocity_scale": 0.85
+    },
+    {
+      "pattern": "perc_specks_2bar",
+      "start_bar": 6,
+      "repeat": 1,
+      "velocity_scale": 0.75
+    },
+    {
+      "pattern": "motif_2_2bar",
+      "start_bar": 6,
+      "repeat": 1,
+      "velocity_scale": 0.9
+    },
+    {
+      "pattern": "harm_B_2bar",
+      "start_bar": 8,
+      "repeat": 1
+    },
+    {
+      "pattern": "bass_B_2bar",
+      "start_bar": 8,
+      "repeat": 1,
+      "velocity_scale": 0.9
+    },
+    {
+      "pattern": "perc_specks_2bar",
+      "start_bar": 8,
+      "repeat": 1,
+      "velocity_scale": 0.8
+    },
+    {
+      "pattern": "harm_A_2bar",
+      "start_bar": 10,
+      "repeat": 1
+    },
+    {
+      "pattern": "bass_A_2bar",
+      "start_bar": 10,
+      "repeat": 1,
+      "velocity_scale": 0.85
+    },
+    {
+      "pattern": "perc_specks_2bar",
+      "start_bar": 10,
+      "repeat": 1,
+      "velocity_scale": 0.7
+    },
+    {
+      "pattern": "motif_1_2bar",
+      "start_bar": 10,
+      "repeat": 1,
+      "velocity_scale": 0.85
+    },
+    {
+      "pattern": "harm_B_2bar",
+      "start_bar": 12,
+      "repeat": 1
+    },
+    {
+      "pattern": "bass_B_2bar",
+      "start_bar": 12,
+      "repeat": 1,
+      "velocity_scale": 0.85
+    },
+    {
+      "pattern": "perc_specks_2bar",
+      "start_bar": 12,
+      "repeat": 1,
+      "velocity_scale": 0.75
+    },
+    {
+      "pattern": "motif_2_2bar",
+      "start_bar": 12,
+      "repeat": 1,
+      "velocity_scale": 0.85
+    },
+    {
+      "pattern": "harm_C_2bar",
+      "start_bar": 14,
+      "repeat": 1
+    },
+    {
+      "pattern": "bass_C_2bar",
+      "start_bar": 14,
+      "repeat": 1,
+      "velocity_scale": 0.85
+    },
+    {
+      "pattern": "perc_specks_2bar",
+      "start_bar": 14,
+      "repeat": 1,
+      "velocity_scale": 0.75
+    }
+  ]
+}

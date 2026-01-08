@@ -1,0 +1,23 @@
+{
+  "changes": [
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_USE_PULL_INSERT",
+        "nodeId": "N_MAIN_MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_USE_TEST",
+        "nodeId": "N_MAIN_MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    }
+  ],
+  "sceneId": "SCN-009"
+}

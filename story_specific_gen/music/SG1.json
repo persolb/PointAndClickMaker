@@ -1,0 +1,432 @@
+{
+  "format": "pattern-midi.v1",
+  "global": {
+    "ticks_per_quarter": 480,
+    "time_signature": [
+      4,
+      4
+    ],
+    "tempo_bpm": 72,
+    "bars": 16,
+    "loop": true
+  },
+  "instruments": {
+    "pad": {
+      "channel": 1,
+      "program": 89
+    },
+    "choir": {
+      "channel": 2,
+      "program": 52
+    },
+    "low_strings": {
+      "channel": 3,
+      "program": 48
+    },
+    "distant_brass": {
+      "channel": 4,
+      "program": 60
+    },
+    "pulse": {
+      "channel": 5,
+      "program": 90
+    },
+    "drone": {
+      "channel": 6,
+      "program": 94
+    }
+  },
+  "patterns": {
+    "pad_4bar_A": {
+      "length_beats": 16,
+      "notes": [
+        {
+          "instrument": "pad",
+          "beat": 0,
+          "dur": 8,
+          "pitch": 62,
+          "vel": 46
+        },
+        {
+          "instrument": "pad",
+          "beat": 0,
+          "dur": 8,
+          "pitch": 65,
+          "vel": 44
+        },
+        {
+          "instrument": "pad",
+          "beat": 0,
+          "dur": 8,
+          "pitch": 69,
+          "vel": 43
+        },
+        {
+          "instrument": "pad",
+          "beat": 0,
+          "dur": 8,
+          "pitch": 76,
+          "vel": 40
+        },
+        {
+          "instrument": "pad",
+          "beat": 8,
+          "dur": 8,
+          "pitch": 62,
+          "vel": 45
+        },
+        {
+          "instrument": "pad",
+          "beat": 8,
+          "dur": 8,
+          "pitch": 67,
+          "vel": 43
+        },
+        {
+          "instrument": "pad",
+          "beat": 8,
+          "dur": 8,
+          "pitch": 69,
+          "vel": 42
+        },
+        {
+          "instrument": "pad",
+          "beat": 8,
+          "dur": 8,
+          "pitch": 74,
+          "vel": 39
+        }
+      ]
+    },
+    "pad_4bar_B": {
+      "length_beats": 16,
+      "notes": [
+        {
+          "instrument": "pad",
+          "beat": 0,
+          "dur": 8,
+          "pitch": 65,
+          "vel": 45
+        },
+        {
+          "instrument": "pad",
+          "beat": 0,
+          "dur": 8,
+          "pitch": 69,
+          "vel": 43
+        },
+        {
+          "instrument": "pad",
+          "beat": 0,
+          "dur": 8,
+          "pitch": 72,
+          "vel": 42
+        },
+        {
+          "instrument": "pad",
+          "beat": 0,
+          "dur": 8,
+          "pitch": 79,
+          "vel": 38
+        },
+        {
+          "instrument": "pad",
+          "beat": 8,
+          "dur": 8,
+          "pitch": 64,
+          "vel": 44
+        },
+        {
+          "instrument": "pad",
+          "beat": 8,
+          "dur": 8,
+          "pitch": 67,
+          "vel": 42
+        },
+        {
+          "instrument": "pad",
+          "beat": 8,
+          "dur": 8,
+          "pitch": 71,
+          "vel": 41
+        },
+        {
+          "instrument": "pad",
+          "beat": 8,
+          "dur": 8,
+          "pitch": 74,
+          "vel": 38
+        }
+      ]
+    },
+    "choir_4bar": {
+      "length_beats": 16,
+      "notes": [
+        {
+          "instrument": "choir",
+          "beat": 0,
+          "dur": 4,
+          "pitch": 69,
+          "vel": 32
+        },
+        {
+          "instrument": "choir",
+          "beat": 0,
+          "dur": 4,
+          "pitch": 74,
+          "vel": 34
+        },
+        {
+          "instrument": "choir",
+          "beat": 4,
+          "dur": 4,
+          "pitch": 71,
+          "vel": 31
+        },
+        {
+          "instrument": "choir",
+          "beat": 4,
+          "dur": 4,
+          "pitch": 76,
+          "vel": 33
+        },
+        {
+          "instrument": "choir",
+          "beat": 8,
+          "dur": 4,
+          "pitch": 72,
+          "vel": 31
+        },
+        {
+          "instrument": "choir",
+          "beat": 8,
+          "dur": 4,
+          "pitch": 77,
+          "vel": 33
+        },
+        {
+          "instrument": "choir",
+          "beat": 12,
+          "dur": 4,
+          "pitch": 71,
+          "vel": 30
+        },
+        {
+          "instrument": "choir",
+          "beat": 12,
+          "dur": 4,
+          "pitch": 76,
+          "vel": 32
+        }
+      ]
+    },
+    "strings_2bar": {
+      "length_beats": 8,
+      "notes": [
+        {
+          "instrument": "low_strings",
+          "beat": 0,
+          "dur": 8,
+          "pitch": 38,
+          "vel": 46
+        },
+        {
+          "instrument": "low_strings",
+          "beat": 4,
+          "dur": 4,
+          "pitch": 45,
+          "vel": 36
+        }
+      ]
+    },
+    "brass_8bar": {
+      "length_beats": 32,
+      "notes": [
+        {
+          "instrument": "distant_brass",
+          "beat": 0,
+          "dur": 6,
+          "pitch": 57,
+          "vel": 28
+        },
+        {
+          "instrument": "distant_brass",
+          "beat": 0,
+          "dur": 6,
+          "pitch": 62,
+          "vel": 30
+        },
+        {
+          "instrument": "distant_brass",
+          "beat": 0,
+          "dur": 6,
+          "pitch": 65,
+          "vel": 27
+        },
+        {
+          "instrument": "distant_brass",
+          "beat": 14,
+          "dur": 4,
+          "pitch": 55,
+          "vel": 24
+        },
+        {
+          "instrument": "distant_brass",
+          "beat": 14,
+          "dur": 4,
+          "pitch": 62,
+          "vel": 26
+        },
+        {
+          "instrument": "distant_brass",
+          "beat": 14,
+          "dur": 4,
+          "pitch": 69,
+          "vel": 24
+        },
+        {
+          "instrument": "distant_brass",
+          "beat": 16,
+          "dur": 6,
+          "pitch": 59,
+          "vel": 27
+        },
+        {
+          "instrument": "distant_brass",
+          "beat": 16,
+          "dur": 6,
+          "pitch": 64,
+          "vel": 29
+        },
+        {
+          "instrument": "distant_brass",
+          "beat": 16,
+          "dur": 6,
+          "pitch": 62,
+          "vel": 26
+        },
+        {
+          "instrument": "distant_brass",
+          "beat": 28,
+          "dur": 4,
+          "pitch": 62,
+          "vel": 25
+        },
+        {
+          "instrument": "distant_brass",
+          "beat": 28,
+          "dur": 4,
+          "pitch": 67,
+          "vel": 26
+        },
+        {
+          "instrument": "distant_brass",
+          "beat": 28,
+          "dur": 4,
+          "pitch": 74,
+          "vel": 24
+        }
+      ]
+    },
+    "pulse_1bar": {
+      "length_beats": 4,
+      "notes": [
+        {
+          "instrument": "pulse",
+          "beat": 0,
+          "dur": 0.3,
+          "pitch": 74,
+          "vel": 26
+        },
+        {
+          "instrument": "pulse",
+          "beat": 1.5,
+          "dur": 0.25,
+          "pitch": 76,
+          "vel": 22
+        },
+        {
+          "instrument": "pulse",
+          "beat": 3,
+          "dur": 0.3,
+          "pitch": 72,
+          "vel": 24
+        }
+      ]
+    },
+    "drone_8bar": {
+      "length_beats": 32,
+      "notes": [
+        {
+          "instrument": "drone",
+          "beat": 0,
+          "dur": 32,
+          "pitch": 50,
+          "vel": 34
+        },
+        {
+          "instrument": "drone",
+          "beat": 0,
+          "dur": 32,
+          "pitch": 45,
+          "vel": 30
+        },
+        {
+          "instrument": "drone",
+          "beat": 16,
+          "dur": 16,
+          "pitch": 52,
+          "vel": 24
+        }
+      ]
+    }
+  },
+  "arrangement": [
+    {
+      "pattern": "drone_8bar",
+      "start_bar": 0,
+      "repeat": 2
+    },
+    {
+      "pattern": "brass_8bar",
+      "start_bar": 0,
+      "repeat": 2
+    },
+    {
+      "pattern": "choir_4bar",
+      "start_bar": 0,
+      "repeat": 4
+    },
+    {
+      "pattern": "strings_2bar",
+      "start_bar": 0,
+      "repeat": 8
+    },
+    {
+      "pattern": "pulse_1bar",
+      "start_bar": 0,
+      "repeat": 16,
+      "velocity_scale": 0.9
+    },
+    {
+      "pattern": "pad_4bar_A",
+      "start_bar": 0,
+      "repeat": 1
+    },
+    {
+      "pattern": "pad_4bar_B",
+      "start_bar": 4,
+      "repeat": 1
+    },
+    {
+      "pattern": "pad_4bar_A",
+      "start_bar": 8,
+      "repeat": 1
+    },
+    {
+      "pattern": "pad_4bar_B",
+      "start_bar": 12,
+      "repeat": 1
+    }
+  ]
+}

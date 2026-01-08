@@ -1,0 +1,483 @@
+{
+  "changes": [
+    {
+      "action": "modify",
+      "details": {
+        "choiceId": "C_LEAVE_OBS",
+        "nodeId": "N_MAIN_MENU",
+        "text": "Leave"
+      },
+      "op": "update_choice_text"
+    },
+    {
+      "action": "modify",
+      "details": {
+        "choiceId": "C_LEAVE_OVERFLOW",
+        "nodeId": "N_MAIN_MENU",
+        "text": "Leave"
+      },
+      "op": "update_choice_text"
+    },
+    {
+      "action": "modify",
+      "details": {
+        "choiceId": "C_SPHERE_BACK",
+        "nodeId": "N_SPHERE_MENU",
+        "text": "Leave"
+      },
+      "op": "update_choice_text"
+    },
+    {
+      "action": "modify",
+      "details": {
+        "choiceId": "C_STATUS_BACK",
+        "nodeId": "N_STATUS_MENU",
+        "text": "Leave"
+      },
+      "op": "update_choice_text"
+    },
+    {
+      "action": "modify",
+      "details": {
+        "choiceId": "C_SCAN_BACK",
+        "nodeId": "N_SCAN_MENU",
+        "text": "Leave"
+      },
+      "op": "update_choice_text"
+    },
+    {
+      "action": "modify",
+      "details": {
+        "choiceId": "C_RESULT_BACK",
+        "nodeId": "N_SCAN_RESULT_MENU",
+        "text": "Leave"
+      },
+      "op": "update_choice_text"
+    },
+    {
+      "action": "modify",
+      "details": {
+        "choiceId": "C_NOT_YET",
+        "nodeId": "N_PRESENCE_MENU",
+        "text": "Leave"
+      },
+      "op": "update_choice_text"
+    },
+    {
+      "action": "modify",
+      "details": {
+        "choiceId": "C_ESTOP_BACK",
+        "nodeId": "N_ESTOP_MENU",
+        "text": "Leave"
+      },
+      "op": "update_choice_text"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_LOOK_SPHERE",
+        "nodeId": "N_MAIN_MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_SPHERE_INTRO",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_SPHERE_OPS_WARN",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_SPHERE_MENU",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_SPHERE_HELD_OPS",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_SPHERE_SAFE_OPS",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_SPHERE_LOG_OPS",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_LOOK_STATUS",
+        "nodeId": "N_MAIN_MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_STATUS_INTRO",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_STATUS_PLAYER_BEAT",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_STATUS_OPS_CORRECT",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_STATUS_MENU",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_STATUS_WHO_OPS",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_STATUS_CLEAR_OPS",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_STATUS_READ_NARR",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_USE_SCAN",
+        "nodeId": "N_MAIN_MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_SCAN_INTRO",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_SCAN_OPS_COACH",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_SCAN_MENU",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_SCAN_RESULT",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_SCAN_RESULT_MENU",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_REF_EXPAND_NARR",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_REF_EXPAND_OPS",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_REF_INTERPRET_PASS",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_REF_INTERPRET_FAIL",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_STANDING_OPS_EXPLAIN",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_PRINT_NOTICE_NARR",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_PRINT_NOTICE_OPS",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_PULL_LAST_NARR",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_PULL_LAST_PLAYER",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_PULL_LAST_OPS",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_PRESENCE_PLAYER",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_PRESENCE_OPS",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_PRESENCE_NARR",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_PRESENCE_MENU",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_PRINT_CONFIRM_NARR",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_PRINT_CONFIRM_OPS",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "R_TO_SCAN_MENU",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_LOOK_ESTOP",
+        "nodeId": "N_MAIN_MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_ESTOP_INTRO",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_ESTOP_OPS_WARN",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_ESTOP_MENU",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_ESTOP_EXPLAIN_OPS",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_ESTOP_PLACARD_NARR",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_LEAVE_OBS",
+        "nodeId": "N_MAIN_MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_LEAVE_OVERFLOW",
+        "nodeId": "N_MAIN_MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_LEAVE_OBS_LINE",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "END_LEAVE_OBS",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_LEAVE_OVERFLOW_LINE",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "END_LEAVE_OVERFLOW",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    }
+  ],
+  "sceneId": "SCN-062"
+}

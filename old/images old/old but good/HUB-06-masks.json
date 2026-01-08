@@ -1,0 +1,56 @@
+{
+  "screen_id": "HUB-06",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Microfiche reader",
+      "slug": "microfiche_reader",
+      "file": "images/HUB-06-mask-microfiche_reader.png",
+      "boxes": [
+        {
+          "label": "Microfiche reader",
+          "box_2d": [
+            382,
+            600,
+            646,
+            818
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Inventory clipboard",
+      "slug": "inventory_clipboard",
+      "file": "images/HUB-06-mask-inventory_clipboard.png",
+      "boxes": [
+        {
+          "label": "Inventory clipboard",
+          "box_2d": [
+            647,
+            252,
+            775,
+            311
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Locked cabinet",
+      "slug": "locked_cabinet",
+      "file": "images/HUB-06-mask-locked_cabinet.png",
+      "boxes": [
+        {
+          "label": "locked cabinet",
+          "box_2d": [
+            260,
+            182,
+            574,
+            335
+          ]
+        }
+      ]
+    }
+  ]
+}

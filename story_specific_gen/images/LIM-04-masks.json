@@ -1,0 +1,65 @@
+{
+  "screen_id": "LIM-04",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Catalog terminal",
+      "slug": "catalog_terminal",
+      "file": "story_specific_gen/images/LIM-04-mask-catalog_terminal.png",
+      "boxes": [
+        {
+          "label": "Catalog terminal",
+          "box_2d": [
+            523,
+            150,
+            725,
+            328
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Index rules placards",
+      "slug": "index_rules_placards",
+      "file": "story_specific_gen/images/LIM-04-mask-index_rules_placards.png",
+      "boxes": [
+        {
+          "label": "Index rules placard",
+          "box_2d": [
+            123,
+            613,
+            335,
+            712
+          ]
+        },
+        {
+          "label": "filing guidelines placard",
+          "box_2d": [
+            123,
+            725,
+            340,
+            829
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Legacy drawer bank",
+      "slug": "legacy_drawer_bank",
+      "file": "story_specific_gen/images/LIM-04-mask-legacy_drawer_bank.png",
+      "boxes": [
+        {
+          "label": "Legacy drawer bank",
+          "box_2d": [
+            343,
+            608,
+            642,
+            856
+          ]
+        }
+      ]
+    }
+  ]
+}

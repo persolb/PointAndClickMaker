@@ -1,0 +1,388 @@
+{
+  "dialogueGraphs": [
+    {
+      "id": "DG_SCN010_DRAWER_BADGES",
+      "sceneId": "SCN-010",
+      "startNodeId": "N_INTRO_1",
+      "nodes": [
+        {
+          "id": "N_INTRO_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The guard shack vestibule smells like dust and toner. A desk sits under a dead intercom speaker like it\u2019s waiting to be blamed. The drawer is labeled in block letters: RETIRED ACCESS MEDIA \u2014 DO NOT RE-ISSUE.",
+          "next": "N_INTRO_2"
+        },
+        {
+          "id": "N_INTRO_2",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You pull the drawer open. Old contractor badges lie in a shallow tray. Most are clipped to yellowing index cards. One badge has its magnetic stripe scored through, then taped over, then scored again\u2014like someone argued with it in stages.",
+          "next": "N_INTRO_3"
+        },
+        {
+          "id": "N_INTRO_3",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "A handwritten note on the tray: \u201cThese are not \u2018active.\u2019 Do not create new access events.\u201d The quotation marks look defensive.",
+          "next": "PC_DRAWER_MENU"
+        },
+        {
+          "id": "PC_DRAWER_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "LOOK_CLOSER",
+              "text": "Look closer.",
+              "next": "N_LOOK_1"
+            },
+            {
+              "id": "USE_DISPENSER",
+              "text": "Use the badge insert dispenser.",
+              "next": "N_USE_1"
+            },
+            {
+              "id": "TALK_INTERCOM",
+              "text": "Talk on the intercom.",
+              "next": "N_TALK_1"
+            },
+            {
+              "id": "TAKE_BADGE",
+              "text": "Take the demagnetized contractor badge.",
+              "next": "N_TAKE_1"
+            },
+            {
+              "id": "LEAVE_CLOSE_DRAWER",
+              "text": "Leave the drawer alone.",
+              "next": "N_CLOSE_1"
+            }
+          ]
+        },
+        {
+          "id": "N_LOOK_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "Under the badges is a thin sign-out sheet titled CUSTODY (INFORMAL). Someone underlined \u201cINFORMAL\u201d so hard the paper\u2019s almost cut.",
+          "next": "N_LOOK_2"
+        },
+        {
+          "id": "N_LOOK_2",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The entries are half names and full excuses: \u201cTEMP\u2014returning after calibration.\u201d \u201cBorrowed for audit photos (not use).\u201d \u201cRemoved from circulation (pending decision).\u201d",
+          "next": "P_LOOK_1"
+        },
+        {
+          "id": "P_LOOK_1",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Any of these still valid?",
+          "next": "N_LOOK_3"
+        },
+        {
+          "id": "N_LOOK_3",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "No one answers, because paper does not answer. It only persists. The demagnetized badge has a sticker: DO NOT DISCARD. Someone wrote over it: DO NOT PROCESS.",
+          "next": "PC_DRAWER_MENU"
+        },
+        {
+          "id": "N_USE_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The badge insert dispenser is an old slot with a faded instruction placard: INSERT \u2014 WAIT FOR GREEN \u2014 REMOVE. The word \u201cGREEN\u201d is circled twice, like reassurance didn\u2019t take the first time.",
+          "next": "P_USE_1"
+        },
+        {
+          "id": "P_USE_1",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Let\u2019s see.",
+          "next": "N_USE_2"
+        },
+        {
+          "id": "N_USE_2",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You feed the demagnetized badge into the slot. The machine pulls it in with polite certainty.",
+          "next": "N_USE_3"
+        },
+        {
+          "id": "N_USE_3",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "[SFX] A small motor whirs. A beep tries to happen and stops halfway.",
+          "next": "N_USE_4"
+        },
+        {
+          "id": "N_USE_4",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The light stays stubbornly amber. The badge returns, slightly warmer, as if that helped.",
+          "next": "P_USE_2"
+        },
+        {
+          "id": "P_USE_2",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Demag.",
+          "next": "N_USE_5"
+        },
+        {
+          "id": "N_USE_5",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The dispenser prints a thin slip anyway: UNREADABLE \u2014 REFER TO SECURITY. The paper curls at the end like it\u2019s embarrassed to exist.",
+          "next": "PC_DRAWER_MENU"
+        },
+        {
+          "id": "N_TALK_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The speaker grille is painted over, then scraped clean in a rectangle where a label used to be. A push-to-talk button has been replaced with a toggle switch that doesn\u2019t commit to either position.",
+          "next": "P_TALK_1"
+        },
+        {
+          "id": "P_TALK_1",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Security, this is OLEA field. Anyone on?",
+          "next": "N_TALK_2"
+        },
+        {
+          "id": "N_TALK_2",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "[INTERCOM VOICE] This line is monitored for safety and training. Not in real time. Which is not the same as \u201cunmonitored,\u201d just\u2014 manage your expectations.",
+          "next": "P_TALK_2"
+        },
+        {
+          "id": "P_TALK_2",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Found old contractor badges in the vestibule drawer. One\u2019s demagnetized.",
+          "next": "N_TALK_3"
+        },
+        {
+          "id": "N_TALK_3",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "[INTERCOM VOICE] Okay. So. Don\u2019t use it. Using it creates an access attempt, which creates a question, which creates a file. We are not funded for additional files this quarter.",
+          "next": "P_TALK_3"
+        },
+        {
+          "id": "P_TALK_3",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "I\u2019m taking it.",
+          "next": "N_TALK_4"
+        },
+        {
+          "id": "N_TALK_4",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "[INTERCOM VOICE] I can\u2019t authorize that. I also can\u2019t stop you. That\u2019s a different form. If you take it, it becomes \u201cin custody,\u201d and then I have to ask whose custody, and then you\u2019ll say your name, and then I\u2019ll have to write it down, and then\u2014",
+          "next": "PC_INTERCOM_MENU"
+        },
+        {
+          "id": "PC_INTERCOM_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "ASK_RESPONSIBLE",
+              "text": "Ask who\u2019s responsible for these badges.",
+              "next": "N_ASK_RESP_1"
+            },
+            {
+              "id": "ASK_RESTORE",
+              "text": "Ask how to restore it.",
+              "next": "N_ASK_RESTORE_1"
+            },
+            {
+              "id": "PERSUADE_OLEA_LOG",
+              "text": "Persuade: [OLEA] Log it as salvage for closure.",
+              "conditions": [
+                {
+                  "key": "player.factions",
+                  "op": "in",
+                  "value": "OLEA"
+                }
+              ],
+              "next": "N_PERSUADE_1"
+            },
+            {
+              "id": "LEAVE_STOP_TALKING",
+              "text": "Leave the intercom.",
+              "next": "N_STOP_TALKING_1"
+            }
+          ]
+        },
+        {
+          "id": "N_ASK_RESP_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "[INTERCOM VOICE] Historically? Security. Practically? Nobody, because \u201cnobody\u201d can\u2019t be subpoenaed. Formally? Facilities, but only when the facility is in an active state, and we are\u2014 we are \u201cmothballed,\u201d which is a status with feelings.",
+          "next": "P_ASK_RESP_1"
+        },
+        {
+          "id": "P_ASK_RESP_1",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "So it\u2019s orphaned.",
+          "next": "N_ASK_RESP_2"
+        },
+        {
+          "id": "N_ASK_RESP_2",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "[INTERCOM VOICE] It is \u201cunassigned.\u201d Orphaned implies duty.",
+          "next": "PC_INTERCOM_MENU"
+        },
+        {
+          "id": "N_ASK_RESTORE_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "[INTERCOM VOICE] You don\u2019t. You request a replacement through Admin, and Admin denies it because the site is in retirement posture, and then you cite operational necessity, and then Legal asks what operation, and then\u2014 If you mean physically, there\u2019s a mag encoder in the admin kiosk area. It may or may not be \u201cforbidden.\u201d The sticker fell off years ago.",
+          "next": "P_ASK_RESTORE_1"
+        },
+        {
+          "id": "P_ASK_RESTORE_1",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Got it.",
+          "next": "N_ASK_RESTORE_2"
+        },
+        {
+          "id": "N_ASK_RESTORE_2",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "[INTERCOM VOICE] You did not \u201cget it.\u201d You acknowledged it. That\u2019s safer for both of us.",
+          "next": "PC_INTERCOM_MENU"
+        },
+        {
+          "id": "N_PERSUADE_1",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Log it as salvage for closure. I\u2019m maintaining chain-of-custody.",
+          "next": "N_PERSUADE_2"
+        },
+        {
+          "id": "N_PERSUADE_2",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "[INTERCOM VOICE] Chain-of-custody is a legal phrase. Please don\u2019t say it like that. But\u2014 fine. If you insist on being correct: write your name on the informal sheet, do not date it, and take a photo of the drawer label. That way it\u2019s \u201ccontext,\u201d not an \u201cevent.\u201d",
+          "next": "P_PERSUADE_1"
+        },
+        {
+          "id": "P_PERSUADE_1",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "That\u2019s not how\u2014",
+          "next": "N_PERSUADE_3"
+        },
+        {
+          "id": "N_PERSUADE_3",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "[INTERCOM VOICE] It is here. Please don\u2019t make me be innovative about this.",
+          "next": "PC_POST_PERSUADE_DRAWER"
+        },
+        {
+          "id": "PC_POST_PERSUADE_DRAWER",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "TAKE_BADGE_AFTER_LOG",
+              "text": "Take the demagnetized contractor badge.",
+              "next": "N_TAKE_1"
+            },
+            {
+              "id": "LEAVE_AFTER_LOG",
+              "text": "Leave the drawer alone.",
+              "next": "N_CLOSE_1"
+            }
+          ]
+        },
+        {
+          "id": "N_STOP_TALKING_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "[INTERCOM VOICE] Appreciated. For the record\u2014 there is no record of appreciation.",
+          "next": "PC_DRAWER_MENU"
+        },
+        {
+          "id": "N_TAKE_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You take the demagnetized contractor badge. The tape on the stripe catches on your glove, reluctant to let go.",
+          "next": "N_TAKE_2"
+        },
+        {
+          "id": "N_TAKE_2",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The drawer suddenly looks emptier than it should, like you\u2019ve changed the inventory by existing near it.",
+          "next": "END_TAKE_BADGE"
+        },
+        {
+          "id": "END_TAKE_BADGE",
+          "type": "end",
+          "outcomeId": "take_demagnetized_badge",
+          "effects": [
+            {
+              "key": "paperwork.contractorBadgeCollected",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "inventory.items",
+              "action": "add",
+              "value": "ITEM_CONTRACTOR_BADGE_DEMAG"
+            }
+          ]
+        },
+        {
+          "id": "N_CLOSE_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You push the drawer shut. It resists for a second, then seats with a soft clack like a stamp landing on the wrong form.",
+          "next": "N_CLOSE_2"
+        },
+        {
+          "id": "N_CLOSE_2",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "Nothing in the vestibule changes. Which is usually how the facility signals agreement.",
+          "next": "PC_EXIT_MENU"
+        },
+        {
+          "id": "PC_EXIT_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "LEAVE_DOWN",
+              "text": "Leave down to Guard Shack Exterior.",
+              "next": "END_EXIT_DOWN"
+            },
+            {
+              "id": "LEAVE_RIGHT",
+              "text": "Leave right to Admin Lobby and Kiosk.",
+              "next": "END_EXIT_RIGHT"
+            }
+          ]
+        },
+        {
+          "id": "END_EXIT_DOWN",
+          "type": "end"
+        },
+        {
+          "id": "END_EXIT_RIGHT",
+          "type": "end"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "changes": [
+    {
+      "action": "add",
+      "createScene": {
+        "dialogueGraphs": [
+          {
+            "id": "DG_SCN092_FAX_MACHINE_TRAY",
+            "nodes": [
+              {
+                "id": "N_ENTRY",
+                "next": "N_MENU",
+                "speakerId": "NARRATOR",
+                "text": "The fax machine tray holds a single curled page: a transmission report with no recipient.\nThe machine\u2019s display reads LOW TONER, as if toner is a moral resource.",
+                "type": "npc_line"
+              },
+              {
+                "choices": [
+                  {
+                    "id": "C_FAX_READ",
+                    "next": "N_FAX_READ",
+                    "text": "look \u201cRead the curled transmission report.\u201d"
+                  },
+                  {
+                    "id": "C_FAX_TEST",
+                    "next": "N_FAX_TEST",
+                    "text": "use \u201cAttempt to fax a blank page.\u201d"
+                  },
+                  {
+                    "id": "C_FAX_WHY",
+                    "next": "N_FAX_WHY",
+                    "text": "ask \u201cWhy print a report if nothing sent?\u201d"
+                  },
+                  {
+                    "id": "C_FAX_CONFIRM",
+                    "next": "N_FAX_CONFIRM",
+                    "text": "look \u201cCheck if it can print confirmations for the binder.\u201d"
+                  },
+                  {
+                    "id": "C_FAX_END",
+                    "next": "END",
+                    "text": "leave \u201cBack.\u201d"
+                  }
+                ],
+                "id": "N_MENU",
+                "speakerId": "PLAYER",
+                "type": "player_choice"
+              },
+              {
+                "id": "N_FAX_READ",
+                "next": "N_FAX_READ_PLAYER",
+                "speakerId": "NARRATOR",
+                "text": "The report lists: DATE, TIME, RESULT, and a blank where a number should be.\nRESULT: FAILED \u2014 TONER INSUFFICIENT FOR CONFIRMATION.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_FAX_READ_PLAYER",
+                "next": "N_MENU",
+                "speakerId": "PLAYER",
+                "text": "It failed because it couldn\u2019t prove it failed.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_FAX_TEST",
+                "next": "N_MENU",
+                "speakerId": "NARRATOR",
+                "text": "You feed a sheet into the slot.\nThe machine grips it with quiet commitment.\n\nIt dials nothing, waits, then prints a report anyway\u2014faint, half-legible.\n\nFAILED \u2014 TONER LOW. CONFIRMATION REQUIRED.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_FAX_WHY",
+                "next": "N_MENU",
+                "speakerId": "NARRATOR",
+                "text": "The fax machine does not answer.\nThe printed report does: CONFIRMATION IS PART OF TRANSMISSION.\nThe machine is not interested in outcomes. Only artifacts.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_FAX_CONFIRM",
+                "next": "N_MENU",
+                "speakerId": "NARRATOR",
+                "text": "The fax can generate time-stamped confirmations and header lines\u2014when it has toner.\nIt is, unfortunately, correct about that.",
+                "type": "npc_line"
+              },
+              {
+                "id": "END",
+                "outcomeId": "fax_tray_checked",
+                "type": "end"
+              }
+            ],
+            "sceneId": "SCN-092",
+            "startNodeId": "N_ENTRY"
+          }
+        ]
+      },
+      "op": "create_scene"
+    }
+  ],
+  "sceneId": "SCN-092"
+}

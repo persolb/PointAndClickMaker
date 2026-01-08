@@ -1,0 +1,91 @@
+{
+  "screen_id": "LIM-06",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Caged scheduling window",
+      "slug": "caged_scheduling_window",
+      "file": "story_specific_gen/images/LIM-06-mask-caged_scheduling_window.png",
+      "boxes": [
+        {
+          "label": "Caged scheduling window",
+          "box_2d": [
+            193,
+            376,
+            563,
+            622
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "No-show recovery bin",
+      "slug": "no_show_recovery_bin",
+      "file": "story_specific_gen/images/LIM-06-mask-no_show_recovery_bin.png",
+      "boxes": [
+        {
+          "label": "No-show recovery bin sign",
+          "box_2d": [
+            343,
+            85,
+            423,
+            218
+          ]
+        },
+        {
+          "label": "No-show recovery bin",
+          "box_2d": [
+            443,
+            81,
+            747,
+            226
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Stamp substitution board",
+      "slug": "stamp_substitution_board",
+      "file": "story_specific_gen/images/LIM-06-mask-stamp_substitution_board.png",
+      "boxes": [
+        {
+          "label": "Stamp substitution board",
+          "box_2d": [
+            247,
+            513,
+            521,
+            608
+          ]
+        },
+        {
+          "label": "Stamp substitution board",
+          "box_2d": [
+            253,
+            387,
+            521,
+            608
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Slot token press",
+      "slug": "slot_token_press",
+      "file": "story_specific_gen/images/LIM-06-mask-slot_token_press.png",
+      "boxes": [
+        {
+          "label": "Slot token press machine",
+          "box_2d": [
+            569,
+            612,
+            874,
+            715
+          ]
+        }
+      ]
+    }
+  ]
+}

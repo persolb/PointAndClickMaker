@@ -1,0 +1,503 @@
+{
+  "dialogueGraphs": [
+    {
+      "id": "CTRLROOM_PAPERTRAIL",
+      "sceneId": "SCN-036",
+      "startNodeId": "NARRATOR_ENTER",
+      "nodes": [
+        {
+          "id": "NARRATOR_ENTER",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The Control Room smells like warmed dust and laminated paper.\nThree consoles. One alarm panel with too many labeled lights. A log printer still feeding itself.\nA procedure binder sits open like it was abandoned mid-sentence.\n\nOn the wall: generic compliance notices. \u201cPOST THIS NOTICE.\u201d \u201cDO NOT REMOVE THIS NOTICE.\u201d None of them say who wrote them.",
+          "next": "LIAISON_BASELINE"
+        },
+        {
+          "id": "LIAISON_BASELINE",
+          "type": "npc_line",
+          "speakerId": "EAC_LIAISON",
+          "text": "Before you touch anything: we need a baseline. (pause) Not because I distrust you. (pause) Because the paperwork must survive people who will.",
+          "next": "MENU"
+        },
+        {
+          "id": "MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "LOOK_CONSOLE",
+              "text": "Look: Main console",
+              "next": "CONSOLE_DESC"
+            },
+            {
+              "id": "LOOK_ALARM",
+              "text": "Look: Alarm panel",
+              "next": "ALARM_DESC"
+            },
+            {
+              "id": "LOOK_PRINTER",
+              "text": "Look: Log printer tray",
+              "next": "PRINTER_DESC"
+            },
+            {
+              "id": "LOOK_BINDER",
+              "text": "Look: Procedure binder",
+              "next": "BINDER_DESC"
+            },
+            {
+              "id": "TALK_ACCESS",
+              "text": "Talk: I need operational controls and logs.",
+              "next": "TALK_NEED"
+            },
+            {
+              "id": "LEAVE_CORRIDOR",
+              "text": "Leave: Operations Corridor (down)",
+              "next": "LEAVE_CORRIDOR_DESC"
+            },
+            {
+              "id": "LEAVE_DECK",
+              "text": "Leave: SPINDLE Chamber Observation Deck (hotspot)",
+              "next": "LEAVE_DECK_DESC"
+            }
+          ]
+        },
+        {
+          "id": "CONSOLE_DESC",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The main console is powered. The screen shows load routing and a status banner: CONTINUOUS BASELINE EXPORT.\nSomeone has taped a handwritten label over a switch: \u201cDO NOT CYCLE (ASK FIRST).\u201d",
+          "next": "CONSOLE_PLAYER_RUNNING"
+        },
+        {
+          "id": "CONSOLE_PLAYER_RUNNING",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "It\u2019s running.",
+          "next": "CONSOLE_LIAISON_LANGUAGE"
+        },
+        {
+          "id": "CONSOLE_LIAISON_LANGUAGE",
+          "type": "npc_line",
+          "speakerId": "EAC_LIAISON",
+          "text": "It is not \u201crunning.\u201d (pause) Not discretionary operation. (pause) It is in continuous export mode. (pause) The least operable way to say \u201con.\u201d (pause) Legally. (pause) Call it \u201crunning\u201d (pause) and someone asks (pause) why you didn\u2019t shut it down. (pause) On sight.",
+          "next": "CONSOLE_CHOICES"
+        },
+        {
+          "id": "CONSOLE_CHOICES",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "ASK_WHO_TOLD_YOU",
+              "text": "Ask: Who told you to call it that?",
+              "next": "CONSOLE_ASK_PLAYER"
+            },
+            {
+              "id": "BACK",
+              "text": "Look: Back",
+              "next": "TO_MENU"
+            }
+          ]
+        },
+        {
+          "id": "CONSOLE_ASK_PLAYER",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Who told you to call it that?",
+          "next": "CONSOLE_ASK_LIAISON"
+        },
+        {
+          "id": "CONSOLE_ASK_LIAISON",
+          "type": "npc_line",
+          "speakerId": "EAC_LIAISON",
+          "text": "Nobody \u201ctold\u201d me. (pause) It\u2019s language drift. (pause) You learn it the first time. (pause) A transcript gets read back to you. (pause) With emphasis.",
+          "next": "CONSOLE_CHOICES"
+        },
+        {
+          "id": "ALARM_DESC",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The alarm panel is quiet: no horns, no strobes.\nSeveral indicator lamps are lit anyway, labeled with comforting words like NORMAL and BYPASS.",
+          "next": "ALARM_PLAYER_ACTIVE"
+        },
+        {
+          "id": "ALARM_PLAYER_ACTIVE",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Anything active?",
+          "next": "ALARM_LIAISON_TERMS"
+        },
+        {
+          "id": "ALARM_LIAISON_TERMS",
+          "type": "npc_line",
+          "speakerId": "EAC_LIAISON",
+          "text": "\u201cActive\u201d is a loaded term. (pause)\nThe alarms are armed. (pause)\nSome are suppressed. (pause)\nOne is in \u201cadministrative silence.\u201d (pause)\nWhich means: true without urgency. (pause)\nDon\u2019t quote me.",
+          "next": "ALARM_CHOICES"
+        },
+        {
+          "id": "ALARM_CHOICES",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "ASK_WHICH_ONE",
+              "text": "Ask: Which one?",
+              "next": "ALARM_WHICH_LIAISON"
+            },
+            {
+              "id": "BACK",
+              "text": "Look: Back",
+              "next": "TO_MENU"
+            }
+          ]
+        },
+        {
+          "id": "ALARM_WHICH_LIAISON",
+          "type": "npc_line",
+          "speakerId": "EAC_LIAISON",
+          "text": "\u201cReflective Behavior Deviation.\u201d (pause)\nThat\u2019s a historical label. (pause)\nIt isn\u2019t about reflections. (pause)\nThe site once produced an optics-shaped problem. (pause)\nEveryone agreed to file it that way.",
+          "next": "ALARM_FOLLOWUP"
+        },
+        {
+          "id": "ALARM_FOLLOWUP",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "ASK_SUPPRESSED",
+              "text": "Ask: Is it suppressed?",
+              "next": "ALARM_SUPPRESSED_LIAISON"
+            },
+            {
+              "id": "BACK",
+              "text": "Look: Back",
+              "next": "TO_MENU"
+            }
+          ]
+        },
+        {
+          "id": "ALARM_SUPPRESSED_LIAISON",
+          "type": "npc_line",
+          "speakerId": "EAC_LIAISON",
+          "text": "It is not suppressed. (pause) It is non actionable without a second condition. (pause) That second condition is missing in the binder. (pause) Not my favorite symmetry.",
+          "next": "ALARM_FOLLOWUP"
+        },
+        {
+          "id": "PRINTER_DESC",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The log printer is warm.\nIt has been printing in the slow, stubborn way of a system that believes it will be read.",
+          "next": "PRINTER_NOTICE"
+        },
+        {
+          "id": "PRINTER_NOTICE",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The top page: ROUTING SUMMARY / EXPORT LEDGER.\nBelow it: NON-LOCAL COMPLIANCE NOTICE \u2014 DO NOT DISCARD.",
+          "next": "PRINTER_PLAYER_NONLOCAL"
+        },
+        {
+          "id": "PRINTER_PLAYER_NONLOCAL",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Non-local.",
+          "next": "PRINTER_LIAISON_TEMPLATE"
+        },
+        {
+          "id": "PRINTER_LIAISON_TEMPLATE",
+          "type": "npc_line",
+          "speakerId": "EAC_LIAISON",
+          "text": "That\u2019s probably a template header. (pause) \u201cNon-local\u201d may mean \u201cnot on this subnetwork.\u201d (pause) Not whatever your face is doing. (pause) But also do not discard it. (pause) Put it in the record. (pause) Templates are still discoverable.",
+          "next": "PRINTER_CHOICES"
+        },
+        {
+          "id": "PRINTER_CHOICES",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "SHOW_NOTICE",
+              "text": "Show: Show the notice to the camera/speaker pickup",
+              "next": "PRINTER_SHOW_NARRATOR"
+            },
+            {
+              "id": "BACK",
+              "text": "Look: Back",
+              "next": "TO_MENU"
+            }
+          ]
+        },
+        {
+          "id": "PRINTER_SHOW_NARRATOR",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You hold the page up. The paper curls like it resents being observed.",
+          "next": "PRINTER_SHOW_LIAISON"
+        },
+        {
+          "id": "PRINTER_SHOW_LIAISON",
+          "type": "npc_line",
+          "speakerId": "EAC_LIAISON",
+          "text": "Okay. Now we have it. (pause) An informal capture. (pause) Not evidence. (pause) It becomes evidence if someone decides it is. (pause) Bag the original in something clean. (pause) Not your pocket. (pause) Pockets are\u2026 narrative.",
+          "next": "PRINTER_CHOICES"
+        },
+        {
+          "id": "BINDER_DESC",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The binder is tabbed, cross-referenced, and slightly swollen from humidity.\nThe cover sheet says: SPINDLE SITE \u2014 OPERATOR SHUTDOWN SEQUENCE (OFFICIAL).\nA sticky note at the top reads: \u201cREVISION CHECKED (I THINK).\u201d",
+          "next": "BINDER_PLAYER"
+        },
+        {
+          "id": "BINDER_PLAYER",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "This is the shutdown.",
+          "next": "BINDER_LIAISON_MISSING"
+        },
+        {
+          "id": "BINDER_LIAISON_MISSING",
+          "type": "npc_line",
+          "speakerId": "EAC_LIAISON",
+          "text": "It is a shutdown. (pause)\nThe official one has a signature block. (pause)\nIt ties your hands. (pause)\nIt protects you later. (pause)\nThis one\u2014page seven is wrong. (pause)\nOr missing. (pause)\nOr replaced with a version meant right. (pause)\n\nPage seven is the control room access authorization. (pause)\nNot physical access\u2014everyone can enter, unfortunately. (pause)\nOperational access. (pause)\nLogging system access. (pause)\nThe part where you become the person. (pause)\nThe part where you did it.",
+          "next": "BINDER_CHOICES"
+        },
+        {
+          "id": "BINDER_CHOICES",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "ASK_PROCEED",
+              "text": "Ask: Can I proceed without it?",
+              "next": "BINDER_PROCEED_LIAISON"
+            },
+            {
+              "id": "BACK",
+              "text": "Look: Back",
+              "next": "TO_MENU"
+            }
+          ]
+        },
+        {
+          "id": "BINDER_PROCEED_LIAISON",
+          "type": "npc_line",
+          "speakerId": "EAC_LIAISON",
+          "text": "You can proceed. (pause) The site will let you. (pause) The equipment doesn't care about forms. (pause) The audit trail will care. Long memory.",
+          "next": "BINDER_CHOICES"
+        },
+        {
+          "id": "TALK_NEED",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "I need operational controls and logs.",
+          "next": "TALK_LIAISON_PATHS"
+        },
+        {
+          "id": "TALK_LIAISON_PATHS",
+          "type": "npc_line",
+          "speakerId": "EAC_LIAISON",
+          "text": "Yes. (pause) Get them without becoming reality\u2019s sole author. (pause) Two paths. (pause) The compliant path. (pause) Find or recreate missing authorization. (pause) The continuity path. (pause) Assert operator continuity on the console. (pause) Let the system accept you. (pause) Because nobody else is here. (pause) To disagree.",
+          "next": "ACCESS_CHOICES"
+        },
+        {
+          "id": "ACCESS_CHOICES",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "ASK_FASTER",
+              "text": "Ask: What\u2019s faster?",
+              "next": "ACCESS_ASK_LIAISON"
+            },
+            {
+              "id": "PERSUADE_FIELD_AUTH",
+              "text": "Persuade: Mark it as field authorization. I\u2019ll sign in as OLEA.",
+              "checks": [
+                {
+                  "type": "rep",
+                  "faction": "OLEA",
+                  "min": 1
+                },
+                {
+                  "type": "skill",
+                  "skill": "bureaucracy",
+                  "dc": 12
+                }
+              ],
+              "onPassNext": "COMPLIANT_LIAISON_OK",
+              "onFailNext": "COMPLIANT_FAIL"
+            },
+            {
+              "id": "USE_CONTINUITY",
+              "text": "Use: Assert \u201cOperator Continuity\u201d on the main console",
+              "next": "CONTINUITY_PLAYER_LINE"
+            },
+            {
+              "id": "BACK",
+              "text": "Talk: Back",
+              "next": "TO_MENU"
+            }
+          ]
+        },
+        {
+          "id": "ACCESS_ASK_LIAISON",
+          "type": "npc_line",
+          "speakerId": "EAC_LIAISON",
+          "text": "Faster is continuity. (pause)\nSafer for you later is compliant. (pause)\nBut it needs someone to bless authorization. (pause)\nAnd \u201csomeone\u201d keeps moving. (pause)\nIn a mothballed facility. (pause)\nThey don\u2019t stand still. (pause)\nNot for signatures.",
+          "next": "ACCESS_CHOICES"
+        },
+        {
+          "id": "COMPLIANT_FAIL",
+          "type": "npc_line",
+          "speakerId": "EAC_LIAISON",
+          "text": "I can\u2019t support that as written. (pause)\nIf you sign as OLEA (pause)\nwithout the right basis (pause)\nit reads like you manufactured custody. (pause)\nEither we do continuity (pause)\nwith an explicit reason code (pause)\nor we stop and find (pause)\na valid authorization path.",
+          "next": "COMPLIANT_FAIL_CHOICES"
+        },
+        {
+          "id": "COMPLIANT_FAIL_CHOICES",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "BACK",
+              "text": "Talk: Back",
+              "next": "ACCESS_CHOICES"
+            }
+          ]
+        },
+        {
+          "id": "COMPLIANT_LIAISON_OK",
+          "type": "npc_line",
+          "speakerId": "EAC_LIAISON",
+          "text": "If you sign as OLEA (pause) you\u2019re not just operating (pause) you\u2019re representing custody continuity. (pause)\nThat\u2019s good. (pause)\nAnd later (pause) people get weird. (pause)\n\nDo it cleanly. (pause)\nState the basis (pause) emergency stabilization (pause) and fiscal closure timeline. (pause)\nNot \u201cit was convenient.\u201d (pause) Convenience isn\u2019t a hazard category.",
+          "next": "COMPLIANT_NARRATOR_ANNOTATE"
+        },
+        {
+          "id": "COMPLIANT_NARRATOR_ANNOTATE",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You annotate the binder\u2019s authorization gap with a field sign-off and timestamp.\nThe act feels heavier than the pen.",
+          "next": "COMPLIANT_NARRATOR_ACCEPT"
+        },
+        {
+          "id": "COMPLIANT_NARRATOR_ACCEPT",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The console accepts your credentials as if it\u2019s been waiting to be allowed to remember them.",
+          "next": "READY_NARRATOR_COMPLIANT"
+        },
+        {
+          "id": "READY_NARRATOR_COMPLIANT",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "Operational controls unlock. Logging tabs appear: ROUTING, INTERLOCKS, EXPORT, EVENT HISTORY.\nThe cursor blinks on a prompt: SELECT CONTROL DOMAIN.\nThe room remains quiet.",
+          "next": "END_READY_COMPLIANT"
+        },
+        {
+          "id": "END_READY_COMPLIANT",
+          "type": "end",
+          "outcomeId": "control_room_ready",
+          "effects": [
+            {
+              "key": "world.controlRoomAccessed",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "world.controlRoomAccessMethod",
+              "action": "set",
+              "value": "compliant"
+            }
+          ]
+        },
+        {
+          "id": "CONTINUITY_PLAYER_LINE",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Continuity mode.",
+          "next": "CONTINUITY_LIAISON_DISCLAIMER"
+        },
+        {
+          "id": "CONTINUITY_LIAISON_DISCLAIMER",
+          "type": "npc_line",
+          "speakerId": "EAC_LIAISON",
+          "text": "For the record: (pause) I did not instruct you to do that. (pause)\nI described it. (pause) Descriptions are not directions. (pause)\nThat distinction has saved one career, once.",
+          "next": "CONTINUITY_NARRATOR_REASON"
+        },
+        {
+          "id": "CONTINUITY_NARRATOR_REASON",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You flip into Operator Continuity.\nThe console requests a reason code. There are only three. Two are jokes.\nYou choose the one that looks least like a joke.",
+          "next": "CONTINUITY_LIAISON_HEADER"
+        },
+        {
+          "id": "CONTINUITY_LIAISON_HEADER",
+          "type": "npc_line",
+          "speakerId": "EAC_LIAISON",
+          "text": "Good. (pause) Now don\u2019t touch anything else. (pause) Not until we confirm the log header changed. (pause) I know that sounds trivial. (pause) Trivial is where the blame attaches.",
+          "next": "CONTINUITY_NARRATOR_PRINTS"
+        },
+        {
+          "id": "CONTINUITY_NARRATOR_PRINTS",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The log printer clicks and advances a line: OPERATOR OF RECORD: FIELD SYSTEMS SPECIALIST (CONTINUITY).\nIt prints it twice, as if to make sure.",
+          "next": "READY_NARRATOR_CONTINUITY"
+        },
+        {
+          "id": "READY_NARRATOR_CONTINUITY",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "Operational controls unlock. Logging tabs appear: ROUTING, INTERLOCKS, EXPORT, EVENT HISTORY.\nThe cursor blinks on a prompt: SELECT CONTROL DOMAIN.\nThe room remains quiet.",
+          "next": "END_READY_CONTINUITY"
+        },
+        {
+          "id": "END_READY_CONTINUITY",
+          "type": "end",
+          "outcomeId": "control_room_ready",
+          "effects": [
+            {
+              "key": "world.controlRoomAccessed",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "world.controlRoomAccessMethod",
+              "action": "set",
+              "value": "continuity"
+            }
+          ]
+        },
+        {
+          "id": "LEAVE_CORRIDOR_DESC",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You step back into the corridor. The control room door closes like it\u2019s keeping your place.",
+          "next": "END_LEAVE_CORRIDOR"
+        },
+        {
+          "id": "END_LEAVE_CORRIDOR",
+          "type": "end"
+        },
+        {
+          "id": "LEAVE_DECK_DESC",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You head toward the observation deck access. The control room\u2019s printer keeps working behind you, unbothered.",
+          "next": "END_LEAVE_DECK"
+        },
+        {
+          "id": "END_LEAVE_DECK",
+          "type": "end"
+        },
+        {
+          "id": "TO_MENU",
+          "type": "redirect",
+          "target": "MENU"
+        }
+      ]
+    }
+  ]
+}

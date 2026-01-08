@@ -1,0 +1,39 @@
+{
+  "changes": [
+    {
+      "action": "add",
+      "createScene": {
+        "dialogueGraphs": [
+          {
+            "id": "SCN_120_SLOT_TOKEN_PRESS",
+            "nodes": [
+              {
+                "id": "N00_PRESS_TABLEAU",
+                "next": "N01_PRESS_EXPLAIN",
+                "speakerId": "NARRATOR",
+                "text": "The SLOT TOKEN press sits bolted to the laminate, its handle polished by nervous hands. The die face is clean, the warning plate sharper than the counter: AUTHORIZED IMPRESSIONS ONLY.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N01_PRESS_EXPLAIN",
+                "next": "END",
+                "speakerId": "SCHED_CLERK",
+                "text": "It stamps custody onto a token. (pause) That token\u2019s what you show at checkpoints. (pause) You\u2019re carrying the slot. (pause) Lose it and it\u2019s abandonment. (pause) Abandoned assets get recovered. (pause) Sometimes you. (pause) Usually someone quicker.",
+                "type": "npc_line"
+              },
+              {
+                "id": "END",
+                "outcomeId": "slot_token_press_explained",
+                "type": "end"
+              }
+            ],
+            "sceneId": "SCN-120",
+            "startNodeId": "N00_PRESS_TABLEAU"
+          }
+        ]
+      },
+      "op": "create_scene"
+    }
+  ],
+  "sceneId": "SCN-120"
+}

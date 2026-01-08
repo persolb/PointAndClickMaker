@@ -1,0 +1,538 @@
+{
+  "changes": [
+    {
+      "action": "add",
+      "createScene": {
+        "dialogueGraphs": [
+          {
+            "id": "DG_GROUND_SERVICE_HATCH",
+            "nodes": [
+              {
+                "id": "N_HATCH_DESC",
+                "next": "N_HATCH_MENU",
+                "speakerId": "NARRATOR",
+                "text": "A ground-level hatch is set into the pavement off to the side. It has a service number stamped into it and paint marks from at least three different survey crews.\nIt looks like an alternate way in that you are not authorized to discover.",
+                "type": "npc_line"
+              },
+              {
+                "choices": [
+                  {
+                    "id": "C_LEAVE_BACK_FROM_HATCH",
+                    "next": "END_BACK_TO_GATE_SCREEN",
+                    "text": "leave Back."
+                  }
+                ],
+                "id": "N_HATCH_MENU",
+                "speakerId": "PLAYER",
+                "type": "player_choice"
+              },
+              {
+                "exitTo": "Back to Gate (HUB-01)",
+                "id": "END_BACK_TO_GATE_SCREEN",
+                "type": "end"
+              }
+            ],
+            "sceneId": "SCN-077",
+            "startNodeId": "N_HATCH_DESC"
+          }
+        ]
+      },
+      "op": "create_scene"
+    },
+    {
+      "action": "add",
+      "createScene": {
+        "dialogueGraphs": [
+          {
+            "id": "DG_SCN_077_GROUND_SERVICE_HATCH",
+            "nodes": [
+              {
+                "id": "N_START",
+                "next": "N_ESTABLISH_TAGS",
+                "speakerId": "NARRATOR",
+                "text": "Exterior ground service hatch. A steel lid with a lifting ring sits flush in cracked concrete.\nA short access ladder drops into a shallow utility pit.\nA service door waits at the bottom like it has been apologized to, repeatedly, in writing.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_ESTABLISH_TAGS",
+                "next": "N_HUB_MENU",
+                "speakerId": "NARRATOR",
+                "text": "Conduit runs disappear under the slab with fresh-ish tags. \u201cMINIMUM BUILDING LOADS\u201d is printed in a font that assumes you won\u2019t argue.",
+                "type": "npc_line"
+              },
+              {
+                "choices": [
+                  {
+                    "id": "C_LOOK_HATCH",
+                    "next": "N_LOOK_HATCH_1",
+                    "text": "look \u201cHatch lid and lifting ring\u201d"
+                  },
+                  {
+                    "id": "C_LOOK_LADDER",
+                    "next": "N_LOOK_LADDER_1",
+                    "text": "look \u201cAccess ladder/steps\u201d"
+                  },
+                  {
+                    "id": "C_LOOK_DOOR",
+                    "next": "N_LOOK_DOOR_1",
+                    "text": "look \u201cService door\u201d"
+                  },
+                  {
+                    "id": "C_TALK_OPS",
+                    "next": "N_CALL_CONNECT_TOP",
+                    "text": "talk \u201cCall OLEA Ops\u201d"
+                  },
+                  {
+                    "id": "C_USE_OPEN_HATCH",
+                    "next": "N_OPEN_HATCH_1",
+                    "text": "use \u201cOpen the hatch\u201d"
+                  },
+                  {
+                    "id": "C_LEAVE_GATE",
+                    "next": "N_END_LEAVE_GATE",
+                    "text": "leave \u201cApproach Road and Main Gate\u201d"
+                  },
+                  {
+                    "id": "C_LEAVE_CORRIDOR",
+                    "next": "N_END_LEAVE_CORRIDOR",
+                    "text": "leave \u201cService Corridor and Duct Access\u201d"
+                  }
+                ],
+                "id": "N_HUB_MENU",
+                "speakerId": "PLAYER",
+                "type": "player_choice"
+              },
+              {
+                "id": "N_LOOK_HATCH_1",
+                "next": "N_LOOK_HATCH_2",
+                "speakerId": "NARRATOR",
+                "text": "The ring is polished where gloves keep grabbing it. Someone has been here recently, and they were careful in the way people are careful when they want a record to show \u201cnormal wear.\u201d",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_LOOK_HATCH_2",
+                "next": "N_HUB_MENU",
+                "speakerId": "NARRATOR",
+                "text": "A stenciled note on the lid: \u201cOPEN ONLY FOR AUTHORIZED SERVICE ACCESS.\u201d\nBelow it, a smaller sticker: \u201cAUTHORIZED \u2260 OPTIONAL.\u201d",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_LOOK_LADDER_1",
+                "next": "N_LOOK_LADDER_2",
+                "speakerId": "NARRATOR",
+                "text": "Galvanized rungs, clean enough to offend the surrounding concrete.\nA fall-arrest anchor is installed, tagged, and\u2014this is the odd part\u2014dated this quarter. That makes your jaw tighten, just a little.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_LOOK_LADDER_2",
+                "next": "N_HUB_MENU",
+                "speakerId": "NARRATOR",
+                "text": "A laminated card hangs from the anchor: \u201cDESCENT PROCEDURE: THREE POINTS OF CONTACT. DO NOT LINGER.\u201d\n\u201cDo not linger\u201d is underlined twice, like it\u2019s personal.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_LOOK_DOOR_1",
+                "next": "N_LOOK_DOOR_2",
+                "speakerId": "NARRATOR",
+                "text": "You can\u2019t see much from up here. The door is set into poured concrete at the bottom of the pit, painted \u201cutility gray\u201d over older layers.\nA placard reads: \u201cSERVICE ACCESS \u2014 MINIMUM LOAD WAKE.\u201d",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_LOOK_DOOR_2",
+                "next": "N_HUB_MENU",
+                "speakerId": "NARRATOR",
+                "text": "The hinges look new. The knob looks old. That combination usually means a story nobody wants to tell twice.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_CALL_CONNECT_TOP",
+                "next": "N_CALL_OPS_INTRO_TOP",
+                "speakerId": "NARRATOR",
+                "text": "Your handset finds a signal after a beat too long.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_CALL_OPS_INTRO_TOP",
+                "next": "N_CALL_MENU_TOP",
+                "speakerId": "OLEA_OPS",
+                "text": "OLEA Ops, line recorded, unofficially.\nThat means it\u2019s recorded, but we don\u2019t have to admit we recorded it unless someone asks in the correct way.",
+                "type": "npc_line"
+              },
+              {
+                "choices": [
+                  {
+                    "id": "C_ASK_CONFIRM",
+                    "next": "N_CALL_CONFIRM_P_TOP",
+                    "text": "ask \u201cConfirm this is the ground service hatch.\u201d"
+                  },
+                  {
+                    "id": "C_ASK_MAINT",
+                    "next": "N_CALL_MAINT_P_TOP",
+                    "text": "ask \u201cWhy is maintenance dated this quarter?\u201d"
+                  },
+                  {
+                    "id": "C_ASK_HAZ",
+                    "next": "N_CALL_HAZ_P_TOP",
+                    "text": "ask \u201cAny hazards logged for the pit?\u201d"
+                  },
+                  {
+                    "checks": [
+                      {
+                        "dc": 12,
+                        "skill": "paperwork",
+                        "type": "skill"
+                      }
+                    ],
+                    "id": "C_PERSUADE_LOG",
+                    "onFailNext": "N_CALL_LOG_FAIL_TOP",
+                    "onPassNext": "N_CALL_LOG_PASS_TOP",
+                    "text": "persuade \u201cLog that I\u2019m at service access.\u201d"
+                  },
+                  {
+                    "id": "C_LEAVE_END",
+                    "next": "N_CALL_END_TOP_1",
+                    "text": "leave \u201cEnd call\u201d"
+                  }
+                ],
+                "id": "N_CALL_MENU_TOP",
+                "speakerId": "PLAYER",
+                "type": "player_choice"
+              },
+              {
+                "id": "N_CALL_CONFIRM_P_TOP",
+                "next": "N_CALL_CONFIRM_OPS_TOP",
+                "speakerId": "PLAYER",
+                "text": "Confirm location?",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_CALL_CONFIRM_OPS_TOP",
+                "next": "N_CALL_MENU_TOP",
+                "speakerId": "OLEA_OPS",
+                "text": "If you\u2019re at the exterior hatch with the lifting ring, yes.\nThere are three exterior hatches, but only one is \u201cExterior Ground Service Hatch\u201d in the index, because the index was updated after\u2014never mind.\nYou\u2019re where you\u2019re supposed to be, on paper.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_CALL_MAINT_P_TOP",
+                "next": "N_CALL_MAINT_OPS_TOP",
+                "speakerId": "PLAYER",
+                "text": "Why\u2019s it current?",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_CALL_MAINT_OPS_TOP",
+                "next": "N_CALL_MENU_TOP",
+                "speakerId": "OLEA_OPS",
+                "text": "It isn\u2019t \u201ccurrent.\u201d It\u2019s \u201ckept from becoming noncompliant.\u201d\nThere\u2019s a difference that matters during reviews.\nMinimal loads require minimal access, and minimal access requires maximal signage. That\u2019s just how the funding language works.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_CALL_HAZ_P_TOP",
+                "next": "N_CALL_HAZ_OPS_TOP",
+                "speakerId": "PLAYER",
+                "text": "Hazards?",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_CALL_HAZ_OPS_TOP",
+                "next": "N_CALL_MENU_TOP",
+                "speakerId": "OLEA_OPS",
+                "text": "Standard confined-space concerns, except it\u2019s not classified as confined because it\u2019s \u201cshallow.\u201d\nSo treat it as confined, but don\u2019t call it that in writing unless you want a reclassification ticket opened, because that triggers a pause, and a pause triggers questions.\nAlso: watch for condensation on the door. Not for safety. For\u2026 tracking. We had an issue with fingerprints being interpreted as \u201cunauthorized presence.\u201d",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_CALL_LOG_PASS_TOP",
+                "next": "N_CALL_LOG_PASS_TOP_2",
+                "speakerId": "OLEA_OPS",
+                "text": "I can log \u201carrived at exterior ground service hatch\u201d with no problem.\n\u201cService access reached\u201d is a phrase that implies you are going to interact with load wake controls, which implies the controls are present, which implies we acknowledge their condition.\nBut. Since you\u2019re the Field Systems Specialist and you\u2019re physically present, I can log it as:\n\u201cService access point reached for verification of minimal building loads.\u201d\nThat way it\u2019s verification, not activation. Words matter. I didn\u2019t invent that.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_CALL_LOG_PASS_TOP_2",
+                "next": "N_CALL_MENU_TOP",
+                "speakerId": "NARRATOR",
+                "text": "You hear typing. It sounds like a door closing, somewhere far away.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_CALL_LOG_FAIL_TOP",
+                "next": "N_CALL_MENU_TOP",
+                "speakerId": "OLEA_OPS",
+                "text": "I can\u2019t log that phrase under your name without a supervisor concurrence.\nNot because I don\u2019t believe you\u2014because belief is not a field on the form.\nIf you want it logged, send a photo of the placard and a timestamp, and I can log \u201cvisual confirmation pending.\u201d\nWhich is what we do when we want something to exist without admitting it exists yet.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_CALL_END_TOP_1",
+                "next": "N_CALL_END_TOP_2",
+                "speakerId": "PLAYER",
+                "text": "Copy.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_CALL_END_TOP_2",
+                "next": "N_CALL_END_TOP_3",
+                "speakerId": "OLEA_OPS",
+                "text": "Stay present. That\u2019s the job.\nAnd if anything looks \u201creflective,\u201d that\u2019s not a technical term, that\u2019s just me being tired. End call.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_CALL_END_TOP_3",
+                "next": "N_HUB_MENU",
+                "speakerId": "NARRATOR",
+                "text": "The line drops before you can decide whether that was advice or a disclaimer.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_OPEN_HATCH_1",
+                "next": "N_OPEN_HATCH_2",
+                "speakerId": "NARRATOR",
+                "text": "You hook the ring and pull. The lid gives with a small, practiced reluctance. Your shoulder complains on principle.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_OPEN_HATCH_2",
+                "next": "N_PIT_ENTRY_MENU",
+                "speakerId": "NARRATOR",
+                "text": "Cool air rises from below, smelling like damp concrete and electrical insulation. A maintained smell.",
+                "type": "npc_line"
+              },
+              {
+                "choices": [
+                  {
+                    "id": "C_USE_GO_DOWN",
+                    "next": "N_PIT_DESCEND_1",
+                    "text": "use \u201cGo down\u201d"
+                  },
+                  {
+                    "id": "C_LEAVE_STEP_BACK",
+                    "next": "N_STEP_BACK_1",
+                    "text": "leave \u201cStep back\u201d"
+                  }
+                ],
+                "id": "N_PIT_ENTRY_MENU",
+                "speakerId": "PLAYER",
+                "type": "player_choice"
+              },
+              {
+                "id": "N_STEP_BACK_1",
+                "next": "N_HUB_MENU",
+                "speakerId": "NARRATOR",
+                "text": "The lid settles back into place like it was never meant to be witnessed open.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_PIT_DESCEND_1",
+                "next": "N_PIT_DESCEND_2",
+                "speakerId": "NARRATOR",
+                "text": "You descend. Boots on rung, then rung, then the last drop onto a concrete pad. Your heart rate stays professional anyway.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_PIT_DESCEND_2",
+                "next": "N_PIT_DESCEND_3",
+                "speakerId": "NARRATOR",
+                "text": "The pit is shallow but deliberate: conduit runs in neat bundles, junctions labeled twice, and a small breaker box with a seal tag that looks newer than it should.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_PIT_DESCEND_3",
+                "next": "N_PIT_MENU",
+                "speakerId": "NARRATOR",
+                "text": "A plastic marker on the conduit reads: \u201cSERVICE ACCESS / MINIMUM BUILDING LOADS.\u201d\nSomeone has underlined \u201cMINIMUM\u201d with a pen that ran out halfway through, like they changed their mind mid-emphasis.",
+                "type": "npc_line"
+              },
+              {
+                "choices": [
+                  {
+                    "id": "C_LOOK_CONDUIT",
+                    "next": "N_LOOK_CONDUIT_1",
+                    "text": "look \u201cConduit runs and labels\u201d"
+                  },
+                  {
+                    "id": "C_USE_SERVICE_DOOR",
+                    "next": "N_DOOR_TEST_1",
+                    "text": "use \u201cService door\u201d"
+                  },
+                  {
+                    "id": "C_TALK_OPS_PIT",
+                    "next": "N_CALL_CONNECT_PIT",
+                    "text": "talk \u201cCall OLEA Ops\u201d"
+                  },
+                  {
+                    "id": "C_LEAVE_CLIMB_UP",
+                    "next": "N_CLIMB_UP_1",
+                    "text": "leave \u201cClimb back up\u201d"
+                  }
+                ],
+                "id": "N_PIT_MENU",
+                "speakerId": "PLAYER",
+                "type": "player_choice"
+              },
+              {
+                "id": "N_LOOK_CONDUIT_1",
+                "next": "N_LOOK_CONDUIT_2",
+                "speakerId": "NARRATOR",
+                "text": "The labeling is consistent in the way a cover story is consistent.\nFeed lines: tagged. Return lines: tagged. A spare: tagged as \u201cSPARE (DO NOT UTILIZE),\u201d which is the kind of instruction that guarantees utilization.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_LOOK_CONDUIT_2",
+                "next": "N_PIT_MENU",
+                "speakerId": "NARRATOR",
+                "text": "One notice is taped crooked to the breaker box: \u201cNON-LOCAL COMPLIANCE NOTICES STORED INTERIOR.\u201d\nThe wording irritates you, because it\u2019s not a category you can file yet.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_CALL_CONNECT_PIT",
+                "next": "N_CALL_OPS_INTRO_PIT",
+                "speakerId": "NARRATOR",
+                "text": "Signal is better down here, which feels wrong.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_CALL_OPS_INTRO_PIT",
+                "next": "N_CALL_MENU_PIT",
+                "speakerId": "OLEA_OPS",
+                "text": "Still with me.\nDon\u2019t say \u201cdown here\u201d on the recording. It implies a depth classification.",
+                "type": "npc_line"
+              },
+              {
+                "choices": [
+                  {
+                    "id": "C_ASK_DOOR_OK",
+                    "next": "N_CALL_DOOR_P_PIT",
+                    "text": "ask \u201cDoor access okay?\u201d"
+                  },
+                  {
+                    "id": "C_ASK_NONLOCAL",
+                    "next": "N_CALL_NONLOCAL_P_PIT",
+                    "text": "ask \u201cWhat\u2019s \u2018non-local compliance\u2019?\u201d"
+                  },
+                  {
+                    "id": "C_LEAVE_END_PIT",
+                    "next": "N_CALL_END_PIT_1",
+                    "text": "leave \u201cEnd call\u201d"
+                  }
+                ],
+                "id": "N_CALL_MENU_PIT",
+                "speakerId": "PLAYER",
+                "type": "player_choice"
+              },
+              {
+                "id": "N_CALL_DOOR_P_PIT",
+                "next": "N_CALL_DOOR_OPS_PIT",
+                "speakerId": "PLAYER",
+                "text": "Door okay?",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_CALL_DOOR_OPS_PIT",
+                "next": "N_CALL_MENU_PIT",
+                "speakerId": "OLEA_OPS",
+                "text": "It\u2019s a door. It opens until it doesn\u2019t.\nIf the gasket is swollen, don\u2019t force it\u2014forcing gets written up as \u201cimproper actuation.\u201d\nIf it opens easily, that gets written up as \u201cunexpected lack of resistance,\u201d so either way, be normal about it.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_CALL_NONLOCAL_P_PIT",
+                "next": "N_CALL_NONLOCAL_OPS_PIT",
+                "speakerId": "PLAYER",
+                "text": "Non-local?",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_CALL_NONLOCAL_OPS_PIT",
+                "next": "N_CALL_MENU_PIT",
+                "speakerId": "OLEA_OPS",
+                "text": "It\u2019s\u2026 notices. About standards. From outside jurisdictions.\nWe store them because we\u2019re not supposed to ignore them, and we\u2019re also not supposed to adopt them without a steering committee, and the steering committee was dissolved for cost savings.\nSo they exist in storage. Like the site. Comparable situation.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_CALL_END_PIT_1",
+                "next": "N_CALL_END_PIT_2",
+                "speakerId": "PLAYER",
+                "text": "Understood.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_CALL_END_PIT_2",
+                "next": "N_CALL_END_PIT_3",
+                "speakerId": "OLEA_OPS",
+                "text": "Good. Keep it boring.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_CALL_END_PIT_3",
+                "next": "N_PIT_MENU",
+                "speakerId": "NARRATOR",
+                "text": "The call ends as if it was waiting for permission.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_CLIMB_UP_1",
+                "next": "N_HUB_MENU",
+                "speakerId": "NARRATOR",
+                "text": "You climb out. The light at the top is ordinary, and you resent it for that.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_DOOR_TEST_1",
+                "next": "N_DOOR_TEST_2",
+                "speakerId": "NARRATOR",
+                "text": "You test the handle. The latch releases on the first try, like it\u2019s been waiting to prove something.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_DOOR_TEST_2",
+                "next": "N_COMMIT_MENU",
+                "speakerId": "NARRATOR",
+                "text": "Air spills through the gap\u2014cooler, drier, with that faint ozone edge that means \u201cpowered,\u201d but nobody will call it that out loud.",
+                "type": "npc_line"
+              },
+              {
+                "choices": [
+                  {
+                    "id": "C_USE_ENTER_DOOR",
+                    "next": "N_END_REACH_SERVICE_ACCESS",
+                    "text": "use \u201cEnter through the service door\u201d"
+                  },
+                  {
+                    "id": "C_LEAVE_NOT_YET",
+                    "next": "N_PIT_MENU",
+                    "text": "leave \u201cNot yet\u201d"
+                  }
+                ],
+                "id": "N_COMMIT_MENU",
+                "speakerId": "PLAYER",
+                "type": "player_choice"
+              },
+              {
+                "effects": [
+                  {
+                    "action": "set",
+                    "key": "world.serviceAccessReached",
+                    "value": true
+                  }
+                ],
+                "id": "N_END_REACH_SERVICE_ACCESS",
+                "outcomeId": "reach_service_access",
+                "type": "end"
+              },
+              {
+                "id": "N_END_LEAVE_GATE",
+                "type": "end"
+              },
+              {
+                "id": "N_END_LEAVE_CORRIDOR",
+                "type": "end"
+              }
+            ],
+            "sceneId": "SCN-077",
+            "startNodeId": "N_START"
+          }
+        ]
+      },
+      "op": "create_scene"
+    }
+  ],
+  "sceneId": "SCN-077"
+}

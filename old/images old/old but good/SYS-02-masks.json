@@ -1,0 +1,56 @@
+{
+  "screen_id": "SYS-02",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Mic switch",
+      "slug": "mic_switch",
+      "file": "images/SYS-02-mask-mic_switch.png",
+      "boxes": [
+        {
+          "label": "Mic switch",
+          "box_2d": [
+            701,
+            74,
+            792,
+            131
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Live feed monitor",
+      "slug": "live_feed_monitor",
+      "file": "images/SYS-02-mask-live_feed_monitor.png",
+      "boxes": [
+        {
+          "label": "Live feed monitor",
+          "box_2d": [
+            369,
+            142,
+            524,
+            316
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Safety interlock",
+      "slug": "safety_interlock",
+      "file": "images/SYS-02-mask-safety_interlock.png",
+      "boxes": [
+        {
+          "label": "Safety interlock",
+          "box_2d": [
+            555,
+            30,
+            856,
+            149
+          ]
+        }
+      ]
+    }
+  ]
+}

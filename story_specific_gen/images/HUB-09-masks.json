@@ -1,0 +1,56 @@
+{
+  "screen_id": "HUB-09",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "EAC Finding Slip printer tray",
+      "slug": "eac_finding_slip_printer_tray",
+      "file": "story_specific_gen/images/HUB-09-mask-eac_finding_slip_printer_tray.png",
+      "boxes": [
+        {
+          "label": "EAC Finding Slip printer tray",
+          "box_2d": [
+            551,
+            287,
+            638,
+            417
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Checklist folder",
+      "slug": "checklist_folder",
+      "file": "story_specific_gen/images/HUB-09-mask-checklist_folder.png",
+      "boxes": [
+        {
+          "label": "Checklist folder",
+          "box_2d": [
+            595,
+            513,
+            650,
+            602
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Whiteboard notes",
+      "slug": "whiteboard_notes",
+      "file": "story_specific_gen/images/HUB-09-mask-whiteboard_notes.png",
+      "boxes": [
+        {
+          "label": "Whiteboard notes",
+          "box_2d": [
+            270,
+            804,
+            597,
+            940
+          ]
+        }
+      ]
+    }
+  ]
+}

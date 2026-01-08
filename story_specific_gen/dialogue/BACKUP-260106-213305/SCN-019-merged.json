@@ -1,0 +1,235 @@
+{
+  "changes": [
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "LOOK_RECORDS",
+        "nodeId": "MAIN_MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "RECORDS_INTRO",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "RECORDS_MENU_A",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "RECORDS_LOCKED",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "RECORDS_MENU_B",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "RECORDS_KEYTAG",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "RECORDS_MENU_C",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "RECORDS_NO_RESPONSE",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "RECORDS_LOCK_INSPECT",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "RECORDS_FORMAL_MENU",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "RECORDS_OLEA_DENIED",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "RECORDS_OLEA_MENU",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "RECORDS_INTAKE_STICKER",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "RECORDS_INTAKE_MENU",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "LOOK_TUBE",
+        "nodeId": "MAIN_MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "TUBE_INTRO",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "TUBE_MENU",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "TUBE_HATCH",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "TUBE_HATCH_MENU",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "TUBE_CARD",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "TUBE_CARD_MENU",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "TUBE_REQUEST",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "TUBE_WHERE",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "ignore-node_remove_vs_choice_change",
+      "details": {
+        "choice": {
+          "id": "LOOK_GO_TUBE",
+          "next": "MAIN_MENU",
+          "text": "(look) Go to tube station."
+        },
+        "nodeId": "RECORDS_OLEA_MENU",
+        "op": "update_choice"
+      },
+      "op": "update_choice"
+    },
+    {
+      "action": "ignore-node_remove_vs_choice_change",
+      "details": {
+        "choice": {
+          "id": "LOOK_GO_TUBE",
+          "next": "MAIN_MENU",
+          "text": "(look) Go to tube station."
+        },
+        "nodeId": "RECORDS_INTAKE_MENU",
+        "op": "update_choice"
+      },
+      "op": "update_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "LOOK_FIRE",
+        "nodeId": "MAIN_MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "LOOK_FAX",
+        "nodeId": "MAIN_MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    }
+  ],
+  "sceneId": "SCN-019"
+}

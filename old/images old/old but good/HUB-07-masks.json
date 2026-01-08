@@ -1,0 +1,92 @@
+{
+  "screen_id": "HUB-07",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Master switches / interlock",
+      "slug": "master_switches_interlock",
+      "file": "images/HUB-07-mask-master_switches_interlock.png",
+      "boxes": [
+        {
+          "label": "Master Interlock panel",
+          "box_2d": [
+            793,
+            85,
+            937,
+            269
+          ]
+        },
+        {
+          "label": "Master Interlock switch",
+          "box_2d": [
+            732,
+            269,
+            887,
+            396
+          ]
+        },
+        {
+          "label": "Master Interlock lever system",
+          "box_2d": [
+            629,
+            329,
+            867,
+            529
+          ]
+        },
+        {
+          "label": "Master Interlock label",
+          "box_2d": [
+            629,
+            331,
+            746,
+            484
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Camera controls",
+      "slug": "camera_controls",
+      "file": "images/HUB-07-mask-camera_controls.png",
+      "boxes": [
+        {
+          "label": "camera controls panel",
+          "box_2d": [
+            705,
+            483,
+            804,
+            663
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Intercom",
+      "slug": "intercom",
+      "file": "images/HUB-07-mask-intercom.png",
+      "boxes": [
+        {
+          "label": "Intercom",
+          "box_2d": [
+            336,
+            12,
+            574,
+            118
+          ]
+        },
+        {
+          "label": "Intercom",
+          "box_2d": [
+            784,
+            237,
+            888,
+            381
+          ]
+        }
+      ]
+    }
+  ]
+}

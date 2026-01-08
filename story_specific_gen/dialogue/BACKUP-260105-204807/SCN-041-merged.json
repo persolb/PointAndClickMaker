@@ -1,0 +1,290 @@
+{
+  "changes": [
+    {
+      "action": "modify",
+      "details": {
+        "choiceId": "C_LEAVE_OBS",
+        "nodeId": "PC_HUB",
+        "text": "Leave"
+      },
+      "op": "update_choice_text"
+    },
+    {
+      "action": "modify",
+      "details": {
+        "choiceId": "C_LEAVE_OVERFLOW",
+        "nodeId": "PC_HUB",
+        "text": "Leave"
+      },
+      "op": "update_choice_text"
+    },
+    {
+      "action": "modify",
+      "details": {
+        "choiceId": "C_LEAVE_BACK",
+        "nodeId": "PC_SPHERE",
+        "text": "Leave"
+      },
+      "op": "update_choice_text"
+    },
+    {
+      "action": "modify",
+      "details": {
+        "choiceId": "C_LEAVE_BACK",
+        "nodeId": "PC_STATUS",
+        "text": "Leave"
+      },
+      "op": "update_choice_text"
+    },
+    {
+      "action": "modify",
+      "details": {
+        "choiceId": "C_LEAVE_BACK",
+        "nodeId": "PC_PANEL",
+        "text": "Leave"
+      },
+      "op": "update_choice_text"
+    },
+    {
+      "action": "modify",
+      "details": {
+        "choiceId": "C_LEAVE_BACK",
+        "nodeId": "PC_PANEL_AFTER_FAIL",
+        "text": "Leave"
+      },
+      "op": "update_choice_text"
+    },
+    {
+      "action": "modify",
+      "details": {
+        "choiceId": "C_LEAVE_BACK",
+        "nodeId": "PC_PANEL_AFTER_PASS",
+        "text": "Leave"
+      },
+      "op": "update_choice_text"
+    },
+    {
+      "action": "modify",
+      "details": {
+        "choiceId": "C_LEAVE_BACK",
+        "nodeId": "PC_ESTOP",
+        "text": "Leave"
+      },
+      "op": "update_choice_text"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_LOOK_SPHERE",
+        "nodeId": "PC_HUB",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_SPHERE_A",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "PC_SPHERE",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_SPHERE_LABELS",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_LOOK_STATUS",
+        "nodeId": "PC_HUB",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_STATUS_A",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "PC_STATUS",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_STATUS_AGREEMENT",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_STATUS_APPENDIX_PASS",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_STATUS_APPENDIX_FAIL",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_LOOK_PANEL",
+        "nodeId": "PC_HUB",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_LOOK_ESTOP",
+        "nodeId": "PC_HUB",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_PANEL_A",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "PC_PANEL",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_PANEL_USE_FAIL",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "PC_PANEL_AFTER_FAIL",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_PANEL_USE_PASS",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "PC_PANEL_AFTER_PASS",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_PANEL_ACK",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_ESTOP_A",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "PC_ESTOP",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_ESTOP_USE",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_LOOK_ESTOP",
+        "nodeId": "PC_HUB",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_ESTOP_A",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "PC_ESTOP",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_ESTOP_USE",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    }
+  ],
+  "sceneId": "SCN-041"
+}

@@ -1,0 +1,113 @@
+{
+  "changes": [
+    {
+      "action": "modify",
+      "details": {
+        "choiceId": "C_LEAVE_INTAKE_HALL",
+        "nodeId": "PC_MAIN",
+        "text": "Leave"
+      },
+      "op": "update_choice_text"
+    },
+    {
+      "action": "modify",
+      "details": {
+        "choiceId": "C_LEAVE_APERTURE_BAY",
+        "nodeId": "PC_MAIN",
+        "text": "Leave"
+      },
+      "op": "update_choice_text"
+    },
+    {
+      "action": "modify",
+      "details": {
+        "choiceId": "C_LEAVE_REASSESS",
+        "nodeId": "PC_MAIN",
+        "text": "Leave"
+      },
+      "op": "update_choice_text"
+    },
+    {
+      "action": "modify",
+      "details": {
+        "choiceId": "C_LEAVE_LOOK_AROUND",
+        "nodeId": "PC_COACH_START",
+        "text": "Leave"
+      },
+      "op": "update_choice_text"
+    },
+    {
+      "action": "modify",
+      "details": {
+        "choiceId": "C_LEAVE_BACK",
+        "nodeId": "PC_COACH_FOLLOW",
+        "text": "Leave"
+      },
+      "op": "update_choice_text"
+    },
+    {
+      "action": "modify",
+      "details": {
+        "choiceId": "C_LEAVE_HANDLE_IT",
+        "nodeId": "PC_SHOW_OLEA_MENU",
+        "text": "Leave"
+      },
+      "op": "update_choice_text"
+    },
+    {
+      "action": "modify",
+      "details": {
+        "choiceId": "C_LEAVE_CATEGORY_BACK",
+        "nodeId": "PC_CATEGORY_FOLLOW",
+        "text": "Leave"
+      },
+      "op": "update_choice_text"
+    },
+    {
+      "action": "modify",
+      "details": {
+        "choiceId": "C_LEAVE_WALK_AWAY",
+        "nodeId": "PC_KIOSK_MENU",
+        "text": "Leave"
+      },
+      "op": "update_choice_text"
+    },
+    {
+      "action": "modify",
+      "details": {
+        "choiceId": "C_LEAVE_EQUIP_BACK",
+        "nodeId": "PC_FILE_EQUIP_FOLLOW",
+        "text": "Leave"
+      },
+      "op": "update_choice_text"
+    },
+    {
+      "action": "modify",
+      "details": {
+        "choiceId": "C_LEAVE_DOOR_BACK",
+        "nodeId": "PC_DOOR_MENU",
+        "text": "Leave"
+      },
+      "op": "update_choice_text"
+    },
+    {
+      "action": "modify",
+      "details": {
+        "choiceId": "C_LEAVE_AFTER_THREAT",
+        "nodeId": "PC_AFTER_THREAT",
+        "text": "Leave"
+      },
+      "op": "update_choice_text"
+    },
+    {
+      "action": "modify",
+      "details": {
+        "choiceId": "C_LEAVE_DOOR_FOLLOW_BACK",
+        "nodeId": "PC_DOOR_FOLLOW",
+        "text": "Leave"
+      },
+      "op": "update_choice_text"
+    }
+  ],
+  "sceneId": "SCN-045"
+}

@@ -1,0 +1,181 @@
+{
+  "changes": [
+    {
+      "action": "add",
+      "createScene": {
+        "dialogueGraphs": [
+          {
+            "id": "DG_SCN091_SERVICE_CODE_STICKERS",
+            "nodes": [
+              {
+                "id": "N_ENTRY",
+                "next": "N_MENU",
+                "speakerId": "NARRATOR",
+                "text": "A column of stickers climbs the wall beside the copier.\nEvery sticker claims it is the last sticker anyone will ever need.\n\nTop layer: DO NOT SHARE SERVICE CODE.\nUnder it: a different DO NOT SHARE SERVICE CODE, from a company that no longer exists.\nA phone number is visible, then not, depending on the angle.",
+                "type": "npc_line"
+              },
+              {
+                "choices": [
+                  {
+                    "id": "C_PEEK",
+                    "next": "N_COMPARE",
+                    "text": "look \u201cCompare layers for the code.\u201d"
+                  },
+                  {
+                    "id": "C_CALL",
+                    "next": "N_VM_RING",
+                    "text": "use \u201cCall the visible service number.\u201d"
+                  },
+                  {
+                    "id": "C_PEEL",
+                    "next": "N_PEEL",
+                    "text": "use \u201cPeel back the top sticker carefully.\u201d"
+                  },
+                  {
+                    "id": "C_BACK",
+                    "next": "END_BACK",
+                    "text": "leave \u201cBack.\u201d"
+                  }
+                ],
+                "id": "N_MENU",
+                "speakerId": "PLAYER",
+                "type": "player_choice"
+              },
+              {
+                "id": "N_COMPARE",
+                "next": "N_COMPARE_MENU",
+                "speakerId": "NARRATOR",
+                "text": "You line up torn edges and half-letters.\nIt\u2019s less like reading, more like reconstructing an alibi.\n\nYou recover a 4-digit service code.",
+                "type": "npc_line"
+              },
+              {
+                "choices": [
+                  {
+                    "id": "C_MARK_KNOWN",
+                    "next": "END_CODE_KNOWN",
+                    "text": "use \u201cRecord the recovered code.\u201d"
+                  },
+                  {
+                    "id": "C_BACK_FROM_COMPARE",
+                    "next": "N_MENU",
+                    "text": "leave \u201cBack.\u201d"
+                  }
+                ],
+                "id": "N_COMPARE_MENU",
+                "speakerId": "PLAYER",
+                "type": "player_choice"
+              },
+              {
+                "id": "N_PEEL",
+                "next": "N_PEEL_MENU",
+                "speakerId": "NARRATOR",
+                "text": "The adhesive resists, then gives up in a way that feels personal.\nUnderneath: a handwritten code, smudged, as if the wall tried to forget it.\n\nYou can make out a 4-digit service code.",
+                "type": "npc_line"
+              },
+              {
+                "choices": [
+                  {
+                    "id": "C_MARK_KNOWN_FROM_PEEL",
+                    "next": "END_CODE_KNOWN",
+                    "text": "use \u201cRecord the recovered code.\u201d"
+                  },
+                  {
+                    "id": "C_MORE",
+                    "next": "N_MORE",
+                    "text": "look \u201cKeep peeling. There\u2019s more under here.\u201d"
+                  },
+                  {
+                    "id": "C_BACK_FROM_PEEL",
+                    "next": "N_MENU",
+                    "text": "leave \u201cBack.\u201d"
+                  }
+                ],
+                "id": "N_PEEL_MENU",
+                "speakerId": "PLAYER",
+                "type": "player_choice"
+              },
+              {
+                "id": "N_MORE",
+                "next": "N_MORE_MENU",
+                "speakerId": "NARRATOR",
+                "text": "Another sticker layer comes loose.\nUnder it: a vendor name, then a different vendor name, then a different one again\u2014each one insisting it is not responsible for anything outside \u201cstandard operation.\u201d\n\nThe service number repeats across three eras, like a dare.",
+                "type": "npc_line"
+              },
+              {
+                "choices": [
+                  {
+                    "id": "C_CALL_FROM_MORE",
+                    "next": "N_VM_RING",
+                    "text": "use \u201cCall the visible service number.\u201d"
+                  },
+                  {
+                    "id": "C_BACK_FROM_MORE",
+                    "next": "N_MENU",
+                    "text": "leave \u201cBack.\u201d"
+                  }
+                ],
+                "id": "N_MORE_MENU",
+                "speakerId": "PLAYER",
+                "type": "player_choice"
+              },
+              {
+                "id": "N_VM_RING",
+                "next": "N_VM_LINE",
+                "speakerId": "NARRATOR",
+                "text": "The line rings once, like it already knows you\u2019re there.\nThen a voicemail answers, bright and pre-defensive.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_VM_LINE",
+                "next": "N_VM_AFTER",
+                "speakerId": "CONTRACTOR_VM",
+                "text": "Hi. (pause) You've reached Field Interface Support. (pause) For SECV legacy devices. (pause)\nIf you're calling about abnormal output. (pause) Or anomalous imaging. (pause) Or unexpected reflective behavior. (pause) Or anything you'd call 'nonstandard'. (pause) We can't cover it. (pause)\nWe handle jams. (pause) Rollers. (pause) Trays. (pause) Manufacturer listed error codes. (pause)\nFacilities. (pause) Incidents. (pause) Atmospheres. (pause) 'Situations'. (pause) Don't put those on this line. (pause)\nIf this is about a service code. (pause) Yeah stop there. (pause) That goes through authorization. (pause)\nThanks for understanding. (pause) It's required.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_VM_AFTER",
+                "next": "N_VM_MENU",
+                "speakerId": "NARRATOR",
+                "text": "The voicemail hangs up first, like a practiced skill.",
+                "type": "npc_line"
+              },
+              {
+                "choices": [
+                  {
+                    "id": "C_BACK_FROM_VM",
+                    "next": "N_MENU",
+                    "text": "leave \u201cBack.\u201d"
+                  }
+                ],
+                "id": "N_VM_MENU",
+                "speakerId": "PLAYER",
+                "type": "player_choice"
+              },
+              {
+                "effects": [
+                  {
+                    "action": "set",
+                    "key": "paperwork.copierServiceCodeKnown",
+                    "value": true
+                  }
+                ],
+                "id": "END_CODE_KNOWN",
+                "outcomeId": "copier_service_code_recovered",
+                "type": "end"
+              },
+              {
+                "id": "END_BACK",
+                "outcomeId": "back",
+                "type": "end"
+              }
+            ],
+            "sceneId": "SCN-091",
+            "startNodeId": "N_ENTRY"
+          }
+        ]
+      },
+      "op": "create_scene"
+    }
+  ],
+  "sceneId": "SCN-091"
+}

@@ -1,0 +1,39 @@
+{
+  "screen_id": "MIS-10",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Rope anchor",
+      "slug": "rope_anchor",
+      "file": "images/MIS-10-mask-rope_anchor.png",
+      "boxes": [
+        {
+          "label": "Rope anchor",
+          "box_2d": [
+            427,
+            638,
+            701,
+            915
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Winch",
+      "slug": "winch",
+      "file": "images/MIS-10-mask-winch.png",
+      "boxes": [
+        {
+          "label": "Winch",
+          "box_2d": [
+            395,
+            638,
+            706,
+            922
+          ]
+        }
+      ]
+    }
+  ]
+}

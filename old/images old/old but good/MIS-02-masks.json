@@ -1,0 +1,56 @@
+{
+  "screen_id": "MIS-02",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Door latch",
+      "slug": "door_latch",
+      "file": "images/MIS-02-mask-door_latch.png",
+      "boxes": [
+        {
+          "label": "Door latch",
+          "box_2d": [
+            499,
+            788,
+            642,
+            888
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Vent grate",
+      "slug": "vent_grate",
+      "file": "images/MIS-02-mask-vent_grate.png",
+      "boxes": [
+        {
+          "label": "Vent grate",
+          "box_2d": [
+            700,
+            146,
+            843,
+            318
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Intercom",
+      "slug": "intercom",
+      "file": "images/MIS-02-mask-intercom.png",
+      "boxes": [
+        {
+          "label": "wall-mounted intercom",
+          "box_2d": [
+            701,
+            337,
+            804,
+            399
+          ]
+        }
+      ]
+    }
+  ]
+}

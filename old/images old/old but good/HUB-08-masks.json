@@ -1,0 +1,65 @@
+{
+  "screen_id": "HUB-08",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Hoist controls",
+      "slug": "hoist_controls",
+      "file": "images/HUB-08-mask-hoist_controls.png",
+      "boxes": [
+        {
+          "label": "Hoist controls",
+          "box_2d": [
+            223,
+            363,
+            725,
+            655
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Breaker lockouts",
+      "slug": "breaker_lockouts",
+      "file": "images/HUB-08-mask-breaker_lockouts.png",
+      "boxes": [
+        {
+          "label": "Breaker lockouts",
+          "box_2d": [
+            499,
+            399,
+            579,
+            417
+          ]
+        },
+        {
+          "label": "Breaker lockouts",
+          "box_2d": [
+            486,
+            375,
+            550,
+            396
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Strobe mount",
+      "slug": "strobe_mount",
+      "file": "images/HUB-08-mask-strobe_mount.png",
+      "boxes": [
+        {
+          "label": "Strobe mount",
+          "box_2d": [
+            239,
+            591,
+            342,
+            650
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "changes": [
+    {
+      "action": "add",
+      "createScene": {
+        "dialogueGraphs": [
+          {
+            "id": "DG_GUARD_SHACK_EXTERIOR",
+            "nodes": [
+              {
+                "id": "N_GUARD_EXTERIOR_1",
+                "speakerId": "NARRATOR",
+                "text": "You follow the fence line to the guard shack. The structure sits a few degrees off-square, like it gave up on aligning with the world.\nThe air is quieter here\u2014no keypad chirps, no printer whir\u2014just wind catching on chain-link and the distant, steady hum you can\u2019t unhear.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_GUARD_EXTERIOR_2",
+                "speakerId": "NARRATOR",
+                "text": "A porch light is dead. The call box looks newer than the door. The card reader looks newer than the call box.\nEverything has been upgraded except the decision to let anyone in.",
+                "type": "npc_line"
+              }
+            ],
+            "sceneId": "SCN-079",
+            "startNodeId": "N_GUARD_EXTERIOR_1"
+          }
+        ]
+      },
+      "op": "create_scene"
+    }
+  ],
+  "sceneId": "SCN-079"
+}

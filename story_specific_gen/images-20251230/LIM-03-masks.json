@@ -1,0 +1,56 @@
+{
+  "screen_id": "LIM-03",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Map kiosk",
+      "slug": "map_kiosk",
+      "file": "story_specific_gen/images/LIM-03-mask-map_kiosk.png",
+      "boxes": [
+        {
+          "label": "Map kiosk",
+          "box_2d": [
+            317,
+            396,
+            680,
+            597
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Badge validator",
+      "slug": "badge_validator",
+      "file": "story_specific_gen/images/LIM-03-mask-badge_validator.png",
+      "boxes": [
+        {
+          "label": "Badge validator",
+          "box_2d": [
+            396,
+            258,
+            698,
+            353
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Service-route reader loop",
+      "slug": "service_route_reader_loop",
+      "file": "story_specific_gen/images/LIM-03-mask-service_route_reader_loop.png",
+      "boxes": [
+        {
+          "label": "service-route reader loop",
+          "box_2d": [
+            339,
+            597,
+            725,
+            831
+          ]
+        }
+      ]
+    }
+  ]
+}

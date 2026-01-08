@@ -1,0 +1,73 @@
+{
+  "screen_id": "HUB-01",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Car trunk / equipment case",
+      "slug": "car_trunk_equipment_case",
+      "file": "images/HUB-01-mask-car_trunk_equipment_case.png",
+      "boxes": [
+        {
+          "label": "equipment case",
+          "box_2d": [
+            569,
+            143,
+            646,
+            260
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Main gate lock/keypad",
+      "slug": "main_gate_lock_keypad",
+      "file": "images/HUB-01-mask-main_gate_lock_keypad.png",
+      "boxes": [
+        {
+          "label": "Main gate keypad",
+          "box_2d": [
+            464,
+            388,
+            521,
+            442
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Warning signpost",
+      "slug": "warning_signpost",
+      "file": "images/HUB-01-mask-warning_signpost.png",
+      "boxes": [
+        {
+          "label": "Warning signpost",
+          "box_2d": [
+            474,
+            617,
+            555,
+            725
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Debris pile",
+      "slug": "debris_pile",
+      "file": "images/HUB-01-mask-debris_pile.png",
+      "boxes": [
+        {
+          "label": "Debris pile",
+          "box_2d": [
+            471,
+            747,
+            621,
+            995
+          ]
+        }
+      ]
+    }
+  ]
+}

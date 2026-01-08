@@ -1,0 +1,31 @@
+{
+  "changes": [
+    {
+      "action": "add",
+      "details": {
+        "node": {
+          "id": "N_EXIT_LEFT_TO_SERVICE_CORRIDOR",
+          "next": "END_EXIT_LEFT_TO_HUB_05",
+          "speakerId": "NARRATOR",
+          "text": "You take the left passage back toward the Service Corridor and duct access. The light changes temperature as if the building prefers that direction.",
+          "type": "npc_line"
+        },
+        "op": "add_node"
+      },
+      "op": "add_node"
+    },
+    {
+      "action": "add",
+      "details": {
+        "node": {
+          "id": "END_EXIT_LEFT_TO_HUB_05",
+          "outcomeId": "exit_left_to_service_corridor",
+          "type": "end"
+        },
+        "op": "add_node"
+      },
+      "op": "add_node"
+    }
+  ],
+  "sceneId": "SCN-100"
+}

@@ -1,0 +1,82 @@
+{
+  "screen_id": "HUB-06",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Lobby kiosk terminal",
+      "slug": "lobby_kiosk_terminal",
+      "file": "story_specific_gen/images/HUB-06-mask-lobby_kiosk_terminal.png",
+      "boxes": [
+        {
+          "label": "lobby kiosk signage",
+          "box_2d": [
+            551,
+            501,
+            592,
+            609
+          ]
+        },
+        {
+          "label": "Lobby kiosk terminal",
+          "box_2d": [
+            403,
+            287,
+            894,
+            642
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Wall phone list",
+      "slug": "wall_phone_list",
+      "file": "story_specific_gen/images/HUB-06-mask-wall_phone_list.png",
+      "boxes": [
+        {
+          "label": "Wall phone list",
+          "box_2d": [
+            334,
+            178,
+            532,
+            313
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Faded asset plaque",
+      "slug": "faded_asset_plaque",
+      "file": "story_specific_gen/images/HUB-06-mask-faded_asset_plaque.png",
+      "boxes": [
+        {
+          "label": "Faded asset plaque",
+          "box_2d": [
+            668,
+            321,
+            763,
+            429
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Reception desk drawers",
+      "slug": "reception_desk_drawers",
+      "file": "story_specific_gen/images/HUB-06-mask-reception_desk_drawers.png",
+      "boxes": [
+        {
+          "label": "reception desk drawers",
+          "box_2d": [
+            632,
+            149,
+            796,
+            290
+          ]
+        }
+      ]
+    }
+  ]
+}

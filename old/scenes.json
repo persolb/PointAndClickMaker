@@ -1,0 +1,2016 @@
+{
+  "scenes": [
+    {
+      "id": "SCN-01",
+      "screenId": "HUB-01",
+      "triggerLogic": {
+        "type": "onEnter",
+        "conditions": [
+          {
+            "key": "visited.HUB-01",
+            "operator": "!=",
+            "value": true
+          }
+        ]
+      },
+      "sceneDescription": "You arrive at the facility approach road. Everything is framed as a controlled reopening: layered warning signs, a gate meant to stop you, and one detail that doesn\u2019t match the neglect\u2014newer conduit feeding a small instrument box.",
+      "characters": [
+        {
+          "characterId": "PLAYER",
+          "role": "observer",
+          "notes": "Arrives at the facility approach road; visually assesses the controlled-reopening posture and notices the newer-than-everything conduit feeding the instrument box."
+        }
+      ],
+      "possibleOutcomes": [
+        {
+          "id": "ARRIVAL_LOGGED",
+          "description": "You note the reopening posture and the odd new conduit run as potential evidence.",
+          "effects": [
+            {
+              "key": "visited.HUB-01",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "evidence.newConduitObserved",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "story.act",
+              "action": "set",
+              "value": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SCN-02",
+      "screenId": "HUB-02",
+      "triggerLogic": {
+        "type": "onEnter",
+        "conditions": [
+          {
+            "key": "visited.HUB-02",
+            "operator": "!=",
+            "value": true
+          }
+        ]
+      },
+      "sceneDescription": "Inside the guard shack, access is paperwork first: a logbook, badge reader, and a CCTV setup that looks half-maintained. The missing key on the rack reads like a quiet admission that not everything is under control.",
+      "characters": [
+        {
+          "characterId": "PLAYER",
+          "role": "observer / participant",
+          "notes": "POV character. Inspects the guard shack\u2019s access controls (logbook, badge reader, CCTV) and notices procedural inconsistencies (e.g., the missing key hook)."
+        },
+        {
+          "characterId": "GATE_GUARD",
+          "role": "gatekeeper / speaker",
+          "notes": "Present in the shack enforcing sign-in, badge procedure, and key control. Wary, procedural tone; may deflect questions about the conspicuously missing key or incomplete CCTV."
+        }
+      ],
+      "possibleOutcomes": [
+        {
+          "id": "CHECK_IN_ATTEMPT",
+          "description": "You attempt to follow procedure\u2014sign in, test the badge panel, and read what the logbook will admit.",
+          "effects": [
+            {
+              "key": "visited.HUB-02",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "access.guardShackSeen",
+              "action": "set",
+              "value": true
+            }
+          ]
+        },
+        {
+          "id": "NOTICE_MISSING_KEY",
+          "description": "You flag the conspicuously empty hook as a small but telling discrepancy.",
+          "effects": [
+            {
+              "key": "evidence.missingKeyHookNoted",
+              "action": "set",
+              "value": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SCN-03",
+      "screenId": "HUB-03",
+      "triggerLogic": {
+        "type": "onEnter",
+        "conditions": [
+          {
+            "key": "visited.HUB-03",
+            "operator": "!=",
+            "value": true
+          }
+        ]
+      },
+      "sceneDescription": "Along the perimeter fence line, the site\u2019s \u2018closed\u2019 status feels performative. A service gate, recent scuffs, and surveillance hardware suggest someone expects people to try alternative entry routes\u2014and someone has.",
+      "characters": [
+        {
+          "characterId": "PLAYER",
+          "role": "observer",
+          "notes": "POV character conducts a careful perimeter scan, noting tampering/scuffs, surveillance hardware, and identifying a plausible alternate entry route as a fallback."
+        }
+      ],
+      "possibleOutcomes": [
+        {
+          "id": "PERIMETER_SCANNED",
+          "description": "You identify the service gate, camera/junction box, and a plausible alternate route as an access fallback.",
+          "effects": [
+            {
+              "key": "visited.HUB-03",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "access.perimeterOptionIdentified",
+              "action": "set",
+              "value": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SCN-04",
+      "screenId": "HUB-04",
+      "triggerLogic": {
+        "type": "onEnter",
+        "conditions": [
+          {
+            "key": "visited.HUB-04",
+            "operator": "!=",
+            "value": true
+          }
+        ]
+      },
+      "sceneDescription": "The contractor trailer office reads like a living backlog: parts bins, a schedule board, and the implied promise that any problem becomes a purchase order. It\u2019s competence, but also leverage.",
+      "characters": [
+        {
+          "characterId": "PLAYER",
+          "role": "observer",
+          "notes": "POV character; inspects the task board, inbox, and ordering laptop to understand MERI\u2019s workflow and how upgrades/parts approvals translate into leverage."
+        },
+        {
+          "characterId": "MERI_LOGISTICS",
+          "role": "speaker",
+          "notes": "Present in the trailer as the workflow/parts gatekeeper; explains or pointedly frames everything as tasks, approvals, lead times, and purchase orders. Transactional tone; can be helpful but sets boundaries around inventory accountability and liability."
+        },
+        {
+          "characterId": "IRIS_VALE",
+          "role": "advisor",
+          "notes": "If present, uses the office context to reinforce that the upgrade path and telemetry changes affect control authority and visibility; keeps discussion engineering-forward and reputation-defensive."
+        }
+      ],
+      "possibleOutcomes": [
+        {
+          "id": "MERI_CONTEXT",
+          "description": "You orient yourself to the MERI workflow: tasks, parts, and the idea that upgrades can change who holds control.",
+          "effects": [
+            {
+              "key": "visited.HUB-04",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "meri.workflowUnderstood",
+              "action": "set",
+              "value": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SCN-05",
+      "screenId": "HUB-11",
+      "triggerLogic": {
+        "type": "onEnter",
+        "conditions": [
+          {
+            "key": "visited.HUB-11",
+            "operator": "!=",
+            "value": true
+          }
+        ]
+      },
+      "sceneDescription": "The power and cooling plant is the first place where the reopening becomes physical. Breakers, valves, lockout tags: the facility can be made safe or made dangerous, depending on who touches what and in which order.",
+      "characters": [
+        {
+          "characterId": "PLAYER",
+          "role": "observer",
+          "notes": "Performs the initial survey of the plant: identifies breaker cluster feeding the device bay and notes where logging/safety interlocks depend on stable power; treats lockout tags/valves as potential hazard points if operated out of order."
+        }
+      ],
+      "possibleOutcomes": [
+        {
+          "id": "PLANT_SURVEY",
+          "description": "You identify the breaker cluster feeding the device bay and the points where logging and safety interlocks depend on stable power.",
+          "effects": [
+            {
+              "key": "visited.HUB-11",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "power.plantSurveyed",
+              "action": "set",
+              "value": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SCN-06",
+      "screenId": "HUB-11",
+      "triggerLogic": {
+        "type": "onInteract",
+        "conditions": [
+          {
+            "key": "power.plantOnline",
+            "operator": "!=",
+            "value": true
+          }
+        ],
+        "hotspotName": "Breaker panel"
+      },
+      "sceneDescription": "You bring the plant up to a controlled operating state: breakers aligned, tags respected, cooling stabilized. The facility\u2019s \u2018we can do this safely\u2019 claim becomes testable rather than rhetorical.",
+      "characters": [
+        {
+          "characterId": "PLAYER",
+          "role": "actor",
+          "notes": "Performs lockout/tagout-respecting breaker alignment and cooling stabilization to bring the plant to a controlled operating state."
+        }
+      ],
+      "possibleOutcomes": [
+        {
+          "id": "POWER_ONLINE",
+          "description": "Power stabilizes and downstream systems can be brought up for diagnostics and controlled tests.",
+          "effects": [
+            {
+              "key": "power.plantOnline",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "power.toDeviceBayEnabled",
+              "action": "set",
+              "value": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SCN-07",
+      "screenId": "HUB-06",
+      "triggerLogic": {
+        "type": "onEnter",
+        "conditions": [
+          {
+            "key": "visited.HUB-06",
+            "operator": "!=",
+            "value": true
+          }
+        ]
+      },
+      "sceneDescription": "The records annex is where the official story gets brittle. Boxes are water-damaged, corners burned, and one locked cabinet bears a newer seal\u2014suggesting someone curated what survived.",
+      "characters": [
+        {
+          "characterId": "PLAYER",
+          "role": "observer",
+          "notes": "POV character inspects the Records Annex on first entry; notes water/fire damage, documentation gaps, and the newer seal on the locked cabinet, marking the archive as selectively compromised."
+        }
+      ],
+      "possibleOutcomes": [
+        {
+          "id": "RECORDS_FIRST_PASS",
+          "description": "You mark the archive as compromised: partial destruction, selective sealing, and documentation gaps that will matter later.",
+          "effects": [
+            {
+              "key": "visited.HUB-06",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "evidence.recordsAnnexCompromised",
+              "action": "set",
+              "value": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SCN-08",
+      "screenId": "HUB-06",
+      "triggerLogic": {
+        "type": "onInteract",
+        "conditions": [
+          {
+            "key": "evidence.paperVsPhysicalDivergence",
+            "operator": "!=",
+            "value": true
+          }
+        ],
+        "hotspotName": "Microfiche reader"
+      },
+      "sceneDescription": "Microfiche and inventories don\u2019t agree with the facility\u2019s physical layout and wear. The narrative you\u2019re supposed to certify doesn\u2019t align with the site you can touch.",
+      "characters": [
+        {
+          "characterId": "PLAYER",
+          "role": "investigator",
+          "notes": "Uses the microfiche reader and inventory materials to document a clean contradiction between records and the facility\u2019s physical condition/layout; captures the finding as evidence with defensible wording."
+        },
+        {
+          "characterId": "REC_CUSTODIAN",
+          "role": "gatekeeper/observer",
+          "notes": "Present in the Records Annex; monitors access and chain-of-custody. May offer procedural pushback, correct terminology, and discourage framing the discrepancy as intentional without proof."
+        }
+      ],
+      "possibleOutcomes": [
+        {
+          "id": "DIVERGENCE_CONFIRMED",
+          "description": "You capture the first clean contradiction between memo-reality and material reality.",
+          "effects": [
+            {
+              "key": "evidence.paperVsPhysicalDivergence",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "evidence.chainStarted",
+              "action": "set",
+              "value": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SCN-09",
+      "screenId": "HUB-08",
+      "triggerLogic": {
+        "type": "onEnter",
+        "conditions": [
+          {
+            "key": "visited.HUB-08",
+            "operator": "!=",
+            "value": true
+          },
+          {
+            "key": "power.toDeviceBayEnabled",
+            "operator": "==",
+            "value": true
+          }
+        ]
+      },
+      "sceneDescription": "On the device bay catwalk, the Aperture Array feels less like a rumor and more like a liability with handrails. Lockout/tagout hardware sits beside \u2018just for tests\u2019 improvisation\u2014an uneasy partnership.",
+      "characters": [
+        {
+          "characterId": "PLAYER",
+          "role": "player",
+          "notes": "Arrives on the catwalk to visually confirm power state and physical access; reads lockout/tagout hardware versus improvised 'test' setup with procedure-minded caution."
+        }
+      ],
+      "possibleOutcomes": [
+        {
+          "id": "CATWALK_ESTABLISHED",
+          "description": "You confirm the bay is powered and physically accessible for controlled operations.",
+          "effects": [
+            {
+              "key": "visited.HUB-08",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "device.bayAccessible",
+              "action": "set",
+              "value": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SCN-10",
+      "screenId": "HUB-07",
+      "triggerLogic": {
+        "type": "onEnter",
+        "conditions": [
+          {
+            "key": "visited.HUB-07",
+            "operator": "!=",
+            "value": true
+          },
+          {
+            "key": "device.bayAccessible",
+            "operator": "==",
+            "value": true
+          }
+        ]
+      },
+      "sceneDescription": "The control room overlook is procedure made into architecture: consoles, interlocks, and a clock that turns \u2018timing\u2019 into a moral demand. If anything goes wrong, the logs will say it was your hands on the switches.",
+      "characters": [
+        {
+          "characterId": "PLAYER",
+          "role": "speaker",
+          "notes": "POV character; performs the initial console checks and establishes a test-ready baseline, aware that their actions will be attributable in logs."
+        },
+        {
+          "characterId": "CTRL_OPERATOR",
+          "role": "companion",
+          "notes": "On-duty control room authority for interlocks and official logging; insists on confirmations and procedure while the player brings the room to a known baseline."
+        }
+      ],
+      "possibleOutcomes": [
+        {
+          "id": "CONTROL_ROOM_READY",
+          "description": "You bring the control space into a known, test-ready baseline.",
+          "effects": [
+            {
+              "key": "visited.HUB-07",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "device.controlRoomReady",
+              "action": "set",
+              "value": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SCN-11",
+      "screenId": "HUB-07",
+      "triggerLogic": {
+        "type": "onInteract",
+        "conditions": [
+          {
+            "key": "device.viewOpened",
+            "operator": "!=",
+            "value": true
+          },
+          {
+            "key": "device.controlRoomReady",
+            "operator": "==",
+            "value": true
+          }
+        ],
+        "hotspotName": "Master switches / interlock"
+      },
+      "sceneDescription": "You open the view channel under interlock. The sphere\u2019s \u2018window\u2019 behavior is clean\u2014too clean\u2014like a demo that believes it\u2019s still in a brochure.",
+      "characters": [
+        {
+          "characterId": "PLAYER",
+          "role": "actor",
+          "notes": "Initiates the interlock procedure and opens the view-only channel; POV character."
+        },
+        {
+          "characterId": "CTRL_OPERATOR",
+          "role": "operator",
+          "notes": "Oversees master switches/interlock discipline and ensures the action is properly attributed in the official console log; will insist on confirmations and procedural steps."
+        },
+        {
+          "characterId": "IRIS_VALE",
+          "role": "technical observer",
+          "notes": "Monitors telemetry/behavior as the view channel stabilizes; may note the 'too clean' demo-like fidelity while framing concerns in engineering terms."
+        },
+        {
+          "characterId": "PROG_LIAISON",
+          "role": "communications observer",
+          "notes": "Positions near the intercom and prepares structured contact language once the view stabilizes; prioritizes script/verification over improvisation."
+        }
+      ],
+      "possibleOutcomes": [
+        {
+          "id": "VIEW_CHANNEL_OPEN",
+          "description": "The view channel stabilizes and you can see into the far-side lab without sending matter through.",
+          "effects": [
+            {
+              "key": "device.viewOpened",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "device.mode",
+              "action": "set",
+              "value": "view_only"
+            }
+          ],
+          "nextSceneId": "SCN-12"
+        }
+      ]
+    },
+    {
+      "id": "SCN-12",
+      "screenId": "MIS-01",
+      "triggerLogic": {
+        "type": "onEnter",
+        "conditions": [
+          {
+            "key": "device.viewOpened",
+            "operator": "==",
+            "value": true
+          },
+          {
+            "key": "visited.MIS-01",
+            "operator": "!=",
+            "value": true
+          }
+        ]
+      },
+      "sceneDescription": "A pristine lab appears through the aperture: organized instruments, hard reflections, and a beacon blinking with an almost conversational rhythm. The mug\u2019s faint steam is the first \u2018alive\u2019 tell\u2014something is happening in real time, not in a frozen image.",
+      "characters": [
+        {
+          "characterId": "PLAYER",
+          "role": "observer",
+          "notes": "Opens the view channel into MIS-01 and assesses/document the high-fidelity, apparently live feed (steam, beacon rhythm) without physical interaction beyond view controls/audio monitor."
+        }
+      ],
+      "possibleOutcomes": [
+        {
+          "id": "FIRST_CLEAN_VIEW",
+          "description": "You document the fact that the view is high-fidelity and apparently live.",
+          "effects": [
+            {
+              "key": "visited.MIS-01",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "evidence.firstCleanView",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "model.viewChannelTrusted",
+              "action": "set",
+              "value": true
+            }
+          ]
+        },
+        {
+          "id": "ATTEMPT_TRAVERSE",
+          "description": "You authorize the first traversal attempt, accepting that seeing is not the same as arriving.",
+          "effects": [
+            {
+              "key": "device.mode",
+              "action": "set",
+              "value": "traverse_attempt"
+            },
+            {
+              "key": "risk.firstTraverseChosen",
+              "action": "set",
+              "value": true
+            }
+          ],
+          "nextSceneId": "SCN-13"
+        }
+      ]
+    },
+    {
+      "id": "SCN-13",
+      "screenId": "MIS-02",
+      "triggerLogic": {
+        "type": "onEnter",
+        "conditions": [
+          {
+            "key": "risk.firstTraverseChosen",
+            "operator": "==",
+            "value": true
+          },
+          {
+            "key": "visited.MIS-02",
+            "operator": "!=",
+            "value": true
+          }
+        ]
+      },
+      "sceneDescription": "Traversal lands wrong. You\u2019re in the same \u2018lab\u2019 ecosystem but trapped in a mismatched compartment\u2014bars or glass in the way, a vestibule door that should have been behind you, and a sense that the device just performed a perfect-looking failure.",
+      "characters": [
+        {
+          "characterId": "PLAYER",
+          "role": "point_of_view / participant",
+          "notes": "Arrives via first traversal and realizes the 'perfect-looking failure'\u2014the view can be accurate while the landing is consistently misaddressed. Confined behind bars/glass; can inspect latch/vent/intercom but is physically trapped in the wrong compartment."
+        }
+      ],
+      "possibleOutcomes": [
+        {
+          "id": "MISMATCH_RULE_ESTABLISHED",
+          "description": "You accept the core rule: the view can be correct while traversal is consistently misaddressed.",
+          "effects": [
+            {
+              "key": "visited.MIS-02",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "evidence.firstWrongLanding",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "model.viewVsTraversalRuleLearned",
+              "action": "set",
+              "value": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SCN-14",
+      "screenId": "MIS-03",
+      "triggerLogic": {
+        "type": "onEnter",
+        "conditions": [
+          {
+            "key": "evidence.firstWrongLanding",
+            "operator": "==",
+            "value": true
+          },
+          {
+            "key": "visited.MIS-03",
+            "operator": "!=",
+            "value": true
+          }
+        ]
+      },
+      "sceneDescription": "Beyond the wrong compartment, the far-side service corridor is scarred by survival engineering: patched cables, scuffed paths, and taped warnings that feel written by people who expect you to misread them.",
+      "characters": [
+        {
+          "characterId": "PLAYER",
+          "role": "investigator",
+          "notes": "Explores the far-side service corridor alone; no STRD individuals are directly encountered, only physical traces (patched cables, taped warnings, scuffed path) that can be documented as habitation/maintenance evidence."
+        }
+      ],
+      "possibleOutcomes": [
+        {
+          "id": "STRD_TRACE_EVIDENCE",
+          "description": "You locate physical proof of ongoing habitation and improvised maintenance.",
+          "effects": [
+            {
+              "key": "visited.MIS-03",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "evidence.strdTrace",
+              "action": "set",
+              "value": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SCN-15",
+      "screenId": "MIS-04",
+      "triggerLogic": {
+        "type": "onEnter",
+        "conditions": [
+          {
+            "key": "visited.MIS-04",
+            "operator": "!=",
+            "value": true
+          },
+          {
+            "key": "evidence.strdTrace",
+            "operator": "==",
+            "value": true
+          }
+        ]
+      },
+      "sceneDescription": "A room that mirrors the site\u2019s control logic appears\u2014familiar shapes, wrong details. Notes and improvised sensors track timing, phase windows, and failure patterns. Whoever is here has been measuring you measuring them.",
+      "characters": [
+        {
+          "characterId": "PLAYER",
+          "role": "observer",
+          "notes": "POV character; inspects the mirrored room, note wall, and crude oscilloscope to extract timing/phase-window patterns and infer non-random traversal consistency."
+        },
+        {
+          "characterId": "STRD_SIGNAL",
+          "role": "offscreen_instigator",
+          "notes": "Not necessarily present in-person during the scene, but implied author of the improvised sensor rigs and timing/phase notes\u2014evidence that STRD have been instrumenting and measuring the player\u2019s measurement process."
+        }
+      ],
+      "possibleOutcomes": [
+        {
+          "id": "TIMING_BECOMES_CLUE",
+          "description": "You recover timing-related observations that suggest traversal outcomes are consistent, not random.",
+          "effects": [
+            {
+              "key": "visited.MIS-04",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "model.timingHypothesis",
+              "action": "set",
+              "value": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SCN-16",
+      "screenId": "HUB-12",
+      "triggerLogic": {
+        "type": "onEnter",
+        "conditions": [
+          {
+            "key": "visited.HUB-12",
+            "operator": "!=",
+            "value": true
+          },
+          {
+            "key": "power.plantOnline",
+            "operator": "==",
+            "value": true
+          }
+        ]
+      },
+      "sceneDescription": "In the calibration lab, timing stops being a word and becomes a tool: jigs, a strobe, and a phase meter that can anchor your theory to repeatable measurements.",
+      "characters": [
+        {
+          "characterId": "PLAYER",
+          "role": "observer",
+          "notes": "Enters the calibration lab and inspects/uses the jig assembly, strobe, and phase meter to enable controlled validation of handshake timing and phase stability."
+        }
+      ],
+      "possibleOutcomes": [
+        {
+          "id": "TOOLS_AVAILABLE",
+          "description": "You gain the means to validate handshake timing and phase stability in a controlled way.",
+          "effects": [
+            {
+              "key": "visited.HUB-12",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "tools.phaseMeterAvailable",
+              "action": "set",
+              "value": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SCN-17",
+      "screenId": "MIS-05",
+      "triggerLogic": {
+        "type": "onEnter",
+        "conditions": [
+          {
+            "key": "tools.phaseMeterAvailable",
+            "operator": "==",
+            "value": true
+          },
+          {
+            "key": "visited.MIS-05",
+            "operator": "!=",
+            "value": true
+          }
+        ]
+      },
+      "sceneDescription": "The anchor closet feels like a handshake waiting room: a wall beacon, spare coils, and handwritten timing notes. This is where \u2018two-party transfer\u2019 becomes obvious\u2014someone on the far side has built infrastructure for negotiation.",
+      "characters": [
+        {
+          "characterId": "PLAYER",
+          "role": "observer",
+          "notes": "Uses the phase meter to measure/establish a repeatable handshake window; treats the closet\u2019s notes and hardware as actionable evidence of two-party negotiation infrastructure."
+        },
+        {
+          "characterId": "STRD_SIGNAL",
+          "role": "remote participant",
+          "notes": "Cooperates via the far-side wall beacon/timing cues; prioritizes verifiable, repeatable windows and may enforce simple verification challenges before treating measurements as agreed."
+        }
+      ],
+      "possibleOutcomes": [
+        {
+          "id": "HANDSHAKE_FRAMEWORK",
+          "description": "You establish a baseline handshake window using the phase meter and the far-side beacon.",
+          "effects": [
+            {
+              "key": "visited.MIS-05",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "model.handshakeUnderstood",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "device.handshakeWindowKnown",
+              "action": "set",
+              "value": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SCN-18",
+      "screenId": "MIS-06",
+      "triggerLogic": {
+        "type": "onEnter",
+        "conditions": [
+          {
+            "key": "device.handshakeWindowKnown",
+            "operator": "==",
+            "value": true
+          },
+          {
+            "key": "visited.MIS-06",
+            "operator": "!=",
+            "value": true
+          }
+        ]
+      },
+      "sceneDescription": "A lived-in workshop emerges: curtains, ration shelves, a tool bench, and a barter box positioned like an airlock for trust. The far side isn\u2019t a ghost story; it\u2019s an organized survival project.",
+      "characters": [
+        {
+          "characterId": "PLAYER",
+          "role": "observer",
+          "notes": "POV character; assesses the lived-in workshop as proof of STRD organization. Interacts via barter box and message placards; treat the space as a negotiation interface, not a loot room."
+        },
+        {
+          "characterId": "MARA_ROOK",
+          "role": "speaker",
+          "notes": "STRD returnist presence/voice for first sustained contact. Pushes urgency and near-term extraction terms; may be partially obscured (behind curtains / off-screen) with communication routed through placards/barter conventions."
+        },
+        {
+          "characterId": "ELI_SATO",
+          "role": "speaker",
+          "notes": "STRD warden presence/voice reinforcing containment-first protocols. Insists on verification, repeatability, and constrained access; may be partially obscured with communication via placards/barter conventions."
+        }
+      ],
+      "possibleOutcomes": [
+        {
+          "id": "CONTACT_SOLIDIFIES",
+          "description": "You gain sustained contact with the STRD infrastructure and confirm their agency and organization.",
+          "effects": [
+            {
+              "key": "visited.MIS-06",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "strd.contactEstablished",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "story.act",
+              "action": "set",
+              "value": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SCN-19",
+      "screenId": "MIS-07",
+      "triggerLogic": {
+        "type": "onEnter",
+        "conditions": [
+          {
+            "key": "strd.contactEstablished",
+            "operator": "==",
+            "value": true
+          },
+          {
+            "key": "visited.MIS-07",
+            "operator": "!=",
+            "value": true
+          }
+        ]
+      },
+      "sceneDescription": "The negotiation room is staged on purpose: placards, a timed lamp, and a checksum note that implies verification. STRD demonstrate they can shape what you see and when you see it\u2014and that they want terms, not rescue rhetoric.",
+      "characters": [
+        {
+          "characterId": "PLAYER",
+          "role": "observer / respondent",
+          "notes": "Receives the staged demonstration as evidence; must treat trust as a verification problem (checksum, timing) rather than a moral appeal."
+        },
+        {
+          "characterId": "MARA_ROOK",
+          "role": "STRD negotiator / pressure-applier",
+          "notes": "Uses the staged room and minimal-text placards to force terms-focused engagement; rejects 'rescue' framing and pushes urgency."
+        },
+        {
+          "characterId": "ELI_SATO",
+          "role": "STRD constraint-setter",
+          "notes": "Frames cooperation as conditional and protocol-bound; supports verification steps and reinforces that access/extraction must be negotiated, not assumed."
+        },
+        {
+          "characterId": "STRD_SIGNAL",
+          "role": "verification lead / technical demonstrator",
+          "notes": "Operates the timed lamp and checksum cues to prove controllable presentation and repeatable handshake windows; emphasizes measurement, repeatability, and anti-manipulation checks."
+        }
+      ],
+      "possibleOutcomes": [
+        {
+          "id": "STAGING_PROVEN",
+          "description": "You accept that the far side can manipulate presentation; trust becomes a technical and social problem at once.",
+          "effects": [
+            {
+              "key": "visited.MIS-07",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "evidence.strdStagingProven",
+              "action": "set",
+              "value": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SCN-20",
+      "screenId": "HUB-10",
+      "triggerLogic": {
+        "type": "onEnter",
+        "conditions": [
+          {
+            "key": "visited.HUB-10",
+            "operator": "!=",
+            "value": true
+          },
+          {
+            "key": "power.plantOnline",
+            "operator": "==",
+            "value": true
+          }
+        ]
+      },
+      "sceneDescription": "In the punch-card alcove, destination becomes an addressable artifact. A deck-map poster and reader mechanics make the ALIAS concept tangible: the machine doesn\u2019t \u2018go to the lab\u2019; it goes to whatever the alias resolves to.",
+      "characters": [
+        {
+          "characterId": "PLAYER",
+          "role": "observer",
+          "notes": "Explores the punch-card reader/sorter setup and deduces that destinations are resolved via ALIAS (addressable artifact) rather than human-readable locations; interacts with lever/jam tray/deck map poster to internalize the concept."
+        }
+      ],
+      "possibleOutcomes": [
+        {
+          "id": "ALIAS_SYSTEM_INTRO",
+          "description": "You confirm that alias encoding/selection is a plausible cause of consistent wrong landings.",
+          "effects": [
+            {
+              "key": "visited.HUB-10",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "model.aliasConceptLearned",
+              "action": "set",
+              "value": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SCN-21",
+      "screenId": "HUB-10",
+      "triggerLogic": {
+        "type": "onInteract",
+        "conditions": [
+          {
+            "key": "device.aliasConfigured",
+            "operator": "!=",
+            "value": true
+          },
+          {
+            "key": "model.aliasConceptLearned",
+            "operator": "==",
+            "value": true
+          }
+        ],
+        "hotspotName": "Reader lever"
+      },
+      "sceneDescription": "You run and sort the relevant cards, aligning alias encoding with your observed mismatch pattern. The failure mode sharpens: the system is stable, but addressed incorrectly.",
+      "characters": [
+        {
+          "characterId": "PLAYER",
+          "role": "actor",
+          "notes": "Physically sorts and aligns punch cards at the reader/sorter to diagnose alias misaddressing; focuses on controlled configuration rather than improvising risky traversal."
+        }
+      ],
+      "possibleOutcomes": [
+        {
+          "id": "ALIAS_CONFIGURED",
+          "description": "You produce a controlled alias configuration for safer tests and more predictable traversal mapping.",
+          "effects": [
+            {
+              "key": "device.aliasConfigured",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "model.mappingModelStarted",
+              "action": "set",
+              "value": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SCN-22",
+      "screenId": "HUB-15",
+      "triggerLogic": {
+        "type": "onEnter",
+        "conditions": [
+          {
+            "key": "visited.HUB-15",
+            "operator": "!=",
+            "value": true
+          }
+        ]
+      },
+      "sceneDescription": "Town main street is where consequences live: flyers, bulletin boards, and casual conversations that don\u2019t accept classified language as an answer. COAL\u2019s pressure is human-scale but operationally real.",
+      "characters": [
+        {
+          "characterId": "PLAYER",
+          "role": "point_of_view / observer",
+          "notes": "Arrives on main street and reads the town\u2019s scrutiny through flyers, bulletin board content, and casual questions; cannot credibly hide behind 'classified' without social cost."
+        },
+        {
+          "characterId": "JULES_NAVARRO",
+          "role": "speaker / pressure-agent",
+          "notes": "Embodies COAL\u2019s human-scale operational pressure; likely visible near posters/bulletin board and probes for plain-language answers about the reopening."
+        },
+        {
+          "characterId": "HW_CLERK",
+          "role": "vendor / information-filter",
+          "notes": "At the hardware store counter; reacts to unusual tool/material requests and can quietly signal that the town is tracking the reopening via purchases and talk."
+        },
+        {
+          "characterId": "MERI_LOGISTICS",
+          "role": "observer / transactional contact",
+          "notes": "In town for procurement; presence highlights that institutional supply chains touch the community and can become visible/remarked-on under COAL scrutiny."
+        }
+      ],
+      "possibleOutcomes": [
+        {
+          "id": "TOWN_PRESSURE_ONLINE",
+          "description": "You register the town as a factional force that can raise or lower operational risk through scrutiny.",
+          "effects": [
+            {
+              "key": "visited.HUB-15",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "coal.townAwareOfReopening",
+              "action": "set",
+              "value": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SCN-23",
+      "screenId": "HUB-16",
+      "triggerLogic": {
+        "type": "onEnter",
+        "conditions": [
+          {
+            "key": "visited.HUB-16",
+            "operator": "!=",
+            "value": true
+          },
+          {
+            "key": "coal.townAwareOfReopening",
+            "operator": "==",
+            "value": true
+          }
+        ]
+      },
+      "sceneDescription": "The bar/union hall is a low-tech intelligence node: old photos, pinned notes, and a keyed locker that implies people keep evidence safe by keeping it personal. COAL is ready to believe the worst unless you can show the math.",
+      "characters": [
+        {
+          "characterId": "PLAYER",
+          "role": "speaker",
+          "notes": "Arrives to open contact with COAL; must frame claims as testable procedure and evidence chain (ALIAS/HANDSHAKE/TIMING), not reassurance."
+        },
+        {
+          "characterId": "BARTENDER",
+          "role": "gatekeeper / dialogue hub",
+          "notes": "Controls access to COAL backroom contacts and rumor flow; probes the PLAYER with questions and only opens doors (locker/backroom/introductions) if trust is earned."
+        },
+        {
+          "characterId": "JULES_NAVARRO",
+          "role": "antagonistic ally / negotiator",
+          "notes": "Assumes worst about reopening unless shown verifiable proof; pushes accountability framing and tests the PLAYER\u2019s motives and disclosure plan."
+        },
+        {
+          "characterId": "COAL_EVIDENCE",
+          "role": "evidence reviewer",
+          "notes": "Demands dates, provenance, and chain-of-custody; challenges any speculation and only commits to cooperation once the PLAYER can 'show the math' with a defensible proof chain."
+        }
+      ],
+      "possibleOutcomes": [
+        {
+          "id": "COAL_LINE_OPENED",
+          "description": "You open a channel with COAL and gain a place to assemble or share an evidence chain later.",
+          "effects": [
+            {
+              "key": "visited.HUB-16",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "coal.contactOpened",
+              "action": "set",
+              "value": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SCN-24",
+      "screenId": "SYS-01",
+      "triggerLogic": {
+        "type": "onEnter",
+        "conditions": [
+          {
+            "key": "visited.SYS-01",
+            "operator": "!=",
+            "value": true
+          },
+          {
+            "key": "meri.workflowUnderstood",
+            "operator": "==",
+            "value": true
+          }
+        ]
+      },
+      "sceneDescription": "The control rack room is where upgrades become politics. New logs, firmware keys, and patch-panel decisions can redefine who is \u2018authorized\u2019 to interpret the device\u2014especially when failure looks like success.",
+      "characters": [
+        {
+          "characterId": "PLAYER",
+          "role": "observer",
+          "notes": "POV character; inspects the terminal, logs, and patch-panel/rack state to understand how an upgrade could shift attribution, authority, and failure interpretation."
+        },
+        {
+          "characterId": "IRIS_VALE",
+          "role": "speaker",
+          "notes": "Frames the MERI-led upgrade as a stability/logging improvement while implicitly (or explicitly, if pressed) asserting MERI control over firmware keys and how failures will be recorded/summarized."
+        }
+      ],
+      "possibleOutcomes": [
+        {
+          "id": "UPGRADE_CONTEXT",
+          "description": "You gain awareness that a MERI-led upgrade changes failure modes and control authority.",
+          "effects": [
+            {
+              "key": "visited.SYS-01",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "system.upgradeAvailable",
+              "action": "set",
+              "value": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SCN-25",
+      "screenId": "SYS-01",
+      "triggerLogic": {
+        "type": "onInteract",
+        "conditions": [
+          {
+            "key": "system.upgraded",
+            "operator": "!=",
+            "value": true
+          },
+          {
+            "key": "system.upgradeAvailable",
+            "operator": "==",
+            "value": true
+          }
+        ],
+        "hotspotName": "Firmware key"
+      },
+      "sceneDescription": "You authorize and complete the upgrade path: better telemetry, better logs, and a sharper distinction between view-channel certainty and traversal-channel risk. It also creates new ways to hide, reinterpret, or weaponize data.",
+      "characters": [
+        {
+          "characterId": "PLAYER",
+          "role": "actor",
+          "notes": "Performs the physical authorization and executes the upgrade via the terminal/firmware key interaction; POV character making the final commit despite the narrative-control implications."
+        },
+        {
+          "characterId": "IRIS_VALE",
+          "role": "companion/advisor",
+          "notes": "Present as MERI upgrade owner; frames the upgrade as improved telemetry/log clarity while downplaying (or carefully qualifying) how the new logging/alias features can be used to curate, suppress, or weaponize data."
+        }
+      ],
+      "possibleOutcomes": [
+        {
+          "id": "SYSTEM_UPGRADED",
+          "description": "System logs and alias handling improve, enabling more precise mapping\u2014at the cost of shifting who controls narrative truth.",
+          "effects": [
+            {
+              "key": "system.upgraded",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "system.loggingEnhanced",
+              "action": "set",
+              "value": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SCN-26",
+      "screenId": "MIS-08",
+      "triggerLogic": {
+        "type": "onEnter",
+        "conditions": [
+          {
+            "key": "story.act",
+            "operator": ">=",
+            "value": 2
+          },
+          {
+            "key": "visited.MIS-08",
+            "operator": "!=",
+            "value": true
+          }
+        ]
+      },
+      "sceneDescription": "The quarantine hall is a corridor of boundaries: sealed doors, cycle panels, and signage that reads like a disagreement made official. Here, access is a negotiated resource, not a default right.",
+      "characters": [
+        {
+          "characterId": "PLAYER",
+          "role": "point_of_view",
+          "notes": "Enters the Quarantine Hall and assesses the access controls (sealed doors, cycle panel, hazard signage) as a negotiated boundary rather than a straightforward passage."
+        }
+      ],
+      "possibleOutcomes": [
+        {
+          "id": "QUARANTINE_LINE_CROSSED",
+          "description": "You enter higher-risk far-side spaces under stricter access logic.",
+          "effects": [
+            {
+              "key": "visited.MIS-08",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "strd.higherRiskZonesUnlocked",
+              "action": "set",
+              "value": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SCN-27",
+      "screenId": "MIS-09",
+      "triggerLogic": {
+        "type": "onEnter",
+        "conditions": [
+          {
+            "key": "strd.higherRiskZonesUnlocked",
+            "operator": "==",
+            "value": true
+          },
+          {
+            "key": "visited.MIS-09",
+            "operator": "!=",
+            "value": true
+          }
+        ]
+      },
+      "sceneDescription": "The flooded maintenance gallery forces practical ethics: water, live cabling, and makeshift safety measures. The far side has kept systems running, but never comfortably.",
+      "characters": [
+        {
+          "characterId": "PLAYER",
+          "role": "observer",
+          "notes": "Navigates and inspects the flooded gallery as a safety/risk assessment task; focuses on documenting hazards (ankle-deep water, live cabling, degraded breaker/junction) and avoids any rushed, unsafe manipulation without proper isolation."
+        }
+      ],
+      "possibleOutcomes": [
+        {
+          "id": "HAZARD_DOCUMENTED",
+          "description": "You document the far side\u2019s degraded infrastructure and the risks of any rushed extraction attempt.",
+          "effects": [
+            {
+              "key": "visited.MIS-09",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "risk.extractionInfrastructureConcern",
+              "action": "set",
+              "value": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SCN-28",
+      "screenId": "MIS-11",
+      "triggerLogic": {
+        "type": "onEnter",
+        "conditions": [
+          {
+            "key": "visited.MIS-11",
+            "operator": "!=",
+            "value": true
+          },
+          {
+            "key": "tools.phaseMeterAvailable",
+            "operator": "==",
+            "value": true
+          }
+        ]
+      },
+      "sceneDescription": "In the mechanical clock chamber, timing isn\u2019t a waveform on a screen\u2014it\u2019s teeth on a gear. Adjustments here make the handshake window feel like a physical constraint rather than a software preference.",
+      "characters": [
+        {
+          "characterId": "PLAYER",
+          "role": "actor",
+          "notes": "Point-of-view character; uses the available phase meter to make careful, repeatable mechanical timing adjustments to refine the handshake window."
+        },
+        {
+          "characterId": "STRD_SIGNAL",
+          "role": "companion",
+          "notes": "On-site STRD timing specialist; helps interpret the analog governor/escapement behavior in terms of handshake phase windows, pushing for repeatability and verification (e.g., repeat tests) over guesswork."
+        }
+      ],
+      "possibleOutcomes": [
+        {
+          "id": "TIMING_WINDOW_TUNED",
+          "description": "You refine a repeatable timing model for safer handshakes.",
+          "effects": [
+            {
+              "key": "visited.MIS-11",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "model.timingWindowRefined",
+              "action": "set",
+              "value": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SCN-29",
+      "screenId": "MIS-12",
+      "triggerLogic": {
+        "type": "onEnter",
+        "conditions": [
+          {
+            "key": "visited.MIS-12",
+            "operator": "!=",
+            "value": true
+          },
+          {
+            "key": "strd.contactEstablished",
+            "operator": "==",
+            "value": true
+          }
+        ]
+      },
+      "sceneDescription": "The far-side archive vault is evidence kept alive by necessity: crates, red tags, taped logs, and index systems built to survive years of being ignored. The stranded have their own chain of custody\u2014and their own version of the incident.",
+      "characters": [
+        {
+          "characterId": "PLAYER",
+          "role": "investigator",
+          "notes": "Explores the far-side archive vault to obtain STRD documentation; treat findings as evidence-minded and procedural, respecting STRD chain-of-custody norms."
+        },
+        {
+          "characterId": "STRD_ARCHIVIST",
+          "role": "gatekeeper",
+          "notes": "Controls access to locked caches and index system; insists on provenance and terms before allowing records to be viewed or copied; protective and methodical."
+        }
+      ],
+      "possibleOutcomes": [
+        {
+          "id": "STRD_RECORDS_FOUND",
+          "description": "You obtain far-side documentation that can corroborate or contradict PROG/MERI narratives.",
+          "effects": [
+            {
+              "key": "visited.MIS-12",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "evidence.strdRecords",
+              "action": "set",
+              "value": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SCN-30",
+      "screenId": "HUB-18",
+      "triggerLogic": {
+        "type": "onEnter",
+        "conditions": [
+          {
+            "key": "visited.HUB-18",
+            "operator": "!=",
+            "value": true
+          },
+          {
+            "key": "story.act",
+            "operator": ">=",
+            "value": 2
+          }
+        ]
+      },
+      "sceneDescription": "From the hilltop overlook, the facility becomes a silhouette again\u2014floodlights, siren poles, and the distance that makes hard decisions look clean. The next major operation feels inevitable: a public-facing demonstration with private consequences.",
+      "characters": [
+        {
+          "characterId": "PLAYER",
+          "role": "observer",
+          "notes": "Point-of-view presence only; the scene reads as a quiet, reflective beat where the player assesses the distant facility and anticipates the coming Demo Day disclosure-versus-control pressure."
+        }
+      ],
+      "possibleOutcomes": [
+        {
+          "id": "DEMO_PRESSURE_TEASED",
+          "description": "You recognize that a high-visibility event is coming and that it will force a disclosure-versus-control decision.",
+          "effects": [
+            {
+              "key": "visited.HUB-18",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "event.demoDayImminent",
+              "action": "set",
+              "value": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SCN-31",
+      "screenId": "SYS-02",
+      "triggerLogic": {
+        "type": "onEnter",
+        "conditions": [
+          {
+            "key": "event.demoDayImminent",
+            "operator": "==",
+            "value": true
+          },
+          {
+            "key": "visited.SYS-02",
+            "operator": "!=",
+            "value": true
+          }
+        ]
+      },
+      "sceneDescription": "Demo Day turns the site into a stage: podium, cameras, and an interlock dressed up as event equipment. Whatever happens now won\u2019t stay inside the fence. Your choices determine whether truth travels farther than the aperture does.",
+      "characters": [
+        {
+          "characterId": "PLAYER",
+          "role": "speaker",
+          "notes": "Point-of-view decision-maker on the Demo Day platform; can choose to comply with the controlled narrative, disclose evidence via the live feed, or stall and push a technical demonstration. Interacts directly with mic switch/live feed/interlock optics."
+        },
+        {
+          "characterId": "PRESS_OFFICER",
+          "role": "antagonist",
+          "notes": "Runs the podium, monitors, and messaging discipline; attempts to keep cameras on 'safe truths' and shut down/redirect any technical or evidentiary disclosure (\"we'll take that offline\"). Likely physically near mic switch box and live-feed monitor cart."
+        },
+        {
+          "characterId": "DIR_KLINE",
+          "role": "authority",
+          "notes": "Backs the controlled Demo Day posture; prioritizes containment, compliance language, and minimizing admissions on-record. Applies procedural pressure if the player deviates from the approved story."
+        },
+        {
+          "characterId": "JULES_NAVARRO",
+          "role": "challenger",
+          "notes": "COAL presence leveraging Demo Day optics; pushes accountability and verifiable evidence, challenges evasions, and may provoke public-facing questions that force the player's disclosure/control choice."
+        }
+      ],
+      "possibleOutcomes": [
+        {
+          "id": "DEMO_COMPLIANCE",
+          "description": "You keep to a controlled narrative, prioritizing procedural control over public disclosure.",
+          "effects": [
+            {
+              "key": "visited.SYS-02",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "axis.transparency",
+              "action": "set",
+              "value": "low"
+            },
+            {
+              "key": "axis.control",
+              "action": "set",
+              "value": "centralized"
+            },
+            {
+              "key": "story.act",
+              "action": "set",
+              "value": 3
+            }
+          ],
+          "nextSceneId": "SCN-32"
+        },
+        {
+          "id": "DEMO_DISCLOSURE",
+          "description": "You use the platform (or its live-feed infrastructure) to push evidence into the open.",
+          "effects": [
+            {
+              "key": "visited.SYS-02",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "axis.transparency",
+              "action": "set",
+              "value": "high"
+            },
+            {
+              "key": "axis.control",
+              "action": "set",
+              "value": "distributed"
+            },
+            {
+              "key": "story.act",
+              "action": "set",
+              "value": 3
+            }
+          ],
+          "nextSceneId": "SCN-32"
+        },
+        {
+          "id": "DEMO_STALL_AND_TEST",
+          "description": "You stall the optics and push for a technical demonstration that proves the mapping model instead of the PR story.",
+          "effects": [
+            {
+              "key": "visited.SYS-02",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "axis.riskPosture",
+              "action": "set",
+              "value": "stabilize_first"
+            },
+            {
+              "key": "story.act",
+              "action": "set",
+              "value": 3
+            }
+          ],
+          "nextSceneId": "SCN-32"
+        }
+      ]
+    },
+    {
+      "id": "SCN-32",
+      "screenId": "MIS-13",
+      "triggerLogic": {
+        "type": "onEnter",
+        "conditions": [
+          {
+            "key": "story.act",
+            "operator": "==",
+            "value": 3
+          },
+          {
+            "key": "visited.MIS-13",
+            "operator": "!=",
+            "value": true
+          }
+        ]
+      },
+      "sceneDescription": "The instrumented test range is where \u2018stable but wrong\u2019 becomes measurable under pressure. Blast shields and camera mounts frame the experiment as something that has failed before, predictably enough to plan for it.",
+      "characters": [
+        {
+          "characterId": "PLAYER",
+          "role": "investigator/operator",
+          "notes": "Uses the instrumented chamber to run controlled trials (control pedestal + sensor swap) and document directional bias consistent with mechanical stiffness/drift under pressure."
+        }
+      ],
+      "possibleOutcomes": [
+        {
+          "id": "STIFFNESS_AND_BIAS_TRACKED",
+          "description": "You collect evidence that mechanical stiffness and drift can bias traversal outcomes directionally.",
+          "effects": [
+            {
+              "key": "visited.MIS-13",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "evidence.stiffnessBias",
+              "action": "set",
+              "value": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SCN-33",
+      "screenId": "MIS-14",
+      "triggerLogic": {
+        "type": "onEnter",
+        "conditions": [
+          {
+            "key": "visited.MIS-14",
+            "operator": "!=",
+            "value": true
+          },
+          {
+            "key": "story.act",
+            "operator": "==",
+            "value": 3
+          }
+        ]
+      },
+      "sceneDescription": "In the sabotage evidence bay, the incident stops being abstract. Tagged parts, comparison jigs, and seal stickers make intent legible: something was altered in a way that procedure alone can\u2019t explain away.",
+      "characters": [
+        {
+          "characterId": "PLAYER",
+          "role": "investigator",
+          "notes": "Examines tagged parts, seal stickers, and chain-of-custody materials; uses comparison jig and photo station to assemble a defensible proof chain indicating deliberate alteration/misconfiguration."
+        }
+      ],
+      "possibleOutcomes": [
+        {
+          "id": "SABOTAGE_EVIDENCE_LEGIBLE",
+          "description": "You assemble a proof chain that supports sabotage or deliberate misconfiguration as part of the original failure.",
+          "effects": [
+            {
+              "key": "visited.MIS-14",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "evidence.sabotageLegible",
+              "action": "set",
+              "value": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SCN-34",
+      "screenId": "HUB-05",
+      "triggerLogic": {
+        "type": "onEnter",
+        "conditions": [
+          {
+            "key": "visited.HUB-05",
+            "operator": "!=",
+            "value": true
+          },
+          {
+            "key": "story.act",
+            "operator": ">=",
+            "value": 3
+          }
+        ]
+      },
+      "sceneDescription": "The site director\u2019s office is a museum of control: policy binders, empty key slots, and a shred bin that implies the official record is also an active project. If you want authority, this is where it\u2019s stored\u2014and where it can be denied.",
+      "characters": [
+        {
+          "characterId": "PLAYER",
+          "role": "observer",
+          "notes": "Enters the Site Director\u2019s Office and takes in the procedural 'museum of control' details (binders, empty key slots, shred bin), framing the moment as a recognition of contested authority and evidence control."
+        }
+      ],
+      "possibleOutcomes": [
+        {
+          "id": "CONTROL_STACK_RECOGNIZED",
+          "description": "You identify that the remaining act is about who holds keys, who gets proof, and what gets filed away.",
+          "effects": [
+            {
+              "key": "visited.HUB-05",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "power.controlAuthorityContested",
+              "action": "set",
+              "value": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SCN-35",
+      "screenId": "MIS-15",
+      "triggerLogic": {
+        "type": "onEnter",
+        "conditions": [
+          {
+            "key": "visited.MIS-15",
+            "operator": "!=",
+            "value": true
+          },
+          {
+            "key": "evidence.sabotageLegible",
+            "operator": "==",
+            "value": true
+          }
+        ]
+      },
+      "sceneDescription": "The remote exit node exterior redefines what \u2018the other side\u2019 means: not a single mirrored room, but a reachable, markable zone with pylons and a beacon stake. Location becomes negotiable, and therefore dangerous.",
+      "characters": [
+        {
+          "characterId": "PLAYER",
+          "role": "observer",
+          "notes": "Arrives at the remote exit node exterior and assesses the marker pylons/beacon stake, realizing the far side is a constrained, instrumentable arrival corridor rather than a single fixed destination."
+        }
+      ],
+      "possibleOutcomes": [
+        {
+          "id": "EXIT_NODE_REDEFINED",
+          "description": "You accept that the far side is not a single point destination; it is a constrained corridor of possible arrivals that can be instrumented.",
+          "effects": [
+            {
+              "key": "visited.MIS-15",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "model.remoteExitNodeUnderstood",
+              "action": "set",
+              "value": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SCN-36",
+      "screenId": "MIS-16",
+      "triggerLogic": {
+        "type": "onEnter",
+        "conditions": [
+          {
+            "key": "visited.MIS-16",
+            "operator": "!=",
+            "value": true
+          },
+          {
+            "key": "model.remoteExitNodeUnderstood",
+            "operator": "==",
+            "value": true
+          }
+        ]
+      },
+      "sceneDescription": "At the corridor edge, the system shows its final truth: stable geometry with undomesticated behavior. Stress bands and lensing arcs feel like the machine telling you it will always have a \u2018wrong but consistent\u2019 option available.",
+      "characters": [
+        {
+          "characterId": "PLAYER",
+          "role": "point-of-view / observer",
+          "notes": "Alone at the abstract corridor edge via console controls; experiences an internal realization about the system\u2019s stable-but-undomesticated behavior and the inevitability of a 'wrong but consistent' option."
+        }
+      ],
+      "possibleOutcomes": [
+        {
+          "id": "EDGE_CONFRONTATION",
+          "description": "You internalize that no amount of paperwork can make the ambiguity disappear; it can only be managed or exploited.",
+          "effects": [
+            {
+              "key": "visited.MIS-16",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "endgame.edgeSeen",
+              "action": "set",
+              "value": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SCN-37",
+      "screenId": "MIS-17",
+      "triggerLogic": {
+        "type": "onEnter",
+        "conditions": [
+          {
+            "key": "visited.MIS-17",
+            "operator": "!=",
+            "value": true
+          },
+          {
+            "key": "endgame.edgeSeen",
+            "operator": "==",
+            "value": true
+          }
+        ]
+      },
+      "sceneDescription": "Extraction staging turns theory into commitments: gear piles, checklists, and a plan laid out as blocks on a table. Everyone\u2019s preferred outcome can be described as \u2018safety\u2019\u2014until you ask whose safety, and who decides.",
+      "characters": [
+        {
+          "characterId": "PLAYER",
+          "role": "speaker / decision-maker",
+          "notes": "POV. Reviews staging plan, chooses companion, and commits to an endgame operating framework (A/B/C/D). Keeps tone procedural and safety-framed; avoids treating STRD as spectacle."
+        },
+        {
+          "characterId": "DIR_KLINE",
+          "role": "antagonist / PROG authority",
+          "notes": "Pushes containment-first and centralized control; frames choices as compliance and liability. Avoids admitting fault; resists language that grants STRD stakeholder status."
+        },
+        {
+          "characterId": "IRIS_VALE",
+          "role": "counterparty / MERI authority",
+          "notes": "Argues for MERI-led standardized operations and upgraded control stack; emphasizes stability 'when operated correctly.' May downplay ethical fallout in favor of technical governance."
+        },
+        {
+          "characterId": "JULES_NAVARRO",
+          "role": "pressure / COAL advocate",
+          "notes": "Presses for broad disclosure and shared oversight; challenges 'safety' language by asking whose safety and who decides. Demands evidence-backed commitments, not reassurances."
+        },
+        {
+          "characterId": "MARA_ROOK",
+          "role": "STRD negotiator (returnist) / companion candidate",
+          "notes": "Pushes urgency and near-term extraction; treats delays as harm. Rejects scripted terms and open-ended promises; frames decisions as time-costs paid in people."
+        },
+        {
+          "characterId": "ELI_SATO",
+          "role": "STRD negotiator (warden) / companion candidate",
+          "notes": "Insists on containment-first protocols and veto power over moves that risk breach. Speaks in constraints and verification; resists 'rescue' language that implies ownership."
+        },
+        {
+          "characterId": "PROG_LIAISON",
+          "role": "facilitator / companion candidate",
+          "notes": "Keeps negotiation structured, documentable, and within approved language. Requests confirmations and verification steps; tries to prevent unsanctioned disclosure."
+        },
+        {
+          "characterId": "MERI_TECH",
+          "role": "technical support / companion candidate",
+          "notes": "Grounds the debate in what equipment and procedures are physically doable. Flags unsafe improvisation; focuses on practical staging details rather than politics."
+        }
+      ],
+      "possibleOutcomes": [
+        {
+          "id": "ENDING_A_CONTAINMENT_DOCTRINE",
+          "description": "You prioritize containment and centralized control, limiting extraction and narrowing disclosure.",
+          "effects": [
+            {
+              "key": "visited.MIS-17",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "ending.id",
+              "action": "set",
+              "value": "A_CONTAINMENT_DOCTRINE"
+            },
+            {
+              "key": "axis.control",
+              "action": "set",
+              "value": "prog"
+            },
+            {
+              "key": "axis.transparency",
+              "action": "set",
+              "value": "low"
+            },
+            {
+              "key": "axis.riskPosture",
+              "action": "set",
+              "value": "contain_first"
+            }
+          ]
+        },
+        {
+          "id": "ENDING_B_CORPORATE_CUSTODY",
+          "description": "You accept a MERI-led operating framework: standardized procedures, upgraded control stack, and extraction framed as capability.",
+          "effects": [
+            {
+              "key": "visited.MIS-17",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "ending.id",
+              "action": "set",
+              "value": "B_CORPORATE_CUSTODY"
+            },
+            {
+              "key": "axis.control",
+              "action": "set",
+              "value": "meri"
+            },
+            {
+              "key": "axis.transparency",
+              "action": "set",
+              "value": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ENDING_C_PUBLIC_DISCLOSURE",
+          "description": "You commit to broad disclosure and shared oversight, accepting slower operations under scrutiny (or the risk that scrutiny stops operations entirely).",
+          "effects": [
+            {
+              "key": "visited.MIS-17",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "ending.id",
+              "action": "set",
+              "value": "C_PUBLIC_DISCLOSURE"
+            },
+            {
+              "key": "axis.control",
+              "action": "set",
+              "value": "coal"
+            },
+            {
+              "key": "axis.transparency",
+              "action": "set",
+              "value": "high"
+            },
+            {
+              "key": "axis.riskPosture",
+              "action": "set",
+              "value": "stabilize_first"
+            }
+          ]
+        },
+        {
+          "id": "ENDING_D_STRANDED_TERMS",
+          "description": "You accept STRD-negotiated operating terms, treating the far side as a stakeholder with veto power over \u2018rescue\u2019 that risks breach.",
+          "effects": [
+            {
+              "key": "visited.MIS-17",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "ending.id",
+              "action": "set",
+              "value": "D_STRANDED_TERMS"
+            },
+            {
+              "key": "axis.control",
+              "action": "set",
+              "value": "strd"
+            },
+            {
+              "key": "axis.transparency",
+              "action": "set",
+              "value": "selective"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

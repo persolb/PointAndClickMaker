@@ -1,0 +1,94 @@
+{
+  "changes": [
+    {
+      "action": "add",
+      "createScene": {
+        "dialogueGraphs": [
+          {
+            "id": "DG_SCN_085_SERVICE_DOOR",
+            "nodes": [
+              {
+                "choices": [
+                  {
+                    "id": "C_LOOK_DOOR",
+                    "next": "N_LOOK_DOOR_1",
+                    "text": "look \u201cService door\u201d"
+                  },
+                  {
+                    "id": "C_USE_SERVICE_DOOR",
+                    "next": "N_DOOR_TEST_1",
+                    "text": "use \u201cService door\u201d"
+                  }
+                ],
+                "id": "N_START",
+                "speakerId": "PLAYER",
+                "type": "player_choice"
+              },
+              {
+                "id": "N_LOOK_DOOR_1",
+                "next": "N_LOOK_DOOR_2",
+                "speakerId": "NARRATOR",
+                "text": "You can\u2019t see much from up here. The door is set into poured concrete at the bottom of the pit, painted \u201cutility gray\u201d over older layers.\nA placard reads: \u201cSERVICE ACCESS \u2014 MINIMUM LOAD WAKE.\u201d",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_LOOK_DOOR_2",
+                "next": "N_START",
+                "speakerId": "NARRATOR",
+                "text": "The hinges look new. The knob looks old. That combination usually means a story nobody wants to tell twice.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_DOOR_TEST_1",
+                "next": "N_DOOR_TEST_2",
+                "speakerId": "NARRATOR",
+                "text": "You test the handle. The latch releases on the first try, like it\u2019s been waiting to prove something.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_DOOR_TEST_2",
+                "next": "N_COMMIT_MENU",
+                "speakerId": "NARRATOR",
+                "text": "Air spills through the gap\u2014cooler, drier, with that faint ozone edge that means \u201cpowered,\u201d but nobody will call it that out loud.",
+                "type": "npc_line"
+              },
+              {
+                "choices": [
+                  {
+                    "id": "C_USE_ENTER_DOOR",
+                    "next": "N_END_REACH_SERVICE_ACCESS",
+                    "text": "use \u201cEnter through the service door\u201d"
+                  },
+                  {
+                    "id": "C_LEAVE_NOT_YET",
+                    "next": "N_START",
+                    "text": "leave \u201cNot yet\u201d"
+                  }
+                ],
+                "id": "N_COMMIT_MENU",
+                "speakerId": "PLAYER",
+                "type": "player_choice"
+              },
+              {
+                "effects": [
+                  {
+                    "action": "set",
+                    "key": "world.serviceAccessReached",
+                    "value": true
+                  }
+                ],
+                "id": "N_END_REACH_SERVICE_ACCESS",
+                "outcomeId": "reach_service_access",
+                "type": "end"
+              }
+            ],
+            "sceneId": "SCN-085",
+            "startNodeId": "N_START"
+          }
+        ]
+      },
+      "op": "create_scene"
+    }
+  ],
+  "sceneId": "SCN-085"
+}

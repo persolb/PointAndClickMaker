@@ -1,0 +1,694 @@
+{
+  "dialogueGraphs": [
+    {
+      "id": "SCN_047_INTAKE_HALL",
+      "sceneId": "SCN-047",
+      "startNodeId": "N_INTRO_1",
+      "nodes": [
+        {
+          "id": "N_INTRO_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The Intake Hall is a straight corridor of windows and rules.\nIt feels like a DMV built by a risk committee.",
+          "next": "N_INTRO_2"
+        },
+        {
+          "id": "N_INTRO_2",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "Five counters. Five numbers that skip comfort: 0, 3, 5, 7, 9.\nEach window has a placard like a verdict.\nA forms rack stands between them, stocked with \u201cMISROUTED CARGO TEMPLATES,\u201d all crisp, all wrong in advance.",
+          "next": "PC_MAIN"
+        },
+        {
+          "id": "PC_MAIN",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_LOOK_PLACARDS",
+              "text": "look: Read the window placards.",
+              "next": "N_LOOK_PLACARDS_1"
+            },
+            {
+              "id": "C_LOOK_FORMS",
+              "text": "look: Check the forms rack.",
+              "next": "N_LOOK_FORMS_1"
+            },
+            {
+              "id": "C_TALK_COACH",
+              "text": "talk: Process Coach.",
+              "next": "N_COACH_INTRO_1"
+            },
+            {
+              "id": "C_TALK_WIN0",
+              "text": "talk: Approach Window 0 (Intake).",
+              "next": "N_WIN0_INTRO_1"
+            },
+            {
+              "id": "C_TALK_WIN3",
+              "text": "talk: Approach Window 3 (Orientation).",
+              "next": "N_WIN3_1"
+            },
+            {
+              "id": "C_TALK_WIN5",
+              "text": "talk: Approach Window 5 (Safety).",
+              "next": "N_WIN5_1"
+            },
+            {
+              "id": "C_TALK_WIN7",
+              "text": "talk: Approach Window 7 (Property).",
+              "next": "N_WIN7_1"
+            },
+            {
+              "id": "C_TALK_WIN9",
+              "text": "talk: Approach Window 9 (Complaints).",
+              "next": "N_WIN9_1"
+            },
+            {
+              "id": "C_LEAVE_LEFT",
+              "text": "leave: Overflow Intake Concourse (left).",
+              "next": "END_TO_OVERFLOW"
+            },
+            {
+              "id": "C_LEAVE_RIGHT",
+              "text": "leave: Legacy Interconnections Archive (right).",
+              "next": "END_TO_ARCHIVE"
+            },
+            {
+              "id": "C_LEAVE_CORRIDORS",
+              "text": "leave: Concourse Service Corridors / Map Kiosk.",
+              "next": "END_TO_CORRIDORS"
+            }
+          ]
+        },
+        {
+          "id": "N_LOOK_PLACARDS_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "Window 0 reads: \u201cINTAKE (TER).\u201d\nThe \u201c(TER)\u201d looks added later, with a different laminate.",
+          "next": "N_LOOK_PLACARDS_2"
+        },
+        {
+          "id": "N_LOOK_PLACARDS_2",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "Window 3: \u201cORIENTATION \u2014 SUBJECT TO VALID STATUS.\u201d\nWindow 5: \u201cSAFETY \u2014 INCIDENTS ONLY.\u201d\nWindow 7: \u201cPROPERTY \u2014 CLAIMS REQUIRE CLAIMANT.\u201d\nWindow 9: \u201cCOMPLAINTS \u2014 PROCESSED, NO ACTION.\u201d",
+          "next": "R_TO_MAIN_1"
+        },
+        {
+          "id": "N_LOOK_FORMS_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The rack is divided into categories with comforting names.\n\u201cMisrouted Cargo,\u201d \u201cLabel Failure,\u201d \u201cUnclaimed Attachments.\u201d",
+          "next": "N_LOOK_FORMS_2"
+        },
+        {
+          "id": "N_LOOK_FORMS_2",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "Someone has highlighted a line on one template:\n\u201cASSOCIATED MASS (DO NOT DESCRIBE).\u201d",
+          "next": "R_TO_MAIN_2"
+        },
+        {
+          "id": "N_COACH_INTRO_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The Process Coach stands where you can\u2019t tell if they\u2019re helping you or helping throughput.",
+          "next": "N_COACH_INTRO_2"
+        },
+        {
+          "id": "N_COACH_INTRO_2",
+          "type": "npc_line",
+          "speakerId": "PROCESS_COACH",
+          "text": "Before you pick a window\u2014don\u2019t improvise a story. (pause) Stories make somebody responsible. (pause) Categories get you a receipt.",
+          "next": "PC_COACH_MENU"
+        },
+        {
+          "id": "PC_COACH_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_ASK_STANDING",
+              "text": "ask: Which window gets me standing?",
+              "next": "N_COACH_STANDING_1"
+            },
+            {
+              "id": "C_ASK_WRONG",
+              "text": "ask: What happens if I pick wrong?",
+              "next": "N_COACH_WRONG_1"
+            },
+            {
+              "id": "C_SHOW_OLEA_COACH",
+              "text": "show: OLEA credentials.",
+              "conditions": [
+                {
+                  "key": "player.hasFaction.OLEA",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "next": "N_COACH_OLEA_1"
+            },
+            {
+              "id": "C_PERSUADE_PHRASE",
+              "text": "persuade: Give me the least-escalation wording.",
+              "checks": [
+                {
+                  "type": "skill",
+                  "skill": "persuasion",
+                  "dc": 12
+                }
+              ],
+              "onPassNext": "N_COACH_PERSUADE_PASS_1",
+              "onFailNext": "N_COACH_PERSUADE_FAIL_1"
+            },
+            {
+              "id": "C_LEAVE_COACH_BACK",
+              "text": "leave: Back.",
+              "next": "R_TO_MAIN_3"
+            }
+          ]
+        },
+        {
+          "id": "N_COACH_STANDING_1",
+          "type": "npc_line",
+          "speakerId": "PROCESS_COACH",
+          "text": "Don\u2019t say \u201cstanding\u201d at glass.\nLegal word. Bites.",
+          "next": "N_COACH_STANDING_2"
+        },
+        {
+          "id": "N_COACH_STANDING_2",
+          "type": "npc_line",
+          "speakerId": "PROCESS_COACH",
+          "text": "Window 0. (pause) Ask for a Temporary Existence Receipt. (pause) Don\u2019t lead with \u201cI\u2019m a person.\u201d (pause) Don\u2019t lead with \u201cI need access.\u201d (pause) Give them something they can file. (pause) Once you\u2019re fileable, you can get difficult.",
+          "next": "R_TO_COACH_MENU_1"
+        },
+        {
+          "id": "N_COACH_WRONG_1",
+          "type": "npc_line",
+          "speakerId": "PROCESS_COACH",
+          "text": "They\u2019ll redirect you.",
+          "next": "N_COACH_WRONG_2"
+        },
+        {
+          "id": "N_COACH_WRONG_2",
+          "type": "npc_line",
+          "speakerId": "PROCESS_COACH",
+          "text": "Or they\u2019ll log you as an interruption. (pause) If you keep insisting on specifics. (pause) Worst case, you get an incident category. (pause) One you didn\u2019t choose. (pause) Get yourself in the file. (pause) You\u2019ll at least keep moving.",
+          "next": "R_TO_COACH_MENU_2"
+        },
+        {
+          "id": "N_COACH_OLEA_1",
+          "type": "npc_line",
+          "speakerId": "PROCESS_COACH",
+          "text": "Okay. Means you\u2019ve got an employer.",
+          "next": "N_COACH_OLEA_2"
+        },
+        {
+          "id": "N_COACH_OLEA_2",
+          "type": "npc_line",
+          "speakerId": "PROCESS_COACH",
+          "text": "Still doesn\u2019t mean the windows have to care. (pause) If you want this quiet, (pause) go to Window 0 (pause) and let Intake pretend (pause) you\u2019re cargo for five minutes.",
+          "next": "R_TO_COACH_MENU_3"
+        },
+        {
+          "id": "N_COACH_PERSUADE_PASS_1",
+          "type": "npc_line",
+          "speakerId": "PROCESS_COACH",
+          "text": "Fine.\nUse the system\u2019s label: \u201cmisrouted equipment transfer.\u201d",
+          "next": "N_COACH_PERSUADE_PASS_2"
+        },
+        {
+          "id": "N_COACH_PERSUADE_PASS_2",
+          "type": "npc_line",
+          "speakerId": "PROCESS_COACH",
+          "text": "Keep it short. (pause) No biography. (pause) No motive. (pause)\nIf you have to attach yourself, (pause) you\u2019re \u201cassociated mass.\u201d (pause)\nDon\u2019t describe it.",
+          "next": "R_TO_COACH_MENU_4"
+        },
+        {
+          "id": "N_COACH_PERSUADE_FAIL_1",
+          "type": "npc_line",
+          "speakerId": "PROCESS_COACH",
+          "text": "You want fewer alarms? Keep it thin. (pause) Less detail. Less insistence. Less you.",
+          "next": "N_COACH_PERSUADE_FAIL_2"
+        },
+        {
+          "id": "N_COACH_PERSUADE_FAIL_2",
+          "type": "npc_line",
+          "speakerId": "PROCESS_COACH",
+          "text": "Go to Window 0. (pause) Ask what categories are accepted. (pause) Don\u2019t argue about it on the record.",
+          "next": "R_TO_COACH_MENU_5"
+        },
+        {
+          "id": "N_WIN3_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "Window 3 has pamphlets arranged like a threat.",
+          "next": "N_WIN3_2"
+        },
+        {
+          "id": "N_WIN3_2",
+          "type": "npc_line",
+          "speakerId": "ORIENTATION_CLERK",
+          "text": "Orientation is for valid entrants.\nIf you are here, you are either already valid, or not my problem, in the normal sense.\nIf you need a TER, that is Intake. Window 0.\nPlease do not become a discussion at this counter.",
+          "next": "PC_WIN3_MENU"
+        },
+        {
+          "id": "PC_WIN3_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_ASK_DEFINE_VALID",
+              "text": "ask: Define \u201cvalid.\u201d",
+              "next": "N_WIN3_DEFINE_1"
+            },
+            {
+              "id": "C_LEAVE_WIN3",
+              "text": "leave: Back.",
+              "next": "R_TO_MAIN_4"
+            }
+          ]
+        },
+        {
+          "id": "N_WIN3_DEFINE_1",
+          "type": "npc_line",
+          "speakerId": "ORIENTATION_CLERK",
+          "text": "I cannot define it without assigning it.",
+          "next": "N_WIN3_DEFINE_2"
+        },
+        {
+          "id": "N_WIN3_DEFINE_2",
+          "type": "npc_line",
+          "speakerId": "ORIENTATION_CLERK",
+          "text": "Assigning it would be Intake. Window 0.\nThis is not evasion. It is separation of functions.",
+          "next": "R_TO_MAIN_5"
+        },
+        {
+          "id": "N_WIN5_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "Window 5 has a yellow light that never turns off.",
+          "next": "N_WIN5_2"
+        },
+        {
+          "id": "N_WIN5_2",
+          "type": "npc_line",
+          "speakerId": "SAFETY_CLERK",
+          "text": "Safety handles incidents.\n\u201cIncident\u201d means a recorded deviation, not a feeling.\nIf you need a TER, you need Intake to record you first.\nWindow 0. Please do not workshop wording here.",
+          "next": "PC_WIN5_MENU"
+        },
+        {
+          "id": "PC_WIN5_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_THREATEN_ESCALATE",
+              "text": "threaten: If you won\u2019t help, I\u2019ll escalate.",
+              "next": "N_WIN5_THREAT_1"
+            },
+            {
+              "id": "C_LEAVE_WIN5",
+              "text": "leave: Back.",
+              "next": "R_TO_MAIN_6"
+            }
+          ]
+        },
+        {
+          "id": "N_WIN5_THREAT_1",
+          "type": "npc_line",
+          "speakerId": "SAFETY_CLERK",
+          "text": "Escalation is also an incident.",
+          "next": "N_WIN5_THREAT_2"
+        },
+        {
+          "id": "N_WIN5_THREAT_2",
+          "type": "npc_line",
+          "speakerId": "SAFETY_CLERK",
+          "text": "I can\u2019t open an escalation without a category.\nYou do not want me choosing your category.\nGo to Intake. Window 0. Quietly.",
+          "next": "R_TO_MAIN_7"
+        },
+        {
+          "id": "N_WIN7_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "Window 7 has a stamp pad that looks loved.",
+          "next": "N_WIN7_2"
+        },
+        {
+          "id": "N_WIN7_2",
+          "type": "npc_line",
+          "speakerId": "PROPERTY_CLERK",
+          "text": "Property is for claims.\nClaims require a claimant, in the normal sense.\nIntake can create a fileable entity.\nOnce you\u2019re fileable, you can claim things and be disappointed like everyone else.\nWindow 0.",
+          "next": "PC_WIN7_MENU"
+        },
+        {
+          "id": "PC_WIN7_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_ASK_TOKEN_ISSUE",
+              "text": "ask: So you can\u2019t issue a token?",
+              "next": "N_WIN7_TOKEN_1"
+            },
+            {
+              "id": "C_LEAVE_WIN7",
+              "text": "leave: Back.",
+              "next": "R_TO_MAIN_8"
+            }
+          ]
+        },
+        {
+          "id": "N_WIN7_TOKEN_1",
+          "type": "npc_line",
+          "speakerId": "PROPERTY_CLERK",
+          "text": "I can issue a stub.",
+          "next": "N_WIN7_TOKEN_2"
+        },
+        {
+          "id": "N_WIN7_TOKEN_2",
+          "type": "npc_line",
+          "speakerId": "PROPERTY_CLERK",
+          "text": "A stub is not a token. A token is not a receipt. A receipt is not an entitlement.\nIntake handles the receipt part.\nWindow 0.",
+          "next": "R_TO_MAIN_9"
+        },
+        {
+          "id": "N_WIN9_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "Window 9 has a stack of forms already stamped.",
+          "next": "N_WIN9_2"
+        },
+        {
+          "id": "N_WIN9_2",
+          "type": "npc_line",
+          "speakerId": "COMPLAINTS_CLERK",
+          "text": "Complaints are processed. No action.\nIf you need Intake, that is Window 0.\nIf you need a stamp that ends a conversation, come back after you exist.",
+          "next": "PC_WIN9_MENU"
+        },
+        {
+          "id": "PC_WIN9_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_ASK_STAMP_PROCESSED",
+              "text": "ask: Can you stamp me as \u201cprocessed\u201d?",
+              "next": "N_WIN9_STAMP_1"
+            },
+            {
+              "id": "C_LEAVE_WIN9",
+              "text": "leave: Back.",
+              "next": "R_TO_MAIN_10"
+            }
+          ]
+        },
+        {
+          "id": "N_WIN9_STAMP_1",
+          "type": "npc_line",
+          "speakerId": "COMPLAINTS_CLERK",
+          "text": "I can stamp paper. I cannot stamp\u2026 circumstances.",
+          "next": "N_WIN9_STAMP_2"
+        },
+        {
+          "id": "N_WIN9_STAMP_2",
+          "type": "npc_line",
+          "speakerId": "COMPLAINTS_CLERK",
+          "text": "Also, that would be action. Which is not offered.",
+          "next": "R_TO_MAIN_11"
+        },
+        {
+          "id": "N_WIN0_INTRO_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "Window 0 is the only counter without pamphlets.\nThe space is clean in the way a form is clean\u2014because nothing personal has been allowed to touch it.",
+          "next": "N_WIN0_INTRO_2"
+        },
+        {
+          "id": "N_WIN0_INTRO_2",
+          "type": "npc_line",
+          "speakerId": "INTAKE_CLERK",
+          "text": "Intake.\nCategory?",
+          "next": "PC_WIN0_MENU"
+        },
+        {
+          "id": "PC_WIN0_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_ASK_NEED_TER",
+              "text": "ask: I need a Temporary Existence Receipt.",
+              "next": "N_WIN0_TER_1"
+            },
+            {
+              "id": "C_ASK_ACCEPTED_CATS",
+              "text": "ask: What categories are accepted?",
+              "next": "N_WIN0_CATS_1"
+            },
+            {
+              "id": "C_SHOW_OLEA_WIN0",
+              "text": "show: OLEA credentials.",
+              "conditions": [
+                {
+                  "key": "player.hasFaction.OLEA",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "next": "N_WIN0_OLEA_1"
+            },
+            {
+              "id": "C_BARGAIN_SIMPLE_FAST",
+              "text": "bargain: I\u2019ll keep it simple if you get me filed fast.",
+              "next": "N_WIN0_BARGAIN_1"
+            },
+            {
+              "id": "C_LEAVE_WIN0",
+              "text": "leave: Back.",
+              "next": "R_TO_MAIN_12"
+            }
+          ]
+        },
+        {
+          "id": "N_WIN0_TER_1",
+          "type": "npc_line",
+          "speakerId": "INTAKE_CLERK",
+          "text": "TER comes after.\nStart with a category.",
+          "next": "N_WIN0_TER_2"
+        },
+        {
+          "id": "N_WIN0_TER_2",
+          "type": "npc_line",
+          "speakerId": "INTAKE_CLERK",
+          "text": "I don't issue existence. (pause)\nI can stamp a receipt for something. (pause)\nI can log it in the normal sense. (pause)\nIf you're not listed in a jurisdiction. (pause)\nI can't file you as a person.",
+          "next": "N_WIN0_TER_3"
+        },
+        {
+          "id": "N_WIN0_TER_3",
+          "type": "npc_line",
+          "speakerId": "INTAKE_CLERK",
+          "text": "Put something with a barcode on the counter. (pause) I can file that. (pause) Anything extra goes down as 'associated'. (pause) No comment.",
+          "next": "PC_WIN0_FOLLOW"
+        },
+        {
+          "id": "N_WIN0_CATS_1",
+          "type": "npc_line",
+          "speakerId": "INTAKE_CLERK",
+          "text": "Whatever's listed today is what I take.",
+          "next": "N_WIN0_CATS_2"
+        },
+        {
+          "id": "N_WIN0_CATS_2",
+          "type": "npc_line",
+          "speakerId": "INTAKE_CLERK",
+          "text": "Yeah. It\u2019s circular. (pause) Keeps it from turning into debate. (pause) \u201cMisrouted equipment transfer\u201d usually stays quiet. (pause) \u201cUnclaimed attachment\u201d is there too. (pause) It gets questions in the normal sense.",
+          "next": "PC_WIN0_FOLLOW"
+        },
+        {
+          "id": "N_WIN0_OLEA_1",
+          "type": "npc_line",
+          "speakerId": "INTAKE_CLERK",
+          "text": "Employer credentials don't go in the category box.",
+          "next": "N_WIN0_OLEA_2"
+        },
+        {
+          "id": "N_WIN0_OLEA_2",
+          "type": "npc_line",
+          "speakerId": "INTAKE_CLERK",
+          "text": "Sure. They're context. (pause) I can't scan context. (pause) Want a TER? Go through Intake. (pause) As recordable mass.",
+          "next": "PC_WIN0_FOLLOW"
+        },
+        {
+          "id": "N_WIN0_BARGAIN_1",
+          "type": "npc_line",
+          "speakerId": "INTAKE_CLERK",
+          "text": "Good. Keep it simple.",
+          "next": "N_WIN0_BARGAIN_2"
+        },
+        {
+          "id": "N_WIN0_BARGAIN_2",
+          "type": "npc_line",
+          "speakerId": "INTAKE_CLERK",
+          "text": "I don't promise speed. (pause) I do the order. (pause) The order gets you the receipt.",
+          "next": "PC_WIN0_FOLLOW"
+        },
+        {
+          "id": "PC_WIN0_FOLLOW",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_TALK_PROCEED_TER_PATH",
+              "text": "talk: Proceed with Window 0 as TER path.",
+              "next": "N_COMMIT_1"
+            },
+            {
+              "id": "C_LEAVE_WIN0_BACK",
+              "text": "leave: Back.",
+              "next": "R_TO_MAIN_13"
+            }
+          ]
+        },
+        {
+          "id": "N_COMMIT_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You point at the placard: \u201cINTAKE (TER).\u201d",
+          "next": "N_COMMIT_2"
+        },
+        {
+          "id": "N_COMMIT_2",
+          "type": "npc_line",
+          "speakerId": "INTAKE_CLERK",
+          "text": "Yeah.\nIn the normal sense.",
+          "next": "N_COMMIT_3"
+        },
+        {
+          "id": "N_COMMIT_3",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The clerk slides a blank form forward, face-down, like it might try to read you back if you look too directly.\nYou have identified the path. The actual filing comes next\u2014when you choose what you are willing to be called.",
+          "next": "END_RULES_ESTABLISHED"
+        },
+        {
+          "id": "R_TO_MAIN_1",
+          "type": "redirect",
+          "target": "PC_MAIN"
+        },
+        {
+          "id": "R_TO_MAIN_2",
+          "type": "redirect",
+          "target": "PC_MAIN"
+        },
+        {
+          "id": "R_TO_MAIN_3",
+          "type": "redirect",
+          "target": "PC_MAIN"
+        },
+        {
+          "id": "R_TO_MAIN_4",
+          "type": "redirect",
+          "target": "PC_MAIN"
+        },
+        {
+          "id": "R_TO_MAIN_5",
+          "type": "redirect",
+          "target": "PC_MAIN"
+        },
+        {
+          "id": "R_TO_MAIN_6",
+          "type": "redirect",
+          "target": "PC_MAIN"
+        },
+        {
+          "id": "R_TO_MAIN_7",
+          "type": "redirect",
+          "target": "PC_MAIN"
+        },
+        {
+          "id": "R_TO_MAIN_8",
+          "type": "redirect",
+          "target": "PC_MAIN"
+        },
+        {
+          "id": "R_TO_MAIN_9",
+          "type": "redirect",
+          "target": "PC_MAIN"
+        },
+        {
+          "id": "R_TO_MAIN_10",
+          "type": "redirect",
+          "target": "PC_MAIN"
+        },
+        {
+          "id": "R_TO_MAIN_11",
+          "type": "redirect",
+          "target": "PC_MAIN"
+        },
+        {
+          "id": "R_TO_MAIN_12",
+          "type": "redirect",
+          "target": "PC_MAIN"
+        },
+        {
+          "id": "R_TO_MAIN_13",
+          "type": "redirect",
+          "target": "PC_MAIN"
+        },
+        {
+          "id": "R_TO_COACH_MENU_1",
+          "type": "redirect",
+          "target": "PC_COACH_MENU"
+        },
+        {
+          "id": "R_TO_COACH_MENU_2",
+          "type": "redirect",
+          "target": "PC_COACH_MENU"
+        },
+        {
+          "id": "R_TO_COACH_MENU_3",
+          "type": "redirect",
+          "target": "PC_COACH_MENU"
+        },
+        {
+          "id": "R_TO_COACH_MENU_4",
+          "type": "redirect",
+          "target": "PC_COACH_MENU"
+        },
+        {
+          "id": "R_TO_COACH_MENU_5",
+          "type": "redirect",
+          "target": "PC_COACH_MENU"
+        },
+        {
+          "id": "END_RULES_ESTABLISHED",
+          "type": "end",
+          "outcomeId": "intake_hall_rules_established",
+          "effects": [
+            {
+              "key": "knowledge.intakeWindowsKnown",
+              "action": "set",
+              "value": true
+            }
+          ]
+        },
+        {
+          "id": "END_TO_OVERFLOW",
+          "type": "end"
+        },
+        {
+          "id": "END_TO_ARCHIVE",
+          "type": "end"
+        },
+        {
+          "id": "END_TO_CORRIDORS",
+          "type": "end"
+        }
+      ]
+    }
+  ]
+}

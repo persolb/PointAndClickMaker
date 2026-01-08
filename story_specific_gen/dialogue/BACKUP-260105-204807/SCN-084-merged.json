@@ -1,0 +1,40 @@
+{
+  "changes": [
+    {
+      "action": "add",
+      "createScene": {
+        "dialogueGraphs": [
+          {
+            "id": "DG_SCN_084_ACCESS_LADDER_STEPS",
+            "nodes": [
+              {
+                "id": "N_START",
+                "next": "N_LOOK_LADDER_1",
+                "speakerId": "NARRATOR",
+                "text": "You lean over the opening and take in the access ladder.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_LOOK_LADDER_1",
+                "next": "N_LOOK_LADDER_2",
+                "speakerId": "NARRATOR",
+                "text": "Galvanized rungs, clean enough to offend the surrounding concrete.\nA fall-arrest anchor is installed, tagged, and\u2014this is the odd part\u2014dated this quarter. That makes your jaw tighten, just a little.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_LOOK_LADDER_2",
+                "speakerId": "NARRATOR",
+                "text": "A laminated card hangs from the anchor: \u201cDESCENT PROCEDURE: THREE POINTS OF CONTACT. DO NOT LINGER.\u201d\n\u201cDo not linger\u201d is underlined twice, like it\u2019s personal.",
+                "type": "npc_line"
+              }
+            ],
+            "sceneId": "SCN-084",
+            "startNodeId": "N_START"
+          }
+        ]
+      },
+      "op": "create_scene"
+    }
+  ],
+  "sceneId": "SCN-084"
+}

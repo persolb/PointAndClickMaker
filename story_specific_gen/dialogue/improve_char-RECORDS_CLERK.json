@@ -1,0 +1,472 @@
+{
+  "nodes": [
+    {
+      "scene": "SCN_SCN-068.json",
+      "id": "N_LOOK_2",
+      "priorLine": "The placard lists three ways to be denied, and none of them are \u201cwrong.\u201d\nA thin strip of adhesive still holds lint like it\u2019s trying to preserve a timeline.",
+      "lineToEdit": "If you\u2019re reading the placard out loud, don\u2019t.\nIt doesn\u2019t become binding twice.",
+      "nextLine": "The slot is labeled: SUBMIT IDENTIFIERS ONLY.\nSomeone scratched \u201cNO QUESTIONS\u201d into the corner and then tried to buff it off.",
+      "revisedLine": "Don\u2019t read the placard out loud. (pause)\nOne binding\u2019s enough.",
+      "changeSummary": "Made the warning more immediate and clipped; kept the same constraint without formal phrasing. | Inserted a (pause) between the sentences to split the line into two beats under 8 words without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-068.json",
+      "id": "N_TALK_2",
+      "priorLine": "Records.",
+      "lineToEdit": "This is Records, yes.\nIf you\u2019re here to \u201cget in,\u201d that\u2019s not what happens.\nYou provide a handle. I release a copy.\nNo one \u201centers\u201d the archive. That\u2019s how the archive stays an archive.",
+      "nextLine": "",
+      "revisedLine": "Records. (pause)\nYou\u2019re not coming in. (pause)\nGive me a handle, I push copies. (pause)\nArchive stays shut.",
+      "changeSummary": "Cut the explanatory cadence; kept the same access rules in a more reactive voice. | Inserted (pause) breaks to keep each beat under 8 words; kept wording and meaning intact."
+    },
+    {
+      "scene": "SCN_SCN-068.json",
+      "id": "N_HANDLE_2",
+      "priorLine": "What handle.",
+      "lineToEdit": "Date, scope, and why you\u2019re entitled to touch it without becoming the last person who touched it.\nNot personal. Procedural.\nAnd before you say \u201cclosure,\u201d closure is not a scope.\nClosure is a mood.",
+      "nextLine": "",
+      "revisedLine": "Date. Scope. And your entitlement. (pause) Your name won\u2019t be last on it. (pause)\nDon\u2019t put \u201cclosure\u201d in the scope box. (pause)\nClosure\u2019s\u2026 a mood.",
+      "changeSummary": "Kept required info while removing the formal/definitional tone; made it sound like pressured intake. | Added (pause) breaks to keep each beat under 8 words; removed the causal connector while preserving meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-068.json",
+      "id": "N_SEAL_2",
+      "priorLine": "Why the new seal.",
+      "lineToEdit": "Because the old seal was referenced incorrectly in a conversation that did not exist.\nSo now we have a seal that matches the record of the seal.\nI don\u2019t control the narrative. I control the staples.",
+      "nextLine": "",
+      "revisedLine": "Old seal got cited wrong (pause) in a conversation that \u201cdidn\u2019t happen.\u201d (pause) So now we\u2019ve got a seal (pause) that matches what the record says. (pause) I don\u2019t run the story. (pause) I run the staples.",
+      "changeSummary": "Kept the same odd fact pattern; made it more spoken and defensive. | Inserted (pause) breaks to keep each beat under 8 words; kept wording and meaning intact."
+    },
+    {
+      "scene": "SCN_SCN-068.json",
+      "id": "N_SHOW_PRES_2",
+      "priorLine": "Presence proof. Timestamped.",
+      "lineToEdit": "Hold it up. Closer.\nNot because I don\u2019t trust you\u2014because the copier ink they use fades like it\u2019s embarrassed.",
+      "nextLine": "The clerk\u2019s pen pauses mid-air, just long enough to be noticed.",
+      "revisedLine": "Hold it up. Closer.\nCopier prints fade fast.",
+      "changeSummary": "Removed the banned contrast construction; kept the same practical reason. | Removed \u201cThese\u201d to bring total beat word count down to 8 without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-068.json",
+      "id": "N_SHOW_PRES_4",
+      "priorLine": "The clerk\u2019s pen pauses mid-air, just long enough to be noticed.",
+      "lineToEdit": "All right. You exist in the building during a time when the building claims it was unoccupied.\nWhich is\u2026 not my department.\nThis establishes standing to request copies. Not standing to interpret them.",
+      "nextLine": "",
+      "revisedLine": "Alright. (pause) You\u2019re in the building, (pause) at a time it says was empty. (pause) I\u2019m not touching that. (pause) It gets you standing to request copies. (pause) Past that\u2014yeah. No.",
+      "changeSummary": "Shifted from policy explanation to a stressed, liability-avoiding response; preserved the standing limitation. | Inserted (pause) breaks to keep each beat under 8 words, and added a single comma for cadence while preserving meaning."
+    },
+    {
+      "scene": "SCN_SCN-068.json",
+      "id": "N_SHOW_VAR_2",
+      "priorLine": "Variance acknowledgment. Reference code.",
+      "lineToEdit": "Say it slowly.\nIf you say it fast, it turns into a different code, and then it\u2019s my mistake forever.",
+      "nextLine": "(reads the reference)",
+      "revisedLine": "Slow. (pause) If it lands wrong in my log, (pause) it stays my problem.",
+      "changeSummary": "Kept the same request and consequence; tightened into natural spoken shorthand. | Split the second sentence into two beats with pauses to keep each beat under 8 words; kept wording and single comma unchanged."
+    },
+    {
+      "scene": "SCN_SCN-068.json",
+      "id": "N_SHOW_VAR_4",
+      "priorLine": "(reads the reference)",
+      "lineToEdit": "Mm. Non-local compliance format.\nI\u2019m not stating that as an opinion. The dashes are wrong for municipal.\nThis explains the seal change without explaining anything else, which is ideal.",
+      "nextLine": "",
+      "revisedLine": "Mm. Non-local compliance format. (pause)\nThose dashes don\u2019t match municipal. (pause)\nEnough to justify the seal swap entry.",
+      "changeSummary": "Collapsed jargon and removed the \u201cideal\u201d punchline; kept the municipal dash issue and seal rationale. | Inserted (pause) breaks to keep each beat under 8 words. Tightened the last clause to preserve meaning while reducing word count."
+    },
+    {
+      "scene": "SCN_SCN-068.json",
+      "id": "N_PRESS_2",
+      "priorLine": "What is \u201cnon-local.\u201d",
+      "lineToEdit": "It is a descriptor that allows the file to exist without implying jurisdiction.\nAnd I\u2019m going to stop there because you\u2019re asking me to understand.\nI can file this, or I can understand it. Pick one.",
+      "nextLine": "",
+      "revisedLine": "It\u2019s the tag. (pause) Lets me park the file. (pause) Without writing a jurisdiction. (pause)\nI\u2019m stopping there. (pause)\nYou want it filed, I file it.",
+      "changeSummary": "Kept the jurisdiction-avoidance meaning while cutting the lecture and removing the forced binary framing. | Added (pause) breaks to keep each beat under 8 words; kept wording and meaning intact; preserved a single comma."
+    },
+    {
+      "scene": "SCN_SCN-068.json",
+      "id": "N_REQ_2",
+      "priorLine": "Need billing ledgers, maintenance schedules, audit flags. Pre-incident.",
+      "lineToEdit": "That\u2019s three categories, not one request.\nWhich is fine. It\u2019s just\u2026 people who ask for three categories tend to be building a story.\nAnd stories are how we get reclassification events.",
+      "nextLine": "The clerk taps the counter twice, like they can wake the correct form up.",
+      "revisedLine": "That\u2019s three pulls\u2014 not one. (pause)\nFine. (pause)\nJust\u2014 billing plus maintenance plus flags. (pause)\nIt usually turns into a story. (pause)\nStories become reclassification events.",
+      "changeSummary": "More in-the-moment and wary; retained the same warning about multi-category requests and reclassification. | Split into shorter beats using (pause) to meet beat length. Removed the extra comma by swapping it for a dash, while keeping the same meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-068.json",
+      "id": "N_REQ_4",
+      "priorLine": "The clerk taps the counter twice, like they can wake the correct form up.",
+      "lineToEdit": "For billing: provide the cost center or the charge code.\nFor schedules: provide the servicing entity, even if it\u2019s \u201cunknown.\u201d We have an \u201cunknown\u201d bucket.\nFor audit flags: I need the date range and the triggering standard. Or the memo title, if you\u2019re lucky.",
+      "nextLine": "",
+      "revisedLine": "Billing\u2014cost center or charge code. (pause) Schedules\u2014servicing entity. (pause) Put \u201cUnknown\u201d in the unknown bucket. (pause) Flags\u2014date range and tripped standard. (pause) Memo title works if real.",
+      "changeSummary": "Converted into shorthand a clerk would use; preserved all required fields and the \u201cunknown\u201d bucket. | Split into five short beats using (pause) so each beat stays under 8 words. Tightened phrasing while keeping the same instructions and meaning. Removed extra wording and kept punctuation minimal."
+    },
+    {
+      "scene": "SCN_SCN-068.json",
+      "id": "N_ALREADY_2",
+      "priorLine": "What\u2019s already filed under SPINDLE.",
+      "lineToEdit": "Plenty.\nMostly labeled in ways that prevent you from enjoying it.\nAnd if I list it, you\u2019ll ask why it\u2019s labeled that way, and then we\u2019re back to understanding.",
+      "nextLine": "",
+      "revisedLine": "Plenty. (pause) Half of it\u2019s labeled. (pause) So you don\u2019t have fun with it. (pause) If I start listing you start asking \u201cwhy.\u201d (pause) And I\u2019m not doing \u201cwhy.\u201d",
+      "changeSummary": "Kept the same refusal/deflection; made it sound more tired and defensive. | Added (pause) breaks to keep each beat under 8 words, removed commas, and split one sentence while preserving meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-068.json",
+      "id": "N_SHOW_BOTH_2",
+      "priorLine": "Standing and reference. Here.",
+      "lineToEdit": "That\u2019s\u2026 competent.\nPresence plus external-format variance is enough to open a request without opening a dispute.",
+      "nextLine": "The clerk sets out a form like it was waiting under the counter the whole time.",
+      "revisedLine": "Okay. That\u2019ll do. (pause)\nPresence plus the external-format variance (pause)\nlets me open a request (pause)\nand keep it out of Dispute.",
+      "changeSummary": "More immediate approval with a liability angle; retained the same threshold for opening the request. | Added (pause) breaks to keep each beat under 8 words. Preserved meaning and tone while avoiding extra commas and explainer phrases."
+    },
+    {
+      "scene": "SCN_SCN-068.json",
+      "id": "N_SHOW_BOTH_4",
+      "priorLine": "The clerk sets out a form like it was waiting under the counter the whole time.",
+      "lineToEdit": "State your request in nouns.\nNo verbs. Verbs imply intent.",
+      "nextLine": "",
+      "revisedLine": "Nouns only.\nLeave the verbs off.",
+      "changeSummary": "Trimmed to brisk, spoken instruction; kept the same constraint."
+    },
+    {
+      "scene": "SCN_SCN-068.json",
+      "id": "N_PERSUADE_2",
+      "priorLine": "OLEA closure authority. Chain-of-custody release packet. Now.",
+      "lineToEdit": "Okay\u2014good. That\u2019s a phrase that exists on paper.\nI don\u2019t love the tone, but I can process the wording.",
+      "nextLine": "The clerk\u2019s shoulders drop a fraction, as if \u201cauthority\u201d is a contagious liability.",
+      "revisedLine": "Alright. That wording exists on paper. (pause)\nI can run it.",
+      "changeSummary": "Removed the commentary on tone and made it a pragmatic processing response; preserved acceptance of official phrasing. | Inserted a (pause) to split the line into shorter beats under 8 words without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-068.json",
+      "id": "N_PERSUADE_4",
+      "priorLine": "The clerk\u2019s shoulders drop a fraction, as if \u201cauthority\u201d is a contagious liability.",
+      "lineToEdit": "I\u2019m issuing a controlled packet: copies, not originals.\nYou sign receipt, you initial each page set, you don\u2019t annotate the pages, and you don\u2019t \u201cimprove\u201d the staples.\nIf you improve the staples, the staples become evidence. I won\u2019t do that again.",
+      "nextLine": "",
+      "revisedLine": "Controlled packet. Copies only. (pause)\nSign the receipt. (pause)\nInitial each set. (pause)\nNo notes on the pages. (pause)\nDon\u2019t \u201cfix\u201d the staples. (pause)\nLast time somebody fixed staples, (pause)\nI had to log staples as evidence. (pause)\nI\u2019m not doing that again.",
+      "changeSummary": "Broke instructions into stressed, screen-friendly beats; kept all restrictions and the evidence consequence. | Inserted (pause) breaks to keep each beat under 8 words; retained wording and intent with only one comma."
+    },
+    {
+      "scene": "SCN_SCN-068.json",
+      "id": "N_COMMIT_2",
+      "priorLine": "Billing ledgers. Non-local maintenance schedules. Pre-incident audit flags.",
+      "lineToEdit": "Accepted.\nYou will receive: what exists, as filed, without summary.\nIf something is missing, it is not missing. It is \u201cunlocated.\u201d",
+      "nextLine": "Paper moves through the slot in three clipped bundles, like the building is exhaling receipts.\nEach packet is stamped in a color that looks defensive.",
+      "revisedLine": "Accepted. (pause) You\u2019ll get what\u2019s there as filed. (pause) No summary. (pause) If something doesn\u2019t turn up (pause) the word in my log (pause) is \u201cunlocated.\u201d",
+      "changeSummary": "Kept the same delivery terms and \u201cunlocated\u201d language; removed the formal, binary phrasing. | Added pauses to keep each beat under 8 words. Removed commas by rephrasing without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-068.json",
+      "id": "N_COMMIT_4",
+      "priorLine": "Paper moves through the slot in three clipped bundles, like the building is exhaling receipts.\nEach packet is stamped in a color that looks defensive.",
+      "lineToEdit": "Initial there. And there. And\u2014no, not your signature. Initials.\nSignatures invite questions.",
+      "nextLine": "You take:\n- Billing ledgers with charges that don\u2019t match municipal templates.\n- Maintenance schedules listing crews from elsewhere, routed through codes you\u2019ve only seen on the notice.\n- Audit flags dated before the \u201cincident,\u201d written like someone tried to warn a future reader without sounding like a person.",
+      "revisedLine": "Initial here. Here.\nNo signature. Initials.\nFewer questions.",
+      "changeSummary": "More natural interruption; preserved the initials-only requirement and the reason. | Cut two words by removing \u201cAnd\u2014\u201d and tightening the last thought from \u201cSignatures kick up questions\u201d to \u201cFewer questions,\u201d keeping the same implication."
+    },
+    {
+      "scene": "SCN_SCN-068.json",
+      "id": "N_COMMIT_6",
+      "priorLine": "You take:\n- Billing ledgers with charges that don\u2019t match municipal templates.\n- Maintenance schedules listing crews from elsewhere, routed through codes you\u2019ve only seen on the notice.\n- Audit flags dated before the \u201cincident,\u201d written like someone tried to warn a future reader without sounding like a person.",
+      "lineToEdit": "If you come back for originals, the answer is no in advance.\nHave a compliant day.",
+      "nextLine": "",
+      "revisedLine": "Before you ask again\u2014no originals. Compliant day.",
+      "changeSummary": "Kept the preemptive refusal; made it sound like a tired, practiced closer. | Trimmed wording to fit the 8-word maximum while preserving the same refusal and sign-off tone."
+    },
+    {
+      "scene": "SCN_SCN-074-orig-orig.json",
+      "id": "N_REC_01",
+      "priorLine": "A buzzer you\u2019re not supposed to call a buzzer. You press it anyway.",
+      "lineToEdit": "This is Records, yes.\nIf you\u2019re here to \u201cget in,\u201d that\u2019s not what happens.\nYou provide a handle. I release a copy.\nNo one enters the archive. That\u2019s how the archive stays an archive.",
+      "nextLine": "I\u2019m submitting a memo packet.",
+      "revisedLine": "Records. (pause)\nYou\u2019re not coming in. (pause)\nGive me a handle. (pause)\nI release copies. (pause)\nArchive stays shut.",
+      "changeSummary": "Rephrased into immediate gatekeeping; preserved the same access policy and handle requirement. | Inserted (pause) breaks to keep each beat under 8 words; preserved wording, tone, and meaning."
+    },
+    {
+      "scene": "SCN_SCN-074-orig-orig.json",
+      "id": "N_REC_02",
+      "priorLine": "I\u2019m submitting a memo packet.",
+      "lineToEdit": "A memo is not a handle. A memo is a genre.\nGive me: title, references, date, and why you\u2019re entitled to touch it without becoming the last person who touched it.\nNot personal. Procedural.",
+      "nextLine": "",
+      "revisedLine": "Memo packet. Sure. (pause) Still need a handle. (pause) Title. References. Date. (pause) And your entitlement. (pause) Your name isn't last on it.",
+      "changeSummary": "Removed the lecturey \u201cgenre\u201d beat; kept the same required fields and liability framing. | Split into shorter beats using (pause). Removed the comma and rewrote the last clause to avoid an explainer connector while keeping the same meaning."
+    },
+    {
+      "scene": "SCN_SCN-074-orig-orig.json",
+      "id": "N_REC_03",
+      "priorLine": "\u201cRetirement Processing Communication \u2014 SOL\u2011EARTH\u2011LOCAL.\u201d\nReferences: WO-RET-SP01. MTA notice ref. Submission log.",
+      "lineToEdit": "Say the MTA reference slowly.\nIf you say it fast, it turns into a different code, and then it\u2019s my mistake forever.",
+      "nextLine": "",
+      "revisedLine": "MTA reference\u2014slow.\nLog it wrong, it\u2019s mine forever.",
+      "changeSummary": "Kept the same instruction and consequence; tightened for spoken delivery. | Cut \u201cIf I\u201d to bring the line down to 8 words without changing meaning or tone."
+    },
+    {
+      "scene": "SCN_SCN-074-orig-orig.json",
+      "id": "N_REC_04",
+      "priorLine": "[You read the reference string off the posted notice.]",
+      "lineToEdit": "Mm. Non-local compliance format.\nI\u2019m not stating that as an opinion. The dashes are wrong for municipal.\nWhich is useful. It lets the file exist without me implying jurisdiction.\n\nState your request in nouns.\nNo verbs. Verbs imply intent.",
+      "nextLine": "",
+      "revisedLine": "Mm. Non-local compliance format. (pause)\nThose dashes aren\u2019t municipal. (pause)\nGood. Keeps me from writing a jurisdiction. (pause)\n\nRequest goes in nouns. (pause)\nNo verbs.",
+      "changeSummary": "Cut the formal disclaimers; preserved the municipal dash issue, jurisdiction avoidance, and nouns-only constraint. | Inserted (pause) breaks so each beat stays under 8 words; wording and meaning unchanged."
+    },
+    {
+      "scene": "SCN_SCN-074-orig-orig.json",
+      "id": "N_REC_05",
+      "priorLine": "(multiple) (Retirement processing memo. Evidence packet. Compliance hold notice. Authority chain acknowledgment.) (\u201cOLEA Legal acknowledges submission for category update as a retirement processing instrument, limited purpose; accepts licensed relationship classification for SOL\u2011EARTH\u2011LOCAL under municipal legacy infrastructure service class; no admission of novelty; continuous logging maintained; operator present on-site.\u201d)",
+      "lineToEdit": "Okay\u2014good. Those are phrases that already exist on paper.\nI can process \u201cauthority chain.\u201d I cannot process \u201cwhat it means.\u201d\n\nFor billing: cost center or charge code.\nFor chain-of-custody: you initial each page set. Not sign. Signatures invite questions.\nAnd you don\u2019t annotate. If you annotate, the annotation becomes the document\u2019s personality.",
+      "nextLine": "",
+      "revisedLine": "Alright. (pause) That\u2019s already on paper. (pause)\n\u201cAuthority chain\u201d I can run. (pause) Keep the meaning off my counter. (pause)\nBilling needs a cost center. (pause) Or a charge code. (pause)\nChain of custody. (pause) Initial each page set. (pause)\nNo signatures. (pause) No margin notes. (pause)\nIf you write on it. (pause) Your writing becomes part of it.",
+      "changeSummary": "Made it sound like live processing under pressure; kept all requirements (billing info, initials, no signatures, no annotation) and the same consequence. | Split long stretches into short (pause) beats under 8 words. Removed the comma and reshaped the billing and chain-of-custody lines into short sentences without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-074-orig-orig.json",
+      "id": "N_REC_06",
+      "priorLine": "Use retirement processing cost center.",
+      "lineToEdit": "Accepted.\nI\u2019m issuing a controlled packet: copies, not originals.\nYou sign receipt\u2014no, you initial. Initials.\n\nIf you want tube routing, say so now.\nBecause if you tube it first, then bring me the aftermath, I become \u201cafter-the-fact,\u201d and that is not a role I consent to.",
+      "nextLine": "",
+      "revisedLine": "Accepted. (pause)\nControlled packet. Copies only. (pause)\nReceipt line gets initials. Initials. (pause)\n\nIf you want tube routing say it now. (pause)\nIf it goes through the tube first (pause)\nand comes back a mess I\u2019m \u201cafter-the-fact.\u201d (pause)\nI\u2019m not wearing that.",
+      "changeSummary": "Reduced compliance voice; preserved controlled packet/copies-only, initials requirement, and tube-routing timing/liability. | Inserted (pause) breaks to keep each beat under 8 words. Removed one comma by tightening the tube-routing sentence without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-074-orig-orig.json",
+      "id": "N_REC_COMMIT_TUBE_01",
+      "priorLine": "Use: \u201cRecords packet + tube routing.\u201d",
+      "lineToEdit": "Fine.\nI will stamp receipt, I will log release, and I will watch you seal the capsule.\nNot because I don\u2019t trust you. Because trust is not a form field.\n\nDo not write on the capsule.\nPeople write jokes. Jokes become exhibits.",
+      "nextLine": "You initial where the Clerk taps. The staples stay exactly where they are.\nThe packet goes into a tube capsule that smells like rubber and old air.\n\nThe capsule clicks shut. The station inhales it.\nThe hallway is quiet in the way paperwork likes.",
+      "revisedLine": "Fine. (pause)\nI stamp the receipt. (pause)\nI log the release. (pause)\nI watch you seal the capsule. (pause)\nI need eyes on it. (pause)\nIt is for the log. (pause)\nDon\u2019t write on the capsule. (pause)\nPeople get cute. (pause)\nThen it ends up an exhibit.",
+      "changeSummary": "Removed the banned \u201cnot because/because\u201d structure; kept the same oversight, logging, and no-writing warning. | Split into short beats with (pause) so each stays under 8 words. Removed commas by breaking actions into separate sentences. Kept meaning and tone intact."
+    },
+    {
+      "scene": "SCN_SCN-074-orig-orig.json",
+      "id": "N_REC_PACKET_ONLY",
+      "priorLine": "Use: \u201cRecords packet only. I\u2019ll hand-carry.\u201d",
+      "lineToEdit": "Then you will carry it, and you will be the chain-of-custody.\nI\u2019m saying that neutrally. People hear it as a compliment. It is not.",
+      "nextLine": "",
+      "revisedLine": "Then you hand-carry. (pause) That makes you chain-of-custody. (pause) Don\u2019t take it as a compliment.",
+      "changeSummary": "Kept the same assignment of responsibility; made it shorter and more spoken. | Inserted pauses to split the line into shorter beats under 8 words without changing meaning or tone."
+    },
+    {
+      "scene": "SCN_SCN-074-orig-orig.json",
+      "id": "N_REC_CATEGORY",
+      "priorLine": "Ask: \u201cWhat category are you filing it under?\u201d",
+      "lineToEdit": "\u201cRetirement processing communication.\u201d\nNot \u201cincident.\u201d Not \u201cinvestigation.\u201d Not \u201cfinding.\u201d\nI\u2019m not protecting you. I\u2019m protecting the index.",
+      "nextLine": "",
+      "revisedLine": "Category is \u201cRetirement processing communication.\u201d (pause)\nDon\u2019t call it \u201cincident\u201d or \u201cinvestigation.\u201d (pause)\nDon\u2019t call it \u201cfinding\u201d on my counter. (pause)\nI\u2019m keeping the index clean.",
+      "changeSummary": "Kept the same category and excluded labels; shifted to a defensive, paperwork-first motive. | Split into short beats using (pause) and removed list commas by rephrasing the terms without commas, keeping the same meaning and tone."
+    },
+    {
+      "scene": "SCN_SCN-074-orig-orig.json",
+      "id": "N_REC_TUBE_REQ",
+      "priorLine": "Ask: \u201cWhat do you need to route it through the tube?\u201d",
+      "lineToEdit": "Destination code that already exists.\nIf you invent a destination, you invent a department.\nDepartments are how liabilities reproduce.",
+      "nextLine": "",
+      "revisedLine": "Destination code already exists. (pause)\nMake one up. (pause)\nIt creates a \u201cdepartment\u201d on paper. (pause)\nThen I\u2019m answering emails for a week.",
+      "changeSummary": "Kept the same constraint and liability implication; replaced the quotable aphorism with situational consequence. | Added (pause) breaks and split the second sentence to keep each beat under 8 words without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-074-orig-orig.json",
+      "id": "N_REC_STAMP",
+      "priorLine": "Ask: \u201cCan you just stamp it?\u201d",
+      "lineToEdit": "Stamping is an action. Actions imply endorsement.\nWhat I can do is acknowledge receipt of a document that claims to exist.\nWhich is somehow different, and if you ask me why, I will pretend I didn\u2019t hear you.",
+      "nextLine": "",
+      "revisedLine": "You want a stamp. (pause)\nI can do \u201creceived.\u201d (pause)\nI\u2019m not stamping anything that reads like approval. (pause)\nAsk me to explain the difference\u2014didn\u2019t hear you.",
+      "changeSummary": "More reactive and guarded; preserved the distinction between receipt acknowledgment and endorsement, plus the refusal to explain. | Added (pause) breaks so each beat stays within 8 words; kept wording and tone otherwise."
+    },
+    {
+      "scene": "SCN_SCN-074-orig.json",
+      "id": "N_REC_01",
+      "priorLine": "A buzzer you\u2019re not supposed to call a buzzer. You press it anyway.",
+      "lineToEdit": "This is Records, yes.\nIf you\u2019re here to \u201cget in,\u201d that\u2019s not what happens.\nYou provide a handle. I release a copy.\nNo one enters the archive. That\u2019s how the archive stays an archive.",
+      "nextLine": "I\u2019m submitting a memo packet.",
+      "revisedLine": "Records. (pause)\nYou\u2019re not coming in. (pause)\nGive me a handle, I release copies. (pause)\nArchive stays shut.",
+      "changeSummary": "Rephrased into immediate gatekeeping; preserved the same access policy and handle requirement. | Inserted (pause) breaks to keep each beat under 8 words; kept wording and comma count the same."
+    },
+    {
+      "scene": "SCN_SCN-074-orig.json",
+      "id": "N_REC_02",
+      "priorLine": "I\u2019m submitting a memo packet.",
+      "lineToEdit": "A memo is not a handle. A memo is a genre.\nGive me: title, references, date, and why you\u2019re entitled to touch it without becoming the last person who touched it.\nNot personal. Procedural.",
+      "nextLine": "",
+      "revisedLine": "Memo packet. Sure. (pause) Still need a handle. (pause) Title. References. Date. (pause) And your entitlement\u2014so your name isn\u2019t last.",
+      "changeSummary": "Removed the lecturey \u201cgenre\u201d beat; kept the same required fields and liability framing. | Split the line into short beats with (pause) breaks to meet the 8-word limit per beat, and removed the comma to stay within the comma cap."
+    },
+    {
+      "scene": "SCN_SCN-074-orig.json",
+      "id": "N_REC_03",
+      "priorLine": "\u201cRetirement Processing Communication \u2014 SOL\u2011EARTH\u2011LOCAL.\u201d\nReferences: WO-RET-SP01. MTA notice ref. Submission log.",
+      "lineToEdit": "Say the MTA reference slowly.\nIf you say it fast, it turns into a different code, and then it\u2019s my mistake forever.",
+      "nextLine": "",
+      "revisedLine": "MTA reference\u2014slow. (pause) If I log it wrong, it\u2019s mine forever.",
+      "changeSummary": "Kept the same instruction and consequence; tightened for spoken delivery. | Inserted a (pause) to split the line into two beats, keeping each beat at 8 words or fewer without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-074-orig.json",
+      "id": "N_REC_04",
+      "priorLine": "[You read the reference string off the posted notice.]",
+      "lineToEdit": "Mm. Non-local compliance format.\nI\u2019m not stating that as an opinion. The dashes are wrong for municipal.\nWhich is useful. It lets the file exist without me implying jurisdiction.\n\nState your request in nouns.\nNo verbs. Verbs imply intent.",
+      "nextLine": "",
+      "revisedLine": "Mm. Non-local compliance format. (pause)\nThose dashes aren\u2019t municipal. (pause)\nGood. Keeps me from writing a jurisdiction. (pause)\n\nRequest goes in nouns. (pause)\nNo verbs.",
+      "changeSummary": "Cut the formal disclaimers; preserved the municipal dash issue, jurisdiction avoidance, and nouns-only constraint. | Inserted (pause) breaks so each beat stays under 8 words; kept wording and tone unchanged."
+    },
+    {
+      "scene": "SCN_SCN-074-orig.json",
+      "id": "N_REC_05",
+      "priorLine": "(multiple) (Retirement processing memo. Evidence packet. Compliance hold notice. Authority chain acknowledgment.) (\u201cOLEA Legal acknowledges submission for category update as a retirement processing instrument, limited purpose; accepts licensed relationship classification for SOL\u2011EARTH\u2011LOCAL under municipal legacy infrastructure service class; no admission of novelty; continuous logging maintained; operator present on-site.\u201d)",
+      "lineToEdit": "Okay\u2014good. Those are phrases that already exist on paper.\nI can process \u201cauthority chain.\u201d I cannot process \u201cwhat it means.\u201d\n\nFor billing: cost center or charge code.\nFor chain-of-custody: you initial each page set. Not sign. Signatures invite questions.\nAnd you don\u2019t annotate. If you annotate, the annotation becomes the document\u2019s personality.",
+      "nextLine": "",
+      "revisedLine": "Alright. (pause) That\u2019s all already on paper. (pause)\n\u201cAuthority chain.\u201d (pause) I can run it. (pause) Keep the meaning part off my counter. (pause)\nBilling needs a cost center. (pause) Or a charge code. (pause)\nChain-of-custody. (pause) Initial each page set. (pause)\nNo signatures. (pause) No margin notes. (pause)\nIf you write on it, (pause) your writing becomes part of it.",
+      "changeSummary": "Made it sound like live processing under pressure; kept all requirements (billing info, initials, no signatures, no annotation) and the same consequence. | Inserted (pause) breaks to keep each beat under 8 words; split one line into two short beats while preserving cadence and meaning; kept commas to one by placing it only in the final conditional line."
+    },
+    {
+      "scene": "SCN_SCN-074-orig.json",
+      "id": "N_REC_06",
+      "priorLine": "Use retirement processing cost center.",
+      "lineToEdit": "Accepted.\nI\u2019m issuing a controlled packet: copies, not originals.\nYou sign receipt\u2014no, you initial. Initials.\n\nIf you want tube routing, say so now.\nBecause if you tube it first, then bring me the aftermath, I become \u201cafter-the-fact,\u201d and that is not a role I consent to.",
+      "nextLine": "",
+      "revisedLine": "Accepted. (pause) Controlled packet. Copies only. (pause) Receipt line gets initials. Initials. (pause) Want tube routing? Say it now. (pause) If it goes through the tube first (pause) and comes back a mess (pause) I\u2019m \u201cafter-the-fact.\u201d (pause) I\u2019m not wearing that.",
+      "changeSummary": "Reduced compliance voice; preserved controlled packet/copies-only, initials requirement, and tube-routing timing/liability. | Added (pause) breaks to keep each beat under 8 words. Removed the comma in the tube-routing line and split the long final thought into shorter beats without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-074-orig.json",
+      "id": "N_REC_COMMIT_TUBE_01",
+      "priorLine": "Use: \u201cRecords packet + tube routing.\u201d",
+      "lineToEdit": "Fine.\nI will stamp receipt, I will log release, and I will watch you seal the capsule.\nNot because I don\u2019t trust you. Because trust is not a form field.\n\nDo not write on the capsule.\nPeople write jokes. Jokes become exhibits.",
+      "nextLine": "You initial where the Clerk taps. The staples stay exactly where they are.\nThe packet goes into a tube capsule that smells like rubber and old air.\n\nThe capsule clicks shut. The station inhales it.\nThe hallway is quiet in the way paperwork likes.",
+      "revisedLine": "Fine. (pause)\nI stamp the receipt. (pause)\nI log the release. (pause)\nI watch you seal the capsule. (pause)\nI need eyes on it. (pause)\nIt\u2019s for the log. (pause)\nDon\u2019t write on the capsule. (pause)\nPeople get cute. (pause)\nThen it ends up as an exhibit.",
+      "changeSummary": "Removed the banned \u201cnot because/because\u201d structure; kept the same oversight, logging, and no-writing warning. | Split into short beats using (pause). Removed commas by breaking actions into separate sentences while keeping the same facts and cadence."
+    },
+    {
+      "scene": "SCN_SCN-074-orig.json",
+      "id": "N_REC_PACKET_ONLY",
+      "priorLine": "Use: \u201cRecords packet only. I\u2019ll hand-carry.\u201d",
+      "lineToEdit": "Then you will carry it, and you will be the chain-of-custody.\nI\u2019m saying that neutrally. People hear it as a compliment. It is not.",
+      "nextLine": "",
+      "revisedLine": "Then you hand-carry. (pause) That makes you chain of custody. (pause) Don\u2019t take it as a compliment.",
+      "changeSummary": "Kept the same assignment of responsibility; made it shorter and more spoken. | Split into three beats with (pause) to keep each beat under 8 words; kept meaning and tone."
+    },
+    {
+      "scene": "SCN_SCN-074-orig.json",
+      "id": "N_REC_CATEGORY",
+      "priorLine": "Ask: \u201cWhat category are you filing it under?\u201d",
+      "lineToEdit": "\u201cRetirement processing communication.\u201d\nNot \u201cincident.\u201d Not \u201cinvestigation.\u201d Not \u201cfinding.\u201d\nI\u2019m not protecting you. I\u2019m protecting the index.",
+      "nextLine": "",
+      "revisedLine": "Category is \u201cRetirement processing communication.\u201d (pause)\nDon\u2019t call it \u201cincident,\u201d \u201cinvestigation\u201d or \u201cfinding.\u201d (pause)\nNot on my counter. (pause)\nI\u2019m keeping the index clean.",
+      "changeSummary": "Kept the same category and excluded labels; shifted to a defensive, paperwork-first motive. | Added (pause) breaks to keep each beat under 8 words. Removed one comma by changing \u201cincident,\u201d \u201cinvestigation,\u201d or \u201cfinding\u201d to \u201cincident,\u201d \u201cinvestigation\u201d or \u201cfinding.\u201d Split \u201cNot on my counter\u201d into its own beat for cadence without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-074-orig.json",
+      "id": "N_REC_TUBE_REQ",
+      "priorLine": "Ask: \u201cWhat do you need to route it through the tube?\u201d",
+      "lineToEdit": "Destination code that already exists.\nIf you invent a destination, you invent a department.\nDepartments are how liabilities reproduce.",
+      "nextLine": "",
+      "revisedLine": "Destination code that already exists.(pause)\nIf you make one up,(pause) it creates a \u201cdepartment\u201d(pause) on paper.(pause)\nThen I\u2019m answering emails(pause) for a week.",
+      "changeSummary": "Kept the same constraint and liability implication; replaced the quotable aphorism with situational consequence. | Inserted a (pause) after \u201cup\u201d to split the long beat into two beats under 8 words, preserving meaning and cadence. | Added pauses to break long beats under 8 words while keeping the original meaning and cadence; kept comma usage to one."
+    },
+    {
+      "scene": "SCN_SCN-074-orig.json",
+      "id": "N_REC_STAMP",
+      "priorLine": "Ask: \u201cCan you just stamp it?\u201d",
+      "lineToEdit": "Stamping is an action. Actions imply endorsement.\nWhat I can do is acknowledge receipt of a document that claims to exist.\nWhich is somehow different, and if you ask me why, I will pretend I didn\u2019t hear you.",
+      "nextLine": "",
+      "revisedLine": "You want a stamp. (pause)\nI can do \u201creceived.\u201d (pause)\nNot stamping anything that reads like approval. (pause)\nIf you ask for the difference\u2014didn\u2019t hear you.",
+      "changeSummary": "More reactive and guarded; preserved the distinction between receipt acknowledgment and endorsement, plus the refusal to explain. | Broke the line into shorter (pause) beats under 8 words each. Trimmed the last sentence while preserving the same refusal and dismissive cadence."
+    },
+    {
+      "scene": "SCN_SCN-074.json",
+      "id": "N_REC_01",
+      "priorLine": "A buzzer you\u2019re not supposed to call a buzzer. You press it anyway.",
+      "lineToEdit": "This is Records, yes.\nIf you\u2019re here to \u201cget in,\u201d that\u2019s not what happens.\nYou provide a handle. I release a copy.\nNo one enters the archive. That\u2019s how the archive stays an archive.",
+      "nextLine": "I\u2019m submitting a memo packet.",
+      "revisedLine": "Records. (pause)\nYou\u2019re not coming in. (pause)\nGive me a handle, I\u2019ll release copies. (pause)\nArchive stays shut.",
+      "changeSummary": "Rephrased into immediate gatekeeping; preserved the same access policy and handle requirement. | Inserted (pause) breaks to keep each beat under 8 words; preserved wording and meaning with minimal tightening."
+    },
+    {
+      "scene": "SCN_SCN-074.json",
+      "id": "N_REC_02",
+      "priorLine": "I\u2019m submitting a memo packet.",
+      "lineToEdit": "A memo is not a handle. A memo is a genre.\nGive me: title, references, date, and why you\u2019re entitled to touch it without becoming the last person who touched it.\nNot personal. Procedural.",
+      "nextLine": "",
+      "revisedLine": "Memo packet. Sure. Still need a handle. (pause)\nTitle. References. Date. (pause)\nAnd your entitlement. Your name isn\u2019t last there.",
+      "changeSummary": "Removed the lecturey \u201cgenre\u201d beat; kept the same required fields and liability framing. | Split the line into three beats with (pause) to meet the 8-word limit, removed the comma after \u201cMemo packet,\u201d and rephrased the last sentence to keep the same meaning without an explanatory connector."
+    },
+    {
+      "scene": "SCN_SCN-074.json",
+      "id": "N_REC_03",
+      "priorLine": "\u201cRetirement Processing Communication \u2014 SOL\u2011EARTH\u2011LOCAL.\u201d\nReferences: WO-RET-SP01. MTA notice ref. Submission log.",
+      "lineToEdit": "Say the MTA reference slowly.\nIf you say it fast, it turns into a different code, and then it\u2019s my mistake forever.",
+      "nextLine": "",
+      "revisedLine": "MTA reference\u2014slow.\nLog it wrong, it\u2019s mine forever.",
+      "changeSummary": "Kept the same instruction and consequence; tightened for spoken delivery. | Trimmed the second sentence to reduce total beat word count to 8 while keeping meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-074.json",
+      "id": "N_REC_04",
+      "priorLine": "[You read the reference string off the posted notice.]",
+      "lineToEdit": "Mm. Non-local compliance format.\nI\u2019m not stating that as an opinion. The dashes are wrong for municipal.\nWhich is useful. It lets the file exist without me implying jurisdiction.\n\nState your request in nouns.\nNo verbs. Verbs imply intent.",
+      "nextLine": "",
+      "revisedLine": "Mm. Non-local compliance format. (pause) Those dashes aren\u2019t municipal. (pause) Good. Keeps me from writing a jurisdiction. (pause) Request goes in nouns. (pause) No verbs.",
+      "changeSummary": "Cut the formal disclaimers; preserved the municipal dash issue, jurisdiction avoidance, and nouns-only constraint. | Inserted (pause) breaks to keep each beat under 8 words without changing meaning, tone, or facts."
+    },
+    {
+      "scene": "SCN_SCN-074.json",
+      "id": "N_REC_05",
+      "priorLine": "(multiple) (Retirement processing memo. Evidence packet. Compliance hold notice. Authority chain acknowledgment.) (\u201cOLEA Legal acknowledges submission for category update as a retirement processing instrument, limited purpose; accepts licensed relationship classification for SOL\u2011EARTH\u2011LOCAL under municipal legacy infrastructure service class; no admission of novelty; continuous logging maintained; operator present on-site.\u201d)",
+      "lineToEdit": "Okay\u2014good. Those are phrases that already exist on paper.\nI can process \u201cauthority chain.\u201d I cannot process \u201cwhat it means.\u201d\n\nFor billing: cost center or charge code.\nFor chain-of-custody: you initial each page set. Not sign. Signatures invite questions.\nAnd you don\u2019t annotate. If you annotate, the annotation becomes the document\u2019s personality.",
+      "nextLine": "",
+      "revisedLine": "Alright. (pause)\nThat\u2019s already on paper. (pause)\n\u201cAuthority chain.\u201d I can run it. (pause)\nKeep meaning off my counter. (pause)\n\nBilling needs a cost center. (pause)\nOr a charge code. (pause)\nChain-of-custody. Initial each page set. (pause)\nNo signatures. (pause)\nNo margin notes. (pause)\nWrite on it. (pause)\nYour writing becomes part of it. (pause)",
+      "changeSummary": "Made it sound like live processing under pressure; kept all requirements (billing info, initials, no signatures, no annotation) and the same consequence. | Inserted (pause) breaks to keep each beat under 8 words. Split a few sentences without adding commas or explanatory phrasing, while preserving meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-074.json",
+      "id": "N_REC_06",
+      "priorLine": "Use retirement processing cost center.",
+      "lineToEdit": "Accepted.\nI\u2019m issuing a controlled packet: copies, not originals.\nYou sign receipt\u2014no, you initial. Initials.\n\nIf you want tube routing, say so now.\nBecause if you tube it first, then bring me the aftermath, I become \u201cafter-the-fact,\u201d and that is not a role I consent to.",
+      "nextLine": "",
+      "revisedLine": "Accepted. (pause)\nControlled packet. Copies only. (pause)\nReceipt line gets initials. Initials. (pause)\n\nIf you want tube routing say it now. (pause)\nIf it goes through the tube first (pause)\nand comes back a mess I\u2019m \u201cafter-the-fact.\u201d (pause)\nI\u2019m not wearing that.",
+      "changeSummary": "Reduced compliance voice; preserved controlled packet/copies-only, initials requirement, and tube-routing timing/liability. | Inserted (pause) breaks so each beat stays under 8 words. Removed commas by tightening phrasing while keeping meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-074.json",
+      "id": "N_REC_COMMIT_TUBE_01",
+      "priorLine": "Use: \u201cRecords packet + tube routing.\u201d",
+      "lineToEdit": "Fine.\nI will stamp receipt, I will log release, and I will watch you seal the capsule.\nNot because I don\u2019t trust you. Because trust is not a form field.\n\nDo not write on the capsule.\nPeople write jokes. Jokes become exhibits.",
+      "nextLine": "You initial where the Clerk taps. The staples stay exactly where they are.\nThe packet goes into a tube capsule that smells like rubber and old air.\n\nThe capsule clicks shut. The station inhales it.\nThe hallway is quiet in the way paperwork likes.",
+      "revisedLine": "Fine. (pause)\nI stamp the receipt. (pause)\nI log the release. (pause)\nI watch you seal the capsule. (pause)\nI need eyes on it. (pause)\nFor the log. (pause)\n\nDon\u2019t write on the capsule. (pause)\nPeople get cute. (pause)\nThen it ends up as an exhibit.",
+      "changeSummary": "Removed the banned \u201cnot because/because\u201d structure; kept the same oversight, logging, and no-writing warning. | Broke the long sentence into short beats with (pause) markers to keep each beat under 8 words. Removed commas by splitting clauses into separate sentences while keeping meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-074.json",
+      "id": "N_REC_PACKET_ONLY",
+      "priorLine": "Use: \u201cRecords packet only. I\u2019ll hand-carry.\u201d",
+      "lineToEdit": "Then you will carry it, and you will be the chain-of-custody.\nI\u2019m saying that neutrally. People hear it as a compliment. It is not.",
+      "nextLine": "",
+      "revisedLine": "Then you hand-carry. (pause)\nThat makes you chain-of-custody. (pause)\nDon\u2019t take it as a compliment.",
+      "changeSummary": "Kept the same assignment of responsibility; made it shorter and more spoken. | Inserted two (pause) breaks to keep each beat under 8 words without changing wording or meaning."
+    },
+    {
+      "scene": "SCN_SCN-074.json",
+      "id": "N_REC_CATEGORY",
+      "priorLine": "Ask: \u201cWhat category are you filing it under?\u201d",
+      "lineToEdit": "\u201cRetirement processing communication.\u201d\nNot \u201cincident.\u201d Not \u201cinvestigation.\u201d Not \u201cfinding.\u201d\nI\u2019m not protecting you. I\u2019m protecting the index.",
+      "nextLine": "",
+      "revisedLine": "Category is \u201cRetirement processing communication.\u201d (pause)\nDon\u2019t call it \u201cincident\u201d or \u201cinvestigation\u201d or \u201cfinding\u201d (pause)\non my counter. (pause)\nI\u2019m keeping the index clean.",
+      "changeSummary": "Kept the same category and excluded labels; shifted to a defensive, paperwork-first motive. | Added (pause) breaks to keep each beat under 8 words, and removed list commas by using repeated \u201cor\u201d while preserving meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-074.json",
+      "id": "N_REC_TUBE_REQ",
+      "priorLine": "Ask: \u201cWhat do you need to route it through the tube?\u201d",
+      "lineToEdit": "Destination code that already exists.\nIf you invent a destination, you invent a department.\nDepartments are how liabilities reproduce.",
+      "nextLine": "",
+      "revisedLine": "Use an existing destination code. (pause) Make one up. (pause) You create a paper department. (pause) Then I answer emails all week.",
+      "changeSummary": "Kept the same constraint and liability implication; replaced the quotable aphorism with situational consequence. | Split into short beats with pauses to meet the 8-word limit per beat while keeping the same meaning and cadence. No commas added and no explainer phrasing introduced."
+    },
+    {
+      "scene": "SCN_SCN-074.json",
+      "id": "N_REC_STAMP",
+      "priorLine": "Ask: \u201cCan you just stamp it?\u201d",
+      "lineToEdit": "Stamping is an action. Actions imply endorsement.\nWhat I can do is acknowledge receipt of a document that claims to exist.\nWhich is somehow different, and if you ask me why, I will pretend I didn\u2019t hear you.",
+      "nextLine": "",
+      "revisedLine": "You want a stamp. (pause)\nI can do \u201creceived.\u201d (pause)\nI\u2019m not stamping anything that reads like approval. (pause)\nIf you ask me to explain the difference\u2014 (pause)\ndidn\u2019t hear you.",
+      "changeSummary": "More reactive and guarded; preserved the distinction between receipt acknowledgment and endorsement, plus the refusal to explain. | Inserted (pause) breaks to keep each beat under 8 words; preserved wording and cadence."
+    }
+  ]
+}

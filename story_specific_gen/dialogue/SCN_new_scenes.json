@@ -1,0 +1,10 @@
+{
+  "dialogueGraphs": [
+    {
+      "id": "GRAPH_new_scenes",
+      "sceneId": "new_scenes",
+      "startNodeId": null,
+      "nodes": []
+    }
+  ]
+}

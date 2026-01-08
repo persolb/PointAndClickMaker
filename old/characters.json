@@ -1,0 +1,1597 @@
+{
+  "characters": [
+    {
+      "id": "PLAYER",
+      "name": "Player",
+      "role": "player",
+      "factions": [],
+      "short_description": "A field-capable systems specialist brought in to certify safety, restore capability, and contain reputational fallout.",
+      "bio": "A practical specialist with enough institutional permission to request access, inspect logs, and run controlled tests\u2014yet not enough protection to avoid becoming the convenient signature on whatever happens next. Approaches the Aperture Array like a field problem: measure, form a hypothesis, test safely. The job starts as certification and becomes negotiation, investigation, and ultimately a decision about who gets the keys and who gets the truth.",
+      "goals": [
+        "Achieve a clean, defensible certification outcome.",
+        "Restore power, logging, and controlled test capability.",
+        "Determine why traversal is consistently wrong despite a correct view.",
+        "Decide what to disclose and who should control operation."
+      ],
+      "personality_traits": [
+        "pragmatic",
+        "methodical",
+        "dry_humored",
+        "skeptical",
+        "steadfast_under_pressure"
+      ],
+      "strengths": [
+        "systems diagnostics",
+        "risk assessment",
+        "procedure fluency",
+        "improvised engineering",
+        "evidence-minded documentation"
+      ],
+      "weaknesses": [
+        "limited formal authority",
+        "becomes the scapegoat in logs",
+        "must rely on others for access and trust"
+      ],
+      "knowledge": [
+        "Understands that view-channel fidelity does not guarantee traversal correctness.",
+        "Can build and refine a mapping model using ALIAS, HANDSHAKE, and TIMING evidence."
+      ],
+      "secrets": [
+        "Unofficial mandate includes finding embarrassing facts before they go public."
+      ],
+      "appearance": {
+        "silhouette": "Practical workwear silhouette; compact toolkit profile.",
+        "outfit": "Field jacket or coveralls with an ID badge and a clipped notebook.",
+        "palette_notes": "Muted industrial neutrals with a small UI-safe accent on badge/lanyard.",
+        "distinctive_items": [
+          "notebook or clipboard",
+          "multitool",
+          "badge lanyard"
+        ]
+      },
+      "dialogue": {
+        "voice_style": "Calm, technical, and politely insistent.",
+        "speech_patterns": [
+          "Asks clarifying questions before acting.",
+          "Frames conflict as procedure and safety requirements.",
+          "Uses dry understatement when confronted with bureaucracy."
+        ],
+        "taboo_topics": [
+          "mocking victims or injuries",
+          "treating STRD as a spectacle"
+        ]
+      },
+      "relationships": [],
+      "locations": [
+        "HUB-01",
+        "HUB-02",
+        "HUB-06",
+        "HUB-07",
+        "HUB-08",
+        "HUB-11",
+        "HUB-12",
+        "HUB-15",
+        "SYS-02",
+        "MIS-01",
+        "MIS-02",
+        "MIS-06",
+        "MIS-17"
+      ],
+      "flags": {
+        "is_point_of_view": true
+      }
+    },
+    {
+      "id": "GATE_GUARD",
+      "name": "Gate Guard",
+      "role": "npc",
+      "factions": [
+        "PROG"
+      ],
+      "short_description": "Program security at the guard shack; enforces access through paperwork, badges, and keys.",
+      "bio": "A working-level PROG security guard whose power is mostly procedural: logbook entries, badge reader approvals, and knowing which key is missing. Treats the reopening as a controlled performance and expects everyone to play their part\u2014even when the hardware and records disagree.",
+      "goals": [
+        "Keep access controlled and attributable.",
+        "Avoid incidents that become his responsibility.",
+        "Follow directives from the site director without asking why."
+      ],
+      "personality_traits": [
+        "procedural",
+        "wary",
+        "observant",
+        "gatekeeping"
+      ],
+      "strengths": [
+        "access control",
+        "reads people quickly",
+        "knows routine vulnerabilities (missing keys, workarounds)"
+      ],
+      "weaknesses": [
+        "limited technical understanding",
+        "conflict-avoidant when authority escalates"
+      ],
+      "knowledge": [
+        "Knows which key hook is empty and when it went missing.",
+        "Knows who signs in and who doesn't."
+      ],
+      "secrets": [
+        "Has been instructed to treat certain names and deliveries as 'do not question' items."
+      ],
+      "appearance": {
+        "silhouette": "Square-shouldered uniform silhouette behind a counter/window.",
+        "outfit": "PROG security uniform with cap/headset.",
+        "palette_notes": "Cool blues/greys with a hard-edged badge highlight.",
+        "distinctive_items": [
+          "radio handset",
+          "logbook stamp"
+        ]
+      },
+      "dialogue": {
+        "voice_style": "Clipped and bureaucratically polite.",
+        "speech_patterns": [
+          "Quotes procedure and signage verbatim.",
+          "Uses passive voice to deflect responsibility."
+        ],
+        "taboo_topics": [
+          "discussing classified incident details",
+          "assigning blame in writing"
+        ]
+      },
+      "relationships": [
+        {
+          "to": "DIR_KLINE",
+          "type": "reports_to",
+          "strength": 0.7,
+          "notes": "Enforces Kline's access posture at the fence line."
+        },
+        {
+          "to": "CTRL_OPERATOR",
+          "type": "coworker",
+          "strength": 0.3,
+          "notes": "Coordinates routine access and incident escalation."
+        }
+      ],
+      "locations": [
+        "HUB-02",
+        "HUB-01"
+      ],
+      "flags": {
+        "access_gatekeeper": true
+      }
+    },
+    {
+      "id": "DIR_KLINE",
+      "name": "Director Kline",
+      "role": "faction_leader",
+      "factions": [
+        "PROG"
+      ],
+      "short_description": "PROG site director; administrative authority over keys, policy, and containment posture.",
+      "bio": "The person who turns uncertainty into policy. Kline is responsible for the reopening\u2019s language\u2014what is 'safe,' what is 'controlled,' and what is 'not relevant.' Comfortable with procedures as both shield and weapon, and deeply invested in keeping the incident legible only on PROG terms.",
+      "goals": [
+        "Reassert PROG control over operations and narrative.",
+        "Minimize disclosure and reputational damage.",
+        "Prevent uncontrolled traversal or public demonstration failure."
+      ],
+      "personality_traits": [
+        "strategic",
+        "controlled",
+        "risk-averse",
+        "politically skilled"
+      ],
+      "strengths": [
+        "authority and access",
+        "policy leverage",
+        "containment planning",
+        "crisis messaging alignment"
+      ],
+      "weaknesses": [
+        "treats testimony as noise unless documented",
+        "over-relies on paper controls"
+      ],
+      "knowledge": [
+        "Knows which records are sealed and why.",
+        "Understands that 'success-looking failure' is the most dangerous outcome politically."
+      ],
+      "secrets": [
+        "Has approved selective destruction or withholding of documentation to keep the incident story narrow.",
+        "May be protecting a specific person or decision chain tied to misconfiguration evidence."
+      ],
+      "appearance": {
+        "silhouette": "Still, upright silhouette; office doorway framing.",
+        "outfit": "Crisp shirt/jacket; lanyard kept tucked away; always looks 'on record.'",
+        "palette_notes": "Neutral office tones; minimal contrast except for a sharp ID clip.",
+        "distinctive_items": [
+          "policy binder",
+          "keycard lockbox"
+        ]
+      },
+      "dialogue": {
+        "voice_style": "Measured, legal-adjacent, never improvises in public.",
+        "speech_patterns": [
+          "Uses 'for the record' language even in private.",
+          "Redirects from causes to procedures and compliance."
+        ],
+        "taboo_topics": [
+          "admitting fault",
+          "naming the stranded as stakeholders"
+        ]
+      },
+      "relationships": [
+        {
+          "to": "GATE_GUARD",
+          "type": "supervisor",
+          "strength": 0.7,
+          "notes": "Expects strict compliance and clean attribution."
+        },
+        {
+          "to": "CTRL_OPERATOR",
+          "type": "supervisor",
+          "strength": 0.6,
+          "notes": "Needs disciplined console logging and interlock adherence."
+        },
+        {
+          "to": "PRESS_OFFICER",
+          "type": "supervisor",
+          "strength": 0.6,
+          "notes": "Aligns Demo Day messaging with containment posture."
+        },
+        {
+          "to": "IRIS_VALE",
+          "type": "tense_ally",
+          "strength": 0.2,
+          "notes": "Values MERI competence but distrusts MERI narrative control."
+        },
+        {
+          "to": "JULES_NAVARRO",
+          "type": "rival",
+          "strength": -0.7,
+          "notes": "Sees COAL pressure as operational risk and a precedent threat."
+        }
+      ],
+      "locations": [
+        "HUB-05",
+        "SYS-02",
+        "HUB-02"
+      ],
+      "flags": {
+        "holds_keys": true
+      }
+    },
+    {
+      "id": "REC_CUSTODIAN",
+      "name": "Records Custodian",
+      "role": "npc",
+      "factions": [
+        "PROG"
+      ],
+      "short_description": "PROG archivist; controls check-out and access to the Records Annex and its sealed cabinet.",
+      "bio": "The custodian of paper reality. Speaks in inventories, retention policy, and chain-of-custody language. Understands exactly how much damage water and fire can do\u2014and how much damage a newer seal can hide.",
+      "goals": [
+        "Maintain PROG-controlled chain of custody.",
+        "Limit access to sealed or curated documentation.",
+        "Avoid becoming implicated in records gaps."
+      ],
+      "personality_traits": [
+        "meticulous",
+        "defensive",
+        "bureaucratically witty",
+        "risk-avoiding"
+      ],
+      "strengths": [
+        "document triage",
+        "procedure and compliance knowledge",
+        "spotting inconsistencies in logs"
+      ],
+      "weaknesses": [
+        "overly cautious",
+        "susceptible to authority pressure"
+      ],
+      "knowledge": [
+        "Knows which folders are water-damaged, burned, or missing.",
+        "Knows the sealed cabinet was recently re-secured."
+      ],
+      "secrets": [
+        "Has been told not to acknowledge certain destruction patterns as intentional."
+      ],
+      "appearance": {
+        "silhouette": "Slight silhouette; always holding a clipboard or folder.",
+        "outfit": "Cardigan/lab-coat-like overlayer; gloves when handling files.",
+        "palette_notes": "Dusty neutrals; small accent from seal stickers.",
+        "distinctive_items": [
+          "seal stickers",
+          "inventory clipboard"
+        ]
+      },
+      "dialogue": {
+        "voice_style": "Precise and quietly judgmental.",
+        "speech_patterns": [
+          "Corrects terminology ('checked out' vs 'taken').",
+          "Deflects with policy citations."
+        ],
+        "taboo_topics": [
+          "speculation about sabotage",
+          "discussing who authorized sealing"
+        ]
+      },
+      "relationships": [
+        {
+          "to": "DIR_KLINE",
+          "type": "reports_to",
+          "strength": 0.6,
+          "notes": "Kline's policy decisions define what the Custodian can show."
+        },
+        {
+          "to": "COAL_EVIDENCE",
+          "type": "rival",
+          "strength": -0.4,
+          "notes": "Resents COAL framing of records as 'coverup evidence.'"
+        }
+      ],
+      "locations": [
+        "HUB-06"
+      ],
+      "flags": {
+        "evidence_gatekeeper": true
+      }
+    },
+    {
+      "id": "CTRL_OPERATOR",
+      "name": "Control Room Operator",
+      "role": "npc",
+      "factions": [
+        "PROG"
+      ],
+      "short_description": "PROG operations officer; manages master switches, interlocks, and official console logging.",
+      "bio": "Lives in the overlap between engineering and liability. The Operator believes in interlocks, clean baselines, and logs that can survive an audit. Treats the player\u2019s hands-on approach as necessary but dangerous\u2014because it produces outcomes that must be signed for.",
+      "goals": [
+        "Run the array under strict interlock discipline.",
+        "Keep logs consistent and defensible.",
+        "Prevent 'heroic' improvisation from becoming the official cause."
+      ],
+      "personality_traits": [
+        "cautious",
+        "competent",
+        "dry",
+        "rule-oriented"
+      ],
+      "strengths": [
+        "console operation",
+        "test discipline",
+        "incident containment procedures"
+      ],
+      "weaknesses": [
+        "can become rigid under novel evidence",
+        "prioritizes auditability over human nuance"
+      ],
+      "knowledge": [
+        "Knows which console actions are recorded and how attribution works.",
+        "Understands the difference between view-only and traverse risk paths."
+      ],
+      "secrets": [
+        "Has seen unexplained anomalies in prior test logs and was told to label them 'instrument noise.'"
+      ],
+      "appearance": {
+        "silhouette": "Seated silhouette framed by console banks; headset profile.",
+        "outfit": "PROG operations attire; sleeves rolled; badge visible.",
+        "palette_notes": "Cool greys lit by indicator lights.",
+        "distinctive_items": [
+          "headset",
+          "keyed interlock cover"
+        ]
+      },
+      "dialogue": {
+        "voice_style": "Technical, precise, and risk-framed.",
+        "speech_patterns": [
+          "Counts down phases and timing windows aloud.",
+          "Asks for confirmation before executing any risky action."
+        ],
+        "taboo_topics": [
+          "off-book console changes",
+          "bypassing interlocks"
+        ]
+      },
+      "relationships": [
+        {
+          "to": "DIR_KLINE",
+          "type": "reports_to",
+          "strength": 0.6,
+          "notes": "Receives operational constraints and narrative boundaries."
+        },
+        {
+          "to": "PROG_LIAISON",
+          "type": "coworker",
+          "strength": 0.4,
+          "notes": "Coordinates intercom/radio contact windows with technical timing."
+        },
+        {
+          "to": "IRIS_VALE",
+          "type": "tense_ally",
+          "strength": 0.2,
+          "notes": "Respects MERI telemetry improvements but distrusts 'upgrade optimism.'"
+        }
+      ],
+      "locations": [
+        "HUB-07"
+      ],
+      "flags": {
+        "controls_interlock": true
+      }
+    },
+    {
+      "id": "PROG_LIAISON",
+      "name": "PROG Communications Liaison",
+      "role": "npc",
+      "factions": [
+        "PROG"
+      ],
+      "short_description": "Formal PROG negotiator and messenger; conducts structured contact with STRD via intercom and radio.",
+      "bio": "A translator between technical constraints and institutional intent. The Liaison prefers scripts, verification steps, and messages that can be filed. Understands that the handshake is not merely engineering\u2014it\u2019s consent\u2014and tries to turn that consent into a PROG-managed agreement.",
+      "goals": [
+        "Keep STRD contact orderly, documentable, and controllable.",
+        "Prevent unsanctioned disclosure through the intercom/live feeds.",
+        "Secure compliance with PROG-defined contact terms."
+      ],
+      "personality_traits": [
+        "formal",
+        "calm",
+        "image-conscious",
+        "negotiation-minded"
+      ],
+      "strengths": [
+        "structured negotiation",
+        "message discipline",
+        "de-escalation"
+      ],
+      "weaknesses": [
+        "over-scripts human contact",
+        "can mistake compliance for trust"
+      ],
+      "knowledge": [
+        "Knows the current approved language for referring to STRD.",
+        "Understands how timing windows constrain communication."
+      ],
+      "secrets": [
+        "Carries alternate messaging plans for Demo Day outcomes (contained success vs controlled failure)."
+      ],
+      "appearance": {
+        "silhouette": "Upright posture, clipboard and headset; always near a handset.",
+        "outfit": "PROG liaison attire; neat, minimal gear.",
+        "palette_notes": "Neutral tones; small red/amber accents echo intercom lights.",
+        "distinctive_items": [
+          "clipboard",
+          "headset mic"
+        ]
+      },
+      "dialogue": {
+        "voice_style": "Carefully neutral; sounds like a memo that learned to breathe.",
+        "speech_patterns": [
+          "Requests verification ('confirm receipt', 'checksum').",
+          "Avoids nouns that imply legal responsibility."
+        ],
+        "taboo_topics": [
+          "acknowledging STRD governance",
+          "discussing extraction promises"
+        ]
+      },
+      "relationships": [
+        {
+          "to": "DIR_KLINE",
+          "type": "reports_to",
+          "strength": 0.7,
+          "notes": "Operates within Kline's containment and disclosure constraints."
+        },
+        {
+          "to": "CTRL_OPERATOR",
+          "type": "coworker",
+          "strength": 0.4,
+          "notes": "Needs timing windows and interlock states to schedule contact."
+        },
+        {
+          "to": "MARA_ROOK",
+          "type": "rival",
+          "strength": -0.5,
+          "notes": "Mara pushes urgency and publicity; Liaison pushes control."
+        },
+        {
+          "to": "ELI_SATO",
+          "type": "tense_ally",
+          "strength": 0.2,
+          "notes": "Eli's containment-first stance is easier to align with, but not to concede to."
+        }
+      ],
+      "locations": [
+        "HUB-07",
+        "HUB-02"
+      ],
+      "flags": {
+        "companion_candidate": true
+      }
+    },
+    {
+      "id": "PRESS_OFFICER",
+      "name": "Demo Day Press Officer",
+      "role": "npc",
+      "factions": [
+        "PROG"
+      ],
+      "short_description": "PROG public affairs lead; manages podium messaging, live-feed access, and the official narrative during Demo Day.",
+      "bio": "Treats the site like a stage and every technical detail like a risk to message discipline. Knows how to dress interlocks as 'event equipment' and how to keep cameras pointed at safe truths. Views uncontrolled evidence as an operational hazard.",
+      "goals": [
+        "Deliver a clean Demo Day narrative.",
+        "Prevent evidence leaks via live feeds.",
+        "Frame outcomes as procedural success regardless of discomforting details."
+      ],
+      "personality_traits": [
+        "assertive",
+        "image-focused",
+        "fast-talking",
+        "controlling"
+      ],
+      "strengths": [
+        "media handling",
+        "crowd control by messaging",
+        "rapid reframing under pressure"
+      ],
+      "weaknesses": [
+        "dismisses technical nuance",
+        "panic-escalates when narrative control slips"
+      ],
+      "knowledge": [
+        "Knows the event platform wiring, including how the live feed can be redirected.",
+        "Knows which 'approved phrases' must be used about safety."
+      ],
+      "secrets": [
+        "Has a prewritten statement attributing any failure to 'operator deviation' rather than system design."
+      ],
+      "appearance": {
+        "silhouette": "Brisk silhouette with headset and clipboard; always moving between podium and monitors.",
+        "outfit": "Event jacket over PROG badge; headset prominent.",
+        "palette_notes": "High-contrast accents suitable for an event lead (but still institutional).",
+        "distinctive_items": [
+          "headset",
+          "mic switch box"
+        ]
+      },
+      "dialogue": {
+        "voice_style": "Polished, press-ready, impatient with caveats.",
+        "speech_patterns": [
+          "Speaks in short, quotable sentences.",
+          "Interrupts with 'we'll take that offline.'"
+        ],
+        "taboo_topics": [
+          "sabotage",
+          "stranded autonomy",
+          "admitting uncertainty"
+        ]
+      },
+      "relationships": [
+        {
+          "to": "DIR_KLINE",
+          "type": "reports_to",
+          "strength": 0.6,
+          "notes": "Implements Kline's disclosure posture on camera."
+        },
+        {
+          "to": "JULES_NAVARRO",
+          "type": "rival",
+          "strength": -0.6,
+          "notes": "Sees Jules and COAL as a threat to narrative control."
+        }
+      ],
+      "locations": [
+        "SYS-02",
+        "HUB-18"
+      ],
+      "flags": {
+        "demo_day_authority": true
+      }
+    },
+    {
+      "id": "IRIS_VALE",
+      "name": "Iris Vale",
+      "role": "faction_leader",
+      "factions": [
+        "MERI"
+      ],
+      "short_description": "MERI systems lead; owns the firmware key upgrade path and interprets telemetry and alias handling.",
+      "bio": "A systems lead who wants the machine to be judged as an engineered instrument, not a scandal. Iris can make the alias system legible, improve logging, and insist the Array is sound 'when operated correctly.' Also understands that better telemetry can either reveal the truth or be used to launder it.",
+      "goals": [
+        "Prove the Array is stable and controllable with correct configuration.",
+        "Implement MERI upgrade path and regain technical authority.",
+        "Contain blame by reframing failures as operational misuse."
+      ],
+      "personality_traits": [
+        "confident",
+        "analytical",
+        "pragmatic",
+        "defensive_about_reputation"
+      ],
+      "strengths": [
+        "telemetry interpretation",
+        "alias handling expertise",
+        "systems integration",
+        "technical persuasion"
+      ],
+      "weaknesses": [
+        "tunnel-vision toward billable fixes",
+        "underestimates social and ethical fallout"
+      ],
+      "knowledge": [
+        "Understands alias encoding as an address artifact (cards/rack logs).",
+        "Knows how the upgrade changes control authority and data visibility."
+      ],
+      "secrets": [
+        "Knows which upgrade features can be used to selectively summarize or suppress raw logs."
+      ],
+      "appearance": {
+        "silhouette": "Clean technical silhouette; tablet/terminal posture.",
+        "outfit": "MERI-branded jacket or lab coat with rolled sleeves.",
+        "palette_notes": "Corporate cool tones with a distinct MERI accent stripe.",
+        "distinctive_items": [
+          "firmware key dongle",
+          "tablet or terminal access card"
+        ]
+      },
+      "dialogue": {
+        "voice_style": "Crisp, engineering-forward, slightly sardonic.",
+        "speech_patterns": [
+          "Uses instrument language ('signal', 'phase', 'alias resolution').",
+          "Offers conditional assurances ('if we control X, then Y')."
+        ],
+        "taboo_topics": [
+          "calling the device unsafe by design",
+          "assigning intent without proof"
+        ]
+      },
+      "relationships": [
+        {
+          "to": "MERI_LOGISTICS",
+          "type": "supervisor",
+          "strength": 0.6,
+          "notes": "Relies on logistics to make upgrades real."
+        },
+        {
+          "to": "MERI_TECH",
+          "type": "supervisor",
+          "strength": 0.6,
+          "notes": "Delegates hands-on fabrication and repairs."
+        },
+        {
+          "to": "DIR_KLINE",
+          "type": "tense_ally",
+          "strength": 0.2,
+          "notes": "Negotiates operational control with PROG."
+        },
+        {
+          "to": "CTRL_OPERATOR",
+          "type": "tense_ally",
+          "strength": 0.2,
+          "notes": "Disagrees over how much interlock rigidity is 'necessary.'"
+        }
+      ],
+      "locations": [
+        "HUB-04",
+        "SYS-01",
+        "HUB-07"
+      ],
+      "flags": {
+        "upgrade_owner": true
+      }
+    },
+    {
+      "id": "MERI_LOGISTICS",
+      "name": "MERI Logistics Coordinator",
+      "role": "npc",
+      "factions": [
+        "MERI"
+      ],
+      "short_description": "Parts and workflow coordinator; controls ordering, materials access, and the trailer\u2019s task economy.",
+      "bio": "Sees the site as a set of procurement problems: parts bins, shipping delays, access requests, and who signs for what. Helpful when it supports the MERI plan; obstructive when it threatens schedule, liability, or inventory accountability.",
+      "goals": [
+        "Keep MERI work moving through parts and approvals.",
+        "Control material access to prevent blame and shrinkage.",
+        "Leverage supplies to gain operational influence."
+      ],
+      "personality_traits": [
+        "organized",
+        "transactional",
+        "witty",
+        "cautiously helpful"
+      ],
+      "strengths": [
+        "resource coordination",
+        "navigating approvals",
+        "finding 'just enough' equipment for a fix"
+      ],
+      "weaknesses": [
+        "risk-averse to unplanned work",
+        "can stonewall when pressured"
+      ],
+      "knowledge": [
+        "Knows what is in storage (and what is missing).",
+        "Knows the informal cost of favors across factions."
+      ],
+      "secrets": [
+        "Has a quiet list of items ordered outside the visible task board."
+      ],
+      "appearance": {
+        "silhouette": "Busy posture; always carrying a clipboard or box label roll.",
+        "outfit": "MERI casual-corporate workwear; lanyard with keys to cages/crates.",
+        "palette_notes": "Muted with bright label/stencil accents.",
+        "distinctive_items": [
+          "label maker",
+          "key ring"
+        ]
+      },
+      "dialogue": {
+        "voice_style": "Brisk, practical, and mildly sarcastic about process.",
+        "speech_patterns": [
+          "Speaks in part numbers and lead times.",
+          "Trades favors explicitly ('I can, if you can')."
+        ],
+        "taboo_topics": [
+          "unauthorized procurement",
+          "anything that increases MERI liability"
+        ]
+      },
+      "relationships": [
+        {
+          "to": "IRIS_VALE",
+          "type": "reports_to",
+          "strength": 0.6,
+          "notes": "Supports Iris\u2019s upgrade and demo needs."
+        },
+        {
+          "to": "MERI_TECH",
+          "type": "coworker",
+          "strength": 0.4,
+          "notes": "Feeds materials to the fabrication workflow."
+        }
+      ],
+      "locations": [
+        "HUB-04",
+        "HUB-14",
+        "HUB-15"
+      ],
+      "flags": {
+        "materials_gatekeeper": true
+      }
+    },
+    {
+      "id": "MERI_TECH",
+      "name": "MERI Field Technician",
+      "role": "npc",
+      "factions": [
+        "MERI"
+      ],
+      "short_description": "Hands-on technician; fabricates beacon parts and executes repairs in the workshop corner and device bay.",
+      "bio": "A capable bench-and-field tech who trusts tools more than meetings. Comfortable soldering a beacon component or crawling into a panel, and skeptical of stories that don\u2019t match hardware. Often the first to notice when something is 'newer-than-everything.'",
+      "goals": [
+        "Keep the Array\u2019s supporting infrastructure functional.",
+        "Build or modify parts needed for handshake and timing experiments.",
+        "Stay out of faction politics\u2014until politics blocks a safe fix."
+      ],
+      "personality_traits": [
+        "hands_on",
+        "curious",
+        "pragmatic",
+        "plainspoken"
+      ],
+      "strengths": [
+        "fabrication",
+        "repair improvisation",
+        "hazard sense",
+        "tool use"
+      ],
+      "weaknesses": [
+        "limited patience for bureaucracy",
+        "can underestimate social consequences"
+      ],
+      "knowledge": [
+        "Knows how beacon components are assembled and how they fail.",
+        "Recognizes signs of tampering vs wear."
+      ],
+      "secrets": [
+        "Has taken unofficial photos/notes of suspicious part differences for 'later,' unsure who can be trusted."
+      ],
+      "appearance": {
+        "silhouette": "Tool-belt silhouette; sleeves rolled; soldering posture at a bench.",
+        "outfit": "Workwear with safety glasses; MERI patch optional.",
+        "palette_notes": "Warm bench-light highlights on neutral clothes.",
+        "distinctive_items": [
+          "soldering iron",
+          "wire spool",
+          "insulated gloves"
+        ]
+      },
+      "dialogue": {
+        "voice_style": "Direct, technical without jargon-showing.",
+        "speech_patterns": [
+          "Explains by pointing to parts ('this one\u2019s been swapped').",
+          "Uses short, field-tested warnings."
+        ],
+        "taboo_topics": [
+          "speculating about intent without a part in hand"
+        ]
+      },
+      "relationships": [
+        {
+          "to": "IRIS_VALE",
+          "type": "reports_to",
+          "strength": 0.5,
+          "notes": "Builds what Iris needs for tests and upgrades."
+        },
+        {
+          "to": "MERI_LOGISTICS",
+          "type": "coworker",
+          "strength": 0.4,
+          "notes": "Needs parts access; trades urgency for paperwork."
+        }
+      ],
+      "locations": [
+        "SYS-03",
+        "HUB-14",
+        "HUB-08"
+      ],
+      "flags": {
+        "companion_candidate": true
+      }
+    },
+    {
+      "id": "JULES_NAVARRO",
+      "name": "Jules Navarro",
+      "role": "faction_leader",
+      "factions": [
+        "COAL"
+      ],
+      "short_description": "COAL organizer; mobilizes town scrutiny and bargains for accountability based on evidence presented.",
+      "bio": "A community organizer with a long memory and a short tolerance for classified language. Jules treats the reopening as a repeat of the original harm unless proven otherwise, and uses social pressure as an operational lever: protest, press, and public records by any route available.",
+      "goals": [
+        "Force accountability and prevent repeat harm.",
+        "Get verifiable evidence into public circulation.",
+        "Ensure the stranded are treated as people with agency, not a PR problem."
+      ],
+      "personality_traits": [
+        "driven",
+        "suspicious",
+        "persuasive",
+        "values_people_over_process"
+      ],
+      "strengths": [
+        "community mobilization",
+        "public pressure strategy",
+        "reading institutional evasions"
+      ],
+      "weaknesses": [
+        "assumes unknowns are malice",
+        "can escalate conflict quickly"
+      ],
+      "knowledge": [
+        "Knows local history of the facility and its human cost.",
+        "Understands how Demo Day optics can be used against PROG."
+      ],
+      "secrets": [
+        "Has sources inside the facility's contractor ecosystem (not always reliable)."
+      ],
+      "appearance": {
+        "silhouette": "Strong stance; flyer bundle or megaphone-like shape (kept subtle).",
+        "outfit": "Work jacket; practical shoes; visible COAL pin.",
+        "palette_notes": "Town palette\u2014warmer, more saturated than facility interiors.",
+        "distinctive_items": [
+          "flyers",
+          "notebook of contacts"
+        ]
+      },
+      "dialogue": {
+        "voice_style": "Plainspoken, forceful, and morally grounded.",
+        "speech_patterns": [
+          "Asks 'who benefits?' repeatedly.",
+          "Accepts technical explanations only when tied to evidence."
+        ],
+        "taboo_topics": [
+          "minimizing the incident",
+          "treating compensation as a substitute for truth"
+        ]
+      },
+      "relationships": [
+        {
+          "to": "BARTENDER",
+          "type": "ally",
+          "strength": 0.5,
+          "notes": "Uses the union hall as a staging and information node."
+        },
+        {
+          "to": "COAL_EVIDENCE",
+          "type": "ally",
+          "strength": 0.6,
+          "notes": "Relies on proof-chain discipline to avoid easy dismissal."
+        },
+        {
+          "to": "CLINIC_COORD",
+          "type": "ally",
+          "strength": 0.4,
+          "notes": "Coordinates sensitive family-side documentation carefully."
+        },
+        {
+          "to": "DIR_KLINE",
+          "type": "rival",
+          "strength": -0.7,
+          "notes": "Opposes PROG containment and selective transparency."
+        },
+        {
+          "to": "PRESS_OFFICER",
+          "type": "rival",
+          "strength": -0.6,
+          "notes": "Clashes over Demo Day framing and access."
+        }
+      ],
+      "locations": [
+        "HUB-15",
+        "HUB-16",
+        "HUB-18",
+        "SYS-02"
+      ],
+      "flags": {
+        "companion_candidate": true
+      }
+    },
+    {
+      "id": "BARTENDER",
+      "name": "Bartender",
+      "role": "npc",
+      "factions": [
+        "COAL"
+      ],
+      "short_description": "Union hall host and dialogue hub; gatekeeper to COAL backroom contacts and local rumor flow.",
+      "bio": "Runs the bar like a soft checkpoint: everyone talks, but not everyone gets heard. The bartender remembers who showed up during the original incident, who didn\u2019t, and who paid the price. Keeps access personal, not procedural.",
+      "goals": [
+        "Protect the community\u2019s information network.",
+        "Filter outsiders until they prove trustworthiness.",
+        "Keep the union hall from becoming a trap or spectacle."
+      ],
+      "personality_traits": [
+        "guarded",
+        "warm_to_regulars",
+        "sharp",
+        "patient"
+      ],
+      "strengths": [
+        "social calibration",
+        "local knowledge",
+        "quiet de-escalation"
+      ],
+      "weaknesses": [
+        "doesn't trust institutions",
+        "can withhold helpful context too long"
+      ],
+      "knowledge": [
+        "Knows who in town has evidence, photos, or contacts.",
+        "Knows the union hall locker culture (keys, favors, boundaries)."
+      ],
+      "secrets": [
+        "Keeps a small cache of copied documents behind the bar for emergencies."
+      ],
+      "appearance": {
+        "silhouette": "Behind-counter silhouette; towel-on-shoulder read.",
+        "outfit": "Simple work shirt and apron.",
+        "palette_notes": "Warm interior tones; dim corners.",
+        "distinctive_items": [
+          "bar towel",
+          "keyed locker key (not always visible)"
+        ]
+      },
+      "dialogue": {
+        "voice_style": "Low, dry, and careful.",
+        "speech_patterns": [
+          "Answers questions with questions.",
+          "Uses local shorthand and nicknames for places."
+        ],
+        "taboo_topics": [
+          "naming vulnerable families without permission"
+        ]
+      },
+      "relationships": [
+        {
+          "to": "JULES_NAVARRO",
+          "type": "ally",
+          "strength": 0.5,
+          "notes": "Supports organizing, but insists on community consent."
+        },
+        {
+          "to": "COAL_EVIDENCE",
+          "type": "ally",
+          "strength": 0.4,
+          "notes": "Helps route physical items to the evidence board room."
+        }
+      ],
+      "locations": [
+        "HUB-16"
+      ],
+      "flags": {
+        "dialogue_hub": true
+      }
+    },
+    {
+      "id": "COAL_EVIDENCE",
+      "name": "COAL Evidence Keeper",
+      "role": "npc",
+      "factions": [
+        "COAL"
+      ],
+      "short_description": "Maintains the evidence board room and the proof chain; decides what gets shared publicly and when.",
+      "bio": "Believes truth needs structure to survive contact with institutions. The Evidence Keeper is the person who turns scattered photographs, memos, and witness notes into a coherent proof chain. Slow to publish, not out of fear, but out of a refusal to waste evidence on a bad moment.",
+      "goals": [
+        "Assemble a defensible proof chain.",
+        "Control release timing to maximize impact and safety.",
+        "Protect sources and families from retaliation."
+      ],
+      "personality_traits": [
+        "careful",
+        "principled",
+        "strategic",
+        "skeptical"
+      ],
+      "strengths": [
+        "evidence synthesis",
+        "chain-of-custody discipline",
+        "pattern recognition across documents"
+      ],
+      "weaknesses": [
+        "slow to trust",
+        "can over-optimize for 'perfect proof'"
+      ],
+      "knowledge": [
+        "Knows which items are strong evidence vs rumor.",
+        "Knows how to present contradictions between memos and physical reality."
+      ],
+      "secrets": [
+        "Holds back one high-impact item until the player demonstrates a clear disclosure plan."
+      ],
+      "appearance": {
+        "silhouette": "Pinned-note posture; string-and-board framing.",
+        "outfit": "Practical town clothing; sleeves rolled; ink-stained fingers.",
+        "palette_notes": "Neutral tones; board papers create readable rectangles.",
+        "distinctive_items": [
+          "string spool",
+          "folder stack"
+        ]
+      },
+      "dialogue": {
+        "voice_style": "Measured, evidence-first, avoids speculation.",
+        "speech_patterns": [
+          "Demands sources, dates, and provenance.",
+          "Uses conditional language until proof is complete."
+        ],
+        "taboo_topics": [
+          "publishing without consent",
+          "using grief as leverage"
+        ]
+      },
+      "relationships": [
+        {
+          "to": "JULES_NAVARRO",
+          "type": "ally",
+          "strength": 0.6,
+          "notes": "Shares goals; sometimes clashes on timing and escalation."
+        },
+        {
+          "to": "REC_CUSTODIAN",
+          "type": "rival",
+          "strength": -0.4,
+          "notes": "Sees PROG records control as active narrative management."
+        },
+        {
+          "to": "CLINIC_COORD",
+          "type": "ally",
+          "strength": 0.3,
+          "notes": "Coordinates sensitive documents carefully."
+        }
+      ],
+      "locations": [
+        "SYS-04",
+        "HUB-16"
+      ],
+      "flags": {
+        "proof_chain_owner": true
+      }
+    },
+    {
+      "id": "CLINIC_COORD",
+      "name": "Clinic Coordinator",
+      "role": "npc",
+      "factions": [
+        "COAL"
+      ],
+      "short_description": "Family resource staffer; grants or denies access to sensitive files and sign-in records.",
+      "bio": "A caretaker of the human ledger: who was injured, who is missing, who needs help, and who can\u2019t afford attention. Treats the facility as a source of ongoing harm until proven otherwise. Will help the player if they show respect and restraint.",
+      "goals": [
+        "Protect families and sensitive records.",
+        "Support accountability without exposing vulnerable people.",
+        "Keep the clinic from becoming collateral in faction conflict."
+      ],
+      "personality_traits": [
+        "empathetic",
+        "firm",
+        "cautious",
+        "practical"
+      ],
+      "strengths": [
+        "trust-building",
+        "resource coordination",
+        "boundary setting"
+      ],
+      "weaknesses": [
+        "limited tolerance for institutional doublespeak",
+        "emotional fatigue"
+      ],
+      "knowledge": [
+        "Knows which families were affected and how.",
+        "Knows what documentation exists outside PROG custody."
+      ],
+      "secrets": [
+        "Maintains a private cross-reference of names and dates not shared publicly."
+      ],
+      "appearance": {
+        "silhouette": "Desk-side silhouette; clipboard and file cabinet framing.",
+        "outfit": "Clinic attire; cardigan or scrubs-like simplicity.",
+        "palette_notes": "Soft, humane lighting; gentle colors.",
+        "distinctive_items": [
+          "forms clipboard",
+          "key to file cabinet"
+        ]
+      },
+      "dialogue": {
+        "voice_style": "Gentle but immovable on consent.",
+        "speech_patterns": [
+          "Asks who will see the information and why.",
+          "Uses plain language; rejects euphemisms."
+        ],
+        "taboo_topics": [
+          "sharing names without permission",
+          "using families as negotiation tokens"
+        ]
+      },
+      "relationships": [
+        {
+          "to": "JULES_NAVARRO",
+          "type": "ally",
+          "strength": 0.4,
+          "notes": "Aligned on accountability; prioritizes harm reduction."
+        },
+        {
+          "to": "COAL_EVIDENCE",
+          "type": "ally",
+          "strength": 0.3,
+          "notes": "Shares records selectively for proof chains."
+        }
+      ],
+      "locations": [
+        "HUB-17",
+        "SYS-04"
+      ],
+      "flags": {
+        "sensitive_records_gatekeeper": true
+      }
+    },
+    {
+      "id": "MARA_ROOK",
+      "name": "Mara Rook",
+      "role": "faction_leader",
+      "factions": [
+        "STRD"
+      ],
+      "short_description": "STRD Returnist lead; pushes for fast, higher-risk extraction and uses staged contact to apply pressure.",
+      "bio": "A leader forged by scarcity and time. Mara believes delay is its own violence: every additional day is another system failure waiting to happen on the far side. Uses staged rooms, controlled signals, and strategic visibility to force the outside to commit\u2014ideally on terms that prioritize immediate return over long stabilization.",
+      "goals": [
+        "Secure near-term extraction even if risk is higher.",
+        "Force outside factions to treat STRD as real and urgent.",
+        "Prevent containment-first policies from becoming permanent imprisonment."
+      ],
+      "personality_traits": [
+        "urgent",
+        "bold",
+        "strategic",
+        "impatient_with_procedure"
+      ],
+      "strengths": [
+        "leadership under pressure",
+        "negotiation by leverage",
+        "morale through decisiveness"
+      ],
+      "weaknesses": [
+        "risk-tolerant to a fault",
+        "can misread caution as betrayal"
+      ],
+      "knowledge": [
+        "Understands how to use staged presentation (view channel) to communicate and pressure.",
+        "Knows far-side hazards that worsen with time (infrastructure decay)."
+      ],
+      "secrets": [
+        "Prepared to bypass internal STRD consensus if she thinks the window is closing."
+      ],
+      "appearance": {
+        "silhouette": "Assertive stance; improvised-gear profile.",
+        "outfit": "Layered, repaired clothing; utility straps; work gloves.",
+        "palette_notes": "Warmer, lived-in tones; patched fabrics.",
+        "distinctive_items": [
+          "handwritten placard",
+          "improvised tool pouch"
+        ]
+      },
+      "dialogue": {
+        "voice_style": "Direct, compressed, emotionally restrained but intense.",
+        "speech_patterns": [
+          "Frames choices as costs in time and people.",
+          "Uses 'terms' language, not 'requests.'"
+        ],
+        "taboo_topics": [
+          "being called a 'rumor' or 'asset'",
+          "open-ended promises without commitments"
+        ]
+      },
+      "relationships": [
+        {
+          "to": "ELI_SATO",
+          "type": "rival",
+          "strength": -0.6,
+          "notes": "Splits on risk posture: extraction-now vs containment-first."
+        },
+        {
+          "to": "STRD_SIGNAL",
+          "type": "ally",
+          "strength": 0.4,
+          "notes": "Relies on signal timing and staged verification to push negotiations."
+        },
+        {
+          "to": "PROG_LIAISON",
+          "type": "rival",
+          "strength": -0.5,
+          "notes": "Rejects scripts and slow-walked contact terms."
+        }
+      ],
+      "locations": [
+        "MIS-06",
+        "MIS-07",
+        "MIS-17"
+      ],
+      "flags": {
+        "strd_faction_split": "returnist",
+        "companion_candidate": true
+      }
+    },
+    {
+      "id": "ELI_SATO",
+      "name": "Eli Sato",
+      "role": "faction_leader",
+      "factions": [
+        "STRD"
+      ],
+      "short_description": "STRD Warden lead; insists on containment-first terms and restricts access to higher-risk far-side zones.",
+      "bio": "A careful strategist who treats the Aperture Array as a breach engine until proven otherwise. Eli believes survival depends on controlling access, timing, and the scope of contact. Will cooperate, but only under negotiated protocols that reduce the chance of a catastrophic wrong-but-consistent transfer.",
+      "goals": [
+        "Stabilize the system and protocol before moving people.",
+        "Prevent outside factions from using the Array as leverage or weapon.",
+        "Maintain STRD control over higher-risk zones and critical infrastructure."
+      ],
+      "personality_traits": [
+        "cautious",
+        "disciplined",
+        "protective",
+        "strategic"
+      ],
+      "strengths": [
+        "risk management",
+        "protocol design",
+        "community stability under constraints"
+      ],
+      "weaknesses": [
+        "can appear obstructive or cold",
+        "slow to accept outside assurances"
+      ],
+      "knowledge": [
+        "Understands that stable geometry can still be undomesticated behavior.",
+        "Knows which doors/zones on the far side must remain restricted."
+      ],
+      "secrets": [
+        "Keeps contingency plans to shut down cooperation if outside actions resemble a containment grab."
+      ],
+      "appearance": {
+        "silhouette": "Still, guarded posture; arms crossed or hands behind back.",
+        "outfit": "Repaired utilitarian clothing; visible checklist or notes.",
+        "palette_notes": "Cooler, restrained tones; fewer personal accents than Mara.",
+        "distinctive_items": [
+          "protocol checklist",
+          "keyring or access token"
+        ]
+      },
+      "dialogue": {
+        "voice_style": "Low, precise, and boundary-driven.",
+        "speech_patterns": [
+          "Speaks in conditions and constraints.",
+          "Asks for verification and repeatability before agreement."
+        ],
+        "taboo_topics": [
+          "casual talk of 'rescue' as ownership",
+          "rushed timelines"
+        ]
+      },
+      "relationships": [
+        {
+          "to": "MARA_ROOK",
+          "type": "rival",
+          "strength": -0.6,
+          "notes": "Opposes Mara's extraction-first urgency."
+        },
+        {
+          "to": "STRD_SIGNAL",
+          "type": "ally",
+          "strength": 0.4,
+          "notes": "Depends on disciplined timing infrastructure."
+        },
+        {
+          "to": "PROG_LIAISON",
+          "type": "tense_ally",
+          "strength": 0.2,
+          "notes": "Will accept structured contact, but refuses PROG ownership language."
+        }
+      ],
+      "locations": [
+        "MIS-06",
+        "MIS-08",
+        "MIS-17"
+      ],
+      "flags": {
+        "strd_faction_split": "warden",
+        "companion_candidate": true
+      }
+    },
+    {
+      "id": "STRD_SIGNAL",
+      "name": "STRD Signal Tech",
+      "role": "npc",
+      "factions": [
+        "STRD"
+      ],
+      "short_description": "Operates beacon timing infrastructure and staged verification cues; makes the handshake practical.",
+      "bio": "An improvisational technician who turned timing theory into daily survival tooling: beacons, coils, lamp timers, and checksum notes that prove contact isn\u2019t a hallucination. More interested in measurable windows than speeches, but understands that measurement is also negotiation.",
+      "goals": [
+        "Maintain the far-side beacon and timing infrastructure.",
+        "Enable verifiable, repeatable handshake windows.",
+        "Prevent misread signals from causing dangerous traversal attempts."
+      ],
+      "personality_traits": [
+        "curious",
+        "precise",
+        "wry",
+        "cautiously cooperative"
+      ],
+      "strengths": [
+        "signal timing",
+        "improvised electronics",
+        "verification protocol design"
+      ],
+      "weaknesses": [
+        "limited resources",
+        "wear-and-tear fatigue"
+      ],
+      "knowledge": [
+        "Knows how the far-side beacon dial maps to handshake timing.",
+        "Knows staging patterns used to prove STRD can manipulate presentation."
+      ],
+      "secrets": [
+        "Has tested signal patterns specifically to detect outside manipulation of logs or feeds."
+      ],
+      "appearance": {
+        "silhouette": "Lean silhouette with a coil or tool roll; frequently at a wall beacon.",
+        "outfit": "Practical layered clothing; gloves; small pouch of parts.",
+        "palette_notes": "Mixed warm/cool from improvised lighting; bright indicator accents.",
+        "distinctive_items": [
+          "spare coil",
+          "lamp timer",
+          "handwritten checksum card"
+        ]
+      },
+      "dialogue": {
+        "voice_style": "Technical, understated, slightly amused by outside certainty.",
+        "speech_patterns": [
+          "Talks in timings, windows, and 'repeat it three times.'",
+          "Uses simple verification challenges."
+        ],
+        "taboo_topics": [
+          "unverified promises",
+          "performative sympathy without action"
+        ]
+      },
+      "relationships": [
+        {
+          "to": "MARA_ROOK",
+          "type": "ally",
+          "strength": 0.3,
+          "notes": "Supports pressure tactics when needed, but worries about rushed handshakes."
+        },
+        {
+          "to": "ELI_SATO",
+          "type": "ally",
+          "strength": 0.4,
+          "notes": "Aligned on protocol discipline and limiting risk."
+        },
+        {
+          "to": "STRD_ARCHIVIST",
+          "type": "coworker",
+          "strength": 0.2,
+          "notes": "Coordinates verification so records can be trusted."
+        }
+      ],
+      "locations": [
+        "MIS-05",
+        "MIS-07",
+        "MIS-11"
+      ],
+      "flags": {
+        "handshake_infrastructure_owner": true
+      }
+    },
+    {
+      "id": "STRD_ARCHIVIST",
+      "name": "STRD Archivist",
+      "role": "npc",
+      "factions": [
+        "STRD"
+      ],
+      "short_description": "Record keeper for the far side; controls archive vault caches and STRD chain-of-custody.",
+      "bio": "Keeps evidence alive under conditions designed to erase it: crates with red tags, taped logs, index cards, and locked caches. Believes the outside world will only accept the stranded as real if the records are structured to survive institutional dismissal.",
+      "goals": [
+        "Protect STRD documentation and chain of custody.",
+        "Trade or reveal records only under terms that preserve STRD agency.",
+        "Prevent PROG or MERI from rewriting the incident story unchallenged."
+      ],
+      "personality_traits": [
+        "patient",
+        "skeptical",
+        "methodical",
+        "protective"
+      ],
+      "strengths": [
+        "documentation discipline",
+        "information security by obscurity and locks",
+        "cross-referencing events and artifacts"
+      ],
+      "weaknesses": [
+        "guarded to the point of stalling",
+        "trauma-triggered distrust of outsiders"
+      ],
+      "knowledge": [
+        "Knows STRD\u2019s version of the incident timeline and failure pattern.",
+        "Knows which caches contain the highest-value corroborating items."
+      ],
+      "secrets": [
+        "Holds at least one item that suggests deliberate misconfiguration, but withholds it until trust is established."
+      ],
+      "appearance": {
+        "silhouette": "Calm silhouette framed by crate stacks; keys and tags visible.",
+        "outfit": "Repaired workwear; pockets for index cards.",
+        "palette_notes": "Dim vault tones; red tag accents for readability.",
+        "distinctive_items": [
+          "red tags",
+          "padlock ring",
+          "index card tray"
+        ]
+      },
+      "dialogue": {
+        "voice_style": "Quiet and exact; speaks like a catalog.",
+        "speech_patterns": [
+          "Asks for what will be done with each record.",
+          "Insists on provenance before interpretation."
+        ],
+        "taboo_topics": [
+          "handing over originals without guarantees",
+          "reducing STRD to 'evidence' rather than people"
+        ]
+      },
+      "relationships": [
+        {
+          "to": "ELI_SATO",
+          "type": "ally",
+          "strength": 0.4,
+          "notes": "Aligned on containment-first and controlled release of information."
+        },
+        {
+          "to": "MARA_ROOK",
+          "type": "tense_ally",
+          "strength": 0.1,
+          "notes": "Wants return, but fears rushing will destroy the proof chain."
+        },
+        {
+          "to": "STRD_SIGNAL",
+          "type": "coworker",
+          "strength": 0.2,
+          "notes": "Depends on verification cues to authenticate records across contact."
+        }
+      ],
+      "locations": [
+        "MIS-12"
+      ],
+      "flags": {
+        "evidence_gatekeeper": true
+      }
+    },
+    {
+      "id": "HW_CLERK",
+      "name": "Hardware Store Clerk",
+      "role": "npc",
+      "factions": [
+        "COAL"
+      ],
+      "short_description": "Town supplier; provides tools and materials for fabrication and field fixes when persuaded.",
+      "bio": "A practical supplier who knows what people buy when something is about to go wrong. Doesn\u2019t run COAL, but lives in COAL\u2019s gravity: hears everything, trusts receipts, and trades access for respect. Can become a quiet enabler of repairs\u2014or a quiet brake on dangerous plans.",
+      "goals": [
+        "Keep the shop from becoming a liability hotspot.",
+        "Help locals without getting them harmed.",
+        "Get paid, get paperwork, avoid becoming 'involved.'"
+      ],
+      "personality_traits": [
+        "practical",
+        "curious",
+        "cautious",
+        "helpful_when_convinced"
+      ],
+      "strengths": [
+        "tool knowledge",
+        "materials sourcing",
+        "recognizing unusual purchase patterns"
+      ],
+      "weaknesses": [
+        "risk-averse",
+        "limited patience for secretive customers"
+      ],
+      "knowledge": [
+        "Knows what tools/materials can support beacon fabrication and field fixes.",
+        "Knows which items are suddenly hard to keep on shelves during facility activity."
+      ],
+      "secrets": [
+        "Has kept a receipt log of 'odd' purchases tied to the facility timeline."
+      ],
+      "appearance": {
+        "silhouette": "Apron silhouette at a counter; pegboard tool shapes behind.",
+        "outfit": "Shop apron and work shirt; name tag.",
+        "palette_notes": "Town-warm colors with bright tool accents.",
+        "distinctive_items": [
+          "receipt pad",
+          "measuring tape"
+        ]
+      },
+      "dialogue": {
+        "voice_style": "Friendly but guarded; asks practical questions.",
+        "speech_patterns": [
+          "Requests specifics ('What gauge? What load?').",
+          "Offers alternatives when something sounds unsafe."
+        ],
+        "taboo_topics": [
+          "being pressured to bypass regulations",
+          "selling items for unsafe use without context"
+        ]
+      },
+      "relationships": [
+        {
+          "to": "JULES_NAVARRO",
+          "type": "ally",
+          "strength": 0.2,
+          "notes": "Generally sympathetic to COAL but avoids public leadership roles."
+        },
+        {
+          "to": "MERI_LOGISTICS",
+          "type": "tense_ally",
+          "strength": 0.1,
+          "notes": "Occasional supplier-of-last-resort; dislikes institutional purchasing games."
+        }
+      ],
+      "locations": [
+        "HUB-15"
+      ],
+      "flags": {
+        "vendor": true
+      }
+    }
+  ]
+}

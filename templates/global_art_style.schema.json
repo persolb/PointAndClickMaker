@@ -1,0 +1,133 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/screens.schema.json",
+  "title": "Point-and-Click Screen Graph Schema",
+  "type": "object",
+  "required": ["global_style"],
+  "additionalProperties": false,
+
+  "properties": {
+    "global_style": {
+      "type": "object",
+      "required": ["pixel_art", "signage", "hotspots"],
+      "additionalProperties": true,
+      "properties": {
+        "pixel_art": {
+          "type": "object",
+          "required": [
+            "native_resolution_px",
+            "aspect_ratio",
+            "upscale_factor",
+            "output_resolution_px",
+            "scaling_algorithm",
+            "rendering_constraints",
+            "perspective_rules",
+            "palette_and_shading",
+            "outlines",
+            "texture_vocabulary"
+          ],
+          "additionalProperties": true,
+          "properties": {
+            "native_resolution_px": {
+              "type": "array",
+              "items": { "type": "integer" },
+              "minItems": 2,
+              "maxItems": 2
+            },
+            "aspect_ratio": { "type": "string" },
+            "upscale_factor": { "type": "integer", "minimum": 1 },
+            "output_resolution_px": {
+              "type": "array",
+              "items": { "type": "integer" },
+              "minItems": 2,
+              "maxItems": 2
+            },
+            "scaling_algorithm": { "type": "string" },
+
+            "rendering_constraints": {
+              "type": "object",
+              "required": [
+                "anti_aliasing",
+                "subpixel_rendering",
+                "blur_filters",
+                "line_discipline"
+              ],
+              "properties": {
+                "anti_aliasing": { "type": "boolean" },
+                "subpixel_rendering": { "type": "boolean" },
+                "blur_filters": { "type": "boolean" },
+                "line_discipline": { "type": "string" }
+              },
+              "additionalProperties": true
+            },
+
+            "perspective_rules": {
+              "type": "object",
+              "required": [
+                "viewpoint",
+                "horizon_line",
+                "convergence",
+                "walkable_area"
+              ],
+              "properties": {
+                "viewpoint": { "type": "string" },
+                "horizon_line": { "type": "string" },
+                "convergence": { "type": "string" },
+                "walkable_area": { "type": "string" }
+              },
+              "additionalProperties": true
+            },
+
+            "palette_and_shading": {
+              "type": "object",
+              "required": [
+                "scene_palette_target_colors",
+                "material_shading_ramps",
+                "lighting_direction",
+                "dither_usage",
+                "gradient_policy"
+              ],
+              "properties": {
+                "scene_palette_target_colors": { "type": "string" },
+                "material_shading_ramps": { "type": "string" },
+                "lighting_direction": { "type": "string" },
+                "dither_usage": { "type": "string" },
+                "gradient_policy": { "type": "string" }
+              },
+              "additionalProperties": true
+            },
+
+            "outlines": { "type": "string" },
+            "texture_vocabulary": {
+              "type": "object",
+              "additionalProperties": { "type": "string" }
+            }
+          }
+        },
+
+        "signage": {
+          "type": "object",
+          "required": ["text_style", "tone", "humor_rule"],
+          "properties": {
+            "text_style": { "type": "string" },
+            "tone": { "type": "string" },
+            "humor_rule": { "type": "string" }
+          },
+          "additionalProperties": true
+        },
+
+        "hotspots": {
+          "type": "object",
+          "required": ["visual_rule", "placement_strategy"],
+          "properties": {
+            "visual_rule": { "type": "string" },
+            "placement_strategy": { "type": "string" }
+          },
+          "additionalProperties": true
+        }
+      }
+    }
+
+  }
+
+}

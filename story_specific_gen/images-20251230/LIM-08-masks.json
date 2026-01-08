@@ -1,0 +1,91 @@
+{
+  "screen_id": "LIM-08",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Mirror-surface aperture",
+      "slug": "mirror_surface_aperture",
+      "file": "story_specific_gen/images/LIM-08-mask-mirror_surface_aperture.png",
+      "boxes": [
+        {
+          "label": "Mirror-surface aperture",
+          "box_2d": [
+            140,
+            329,
+            563,
+            663
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Control shroud label",
+      "slug": "control_shroud_label",
+      "file": "story_specific_gen/images/LIM-08-mask-control_shroud_label.png",
+      "boxes": [
+        {
+          "label": "Control shroud label with text \"REVERSE ROUTING CORRECTION\"",
+          "box_2d": [
+            582,
+            379,
+            638,
+            621
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Radio sweet-spot floor mark",
+      "slug": "radio_sweet_spot_floor_mark",
+      "file": "story_specific_gen/images/LIM-08-mask-radio_sweet_spot_floor_mark.png",
+      "boxes": [
+        {
+          "label": "Radio sweet-spot floor mark",
+          "box_2d": [
+            702,
+            335,
+            866,
+            672
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Outgoing packet chute",
+      "slug": "outgoing_packet_chute",
+      "file": "story_specific_gen/images/LIM-08-mask-outgoing_packet_chute.png",
+      "boxes": [
+        {
+          "label": "Outgoing packet chute indicator lights",
+          "box_2d": [
+            374,
+            887,
+            532,
+            946
+          ]
+        },
+        {
+          "label": "Outgoing packet chute",
+          "box_2d": [
+            517,
+            884,
+            608,
+            966
+          ]
+        },
+        {
+          "label": "Outgoing packet chute label",
+          "box_2d": [
+            623,
+            893,
+            722,
+            966
+          ]
+        }
+      ]
+    }
+  ]
+}

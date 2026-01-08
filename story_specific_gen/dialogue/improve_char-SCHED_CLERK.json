@@ -1,0 +1,679 @@
+{
+  "nodes": [
+    {
+      "scene": "SCN_SCN-056.json",
+      "id": "N01_CLERK_NEXT",
+      "priorLine": "A caged window marked SCHEDULING faces the corridor like a confession booth with forms.\nA \u201cNO-SHOW RECOVERY\u201d bin sits under the counter, sealed with a strip of tape that has been re-taped.\nA board of approved stamp substitutions hangs slightly crooked.\nA press labeled SLOT TOKEN\u2014AUTHORIZED IMPRESSIONS ONLY is bolted to the laminate.",
+      "lineToEdit": "Next.",
+      "nextLine": "At the caged scheduling window\u2026",
+      "revisedLine": "Next\u2014step up.",
+      "changeSummary": "Kept the same dismissal, added in-the-moment counter pressure."
+    },
+    {
+      "scene": "SCN_SCN-056.json",
+      "id": "N10_ASK_SLOT",
+      "priorLine": "ask: I need an interconnection slot.",
+      "lineToEdit": "You don\u2019t need a slot.\nYou need an asset in your custody that contains a slot.\nIf you ask for one, I have to document that I denied a request. And then you have a story.\nWe\u2019re not doing stories through the cage.",
+      "nextLine": "The clerk\u2019s pen is already poised, as if denial is a checkbox they practice.",
+      "revisedLine": "Don\u2019t ask me for a slot. (pause)\nBring me an asset you already hold. (pause)\nIt has to come with a slot. (pause)\nSay \u201cslot\u201d and I log denial. (pause)\nThen it becomes a whole story. (pause)\nI\u2019m not doing stories through the cage.",
+      "changeSummary": "Made it reactive and procedural, kept the same block/denial-documentation stakes. | Split into short beats with (pause) to meet max beat length. Removed extra commas by tightening phrasing while keeping meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-056.json",
+      "id": "N20_ASSET_EXPLAIN",
+      "priorLine": "ask: What are you calling an asset?",
+      "lineToEdit": "Time.\nBound to a specific lane, with a specific tolerance band, with an expiration condition that everyone pretends is \u201cflexible\u201d until an audit makes it suddenly spiritual.\nWe don\u2019t schedule here. We adjudicate custody.",
+      "nextLine": "",
+      "revisedLine": "Time. (pause)\nLane. Tolerance band. Expiry. The whole bundle. (pause)\nEverybody calls the expiry \u201cflexible\u201d (pause)\nright up until audit week. (pause)\nThis window\u2019s custody. (pause)\nThat\u2019s what I can record.",
+      "changeSummary": "Cut the lecture cadence; kept the same definition and audit pressure. | Split the line into short beats with (pause) so each beat stays under 8 words. Removed commas by converting the list into short sentences to meet the comma limit while keeping the same meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-056.json",
+      "id": "N22_SCHEDULING_REBUT",
+      "priorLine": "ask: That\u2019s scheduling.",
+      "lineToEdit": "No.\nScheduling is a service. Services can be requested.\nThis is allocation. Allocation is defended. There\u2019s a difference that keeps me employed.",
+      "nextLine": "At the caged scheduling window\u2026",
+      "revisedLine": "Call it that if you want. (pause)\nIf it\u2019s a service you\u2019d request it. (pause)\nWhat happens here is allocation. (pause)\nAllocation gets defended. (pause)\nThat\u2019s how I keep my job.",
+      "changeSummary": "Removed the crisp A-vs-B framing; kept the service/request vs allocation/defense distinction. | Removed commas to meet the max, and added pause breaks to keep each beat under 8 words without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-056.json",
+      "id": "N30_SHOW_AMR",
+      "priorLine": "show: I'm on an AMR. Issued.",
+      "lineToEdit": "AMR is standing.\nStanding is not access.\nAnd access is not a slot.\nIf you hand me an AMR and ask for a slot, you\u2019re asking me to convert identity into property. That\u2019s a discretionary act. Discretion gets names attached to it.",
+      "nextLine": "It proves you\u2019re allowed to hold an asset without it being classified as theft.\nWhich\u2014just to be clear\u2014is not an accusation. It\u2019s a category.",
+      "revisedLine": "AMR checks out as standing. (pause)\nStill doesn\u2019t hand you a slot. (pause)\nYou push an AMR at me. (pause)\nWant me to turn identity into property. (pause)\nOn my signature... that\u2019s discretion. (pause)\nDiscretion comes with names attached.",
+      "changeSummary": "Kept the AMR/standing limits and the discretion liability; made it more conversational and guarded. | Added (pause) breaks and tightened phrasing so each beat stays under 8 words, without changing meaning or tone."
+    },
+    {
+      "scene": "SCN_SCN-056.json",
+      "id": "N31_AMR_FOLLOWUP",
+      "priorLine": "AMR is standing.\nStanding is not access.\nAnd access is not a slot.\nIf you hand me an AMR and ask for a slot, you\u2019re asking me to convert identity into property. That\u2019s a discretionary act. Discretion gets names attached to it.",
+      "lineToEdit": "It proves you\u2019re allowed to hold an asset without it being classified as theft.\nWhich\u2014just to be clear\u2014is not an accusation. It\u2019s a category.",
+      "nextLine": "At the caged scheduling window\u2026",
+      "revisedLine": "It just means: you\u2019re holding an asset. (pause) The file reads \u201ccustody\u201d not \u201ctheft.\u201d (pause) I\u2019m not calling you anything. (pause) That\u2019s the category.",
+      "changeSummary": "Condensed and personalized the clarification while preserving the theft/custody classification point. | Split into short beats with (pause) markers to stay under 8 words per beat. Removed extra commas while keeping the same meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-056.json",
+      "id": "N40_RULE",
+      "priorLine": "ask: Show me the rule. The one that says I can\u2019t request.",
+      "lineToEdit": "It doesn\u2019t say \u201ccan\u2019t request.\u201d\nIt says: Requests do not constitute claims.\nPeople read that and still try to make it my problem.\nThere are only claims, transfers, and recoveries. That\u2019s the entire morality of the window.",
+      "nextLine": "The clerk taps the glass twice, as if the rule is physically stored in it.",
+      "revisedLine": "The rule doesn\u2019t bother banning asking. (pause)\nIt says plain: Requests aren\u2019t claims. (pause)\nPeople read it, slide it to my desk. (pause)\nAll I can log: claims. Transfers. Recoveries.",
+      "changeSummary": "Kept the same rule text and categories; removed the philosophical wrap-up. | Added (pause) breaks to keep each beat under 8 words. Reduced comma use to one by tightening phrasing and splitting the final list into short sentences."
+    },
+    {
+      "scene": "SCN_SCN-056.json",
+      "id": "N60_STAMPS",
+      "priorLine": "ask: Stamp substitution board. Why does that exist?",
+      "lineToEdit": "Because reality exists.\nSome stamps are unobtainable in the timeframe we pretend is \u201cstandard.\u201d\nSo we approved substitutions, and then everyone acts scandalized that we acknowledged the substitutions.\nPick from the board, or don\u2019t file. Those are the compliant options.",
+      "nextLine": "Several substitution lines are crossed out and re-initialed, like grudges.",
+      "revisedLine": "Because stamps go missing; the clock doesn\u2019t care. (pause)\nHalf the \u201cstandard\u201d stuff isn\u2019t found in time. (pause)\nThe board lists what\u2019ll pass. People act offended. (pause)\nPick from the board or don\u2019t file.",
+      "changeSummary": "Swapped formal phrasing for clerk shorthand; kept the same rationale and ultimatum. | Split into short (pause) beats to meet max beat words, removed commas, kept the original cause-and-effect and cadence."
+    },
+    {
+      "scene": "SCN_SCN-056.json",
+      "id": "N70_TOKEN",
+      "priorLine": "ask: Slot token press. What does it do?",
+      "lineToEdit": "It impresses custody onto a physical token.\nA token is not a slot. A token is proof you can defend the slot long enough to pass through a checkpoint.\nIf you lose it, you don\u2019t \u201cmisplace\u201d it. You abandon an asset. Abandoned assets get recovered. Sometimes by you. Usually by someone faster.",
+      "nextLine": "At the caged scheduling window\u2026",
+      "revisedLine": "It stamps custody onto a token. (pause) That token\u2019s what you show at checkpoints. (pause) You\u2019re carrying the slot. (pause) Lose it and it\u2019s abandonment. (pause) Abandoned assets get recovered. (pause) Sometimes you. (pause) Usually someone quicker.",
+      "changeSummary": "Reduced definitional contrasts; kept function, checkpoint use, and abandonment/recovery consequence. | Inserted (pause) breaks so each beat stays under 8 words, while preserving the original meaning and cadence. Removed the embedded clause to avoid long beats; no commas added."
+    },
+    {
+      "scene": "SCN_SCN-056.json",
+      "id": "N80_PRIORITY",
+      "priorLine": "bargain: I have a fiscal cutoff. I need priority.",
+      "lineToEdit": "Priority is not a thing.\nPriority is what people call favoritism when they want it, and corruption when someone else gets it.\nIf you have an asset, you can defend it in the chain. If you don\u2019t, you can\u2019t purchase moral weight at this window.",
+      "nextLine": "The clerk\u2019s voice stays level; their knuckles whiten on the pen.",
+      "revisedLine": "I can\u2019t sell you \u201cpriority\u201d through this window. (pause)\nSay the word. (pause)\nIt turns into a complaint either way. (pause)\nIf you\u2019ve got an asset you defend it. (pause)\nIn the chain. (pause)\nIf you don\u2019t this counter can\u2019t. (pause)\nMake one heavier.",
+      "changeSummary": "Kept the refusal and the favoritism/corruption risk; made it more immediate and guarded. | Added (pause) breaks to keep each beat under 8 words. Removed commas by restructuring phrasing while preserving meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-056.json",
+      "id": "N90_THREAT",
+      "priorLine": "threaten: If I don\u2019t get a slot, the site doesn\u2019t close. That\u2019s on your desk.",
+      "lineToEdit": "No.\nIf the site doesn\u2019t close, it\u2019s on the site. That\u2019s why it\u2019s called a site.\nMy desk holds claims. Not outcomes.\nAnd I would prefer you not assign me outcomes through the cage. It reads as coercion in minutes.",
+      "nextLine": "At the caged scheduling window\u2026",
+      "revisedLine": "Don\u2019t put that on my desk. (pause)\nIf the site stays open it lands there. (pause)\nI hold claims here. (pause)\nYou assign me outcomes through the cage. (pause)\nIt reads as coercion in the minutes.",
+      "changeSummary": "Tightened and de-formalized; preserved the desk/claims vs outcomes and coercion-in-minutes point. | Split the line into short beats using (pause) so each beat stays under 8 words. Removed commas by restructuring sentences while keeping meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-056.json",
+      "id": "N100_PERSUADE",
+      "priorLine": "persuade: I\u2019m not asking for a favor. I\u2019m trying to do this clean.",
+      "lineToEdit": "\u201cClean\u201d is not an instruction.\nClean is what people say right before they ask me to improvise.\nIf you want clean, you follow the custody logic. You don\u2019t need me to like you. You need the chain to survive review.",
+      "nextLine": "At the caged scheduling window\u2026",
+      "revisedLine": "\u201cClean\u201d doesn\u2019t tell me what to stamp. (pause)\nUsually it\u2019s the lead-in to \u201ccan you just\u2014\u201d. (pause)\nRun it through the custody chain. (pause)\nLet it survive review. (pause)\nThat\u2019s all I\u2019m here for.",
+      "changeSummary": "Removed coaching tone; kept the warning about improvisation and the review-survival goal. | Added pauses and split the last sentence to keep each beat under 8 words, while preserving meaning and cadence; removed the causal phrasing to avoid explainer hits."
+    },
+    {
+      "scene": "SCN_SCN-056.json",
+      "id": "N105_OLEA_PASS",
+      "priorLine": "",
+      "lineToEdit": "Standing noted.\nStanding does not create an asset.\nIf I \u201cescalate\u201d a request, I create a discretionary record. Discretion creates precedent.\nBring a claim, a transfer, or a recovery. Then I can record without inventing.",
+      "nextLine": "At the caged scheduling window\u2026",
+      "revisedLine": "Standing, noted. (pause)\nStill doesn\u2019t put an asset on the tray. (pause)\nIf I kick a request upstairs (pause)\nmy name ends up on a discretionary entry. (pause)\nThat turns into precedent. (pause)\nBring a claim. (pause)\nA transfer. (pause)\nOr a recovery. (pause)\nThen I can record it clean.",
+      "changeSummary": "Kept standing limits and escalation/precedent risk; made it more cage-window pragmatic. | Split into short beats with (pause) to meet max beat length, removed extra commas by re-punctuating into periods, and preserved the original meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-056.json",
+      "id": "N106_OLEA_FAIL",
+      "priorLine": "",
+      "lineToEdit": "This window doesn\u2019t run on declarations.\nIf you can\u2019t demonstrate standing in the chain, I can\u2019t route anything \u201cup.\u201d\nPresent a valid claimable asset. Or don\u2019t.",
+      "nextLine": "At the caged scheduling window\u2026",
+      "revisedLine": "Declarations don\u2019t move anything here. (pause) Show standing in the chain. (pause) Or I can\u2019t route it up. (pause) Put a claimable asset on the counter. (pause) Or don\u2019t.",
+      "changeSummary": "More spoken, same refusal and requirement for in-chain standing and claimable asset. | Inserted (pause) breaks to keep each beat under 8 words; wording and meaning unchanged."
+    },
+    {
+      "scene": "SCN_SCN-056.json",
+      "id": "N112_CLERK_CONFIRM",
+      "priorLine": "ask: So I don\u2019t ask. I claim an asset.",
+      "lineToEdit": "Correct.\nYou claim, you present, I record.\nIf the claim is valid, the system is intact. If it isn\u2019t, the system is protected by denying you.\nThat is the whole point of me.",
+      "nextLine": "The rule settles into place: time slots aren\u2019t granted here. They\u2019re taken, transferred, or recovered\u2014then defended as property.",
+      "revisedLine": "Yeah. (pause)\nClaim it. Present it. I record it. (pause)\nIf it holds up, it moves. (pause)\nIf it doesn\u2019t it stops here. (pause)\nThat\u2019s why I\u2019m behind the glass.",
+      "changeSummary": "Kept the claim/present/record flow and deny-to-protect function; made it less declarative. | Added (pause) breaks so each beat stays under 8 words; removed the second comma by rephrasing the stop line; kept meaning and cadence intact."
+    },
+    {
+      "scene": "SCN_SCN-057.json",
+      "id": "N01_CLERK_NEXT",
+      "priorLine": "A caged window marked SCHEDULING faces the corridor like a confession booth with forms.\nA \u201cNO-SHOW RECOVERY\u201d bin sits under the counter, sealed with tape that has been re-taped.\nA crooked board lists approved stamp substitutions.\nA press labeled SLOT TOKEN\u2014AUTHORIZED IMPRESSIONS ONLY is bolted to the laminate.",
+      "lineToEdit": "Next.",
+      "nextLine": "At the scheduling counter\u2026",
+      "revisedLine": "Next\u2014come on.",
+      "changeSummary": "Kept the queue-call, added mild impatience."
+    },
+    {
+      "scene": "SCN_SCN-057.json",
+      "id": "N11_CLERK_NARRATIVE_WARN",
+      "priorLine": "Next.",
+      "lineToEdit": "You\u2019re present. That helps.\nDo not ask me for a slot through the glass. If you ask, I deny. If I deny, I document. If I document, you have a narrative.\nNarratives get audited like injuries.",
+      "nextLine": "If you have standing, you recover an asset.\nIf you don\u2019t, you attempt to.\nEither way, I don\u2019t \u201cgrant.\u201d I record what survives.",
+      "revisedLine": "Good. (pause) You\u2019re actually here. (pause) Keep the word \"slot\" out of it (pause) at the glass. (pause) You say it. (pause) I deny it. (pause) Then I have to write it. (pause) Once it\u2019s written (pause) it\u2019s a narrative. (pause) Narratives get audited like injuries.",
+      "changeSummary": "Kept the same warning chain; made it more immediate and less schematic. | Added (pause) breaks to keep beats under 8 words. Removed comma-heavy phrasing by splitting into short sentences, keeping meaning intact and staying under the comma limit."
+    },
+    {
+      "scene": "SCN_SCN-057.json",
+      "id": "N12_CLERK_RECOVER_RULE",
+      "priorLine": "You\u2019re present. That helps.\nDo not ask me for a slot through the glass. If you ask, I deny. If I deny, I document. If I document, you have a narrative.\nNarratives get audited like injuries.",
+      "lineToEdit": "If you have standing, you recover an asset.\nIf you don\u2019t, you attempt to.\nEither way, I don\u2019t \u201cgrant.\u201d I record what survives.",
+      "nextLine": "",
+      "revisedLine": "If you\u2019ve got standing, you recover an asset. (pause) If you don\u2019t you take a swing. (pause) At recovery. (pause) Granting isn\u2019t on my menu. (pause) I record what survives.",
+      "changeSummary": "Kept standing/recovery logic and refusal to grant; used more natural phrasing. | Inserted (pause) breaks to keep each beat under 8 words, and removed one comma by tightening the second sentence while preserving meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-057.json",
+      "id": "N15_CLERK_RECOVER_FROM",
+      "priorLine": "Recover from what?",
+      "lineToEdit": "From absence.\nThat\u2019s not a moral statement. It\u2019s a category.\nAn unclaimed slot is abandoned property until someone makes it legible again.",
+      "nextLine": "The bin is for that. Recovery, not request.\nYou\u2019ll notice those are different words. They behave differently in minutes.",
+      "revisedLine": "From absence. (pause) Just the category. (pause) An unclaimed slot sits as abandoned property. (pause) Until somebody makes it legible again.",
+      "changeSummary": "Dropped the moral disclaimer; retained the same category and abandoned-property framing. | Inserted (pause) breaks so each beat stays under 8 words; kept wording and meaning intact."
+    },
+    {
+      "scene": "SCN_SCN-057.json",
+      "id": "N16_CLERK_RECOVER_WORDS",
+      "priorLine": "From absence.\nThat\u2019s not a moral statement. It\u2019s a category.\nAn unclaimed slot is abandoned property until someone makes it legible again.",
+      "lineToEdit": "The bin is for that. Recovery, not request.\nYou\u2019ll notice those are different words. They behave differently in minutes.",
+      "nextLine": "",
+      "revisedLine": "That\u2019s what the bin is for\u2014recovery. (pause) \u201cRequest\u201d lands in the minutes. (pause) A whole different way.",
+      "changeSummary": "Avoided the tidy contrast; kept the minutes/paperwork consequence. | Inserted pauses to split the line into shorter beats while keeping the same meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-057.json",
+      "id": "N19_CLERK_REQUEST_ANYWAY",
+      "priorLine": "If I request anyway?",
+      "lineToEdit": "Then I deny you cleanly, and you walk away with a denial you can\u2019t use for clearance.\nYou also get my name attached to your problem, which makes it my problem.\nI don\u2019t accept custody of other people\u2019s problems.",
+      "nextLine": "At the scheduling counter\u2026",
+      "revisedLine": "Then I deny it\u2014clean and simple. (pause) That denial won\u2019t clear you. (pause) It drags my name into your problem. (pause) I\u2019m not taking custody of that.",
+      "changeSummary": "Kept the denial/clearance consequence and liability boundary; made it sharper. | Split into shorter beats using (pause) markers to meet the 8-word limit. Removed commas by replacing the first with an em dash and tightening punctuation, keeping the same meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-057.json",
+      "id": "N23_CLERK_VERIFY_CUSTODY",
+      "priorLine": "Verify custody how?",
+      "lineToEdit": "With something that can survive scrutiny.\nAMR standing is acceptable. A witnessed transfer is acceptable. A prior token is acceptable.\n\u201cI was here\u201d is not acceptable. Being here is not a form.",
+      "nextLine": "If you impress without custody, you manufacture property.\nManufacturing property is a word auditors enjoy.",
+      "revisedLine": "With something that survives scrutiny. (pause) AMR standing. (pause) A witnessed transfer. (pause) A prior token. (pause) \u201cI was here\u201d doesn\u2019t clear. (pause) Presence isn\u2019t a form.",
+      "changeSummary": "Kept the accepted proofs and rejected claim; tightened into clerk shorthand. | Inserted (pause) breaks so each beat stays under 8 words; meaning and cadence unchanged."
+    },
+    {
+      "scene": "SCN_SCN-057.json",
+      "id": "N23B_CLERK_MANUFACTURE",
+      "priorLine": "With something that can survive scrutiny.\nAMR standing is acceptable. A witnessed transfer is acceptable. A prior token is acceptable.\n\u201cI was here\u201d is not acceptable. Being here is not a form.",
+      "lineToEdit": "If you impress without custody, you manufacture property.\nManufacturing property is a word auditors enjoy.",
+      "nextLine": "",
+      "revisedLine": "Press without custody. (pause) It reads as manufactured property. (pause) Auditors love that phrase.",
+      "changeSummary": "More spoken, same warning and audit implication. | Split the line into shorter beats by adding pauses; kept wording and meaning intact."
+    },
+    {
+      "scene": "SCN_SCN-057.json",
+      "id": "N25_CLERK_MASS",
+      "priorLine": "\u201cMass that failed to arrive.\u201d",
+      "lineToEdit": "That\u2019s the legacy wording.\nIt\u2019s not referring to bodies. It\u2019s referring to counted units.\nI\u2019m clarifying because people get theatrical about it, and then I have to write \u201ctheatrical\u201d in a margin.",
+      "nextLine": "",
+      "revisedLine": "Yeah, that\u2019s legacy wording. (pause)\nCounted units. (pause)\nI\u2019m saying it now. (pause)\nSo I don\u2019t write \u201cgot theatrical\u201d in margin.",
+      "changeSummary": "Kept the clarification and the reason (avoiding theatrics in notes); made it less formal. | Added (pause) breaks to keep each beat under 8 words. Tightened the last sentence by dropping \u201cthe\u201d to meet beat length without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-057.json",
+      "id": "N31_CLERK_DO_CORRECTLY",
+      "priorLine": "The tape gives with a tired sound, like it\u2019s done this before.\nInside: a stack of thin blanks and a small, sealed sleeve marked RECOVERY\u2014PENDING IMPRESSION.",
+      "lineToEdit": "If you\u2019re going to do that, do it correctly.\nIncorrect recoveries become disputes. Disputes become meetings.",
+      "nextLine": "",
+      "revisedLine": "If you\u2019re doing this, do it clean. (pause) Bad recoveries turn into disputes. (pause) Disputes turn into meetings.",
+      "changeSummary": "Same warning chain, more natural phrasing and cadence. | Added (pause) breaks so each beat stays under 8 words; kept wording and meaning intact."
+    },
+    {
+      "scene": "SCN_SCN-057.json",
+      "id": "N34_CLERK_AMR_ACK",
+      "priorLine": "AMR. Issued.",
+      "lineToEdit": "Standing acknowledged.\nStanding does not mean you deserve anything. It means if you hold an asset, the system calls it custody instead of theft.\nWhich\u2014again\u2014is not a personal comment. It\u2019s vocabulary that ruins careers.",
+      "nextLine": "Take one sleeve. One.\nIf you get ambitious, I have to notice.",
+      "revisedLine": "AMR checks out. Standing. (pause)\nIt keeps the \u201ctheft\u201d label off you. (pause)\nOnly if you\u2019re holding an asset. (pause)\nNothing personal. (pause)\nThose words ruin careers.",
+      "changeSummary": "Kept standing meaning and theft/custody labeling; removed the \u201cdeserve\u201d lecture. | Inserted (pause) breaks to keep each beat under 8 words, while preserving the same meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-057.json",
+      "id": "N35_CLERK_ONE_SLEEVE",
+      "priorLine": "Standing acknowledged.\nStanding does not mean you deserve anything. It means if you hold an asset, the system calls it custody instead of theft.\nWhich\u2014again\u2014is not a personal comment. It\u2019s vocabulary that ruins careers.",
+      "lineToEdit": "Take one sleeve. One.\nIf you get ambitious, I have to notice.",
+      "nextLine": "",
+      "revisedLine": "One sleeve. That\u2019s it. (pause) Take two. I have to write it down.",
+      "changeSummary": "Kept the limit and the enforcement; made it more immediate. | Added a (pause) to split the line into shorter beats and broke the last sentence into two for the same meaning within the 8-word beat limit."
+    },
+    {
+      "scene": "SCN_SCN-057.json",
+      "id": "N40D_CLERK_AUTH_BY",
+      "priorLine": "Authorized by who?",
+      "lineToEdit": "By the chain.\nWhich is a circular answer, but it\u2019s also the only one that doesn\u2019t create a person you can argue with.",
+      "nextLine": "",
+      "revisedLine": "By the chain. (pause) Yeah, it\u2019s circular. (pause) Keeps a name out your mouth.",
+      "changeSummary": "Same meaning; reduced polish and made the evasiveness feel intentional. | Added pauses to split the line into shorter beats and trimmed wording slightly while keeping the same meaning and cadence. Kept comma count within limit."
+    },
+    {
+      "scene": "SCN_SCN-057.json",
+      "id": "N41_USE_PRESS_BLOCKED",
+      "priorLine": "(multiple) (use: Slot token press.) (use: Slot token press.)",
+      "lineToEdit": "Stop.\nIf you impress without a recovery sleeve or a transferred blank, you\u2019re not claiming.\nYou\u2019re inventing.\n\nInvented assets don\u2019t clear. They detonate later, during review, when you\u2019re not in the room to correct them.\nWhich is when they become my favorite kind of problem: historical.",
+      "nextLine": "",
+      "revisedLine": "Stop. (pause)\nNo recovery sleeve on that press. (pause)\nNo transferred blank either. (pause)\nDo it like this. (pause)\nIt reads invented. (pause)\nInvented assets can look fine today. (pause)\nThen blow up in review. (pause)\nWhen you\u2019re gone. (pause)\nThen it comes back to me. (pause)\nAs a historical mess.",
+      "changeSummary": "Kept the block and consequences; made it sound like a rushed intervention. | Split into short beats using (pause) to meet the 8-word limit per beat; removed commas; kept the same meaning and cadence while tightening phrasing."
+    },
+    {
+      "scene": "SCN_SCN-057.json",
+      "id": "N43_CLERK_DONT_HESITATE",
+      "priorLine": "The press handle is cold and over-maintained.\nThe die face reads: CUSTODY IMPRESSION \u2014 VALID UNTIL CHALLENGED.",
+      "lineToEdit": "Don\u2019t hesitate halfway down.\nA partial impression looks like fraud even when it\u2019s just nerves.",
+      "nextLine": "",
+      "revisedLine": "All the way down. (pause) Half an impression reads like fraud, (pause) even if it\u2019s just nerves.",
+      "changeSummary": "Same instruction and risk; tightened into sharper, spoken phrasing. | Inserted two (pause) breaks to keep each beat under 8 words; preserved wording and kept comma count to one."
+    },
+    {
+      "scene": "SCN_SCN-057.json",
+      "id": "N46_CLERK_ASSET_RECOVERED",
+      "priorLine": "You align the sleeve, set the blank, and pull the handle in one motion.\nThe token comes out with a clean impression and a serial that feels accusatory by design.",
+      "lineToEdit": "Asset recovered.\nNot issued. Not granted. Recovered.\nKeep it visible at checkpoints. Visibility is ninety percent of compliance.",
+      "nextLine": "",
+      "revisedLine": "Asset recovered. (pause)\nThat\u2019s the word for the log. (pause)\nKeep it visible at checkpoints. (pause)\nVisibility does most of the work.",
+      "changeSummary": "Removed the contrasty cadence; preserved \u201crecovered\u201d terminology and checkpoint visibility advice. | Split the line into shorter beats using (pause), and slightly tightened wording while preserving meaning."
+    },
+    {
+      "scene": "SCN_SCN-057.json",
+      "id": "N51_CLERK_ASSET_EXPLAIN",
+      "priorLine": "What\u2019s an asset?",
+      "lineToEdit": "Time.\nBound to a lane, a tolerance band, and an expiration condition that everyone calls \u201cflexible\u201d until the audit makes it sacred.\nWe don\u2019t schedule here. We adjudicate custody.",
+      "nextLine": "",
+      "revisedLine": "Time. (pause)\nTied to a lane and a tolerance band. (pause)\nAnd an expiry everyone calls \u201cflexible\u201d. (pause)\nUntil audit shows up. (pause)\nThis window adjudicates custody.",
+      "changeSummary": "Kept definition and audit note; tightened into a more natural delivery. | Split into short beats with (pause) to meet word cap, and removed extra commas while preserving meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-057.json",
+      "id": "N54_CLERK_SO_RECOVER",
+      "priorLine": "So I recover.",
+      "lineToEdit": "Correct.\nYou claim, you present, I record.\nIf the claim is valid, the system is intact. If it isn\u2019t, the system is protected by denying you.\nThat\u2019s the job. Not the attitude. The job.",
+      "nextLine": "",
+      "revisedLine": "Yeah. (pause)\nClaim it. Present it. I record it. (pause)\nIf it holds up it moves. (pause)\nIf it doesn\u2019t it stops here. (pause)\nThat\u2019s the job.",
+      "changeSummary": "Kept the same workflow and denial-as-protection; removed the \u201cattitude\u201d aside. | Removed commas by splitting into short sentences. Added pauses to break the line into beats under 8 words while keeping the same meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-057.json",
+      "id": "N61_CLERK_AMR_RULE",
+      "priorLine": "AMR. Issued.",
+      "lineToEdit": "AMR is standing.\nStanding is not access, and access is not a slot.\nIt means you can hold an asset without the system automatically calling it theft.",
+      "nextLine": "If you need something to hold, recover it.\nDo not ask me to convert your identity into property. That\u2019s discretion. Discretion gets names attached.",
+      "revisedLine": "AMR gives you standing. (pause) It doesn\u2019t open a slot. (pause) Not by itself. (pause) It keeps the system from calling custody \u201ctheft.\u201d",
+      "changeSummary": "Kept the distinctions and the theft/custody classification; made it less formal and stacked. | Inserted (pause) breaks to keep each beat at 8 words or fewer; split \u201cIt doesn\u2019t open a slot by itself\u201d into two beats without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-057.json",
+      "id": "N62_CLERK_DISCRETION",
+      "priorLine": "AMR is standing.\nStanding is not access, and access is not a slot.\nIt means you can hold an asset without the system automatically calling it theft.",
+      "lineToEdit": "If you need something to hold, recover it.\nDo not ask me to convert your identity into property. That\u2019s discretion. Discretion gets names attached.",
+      "nextLine": "",
+      "revisedLine": "If you need something to hold, (pause) recover it. (pause) Don\u2019t ask me to turn your identity (pause) into property on my signature. (pause) That\u2019s discretion. (pause) Discretion leaves fingerprints.",
+      "changeSummary": "Preserved the warning about discretionary conversion and liability; made it more colloquial. | Inserted (pause) breaks to keep each beat under 8 words while preserving the original wording, meaning, and cadence; kept commas within the limit."
+    },
+    {
+      "scene": "SCN_SCN-057.json",
+      "id": "N71_CLERK_RULE_1",
+      "priorLine": "Show me the rule.",
+      "lineToEdit": "It doesn\u2019t say you can\u2019t request.\nIt says: Requests do not constitute claims.\nPeople read that and still try to make it my problem.",
+      "nextLine": "There are only claims, transfers, and recoveries.\nThat\u2019s the entire morality of the window.",
+      "revisedLine": "Rule doesn\u2019t forbid asking. (pause) It says: requests aren\u2019t claims. (pause) People skim, still try making it my problem.",
+      "changeSummary": "Kept the rule text and complaint; made it more spoken and less staged. | Added (pause) breaks to keep each beat under 8 words; tightened phrasing while preserving meaning; kept commas to one."
+    },
+    {
+      "scene": "SCN_SCN-057.json",
+      "id": "N72_CLERK_RULE_2",
+      "priorLine": "It doesn\u2019t say you can\u2019t request.\nIt says: Requests do not constitute claims.\nPeople read that and still try to make it my problem.",
+      "lineToEdit": "There are only claims, transfers, and recoveries.\nThat\u2019s the entire morality of the window.",
+      "nextLine": "",
+      "revisedLine": "I can log a claim. (pause) A transfer. (pause) Or a recovery.\nEverything else becomes a story. (pause) And I\u2019m not filing stories.",
+      "changeSummary": "Kept the same three categories; removed the moralizing phrasing. | Split the line into short beats using (pause) and removed extra commas while keeping the same meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-057.json",
+      "id": "N80_OLEA_PASS",
+      "priorLine": "",
+      "lineToEdit": "Standing noted.\nStanding does not create an asset.\nIf I escalate a request, I create a discretionary record, and then I own the precedent.\n\nBring a claim, a transfer, or a recovery. Then I can record without inventing.",
+      "nextLine": "At the scheduling counter\u2026",
+      "revisedLine": "Standing noted. (pause) Still doesn\u2019t put an asset here. (pause) I escalate a request. (pause) It becomes a discretionary record. (pause) My name is on it. (pause) Then I own the precedent. (pause) Bring a claim. (pause) Or a transfer. (pause) Or a recovery. (pause) Then I can record without inventing.",
+      "changeSummary": "Kept the escalation/precedent risk; made it more defensive and immediate. | Split the line into short beats with (pause) markers to meet the 8-word limit. Removed commas by converting to short sentences and list fragments, preserving meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-057.json",
+      "id": "N81_OLEA_FAIL",
+      "priorLine": "",
+      "lineToEdit": "This window doesn\u2019t run on declarations.\nIf you can\u2019t demonstrate standing in-chain, I can\u2019t route anything \u201cup.\u201d\nPresent a claimable asset. Or don\u2019t.",
+      "nextLine": "At the scheduling counter\u2026",
+      "revisedLine": "Declarations don\u2019t run this window. (pause) Show standing in-chain. (pause) Or I can\u2019t route anything up. (pause) Present a claimable asset. (pause) Or don\u2019t.",
+      "changeSummary": "Minor tightening; kept the same gatekeeping requirements. | Added pauses to split into \u22648-word beats; kept wording and meaning intact."
+    },
+    {
+      "scene": "SCN_SCN-058.json",
+      "id": "N01_CLERK_NEXT",
+      "priorLine": "The scheduling counter is a cage with glass and forms.\nA board labeled APPROVED STAMP SUBSTITUTIONS hangs slightly crooked, corners curled from being handled and put back.\nSeveral entries are crossed out and re-initialed, like corrections that needed witnesses.",
+      "lineToEdit": "Next.",
+      "nextLine": "At the stamp substitution board\u2026",
+      "revisedLine": "Next. Make it quick.",
+      "changeSummary": "Kept the queue-call; added time pressure."
+    },
+    {
+      "scene": "SCN_SCN-058.json",
+      "id": "N15_CLERK_GAP",
+      "priorLine": "Complaint stamp clears an authorization gap?",
+      "lineToEdit": "It doesn\u2019t \u201cclear a gap.\u201d\nIt redirects the gap into a category the chain already knows how to hold.\nAuthorization says \u201callowed.\u201d\nComplaint acknowledgment says \u201cdisputed, recorded, and therefore real enough to be processed.\u201d\nWhich\u2014before you say it\u2014does not mean I approve the dispute. I acknowledge it. Different verb. Safer minutes.",
+      "nextLine": "",
+      "revisedLine": "It won\u2019t \u201cclear\u201d anything. (pause)\nIt shoves the gap into a known bucket. (pause)\nThe chain already knows how to hold it. (pause)\nAuthorization reads \u201callowed.\u201d (pause)\nComplaint acknowledgment reads \u201cdisputed, recorded.\u201d (pause)\nEnough to process. (pause)\nAnd before you start: I\u2019m not approving. (pause)\nI\u2019m acknowledging. (pause)\nSafer in the minutes.",
+      "changeSummary": "Kept the same functional difference; made it less didactic and more defensive. | Split the line into short beats using (pause) so each beat stays under 8 words; preserved the original meaning and cadence; reduced punctuation to a single comma (kept inside \u201cdisputed, recorded\u201d)."
+    },
+    {
+      "scene": "SCN_SCN-058.json",
+      "id": "N51_CLERK_POLICY",
+      "priorLine": "So the complaint stamp is a policy-compliant substitute in the clearance chain.",
+      "lineToEdit": "Policy-compliant, yes.\nNot comfort-compliant.\nThe chain prefers a stamped problem to an unstamped absence. Absence becomes improvisation. Improvisation becomes a person.\nWe try not to become people in paperwork.",
+      "nextLine": "The implication lands cleanly: a complaint stamp can stand in for missing authority, because the system treats \u201cdispute, logged\u201d as a form of custody.",
+      "revisedLine": "Yeah. Policy-compliant. (pause)\nIt won\u2019t feel good. (pause)\nThe chain prefers a stamped problem. (pause)\nNot a blank absence. (pause)\nBlanks force improvisation. (pause)\nThen someone\u2019s name ends up in it. (pause)\nI\u2019m trying to keep names out. (pause)\nOut of this.",
+      "changeSummary": "Preserved policy compliance and anti-improvisation stance; shifted to spoken, liability-minded phrasing. | Added (pause) breaks to keep each beat under 8 words; tightened phrasing while preserving meaning and tone; removed the comma to stay under the comma limit."
+    },
+    {
+      "scene": "SCN_SCN-058.json",
+      "id": "N25_CLERK_WHO_APPROVED",
+      "priorLine": "Who approved that line?",
+      "lineToEdit": "\u201cApproved\u201d is a generous word.\nIt survived review twice and nobody wanted to be the third signature that killed it.\nThe board is not permission. It\u2019s precedent.\nPrecedent is what happens when reality keeps arriving on schedule and policy does not.",
+      "nextLine": "",
+      "revisedLine": "\u201cApproved\u201d is a generous word. (pause)\nIt survived review twice. (pause)\nNobody wanted to be the third signature. (pause)\nThe one that killed it. (pause)\nSo it sits on the board. (pause)\nAs precedent. (pause)\nReality keeps showing up on schedule. (pause)\nPolicy doesn\u2019t.",
+      "changeSummary": "Kept all story facts; removed the crisp permission-vs-precedent contrast. | Split long sentences into short beats using (pause) while preserving meaning and cadence; kept commas at zero and avoided added explainer phrasing."
+    },
+    {
+      "scene": "SCN_SCN-058.json",
+      "id": "N28_CLERK_REFERENCE",
+      "priorLine": "So it will pass clearance if I reference the substitution line.",
+      "lineToEdit": "If you reference it correctly, yes.\nIf you wave it around like a loophole, no.\nThe chain respects citations. It punishes enthusiasm.",
+      "nextLine": "You can feel the shape of the workaround: not an exception, a sanctioned reroute.",
+      "revisedLine": "Cite it cleanly, yeah. (pause) Start waving it like a loophole (pause) and it\u2019ll get bounced. (pause) Chain likes citations. (pause) It hates enthusiasm.",
+      "changeSummary": "Kept pass/fail conditions; made it more conversational and blunt. | Added pause breaks to keep each beat under 8 words; preserved original wording, tone, and single comma."
+    },
+    {
+      "scene": "SCN_SCN-058.json",
+      "id": "N31_CLERK_SURVIVABLE",
+      "priorLine": "\u201cSurvivable\u201d to who?",
+      "lineToEdit": "Review.\nThe part of the process that happens after you\u2019re gone and can\u2019t correct anything.\nThat\u2019s why we like stamps. They outlive explanations.",
+      "nextLine": "",
+      "revisedLine": "Review. (pause)\nIt happens after you\u2019ve left. (pause)\nYou can\u2019t fix anything. (pause)\nStamps outlive explanations.",
+      "changeSummary": "Condensed while preserving meaning and tone. | Split the original 15-word stretch into four short beats using (pause), keeping the same meaning and punchy cadence without adding commas or explainer phrases."
+    },
+    {
+      "scene": "SCN_SCN-058.json",
+      "id": "N17C_CLERK_REMOVED",
+      "priorLine": "Why were these removed?",
+      "lineToEdit": "Because people used them as permission.\nThe board is not permission. It\u2019s a list of what the chain will tolerate without making a new meeting.\nTolerance is not approval. Again\u2014different noun. Safer minutes.",
+      "nextLine": "",
+      "revisedLine": "Because people treated them like permission. (pause) This board is what the chain will tolerate, (pause) without dragging everyone into a meeting. (pause) \u201cTolerate\u201d keeps the minutes safer (pause) than \u201capprove.\u201d",
+      "changeSummary": "Kept the reason and the tolerate-vs-approve paperwork risk; reduced formal repetition. | Added (pause) breaks to keep each beat under 8 words and added one comma; meaning and tone unchanged."
+    },
+    {
+      "scene": "SCN_SCN-058.json",
+      "id": "N19_CLERK_CONTINUITY",
+      "priorLine": "\u201cContinuity\u201d of what, exactly?",
+      "lineToEdit": "Chain continuity.\nNot meaning.\nNot intent.\nInk that stays unbroken from \u201cclaimed\u201d to \u201crecorded.\u201d\nA blank space is where auditors go to live.",
+      "nextLine": "",
+      "revisedLine": "Continuity in the chain. (pause) Ink you can follow. (pause) From \u201cclaimed\u201d to \u201crecorded\u201d. (pause) Without a gap. (pause) Gaps are where auditors set up camp.",
+      "changeSummary": "Kept the same concept; removed the listy, definitional rhythm. | Inserted (pause) breaks and split the long middle sentence into shorter beats to meet the max_beat_words constraint without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-058.json",
+      "id": "N20_CLERK_WHY",
+      "priorLine": "ask: Why do stamp substitutions exist?",
+      "lineToEdit": "Because reality exists.\nSome stamps are unobtainable inside the timeframe we pretend is \u201cstandard.\u201d\nSo substitutions were approved, and then everyone acted scandalized that we acknowledged the substitutions.\nPick from the board, or don\u2019t file. Those are the compliant options.",
+      "nextLine": "",
+      "revisedLine": "Because the real world keeps happening. (pause) Some \u201cstandard\u201d stamps can\u2019t be sourced in time. (pause) So substitutions got written down. (pause) And everyone acts shocked we admitted it. (pause) Pick from the board or don\u2019t file.",
+      "changeSummary": "Kept rationale and choice; made it less speechlike-institutional. | Added (pause) breaks to keep each beat under 8 words. Removed both commas to meet the comma limit while keeping meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-058.json",
+      "id": "N32_CLERK_CLEAR_WORD",
+      "priorLine": "ask: \u201cCompliant\u201d means it will clear.",
+      "lineToEdit": "\u201cClear\u201d is an outcome word.\nI can\u2019t promise outcomes through the glass.\nI can tell you what survives review.\nThe board lists survivable packets.",
+      "nextLine": "",
+      "revisedLine": "\u201cClear\u201d is review\u2019s word not mine. (pause) Through the glass I can tell. (pause) What usually survives. (pause) That board is the survivable stuff.",
+      "changeSummary": "Kept the no-outcomes promise and review focus; tightened and softened the compliance voice. | Split the text into four short beats using (pause) to keep each under 8 words, and removed both commas to meet the max_commas limit without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-058.json",
+      "id": "N34_CLERK_WHICH_UPSTREAM",
+      "priorLine": "ask: Which substitution preserves clearance when upstream authorization is missing?",
+      "lineToEdit": "If you\u2019re missing upstream authorization, you don\u2019t pretend you have it.\nYou convert the absence into a recorded dispute.\nComplaint acknowledgment stamp. Cite the line. Keep the chain intact.",
+      "nextLine": "You note the rule without moving anything yet: complaint acknowledgment can function as an approved substitute in the clearance chain.",
+      "revisedLine": "Missing upstream authorization? (pause)\nDon\u2019t fake it. (pause)\nTurn absence into a dispute on record. (pause)\nGet a complaint acknowledgment stamp. (pause)\nCite the line. (pause)\nKeep the chain intact.",
+      "changeSummary": "Kept the same instruction and required stamp; made it quicker and more reactive. | Split the long final sentence into multiple (pause) beats under 8 words each, removed commas by converting clauses into short sentences, and preserved the original intent and cadence."
+    },
+    {
+      "scene": "SCN_SCN-058.json",
+      "id": "N30_CLERK_SUB_CLEARANCE",
+      "priorLine": "(multiple) (ask: \u201cSubstitute\u201d how. In clearance terms.) (ask: \u201cSubstitute\u201d how. In clearance terms.)",
+      "lineToEdit": "In clearance terms: it\u2019s not about meaning.\nIt\u2019s about whether the chain can follow the ink from \u201cclaimed\u201d to \u201crecorded\u201d without a blank space.\nA blank space is where auditors go to live.\nA substitution is a bridge\u2014ugly, official, and signed by someone who didn\u2019t want to be there.",
+      "nextLine": "",
+      "revisedLine": "In clearance terms: they want ink tracking. (pause)\nFrom \u201cclaimed\u201d to \u201crecorded.\u201d (pause)\nNo gaps. (pause)\nGaps invite auditors. (pause)\nSubstitution is an ugly bridge. (pause)\nIt keeps continuity\u2014official, signed. (pause)\nNobody\u2019s happy about it.",
+      "changeSummary": "Kept the clearance logic and \u201cbridge\u201d idea; removed the definitional opener and smoothed into spoken shorthand. | Split the line into short beats using (pause). Reduced commas to one by restructuring the last sentence while keeping the same meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-058.json",
+      "id": "N37_CLERK_BRIDGE_AUTH",
+      "priorLine": "ask: Which substitute bridges an authorization stamp?",
+      "lineToEdit": "Complaint acknowledgment.\nIt doesn\u2019t say \u201cauthorized.\u201d\nIt says \u201cchallenged, logged, and therefore handled.\u201d\nThe chain accepts \u201chandled\u201d when it can\u2019t get \u201cauthorized\u201d in time.",
+      "nextLine": "You note the rule without moving anything yet: complaint acknowledgment can function as an approved substitute in the clearance chain.",
+      "revisedLine": "Complaint acknowledgment. (pause)\nIt puts \u201cchallenged\u201d \u201clogged\u201d \u201chandled\u201d on the page. (pause)\nWhen \u201cauthorized\u201d can\u2019t show up in time (pause)\n\u201chandled\u201d is what the chain will take.",
+      "changeSummary": "Preserved the exact substitute and the handled-vs-authorized function; reduced contrast phrasing. | Added pauses to keep each beat under 8 words. Replaced comma-separated list with slashes and removed the mid-sentence comma to meet the comma limit. | Removed the slashes in the second beat so it stays under 8 words without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-058.json",
+      "id": "N40_OLEA_PASS",
+      "priorLine": "",
+      "lineToEdit": "Standing noted.\nStanding does not create an asset, and it does not create a stamp.\nIf I \u201cescalate\u201d a question, I create a discretionary record. Discretion creates precedent.\nUse the board. Cite what\u2019s approved. Don\u2019t ask me to invent a lane for you.",
+      "nextLine": "",
+      "revisedLine": "Standing noted. (pause)\nStill doesn\u2019t conjure an asset. (pause)\nOr a stamp. (pause)\nIf I escalate your question (pause)\nit becomes a discretionary record (pause)\nwith my name on it. (pause)\nThen it\u2019s precedent. (pause)\nUse the board. (pause)\nCite what\u2019s approved. (pause)\nDon\u2019t drag me into inventing lanes.",
+      "changeSummary": "Kept the same refusal to escalate/invent; made it more defensive and less formal. | Added (pause) breaks so each beat stays under 8 words, and removed commas to meet the comma limit while preserving tone and meaning."
+    },
+    {
+      "scene": "SCN_SCN-058.json",
+      "id": "N41_OLEA_FAIL",
+      "priorLine": "",
+      "lineToEdit": "This window doesn\u2019t run on declarations.\nIf you can\u2019t demonstrate standing in-chain, I can\u2019t route anything \u201cup.\u201d\nUse what\u2019s posted, or bring a claimable asset. Those are the options that survive.",
+      "nextLine": "",
+      "revisedLine": "Declarations don\u2019t run this window. (pause)\nIf you can\u2019t show standing in-chain (pause)\nI can\u2019t route anything up. (pause)\nUse what\u2019s posted or bring a claimable asset. (pause)\nThose are the options that survive.",
+      "changeSummary": "Light tightening; retained the same constraints and survivability framing. | Inserted pauses to keep each beat under 8 words. Removed commas by restructuring the second and fourth lines without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-059.json",
+      "id": "N01_CLERK_NEXT",
+      "priorLine": "The scheduling counter is still a cage with glass and forms.\nThe press, the substitution board, the no-show bin\u2014nothing has moved.\nOnly you have: an AMR that calls you \u201cstanding,\u201d a TER that calls you \u201cprocessable,\u201d and a slot token that calls you \u201cin custody.\u201d",
+      "lineToEdit": "Next.",
+      "nextLine": "At the caged window\u2026",
+      "revisedLine": "Next. Tray forward.",
+      "changeSummary": "Kept the queue call; added a practical prompt consistent with the window."
+    },
+    {
+      "scene": "SCN_SCN-059.json",
+      "id": "N11_CLERK_VERBS",
+      "priorLine": "Next.",
+      "lineToEdit": "You\u2019re present. That helps.\nDon\u2019t say \u201crequest.\u201d Don\u2019t say \u201cgrant.\u201d Those are narrative verbs.\nYou present custody. I record custody. That\u2019s the only clean lane through glass.",
+      "nextLine": "",
+      "revisedLine": "Good. You\u2019re here. (pause)\nKeep \u201crequest\u201d and \u201cgrant\u201d out of your mouth\u2014 (pause)\nthose words make stories. (pause)\nYou present custody. (pause)\nI record custody. (pause)\nThat\u2019s the clean lane through glass.",
+      "changeSummary": "Preserved verb warning and custody lane; made it more immediate and less instructional. | Split the line into short beats using (pause) so each beat stays under 8 words. Kept wording and meaning intact, with no added commas or explainer phrases."
+    },
+    {
+      "scene": "SCN_SCN-059.json",
+      "id": "N21_CLERK_REQ",
+      "priorLine": "What do you need, exactly, to issue the IWO?",
+      "lineToEdit": "A claimable slot asset in your custody, and a packet that doesn\u2019t ask me to improvise.\nSlot token covers time-as-property.\nAMR covers you holding it without it becoming a felony noun.\nTER covers the site being eligible for processing today, which is\u2014unfortunately\u2014different from \u201csafe.\u201d\nThen I can issue an Interconnection Work Order / Clearance packet.\n\u201cIssue\u201d meaning I record what already exists. Not that I create it.",
+      "nextLine": "",
+      "revisedLine": "I need a claimable slot asset. (pause) In your custody. (pause) And a packet that doesn\u2019t make me guess. (pause) Slot token covers time-as-property. (pause) AMR covers you holding it. (pause) Without it becoming a felony noun. (pause) TER covers the site eligible today. (pause) Eligible\u2014 not \u201csafe.\u201d (pause) Then I can issue an Interconnection Work Order. (pause) Or Clearance packet. (pause) And \u201cissue\u201d here: I record it. (pause) What\u2019s already sitting in front of me.",
+      "changeSummary": "Kept every required element (token/AMR/TER/IWO meaning); reduced lecture tone and smoothed into pressured speech. | Split the line into short (pause) beats to stay under 8 words each. Removed commas by converting clauses to sentences and dashes. Rephrased the final definition to avoid extra explainer phrasing while keeping the same meaning."
+    },
+    {
+      "scene": "SCN_SCN-059.json",
+      "id": "N23B_CLERK_CANT_GUARANTEE",
+      "priorLine": "So what\u2019s the part you can\u2019t guarantee?",
+      "lineToEdit": "Outcomes.\nI can tell you what survives review. I can\u2019t promise what review decides.\nIf you need certainty, you shouldn\u2019t be at a cage.",
+      "nextLine": "",
+      "revisedLine": "Outcomes. (pause)\nI can tell you what usually survives review. (pause)\nI can\u2019t promise what review decides. (pause)\nNeed guarantees? This isn\u2019t the window.",
+      "changeSummary": "Kept the same limitation; made it less quotable and more clipped. | Added (pause) breaks to keep each beat under 8 words; tightened the last sentence while preserving meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-059.json",
+      "id": "N25_CLERK_TER",
+      "priorLine": "Does the TER change anything for you?",
+      "lineToEdit": "It changes my handwriting.\nWithout TER, your slot token becomes a beautiful object with no legal habitat.\nWith TER, it becomes a time asset attached to a process lane.\nLanes are what keep people from becoming precedents.",
+      "nextLine": "",
+      "revisedLine": "It changes what I can write. (pause)\nWithout TER the slot token\u2019s just stamped. (pause)\nA nice object with nowhere legal. (pause)\nWith TER it\u2019s a time asset. (pause)\nIn a process lane. (pause)\nLanes keep my desk from precedent.",
+      "changeSummary": "Kept TER\u2019s functional effect; tightened and grounded it in clerk liability. | Added (pause) breaks so each beat stays under 8 words; removed extra commas by rephrasing the TER clauses; preserved original meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-059.json",
+      "id": "N41_CLERK_FAILURE",
+      "priorLine": "What\u2019s the failure mode. What gets returned?",
+      "lineToEdit": "Rejection is an outcome word.\nThe survivable phrasing is: \u201cReturned for deficiency.\u201d\nDeficiency can be missing chain continuity, conflicting custody, or upstream authority flagging the node as not in good standing.\nThat last one is not my doing. I\u2019m saying it now because you will try to make it my doing later.",
+      "nextLine": "",
+      "revisedLine": "In the file it comes back (pause) as \u201cReturned for deficiency.\u201d (pause)\nDeficiency can be chain continuity gaps. (pause)\nOr custody conflicts. (pause)\nOr upstream authority flags the node (pause)\nnot in good standing. (pause)\nThat last one isn\u2019t mine. (pause)\nI\u2019m saying it now. (pause)\nTo keep it off me later.",
+      "changeSummary": "Kept the exact survivable phrasing and deficiency causes; made it more defensive and less formal. | Inserted (pause) breaks to keep each beat under 8 words. Broke the deficiency list into short sentences and removed commas to meet the 1-comma limit. Rephrased the final line to keep the same intent without adding explainers."
+    },
+    {
+      "scene": "SCN_SCN-059.json",
+      "id": "N44_CLERK_NOT_STANDING",
+      "priorLine": "Not in good standing how?",
+      "lineToEdit": "In the way that makes your paperwork correct and still unusable.\nOutstanding disputes. Unresolved incidents. Unclosed loops.\nSometimes the upstream authority just\u2026 stops recognizing the node as eligible for polite interaction.\nWhich is not a judgement. It\u2019s a routing condition.",
+      "nextLine": "",
+      "revisedLine": "Everything\u2019s filled out. It still won\u2019t move. (pause)\nOutstanding disputes. Unresolved incidents. Unclosed loops. (pause)\nSometimes upstream just\u2026 stops. (pause)\nIt won\u2019t treat the node as eligible. (pause)\nThat\u2019s routing. Don\u2019t make it a sermon.",
+      "changeSummary": "Preserved all listed causes and the routing-not-judgment intent; made it more in-the-moment. | Split into short beats with (pause) so each beat stays under 8 words; preserved meaning and cadence while keeping commas and explainer phrases within limits."
+    },
+    {
+      "scene": "SCN_SCN-059.json",
+      "id": "N47_CLERK_WHO_UPSTREAM",
+      "priorLine": "Who is upstream?",
+      "lineToEdit": "Upstream is whoever can say \u201cno\u201d without being in this building.\nIf I name them, you\u2019ll try to talk to them.\nIf you can talk to them, they become \u201cdownstream,\u201d and then I have to learn a new diagram.\nSo: upstream. Recorded. Unarguable.",
+      "nextLine": "",
+      "revisedLine": "Upstream is whoever can say \u201cno\u201d (pause) from somewhere else. (pause)\nI don\u2019t name names (pause) you\u2019ll go chase them (pause) then my diagram changes. (pause)\nSo it stays \u201cupstream.\u201d (pause) That\u2019s what gets recorded.",
+      "changeSummary": "Kept the same reason for anonymity and the recording choice; removed the neat punchline cadence. | Inserted (pause) breaks so each beat stays under 8 words. Kept meaning and cadence, while removing the em dash to avoid long beats."
+    },
+    {
+      "scene": "SCN_SCN-059.json",
+      "id": "N51_CLERK_UPSTREAM",
+      "priorLine": "Upstream authorization\u2014who\u2019s upstream?",
+      "lineToEdit": "Upstream is a direction, not a person.\nA direction can refuse you without entering the building.\nIf I make it a person, you make it an argument.\nI don\u2019t sell arguments through glass.",
+      "nextLine": "",
+      "revisedLine": "It\u2019s a direction on the chart. (pause)\nThat direction can refuse you. (pause)\nWithout walking in here. (pause)\nPut a person on it. (pause)\nAnd it turns into an argument. (pause)\nI\u2019m not running arguments through this glass.",
+      "changeSummary": "Kept the same point; shifted to more natural phrasing. | Inserted (pause) breaks to keep each beat under 8 words while preserving the original meaning and rhythm."
+    },
+    {
+      "scene": "SCN_SCN-059.json",
+      "id": "N54_CLERK_STALL",
+      "priorLine": "So you\u2019re saying this can still stall.",
+      "lineToEdit": "I\u2019m saying the packet can be perfect and still get returned.\nThat\u2019s what \u201cupstream\u201d means.\nI stamp defensively so the return reads as policy, not a story.",
+      "nextLine": "",
+      "revisedLine": "Yeah it can still stall. (pause)\nPacket can be spotless. (pause)\nStill comes back. (pause)\nI stamp so the return reads (pause)\nlike policy not a story.",
+      "changeSummary": "Kept the same warning and defensive-stamping motivation; made it more immediate. | Removed both commas to meet the comma limit, and added pauses to split the line into beats of 8 words or fewer without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-059.json",
+      "id": "N61_CLERK_BARGAIN",
+      "priorLine": "Fiscal cutoff. I need this to move.",
+      "lineToEdit": "Fiscal cutoff is not a clearance condition.\nIt\u2019s a motivation. Motivations don\u2019t stamp well.\nIf you have custody, you don\u2019t need urgency. You need continuity.",
+      "nextLine": "At the caged window\u2026",
+      "revisedLine": "Fiscal cutoff doesn\u2019t change clearance. (pause)\nIt\u2019s your deadline. (pause)\nDeadlines don\u2019t go on my stamps. (pause)\nIf you\u2019ve got custody, keep the chain continuous.",
+      "changeSummary": "Kept the same refusal and focus on continuity; reduced the maxim-like delivery. | Added (pause) breaks so each beat stays under 8 words; kept wording and meaning the same."
+    },
+    {
+      "scene": "SCN_SCN-059.json",
+      "id": "N71_CLERK_THREATEN",
+      "priorLine": "If this stalls, I document it as scheduling obstruction.",
+      "lineToEdit": "Document whatever you want. Just use the correct nouns.\n\u201cObstruction\u201d implies intent. Intent implies a person.\nI\u2019m not volunteering to be a person in your file.\nPresent custody, or leave.",
+      "nextLine": "",
+      "revisedLine": "Document whatever you want. (pause) Use the right nouns. (pause) \u201cObstruction\u201d drags intent into it. (pause) Then it drags a person in. (pause) I\u2019m not volunteering. (pause) Present custody. (pause) Or leave.",
+      "changeSummary": "Same warning about intent/personhood in the file; tightened into sharper clerk speech. | Added (pause) breaks to keep each beat under 8 words. Split the \u201cObstruction\u201d sentence to remove commas while keeping the same meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-059.json",
+      "id": "N80_OLEA_PASS",
+      "priorLine": "",
+      "lineToEdit": "Standing noted.\nStanding does not create a slot, and it does not create permission to invent process.\nIf I escalate, I create a discretionary record. Discretion creates precedent.\nPrecedent attracts review like blood attracts policy.",
+      "nextLine": "",
+      "revisedLine": "Standing. Noted. (pause)\nStill doesn\u2019t make a slot. (pause)\nStill no room to invent process. (pause)\nIf I escalate, it\u2019s discretionary. (pause)\nMy name goes on the record. (pause)\nPrecedent brings review. (pause)\nI\u2019m not feeding that.",
+      "changeSummary": "Kept escalation/discretion/precedent risk; removed the quotable metaphor and softened compliance cadence. | Broke the line into short beats with (pause) so each beat stays under 8 words. Removed extra commas by splitting clauses into separate sentences, keeping only one comma total. Preserved meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-059.json",
+      "id": "N84_CLERK_UPSTREAM_WATCH",
+      "priorLine": "Upstream authority\u2014what are they watching for?",
+      "lineToEdit": "Continuity.\nNo blank spaces. No inspirational handwriting. No new verbs.\nAlso: if the node is flagged, upstream will bounce it regardless of how pretty my stamps are.\nWhich is why I stamp defensively.",
+      "nextLine": "",
+      "revisedLine": "Continuity. (pause)\nNo blanks. (pause)\nNo cute handwriting. (pause)\nNo new verbs. (pause)\nIf the node\u2019s flagged, it\u2019ll bounce either way. (pause)\nStamps won\u2019t save it. (pause)\nThat\u2019s why I stamp like I\u2019m being watched.",
+      "changeSummary": "Kept upstream criteria and flagged-node override; made it more conversational and tense. | Added (pause) breaks to keep each beat under 8 words, split the flagged-node line into two beats without changing meaning, and kept total commas to 1 while preserving cadence."
+    },
+    {
+      "scene": "SCN_SCN-059.json",
+      "id": "N81_OLEA_FAIL",
+      "priorLine": "",
+      "lineToEdit": "This window doesn\u2019t run on declarations.\nDemonstrate standing in-chain, or don\u2019t invoke it.\nEither way, escalation is not a substitute for custody.",
+      "nextLine": "",
+      "revisedLine": "Declarations don\u2019t run this window. (pause) Show standing in-chain before you invoke it. (pause) Escalation won\u2019t replace custody.",
+      "changeSummary": "Kept the same gatekeeping and escalation warning; made it less formal. | Added (pause) breaks to keep beats under 8 words; tightened second sentence without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-059.json",
+      "id": "N31_CLERK_ACK_OBJECTS",
+      "priorLine": "Slot token. AMR. TER. Interconnection Work Order / Clearance.",
+      "lineToEdit": "Good. Those are objects. Objects can be recorded.\nSlide the token to the line. Keep the serial visible.\nAnd say the form name correctly: \u201cInterconnection Work Order / Clearance.\u201d Not \u201cpermission.\u201d Not \u201capproval.\u201d\nThose are different disasters.",
+      "nextLine": "The tray waits under the glass\u2026",
+      "revisedLine": "Good. Actual objects. I can record those. (pause)\nSlide the token to the line. (pause)\nKeep the serial visible. (pause)\nAnd say it straight. \u201cInterconnection Work Order\u2014Clearance.\u201d (pause)\nStart calling it \u201cpermission\u201d or \u201capproval\u201d (pause)\nand it turns into a different disaster.",
+      "changeSummary": "Kept instructions and exact form name; removed repetitive contrast structure and made it sound spoken. | Inserted (pause) breaks to keep each beat under 8 words. Replaced the colon with a period to avoid commas while keeping meaning and cadence. | Replaced the \u201c/\u201d in the quoted title with an em dash to keep that beat under 8 words without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-059.json",
+      "id": "N35_CLERK_UPSTREAM_NEEDS",
+      "priorLine": "What does upstream need to see on this packet?",
+      "lineToEdit": "Continuity.\nNo blank spaces. No new verbs.\nAnd if the node is flagged, upstream will bounce it regardless of how clean my stamps are.\nThat\u2019s not my opinion. That\u2019s routing.",
+      "nextLine": "The tray waits under the glass\u2026",
+      "revisedLine": "Continuity. (pause)\nNo blank spaces. (pause)\nNo new verbs. (pause)\nIf the node\u2019s flagged, upstream bounces it. (pause)\nClean stamps or not. (pause)\nThat\u2019s routing.",
+      "changeSummary": "Kept upstream requirements and routing reality; made it more clipped and less argumentative. | Added pauses to keep each beat under 8 words. Split the long sentence into two beats without changing meaning; kept comma count within limit."
+    },
+    {
+      "scene": "SCN_SCN-059.json",
+      "id": "N91_CLERK_VALIDATE",
+      "priorLine": "You slide the token into the tray.\nThe clerk doesn\u2019t pick it up at first\u2014just looks at the impression like it might change its mind.",
+      "lineToEdit": "Serial matches the recovery ledger.\nTolerance band is narrow. Don\u2019t treat it like a suggestion.\nAMR standing is valid. TER is current.\nWhich means I can do my part without becoming interesting.",
+      "nextLine": "Paper moves behind the glass.\nA stamp lands, lifts, lands again\u2014measured, almost tender in its violence.",
+      "revisedLine": "Serial matches the recovery ledger. (pause)\nTolerance band\u2019s tight. (pause)\nDon\u2019t treat it like a suggestion. (pause)\nAMR standing is valid. (pause)\nTER is current. (pause)\nSo I can do my part, (pause)\nand stay boring.",
+      "changeSummary": "Kept all validations and the warning; made the last beat more natural and weary. | Added (pause) breaks so each beat stays under 8 words; added one comma for cadence while keeping meaning unchanged."
+    },
+    {
+      "scene": "SCN_SCN-059.json",
+      "id": "N93_CLERK_PACKET",
+      "priorLine": "Paper moves behind the glass.\nA stamp lands, lifts, lands again\u2014measured, almost tender in its violence.",
+      "lineToEdit": "Interconnection Work Order / Clearance packet.\nProvisional, pending upstream review. That\u2019s the legal mood.\nKeep the packet closed until a checkpoint asks you to open it.\nVoluntary openness looks like tampering. Don\u2019t argue with that. It\u2019s older than both of us.",
+      "nextLine": "A thick envelope slides through the lower slot, edges square, corners already worn by expectation.\nAn extra insert rides with it\u2014paper that doesn\u2019t match the rest, folded like it was meant to be found later.",
+      "revisedLine": "Interconnection Work Order. (pause) Clearance packet. (pause)\nProvisional pending upstream review. (pause) That\u2019s the wording. (pause)\nKeep it closed until a checkpoint says. (pause) Otherwise leave it shut. (pause)\nOpen it early and it reads like tampering. (pause) Don\u2019t argue. (pause) This rule\u2019s older than both of us.",
+      "changeSummary": "Kept all instructions and \u201cprovisional\u201d status; tightened for screen and reduced compliance tone. | Split into short beats using (pause) to meet max beat length. Removed commas while preserving meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-059.json",
+      "id": "N96_CLERK_INSERT_EXPLAIN",
+      "priorLine": "What\u2019s the insert?",
+      "lineToEdit": "Map fragment. Third set.\nDon\u2019t look at me like that. It\u2019s part of the continuity kit.\nIf the corridor signage doesn\u2019t agree with itself\u2014and it won\u2019t\u2014you\u2019ll want something that at least argues consistently.",
+      "nextLine": "Next.",
+      "revisedLine": "Map fragment. Third set. (pause)\nYeah, I know. (pause)\nIt\u2019s part of the continuity kit. (pause)\nWhen the corridor signage contradicts itself\u2014 (pause)\nand it will\u2014 (pause)\nyou\u2019ll want something consistent.",
+      "changeSummary": "Kept map fragment/third set/continuity kit and signage issue; made it sound more offhand and defensive. | Inserted (pause) breaks so each beat stays under 8 words; tightened phrasing slightly while preserving meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-059.json",
+      "id": "N97_CLERK_FINAL_NEXT",
+      "priorLine": "Map fragment. Third set.\nDon\u2019t look at me like that. It\u2019s part of the continuity kit.\nIf the corridor signage doesn\u2019t agree with itself\u2014and it won\u2019t\u2014you\u2019ll want something that at least argues consistently.",
+      "lineToEdit": "Next.",
+      "nextLine": "",
+      "revisedLine": "Next\u2014move.",
+      "changeSummary": "Kept the queue call; added a brusque wrap-up."
+    }
+  ]
+}

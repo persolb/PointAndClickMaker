@@ -1,0 +1,92 @@
+{
+  "screen_id": "MIS-06",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Tool bench",
+      "slug": "tool_bench",
+      "file": "images/MIS-06-mask-tool_bench.png",
+      "boxes": [
+        {
+          "label": "Tool bench",
+          "box_2d": [
+            712,
+            0,
+            998,
+            626
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Message placards",
+      "slug": "message_placards",
+      "file": "images/MIS-06-mask-message_placards.png",
+      "boxes": [
+        {
+          "label": "message placards",
+          "box_2d": [
+            319,
+            686,
+            407,
+            755
+          ]
+        },
+        {
+          "label": "message placards",
+          "box_2d": [
+            319,
+            765,
+            400,
+            810
+          ]
+        },
+        {
+          "label": "message placards",
+          "box_2d": [
+            419,
+            686,
+            526,
+            755
+          ]
+        },
+        {
+          "label": "message placards",
+          "box_2d": [
+            415,
+            757,
+            527,
+            818
+          ]
+        },
+        {
+          "label": "message placards",
+          "box_2d": [
+            542,
+            694,
+            626,
+            818
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Barter box",
+      "slug": "barter_box",
+      "file": "images/MIS-06-mask-barter_box.png",
+      "boxes": [
+        {
+          "label": "Barter box",
+          "box_2d": [
+            638,
+            672,
+            792,
+            861
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "screen_id": "LIM-08",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Mirror-surface aperture",
+      "slug": "mirror_surface_aperture",
+      "file": "story_specific_gen/images/LIM-08-mask-mirror_surface_aperture.png",
+      "boxes": [
+        {
+          "label": "Mirror-surface aperture",
+          "box_2d": [
+            201,
+            335,
+            622,
+            650
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Control shroud label",
+      "slug": "control_shroud_label",
+      "file": "story_specific_gen/images/LIM-08-mask-control_shroud_label.png",
+      "boxes": [
+        {
+          "label": "Control shroud label with text \"REVERSE ROUTING CORRECTION\"",
+          "box_2d": [
+            647,
+            349,
+            708,
+            622
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Radio sweet-spot floor mark",
+      "slug": "radio_sweet_spot_floor_mark",
+      "file": "story_specific_gen/images/LIM-08-mask-radio_sweet_spot_floor_mark.png",
+      "boxes": [
+        {
+          "label": "Radio sweet-spot floor mark",
+          "box_2d": [
+            750,
+            274,
+            981,
+            706
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Outgoing packet chute",
+      "slug": "outgoing_packet_chute",
+      "file": "story_specific_gen/images/LIM-08-mask-outgoing_packet_chute.png",
+      "boxes": [
+        {
+          "label": "Outgoing packet chute",
+          "box_2d": [
+            693,
+            764,
+            735,
+            814
+          ]
+        }
+      ]
+    }
+  ]
+}

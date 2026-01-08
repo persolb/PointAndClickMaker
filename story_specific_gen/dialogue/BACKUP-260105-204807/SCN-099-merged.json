@@ -1,0 +1,31 @@
+{
+  "changes": [
+    {
+      "action": "add",
+      "createScene": {
+        "dialogueGraphs": [
+          {
+            "id": "OPS_CORRIDOR_EXIT_TO_RECORDS_HALL",
+            "nodes": [
+              {
+                "id": "N_EXIT",
+                "next": "END_EXIT_TO_RECORDS",
+                "speakerId": "NARRATOR",
+                "text": "You step back toward Records Hall. The corridor lets you go without comment, like it was never meant to hold you\u2014only your signatures.",
+                "type": "npc_line"
+              },
+              {
+                "id": "END_EXIT_TO_RECORDS",
+                "type": "end"
+              }
+            ],
+            "sceneId": "SCN-099",
+            "startNodeId": "N_EXIT"
+          }
+        ]
+      },
+      "op": "create_scene"
+    }
+  ],
+  "sceneId": "SCN-099"
+}

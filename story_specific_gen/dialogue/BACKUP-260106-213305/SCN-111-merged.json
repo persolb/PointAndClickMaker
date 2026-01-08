@@ -1,0 +1,146 @@
+{
+  "changes": [
+    {
+      "action": "add",
+      "createScene": {
+        "dialogueGraphs": [
+          {
+            "id": "SCN_111_ALARM_PANEL_INTERACTION",
+            "nodes": [
+              {
+                "id": "N30_ALARM_DESC_1",
+                "next": "N31_ALARM_DESC_2",
+                "speakerId": "NARRATOR",
+                "text": "The alarm panel is an antique grid of labeled lights. Half the labels have been replaced by tape that insists it was always official.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N31_ALARM_DESC_2",
+                "next": "N32_ALARM_MENU",
+                "speakerId": "NARRATOR",
+                "text": "One amber indicator reads: \u201cINTERLOCK STATUS: AMBIGUOUS.\u201d It is on.",
+                "type": "npc_line"
+              },
+              {
+                "choices": [
+                  {
+                    "id": "C_ASK_AMBIGUOUS",
+                    "next": "N33_PLAYER_AMBIGUOUS",
+                    "text": "ask \u201cWhat\u2019s ambiguous.\u201d"
+                  },
+                  {
+                    "id": "C_USE_ACK",
+                    "next": "N36_PLAYER_ACK",
+                    "text": "use \u201cAcknowledge.\u201d"
+                  },
+                  {
+                    "id": "C_END",
+                    "next": "N92_END_ALARM_PANEL",
+                    "text": "leave."
+                  }
+                ],
+                "id": "N32_ALARM_MENU",
+                "speakerId": "PLAYER",
+                "type": "player_choice"
+              },
+              {
+                "id": "N33_PLAYER_AMBIGUOUS",
+                "next": "N34_ALARM_NO_DETAIL",
+                "speakerId": "PLAYER",
+                "text": "What\u2019s ambiguous.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N34_ALARM_NO_DETAIL",
+                "next": "N35_LIAISON_AMBIGUOUS",
+                "speakerId": "NARRATOR",
+                "text": "The panel offers no further detail. The ambiguity is apparently a completed state.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N35_LIAISON_AMBIGUOUS",
+                "next": "N35B_AFTER_ALARM_MENU",
+                "speakerId": "EAC_LIAISON",
+                "text": "Ambiguous is a loaded term. (pause)\nIn assurance language it means: (pause)\n\u201cWe knew this would happen.\u201d (pause)\n\u201cAnd chose not to define it.\u201d (pause)\nNot negligence. Legally.",
+                "type": "npc_line"
+              },
+              {
+                "choices": [
+                  {
+                    "id": "C_USE_PRINTER_FROM_ALARM_ASK",
+                    "next": "N92_END_ALARM_PANEL",
+                    "text": "leave (back)."
+                  },
+                  {
+                    "id": "C_USE_BINDER_FROM_ALARM_ASK",
+                    "next": "N92_END_ALARM_PANEL",
+                    "text": "leave (back)."
+                  },
+                  {
+                    "id": "C_TALK_CONSOLE_FROM_ALARM_ASK",
+                    "next": "N92_END_ALARM_PANEL",
+                    "text": "leave (back)."
+                  }
+                ],
+                "id": "N35B_AFTER_ALARM_MENU",
+                "speakerId": "PLAYER",
+                "type": "player_choice"
+              },
+              {
+                "id": "N36_PLAYER_ACK",
+                "next": "N37_ALARM_ACK_RESULT",
+                "speakerId": "PLAYER",
+                "text": "Acknowledging.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N37_ALARM_ACK_RESULT",
+                "next": "N38_LIAISON_ACK",
+                "speakerId": "NARRATOR",
+                "text": "You press ACK. The amber light goes from steady to steady, but now it\u2019s the steadiness of something that can say it was acknowledged.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N38_LIAISON_ACK",
+                "next": "N39_AFTER_ACK_MENU",
+                "speakerId": "EAC_LIAISON",
+                "text": "Documented. (pause)\nAcknowledged alarms are easier to defend (pause)\nthan unacknowledged alarms, even when (pause)\nnothing changes physically. (pause)\nThat sentence is why I drink (pause)\nwater like it\u2019s a job.",
+                "type": "npc_line"
+              },
+              {
+                "choices": [
+                  {
+                    "id": "C_USE_PRINTER_FROM_ACK",
+                    "next": "N92_END_ALARM_PANEL",
+                    "text": "leave (back)."
+                  },
+                  {
+                    "id": "C_USE_BINDER_FROM_ACK",
+                    "next": "N92_END_ALARM_PANEL",
+                    "text": "leave (back)."
+                  },
+                  {
+                    "id": "C_END_AFTER_ACK",
+                    "next": "N92_END_ALARM_PANEL",
+                    "text": "leave."
+                  }
+                ],
+                "id": "N39_AFTER_ACK_MENU",
+                "speakerId": "PLAYER",
+                "type": "player_choice"
+              },
+              {
+                "id": "N92_END_ALARM_PANEL",
+                "type": "end"
+              }
+            ],
+            "sceneId": "SCN-111",
+            "startNodeId": "N30_ALARM_DESC_1"
+          }
+        ]
+      },
+      "op": "create_scene"
+    }
+  ],
+  "sceneId": "SCN-111"
+}

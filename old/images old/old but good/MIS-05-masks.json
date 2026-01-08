@@ -1,0 +1,39 @@
+{
+  "screen_id": "MIS-05",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Beacon dial",
+      "slug": "beacon_dial",
+      "file": "images/MIS-05-mask-beacon_dial.png",
+      "boxes": [
+        {
+          "label": "Beacon dial",
+          "box_2d": [
+            270,
+            560,
+            420,
+            701
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Coil shelf",
+      "slug": "coil_shelf",
+      "file": "images/MIS-05-mask-coil_shelf.png",
+      "boxes": [
+        {
+          "label": "coil shelf",
+          "box_2d": [
+            499,
+            98,
+            599,
+            461
+          ]
+        }
+      ]
+    }
+  ]
+}

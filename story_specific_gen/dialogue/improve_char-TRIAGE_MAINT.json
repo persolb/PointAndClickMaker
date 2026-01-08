@@ -1,0 +1,148 @@
+{
+  "nodes": [
+    {
+      "scene": "SCN_SCN-055.json",
+      "id": "TRIAGE_INTRO",
+      "priorLine": "The AMR registry reader sits under a hooded task light, as if it\u0019s being interrogated. A slot labeled PRINTOUT is jammed with old perforated stock. The screen displays: SPONSOR REQUIRED.",
+      "lineToEdit": "You\u0019re looking at it like it owes you something.\nIt doesn\u0019t. The registry only acknowledges three things: a sponsor, a scope, and an acceptable failure mode.\nAnything else is\u0014 (stops) \u0014a story.",
+      "nextLine": "",
+      "revisedLine": "You're staring at it like it'll blink first. (pause)\nIt won't. (pause)\nIt wants three fields: sponsor. (pause)\nScope. (pause)\nAcceptable failure mode. (pause)\nAnything else is\u2014 (cuts off) \u2014a story.",
+      "changeSummary": "Made the opener more immediate and irritated; kept the three required fields and the same warning about anything beyond them becoming \"a story.\" | Split the line into shorter beats using (pause) breaks to keep each beat under 8 words. Removed list commas by breaking the three fields into separate beats, preserving the same three required fields."
+    },
+    {
+      "scene": "SCN_SCN-055.json",
+      "id": "TRIAGE_EXPLAIN_AMR",
+      "priorLine": "ask: \u001cAMR?\u001d",
+      "lineToEdit": "Attached Mass Registry. It\u0019s how we pretend a thing is a thing without admitting we discovered a new category of thing.\n\u001cAttached\u001d means it stays attached to an existing endpoint record.\n\u001cMass\u001d means we\u0019re not arguing about whether it\u0019s a person, a tool, or a\u0014 (catches self) \u0014a compliance event.\n\u001cRegistry\u001d means it becomes someone else\u0019s problem later, which is the only sustainable model.\nPick one: scope, sponsor, failure mode.",
+      "nextLine": "",
+      "revisedLine": "Attached Mass Registry. (pause)\nPaperwork hack. (pause)\nFile it without a new bucket. (pause)\nAttached: rides an existing endpoint record. (pause)\nMass: we don\u2019t litigate what it is. (pause)\nRegistry: it\u2019s in the system. (pause)\nOut of my hands. (pause)\nNow pick: scope. (pause)\nSponsor. (pause)\nFailure mode.",
+      "changeSummary": "Cut the lecture tone and tightened definitions into shorthand while preserving what AMR stands for, the intent of each term, and the same prompt to choose scope/sponsor/failure mode. | Inserted (pause) breaks to keep each beat under 8 words. Removed extra commas by turning the final list into separate beats. Tightened the second sentence to preserve meaning without adding explainer phrasing."
+    },
+    {
+      "scene": "SCN_SCN-055.json",
+      "id": "TRIAGE_EXPLAIN_SPONSOR",
+      "priorLine": "ask: \u001cSponsor. You?\u001d",
+      "lineToEdit": "Me sponsoring means I accept it is maintenance-class, not research-class, not incident-class, and definitely not \u001cnovel.\u001d\nI can sponsor within scope. I do not sponsor mystery.\nGive me a sentence I can sign that doesn\u0019t turn into a hearing.\nPick: show me the endpoint, or tell me the failure mode.",
+      "nextLine": "",
+      "revisedLine": "If I sponsor it it stays maintenance-class. (pause)\nOn the record. Period. (pause)\nI'll do that inside scope. (pause)\nI'm not putting my name on a mystery. (pause)\nGive me one sentence I can sign. (pause)\nNo hearings later. (pause)\nShow me the endpoint or the failure mode.",
+      "changeSummary": "Shifted to a defensive, in-the-moment refusal while keeping the maintenance-class requirement, the scope limitation, and the same request for endpoint or failure mode. | Split into short beats with (pause) to meet max beat length. Removed commas to meet max comma limit; kept meaning and cadence, and fixed corrupted apostrophes."
+    },
+    {
+      "scene": "SCN_SCN-055.json",
+      "id": "TRIAGE_READ_METADATA",
+      "priorLine": "show: \u001cI\u0019ve got legacy metadata on the endpoint.\u001d",
+      "lineToEdit": "Let me see.\n(reads, lips moving) Mm. Legacy metadata helps, because it implies the endpoint already exists on paper.\nPaper is the closest thing we have to reality in this building.\nBut metadata doesn\u0019t tell me what you want the AMR to say.\nIt needs an acceptable failure mode. Something boring. Something that won\u0019t evolve.",
+      "nextLine": "",
+      "revisedLine": "Let's see it. (pause)\n(reads lips moving) Mm. Okay. Legacy helps. (pause)\nMeans there's already a record. (pause)\nTo hang this off. (pause)\nAnd yeah. The paper's what passes for reality. (pause)\nAround here. (pause)\nStill doesn't tell me. (pause)\nWhat you want the AMR to say. (pause)\nI need an acceptable failure mode. (pause)\nKeep it boring. (pause)\nKeep it stable.",
+      "changeSummary": "Kept the same beats (legacy metadata helps, paper-as-reality, AMR still needs a failure mode) but made it more reactive and less formal. | Added (pause) breaks to keep each beat under 8 words. Removed the comma in the stage direction to meet the comma limit."
+    },
+    {
+      "scene": "SCN_SCN-055.json",
+      "id": "TRIAGE_EXPLAIN_FAILURE",
+      "priorLine": "ask: \u001cAcceptable failure mode?\u001d",
+      "lineToEdit": "\u001cAcceptable\u001d means I can warranty the intervention. Not the universe.\nExamples: misclassification of endpoint, routing error, degraded seal geometry, sensor inversion, reflective behavior\u0014\nWhich is not a reflection. Legally. Because \u001creflection\u001d implies the surface is behaving as designed.\nYou tell me which one you can live with in writing.",
+      "nextLine": "",
+      "revisedLine": "Acceptable: I can stand behind *our* fix. (pause) That\u2019s it. (pause)\nPick a label. (pause)\nMisclassification of endpoint. (pause)\nRouting error. (pause)\nDegraded seal geometry. (pause)\nSensor inversion. (pause)\nReflective behavior. (pause)\nAnd don\u2019t write \u201creflection.\u201d (pause)\nLegal people lose their minds over that word. (pause)\nTell me what you\u2019ll put in writing.",
+      "changeSummary": "Removed the formal definitional structure while preserving the warranty limitation, the example list, and the legal sensitivity around \"reflection\" versus \"reflective behavior.\" | Broke the line into short (pause) beats to keep each under 8 words. Reformatted the label list into separate beats and removed commas. Swapped \u201cmeans\u201d for a colon to keep meaning while reducing explainer-style phrasing."
+    },
+    {
+      "scene": "SCN_SCN-055.json",
+      "id": "TRIAGE_THREAT_RESP",
+      "priorLine": "threaten: \u001cFine. I\u0019ll log it as open anomaly and escalate.\u001d",
+      "lineToEdit": "Sure. Log \u001copen anomaly.\u001d Put \u001cunknown\u001d in a field and watch it reproduce.\nThen we get an assurance liaison asking what framework it\u0019s comparable to, and you\u0019ll be here next week with a binder and a headache.\nI\u0019m offering you a boring path. Take it, or don\u0019t.\nPick: scope, sponsor, failure mode.",
+      "nextLine": "",
+      "revisedLine": "Sure. Log an open anomaly. (pause) Type \"unknown\" once. (pause) It spreads. (pause) Then Assurance shows up. (pause) Wants a comparison framework. (pause) You\u2019ll be back next week. (pause) With a binder and a migraine. (pause) I\u2019m handing you the boring way through. (pause) Pick scope. (pause) Pick sponsor. (pause) Pick failure mode.",
+      "changeSummary": "Kept the escalation consequences and the same three-option prompt, but tightened phrasing and made the pushback more immediate and practical. | Split the line into short beats with (pause) to meet the 8-word limit, removed commas, and broke the final list into three quick picks while keeping the same meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-055.json",
+      "id": "TRIAGE_PERSUADE_PASS",
+      "priorLine": "",
+      "lineToEdit": "I don\u0019t care if you\u0019re closing the moon by end of quarter.\nOLEA closure packets are a bonfire of other people\u0019s signatures. I\u0019m not adding mine unless the sentence is tight.\nI can issue an AMR tag and a tool that does one thing and can\u0019t be mistaken for permission.\nBut you\u0019re going to pick a framing that keeps this inside Interconnection Maintenance.\nChoose your failure mode. Then we do it.",
+      "nextLine": "Scope is what the tag allows you to touch without it becoming \u001ctampering.\u001d\nWe do: identify, attach, seal, and document.\nWe do not: test, probe, explore, or\u0014 (flat) \u0014go.\nIf you need tools, you get a tool that implies a seal, not a theory.\nNow. What are we calling the problem?",
+      "revisedLine": "I don\u2019t care if you\u2019re closing the moon (pause) by end of quarter. (pause) OLEA closure packets are piles of signatures. (pause) I\u2019m not adding mine unless it\u2019s clean. (pause) I can cut an AMR tag (pause) and hand you a tool (pause) that does one thing (pause) and doesn\u2019t read like permission. (pause) You keep this inside Interconnection Maintenance. (pause) Pick the failure mode. (pause) Then we move.",
+      "changeSummary": "Reduced polished phrasing and kept the same constraints: signature risk, AMR tag + single-purpose tool, must stay within Interconnection Maintenance, choose failure mode to proceed. | Split the line into short beats using (pause) so each beat stays under 8 words. Kept meaning and cadence, tightened one phrase (\u201csentence is clean\u201d to \u201cit\u2019s clean\u201d), and avoided commas and explainer phrasing."
+    },
+    {
+      "scene": "SCN_SCN-055.json",
+      "id": "TRIAGE_PERSUADE_FAIL",
+      "priorLine": "",
+      "lineToEdit": "Deadline isn\u0019t a failure mode.\nIf you want my signature, you give me scope language I can stand behind. Otherwise, you\u0019re just trying to outsource consequences.\nPick: scope, sponsor, failure mode.",
+      "nextLine": "",
+      "revisedLine": "A deadline\u2019s not a failure mode. (pause)\nYou want my signature? (pause)\nGive me scope wording I can live with. (pause)\nAnything else lands on me. (pause)\nPick one: scope. Sponsor. Failure mode.",
+      "changeSummary": "Kept the refusal and the signature pressure while removing the more essay-like accusation; retained the same final three-choice prompt. | Split into short beats with (pause) markers to meet max beat words; removed list commas by breaking the options into separate beats while keeping the same ultimatum and choices."
+    },
+    {
+      "scene": "SCN_SCN-055.json",
+      "id": "TRIAGE_SCOPE_OPTIONS",
+      "priorLine": "(multiple) (ask: \u001cScope options?\u001d) (I don\u0019t care if you\u0019re closing the moon by end of quarter.\nOLEA closure packets are a bonfire of other people\u0019s signatures. I\u0019m not adding mine unless the sentence is tight.\nI can issue an AMR tag and a tool that does one thing and can\u0019t be mistaken for permission.\nBut you\u0019re going to pick a framing that keeps this inside Interconnection Maintenance.\nChoose your failure mode. Then we do it.)",
+      "lineToEdit": "Scope is what the tag allows you to touch without it becoming \u001ctampering.\u001d\nWe do: identify, attach, seal, and document.\nWe do not: test, probe, explore, or\u0014 (flat) \u0014go.\nIf you need tools, you get a tool that implies a seal, not a theory.\nNow. What are we calling the problem?",
+      "nextLine": "",
+      "revisedLine": "Scope keeps this from becoming tampering. (pause)\nOn the log. (pause)\nWith the tag you're allowed to identify. (pause)\nAttach. (pause)\nSeal. (pause)\nDocument. (pause)\nThat's it. (pause)\nNo testing. (pause)\nNo probing. (pause)\nNo exploring. (pause)\n(flat) (pause)\nNo go. (pause)\nIf you need a tool (pause)\nit'll be a seal tool. (pause)\nNothing that looks like a theory. (pause)\nSo. (pause)\nWhat are we calling it?",
+      "changeSummary": "Kept the exact allowed/prohibited actions and the tool implication, but made it sound more like a pressured boundary-setting moment. | Split the line into short beats using (pause) to meet the 8-word limit. Removed commas and broke the allowed actions into separate beats while preserving meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-055.json",
+      "id": "TRIAGE_BARGAIN_RESP",
+      "priorLine": "bargain: \u001cI\u0019ll keep it maintenance-class. You give me a tag, printout, and a tool.\u001d",
+      "lineToEdit": "Fine. You keep it maintenance-class in your reports, you don\u0019t improvise with my tag, and you don\u0019t describe outcomes with\u0014 adventurous verbs.\nIn exchange, you get: AMR entry, physical tag, printout, and one tool with one job.\nPick the sentence. I\u0019m not picking it for you.",
+      "nextLine": "",
+      "revisedLine": "Fine. (pause) Maintenance-class in your reports. (pause)\nDon't get creative with my tag. (pause) Watch your verbs. (pause) Write it up. (pause)\nYou'll get the AMR entry. (pause) The physical tag. (pause) The printout. (pause)\nAnd one tool for one job. (pause)\nYou pick the sentence. (pause) I'm not picking it for you.",
+      "changeSummary": "Broke into shorter, more spoken fragments while preserving the same conditions and the same list of items provided. | Split the dialogue into short (pause) beats under 8 words, removed commas, and kept the same directives and listed items without adding explanations."
+    },
+    {
+      "scene": "SCN_SCN-055.json",
+      "id": "TRIAGE_ROUTING_OK",
+      "priorLine": "ask: \u001cCall it a routing error at an existing endpoint.\u001d",
+      "lineToEdit": "Routing error is safe. Everyone hates it, which is how you know it\u0019s real.\nIt says: the network did what it does, and the paperwork didn\u0019t keep up.\nI can sponsor that, with one addition: \u001cNo personnel transfer implied.\u001d\nDon\u0019t react. I add that to keep other people from adding worse things later.\nIf you agree, we issue.",
+      "nextLine": "",
+      "revisedLine": "Routing error\u2019s fine. (pause) Everyone hates it. (pause) That\u2019s why it survives. (pause) Blame stays in the pipes and the file. (pause) I\u2019ll sponsor it but I\u2019m adding one line. (pause) \u201cNo personnel transfer implied.\u201d (pause) Yeah. I know. (pause) I\u2019m putting it in so nobody writes nastier. (pause) You good? (pause) Then we issue.",
+      "changeSummary": "Kept routing error as the safe choice, preserved the added phrase \"No personnel transfer implied,\" and maintained the intent of preempting worse language, with a more conversational cadence. | Added (pause) breaks so each beat stays under 8 words. Removed extra comma by rewriting \u201cI\u2019ll sponsor it, but\u2026\u201d and changing \u201cYeah, I know\u201d to \u201cYeah. I know.\u201d Kept meaning and cadence. | Trimmed one word in the \u201cI\u2019m putting\u2026\u201d beat to keep it within 8 words, without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-055.json",
+      "id": "TRIAGE_MISCLASS_OK",
+      "priorLine": "ask: \u001cCall it misclassification. Existing endpoint, wrong label.\u001d",
+      "lineToEdit": "Misclassification is\u0014 workable.\nIt admits the endpoint exists, but the label is wrong. That\u0019s upstream\u0019s shame, not mine.\nI\u0019m adding: \u001cCorrective maintenance limited to seal and registry attachment.\u001d\nYou do anything beyond that, you didn\u0019t get it from me.\nIf you agree, we issue.",
+      "nextLine": "",
+      "revisedLine": "Misclassification. Yeah. I can work with that. (pause)\nEndpoint exists. Label is wrong. (pause)\nThat stays upstream. (pause)\nI'm adding: \"Corrective maintenance limited to seal.\" (pause)\nSeal and registry attachment only. (pause)\nAnything past that. You're on your own. (pause)\nAgree. And we issue.",
+      "changeSummary": "Kept the same factual framing (existing endpoint, wrong label; upstream responsibility), preserved the exact added limitation line, and tightened the warning and issuance prompt. | Inserted (pause) breaks to keep each beat under 8 words. Replaced commas with periods and cleaned punctuation while keeping meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-055.json",
+      "id": "TRIAGE_REFLECT_OK",
+      "priorLine": "ask: \u001cUse the legacy phrase. \u0018Unexpected reflective behavior.\u0019\u001d",
+      "lineToEdit": "We can use the legacy phrase because it already survived one legal cycle.\nBut I\u0019m not writing \u001creflection.\u001d I\u0019m writing \u001creflective behavior,\u001d and then I\u0019m writing \u001cnon-reflection.\u001d\nYes, it\u0019s stupid. It\u0019s also defensible.\nIf you agree to scope-limited intervention, we issue.",
+      "nextLine": "",
+      "revisedLine": "We use the legacy phrase. (pause) It cleared one legal cycle. (pause) In the line I put \"reflective behavior\". (pause) Then I add \"non-reflection\". (pause) Yeah it's stupid. (pause) It holds up. (pause) You stick to scope-limited intervention, we issue.",
+      "changeSummary": "Preserved the legacy/legal rationale and the exact terms \"reflective behavior\" and \"non-reflection,\" while removing the more formal contrast and making the agreement condition more direct. | Split the long sentence into short beats with pauses, removed extra commas, and cleaned up encoding while keeping wording and intent."
+    },
+    {
+      "scene": "SCN_SCN-055.json",
+      "id": "TRIAGE_HANDOVER_1",
+      "priorLine": "The Maintainer keys in the entry with two fingers, like touching the wrong key could be construed as intent. The printer chatters and produces a single-page AMR printout with dense, aggressively boring language.",
+      "lineToEdit": "Okay. AMR is created and attached to the endpoint record.\nHere\u0019s your tag. Don\u0019t lose it; replacement implies duplication, and duplication implies a population.\nHere\u0019s the printout. Keep it dry. Paper is allergic to accountability.\nAnd\u0014 (rummages, irritated) \u0014this.",
+      "nextLine": "The Maintainer sets a compact, heavy tool on the bench: a seal punch with a depth stop and a serialized collar.",
+      "revisedLine": "Alright. AMR's attached to the endpoint record. (pause)\nTag. Don\u2019t lose it. (pause)\nReplacements turn into duplication, then somebody starts counting. (pause)\nPrintout. Keep it dry. (pause)\nAnd\u2014 (rummages; irritated) \u2014here.",
+      "changeSummary": "Maintained the same handover items and implications (AMR attached; tag loss implies duplication/population; keep printout dry) with a more stressed, less polished delivery. | Split the line into short beats using (pause) so each stays under 8 words. Reduced commas to one by changing the stage direction to use a semicolon and smoothing the duplication sentence without adding commas."
+    },
+    {
+      "scene": "SCN_SCN-055.json",
+      "id": "TRIAGE_TOOL_SCOPE",
+      "priorLine": "The Maintainer sets a compact, heavy tool on the bench: a seal punch with a depth stop and a serialized collar.",
+      "lineToEdit": "Scope-limited seal punch.\nIt makes one mark, at one depth, on approved material.\nIt cannot \u001copen\u001d anything. It cannot \u001ctest\u001d anything. It cannot be used as evidence of permission.\nIf someone asks, you didn\u0019t get a tool. You got a warranty boundary.",
+      "nextLine": "You receive an AMR tag, an AMR printout, and a scope-limited seal punch tool. The registry reader returns to its idle screen, satisfied in the way only a system can be when it has transferred responsibility.",
+      "revisedLine": "Scope-limited seal punch. (pause)\nOne mark. One depth. (pause)\nApproved material only. (pause)\nIt won't open anything. (pause)\nIt won't test anything. (pause)\nNobody points at it as permission. (pause)\nIf anyone asks, it's a warranty boundary. (pause)\nThat's all.",
+      "changeSummary": "Kept the same functional limits and liability framing, but tightened into punchier shorthand and removed the more formal, didactic tone. | Inserted (pause) breaks to keep each beat under 8 words. Normalized apostrophes and kept a single comma while preserving meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-055.json",
+      "id": "TRIAGE_SIGNOFF",
+      "priorLine": "You receive an AMR tag, an AMR printout, and a scope-limited seal punch tool. The registry reader returns to its idle screen, satisfied in the way only a system can be when it has transferred responsibility.",
+      "lineToEdit": "That\u0019s your paperwork. That\u0019s your scope.\nDon\u0019t make me learn new nouns about this place.",
+      "nextLine": "",
+      "revisedLine": "That's your paper. (pause) That's your scope. (pause) Please don't make me learn new nouns (pause) about this place.",
+      "changeSummary": "Swapped \"paperwork\" for more natural shorthand while preserving the same signoff and weary warning. | Added pauses to split the line into shorter beats under 8 words, and fixed the apostrophes without changing meaning or tone."
+    }
+  ]
+}

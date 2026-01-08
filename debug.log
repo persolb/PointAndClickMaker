@@ -1,0 +1,24 @@
+A sample sheet has been attached for layout reference only. **Change the character.**
+
+Create a **single baseline character sprite sheet** image following the visual rules defined in story_specific/character_style.json. Info about the character is below.
+
+Pixel art sprite sheet, native 512x512, output 1024x1024 (2x upscale), nearest-neighbor only, no anti-aliasing, no blur, no gradients, no dithering on the character, clean pixel clusters with zero single-pixel noise, selective outlining (no full black outline), high contrast 3-tone ramps max per material, minimal highlights, upper-left key light and lower-right shadow, minimal ambient occlusion only at boot contact and under collar/straps. Background must be solid magenta #FF00FF.
+
+ONE image containing a 3x3 grid of evenly spaced sprites, pixel-perfect alignment to a consistent ground line across all full-body cells; center cell of row 2 is a larger face portrait. No text, labels, UI, borders, or extra elements.
+
+Character: “Utility Dispatcher” (adult human, realistic anatomy and proportions, ~150 px tall standing sprite, ~7.5 heads tall; no chibi, no oversized head). Calm, procedural, no-nonsense. Standing idle posture, arms relaxed at sides, no dramatic poses.
+
+Canonical visual design (since character is voice-only in story, establish a plausible utility dispatch professional look):
+- Gender presentation: androgynous adult (readable as professional dispatcher), average build, upright posture.
+- Skin tone: medium-light neutral.
+- Hair: dark brown, neatly tied low bun or short tidy cut (choose one consistent across all views), no stray strands.
+- Face: neutral expression; eyes 1–2 px suggestion; mouth single small cluster; no heavy makeup; no facial hair.
+- Outfit: utility operations attire—dark navy collared work shirt or lightweight jacket over a muted gray undershirt; dark charcoal slacks; black work shoes/boots with simple silhouette. Add a small clipped radio mic on collar/shoulder and a thin headset with single earcup and boom mic (readable silhouette, no text). Add a lanyard with a blank badge card shape (no readable text), and a slim belt with a small pouch/holster. Keep costume textures simple, no micro-patterns.
+- Palette: navy/charcoal/gray with small muted accent (e.g., safety orange on radio button or lanyard clip), 3 tones per material max.
+
+Sprite layout (3x3):
+Row 1 (back views): facing away left, facing directly away, facing away right.
+Row 2 (side views): left profile (face visible), center cell: face portrait three-quarter view facing left (head and shoulders, larger than other cells but aligned within grid), right profile (face visible).
+Row 3 (front/three-quarter views): three-quarter facing camera left, facing forward, three-quarter facing camera right.
+
+Ensure consistent scale/proportions across all eight full-body sprites, same clothing/accessories placement, same ground line; portrait matches the same character design and lighting. No environment/background objects.

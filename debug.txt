@@ -1,0 +1,418 @@
+{
+  "nodes": [
+    {
+      "scene": "SCN_SCN-018.json",
+      "id": "N005_LEGAL_GREETING",
+      "priorLine": "After three rings, someone answers without saying hello.",
+      "lineToEdit": "Office of Legacy Energy Assets, Legal. This line is recorded for quality and\u2014more importantly\u2014consistency. Name and assignment.",
+      "nextLine": "Field Systems Specialist. SPINDLE closure.",
+      "revisedLine": "Office of Legacy Energy Assets, Legal. Recorded line. Name and assignment.",
+      "changeSummary": "Cut the polished intro and jokes; made it brisk and procedural under recording pressure."
+    },
+    {
+      "scene": "SCN_SCN-018.json",
+      "id": "N007_LEGAL_SCOPE",
+      "priorLine": "Field Systems Specialist. SPINDLE closure.",
+      "lineToEdit": "\u201cClosure activities,\u201d understood. Before we proceed: I can issue instruments. I cannot \u201cauthorize\u201d conduct. Those are different verbs with different afterlives.",
+      "nextLine": "",
+      "revisedLine": "Okay. \u201cClosure activities.\u201d I can issue instruments. Don\u2019t ask me to \u201cauthorize\u201d conduct on this line.",
+      "changeSummary": "Kept the boundary but made it reactive and wary of the recording."
+    },
+    {
+      "scene": "SCN_SCN-018.json",
+      "id": "N020_AUTH_REBUKE",
+      "priorLine": "(multiple) (talk: I need authorization to enter and proceed.) (talk: Fine. Authorization isn\u2019t the word.)",
+      "lineToEdit": "I can\u2019t give you \u201cauthorization to enter.\u201d Not because you don\u2019t have a key, and not because you shouldn\u2019t be there. Because \u201cauthorize\u201d implies we evaluated conditions we have not evaluated.\nWhat I can do is issue a Work Order describing a narrow task against a specific asset, for purposes of closure documentation. That is the shape of help I\u2019m allowed to be.",
+      "nextLine": "",
+      "revisedLine": "I can\u2019t say \u201cauthorized to enter.\u201d That word reads like we evaluated conditions.\nWe didn\u2019t.\nWhat I can do is a Work Order\u2014narrow task, specific asset, closure documentation. That\u2019s what I\u2019m allowed to put my name on.",
+      "changeSummary": "Removed the banned contrast structure; kept the same refusal and the Work Order workaround, with tighter, stressed cadence."
+    },
+    {
+      "scene": "SCN_SCN-018.json",
+      "id": "N022_ALLOWED_SAY",
+      "priorLine": "ask: So what am I allowed to say I\u2019m doing?",
+      "lineToEdit": "You are \u201con site for closure documentation.\u201d You are not \u201cinvestigating,\u201d not \u201cevaluating anomalous conditions,\u201d and not \u201cconfirming safety.\u201d\nThose phrases imply we had a safety baseline to compare against. We do not. We have a checklist and a funding deadline.",
+      "nextLine": "",
+      "revisedLine": "Say: \u201con site for closure documentation.\u201d\nLeave \u201cinvestigating,\u201d \u201cevaluating anomalous conditions,\u201d and \u201cconfirming safety\u201d out of it.\nThose words read like there was a baseline. There isn\u2019t. There\u2019s a checklist and a funding deadline.",
+      "changeSummary": "Kept the allowed wording and banned phrases; made it sound like immediate, record-conscious damage control."
+    },
+    {
+      "scene": "SCN_SCN-018.json",
+      "id": "N023_COVERAGE",
+      "priorLine": "talk: I\u2019m standing at the site. I need coverage.",
+      "lineToEdit": "I can provide an instrument that describes a narrow task against a specific asset. I cannot provide a blanket sentence that later reads like foreknowledge.\nIf you want defensible coverage, you want boring specificity.",
+      "nextLine": "",
+      "revisedLine": "I can give you an instrument for a narrow task on a specific asset. I\u2019m not giving you a big, vague sentence that reads like we knew things.\nIf you want coverage, keep it boring. Keep it specific.",
+      "changeSummary": "Reduced formal phrasing; kept the same limits and the push toward narrow, specific language."
+    },
+    {
+      "scene": "SCN_SCN-018.json",
+      "id": "N030_WRITING",
+      "priorLine": "ask: What can you put in writing?",
+      "lineToEdit": "A Work Order. A waiver. A memo that says \u201cthis communication exists.\u201d\nNot a sentence that implies we predicted outcomes, endorsed conditions, or \u201cauthorized entry.\u201d Those phrases turn a facility into a promise.",
+      "nextLine": "",
+      "revisedLine": "A Work Order. A waiver. A memo that just says the call happened.\nI\u2019m not writing anything that looks like we predicted outcomes, endorsed conditions, or \u201cauthorized entry.\u201d",
+      "changeSummary": "Kept the same document options and refusals; cut the aphoristic flourish and tightened the tone."
+    },
+    {
+      "scene": "SCN_SCN-018.json",
+      "id": "N040_WORKORDER_DIRECT",
+      "priorLine": "(multiple) (ask: I need a Work Order.) (ask: I need a Work Order.)",
+      "lineToEdit": "Good. That\u2019s a real noun. Work Orders attach to assets. Provide the asset ID.",
+      "nextLine": "",
+      "revisedLine": "Good. Work Orders attach to assets. Give me the asset ID.",
+      "changeSummary": "Trimmed the quip; kept the same instruction and urgency."
+    },
+    {
+      "scene": "SCN_SCN-018.json",
+      "id": "N050_NEED_ASSET_ID",
+      "priorLine": "(multiple) (ask: Then issue the Work Order.) (ask: Then issue the Work Order.)",
+      "lineToEdit": "I can. For that I need the asset identifier. Not the site nickname. Not the project acronym. The asset ID as it appears on the register.\nThis is where people improvise and then we all spend six months pretending the improv was a clerical error.",
+      "nextLine": "",
+      "revisedLine": "I can\u2014once I have the asset identifier. The asset ID as it sits on the register.\nDon\u2019t give me the nickname, don\u2019t give me the acronym. People freestyle here and it turns into six months of cleanup.",
+      "changeSummary": "Kept the requirement and the warning; made it more spoken and less formally structured."
+    },
+    {
+      "scene": "SCN_SCN-018.json",
+      "id": "N070_SP01_CONFIRM",
+      "priorLine": "give: Asset ID is SP-01.",
+      "lineToEdit": "SP-zero-one. Thank you. That is an asset, not an argument.\nI will issue a Work Order for closure-support activities limited to verification and documentation steps as listed on the standard retirement checklist\u2014no deviation, no exploratory language, and nothing that implies you\u2019re there to \u201ctest\u201d anything.\nIt will be routed to the facility\u2019s posted fax number.",
+      "nextLine": "",
+      "revisedLine": "SP-zero-one. Thank you.\nI\u2019ll issue a Work Order for closure-support activities\u2014verification and documentation only, standard retirement checklist. No deviation. No exploratory wording. Don\u2019t write \u201ctest.\u201d\nI\u2019ll route it to the facility\u2019s posted fax number.",
+      "changeSummary": "Preserved the Work Order scope and constraints; broke it into tighter, screen-ready fragments."
+    },
+    {
+      "scene": "SCN_SCN-018.json",
+      "id": "N072_REFNUM",
+      "priorLine": "ask: Give me the reference number.",
+      "lineToEdit": "Reference number: WO-RET-SP01. Put that in your notes. Do not put \u201cauthorized.\u201d Put \u201cWork Order issued for SP-01 closure documentation.\u201d",
+      "nextLine": "",
+      "revisedLine": "Reference number is WO-RET-SP01. Write that.\nAnd don\u2019t write \u201cauthorized.\u201d Write: \u201cWork Order issued for SP-01 closure documentation.\u201d",
+      "changeSummary": "Kept the exact reference and wording guidance; made it curt and in-the-moment."
+    },
+    {
+      "scene": "SCN_SCN-018.json",
+      "id": "N073_SEND",
+      "priorLine": "talk: No. Just send it.",
+      "lineToEdit": "It will be sent. Do not describe this as \u201cauthorization.\u201d Describe it as \u201cWork Order issued for SP-01 closure documentation.\u201d\nGoodbye.",
+      "nextLine": "",
+      "revisedLine": "I\u2019m sending it.\nDon\u2019t call it \u201cauthorization.\u201d Call it \u201cWork Order issued for SP-01 closure documentation.\u201d\nGoodbye.",
+      "changeSummary": "Maintained the same instruction and exit; added snap and impatience."
+    },
+    {
+      "scene": "SCN_SCN-018.json",
+      "id": "N080_NO_ID",
+      "priorLine": "talk: I don\u2019t have the asset ID in front of me.",
+      "lineToEdit": "Then I can\u2019t issue anything. If I issue a Work Order to the wrong asset, you don\u2019t get \u201ccoverage,\u201d you get a discrepancy. Discrepancies breed questions.\nFind the plaque, the posted register, the asset tag\u2014whatever the site still has that passes for identity\u2014and call me back with the ID.",
+      "nextLine": "",
+      "revisedLine": "Then I can\u2019t issue anything.\nIf I hang a Work Order on the wrong asset, you don\u2019t get coverage\u2014you get a discrepancy, and then you get questions.\nFind the plaque, the posted register, the asset tag\u2014whatever passes for an ID out there\u2014and call me back.",
+      "changeSummary": "Kept the same refusal and instructions; tightened the consequence chain into sharper, stressed phrasing."
+    },
+    {
+      "scene": "SCN_SCN-018.json",
+      "id": "N090_LOOKUP_REFUSAL",
+      "priorLine": "look: What does the register call it?",
+      "lineToEdit": "I\u2019m not a registry service. And before you ask: yes, we have an Asset Register. No, I\u2019m not going to read it into a recorded line and create a new record of what I \u201cknew\u201d when.\nYou are onsite. The onsite label wins. Call back with the plaque text.",
+      "nextLine": "",
+      "revisedLine": "I\u2019m not reading the Asset Register to you on a recorded line.\nYou\u2019re on site. Use the label that\u2019s physically there. Call me back with the plaque text.",
+      "changeSummary": "Removed the lecturey setup; kept the same refusal and the reason implied by the recorded line."
+    },
+    {
+      "scene": "SCN_SCN-018.json",
+      "id": "N100_PERSUADE_PASS",
+      "priorLine": "",
+      "lineToEdit": "I appreciate the creativity. I\u2019m going to decline it. \u201cProvisional\u201d is not a legal state; it\u2019s a mood.\nIf you need immediate language, here is what you can say without making me a participant: \u201cI am conducting site preservation and closure documentation pending issuance of a Work Order.\u201d\nCall me back with the asset ID, and I issue the actual instrument.",
+      "nextLine": "",
+      "revisedLine": "Yeah, I\u2019m not doing \u201cprovisional\u201d on a recorded line.\nIf you need something to say right now, use this: \u201cI am conducting site preservation and closure documentation pending issuance of a Work Order.\u201d\nThen call me back with the asset ID and I\u2019ll issue the instrument.",
+      "changeSummary": "Kept the same denial and the exact safe sentence; made the tone more wary and immediate."
+    },
+    {
+      "scene": "SCN_SCN-018.json",
+      "id": "N101_PERSUADE_FAIL",
+      "priorLine": "",
+      "lineToEdit": "No. If you need urgency, I can give you phrasing, not instruments. Instruments require identifiers.\nCall back with the ID. The system rewards specificity. It punishes speed.",
+      "nextLine": "",
+      "revisedLine": "No. I can give you phrasing. I can\u2019t give you instruments without an identifier.\nGet me the ID and call back.",
+      "changeSummary": "Removed slogan-like lines while preserving the same constraint and next step."
+    },
+    {
+      "scene": "SCN_SCN-061.json",
+      "id": "N512_RADIO_LEGAL_1",
+      "priorLine": "\u2026not \u201creturn,\u201d it\u2019s a\u2014 it\u2019s a reversion to the prior facility state. Words matter because funding follows words\u2014",
+      "lineToEdit": "\u201cReturn\u201d implies departure. Departure implies consent. Consent implies review. We did not\u2014 we are not on record\u2014",
+      "nextLine": "I\u2019m not litigating verbs, I\u2019m saying the completion bonus is contingent on presence at the closure site, and if we define the site as\u2014",
+      "revisedLine": "\u201cReturn\u201d reads like there was a departure everybody agreed to. Then it reads like consent. Then it reads like review.\nWe did not\u2014 we are not on record\u2014",
+      "changeSummary": "Kept the same semantic objection; made it sound like a rushed radio interruption."
+    },
+    {
+      "scene": "SCN_SCN-061.json",
+      "id": "N514_RADIO_LEGAL_2",
+      "priorLine": "I\u2019m not litigating verbs, I\u2019m saying the completion bonus is contingent on presence at the closure site, and if we define the site as\u2014",
+      "lineToEdit": "Define it as \u201coccupied for documentation.\u201d Not \u201cabandoned.\u201d Not \u201cleft.\u201d \u201cAbandoned\u201d is how you invite a third party to claim\u2014",
+      "nextLine": "Third party? There is no third party. It\u2019s municipal infrastructure. It\u2019s ours by default\u2014",
+      "revisedLine": "Use \u201coccupied for documentation.\u201d Keep \u201cabandoned\u201d and \u201cleft\u201d out of it.\n\u201cAbandoned\u201d is how you invite a third party claim\u2014",
+      "changeSummary": "Preserved the preferred definition and the warning; removed the repetitive contrast beat."
+    },
+    {
+      "scene": "SCN_SCN-061.json",
+      "id": "N516_RADIO_LEGAL_3",
+      "priorLine": "Third party? There is no third party. It\u2019s municipal infrastructure. It\u2019s ours by default\u2014",
+      "lineToEdit": "\u201cBy default\u201d is not a chain of title. Also: stop saying \u201cstill.\u201d \u201cStill operating\u201d implies we chose to keep it\u2014",
+      "nextLine": "The radio cuts mid-sentence, like someone pulled a plug to prevent a precedent.\n\nThe mirror-surface aperture loses your reflection first.\n\nThen it loses the room.",
+      "revisedLine": "\u201cBy default\u201d doesn\u2019t file as a chain of title.\nAnd stop saying \u201cstill.\u201d \u201cStill operating\u201d sounds like we chose to keep it\u2014",
+      "changeSummary": "Kept the same objections; made the phrasing terser and more radio-natural."
+    },
+    {
+      "scene": "SCN_SCN-070.json",
+      "id": "N_DEF_LEG1",
+      "priorLine": "You rewrite verbs first. The facts can wait.",
+      "lineToEdit": "Define terms before you use them.\nAnd please don\u2019t say \u201cauthorized\u201d like it\u2019s a blanket. A blanket is how you smother yourself.",
+      "nextLine": "It\u2019s an Authorized Closure Path memo.",
+      "revisedLine": "Define your terms before you use them.\nAnd stop throwing \u201cauthorized\u201d around like it covers everything. It doesn\u2019t.",
+      "changeSummary": "Removed the aphoristic blanket joke; kept the same instruction and warning."
+    },
+    {
+      "scene": "SCN_SCN-070.json",
+      "id": "N_DEF_LEG2",
+      "priorLine": "It\u2019s an Authorized Closure Path memo.",
+      "lineToEdit": "Title is fine. Titles are fiction we all agree to.\nBody text is where liability grows teeth.\nYou are not \u201cevaluating,\u201d not \u201cverifying safety,\u201d not \u201cconfirming normalcy.\u201d Those are comparative claims. We do not have a baseline we can prove existed.",
+      "nextLine": "So what am I doing?",
+      "revisedLine": "The title can say whatever it needs to.\nThe body is where you get hurt.\nKeep \u201cevaluating,\u201d \u201cverifying safety,\u201d and \u201cconfirming normalcy\u201d out. Those read like comparisons, and we don\u2019t have a baseline we can prove.",
+      "changeSummary": "Kept the same guidance but made it more blunt and liability-driven."
+    },
+    {
+      "scene": "SCN_SCN-070.json",
+      "id": "N_DEF_LEG3",
+      "priorLine": "So what am I doing?",
+      "lineToEdit": "You are documenting the operational state for purposes of retirement processing, pursuant to the Evidence Packet, and any actions described are narrow-purpose and non-exploratory.\nAlso remove \u201cstill.\u201d If you write \u201cstill operating,\u201d you imply intent. Intent implies governance. Governance implies duty.",
+      "nextLine": "The paragraph becomes a corridor with handrails: narrow, continuous, hard to misread.",
+      "revisedLine": "You\u2019re documenting the operational state for retirement processing, per the Evidence Packet. Anything you did, write it narrow-purpose. No exploring.\nAnd cut \u201cstill.\u201d \u201cStill operating\u201d reads like intent, and then people start asking who was supposed to govern it.",
+      "changeSummary": "Preserved the same permitted framing and the 'still' issue; made it sound like practical record-protection."
+    },
+    {
+      "scene": "SCN_SCN-070.json",
+      "id": "N_CLAUSE_ADD_LEG1",
+      "priorLine": "You add one sentence that looks harmless until it isn\u2019t:\n\u201cInterpretation is limited to the attached Evidence Packet; no additional inferences are intended or authorized.\u201d",
+      "lineToEdit": "That sentence will irritate everyone.\nWhich is how you know it works.",
+      "nextLine": "",
+      "revisedLine": "Yeah, that sentence is going to irritate everyone.\nFine.",
+      "changeSummary": "Dropped the neat punchline; kept the intent that irritation is acceptable/expected."
+    },
+    {
+      "scene": "SCN_SCN-070.json",
+      "id": "N_PRINT_LEG1",
+      "priorLine": "Once it\u2019s on paper, it becomes the plan. Not because it\u2019s true\u2014because it\u2019s filed.",
+      "lineToEdit": "Do not say \u201cwe authorized.\u201d\nSay \u201cthis memo exists.\u201d Existence is defensible.",
+      "nextLine": "The memo slides into the tray: AUTHORIZED CLOSURE PATH \u2014 SIGNATURE LINE PRESENT.\nThere is space for your name, and plenty of space for future interpretations.",
+      "revisedLine": "Don\u2019t write \u201cwe authorized.\u201d\nWrite \u201cthis memo exists.\u201d That\u2019s the part I can defend later.",
+      "changeSummary": "Kept the exact prohibition and replacement; made it sound like a tired warning."
+    },
+    {
+      "scene": "SCN_SCN-071.json",
+      "id": "N_LEGAL_FRAMING",
+      "priorLine": "A second line clicks in\u2014too clean for this building.",
+      "lineToEdit": "This line is recorded, which I\u2019m saying for your benefit, not mine.\nDefine the act before you perform it. If you perform it first, it gets defined by whoever hates you most.",
+      "nextLine": "I\u2019m shutting it down.",
+      "revisedLine": "Recorded line.\nTell me what you\u2019re about to do before you do it. Otherwise someone else writes the verb for you.",
+      "changeSummary": "Removed the moral framing; kept the same warning and recording awareness in sharper speech."
+    },
+    {
+      "scene": "SCN_SCN-071.json",
+      "id": "N_LEGAL_DEFINITIONS",
+      "priorLine": "I\u2019m shutting it down.",
+      "lineToEdit": "You are executing a retirement sequence as a safety containment measure pursuant to the closure evidence packet.\nYou are not \u201cresponding to an anomaly.\u201d\nAnd do not say \u201cstill operating.\u201d \u201cStill\u201d implies intent. Intent implies governance.",
+      "nextLine": "Give me a reason phrase.",
+      "revisedLine": "In the record: you\u2019re executing a retirement sequence as a safety containment measure, per the closure evidence packet.\nKeep \u201cresponding to an anomaly\u201d out of it.\nAnd don\u2019t write \u201cstill operating.\u201d",
+      "changeSummary": "Preserved the exact framing and forbidden language; trimmed the legal lecture into direct logging instructions."
+    },
+    {
+      "scene": "SCN_SCN-071.json",
+      "id": "N_LEGAL_REASON_PHRASE",
+      "priorLine": "Give me a reason phrase.",
+      "lineToEdit": "Use this exactly:\n\u201cInitiating terminal shutdown per retirement checklist as risk-limiting containment; maintaining interlocks and continuous logging; operator present on-site.\u201d\nIt will irritate everyone. Which is how you know it\u2019s narrow enough.",
+      "nextLine": "",
+      "revisedLine": "Use this exactly:\n\u201cInitiating terminal shutdown per retirement checklist as risk-limiting containment; maintaining interlocks and continuous logging; operator present on-site.\u201d\nIt\u2019s stiff. That\u2019s why it survives review.",
+      "changeSummary": "Kept the verbatim phrase; swapped the punchline for a pragmatic, liability-minded rationale."
+    },
+    {
+      "scene": "SCN_SCN-071.json",
+      "id": "N_LEGAL_ONE_SENTENCE",
+      "priorLine": "Thank you. That\u2019s attributable.\nPrint that screen when it echoes back. Not because it matters. Because later, someone will pretend it did.",
+      "lineToEdit": "And do not add a second sentence. Two sentences becomes a story.",
+      "nextLine": "",
+      "revisedLine": "Don\u2019t add a second sentence. One line only.",
+      "changeSummary": "Removed the maxim-like closer; kept the same constraint."
+    },
+    {
+      "scene": "SCN_SCN-071.json",
+      "id": "N_LEGAL_HOLD_LANGUAGE",
+      "priorLine": "ask: Any language for the non-local hold?",
+      "lineToEdit": "You will describe it as: \u201cnon-local compliance hold notice received; reference logged; shutdown executed per retirement checklist as risk-limiting containment with continuous logging.\u201d\nNo cause language. No motive language. Just receipt and procedure.",
+      "nextLine": "",
+      "revisedLine": "Say it like this: \u201cnon-local compliance hold notice received; reference logged; shutdown executed per retirement checklist as risk-limiting containment with continuous logging.\u201d\nDon\u2019t add cause or motive. Just receipt and procedure.",
+      "changeSummary": "Kept the exact approved wording; made the surrounding instruction more conversational."
+    },
+    {
+      "scene": "SCN_SCN-071.json",
+      "id": "N_LEGAL_EMERGENCY_LANGUAGE",
+      "priorLine": "Local interruption acknowledged.\nHold state remains. Standing evaluation pending. Processing window active.",
+      "lineToEdit": "If you insist on this path, you will describe it as \u201crisk-limiting interruption pending retirement processing.\u201d\nNot \u201cpanic.\u201d Not \u201creaction.\u201d Words are adhesive.",
+      "nextLine": "Your hand hovers near the button. It is large enough to be a confession.",
+      "revisedLine": "If you\u2019re doing it, you call it \u201crisk-limiting interruption pending retirement processing.\u201d\nKeep \u201cpanic\u201d and \u201creaction\u201d off the page. Words stick.",
+      "changeSummary": "Kept the same permitted/forbidden terms; softened the formal threat into terse, practical warning."
+    },
+    {
+      "scene": "SCN_SCN-071.json",
+      "id": "N_LEGAL_ACCEPTABLE_BETTER",
+      "priorLine": "(multiple) (Initiating terminal shutdown per retirement checklist as risk-limiting containment; maintaining interlocks and continuous logging; operator present on-site.) (Terminal shutdown per checklist. Operator on-site. Logging maintained.)",
+      "lineToEdit": "Acceptable. The first version is better.\n\u201cBetter\u201d meaning: harder to misread later.",
+      "nextLine": "State transition request received.\nHold state conflicts noted.\nProcessing window active. Queue position maintained.",
+      "revisedLine": "Acceptable. Use the first version.\nIt leaves less room for anyone to get creative later.",
+      "changeSummary": "Kept the preference and rationale; made it sound like annoyed, protective guidance."
+    },
+    {
+      "scene": "SCN_SCN-072.json",
+      "id": "N_LEGAL0",
+      "priorLine": "Before you touch a verb: remember this is closure processing. Not a reclassification event. I know that sounds like the same thing. Finance does not.",
+      "lineToEdit": "Define the act before you perform it. If you perform it first, it gets defined by whoever hates you most.",
+      "nextLine": "Standing evaluation pending. Service class determination pending. Queue position maintained. Processing window active.",
+      "revisedLine": "Say what you\u2019re doing before you do it. Once you move, somebody else names it.",
+      "changeSummary": "Retained the warning, removed the quotable phrasing and softened it into brisk operational caution."
+    },
+    {
+      "scene": "SCN_SCN-072.json",
+      "id": "N_ASKCAT_L",
+      "priorLine": "Acceptable outcomes are limited to existing service classes. Unauthorized node state cannot be \u201ccleared.\u201d It can be reclassified into a licensed relationship, if eligibility is demonstrated.",
+      "lineToEdit": "\u201cDemonstrated\u201d meaning \u201casserted with attachments,\u201d not \u201cproven.\u201d I\u2019m saying that for the recording.",
+      "nextLine": "Licensed relationship is fine if it stays in \u201cmunicipal infrastructure.\u201d The moment it smells like \u201cresearch,\u201d we lose a fiscal year to committees.",
+      "revisedLine": "\u201cDemonstrated\u201d here means you asserted it and you attached something. I\u2019m putting that on the recording.",
+      "changeSummary": "Kept the same distinction and recording note; made it sound more like an aside under pressure."
+    },
+    {
+      "scene": "SCN_SCN-072.json",
+      "id": "N_ASKAUTH_L",
+      "priorLine": "Authority chain requires: operator-of-record identification; endpoint presence statement as a physical claim; counterparty acknowledgment that operation is within a licensed relationship category.",
+      "lineToEdit": "Notice the verbs: \u201cacknowledgment,\u201d \u201cacceptance.\u201d Those are safer than \u201cauthorization,\u201d and still operationally binding, which is a fun contradiction we will not discuss.",
+      "nextLine": "And whatever you type, print before and after. Screenshots become opinions. Paper becomes alibis.",
+      "revisedLine": "Stick to \u201cacknowledgment\u201d and \u201cacceptance.\u201d Keep \u201cauthorization\u201d out.\nYeah, it still binds. No, we\u2019re not unpacking that.",
+      "changeSummary": "Maintained the same verb preference and implication; removed the wry, essay-like aside."
+    },
+    {
+      "scene": "SCN_SCN-072.json",
+      "id": "N_SUBMIT_L",
+      "priorLine": "Submission must be non-narrative. Provide category request. Provide service class basis. Provide authority chain. Do not speculate as to cause. Narrative creates jurisdiction.",
+      "lineToEdit": "And don\u2019t say \u201cauthorize.\u201d \u201cAuthorize\u201d implies review. Review implies duty. Duty implies\u2014well. Me.",
+      "nextLine": "Also don\u2019t say \u201cdiscovery.\u201d Even as a joke. Jokes get transcribed like admissions.",
+      "revisedLine": "And don\u2019t use \u201cauthorize.\u201d It reads like review, and then it reads like duty.\nGuess who that lands on.",
+      "changeSummary": "Kept the same liability chain; made it sharper and more human without the formal cadence."
+    },
+    {
+      "scene": "SCN_SCN-072.json",
+      "id": "N_CATL_L",
+      "priorLine": "If this lands, it closes exposure without changing the accounting story. Which is the only kind of miracle we\u2019re funded for.",
+      "lineToEdit": "We need the authority chain to say \u201cacknowledge\u201d and \u201caccept,\u201d not \u201cgrant.\u201d \u201cGrant\u201d implies they owned it cleanly. They won\u2019t thank you for that.",
+      "nextLine": "",
+      "revisedLine": "In the authority chain, use \u201cacknowledge\u201d and \u201caccept.\u201d Leave \u201cgrant\u201d out.\n\u201cGrant\u201d reads like clean ownership. They won\u2019t thank you for that.",
+      "changeSummary": "Preserved the verb requirements and rationale; tightened delivery and reduced formality."
+    },
+    {
+      "scene": "SCN_SCN-072.json",
+      "id": "N_CATT_L",
+      "priorLine": "Good. Temporary. Processing. Those are words that don\u2019t create obligations.",
+      "lineToEdit": "And they don\u2019t imply we intended anything \u201congoing.\u201d Don\u2019t say \u201ckeep it running.\u201d Say \u201cmaintain continuity.\u201d",
+      "nextLine": "Category acceptable pending reason phrase and authority chain. Provide reason phrase. Provide attachments. No narrative.",
+      "revisedLine": "Also: don\u2019t write anything that sounds ongoing.\nSkip \u201ckeep it running.\u201d Use \u201cmaintain continuity.\u201d",
+      "changeSummary": "Kept the same wording swap; made it feel like a quick, corrective interruption."
+    },
+    {
+      "scene": "SCN_SCN-072.json",
+      "id": "N_REASON_GENERIC_L",
+      "priorLine": "Reason phrase logged. Authority chain required: operator-of-record identification and counterparty acknowledgment for licensed relationship classification.",
+      "lineToEdit": "That\u2019s one sentence. Keep it one sentence. Two sentences becomes a story.",
+      "nextLine": "",
+      "revisedLine": "Good. Keep it one sentence. Don\u2019t build it out.",
+      "changeSummary": "Removed repeated slogan phrasing; kept the instruction to keep it to a single sentence."
+    },
+    {
+      "scene": "SCN_SCN-072.json",
+      "id": "N_REASON_LEGACY_L",
+      "priorLine": "Reclassify SOL\u2011EARTH\u2011LOCAL as legacy municipal infrastructure; acknowledge/accept licensed relationship.",
+      "lineToEdit": "Remove anything that implies novelty. \u201cLegacy\u201d is fine because it implies old paperwork, not new physics. And no \u201cstill.\u201d",
+      "nextLine": "\u201cLegacy municipal infrastructure\u201d is a ledger category I can live with. Don\u2019t make it a headline.",
+      "revisedLine": "Strip anything that reads like novelty.\n\u201cLegacy\u201d is fine\u2014it reads like old paperwork. And cut \u201cstill.\u201d",
+      "changeSummary": "Preserved the same edits; kept the 'legacy' justification but made it less essay-like."
+    },
+    {
+      "scene": "SCN_SCN-072.json",
+      "id": "N_OPONLY_L",
+      "priorLine": "Operator-of-record: on-site. Submitting under retirement processing.",
+      "lineToEdit": "I didn\u2019t say you can\u2019t. I\u2019m saying you\u2019ll be alone in the record. \u201cAlone\u201d is not illegal. It\u2019s just expensive.",
+      "nextLine": "Authority chain incomplete. Counterparty acknowledgment required for licensed relationship classification.",
+      "revisedLine": "I didn\u2019t say you can\u2019t.\nI\u2019m saying the record shows you alone on it. That\u2019s legal. It\u2019s just expensive.",
+      "changeSummary": "Kept the same permission-with-warning; tightened into short, spoken beats."
+    },
+    {
+      "scene": "SCN_SCN-072.json",
+      "id": "N_PERSUADE_L",
+      "priorLine": "Requested framing recorded. Municipal legacy service class is eligible only under a licensed relationship with a valid authority chain. Provide counterparty acknowledgment.",
+      "lineToEdit": "They are not refusing you. They are refusing to be first in the chain. Give them the acknowledgment they can file.",
+      "nextLine": "",
+      "revisedLine": "They\u2019re not refusing the ask. They just don\u2019t want to be first in the chain.\nGive them an acknowledgment they can file and move on.",
+      "changeSummary": "Maintained intent; made it sound like practical negotiation advice without a lecture tone."
+    },
+    {
+      "scene": "SCN_SCN-072.json",
+      "id": "N_ADDLEGAL_LEGALREAD",
+      "priorLine": "On-screen echo-back: \u201cOLEA Legal acknowledges submission for category update as retirement processing instrument; accepts limited-purpose licensed relationship classification for SOL\u2011EARTH\u2011LOCAL; no admission of novelty; continuous logging maintained; operator present on-site.\u201d",
+      "lineToEdit": "OLEA Legal acknowledges submission for category update as a retirement processing instrument, limited purpose. Accepts the licensed relationship classification for SOL\u2011EARTH\u2011LOCAL under municipal legacy infrastructure service class. No admission of novelty. Continuous logging maintained. Operator present on-site.",
+      "nextLine": "Print that echo-back screen when it posts. Not because it\u2019s sacred. Because later someone will pretend you paraphrased.",
+      "revisedLine": "Read-back:\nOLEA Legal acknowledges submission for category update as a retirement processing instrument, limited purpose. Accepts the licensed relationship classification for SOL\u2011EARTH\u2011LOCAL under municipal legacy infrastructure service class. No admission of novelty. Continuous logging maintained. Operator present on-site.",
+      "changeSummary": "Kept the echo-back text intact; added a natural lead-in to fit spoken/read-back context."
+    },
+    {
+      "scene": "SCN_SCN-074.json",
+      "id": "N_LEGAL_HELLO",
+      "priorLine": "Use: \u201cCall OLEA Legal.\u201d",
+      "lineToEdit": "Office of Legacy Energy Assets, Legal. This line is recorded for consistency. Name and assignment.",
+      "nextLine": "Closure. Routing a memo.",
+      "revisedLine": "Office of Legacy Energy Assets, Legal. Recorded line. Name and assignment.",
+      "changeSummary": "Matched earlier greeting: shorter, more defensive, same info."
+    },
+    {
+      "scene": "SCN_SCN-074.json",
+      "id": "N_LEGAL_02",
+      "priorLine": "Closure. Routing a memo.",
+      "lineToEdit": "Define \u201crouting.\u201d\nIf you mean \u201ccreating a record that survives an audit,\u201d say that.\nIf you mean \u201cmoving liability somewhere it already belongs,\u201d do not say that on a recorded line.",
+      "nextLine": "I have the memo draft. Need the cleanest sentence.",
+      "revisedLine": "\u201cRouting\u201d how.\nIf you mean you\u2019re creating an audit-proof record, say that.\nIf you mean moving liability around, don\u2019t say it on a recorded line.",
+      "changeSummary": "Kept the same forked warning; made it snappier and more conversational."
+    },
+    {
+      "scene": "SCN_SCN-074.json",
+      "id": "N_LEGAL_03",
+      "priorLine": "I have the memo draft. Need the cleanest sentence.",
+      "lineToEdit": "You get one sentence. Two becomes a story.\nUse: \u201cThis memo exists to document retirement processing communications and compliance hold handling for SOL\u2011EARTH\u2011LOCAL under municipal legacy infrastructure service class; continuous logging maintained; operator present on-site.\u201d\nDo not add \u201cstill.\u201d Do not add \u201cbecause.\u201d\n\u201cBecause\u201d is how causality crawls into the margins.",
+      "nextLine": "",
+      "revisedLine": "One sentence. That\u2019s it.\nUse: \u201cThis memo exists to document retirement processing communications and compliance hold handling for SOL\u2011EARTH\u2011LOCAL under municipal legacy infrastructure service class; continuous logging maintained; operator present on-site.\u201d\nAnd don\u2019t add \u201cstill\u201d or \u201cbecause.\u201d",
+      "changeSummary": "Kept the one-sentence constraint and exact sentence; removed the quotable metaphor and tightened."
+    },
+    {
+      "scene": "SCN_SCN-074.json",
+      "id": "N_LEGAL_ACK",
+      "priorLine": "Ask: \u201cI have WO-RET-SP01 and the MTA notice ref.\u201d",
+      "lineToEdit": "Good. Those are nouns that already exist.\nHere is the acknowledgment, verb-limited:\n\u201cOLEA Legal acknowledges submission for category update as a retirement processing instrument, limited purpose; accepts licensed relationship classification for SOL\u2011EARTH\u2011LOCAL under municipal legacy infrastructure service class; no admission of novelty; continuous logging maintained; operator present on-site.\u201d\nCopy it exactly. If you paraphrase, you become the author.",
+      "nextLine": "",
+      "revisedLine": "Good. Those references already exist.\nHere\u2019s the acknowledgment\u2014keep it verb-limited:\n\u201cOLEA Legal acknowledges submission for category update as a retirement processing instrument, limited purpose; accepts licensed relationship classification for SOL\u2011EARTH\u2011LOCAL under municipal legacy infrastructure service class; no admission of novelty; continuous logging maintained; operator present on-site.\u201d\nCopy it exactly. Don\u2019t paraphrase.",
+      "changeSummary": "Preserved the exact acknowledgment text and the copy-exactly warning; reduced the stylized commentary."
+    },
+    {
+      "scene": "SCN_SCN-074.json",
+      "id": "N_LEGAL_NOREF",
+      "priorLine": "Ask: \u201cI don\u2019t have every reference.\u201d",
+      "lineToEdit": "Then you do not have a chain, you have a feeling.\nYou can still file the memo as \u201cretirement processing communication,\u201d but you cannot staple my voice to it.\nFind the notice reference string. Find the Work Order number. Call me back.\nThe system rewards specificity. It punishes speed.",
+      "nextLine": "",
+      "revisedLine": "Then you don\u2019t have a chain.\nYou can file the memo as \u201cretirement processing communication,\u201d sure, but my voice doesn\u2019t go on it without the references.\nFind the notice reference string. Find the Work Order number. Call me back.",
+      "changeSummary": "Kept the same requirement and consequence; removed the slogan ending and made it more clipped and transactional."
+    }
+  ]
+}

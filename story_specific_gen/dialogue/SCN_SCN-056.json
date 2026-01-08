@@ -1,0 +1,243 @@
+{
+  "dialogueGraphs": [
+    {
+      "id": "SCN_056_SCHED_COUNTER",
+      "sceneId": "SCN-056",
+      "startNodeId": "N00_TABLEAU",
+      "nodes": [
+        {
+          "id": "N00_TABLEAU",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "A caged window marked SCHEDULING faces the corridor like a confession booth with forms.\nA \u201cNO-SHOW RECOVERY\u201d bin sits under the counter, sealed with a strip of tape that has been re-taped.\nA board of approved stamp substitutions hangs slightly crooked.\nA press labeled SLOT TOKEN\u2014AUTHORIZED IMPRESSIONS ONLY is bolted to the laminate.",
+          "next": "N01_CLERK_NEXT"
+        },
+        {
+          "id": "N01_CLERK_NEXT",
+          "type": "npc_line",
+          "speakerId": "SCHED_CLERK",
+          "text": "Next\u2014step up.",
+          "next": "N02_MAIN_MENU"
+        },
+        {
+          "id": "N02_MAIN_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "text": "At the caged scheduling window\u2026",
+          "choices": [
+            {
+              "id": "C_ASK_SLOT",
+              "text": "ask: I need an interconnection slot.",
+              "next": "N10_ASK_SLOT"
+            },
+            {
+              "id": "C_ASK_ASSET",
+              "text": "ask: What are you calling an asset?",
+              "next": "N20_ASSET_EXPLAIN"
+            },
+            {
+              "id": "C_SHOW_AMR",
+              "text": "show: I'm on an AMR. Issued.",
+              "conditions": [
+                {
+                  "key": "act2.amrIssued",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "next": "N30_SHOW_AMR"
+            },
+            {
+              "id": "C_ASK_RULE",
+              "text": "ask: Show me the rule. The one that says I can\u2019t request.",
+              "next": "N40_RULE"
+            },
+            {
+              "id": "C_BARGAIN_PRIORITY",
+              "text": "bargain: I have a fiscal cutoff. I need priority.",
+              "next": "N80_PRIORITY"
+            },
+            {
+              "id": "C_THREATEN",
+              "text": "threaten: If I don\u2019t get a slot, the site doesn\u2019t close. That\u2019s on your desk.",
+              "next": "N90_THREAT"
+            },
+            {
+              "id": "C_PERSUADE_CLEAN",
+              "text": "persuade: I\u2019m not asking for a favor. I\u2019m trying to do this clean.",
+              "next": "N100_PERSUADE"
+            },
+            {
+              "id": "C_SHOW_STANDING_GATED",
+              "text": "show: Cite OLEA standing and request escalation.",
+              "checks": [
+                {
+                  "type": "rep",
+                  "faction": "OLEA",
+                  "min": 2
+                }
+              ],
+              "onPassNext": "N105_OLEA_PASS",
+              "onFailNext": "N106_OLEA_FAIL"
+            },
+            {
+              "id": "C_COMMIT_CLAIM",
+              "text": "ask: So I don\u2019t ask. I claim an asset.",
+              "next": "N112_CLERK_CONFIRM"
+            },
+            {
+              "id": "C_LEAVE",
+              "text": "leave: Step away from the counter.",
+              "next": "END_LEAVE"
+            }
+          ]
+        },
+        {
+          "id": "N10_ASK_SLOT",
+          "type": "npc_line",
+          "speakerId": "SCHED_CLERK",
+          "text": "Don\u2019t ask me for a slot. (pause)\nBring me an asset you already hold. (pause)\nIt has to come with a slot. (pause)\nSay \u201cslot\u201d and I log denial. (pause)\nThen it becomes a whole story. (pause)\nI\u2019m not doing stories through the cage.",
+          "next": "N11_DENIAL_POISED"
+        },
+        {
+          "id": "N11_DENIAL_POISED",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The clerk\u2019s pen is already poised, as if denial is a checkbox they practice.",
+          "next": "N02_MAIN_MENU"
+        },
+        {
+          "id": "N20_ASSET_EXPLAIN",
+          "type": "npc_line",
+          "speakerId": "SCHED_CLERK",
+          "text": "Time. (pause)\nLane. Tolerance band. Expiry. The whole bundle. (pause)\nEverybody calls the expiry \u201cflexible\u201d (pause)\nright up until audit week. (pause)\nThis window\u2019s custody. (pause)\nThat\u2019s what I can record.",
+          "next": "N21_ASSET_FOLLOWUP"
+        },
+        {
+          "id": "N21_ASSET_FOLLOWUP",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_ASK_THATS_SCHEDULING",
+              "text": "ask: That\u2019s scheduling.",
+              "next": "N22_SCHEDULING_REBUT"
+            },
+            {
+              "id": "C_LEAVE_BACK_MENU",
+              "text": "leave: Back off and reassess.",
+              "next": "N02_MAIN_MENU"
+            }
+          ]
+        },
+        {
+          "id": "N22_SCHEDULING_REBUT",
+          "type": "npc_line",
+          "speakerId": "SCHED_CLERK",
+          "text": "Call it that if you want. (pause)\nIf it\u2019s a service you\u2019d request it. (pause)\nWhat happens here is allocation. (pause)\nAllocation gets defended. (pause)\nThat\u2019s how I keep my job.",
+          "next": "N02_MAIN_MENU"
+        },
+        {
+          "id": "N30_SHOW_AMR",
+          "type": "npc_line",
+          "speakerId": "SCHED_CLERK",
+          "text": "AMR checks out as standing. (pause)\nStill doesn\u2019t hand you a slot. (pause)\nYou push an AMR at me. (pause)\nWant me to turn identity into property. (pause)\nOn my signature... that\u2019s discretion. (pause)\nDiscretion comes with names attached.",
+          "next": "N31_AMR_FOLLOWUP"
+        },
+        {
+          "id": "N31_AMR_FOLLOWUP",
+          "type": "npc_line",
+          "speakerId": "SCHED_CLERK",
+          "text": "It just means: you\u2019re holding an asset. (pause) The file reads \u201ccustody\u201d not \u201ctheft.\u201d (pause) I\u2019m not calling you anything. (pause) That\u2019s the category.",
+          "next": "N02_MAIN_MENU"
+        },
+        {
+          "id": "N40_RULE",
+          "type": "npc_line",
+          "speakerId": "SCHED_CLERK",
+          "text": "The rule doesn\u2019t bother banning asking. (pause)\nIt says plain: Requests aren\u2019t claims. (pause)\nPeople read it, slide it to my desk. (pause)\nAll I can log: claims. Transfers. Recoveries.",
+          "next": "N41_RULE_GLASS"
+        },
+        {
+          "id": "N41_RULE_GLASS",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The clerk taps the glass twice, as if the rule is physically stored in it.",
+          "next": "N02_MAIN_MENU"
+        },
+        {
+          "id": "N80_PRIORITY",
+          "type": "npc_line",
+          "speakerId": "SCHED_CLERK",
+          "text": "I can\u2019t sell you \u201cpriority\u201d through this window. (pause)\nSay the word. (pause)\nIt turns into a complaint either way. (pause)\nIf you\u2019ve got an asset you defend it. (pause)\nIn the chain. (pause)\nIf you don\u2019t this counter can\u2019t. (pause)\nMake one heavier.",
+          "next": "N81_PRIORITY_KNUCKLES"
+        },
+        {
+          "id": "N81_PRIORITY_KNUCKLES",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The clerk\u2019s voice stays level; their knuckles whiten on the pen.",
+          "next": "N02_MAIN_MENU"
+        },
+        {
+          "id": "N90_THREAT",
+          "type": "npc_line",
+          "speakerId": "SCHED_CLERK",
+          "text": "Don\u2019t put that on my desk. (pause)\nIf the site stays open it lands there. (pause)\nI hold claims here. (pause)\nYou assign me outcomes through the cage. (pause)\nIt reads as coercion in the minutes.",
+          "next": "N02_MAIN_MENU"
+        },
+        {
+          "id": "N100_PERSUADE",
+          "type": "npc_line",
+          "speakerId": "SCHED_CLERK",
+          "text": "\u201cClean\u201d doesn\u2019t tell me what to stamp. (pause)\nUsually it\u2019s the lead-in to \u201ccan you just\u2014\u201d. (pause)\nRun it through the custody chain. (pause)\nLet it survive review. (pause)\nThat\u2019s all I\u2019m here for.",
+          "next": "N02_MAIN_MENU"
+        },
+        {
+          "id": "N105_OLEA_PASS",
+          "type": "npc_line",
+          "speakerId": "SCHED_CLERK",
+          "text": "Standing, noted. (pause)\nStill doesn\u2019t put an asset on the tray. (pause)\nIf I kick a request upstairs (pause)\nmy name ends up on a discretionary entry. (pause)\nThat turns into precedent. (pause)\nBring a claim. (pause)\nA transfer. (pause)\nOr a recovery. (pause)\nThen I can record it clean.",
+          "next": "N02_MAIN_MENU"
+        },
+        {
+          "id": "N106_OLEA_FAIL",
+          "type": "npc_line",
+          "speakerId": "SCHED_CLERK",
+          "text": "Declarations don\u2019t move anything here. (pause) Show standing in the chain. (pause) Or I can\u2019t route it up. (pause) Put a claimable asset on the counter. (pause) Or don\u2019t.",
+          "next": "N02_MAIN_MENU"
+        },
+        {
+          "id": "N112_CLERK_CONFIRM",
+          "type": "npc_line",
+          "speakerId": "SCHED_CLERK",
+          "text": "Yeah. (pause)\nClaim it. Present it. I record it. (pause)\nIf it holds up, it moves. (pause)\nIf it doesn\u2019t it stops here. (pause)\nThat\u2019s why I\u2019m behind the glass.",
+          "next": "N113_RULE_SETTLES"
+        },
+        {
+          "id": "N113_RULE_SETTLES",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The rule settles into place: time slots aren\u2019t granted here. They\u2019re taken, transferred, or recovered\u2014then defended as property.",
+          "next": "END_LEARNED"
+        },
+        {
+          "id": "END_LEARNED",
+          "type": "end",
+          "outcomeId": "scheduling_rules_learned",
+          "effects": [
+            {
+              "key": "knowledge.timeSlotsAreProperty",
+              "action": "set",
+              "value": true
+            }
+          ]
+        },
+        {
+          "id": "END_LEAVE",
+          "type": "end"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "changes": [
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_LOOK_BIN",
+        "nodeId": "N02_MAIN_BASE",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_LOOK_BIN_FROM_TALK",
+        "nodeId": "N13_TALK_MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_LOOK_BIN_AFTER_RECOVER",
+        "nodeId": "N17_RECOVER_MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_RETURN_MAIN_FROM_BIN",
+        "nodeId": "N21_LOOK_BIN_MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_LEAVE_FROM_BIN",
+        "nodeId": "N21_LOOK_BIN_MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_LOOK_BIN_AFTER_BLOCK",
+        "nodeId": "N41B_BLOCK_MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_LOOK_BIN_AFTER_ASSET",
+        "nodeId": "N52_ASSET_MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_LOOK_BIN_AFTER_AMR",
+        "nodeId": "N63_AMR_MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_LOOK_BIN_AFTER_RULE",
+        "nodeId": "N73_RULE_MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_LOOK_BIN_WITH_SLEEVE",
+        "nodeId": "N02_MAIN_SLEEVE",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "modify",
+      "details": {
+        "choice": {
+          "id": "C_RETURN_MAIN_FROM_BIN",
+          "next": "N02_MAIN_BASE",
+          "text": "talk: Return to the counter options."
+        },
+        "nodeId": "N21_LOOK_BIN_MENU",
+        "op": "update_choice"
+      },
+      "op": "update_choice"
+    },
+    {
+      "action": "modify",
+      "details": {
+        "choice": {
+          "id": "C_LEAVE_FROM_BIN",
+          "next": "END_LEAVE",
+          "text": "leave: Step away."
+        },
+        "nodeId": "N21_LOOK_BIN_MENU",
+        "op": "update_choice"
+      },
+      "op": "update_choice"
+    }
+  ],
+  "sceneId": "SCN-057"
+}

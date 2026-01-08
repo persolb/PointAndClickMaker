@@ -1,0 +1,166 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/scenes.schema.json",
+  "title": "Narrative Scene Schema",
+  "description": "Defines narrative scenes that occur within screens, with trigger logic and branching outcomes.",
+  "type": "object",
+  "required": ["scenes"],
+  "additionalProperties": false,
+
+  "properties": {
+    "scenes": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/scene" }
+    }
+  },
+
+  "$defs": {
+    "scene": {
+      "type": "object",
+      "required": [
+        "id",
+        "screenId",
+        "sceneDescription"
+      ],
+      "additionalProperties": true,
+
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the narrative scene.",
+          "pattern": "^[A-Z]+-[0-9]{2,3}$"
+        },
+
+        "screenId": {
+          "type": "string",
+          "description": "ID of the screen (from screens.json) where this scene occurs."
+        },
+
+        "triggerLogic": {
+          "type": "object",
+          "description": "Conditions that cause this scene to activate.",
+          "additionalProperties": true,
+          "properties": {
+            "type": {
+              "type": "string",
+              "description": "Trigger type (e.g. onEnter, onInteract, conditional, oneShot, timed)."
+            },
+            "conditions": {
+              "type": "array",
+              "items": { "$ref": "#/$defs/condition" }
+            }
+          }
+        },
+
+        "sceneDescription": {
+          "type": "string",
+          "description": "Narrative description of what happens in this scene."
+        },
+
+        "characters": {
+        "type": "array",
+        "description": "Characters present or participating in this scene.",
+        "items": {
+            "type": "object",
+            "required": ["characterId"],
+            "additionalProperties": true,
+            "properties": {
+            "characterId": {
+                "type": "string",
+                "description": "ID of the character (from characters.json)."
+            },
+            "role": {
+                "type": "string",
+                "description": "Narrative role in this scene (e.g., speaker, observer, antagonist, companion)."
+            },
+            "notes": {
+                "type": "string",
+                "description": "Writer-facing notes about this character’s behavior or constraints in the scene."
+            }
+            }
+        },
+        "default": []
+        },
+
+        "possibleOutcomes": {
+          "type": "array",
+          "description": "Branching results of the scene.",
+          "items": { "$ref": "#/$defs/outcome" }
+        }
+      }
+    },
+
+    "condition": {
+      "type": "object",
+      "description": "A single logical condition required for triggering.",
+      "required": ["key", "operator", "value"],
+      "additionalProperties": true,
+
+      "properties": {
+        "key": {
+          "type": "string",
+          "description": "State variable or flag name."
+        },
+        "operator": {
+          "type": "string",
+          "description": "Comparison operator (e.g. ==, !=, >, <, in, not_in)."
+        },
+        "value": {
+          "description": "Value to compare against.",
+          "type": ["string", "number", "boolean", "array", "null"]
+        }
+      }
+    },
+
+    "outcome": {
+      "type": "object",
+      "required": ["id", "description"],
+      "additionalProperties": true,
+
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Identifier for this outcome branch."
+        },
+
+        "description": {
+          "type": "string",
+          "description": "Narrative summary of the outcome."
+        },
+
+        "effects": {
+          "type": "array",
+          "description": "State changes caused by this outcome.",
+          "items": { "$ref": "#/$defs/effect" }
+        },
+
+        "nextSceneId": {
+          "type": "string",
+          "description": "Optional ID of the next scene to trigger."
+        }
+      }
+    },
+
+    "effect": {
+      "type": "object",
+      "required": ["key", "action"],
+      "additionalProperties": true,
+
+      "properties": {
+        "key": {
+          "type": "string",
+          "description": "State variable affected."
+        },
+        "action": {
+          "type": "string",
+          "description": "Mutation type (e.g. set, increment, decrement, add, remove)."
+        },
+        "value": {
+          "description": "Value used by the action.",
+          "type": ["string", "number", "boolean", "array", "null"]
+        }
+      }
+    }
+  }
+}

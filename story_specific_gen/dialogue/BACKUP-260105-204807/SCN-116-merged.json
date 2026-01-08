@@ -1,0 +1,69 @@
+{
+  "changes": [
+    {
+      "action": "add",
+      "createScene": {
+        "dialogueGraphs": [
+          {
+            "id": "SCN_116_WINDOW_3_ORIENTATION",
+            "nodes": [
+              {
+                "id": "N_WIN3_1",
+                "next": "N_WIN3_2",
+                "speakerId": "NARRATOR",
+                "text": "Window 3 has pamphlets arranged like a threat.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_WIN3_2",
+                "next": "PC_WIN3_MENU",
+                "speakerId": "ORIENTATION_CLERK",
+                "text": "Orientation is for valid entrants.\nIf you are here, you are either already valid, or not my problem, in the normal sense.\nIf you need a TER, that is Intake. Window 0.\nPlease do not become a discussion at this counter.",
+                "type": "npc_line"
+              },
+              {
+                "choices": [
+                  {
+                    "id": "C_ASK_DEFINE_VALID",
+                    "next": "N_WIN3_DEFINE_1",
+                    "text": "ask: Define \"valid.\""
+                  },
+                  {
+                    "id": "C_LEAVE_WIN3",
+                    "next": "END_WIN3_BACK",
+                    "text": "leave: Back."
+                  }
+                ],
+                "id": "PC_WIN3_MENU",
+                "speakerId": "PLAYER",
+                "type": "player_choice"
+              },
+              {
+                "id": "N_WIN3_DEFINE_1",
+                "next": "N_WIN3_DEFINE_2",
+                "speakerId": "ORIENTATION_CLERK",
+                "text": "I cannot define it without assigning it.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_WIN3_DEFINE_2",
+                "next": "END_WIN3_BACK",
+                "speakerId": "ORIENTATION_CLERK",
+                "text": "Assigning it would be Intake. Window 0.\nThis is not evasion. It is separation of functions.",
+                "type": "npc_line"
+              },
+              {
+                "id": "END_WIN3_BACK",
+                "type": "end"
+              }
+            ],
+            "sceneId": "SCN-116",
+            "startNodeId": "N_WIN3_1"
+          }
+        ]
+      },
+      "op": "create_scene"
+    }
+  ],
+  "sceneId": "SCN-116"
+}

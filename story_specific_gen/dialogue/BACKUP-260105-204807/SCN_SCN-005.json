@@ -1,0 +1,277 @@
+{
+  "dialogueGraphs": [
+    {
+      "id": "SCN_005_GUARD_SHACK_EXTERIOR",
+      "sceneId": "SCN-005",
+      "startNodeId": "N_START",
+      "nodes": [
+        {
+          "id": "N_START",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The guard shack sits off the approach road like it was placed by a committee that feared weather and people equally.\nThe door has a steel pull handle. The card reader beside it glows faintly, as if embarrassed to be awake.",
+          "next": "PC_MAIN_MENU"
+        },
+        {
+          "id": "PC_MAIN_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_LOOK_DOOR",
+              "text": "Look at the guard shack door.",
+              "next": "N_LOOK_DOOR"
+            },
+            {
+              "id": "C_LOOK_READER",
+              "text": "Look at the card reader.",
+              "next": "N_LOOK_READER"
+            },
+            {
+              "id": "C_USE_READER",
+              "text": "Use the card reader.",
+              "next": "N_USE_READER_1"
+            },
+            {
+              "id": "C_USE_CALLBOX",
+              "text": "Use the call box speaker and button.",
+              "next": "N_CALLBOX_1"
+            },
+            {
+              "id": "C_LOOK_TUBE",
+              "text": "Look at the pneumatic tube label plate.",
+              "next": "N_LOOK_TUBE"
+            },
+            {
+              "id": "C_LEAVE",
+              "text": "Leave.",
+              "next": "END_LEAVE"
+            }
+          ]
+        },
+        {
+          "id": "N_LOOK_DOOR",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The door is closed flush. The latch side shows fresh wear where someone tested it recently and stopped.\nNo gap, no give. It\u2019s locked.",
+          "next": "PC_MAIN_MENU"
+        },
+        {
+          "id": "N_LOOK_READER",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The reader\u2019s indicator is on, but the light is thin and unstable, like it\u2019s being rationed.\nA strip of tape under it reads: \u201cTEMP POWER \u2014 DO NOT RELY.\u201d",
+          "next": "PC_MAIN_MENU"
+        },
+        {
+          "id": "N_LOOK_TUBE",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "A brass plate, scuffed to dull gold, sits beside a capped tube port.\nIt\u2019s labeled in block letters: \u201cFORMS \u2014 INTAKE / OUTBOUND \u2014 DO NOT SEND FOOD.\u201d\nSomeone scratched an arrow under \u201cOUTBOUND\u201d like they didn\u2019t trust the printed one.",
+          "next": "PC_MAIN_MENU"
+        },
+        {
+          "id": "N_USE_READER_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You present your badge. The reader chirps once\u2014polite, hopeful\u2014then the light drops to a dim pulse.\nThe lock doesn\u2019t actuate.",
+          "next": "N_USE_READER_2"
+        },
+        {
+          "id": "N_USE_READER_2",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "A second later the reader resets itself, as if it can\u2019t admit it tried.",
+          "next": "END_LOCKED_STATE"
+        },
+        {
+          "id": "N_CALLBOX_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The speaker pops. A breath. Then a voice that sounds like it\u2019s already composing an email about this.",
+          "next": "N_CALLBOX_EAC_1"
+        },
+        {
+          "id": "N_CALLBOX_EAC_1",
+          "type": "npc_line",
+          "speakerId": "EAC_LIAISON",
+          "text": "External Assurance line three\u2014no, sorry. (pause) The box still labels it \u201cGuard.\u201d (pause) Go ahead. (pause) State your purpose in a sentence. (pause) Two if you must. (pause) It helps with comparability.",
+          "next": "PC_CALL_MENU"
+        },
+        {
+          "id": "PC_CALL_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_ASK_ACCESS",
+              "text": "Ask: \u201cI need access to the shack.\u201d",
+              "next": "N_EAC_ACCESS_1"
+            },
+            {
+              "id": "C_ASK_POWER",
+              "text": "Ask: \u201cCard reader\u2019s underpowered.\u201d",
+              "next": "N_EAC_POWER_1"
+            },
+            {
+              "id": "C_ASK_ONSITE",
+              "text": "Ask: \u201cIs anyone on-site?\u201d",
+              "next": "N_EAC_ONSITE_1"
+            },
+            {
+              "id": "C_PERSUADE_OLEA",
+              "text": "Persuade: \u201cI\u2019m OLEA. Give me the actual access path.\u201d",
+              "checks": [
+                {
+                  "type": "rep",
+                  "faction": "OLEA",
+                  "min": 1
+                }
+              ],
+              "onPassNext": "N_EAC_OLEA_PASS_1",
+              "onFailNext": "N_EAC_OLEA_FAIL_1"
+            },
+            {
+              "id": "C_ASK_CONFIRM_RECORD",
+              "text": "Ask: \u201cConfirm for the record: locked door, reader can log but not actuate.\u201d",
+              "next": "N_EAC_CONFIRM_1"
+            },
+            {
+              "id": "C_LEAVE_CALL",
+              "text": "Leave.",
+              "next": "N_CALL_END"
+            }
+          ]
+        },
+        {
+          "id": "N_EAC_ACCESS_1",
+          "type": "npc_line",
+          "speakerId": "EAC_LIAISON",
+          "text": "Access isn't one action. (pause) It's chain of custody. (pause)\nIf you mean entry, (pause) it's governed by the site's mothball status. (pause)\nThat's operational posture. (pause) Not abandonment.",
+          "next": "N_EAC_ACCESS_2"
+        },
+        {
+          "id": "N_EAC_ACCESS_2",
+          "type": "npc_line",
+          "speakerId": "EAC_LIAISON",
+          "text": "So the correct first step is (pause) confirm access control can log a record. (pause) Try your badge. (pause) If it fails, don\u2019t repeat more than twice. (pause) Repetition implies expectation. (pause) Expectation implies a test. (pause) Tests imply scope.",
+          "next": "N_CALL_WAIT_1"
+        },
+        {
+          "id": "N_CALL_WAIT_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The speaker waits with the patience of a form.",
+          "next": "PC_CALL_MENU"
+        },
+        {
+          "id": "N_EAC_POWER_1",
+          "type": "npc_line",
+          "speakerId": "EAC_LIAISON",
+          "text": "Underpowered is a strong word.(pause) I'd say \u201cintermittently energized.\u201d(pause) Consistent with mothball.(pause) Mothball isn't off.(pause) It's minimized.",
+          "next": "N_EAC_POWER_2"
+        },
+        {
+          "id": "N_EAC_POWER_2",
+          "type": "npc_line",
+          "speakerId": "EAC_LIAISON",
+          "text": "It may authenticate without actuating, yes. (pause) That\u2019s actually preferable for us. (pause) Authentication creates a timestamp. (pause) Actuation creates liability.",
+          "next": "N_CALL_WAIT_2"
+        },
+        {
+          "id": "N_CALL_WAIT_2",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "Static crackles, like someone shuffling papers.",
+          "next": "PC_CALL_MENU"
+        },
+        {
+          "id": "N_EAC_ONSITE_1",
+          "type": "npc_line",
+          "speakerId": "EAC_LIAISON",
+          "text": "\u201cOn-site\u201d is geographic. (pause)\n\u201cPresent\u201d is procedural. (pause)\nNo staffed guard function. (pause)\nIf that\u2019s what you\u2019re asking. (pause)\nStaffing was removed under the continuity amendment. (pause)\nBecause the facility was considered stable.",
+          "next": "N_EAC_ONSITE_2"
+        },
+        {
+          "id": "N_EAC_ONSITE_2",
+          "type": "npc_line",
+          "speakerId": "EAC_LIAISON",
+          "text": "Stable as in \u201cnot moving.\u201d (pause) Not stable as in \u201csafe.\u201d (pause) Different column. (pause)\nAssurance is remote. (pause) Contracted by your funders, not your office. (pause) So we don\u2019t muddle authority. (pause)\nI document deviations. (pause) I don\u2019t authorize solutions.",
+          "next": "N_CALL_WAIT_3"
+        },
+        {
+          "id": "N_CALL_WAIT_3",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The call box hums, faintly pleased to be useful.",
+          "next": "PC_CALL_MENU"
+        },
+        {
+          "id": "N_EAC_OLEA_PASS_1",
+          "type": "npc_line",
+          "speakerId": "EAC_LIAISON",
+          "text": "I hear you, (pause) I\u2019m not disputing your badge color. (pause) But \u201cactual access path\u201d implies one sanctioned route. (pause) If I say it aloud it\u2019s discoverable. (pause) So I can confirm what\u2019s not available. (pause) For your record.",
+          "next": "N_EAC_OLEA_PASS_2"
+        },
+        {
+          "id": "N_EAC_OLEA_PASS_2",
+          "type": "npc_line",
+          "speakerId": "EAC_LIAISON",
+          "text": "There is no on-site attendant. (pause) There is no remote door release. (pause) The reader is budgeted to log attempts. (pause) Not to drive the strike. (pause) So it\u2019s \u201cintermittently energized.\u201d (pause) If you need entry, use another mechanism. (pause) Not the reader.",
+          "next": "N_EAC_OLEA_PASS_3"
+        },
+        {
+          "id": "N_EAC_OLEA_PASS_3",
+          "type": "npc_line",
+          "speakerId": "EAC_LIAISON",
+          "text": "Like a work order. (pause) Like a keyed override. (pause) It may or may not exist. (pause) Where the signage claims it exists. (pause) Like\u2014my personal favorite\u2014routing your need. (pause) Through the pneumatic system, because then it (pause) becomes paper. (pause) And everyone relaxes.",
+          "next": "N_CALL_WAIT_4"
+        },
+        {
+          "id": "N_CALL_WAIT_4",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The speaker clicks softly, as if it\u2019s smiling.",
+          "next": "PC_CALL_MENU"
+        },
+        {
+          "id": "N_EAC_OLEA_FAIL_1",
+          "type": "npc_line",
+          "speakerId": "EAC_LIAISON",
+          "text": "I can\u2019t validate authority from a call box. (pause) Want this to be actionable? (pause) Phrase it as an observation I can log. (pause) Not an instruction I can transmit.",
+          "next": "PC_CALL_MENU"
+        },
+        {
+          "id": "N_EAC_CONFIRM_1",
+          "type": "npc_line",
+          "speakerId": "EAC_LIAISON",
+          "text": "Confirmed as stated: door state is locked. (pause) The reader\u2019s power posture supports logging attempts. (pause) Reliable actuation is not supported. (pause) This boundary is acceptable for outside documentation.",
+          "next": "END_LOCKED_STATE"
+        },
+        {
+          "id": "N_CALL_END",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The line disconnects cleanly. You\u2019re left with the door, the weak light, and a conversation that will outlive you in a folder.",
+          "next": "PC_MAIN_MENU"
+        },
+        {
+          "id": "END_LOCKED_STATE",
+          "type": "end",
+          "outcomeId": "see_shack_locked_state",
+          "effects": [
+            {
+              "key": "world.guardShackLocked",
+              "action": "set",
+              "value": true
+            }
+          ]
+        },
+        {
+          "id": "END_LEAVE",
+          "type": "end"
+        }
+      ]
+    }
+  ]
+}

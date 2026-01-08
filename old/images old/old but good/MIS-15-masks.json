@@ -1,0 +1,102 @@
+{
+  "screen_id": "MIS-15",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Beacon stake",
+      "slug": "beacon_stake",
+      "file": "images/MIS-15-mask-beacon_stake.png",
+      "boxes": [
+        {
+          "label": "Beacon stake",
+          "box_2d": [
+            389,
+            218,
+            452,
+            245
+          ]
+        },
+        {
+          "label": "Beacon stake",
+          "box_2d": [
+            273,
+            161,
+            497,
+            216
+          ]
+        },
+        {
+          "label": "Beacon stake",
+          "box_2d": [
+            306,
+            818,
+            482,
+            863
+          ]
+        },
+        {
+          "label": "Beacon stake",
+          "box_2d": [
+            461,
+            321,
+            679,
+            355
+          ]
+        },
+        {
+          "label": "Beacon stake",
+          "box_2d": [
+            207,
+            667,
+            646,
+            786
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Marker pylon",
+      "slug": "marker_pylon",
+      "file": "images/MIS-15-mask-marker_pylon.png",
+      "boxes": [
+        {
+          "label": "Marker pylon",
+          "box_2d": [
+            389,
+            230,
+            439,
+            245
+          ]
+        },
+        {
+          "label": "Marker pylon",
+          "box_2d": [
+            275,
+            163,
+            528,
+            222
+          ]
+        },
+        {
+          "label": "Marker pylon",
+          "box_2d": [
+            308,
+            818,
+            484,
+            863
+          ]
+        },
+        {
+          "label": "Marker pylon",
+          "box_2d": [
+            206,
+            665,
+            626,
+            781
+          ]
+        }
+      ]
+    }
+  ]
+}

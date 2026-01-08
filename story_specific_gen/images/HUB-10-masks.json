@@ -1,0 +1,109 @@
+{
+  "screen_id": "HUB-10",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Training date interlock panel",
+      "slug": "training_date_interlock_panel",
+      "file": "story_specific_gen/images/HUB-10-mask-training_date_interlock_panel.png",
+      "boxes": [
+        {
+          "label": "Interlock Panel Sign",
+          "box_2d": [
+            262,
+            479,
+            327,
+            569
+          ]
+        },
+        {
+          "label": "Interlock Panel Unit",
+          "box_2d": [
+            337,
+            452,
+            577,
+            592
+          ]
+        },
+        {
+          "label": "Interlock Panel keypad",
+          "box_2d": [
+            478,
+            452,
+            577,
+            532
+          ]
+        },
+        {
+          "label": "Interlock Panel document holder",
+          "box_2d": [
+            447,
+            535,
+            566,
+            589
+          ]
+        },
+        {
+          "label": "Training Date Slot sign",
+          "box_2d": [
+            591,
+            497,
+            638,
+            591
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "LOTO main lock point",
+      "slug": "loto_main_lock_point",
+      "file": "story_specific_gen/images/HUB-10-mask-loto_main_lock_point.png",
+      "boxes": [
+        {
+          "label": "LOTO main lock point",
+          "box_2d": [
+            365,
+            290,
+            608,
+            421
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Ventilation status indicator",
+      "slug": "ventilation_status_indicator",
+      "file": "story_specific_gen/images/HUB-10-mask-ventilation_status_indicator.png",
+      "boxes": [
+        {
+          "label": "Ventilation status indicator",
+          "box_2d": [
+            171,
+            646,
+            246,
+            804
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Procedure placard stack",
+      "slug": "procedure_placard_stack",
+      "file": "story_specific_gen/images/HUB-10-mask-procedure_placard_stack.png",
+      "boxes": [
+        {
+          "label": "Procedure placard stack",
+          "box_2d": [
+            264,
+            159,
+            629,
+            245
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "screen_id": "HUB-12",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Reflectivity test station",
+      "slug": "reflectivity_test_station",
+      "file": "story_specific_gen/images/HUB-12-mask-reflectivity_test_station.png",
+      "boxes": [
+        {
+          "label": "Reflectivity test station",
+          "box_2d": [
+            647,
+            0,
+            992,
+            350
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Calibration puck",
+      "slug": "calibration_puck",
+      "file": "story_specific_gen/images/HUB-12-mask-calibration_puck.png",
+      "boxes": [
+        {
+          "label": "Calibration puck for reflectivity test",
+          "box_2d": [
+            750,
+            203,
+            856,
+            261
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Return canister tray",
+      "slug": "return_canister_tray",
+      "file": "story_specific_gen/images/HUB-12-mask-return_canister_tray.png",
+      "boxes": [
+        {
+          "label": "Return canister tray",
+          "box_2d": [
+            362,
+            893,
+            549,
+            984
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Observation window latch",
+      "slug": "observation_window_latch",
+      "file": "story_specific_gen/images/HUB-12-mask-observation_window_latch.png",
+      "boxes": [
+        {
+          "label": "Observation window latch label",
+          "box_2d": [
+            395,
+            194,
+            465,
+            263
+          ]
+        },
+        {
+          "label": "Observation window latch handle",
+          "box_2d": [
+            447,
+            245,
+            532,
+            274
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "changes": [
+    {
+      "action": "add",
+      "createScene": {
+        "dialogueGraphs": [
+          {
+            "id": "DG_SCN093_BINDER_SUPPLIES_SHELF",
+            "nodes": [
+              {
+                "id": "N_ENTRY",
+                "next": "N_MENU",
+                "speakerId": "NARRATOR",
+                "text": "A metal shelf labeled DOCUMENT ASSEMBLY.\nThe label is crisp; the supplies look rationed.\n\nVisible: empty binder spines, tab dividers, a hole punch with a bent handle, label tape, and sealed toner boxes.\nA small plastic latch is tagged INVENTORY CONTROL \u2014 DO NOT SELF-ISSUE, which feels targeted.",
+                "type": "npc_line"
+              },
+              {
+                "choices": [
+                  {
+                    "id": "C_SHELF_INVENTORY",
+                    "next": "N_SHELF_INVENTORY",
+                    "text": "look \u201cInventory what\u2019s here.\u201d"
+                  },
+                  {
+                    "id": "C_SHELF_LATCH",
+                    "next": "N_SHELF_LATCH",
+                    "text": "use \u201cTry the latch.\u201d"
+                  },
+                  {
+                    "conditions": [
+                      {
+                        "key": "player.factions",
+                        "op": "in",
+                        "value": "OLEA"
+                      }
+                    ],
+                    "id": "C_SHELF_OLEA",
+                    "next": "N_SHELF_OLEA_PLAYER",
+                    "text": "persuade \u201c[OLEA] Invoke closure authority to self-issue supplies.\u201d"
+                  },
+                  {
+                    "id": "C_SHELF_MIN",
+                    "next": "N_SHELF_MIN",
+                    "text": "look \u201cLook for anything that counts as \u2018minimum closure binder\u2019 material.\u201d"
+                  },
+                  {
+                    "id": "C_BACK",
+                    "next": "END_BACK",
+                    "text": "leave \u201cBack.\u201d"
+                  }
+                ],
+                "id": "N_MENU",
+                "speakerId": "PLAYER",
+                "type": "player_choice"
+              },
+              {
+                "id": "N_SHELF_INVENTORY",
+                "next": "N_MENU",
+                "speakerId": "NARRATOR",
+                "text": "You take stock: binder covers, rings, tabs, hole punch, label tape, and toner.\nEnough to manufacture legitimacy, assuming the machines cooperate.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_SHELF_LATCH",
+                "next": "N_SHELF_LATCH_MENU",
+                "speakerId": "NARRATOR",
+                "text": "The latch does not open.\nIt isn\u2019t strong. It\u2019s principled.\n\nA tag dangles: RELEASE REQUIRES ISSUE LOG ENTRY.\nThe issue log is a clipboard that is missing by policy.",
+                "type": "npc_line"
+              },
+              {
+                "choices": [
+                  {
+                    "conditions": [
+                      {
+                        "key": "player.factions",
+                        "op": "in",
+                        "value": "OLEA"
+                      }
+                    ],
+                    "id": "C_LATCH_OLEA",
+                    "next": "N_SHELF_OLEA_PLAYER",
+                    "text": "persuade \u201c[OLEA] Invoke closure authority to self-issue supplies.\u201d"
+                  },
+                  {
+                    "id": "C_LATCH_BACK",
+                    "next": "END_BACK",
+                    "text": "leave \u201cBack.\u201d"
+                  }
+                ],
+                "id": "N_SHELF_LATCH_MENU",
+                "speakerId": "PLAYER",
+                "type": "player_choice"
+              },
+              {
+                "id": "N_SHELF_MIN",
+                "next": "N_SHELF_MIN_MENU",
+                "speakerId": "NARRATOR",
+                "text": "The shelf has everything except permission.\nWhich, historically, is the hardest component to source.\n\nYou can already see the binder\u2019s bones: tabs, covers, labels, and toner to make it all look intentional.",
+                "type": "npc_line"
+              },
+              {
+                "choices": [
+                  {
+                    "conditions": [
+                      {
+                        "key": "player.factions",
+                        "op": "in",
+                        "value": "OLEA"
+                      }
+                    ],
+                    "id": "C_MIN_OLEA",
+                    "next": "N_SHELF_OLEA_PLAYER",
+                    "text": "persuade \u201c[OLEA] Invoke closure authority to self-issue supplies.\u201d"
+                  },
+                  {
+                    "id": "C_MIN_BACK",
+                    "next": "END_BACK",
+                    "text": "leave \u201cBack.\u201d"
+                  }
+                ],
+                "id": "N_SHELF_MIN_MENU",
+                "speakerId": "PLAYER",
+                "type": "player_choice"
+              },
+              {
+                "id": "N_SHELF_OLEA_PLAYER",
+                "next": "N_SHELF_OLEA_NARR",
+                "speakerId": "PLAYER",
+                "text": "Closure authority. Self-issue for decommissioning.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_SHELF_OLEA_NARR",
+                "next": "N_DISCOVER_WRAP",
+                "speakerId": "NARRATOR",
+                "text": "You say it like you\u2019ve said it into worse rooms.\nThe latch doesn\u2019t respect you, but it does respect the phrase.\n\nIt clicks open.\n\nInside: toner cartridges, fresh tab sets, and a sealed minimum-capacity binder.\nThe room is now, unavoidably, a binder workstation.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_DISCOVER_WRAP",
+                "next": "END_DISCOVER_BINDER_WORKSTATION",
+                "speakerId": "NARRATOR",
+                "text": "You\u2019ve identified the machinery and supplies needed to assemble the minimum closure binder:\ncopier access, toner, confirmation-print capability, and physical binder materials.\n\nYou do not assemble anything yet.\nYou just learn what you can prove.",
+                "type": "npc_line"
+              },
+              {
+                "effects": [
+                  {
+                    "action": "set",
+                    "key": "world.copyRoomDiscovered",
+                    "value": true
+                  }
+                ],
+                "id": "END_DISCOVER_BINDER_WORKSTATION",
+                "outcomeId": "discover_binder_workstation",
+                "type": "end"
+              },
+              {
+                "id": "END_BACK",
+                "type": "end"
+              }
+            ],
+            "sceneId": "SCN-093",
+            "startNodeId": "N_ENTRY"
+          }
+        ]
+      },
+      "op": "create_scene"
+    }
+  ],
+  "sceneId": "SCN-093"
+}

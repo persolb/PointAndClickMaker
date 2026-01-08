@@ -1,0 +1,414 @@
+{
+  "dialogueGraphs": [
+    {
+      "id": "DG_TRAINING_INTERLOCK",
+      "sceneId": "SCN-032",
+      "startNodeId": "N_INTRO_1",
+      "nodes": [
+        {
+          "id": "N_INTRO_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The training date interlock panel sits at chest height, bolted to the corridor wall like an apology. Its screen is lit. The green light is off.",
+          "next": "N_INTRO_2"
+        },
+        {
+          "id": "N_INTRO_2",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "On-screen: TRAINING STATUS: NOT CURRENT. Subtext: LOTO ACCESS WITHHELD PENDING DATE-SHAPED VERIFICATION.",
+          "next": "N_INTRO_3"
+        },
+        {
+          "id": "N_INTRO_3",
+          "type": "npc_line",
+          "speakerId": "COMPLIANCE_INTERCOM",
+          "text": "Before you do anything with that panel\u2014this is recorded for training and assurance purposes. Not yours. Ours.",
+          "next": "N_INTRO_4"
+        },
+        {
+          "id": "N_INTRO_4",
+          "type": "npc_line",
+          "speakerId": "COMPLIANCE_INTERCOM",
+          "text": "If you\u2019re seeing \u201cNot Current,\u201d that means the system cannot confirm you are currently trained, which is different from you being untrained. It\u2019s a documentation state. It\u2019s not\u2014 it\u2019s not an insult.",
+          "next": "N_INTRO_5"
+        },
+        {
+          "id": "N_INTRO_5",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "It\u2019s blocking LOTO.",
+          "next": "N_INTRO_6"
+        },
+        {
+          "id": "N_INTRO_6",
+          "type": "npc_line",
+          "speakerId": "COMPLIANCE_INTERCOM",
+          "text": "Correct. Because LOTO is a behavior, and behavior requires currency. Not because you\u2019re unsafe. Because we can\u2019t prove you\u2019re safe. There\u2019s a difference that matters in a deposition.",
+          "next": "N_INTRO_7"
+        },
+        {
+          "id": "N_INTRO_7",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The panel emits a quiet chirp, like it wants you to feel responsible for it.",
+          "next": "PC_MENU"
+        },
+        {
+          "id": "PC_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "TALK_GUIDANCE",
+              "text": "(talk) \"Walk me through acceptable methods.\"",
+              "next": "N_TALK_1"
+            },
+            {
+              "id": "LOOK_READER",
+              "text": "(look) Inspect the reader and labels.",
+              "next": "N_LOOK_1"
+            },
+            {
+              "id": "ASK_WHAT",
+              "text": "(ask) \"What does it want, exactly?\"",
+              "next": "N_ASK_WHAT_1"
+            },
+            {
+              "id": "ASK_WHY",
+              "text": "(ask) \"Why is a date gate on a lock point?\"",
+              "next": "N_ASK_WHY_1"
+            },
+            {
+              "id": "SHOW_WAIVER",
+              "text": "(show) \"Signed waiver.\"",
+              "next": "N_WAIVER_1"
+            },
+            {
+              "id": "USE_STICKER",
+              "text": "(use) Apply a token sticker to the reader.",
+              "next": "N_STICKER_1"
+            },
+            {
+              "id": "PERSUADE_OVERRIDE",
+              "text": "(persuade) \"Override it. I\u2019m OLEA.\"",
+              "conditions": [
+                {
+                  "key": "player.factions",
+                  "op": "in",
+                  "value": "OLEA"
+                }
+              ],
+              "next": "N_PERSUADE_1"
+            },
+            {
+              "id": "LEAVE",
+              "text": "(leave) Step away.",
+              "next": "N_LEAVE_1"
+            }
+          ]
+        },
+        {
+          "id": "N_TALK_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You wait. The intercom clicks, as if someone moved a cup off a button.",
+          "next": "N_TALK_2"
+        },
+        {
+          "id": "N_TALK_2",
+          "type": "npc_line",
+          "speakerId": "COMPLIANCE_INTERCOM",
+          "text": "I can walk you through acceptable methods. Acceptable as in \u201caccepted by the interlock.\u201d Not \u201cendorsed by me personally,\u201d just so we\u2019re clean.",
+          "next": "R_TO_MENU"
+        },
+        {
+          "id": "N_LOOK_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "A scratched optical reader. A faded label: \u201cTRAINING: ENTER DATE / PRESENT PROOF.\u201d Someone has underlined DATE twice, hard enough to tear the laminate.",
+          "next": "R_TO_MENU"
+        },
+        {
+          "id": "N_ASK_WHAT_1",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "What does it want?",
+          "next": "N_ASK_WHAT_2"
+        },
+        {
+          "id": "N_ASK_WHAT_2",
+          "type": "npc_line",
+          "speakerId": "COMPLIANCE_INTERCOM",
+          "text": "A date. Not a metaphorical date. Not \u201cI did the training in spirit.\u201d A date the panel can parse.",
+          "next": "N_ASK_WHAT_3"
+        },
+        {
+          "id": "N_ASK_WHAT_3",
+          "type": "npc_line",
+          "speakerId": "COMPLIANCE_INTERCOM",
+          "text": "It will accept: a current training record via badge lookup, a stamped completion card, or a signed waiver with the correct wording. Correct wording meaning the wording Legal fought for, not the wording Safety prefers.",
+          "next": "N_ASK_WHAT_4"
+        },
+        {
+          "id": "N_ASK_WHAT_4",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Badge lookup?",
+          "next": "N_ASK_WHAT_5"
+        },
+        {
+          "id": "N_ASK_WHAT_5",
+          "type": "npc_line",
+          "speakerId": "COMPLIANCE_INTERCOM",
+          "text": "Unavailable. Network segmentation. Which is\u2014 it\u2019s deliberate. It\u2019s not negligence. It\u2019s containment. Different budget line.",
+          "next": "N_ASK_WHAT_6"
+        },
+        {
+          "id": "N_ASK_WHAT_6",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The \u201cNot Current\u201d message does not change.",
+          "next": "R_TO_MENU"
+        },
+        {
+          "id": "N_ASK_WHY_1",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Why is a date gate on a lock point?",
+          "next": "N_ASK_WHY_2"
+        },
+        {
+          "id": "N_ASK_WHY_2",
+          "type": "npc_line",
+          "speakerId": "COMPLIANCE_INTERCOM",
+          "text": "Because the lock point is an interface, and interfaces are where people improvise. The date gate stops improvisation by forcing you to improvise in a documented manner.",
+          "next": "N_ASK_WHY_3"
+        },
+        {
+          "id": "N_ASK_WHY_3",
+          "type": "npc_line",
+          "speakerId": "COMPLIANCE_INTERCOM",
+          "text": "Also, historically, someone bypassed a lock with a wrench and then claimed the lock was \u201cconfusing.\u201d So now the lock is very clear. In the most inconvenient way possible.",
+          "next": "N_ASK_WHY_4"
+        },
+        {
+          "id": "N_ASK_WHY_4",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The panel flashes a small warning icon: \u201cUSER ENGAGED: PROVIDE PROOF.\u201d It feels accusatory, but it\u2019s just pixels.",
+          "next": "R_TO_MENU"
+        },
+        {
+          "id": "N_PERSUADE_1",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Override it. I\u2019m OLEA.",
+          "next": "N_PERSUADE_2"
+        },
+        {
+          "id": "N_PERSUADE_2",
+          "type": "npc_line",
+          "speakerId": "COMPLIANCE_INTERCOM",
+          "text": "I hear you. And for the record, I respect the title. But this unit doesn\u2019t have an \u201coverride,\u201d it has an \u201cacceptable alternate.\u201d Language matters.",
+          "next": "N_PERSUADE_3"
+        },
+        {
+          "id": "N_PERSUADE_3",
+          "type": "npc_line",
+          "speakerId": "COMPLIANCE_INTERCOM",
+          "text": "If I tell you \u201cgo ahead,\u201d and the panel still logs \u201cNot Current,\u201d then we\u2019ve created a conflict between spoken instruction and hardware log. And hardware logs win. They always win. They don\u2019t get nervous on the stand.",
+          "next": "N_PERSUADE_4"
+        },
+        {
+          "id": "N_PERSUADE_4",
+          "type": "npc_line",
+          "speakerId": "COMPLIANCE_INTERCOM",
+          "text": "So. Use the waiver if you have it. Or present a token the reader will accept. Those are your two clean paths\u2014 clean as in traceable.",
+          "next": "R_TO_MENU"
+        },
+        {
+          "id": "N_WAIVER_1",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Show waiver.",
+          "next": "N_WAIVER_2"
+        },
+        {
+          "id": "N_WAIVER_2",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You hold the signed waiver up to the panel camera. The paper is creased where it\u2019s been folded and unfolded too many times. The signature block is darker, like someone pressed too hard.",
+          "next": "N_WAIVER_3"
+        },
+        {
+          "id": "N_WAIVER_3",
+          "type": "npc_line",
+          "speakerId": "COMPLIANCE_INTERCOM",
+          "text": "Okay\u2014 yes. That\u2019s the waiver format. And just to be explicit: a waiver is not \u201capproval,\u201d it\u2019s \u201cassumption of risk.\u201d Which sounds like the same thing until someone gets ambitious.",
+          "next": "N_WAIVER_4"
+        },
+        {
+          "id": "N_WAIVER_4",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The panel scans. It takes longer than it should, as if the delay is part of the lesson.",
+          "next": "N_WAIVER_5"
+        },
+        {
+          "id": "N_WAIVER_5",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "On-screen: WAIVER VERIFIED. Then: TRAINING STATUS: CONDITIONALLY CURRENT.",
+          "next": "N_WAIVER_6"
+        },
+        {
+          "id": "N_WAIVER_6",
+          "type": "npc_line",
+          "speakerId": "COMPLIANCE_INTERCOM",
+          "text": "Conditionally current. That\u2019s good. That\u2019s as good as it gets in this building.",
+          "next": "N_WAIVER_7"
+        },
+        {
+          "id": "N_WAIVER_7",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The green light clicks on. A relay somewhere behind the wall answers with a dull thunk. The panel displays: ACCESS RESTORED. PROCEED TO LOTO MAIN LOCK POINT.",
+          "next": "N_WAIVER_8"
+        },
+        {
+          "id": "N_WAIVER_8",
+          "type": "npc_line",
+          "speakerId": "COMPLIANCE_INTERCOM",
+          "text": "Proceed. And\u2014 just\u2014 don\u2019t make me say \u201cgood job\u201d on a recording.",
+          "next": "END_WAIVER"
+        },
+        {
+          "id": "END_WAIVER",
+          "type": "end",
+          "outcomeId": "use_signed_waiver",
+          "effects": [
+            {
+              "key": "ops.trainingGateCleared",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "compliance.state",
+              "action": "increment",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "id": "N_STICKER_1",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Use sticker.",
+          "next": "N_STICKER_2"
+        },
+        {
+          "id": "N_STICKER_2",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You peel a small token sticker from a backing strip\u2014 glossy, date-colored, the kind that exists because printers lie. You place it over the optical reader\u2019s worn window.",
+          "next": "N_STICKER_3"
+        },
+        {
+          "id": "N_STICKER_3",
+          "type": "npc_line",
+          "speakerId": "COMPLIANCE_INTERCOM",
+          "text": "I need to state, for the record, that I did not instruct you to\u2014 I\u2019m seeing what you\u2019re doing. I\u2019m not telling you to do it.",
+          "next": "N_STICKER_4"
+        },
+        {
+          "id": "N_STICKER_4",
+          "type": "npc_line",
+          "speakerId": "COMPLIANCE_INTERCOM",
+          "text": "The panel is very literal. If it sees a date-shaped token, it will log a date-shaped compliance event. Which is\u2026 not fraud. It\u2019s a substitution. Different words. Less prison.",
+          "next": "N_STICKER_5"
+        },
+        {
+          "id": "N_STICKER_5",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The reader pulses red, then amber, then\u2014 as if embarrassed\u2014 green.",
+          "next": "N_STICKER_6"
+        },
+        {
+          "id": "N_STICKER_6",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "On-screen: TOKEN ACCEPTED. Then: TRAINING STATUS: CURRENT (LOCAL).",
+          "next": "N_STICKER_7"
+        },
+        {
+          "id": "N_STICKER_7",
+          "type": "npc_line",
+          "speakerId": "COMPLIANCE_INTERCOM",
+          "text": "Local current. Great. That means it will satisfy this interlock and annoy an auditor later, specifically one with time.",
+          "next": "N_STICKER_8"
+        },
+        {
+          "id": "N_STICKER_8",
+          "type": "npc_line",
+          "speakerId": "COMPLIANCE_INTERCOM",
+          "text": "If anyone asks: the system accepted an approved token. Do not say \u201csticker.\u201d \u201cSticker\u201d sounds like a craft.",
+          "next": "N_STICKER_9"
+        },
+        {
+          "id": "N_STICKER_9",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The green light clicks on. The corridor feels unchanged, but the lock logic is now willing to pretend you exist. The panel displays: ACCESS RESTORED. PROCEED TO LOTO MAIN LOCK POINT.",
+          "next": "END_STICKER"
+        },
+        {
+          "id": "END_STICKER",
+          "type": "end",
+          "outcomeId": "use_token_sticker",
+          "effects": [
+            {
+              "key": "ops.trainingGateCleared",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "compliance.state",
+              "action": "increment",
+              "value": 1
+            },
+            {
+              "key": "compliance.flags",
+              "action": "add",
+              "value": "TRAINING_TOKEN_SUBSTITUTION"
+            }
+          ]
+        },
+        {
+          "id": "N_LEAVE_1",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Leave.",
+          "next": "N_LEAVE_2"
+        },
+        {
+          "id": "N_LEAVE_2",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You step back. The panel keeps its screen lit, waiting to be satisfied. It does not time out. It just holds a grudge politely. You are still in the Operations Corridor. The training gate remains uncleared.",
+          "next": "END_LEAVE"
+        },
+        {
+          "id": "END_LEAVE",
+          "type": "end"
+        },
+        {
+          "id": "R_TO_MENU",
+          "type": "redirect",
+          "target": "PC_MENU"
+        }
+      ]
+    }
+  ]
+}

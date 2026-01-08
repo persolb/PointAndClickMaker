@@ -1,0 +1,93 @@
+{
+  "changes": [
+    {
+      "action": "add",
+      "createScene": {
+        "dialogueGraphs": [
+          {
+            "id": "CTRLROOM_ALARM_PANEL",
+            "nodes": [
+              {
+                "id": "ALARM_DESC",
+                "next": "ALARM_PLAYER_ACTIVE",
+                "speakerId": "NARRATOR",
+                "text": "The alarm panel is quiet: no horns, no strobes.\nSeveral indicator lamps are lit anyway, labeled with comforting words like NORMAL and BYPASS.",
+                "type": "npc_line"
+              },
+              {
+                "id": "ALARM_PLAYER_ACTIVE",
+                "next": "ALARM_LIAISON_TERMS",
+                "speakerId": "PLAYER",
+                "text": "Anything active?",
+                "type": "npc_line"
+              },
+              {
+                "id": "ALARM_LIAISON_TERMS",
+                "next": "ALARM_CHOICES",
+                "speakerId": "EAC_LIAISON",
+                "text": "\u201cActive\u201d is a loaded term. (pause)\nThe alarms are armed. (pause)\nSome are suppressed. (pause)\nOne is in \u201cadministrative silence.\u201d (pause)\nWhich means: true without urgency. (pause)\nDon\u2019t quote me.",
+                "type": "npc_line"
+              },
+              {
+                "choices": [
+                  {
+                    "id": "ASK_WHICH_ONE",
+                    "next": "ALARM_WHICH_LIAISON",
+                    "text": "Ask: Which one?"
+                  },
+                  {
+                    "id": "END",
+                    "next": "END_ALARM_PANEL",
+                    "text": "Back"
+                  }
+                ],
+                "id": "ALARM_CHOICES",
+                "speakerId": "PLAYER",
+                "type": "player_choice"
+              },
+              {
+                "id": "ALARM_WHICH_LIAISON",
+                "next": "ALARM_FOLLOWUP",
+                "speakerId": "EAC_LIAISON",
+                "text": "\u201cReflective Behavior Deviation.\u201d (pause)\nThat\u2019s a historical label. (pause)\nIt isn\u2019t about reflections. (pause)\nThe site once produced an optics-shaped problem. (pause)\nEveryone agreed to file it that way.",
+                "type": "npc_line"
+              },
+              {
+                "choices": [
+                  {
+                    "id": "ASK_SUPPRESSED",
+                    "next": "ALARM_SUPPRESSED_LIAISON",
+                    "text": "Ask: Is it suppressed?"
+                  },
+                  {
+                    "id": "END",
+                    "next": "END_ALARM_PANEL",
+                    "text": "Back"
+                  }
+                ],
+                "id": "ALARM_FOLLOWUP",
+                "speakerId": "PLAYER",
+                "type": "player_choice"
+              },
+              {
+                "id": "ALARM_SUPPRESSED_LIAISON",
+                "next": "ALARM_FOLLOWUP",
+                "speakerId": "EAC_LIAISON",
+                "text": "It is not suppressed. (pause) It is non actionable without a second condition. (pause) That second condition is missing in the binder. (pause) Not my favorite symmetry.",
+                "type": "npc_line"
+              },
+              {
+                "id": "END_ALARM_PANEL",
+                "type": "end"
+              }
+            ],
+            "sceneId": "SCN-102",
+            "startNodeId": "ALARM_DESC"
+          }
+        ]
+      },
+      "op": "create_scene"
+    }
+  ],
+  "sceneId": "SCN-102"
+}

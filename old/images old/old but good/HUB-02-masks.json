@@ -1,0 +1,73 @@
+{
+  "screen_id": "HUB-02",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Logbook",
+      "slug": "logbook",
+      "file": "images/HUB-02-mask-logbook.png",
+      "boxes": [
+        {
+          "label": "Logbook",
+          "box_2d": [
+            722,
+            0,
+            952,
+            355
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Key rack",
+      "slug": "key_rack",
+      "file": "images/HUB-02-mask-key_rack.png",
+      "boxes": [
+        {
+          "label": "key rack",
+          "box_2d": [
+            219,
+            807,
+            365,
+            991
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Desk drawer",
+      "slug": "desk_drawer",
+      "file": "images/HUB-02-mask-desk_drawer.png",
+      "boxes": [
+        {
+          "label": "Desk drawer",
+          "box_2d": [
+            640,
+            591,
+            735,
+            712
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Radio",
+      "slug": "radio",
+      "file": "images/HUB-02-mask-radio.png",
+      "boxes": [
+        {
+          "label": "radio",
+          "box_2d": [
+            512,
+            411,
+            614,
+            570
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/characters.schema.json",
+  "title": "Characters Schema",
+  "description": "Defines characters, their roles, affiliations, traits, relationships, and optional dialogue/voice metadata.",
+  "type": "object",
+  "required": ["characters"],
+  "additionalProperties": false,
+
+  "properties": {
+    "characters": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/character" }
+    }
+  },
+
+  "$defs": {
+    "character": {
+      "type": "object",
+      "required": ["id", "name", "role"],
+      "additionalProperties": true,
+
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Stable unique character identifier.",
+          "pattern": "^[A-Z][A-Z0-9_\\-]{2,32}$"
+        },
+
+        "name": {
+          "type": "string",
+          "description": "Display name."
+        },
+
+        "role": {
+          "type": "string",
+          "description": "High-level narrative role (e.g., player, companion, faction_leader, npc)."
+        },
+
+        "factions": {
+          "type": "array",
+          "description": "Affiliations. Use four letter acryonms.",
+          "items": { "type": "string" },
+          "default": []
+        },
+
+        "short_description": {
+          "type": "string",
+          "description": "One-line description for writers and UI."
+        },
+
+        "bio": {
+          "type": "string",
+          "description": "Longer background bio."
+        },
+
+        "goals": {
+          "type": "array",
+          "description": "Character goals expressed as short statements.",
+          "items": { "type": "string" },
+          "default": []
+        },
+
+        "personality_traits": {
+          "type": "array",
+          "description": "Trait tags (e.g., pragmatic, anxious, charming).",
+          "items": { "type": "string" },
+          "default": []
+        },
+
+        "strengths": {
+          "type": "array",
+          "description": "Capabilities or competencies.",
+          "items": { "type": "string" },
+          "default": []
+        },
+
+        "weaknesses": {
+          "type": "array",
+          "description": "Limitations or vulnerabilities.",
+          "items": { "type": "string" },
+          "default": []
+        },
+
+        "knowledge": {
+          "type": "array",
+          "description": "What this character knows that matters to plot/puzzles.",
+          "items": { "type": "string" },
+          "default": []
+        },
+
+        "secrets": {
+          "type": "array",
+          "description": "Hidden info (writer-facing).",
+          "items": { "type": "string" },
+          "default": []
+        },
+
+        "appearance": {
+          "type": "object",
+          "description": "High-level art-direction descriptors; avoid overly detailed physical biometrics.",
+          "additionalProperties": true,
+          "properties": {
+            "silhouette": { "type": "string" },
+            "outfit": { "type": "string" },
+            "palette_notes": { "type": "string" },
+            "distinctive_items": {
+              "type": "array",
+              "items": { "type": "string" },
+              "default": []
+            }
+          }
+        },
+
+        "dialogue": {
+          "type": "object",
+          "description": "Optional dialogue/voice styling metadata.",
+          "additionalProperties": true,
+          "properties": {
+            "voice_style": { "type": "string" },
+            "speech_patterns": {
+              "type": "array",
+              "items": { "type": "string" },
+              "default": []
+            },
+            "taboo_topics": {
+              "type": "array",
+              "items": { "type": "string" },
+              "default": []
+            }
+          }
+        },
+
+        "relationships": {
+          "type": "array",
+          "description": "Links to other characters.",
+          "items": { "$ref": "#/$defs/relationship" },
+          "default": []
+        },
+
+        "locations": {
+          "type": "array",
+          "description": "Primary screens where this character is typically found (screen IDs).",
+          "items": { "type": "string" },
+          "default": []
+        },
+
+        "flags": {
+          "type": "object",
+          "description": "Optional engine-facing metadata.",
+          "additionalProperties": { "type": ["string", "number", "boolean", "null"] }
+        }
+      }
+    },
+
+    "relationship": {
+      "type": "object",
+      "required": ["to", "type"],
+      "additionalProperties": true,
+      "properties": {
+        "to": {
+          "type": "string",
+          "description": "Target character id."
+        },
+        "type": {
+          "type": "string",
+          "description": "Relationship type (e.g., ally, rival, supervisor, family, owed_favor)."
+        },
+        "strength": {
+          "type": "number",
+          "description": "Optional intensity scale (e.g., -1.0..1.0)."
+        },
+        "notes": {
+          "type": "string",
+          "description": "Writer-facing nuance."
+        }
+      }
+    }
+  }
+}

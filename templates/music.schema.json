@@ -1,0 +1,259 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/schemas/pattern-midi.v1.schema.json",
+  "title": "pattern-midi.v1",
+  "type": "object",
+  "required": ["format", "global", "instruments", "patterns", "arrangement"],
+  "additionalProperties": false,
+  "properties": {
+    "format": {
+      "const": "pattern-midi.v1"
+    },
+    "global": {
+      "type": "object",
+      "required": ["ticks_per_quarter", "time_signature", "tempo_bpm", "bars", "loop"],
+      "additionalProperties": false,
+      "properties": {
+        "ticks_per_quarter": {
+          "type": "integer",
+          "minimum": 48,
+          "maximum": 9600
+        },
+        "time_signature": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": [
+            {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 32
+            },
+            {
+              "type": "integer",
+              "enum": [1, 2, 4, 8, 16, 32]
+            }
+          ]
+        },
+        "tempo_bpm": {
+          "type": "number",
+          "minimum": 20,
+          "maximum": 300
+        },
+        "bars": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 1024
+        },
+        "loop": {
+          "type": "boolean"
+        }
+      }
+    },
+    "instruments": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "$ref": "#/$defs/instrumentDef"
+      },
+      "propertyNames": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 64,
+        "pattern": "^[A-Za-z0-9_\\-]+$"
+      }
+    },
+    "patterns": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "$ref": "#/$defs/patternDef"
+      },
+      "propertyNames": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 64,
+        "pattern": "^[A-Za-z0-9_\\-]+$"
+      }
+    },
+    "arrangement": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/arrangementEntry"
+      }
+    }
+  },
+  "$defs": {
+    "instrumentDef": {
+      "type": "object",
+      "required": ["channel", "program"],
+      "additionalProperties": false,
+      "properties": {
+        "channel": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 16
+        },
+        "program": {
+          "oneOf": [
+            {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 127
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "patternDef": {
+      "type": "object",
+      "required": ["length_beats"],
+      "additionalProperties": false,
+      "properties": {
+        "length_beats": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 64
+        },
+        "notes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/noteEvent"
+          }
+        },
+        "drum_grid": {
+          "$ref": "#/$defs/drumGrid"
+        }
+      },
+      "anyOf": [{ "required": ["notes"] }, { "required": ["drum_grid"] }]
+    },
+    "noteEvent": {
+      "type": "object",
+      "required": ["instrument", "beat", "dur", "pitch", "vel"],
+      "additionalProperties": false,
+      "properties": {
+        "instrument": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 64,
+          "pattern": "^[A-Za-z0-9_\\-]+$"
+        },
+        "beat": {
+          "type": "number",
+          "minimum": 0
+        },
+        "dur": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "pitch": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 127
+        },
+        "vel": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 127
+        }
+      }
+    },
+    "drumGrid": {
+      "type": "object",
+      "required": ["resolution", "lanes"],
+      "additionalProperties": false,
+      "properties": {
+        "resolution": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 256
+        },
+        "swing": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 0.5,
+          "default": 0
+        },
+        "lanes": {
+          "type": "object",
+          "minProperties": 1,
+          "additionalProperties": {
+            "$ref": "#/$defs/drumLane"
+          },
+          "propertyNames": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 64,
+            "pattern": "^[A-Za-z0-9_\\-]+$"
+          }
+        }
+      }
+    },
+    "drumLane": {
+      "type": "object",
+      "required": ["pitch", "vel", "steps"],
+      "additionalProperties": false,
+      "properties": {
+        "pitch": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 127
+        },
+        "vel": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 127
+        },
+        "steps": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "integer",
+            "enum": [0, 1]
+          }
+        }
+      }
+    },
+    "arrangementEntry": {
+      "type": "object",
+      "required": ["pattern", "start_bar", "repeat"],
+      "additionalProperties": false,
+      "properties": {
+        "pattern": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 64,
+          "pattern": "^[A-Za-z0-9_\\-]+$"
+        },
+        "start_bar": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "repeat": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "transpose": {
+          "type": "integer",
+          "minimum": -36,
+          "maximum": 36,
+          "default": 0
+        },
+        "velocity_scale": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 2.0,
+          "default": 1.0
+        },
+        "mute": {
+          "type": "boolean",
+          "default": false
+        }
+      }
+    }
+  }
+}

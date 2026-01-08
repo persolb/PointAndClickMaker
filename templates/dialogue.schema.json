@@ -1,0 +1,308 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/dialogue.schema.json",
+  "title": "Branching Dialogue Schema",
+  "description": "Fallout-style branching dialogue graphs with conditionals, checks (dc), and pass/fail routing (onPassNext/onFailNext).",
+  "type": "object",
+  "required": ["dialogueGraphs"],
+  "additionalProperties": false,
+
+  "properties": {
+    "dialogueGraphs": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/dialogueGraph" }
+    }
+  },
+
+  "$defs": {
+    "dialogueGraph": {
+      "type": "object",
+      "required": ["id", "sceneId", "startNodeId", "nodes"],
+      "additionalProperties": true,
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique id for the dialogue graph.",
+          "pattern": "^[A-Z][A-Z0-9_\\-]{2,64}$"
+        },
+        "sceneId": {
+          "type": "string",
+          "description": "Scene id (from scenes.json) that owns this dialogue graph."
+        },
+        "outcomeId": {
+          "type": "string",
+          "description": "Optional: if this graph is specific to a particular scene outcome."
+        },
+        "startNodeId": {
+          "type": "string",
+          "description": "Node id to begin at."
+        },
+        "nodes": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/node" }
+        }
+      }
+    },
+
+    "node": {
+      "type": "object",
+      "required": ["id", "type"],
+      "additionalProperties": true,
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique id for a node within the graph.",
+          "pattern": "^[A-Z0-9][A-Z0-9_\\-]{0,64}$"
+        },
+
+        "type": {
+          "type": "string",
+          "description": "Node type.",
+          "enum": ["npc_line", "player_choice", "redirect", "end"]
+        },
+
+        "speakerId": {
+          "type": "string",
+          "description": "Character id (from characters.json). Use PLAYER or NARRATOR if desired."
+        },
+
+        "text": {
+          "type": "string",
+          "description": "Dialogue text. Mutually exclusive with locKey if you localize."
+        },
+
+        "locKey": {
+          "type": "string",
+          "description": "Localization key. Mutually exclusive with text."
+        },
+
+        "conditions": {
+          "type": "array",
+          "description": "Conditions that must be true for this node to be eligible.",
+          "items": { "$ref": "#/$defs/condition" },
+          "default": []
+        },
+
+        "effects": {
+          "type": "array",
+          "description": "State changes applied when this node is entered (after selection).",
+          "items": { "$ref": "#/$defs/effect" },
+          "default": []
+        },
+
+        "next": {
+          "type": "string",
+          "description": "Next node id (used by npc_line/redirect)."
+        },
+
+        "target": {
+          "type": "string",
+          "description": "Redirect target node id (used by redirect)."
+        },
+
+        "choices": {
+          "type": "array",
+          "description": "Player choices (used by player_choice).",
+          "items": { "$ref": "#/$defs/choice" }
+        },
+
+        "outcomeId": {
+          "type": "string",
+          "description": "Optional: scene outcome id selected when this end node is reached."
+        }
+      },
+
+      "allOf": [
+        {
+          "if": { "properties": { "type": { "const": "npc_line" } } },
+          "then": {
+            "required": ["speakerId"],
+            "oneOf": [
+              { "required": ["text"] },
+              { "required": ["locKey"] }
+            ],
+            "not": { "required": ["choices"] }
+          }
+        },
+        {
+          "if": { "properties": { "type": { "const": "player_choice" } } },
+          "then": {
+            "required": ["speakerId", "choices"],
+            "not": { "required": ["next"] }
+          }
+        },
+        {
+          "if": { "properties": { "type": { "const": "redirect" } } },
+          "then": {
+            "required": ["target"],
+            "not": { "required": ["choices"] }
+          }
+        },
+        {
+          "if": { "properties": { "type": { "const": "end" } } },
+          "then": {
+            "not": { "required": ["next"] },
+            "not": { "required": ["choices"] }
+          }
+        }
+      ]
+    },
+
+    "choice": {
+      "type": "object",
+      "required": ["id", "text"],
+      "additionalProperties": true,
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique id for the choice within its node.",
+          "pattern": "^[A-Z0-9][A-Z0-9_\\-]{0,64}$"
+        },
+
+        "text": {
+          "type": "string",
+          "description": "Player-visible choice text. If you localize, add locKey as an extension field."
+        },
+
+        "conditions": {
+          "type": "array",
+          "description": "Conditions required for this choice to appear.",
+          "items": { "$ref": "#/$defs/condition" },
+          "default": []
+        },
+
+        "checks": {
+          "type": "array",
+          "description": "Optional checks (skill/rep/item/etc). If present, use onPassNext/onFailNext.",
+          "items": { "$ref": "#/$defs/check" },
+          "default": []
+        },
+
+        "effects": {
+          "type": "array",
+          "description": "State changes applied when this choice is selected (before routing).",
+          "items": { "$ref": "#/$defs/effect" },
+          "default": []
+        },
+
+        "next": {
+          "type": "string",
+          "description": "Next node id if no checks are present."
+        },
+
+        "onPassNext": {
+          "type": "string",
+          "description": "Next node id when checks pass."
+        },
+
+        "onFailNext": {
+          "type": "string",
+          "description": "Next node id when checks fail."
+        }
+      },
+
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "checks": { "minItems": 1 }
+            },
+            "required": ["checks"]
+          },
+          "then": {
+            "required": ["onPassNext", "onFailNext"]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "checks": { "maxItems": 0 }
+            }
+          },
+          "then": {
+            "required": ["next"]
+          }
+        }
+      ]
+    },
+
+    "condition": {
+      "type": "object",
+      "description": "A simple boolean gate expression. Your engine defines the key namespace.",
+      "required": ["key", "op", "value"],
+      "additionalProperties": true,
+      "properties": {
+        "key": { "type": "string" },
+        "op": {
+          "type": "string",
+          "enum": ["==", "!=", ">", ">=", "<", "<=", "in", "not_in", "exists", "not_exists"]
+        },
+        "value": {
+          "type": ["string", "number", "boolean", "array", "null"]
+        }
+      }
+    },
+
+    "check": {
+      "type": "object",
+      "description": "A resolvable check with an optional dc threshold (e.g., skill check).",
+      "required": ["type"],
+      "additionalProperties": true,
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "Check type. Extend freely (skill, rep, item, flag, etc)."
+        },
+        "dc": {
+          "type": "number",
+          "description": "Difficulty class threshold if applicable."
+        },
+        "skill": {
+          "type": "string",
+          "description": "Skill identifier if type=skill."
+        },
+        "faction": {
+          "type": "string",
+          "description": "Faction identifier if type=rep."
+        },
+        "min": {
+          "type": "number",
+          "description": "Minimum threshold if applicable (e.g. reputation)."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "Item identifier if type=item."
+        },
+        "has": {
+          "type": "boolean",
+          "description": "Whether the item must be present (true) or absent (false)."
+        },
+        "key": {
+          "type": "string",
+          "description": "State key if type=flag or custom."
+        },
+        "value": {
+          "type": ["string", "number", "boolean", "array", "null"],
+          "description": "Value for custom checks."
+        }
+      }
+    },
+
+    "effect": {
+      "type": "object",
+      "description": "A deterministic state mutation.",
+      "required": ["key", "action"],
+      "additionalProperties": true,
+      "properties": {
+        "key": { "type": "string" },
+        "action": {
+          "type": "string",
+          "enum": ["set", "increment", "decrement", "add", "remove", "toggle"]
+        },
+        "value": { "type": ["string", "number", "boolean", "array", "null"] }
+      }
+    }
+  }
+}

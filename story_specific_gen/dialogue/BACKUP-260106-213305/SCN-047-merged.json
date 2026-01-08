@@ -1,0 +1,430 @@
+{
+  "changes": [
+    {
+      "action": "modify",
+      "details": {
+        "choiceId": "C_LEAVE_LEFT",
+        "nodeId": "PC_MAIN",
+        "text": "Leave"
+      },
+      "op": "update_choice_text"
+    },
+    {
+      "action": "modify",
+      "details": {
+        "choiceId": "C_LEAVE_RIGHT",
+        "nodeId": "PC_MAIN",
+        "text": "Leave"
+      },
+      "op": "update_choice_text"
+    },
+    {
+      "action": "modify",
+      "details": {
+        "choiceId": "C_LEAVE_CORRIDORS",
+        "nodeId": "PC_MAIN",
+        "text": "Leave"
+      },
+      "op": "update_choice_text"
+    },
+    {
+      "action": "modify",
+      "details": {
+        "choiceId": "C_LEAVE_COACH_BACK",
+        "nodeId": "PC_COACH_MENU",
+        "text": "Leave"
+      },
+      "op": "update_choice_text"
+    },
+    {
+      "action": "modify",
+      "details": {
+        "choiceId": "C_LEAVE_WIN3",
+        "nodeId": "PC_WIN3_MENU",
+        "text": "Leave"
+      },
+      "op": "update_choice_text"
+    },
+    {
+      "action": "modify",
+      "details": {
+        "choiceId": "C_LEAVE_WIN5",
+        "nodeId": "PC_WIN5_MENU",
+        "text": "Leave"
+      },
+      "op": "update_choice_text"
+    },
+    {
+      "action": "modify",
+      "details": {
+        "choiceId": "C_LEAVE_WIN7",
+        "nodeId": "PC_WIN7_MENU",
+        "text": "Leave"
+      },
+      "op": "update_choice_text"
+    },
+    {
+      "action": "modify",
+      "details": {
+        "choiceId": "C_LEAVE_WIN9",
+        "nodeId": "PC_WIN9_MENU",
+        "text": "Leave"
+      },
+      "op": "update_choice_text"
+    },
+    {
+      "action": "modify",
+      "details": {
+        "choiceId": "C_LEAVE_WIN0",
+        "nodeId": "PC_WIN0_MENU",
+        "text": "Leave"
+      },
+      "op": "update_choice_text"
+    },
+    {
+      "action": "modify",
+      "details": {
+        "choiceId": "C_LEAVE_WIN0_BACK",
+        "nodeId": "PC_WIN0_FOLLOW",
+        "text": "Leave"
+      },
+      "op": "update_choice_text"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_LOOK_PLACARDS",
+        "nodeId": "PC_MAIN",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_LOOK_PLACARDS_1",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_LOOK_PLACARDS_2",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "R_TO_MAIN_1",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_LOOK_FORMS",
+        "nodeId": "PC_MAIN",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_LOOK_FORMS_1",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_LOOK_FORMS_2",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "R_TO_MAIN_2",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_TALK_WIN0",
+        "nodeId": "PC_MAIN",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_WIN0_INTRO_1",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_WIN0_INTRO_2",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "PC_WIN0_MENU",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_WIN0_TER_1",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_WIN0_TER_2",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_WIN0_TER_3",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_WIN0_CATS_1",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_WIN0_CATS_2",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_WIN0_OLEA_1",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_WIN0_OLEA_2",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_WIN0_BARGAIN_1",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_WIN0_BARGAIN_2",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "PC_WIN0_FOLLOW",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_COMMIT_1",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_COMMIT_2",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_COMMIT_3",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_TALK_WIN3",
+        "nodeId": "PC_MAIN",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_WIN3_1",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_WIN3_2",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "PC_WIN3_MENU",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_WIN3_DEFINE_1",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_WIN3_DEFINE_2",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_TALK_WIN5",
+        "nodeId": "PC_MAIN",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_WIN5_1",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_WIN5_2",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "PC_WIN5_MENU",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_WIN5_THREAT_1",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_WIN5_THREAT_2",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "R_TO_MAIN_7",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "R_TO_MAIN_6",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_TALK_WIN7",
+        "nodeId": "PC_MAIN",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_TALK_WIN9",
+        "nodeId": "PC_MAIN",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    }
+  ],
+  "sceneId": "SCN-047"
+}

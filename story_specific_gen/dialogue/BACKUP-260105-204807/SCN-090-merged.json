@@ -1,0 +1,315 @@
+{
+  "changes": [
+    {
+      "action": "add",
+      "createScene": {
+        "dialogueGraphs": [
+          {
+            "id": "DG_SCN090_COPY_FAX_ROOM_HOTSPOT",
+            "nodes": [
+              {
+                "id": "N090_ENTRY",
+                "next": "N090_COPIER_MENU",
+                "speakerId": "NARRATOR",
+                "text": "The copier screen is bright, polite, and locked.\nIt offers options it won\u2019t let you touch.\n\nOn-screen: USER COPY (disabled). SERVICE FUNCTIONS (requires code). PRINT STATUS (empty queue).\nA tiny camera lens watches your hands like it\u2019s documenting intent.",
+                "type": "npc_line"
+              },
+              {
+                "choices": [
+                  {
+                    "id": "C090_COPIER_0000",
+                    "next": "N090_COPIER_0000",
+                    "text": "use \u201cTry \u20180000\u2019.\u201d"
+                  },
+                  {
+                    "id": "C090_COPIER_1234",
+                    "next": "N090_COPIER_1234",
+                    "text": "use \u201cTry \u20181234\u2019.\u201d"
+                  },
+                  {
+                    "id": "C090_COPIER_DATE",
+                    "next": "N090_COPIER_DATE",
+                    "text": "use \u201cTry the date on the last inspection tag.\u201d"
+                  },
+                  {
+                    "id": "C090_COPIER_WHY_DISABLED",
+                    "next": "N090_COPIER_DISABLED",
+                    "text": "ask \u201cWhy is User Copy disabled?\u201d"
+                  },
+                  {
+                    "id": "C090_COPIER_HINTS",
+                    "next": "N090_COPIER_HINTS",
+                    "text": "look \u201cInspect the service-code prompt and any hints.\u201d"
+                  },
+                  {
+                    "id": "C090_BACK_END",
+                    "next": "END_090_RETURN",
+                    "text": "leave \u201cBack.\u201d"
+                  }
+                ],
+                "id": "N090_COPIER_MENU",
+                "speakerId": "PLAYER",
+                "type": "player_choice"
+              },
+              {
+                "id": "N090_COPIER_0000",
+                "next": "N090_COPIER_MENU",
+                "speakerId": "NARRATOR",
+                "text": "The copier accepts the digits, pauses, then rejects them with a tone that sounds trained.\n\nINVALID CODE. CONTACT AUTHORIZED SERVICE.\n\nThe screen stays friendly. It does not become helpful.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N090_COPIER_1234",
+                "next": "N090_COPIER_MENU",
+                "speakerId": "NARRATOR",
+                "text": "INVALID CODE.\nThe copier prints nothing, but you still feel judged.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N090_COPIER_DATE",
+                "next": "N090_COPIER_DATE_PLAYER",
+                "speakerId": "NARRATOR",
+                "text": "The copier rejects it faster, like it\u2019s tired of this game.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N090_COPIER_DATE_PLAYER",
+                "next": "N090_COPIER_MENU",
+                "speakerId": "PLAYER",
+                "text": "So it remembers.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N090_COPIER_DISABLED",
+                "next": "N090_COPIER_MENU",
+                "speakerId": "NARRATOR",
+                "text": "The copier does not answer.\nA small label under the screen does: PROPERTY OF FACILITY SUPPORT. UNAUTHORIZED COPYING PROHIBITED.\nThe label is newer than the dust around it.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N090_COPIER_HINTS",
+                "next": "N090_COPIER_HINTS_MENU",
+                "speakerId": "NARRATOR",
+                "text": "In the corner: a faded vendor logo, half-scraped away.\nUnder it, a blank line where a phone number used to be\u2014peeled off, then re-stickered, then peeled again.",
+                "type": "npc_line"
+              },
+              {
+                "choices": [
+                  {
+                    "id": "C090_TO_STICKERS",
+                    "next": "N090_STICKERS_INTRO",
+                    "text": "look \u201cService code sticker stack.\u201d"
+                  },
+                  {
+                    "id": "C090_HINTS_BACK",
+                    "next": "END_090_RETURN",
+                    "text": "leave \u201cBack.\u201d"
+                  }
+                ],
+                "id": "N090_COPIER_HINTS_MENU",
+                "speakerId": "PLAYER",
+                "type": "player_choice"
+              },
+              {
+                "id": "N090_STICKERS_INTRO",
+                "next": "N090_STICKERS_MENU",
+                "speakerId": "NARRATOR",
+                "text": "A column of stickers climbs the wall beside the copier.\nEvery sticker claims it is the last sticker anyone will ever need.\n\nTop layer: DO NOT SHARE SERVICE CODE.\nUnder it: a different DO NOT SHARE SERVICE CODE, from a company that no longer exists.\nA phone number is visible, then not, depending on the angle.",
+                "type": "npc_line"
+              },
+              {
+                "choices": [
+                  {
+                    "id": "C090_STICKERS_PEEL",
+                    "next": "N090_STICKERS_PEEL",
+                    "text": "look \u201cPeel back the top sticker carefully.\u201d"
+                  },
+                  {
+                    "id": "C090_STICKERS_COMPARE",
+                    "next": "N090_STICKERS_COMPARE",
+                    "text": "look \u201cCompare layers for the code.\u201d"
+                  },
+                  {
+                    "id": "C090_STICKERS_CALL",
+                    "next": "N090_VM_RING",
+                    "text": "use \u201cCall the visible service number.\u201d"
+                  },
+                  {
+                    "id": "C090_STICKERS_WHO",
+                    "next": "N090_STICKERS_WHO",
+                    "text": "ask \u201cWho serviced this last?\u201d"
+                  },
+                  {
+                    "id": "C090_STICKERS_BACK",
+                    "next": "END_090_RETURN",
+                    "text": "leave \u201cBack.\u201d"
+                  }
+                ],
+                "id": "N090_STICKERS_MENU",
+                "speakerId": "PLAYER",
+                "type": "player_choice"
+              },
+              {
+                "id": "N090_STICKERS_PEEL",
+                "next": "N090_STICKERS_PEEL_MENU",
+                "speakerId": "NARRATOR",
+                "text": "The adhesive resists, then gives up in a way that feels personal.\nUnderneath: a handwritten code, smudged, as if the wall tried to forget it.\n\nYou can make out a 4-digit service code.",
+                "type": "npc_line"
+              },
+              {
+                "choices": [
+                  {
+                    "id": "C090_ENTER_CODE",
+                    "next": "N090_COPIER_UNLOCKED",
+                    "text": "use \u201cEnter the recovered code at the copier.\u201d"
+                  },
+                  {
+                    "id": "C090_KEEP_PEELING",
+                    "next": "N090_STICKERS_MORE",
+                    "text": "look \u201cKeep peeling. There\u2019s more under here.\u201d"
+                  },
+                  {
+                    "id": "C090_PEEL_BACK",
+                    "next": "END_090_RETURN",
+                    "text": "leave \u201cBack.\u201d"
+                  }
+                ],
+                "id": "N090_STICKERS_PEEL_MENU",
+                "speakerId": "PLAYER",
+                "type": "player_choice"
+              },
+              {
+                "id": "N090_COPIER_UNLOCKED",
+                "next": "N090_COPIER_UNLOCKED_PLAYER",
+                "speakerId": "NARRATOR",
+                "text": "The copier accepts the code without gratitude.\nSERVICE FUNCTIONS unlock.\n\nA menu appears: CALIBRATION. MAINTENANCE LOG. CONSUMABLES OVERRIDE. PRINT TEST PAGE.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N090_COPIER_UNLOCKED_PLAYER",
+                "next": "N090_COPIER_UNLOCKED_MENU",
+                "speakerId": "PLAYER",
+                "text": "Good.",
+                "type": "npc_line"
+              },
+              {
+                "choices": [
+                  {
+                    "id": "C090_UNLOCKED_BACK",
+                    "next": "END_090_RETURN",
+                    "text": "leave \u201cBack.\u201d"
+                  }
+                ],
+                "id": "N090_COPIER_UNLOCKED_MENU",
+                "speakerId": "PLAYER",
+                "type": "player_choice"
+              },
+              {
+                "id": "N090_STICKERS_MORE",
+                "next": "N090_STICKERS_MORE_MENU",
+                "speakerId": "NARRATOR",
+                "text": "Another sticker layer comes loose.\nUnder it: a vendor name, then a different vendor name, then a different one again\u2014each one insisting it is not responsible for anything outside \u201cstandard operation.\u201d\n\nThe service number repeats across three eras, like a dare.",
+                "type": "npc_line"
+              },
+              {
+                "choices": [
+                  {
+                    "id": "C090_MORE_CALL",
+                    "next": "N090_VM_RING",
+                    "text": "use \u201cCall the visible service number.\u201d"
+                  },
+                  {
+                    "id": "C090_MORE_BACK",
+                    "next": "END_090_RETURN",
+                    "text": "leave \u201cBack.\u201d"
+                  }
+                ],
+                "id": "N090_STICKERS_MORE_MENU",
+                "speakerId": "PLAYER",
+                "type": "player_choice"
+              },
+              {
+                "id": "N090_STICKERS_COMPARE",
+                "next": "N090_STICKERS_COMPARE_MENU",
+                "speakerId": "NARRATOR",
+                "text": "You line up torn edges and half-letters.\nIt\u2019s less like reading, more like reconstructing an alibi.\n\nYou recover a 4-digit service code.",
+                "type": "npc_line"
+              },
+              {
+                "choices": [
+                  {
+                    "id": "C090_COMPARE_ENTER",
+                    "next": "N090_COPIER_UNLOCKED",
+                    "text": "use \u201cEnter the recovered code at the copier.\u201d"
+                  },
+                  {
+                    "id": "C090_COMPARE_BACK",
+                    "next": "END_090_RETURN",
+                    "text": "leave \u201cBack.\u201d"
+                  }
+                ],
+                "id": "N090_STICKERS_COMPARE_MENU",
+                "speakerId": "PLAYER",
+                "type": "player_choice"
+              },
+              {
+                "id": "N090_STICKERS_WHO",
+                "next": "N090_STICKERS_MENU",
+                "speakerId": "NARRATOR",
+                "text": "No names, only layers.\nWhoever it was, they left instructions designed to outlive them.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N090_VM_RING",
+                "next": "N090_VM_LINE",
+                "speakerId": "NARRATOR",
+                "text": "The line rings once, like it already knows you\u2019re there.\nThen a voicemail answers, bright and pre-defensive.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N090_VM_LINE",
+                "next": "N090_VM_AFTER",
+                "speakerId": "CONTRACTOR_VM",
+                "text": "Hi. (pause) You've reached Field Interface Support. (pause) For SECV legacy devices. (pause)\nIf you're calling about abnormal output. (pause) Or anomalous imaging. (pause) Or unexpected reflective behavior. (pause) Or anything you'd call 'nonstandard'. (pause) We can't cover it. (pause)\nWe handle jams. (pause) Rollers. (pause) Trays. (pause) Manufacturer listed error codes. (pause)\nFacilities. (pause) Incidents. (pause) Atmospheres. (pause) 'Situations'. (pause) Don't put those on this line. (pause)\nIf this is about a service code. (pause) Yeah stop there. (pause) That goes through authorization. (pause)\nThanks for understanding. (pause) It's required.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N090_VM_AFTER",
+                "next": "N090_VM_MENU",
+                "speakerId": "NARRATOR",
+                "text": "The voicemail hangs up first, like a practiced skill.",
+                "type": "npc_line"
+              },
+              {
+                "choices": [
+                  {
+                    "id": "C090_VM_PEEL",
+                    "next": "N090_STICKERS_PEEL",
+                    "text": "look \u201cPeel back the top sticker carefully.\u201d"
+                  },
+                  {
+                    "id": "C090_VM_BACK",
+                    "next": "END_090_RETURN",
+                    "text": "leave \u201cBack.\u201d"
+                  }
+                ],
+                "id": "N090_VM_MENU",
+                "speakerId": "PLAYER",
+                "type": "player_choice"
+              },
+              {
+                "id": "END_090_RETURN",
+                "outcomeId": "return_from_copier_panel",
+                "type": "end"
+              }
+            ],
+            "sceneId": "SCN-090",
+            "startNodeId": "N090_ENTRY"
+          }
+        ]
+      },
+      "op": "create_scene"
+    }
+  ],
+  "sceneId": "SCN-090"
+}

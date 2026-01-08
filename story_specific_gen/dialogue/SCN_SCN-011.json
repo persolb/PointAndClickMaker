@@ -1,0 +1,10 @@
+{
+  "dialogueGraphs": [
+    {
+      "id": "DG_SCN_011_SERVICE_HATCH",
+      "sceneId": "SCN-011",
+      "startNodeId": "N_START",
+      "nodes": []
+    }
+  ]
+}

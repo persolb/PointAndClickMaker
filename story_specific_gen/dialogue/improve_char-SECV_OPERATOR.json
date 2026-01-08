@@ -1,0 +1,454 @@
+{
+  "nodes": [
+    {
+      "scene": "SCN_SCN-006.json",
+      "id": "N3",
+      "priorLine": "(use) Call box speaker and button.",
+      "lineToEdit": "SECV remote attendance. This line is recorded for quality and\u0014 sorry\u0014 for liability.\nHow can I help you remain safe and also not become my problem today?",
+      "nextLine": "",
+      "revisedLine": "SECV remote attendance. (pause) You're on a recorded line\u2014quality and yeah liability. (pause) Alright. (pause) What do you need (pause) so you stay safe (pause) and this doesn't land in my lap?",
+      "changeSummary": "Made the opener sound like a tired call-box script while keeping the recording/liability disclaimer and the defensive intent. | Split into short beats with (pause) so each beat stays under 8 words, and removed the extra comma while keeping the same meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-006.json",
+      "id": "N_OPEN_1",
+      "priorLine": "(ask) Open the vestibule.",
+      "lineToEdit": "I can\u0019t do that on request.\nI can do that when the system indicates an authorized presence on-site.\nThose are different things, and I\u0019m required to respect the difference.",
+      "nextLine": "",
+      "revisedLine": "I can't pop the vestibule (pause) just because you asked. (pause) I need the system to show (pause) an authorized onsite presence first. (pause) Otherwise it's my name (pause) on the why.",
+      "changeSummary": "Trimmed the explanation into a practical refusal tied to the log and accountability. | Added (pause) breaks to keep each beat under 8 words; corrected apostrophes without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-006.json",
+      "id": "N_VERIFY_1",
+      "priorLine": "(ask) Verify me.",
+      "lineToEdit": "I can\u0019t confirm identity.\nI can confirm whether someone with your name is scheduled to be here, which is not the same as being\u0014 you.\nIt\u0019s a comfort we provide to paperwork.",
+      "nextLine": "",
+      "revisedLine": "I can't verify identity over the speaker. (pause) I can check the schedule for your name. (pause) That's all. (pause) It keeps the paper happy.",
+      "changeSummary": "Reduced the philosophical bit; kept the limit (no ID verification) and the schedule-only offer. | Added pauses to cap beat length, tightened the second sentence to 8 words, and removed the comma while keeping meaning and tone."
+    },
+    {
+      "scene": "SCN_SCN-006.json",
+      "id": "N_SCHED_1",
+      "priorLine": "(ask) Am I scheduled?",
+      "lineToEdit": "Yes. You are scheduled for today under OLEA closeout activity.\nI\u0019m saying \u001cyou\u001d in the database sense. Not in the biological sense.\nThe biological sense creates obligations.",
+      "nextLine": "Scheduled is not onsite.\nOnsite is a status. A checkbox. A time-stamp. A chain of custody for blame.\nWithout that, I can\u0019t create a condition where you could get hurt and we have no record of why you were there.",
+      "revisedLine": "Yeah. (pause) You\u2019re scheduled today under OLEA closeout. (pause) Activity. (pause) That\u2019s your name in the system, anyway. (pause) Anything past that gets sticky for me.",
+      "changeSummary": "Kept the same facts (scheduled, OLEA closeout) but made it immediate and liability-minded instead of abstract. | Inserted (pause) breaks to keep each beat under 8 words, and split \u201ccloseout activity\u201d across two beats without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-006.json",
+      "id": "N_SCHED_2",
+      "priorLine": "Yes. You are scheduled for today under OLEA closeout activity.\nI\u0019m saying \u001cyou\u001d in the database sense. Not in the biological sense.\nThe biological sense creates obligations.",
+      "lineToEdit": "Scheduled is not onsite.\nOnsite is a status. A checkbox. A time-stamp. A chain of custody for blame.\nWithout that, I can\u0019t create a condition where you could get hurt and we have no record of why you were there.",
+      "nextLine": "",
+      "revisedLine": "Scheduled doesn't flip you to onsite. (pause)\nOnsite is the box with a timestamp. (pause)\nSomething I can point to later. (pause)\nWithout it I'm not opening a door. (pause)\nThen explaining how you got hurt. (pause)\nWith no record.",
+      "changeSummary": "Collapsed the definition into a clear, pressured constraint tied to the audit trail and injury exposure. | Split into short (pause) beats under 8 words, removed stray encoding characters, and kept punctuation minimal with no added explainers."
+    },
+    {
+      "scene": "SCN_SCN-006.json",
+      "id": "N_UNLOCKA_1",
+      "priorLine": "(multiple) ((ask) Unlock it anyway.) ((ask) Unlock it anyway.)",
+      "lineToEdit": "I can\u0019t.\nIf I unlock on a voice request, I become the authorization event. And I am not licensed to be an event.\nI\u0019m licensed to be a response.",
+      "nextLine": "To a valid onsite record, yes.\nTo a person asking nicely, no\u0014 and you are asking nicely. I\u0019m noting that for my own mental health.",
+      "revisedLine": "I can't. (pause) If I unlock it on a call, (pause) the log tags me as authorization. (pause) I don't have clearance for that.",
+      "changeSummary": "Made the refusal more natural while preserving the core reason: unlocking by voice makes SECV the authorizing event. | Split the line into short beats with (pause) breaks, kept meaning and cadence, and corrected the apostrophe in \u201ccan\u2019t\u201d while staying under the comma limit."
+    },
+    {
+      "scene": "SCN_SCN-006.json",
+      "id": "N_UNLOCKA_2",
+      "priorLine": "I can\u0019t.\nIf I unlock on a voice request, I become the authorization event. And I am not licensed to be an event.\nI\u0019m licensed to be a response.",
+      "lineToEdit": "To a valid onsite record, yes.\nTo a person asking nicely, no\u0014 and you are asking nicely. I\u0019m noting that for my own mental health.",
+      "nextLine": "",
+      "revisedLine": "If there's a clean onsite record, sure. (pause) Right now it's just a voice. (pause) On a speaker. (pause) And for what it's worth you've been polite. (pause) Thanks.",
+      "changeSummary": "Kept the conditional yes/no and the small acknowledgment, but made it less staged and more in-the-moment. | Added pauses to keep each beat under 8 words, and split the speaker line into two beats without changing meaning. Kept commas to one."
+    },
+    {
+      "scene": "SCN_SCN-006.json",
+      "id": "N_REQ_1",
+      "priorLine": "(ask) What exactly do I need from Records?",
+      "lineToEdit": "A Temporary Presence Receipt\u0014 or whatever they\u0019re calling it this decade.",
+      "nextLine": "It needs your name, date, activity type, and a site designation that says \u001consite\u001d instead of \u001cexpected.\u001d\nOnce that exists, I can treat you as an accountable entity and actuate the vestibule door without\u0014 inventing you.",
+      "revisedLine": "Temporary Presence Receipt, or whatever it\u2019s called now.",
+      "changeSummary": "Kept the same requirement; tightened the aside to sound less performative. | Removed the leading \u201cA\u201d and condensed the ending to fit the 8-word beat limit while keeping the same meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-006.json",
+      "id": "N_REQ_2",
+      "priorLine": "A Temporary Presence Receipt\u0014 or whatever they\u0019re calling it this decade.",
+      "lineToEdit": "It needs your name, date, activity type, and a site designation that says \u001consite\u001d instead of \u001cexpected.\u001d\nOnce that exists, I can treat you as an accountable entity and actuate the vestibule door without\u0014 inventing you.",
+      "nextLine": "In the old days: walk to the Records window.\nIn the current days: locate whoever has Records authority, or locate the stamp, or locate the pneumatic tube instructions that pretend Records still has staff.\nI\u0019m not being sarcastic. That is the procedure.",
+      "revisedLine": "It needs your name and date. (pause) Activity type too. (pause) The site field must read 'onsite'. (pause) Not 'expected'. (pause) Once it's in the file, (pause) I can hit the vestibule door. (pause) No making you up in the log.",
+      "changeSummary": "Kept the required fields and the 'onsite' wording; reframed 'inventing you' as a log/liability problem. | Split the line into short beats with (pause) breaks, replaced most commas with periods to stay under the comma limit, and cleaned up the quoted field values without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-006.json",
+      "id": "N_REQ_3",
+      "priorLine": "It needs your name, date, activity type, and a site designation that says \u001consite\u001d instead of \u001cexpected.\u001d\nOnce that exists, I can treat you as an accountable entity and actuate the vestibule door without\u0014 inventing you.",
+      "lineToEdit": "In the old days: walk to the Records window.\nIn the current days: locate whoever has Records authority, or locate the stamp, or locate the pneumatic tube instructions that pretend Records still has staff.\nI\u0019m not being sarcastic. That is the procedure.",
+      "nextLine": "",
+      "revisedLine": "Used to be you walked there. (pause) To the Records window. (pause) Now it\u2019s: find whoever has Records authority. (pause) Or find the stamp. (pause) Or follow pneumatic tube instructions. (pause) They act like Records still has staff. (pause) I\u2019m not joking. (pause) That\u2019s the procedure.",
+      "changeSummary": "Maintained the same options and tone; made it sound like a weary, practical rundown. | Split the line into short beats with (pause) to meet the 8-word limit, replaced commas with periods/colon to stay under the comma cap, and corrected the garbled apostrophes."
+    },
+    {
+      "scene": "SCN_SCN-006.json",
+      "id": "N_REQ_CONFIRM_1",
+      "priorLine": "(ask) So: get marked onsite. Then call you.",
+      "lineToEdit": "Correct.\nPresence is paperwork. Paperwork is permission. Permission is how we keep injuries orderly.",
+      "nextLine": "You have your next step: get marked onsite by Records\u0014 because the facility only recognizes people once it can file them.",
+      "revisedLine": "Yeah. (pause) Get the onsite mark, then call me. (pause) I can't move a door without paper. (pause) It says you're here.",
+      "changeSummary": "Removed the tidy maxim; kept the same instruction and the paperwork-as-permission premise. | Inserted (pause) breaks to keep each beat under 8 words, split the last sentence without changing meaning, and corrected the apostrophe in \u201ccan\u2019t.\u201d"
+    },
+    {
+      "scene": "SCN_SCN-006.json",
+      "id": "N_DETAILS_1",
+      "priorLine": "(ask) Confirm my schedule details. I need a trail.",
+      "lineToEdit": "Scheduled party: Field Systems Specialist, OLEA.\nActivity: closure verification and staged shutdown prep.\nWindow: today through end-of-day, with a note that access is \u001csubject to onsite confirmation.\u001d\nThat last clause is the one that keeps me employed.",
+      "nextLine": "I can\u0019t transmit personal schedule details to an unverified caller.\nIf you obtain a Presence Receipt from Records, I can attach the confirmation to the onsite event. Then it\u0019s no longer personal; it\u0019s operational.",
+      "revisedLine": "What I\u2019m seeing: Field Systems Specialist, OLEA. (pause) Closure verification. (pause) Staged shutdown prep. (pause) Today through end-of-day. (pause) Tagged \u201csubject to onsite confirmation.\u201d (pause) That tag is the only reason. (pause) I can even say this much.",
+      "changeSummary": "Kept all schedule fields intact; made the aside feel like real-time self-protection. | Split the line into short beats with (pause) so each beat stays under 8 words; kept wording and meaning intact; avoided adding commas or explainer phrases."
+    },
+    {
+      "scene": "SCN_SCN-006.json",
+      "id": "N_DETAILS_2",
+      "priorLine": "Scheduled party: Field Systems Specialist, OLEA.\nActivity: closure verification and staged shutdown prep.\nWindow: today through end-of-day, with a note that access is \u001csubject to onsite confirmation.\u001d\nThat last clause is the one that keeps me employed.",
+      "lineToEdit": "I can\u0019t transmit personal schedule details to an unverified caller.\nIf you obtain a Presence Receipt from Records, I can attach the confirmation to the onsite event. Then it\u0019s no longer personal; it\u0019s operational.",
+      "nextLine": "",
+      "revisedLine": "I can't read personal schedule details. (pause) Not to an unverified caller. (pause) Get a Presence Receipt from Records marked onsite. (pause) I can attach it to that event. (pause) Then it's treated as ops.",
+      "changeSummary": "Shortened and roughened the compliance language while keeping the same restriction and workaround. | Split the line into short beats using (pause) so no beat exceeds 8 words; removed commas by rephrasing \"Records, marked onsite\" to \"Records marked onsite\"; corrected the apostrophe encoding."
+    },
+    {
+      "scene": "SCN_SCN-006.json",
+      "id": "N_OLEA_1",
+      "priorLine": "(persuade) I\u0019m OLEA. This is closure. You can rely on the work order.",
+      "lineToEdit": "I do rely on the work order\u0014 as evidence you\u0019re scheduled.\nAuthority doesn\u0019t travel through a speaker. It travels through fields in a database.\nIf you want me to act on the work order, you need the onsite marker from Records so the work order has a location to attach to.",
+      "nextLine": "Once Records says you exist here, I can do doors. I can do cameras. I can do timed unlocks.\nUntil then, I can do empathy, and I\u0019m already at my daily limit.",
+      "revisedLine": "I'm looking at the work order. (pause) It tells me you're scheduled. (pause) Over this speaker I can't act. (pause) It doesn't give me anything usable. (pause) I need Records to tag you onsite. (pause) Then the work order has somewhere to land.",
+      "changeSummary": "Kept the work-order reliance and the need for an onsite marker; removed the lecture-y framing. | Inserted (pause) breaks to keep each beat under 8 words, cleaned up punctuation, and tightened phrasing without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-006.json",
+      "id": "N_OLEA_2",
+      "priorLine": "I do rely on the work order\u0014 as evidence you\u0019re scheduled.\nAuthority doesn\u0019t travel through a speaker. It travels through fields in a database.\nIf you want me to act on the work order, you need the onsite marker from Records so the work order has a location to attach to.",
+      "lineToEdit": "Once Records says you exist here, I can do doors. I can do cameras. I can do timed unlocks.\nUntil then, I can do empathy, and I\u0019m already at my daily limit.",
+      "nextLine": "",
+      "revisedLine": "Once Records flips you to onsite (pause) I can do doors and cameras (pause) and timed unlocks. (pause) Until then (pause) I'm stuck on the phone (pause) and I'm about out of bandwidth.",
+      "changeSummary": "Kept the same capabilities/limits; made it sound more immediate and fatigued. | Broke the line into shorter (pause) beats, removed commas to stay under the limit, and cleaned up the apostrophes without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-006.json",
+      "id": "N_END_CALL_LINE",
+      "priorLine": "(multiple) ((leave) End call.) ((leave) End call.) ((leave) End call.) ((leave) End call.) ((leave) End call.) ((leave) End call.)",
+      "lineToEdit": "Copy. Call back when you\u0019re onsite.\nWhich I understand you currently cannot become.\nHave a safe not-presence.",
+      "nextLine": "",
+      "revisedLine": "Alright. (pause) Call back once you're marked onsite. (pause) I get it. (pause) You can't do that from where you are. (pause) Stay safe.",
+      "changeSummary": "Removed the cute phrasing while preserving the same instruction and acknowledgment of the bind. | Added (pause) breaks to keep each beat under 8 words, cleaned up apostrophes, and kept the original intent and cadence without adding commas or explanations."
+    },
+    {
+      "scene": "SCN_SCN-008.json",
+      "id": "N_SECV_0",
+      "priorLine": "(use) Press the call button.",
+      "lineToEdit": "SECV remote attendance. This line is recorded for quality and\u0014sorry\u0014for liability.\nHow can I help you remain safe and also not become my problem today?",
+      "nextLine": "",
+      "revisedLine": "SECV remote attendance. (pause) Recorded line quality and liability, (pause) you know the deal. (pause) Tell me what\u2019s happening. (pause) so nobody gets hurt. (pause) and I don\u2019t end up writing it up.",
+      "changeSummary": "Varied the greeting slightly; kept recording/liability and the self-protective framing. | Split the line into multiple (pause) beats to keep each beat under 8 words, fixed encoding/apostrophes, and limited commas to the original single comma without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-008.json",
+      "id": "N_SECV_ONSITE_1",
+      "priorLine": "(ask) I\u0019m in the vestibule. What counts as \u001consite\u001d here?",
+      "lineToEdit": "Vestibule is not onsite in the database sense.",
+      "nextLine": "It\u0019s\u0014 a conceptual holding area. A room that contains you without asserting you exist.",
+      "revisedLine": "Vestibule doesn\u0019t count as onsite in the system.",
+      "changeSummary": "Made the line more conversational while keeping the same rule."
+    },
+    {
+      "scene": "SCN_SCN-008.json",
+      "id": "N_SECV_ONSITE_2",
+      "priorLine": "Vestibule doesn\u0019t count as onsite in the system.",
+      "lineToEdit": "It\u0019s\u0014 a conceptual holding area. A room that contains you without asserting you exist.",
+      "nextLine": "Onsite is a status: timestamped, attributable, auditable. If it doesn\u0019t generate blame, it doesn\u0019t generate access.",
+      "revisedLine": "It\u2019s basically a buffer room. (pause) You\u2019re contained. (pause) Still not showing up as here.",
+      "changeSummary": "Replaced abstract phrasing with plain, stressed shorthand; preserved meaning. | Split the second sentence into shorter beats with (pause) markers and corrected apostrophes to meet the 8-word beat limit without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-008.json",
+      "id": "N_SECV_ONSITE_3",
+      "priorLine": "It\u0019s basically a buffer room.\nYou\u0019re contained, but you\u0019re still not showing up as here.",
+      "lineToEdit": "Onsite is a status: timestamped, attributable, auditable. If it doesn\u0019t generate blame, it doesn\u0019t generate access.",
+      "nextLine": "",
+      "revisedLine": "Onsite means a timestamp (pause) and an accountable name (pause) in the log. (pause) If I can't tie door action to it, (pause) I can't open it.",
+      "changeSummary": "Kept timestamp/accountability/audit intent; removed the quotable 'blame' maxim. | Added (pause) breaks to keep each beat under 8 words, corrected the apostrophe, and tightened phrasing without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-008.json",
+      "id": "N_SECV_ROOM_1",
+      "priorLine": "(ask) So what do I do with what\u0019s in this room?",
+      "lineToEdit": "Use it to produce a Records-shaped event.",
+      "nextLine": "A Presence Receipt, a stamp, a kiosk printout\u0014anything that lets me attach a door action to an authorized condition.",
+      "revisedLine": "Use what\u2019s there; get something Records accepts.",
+      "changeSummary": "Swapped the abstract joke for a practical instruction without changing intent. | Trimmed wording to 7 words while preserving the same instruction and tone; removed extra phrasing without adding commas or explainers."
+    },
+    {
+      "scene": "SCN_SCN-008.json",
+      "id": "N_SECV_ROOM_2",
+      "priorLine": "Use whatever\u0019s in there to get something Records will accept.",
+      "lineToEdit": "A Presence Receipt, a stamp, a kiosk printout\u0014anything that lets me attach a door action to an authorized condition.",
+      "nextLine": "I\u0019m not refusing help. I\u0019m refusing authorship.",
+      "revisedLine": "A Presence Receipt. (pause) A stamp. (pause) A kiosk printout. (pause) Anything that gives me a legit condition (pause) to hang a door unlock on.",
+      "changeSummary": "Kept the same acceptable artifacts; tightened to call-box shorthand. | Split the line into short (pause) beats to stay under 8 words per beat, and removed commas while keeping the same list and meaning."
+    },
+    {
+      "scene": "SCN_SCN-008.json",
+      "id": "N_SECV_ROOM_3",
+      "priorLine": "A Presence Receipt, a stamp, a kiosk printout\u0014anything that gives me a legit condition to hang a door unlock on.",
+      "lineToEdit": "I\u0019m not refusing help. I\u0019m refusing authorship.",
+      "nextLine": "",
+      "revisedLine": "I help when there\u2019s paper. Can\u2019t be it.",
+      "changeSummary": "Kept the same point (won't author authorization) in a more speakable, pressured way. | Cut word count to 8 by tightening phrasing and dropping the repeated subject while keeping the same meaning."
+    },
+    {
+      "scene": "SCN_SCN-008.json",
+      "id": "N_SECV_BADGES_1",
+      "priorLine": "(ask) I found old badges and a sign-in sheet. Does that help?",
+      "lineToEdit": "It helps in the way a blank form helps.",
+      "nextLine": "It doesn\u0019t make you authorized. It makes it easier to claim you followed procedure, which is\u0014 adjacent.",
+      "revisedLine": "Like any blank form, it takes a mark.",
+      "changeSummary": "Made it sound less like a line read; kept meaning that it\u0019s only useful as paperwork. | Condensed the line to 8 words while preserving the idea that an empty form is useful as something you can mark."
+    },
+    {
+      "scene": "SCN_SCN-008.json",
+      "id": "N_SECV_BADGES_2",
+      "priorLine": "It helps the way any empty form helps\u0014it\u0019s something to put a mark on.",
+      "lineToEdit": "It doesn\u0019t make you authorized. It makes it easier to claim you followed procedure, which is\u0014 adjacent.",
+      "nextLine": "If you can get a Records marker on one of those artifacts, then I can treat you as an accountable entity and do doors.",
+      "revisedLine": "It won\u2019t authorize you. (pause) But it gives you something on record. (pause) Later you can say: I followed procedure. (pause) Sort of.",
+      "changeSummary": "Preserved the 'adjacent' idea; broke it into more natural, cautious phrasing. | Split the line into short beats using (pause) markers and tightened phrasing to keep each beat under 8 words while preserving meaning and tone."
+    },
+    {
+      "scene": "SCN_SCN-008.json",
+      "id": "N_SECV_BADGES_3",
+      "priorLine": "It won\u0019t authorize you by itself.\nIt does give you something you can point to later and say you followed procedure\u0014sort of.",
+      "lineToEdit": "If you can get a Records marker on one of those artifacts, then I can treat you as an accountable entity and do doors.",
+      "nextLine": "Understood.",
+      "revisedLine": "If you can get a Records marker (pause) onto one of those\u2014stamp or kiosk or whatever\u2014(pause) then I can treat you as accountable (pause) and run doors.",
+      "changeSummary": "Kept the requirement (Records marker) and the result (door access) with tighter shorthand. | Split the line into short beats using (pause) and replaced comma-separated list with \u201cstamp or kiosk or whatever\u201d to stay under the comma limit without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-008.json",
+      "id": "N_SECV_OLEA_1",
+      "priorLine": "(persuade) I\u0019m OLEA. I\u0019m collecting closure artifacts. You can note me as present.",
+      "lineToEdit": "I can note you called. I can\u0019t note you exist onsite.",
+      "nextLine": "Authority doesn\u0019t travel through a speaker. It travels through fields in a database, and those fields have to be populated by Records or an authorized kiosk workflow.",
+      "revisedLine": "I can log that you called. (pause) I can\u2019t log you onsite from this box.",
+      "changeSummary": "Made it shorter and more reactive while preserving the logging limits. | Shortened the second sentence to fit the 8-word beat limit and fixed the apostrophe character, without changing meaning. | Inserted a (pause) between the sentences to keep each beat within 8 words; meaning unchanged."
+    },
+    {
+      "scene": "SCN_SCN-008.json",
+      "id": "N_SECV_OLEA_2",
+      "priorLine": "I can log that you called.\nI can\u0019t log you as onsite from this box.",
+      "lineToEdit": "Authority doesn\u0019t travel through a speaker. It travels through fields in a database, and those fields have to be populated by Records or an authorized kiosk workflow.",
+      "nextLine": "If I mark you present without that, I become the event. And I am not licensed to be an event. I\u0019m licensed to be a response.",
+      "revisedLine": "That onsite flag comes from Records. (pause) Or the kiosk workflow. (pause) It\u2019s database fields. (pause) Not something I can take on faith. (pause) Over audio.",
+      "changeSummary": "Kept the same source of authority (Records/kiosk) and the database-field concept; removed the slogan feel. | Added pauses to keep each beat under 8 words, corrected encoding artifacts, and kept punctuation within the comma limit without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-008.json",
+      "id": "N_SECV_OLEA_3",
+      "priorLine": "That onsite flag comes from Records\u0014or the kiosk workflow.\nIt\u0019s fields in the database, not something I can take on faith over audio.",
+      "lineToEdit": "If I mark you present without that, I become the event. And I am not licensed to be an event. I\u0019m licensed to be a response.",
+      "nextLine": "",
+      "revisedLine": "If I mark you present without it (pause) the audit trail points at me. (pause) I'm only cleared to respond (pause) to a record, not create one.",
+      "changeSummary": "Preserved the 'becoming the event' risk in more natural audit-trail language. | Inserted (pause) breaks to keep each beat under 8 words, removed an extra comma to meet the comma limit, and corrected the garbled character in \u201cI\u2019m.\u201d"
+    },
+    {
+      "scene": "SCN_SCN-008.json",
+      "id": "N_SECV_MIN_1",
+      "priorLine": "(ask) Fine. Minimum requirement?",
+      "lineToEdit": "Name, date, activity type, site designation that says \u001consite,\u001d and some form of Records authority indicator.",
+      "nextLine": "A stamp is traditional. A kiosk receipt is acceptable. A handwritten note is\u0014 historically popular, and legally fragile.",
+      "revisedLine": "Minimum: name/date/type; site=onsite; Records authority marker.",
+      "changeSummary": "Kept the exact minimum fields; made the delivery more clipped. | Compressed the list to fit the 8-word beat limit and replaced commas with compact separators to stay under the 1-comma cap."
+    },
+    {
+      "scene": "SCN_SCN-008.json",
+      "id": "N_SECV_MIN_2",
+      "priorLine": "Minimum: name, date, activity type, site designation set to \u001consite,\u001d plus some kind of Records authority marker.",
+      "lineToEdit": "A stamp is traditional. A kiosk receipt is acceptable. A handwritten note is\u0014 historically popular, and legally fragile.",
+      "nextLine": "",
+      "revisedLine": "Stamp is best. (pause) Kiosk receipt works. (pause) Handwritten note: people love it. (pause) It falls apart fast if anyone pushes.",
+      "changeSummary": "Retained the hierarchy (stamp/kiosk/note) while making the caution sound conversational. | Split the long final thought into short pause beats under 8 words; removed the comma/run-on and tightened wording while keeping the same meaning."
+    },
+    {
+      "scene": "SCN_SCN-008.json",
+      "id": "N_SECV_ENDCALL_1",
+      "priorLine": "(multiple) ((leave) End call.) ((leave) End call.) ((leave) End call.)",
+      "lineToEdit": "Copy. Call back when you\u0019re onsite.\nWhich I understand you currently cannot become.\nHave a safe not-presence.",
+      "nextLine": "",
+      "revisedLine": "Okay. (pause) Call me back when you're marked onsite. (pause) I know you're boxed in right now. (pause) Stay safe.",
+      "changeSummary": "Kept the same instruction and acknowledgment; removed the stylized sign-off. | Inserted (pause) breaks to keep each beat under 8 words, and fixed apostrophes in \u201cyou're\u201d without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-026.json",
+      "id": "N_SECV_0",
+      "priorLine": "A label plate beneath it is sun-faded: SECV \u0014 REMOTE ATTENDANCE.",
+      "lineToEdit": "SECV remote attendance. This line is recorded for quality and\u0014sorry\u0014for liability.\nHow can I help you remain safe and also not become my problem today?",
+      "nextLine": "",
+      "revisedLine": "SECV remote attendance. (pause) Recorded line-quality and liability. (pause) What do you need?",
+      "changeSummary": "Made the greeting brisker and more believable while preserving the recorded/liability notice. | Inserted (pause) breaks to keep each beat under 8 words without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-026.json",
+      "id": "N_UNLOCK_1",
+      "priorLine": "(ask) Unlock the guard shack interior.",
+      "lineToEdit": "I can do that when the system indicates an authorized onsite presence.\nIf I do it because a voice asked, I become the authorization event, and I am not licensed to be an event.",
+      "nextLine": "Do you have a Presence Receipt\u0014\u001consite,\u001d not \u001cexpected\u001d? The wording matters in a way I hate.",
+      "revisedLine": "I can unlock the guard shack interior (pause) when the system shows (pause) an authorized onsite presence. (pause) If I do it off a voice request, (pause) the authorization becomes me (pause) and I\u2019m not cleared for that.",
+      "changeSummary": "Kept the same condition and liability reason; reduced the formal phrasing. | Inserted (pause) breaks to keep each beat under 8 words; kept meaning and cadence; limited punctuation to a single comma."
+    },
+    {
+      "scene": "SCN_SCN-026.json",
+      "id": "N_UNLOCK_2",
+      "priorLine": "I can unlock the guard shack interior when the system shows an authorized onsite presence.\nIf I do it off a voice request, the authorization becomes me\u0014and I\u0019m not cleared for that.",
+      "lineToEdit": "Do you have a Presence Receipt\u0014\u001consite,\u001d not \u001cexpected\u001d? The wording matters in a way I hate.",
+      "nextLine": "",
+      "revisedLine": "Do you have a Presence Receipt (pause) worded \"onsite\" not \"expected\"? (pause) Yeah. The wording matters. (pause) I hate it too.",
+      "changeSummary": "Kept the exact wording requirement; made the annoyance feel more natural. | Inserted pauses to keep each beat under 8 words. Removed the extra comma by rephrasing the contrast without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-026.json",
+      "id": "N_INDICATES_1",
+      "priorLine": "(ask) What do you mean \u001csystem indicates\u001d?",
+      "lineToEdit": "A record I can attach my action to: name, date, activity type, site designation set to onsite, plus a Records authority marker.",
+      "nextLine": "I don\u0019t need your face. I need the checkbox that makes your face someone else\u0019s responsibility.",
+      "revisedLine": "I mean a record I can hang (pause) my action on: name; date; (pause) activity type; site designation set to onsite; (pause) plus a Records authority marker.",
+      "changeSummary": "Retained all required fields; shifted into shorthand ('hang my action on'). | Split into short beats with (pause). Replaced comma-separated list with semicolons to keep commas within limit while preserving the same details."
+    },
+    {
+      "scene": "SCN_SCN-026.json",
+      "id": "N_INDICATES_2",
+      "priorLine": "I mean a record I can hang my action on: name, date, activity type, site designation set to onsite, plus a Records authority marker.",
+      "lineToEdit": "I don\u0019t need your face. I need the checkbox that makes your face someone else\u0019s responsibility.",
+      "nextLine": "",
+      "revisedLine": "I\u2019m not looking for your face. (pause) I\u2019m looking for the box. (pause) It puts responsibility where it belongs\u2014Records. (pause) In the log. (pause) Somewhere that isn\u2019t me.",
+      "changeSummary": "Kept the same meaning (needs checkbox/accountability, not identity) with more immediate, defensive phrasing. | Split the long line into short beats using (pause). Removed commas by breaking out \u201cRecords\u201d and \u201cIn the log\u201d into separate beats while keeping the meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-026.json",
+      "id": "N_SHOW_1",
+      "priorLine": "(show) I have a Temporary Presence Receipt. Marked onsite.",
+      "lineToEdit": "Okay. Thank you for saying it that way.\nI still can\u0019t verify identity\u0014just to be extremely clear before anyone gets creative later\u0014but I can verify whether an onsite presence record exists under your name.",
+      "nextLine": "",
+      "revisedLine": "Okay good. (pause)\nThanks for saying it like that. (pause)\nI still can\u2019t verify identity over a speaker. (pause)\nJust so nobody gets clever later. (pause)\nI can check for an onsite presence record. (pause)\nUnder your name.",
+      "changeSummary": "Kept the same boundaries and action; made it less polished and more wary. | Split the line into shorter beats using (pause) so each beat stays under 8 words, and removed the comma after \u201cspeaker\u201d to meet the comma limit without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-026.json",
+      "id": "N_READBACK_1",
+      "priorLine": "(ask) Before you unlock, read back the minimum fields you can.",
+      "lineToEdit": "Minimum, yes. Because maximum becomes \u001cpersonal information\u001d and then I become a different kind of problem.",
+      "nextLine": "I can confirm: scheduled party matches a Field Systems Specialist under OLEA closeout activity, dated today, status: onsite.\nThat is the entire universe I\u0019m allowed to live in.",
+      "revisedLine": "Minimum, sure. (pause) If I read the rest (pause) it becomes personal information. (pause) Then I have a whole new report. (pause) To write.",
+      "changeSummary": "Kept the same rationale (avoid personal info) but made it sound like real-time risk management. | Inserted (pause) breaks to keep each beat under 8 words. Removed an extra comma while preserving the original meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-026.json",
+      "id": "N_READBACK_2",
+      "priorLine": "Minimum, sure.\nIf I start reading the rest, it turns into \u001cpersonal information\u001d and then I\u0019ve got a whole new report to write.",
+      "lineToEdit": "I can confirm: scheduled party matches a Field Systems Specialist under OLEA closeout activity, dated today, status: onsite.\nThat is the entire universe I\u0019m allowed to live in.",
+      "nextLine": "",
+      "revisedLine": "I can confirm: (pause) scheduled party matches a Field Systems Specialist (pause) under OLEA closeout activity dated today (pause) status: onsite. (pause) That's all I'm allowed to say.",
+      "changeSummary": "Preserved the exact confirmation details; shortened the closing. | Split into short beats using (pause) to meet beat word limit, removed commas to meet comma limit, and corrected apostrophe encoding in \"That's.\""
+    },
+    {
+      "scene": "SCN_SCN-026.json",
+      "id": "N_SCHED_1",
+      "priorLine": "(ask) Confirm my schedule details for my trail.",
+      "lineToEdit": "I can confirm you are scheduled in the database sense.\nI can\u0019t confirm you are you, because then I\u0019m in the business of judgment, and my contract is specifically allergic to judgment.",
+      "nextLine": "If you are marked onsite with a Presence Receipt, I can attach my confirmation to that event and it becomes operational, not personal.",
+      "revisedLine": "I can confirm your name is scheduled. (pause) It's in the database. (pause) I can't confirm you're you. (pause) That's a judgment call, and my contract (pause) doesn't cover judgment calls.",
+      "changeSummary": "Kept the same distinction and contract constraint; made it more spoken and less ornate. | Split into short beats with (pause) to meet the 8-word limit; kept one comma; cleaned formatting while preserving meaning."
+    },
+    {
+      "scene": "SCN_SCN-026.json",
+      "id": "N_SCHED_2",
+      "priorLine": "I can confirm your name is scheduled\u0014in the database.\nI can\u0019t confirm you\u0019re you. That\u0019s a judgment call, and my contract doesn\u0019t cover judgment calls.",
+      "lineToEdit": "If you are marked onsite with a Presence Receipt, I can attach my confirmation to that event and it becomes operational, not personal.",
+      "nextLine": "",
+      "revisedLine": "If you're marked onsite with a Presence Receipt (pause) I can attach the confirmation (pause) to that event. (pause) Then it lives as operational data.",
+      "changeSummary": "Kept the same requirement and outcome; removed the neat contrast phrasing. | Inserted pauses to keep each beat under 8 words. Kept wording and meaning; removed any need for commas."
+    },
+    {
+      "scene": "SCN_SCN-026.json",
+      "id": "N_SCHED_WHY_1",
+      "priorLine": "(ask) If I\u0019m scheduled, why wasn\u0019t that enough?",
+      "lineToEdit": "Scheduled is an intention. Onsite is a status.\nIntention doesn\u0019t generate blame. Status does.\nAccess follows blame. That\u0019s not my philosophy. That\u0019s the architecture.",
+      "nextLine": "",
+      "revisedLine": "Scheduled is what was planned. (pause) The doors want onsite, time-stamped status. (pause) They can audit it later. (pause) Someone\u2019s tied to it. (pause) That\u2019s how the system is built.",
+      "changeSummary": "Preserved the planned-vs-status logic and accountability; removed the quotable 'blame' line. | Removed 'Because' to cut explainer hits, split into short beats with (pause) so each stays under 8 words, and kept commas to one while preserving meaning."
+    },
+    {
+      "scene": "SCN_SCN-026.json",
+      "id": "N_OLEA_1",
+      "priorLine": "(persuade) I\u0019m OLEA. Closeout activity. Treat the work order as authority.",
+      "lineToEdit": "I do treat the work order as authority\u0014to the extent it proves you\u0019re expected.\nAuthority does not travel through a speaker. It travels through fields in a database.",
+      "nextLine": "If Records has marked you onsite, then the work order has a location to attach to, and I can do doors without inventing a person.",
+      "revisedLine": "The work order tells me you're expected. (pause)\nIt doesn't give me permission to act. (pause)\nNot off a speaker. (pause)\nWhat I can act on is this. (pause)\nWhat's in the database.",
+      "changeSummary": "Kept the same limitation (work order shows expected only) and the database authority framing, in a more conversational cadence. | Added (pause) breaks so each beat stays under 8 words. Split the last sentence into two beats without changing meaning. Standardized apostrophes."
+    },
+    {
+      "scene": "SCN_SCN-026.json",
+      "id": "N_OLEA_2",
+      "priorLine": "The work order tells me you\u0019re expected.\nIt doesn\u0019t give me permission to act off a speaker.\nWhat I can act on is what\u0019s in the database.",
+      "lineToEdit": "If Records has marked you onsite, then the work order has a location to attach to, and I can do doors without inventing a person.",
+      "nextLine": "",
+      "revisedLine": "If Records marks you onsite (pause) the work order has a location (pause) to attach to. (pause) Then I can run doors (pause) without inventing anything.",
+      "changeSummary": "Maintained the same dependency (Records onsite marker) and result (can do doors) with cleaner, shorter phrasing. | Added pauses to keep each beat under 8 words and removed the comma without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-026.json",
+      "id": "N_TIME_1",
+      "priorLine": "(ask) You understand this is time-sensitive.",
+      "lineToEdit": "I do. And I\u0019m not indifferent, I\u0019m constrained.\nTime sensitivity is not an authorization category. It\u0019s just\u0014 a feeling people bring to doors.",
+      "nextLine": "",
+      "revisedLine": "Yeah, I hear you. (pause) I still can't waive check-in. (pause) \"Urgent\" isn't an option on my screen.",
+      "changeSummary": "Kept the time-sensitivity acknowledgment and the refusal; expressed it as a practical UI/authority limit. | Split the line into three short beats using (pause) to keep each beat under 8 words; cleaned up punctuation/encoding without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-026.json",
+      "id": "N_COMMIT_0",
+      "priorLine": "(multiple) ((show) Yes. Receipt is issued and marked onsite.) ((show) I have it. Marked onsite.) ((ask) Check it. Then unlock.) ((ask) Unlock.) ((show) I\u0019m marked onsite. Attach it. Then unlock.) ((show) Onsite status exists. Use it.) ((show) Records marked me onsite. Proceed.) ((show) Onsite marker exists. Proceed.)",
+      "lineToEdit": "Copy. I am searching the onsite ledger now.\nIf this takes more than a moment, it\u0019s not because I doubt you. It\u0019s because the system likes to think before it takes responsibility.",
+      "nextLine": "The call box speaker emits the soft hiss of distance and servers.",
+      "revisedLine": "Copy. I\u2019m pulling the onsite ledger now. (pause) Give it a second. (pause) This system stalls right before it takes responsibility.",
+      "changeSummary": "Removed the explicit reassurance structure; kept the same reason for delay (system hesitates before accountability). | Added (pause) breaks to keep each beat under 8 words; tightened the last sentence without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-026.json",
+      "id": "N_COMMIT_2",
+      "priorLine": "The call box speaker emits the soft hiss of distance and servers.",
+      "lineToEdit": "Okay. I have an onsite presence record that matches your name and today\u0019s date, activity type: closeout.\nThat is sufficient for me to actuate interior access without becoming the story.",
+      "nextLine": "Do it.",
+      "revisedLine": "Okay. I've got an onsite presence record. (pause) Under your name, today's date. (pause) Activity type: closeout. (pause) That's enough to actuate interior access. (pause) And it won't be on me.",
+      "changeSummary": "Kept the confirmation details and the unlock justification; made it sound less literary and more defensive. | Split into short (pause) beats under 8 words, kept one comma total, and preserved the original meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-026.json",
+      "id": "N_COMMIT_4",
+      "priorLine": "Do it.",
+      "lineToEdit": "Initiating a timed unlock on the guard shack interior door.\nYou\u0019ll have a short window. If it relocks, it\u0019s not personal\u0014nothing here is personal on purpose.",
+      "nextLine": "A relay clicks somewhere behind the door. The reader light changes its mind for a moment.",
+      "revisedLine": "Initiating timed unlock on guard shack interior door. (pause) Short window. Move. (pause) If it relocks, that's the timer.",
+      "changeSummary": "Kept the timed unlock and brief window; removed the philosophical aside and added action pressure. | Added pause breaks to keep each beat under 8 words and tightened the last sentence while preserving meaning."
+    },
+    {
+      "scene": "SCN_SCN-026.json",
+      "id": "N_ENDCALL_1",
+      "priorLine": "(multiple) ((leave) End call.) ((leave) End call.) ((leave) End call.) ((leave) End call.) ((leave) End call.) ((leave) End call.) ((leave) End call.) ((leave) End call.) ((leave) End call.)",
+      "lineToEdit": "Copy. Ending the call.\nIf you need another door to become a record, you know where to press.",
+      "nextLine": "",
+      "revisedLine": "Copy. Ending the call. (pause) Need another door action? (pause) Hit the call button again. (pause) I\u2019ll tie it to the record.",
+      "changeSummary": "Kept the same sign-off and 'door action must attach to a record' idea, with clearer, more spoken wording. | Added (pause) breaks so each beat stays under 8 words. Kept wording and meaning; no commas added."
+    }
+  ]
+}

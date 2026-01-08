@@ -1,0 +1,73 @@
+{
+  "screen_id": "LIM-07",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "AMR reader loop",
+      "slug": "amr_reader_loop",
+      "file": "story_specific_gen/images/LIM-07-mask-amr_reader_loop.png",
+      "boxes": [
+        {
+          "label": "AMR reader loop",
+          "box_2d": [
+            319,
+            196,
+            680,
+            331
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Dummy mass fixture",
+      "slug": "dummy_mass_fixture",
+      "file": "story_specific_gen/images/LIM-07-mask-dummy_mass_fixture.png",
+      "boxes": [
+        {
+          "label": "Dummy mass fixture",
+          "box_2d": [
+            339,
+            292,
+            693,
+            517
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Test load panel",
+      "slug": "test_load_panel",
+      "file": "story_specific_gen/images/LIM-07-mask-test_load_panel.png",
+      "boxes": [
+        {
+          "label": "Test load panel",
+          "box_2d": [
+            334,
+            524,
+            672,
+            674
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Supervisor clipboard station",
+      "slug": "supervisor_clipboard_station",
+      "file": "story_specific_gen/images/LIM-07-mask-supervisor_clipboard_station.png",
+      "boxes": [
+        {
+          "label": "Supervisor clipboard station",
+          "box_2d": [
+            343,
+            679,
+            701,
+            843
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "screen_id": "HUB-14",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Cage lock",
+      "slug": "cage_lock",
+      "file": "images/HUB-14-mask-cage_lock.png",
+      "boxes": [
+        {
+          "label": "Cage lock",
+          "box_2d": [
+            512,
+            574,
+            563,
+            617
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Parts crate",
+      "slug": "parts_crate",
+      "file": "images/HUB-14-mask-parts_crate.png",
+      "boxes": [
+        {
+          "label": "Parts crate",
+          "box_2d": [
+            532,
+            626,
+            680,
+            747
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Pallet jack",
+      "slug": "pallet_jack",
+      "file": "images/HUB-14-mask-pallet_jack.png",
+      "boxes": [
+        {
+          "label": "Pallet jack",
+          "box_2d": [
+            550,
+            0,
+            747,
+            131
+          ]
+        }
+      ]
+    }
+  ]
+}

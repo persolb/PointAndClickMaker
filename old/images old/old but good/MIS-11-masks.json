@@ -1,0 +1,39 @@
+{
+  "screen_id": "MIS-11",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Governor",
+      "slug": "governor",
+      "file": "images/MIS-11-mask-governor.png",
+      "boxes": [
+        {
+          "label": "Governor",
+          "box_2d": [
+            258,
+            260,
+            843,
+            461
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Escapement wheel",
+      "slug": "escapement_wheel",
+      "file": "images/MIS-11-mask-escapement_wheel.png",
+      "boxes": [
+        {
+          "label": "escapement wheel",
+          "box_2d": [
+            363,
+            563,
+            567,
+            739
+          ]
+        }
+      ]
+    }
+  ]
+}

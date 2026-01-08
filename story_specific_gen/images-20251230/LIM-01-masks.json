@@ -1,0 +1,56 @@
+{
+  "screen_id": "LIM-01",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Barcode kiosk (unallocated mass)",
+      "slug": "barcode_kiosk_unallocated_mass",
+      "file": "story_specific_gen/images/LIM-01-mask-barcode_kiosk_unallocated_mass.png",
+      "boxes": [
+        {
+          "label": "Barcode kiosk (unallocated mass)",
+          "box_2d": [
+            477,
+            428,
+            747,
+            574
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Incident queue stanchions",
+      "slug": "incident_queue_stanchions",
+      "file": "story_specific_gen/images/LIM-01-mask-incident_queue_stanchions.png",
+      "boxes": [
+        {
+          "label": "Incident queue stanchions",
+          "box_2d": [
+            599,
+            290,
+            773,
+            568
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Sealed bay door (aperture side)",
+      "slug": "sealed_bay_door_aperture_side",
+      "file": "story_specific_gen/images/LIM-01-mask-sealed_bay_door_aperture_side.png",
+      "boxes": [
+        {
+          "label": "Sealed bay door (aperture side)",
+          "box_2d": [
+            292,
+            33,
+            703,
+            303
+          ]
+        }
+      ]
+    }
+  ]
+}

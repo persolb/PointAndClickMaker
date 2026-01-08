@@ -1,0 +1,39 @@
+{
+  "screen_id": "MIS-08",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Door cycle panel",
+      "slug": "door_cycle_panel",
+      "file": "images/MIS-08-mask-door_cycle_panel.png",
+      "boxes": [
+        {
+          "label": "Door cycle panel",
+          "box_2d": [
+            136,
+            672,
+            532,
+            856
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Filter cartridge",
+      "slug": "filter_cartridge",
+      "file": "images/MIS-08-mask-filter_cartridge.png",
+      "boxes": [
+        {
+          "label": "Filter cartridge",
+          "box_2d": [
+            591,
+            655,
+            995,
+            915
+          ]
+        }
+      ]
+    }
+  ]
+}

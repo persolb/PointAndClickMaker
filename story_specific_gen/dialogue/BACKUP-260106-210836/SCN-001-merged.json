@@ -1,0 +1,997 @@
+{
+  "changes": [
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_SIGNPOST_DESC",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_SIGNPOST_MENU",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_ASK_SIGNAGE_OWNER_PLAYER",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_ASK_SIGNAGE_OWNER_NARR",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_LOG_1",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_LOG_2",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_LOG_3",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_POST_LOG_MENU",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "ignore-duplicate_choice_update",
+      "details": {
+        "choice": {
+          "id": "C_LOOK_SIGNPOST",
+          "next": "END_TO_SIGNPOST_SCN004",
+          "text": "Layered signpost."
+        },
+        "nodeId": "N_MAIN_MENU",
+        "op": "update_choice"
+      },
+      "op": "update_choice"
+    },
+    {
+      "action": "modify",
+      "details": {
+        "choice": {
+          "id": "C_LOOK_SIGNPOST_FROM_MAINT",
+          "next": "END_TO_SIGNPOST_SCN004",
+          "text": "Layered signpost."
+        },
+        "nodeId": "N_KEYPAD_MAINT_MENU",
+        "op": "update_choice"
+      },
+      "op": "update_choice"
+    },
+    {
+      "action": "ignore-node_remove_vs_choice_change",
+      "details": {
+        "choice": {
+          "id": "C_LOOK_SIGNPOST_FROM_TABLET",
+          "next": "END_TO_SIGNPOST_SCN004",
+          "text": "Layered signpost."
+        },
+        "nodeId": "N_TRUNK_TABLET_MENU",
+        "op": "update_choice"
+      },
+      "op": "update_choice"
+    },
+    {
+      "action": "ignore-node_remove_vs_choice_change",
+      "details": {
+        "choice": {
+          "id": "C_LOOK_SIGNPOST_FROM_TAGS",
+          "next": "END_TO_SIGNPOST_SCN004",
+          "text": "Layered signpost."
+        },
+        "nodeId": "N_TRUNK_TAGS_MENU",
+        "op": "update_choice"
+      },
+      "op": "update_choice"
+    },
+    {
+      "action": "ignore-node_remove_vs_choice_change",
+      "details": {
+        "choice": {
+          "id": "C_LOOK_SIGNPOST_FROM_CONDUIT",
+          "next": "END_TO_SIGNPOST_SCN004",
+          "text": "Layered signpost."
+        },
+        "nodeId": "N_CONDUIT_MENU",
+        "op": "update_choice"
+      },
+      "op": "update_choice"
+    },
+    {
+      "action": "ignore-node_remove_vs_choice_change",
+      "details": {
+        "choice": {
+          "id": "C_USE_LOG_FIRST_ADMIN",
+          "next": "END_TO_SIGNPOST_SCN004",
+          "text": "Log it first."
+        },
+        "nodeId": "N_LEAVE_CONFIRM_ADMIN_MENU",
+        "op": "update_choice"
+      },
+      "op": "update_choice"
+    },
+    {
+      "action": "ignore-node_remove_vs_choice_change",
+      "details": {
+        "choice": {
+          "id": "C_USE_LOG_FIRST_GUARD",
+          "next": "END_TO_SIGNPOST_SCN004",
+          "text": "Log it first."
+        },
+        "nodeId": "N_LEAVE_CONFIRM_GUARD_MENU",
+        "op": "update_choice"
+      },
+      "op": "update_choice"
+    },
+    {
+      "action": "ignore-node_remove_vs_choice_change",
+      "details": {
+        "choice": {
+          "id": "C_USE_LOG_FIRST_HATCH",
+          "next": "END_TO_SIGNPOST_SCN004",
+          "text": "Log it first."
+        },
+        "nodeId": "N_LEAVE_CONFIRM_HATCH_MENU",
+        "op": "update_choice"
+      },
+      "op": "update_choice"
+    },
+    {
+      "action": "modify",
+      "details": {
+        "choice": {
+          "id": "C_USE_LOG_FROM_INTERCOM",
+          "next": "END_TO_SIGNPOST_SCN004",
+          "text": "Log signage conflict."
+        },
+        "nodeId": "N_INTERCOM_SIGNS_MENU",
+        "op": "update_choice"
+      },
+      "op": "update_choice"
+    },
+    {
+      "action": "modify",
+      "details": {
+        "choice": {
+          "id": "C_USE_LOG_FROM_VISITOR",
+          "next": "END_TO_SIGNPOST_SCN004",
+          "text": "Log signage conflict."
+        },
+        "nodeId": "N_KEYPAD_VISITOR_MENU",
+        "op": "update_choice"
+      },
+      "op": "update_choice"
+    },
+    {
+      "action": "ignore-node_remove_vs_choice_change",
+      "details": {
+        "choice": {
+          "id": "C_USE_LOG_FROM_TABLET",
+          "next": "END_TO_SIGNPOST_SCN004",
+          "text": "Log signage conflict."
+        },
+        "nodeId": "N_TRUNK_TABLET_MENU",
+        "op": "update_choice"
+      },
+      "op": "update_choice"
+    },
+    {
+      "action": "ignore-node_remove_vs_choice_change",
+      "details": {
+        "choice": {
+          "id": "C_USE_LOG_FROM_TAGS",
+          "next": "END_TO_SIGNPOST_SCN004",
+          "text": "Log signage conflict."
+        },
+        "nodeId": "N_TRUNK_TAGS_MENU",
+        "op": "update_choice"
+      },
+      "op": "update_choice"
+    },
+    {
+      "action": "ignore-node_remove_vs_choice_change",
+      "details": {
+        "choice": {
+          "id": "C_USE_LOG_FROM_DEBRIS",
+          "next": "END_TO_SIGNPOST_SCN004",
+          "text": "Log signage conflict."
+        },
+        "nodeId": "N_DEBRIS_FLIP_MENU",
+        "op": "update_choice"
+      },
+      "op": "update_choice"
+    },
+    {
+      "action": "add",
+      "details": {
+        "node": {
+          "exitTo": "Layered signpost",
+          "id": "END_TO_SIGNPOST_SCN004",
+          "type": "end"
+        },
+        "op": "add_node"
+      },
+      "op": "add_node"
+    },
+    {
+      "action": "ignore-choice_updated_to_removed_node",
+      "details": {
+        "choice": {
+          "id": "C_LOOK_SIGNPOST",
+          "next": "N_SIGNPOST_DESC",
+          "text": "Inspect the signpost."
+        },
+        "nodeId": "N_MAIN_MENU",
+        "op": "update_choice"
+      },
+      "op": "update_choice"
+    },
+    {
+      "action": "modify",
+      "details": {
+        "choice": {
+          "id": "C_USE_KEYPAD",
+          "next": "N_KEYPAD_DESC",
+          "text": "Approach the keypad."
+        },
+        "nodeId": "N_MAIN_MENU",
+        "op": "update_choice"
+      },
+      "op": "update_choice"
+    },
+    {
+      "action": "modify",
+      "details": {
+        "choice": {
+          "id": "C_TALK_INTERCOM",
+          "next": "N_INTERCOM_DESC",
+          "text": "Use the intercom."
+        },
+        "nodeId": "N_MAIN_MENU",
+        "op": "update_choice"
+      },
+      "op": "update_choice"
+    },
+    {
+      "action": "ignore-choice_updated_to_removed_node",
+      "details": {
+        "choice": {
+          "id": "C_LOOK_TRUNK",
+          "next": "N_TRUNK_DESC",
+          "text": "Check the trunk / equipment case."
+        },
+        "nodeId": "N_MAIN_MENU",
+        "op": "update_choice"
+      },
+      "op": "update_choice"
+    },
+    {
+      "action": "ignore-choice_updated_to_removed_node",
+      "details": {
+        "choice": {
+          "id": "C_LOOK_DEBRIS",
+          "next": "N_DEBRIS_DESC",
+          "text": "Inspect the debris pile."
+        },
+        "nodeId": "N_MAIN_MENU",
+        "op": "update_choice"
+      },
+      "op": "update_choice"
+    },
+    {
+      "action": "ignore-choice_updated_to_removed_node",
+      "details": {
+        "choice": {
+          "id": "C_LOOK_CONDUIT",
+          "next": "N_CONDUIT_DESC",
+          "text": "Inspect the instrument conduit box."
+        },
+        "nodeId": "N_MAIN_MENU",
+        "op": "update_choice"
+      },
+      "op": "update_choice"
+    },
+    {
+      "action": "ignore-choice_updated_to_removed_node",
+      "details": {
+        "choice": {
+          "id": "C_LOOK_HATCH",
+          "next": "N_HATCH_DESC",
+          "text": "Inspect the ground service hatch."
+        },
+        "nodeId": "N_MAIN_MENU",
+        "op": "update_choice"
+      },
+      "op": "update_choice"
+    },
+    {
+      "action": "ignore-choice_updated_to_removed_node",
+      "details": {
+        "choice": {
+          "id": "C_USE_LOG_CONFLICT",
+          "next": "N_LOG_1",
+          "text": "Log this as a signage conflict."
+        },
+        "nodeId": "N_SIGNPOST_MENU",
+        "op": "update_choice"
+      },
+      "op": "update_choice"
+    },
+    {
+      "action": "ignore-node_remove_vs_choice_change",
+      "details": {
+        "choice": {
+          "id": "C_TALK_INTERCOM_FROM_SIGN",
+          "next": "N_INTERCOM_DESC",
+          "text": "Use the intercom."
+        },
+        "nodeId": "N_SIGNPOST_MENU",
+        "op": "update_choice"
+      },
+      "op": "update_choice"
+    },
+    {
+      "action": "ignore-node_remove_vs_choice_change",
+      "details": {
+        "choice": {
+          "id": "C_LOOK_KEYPAD_FROM_SIGN",
+          "next": "N_KEYPAD_DESC",
+          "text": "Look at the keypad."
+        },
+        "nodeId": "N_SIGNPOST_MENU",
+        "op": "update_choice"
+      },
+      "op": "update_choice"
+    },
+    {
+      "action": "modify",
+      "details": {
+        "choice": {
+          "id": "C_USE_KEYPAD_INTERCOM",
+          "next": "N_SECURITY_USE_KEYPAD",
+          "text": "Tell them you're going to try the keypad."
+        },
+        "nodeId": "N_INTERCOM_MENU",
+        "op": "update_choice"
+      },
+      "op": "update_choice"
+    },
+    {
+      "action": "modify",
+      "details": {
+        "choice": {
+          "id": "C_USE_KEYPAD_VERIFIED",
+          "next": "N_SECURITY_USE_KEYPAD",
+          "text": "Try the keypad."
+        },
+        "nodeId": "N_INTERCOM_MENU_VERIFIED",
+        "op": "update_choice"
+      },
+      "op": "update_choice"
+    },
+    {
+      "action": "modify",
+      "details": {
+        "choice": {
+          "id": "C_USE_KEYPAD_FROM_SIGNS",
+          "next": "N_KEYPAD_DESC",
+          "text": "Try the keypad."
+        },
+        "nodeId": "N_INTERCOM_SIGNS_MENU",
+        "op": "update_choice"
+      },
+      "op": "update_choice"
+    },
+    {
+      "action": "modify",
+      "details": {
+        "node": {
+          "id": "N_SECURITY_USE_KEYPAD",
+          "next": "N_KEYPAD_DESC",
+          "speakerId": "SECURITY_DISPATCH",
+          "text": "Copy. Keep the receipt.\nThe receipt is the only part of this process that doesn\u2019t argue back later.",
+          "type": "npc_line"
+        },
+        "nodeId": "N_SECURITY_USE_KEYPAD",
+        "op": "update_node"
+      },
+      "op": "update_node"
+    },
+    {
+      "action": "modify",
+      "details": {
+        "node": {
+          "id": "N_KEYPAD_DESC",
+          "next": "N_KEYPAD_MENU",
+          "speakerId": "NARRATOR",
+          "text": "The keypad is clean enough to be used, which suggests someone is being paid to be nearby without being here.\nA narrow slot beneath it is labeled: RECEIPT \u2014 RETAIN FOR YOUR RECORDS.\n\nThe screen prompts: ENTER CODE OR SELECT: ASSISTANCE / VISITOR / MAINTENANCE.",
+          "type": "npc_line"
+        },
+        "nodeId": "N_KEYPAD_DESC",
+        "op": "update_node"
+      },
+      "op": "update_node"
+    },
+    {
+      "action": "modify",
+      "details": {
+        "choice": {
+          "id": "C_USE_MAINT",
+          "next": "N_KEYPAD_MAINT",
+          "text": "Select MAINTENANCE."
+        },
+        "nodeId": "N_KEYPAD_MENU",
+        "op": "update_choice"
+      },
+      "op": "update_choice"
+    },
+    {
+      "action": "modify",
+      "details": {
+        "choice": {
+          "id": "C_USE_VISITOR",
+          "next": "N_KEYPAD_VISITOR",
+          "text": "Select VISITOR."
+        },
+        "nodeId": "N_KEYPAD_MENU",
+        "op": "update_choice"
+      },
+      "op": "update_choice"
+    },
+    {
+      "action": "modify",
+      "details": {
+        "choice": {
+          "id": "C_TALK_INTERCOM_FROM_KEYPAD",
+          "next": "N_INTERCOM_DESC",
+          "text": "Use the intercom."
+        },
+        "nodeId": "N_KEYPAD_MENU",
+        "op": "update_choice"
+      },
+      "op": "update_choice"
+    },
+    {
+      "action": "ignore-node_remove_vs_choice_change",
+      "details": {
+        "choice": {
+          "id": "C_USE_KEYPAD_POSTLOG",
+          "next": "N_KEYPAD_DESC",
+          "text": "Try the keypad."
+        },
+        "nodeId": "N_POST_LOG_MENU",
+        "op": "update_choice"
+      },
+      "op": "update_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_TALK_INTERCOM",
+        "nodeId": "N_MAIN_MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_TALK_INTERCOM_FROM_SIGN",
+        "nodeId": "N_SIGNPOST_MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_TALK_INTERCOM_POSTLOG",
+        "nodeId": "N_POST_LOG_MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_TALK_INTERCOM_FROM_KEYPAD",
+        "nodeId": "N_KEYPAD_MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_TALK_INTERCOM_FROM_VISITOR",
+        "nodeId": "N_KEYPAD_VISITOR_MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_TRUNK_DESC",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_TRUNK_MENU",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_TRUNK_TABLET",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_TRUNK_TABLET_MENU",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_TRUNK_TAGS",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_TRUNK_TAGS_MENU",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_LOOK_TRUNK",
+        "nodeId": "N_MAIN_MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_LOOK_DEBRIS",
+        "nodeId": "N_MAIN_MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_DEBRIS_DESC",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_DEBRIS_MENU",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_DEBRIS_LEAVE",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_DEBRIS_FLIP",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_DEBRIS_FLIP_MENU",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_LOOK_CONDUIT",
+        "nodeId": "N_MAIN_MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_CONDUIT_DESC",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_CONDUIT_MENU",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_LOOK_HATCH",
+        "nodeId": "N_MAIN_MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_HATCH_DESC",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_HATCH_MENU",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_LEAVE_GUARD",
+        "nodeId": "N_MAIN_MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_LEAVE_ADMIN",
+        "nodeId": "N_MAIN_MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_LEAVE_HATCH",
+        "nodeId": "N_MAIN_MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_LEAVE_ADMIN_POSTLOG",
+        "nodeId": "N_POST_LOG_MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_LEAVE_BACK_FROM_SIGN",
+        "nodeId": "N_SIGNPOST_MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "ignore-node_remove_vs_choice_change",
+      "details": {
+        "choice": {
+          "id": "C_LEAVE_BACK_FROM_SIGN",
+          "next": "R_MAIN",
+          "text": "leave Back."
+        },
+        "nodeId": "N_SIGNPOST_MENU",
+        "op": "update_choice"
+      },
+      "op": "update_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_LEAVE_BACK_INTERCOM",
+        "nodeId": "N_INTERCOM_MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "add",
+      "details": {
+        "choice": {
+          "id": "C_LEAVE_BACK_INTERCOM",
+          "next": "R_MAIN",
+          "text": "leave Back."
+        },
+        "nodeId": "N_INTERCOM_MENU",
+        "op": "add_choice"
+      },
+      "op": "add_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_LEAVE_BACK_VERIFIED",
+        "nodeId": "N_INTERCOM_MENU_VERIFIED",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "add",
+      "details": {
+        "choice": {
+          "id": "C_LEAVE_BACK_VERIFIED",
+          "next": "R_MAIN",
+          "text": "leave Back."
+        },
+        "nodeId": "N_INTERCOM_MENU_VERIFIED",
+        "op": "add_choice"
+      },
+      "op": "add_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_LEAVE_BACK_FROM_SIGNS",
+        "nodeId": "N_INTERCOM_SIGNS_MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "add",
+      "details": {
+        "choice": {
+          "id": "C_LEAVE_BACK_FROM_SIGNS",
+          "next": "R_MAIN",
+          "text": "leave Back."
+        },
+        "nodeId": "N_INTERCOM_SIGNS_MENU",
+        "op": "add_choice"
+      },
+      "op": "add_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_LEAVE_BACK_FROM_KEYPAD",
+        "nodeId": "N_KEYPAD_MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "add",
+      "details": {
+        "choice": {
+          "id": "C_LEAVE_BACK_FROM_KEYPAD",
+          "next": "R_MAIN",
+          "text": "leave Back."
+        },
+        "nodeId": "N_KEYPAD_MENU",
+        "op": "add_choice"
+      },
+      "op": "add_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_LEAVE_ADMIN_FROM_MAINT",
+        "nodeId": "N_KEYPAD_MAINT_MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_LEAVE_BACK_FROM_MAINT",
+        "nodeId": "N_KEYPAD_MAINT_MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "add",
+      "details": {
+        "choice": {
+          "id": "C_LEAVE_BACK_FROM_MAINT",
+          "next": "R_MAIN",
+          "text": "leave Back."
+        },
+        "nodeId": "N_KEYPAD_MAINT_MENU",
+        "op": "add_choice"
+      },
+      "op": "add_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "choiceId": "C_LEAVE_BACK_FROM_VISITOR",
+        "nodeId": "N_KEYPAD_VISITOR_MENU",
+        "op": "remove_choice"
+      },
+      "op": "remove_choice"
+    },
+    {
+      "action": "add",
+      "details": {
+        "choice": {
+          "id": "C_LEAVE_BACK_FROM_VISITOR",
+          "next": "R_MAIN",
+          "text": "leave Back."
+        },
+        "nodeId": "N_KEYPAD_VISITOR_MENU",
+        "op": "add_choice"
+      },
+      "op": "add_choice"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_LEAVE_CONFIRM_ADMIN",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_LEAVE_CONFIRM_ADMIN_MENU",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_LEAVE_CONFIRM_GUARD",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_LEAVE_CONFIRM_GUARD_MENU",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_LEAVE_CONFIRM_HATCH",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "N_LEAVE_CONFIRM_HATCH_MENU",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "END_TO_ADMIN_EARLY",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "END_TO_GUARD_EARLY",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "END_TO_HATCH_EARLY",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "END_TO_ADMIN_LOGGED",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "END_TO_GUARD_LOGGED",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    },
+    {
+      "action": "remove",
+      "details": {
+        "nodeId": "END_TO_HATCH_LOGGED",
+        "op": "remove_node"
+      },
+      "op": "remove_node"
+    }
+  ],
+  "sceneId": "SCN-001"
+}

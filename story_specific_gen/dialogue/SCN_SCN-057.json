@@ -1,0 +1,648 @@
+{
+  "dialogueGraphs": [
+    {
+      "id": "SCN_057_SLOT_TOKEN_RECOVERY",
+      "sceneId": "SCN-057",
+      "startNodeId": "N00_TABLEAU",
+      "nodes": [
+        {
+          "id": "N00_TABLEAU",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "A caged window marked SCHEDULING faces the corridor like a confession booth with forms.\nA \u201cNO-SHOW RECOVERY\u201d bin sits under the counter, sealed with tape that has been re-taped.\nA crooked board lists approved stamp substitutions.\nA press labeled SLOT TOKEN\u2014AUTHORIZED IMPRESSIONS ONLY is bolted to the laminate.",
+          "next": "N01_CLERK_NEXT"
+        },
+        {
+          "id": "N01_CLERK_NEXT",
+          "type": "npc_line",
+          "speakerId": "SCHED_CLERK",
+          "text": "Next\u2014come on.",
+          "next": "N02_MAIN_BASE"
+        },
+        {
+          "id": "N02_MAIN_BASE",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "text": "At the scheduling counter\u2026",
+          "choices": [
+            {
+              "id": "C_TALK_NEXT",
+              "text": "talk: Next.",
+              "next": "N10_PLAYER_NEXT"
+            },
+            {
+              "id": "C_USE_BIN",
+              "text": "use: No-show recovery bin.",
+              "next": "N30_USE_BIN_OPEN"
+            },
+            {
+              "id": "C_LOOK_PRESS",
+              "text": "look: Slot token press.",
+              "next": "N40_LOOK_PRESS"
+            },
+            {
+              "id": "C_USE_PRESS",
+              "text": "use: Slot token press.",
+              "next": "N41_USE_PRESS_BLOCKED"
+            },
+            {
+              "id": "C_ASK_ASSET",
+              "text": "ask: What's an \u201casset\u201d?",
+              "next": "N50_PLAYER_ASK_ASSET"
+            },
+            {
+              "id": "C_SHOW_AMR",
+              "text": "show: AMR. Issued.",
+              "conditions": [
+                {
+                  "key": "act2.amrIssued",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "next": "N60_PLAYER_SHOW_AMR"
+            },
+            {
+              "id": "C_ASK_RULE",
+              "text": "ask: Show me the rule.",
+              "next": "N70_PLAYER_ASK_RULE"
+            },
+            {
+              "id": "C_SHOW_OLEA_ESCALATE",
+              "text": "show: Cite OLEA standing. Escalate.",
+              "checks": [
+                {
+                  "type": "rep",
+                  "faction": "OLEA",
+                  "min": 2
+                }
+              ],
+              "onPassNext": "N80_OLEA_PASS",
+              "onFailNext": "N81_OLEA_FAIL"
+            },
+            {
+              "id": "C_LEAVE",
+              "text": "leave: Step away from the cage.",
+              "next": "END_LEAVE"
+            }
+          ]
+        },
+        {
+          "id": "N10_PLAYER_NEXT",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Next.",
+          "next": "N11_CLERK_NARRATIVE_WARN"
+        },
+        {
+          "id": "N11_CLERK_NARRATIVE_WARN",
+          "type": "npc_line",
+          "speakerId": "SCHED_CLERK",
+          "text": "Good. (pause) You\u2019re actually here. (pause) Keep the word \"slot\" out of it (pause) at the glass. (pause) You say it. (pause) I deny it. (pause) Then I have to write it. (pause) Once it\u2019s written (pause) it\u2019s a narrative. (pause) Narratives get audited like injuries.",
+          "next": "N12_CLERK_RECOVER_RULE"
+        },
+        {
+          "id": "N12_CLERK_RECOVER_RULE",
+          "type": "npc_line",
+          "speakerId": "SCHED_CLERK",
+          "text": "If you\u2019ve got standing, you recover an asset. (pause) If you don\u2019t you take a swing. (pause) At recovery. (pause) Granting isn\u2019t on my menu. (pause) I record what survives.",
+          "next": "N13_TALK_MENU"
+        },
+        {
+          "id": "N13_TALK_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_ASK_RECOVER_FROM",
+              "text": "ask: Recover from what?",
+              "next": "N14_PLAYER_RECOVER_FROM"
+            },
+            {
+              "id": "C_RETURN_MAIN",
+              "text": "talk: Return to the counter options.",
+              "next": "N02_MAIN_BASE"
+            },
+            {
+              "id": "C_LEAVE_FROM_TALK",
+              "text": "leave: Step away.",
+              "next": "END_LEAVE"
+            }
+          ]
+        },
+        {
+          "id": "N14_PLAYER_RECOVER_FROM",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Recover from what?",
+          "next": "N15_CLERK_RECOVER_FROM"
+        },
+        {
+          "id": "N15_CLERK_RECOVER_FROM",
+          "type": "npc_line",
+          "speakerId": "SCHED_CLERK",
+          "text": "From absence. (pause) Just the category. (pause) An unclaimed slot sits as abandoned property. (pause) Until somebody makes it legible again.",
+          "next": "N16_CLERK_RECOVER_WORDS"
+        },
+        {
+          "id": "N16_CLERK_RECOVER_WORDS",
+          "type": "npc_line",
+          "speakerId": "SCHED_CLERK",
+          "text": "That\u2019s what the bin is for\u2014recovery. (pause) \u201cRequest\u201d lands in the minutes. (pause) A whole different way.",
+          "next": "N17_RECOVER_MENU"
+        },
+        {
+          "id": "N17_RECOVER_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_ASK_REQUEST_ANYWAY",
+              "text": "ask: And if I request anyway?",
+              "next": "N18_PLAYER_REQUEST_ANYWAY"
+            },
+            {
+              "id": "C_RETURN_MAIN_AFTER_RECOVER",
+              "text": "talk: Return to the counter options.",
+              "next": "N02_MAIN_BASE"
+            },
+            {
+              "id": "C_LEAVE_AFTER_RECOVER",
+              "text": "leave: Step away.",
+              "next": "END_LEAVE"
+            }
+          ]
+        },
+        {
+          "id": "N18_PLAYER_REQUEST_ANYWAY",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "If I request anyway?",
+          "next": "N19_CLERK_REQUEST_ANYWAY"
+        },
+        {
+          "id": "N19_CLERK_REQUEST_ANYWAY",
+          "type": "npc_line",
+          "speakerId": "SCHED_CLERK",
+          "text": "Then I deny it\u2014clean and simple. (pause) That denial won\u2019t clear you. (pause) It drags my name into your problem. (pause) I\u2019m not taking custody of that.",
+          "next": "N02_MAIN_BASE"
+        },
+        {
+          "id": "N30_USE_BIN_OPEN",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The tape gives with a tired sound, like it\u2019s done this before.\nInside: a stack of thin blanks and a small, sealed sleeve marked RECOVERY\u2014PENDING IMPRESSION.",
+          "next": "N31_CLERK_DO_CORRECTLY"
+        },
+        {
+          "id": "N31_CLERK_DO_CORRECTLY",
+          "type": "npc_line",
+          "speakerId": "SCHED_CLERK",
+          "text": "If you\u2019re doing this, do it clean. (pause) Bad recoveries turn into disputes. (pause) Disputes turn into meetings.",
+          "next": "N32_BIN_OPEN_MENU"
+        },
+        {
+          "id": "N32_BIN_OPEN_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_SHOW_AMR_IN_BIN",
+              "text": "show: AMR. Issued.",
+              "conditions": [
+                {
+                  "key": "act2.amrIssued",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "next": "N33_PLAYER_AMR_IN_BIN"
+            },
+            {
+              "id": "C_TAKE_SLEEVE",
+              "text": "use: Take the sealed sleeve.",
+              "next": "N36_SLEEVE_TAKEN"
+            }
+          ]
+        },
+        {
+          "id": "N33_PLAYER_AMR_IN_BIN",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "AMR. Issued.",
+          "next": "N34_CLERK_AMR_ACK"
+        },
+        {
+          "id": "N34_CLERK_AMR_ACK",
+          "type": "npc_line",
+          "speakerId": "SCHED_CLERK",
+          "text": "AMR checks out. Standing. (pause)\nIt keeps the \u201ctheft\u201d label off you. (pause)\nOnly if you\u2019re holding an asset. (pause)\nNothing personal. (pause)\nThose words ruin careers.",
+          "next": "N35_CLERK_ONE_SLEEVE"
+        },
+        {
+          "id": "N35_CLERK_ONE_SLEEVE",
+          "type": "npc_line",
+          "speakerId": "SCHED_CLERK",
+          "text": "One sleeve. That\u2019s it. (pause) Take two. I have to write it down.",
+          "next": "N32_BIN_OPEN_MENU"
+        },
+        {
+          "id": "N36_SLEEVE_TAKEN",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You take the sealed sleeve from the bin.\nIt\u2019s light, like it\u2019s waiting to become real when someone stamps it.",
+          "next": "N02_MAIN_SLEEVE"
+        },
+        {
+          "id": "N02_MAIN_SLEEVE",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "text": "Sleeve in hand\u2026",
+          "choices": [
+            {
+              "id": "C_USE_PRESS_WITH_SLEEVE",
+              "text": "use: Slot token press.",
+              "next": "N42_PRESS_DESC"
+            },
+            {
+              "id": "C_LOOK_PRESS_WITH_SLEEVE",
+              "text": "look: Slot token press.",
+              "next": "N40S_LOOK_PRESS"
+            },
+            {
+              "id": "C_LOOK_BOARD",
+              "text": "look: Stamp substitution board.",
+              "next": "N90_LOOK_BOARD"
+            },
+            {
+              "id": "C_SHOW_OLEA_ESCALATE_SLEEVE",
+              "text": "show: Cite OLEA standing. Escalate.",
+              "checks": [
+                {
+                  "type": "rep",
+                  "faction": "OLEA",
+                  "min": 2
+                }
+              ],
+              "onPassNext": "N80_OLEA_PASS",
+              "onFailNext": "N81_OLEA_FAIL"
+            },
+            {
+              "id": "C_RETURN_SLEEVE_MENU",
+              "text": "talk: Keep browsing the counter.",
+              "next": "N02_MAIN_SLEEVE"
+            },
+            {
+              "id": "C_LEAVE_SLEEVE_MENU",
+              "text": "leave: Step away.",
+              "next": "END_LEAVE"
+            }
+          ]
+        },
+        {
+          "id": "N40_LOOK_PRESS",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The press is bolted down like it has tried to leave before.\nA placard beneath it: AUTHORIZED IMPRESSIONS ONLY. \u201cAUTHORIZED\u201d is underlined twice.",
+          "next": "N40B_LOOK_PRESS_MENU"
+        },
+        {
+          "id": "N40B_LOOK_PRESS_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_ASK_AUTH_BY",
+              "text": "ask: Authorized by who?",
+              "next": "N40C_PLAYER_AUTH_BY"
+            },
+            {
+              "id": "C_USE_PRESS_FROM_LOOK",
+              "text": "use: Slot token press.",
+              "next": "N41_USE_PRESS_BLOCKED"
+            },
+            {
+              "id": "C_RETURN_MAIN_FROM_LOOK_PRESS",
+              "text": "talk: Return to the counter options.",
+              "next": "N02_MAIN_BASE"
+            },
+            {
+              "id": "C_LEAVE_FROM_LOOK_PRESS",
+              "text": "leave: Step away.",
+              "next": "END_LEAVE"
+            }
+          ]
+        },
+        {
+          "id": "N40C_PLAYER_AUTH_BY",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Authorized by who?",
+          "next": "N40D_CLERK_AUTH_BY"
+        },
+        {
+          "id": "N40D_CLERK_AUTH_BY",
+          "type": "npc_line",
+          "speakerId": "SCHED_CLERK",
+          "text": "By the chain. (pause) Yeah, it\u2019s circular. (pause) Keeps a name out your mouth.",
+          "next": "N40B_LOOK_PRESS_MENU"
+        },
+        {
+          "id": "N40S_LOOK_PRESS",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The press is bolted down like it has tried to leave before.\nA placard beneath it: AUTHORIZED IMPRESSIONS ONLY. \u201cAUTHORIZED\u201d is underlined twice.",
+          "next": "N40S_LOOK_PRESS_MENU"
+        },
+        {
+          "id": "N40S_LOOK_PRESS_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_ASK_AUTH_BY_SLEEVE",
+              "text": "ask: Authorized by who?",
+              "next": "N40C_PLAYER_AUTH_BY"
+            },
+            {
+              "id": "C_USE_PRESS_SLEEVE",
+              "text": "use: Slot token press.",
+              "next": "N42_PRESS_DESC"
+            },
+            {
+              "id": "C_RETURN_SLEEVE_MENU_FROM_LOOK",
+              "text": "talk: Keep browsing the counter.",
+              "next": "N02_MAIN_SLEEVE"
+            },
+            {
+              "id": "C_LEAVE_FROM_LOOK_PRESS_SLEEVE",
+              "text": "leave: Step away.",
+              "next": "END_LEAVE"
+            }
+          ]
+        },
+        {
+          "id": "N41_USE_PRESS_BLOCKED",
+          "type": "npc_line",
+          "speakerId": "SCHED_CLERK",
+          "text": "Stop. (pause)\nNo recovery sleeve on that press. (pause)\nNo transferred blank either. (pause)\nDo it like this. (pause)\nIt reads invented. (pause)\nInvented assets can look fine today. (pause)\nThen blow up in review. (pause)\nWhen you\u2019re gone. (pause)\nThen it comes back to me. (pause)\nAs a historical mess.",
+          "next": "N41B_BLOCK_MENU"
+        },
+        {
+          "id": "N41B_BLOCK_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "conditions": [
+                {
+                  "key": "act2.amrIssued",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "id": "C_SHOW_AMR_AFTER_BLOCK",
+              "next": "N60_PLAYER_SHOW_AMR",
+              "text": "show: AMR. Issued."
+            },
+            {
+              "id": "C_RETURN_MAIN_AFTER_BLOCK",
+              "next": "N02_MAIN_BASE",
+              "text": "talk: Return to the counter options."
+            },
+            {
+              "id": "C_LEAVE_AFTER_BLOCK",
+              "next": "END_LEAVE",
+              "text": "leave: Step away."
+            }
+          ]
+        },
+        {
+          "id": "N42_PRESS_DESC",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The press handle is cold and over-maintained.\nThe die face reads: CUSTODY IMPRESSION \u2014 VALID UNTIL CHALLENGED.",
+          "next": "N43_CLERK_DONT_HESITATE"
+        },
+        {
+          "id": "N43_CLERK_DONT_HESITATE",
+          "type": "npc_line",
+          "speakerId": "SCHED_CLERK",
+          "text": "All the way down. (pause) Half an impression reads like fraud, (pause) even if it\u2019s just nerves.",
+          "next": "N44_PRESS_MENU"
+        },
+        {
+          "id": "N44_PRESS_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_IMPRESS_TOKEN",
+              "text": "use: Impress custody onto a token.",
+              "next": "N45_IMPRESS_RESULT"
+            },
+            {
+              "id": "C_RETURN_SLEEVE_MENU_FROM_PRESS",
+              "text": "talk: Keep browsing the counter.",
+              "next": "N02_MAIN_SLEEVE"
+            },
+            {
+              "id": "C_LEAVE_FROM_PRESS",
+              "text": "leave: Step away.",
+              "next": "END_LEAVE"
+            }
+          ]
+        },
+        {
+          "id": "N45_IMPRESS_RESULT",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You align the sleeve, set the blank, and pull the handle in one motion.\nThe token comes out with a clean impression and a serial that feels accusatory by design.",
+          "next": "N46_CLERK_ASSET_RECOVERED"
+        },
+        {
+          "id": "N46_CLERK_ASSET_RECOVERED",
+          "type": "npc_line",
+          "speakerId": "SCHED_CLERK",
+          "text": "Asset recovered. (pause)\nThat\u2019s the word for the log. (pause)\nKeep it visible at checkpoints. (pause)\nVisibility does most of the work.",
+          "next": "END_COLLECT_SLOT_TOKEN"
+        },
+        {
+          "id": "N50_PLAYER_ASK_ASSET",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "What\u2019s an asset?",
+          "next": "N51_CLERK_ASSET_EXPLAIN"
+        },
+        {
+          "id": "N51_CLERK_ASSET_EXPLAIN",
+          "type": "npc_line",
+          "speakerId": "SCHED_CLERK",
+          "text": "Time. (pause)\nTied to a lane and a tolerance band. (pause)\nAnd an expiry everyone calls \u201cflexible\u201d. (pause)\nUntil audit shows up. (pause)\nThis window adjudicates custody.",
+          "next": "N52_ASSET_MENU"
+        },
+        {
+          "id": "N52_ASSET_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_ASK_SO_RECOVER",
+              "text": "ask: So I don\u2019t request. I recover.",
+              "next": "N53_PLAYER_SO_RECOVER"
+            },
+            {
+              "id": "C_RETURN_MAIN_AFTER_ASSET",
+              "text": "talk: Return to the counter options.",
+              "next": "N02_MAIN_BASE"
+            },
+            {
+              "id": "C_LEAVE_AFTER_ASSET",
+              "text": "leave: Step away.",
+              "next": "END_LEAVE"
+            }
+          ]
+        },
+        {
+          "id": "N53_PLAYER_SO_RECOVER",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "So I recover.",
+          "next": "N54_CLERK_SO_RECOVER"
+        },
+        {
+          "id": "N54_CLERK_SO_RECOVER",
+          "type": "npc_line",
+          "speakerId": "SCHED_CLERK",
+          "text": "Yeah. (pause)\nClaim it. Present it. I record it. (pause)\nIf it holds up it moves. (pause)\nIf it doesn\u2019t it stops here. (pause)\nThat\u2019s the job.",
+          "next": "N52_ASSET_MENU"
+        },
+        {
+          "id": "N60_PLAYER_SHOW_AMR",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "AMR. Issued.",
+          "next": "N61_CLERK_AMR_RULE"
+        },
+        {
+          "id": "N61_CLERK_AMR_RULE",
+          "type": "npc_line",
+          "speakerId": "SCHED_CLERK",
+          "text": "AMR gives you standing. (pause) It doesn\u2019t open a slot. (pause) Not by itself. (pause) It keeps the system from calling custody \u201ctheft.\u201d",
+          "next": "N62_CLERK_DISCRETION"
+        },
+        {
+          "id": "N62_CLERK_DISCRETION",
+          "type": "npc_line",
+          "speakerId": "SCHED_CLERK",
+          "text": "If you need something to hold, (pause) recover it. (pause) Don\u2019t ask me to turn your identity (pause) into property on my signature. (pause) That\u2019s discretion. (pause) Discretion leaves fingerprints.",
+          "next": "N63_AMR_MENU"
+        },
+        {
+          "id": "N63_AMR_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_RETURN_MAIN_AFTER_AMR",
+              "text": "talk: Return to the counter options.",
+              "next": "N02_MAIN_BASE"
+            },
+            {
+              "id": "C_LEAVE_AFTER_AMR",
+              "text": "leave: Step away.",
+              "next": "END_LEAVE"
+            }
+          ]
+        },
+        {
+          "id": "N70_PLAYER_ASK_RULE",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Show me the rule.",
+          "next": "N71_CLERK_RULE_1"
+        },
+        {
+          "id": "N71_CLERK_RULE_1",
+          "type": "npc_line",
+          "speakerId": "SCHED_CLERK",
+          "text": "Rule doesn\u2019t forbid asking. (pause) It says: requests aren\u2019t claims. (pause) People skim, still try making it my problem.",
+          "next": "N72_CLERK_RULE_2"
+        },
+        {
+          "id": "N72_CLERK_RULE_2",
+          "type": "npc_line",
+          "speakerId": "SCHED_CLERK",
+          "text": "I can log a claim. (pause) A transfer. (pause) Or a recovery.\nEverything else becomes a story. (pause) And I\u2019m not filing stories.",
+          "next": "N73_RULE_MENU"
+        },
+        {
+          "id": "N73_RULE_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_RETURN_MAIN_AFTER_RULE",
+              "text": "talk: Return to the counter options.",
+              "next": "N02_MAIN_BASE"
+            },
+            {
+              "id": "C_LEAVE_AFTER_RULE",
+              "text": "leave: Step away.",
+              "next": "END_LEAVE"
+            }
+          ]
+        },
+        {
+          "id": "N80_OLEA_PASS",
+          "type": "npc_line",
+          "speakerId": "SCHED_CLERK",
+          "text": "Standing noted. (pause) Still doesn\u2019t put an asset here. (pause) I escalate a request. (pause) It becomes a discretionary record. (pause) My name is on it. (pause) Then I own the precedent. (pause) Bring a claim. (pause) Or a transfer. (pause) Or a recovery. (pause) Then I can record without inventing.",
+          "next": "N02_MAIN_BASE"
+        },
+        {
+          "id": "N81_OLEA_FAIL",
+          "type": "npc_line",
+          "speakerId": "SCHED_CLERK",
+          "text": "Declarations don\u2019t run this window. (pause) Show standing in-chain. (pause) Or I can\u2019t route anything up. (pause) Present a claimable asset. (pause) Or don\u2019t.",
+          "next": "N02_MAIN_BASE"
+        },
+        {
+          "id": "N90_LOOK_BOARD",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "Approved stamp substitutions are listed in tidy rows.\nSeveral lines are crossed out and re-initialed, like grudges formalized.\nIt reads like an admission that the system anticipates failure and calls it \u201cprocess.\u201d",
+          "next": "N02_MAIN_SLEEVE"
+        },
+        {
+          "id": "END_COLLECT_SLOT_TOKEN",
+          "type": "end",
+          "outcomeId": "collect_slot_token",
+          "effects": [
+            {
+              "key": "act2.slotTokenCollected",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "inventory.items",
+              "action": "add",
+              "value": "ITEM_SLOT_TOKEN"
+            }
+          ]
+        },
+        {
+          "id": "END_LEAVE",
+          "type": "end",
+          "effects": [
+            {
+              "key": "narrative.leftSchedulingCounter",
+              "action": "set",
+              "value": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

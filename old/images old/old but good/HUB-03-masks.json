@@ -1,0 +1,73 @@
+{
+  "screen_id": "HUB-03",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Service gate chain/padlock",
+      "slug": "service_gate_chain_padlock",
+      "file": "images/HUB-03-mask-service_gate_chain_padlock.png",
+      "boxes": [
+        {
+          "label": "Service gate chain/padlock",
+          "box_2d": [
+            426,
+            513,
+            529,
+            563
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Hinge assembly",
+      "slug": "hinge_assembly",
+      "file": "images/HUB-03-mask-hinge_assembly.png",
+      "boxes": [
+        {
+          "label": "hinge assembly",
+          "box_2d": [
+            375,
+            401,
+            692,
+            536
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Junction box",
+      "slug": "junction_box",
+      "file": "images/HUB-03-mask-junction_box.png",
+      "boxes": [
+        {
+          "label": "Junction box",
+          "box_2d": [
+            376,
+            563,
+            442,
+            606
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Alternate route teaser",
+      "slug": "alternate_route_teaser",
+      "file": "images/HUB-03-mask-alternate_route_teaser.png",
+      "boxes": [
+        {
+          "label": "alternate route teaser",
+          "box_2d": [
+            376,
+            563,
+            442,
+            609
+          ]
+        }
+      ]
+    }
+  ]
+}

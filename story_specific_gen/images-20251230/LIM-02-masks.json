@@ -1,0 +1,97 @@
+{
+  "screen_id": "LIM-02",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Window 0: Intake (TER)",
+      "slug": "window_0_intake_ter",
+      "file": "story_specific_gen/images/LIM-02-mask-window_0_intake_ter.png",
+      "boxes": [
+        {
+          "label": "Window 0: Intake (TER)",
+          "box_2d": [
+            319,
+            178,
+            563,
+            292
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Window 3: Orientation",
+      "slug": "window_3_orientation",
+      "file": "story_specific_gen/images/LIM-02-mask-window_3_orientation.png",
+      "boxes": [
+        {
+          "label": "Window 3: Orientation",
+          "box_2d": [
+            319,
+            313,
+            563,
+            429
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Window 5: Safety",
+      "slug": "window_5_safety",
+      "file": "story_specific_gen/images/LIM-02-mask-window_5_safety.png",
+      "boxes": [
+        {
+          "label": "Window 5: Safety",
+          "box_2d": [
+            300,
+            421,
+            563,
+            574
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Window 7: Property",
+      "slug": "window_7_property",
+      "file": "story_specific_gen/images/LIM-02-mask-window_7_property.png",
+      "boxes": [
+        {
+          "label": "Window 7: Property",
+          "box_2d": [
+            296,
+            570,
+            568,
+            796
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Window 9: Complaints",
+      "slug": "window_9_complaints",
+      "file": "story_specific_gen/images/LIM-02-mask-window_9_complaints.png",
+      "boxes": [
+        {
+          "label": "Window 9: Complaints",
+          "box_2d": [
+            334,
+            696,
+            563,
+            796
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Forms rack (misrouted cargo templates)",
+      "slug": "forms_rack_misrouted_cargo_templates",
+      "file": "story_specific_gen/images/LIM-02-mask-forms_rack_misrouted_cargo_templates.png",
+      "boxes": []
+    }
+  ]
+}

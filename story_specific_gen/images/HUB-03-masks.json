@@ -1,0 +1,73 @@
+{
+  "screen_id": "HUB-03",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Badge insert dispenser",
+      "slug": "badge_insert_dispenser",
+      "file": "story_specific_gen/images/HUB-03-mask-badge_insert_dispenser.png",
+      "boxes": [
+        {
+          "label": "Badge insert dispenser",
+          "box_2d": [
+            140,
+            279,
+            335,
+            376
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Desk drawer (old badges)",
+      "slug": "desk_drawer_old_badges",
+      "file": "story_specific_gen/images/HUB-03-mask-desk_drawer_old_badges.png",
+      "boxes": [
+        {
+          "label": "Desk drawer (old badges)",
+          "box_2d": [
+            638,
+            226,
+            781,
+            393
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Speaker / intercom",
+      "slug": "speaker_intercom",
+      "file": "story_specific_gen/images/HUB-03-mask-speaker_intercom.png",
+      "boxes": [
+        {
+          "label": "Speaker / intercom",
+          "box_2d": [
+            267,
+            458,
+            402,
+            540
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Dead tube port cover",
+      "slug": "dead_tube_port_cover",
+      "file": "story_specific_gen/images/HUB-03-mask-dead_tube_port_cover.png",
+      "boxes": [
+        {
+          "label": "Dead tube port cover",
+          "box_2d": [
+            272,
+            458,
+            403,
+            541
+          ]
+        }
+      ]
+    }
+  ]
+}

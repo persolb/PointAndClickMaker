@@ -1,0 +1,190 @@
+{
+  "changes": [
+    {
+      "action": "add",
+      "createScene": {
+        "dialogueGraphs": [
+          {
+            "id": "SCN_115_WINDOW_0_INTAKE_TER",
+            "nodes": [
+              {
+                "id": "N_WIN0_INTRO_1",
+                "next": "N_WIN0_INTRO_2",
+                "speakerId": "NARRATOR",
+                "text": "Window 0 is the only counter without pamphlets.\nThe space is clean in the way a form is clean\u2014because nothing personal has been allowed to touch it.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_WIN0_INTRO_2",
+                "next": "PC_WIN0_MENU",
+                "speakerId": "INTAKE_CLERK",
+                "text": "Intake.\nCategory?",
+                "type": "npc_line"
+              },
+              {
+                "choices": [
+                  {
+                    "id": "C_ASK_NEED_TER",
+                    "next": "N_WIN0_TER_1",
+                    "text": "ask: I need a Temporary Existence Receipt."
+                  },
+                  {
+                    "id": "C_ASK_ACCEPTED_CATS",
+                    "next": "N_WIN0_CATS_1",
+                    "text": "ask: What categories are accepted?"
+                  },
+                  {
+                    "conditions": [
+                      {
+                        "key": "player.hasFaction.OLEA",
+                        "op": "==",
+                        "value": true
+                      }
+                    ],
+                    "id": "C_SHOW_OLEA_WIN0",
+                    "next": "N_WIN0_OLEA_1",
+                    "text": "show: OLEA credentials."
+                  },
+                  {
+                    "id": "C_BARGAIN_SIMPLE_FAST",
+                    "next": "N_WIN0_BARGAIN_1",
+                    "text": "bargain: I\u2019ll keep it simple if you get me filed fast."
+                  },
+                  {
+                    "id": "C_LEAVE_WIN0",
+                    "next": "END_RETURN_TO_INTAKE_HALL",
+                    "text": "leave: Back."
+                  }
+                ],
+                "id": "PC_WIN0_MENU",
+                "speakerId": "PLAYER",
+                "type": "player_choice"
+              },
+              {
+                "id": "N_WIN0_TER_1",
+                "next": "N_WIN0_TER_2",
+                "speakerId": "INTAKE_CLERK",
+                "text": "TER comes after.\nStart with a category.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_WIN0_TER_2",
+                "next": "N_WIN0_TER_3",
+                "speakerId": "INTAKE_CLERK",
+                "text": "I don't issue existence. (pause)\nI can stamp a receipt for something. (pause)\nI can log it in the normal sense. (pause)\nIf you're not listed in a jurisdiction. (pause)\nI can't file you as a person.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_WIN0_TER_3",
+                "next": "PC_WIN0_FOLLOW",
+                "speakerId": "INTAKE_CLERK",
+                "text": "Put something with a barcode on the counter. (pause) I can file that. (pause) Anything extra goes down as 'associated'. (pause) No comment.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_WIN0_CATS_1",
+                "next": "N_WIN0_CATS_2",
+                "speakerId": "INTAKE_CLERK",
+                "text": "Whatever's listed today is what I take.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_WIN0_CATS_2",
+                "next": "PC_WIN0_FOLLOW",
+                "speakerId": "INTAKE_CLERK",
+                "text": "Yeah. It\u2019s circular. (pause) Keeps it from turning into debate. (pause) \u201cMisrouted equipment transfer\u201d usually stays quiet. (pause) \u201cUnclaimed attachment\u201d is there too. (pause) It gets questions in the normal sense.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_WIN0_OLEA_1",
+                "next": "N_WIN0_OLEA_2",
+                "speakerId": "INTAKE_CLERK",
+                "text": "Employer credentials don't go in the category box.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_WIN0_OLEA_2",
+                "next": "PC_WIN0_FOLLOW",
+                "speakerId": "INTAKE_CLERK",
+                "text": "Sure. They're context. (pause) I can't scan context. (pause) Want a TER? Go through Intake. (pause) As recordable mass.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_WIN0_BARGAIN_1",
+                "next": "N_WIN0_BARGAIN_2",
+                "speakerId": "INTAKE_CLERK",
+                "text": "Good. Keep it simple.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_WIN0_BARGAIN_2",
+                "next": "PC_WIN0_FOLLOW",
+                "speakerId": "INTAKE_CLERK",
+                "text": "I don't promise speed. (pause) I do the order. (pause) The order gets you the receipt.",
+                "type": "npc_line"
+              },
+              {
+                "choices": [
+                  {
+                    "id": "C_TALK_PROCEED_TER_PATH",
+                    "next": "N_COMMIT_1",
+                    "text": "talk: Proceed with Window 0 as TER path."
+                  },
+                  {
+                    "id": "C_LEAVE_WIN0_BACK",
+                    "next": "END_RETURN_TO_INTAKE_HALL",
+                    "text": "leave: Back."
+                  }
+                ],
+                "id": "PC_WIN0_FOLLOW",
+                "speakerId": "PLAYER",
+                "type": "player_choice"
+              },
+              {
+                "id": "N_COMMIT_1",
+                "next": "N_COMMIT_2",
+                "speakerId": "NARRATOR",
+                "text": "You point at the placard: \u201cINTAKE (TER).\u201d",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_COMMIT_2",
+                "next": "N_COMMIT_3",
+                "speakerId": "INTAKE_CLERK",
+                "text": "Yeah.\nIn the normal sense.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_COMMIT_3",
+                "next": "END_RULES_ESTABLISHED",
+                "speakerId": "NARRATOR",
+                "text": "The clerk slides a blank form forward, face-down, like it might try to read you back if you look too directly.\nYou have identified the path. The actual filing comes next\u2014when you choose what you are willing to be called.",
+                "type": "npc_line"
+              },
+              {
+                "effects": [
+                  {
+                    "action": "set",
+                    "key": "knowledge.intakeWindowsKnown",
+                    "value": true
+                  }
+                ],
+                "id": "END_RULES_ESTABLISHED",
+                "outcomeId": "intake_hall_rules_established",
+                "type": "end"
+              },
+              {
+                "id": "END_RETURN_TO_INTAKE_HALL",
+                "type": "end"
+              }
+            ],
+            "sceneId": "SCN-115",
+            "startNodeId": "N_WIN0_INTRO_1"
+          }
+        ]
+      },
+      "op": "create_scene"
+    }
+  ],
+  "sceneId": "SCN-115"
+}

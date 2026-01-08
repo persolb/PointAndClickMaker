@@ -1,0 +1,110 @@
+{
+  "screen_id": "LIM-03",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Map kiosk",
+      "slug": "map_kiosk",
+      "file": "story_specific_gen/images/LIM-03-mask-map_kiosk.png",
+      "boxes": [
+        {
+          "label": "Map kiosk",
+          "box_2d": [
+            426,
+            396,
+            730,
+            584
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Badge validator",
+      "slug": "badge_validator",
+      "file": "story_specific_gen/images/LIM-03-mask-badge_validator.png",
+      "boxes": [
+        {
+          "label": "Badge validator",
+          "box_2d": [
+            584,
+            140,
+            792,
+            214
+          ]
+        },
+        {
+          "label": "Badge validator",
+          "box_2d": [
+            447,
+            363,
+            471,
+            381
+          ]
+        },
+        {
+          "label": "Badge validator",
+          "box_2d": [
+            447,
+            408,
+            471,
+            427
+          ]
+        },
+        {
+          "label": "Badge validator",
+          "box_2d": [
+            447,
+            571,
+            471,
+            589
+          ]
+        },
+        {
+          "label": "Badge validator",
+          "box_2d": [
+            447,
+            616,
+            471,
+            626
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Service-route reader loop",
+      "slug": "service_route_reader_loop",
+      "file": "story_specific_gen/images/LIM-03-mask-service_route_reader_loop.png",
+      "boxes": [
+        {
+          "label": "Badge validation kiosk (left)",
+          "box_2d": [
+            584,
+            137,
+            792,
+            219
+          ]
+        },
+        {
+          "label": "Map Kiosk with screen and print slot",
+          "box_2d": [
+            435,
+            411,
+            755,
+            584
+          ]
+        },
+        {
+          "label": "Service-route reader loop kiosk (right)",
+          "box_2d": [
+            579,
+            747,
+            810,
+            835
+          ]
+        }
+      ]
+    }
+  ]
+}

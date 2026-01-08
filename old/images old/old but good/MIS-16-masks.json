@@ -1,0 +1,22 @@
+{
+  "screen_id": "MIS-16",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Control focus region",
+      "slug": "control_focus_region",
+      "file": "images/MIS-16-mask-control_focus_region.png",
+      "boxes": [
+        {
+          "label": "Control focus region",
+          "box_2d": [
+            435,
+            298,
+            513,
+            409
+          ]
+        }
+      ]
+    }
+  ]
+}

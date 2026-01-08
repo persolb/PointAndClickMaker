@@ -1,0 +1,176 @@
+{
+  "dialogueGraphs": [
+    {
+      "id": "SCN028_NON_LOCAL_NOTICES",
+      "sceneId": "SCN-028",
+      "startNodeId": "N_ENTER",
+      "nodes": [
+        {
+          "id": "N_ENTER",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The Non-Local Compliance Notices Room is smaller than it should be for how much paper it holds.\nForms racks sag under standardized templates. An envelope stack sits like it\u2019s waiting for hands that never arrive.\nOne notice is clipped higher than the rest. Its barcode is too clean. Too high-contrast. Like it was printed by a different decade.",
+          "next": "N_MENU"
+        },
+        {
+          "id": "N_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": []
+        },
+        {
+          "id": "N_NOTICE_INTRO",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The notice is a standardized compliance posting.\nIt uses local nouns\u2014facility, operator, responsible party\u2014but the verbs are wrong.\nNot \u201cmust comply.\u201d More like \u201cwill be held.\u201d\n\nThe barcode is the part that doesn\u2019t match anything else in the room.\nIt\u2019s too precise. No smearing. No aging. Like it arrived already archived.",
+          "next": "N_NOTICE_MENU"
+        },
+        {
+          "id": "N_NOTICE_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_READ_BODY",
+              "text": "(look) Read the body text.",
+              "next": "N_NOTICE_BODY"
+            },
+            {
+              "id": "C_SCAN_BARCODE",
+              "text": "(use) Try to scan the barcode at the nearby admin scanner.",
+              "conditions": [
+                {
+                  "key": "player.factions",
+                  "op": "in",
+                  "value": [
+                    "OLEA"
+                  ]
+                }
+              ],
+              "next": "N_NOTICE_SCAN"
+            },
+            {
+              "id": "C_FILE_ORDINARY_DIRECT",
+              "text": "(look) File it as ordinary and move on.",
+              "next": "N_FILE_ORDINARY_LINE"
+            },
+            {
+              "id": "C_RETURN_MENU_FROM_NOTICE",
+              "text": "(leave) Return to the room.",
+              "next": "R_TO_MENU"
+            }
+          ]
+        },
+        {
+          "id": "N_NOTICE_BODY",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You read the first lines twice because they\u2019re trying not to be accusatory.\n\n\u201cNOTICE: Non-local compliance condition detected.\u201d\n\u201cAction: Hold state pending documentation.\u201d\n\u201cReference: [redacted by copy quality].\u201d\n\nA line at the bottom repeats like a disclaimer that got promoted:\n\u201cIncorrect service class assignments may affect standing.\u201d",
+          "next": "N_NOTICE_BODY_MENU"
+        },
+        {
+          "id": "N_NOTICE_BODY_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_FILE_ORDINARY_FROM_BODY",
+              "text": "(look) File it as ordinary and move on.",
+              "next": "N_FILE_ORDINARY_LINE"
+            },
+            {
+              "id": "C_RETURN_MENU_FROM_BODY",
+              "text": "(leave) Return to the room.",
+              "next": "R_TO_MENU"
+            }
+          ]
+        },
+        {
+          "id": "N_NOTICE_SCAN",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The scanner is older than the barcode.\nYou feed the edge under the glass anyway, because \u201cunreadable\u201d is a category you know how to report.\n\nThe scanner chirps once\u2014unhelpfully confident\u2014then prints a stub of metadata:\n\u201cFORMAT: NON-LOCAL\u201d\n\u201cROUTING: EXTERNAL\u201d\n\u201cSTATUS: HELD\u201d\nThe rest is blank, as if the machine refuses to pretend.",
+          "next": "N_NOTICE_SCAN_PLAYER"
+        },
+        {
+          "id": "N_NOTICE_SCAN_PLAYER",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Okay.",
+          "next": "N_NOTICE_SCAN_MENU"
+        },
+        {
+          "id": "N_NOTICE_SCAN_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_FILE_ORDINARY_FROM_SCAN",
+              "text": "(look) File it as ordinary and move on.",
+              "next": "N_FILE_ORDINARY_SCAN_LINE"
+            },
+            {
+              "id": "C_RETURN_MENU_FROM_SCAN",
+              "text": "(leave) Return to the room.",
+              "next": "R_TO_MENU"
+            }
+          ]
+        },
+        {
+          "id": "N_FILE_ORDINARY_LINE",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You register the barcode as \u201cunfamiliar,\u201d and then you demote it to \u201cnot today.\u201d\nThat\u2019s a professional skill, most days.",
+          "next": "N_OUTRO_BEAT"
+        },
+        {
+          "id": "N_FILE_ORDINARY_SCAN_LINE",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You treat the stub like a curiosity, not a warning.\nThe notice stays clipped. The room stays quiet.",
+          "next": "N_OUTRO_BEAT"
+        },
+        {
+          "id": "N_OUTRO_BEAT",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You notice it. You don\u2019t understand it.\nYou will later wish those were different actions.",
+          "next": "END_SEE_NONLOCAL"
+        },
+        {
+          "id": "END_SEE_NONLOCAL",
+          "type": "end",
+          "outcomeId": "see_non_local_notices",
+          "effects": [
+            {
+              "key": "knowledge.nonLocalNoticesSeen",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "paperwork.notes",
+              "action": "add",
+              "value": "Notices room: standardized templates; one barcode format unfamiliar. Filed as ordinary."
+            }
+          ]
+        },
+        {
+          "id": "N_LEAVE_LOBBY_LINE",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You leave the notices where they are, performing compliance by not touching it.\nThe door shuts with the soft finality of an office that expects paper to outlive people.",
+          "next": "END_LEAVE_LOBBY"
+        },
+        {
+          "id": "END_LEAVE_LOBBY",
+          "type": "end"
+        },
+        {
+          "id": "R_TO_MENU",
+          "type": "redirect",
+          "target": "N_MENU"
+        }
+      ]
+    }
+  ]
+}

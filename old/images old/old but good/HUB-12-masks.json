@@ -1,0 +1,56 @@
+{
+  "screen_id": "HUB-12",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Jig assembly",
+      "slug": "jig_assembly",
+      "file": "images/HUB-12-mask-jig_assembly.png",
+      "boxes": [
+        {
+          "label": "jig assembly",
+          "box_2d": [
+            492,
+            439,
+            638,
+            545
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Strobe",
+      "slug": "strobe",
+      "file": "images/HUB-12-mask-strobe.png",
+      "boxes": [
+        {
+          "label": "strobe",
+          "box_2d": [
+            539,
+            114,
+            638,
+            245
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Phase meter",
+      "slug": "phase_meter",
+      "file": "images/HUB-12-mask-phase_meter.png",
+      "boxes": [
+        {
+          "label": "Phase meter",
+          "box_2d": [
+            538,
+            646,
+            648,
+            772
+          ]
+        }
+      ]
+    }
+  ]
+}

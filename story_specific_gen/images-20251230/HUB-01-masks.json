@@ -1,0 +1,134 @@
+{
+  "screen_id": "HUB-01",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Car trunk / equipment case",
+      "slug": "car_trunk_equipment_case",
+      "file": "story_specific_gen/images/HUB-01-mask-car_trunk_equipment_case.png",
+      "boxes": [
+        {
+          "label": "Car trunk / equipment case",
+          "box_2d": [
+            599,
+            36,
+            739,
+            137
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Gate keypad and receipt slot",
+      "slug": "gate_keypad_and_receipt_slot",
+      "file": "story_specific_gen/images/HUB-01-mask-gate_keypad_and_receipt_slot.png",
+      "boxes": [
+        {
+          "label": "Gate keypad and receipt slot",
+          "box_2d": [
+            488,
+            276,
+            617,
+            350
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Layered signpost",
+      "slug": "layered_signpost",
+      "file": "story_specific_gen/images/HUB-01-mask-layered_signpost.png",
+      "boxes": [
+        {
+          "label": "upper warning sign",
+          "box_2d": [
+            362,
+            52,
+            471,
+            180
+          ]
+        },
+        {
+          "label": "lower authorized personnel sign",
+          "box_2d": [
+            471,
+            52,
+            545,
+            178
+          ]
+        },
+        {
+          "label": "admin lobby sign",
+          "box_2d": [
+            326,
+            393,
+            419,
+            568
+          ]
+        },
+        {
+          "label": "layered warning signpost",
+          "box_2d": [
+            403,
+            50,
+            545,
+            179
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Debris pile by fence line",
+      "slug": "debris_pile_by_fence_line",
+      "file": "story_specific_gen/images/HUB-01-mask-debris_pile_by_fence_line.png",
+      "boxes": [
+        {
+          "label": "Debris pile by fence line",
+          "box_2d": [
+            520,
+            597,
+            659,
+            755
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Instrument conduit box",
+      "slug": "instrument_conduit_box",
+      "file": "story_specific_gen/images/HUB-01-mask-instrument_conduit_box.png",
+      "boxes": [
+        {
+          "label": "Instrument conduit box",
+          "box_2d": [
+            555,
+            762,
+            630,
+            818
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Exterior ground service hatch",
+      "slug": "exterior_ground_service_hatch",
+      "file": "story_specific_gen/images/HUB-01-mask-exterior_ground_service_hatch.png",
+      "boxes": [
+        {
+          "label": "Exterior ground service hatch with a rectangular grate",
+          "box_2d": [
+            784,
+            321,
+            936,
+            584
+          ]
+        }
+      ]
+    }
+  ]
+}

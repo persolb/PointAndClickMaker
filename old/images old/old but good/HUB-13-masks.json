@@ -1,0 +1,56 @@
+{
+  "screen_id": "HUB-13",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Keypad",
+      "slug": "keypad",
+      "file": "images/HUB-13-mask-keypad.png",
+      "boxes": [
+        {
+          "label": "Keypad",
+          "box_2d": [
+            431,
+            608,
+            558,
+            699
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Latch mechanism",
+      "slug": "latch_mechanism",
+      "file": "images/HUB-13-mask-latch_mechanism.png",
+      "boxes": [
+        {
+          "label": "Latch mechanism",
+          "box_2d": [
+            431,
+            609,
+            560,
+            759
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Air-cycle timer",
+      "slug": "air_cycle_timer",
+      "file": "images/HUB-13-mask-air_cycle_timer.png",
+      "boxes": [
+        {
+          "label": "Air-cycle timer",
+          "box_2d": [
+            343,
+            39,
+            497,
+            116
+          ]
+        }
+      ]
+    }
+  ]
+}

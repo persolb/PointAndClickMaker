@@ -1,0 +1,56 @@
+{
+  "screen_id": "LIM-05",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "AMR registry reader",
+      "slug": "amr_registry_reader",
+      "file": "story_specific_gen/images/LIM-05-mask-amr_registry_reader.png",
+      "boxes": [
+        {
+          "label": "AMR registry reader",
+          "box_2d": [
+            531,
+            314,
+            661,
+            421
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Workbench tool fixture",
+      "slug": "workbench_tool_fixture",
+      "file": "story_specific_gen/images/LIM-05-mask-workbench_tool_fixture.png",
+      "boxes": [
+        {
+          "label": "Workbench tool fixture",
+          "box_2d": [
+            549,
+            410,
+            664,
+            592
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Scope board",
+      "slug": "scope_board",
+      "file": "story_specific_gen/images/LIM-05-mask-scope_board.png",
+      "boxes": [
+        {
+          "label": "Scope board",
+          "box_2d": [
+            267,
+            411,
+            436,
+            667
+          ]
+        }
+      ]
+    }
+  ]
+}

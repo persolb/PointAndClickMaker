@@ -1,0 +1,93 @@
+{
+  "changes": [
+    {
+      "action": "add",
+      "createScene": {
+        "dialogueGraphs": [
+          {
+            "id": "DG_SCN_123_STATUS_CLUSTER",
+            "nodes": [
+              {
+                "id": "N_STATUS_INTRO",
+                "next": "N_STATUS_PLAYER_BEAT",
+                "speakerId": "NARRATOR",
+                "text": "The status indicator cluster is lit with careful colors: greens that mean \u201callowed,\u201d ambers that mean \u201cpending,\u201d reds that mean \u201csomeone else\u2019s problem.\u201d\nOne amber lamp is labeled in a different font: HOLD / NON-LOCAL.\nThe label looks like it arrived already archived.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_STATUS_PLAYER_BEAT",
+                "next": "N_STATUS_OPS_CORRECT",
+                "speakerId": "PLAYER",
+                "text": "That\u2019s newly visible.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_STATUS_OPS_CORRECT",
+                "next": "N_STATUS_MENU",
+                "speakerId": "OPS_OPERATOR",
+                "text": "Good. (pause) \u201cNewly visible.\u201d (pause) It says we noticed. (pause) Not that we changed anything.",
+                "type": "npc_line"
+              },
+              {
+                "choices": [
+                  {
+                    "id": "C_STATUS_WHO",
+                    "next": "N_STATUS_WHO_OPS",
+                    "text": "ask: \u201cHOLD by who?\u201d"
+                  },
+                  {
+                    "id": "C_STATUS_CLEAR",
+                    "next": "N_STATUS_CLEAR_OPS",
+                    "text": "ask: \u201cCan I clear it locally?\u201d"
+                  },
+                  {
+                    "id": "C_STATUS_READ",
+                    "next": "N_STATUS_READ_NARR",
+                    "text": "look: Read the tag labels."
+                  },
+                  {
+                    "id": "C_STATUS_DONE",
+                    "next": "END_STATUS_CLUSTER",
+                    "text": "leave: Back."
+                  }
+                ],
+                "id": "N_STATUS_MENU",
+                "speakerId": "PLAYER",
+                "type": "player_choice"
+              },
+              {
+                "id": "N_STATUS_WHO_OPS",
+                "next": "N_STATUS_MENU",
+                "speakerId": "OPS_OPERATOR",
+                "text": "No who field. Just authority. (pause) Get the notice number first, before heroics.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_STATUS_CLEAR_OPS",
+                "next": "N_STATUS_MENU",
+                "speakerId": "OPS_OPERATOR",
+                "text": "Alarms, sure. Clear those here. (pause) A hold won\u2019t clear local. (pause) That\u2019s remote-office insurance.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_STATUS_READ_NARR",
+                "next": "N_STATUS_MENU",
+                "speakerId": "NARRATOR",
+                "text": "The printed tag list is half facility jargon, half something that pretends to be facility jargon.\nSTANDING INDICATOR: UNKNOWN.\nSERVICE CLASS: UNRESOLVED.\nThe rest is ordinary, which is how it hides.",
+                "type": "npc_line"
+              },
+              {
+                "id": "END_STATUS_CLUSTER",
+                "type": "end"
+              }
+            ],
+            "sceneId": "SCN-123",
+            "startNodeId": "N_STATUS_INTRO"
+          }
+        ]
+      },
+      "op": "create_scene"
+    }
+  ],
+  "sceneId": "SCN-123"
+}

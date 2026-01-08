@@ -1,0 +1,698 @@
+{
+  "dialogueGraphs": [
+    {
+      "id": "OPS_VENT_DEPENDENCY",
+      "sceneId": "SCN-034",
+      "startNodeId": "N_START",
+      "nodes": [
+        {
+          "id": "N_START",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "Operations Corridor. Interlocks on the wall, locks on the locks, and a placard stack that looks like it\u2019s been fed for decades.\nA small indicator labeled VENTILATION STATUS blinks like it\u2019s trying not to.",
+          "conditions": [
+            {
+              "key": "ops.ventRequirementKnown",
+              "op": "==",
+              "value": false
+            }
+          ],
+          "next": "N_START_HOTSPOTS"
+        },
+        {
+          "id": "N_START_HOTSPOTS",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "Hotspots: Training date interlock panel. LOTO main lock point. Ventilation status indicator. Procedure placard stack.",
+          "next": "N_MAIN"
+        },
+        {
+          "id": "N_MAIN",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_LOOK_VENT",
+              "text": "look \"Ventilation status indicator.\"",
+              "next": "N_LOOK_VENT"
+            },
+            {
+              "id": "C_LOOK_PLACARD",
+              "text": "look \"Procedure placard stack.\"",
+              "next": "N_LOOK_PLACARD"
+            },
+            {
+              "id": "C_LOOK_TRAIN",
+              "text": "look \"Training date interlock panel.\"",
+              "next": "N_LOOK_TRAINING"
+            },
+            {
+              "id": "C_LOOK_LOTO",
+              "text": "look \"LOTO main lock point.\"",
+              "next": "N_LOOK_LOTO"
+            },
+            {
+              "id": "C_USE_TRAIN",
+              "text": "use \"Training date interlock panel.\"",
+              "next": "N_USE_TRAINING"
+            },
+            {
+              "id": "C_LEAVE_BACK",
+              "text": "leave \"Back.\"",
+              "next": "N_END_EXIT_BACK"
+            }
+          ]
+        },
+        {
+          "id": "N_LOOK_VENT",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "A yellowed lens over two legends: DAMPER OPEN and DAMPER CLOSED.\nOPEN is dark. CLOSED is lit.\nUnder it: \u201cSTATUS VALID ONLY IF SENSOR IN CALIBRATION.\u201d Someone underlined CALIBRATION three times, carefully.",
+          "next": "N_VENT_MENU"
+        },
+        {
+          "id": "N_VENT_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_ASK_BLOCKS",
+              "text": "ask \"Does this block ops?\"",
+              "next": "N_P_ASK_BLOCKS"
+            },
+            {
+              "id": "C_LOOK_PLACARD",
+              "text": "look \"Procedure placard stack.\"",
+              "next": "N_LOOK_PLACARD"
+            },
+            {
+              "id": "C_USE_TRAIN",
+              "text": "use \"Training date interlock panel.\"",
+              "next": "N_USE_TRAINING"
+            },
+            {
+              "id": "C_LEAVE_BACK",
+              "text": "leave \"Back.\"",
+              "next": "N_MAIN"
+            }
+          ]
+        },
+        {
+          "id": "N_LOOK_PLACARD",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "Plastic sleeves, curled at the corners. The top sheet is titled: \u201cOPS SEQUENCE \u2014 START/SAFE/STOP (INTERLOCKED).\u201d\nA note is taped over the footer: \u201cDo not remove note.\u201d The tape has been replaced several times.\n\nStep 1 is printed in bold: \u201cVERIFY VENTILATION DAMPER = OPEN (REMOTE INDICATION REQUIRED).\u201d\nStep 2: \u201cINITIATE OPS SEQUENCE.\u201d\nStep 3: \u201cCONFIRM INTERLOCK SATISFIED.\u201d\nSomeone added pen: \u201cIf it\u2019s not satisfied, do not interpret.\u201d",
+          "next": "N_PLACARD_MENU"
+        },
+        {
+          "id": "N_PLACARD_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_ASK_WHY_OPEN",
+              "text": "ask \"Why OPEN for a shutdown sequence?\"",
+              "next": "N_P_ASK_WHY_OPEN"
+            },
+            {
+              "id": "C_ASK_WHAT_IF_CLOSED",
+              "text": "ask \"What happens if it\u2019s CLOSED?\"",
+              "next": "N_P_ASK_WHAT_IF_CLOSED"
+            },
+            {
+              "id": "C_SHOW_WORDING",
+              "text": "show \"Start sequence arms safe/stop logic.\"",
+              "next": "N_GATED_INTRO"
+            },
+            {
+              "id": "C_USE_TRAIN",
+              "text": "use \"Training date interlock panel.\"",
+              "next": "N_USE_TRAINING"
+            },
+            {
+              "id": "C_LOOK_VENT",
+              "text": "look \"Ventilation status indicator.\"",
+              "next": "N_LOOK_VENT"
+            },
+            {
+              "id": "C_LEAVE_BACK",
+              "text": "leave \"Back.\"",
+              "next": "N_MAIN"
+            }
+          ]
+        },
+        {
+          "id": "N_LOOK_TRAINING",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "A small panel with a keyed selector and a mechanical date window: LAST TRAINING VALID THROUGH.\nThe date is current by a margin that feels personal. Next to it: \u201cINTERLOCK ENABLED WHEN TRAINING VALID.\u201d\nThere\u2019s a faint rectangle where an older label used to be.",
+          "next": "N_TRAIN_MENU"
+        },
+        {
+          "id": "N_TRAIN_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_USE_TRAIN",
+              "text": "use \"Training date interlock panel.\"",
+              "next": "N_USE_TRAINING"
+            },
+            {
+              "id": "C_LOOK_PLACARD",
+              "text": "look \"Procedure placard stack.\"",
+              "next": "N_LOOK_PLACARD"
+            },
+            {
+              "id": "C_LEAVE_BACK",
+              "text": "leave \"Back.\"",
+              "next": "N_MAIN"
+            }
+          ]
+        },
+        {
+          "id": "N_LOOK_LOTO",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "A thick hasp assembly with enough holes for a committee. The tag pocket is empty, which is either good news or an administrative lie.\nA smaller engraved plate reads: \u201cLOCKOUT DOES NOT OVERRIDE PROCESS INTERLOCKS.\u201d The font is smug.",
+          "next": "N_LOTO_MENU"
+        },
+        {
+          "id": "N_LOTO_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_LOOK_PLACARD",
+              "text": "look \"Procedure placard stack.\"",
+              "next": "N_LOOK_PLACARD"
+            },
+            {
+              "id": "C_USE_TRAIN",
+              "text": "use \"Training date interlock panel.\"",
+              "next": "N_USE_TRAINING"
+            },
+            {
+              "id": "C_LEAVE_BACK",
+              "text": "leave \"Back.\"",
+              "next": "N_MAIN"
+            }
+          ]
+        },
+        {
+          "id": "N_USE_TRAINING",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You don\u2019t have the key. The selector doesn\u2019t move. A tiny status LED labeled OPS PERMIT is red.\nBelow it, printed like it\u2019s tired of being asked: \u201cOPS PERMIT REQUIRES: TRAINING VALID; LOTO CLEAR; VENT DAMPER OPEN.\u201d",
+          "next": "N_USE_MENU"
+        },
+        {
+          "id": "N_USE_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_ASK_SO_VENT",
+              "text": "ask \"So it\u2019s the vent.\"",
+              "next": "N_P_ASK_SO_VENT"
+            },
+            {
+              "id": "C_LOOK_VENT",
+              "text": "look \"Ventilation status indicator.\"",
+              "next": "N_LOOK_VENT"
+            },
+            {
+              "id": "C_LOOK_PLACARD",
+              "text": "look \"Procedure placard stack.\"",
+              "next": "N_LOOK_PLACARD"
+            },
+            {
+              "id": "C_LEAVE_BACK",
+              "text": "leave \"Back.\"",
+              "next": "N_MAIN"
+            }
+          ]
+        },
+        {
+          "id": "N_P_ASK_BLOCKS",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Does this block ops?",
+          "next": "N_N_ANS_BLOCKS"
+        },
+        {
+          "id": "N_N_ANS_BLOCKS",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The indicator has no opinion, but the panel labels do. \u201cOPS PERMIT REQUIRES\u2026 VENT DAMPER OPEN.\u201d\nWhatever \u201cops\u201d means today, it\u2019s waiting on a damper to testify.",
+          "next": "N_BLOCKS_MENU"
+        },
+        {
+          "id": "N_BLOCKS_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_ASK_WHERE_DAMPER",
+              "text": "ask \"Where\u2019s the damper?\"",
+              "next": "N_P_ASK_WHERE_DAMPER"
+            },
+            {
+              "id": "C_ASK_REQUIREMENT",
+              "text": "ask \"Why is it a requirement?\"",
+              "next": "N_P_ASK_REQUIREMENT"
+            },
+            {
+              "id": "C_LEAVE_BACK",
+              "text": "leave \"Back.\"",
+              "next": "N_MAIN"
+            }
+          ]
+        },
+        {
+          "id": "N_P_ASK_SO_VENT",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "So it\u2019s the vent.",
+          "next": "N_N_DEPENDENCY"
+        },
+        {
+          "id": "N_N_DEPENDENCY",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The ops start sequence is interlocked until the ventilation damper reports OPEN.\nThe corridor provides no further justification, only cross-references.",
+          "next": "N_DEP_MENU"
+        },
+        {
+          "id": "N_DEP_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_ASK_UNTIL_OPEN",
+              "text": "ask \"So until it reads OPEN, nothing starts.\"",
+              "next": "N_P_ASK_UNTIL_OPEN"
+            },
+            {
+              "id": "C_ASK_WHERE_DAMPER",
+              "text": "ask \"Where\u2019s the damper?\"",
+              "next": "N_P_ASK_WHERE_DAMPER"
+            },
+            {
+              "id": "C_LEAVE_BACK",
+              "text": "leave \"Back.\"",
+              "next": "N_MAIN"
+            }
+          ]
+        },
+        {
+          "id": "N_P_ASK_WHY_OPEN",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Why OPEN for a shutdown sequence?",
+          "next": "N_N_ANS_WHY_OPEN"
+        },
+        {
+          "id": "N_N_ANS_WHY_OPEN",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The placard doesn\u2019t answer, it escalates. A sub-bullet under STOP reads:\n\u201cDamper must be OPEN to validate purge complete prior to SAFE state.\u201d\nSomeone wrote in the margin: \u201cOPEN proves you can CLOSE. Don\u2019t argue with it.\u201d",
+          "next": "N_WHY_OPEN_MENU"
+        },
+        {
+          "id": "N_WHY_OPEN_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_ASK_WHAT_IF_CLOSED",
+              "text": "ask \"What happens if it\u2019s CLOSED?\"",
+              "next": "N_P_ASK_WHAT_IF_CLOSED"
+            },
+            {
+              "id": "C_ASK_WHO",
+              "text": "ask \"Who decided this?\"",
+              "next": "N_P_ASK_WHO_DECIDED"
+            },
+            {
+              "id": "C_LEAVE_BACK",
+              "text": "leave \"Back.\"",
+              "next": "N_MAIN"
+            }
+          ]
+        },
+        {
+          "id": "N_P_ASK_WHAT_IF_CLOSED",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "What happens if it\u2019s CLOSED?",
+          "next": "N_N_ANS_WHAT_IF_CLOSED"
+        },
+        {
+          "id": "N_N_ANS_WHAT_IF_CLOSED",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "A warning box, all caps: \u201cSEQUENCE WILL NOT ARM.\u201d\nUnder it, a softer line like an apology: \u201cDo not bypass. If bypassed, document bypass.\u201d\nThe document reference is smudged, as if the number itself was a liability.",
+          "next": "N_WHAT_IF_CLOSED_MENU"
+        },
+        {
+          "id": "N_WHAT_IF_CLOSED_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_ASK_BYPASS_FORM",
+              "text": "ask \"Where\u2019s the bypass form?\"",
+              "next": "N_P_ASK_BYPASS_FORM"
+            },
+            {
+              "id": "C_ASK_WHERE_DAMPER",
+              "text": "ask \"Where\u2019s the damper?\"",
+              "next": "N_P_ASK_WHERE_DAMPER"
+            },
+            {
+              "id": "C_LEAVE_BACK",
+              "text": "leave \"Back.\"",
+              "next": "N_MAIN"
+            }
+          ]
+        },
+        {
+          "id": "N_P_ASK_BYPASS_FORM",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Where\u2019s the bypass form?",
+          "next": "N_N_ANS_BYPASS_FORM"
+        },
+        {
+          "id": "N_N_ANS_BYPASS_FORM",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "A cross-reference number trails off into a smear of ink and thumbprints. Either the form existed once, or it exists somewhere that doesn\u2019t want to be found.",
+          "next": "N_BYPASS_MENU"
+        },
+        {
+          "id": "N_BYPASS_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_LEAVE_BACK",
+              "text": "leave \"Back.\"",
+              "next": "N_MAIN"
+            }
+          ]
+        },
+        {
+          "id": "N_P_ASK_WHERE_DAMPER",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Where\u2019s the damper?",
+          "next": "N_N_ANS_WHERE_DAMPER"
+        },
+        {
+          "id": "N_N_ANS_WHERE_DAMPER",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "A directional sticker on the bottom of the indicator points left: SERVICE CORRIDOR / DUCT ACCESS.\nIt\u2019s the first helpful thing in the hall, which makes it suspect.",
+          "next": "N_WHERE_DAMPER_MENU"
+        },
+        {
+          "id": "N_WHERE_DAMPER_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_LEAVE_LEFT",
+              "text": "leave \"Head left to Service Corridor and Duct Access.\"",
+              "next": "N_END_EXIT_SERVICE"
+            },
+            {
+              "id": "C_LEAVE_BACK",
+              "text": "leave \"Back.\"",
+              "next": "N_MAIN"
+            }
+          ]
+        },
+        {
+          "id": "N_P_ASK_WHO_DECIDED",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Who decided this?",
+          "next": "N_N_ANS_WHO_DECIDED"
+        },
+        {
+          "id": "N_N_ANS_WHO_DECIDED",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The placard cites \u201cSITE SAFETY BASIS \u2014 REV. 6\u201d and then cites a revision history that stops mid-line.\nThe corridor\u2019s position is clear: the decision exists, therefore it is correct, therefore it must be followed.",
+          "next": "N_WHO_MENU"
+        },
+        {
+          "id": "N_WHO_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_LEAVE_BACK",
+              "text": "leave \"Back.\"",
+              "next": "N_MAIN"
+            },
+            {
+              "id": "C_SHOW_INTERLOCK",
+              "text": "show \"Show me the interlock condition again.\"",
+              "next": "N_P_SHOW_INTERLOCK"
+            }
+          ]
+        },
+        {
+          "id": "N_P_SHOW_INTERLOCK",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Show me the interlock condition again.",
+          "next": "N_N_SHOW_INTERLOCK"
+        },
+        {
+          "id": "N_N_SHOW_INTERLOCK",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "OPS PERMIT REQUIRES: TRAINING VALID. LOTO CLEAR. VENT DAMPER OPEN.\nNo nuance, no context, no appeal.",
+          "next": "N_SHOW_MENU"
+        },
+        {
+          "id": "N_SHOW_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_LOOK_VENT",
+              "text": "look \"Ventilation status indicator.\"",
+              "next": "N_LOOK_VENT"
+            },
+            {
+              "id": "C_LOOK_PLACARD",
+              "text": "look \"Procedure placard stack.\"",
+              "next": "N_LOOK_PLACARD"
+            },
+            {
+              "id": "C_LOOK_TRAIN",
+              "text": "look \"Training date interlock panel.\"",
+              "next": "N_LOOK_TRAINING"
+            },
+            {
+              "id": "C_LOOK_LOTO",
+              "text": "look \"LOTO main lock point.\"",
+              "next": "N_LOOK_LOTO"
+            },
+            {
+              "id": "C_LEAVE_BACK",
+              "text": "leave \"Back.\"",
+              "next": "N_MAIN"
+            }
+          ]
+        },
+        {
+          "id": "N_P_ASK_REQUIREMENT",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Why is it a requirement?",
+          "next": "N_N_ANS_REQUIREMENT"
+        },
+        {
+          "id": "N_N_ANS_REQUIREMENT",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The language is defensive and circular\u2014written to survive arguments.\nIt doesn\u2019t ask for comfort ventilation. It asks for an OPEN signal it can point to later.",
+          "next": "N_REQUIREMENT_MENU"
+        },
+        {
+          "id": "N_REQUIREMENT_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_SHOW_WORDING",
+              "text": "show \"Start sequence arms safe/stop logic.\"",
+              "next": "N_GATED_INTRO"
+            },
+            {
+              "id": "C_ASK_UNTIL_OPEN",
+              "text": "ask \"So until it reads OPEN, nothing starts.\"",
+              "next": "N_P_ASK_UNTIL_OPEN"
+            },
+            {
+              "id": "C_LEAVE_BACK",
+              "text": "leave \"Back.\"",
+              "next": "N_MAIN"
+            }
+          ]
+        },
+        {
+          "id": "N_GATED_INTRO",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "A line on the placard uses the phrase \u201cSTART SEQUENCE ARMS SAFE/STOP LOGIC.\u201d It\u2019s written by someone who expects arguments.",
+          "next": "N_GATED_MENU"
+        },
+        {
+          "id": "N_GATED_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_ASK_START_PERMIT",
+              "text": "ask \"This is a start-permit gate, not comfort ventilation.\"",
+              "conditions": [
+                {
+                  "key": "player.factions",
+                  "op": "in",
+                  "value": "OLEA"
+                }
+              ],
+              "next": "N_P_ASK_START_PERMIT"
+            },
+            {
+              "id": "C_ASK_FAN_INTERLOCK",
+              "text": "ask \"This is just a fan interlock?\"",
+              "next": "N_P_ASK_FAN_INTERLOCK"
+            },
+            {
+              "id": "C_LEAVE_BACK",
+              "text": "leave \"Back.\"",
+              "next": "N_MAIN"
+            }
+          ]
+        },
+        {
+          "id": "N_P_ASK_START_PERMIT",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "This is a start-permit gate, not comfort ventilation.",
+          "next": "N_N_ANS_START_PERMIT"
+        },
+        {
+          "id": "N_N_ANS_START_PERMIT",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "Yes. It\u2019s not asking for airflow as a comfort condition. It\u2019s asking for the damper\u2019s OPEN signal as a prerequisite to arming the ops sequence logic at all.\nThe system isn\u2019t making air; it\u2019s making a statement it can later point to.",
+          "next": "N_START_PERMIT_MENU"
+        },
+        {
+          "id": "N_START_PERMIT_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_ASK_UNTIL_OPEN",
+              "text": "ask \"So until it reads OPEN, nothing starts.\"",
+              "next": "N_P_ASK_UNTIL_OPEN"
+            },
+            {
+              "id": "C_LEAVE_BACK",
+              "text": "leave \"Back.\"",
+              "next": "N_MAIN"
+            }
+          ]
+        },
+        {
+          "id": "N_P_ASK_FAN_INTERLOCK",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "This is just a fan interlock?",
+          "next": "N_N_ANS_FAN_INTERLOCK"
+        },
+        {
+          "id": "N_N_ANS_FAN_INTERLOCK",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "It\u2019s presented like that, but the wording is tighter than comfort logic.\nIt\u2019s a permit gate: the OPEN indication is treated like a prerequisite for the sequence to arm at all.",
+          "next": "N_FAN_MENU"
+        },
+        {
+          "id": "N_FAN_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_ASK_UNTIL_OPEN",
+              "text": "ask \"So until it reads OPEN, nothing starts.\"",
+              "next": "N_P_ASK_UNTIL_OPEN"
+            },
+            {
+              "id": "C_LEAVE_BACK",
+              "text": "leave \"Back.\"",
+              "next": "N_MAIN"
+            }
+          ]
+        },
+        {
+          "id": "N_P_ASK_UNTIL_OPEN",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "So until it reads OPEN, nothing starts.",
+          "next": "N_N_CONFIRM_UNTIL_OPEN"
+        },
+        {
+          "id": "N_N_CONFIRM_UNTIL_OPEN",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "Correct. Ops start sequence is blocked until the ventilation damper reports OPEN.",
+          "next": "N_N_FINAL_FLAVOR"
+        },
+        {
+          "id": "N_N_FINAL_FLAVOR",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The corridor offers you the dignity of knowing what to do next, and none of the tools to do it here.",
+          "next": "N_END_DISCOVER"
+        },
+        {
+          "id": "N_END_DISCOVER",
+          "type": "end",
+          "outcomeId": "discover_vent_dependency",
+          "effects": [
+            {
+              "key": "ops.ventRequirementKnown",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "objectives.openVentDamper",
+              "action": "set",
+              "value": true
+            }
+          ]
+        },
+        {
+          "id": "N_END_EXIT_BACK",
+          "type": "end"
+        },
+        {
+          "id": "N_END_EXIT_SERVICE",
+          "type": "end",
+          "transitionHint": "Service Corridor and Duct Access"
+        }
+      ]
+    }
+  ]
+}

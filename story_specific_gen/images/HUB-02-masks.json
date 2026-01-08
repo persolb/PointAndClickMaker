@@ -1,0 +1,73 @@
+{
+  "screen_id": "HUB-02",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Guard shack door",
+      "slug": "guard_shack_door",
+      "file": "story_specific_gen/images/HUB-02-mask-guard_shack_door.png",
+      "boxes": [
+        {
+          "label": "Guard shack door",
+          "box_2d": [
+            343,
+            524,
+            679,
+            640
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Card reader",
+      "slug": "card_reader",
+      "file": "story_specific_gen/images/HUB-02-mask-card_reader.png",
+      "boxes": [
+        {
+          "label": "Card reader",
+          "box_2d": [
+            471,
+            646,
+            524,
+            668
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Call box speaker and button",
+      "slug": "call_box_speaker_and_button",
+      "file": "story_specific_gen/images/HUB-02-mask-call_box_speaker_and_button.png",
+      "boxes": [
+        {
+          "label": "Call box speaker and button",
+          "box_2d": [
+            447,
+            226,
+            529,
+            277
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Pneumatic tube label plate",
+      "slug": "pneumatic_tube_label_plate",
+      "file": "story_specific_gen/images/HUB-02-mask-pneumatic_tube_label_plate.png",
+      "boxes": [
+        {
+          "label": "Pneumatic tube label plate",
+          "box_2d": [
+            382,
+            431,
+            447,
+            513
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/art_locked_objects.schema.json",
+  "title": "Art Locked Objects Schema (Minimal)",
+  "type": "object",
+  "required": ["objects"],
+  "additionalProperties": false,
+  "properties": {
+    "objects": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/locked_object" }
+    }
+  },
+  "$defs": {
+    "locked_object": {
+      "type": "object",
+      "required": ["id", "name", "look_description"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Z][A-Z0-9_\\-]{2,32}$",
+          "description": "Stable identifier (e.g., 'OBJ_SPINDLE', 'OBJ_FENCE_GATE')."
+        },
+        "name": {
+          "type": "string",
+          "description": "Human-readable object name."
+        },
+        "look_description": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Required: the canonical appearance, including era cues, materials, markings, and any allowed state changes."
+        },
+        "canonical_view": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "in_world_dimension": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Freeform dimensions (e.g., 'about 12 ft tall; sphere recessed in a shallow cradle')."
+            },
+            "notes": { "type": "string" }
+          }
+        },
+        "notes": {
+          "type": "string",
+          "description": "Optional freeform notes."
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "screen_id": "HUB-14",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Forms rack (misfit templates)",
+      "slug": "forms_rack_misfit_templates",
+      "file": "story_specific_gen/images/HUB-14-mask-forms_rack_misfit_templates.png",
+      "boxes": [
+        {
+          "label": "Forms rack (misfit templates)",
+          "box_2d": [
+            599,
+            241,
+            847,
+            390
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Envelope stack",
+      "slug": "envelope_stack",
+      "file": "story_specific_gen/images/HUB-14-mask-envelope_stack.png",
+      "boxes": [
+        {
+          "label": "Envelope stack",
+          "box_2d": [
+            611,
+            401,
+            706,
+            508
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Notice with unfamiliar barcode format",
+      "slug": "notice_with_unfamiliar_barcode_format",
+      "file": "story_specific_gen/images/HUB-14-mask-notice_with_unfamiliar_barcode_format.png",
+      "boxes": [
+        {
+          "label": "Notice with unfamiliar barcode format",
+          "box_2d": [
+            376,
+            301,
+            483,
+            370
+          ]
+        }
+      ]
+    }
+  ]
+}

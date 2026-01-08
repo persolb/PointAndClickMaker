@@ -1,0 +1,39 @@
+{
+  "screen_id": "MIS-07",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Lamp timer",
+      "slug": "lamp_timer",
+      "file": "images/MIS-07-mask-lamp_timer.png",
+      "boxes": [
+        {
+          "label": "Lamp timer",
+          "box_2d": [
+            727,
+            49,
+            800,
+            150
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Checksum note",
+      "slug": "checksum_note",
+      "file": "images/MIS-07-mask-checksum_note.png",
+      "boxes": [
+        {
+          "label": "Checksum note",
+          "box_2d": [
+            389,
+            725,
+            492,
+            788
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "screen_id": "HUB-18",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Binoculars",
+      "slug": "binoculars",
+      "file": "images/HUB-18-mask-binoculars.png",
+      "boxes": [
+        {
+          "label": "Binoculars",
+          "box_2d": [
+            461,
+            693,
+            989,
+            840
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Tripod position",
+      "slug": "tripod_position",
+      "file": "images/HUB-18-mask-tripod_position.png",
+      "boxes": [
+        {
+          "label": "Tripod position",
+          "box_2d": [
+            544,
+            235,
+            750,
+            484
+          ]
+        }
+      ]
+    }
+  ]
+}

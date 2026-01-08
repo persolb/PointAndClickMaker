@@ -1,0 +1,73 @@
+{
+  "screen_id": "HUB-13",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Containment sphere surface",
+      "slug": "containment_sphere_surface",
+      "file": "story_specific_gen/images/HUB-13-mask-containment_sphere_surface.png",
+      "boxes": [
+        {
+          "label": "Containment sphere surface",
+          "box_2d": [
+            259,
+            363,
+            655,
+            646
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Status indicator cluster",
+      "slug": "status_indicator_cluster",
+      "file": "story_specific_gen/images/HUB-13-mask-status_indicator_cluster.png",
+      "boxes": [
+        {
+          "label": "Status indicator cluster",
+          "box_2d": [
+            390,
+            247,
+            532,
+            342
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Interface scan panel",
+      "slug": "interface_scan_panel",
+      "file": "story_specific_gen/images/HUB-13-mask-interface_scan_panel.png",
+      "boxes": [
+        {
+          "label": "Interface scan panel",
+          "box_2d": [
+            391,
+            252,
+            532,
+            342
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Emergency stop",
+      "slug": "emergency_stop",
+      "file": "story_specific_gen/images/HUB-13-mask-emergency_stop.png",
+      "boxes": [
+        {
+          "label": "Emergency stop button",
+          "box_2d": [
+            492,
+            213,
+            563,
+            274
+          ]
+        }
+      ]
+    }
+  ]
+}

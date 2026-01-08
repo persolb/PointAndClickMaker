@@ -1,0 +1,101 @@
+{
+  "screen_id": "LIM-05",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "AMR registry reader",
+      "slug": "amr_registry_reader",
+      "file": "story_specific_gen/images/LIM-05-mask-amr_registry_reader.png",
+      "boxes": [
+        {
+          "label": "AMR reader device",
+          "box_2d": [
+            454,
+            107,
+            680,
+            237
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Workbench tool fixture",
+      "slug": "workbench_tool_fixture",
+      "file": "story_specific_gen/images/LIM-05-mask-workbench_tool_fixture.png",
+      "boxes": [
+        {
+          "label": "workbench tool fixture",
+          "box_2d": [
+            631,
+            350,
+            701,
+            396
+          ]
+        },
+        {
+          "label": "workbench tool fixture",
+          "box_2d": [
+            602,
+            381,
+            695,
+            502
+          ]
+        },
+        {
+          "label": "workbench tool fixture",
+          "box_2d": [
+            611,
+            497,
+            693,
+            574
+          ]
+        },
+        {
+          "label": "workbench tool fixture",
+          "box_2d": [
+            643,
+            569,
+            699,
+            649
+          ]
+        },
+        {
+          "label": "workbench tool fixture",
+          "box_2d": [
+            633,
+            590,
+            693,
+            702
+          ]
+        },
+        {
+          "label": "workbench tool fixture",
+          "box_2d": [
+            591,
+            233,
+            695,
+            342
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Scope board",
+      "slug": "scope_board",
+      "file": "story_specific_gen/images/LIM-05-mask-scope_board.png",
+      "boxes": [
+        {
+          "label": "Scope board",
+          "box_2d": [
+            311,
+            275,
+            513,
+            524
+          ]
+        }
+      ]
+    }
+  ]
+}

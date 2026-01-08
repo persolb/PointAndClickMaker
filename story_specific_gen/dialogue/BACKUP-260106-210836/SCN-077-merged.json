@@ -1,0 +1,93 @@
+{
+  "changes": [
+    {
+      "action": "add",
+      "createScene": {
+        "dialogueGraphs": [
+          {
+            "id": "DG_DEBRIS_PILE",
+            "nodes": [
+              {
+                "id": "N_DEBRIS_DESC",
+                "next": "N_DEBRIS_MENU",
+                "speakerId": "NARRATOR",
+                "text": "A neat pile of windblown trash collects where the fence meets a concrete footing: plastic wrap, a cracked hardhat, and a laminated notice face-down in the dirt.\nThe notice is too muddy to read without committing to touching it.",
+                "type": "npc_line"
+              },
+              {
+                "choices": [
+                  {
+                    "id": "C_LOOK_LEAVE_IT",
+                    "next": "N_DEBRIS_LEAVE",
+                    "text": "Leave it."
+                  },
+                  {
+                    "id": "C_USE_FLIP_NOTICE",
+                    "next": "N_DEBRIS_FLIP",
+                    "text": "Flip the notice over."
+                  }
+                ],
+                "id": "N_DEBRIS_MENU",
+                "speakerId": "PLAYER",
+                "type": "player_choice"
+              },
+              {
+                "exitTo": "HUB-01",
+                "id": "N_DEBRIS_LEAVE",
+                "type": "end"
+              },
+              {
+                "id": "N_DEBRIS_FLIP",
+                "next": "N_DEBRIS_FLIP_MENU",
+                "speakerId": "NARRATOR",
+                "text": "You flip it with a pen instead of your hand. The laminate is intact, which feels intentional.\n\nThe notice reads: ALL POSTINGS MUST MATCH CURRENT ACCESS POLICY.\nNo issuer. No date. No contact. Just a rule that can\u2019t be satisfied.",
+                "type": "npc_line"
+              },
+              {
+                "choices": [
+                  {
+                    "id": "C_USE_LOG_FROM_DEBRIS",
+                    "next": "N_LOG_1",
+                    "text": "Log signage conflict."
+                  },
+                  {
+                    "exitTo": "HUB-01",
+                    "id": "C_LEAVE_BACK_FROM_DEBRIS_FLIP",
+                    "text": "Back.",
+                    "type": "end"
+                  }
+                ],
+                "id": "N_DEBRIS_FLIP_MENU",
+                "speakerId": "PLAYER",
+                "type": "player_choice"
+              },
+              {
+                "id": "N_LOG_1",
+                "next": "N_LOG_2",
+                "speakerId": "NARRATOR",
+                "text": "You frame the signpost in your camera, making sure the contradictory lines are legible in the same shot. Your thumb hesitates half a second before you attach the note anyway.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_LOG_2",
+                "next": "N_LOG_3",
+                "speakerId": "NARRATOR",
+                "text": "You file: Nonconforming signage \u2014 contradictory access instruction at primary gate.\nCategory: Compliance / Public-facing instruction conflict.\nPriority: Routine. You pick it because \u201curgent\u201d invites meetings.",
+                "type": "npc_line"
+              },
+              {
+                "exitTo": "HUB-01",
+                "id": "N_LOG_3",
+                "type": "end"
+              }
+            ],
+            "sceneId": "SCN-077",
+            "startNodeId": "N_DEBRIS_DESC"
+          }
+        ]
+      },
+      "op": "create_scene"
+    }
+  ],
+  "sceneId": "SCN-077"
+}

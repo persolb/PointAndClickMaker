@@ -1,0 +1,222 @@
+{
+  "changes": [
+    {
+      "action": "add",
+      "createScene": {
+        "dialogueGraphs": [
+          {
+            "id": "SCN_100_SEALED_BAY_DOOR",
+            "nodes": [
+              {
+                "choices": [
+                  {
+                    "id": "C_LOOK_SEALED_BAY_DOOR",
+                    "next": "N_LOOK_DOOR_1",
+                    "text": "look: Sealed bay door."
+                  },
+                  {
+                    "id": "C_USE_SEALED_BAY_DOOR",
+                    "next": "N_USE_DOOR_1",
+                    "text": "use: Try the sealed bay door."
+                  },
+                  {
+                    "id": "C_LEAVE_BACK",
+                    "next": "END_BACK",
+                    "text": "leave: Step back."
+                  }
+                ],
+                "id": "PC_SEALED_BAY_DOOR",
+                "speakerId": "PLAYER",
+                "type": "player_choice"
+              },
+              {
+                "id": "N_LOOK_DOOR_1",
+                "next": "N_LOOK_DOOR_2",
+                "speakerId": "NARRATOR",
+                "text": "The door has no handle. It has a reader.\nThe reader has a polite little light that stays off, like it\u2019s conserving disbelief.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_LOOK_DOOR_2",
+                "next": "PC_SEALED_BAY_DOOR",
+                "speakerId": "NARRATOR",
+                "text": "A posted procedure lists three steps.\nStep one is \u201cPRESENT TRANSFER ENTITLEMENT RECEIPT (TER).\u201d\nStep two is blank.\nStep three is \u201cDO NOT FORCE THE DOOR.\u201d",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_USE_DOOR_1",
+                "next": "N_USE_DOOR_2",
+                "speakerId": "NARRATOR",
+                "text": "You present nothing to the reader.\nThe reader responds appropriately: not at all.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_USE_DOOR_2",
+                "next": "PC_DOOR_MENU",
+                "speakerId": "PROCESS_COACH",
+                "text": "Yeah. (pause)\nIt doesn\u2019t even reject you. (pause)\nYou didn\u2019t register as input.",
+                "type": "npc_line"
+              },
+              {
+                "choices": [
+                  {
+                    "id": "C_ASK_TOKENS_RUN",
+                    "next": "N_TOKENS_RUN_1",
+                    "text": "ask: So tokens run the facility."
+                  },
+                  {
+                    "id": "C_ASK_HOW_GET_TER",
+                    "next": "N_GET_TOKEN_INFO_1",
+                    "text": "ask: How do I get TER?"
+                  },
+                  {
+                    "id": "C_THREATEN_ESCALATE",
+                    "next": "N_THREATEN_1",
+                    "text": "threaten: Open it or I\u2019ll escalate."
+                  },
+                  {
+                    "id": "C_LEAVE_DOOR_BACK",
+                    "next": "END_BACK",
+                    "text": "leave: Back."
+                  }
+                ],
+                "id": "PC_DOOR_MENU",
+                "speakerId": "PLAYER",
+                "type": "player_choice"
+              },
+              {
+                "id": "N_TOKENS_RUN_1",
+                "next": "N_TOKENS_RUN_2",
+                "speakerId": "PLAYER",
+                "text": "So tokens run the facility.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_TOKENS_RUN_2",
+                "next": "PC_DOOR_FOLLOW",
+                "speakerId": "PROCESS_COACH",
+                "text": "Tokens run whatever gets audited. (pause) Doors. Kiosks. Windows\u2014they answer artifacts. (pause) Not faces. (pause) You want to move. (pause) You do it in tokens.",
+                "type": "npc_line"
+              },
+              {
+                "choices": [
+                  {
+                    "id": "C_ASK_WHERE_TOKEN_DOOR_FOLLOW",
+                    "next": "N_GET_TOKEN_INFO_1",
+                    "text": "ask: Where do I get the token?"
+                  },
+                  {
+                    "id": "C_LEAVE_DOOR_FOLLOW_BACK",
+                    "next": "END_BACK",
+                    "text": "leave: Back."
+                  }
+                ],
+                "id": "PC_DOOR_FOLLOW",
+                "speakerId": "PLAYER",
+                "type": "player_choice"
+              },
+              {
+                "id": "N_THREATEN_1",
+                "next": "N_THREATEN_2",
+                "speakerId": "PLAYER",
+                "text": "Open it, or I escalate.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_THREATEN_2",
+                "next": "PC_AFTER_THREAT",
+                "speakerId": "PROCESS_COACH",
+                "text": "Sure. Escalate. (pause) It needs a category. (pause) Then you sit in the incident queue. (pause) Until the system decides your problem type. (pause) I'm not here to fight you. (pause) I'm throughput. (pause) Let me keep you moving.",
+                "type": "npc_line"
+              },
+              {
+                "choices": [
+                  {
+                    "id": "C_ASK_WHERE_TER_AFTER_THREAT",
+                    "next": "N_GET_TOKEN_INFO_1",
+                    "text": "ask: How do I get TER?"
+                  },
+                  {
+                    "id": "C_LEAVE_AFTER_THREAT",
+                    "next": "END_BACK",
+                    "text": "leave: Back."
+                  }
+                ],
+                "id": "PC_AFTER_THREAT",
+                "speakerId": "PLAYER",
+                "type": "player_choice"
+              },
+              {
+                "id": "N_GET_TOKEN_INFO_1",
+                "next": "N_GET_TOKEN_INFO_2",
+                "speakerId": "PLAYER",
+                "text": "Where do I get it?",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_GET_TOKEN_INFO_2",
+                "next": "N_GET_TOKEN_INFO_3",
+                "speakerId": "PROCESS_COACH",
+                "text": "Intake Hall. (pause) Windows 0/3/5/7/9. (pause)\nPick the one. (pause)\nLooks least hungry. (pause)\nFor your life story. (pause)\nGive them an incident category. (pause)\nThe system will accept. (pause)\nThey spit out a token. (pause)\nThat\u2019s what the doors listen to.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_GET_TOKEN_INFO_3",
+                "next": "N_GET_TOKEN_INFO_4",
+                "speakerId": "PLAYER",
+                "text": "And if I file myself?",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_GET_TOKEN_INFO_4",
+                "next": "N_GET_TOKEN_INFO_5",
+                "speakerId": "PROCESS_COACH",
+                "text": "Intake can\u2019t file a person. (pause)\nNot listed in any jurisdiction. (pause)\nThey can file an object. (pause)\nWith a barcode. (pause)\nAnd an incident category. (pause)\nSo you attach yourself. (pause)\nTo the object. (pause)\nYou\u2019re\u2014politely\u2014\u201cassociated mass.\u201d (pause)\nThey won\u2019t call it dehumanizing. (pause)\nThey\u2019ll call it efficient. (pause)\nOn paper.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_GET_TOKEN_INFO_5",
+                "next": "N_GET_TOKEN_INFO_6",
+                "speakerId": "NARRATOR",
+                "text": "The Coach points right, toward the Intake Hall signage, as if pointing is a legally safer form of escort.",
+                "type": "npc_line"
+              },
+              {
+                "id": "N_GET_TOKEN_INFO_6",
+                "next": "END_COMMIT_TOKENS_RULE",
+                "speakerId": "NARRATOR",
+                "text": "On the kiosk, the prompt refreshes: \u201cPRESENT TOKEN.\u201d\nIt blinks once, like a reminder that the building has already moved on.",
+                "type": "npc_line"
+              },
+              {
+                "effects": [
+                  {
+                    "action": "set",
+                    "key": "knowledge.act2TokensRule",
+                    "value": true
+                  },
+                  {
+                    "action": "set",
+                    "key": "objectives.obtainTER",
+                    "value": true
+                  }
+                ],
+                "id": "END_COMMIT_TOKENS_RULE",
+                "outcomeId": "arrival_overflow_intake",
+                "type": "end"
+              },
+              {
+                "id": "END_BACK",
+                "type": "end"
+              }
+            ],
+            "sceneId": "SCN-100",
+            "startNodeId": "PC_SEALED_BAY_DOOR"
+          }
+        ]
+      },
+      "op": "create_scene"
+    }
+  ],
+  "sceneId": "SCN-100"
+}

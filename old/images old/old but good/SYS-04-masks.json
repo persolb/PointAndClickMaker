@@ -1,0 +1,57 @@
+{
+  "screen_id": "SYS-04",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Cork board",
+      "slug": "cork_board",
+      "file": "images/SYS-04-mask-cork_board.png",
+      "boxes": [
+        {
+          "label": "cork board",
+          "box_2d": [
+            159,
+            226,
+            532,
+            840
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "File pile",
+      "slug": "file_pile",
+      "file": "images/SYS-04-mask-file_pile.png",
+      "boxes": [
+        {
+          "label": "file pile",
+          "box_2d": [
+            517,
+            277,
+            638,
+            401
+          ]
+        },
+        {
+          "label": "file pile",
+          "box_2d": [
+            545,
+            686,
+            650,
+            804
+          ]
+        },
+        {
+          "label": "file pile",
+          "box_2d": [
+            553,
+            471,
+            631,
+            584
+          ]
+        }
+      ]
+    }
+  ]
+}

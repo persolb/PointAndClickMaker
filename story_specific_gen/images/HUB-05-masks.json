@@ -1,0 +1,92 @@
+{
+  "screen_id": "HUB-05",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Ventilation access panel",
+      "slug": "ventilation_access_panel",
+      "file": "story_specific_gen/images/HUB-05-mask-ventilation_access_panel.png",
+      "boxes": [
+        {
+          "label": "Ventilation access panel",
+          "box_2d": [
+            478,
+            187,
+            679,
+            290
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Operations wing service door",
+      "slug": "operations_wing_service_door",
+      "file": "story_specific_gen/images/HUB-05-mask-operations_wing_service_door.png",
+      "boxes": [
+        {
+          "label": "Operations wing service door",
+          "box_2d": [
+            426,
+            494,
+            715,
+            591
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Cable tray label cluster",
+      "slug": "cable_tray_label_cluster",
+      "file": "story_specific_gen/images/HUB-05-mask-cable_tray_label_cluster.png",
+      "boxes": [
+        {
+          "label": "Cable tray label: CABLE RUN A",
+          "box_2d": [
+            256,
+            399,
+            376,
+            429
+          ]
+        },
+        {
+          "label": "Cable tray label: DATA B",
+          "box_2d": [
+            263,
+            427,
+            376,
+            461
+          ]
+        },
+        {
+          "label": "Cable tray label: POWER C",
+          "box_2d": [
+            266,
+            458,
+            380,
+            492
+          ]
+        },
+        {
+          "label": "Cable tray label: POWER C",
+          "box_2d": [
+            263,
+            376,
+            376,
+            400
+          ]
+        },
+        {
+          "label": "Cable tray label: DATA B",
+          "box_2d": [
+            259,
+            344,
+            376,
+            374
+          ]
+        }
+      ]
+    }
+  ]
+}

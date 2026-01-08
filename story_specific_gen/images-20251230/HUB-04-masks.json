@@ -1,0 +1,65 @@
+{
+  "screen_id": "HUB-04",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Hatch lid and lifting ring",
+      "slug": "hatch_lid_and_lifting_ring",
+      "file": "story_specific_gen/images/HUB-04-mask-hatch_lid_and_lifting_ring.png",
+      "boxes": [
+        {
+          "label": "Hatch lid",
+          "box_2d": [
+            219,
+            169,
+            638,
+            461
+          ]
+        },
+        {
+          "label": "lifting ring",
+          "box_2d": [
+            223,
+            290,
+            411,
+            442
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Access ladder/steps",
+      "slug": "access_ladder_steps",
+      "file": "story_specific_gen/images/HUB-04-mask-access_ladder_steps.png",
+      "boxes": [
+        {
+          "label": "access ladder/steps",
+          "box_2d": [
+            631,
+            169,
+            936,
+            442
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Service door",
+      "slug": "service_door",
+      "file": "story_specific_gen/images/HUB-04-mask-service_door.png",
+      "boxes": [
+        {
+          "label": "Service door",
+          "box_2d": [
+            591,
+            566,
+            856,
+            680
+          ]
+        }
+      ]
+    }
+  ]
+}

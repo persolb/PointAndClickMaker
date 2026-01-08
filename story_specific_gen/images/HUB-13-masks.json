@@ -1,0 +1,127 @@
+{
+  "screen_id": "HUB-13",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Containment sphere surface",
+      "slug": "containment_sphere_surface",
+      "file": "story_specific_gen/images/HUB-13-mask-containment_sphere_surface.png",
+      "boxes": [
+        {
+          "label": "Containment sphere surface",
+          "box_2d": [
+            319,
+            363,
+            762,
+            650
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Status indicator cluster",
+      "slug": "status_indicator_cluster",
+      "file": "story_specific_gen/images/HUB-13-mask-status_indicator_cluster.png",
+      "boxes": [
+        {
+          "label": "Status Indicators Panel",
+          "box_2d": [
+            250,
+            219,
+            620,
+            316
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Interface scan panel",
+      "slug": "interface_scan_panel",
+      "file": "story_specific_gen/images/HUB-13-mask-interface_scan_panel.png",
+      "boxes": [
+        {
+          "label": "Interface scan panel",
+          "box_2d": [
+            343,
+            769,
+            420,
+            866
+          ]
+        },
+        {
+          "label": "Interface scan panel text",
+          "box_2d": [
+            251,
+            778,
+            332,
+            864
+          ]
+        },
+        {
+          "label": "Interface scan panel with screen and card reader",
+          "box_2d": [
+            431,
+            735,
+            715,
+            865
+          ]
+        },
+        {
+          "label": "Interface scan panel screen",
+          "box_2d": [
+            447,
+            747,
+            547,
+            814
+          ]
+        },
+        {
+          "label": "Interface scan panel scanner",
+          "box_2d": [
+            461,
+            792,
+            573,
+            836
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Emergency stop",
+      "slug": "emergency_stop",
+      "file": "story_specific_gen/images/HUB-13-mask-emergency_stop.png",
+      "boxes": [
+        {
+          "label": "Emergency stop sign on the wall",
+          "box_2d": [
+            468,
+            887,
+            563,
+            984
+          ]
+        },
+        {
+          "label": "Red emergency stop button",
+          "box_2d": [
+            611,
+            891,
+            735,
+            982
+          ]
+        },
+        {
+          "label": "Emergency stop sign below the button",
+          "box_2d": [
+            806,
+            902,
+            876,
+            991
+          ]
+        }
+      ]
+    }
+  ]
+}

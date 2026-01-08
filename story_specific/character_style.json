@@ -1,0 +1,85 @@
+{
+  "id": "character_style",
+  "version": 1,
+  "art_style": {
+    "format": "pixel_art",
+    "native_resolution_px": [512, 512],
+    "output_resolution_px": [1024, 1024],
+    "upscale_factor": 2,
+    "aspect_ratio": "1:1",
+    "scaling_algorithm": "nearest-neighbor only",
+    "anti_aliasing": false,
+    "subpixel_rendering": false,
+    "blur_filters": false
+  },
+  "camera_and_staging": {
+    "viewpoint": "2D side-on with shallow depth (classic adventure staging)."
+  },
+  "pixel_discipline": {
+    "line_discipline": "Build forms with clean pixel clusters; avoid stray single pixels (orphans).",
+    "micro_noise_policy": "No random single-pixel noise; use repeating cluster shapes for texture vocabulary.",
+    "dither_policy": "Never on character silhouettes.",
+    "transparency": "Magenta (#FF00FF) background"
+  },
+  "character_sprite_system": {
+    "scale_reference": {
+      "adult_height_px": 150,
+      "teen_height_px": 132,
+      "child_height_px": 109,
+      "notes": "Heights are for standing sprites on the walkable strip."
+    },
+    "proportions": {
+      "style": "Realistic anatomy and body proportions. The character body proportions must be realistically tall, approximately 7.5 heads high. Do not use chibi or SD proportions. **NO oversized heads. The head size must be anatomically correct relative to the torso and limbs for an adult human.**"
+    },
+    "pose_sets": [
+      "idle_front_3q",
+      "idle_profile",
+      "walk_cycle_4_to_6_frames",
+      "talk_cycle_2_to_3_frames",
+      "interact_reach_1_to_2_frames",
+      "hold_item_overlay_optional"
+    ],
+    "outline_and_edges": {
+      "approach": "selective outlining only",
+      "rule": "Use darker edges on high-contrast boundaries to separate the character from the background; avoid full black outline around every shape.",
+      "depth_separation": "Foreground characters may use slightly stronger edge contrast than background characters."
+    }
+  },
+  "lighting_and_shading": {
+    "key_light_direction": "upper-left",
+    "shadow_direction": "lower-right",
+    "material_ramps_max_tones": 3,
+    "contrast_rule": "HIGH CONTRAST between the 3 tones to create crisp definition of clothing folds and muscle shapes.",
+    "highlights": "small, pixel-perfect clusters; no glossy airbrush effects",
+    "ambient_occlusion": "minimal; use only at boot-ground contact and under collars or straps"
+  },
+  "readability_rules": {
+    "face_readability": {
+      "eyes": "1–2 px suggestion; avoid detailed irises",
+      "mouth": "single cluster that changes between neutral and talk frames",
+      "expressions": "limited set; convey mood via posture and accessory cues"
+    }
+  },
+  "costuming_and_props": {
+    "general_rules": [
+      "Props must be readable at 4× scale with clear silhouettes.",
+      "Avoid readable text on character props; text belongs to environment signage.",
+      "Accessories should communicate role or function through shape, not labels."
+    ],
+    "prop_scale_guidance": [
+      "Badges and small tools must be attached to a larger shape such as a lanyard or belt."
+    ]
+  },
+  "animation_direction": {
+    "idle": "Subtle breathing or weight shift; avoid constant motion.",
+    "talk": "Small head or shoulder movement with mouth cluster change.",
+    "gesture": "One clear gesture at a time.",
+    "interact": "Short reach animation aligned to interaction point; avoid complex hand articulation."
+  },
+  "do_not_do": [
+    "No smooth gradients on characters.",
+    "No heavy full-body black outlines.",
+    "No dense costume micro-textures that compete with interaction readability.",
+    "No exaggerated or comedic poses that break tone."
+  ]
+}

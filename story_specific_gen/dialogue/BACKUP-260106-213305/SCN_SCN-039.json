@@ -1,0 +1,333 @@
+{
+  "dialogueGraphs": [
+    {
+      "id": "DG_SPNDLE_OBSERVE",
+      "sceneId": "SCN-039",
+      "startNodeId": "N_EST_01",
+      "nodes": [
+        {
+          "id": "N_EST_01",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The observation deck smells like old sealant and fresh paperwork.\nBeyond the window, SPINDLE rotates with the calm indifference of something that never had to justify itself.",
+          "next": "N_EST_02"
+        },
+        {
+          "id": "N_EST_02",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "Three frames, three tempos, three sets of maintenance markings that do not agree.\nThe central containment sphere is matte\u2014over-insulated, dull, and very much not reflecting anything interesting today.",
+          "next": "N_EST_03"
+        },
+        {
+          "id": "N_EST_03",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "On the deck: a reflectivity test station with a battered readout, a calibration puck in a foam cutout, and a return canister tray with slots labeled in two handwriting styles.\nThe observation window latch has been touched recently. Or someone used a different cleaner. It\u2019s hard to tell.",
+          "next": "N_HUB_MENU"
+        },
+        {
+          "id": "N_HUB_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_LOOK_STATION",
+              "text": "look Reflectivity test station",
+              "next": "N_STATION_01"
+            },
+            {
+              "id": "C_LOOK_PUCK",
+              "text": "look Calibration puck",
+              "next": "N_PUCK_01"
+            },
+            {
+              "id": "C_LOOK_TRAY",
+              "text": "look Return canister tray",
+              "next": "N_TRAY_01"
+            },
+            {
+              "id": "C_LOOK_LATCH",
+              "text": "look Observation window latch",
+              "next": "N_LATCH_01"
+            },
+            {
+              "id": "C_LOOK_WINDOW",
+              "text": "look Through the window",
+              "next": "N_WINDOW_01"
+            },
+            {
+              "id": "C_LEAVE_DOWN",
+              "text": "leave Control Room - down",
+              "next": "END_LEAVE_DOWN"
+            },
+            {
+              "id": "C_LEAVE_FWD",
+              "text": "leave SPINDLE Chamber Floor (Containment Sphere) - forward",
+              "next": "END_LEAVE_FORWARD"
+            },
+            {
+              "id": "C_LEAVE_LEFT",
+              "text": "leave Records Hallway and Tube Station - left",
+              "next": "END_LEAVE_LEFT"
+            }
+          ]
+        },
+        {
+          "id": "N_STATION_01",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The reflectivity test station is bolted down like it might run away.\nA laminated procedure card is zip-tied to the frame\u2014updated twice, both updates initialed by someone who didn\u2019t print their name.",
+          "next": "N_STATION_02"
+        },
+        {
+          "id": "N_STATION_02",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The readout is on, not bright. The kind of \u201con\u201d that wants you to stop asking if it\u2019s on.\nA sticky note says: \u201cDO NOT CALL IT MIRROR. \u2014Legal.\u201d",
+          "next": "N_STATION_MENU"
+        },
+        {
+          "id": "N_STATION_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_ASK_WHAT_TESTS",
+              "text": "ask What does it test?",
+              "next": "N_STATION_WHAT_01"
+            },
+            {
+              "id": "C_LOOK_BACK",
+              "text": "look Back",
+              "next": "N_HUB_MENU"
+            }
+          ]
+        },
+        {
+          "id": "N_STATION_WHAT_01",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The procedure card answers without enthusiasm: \u201cSurface Response Under Controlled Illumination.\u201d\nA handwritten addendum replaces \u201cillumination\u201d with \u201cincident light,\u201d like the old word got someone in trouble.",
+          "next": "N_STATION_MENU"
+        },
+        {
+          "id": "N_PUCK_01",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The calibration puck sits in foam, immaculate in a way nothing else is.\nIts serial number is stamped twice, as if one stamp wasn\u2019t defensible.",
+          "next": "N_PUCK_02"
+        },
+        {
+          "id": "N_PUCK_02",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "A tag reads: \u201cREFERENCE STANDARD \u2014 DO NOT POLISH.\u201d\nSomeone has underlined \u201cPOLISH\u201d hard enough to dent the paper.",
+          "next": "N_PUCK_MENU"
+        },
+        {
+          "id": "N_PUCK_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_USE_PICK_UP",
+              "text": "use Pick up calibration puck",
+              "next": "N_PUCK_PICK_01"
+            },
+            {
+              "id": "C_LOOK_BACK",
+              "text": "look Back",
+              "next": "N_HUB_MENU"
+            }
+          ]
+        },
+        {
+          "id": "N_PUCK_PICK_01",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "It has weight, precise and unhelpful.\nThe surface is deliberately boring\u2014engineered to reflect exactly what it\u2019s supposed to, and no more.",
+          "next": "N_PUCK_PICK_02"
+        },
+        {
+          "id": "N_PUCK_PICK_02",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "Putting it back feels like returning a library book you never wanted on your record.",
+          "next": "N_PUCK_MENU"
+        },
+        {
+          "id": "N_TRAY_01",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The return canister tray is staged under the window line, like it expects traffic.\nSlots are labeled \u201cINBOUND\u201d and \u201cRETURN,\u201d which would be clearer if anything here ever went \u201cbound\u201d in a normal direction.",
+          "next": "N_TRAY_02"
+        },
+        {
+          "id": "N_TRAY_02",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "One slot has a printed placard: \u201cEMPTY IS A CONDITION, NOT AN ACTION.\u201d\nIt\u2019s signed with a surname only. No date. That\u2019s deliberate.",
+          "next": "N_TRAY_MENU"
+        },
+        {
+          "id": "N_TRAY_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_ASK_STAGED",
+              "text": "ask Why is it staged?",
+              "next": "N_TRAY_WHY_01"
+            },
+            {
+              "id": "C_LOOK_BACK",
+              "text": "look Back",
+              "next": "N_HUB_MENU"
+            }
+          ]
+        },
+        {
+          "id": "N_TRAY_WHY_01",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "A maintenance log clipped to the tray reads: \u201cKeep clear for cycle completion.\u201d\nThe word \u201ccycle\u201d is circled twice, like it tried to escape the sentence.",
+          "next": "N_TRAY_MENU"
+        },
+        {
+          "id": "N_LATCH_01",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The latch is heavy and over-specified: two-step release, interlock indicator, and a little red window that shows either \u201cSAFE\u201d or \u201cNOT SAFE,\u201d with no further nuance.",
+          "next": "N_LATCH_02"
+        },
+        {
+          "id": "N_LATCH_02",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "It currently reads \u201cSAFE.\u201d\nSomeone has scratched an asterisk into the metal next to it. No legend. Just the asterisk.",
+          "next": "N_LATCH_MENU"
+        },
+        {
+          "id": "N_LATCH_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_USE_TEST",
+              "text": "use Test the latch",
+              "next": "N_LATCH_TEST_01"
+            },
+            {
+              "id": "C_LOOK_BACK",
+              "text": "look Back",
+              "next": "N_HUB_MENU"
+            }
+          ]
+        },
+        {
+          "id": "N_LATCH_TEST_01",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The handle gives a millimeter\u2014then stops on an interlock that clicks with bureaucratic satisfaction.\nA placard on the frame reads: \u201cDECK OPENING REQUIRES FLOOR PRESENCE CONFIRMATION.\u201d The last two words are in bold, as if they can enforce physics.",
+          "next": "N_LATCH_TEST_02"
+        },
+        {
+          "id": "N_LATCH_TEST_02",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You can\u2019t open it from here without making yourself \u201cpresent\u201d in the system, and the system is picky about what counts as you.",
+          "next": "N_LATCH_MENU"
+        },
+        {
+          "id": "N_WINDOW_01",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The rotating frames stay steady\u2014no wobble, no stutter, no visible heat shimmer.\nThe containment sphere remains matte, swallowing light the way insulation should.",
+          "next": "N_WINDOW_02"
+        },
+        {
+          "id": "N_WINDOW_02",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "Below, the reflectivity test station and return canister tray make sense as a pair: test, package, return.\nIt\u2019s the kind of sense that auditors like\u2014simple, repeatable, and wrong in a familiar way.",
+          "next": "N_WINDOW_MENU"
+        },
+        {
+          "id": "N_WINDOW_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_ASK_NOMINAL",
+              "text": "ask Nominal?",
+              "next": "N_WINDOW_NOM_01"
+            },
+            {
+              "id": "C_SHOW_MARK_LOG",
+              "text": "show Mark observation in log (OLEA)",
+              "conditions": [
+                {
+                  "key": "player.factions",
+                  "op": "in",
+                  "value": [
+                    "OLEA"
+                  ]
+                },
+                {
+                  "key": "knowledge.spindleObserved",
+                  "op": "!=",
+                  "value": true
+                }
+              ],
+              "next": "N_LOG_01"
+            },
+            {
+              "id": "C_LOOK_BACK",
+              "text": "look Back",
+              "next": "N_HUB_MENU"
+            }
+          ]
+        },
+        {
+          "id": "N_WINDOW_NOM_01",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "Nominal by visual confirmation: rotation stable, sphere non-reflective, deck instrumentation present and staged.\nIt is not reassurance. It is a checklist item that can survive discovery.",
+          "next": "N_WINDOW_MENU"
+        },
+        {
+          "id": "N_LOG_01",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You record: \u201cSPINDLE observed in nominal state from HUB-12. Containment sphere matte. Reflectivity test station present. Return canister tray staged.\u201d\nYour hands don\u2019t shake, but you catch yourself re-reading the sentence like it might accuse you later.",
+          "next": "END_NOMINAL"
+        },
+        {
+          "id": "END_NOMINAL",
+          "type": "end",
+          "outcomeId": "observe_spindle_nominal",
+          "effects": [
+            {
+              "key": "knowledge.spindleObserved",
+              "action": "set",
+              "value": true
+            }
+          ]
+        },
+        {
+          "id": "END_LEAVE_DOWN",
+          "type": "end"
+        },
+        {
+          "id": "END_LEAVE_FORWARD",
+          "type": "end"
+        },
+        {
+          "id": "END_LEAVE_LEFT",
+          "type": "end"
+        }
+      ]
+    }
+  ]
+}

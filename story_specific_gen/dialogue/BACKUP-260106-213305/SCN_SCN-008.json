@@ -1,0 +1,621 @@
+{
+  "dialogueGraphs": [
+    {
+      "id": "DG_SCN_008_VESTIBULE",
+      "sceneId": "SCN-008",
+      "startNodeId": "N0",
+      "nodes": [
+        {
+          "id": "N0",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The vestibule is a room designed to turn people into entries.",
+          "next": "N1"
+        },
+        {
+          "id": "N1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "It smells like toner, old plastic, and a policy that outlived its staff.",
+          "next": "N2"
+        },
+        {
+          "id": "N2",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "Four fixtures remain, all of them confident: a badge insert dispenser, a desk drawer of old badges, a speaker/intercom, and a pneumatic tube port sealed with a cover plate.",
+          "next": "N_MAIN_MENU"
+        },
+        {
+          "id": "N_MAIN_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "LOOK_DISPENSER",
+              "text": "(look) Badge insert dispenser.",
+              "checks": [],
+              "next": "N_DISP_0"
+            },
+            {
+              "id": "LOOK_DRAWER",
+              "text": "(look) Desk drawer (old badges).",
+              "checks": [],
+              "next": "N_DRAWER_0"
+            },
+            {
+              "id": "TALK_INTERCOM",
+              "text": "(talk) Speaker / intercom.",
+              "checks": [],
+              "next": "N_INTERCOM_0"
+            },
+            {
+              "id": "LOOK_TUBE",
+              "text": "(look) Dead tube port cover.",
+              "checks": [],
+              "next": "N_TUBE_0"
+            },
+            {
+              "id": "LEAVE_DOWN",
+              "text": "(leave) Go down \u2014 Guard Shack Exterior.",
+              "checks": [],
+              "next": "N_END_LEAVE_DOWN"
+            },
+            {
+              "id": "LEAVE_RIGHT",
+              "text": "(leave) Go right \u2014 Admin Lobby and Kiosk.",
+              "checks": [],
+              "next": "N_END_LEAVE_RIGHT"
+            }
+          ]
+        },
+        {
+          "id": "N_DISP_0",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "A clear acrylic dispenser, sun-yellowed at the edges.",
+          "next": "N_DISP_1"
+        },
+        {
+          "id": "N_DISP_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The inserts inside are blank\u2014except for faint pre-print marks where a logo used to be. The bottom stack is slightly curled from heat, but still usable.",
+          "next": "N_DISP_MENU"
+        },
+        {
+          "id": "N_DISP_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "USE_PULL",
+              "text": "(use) Pull a handful of inserts.",
+              "checks": [],
+              "next": "N_DISP_USE_1"
+            },
+            {
+              "id": "LOOK_LABEL",
+              "text": "(look) Check for a sign-in label or instructions.",
+              "checks": [],
+              "next": "N_DISP_LABEL_1"
+            },
+            {
+              "id": "LEAVE_BACK",
+              "text": "(leave) Back.",
+              "checks": [],
+              "next": "N_MAIN_MENU"
+            }
+          ]
+        },
+        {
+          "id": "N_DISP_USE_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "They slide out with the static cling of something that expects hands all day.",
+          "next": "N_DISP_USE_2"
+        },
+        {
+          "id": "N_DISP_USE_2",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The facility doesn\u2019t need your face. It needs a rectangle it recognizes.",
+          "next": "N_MAIN_MENU"
+        },
+        {
+          "id": "N_DISP_LABEL_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "A faded sticker: \u201cTEMP BADGE INSERTS \u2014 PRINT FROM KIOSK / RECORDS AUTHORIZATION REQUIRED.\u201d \u201cRequired\u201d is underlined twice, as if the pen could enforce it.",
+          "next": "N_MAIN_MENU"
+        },
+        {
+          "id": "N_DRAWER_0",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The drawer resists, then gives\u2014like it\u2019s performing reluctance for the record.",
+          "next": "N_DRAWER_1"
+        },
+        {
+          "id": "N_DRAWER_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "Inside: old plastic badges, some cracked, some intact, each with an expired date and a format that repeats across decades.",
+          "next": "N_DRAWER_PLAYER_1"
+        },
+        {
+          "id": "N_DRAWER_PLAYER_1",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Still standardized.",
+          "next": "N_DRAWER_2"
+        },
+        {
+          "id": "N_DRAWER_2",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "There\u2019s a stack of paper sign-in sheets under them\u2014half used, then abandoned mid-week. Names, times, departments. A blank line waiting like a trap.",
+          "next": "N_DRAWER_MENU"
+        },
+        {
+          "id": "N_DRAWER_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "LOOK_EXAMINE_FIRST",
+              "text": "(look) Examine the badges for what matters (format, seals, artifacts).",
+              "conditions": [
+                {
+                  "key": "knowledge.badgeArtifactsMatter",
+                  "op": "not_exists",
+                  "value": null
+                }
+              ],
+              "checks": [],
+              "next": "N_DRAWER_EXAMINE_1"
+            },
+            {
+              "id": "LOOK_EXAMINE_AGAIN",
+              "text": "(look) Examine the badges again.",
+              "conditions": [
+                {
+                  "key": "knowledge.badgeArtifactsMatter",
+                  "op": "exists",
+                  "value": null
+                }
+              ],
+              "checks": [],
+              "next": "N_DRAWER_EXAMINE_AGAIN_1"
+            },
+            {
+              "id": "USE_TAKE_FIRST",
+              "text": "(use) Take a few intact badges and a sign-in sheet.",
+              "conditions": [
+                {
+                  "key": "knowledge.badgeArtifactsMatter",
+                  "op": "not_exists",
+                  "value": null
+                }
+              ],
+              "checks": [],
+              "next": "N_DRAWER_TAKE_1"
+            },
+            {
+              "id": "USE_TAKE_AGAIN",
+              "text": "(use) Take more of the same.",
+              "conditions": [
+                {
+                  "key": "knowledge.badgeArtifactsMatter",
+                  "op": "exists",
+                  "value": null
+                }
+              ],
+              "checks": [],
+              "next": "N_DRAWER_TAKE_AGAIN_1"
+            },
+            {
+              "id": "LOOK_HEADER",
+              "text": "(look) Read the sign-in sheet header.",
+              "checks": [],
+              "next": "N_DRAWER_HEADER_1"
+            },
+            {
+              "id": "LEAVE_BACK",
+              "text": "(leave) Back.",
+              "checks": [],
+              "next": "N_MAIN_MENU"
+            }
+          ]
+        },
+        {
+          "id": "N_DRAWER_EXAMINE_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The photos are irrelevant now\u2014faces bleached to anonymity\u2014but the structure isn\u2019t.",
+          "next": "N_DRAWER_EXAMINE_2"
+        },
+        {
+          "id": "N_DRAWER_EXAMINE_2",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "Site code. Employee/contractor checkbox. A \u201cRECORDS STAMP\u201d box. The important part is that someone once believed a stamp could make a person safe.",
+          "next": "N_DRAWER_EXAMINE_3"
+        },
+        {
+          "id": "N_DRAWER_EXAMINE_3",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You can work with this.",
+          "next": "N_COMMIT_DISCOVER"
+        },
+        {
+          "id": "N_DRAWER_TAKE_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You choose the least damaged badges\u2014the ones that still look like they could be believed.",
+          "next": "N_DRAWER_TAKE_2"
+        },
+        {
+          "id": "N_DRAWER_TAKE_2",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The sign-in sheet tears free along a perforation, like it was designed to be removed quietly. This is not identity. This is props.",
+          "next": "N_COMMIT_DISCOVER"
+        },
+        {
+          "id": "N_DRAWER_HEADER_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "\u201cVISITOR / CONTRACTOR LOG \u2014 RECORDS COUNTER.\u201d",
+          "next": "N_DRAWER_HEADER_2"
+        },
+        {
+          "id": "N_DRAWER_HEADER_2",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "A note in the margin: \u201cIf Records absent, tube form to Admin. If Admin absent, hold for morning.\u201d Morning is not guaranteed.",
+          "next": "N_MAIN_MENU"
+        },
+        {
+          "id": "N_DRAWER_EXAMINE_AGAIN_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "Same format, same faith in boxes and stamps. The structure is the artifact.",
+          "next": "N_MAIN_MENU"
+        },
+        {
+          "id": "N_DRAWER_TAKE_AGAIN_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You could take more. It wouldn\u2019t change what\u2019s missing: the authorization event.",
+          "next": "N_MAIN_MENU"
+        },
+        {
+          "id": "N_TUBE_0",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "A pneumatic tube port, the kind that used to move decisions around faster than people.",
+          "next": "N_TUBE_1"
+        },
+        {
+          "id": "N_TUBE_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "Someone has bolted a metal cover over it. The screws are mismatched, as if each one came from a different apology.",
+          "next": "N_TUBE_MENU"
+        },
+        {
+          "id": "N_TUBE_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "LOOK_ROUTING",
+              "text": "(look) Inspect the cover for labels or routing.",
+              "checks": [],
+              "next": "N_TUBE_LOOK_1"
+            },
+            {
+              "id": "USE_LOOSEN",
+              "text": "(use) Try to loosen the cover.",
+              "checks": [],
+              "next": "N_TUBE_USE_1"
+            },
+            {
+              "id": "LEAVE_BACK",
+              "text": "(leave) Back.",
+              "checks": [],
+              "next": "N_MAIN_MENU"
+            }
+          ]
+        },
+        {
+          "id": "N_TUBE_LOOK_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "A paper routing chart is taped beside it, laminated, then cracked: \u201cRECORDS \u2192 ADMIN \u2192 SECURITY (REMOTE)\u201d with arrows that assume staffing like a religion.",
+          "next": "N_TUBE_LOOK_2"
+        },
+        {
+          "id": "N_TUBE_LOOK_2",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Everyone routed away.",
+          "next": "N_TUBE_LOOK_3"
+        },
+        {
+          "id": "N_TUBE_LOOK_3",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The chart ends with a box: \u201cIF UNSURE, FILE ANYWAY.\u201d",
+          "next": "N_MAIN_MENU"
+        },
+        {
+          "id": "N_TUBE_USE_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The screws turn a quarter rotation and stop\u2014painted over.",
+          "next": "N_TUBE_USE_2"
+        },
+        {
+          "id": "N_TUBE_USE_2",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "It\u2019s not sealed for safety. It\u2019s sealed for finality, which is a different department.",
+          "next": "N_MAIN_MENU"
+        },
+        {
+          "id": "N_INTERCOM_0",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The speaker grille is clean in the center from repeated use.",
+          "next": "N_INTERCOM_1"
+        },
+        {
+          "id": "N_INTERCOM_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "A label plate beneath it is sun-faded: SECV \u2014 REMOTE ATTENDANCE.",
+          "next": "N_INTERCOM_MENU"
+        },
+        {
+          "id": "N_INTERCOM_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "USE_PRESS",
+              "text": "(use) Press the call button.",
+              "checks": [],
+              "next": "N_SECV_0"
+            },
+            {
+              "id": "LEAVE_BACK",
+              "text": "(leave) Back.",
+              "checks": [],
+              "next": "N_MAIN_MENU"
+            }
+          ]
+        },
+        {
+          "id": "N_SECV_0",
+          "type": "npc_line",
+          "speakerId": "SECV_OPERATOR",
+          "text": "SECV remote attendance. (pause) Recorded line quality and liability, (pause) you know the deal. (pause) Tell me what\u2019s happening. (pause) so nobody gets hurt. (pause) and I don\u2019t end up writing it up.",
+          "next": "N_SECV_MENU"
+        },
+        {
+          "id": "N_SECV_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "ASK_ONSITE",
+              "text": "(ask) I\u2019m in the vestibule. What counts as \u201consite\u201d here?",
+              "checks": [],
+              "next": "N_SECV_ONSITE_1"
+            },
+            {
+              "id": "ASK_BADGES",
+              "text": "(ask) I found old badges and a sign-in sheet. Does that help?",
+              "checks": [],
+              "next": "N_SECV_BADGES_1"
+            },
+            {
+              "id": "PERSUADE_OLEA",
+              "text": "(persuade) I\u2019m OLEA. I\u2019m collecting closure artifacts. You can note me as present.",
+              "conditions": [
+                {
+                  "key": "player.factions",
+                  "op": "in",
+                  "value": [
+                    "OLEA"
+                  ]
+                }
+              ],
+              "checks": [],
+              "next": "N_SECV_OLEA_1"
+            },
+            {
+              "id": "LEAVE_ENDCALL",
+              "text": "(leave) End call.",
+              "checks": [],
+              "next": "N_SECV_ENDCALL_1"
+            }
+          ]
+        },
+        {
+          "id": "N_SECV_ONSITE_1",
+          "type": "npc_line",
+          "speakerId": "SECV_OPERATOR",
+          "text": "Vestibule doesn\u0019t count as onsite in the system.",
+          "next": "N_SECV_ONSITE_2"
+        },
+        {
+          "id": "N_SECV_ONSITE_2",
+          "type": "npc_line",
+          "speakerId": "SECV_OPERATOR",
+          "text": "It\u2019s basically a buffer room. (pause) You\u2019re contained. (pause) Still not showing up as here.",
+          "next": "N_SECV_ONSITE_3"
+        },
+        {
+          "id": "N_SECV_ONSITE_3",
+          "type": "npc_line",
+          "speakerId": "SECV_OPERATOR",
+          "text": "Onsite means a timestamp (pause) and an accountable name (pause) in the log. (pause) If I can't tie door action to it, (pause) I can't open it.",
+          "next": "N_SECV_ONSITE_MENU"
+        },
+        {
+          "id": "N_SECV_ONSITE_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "ASK_WITH_ROOM",
+              "text": "(ask) So what do I do with what\u2019s in this room?",
+              "checks": [],
+              "next": "N_SECV_ROOM_1"
+            },
+            {
+              "id": "LEAVE_ENDCALL",
+              "text": "(leave) End call.",
+              "checks": [],
+              "next": "N_SECV_ENDCALL_1"
+            }
+          ]
+        },
+        {
+          "id": "N_SECV_ROOM_1",
+          "type": "npc_line",
+          "speakerId": "SECV_OPERATOR",
+          "text": "Use what\u2019s there; get something Records accepts.",
+          "next": "N_SECV_ROOM_2"
+        },
+        {
+          "id": "N_SECV_ROOM_2",
+          "type": "npc_line",
+          "speakerId": "SECV_OPERATOR",
+          "text": "A Presence Receipt. (pause) A stamp. (pause) A kiosk printout. (pause) Anything that gives me a legit condition (pause) to hang a door unlock on.",
+          "next": "N_SECV_ROOM_3"
+        },
+        {
+          "id": "N_SECV_ROOM_3",
+          "type": "npc_line",
+          "speakerId": "SECV_OPERATOR",
+          "text": "I help when there\u2019s paper. Can\u2019t be it.",
+          "next": "N_MAIN_MENU"
+        },
+        {
+          "id": "N_SECV_BADGES_1",
+          "type": "npc_line",
+          "speakerId": "SECV_OPERATOR",
+          "text": "Like any blank form, it takes a mark.",
+          "next": "N_SECV_BADGES_2"
+        },
+        {
+          "id": "N_SECV_BADGES_2",
+          "type": "npc_line",
+          "speakerId": "SECV_OPERATOR",
+          "text": "It won\u2019t authorize you. (pause) But it gives you something on record. (pause) Later you can say: I followed procedure. (pause) Sort of.",
+          "next": "N_SECV_BADGES_3"
+        },
+        {
+          "id": "N_SECV_BADGES_3",
+          "type": "npc_line",
+          "speakerId": "SECV_OPERATOR",
+          "text": "If you can get a Records marker (pause) onto one of those\u2014stamp or kiosk or whatever\u2014(pause) then I can treat you as accountable (pause) and run doors.",
+          "next": "N_SECV_BADGES_4"
+        },
+        {
+          "id": "N_SECV_BADGES_4",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Understood.",
+          "next": "N_MAIN_MENU"
+        },
+        {
+          "id": "N_SECV_OLEA_1",
+          "type": "npc_line",
+          "speakerId": "SECV_OPERATOR",
+          "text": "I can log that you called. (pause) I can\u2019t log you onsite from this box.",
+          "next": "N_SECV_OLEA_2"
+        },
+        {
+          "id": "N_SECV_OLEA_2",
+          "type": "npc_line",
+          "speakerId": "SECV_OPERATOR",
+          "text": "That onsite flag comes from Records. (pause) Or the kiosk workflow. (pause) It\u2019s database fields. (pause) Not something I can take on faith. (pause) Over audio.",
+          "next": "N_SECV_OLEA_3"
+        },
+        {
+          "id": "N_SECV_OLEA_3",
+          "type": "npc_line",
+          "speakerId": "SECV_OPERATOR",
+          "text": "If I mark you present without it (pause) the audit trail points at me. (pause) I'm only cleared to respond (pause) to a record, not create one.",
+          "next": "N_SECV_OLEA_MENU"
+        },
+        {
+          "id": "N_SECV_OLEA_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "ASK_MIN",
+              "text": "(ask) Fine. Minimum requirement?",
+              "checks": [],
+              "next": "N_SECV_MIN_1"
+            },
+            {
+              "id": "LEAVE_ENDCALL",
+              "text": "(leave) End call.",
+              "checks": [],
+              "next": "N_SECV_ENDCALL_1"
+            }
+          ]
+        },
+        {
+          "id": "N_SECV_MIN_1",
+          "type": "npc_line",
+          "speakerId": "SECV_OPERATOR",
+          "text": "Minimum: name/date/type; site=onsite; Records authority marker.",
+          "next": "N_SECV_MIN_2"
+        },
+        {
+          "id": "N_SECV_MIN_2",
+          "type": "npc_line",
+          "speakerId": "SECV_OPERATOR",
+          "text": "Stamp is best. (pause) Kiosk receipt works. (pause) Handwritten note: people love it. (pause) It falls apart fast if anyone pushes.",
+          "next": "N_MAIN_MENU"
+        },
+        {
+          "id": "N_SECV_ENDCALL_1",
+          "type": "npc_line",
+          "speakerId": "SECV_OPERATOR",
+          "text": "Okay. (pause) Call me back when you're marked onsite. (pause) I know you're boxed in right now. (pause) Stay safe.",
+          "next": "N_MAIN_MENU"
+        },
+        {
+          "id": "N_COMMIT_DISCOVER",
+          "type": "end",
+          "outcomeId": "discover_badge_materials",
+          "effects": [
+            {
+              "key": "knowledge.badgeArtifactsMatter",
+              "action": "set",
+              "value": true
+            }
+          ]
+        },
+        {
+          "id": "N_END_LEAVE_DOWN",
+          "type": "end"
+        },
+        {
+          "id": "N_END_LEAVE_RIGHT",
+          "type": "end"
+        }
+      ]
+    }
+  ]
+}

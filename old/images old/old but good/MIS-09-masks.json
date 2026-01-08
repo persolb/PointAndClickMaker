@@ -1,0 +1,147 @@
+{
+  "screen_id": "MIS-09",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Breaker stub",
+      "slug": "breaker_stub",
+      "file": "images/MIS-09-mask-breaker_stub.png",
+      "boxes": [
+        {
+          "label": "Breaker stub",
+          "box_2d": [
+            471,
+            555,
+            508,
+            579
+          ]
+        },
+        {
+          "label": "Breaker stub",
+          "box_2d": [
+            470,
+            584,
+            507,
+            608
+          ]
+        },
+        {
+          "label": "Breaker stub",
+          "box_2d": [
+            469,
+            622,
+            506,
+            646
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Cable run",
+      "slug": "cable_run",
+      "file": "images/MIS-09-mask-cable_run.png",
+      "boxes": [
+        {
+          "label": "Cable run",
+          "box_2d": [
+            270,
+            273,
+            563,
+            562
+          ]
+        },
+        {
+          "label": "Cable run",
+          "box_2d": [
+            360,
+            508,
+            715,
+            713
+          ]
+        },
+        {
+          "label": "Cable run",
+          "box_2d": [
+            180,
+            574,
+            381,
+            608
+          ]
+        },
+        {
+          "label": "Cable run",
+          "box_2d": [
+            178,
+            597,
+            383,
+            631
+          ]
+        },
+        {
+          "label": "Cable run",
+          "box_2d": [
+            203,
+            650,
+            381,
+            674
+          ]
+        },
+        {
+          "label": "Cable run",
+          "box_2d": [
+            376,
+            529,
+            584,
+            550
+          ]
+        },
+        {
+          "label": "Cable run",
+          "box_2d": [
+            390,
+            549,
+            582,
+            580
+          ]
+        },
+        {
+          "label": "Cable run",
+          "box_2d": [
+            386,
+            576,
+            582,
+            606
+          ]
+        },
+        {
+          "label": "Cable run",
+          "box_2d": [
+            386,
+            602,
+            582,
+            631
+          ]
+        },
+        {
+          "label": "Cable run",
+          "box_2d": [
+            388,
+            629,
+            584,
+            656
+          ]
+        },
+        {
+          "label": "Cable run",
+          "box_2d": [
+            390,
+            653,
+            586,
+            680
+          ]
+        }
+      ]
+    }
+  ]
+}

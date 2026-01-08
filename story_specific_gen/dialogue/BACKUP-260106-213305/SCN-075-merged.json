@@ -1,0 +1,108 @@
+{
+  "changes": [
+    {
+      "action": "add",
+      "createScene": {
+        "dialogueGraphs": [
+          {
+            "id": "DG_DEBRIS_PILE",
+            "nodes": [
+              {
+                "id": "N_DEBRIS_DESC",
+                "next": "N_DEBRIS_MENU",
+                "speakerId": "NARRATOR",
+                "text": "A neat pile of windblown trash collects where the fence meets a concrete footing: plastic wrap, a cracked hardhat, and a laminated notice face-down in the dirt.\nThe notice is too muddy to read without committing to touching it.",
+                "type": "npc_line"
+              },
+              {
+                "choices": [
+                  {
+                    "id": "C_LOOK_LEAVE_IT",
+                    "next": "N_DEBRIS_LEAVE",
+                    "text": "look Leave it."
+                  },
+                  {
+                    "id": "C_USE_FLIP_NOTICE",
+                    "next": "N_DEBRIS_FLIP",
+                    "text": "use Flip the notice over."
+                  }
+                ],
+                "id": "N_DEBRIS_MENU",
+                "speakerId": "PLAYER",
+                "type": "player_choice"
+              },
+              {
+                "exitTo": "HUB-01",
+                "id": "N_DEBRIS_LEAVE",
+                "type": "end"
+              },
+              {
+                "id": "N_DEBRIS_FLIP",
+                "next": "N_DEBRIS_FLIP_MENU",
+                "speakerId": "NARRATOR",
+                "text": "You flip it with a pen instead of your hand. The laminate is intact, which feels intentional.\n\nThe notice reads: ALL POSTINGS MUST MATCH CURRENT ACCESS POLICY.\nNo issuer. No date. No contact. Just a rule that can\u2019t be satisfied.",
+                "type": "npc_line"
+              },
+              {
+                "choices": [
+                  {
+                    "conditions": [
+                      {
+                        "key": "compliance.signConflictLogged",
+                        "op": "!=",
+                        "value": true
+                      }
+                    ],
+                    "effects": [
+                      {
+                        "action": "set",
+                        "key": "story.act",
+                        "value": 1
+                      },
+                      {
+                        "action": "set",
+                        "key": "compliance.signConflictLogged",
+                        "value": true
+                      },
+                      {
+                        "action": "set",
+                        "key": "objectives.resolveSignageConflict",
+                        "value": true
+                      }
+                    ],
+                    "id": "C_USE_LOG_FROM_DEBRIS",
+                    "next": "END_DEBRIS_LOGGED",
+                    "text": "use Log signage conflict."
+                  },
+                  {
+                    "id": "C_LEAVE_BACK_FROM_DEBRIS_FLIP",
+                    "next": "END_DEBRIS_BACK",
+                    "text": "leave Back."
+                  }
+                ],
+                "id": "N_DEBRIS_FLIP_MENU",
+                "speakerId": "PLAYER",
+                "type": "player_choice"
+              },
+              {
+                "exitTo": "HUB-01",
+                "id": "END_DEBRIS_BACK",
+                "type": "end"
+              },
+              {
+                "exitTo": "HUB-01",
+                "id": "END_DEBRIS_LOGGED",
+                "outcomeId": "logged_signage_conflict_from_debris",
+                "type": "end"
+              }
+            ],
+            "sceneId": "SCN-075",
+            "startNodeId": "N_DEBRIS_DESC"
+          }
+        ]
+      },
+      "op": "create_scene"
+    }
+  ],
+  "sceneId": "SCN-075"
+}

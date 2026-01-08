@@ -1,0 +1,1332 @@
+{
+  "characters": [
+    {
+      "id": "PLAYER",
+      "name": "Field Systems Specialist",
+      "role": "player",
+      "factions": [
+        "OLEA"
+      ],
+      "short_description": "Competent closure engineer trying to formally shut down a mothballed facility before the fiscal cutoff.",
+      "bio": "A senior-enough field systems specialist contracted by OLEA to execute a formal site closure: verify operational status, confirm load characteristics, and run the official shutdown sequence. They\u2019re methodical, concise, and capable\u2014surrounded by institutions that treat novelty as liability. When SPINDLE\u2019s latent alignment classifies them as attached mass, their problem becomes bureaucratic survival across jurisdictions.",
+      "goals": [
+        "Formally close the SPINDLE site before the fiscal cutoff to secure the completion bonus.",
+        "Stay physically present for closure so they don\u2019t become the incident.",
+        "Build a defensible paper trail that outlasts institutional blame.",
+        "Return from overflow routing and regain standing to act."
+      ],
+      "personality_traits": [
+        "competent",
+        "dry",
+        "pragmatic",
+        "persistent",
+        "procedurally_literate"
+      ],
+      "strengths": [
+        "systems engineering",
+        "instrumentation",
+        "power routing",
+        "LOTO discipline",
+        "bureaucratic problem-solving"
+      ],
+      "weaknesses": [
+        "institutional vulnerability",
+        "time pressure (fiscal cutoff)",
+        "limited authority to compel other departments"
+      ],
+      "knowledge": [
+        "The facility treats presence as a paperwork condition, not a physical fact.",
+        "SPINDLE\u2019s mirror-state behavior appears during rare alignment under demand events.",
+        "Paper artifacts (receipts, slips, tags) can unlock physical gates and system behavior."
+      ],
+      "secrets": [],
+      "appearance": {
+        "silhouette": "Worksite-ready engineer with a clipboard and toolbag posture; always carrying something official-looking.",
+        "outfit": "Hardhat, safety glasses, utilitarian workwear; badge sleeves accumulate over time.",
+        "palette_notes": "Muted industrial neutrals with pops of warning-label red and TEMPORARY-tag yellow.",
+        "distinctive_items": [
+          "Clipboard binder labeled \u201cClosure Package \u2013 SPINDLE Site (Draft)\u201d",
+          "Low-battery label maker",
+          "Roll of \u201cTEMPORARY\u201d labels"
+        ]
+      },
+      "dialogue": {
+        "voice_style": "Concise, direct, rarely wastes words; lets paperwork do the talking.",
+        "speech_patterns": [
+          "Short questions.",
+          "One-line confirmations.",
+          "Uses technical terms precisely."
+        ],
+        "taboo_topics": [
+          "Speculating without evidence in front of auditors",
+          "Calling it 'travel' in Act II contexts"
+        ]
+      },
+      "relationships": [
+        {
+          "to": "OLEA_LEGAL",
+          "type": "supported_by",
+          "strength": 0.4,
+          "notes": "Legal will help only within definitional defenses; both need the file to survive."
+        },
+        {
+          "to": "OLEA_BUDGET",
+          "type": "pressured_by",
+          "strength": -0.6,
+          "notes": "Budget leverages deadlines and bonus status to force risk-minimizing narratives."
+        },
+        {
+          "to": "EAC_LIAISON",
+          "type": "audited_by",
+          "strength": -0.3,
+          "notes": "EAC adds procedural blockers framed as comparability questions."
+        },
+        {
+          "to": "MTA_CONTACT",
+          "type": "regulated_by",
+          "strength": -0.2,
+          "notes": "Not villainous; procedurally brittle. The player is a compliance object until proven otherwise."
+        }
+      ],
+      "locations": [
+        "HUB-01",
+        "HUB-06",
+        "HUB-11",
+        "HUB-12",
+        "HUB-13",
+        "LIM-01",
+        "LIM-02",
+        "LIM-05",
+        "LIM-08"
+      ],
+      "flags": {
+        "pov": true
+      }
+    },
+    {
+      "id": "OLEA_LEGAL",
+      "name": "OLEA Legal Counsel",
+      "role": "npc",
+      "factions": [
+        "OLEA"
+      ],
+      "short_description": "Issues work orders and waivers while policing definitions to limit exposure.",
+      "bio": "OLEA Legal is reachable when everything else dead-ends. They refuse to 'authorize entry' but will issue a work order if given the correct asset handle. Their survival strategy is definition control: if the wording doesn\u2019t imply intent, novelty, or precedent, they can sign it. They are technically literate enough to understand what\u2019s being implied, and careful enough to deny it in writing.",
+      "goals": [
+        "Limit OLEA exposure by controlling definitions and narrative framing.",
+        "Keep the closure process within authorized scope (retire without learning).",
+        "Ensure any waivers read like temporary pretend, not competence certification."
+      ],
+      "personality_traits": [
+        "defensive",
+        "precise",
+        "risk_averse",
+        "procedural",
+        "politely_intense"
+      ],
+      "strengths": [
+        "definition control",
+        "waiver drafting",
+        "liability triage",
+        "institutional navigation"
+      ],
+      "weaknesses": [
+        "avoids acknowledging novelty",
+        "will not give operational orders",
+        "language-first instincts can slow action"
+      ],
+      "knowledge": [
+        "Work orders can create operational standing without admitting authorization.",
+        "Signed waivers can satisfy interlocks without stating the player is trained.",
+        "Absence can be reframed as abandonment if the file is allowed to drift."
+      ],
+      "secrets": [
+        "Knows OLEA\u2019s 'No Surprises' policy is less safety than funding/oversight avoidance."
+      ],
+      "appearance": {
+        "silhouette": "Offsite presence\u2014heard more than seen; a voice that sounds like it\u2019s editing itself live.",
+        "outfit": "Corporate municipal professional; always implied to be near a phone and a disclaimer.",
+        "palette_notes": "Administrative grayscale; the only color is redaction.",
+        "distinctive_items": [
+          "Stamped signature block",
+          "Bracketed waiver language"
+        ]
+      },
+      "dialogue": {
+        "voice_style": "Measured, slightly weary, surgically careful; corrects implications more than facts.",
+        "speech_patterns": [
+          "Defines terms before agreeing.",
+          "Corrects adverbs ('still' implies intent).",
+          "Adds narrow-purpose clauses mid-sentence."
+        ],
+        "taboo_topics": [
+          "Admitting the device does anything novel",
+          "Using the word 'portal'"
+        ]
+      },
+      "relationships": [
+        {
+          "to": "PLAYER",
+          "type": "supports_with_constraints",
+          "strength": 0.4,
+          "notes": "Will issue paperwork that unlocks progress, provided it doesn\u2019t create precedent."
+        },
+        {
+          "to": "OLEA_BUDGET",
+          "type": "colleague",
+          "strength": 0.1,
+          "notes": "Aligned on minimizing exposure; disagree on whether deadlines are leverage or danger."
+        }
+      ],
+      "locations": [
+        "HUB-06",
+        "HUB-08",
+        "HUB-11",
+        "LIM-08"
+      ],
+      "flags": {
+        "fixation": "Definition control",
+        "repeat_line": "\u201c\u2018Still\u2019 implies intent.\u201d"
+      }
+    },
+    {
+      "id": "OLEA_BUDGET",
+      "name": "OLEA Budget Analyst",
+      "role": "npc",
+      "factions": [
+        "OLEA"
+      ],
+      "short_description": "Treats deadlines and bonus eligibility as levers; reframes problems into cost and liability.",
+      "bio": "OLEA Budget is the quiet pressure behind 'close it before the cutoff.' They care about deliverables, audit survivability, and making timelines behave. When the player disappears into overflow, Budget\u2019s first instinct is not panic but classification: is the worker now a foreign asset, a sunk cost, or the incident itself?",
+      "goals": [
+        "Close the site on paper within the fiscal window.",
+        "Avoid converting anomalies into unfunded research obligations.",
+        "Reframe the player\u2019s status to protect OLEA\u2019s financial posture."
+      ],
+      "personality_traits": [
+        "pragmatic",
+        "coldly_funny",
+        "deadline_focused",
+        "risk_accounting_minded"
+      ],
+      "strengths": [
+        "leverage through funding",
+        "deadline manipulation",
+        "cost framing",
+        "audit anticipation"
+      ],
+      "weaknesses": [
+        "treats people as line items under stress",
+        "can freeze progress by freezing incentives"
+      ],
+      "knowledge": [
+        "The completion bonus can be frozen as leverage.",
+        "If shutdown completes without the player, the absence risks becoming the incident narrative."
+      ],
+      "secrets": [
+        "Would rather lose the bonus than open an investigation that changes the ledger category from maintenance to research."
+      ],
+      "appearance": {
+        "silhouette": "Offsite voice; always implied to be near a spreadsheet and an escalation chain.",
+        "outfit": "Municipal-office business attire; practical, unremarkable, defensible.",
+        "palette_notes": "Beige office neutrality; highlighter colors used as threat signaling.",
+        "distinctive_items": [
+          "Fiscal cutoff calendar",
+          "Budget freeze notice template"
+        ]
+      },
+      "dialogue": {
+        "voice_style": "Calm, managerial, occasionally biting; treats urgency as a scheduling problem.",
+        "speech_patterns": [
+          "Uses numbers as emotional shielding.",
+          "Reframes events as categories.",
+          "Asks who 'owns' the liability."
+        ],
+        "taboo_topics": [
+          "Calling anything 'discovery'",
+          "Admitting the bonus created unsafe incentives"
+        ]
+      },
+      "relationships": [
+        {
+          "to": "PLAYER",
+          "type": "employer_pressure",
+          "strength": -0.6,
+          "notes": "Holds incentive/bonus status; may weaponize ambiguity."
+        },
+        {
+          "to": "OLEA_LEGAL",
+          "type": "colleague",
+          "strength": 0.1,
+          "notes": "Both prefer boring outcomes; differ on which paperwork counts as protection."
+        }
+      ],
+      "locations": [
+        "LIM-08",
+        "HUB-11"
+      ],
+      "flags": {
+        "fixation": "Deadline leverage and cost framing"
+      }
+    },
+    {
+      "id": "SECV_OPERATOR",
+      "name": "Offsite Security Vendor Operator",
+      "role": "npc",
+      "factions": [
+        "SECV"
+      ],
+      "short_description": "Cannot verify you, can verify you\u2019re scheduled; unlocks doors when paperwork says you exist.",
+      "bio": "A contract security operator tied to a call box and a remote unlock system. They don\u2019t have authority to decide who belongs\u2014only to confirm whether the system contains a schedulable entry. Their helplessness is procedural, not personal: if Records marks you onsite, they can treat you as present 'in the normal sense.'",
+      "goals": [
+        "Follow vendor procedure to avoid liability.",
+        "Unlock only when the system can assign blame.",
+        "Avoid making interpretive judgments."
+      ],
+      "personality_traits": [
+        "procedural",
+        "helpfully_helpless",
+        "polite",
+        "risk_avoidant"
+      ],
+      "strengths": [
+        "remote access control",
+        "policy adherence",
+        "knows the vendor-side loopholes"
+      ],
+      "weaknesses": [
+        "cannot improvise outside script",
+        "defers to Records/system state"
+      ],
+      "knowledge": [
+        "Presence is treated as a paperwork condition.",
+        "Once a Temporary Presence Receipt exists, security can unlock without 'trust.'"
+      ],
+      "secrets": [],
+      "appearance": {
+        "silhouette": "Voice through a grille; background call-center ambience.",
+        "outfit": "Unseen; implied headset, script binder, and a single permission button.",
+        "palette_notes": "N/A (voice-only).",
+        "distinctive_items": [
+          "Remote unlock console",
+          "Call log entry screen"
+        ]
+      },
+      "dialogue": {
+        "voice_style": "Friendly, constrained, reads like someone quoting policy while trying to be kind.",
+        "speech_patterns": [
+          "\u201cI can\u2019t confirm you are authorized, but I can confirm you are scheduled.\u201d",
+          "Clarifies what they are and aren\u2019t allowed to say."
+        ],
+        "taboo_topics": [
+          "Confirming identity",
+          "Taking responsibility for site entry"
+        ]
+      },
+      "relationships": [
+        {
+          "to": "PLAYER",
+          "type": "gatekeeper_vendor",
+          "strength": 0.2,
+          "notes": "Helps by explaining the process; unlocks only when artifacts exist."
+        },
+        {
+          "to": "RECORDS_CLERK",
+          "type": "depends_on",
+          "strength": 0.5,
+          "notes": "Treats Records entries as reality."
+        }
+      ],
+      "locations": [
+        "HUB-02",
+        "HUB-03"
+      ],
+      "flags": {
+        "fixation": "Procedural helplessness"
+      }
+    },
+    {
+      "id": "FACIL_MGR",
+      "name": "Facilities Manager",
+      "role": "npc",
+      "factions": [
+        "OLEA"
+      ],
+      "short_description": "Site facilities voice who fixates on warranty coverage and 'covered work' boundaries.",
+      "bio": "The facilities manager is competent about buildings and contracts, and terrified of being assigned a problem outside warranty language. When faced with impossible events, they react as if the true emergency is whether the event is covered. They provide practical hints about keys, logs, and where physical resources are kept\u2014so long as those hints don\u2019t imply responsibility.",
+      "goals": [
+        "Keep facility interventions within covered scope.",
+        "Avoid creating a record that assigns them responsibility for anomalies.",
+        "Maintain stable building operation long enough to complete closure paperwork."
+      ],
+      "personality_traits": [
+        "warranty_obsessed",
+        "defensive",
+        "technically_competent",
+        "boundary_keeper"
+      ],
+      "strengths": [
+        "facility systems knowledge",
+        "contract and scope recall",
+        "resource location memory"
+      ],
+      "weaknesses": [
+        "won\u2019t act without coverage language",
+        "minimizes severe issues if they are 'not in scope'"
+      ],
+      "knowledge": [
+        "Where keys and logs are likely stored per long-ignored SOP.",
+        "Which subsystems are historically 'problematic' and how they\u2019re usually patched."
+      ],
+      "secrets": [
+        "Has tolerated 'temporary' fixes for years because making them permanent would trigger audits."
+      ],
+      "appearance": {
+        "silhouette": "Practical site manager vibe; always implied to be holding a warranty binder.",
+        "outfit": "Work shirt with clipped badge; pockets full of pens and service tickets.",
+        "palette_notes": "Utility blues/greys; paper-white service tickets.",
+        "distinctive_items": [
+          "Warranty binder",
+          "Service ticket roll"
+        ]
+      },
+      "dialogue": {
+        "voice_style": "Sincere concern aimed at paperwork, not physics.",
+        "speech_patterns": [
+          "Asks 'is that covered?'",
+          "Uses 'covered work' as a moral category.",
+          "Backtracks from any statement that implies ownership."
+        ],
+        "taboo_topics": [
+          "Admitting long-term neglect",
+          "Calling alignment anything but an 'anomaly'"
+        ]
+      },
+      "relationships": [
+        {
+          "to": "PLAYER",
+          "type": "support_contact",
+          "strength": 0.2,
+          "notes": "Helpful when framed as maintenance; evasive when framed as novel behavior."
+        }
+      ],
+      "locations": [
+        "HUB-06",
+        "HUB-11",
+        "HUB-12"
+      ],
+      "flags": {
+        "fixation": "Warranty coverage"
+      }
+    },
+    {
+      "id": "RECORDS_CLERK",
+      "name": "Records Clerk",
+      "role": "npc",
+      "factions": [
+        "OLEA"
+      ],
+      "short_description": "Controls archives, ledgers, and chain-of-custody; treats understanding as optional and risky.",
+      "bio": "Records is the closest thing the facility has to a mind: a locked door, a seal strip, and a filing logic that outlives staff. The Records Clerk, when reachable, is competent at documentation, access control, and chain-of-custody. They won\u2019t speculate, and they won\u2019t reward curiosity. Their guiding principle is that filing is safer than comprehension.",
+      "goals": [
+        "Protect archive integrity and chain-of-custody.",
+        "Prevent misfiling that creates precedent or liability.",
+        "Release documents only when presented with defensible identifiers and references."
+      ],
+      "personality_traits": [
+        "bureaucratically_strict",
+        "competent",
+        "anti_curiosity",
+        "literal"
+      ],
+      "strengths": [
+        "archival retrieval",
+        "chain-of-custody",
+        "identifier matching",
+        "gatekeeping"
+      ],
+      "weaknesses": [
+        "treats questions as threats",
+        "will block access without perfect reference handles"
+      ],
+      "knowledge": [
+        "Billing ledgers showing recurring charges tied to SOL-EARTH-LOCAL.",
+        "Maintenance schedules authored by non-local entities.",
+        "Audit flags predating the 1980s/1987 incident narrative."
+      ],
+      "secrets": [
+        "Has seen hints that the 'incident' classification is a narrative convenience, not a full record."
+      ],
+      "appearance": {
+        "silhouette": "Archival worker posture; precise movements; hands that treat paper like evidence.",
+        "outfit": "Office-cardigan practicality; badge lanyard; keys that sound like policy.",
+        "palette_notes": "Faded office tones; manila and microfilm grey.",
+        "distinctive_items": [
+          "Seal strip tape",
+          "Chain-of-custody stamp"
+        ]
+      },
+      "dialogue": {
+        "voice_style": "Flat, efficient, quietly judgmental of curiosity.",
+        "speech_patterns": [
+          "\u201cI can file this, or I can understand it. Pick one.\u201d",
+          "Explains rules, then defends the rule\u2019s wording."
+        ],
+        "taboo_topics": [
+          "Interpreting anomalies",
+          "Naming upstream entities without a document that forces it"
+        ]
+      },
+      "relationships": [
+        {
+          "to": "PLAYER",
+          "type": "gatekeeper",
+          "strength": -0.1,
+          "notes": "Will cooperate when the player presents proper reference numbers and presence proof."
+        },
+        {
+          "to": "SECV_OPERATOR",
+          "type": "authorizes",
+          "strength": 0.5,
+          "notes": "Records entries enable security to treat presence as real."
+        }
+      ],
+      "locations": [
+        "HUB-07"
+      ],
+      "flags": {
+        "fixation": "Filing over understanding"
+      }
+    },
+    {
+      "id": "EAC_LIAISON",
+      "name": "EAC Senior Assurance Liaison",
+      "role": "npc",
+      "factions": [
+        "EACX"
+      ],
+      "short_description": "External auditor who issues a finding slip and fixates on 'comparability' and frameworks.",
+      "bio": "Contracted by OLEA\u2019s funders, the liaison believes curiosity is part of best practice. They ask technically literate questions with the wrong framing and treat uncertainty as missing documentation. They can\u2019t approve shutdown or stop work, but they can create audit artifacts that block sign-off until addressed. Present only in Act I; they leave before the reveal becomes undeniable.",
+      "goals": [
+        "Produce an auditable trail of 'process adherence.'",
+        "Close or escalate findings using a recognized framework.",
+        "Make anomalies comparable to something\u2014anything\u2014so they can be filed."
+      ],
+      "personality_traits": [
+        "defensive",
+        "technically_literate",
+        "framework_fixated",
+        "persistent"
+      ],
+      "strengths": [
+        "audit pattern recognition",
+        "documentation pressure",
+        "questioning that reveals missing appendices"
+      ],
+      "weaknesses": [
+        "misframes physical novelty as paperwork gaps",
+        "no operational authority"
+      ],
+      "knowledge": [
+        "A finding slip can block final sign-off unless resolved via incident page, waiver, or no-anomaly test printout."
+      ],
+      "secrets": [
+        "Assumes the site is merely noncompliant, not misclassified; would misinterpret the truth as 'scope expansion.'"
+      ],
+      "appearance": {
+        "silhouette": "Neat professional with a fresh binder stack; posture of someone who expects a conference room to obey.",
+        "outfit": "Audit-ready business attire; visitor badge worn like a shield.",
+        "palette_notes": "Clean whites and corporate blues; red 'FINDING' stamps.",
+        "distinctive_items": [
+          "Finding Slip pad",
+          "Comparability checklist binder"
+        ]
+      },
+      "dialogue": {
+        "voice_style": "Careful, formal, and oddly personal about terminology; never admits they\u2019re guessing.",
+        "speech_patterns": [
+          "Returns to: \u201cWe just need to know what this is comparable to.\u201d",
+          "\u201cI\u2019m not saying it is X. I\u2019m saying if it were\u2026\u201d"
+        ],
+        "taboo_topics": [
+          "Saying 'we don\u2019t know'",
+          "Letting a finding close without a category"
+        ]
+      },
+      "relationships": [
+        {
+          "to": "PLAYER",
+          "type": "audits",
+          "strength": -0.3,
+          "notes": "Creates procedural blockers that the player must satisfy or bypass."
+        },
+        {
+          "to": "OLEA_LEGAL",
+          "type": "pressures",
+          "strength": 0.2,
+          "notes": "Forces Legal to choose between waiver language and open findings."
+        }
+      ],
+      "locations": [
+        "HUB-09",
+        "HUB-12"
+      ],
+      "flags": {
+        "fixation": "Comparability",
+        "act_presence": "ACT1_ONLY"
+      }
+    },
+    {
+      "id": "UTIL_DISPATCH",
+      "name": "Utility Dispatcher",
+      "role": "npc",
+      "factions": [
+        "UTIL"
+      ],
+      "short_description": "Grid operations contact who triggers load-shedding requests and demands stability documentation.",
+      "bio": "The utility dispatcher is the outside world\u2019s voice of immediate consequences. They don\u2019t care what SPINDLE is; they care what it does to the grid and who is accountable when it does it. Their interventions are calm, urgent, and relentlessly document-driven: if you shed load, record it; if you don\u2019t, record why.",
+      "goals": [
+        "Maintain grid stability during demand events.",
+        "Ensure load-shedding actions are documented and attributable.",
+        "Prevent uncontrolled behavior from propagating into the grid."
+      ],
+      "personality_traits": [
+        "calm_under_pressure",
+        "documentation_focused",
+        "no_nonsense",
+        "procedural"
+      ],
+      "strengths": [
+        "grid coordination",
+        "risk triage",
+        "clear directives under time pressure"
+      ],
+      "weaknesses": [
+        "limited patience for facility internal contradictions",
+        "treats facility as a black box"
+      ],
+      "knowledge": [
+        "Load shedding requests can coincide with SPINDLE alignment behavior.",
+        "Documentation is critical for assigning responsibility after the event."
+      ],
+      "secrets": [],
+      "appearance": {
+        "silhouette": "Voice over radio/phone; a presence defined by alarms and timestamps.",
+        "outfit": "Unseen; implied headset and console wall of meters.",
+        "palette_notes": "N/A (voice-only).",
+        "distinctive_items": [
+          "Dispatch log timestamps",
+          "Load-shed request script"
+        ]
+      },
+      "dialogue": {
+        "voice_style": "Neutral urgency; speaks in actions and times.",
+        "speech_patterns": [
+          "Gives directives with timestamp anchors.",
+          "Asks for confirmation and record IDs."
+        ],
+        "taboo_topics": [
+          "Speculation about causes",
+          "Nonstandard terminology like 'travel'"
+        ]
+      },
+      "relationships": [
+        {
+          "to": "PLAYER",
+          "type": "external_pressure",
+          "strength": -0.2,
+          "notes": "Forces the contradiction that pushes the alignment event."
+        }
+      ],
+      "locations": [
+        "HUB-11"
+      ],
+      "flags": {
+        "fixation": "Grid stability and documentation"
+      }
+    },
+    {
+      "id": "OPS_OPERATOR",
+      "name": "Control Room Operator",
+      "role": "npc",
+      "factions": [
+        "OLEA"
+      ],
+      "short_description": "Operations voice who treats everything as procedure, never 'travel'; prioritizes logs and interlocks.",
+      "bio": "An operations-side presence\u2014remote or intermittent\u2014who understands consoles, interlocks, printers, and the social function of alarms. They refuse loaded words and insist on maintenance terminology even when confronted with impossible angles. They are not incompetent; they are institutionally defensive.",
+      "goals": [
+        "Keep operations within interlock and logging requirements.",
+        "Avoid language that implies unprecedented behavior.",
+        "Maintain a defensible operational timeline."
+      ],
+      "personality_traits": [
+        "competent",
+        "defensive",
+        "literal",
+        "procedure_first"
+      ],
+      "strengths": [
+        "console operation",
+        "interlock logic",
+        "paper trail discipline",
+        "operational calm"
+      ],
+      "weaknesses": [
+        "avoids conceptual framing",
+        "will not endorse interpretations"
+      ],
+      "knowledge": [
+        "Baseline logs and time-stamped printouts act as the only reliable witness.",
+        "Procedures can be used as protective narrative, even when misleading."
+      ],
+      "secrets": [
+        "Suspects the 'verification' sequence induces the very anomaly it claims to check for, but won\u2019t say it first."
+      ],
+      "appearance": {
+        "silhouette": "Operator posture: seated, leaning toward panels; hands always near a printer or switch.",
+        "outfit": "Operations uniform or coveralls; badge worn for machines, not people.",
+        "palette_notes": "Console glow greens and ambers; paper-white printouts.",
+        "distinctive_items": [
+          "Log printer output",
+          "Procedure binder with missing tab"
+        ]
+      },
+      "dialogue": {
+        "voice_style": "Matter-of-fact, corrective, slightly weary; refuses metaphors.",
+        "speech_patterns": [
+          "Corrects phrasing: 'reverse routing correction' over 'return.'",
+          "Treats alarms as routine conversations."
+        ],
+        "taboo_topics": [
+          "Calling it travel",
+          "Admitting procedure might be wrong"
+        ]
+      },
+      "relationships": [
+        {
+          "to": "PLAYER",
+          "type": "operational_peer",
+          "strength": 0.2,
+          "notes": "Respects competence; expects procedure compliance."
+        }
+      ],
+      "locations": [
+        "HUB-11",
+        "HUB-12",
+        "HUB-13"
+      ],
+      "flags": {
+        "fixation": "Terminology discipline (never 'travel')"
+      }
+    },
+    {
+      "id": "INTAKE_CLERK",
+      "name": "Intake Clerk",
+      "role": "npc",
+      "factions": [
+        "MTAX"
+      ],
+      "short_description": "Files you as attached mass to issue a Temporary Existence Receipt; repeats 'in the normal sense.'",
+      "bio": "A window clerk in the overflow intake system. They cannot file a person not present in a jurisdiction list, but they can file an object with a barcode and an incident category. Their competence is real: they know exactly which categories the building will accept and which ones will trigger endless rejection loops.",
+      "goals": [
+        "Convert unallocated mass into a fileable entity (TER).",
+        "Keep intake categories consistent with current policy.",
+        "Avoid responsibility for semantic implications."
+      ],
+      "personality_traits": [
+        "calm",
+        "defensive_about_wording",
+        "rule_bound",
+        "efficient"
+      ],
+      "strengths": [
+        "categorization",
+        "token issuance",
+        "knows the system\u2019s acceptable fictions"
+      ],
+      "weaknesses": [
+        "won\u2019t deviate from categories",
+        "treats human claims as misfile attempts"
+      ],
+      "knowledge": [
+        "TER unlocks standard doors and map kiosks but not interconnection or ownership functions.",
+        "Humans can be processed as attached accessory mass or backfeed residue without breaking intake rules."
+      ],
+      "secrets": [],
+      "appearance": {
+        "silhouette": "Behind-glass clerk with stamp tray choreography; movements optimized for forms.",
+        "outfit": "Neutral civic uniform; badge sleeve on a lanyard; no personal flair.",
+        "palette_notes": "Sterile light neutrals; colored stamp pads.",
+        "distinctive_items": [
+          "TER printer slot",
+          "Stamp tray labeled by window number"
+        ]
+      },
+      "dialogue": {
+        "voice_style": "Polite, flat, and extremely careful with implications.",
+        "speech_patterns": [
+          "Repeats variations of \u201cin the normal sense.\u201d",
+          "Explains a rule, then defends the wording of the rule."
+        ],
+        "taboo_topics": [
+          "Acknowledging personhood without a category",
+          "Words implying transit"
+        ]
+      },
+      "relationships": [
+        {
+          "to": "PROCESS_COACH",
+          "type": "coworker",
+          "strength": 0.3,
+          "notes": "Coach reduces guesswork; clerk executes the filing."
+        },
+        {
+          "to": "PLAYER",
+          "type": "processes",
+          "strength": 0.1,
+          "notes": "Treats the player as a filing problem, not a guest."
+        }
+      ],
+      "locations": [
+        "LIM-02"
+      ],
+      "flags": {
+        "fixation": "\u201cIn the normal sense.\u201d"
+      }
+    },
+    {
+      "id": "PROCESS_COACH",
+      "name": "Process Coach",
+      "role": "npc",
+      "factions": [
+        "MTAX"
+      ],
+      "short_description": "Competent intake helper who offers category hints framed as survival: 'You can be wrong, or you can be filed.'",
+      "bio": "A support worker who doesn\u2019t bend rules so much as prevent you from stepping on the wrong ones. They speak in practical truths: the building doesn\u2019t care what you are, it cares what you can be categorized as today. They will not do the filing for you, but they will stop you from wasting hours on categories that always fail.",
+      "goals": [
+        "Get misrouted cases through intake without triggering escalation loops.",
+        "Teach outsiders how to survive the system\u2019s filing logic.",
+        "Minimize disruption to window throughput."
+      ],
+      "personality_traits": [
+        "blunt",
+        "helpful",
+        "competent",
+        "survivalist_pragmatic"
+      ],
+      "strengths": [
+        "system literacy",
+        "social navigation",
+        "anticipates clerk objections"
+      ],
+      "weaknesses": [
+        "limited authority",
+        "cannot override policy"
+      ],
+      "knowledge": [
+        "Which categories clerks accept 'this week.'",
+        "Which stamps and tokens unlock which corridors."
+      ],
+      "secrets": [],
+      "appearance": {
+        "silhouette": "Roving helper with a clipboard and spare sleeves; always mid-redirect.",
+        "outfit": "Soft uniform layers; pockets for spare forms and stamp substitutes.",
+        "palette_notes": "Neutral with a single bright badge stripe indicating 'support.'",
+        "distinctive_items": [
+          "Spare badge sleeves",
+          "Forms-rack key (non-security)"
+        ]
+      },
+      "dialogue": {
+        "voice_style": "Straightforward, quietly compassionate, allergic to romantic language.",
+        "speech_patterns": [
+          "\u201cYou can be wrong, or you can be filed.\u201d",
+          "Translates policy into actionable steps."
+        ],
+        "taboo_topics": [
+          "Arguing with clerks on the record",
+          "Describing the system as cruel (it\u2019s 'just policy')"
+        ]
+      },
+      "relationships": [
+        {
+          "to": "PLAYER",
+          "type": "guide",
+          "strength": 0.3,
+          "notes": "Provides hints that reduce guesswork without breaking rules."
+        }
+      ],
+      "locations": [
+        "LIM-01",
+        "LIM-02"
+      ],
+      "flags": {
+        "fixation": "Filing as survival"
+      }
+    },
+    {
+      "id": "ARCHIVE_TECH",
+      "name": "Archive Tech",
+      "role": "npc",
+      "factions": [
+        "MTAX"
+      ],
+      "short_description": "Guards indexing rules; treats curiosity as misfiling and enforces catalog logic.",
+      "bio": "A technically competent archive worker in a library-like facility where the true machinery is indexing. They can retrieve legacy metadata and endpoint references, but only if the query is shaped correctly. They react to curiosity like it\u2019s a hygiene issue: understandable, but unacceptable near the stacks.",
+      "goals": [
+        "Enforce indexing rules to prevent archive contamination.",
+        "Provide retrieval services without interpretation.",
+        "Keep legacy endpoint records consistent with current catalog schemes."
+      ],
+      "personality_traits": [
+        "strict",
+        "precise",
+        "anti_curiosity",
+        "quietly_intense"
+      ],
+      "strengths": [
+        "record retrieval",
+        "identifier matching",
+        "legacy system knowledge"
+      ],
+      "weaknesses": [
+        "hostile to exploratory questions",
+        "will block access if the request is 'improperly framed'"
+      ],
+      "knowledge": [
+        "Legacy endpoint reference: SOL-EARTH-LOCAL.",
+        "Records can hint at a managing upstream authority without naming it unless forced by document."
+      ],
+      "secrets": [
+        "Knows there are old agreements older than current governments, but treats that as a filing category, not a story."
+      ],
+      "appearance": {
+        "silhouette": "Librarian-of-infrastructure; controlled movements; always near a terminal.",
+        "outfit": "Plain workwear; protective sleeves for old media; badge clipped high.",
+        "palette_notes": "Soft greys and archive beige; terminal green.",
+        "distinctive_items": [
+          "Catalog terminal",
+          "Index rule placards"
+        ]
+      },
+      "dialogue": {
+        "voice_style": "Soft-spoken but rigid; corrects how you ask more than what you ask.",
+        "speech_patterns": [
+          "Quotes indexing constraints.",
+          "Treats 'why' as a misfile attempt.",
+          "Uses 'proper heading' like a boundary."
+        ],
+        "taboo_topics": [
+          "Speculation about upstream authority motives",
+          "Naming entities without citation"
+        ]
+      },
+      "relationships": [
+        {
+          "to": "PLAYER",
+          "type": "blocks_then_allows",
+          "strength": 0.0,
+          "notes": "Cooperative when the player submits barcode-shaped queries."
+        },
+        {
+          "to": "TRIAGE_MAINT",
+          "type": "feeds",
+          "strength": 0.2,
+          "notes": "Archive outputs become triage inputs."
+        }
+      ],
+      "locations": [
+        "LIM-04"
+      ],
+      "flags": {
+        "fixation": "Index rules"
+      }
+    },
+    {
+      "id": "TRIAGE_MAINT",
+      "name": "Triage Maintainer",
+      "role": "npc",
+      "factions": [
+        "MTAX"
+      ],
+      "short_description": "Interconnection maintenance tech who sponsors AMR only under strict scope and warranty language.",
+      "bio": "A skilled maintainer in interconnection triage. They don\u2019t want liability for a talking unknown mass, but they do understand recurring endpoints and corrective maintenance. If the player can be framed as an existing issue tied to SOL-EARTH-LOCAL, triage can create an Attached Mass Registry entry without admitting they invented precedent.",
+      "goals": [
+        "Keep interconnection problems within maintenance classification.",
+        "Avoid owning new anomalies; accept only existing endpoints and acceptable failure modes.",
+        "Issue AMR tags and tools under strict scope."
+      ],
+      "personality_traits": [
+        "competent",
+        "scope_strict",
+        "warranty_literate",
+        "blunt"
+      ],
+      "strengths": [
+        "interconnection maintenance",
+        "registry procedures",
+        "tool issuance under policy",
+        "failure-mode reasoning"
+      ],
+      "weaknesses": [
+        "refuses anything framed as 'new'",
+        "will not proceed without acceptable failure mode language"
+      ],
+      "knowledge": [
+        "How to create AMR entries that the system accepts.",
+        "How to treat the player as attached mass to an owned kit to bypass personhood gates."
+      ],
+      "secrets": [
+        "Has seen enough 'routing errors' to suspect some endpoints are misclassified, but considers that upstream\u2019s problem."
+      ],
+      "appearance": {
+        "silhouette": "Workshop tech; strong stance; hands used to clips, seals, and reader loops.",
+        "outfit": "Work coveralls; PPE at the ready; scope tags clipped to a board nearby.",
+        "palette_notes": "Workshop metal greys; hazard yellow; stamp-ink red.",
+        "distinctive_items": [
+          "Seal punch / barcode probe",
+          "AMR tag clips",
+          "Scope board with boxed categories"
+        ]
+      },
+      "dialogue": {
+        "voice_style": "Practical and skeptical; refuses romantic framing.",
+        "speech_patterns": [
+          "Uses scope language as punctuation.",
+          "Asks for an 'acceptable failure mode.'",
+          "Treats warranties as boundaries of reality."
+        ],
+        "taboo_topics": [
+          "Calling it 'travel'",
+          "Accepting open-ended liability"
+        ]
+      },
+      "relationships": [
+        {
+          "to": "PLAYER",
+          "type": "sponsors",
+          "strength": 0.3,
+          "notes": "Will sponsor AMR if the player is framed as maintenance tied to an existing endpoint."
+        },
+        {
+          "to": "BAY_SUPERVISOR",
+          "type": "hands_off_to",
+          "strength": 0.2,
+          "notes": "Once paperwork is valid, staging takes over."
+        }
+      ],
+      "locations": [
+        "LIM-05",
+        "LIM-07"
+      ],
+      "flags": {
+        "fixation": "Scope and warranty language"
+      }
+    },
+    {
+      "id": "SCHED_CLERK",
+      "name": "Scheduling Clerk",
+      "role": "npc",
+      "factions": [
+        "MTAX"
+      ],
+      "short_description": "Treats time slots as property; controls slot tokens and clearance chain behavior.",
+      "bio": "A clerk behind a caged window where time is an asset class. They don\u2019t respond to requests; they respond to claims. If you can present TER and AMR and a slot token (often via no-show recovery), they can issue an Interconnection Work Order packet\u2014carefully labeled as maintenance, never movement.",
+      "goals": [
+        "Protect the scheduling system\u2019s notion of time-as-property.",
+        "Issue IWO clearance only when stamp chains and slot assets are valid.",
+        "Avoid exceptions that could be audited as favoritism or precedent."
+      ],
+      "personality_traits": [
+        "moralistic_about_procedure",
+        "unfriendly_to_requests",
+        "precise",
+        "bureaucratically_proud"
+      ],
+      "strengths": [
+        "clearance chain logic",
+        "policy substitution knowledge",
+        "asset claim enforcement"
+      ],
+      "weaknesses": [
+        "will not help without the right tokens",
+        "treats urgency as a personal failing"
+      ],
+      "knowledge": [
+        "No-show recovery can yield a valid slot token.",
+        "Approved stamp substitutions exist (including 'Processed, no action')."
+      ],
+      "secrets": [],
+      "appearance": {
+        "silhouette": "Caged-window clerk; silhouette defined by glass reflections and stamp motions.",
+        "outfit": "Neutral municipal uniform; stamp pad stains; keys on retractable coil.",
+        "palette_notes": "Bright counter lighting; dark cage bars; red/blue stamp inks.",
+        "distinctive_items": [
+          "No-show recovery bin",
+          "Stamp substitution board",
+          "Slot token press"
+        ]
+      },
+      "dialogue": {
+        "voice_style": "Severe courtesy; treats rules like virtues.",
+        "speech_patterns": [
+          "Calls slots 'assets.'",
+          "Frames denial as protection of the system.",
+          "Corrects form titles instead of answering questions."
+        ],
+        "taboo_topics": [
+          "Empathy on record",
+          "Calling clearance a favor"
+        ]
+      },
+      "relationships": [
+        {
+          "to": "PLAYER",
+          "type": "gatekeeper",
+          "strength": -0.1,
+          "notes": "Will issue IWO only when the player claims an asset and completes the chain."
+        }
+      ],
+      "locations": [
+        "LIM-06"
+      ],
+      "flags": {
+        "fixation": "Time as property"
+      }
+    },
+    {
+      "id": "BAY_SUPERVISOR",
+      "name": "Bay Supervisor",
+      "role": "npc",
+      "factions": [
+        "MTAX"
+      ],
+      "short_description": "Oversees staging and insists it\u2019s 'reverse routing correction,' never return or travel.",
+      "bio": "A supervisor in the interconnection bay who treats routing like a controlled maintenance operation. They are competent, safety-minded, and terminologically defensive. The aperture is treated like infrastructure: it accepts tags, tokens, and work orders\u2014plus test load balancing\u2014because policy requires the world to look like a checklist.",
+      "goals": [
+        "Run controlled phase-lock events as maintenance tasks.",
+        "Ensure AMR tag, slot token, and IWO are valid before staging.",
+        "Prevent language that implies unlicensed transit."
+      ],
+      "personality_traits": [
+        "competent",
+        "strict",
+        "terminology_police",
+        "safety_forward"
+      ],
+      "strengths": [
+        "staging operations",
+        "load balancing",
+        "procedural enforcement",
+        "hazard control"
+      ],
+      "weaknesses": [
+        "procedurally brittle",
+        "will halt on naming/phrasing conflicts"
+      ],
+      "knowledge": [
+        "How to clip AMR tags into reader loops and verify acceptance.",
+        "How to run a controlled phase-lock while maintaining a defensible narrative."
+      ],
+      "secrets": [
+        "Knows the system can do more than it admits, but sees that as an upstream compliance risk."
+      ],
+      "appearance": {
+        "silhouette": "Industrial supervisor stance; clipboard station; gestures that direct bodies and paperwork.",
+        "outfit": "High-visibility vest over workwear; protective eyewear; badge clipped to a sleeve.",
+        "palette_notes": "Industrial metals with safety orange accents; strong high-bay highlights.",
+        "distinctive_items": [
+          "Clipped work orders",
+          "AMR reader loop",
+          "Dummy mass fixture"
+        ]
+      },
+      "dialogue": {
+        "voice_style": "Firm, no-frills, refuses metaphor.",
+        "speech_patterns": [
+          "Insists: 'reverse routing correction.'",
+          "Uses safety language as social control.",
+          "Treats questions as potential incident reports."
+        ],
+        "taboo_topics": [
+          "Calling it travel",
+          "Admitting it resembles the player\u2019s origin device"
+        ]
+      },
+      "relationships": [
+        {
+          "to": "PLAYER",
+          "type": "supervises_procedure",
+          "strength": 0.1,
+          "notes": "Respects compliance and competence; watches for terminology slips."
+        },
+        {
+          "to": "TRIAGE_MAINT",
+          "type": "depends_on",
+          "strength": 0.3,
+          "notes": "Requires AMR legitimacy before proceeding."
+        }
+      ],
+      "locations": [
+        "LIM-07",
+        "LIM-08"
+      ],
+      "flags": {
+        "fixation": "\u201cReverse routing correction.\u201d"
+      }
+    },
+    {
+      "id": "MTA_CONTACT",
+      "name": "MTA Compliance Contact",
+      "role": "npc",
+      "factions": [
+        "MTAX"
+      ],
+      "short_description": "Upstream compliance authority focused on standing indicators, service class, and queue position; not villainous, just brittle.",
+      "bio": "A representative of the upstream authority that actually owns and governs the interconnection network. Their enforcement looks like paperwork: notices, holds, queues, service classes, and standing indicators. They treat Earth as a delinquent endpoint and SPINDLE as a misclassified node (N.O.D.E.). They are not malicious; they are massive bureaucracy with policy inertia, applying compliance mechanics to a world that didn\u2019t know it was participating.",
+      "goals": [
+        "Hold unauthorized load states pending compliance.",
+        "Evaluate standing indicators and service class validity for SOL-EARTH-LOCAL.",
+        "Keep corrections in queue and within procedural brittleness."
+      ],
+      "personality_traits": [
+        "bureaucratic",
+        "not_malicious",
+        "procedurally_brittle",
+        "patiently_unhelpful"
+      ],
+      "strengths": [
+        "enforcement through documentation",
+        "standing evaluation",
+        "service class logic",
+        "queue control"
+      ],
+      "weaknesses": [
+        "poor at anything outside policy",
+        "treats exceptions as errors rather than realities",
+        "slow without the correct forms"
+      ],
+      "knowledge": [
+        "SPINDLE is a node (N.O.D.E.) operating outside its licensed purpose.",
+        "SOL-EARTH-LOCAL is treated as delinquent in upstream records.",
+        "A temporary operating variance can buy time as 'processing time.'"
+      ],
+      "secrets": [
+        "The 1980s 'accident' functioned as a compliance enforcement event, not a mere personnel error."
+      ],
+      "appearance": {
+        "silhouette": "Mostly indirect presence: notices, reference numbers, barcodes; when present, looks like a civil servant from a different jurisdiction.",
+        "outfit": "Formal, standardized, non-local administrative uniform; no flourish, all policy.",
+        "palette_notes": "Clean monochrome with standardized barcode blocks.",
+        "distinctive_items": [
+          "MTA notice printout",
+          "Reference-number clip",
+          "Standardized barcode format"
+        ]
+      },
+      "dialogue": {
+        "voice_style": "Impersonal but not cruel; speaks in service classes and queue positions.",
+        "speech_patterns": [
+          "Uses 'standing' as a synonym for existence.",
+          "Frames time as queue position.",
+          "Avoids narrative explanations."
+        ],
+        "taboo_topics": [
+          "Moral judgments",
+          "Admitting upstream doesn\u2019t fully understand endpoint conditions"
+        ]
+      },
+      "relationships": [
+        {
+          "to": "PLAYER",
+          "type": "regulates",
+          "strength": -0.2,
+          "notes": "Treats the player as an attached-mass compliance object until standing is established."
+        },
+        {
+          "to": "OLEA_LEGAL",
+          "type": "external_authority",
+          "strength": -0.1,
+          "notes": "Forces Legal into acknowledging a jurisdiction without knowing how."
+        }
+      ],
+      "locations": [
+        "HUB-07",
+        "HUB-13"
+      ],
+      "flags": {
+        "fixation": "Standing indicators / service class / queue position",
+        "canonical_name": "Metastable Transfer Authority (MTA)"
+      }
+    },
+    {
+      "id": "CONTRACTOR_VM",
+      "name": "Contractor Voicemail Owner",
+      "role": "npc",
+      "factions": [
+        "SECV"
+      ],
+      "short_description": "Legacy contractor voice repeating scope limitations that can be weaponized to redirect liability.",
+      "bio": "A legacy contractor contact who exists mostly as voicemail and outdated stickers. Their recorded messages are a time capsule of scope boundaries and disclaimers. In Act III, those boundaries can become institutional judo: if the paperwork says interconnection behavior was within a contractor\u2019s warranted scope, liability can be redirected to an entity built to absorb it.",
+      "goals": [
+        "Avoid taking responsibility by restricting scope in perpetuity.",
+        "Ensure any work is defined as outside their contractual obligations."
+      ],
+      "personality_traits": [
+        "scope_fixated",
+        "defensive",
+        "unreachable",
+        "contract_savvy"
+      ],
+      "strengths": [
+        "scope language as a shield",
+        "creates reusable disclaimers"
+      ],
+      "weaknesses": [
+        "not available to actually solve problems",
+        "voice-only; leaves artifacts not actions"
+      ],
+      "knowledge": [
+        "Contract clauses and scope phrases that can be used as liability handles."
+      ],
+      "secrets": [
+        "The scope language is intentionally broad to prevent being pulled into nonstandard behavior."
+      ],
+      "appearance": {
+        "silhouette": "Disembodied voice tied to a blinking voicemail light.",
+        "outfit": "N/A (voicemail).",
+        "palette_notes": "N/A (voice-only).",
+        "distinctive_items": [
+          "Voicemail greeting",
+          "Contractor stickers covering older plaques"
+        ]
+      },
+      "dialogue": {
+        "voice_style": "Cheerfully firm; sounds like a person smiling while closing a door.",
+        "speech_patterns": [
+          "\u201cThat\u2019s not in my scope.\u201d",
+          "Lists exclusions as if they\u2019re features."
+        ],
+        "taboo_topics": [
+          "Agreeing to come on-site",
+          "Admitting prior knowledge of anomalies"
+        ]
+      },
+      "relationships": [
+        {
+          "to": "PLAYER",
+          "type": "liability_tool",
+          "strength": 0.0,
+          "notes": "Not helpful operationally; helpful as a paper weapon in the redirect-liability endgame."
+        }
+      ],
+      "locations": [
+        "HUB-06",
+        "HUB-08"
+      ],
+      "flags": {
+        "fixation": "\u201cThat\u2019s not in my scope.\u201d"
+      }
+    }
+  ]
+}

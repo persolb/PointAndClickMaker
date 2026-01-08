@@ -1,0 +1,56 @@
+{
+  "screen_id": "SYS-01",
+  "masks": [
+    {
+      "type": "hotspot",
+      "name": "Terminal",
+      "slug": "terminal",
+      "file": "images/SYS-01-mask-terminal.png",
+      "boxes": [
+        {
+          "label": "Terminal",
+          "box_2d": [
+            538,
+            209,
+            810,
+            429
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Firmware key",
+      "slug": "firmware_key",
+      "file": "images/SYS-01-mask-firmware_key.png",
+      "boxes": [
+        {
+          "label": "Firmware key",
+          "box_2d": [
+            804,
+            436,
+            874,
+            483
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hotspot",
+      "name": "Log printout",
+      "slug": "log_printout",
+      "file": "images/SYS-01-mask-log_printout.png",
+      "boxes": [
+        {
+          "label": "Log printout",
+          "box_2d": [
+            732,
+            483,
+            893,
+            630
+          ]
+        }
+      ]
+    }
+  ]
+}
