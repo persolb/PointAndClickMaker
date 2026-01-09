@@ -1,0 +1,760 @@
+{
+  "dialogueGraphs": [
+    {
+      "id": "DG_SCN_043_MAIN_CONSOLE",
+      "sceneId": "SCN-043",
+      "startNodeId": "N_START_NARR",
+      "nodes": [
+        {
+          "id": "N_START_NARR",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "conditions": [
+            {
+              "key": "ops.loadSheddingEventActive",
+              "op": "==",
+              "value": true
+            },
+            {
+              "key": "ops.alignmentSequenceInitiated",
+              "op": "==",
+              "value": false
+            }
+          ],
+          "text": "The main console is already on a LOAD-SHED RESPONSE overlay, pinned on top of the shutdown verification UI. A yellow banner persists: DEMAND EVENT ACTIVE \u2014 RESPONSE REQUIRED.\nUnder it, almost offended: VERIFICATION MODE: STABILITY REQUIRED.",
+          "next": "N_DISPATCH_OPEN"
+        },
+        {
+          "id": "N_DISPATCH_OPEN",
+          "type": "npc_line",
+          "speakerId": "UTIL_DISPATCH",
+          "text": "Control Room. Utility Dispatch. (pause) Timestamp 14:22:04. (pause) Confirm you're acting on the demand event. (pause) I need your action record ID. (pause) Send it when you have it. (pause) Also\u2014state you will maintain stability. (pause) Stated. Not assumed.",
+          "next": "N_OPS_COACH"
+        },
+        {
+          "id": "N_OPS_COACH",
+          "type": "npc_line",
+          "speakerId": "OPS_OPERATOR",
+          "text": "Don\u2019t say \u201cemergency\u201d. (pause) Don\u2019t say \u201cwe\u2019ll try.\u201d (pause) Say: \u201cacknowledge the demand event.\u201d (pause) Say: \u201cinitiating response.\u201d (pause) Say: \u201cstability maintained per interlocks.\u201d (pause) Keep it ugly for the transcript.",
+          "next": "N_MENU_INTRO"
+        },
+        {
+          "id": "N_MENU_INTRO",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The console shows big, friendly buttons that all look like liability: VIEW LOAD MAP. PRINT ACTION HEADER. CONFIGURE SHED. EXECUTE ROUTING.",
+          "next": "N_MAIN_MENU"
+        },
+        {
+          "id": "N_MAIN_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_LOOK_MAP",
+              "text": "look: View load map and current critical/noncritical tags.",
+              "conditions": [],
+              "checks": [],
+              "effects": [],
+              "next": "N_MAP_NARR"
+            },
+            {
+              "id": "C_ASK_STABILITY",
+              "text": "ask: What does \u201cmaintain stability\u201d mean in this console?",
+              "conditions": [],
+              "checks": [],
+              "effects": [],
+              "next": "N_DEFINE_PLAYER"
+            },
+            {
+              "id": "C_CONFIG_SHED",
+              "text": "use: Configure shed (staged vs single-step).",
+              "conditions": [],
+              "checks": [],
+              "effects": [],
+              "next": "N_CONFIG_INTRO"
+            },
+            {
+              "id": "C_PRINT_HEADER",
+              "text": "use: Print action header to the log tray.",
+              "conditions": [],
+              "checks": [],
+              "effects": [],
+              "next": "N_PRINT_NARR"
+            },
+            {
+              "id": "C_AUTH_PHRASE",
+              "text": "persuade: Use OLEA standard wording (authorized signatory).",
+              "conditions": [
+                {
+                  "key": "player.oleaAuthorizedSignatory",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "checks": [],
+              "effects": [],
+              "next": "N_AUTH_PLAYER"
+            },
+            {
+              "id": "C_THREATEN_ESC",
+              "text": "threaten: Cite the stability clause and request immediate escalation handling.",
+              "conditions": [],
+              "checks": [
+                {
+                  "type": "rep",
+                  "faction": "UTIL",
+                  "min": 40
+                }
+              ],
+              "effects": [],
+              "onPassNext": "N_THREAT_PASS_PLAYER",
+              "onFailNext": "N_THREAT_FAIL_PLAYER"
+            },
+            {
+              "id": "C_STEP_AWAY",
+              "text": "leave: Step away from the console.",
+              "conditions": [],
+              "checks": [],
+              "effects": [],
+              "next": "N_STEP_AWAY_NARR"
+            }
+          ]
+        },
+        {
+          "id": "N_AUTH_PLAYER",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Acknowledging demand event. Initiating load-shed response. Stability maintained per interlocks. Action record ID pending console header.",
+          "next": "N_AUTH_UTIL"
+        },
+        {
+          "id": "N_AUTH_UTIL",
+          "type": "npc_line",
+          "speakerId": "UTIL_DISPATCH",
+          "text": "Accepted. (pause) Timestamp 14:22:11. (pause) Provide the record ID when available. (pause) Report shed start time when first action occurs.",
+          "next": "N_AUTH_OPS"
+        },
+        {
+          "id": "N_AUTH_OPS",
+          "type": "npc_line",
+          "speakerId": "OPS_OPERATOR",
+          "text": "Good. Keep it standard. (pause)\nNow get the console to output (pause)\nsomething attributable.",
+          "next": "N_RED_TO_MAIN"
+        },
+        {
+          "id": "N_THREAT_PASS_PLAYER",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Under the stability clause, I need escalation handling and a logged directive. Confirm you want the shed executed now, attributable and stable.",
+          "next": "N_THREAT_PASS_UTIL"
+        },
+        {
+          "id": "N_THREAT_PASS_UTIL",
+          "type": "npc_line",
+          "speakerId": "UTIL_DISPATCH",
+          "text": "Noted. Timestamp 14:22:14. (pause) Directive stands. Execute shed now. (pause) Avoid cycling and step-load chatter. (pause) Provide record ID. (pause) Provide shed start time.",
+          "next": "N_THREAT_PASS_OPS"
+        },
+        {
+          "id": "N_THREAT_PASS_OPS",
+          "type": "npc_line",
+          "speakerId": "OPS_OPERATOR",
+          "text": "Okay. (pause) Don\u2019t push it further. (pause) Confirm action, then print. (pause) Something we can staple.",
+          "next": "N_RED_TO_MAIN"
+        },
+        {
+          "id": "N_THREAT_FAIL_PLAYER",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Escalate this. I\u2019m not acting on an undocumented directive.",
+          "next": "N_THREAT_FAIL_UTIL"
+        },
+        {
+          "id": "N_THREAT_FAIL_UTIL",
+          "type": "npc_line",
+          "speakerId": "UTIL_DISPATCH",
+          "text": "Negative. (pause) Timestamp 14:22:16. (pause) Directive is documented via recording and log mirror. (pause) Confirm action now. (pause) Do not delay shed for process language.",
+          "next": "N_THREAT_FAIL_OPS"
+        },
+        {
+          "id": "N_THREAT_FAIL_OPS",
+          "type": "npc_line",
+          "speakerId": "OPS_OPERATOR",
+          "text": "Yeah, it\u2019s recorded. (pause) Still need that header. (pause) Print it. Then act. (pause) Don\u2019t burn time on tone.",
+          "next": "N_RED_TO_MAIN"
+        },
+        {
+          "id": "N_MAP_NARR",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The screen redraws into a block diagram: feeder names, breaker groups, and three categories of load with mismatched fonts.\nCRITICAL includes chamber environmental, rotation frame lubrication, and a box labeled VERIFICATION SUPPORT that is, unhelpfully, most of the building.",
+          "next": "N_MAP_OPS"
+        },
+        {
+          "id": "N_MAP_OPS",
+          "type": "npc_line",
+          "speakerId": "OPS_OPERATOR",
+          "text": "VERIFICATION SUPPORT. Great. (pause) Checklist wants a stable baseline. (pause) It treats it as untouchable. (pause) Dispatch sees it as discretionary. (pause) Pick your courtroom.",
+          "next": "N_MAP_MENU"
+        },
+        {
+          "id": "N_MAP_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_MAP_ASK_AMOUNT",
+              "text": "ask: How much can I shed without touching \u201cverification support\u201d?",
+              "conditions": [],
+              "checks": [],
+              "effects": [],
+              "next": "N_MAP_ASK_PLAYER"
+            },
+            {
+              "id": "C_MAP_GROUP_DETAILS",
+              "text": "look: Inspect breaker group details (restart surge notes).",
+              "conditions": [],
+              "checks": [],
+              "effects": [],
+              "next": "N_GROUP_NARR"
+            },
+            {
+              "id": "C_BACK_MAIN",
+              "text": "leave: Back to the console menu.",
+              "conditions": [],
+              "checks": [],
+              "effects": [],
+              "next": "N_RED_TO_MAIN"
+            }
+          ]
+        },
+        {
+          "id": "N_MAP_ASK_PLAYER",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "How much shed without touching verification support?",
+          "next": "N_MAP_ASK_NARR"
+        },
+        {
+          "id": "N_MAP_ASK_NARR",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "Three shed presets highlight. None meet the target alone.",
+          "next": "N_MAP_ASK_OPS"
+        },
+        {
+          "id": "N_MAP_ASK_OPS",
+          "type": "npc_line",
+          "speakerId": "OPS_OPERATOR",
+          "text": "We can shed a little (pause) without touching it. (pause) Twelve megawatts won't happen that way. (pause) To hit target clean, (pause) we reclass support\u2014or (pause) we drop something that auto-recovers (pause) and Dispatch calls it a miss.",
+          "next": "N_RED_TO_MAIN"
+        },
+        {
+          "id": "N_GROUP_NARR",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "Several groups carry a warning: AUTO-RECOVER ENABLED \u2014 RESTART SURGE LIKELY.\nA few are annotated in terse maintenance shorthand: \u201cCHATTER RISK,\u201d \u201cTHERMAL LAG,\u201d \u201cDO NOT CYCLE.\u201d",
+          "next": "N_GROUP_UTIL"
+        },
+        {
+          "id": "N_GROUP_UTIL",
+          "type": "npc_line",
+          "speakerId": "UTIL_DISPATCH",
+          "text": "And to be clear. (pause) \u201cAuto-recovers\u201d is not a shed. (pause) It is a delay. (pause) Avoid cycling. (pause) Avoid chatter. (pause) Give me something stable. (pause) Give me something attributable.",
+          "next": "N_RED_TO_MAIN"
+        },
+        {
+          "id": "N_DEFINE_PLAYER",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Define \u201cmaintain stability\u201d in this console.",
+          "next": "N_DEFINE_UTIL"
+        },
+        {
+          "id": "N_DEFINE_UTIL",
+          "type": "npc_line",
+          "speakerId": "UTIL_DISPATCH",
+          "text": "Stability means your node doesn't create a problem. (pause) I don't have to name. (pause) Voltage in band. (pause) No step-load chatter. (pause) No cycling. (pause) And\u2014because it comes up\u2014no undocumented behavior. (pause) That's not technical. (pause) That's legal.",
+          "next": "N_DEFINE_OPS"
+        },
+        {
+          "id": "N_DEFINE_OPS",
+          "type": "npc_line",
+          "speakerId": "OPS_OPERATOR",
+          "text": "Undocumented. (pause) That's the word that matters. (pause) We can stage it with timestamps, (pause) or single-step it. (pause) The no-chatter macro is the one (pause) the checklist won't like.",
+          "next": "N_DEFINE_MENU"
+        },
+        {
+          "id": "N_DEFINE_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_DEFINE_STAGED",
+              "text": "use: Configure a staged shed plan.",
+              "conditions": [],
+              "checks": [],
+              "effects": [],
+              "next": "N_STAGED_INTRO"
+            },
+            {
+              "id": "C_DEFINE_SINGLE",
+              "text": "use: Configure a single-step shed.",
+              "conditions": [],
+              "checks": [],
+              "effects": [],
+              "next": "N_SINGLESTEP_INTRO"
+            },
+            {
+              "id": "C_DEFINE_BACK",
+              "text": "leave: Back to the console menu.",
+              "conditions": [],
+              "checks": [],
+              "effects": [],
+              "next": "N_RED_TO_MAIN"
+            }
+          ]
+        },
+        {
+          "id": "N_CONFIG_INTRO",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "A configuration pane opens: TARGET SHED: 12 MW. The slider is disabled; only presets can be accepted.\nTwo tabs: STAGED and SINGLE-STEP. The cursor blinks like it wants a signature.",
+          "next": "N_CONFIG_OPS"
+        },
+        {
+          "id": "N_CONFIG_OPS",
+          "type": "npc_line",
+          "speakerId": "OPS_OPERATOR",
+          "text": "Staged buys you more timestamps. (pause) Single-step's cleaner electrically\u2014and whoever signs it, wears it.",
+          "next": "N_CONFIG_MENU"
+        },
+        {
+          "id": "N_CONFIG_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_SEL_STAGED",
+              "text": "use: Select STAGED shed (multiple groups).",
+              "conditions": [],
+              "checks": [],
+              "effects": [],
+              "next": "N_STAGED_INTRO"
+            },
+            {
+              "id": "C_SEL_SINGLE",
+              "text": "use: Select SINGLE-STEP shed (one macro).",
+              "conditions": [],
+              "checks": [],
+              "effects": [],
+              "next": "N_SINGLESTEP_INTRO"
+            },
+            {
+              "id": "C_CONFIG_BACK",
+              "text": "leave: Back to the console menu.",
+              "conditions": [],
+              "checks": [],
+              "effects": [],
+              "next": "N_RED_TO_MAIN"
+            }
+          ]
+        },
+        {
+          "id": "N_STAGED_INTRO",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The console assembles three staged groups. The third is marked: VERIFICATION SUPPORT \u2014 TEMPORARY RECLASS REQUIRED.",
+          "next": "N_STAGED_OPS"
+        },
+        {
+          "id": "N_STAGED_OPS",
+          "type": "npc_line",
+          "speakerId": "OPS_OPERATOR",
+          "text": "There it is. TEMPORARY RECLASS REQUIRED. (pause) Use an existing code. (pause) Don\u2019t invent a category under pressure.",
+          "next": "N_STAGED_UTIL"
+        },
+        {
+          "id": "N_STAGED_UTIL",
+          "type": "npc_line",
+          "speakerId": "UTIL_DISPATCH",
+          "text": "Confirm you\u2019re acting. (pause) I don\u2019t need your philosophy. (pause) I need a time stamp. (pause) And a stable response.",
+          "next": "N_STAGED_MENU"
+        },
+        {
+          "id": "N_STAGED_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_STAGED_CONFIRM",
+              "text": "talk: Confirmed. Initiating staged shed.",
+              "conditions": [],
+              "checks": [],
+              "effects": [],
+              "next": "N_STAGED_CONFIRM_PLAYER"
+            },
+            {
+              "id": "C_STAGED_RECLASS",
+              "text": "use: Reclass \u201cverification support\u201d as noncritical (temporary).",
+              "conditions": [],
+              "checks": [],
+              "effects": [],
+              "next": "N_RECLASS_NARR"
+            },
+            {
+              "id": "C_STAGED_BACK",
+              "text": "leave: Back to the console menu.",
+              "conditions": [],
+              "checks": [],
+              "effects": [],
+              "next": "N_RED_TO_MAIN"
+            }
+          ]
+        },
+        {
+          "id": "N_STAGED_CONFIRM_PLAYER",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Confirmed. Initiating staged shed.",
+          "next": "N_STAGED_CONFIRM_UTIL"
+        },
+        {
+          "id": "N_STAGED_CONFIRM_UTIL",
+          "type": "npc_line",
+          "speakerId": "UTIL_DISPATCH",
+          "text": "Timestamp 14:22:31. Logged. (pause) Provide action record ID when available. (pause) Report first step time when it occurs.",
+          "next": "N_STAGED_CONFIRM_OPS"
+        },
+        {
+          "id": "N_STAGED_CONFIRM_OPS",
+          "type": "npc_line",
+          "speakerId": "OPS_OPERATOR",
+          "text": "Good. Make the reclass airtight. (pause) Or they write \"cycling\" on you.",
+          "next": "N_STAGED_MENU"
+        },
+        {
+          "id": "N_RECLASS_NARR",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "A dialog box appears with a legal tone and a petty request: SELECT JUSTIFICATION CODE.\nThe available codes are pre-filled. None are kind.",
+          "next": "N_RECLASS_OPS"
+        },
+        {
+          "id": "N_RECLASS_OPS",
+          "type": "npc_line",
+          "speakerId": "OPS_OPERATOR",
+          "text": "Pick a code that already exists. (pause) Don\u2019t write a new justification. (pause) That\u2019s a meeting you\u2019ll lose.",
+          "next": "N_RECLASS_MENU"
+        },
+        {
+          "id": "N_RECLASS_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_JUST_GRID",
+              "text": "use: Justification: GRID DIRECTIVE \u2014 DEMAND EVENT.",
+              "conditions": [],
+              "checks": [],
+              "effects": [],
+              "next": "N_RECLASS_DONE_NARR"
+            },
+            {
+              "id": "C_RECLASS_BACK",
+              "text": "leave: Back to staged options.",
+              "conditions": [],
+              "checks": [],
+              "effects": [],
+              "next": "N_RED_TO_STAGED_MENU"
+            }
+          ]
+        },
+        {
+          "id": "N_RECLASS_DONE_NARR",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "VERIFICATION SUPPORT flips from CRITICAL to NONCRITICAL with no animation, like it\u2019s ashamed.",
+          "next": "N_RECLASS_DONE_OPS"
+        },
+        {
+          "id": "N_RECLASS_DONE_OPS",
+          "type": "npc_line",
+          "speakerId": "OPS_OPERATOR",
+          "text": "Good. (pause) Put classification update in the notes. (pause) That wording is what survives.",
+          "next": "N_RED_TO_STAGED_MENU"
+        },
+        {
+          "id": "N_SINGLESTEP_INTRO",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The console offers one macro: EXECUTE ROUTING: ALIGNMENT-SEQUENCE LOAD ROUTING (12 MW CLEAN).\nA warning line beneath it: NOTE: MAY ALTER VERIFICATION BASELINE. The word \u201cmay\u201d is doing too much work.",
+          "next": "N_SINGLESTEP_OPS"
+        },
+        {
+          "id": "N_SINGLESTEP_OPS",
+          "type": "npc_line",
+          "speakerId": "OPS_OPERATOR",
+          "text": "That\u2019s the one. (pause) Keeps the interlocks happy. (pause) Tightens up the rotation frames. (pause) Checklist will gripe about \u201cbaseline.\u201d (pause) We just keep it documented.",
+          "next": "N_SINGLESTEP_MENU"
+        },
+        {
+          "id": "N_SINGLESTEP_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_SINGLE_ASK_NAME",
+              "text": "ask: Why does it say \u201calignment-sequence\u201d?",
+              "conditions": [],
+              "checks": [],
+              "effects": [],
+              "next": "N_ALIGNNAME_PLAYER"
+            },
+            {
+              "id": "C_SINGLE_EXEC",
+              "text": "use: Execute alignment-sequence load routing.",
+              "conditions": [],
+              "checks": [],
+              "effects": [],
+              "next": "N_EXEC_PLAYER"
+            },
+            {
+              "id": "C_SINGLE_BACK",
+              "text": "leave: Back to the console menu.",
+              "conditions": [],
+              "checks": [],
+              "effects": [],
+              "next": "N_RED_TO_MAIN"
+            }
+          ]
+        },
+        {
+          "id": "N_ALIGNNAME_PLAYER",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Why \u201calignment-sequence\u201d?",
+          "next": "N_ALIGNNAME_OPS"
+        },
+        {
+          "id": "N_ALIGNNAME_OPS",
+          "type": "npc_line",
+          "speakerId": "OPS_OPERATOR",
+          "text": "Because Legal didn\u2019t want anyone describing it. (pause) In detail. (pause) Operationally: it balances load. (pause) Without chatter, it coordinates the frames. (pause) That\u2019s all we say.",
+          "next": "N_RED_TO_SINGLESTEP_MENU"
+        },
+        {
+          "id": "N_EXEC_PLAYER",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Execute.",
+          "next": "N_FINAL_WARN_NARR"
+        },
+        {
+          "id": "N_FINAL_WARN_NARR",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The console asks for final confirmation in all caps, like volume is authority:\nACKNOWLEDGE: ROUTING WILL INITIATE AUTOMATED ALIGNMENT CONTROL.\nThe confirm button is labeled: I ACKNOWLEDGE.",
+          "next": "N_FINAL_MENU"
+        },
+        {
+          "id": "N_FINAL_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_ACKNOWLEDGE",
+              "text": "talk: I acknowledge.",
+              "conditions": [],
+              "checks": [],
+              "effects": [],
+              "next": "N_POST_ACK_UTIL"
+            },
+            {
+              "id": "C_CANCEL",
+              "text": "leave: Cancel and step back.",
+              "conditions": [],
+              "checks": [],
+              "effects": [],
+              "next": "N_CANCEL_NARR"
+            }
+          ]
+        },
+        {
+          "id": "N_CANCEL_NARR",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You back out. The macro remains highlighted, waiting like it knows you\u2019ll return.",
+          "next": "N_RED_TO_MAIN"
+        },
+        {
+          "id": "N_POST_ACK_UTIL",
+          "type": "npc_line",
+          "speakerId": "UTIL_DISPATCH",
+          "text": "Timestamp 14:22:57. Confirm you're acting. (pause) Confirm you'll maintain stability.",
+          "next": "N_POST_ACK_OPS"
+        },
+        {
+          "id": "N_POST_ACK_OPS",
+          "type": "npc_line",
+          "speakerId": "OPS_OPERATOR",
+          "text": "Say it clean. Then watch the numbers.",
+          "next": "N_POST_ACK_PLAYER"
+        },
+        {
+          "id": "N_POST_ACK_PLAYER",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Acting. Stability maintained per interlocks.",
+          "next": "N_LOG_NARR"
+        },
+        {
+          "id": "N_LOG_NARR",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The console logs a new line item: ALIGNMENT CONTROL: ARMED. ROUTING: IN PROGRESS.\nIn the corner, the small chamber camera feed stutters.",
+          "next": "N_FLICKER_NARR"
+        },
+        {
+          "id": "N_FLICKER_NARR",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The containment sphere\u2019s surface flickers\u2014matte to reflective, reflective to matte\u2014like a thought it isn\u2019t allowed to have.\nThe console continues counting down routing steps as if nothing visual is relevant.",
+          "next": "N_ARMED_OPS"
+        },
+        {
+          "id": "N_ARMED_OPS",
+          "type": "npc_line",
+          "speakerId": "OPS_OPERATOR",
+          "text": "Armed is a lousy word. (pause) But it\u2019s what the panel prints. (pause) We gave it permission, that\u2019s all.",
+          "next": "N_END_ALIGN"
+        },
+        {
+          "id": "N_PRINT_NARR",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The log printer wakes with a reluctant whine. A strip curls into the tray:\nACTION HEADER \u2014 CONTROL ROOM CONSOLE, with a serial and timestamp.",
+          "next": "N_PRINT_OPS"
+        },
+        {
+          "id": "N_PRINT_OPS",
+          "type": "npc_line",
+          "speakerId": "OPS_OPERATOR",
+          "text": "Good. Serial and timestamp\u2014that\u2019s attribution. (pause) It stays tied to the console record. (pause) Right where it belongs.",
+          "next": "N_PRINT_MENU"
+        },
+        {
+          "id": "N_PRINT_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_READBACK",
+              "text": "show: Read back the header serial to Dispatch.",
+              "conditions": [],
+              "checks": [],
+              "effects": [],
+              "next": "N_READBACK_PLAYER"
+            },
+            {
+              "id": "C_PRINT_BACK",
+              "text": "leave: Back to the console menu.",
+              "conditions": [],
+              "checks": [],
+              "effects": [],
+              "next": "N_RED_TO_MAIN"
+            }
+          ]
+        },
+        {
+          "id": "N_READBACK_PLAYER",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Action header serial CR-CON-0194.",
+          "next": "N_READBACK_UTIL"
+        },
+        {
+          "id": "N_READBACK_UTIL",
+          "type": "npc_line",
+          "speakerId": "UTIL_DISPATCH",
+          "text": "Received. Timestamp 14:22:19. (pause) Proceed. (pause) Report shed start time. (pause) When the first action occurs.",
+          "next": "N_RED_TO_MAIN"
+        },
+        {
+          "id": "N_STEP_AWAY_NARR",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You step back. The demand banner stays pinned, politely escalating itself at the edge of your vision.",
+          "next": "N_STEP_AWAY_OPS"
+        },
+        {
+          "id": "N_STEP_AWAY_OPS",
+          "type": "npc_line",
+          "speakerId": "OPS_OPERATOR",
+          "text": "Walk off if you need to breathe. (pause) Timestamp still runs. (pause) Come back. (pause) Do it with something we can staple.",
+          "next": "N_STEP_AWAY_MENU"
+        },
+        {
+          "id": "N_STEP_AWAY_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_RETURN_CONSOLE",
+              "text": "leave: Return to the main console.",
+              "conditions": [],
+              "checks": [],
+              "effects": [],
+              "next": "N_RED_TO_MAIN"
+            },
+            {
+              "id": "C_GO_OTHER",
+              "text": "leave: Go to another hotspot.",
+              "conditions": [],
+              "checks": [],
+              "effects": [],
+              "next": "N_END_GO_OTHER"
+            }
+          ]
+        },
+        {
+          "id": "N_RED_TO_MAIN",
+          "type": "redirect",
+          "target": "N_MAIN_MENU"
+        },
+        {
+          "id": "N_RED_TO_STAGED_MENU",
+          "type": "redirect",
+          "target": "N_STAGED_MENU"
+        },
+        {
+          "id": "N_RED_TO_SINGLESTEP_MENU",
+          "type": "redirect",
+          "target": "N_SINGLESTEP_MENU"
+        },
+        {
+          "id": "N_END_GO_OTHER",
+          "type": "end"
+        },
+        {
+          "id": "N_END_ALIGN",
+          "type": "end",
+          "outcomeId": "alignment_sequence_begins",
+          "effects": [
+            {
+              "key": "ops.alignmentSequenceInitiated",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "world.sphereMirrorFlicker",
+              "action": "set",
+              "value": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

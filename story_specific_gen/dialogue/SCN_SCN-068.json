@@ -9,7 +9,7 @@
           "id": "N_START",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The Records door has a newer seal over an older one.\nSomeone replaced the rule without removing the evidence of the old rule.\nThere\u2019s a narrow window, a slot, and a chain-of-custody placard that looks recently wiped.",
+          "text": "The Records door has a newer seal over an older one. (pause) Someone replaced the rule and left proof of the old rule. (pause) There is a narrow window slot and a chain-of-custody placard that looks recently wiped.",
           "next": "N_MENU_ACCESS"
         },
         {
@@ -48,7 +48,7 @@
           "id": "N_LOOK_1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The placard lists three ways to be denied, and none of them are \u201cwrong.\u201d\nA thin strip of adhesive still holds lint like it\u2019s trying to preserve a timeline.",
+          "text": "The placard lists three ways to be denied. (pause) None of them are \u201cwrong.\u201d (pause) A thin strip of adhesive still holds lint, like it\u2019s preserving a timeline.",
           "next": "N_LOOK_2"
         },
         {
@@ -62,7 +62,7 @@
           "id": "N_LOOK_3",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The slot is labeled: SUBMIT IDENTIFIERS ONLY.\nSomeone scratched \u201cNO QUESTIONS\u201d into the corner and then tried to buff it off.",
+          "text": "The slot reads: SUBMIT IDENTIFIERS ONLY. (pause) Someone scratched \u201cNO QUESTIONS\u201d in the corner, then tried to buff it off.",
           "next": "N_REDIRECT_MENU"
         },
         {
@@ -494,7 +494,7 @@
           "id": "N_COMMIT_3",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "Paper moves through the slot in three clipped bundles, like the building is exhaling receipts.\nEach packet is stamped in a color that looks defensive.",
+          "text": "Paper slips through the slot in three clipped bundles. (pause) Like the building is exhaling receipts. (pause) Each packet is stamped in a color that looks defensive.",
           "next": "N_COMMIT_4"
         },
         {
@@ -508,7 +508,7 @@
           "id": "N_COMMIT_5",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You take:\n- Billing ledgers with charges that don\u2019t match municipal templates.\n- Maintenance schedules listing crews from elsewhere, routed through codes you\u2019ve only seen on the notice.\n- Audit flags dated before the \u201cincident,\u201d written like someone tried to warn a future reader without sounding like a person.",
+          "text": "You take: (pause)\n- Billing ledgers with charges that don\u2019t match municipal templates. (pause)\n- Maintenance schedules listing crews from elsewhere. Routed through codes you\u2019ve only seen on the notice. (pause)\n- Audit flags dated before the \u201cincident.\u201d (pause)\nWritten like someone tried to warn a future reader without sounding like a person.",
           "next": "N_COMMIT_6"
         },
         {

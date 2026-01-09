@@ -7,7 +7,7 @@
           "id": "N10_CONSOLE_TOUCH",
           "next": "N11_LIAISON_1",
           "speakerId": "NARRATOR",
-          "text": "When you touch the console lip, the speaker clicks. A polite tone that implies it was already listening.",
+          "text": "When you touch the console lip, the speaker clicks. A tone implying it was already listening.",
           "type": "npc_line"
         },
         {

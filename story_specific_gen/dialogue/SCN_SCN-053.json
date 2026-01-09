@@ -9,7 +9,7 @@
           "id": "N001_INTRO",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The map kiosk sits at the mouth of the service corridors like it\u2019s part of the building\u2019s immune system. The screen is on. The printer tray is empty on purpose.",
+          "text": "The map kiosk sits at the mouth of the service corridors. (pause) Like it\u2019s part of the building\u2019s immune system. (pause) The screen is on. (pause) The printer tray is empty on purpose.",
           "conditions": [
             {
               "key": "act2.terIssued",
@@ -224,7 +224,7 @@
           "id": "N074_PRINT_NARR",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The printer feeds a warm strip of paper, pauses as if reconsidering, then continues. The ink is slightly faded where it matters.",
+          "text": "The printer feeds a warm strip of paper (pause) pauses as if reconsidering (pause) then continues. The ink is slightly faded where it matters.",
           "next": "N075_OUTPUT"
         },
         {
@@ -245,7 +245,7 @@
           "id": "N099_END_SUCCESS",
           "type": "end",
           "speakerId": "NARRATOR",
-          "text": "Map Fragment 1 is added to your kit: concourse and service corridors, with just enough detail to be useful and just enough missing to be deniable.",
+          "text": "Map Fragment 1 joins your kit: concourse and service corridors\u2014useful detail, and gaps enough to deny.",
           "outcomeId": "print_map_fragment_1",
           "effects": [
             {

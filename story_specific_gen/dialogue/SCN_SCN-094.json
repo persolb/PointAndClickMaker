@@ -7,7 +7,7 @@
           "id": "N_SPHERE_ENTER",
           "next": "PC_SPHERE_HUB",
           "speakerId": "NARRATOR",
-          "text": "Up close, the sphere isn\u2019t reflective so much as decisive.\nMost angles: matte insulation, scuffed like it\u2019s been cleaned too carefully.\nOne angle: your own silhouette returns with a half-second delay, as if the surface is waiting for permission. Your throat tightens and you file it as particulate interference.",
+          "text": "Up close the sphere isn\u2019t reflective so much as decisive. (pause)\nMost angles: matte insulation scuffed like it\u2019s been cleaned too carefully. (pause)\nOne angle: your silhouette returns with a half-second delay as if the surface waits for permission. (pause)\nYour throat tightens and you file it as particulate interference.",
           "type": "npc_line"
         },
         {
@@ -31,7 +31,7 @@
           "id": "N_SPHERE_LABELS",
           "next": "END",
           "speakerId": "NARRATOR",
-          "text": "A metal placard is bolted on crooked.\nIt reads: CONTAINMENT SPHERE \u2014 DO NOT POLISH.\nSomeone underlined DO NOT twice, in marker that dried into the grain like it wanted to be permanent.",
+          "text": "A metal placard is bolted on crooked. (pause)\nIt reads: CONTAINMENT SPHERE \u2014 DO NOT POLISH. (pause)\nSomeone underlined DO NOT twice, in marker dried into the grain, wanting permanence.",
           "type": "npc_line"
         },
         {

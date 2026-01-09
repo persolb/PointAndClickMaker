@@ -9,7 +9,7 @@
           "id": "N001_INTRO",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The Copy and Fax Room smells like hot plastic and old staples.\n\nThe fax machine sits under a laminated sign that says: \u201cTRANSMISSIONS ARE RECORDS.\u201d\n\nIn your hands: the training waiver template you pulled earlier\u2014blank where it matters.",
+          "text": "Copy and Fax Room reeks of hot plastic and old staples. (pause) Fax machine waits under a laminated sign: \u201cTRANSMISSIONS ARE RECORDS.\u201d (pause) In your hands is the waiver template you pulled earlier\u2014blank where it matters.",
           "conditions": [
             {
               "key": "paperwork.trainingWaiverTemplateCollected",
@@ -113,7 +113,7 @@
           "id": "N021_SEND_NARR",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The machine takes the first page like it\u2019s accepting blame.\n\nIt dials. It squeals. It goes quiet in a way that suggests \u201cquiet\u201d is also a setting with liability implications.",
+          "text": "The machine takes the first page, like it\u2019s accepting blame. (pause) It dials. It squeals. (pause) Then it goes quiet\u2014like \u201cquiet\u201d is a setting, with liability implications.",
           "next": "N022_SEND_NARR2"
         },
         {
@@ -127,7 +127,7 @@
           "id": "N030_TEMPLATE_READ",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The template is written in a tone that assumes someone will later ask why it existed.\n\nThe checkbox reads: \u201cI acknowledge receipt of required training materials.\u201d\n\nNot \u201cI completed.\u201d Not \u201cI understood.\u201d\n\nJust receipt\u2014like training is a package that can be delivered to a body.",
+          "text": "The template is written in a tone that assumes someone will later ask why it existed. (pause)\n\nThe checkbox reads: \u201cI acknowledge receipt of required training materials.\u201d (pause)\n\nNot \u201cI completed.\u201d Not \u201cI understood.\u201d (pause)\n\nJust receipt\u2014training as a package delivered to a body.",
           "next": "N031_AFTER_TEMPLATE_MENU"
         },
         {
@@ -226,7 +226,7 @@
           "id": "N041_SERVICE_NARR",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You key in numbers the machine should not accept from you. It accepts them anyway.\n\nThe display adds \u201cCONFIRMATION: ON\u201d like it\u2019s a moral stance.",
+          "text": "You key in numbers the machine should not accept from you. (pause) It accepts them anyway. (pause) The display adds \u201cCONFIRMATION: ON\u201d like it\u2019s a moral stance.",
           "next": "N042_AFTER_SERVICE_MENU"
         },
         {
@@ -267,14 +267,14 @@
           "id": "N050_SERVICE_FAIL",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You reach for the \u201cright numbers\u201d and come up short.\n\nEither you don\u2019t have the access, or you don\u2019t have the procedure clean enough to risk it. The machine keeps its bland, default contrast\u2014perfect for receipts, terrible for liability.",
+          "text": "You reach for the \u201cright numbers\u201d and come up short. (pause)\n\nEither you lack access or your procedure isn\u2019t clean enough to risk it. (pause)\n\nThe machine keeps bland default contrast\u2014perfect for receipts, terrible for liability.",
           "next": "N011_REDIRECT_MAIN"
         },
         {
           "id": "N100_RETURN_INTRO",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The fax coughs out a return transmission\u2014two pages.\n\nThe first is your template, now signed. The second is a cover sheet that reads like a boundary dispute.",
+          "text": "The fax coughs out a return transmission\u2014two pages. (pause)\n\nThe first is your template, now signed. (pause)\n\nThe second is a cover sheet. It reads like a boundary dispute.",
           "next": "N110_RETURN_MENU"
         },
         {
@@ -315,14 +315,14 @@
           "id": "N121_PULL_NARR",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The pages are warm at the edges, as if heat counts as authentication.\n\nThe signature is real. The language around it is a fence.",
+          "text": "The pages are warm at the edges (pause) as if heat counts as authentication. (pause) The signature is real. (pause) The language around it is a fence.",
           "next": "N122_CAVEATS"
         },
         {
           "id": "N122_CAVEATS",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "\u201cTRAINING WAIVER \u2014 NARROW PURPOSE ACKNOWLEDGMENT.\u201d\n\n\u201cThis instrument does not certify completion of training. It permits site process to treat the undersigned as trained for closure-documentation tasks only.\u201d\n\n\u201cNo inference of competency, safety baseline, or authorization is created by this acknowledgment.\u201d\n\nThe word authorization is struck through and replaced with administrative accommodation in different ink.",
+          "text": "\u201cTRAINING WAIVER \u2014 NARROW PURPOSE ACKNOWLEDGMENT.\u201d (pause)\n\u201cThis instrument does not certify completion of training.\u201d (pause)\n\u201cIt permits site process to treat the undersigned as trained.\u201d (pause)\n\u201cFor closure-documentation tasks only.\u201d (pause)\n\u201cNo inference of competency or safety baseline is created by this acknowledgment.\u201d (pause)\n\u201cNo inference of authorization is created.\u201d (pause)\n\u201cThe word authorization is struck through and replaced with administrative accommodation in different ink.\u201d",
           "next": "N130_END_SIGNED"
         },
         {
@@ -351,7 +351,7 @@
           "id": "N140_COVER_READ",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The cover sheet is a memo pretending to be a courtesy.\n\n\u201cOLEA LEGAL TRANSMISSION \u2014 RECORD COPY.\u201d\n\n\u201cPlease note: \u2018trained\u2019 is an operational label, not a factual representation.\u201d\n\nThe sentence ends with a period that looks pressed too hard.",
+          "text": "The cover sheet is a memo, posing as courtesy. (pause)\n\n\u201cOLEA LEGAL TRANSMISSION \u2014 RECORD COPY.\u201d (pause)\n\n\u201cPlease note: \u2018trained\u2019 is an operational label, not a factual representation.\u201d (pause)\n\nThe sentence ends with a period. (pause)\n\nIt looks pressed too hard.",
           "next": "N141_AFTER_COVER_MENU"
         },
         {

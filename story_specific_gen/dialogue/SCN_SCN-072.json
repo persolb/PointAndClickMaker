@@ -9,7 +9,7 @@
           "id": "N_START",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "Control Room. The main console sits in an administrative state: a compliance hold banner, a draft memo queued, and a blinking field that wants a reason phrase more than it wants the truth.",
+          "text": "Control Room. (pause) Main console in administrative state: compliance hold banner, draft memo queued. (pause) Blinking field wants a reason phrase more than the truth.",
           "next": "N_OPS0"
         },
         {
@@ -163,7 +163,7 @@
           "id": "N_SUBMIT_N",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "On the console: \u201cSUBMIT REQUEST \u2014 RELATIONSHIP/CLASS UPDATE (NON-LOCAL).\u201d Fields: SUBJECT NODE, REQUESTED CATEGORY, REASON PHRASE, AUTHORITY CHAIN, ATTACHMENTS.",
+          "text": "Console: \u201cSUBMIT REQUEST \u2014 RELATIONSHIP/CLASS UPDATE (NON-LOCAL).\u201d Fields: SUBJECT-NODE; REQUESTED-CATEGORY; REASON-PHRASE; AUTHORITY-CHAIN; ATTACHMENTS.",
           "next": "N_SUBMIT_P"
         },
         {
@@ -263,7 +263,7 @@
           "id": "N_CATL_N",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You select the category that pretends the past was competent enough to have meant this. Legacy codes scroll like they\u2019ve been waiting.",
+          "text": "You pick a category pretending past was competent enough to mean this. Legacy codes scroll, waiting.",
           "next": "N_CATL_M"
         },
         {
@@ -523,14 +523,14 @@
           "id": "N_ADDLEGAL_N",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You tap OLEA Legal\u2019s recorded line into the chain. The console prepares an echo-back statement for spoken acknowledgment.",
+          "text": "You tap OLEA Legal\u2019s recorded line into the chain. The console prepares an echo-back for acknowledgment.",
           "next": "N_ADDLEGAL_CONSOLE"
         },
         {
           "id": "N_ADDLEGAL_CONSOLE",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "On-screen echo-back: \u201cOLEA Legal acknowledges submission for category update as retirement processing instrument; accepts limited-purpose licensed relationship classification for SOL\u2011EARTH\u2011LOCAL; no admission of novelty; continuous logging maintained; operator present on-site.\u201d",
+          "text": "On-screen echo-back: \u201cOLEA Legal acknowledges-submission for category-update/retirement-processing-instrument; accepts limited-purpose-licensed-relationship classification for SOL\u2011EARTH\u2011LOCAL; no-admission-of-novelty; continuous-logging-maintained; operator-present on-site.\u201d",
           "next": "N_ADDLEGAL_LEGALREAD"
         },
         {

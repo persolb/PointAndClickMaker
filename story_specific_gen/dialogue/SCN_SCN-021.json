@@ -9,7 +9,7 @@
           "id": "N_ENTRY",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The Copy and Fax Room smells like warm plastic and old approvals.\nA copier hums as if it\u2019s being paid by the minute.\nOn the wall: a service-code sticker stack, layered like sediment.\nA fax machine displays LOW TONER with the confidence of a verdict.\nA shelf of binder supplies sits within reach, technically.\n\nHotspots: Copier control panel. Service code sticker stack. Fax machine tray. Binder supplies shelf.",
+          "text": "The Copy and Fax Room smells like warm plastic and old approvals. (pause)\nA copier hums as if it\u2019s being paid by the minute. (pause)\nOn the wall: a service-code sticker stack. Layered like sediment. (pause)\nA fax machine displays LOW TONER with the confidence of a verdict. (pause)\nA shelf of binder supplies sits within reach. Technically. (pause)\nHotspots: Copier control panel. Service code sticker stack. (pause)\nFax machine tray. Binder supplies shelf.",
           "next": "N_MENU"
         },
         {

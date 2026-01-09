@@ -9,14 +9,14 @@
           "id": "N0_INTRO1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The log printer tray holds a single fresh sheet, still warm at the edge.\nBlack dot-matrix ink. Crisp timestamp.\nIt looks boring enough to survive a meeting.",
+          "text": "The log printer tray holds one fresh sheet, still warm at the edge. (pause)\nBlack dot-matrix ink. Crisp timestamp. (pause)\nIt looks boring enough to survive a meeting.",
           "next": "N1_INTRO2"
         },
         {
           "id": "N1_INTRO2",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The header reads: \u201cCONTROL ROOM EVENT LOG \u2014 CONTINUOUS OUTPUT.\u201d\nA footer line repeats in small type: \u201cNON-LOCAL COMPLIANCE NOTICE: RETAIN FOR COMPARABILITY.\u201d",
+          "text": "The header reads: \u201cCONTROL ROOM EVENT LOG \u2014 CONTINUOUS OUTPUT.\u201d (pause) A footer line repeats in small type: \u201cNON-LOCAL COMPLIANCE NOTICE: RETAIN FOR COMPARABILITY.\u201d",
           "next": "N2_PLAYER_OK"
         },
         {
@@ -74,14 +74,14 @@
           "id": "N10_LOOK1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You scan the top third. The timestamp is precise to the second.\nThe entry is plain enough to be weaponized later.",
+          "text": "You scan the top third. Timestamp: precise to the second. Plain entry, easy to weaponize later.",
           "next": "N11_LOOK2"
         },
         {
           "id": "N11_LOOK2",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "Lines include:\n- \u201cSHIFT STATUS: UNATTENDED \u2014 CONTINUITY MODE\u201d\n- \u201cOPERATOR PRESENCE: NOT REQUIRED\u201d\n- \u201cCONSOLE INTERACTION: REGISTERED\u201d\nAnd, again, the footer: \u201cNON-LOCAL COMPLIANCE NOTICE: RETAIN FOR COMPARABILITY.\u201d",
+          "text": "\u201cSHIFT STATUS: UNATTENDED \u2014 CONTINUITY MODE.\u201d (pause)\n\u201cOPERATOR PRESENCE: NOT REQUIRED.\u201d (pause)\n\u201cCONSOLE INTERACTION: REGISTERED.\u201d (pause)\nFooter, again: \u201cNON-LOCAL COMPLIANCE NOTICE: RETAIN FOR COMPARABILITY.\u201d",
           "next": "N12_PLAYER_COMMENT"
         },
         {
@@ -174,7 +174,7 @@
           "id": "N25_NONLOCAL1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "[PRINTER FOOTER TEXT]\n\u201cNON-LOCAL: OUTSIDE THE RESPONSIBLE WORKGROUP.\nWORKGROUP: SUBJECT TO CHANGE WITHOUT NOTICE.\nNOTICE: PROVIDED HEREBY.\u201d",
+          "text": "[PRINTER FOOTER]\n\u201cNON-LOCAL: OUTSIDE THE RESPONSIBLE WORKGROUP.\nWORKGROUP: SUBJECT TO CHANGE WITHOUT NOTICE.\nNOTICE: PROVIDED HEREBY.\u201d",
           "next": "N26_PLAYER_NO"
         },
         {
@@ -219,7 +219,7 @@
           "id": "N50_STEPBACK1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You let the page sit in the tray, accumulating legitimacy without you.\nThe printer hums faintly, like it\u2019s keeping time out of spite.",
+          "text": "You let the page sit in the tray, accumulating legitimacy without you. (pause) The printer hums faintly, like it\u2019s keeping time out of spite.",
           "next": "N51_STEPBACK_MENU"
         },
         {
@@ -248,14 +248,14 @@
           "id": "N30_TAKE1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You pinch the perforation and lift. The paper separates with a dry tear that sounds louder than it should.\nFor a moment, you feel almost grateful it\u2019s physical.",
+          "text": "You pinch the perforation and lift. (pause) The paper separates with a dry tear, sounding louder than it should. (pause) For a moment, you feel almost grateful it\u2019s physical.",
           "next": "N31_TAKE2"
         },
         {
           "id": "N31_TAKE2",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The timestamp is legible. The ink doesn\u2019t smear.\nIt will fit in a binder without you having to explain why it\u2019s weird.",
+          "text": "The timestamp is legible. The ink doesn\u2019t smear. (pause) It will fit in a binder without you having to explain why it\u2019s weird.",
           "next": "N32_PLAYER_GOOD"
         },
         {
@@ -276,14 +276,14 @@
           "id": "N40_TAKE_OLEA1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You take it the way you were trained to take evidence you\u2019re not calling evidence.\nClean tear. No flourish. Just a record moving from tray to custody.",
+          "text": "You take it the way you were trained\u2014evidence you\u2019re not calling evidence. (pause)\nClean tear. No flourish. (pause)\nJust a record, moving from tray to custody.",
           "next": "N41_TAKE_OLEA2"
         },
         {
           "id": "N41_TAKE_OLEA2",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The footer\u2019s \u201cNON-LOCAL COMPLIANCE\u201d line looks wrong for OLEA templates.\nYou don\u2019t react to it. That\u2019s the point.",
+          "text": "The footer\u2019s \u201cNON-LOCAL COMPLIANCE\u201d line feels wrong in OLEA templates.\nYou don\u2019t react. That\u2019s the point.",
           "next": "N42_PLAYER_FILED"
         },
         {
@@ -326,7 +326,7 @@
           "id": "N_NEGOTIATE_PRINT_BASELINE_1",
           "next": "N_NEGOTIATE_PRINT_BASELINE_2",
           "speakerId": "NARRATOR",
-          "text": "Under the tray lip, you can still see the green PRINT BASELINE button on the printer body.\nIt\u2019s labeled like an action you can justify later.",
+          "text": "Under the tray lip, you can still see the green PRINT BASELINE button. (pause) On the printer body, it\u2019s labeled like an action you can justify later.",
           "type": "npc_line"
         },
         {
@@ -357,7 +357,7 @@
           "id": "N_PRINT_BASELINE_1",
           "next": "N_PRINT_BASELINE_2",
           "speakerId": "NARRATOR",
-          "text": "The printer wakes with a dry, offended rattle. The room\u2019s status scrolls onto paper with timestamps that do not care who asked.",
+          "text": "The printer wakes with a dry, offended rattle. (pause) The room\u2019s status scrolls onto paper with timestamps that do not care who asked.",
           "type": "npc_line"
         },
         {
@@ -371,7 +371,7 @@
           "id": "N_PRINT_BASELINE_3",
           "next": "N_PRINT_BASELINE_4",
           "speakerId": "NARRATOR",
-          "text": "The first page lands warm. It lists rotational frame rates, load draw, and an \u201cexternal coordination flag\u201d marked ACTIVE, as if that\u2019s normal.",
+          "text": "The first page lands warm. (pause) It lists rotational frame rates and load draw. (pause) An \u201cexternal coordination flag\u201d reads ACTIVE, like that\u2019s normal.",
           "type": "npc_line"
         },
         {

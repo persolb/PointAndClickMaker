@@ -9,7 +9,7 @@
           "id": "N_ENTER",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The Non-Local Compliance Notices Room is smaller than it should be for how much paper it holds.\nForms racks sag under standardized templates. An envelope stack sits like it\u2019s waiting for hands that never arrive.\nOne notice is clipped higher than the rest. Its barcode is too clean. Too high-contrast. Like it was printed by a different decade.",
+          "text": "The Non-Local Compliance Notices Room is smaller than it should be. (pause) Not for how much paper it holds. (pause) Forms racks sag under standardized templates. (pause) An envelope stack sits like it is waiting for hands that never arrive. (pause) One notice is clipped higher than the rest. (pause) Its barcode is too clean. (pause) Too high-contrast. (pause) Like it was printed by a different decade.",
           "next": "N_MENU"
         },
         {
@@ -22,7 +22,7 @@
           "id": "N_NOTICE_INTRO",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The notice is a standardized compliance posting.\nIt uses local nouns\u2014facility, operator, responsible party\u2014but the verbs are wrong.\nNot \u201cmust comply.\u201d More like \u201cwill be held.\u201d\n\nThe barcode is the part that doesn\u2019t match anything else in the room.\nIt\u2019s too precise. No smearing. No aging. Like it arrived already archived.",
+          "text": "The notice is a standardized compliance posting. (pause)\nIt uses local nouns: facility, operator, responsible party. (pause)\nBut the verbs are wrong. (pause)\nNot \u201cmust comply.\u201d More like \u201cwill be held.\u201d (pause)\nThe barcode doesn\u2019t match the room. (pause)\nToo precise. No smearing. No aging. (pause)\nLike it arrived already archived.",
           "next": "N_NOTICE_MENU"
         },
         {
@@ -65,7 +65,7 @@
           "id": "N_NOTICE_BODY",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You read the first lines twice because they\u2019re trying not to be accusatory.\n\n\u201cNOTICE: Non-local compliance condition detected.\u201d\n\u201cAction: Hold state pending documentation.\u201d\n\u201cReference: [redacted by copy quality].\u201d\n\nA line at the bottom repeats like a disclaimer that got promoted:\n\u201cIncorrect service class assignments may affect standing.\u201d",
+          "text": "You read the first lines twice because they\u2019re trying not to be accusatory. (pause)\n\n\u201cNOTICE: Non-local compliance condition detected.\u201d (pause)\n\u201cAction: Hold state pending documentation.\u201d (pause)\n\u201cReference: [redacted by copy quality].\u201d (pause)\n\nAt the bottom, a line repeats like a disclaimer that got promoted: (pause)\n\u201cIncorrect service class assignments may affect standing.\u201d",
           "next": "N_NOTICE_BODY_MENU"
         },
         {
@@ -89,7 +89,7 @@
           "id": "N_NOTICE_SCAN",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The scanner is older than the barcode.\nYou feed the edge under the glass anyway, because \u201cunreadable\u201d is a category you know how to report.\n\nThe scanner chirps once\u2014unhelpfully confident\u2014then prints a stub of metadata:\n\u201cFORMAT: NON-LOCAL\u201d\n\u201cROUTING: EXTERNAL\u201d\n\u201cSTATUS: HELD\u201d\nThe rest is blank, as if the machine refuses to pretend.",
+          "text": "The scanner is older than the barcode. (pause)\nYou feed the edge under the glass anyway because \u201cunreadable\u201d is a category you can report. (pause)\n\nThe scanner chirps once\u2014unhelpfully confident\u2014then prints a stub of metadata: (pause)\n\u201cFORMAT: NON-LOCAL\u201d (pause)\n\u201cROUTING: EXTERNAL\u201d (pause)\n\u201cSTATUS: HELD\u201d (pause)\nThe rest is blank as if the machine refuses to pretend.",
           "next": "N_NOTICE_SCAN_PLAYER"
         },
         {
@@ -120,14 +120,14 @@
           "id": "N_FILE_ORDINARY_LINE",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You register the barcode as \u201cunfamiliar,\u201d and then you demote it to \u201cnot today.\u201d\nThat\u2019s a professional skill, most days.",
+          "text": "You tag the barcode \u201cunfamiliar,\u201d then demote it to \u201cnot today.\u201d That\u2019s a professional skill, daily.",
           "next": "N_OUTRO_BEAT"
         },
         {
           "id": "N_FILE_ORDINARY_SCAN_LINE",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You treat the stub like a curiosity, not a warning.\nThe notice stays clipped. The room stays quiet.",
+          "text": "You treat the stub like a curiosity, not a warning.\nNotice stays clipped. Room stays quiet.",
           "next": "N_OUTRO_BEAT"
         },
         {
@@ -158,7 +158,7 @@
           "id": "N_LEAVE_LOBBY_LINE",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You leave the notices where they are, performing compliance by not touching it.\nThe door shuts with the soft finality of an office that expects paper to outlive people.",
+          "text": "You leave the notices where they are. (pause) Compliance by not touching them. (pause) The door shuts with soft finality. (pause) An office expects paper to outlive people.",
           "next": "END_LEAVE_LOBBY"
         },
         {

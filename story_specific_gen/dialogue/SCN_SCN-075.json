@@ -7,7 +7,7 @@
           "id": "N_DEBRIS_DESC",
           "next": "N_DEBRIS_MENU",
           "speakerId": "NARRATOR",
-          "text": "A neat pile of windblown trash collects where the fence meets a concrete footing: plastic wrap, a cracked hardhat, and a laminated notice face-down in the dirt.\nThe notice is too muddy to read without committing to touching it.",
+          "text": "A neat pile of windblown trash collects where the fence meets the concrete footing. (pause) Plastic wrap. A cracked hardhat. A laminated notice lies face-down in the dirt. (pause) The notice is too muddy to read. (pause) Not without touching it.",
           "type": "npc_line"
         },
         {
@@ -36,7 +36,7 @@
           "id": "N_DEBRIS_FLIP",
           "next": "N_DEBRIS_FLIP_MENU",
           "speakerId": "NARRATOR",
-          "text": "You flip it with a pen instead of your hand. The laminate is intact, which feels intentional.\n\nThe notice reads: ALL POSTINGS MUST MATCH CURRENT ACCESS POLICY.\nNo issuer. No date. No contact. Just a rule that can\u2019t be satisfied.",
+          "text": "You flip it with a pen, not your hand. (pause) The laminate is intact. It feels intentional. (pause)\nThe notice reads: ALL POSTINGS MUST MATCH CURRENT ACCESS POLICY. (pause)\nNo issuer. No date. No contact. (pause) Just a rule that can\u2019t be satisfied.",
           "type": "npc_line"
         },
         {

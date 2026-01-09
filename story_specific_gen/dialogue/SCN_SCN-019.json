@@ -9,7 +9,7 @@
           "id": "NARR_INTRO",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The hallway smells like paper and warm dust.\nA door labeled RECORDS sits flush in a steel frame, the kind that assumes you\u2019ll stop asking.\nTo its right: a pneumatic tube station with a yellowed instruction card.\nBelow a fire panel: a taped note with too many initials.\nA wall placard explains faxing like it\u2019s hazardous waste.",
+          "text": "The hallway smells like paper and warm dust. (pause)\nA door labeled RECORDS sits flush in a steel frame. (pause)\nIt\u2019s the kind that assumes you\u2019ll stop asking. (pause)\nTo its right: a pneumatic tube station with a yellowed instruction card. (pause)\nBelow a fire panel: a taped note with too many initials. (pause)\nA wall placard explains faxing like it\u2019s hazardous waste.",
           "next": "MAIN_MENU"
         },
         {
@@ -49,7 +49,7 @@
           "id": "FIRE_INTRO",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "A note is taped below the fire panel with three layers of tape, as if one layer would be an admission.\nThe printed header says FIRE RESPONSE QUICK REFERENCE.\nThe note is mostly phone numbers and forbidden verbs:\n- DO NOT RESET PANEL (unless instructed)\n- DO NOT ANNOUNCE \u201cINCIDENT\u201d (use \u201cirregular condition\u201d)\n- IF RECORDS ACCESS REQUIRED: notify SAFETY DESK first \u201cfor chain,\u201d then Admin Intake \u201cfor routing.\u201d\nAt the bottom: If asked why, cite \u201cclosure compliance.\u201d Do not elaborate.\nSomeone added a tiny checkbox: I did not elaborate.",
+          "text": "A note is taped below the fire panel with three layers of tape. (pause)\nAs if one layer would be an admission. (pause)\nThe printed header says FIRE RESPONSE QUICK REFERENCE. (pause)\nThe note is mostly phone numbers and forbidden verbs. (pause)\n- DO NOT RESET PANEL. Unless instructed. (pause)\n- DO NOT ANNOUNCE \u201cINCIDENT\u201d. Use \u201cirregular condition\u201d. (pause)\n- IF RECORDS ACCESS REQUIRED. Notify SAFETY DESK first for chain. (pause)\nThen Admin Intake for routing. (pause)\nAt the bottom: If asked why. Cite \u201cclosure compliance\u201d. (pause)\nDo not elaborate. (pause)\nSomeone added a tiny checkbox: I did not elaborate.",
           "next": "FIRE_MENU"
         },
         {
@@ -79,21 +79,21 @@
           "id": "FIRE_WHY",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The note doesn\u2019t justify itself. It just instructs.\nThe tape has a fingerprint pressed into it, like someone paused there and decided to comply.",
+          "text": "The note doesn\u2019t justify itself. It just instructs. (pause) The tape has a fingerprint pressed into it, like someone paused there and decided to comply.",
           "next": "FIRE_MENU"
         },
         {
           "id": "FIRE_CHAIN",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The note is careful: \u201cfor chain\u201d is not the same as approval.\nIt\u2019s a promise your request will be owned by multiple people, briefly, so none of them owns it later.",
+          "text": "The note is careful: \u201cfor chain\u201d is not the same as approval. (pause) It\u2019s a promise your request will be owned by multiple people, briefly. (pause) So none of them owns it later.",
           "next": "FIRE_MENU"
         },
         {
           "id": "FAX_INTRO",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "A placard reads: FAX SUBMISSIONS \u2014 COMPLIANCE ACCEPTED FORMAT.\nIt\u2019s mounted with screws that don\u2019t match. That feels deliberate.\nIt lists requirements with the tone of a threat:\n- Cover sheet must include: SITE ID, DATE, SENDER NAME, PURPOSE (ONE WORD)\n- Do not use \u201curgent.\u201d Use \u201ctime-bound.\u201d\n- If pages are missing, resubmit entire packet.\nA final line: FAX CONFIRMATION IS NOT RECEIPT.\nSomeone has circled \u201cNOT\u201d and drawn a little arrow to nothing.",
+          "text": "A placard reads: FAX SUBMISSIONS \u2014 COMPLIANCE ACCEPTED FORMAT. (pause)\nIt\u2019s mounted with screws that don\u2019t match. (pause)\nThat feels deliberate. (pause)\nIt lists requirements with the tone of a threat: (pause)\n- Cover sheet must include: SITE ID / DATE / SENDER NAME / PURPOSE (ONE WORD) (pause)\n- Do not use \u201curgent.\u201d Use \u201ctime-bound.\u201d (pause)\n- If pages are missing resubmit entire packet. (pause)\nA final line: FAX CONFIRMATION IS NOT RECEIPT. (pause)\nSomeone has circled \u201cNOT\u201d and drawn a little arrow to nothing.",
           "next": "FAX_MENU"
         },
         {
@@ -123,14 +123,14 @@
           "id": "FAX_PURPOSE",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "A pen mark in the margin suggests approved options: CLOSURE. INVENTORY. ROUTING.\n\u201cROUTING\u201d is underlined like it gets you out of explaining yourself.",
+          "text": "Pen mark in margin: approved options\u2014CLOSURE. INVENTORY. ROUTING. \u201cROUTING\u201d underlined, like a pass on explaining yourself.",
           "next": "FAX_MENU"
         },
         {
           "id": "FAX_RECORDS",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "In smaller print: RECORDS REQUESTS MUST BE SUBMITTED VIA ADMIN INTAKE.\nUnder it, a handwritten addition: FAX OK IF TUBE DOWN.\nThe handwriting looks annoyed, like the tube being down was taken personally.",
+          "text": "In smaller print: RECORDS REQUESTS MUST BE SUBMITTED VIA ADMIN INTAKE. (pause)\nUnder it, a handwritten addition: FAX OK IF TUBE DOWN. (pause)\nThe handwriting looks annoyed. Like the tube being down was taken personally.",
           "next": "FAX_MENU"
         },
         {
@@ -155,7 +155,7 @@
           "id": "COMMIT_NARR1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You have enough to say, later, that you tried the obvious door first.\nThe hallway offers two acceptable alternatives: send the request like cargo, or escalate it like smoke.\nNeither requires anyone to admit they gave you access.",
+          "text": "You have enough to say later (pause) that you tried the obvious door first. (pause)\nThe hallway offers two acceptable alternatives: (pause) send the request like cargo (pause) or escalate it like smoke. (pause)\nNeither requires anyone to admit (pause) they gave you access.",
           "next": "COMMIT_NARR2"
         },
         {

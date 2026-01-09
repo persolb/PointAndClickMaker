@@ -9,14 +9,14 @@
           "id": "N_INTRO_1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The Overflow Intake Concourse is lit like an apology.\nQueue stanchions form a maze that leads nowhere in particular.\nA barcode kiosk waits with the patience of a machine that has never been wrong.",
+          "text": "The Overflow Intake Concourse is lit like an apology. (pause)\nQueue stanchions form a maze that leads nowhere in particular. (pause)\nA barcode kiosk waits with the patience of a machine that has never been wrong.",
           "next": "N_INTRO_2"
         },
         {
           "id": "N_INTRO_2",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "Left: a sealed bay door labeled \u201cAPERTURE SIDE \u2014 AUTHORIZED TOKENED ENTRY ONLY.\u201d\nCenter: \u201cINCIDENT QUEUE\u201d stanchions with numbered placards that skip numbers.\nRight: a corridor sign points toward \u201cINTAKE HALL (WINDOWS 0/3/5/7/9).\u201d",
+          "text": "Left: sealed bay door: \u201cAPERTURE SIDE\u2014AUTHORIZED TOKENED ENTRY ONLY.\u201d (pause) Center: \u201cINCIDENT QUEUE\u201d stanchions, numbered placards skipping numbers. (pause) Right: sign to \u201cINTAKE HALL (WINDOWS 0/3/5/7/9).\u201d",
           "next": "PC_MAIN"
         },
         {
@@ -280,7 +280,7 @@
           "id": "N_USE_KIOSK_1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The kiosk wakes up halfway, like it\u2019s doing you a favor.\nA prompt appears: \u201cTOKEN REQUIRED FOR PERSONHOOD.\u201d",
+          "text": "The kiosk wakes halfway, like it\u2019s doing you a favor.\nA prompt: \u201cTOKEN REQUIRED FOR PERSONHOOD.\u201d",
           "next": "N_USE_KIOSK_2"
         },
         {
@@ -387,14 +387,14 @@
           "id": "N_GET_TOKEN_INFO_5",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The Coach points right, toward the Intake Hall signage, as if pointing is a legally safer form of escort.",
+          "text": "The Coach points right, toward Intake Hall signage, as if pointing is a legally safer escort.",
           "next": "N_GET_TOKEN_INFO_6"
         },
         {
           "id": "N_GET_TOKEN_INFO_6",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "On the kiosk, the prompt refreshes: \u201cPRESENT TOKEN.\u201d\nIt blinks once, like a reminder that the building has already moved on.",
+          "text": "At the kiosk, prompt refreshes: \u201cPRESENT TOKEN.\u201d\nIt blinks once, a reminder: building already moved on.",
           "next": "END_COMMIT_TOKENS_RULE"
         },
         {

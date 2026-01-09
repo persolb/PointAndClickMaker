@@ -21,7 +21,7 @@
               "value": false
             }
           ],
-          "text": "Window 9 is lit like a fish tank: bright, clean, and designed to discourage movement.\nA placard under the glass reads: \u201cCOMPLAINTS \u2014 PROCESSED, NO ACTION.\u201d\nThe stamp tray is already inked, like it\u2019s been waiting longer than you have.",
+          "text": "Window 9 is lit like a fish tank: bright and clean. (pause) It\u2019s designed to discourage movement. (pause) A placard under the glass reads: \u201cCOMPLAINTS \u2014 PROCESSED NO ACTION.\u201d (pause) The stamp tray is already inked like it\u2019s been waiting longer than you have.",
           "next": "N_CLERK_OPEN_1"
         },
         {
@@ -106,7 +106,7 @@
           "id": "N_STAMP_FAST_3",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The clerk stamps once, hard, like they\u2019re pinning the paper to the year it happened in.\nThey slide it back under the glass without looking at your hands.",
+          "text": "The clerk stamps once, hard, like pinning the paper to the year it happened in. (pause) They slide it back under the glass without looking at your hands.",
           "next": "N_STAMP_FAST_4"
         },
         {

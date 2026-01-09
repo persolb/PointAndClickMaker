@@ -9,7 +9,7 @@
           "id": "N_START_NARR",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The alarm panel is already lit with the soft, constant status of a system proving it is allowed to exist. A new banner overlays the verification checklist: DEMAND EVENT \u2014 LOAD SHED REQUESTED.",
+          "text": "The alarm panel is already lit with the soft, constant status. (pause) A system proving it is allowed to exist. (pause) A new banner overlays the verification checklist: DEMAND EVENT \u2014 LOAD SHED REQUESTED.",
           "next": "N_OPS_WARN"
         },
         {
@@ -616,7 +616,7 @@
           "id": "N_PRINT_NARR",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The log printer wakes up like it was pretending not to hear you. A strip of paper curls into the tray: DEMAND EVENT UTIL-DS-4419, time-stamped, with a header serial number.",
+          "text": "The log printer wakes up like it was pretending not to hear you. (pause) A strip of paper curls into the tray. (pause) DEMAND EVENT UTIL-DS-4419, time-stamped, header serial number.",
           "next": "N_PRINT_OPS"
         },
         {
@@ -710,7 +710,7 @@
           "id": "N_REVIEW_NARR",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The demand event detail page is mostly disclaimers: \u201cbest effort,\u201d \u201cno guarantee,\u201d \u201coperator responsible.\u201d The shed target is clear; the definitions are not.",
+          "text": "The demand event detail page is mostly disclaimers: \u201cbest effort,\u201d \u201cno guarantee,\u201d \u201coperator responsible.\u201d (pause) The shed target is clear; the definitions are not.",
           "next": "N_REVIEW_OPS"
         },
         {

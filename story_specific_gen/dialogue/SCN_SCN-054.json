@@ -9,7 +9,7 @@
           "id": "NARRATOR_INTRO",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The Legacy Interconnections Archive smells like dust that passed inspection.\nA catalog terminal waits under a plastic hood labeled: USE IS A FORM OF CREATION.",
+          "text": "The Legacy Interconnections Archive smells like dust that passed inspection. (pause) A catalog terminal waits under a plastic hood labeled: USE IS A FORM OF CREATION.",
           "next": "TECH_OPENING"
         },
         {
@@ -37,7 +37,7 @@
           "id": "NARRATOR_MATCH",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The screen populates with a legacy match before you finish exhaling.\n\nA record header blinks: \u201cENDPOINT: SOL\u2011EARTH\u2011LOCAL.\u201d\nBelow it: \u201cMAINTENANCE LINEAGE: ACTIVE / RECURRING.\u201d\nA final line is half-obscured by an access banner: \u201cMANAGING AUTHORITY: UPSTREAM / EXTERNAL (UNNAMED).\u201d",
+          "text": "The screen populates with a legacy match before you finish exhaling. (pause)\n\nA record header blinks: \u201cENDPOINT: SOL\u2011EARTH\u2011LOCAL.\u201d (pause)\nBelow it: \u201cMAINTENANCE LINEAGE: ACTIVE / RECURRING.\u201d (pause)\nA final line is half-obscured by an access banner: \u201cMANAGING AUTHORITY: UPSTREAM / EXTERNAL (UNNAMED).\u201d",
           "next": "TECH_FAST_RESULTS"
         },
         {
@@ -260,7 +260,7 @@
           "id": "NARRATOR_PLACARDS",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "On the placards, the index rules are printed in three fonts, as if consensus was attempted and failed.\n\nRule 4: \u201cQUESTIONS MUST BE SUBMITTED AS HEADINGS.\u201d\nRule 9: \u201cMOTIVE IS NOT AN INDEXABLE FIELD.\u201d\nSomeone has underlined \u201cFIELD\u201d twice, angrily.\n\nThe terminal waits, ready to log your next phrasing as a permanent feature of reality.",
+          "text": "On the placards, the index rules are printed in three fonts. (pause) Consensus was attempted and failed. (pause)\nRule 4: \u201cQUESTIONS MUST BE SUBMITTED AS HEADINGS.\u201d (pause)\nRule 9: \u201cMOTIVE IS NOT AN INDEXABLE FIELD.\u201d (pause)\nSomeone has underlined \u201cFIELD\u201d twice. Angrily. (pause)\nThe terminal waits. Ready to log your next phrasing as a permanent feature of reality.",
           "next": "MENU_PLACARDS"
         },
         {
@@ -289,7 +289,7 @@
           "id": "NARRATOR_AUTH_DARE",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The terminal requests an authorization string you already have, which feels less like security and more like a dare.",
+          "text": "The terminal asks for the authorization string you already have; less security, more a dare.",
           "next": "TECH_PLACEMENT_NOT_MEANING"
         },
         {
@@ -310,7 +310,7 @@
           "id": "NARRATOR_ABSTRACT_EXPANDS",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "A legacy abstract expands:\n\u201cARCHIVE: ENDPOINT SOL\u2011EARTH\u2011LOCAL.\u201d\n\u201cSTATUS: IN CATALOG PRIOR TO CURRENT SCHEME.\u201d\n\u201cMAINTENANCE LINEAGE: TIED TO EXISTING NODE; NOT NEWLY INTRODUCED.\u201d\n\u201cMANAGING AUTHORITY: UPSTREAM/EXTERNAL (UNNAMED).\u201d\n\u201cASSOCIATED MATERIAL: DRAWER BANK 7 / SLICE B.\u201d",
+          "text": "A legacy abstract expands: (pause)\n\u201cARCHIVE: ENDPOINT SOL\u2011EARTH\u2011LOCAL.\u201d (pause)\n\u201cSTATUS: IN CATALOG PRIOR TO CURRENT SCHEME.\u201d (pause)\n\u201cMAINTENANCE LINEAGE: TIED TO EXISTING NODE; NOT NEWLY INTRODUCED.\u201d (pause)\n\u201cMANAGING AUTHORITY: UPSTREAM/EXTERNAL (UNNAMED).\u201d (pause)\n\u201cASSOCIATED MATERIAL: DRAWER BANK 7 / SLICE B.\u201d",
           "next": "NARRATOR_DRAWER_BANK"
         },
         {
@@ -331,7 +331,7 @@
           "id": "NARRATOR_MAP_FRAGMENT",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "Inside: a thin cartographic insert, brittle at the folds.\nA fragment of a network map with SOL\u2011EARTH\u2011LOCAL circled in a hand that learned control by being denied it.",
+          "text": "Inside: thin cartographic insert, brittle at the folds. (pause) Network map fragment: SOL\u2011EARTH\u2011LOCAL circled, by a hand schooled in control through denial.",
           "next": "END_PULL_LEGACY_METADATA"
         },
         {
@@ -345,7 +345,7 @@
           "id": "END_PULL_LEGACY_METADATA",
           "type": "end",
           "speakerId": "NARRATOR",
-          "text": "You copy the legacy abstract into your notes and pocket the map fragment.\nThe catalog quietly reclassifies you from \u201cnew irregularity\u201d to \u201cexisting maintenance burden,\u201d as if that\u2019s kinder.",
+          "text": "You copy the legacy abstract into your notes, and pocket the map fragment. (pause)\nThe catalog quietly reclassifies you: \u201cnew irregularity\u201d becomes \u201cexisting maintenance burden,\u201d as if kinder.",
           "outcomeId": "pull_legacy_metadata",
           "effects": [
             {

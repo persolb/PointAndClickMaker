@@ -9,7 +9,7 @@
           "id": "N00_TABLEAU",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The scheduling counter is a cage with glass and forms.\nA board labeled APPROVED STAMP SUBSTITUTIONS hangs slightly crooked, corners curled from being handled and put back.\nSeveral entries are crossed out and re-initialed, like corrections that needed witnesses.",
+          "text": "The scheduling counter is a cage with glass and forms. (pause) A board labeled APPROVED STAMP SUBSTITUTIONS hangs slightly crooked. (pause) Corners curl from being handled and put back. (pause) Several entries are crossed out and re-initialed, like corrections that needed witnesses.",
           "next": "N01_CLERK_NEXT"
         },
         {
@@ -64,7 +64,7 @@
           "id": "N10_READ_BOARD",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The entries are typed in tidy rows: REQUIRED STAMP \u2192 APPROVED SUBSTITUTE.\nA footer note reads: \u201cSUBSTITUTIONS PRESERVE CHAIN CONTINUITY.\u201d\nSomeone underlined \u201ccontinuity\u201d hard enough to dent the laminate.",
+          "text": "The entries are typed in tidy rows: REQUIRED STAMP \u2192 APPROVED SUBSTITUTE. (pause) A footer note reads: \u201cSUBSTITUTIONS PRESERVE CHAIN CONTINUITY.\u201d (pause) Someone underlined \u201ccontinuity\u201d hard enough to dent the laminate.",
           "next": "N11_BOARD_MENU"
         },
         {
@@ -98,7 +98,7 @@
           "id": "N12_FIND_RELEVANT",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "One line is newer than the rest\u2014different ink in the initials:\n\u201cUPSTREAM AUTHORIZATION \u2014 UNAVAILABLE \u2192 COMPLAINT ACKNOWLEDGMENT STAMP.\u201d\nNext to it: \u201cVALID FOR PROVISIONAL CLEARANCE PENDING REVIEW.\u201d",
+          "text": "One line is newer than the rest\u2014different ink in the initials. (pause)\n\u201cUPSTREAM AUTHORIZATION \u2014 UNAVAILABLE \u2192 COMPLAINT ACKNOWLEDGMENT STAMP.\u201d (pause)\nNext to it: \u201cVALID FOR PROVISIONAL CLEARANCE PENDING REVIEW.\u201d",
           "next": "N13_RELEVANT_MENU"
         },
         {
@@ -177,7 +177,7 @@
           "id": "N52_NARRATOR_IMPLICATION",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The implication lands cleanly: a complaint stamp can stand in for missing authority, because the system treats \u201cdispute, logged\u201d as a form of custody.",
+          "text": "Implication lands: complaint stamp can replace missing authority, because system treats \u201cdispute, logged\u201d as custody.",
           "next": "N53_COMMIT_MENU"
         },
         {
@@ -253,7 +253,7 @@
           "id": "N22_FINE_PRINT",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The fine print is mostly prohibitions.\nOne sentence repeats in different wording: \u201cSUBSTITUTIONS DO NOT CREATE RIGHTS.\u201d\nSomeone added a handwritten addendum: \u201cTHEY CREATE SURVIVABLE PACKETS.\u201d",
+          "text": "The fine print is mostly prohibitions. (pause) One sentence repeats in different wording: \u201cSUBSTITUTIONS DO NOT CREATE RIGHTS.\u201d (pause) Someone added a handwritten addendum: \u201cTHEY CREATE SURVIVABLE PACKETS.\u201d",
           "next": "N23_FINE_MENU"
         },
         {
@@ -308,7 +308,7 @@
           "id": "N16_CROSSED_OUT",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "Several substitutions are struck through and re-initialed.\nThe pattern is consistent: anything that looked like mercy got removed. Anything that looked like documentation stayed.",
+          "text": "Several substitutions are struck through and re-initialed. (pause) The pattern is consistent: anything that looked like mercy got removed. (pause) Anything that looked like documentation stayed.",
           "next": "N17_CROSSED_MENU"
         },
         {
@@ -432,7 +432,7 @@
           "id": "N35_NARRATOR_NOTE",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You note the rule without moving anything yet: complaint acknowledgment can function as an approved substitute in the clearance chain.",
+          "text": "You note the rule, not moving yet: complaint acknowledgment is an approved substitute in clearance chain.",
           "next": "N36_COMMIT_FROM_WHY"
         },
         {

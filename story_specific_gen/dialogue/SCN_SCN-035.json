@@ -9,7 +9,7 @@
           "id": "INTRO",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The ventilation access panel sits in the service corridor like it was added after someone lost an argument. A plastic window shows a tiny flag: \u201cCLOSED,\u201d or possibly \u201cCL0SED.\u201d The font is doing its best.",
+          "text": "The ventilation access panel sits in the service corridor. (pause) Like it was added after someone lost an argument. (pause) A plastic window shows a tiny flag: \u201cCLOSED,\u201d or possibly \u201cCL0SED.\u201d (pause) The font is doing its best.",
           "next": "MENU_MAIN"
         },
         {
@@ -43,14 +43,14 @@
           "id": "LOOK_BEFORE",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The panel label reads: \u201cSUPPLY DAMPER \u2014 DO NOT ADJUST (UNLESS AUTHORIZED).\u201d Under it, someone has written \u201cAUTHORIZED = ANYONE WITH A PEN,\u201d then crossed that out, carefully.\n\nYour jaw tightens once, then relaxes. You\u2019ve seen worse handwriting on better consequences.\n\nThrough the window: the indicator cable moves. The blade does not. The little status flag continues to report with confidence.",
+          "text": "The panel label reads: \u201cSUPPLY DAMPER \u2014 DO NOT ADJUST (UNLESS AUTHORIZED).\u201d (pause) Under it someone has written \u201cAUTHORIZED = ANYONE WITH A PEN.\u201d (pause) Then it\u2019s crossed out. Carefully. (pause) Your jaw tightens once then relaxes. (pause) You\u2019ve seen worse handwriting on better consequences. (pause) Through the window the indicator cable moves. (pause) The blade does not. (pause) The little status flag continues to report with confidence.",
           "next": "MENU_MAIN"
         },
         {
           "id": "USE_FIX_AND_SET_OPEN",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The quarter-turn latches give with a dry pop. Dust drops in a straight line, as if it has an appointment.\n\nInside: a linkage arm, a return spring, and a damper shaft that\u2019s pretending friction is policy.\n\nYou brace the linkage, take the load off the spring, and work the shaft back and forth until it stops being a negotiation. There\u2019s a faint metallic click\u2014less \u201cfixed,\u201d more \u201cnow it\u2019s your problem.\u201d\n\nThe blade rotates. Air shifts tone in the duct, like someone stopped holding their breath.\n\nYou seat the damper to OPEN and lock the linkage. A green sticker in the panel reads \u201cVERIFY POSITION BY INDICATOR ONLY,\u201d which is bold, considering the indicator has been lying to you for several minutes.",
+          "text": "The quarter-turn latches give with a dry pop. (pause)\nDust drops in a straight line as if it has an appointment. (pause)\nInside: a linkage arm. A return spring. A damper shaft pretending friction is policy. (pause)\nYou brace the linkage. Take the load off the spring. Work the shaft back and forth. (pause)\nYou keep at it until it stops being a negotiation. (pause)\nA faint metallic click\u2014less \u201cfixed\u201d more \u201cnow it\u2019s your problem.\u201d (pause)\nThe blade rotates. Air shifts tone in the duct like someone stopped holding their breath. (pause)\nYou seat the damper to OPEN and lock the linkage. (pause)\nA green sticker reads \u201cVERIFY POSITION BY INDICATOR ONLY.\u201d (pause)\nThat\u2019s bold. The indicator has been lying to you for several minutes.",
           "next": "MENU_AFTER_USE"
         },
         {
@@ -84,14 +84,14 @@
           "id": "LOOK_AFTER",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The flag now reads \u201cOPEN.\u201d It also reads \u201cOP EN,\u201d because the plastic window is warped. Close enough for a form.",
+          "text": "Flag reads \u201cOPEN.\u201d Also \u201cOP EN,\u201d because the plastic window\u2019s warped. Close enough for a form.",
           "next": "MENU_AFTER_USE"
         },
         {
           "id": "CYCLE_AFTER",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You swing the damper shut, then open again\u2014one full cycle. The spring returns without drama.\n\nFor a second, you catch yourself waiting for a sound that would justify paperwork. Nothing obliges.",
+          "text": "You swing the damper shut. (pause) Then open again\u2014one full cycle. (pause) The spring returns without drama. (pause) For a second you catch yourself waiting for a sound to justify paperwork. (pause) Nothing obliges.",
           "next": "MENU_AFTER_USE"
         },
         {
@@ -161,7 +161,7 @@
           "id": "SHOW_MAIN_1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You bring up the closure checklist entry and hold it to the panel like you\u2019re introducing them. Your thumb covers a date field out of habit.",
+          "text": "You lift closure checklist entry to the panel, introducing it; your thumb habitually covers date field.",
           "next": "SHOW_MAIN_2"
         },
         {
@@ -266,7 +266,7 @@
           "id": "SHOW_AFTER_1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You bring up the closure checklist entry and hold it to the open panel like you\u2019re introducing them. Your thumb covers a date field out of habit.",
+          "text": "You hold closure checklist entry to the open panel, introducing them. Your thumb hides the date.",
           "next": "SHOW_AFTER_2"
         },
         {
@@ -308,7 +308,7 @@
           "id": "LEAVE_COMMIT_1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You let the panel hang open for a moment, just to confirm nothing re-sticks out of spite. The damper holds position.\n\nThe status reports OPEN.",
+          "text": "You let the panel hang open a moment (pause) to confirm nothing re-sticks out of spite. (pause) The damper holds position. (pause) The status reports OPEN.",
           "next": "END_SET_DAMPER_OPEN"
         },
         {
@@ -332,7 +332,7 @@
           "id": "LEAVE_NO_CHANGE_1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You step back into the corridor. The panel stays exactly what it was: an argument someone bolted to the wall.",
+          "text": "You step back into the corridor. The panel stays: an argument someone bolted to the wall.",
           "next": "END_NO_CHANGE"
         },
         {

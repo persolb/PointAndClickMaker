@@ -9,14 +9,14 @@
           "id": "INTRO_1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The wall phone list is laminated and warped, like it\u2019s been steamed by years of proximity to other people\u2019s problems. Most entries are crossed out in pen that\u2019s had time to become policy.",
+          "text": "The wall phone list is laminated and warped, like it\u2019s been steamed for years. (pause) Too close to other people\u2019s problems. (pause) Most entries are crossed out in pen that\u2019s had time to become policy.",
           "next": "INTRO_2"
         },
         {
           "id": "INTRO_2",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "A strip of newer tape sits over one column. The adhesive is still too clear to be old.",
+          "text": "A strip of new tape sits over a column. The adhesive is clear, not aged.",
           "next": "MENU_MAIN"
         },
         {
@@ -76,14 +76,14 @@
           "id": "LOOK_LEGAL_2",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You find it twice: once under \u201cCounsel,\u201d once under \u201cIncident Containment (Administrative).\u201d Same extension both times. Someone wanted it to survive edits.",
+          "text": "You find it twice. \u201cCounsel.\u201d \u201cIncident Containment (Administrative).\u201d Same extension. Someone wanted it to survive edits.",
           "next": "LOOK_LEGAL_3"
         },
         {
           "id": "LOOK_LEGAL_3",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The Legal line is printed in a newer font than the rest. It\u2019s the kind of update that says, quietly, \u201cWe will be consulted.\u201d",
+          "text": "The Legal line is in a newer font. A quiet update: \u201cWe will be consulted.\u201d",
           "next": "MENU_LEGAL"
         },
         {
@@ -117,14 +117,14 @@
           "id": "LOOK_REST_1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "Facilities routes to a number with an asterisk and no explanation. Safety has three different extensions, each labeled \u201cPRIMARY.\u201d",
+          "text": "Facilities routes to a number with an asterisk\u2014no explanation. (pause) Safety has three extensions, each labeled \u201cPRIMARY.\u201d",
           "next": "LOOK_REST_2"
         },
         {
           "id": "LOOK_REST_2",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "Procurement is listed under a department name that reads like a confession. The only entry that looks maintained is Legal.",
+          "text": "Procurement sits under a department name that reads like a confession. Only Legal looks maintained.",
           "next": "MENU_REST"
         },
         {
@@ -153,7 +153,7 @@
           "id": "CALL_1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The wall phone\u2019s handset is slightly tacky in the way only public plastic gets. The dial tone arrives immediately, as if it\u2019s been waiting to be useful.",
+          "text": "The wall phone\u2019s handset is slightly tacky, the way only public plastic gets. (pause) The dial tone arrives immediately, like it\u2019s been waiting to be useful.",
           "next": "CALL_2"
         },
         {
@@ -212,7 +212,7 @@
           "id": "PRINT_1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The lobby kiosk wakes with a fan noise that sounds irritated to be involved. Its screen offers a familiar OLEA header and an unfamiliar warning footer.",
+          "text": "The lobby kiosk wakes with a fan noise that sounds irritated to be involved. (pause) Its screen offers a familiar OLEA header and an unfamiliar warning footer.",
           "next": "PRINT_2"
         },
         {
@@ -257,28 +257,28 @@
           "id": "COMMIT_COPY_1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You write the extension exactly as shown, including the prefix nobody uses anymore. Your handwriting stays neat on purpose.",
+          "text": "You write the extension exactly as shown, prefix nobody uses. Your handwriting stays neat on purpose.",
           "next": "END_NOTE_LEGAL_EXTENSION"
         },
         {
           "id": "COMMIT_COPY_2",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You add the extension to your working contacts as an escalation channel and supervisor reference. It feels like writing down a fire exit you hope you don\u2019t need.",
+          "text": "You add the extension to your working contacts\u2014an escalation channel, a supervisor reference. (pause) Like writing down a fire exit you hope you don\u2019t need.",
           "next": "END_NOTE_LEGAL_EXTENSION"
         },
         {
           "id": "COMMIT_COPY_AFTER_CALL_1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You record the extension as a usable escalation channel, exactly as Legal suggested: impersonal, citable, and hard to argue with later. The paper trail gets heavier, which is the point.",
+          "text": "You record the extension as a usable escalation channel, per Legal. (pause) It stays impersonal and citable, hard to argue with later. (pause) The paper trail gets heavier. That's the point.",
           "next": "END_NOTE_LEGAL_EXTENSION"
         },
         {
           "id": "COMMIT_PRINT_1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The kiosk prints a single strip of paper with the Legal extension and a timestamp. The font is official enough to be believed and cheap enough to be denied.",
+          "text": "The kiosk prints a single strip of paper with the Legal extension and a timestamp. (pause) The font is official enough to be believed and cheap enough to be denied.",
           "next": "END_NOTE_LEGAL_EXTENSION"
         },
         {

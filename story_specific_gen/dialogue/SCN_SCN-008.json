@@ -23,7 +23,7 @@
           "id": "N2",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "Four fixtures remain, all of them confident: a badge insert dispenser, a desk drawer of old badges, a speaker/intercom, and a pneumatic tube port sealed with a cover plate.",
+          "text": "Four fixtures remain, all confident: a badge insert dispenser. (pause) A desk drawer of old badges. (pause) A speaker/intercom. (pause) A pneumatic tube port, sealed with a cover plate.",
           "next": "N_MAIN_MENU"
         },
         {
@@ -50,7 +50,7 @@
           "id": "N_DISP_1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The inserts inside are blank\u2014except for faint pre-print marks where a logo used to be. The bottom stack is slightly curled from heat, but still usable.",
+          "text": "Inserts are blank, except faint pre-print marks where a logo was. Bottom stack heat-curled, still usable.",
           "next": "N_DISP_MENU"
         },
         {
@@ -96,7 +96,7 @@
           "id": "N_DISP_LABEL_1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "A faded sticker: \u201cTEMP BADGE INSERTS \u2014 PRINT FROM KIOSK / RECORDS AUTHORIZATION REQUIRED.\u201d \u201cRequired\u201d is underlined twice, as if the pen could enforce it.",
+          "text": "A faded sticker: \u201cTEMP BADGE INSERTS \u2014 PRINT FROM KIOSK / RECORDS AUTHORIZATION REQUIRED.\u201d (pause) \u201cRequired\u201d is underlined twice, as if the pen could enforce it.",
           "next": "N_MAIN_MENU"
         },
         {

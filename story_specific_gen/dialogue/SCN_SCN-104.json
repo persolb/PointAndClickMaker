@@ -7,7 +7,7 @@
           "id": "N_START",
           "next": "N_HUB",
           "speakerId": "NARRATOR",
-          "text": "Staging stations sit in their marked zones: reader loop, dummy mass fixture, test load panel, and the clipboard station. Everything looks designed to be photographed mid-compliance.",
+          "text": "Staging stations sit in marked zones: reader-loop; dummy-mass fixture; test-load panel; clipboard-station. Photographed mid-compliance.",
           "type": "npc_line"
         },
         {
@@ -78,7 +78,7 @@
           "id": "N_NARR_LOOK_STATIONS",
           "next": "N_REDIRECT_HUB",
           "speakerId": "NARRATOR",
-          "text": "Checkpoint dressed up as a work area: reader loop, dummy mass fixture, test load panel, and a clipboard station that looks like it\u2019s never been cleaned without being photographed first.\nThe supervisor doesn\u2019t step in your way. They just stand where your options feel narrower.",
+          "text": "Checkpoint dressed as a work area. (pause) Reader loop. Dummy mass fixture. Test load panel. (pause) Clipboard station, never cleaned unless a camera\u2019s on it. (pause) The supervisor doesn\u2019t block you. (pause) They stand where your options feel narrower.",
           "type": "npc_line"
         },
         {
@@ -138,7 +138,7 @@
           "id": "N_AMR_CLIPPED",
           "next": "N_AMR_CLIPPED_SUP",
           "speakerId": "NARRATOR",
-          "text": "The tag seats with a small click.\nThe loop chirps once\u2014polite, like it\u2019s acknowledging a witness, not a worker.",
+          "text": "Tag seats with a small click.\nLoop chirps once\u2014polite, acknowledging a witness, not a worker.",
           "type": "npc_line"
         },
         {
@@ -248,7 +248,7 @@
           "id": "N_DUMMY_SEATED",
           "next": "N_DUMMY_SEATED_SUP",
           "speakerId": "NARRATOR",
-          "text": "You align the pins and lock the mass in place.\nThe latch resists, then gives\u2014like it\u2019s deciding whether to cooperate.",
+          "text": "You align the pins, lock the mass. The latch resists, then gives\u2014like deciding to cooperate.",
           "type": "npc_line"
         },
         {
@@ -365,7 +365,7 @@
           "id": "N_LOAD_SET",
           "next": "N_LOAD_SET_SUP",
           "speakerId": "NARRATOR",
-          "text": "You set the toggles to the posted profile.\nThe panel vibrates faintly, like it\u2019s clearing its throat.",
+          "text": "You set toggles to the posted profile.\nThe panel vibrates faintly, like it\u2019s clearing its throat.",
           "type": "npc_line"
         },
         {
@@ -482,7 +482,7 @@
           "id": "N_CLIP_INIT",
           "next": "N_CLIP_INIT_SUP",
           "speakerId": "NARRATOR",
-          "text": "You initial in the box labeled TECH PRESENT.\nThe paper absorbs it greedily, like it\u2019s been hungry.",
+          "text": "You initial in the box labeled TECH PRESENT.\nThe paper absorbs it greedily, like it\u2019s hungry.",
           "type": "npc_line"
         },
         {
@@ -529,7 +529,7 @@
           "id": "N_FINAL_CLEAR",
           "next": "N_FINAL_SUP",
           "speakerId": "NARRATOR",
-          "text": "The staging indicators settle into a steady pattern that looks like calm if you don\u2019t ask what it cost.",
+          "text": "Staging indicators settle into a steady pattern, looking calm if you don\u2019t ask what it cost.",
           "type": "npc_line"
         },
         {

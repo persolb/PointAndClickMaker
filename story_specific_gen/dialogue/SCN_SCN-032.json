@@ -9,7 +9,7 @@
           "id": "N_INTRO_1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The training date interlock panel sits at chest height, bolted to the corridor wall like an apology. Its screen is lit. The green light is off.",
+          "text": "The training date interlock panel sits at chest height. (pause) Bolted to the corridor wall like an apology. (pause) Its screen is lit. The green light is off.",
           "next": "N_INTRO_2"
         },
         {
@@ -126,7 +126,7 @@
           "id": "N_LOOK_1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "A scratched optical reader. A faded label: \u201cTRAINING: ENTER DATE / PRESENT PROOF.\u201d Someone has underlined DATE twice, hard enough to tear the laminate.",
+          "text": "Scratched optical reader. Faded label: \u201cTRAINING: ENTER DATE / PRESENT PROOF.\u201d DATE underlined twice, tearing laminate.",
           "next": "R_TO_MENU"
         },
         {
@@ -196,7 +196,7 @@
           "id": "N_ASK_WHY_4",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The panel flashes a small warning icon: \u201cUSER ENGAGED: PROVIDE PROOF.\u201d It feels accusatory, but it\u2019s just pixels.",
+          "text": "The panel flashes a warning icon: \u201cUSER ENGAGED: PROVIDE PROOF.\u201d It feels accusatory, but it\u2019s pixels.",
           "next": "R_TO_MENU"
         },
         {
@@ -238,7 +238,7 @@
           "id": "N_WAIVER_2",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You hold the signed waiver up to the panel camera. The paper is creased where it\u2019s been folded and unfolded too many times. The signature block is darker, like someone pressed too hard.",
+          "text": "You hold the signed waiver up to the panel camera. (pause) The paper is creased where it\u2019s been folded and unfolded too many times. (pause) The signature block is darker, like someone pressed too hard.",
           "next": "N_WAIVER_3"
         },
         {
@@ -252,7 +252,7 @@
           "id": "N_WAIVER_4",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The panel scans. It takes longer than it should, as if the delay is part of the lesson.",
+          "text": "The panel scans. It takes longer than it should, like delay is part of the lesson.",
           "next": "N_WAIVER_5"
         },
         {
@@ -273,7 +273,7 @@
           "id": "N_WAIVER_7",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The green light clicks on. A relay somewhere behind the wall answers with a dull thunk. The panel displays: ACCESS RESTORED. PROCEED TO LOTO MAIN LOCK POINT.",
+          "text": "Green light clicks on. Relay behind wall thunks. Panel: ACCESS RESTORED. PROCEED TO LOTO MAIN LOCK-POINT.",
           "next": "N_WAIVER_8"
         },
         {
@@ -311,7 +311,7 @@
           "id": "N_STICKER_2",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You peel a small token sticker from a backing strip\u2014 glossy, date-colored, the kind that exists because printers lie. You place it over the optical reader\u2019s worn window.",
+          "text": "You peel a small token sticker\u2014glossy, date-colored, made because printers lie\u2014from its backing strip. (pause) You place it over the optical reader\u2019s worn window.",
           "next": "N_STICKER_3"
         },
         {
@@ -360,7 +360,7 @@
           "id": "N_STICKER_9",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The green light clicks on. The corridor feels unchanged, but the lock logic is now willing to pretend you exist. The panel displays: ACCESS RESTORED. PROCEED TO LOTO MAIN LOCK POINT.",
+          "text": "The green light clicks on. (pause) The corridor feels unchanged. (pause) The lock logic is willing to pretend you exist now. (pause) The panel displays: ACCESS RESTORED. PROCEED TO LOTO MAIN LOCK POINT.",
           "next": "END_STICKER"
         },
         {
@@ -396,7 +396,7 @@
           "id": "N_LEAVE_2",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You step back. The panel keeps its screen lit, waiting to be satisfied. It does not time out. It just holds a grudge politely. You are still in the Operations Corridor. The training gate remains uncleared.",
+          "text": "You step back. (pause) The panel keeps its screen lit, waiting to be satisfied. (pause) It does not time out. (pause) It just holds a grudge politely. (pause) You are still in the Operations Corridor. (pause) The training gate remains uncleared.",
           "next": "END_LEAVE"
         },
         {
@@ -412,7 +412,7 @@
           "id": "N_CALL_COMPLIANCE_DIAL",
           "next": "N_CALL_COMPLIANCE_1",
           "speakerId": "NARRATOR",
-          "text": "A phone number is printed in the corner with the confidence of a signature. You dial.\nAfter three tones, someone picks up like they were already speaking.",
+          "text": "A phone number is printed in the corner, with the confidence of a signature. (pause) You dial. (pause) After three tones, someone picks up like they were already speaking.",
           "type": "npc_line"
         },
         {
@@ -493,7 +493,7 @@
           "id": "N_CALL_COMPLIANCE_HANGUP",
           "next": "R_TO_MENU",
           "speakerId": "NARRATOR",
-          "text": "The line stays open half a second too long, like they\u2019re waiting to be quoted.\nThen it ends decisively, as if you dialed them by mistake.",
+          "text": "The line stays open half a second too long, like they\u2019re waiting to be quoted. (pause)\nThen it ends decisively, as if you dialed them by mistake.",
           "type": "npc_line"
         }
       ]

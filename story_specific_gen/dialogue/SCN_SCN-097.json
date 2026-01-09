@@ -7,7 +7,7 @@
           "id": "N_ESTOP_A",
           "next": "PC_ESTOP",
           "speakerId": "NARRATOR",
-          "text": "The emergency stop is a red mushroom button under a flip cover\u2014the kind you can slap without thinking, if you\u2019re willing to spend a year defending the slap.\nA tag dangles: SEALED \u2014 USE REQUIRES POST-ACTION AUTHORIZATION.\nA placard answers like it\u2019s been in court before:\nEMERGENCY STOP INITIATES CONTROLLED DECELERATION SEQUENCE WHERE PRACTICABLE.\nThen, smaller: PRACTICABLE IS DETERMINED RETROACTIVELY.",
+          "text": "The emergency stop is a red mushroom button under a flip cover\u2014slap-ready. (pause)\nYou can slap it without thinking\u2014if you\u2019ll spend a year defending the slap. (pause)\nA tag dangles: SEALED \u2014 USE REQUIRES POST-ACTION AUTHORIZATION. (pause)\nA placard answers like it\u2019s been in court before: (pause)\nEMERGENCY STOP INITIATES CONTROLLED DECELERATION SEQUENCE WHERE PRACTICABLE. (pause)\nThen smaller: PRACTICABLE IS DETERMINED RETROACTIVELY.",
           "type": "npc_line"
         },
         {
@@ -31,7 +31,7 @@
           "id": "N_ESTOP_USE",
           "next": "END",
           "speakerId": "NARRATOR",
-          "text": "You lift the cover. The hinge squeaks in a way that feels like a witness.\nUnder the button, another label: DO NOT USE TO SIMPLIFY PROCEDURE.\nThat one is new.\nYou don\u2019t press it. Even standing here, you can already hear the memo being drafted about what you \u201cintended.\u201d",
+          "text": "You lift the cover. (pause)\nThe hinge squeaks, and it feels like a witness. (pause)\nUnder the button, another label: DO NOT USE TO SIMPLIFY PROCEDURE. (pause)\nThat one is new. (pause)\nYou don\u2019t press it. (pause)\nEven standing here you can hear the memo being drafted about what you \u201cintended.\u201d",
           "type": "npc_line"
         },
         {

@@ -1,0 +1,286 @@
+{
+  "dialogueGraphs": [
+    {
+      "id": "DG_LIM03_MAP_KIOSK",
+      "sceneId": "SCN-053",
+      "startNodeId": "N001_INTRO",
+      "nodes": [
+        {
+          "id": "N001_INTRO",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The map kiosk sits at the mouth of the service corridors like it\u2019s part of the building\u2019s immune system. The screen is on. The printer tray is empty on purpose.",
+          "conditions": [
+            {
+              "key": "act2.terIssued",
+              "op": "==",
+              "value": true
+            },
+            {
+              "key": "act2.mapFragment1Printed",
+              "op": "==",
+              "value": false
+            }
+          ],
+          "next": "N002_PLACARD"
+        },
+        {
+          "id": "N002_PLACARD",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "A placard reads: \u201cAUTHORIZED ROUTE OUTPUT ONLY.\u201d The word \u201cONLY\u201d has been re-inked by hand.",
+          "next": "N003_KIOSK_GREETING"
+        },
+        {
+          "id": "N003_KIOSK_GREETING",
+          "type": "npc_line",
+          "speakerId": "KIOSK",
+          "text": "TER AUTHORIZATION: PRESENT.\nREQUEST TYPE: ROUTE ARTIFACT.\nNote: A \u201cmap\u201d is not a route artifact. Please don\u2019t say \u201cmap.\u201d It complicates retention.",
+          "next": "N010_MENU"
+        },
+        {
+          "id": "N010_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_LOOK",
+              "text": "[look] Look at the kiosk.",
+              "next": "N020_LOOK"
+            },
+            {
+              "id": "C_RESTRICT",
+              "text": "[ask] Explain restrictions.",
+              "next": "N030_RESTRICT"
+            },
+            {
+              "id": "C_VALIDATE",
+              "text": "[use] Validate badge.",
+              "next": "N040_VALIDATE"
+            },
+            {
+              "id": "C_LOOP",
+              "text": "[ask] Service-route reader loop?",
+              "next": "N050_LOOP"
+            },
+            {
+              "id": "C_REQUEST",
+              "text": "[talk] Request route output.",
+              "next": "N060_REQUEST"
+            },
+            {
+              "id": "C_CANCEL",
+              "text": "[leave] Cancel.",
+              "next": "N090_CANCEL"
+            }
+          ]
+        },
+        {
+          "id": "N020_LOOK",
+          "type": "npc_line",
+          "speakerId": "KIOSK",
+          "text": "INTERFACE STATUS: OPERATIONAL.\nPRINTER STATUS: READY.\nRATIONS COUNTER: ACTIVE\u2014don\u2019t look at me like that, it was installed after \u201coverprinting.\u201d\nTamper seal: intact. Which is my way of saying I am not the one improvising.",
+          "next": "N011_BACK_TO_MENU"
+        },
+        {
+          "id": "N030_RESTRICT",
+          "type": "npc_line",
+          "speakerId": "KIOSK",
+          "text": "Restrictions are not punitive. They are preventative.\nIf you hold a complete facility representation, you can claim you were \u201ctrying to go somewhere.\u201d\nAnd then everyone has to discuss where \u201csomewhere\u201d is, and whether you were authorized to exist there.\n\nTER establishes permissible corridors of presence.\nPrinting outside those corridors is a conversion from \u201cpresence\u201d to \u201cpremeditation.\u201d\nWhich becomes\u2026 discoverable.",
+          "next": "N011_BACK_TO_MENU"
+        },
+        {
+          "id": "N040_VALIDATE",
+          "type": "npc_line",
+          "speakerId": "KIOSK",
+          "text": "Place badge on validator.",
+          "next": "N041_VALIDATE_RESULT"
+        },
+        {
+          "id": "N041_VALIDATE_RESULT",
+          "type": "npc_line",
+          "speakerId": "KIOSK",
+          "text": "BADGE: OLEA FIELD SYSTEMS SPECIALIST.\nCREDENTIAL: VALID.\nLiability posture: ACCEPTABLE. Not \u201csafe.\u201d We don\u2019t output \u201csafe.\u201d\n\nTER linkage confirmed.\nIf you are about to say \u201cSo print the whole thing,\u201d don\u2019t.",
+          "next": "N011_BACK_TO_MENU"
+        },
+        {
+          "id": "N050_LOOP",
+          "type": "npc_line",
+          "speakerId": "KIOSK",
+          "text": "The service-route reader loop provides a compliant circulation pattern.\nIt returns you to a place you can be documented leaving from.\nPeople find that reassuring. The building does too, allegedly.\n\nWarning: The loop is not optimized for arrival. It is optimized for audit.",
+          "next": "N011_BACK_TO_MENU"
+        },
+        {
+          "id": "N011_BACK_TO_MENU",
+          "type": "redirect",
+          "target": "N010_MENU"
+        },
+        {
+          "id": "N060_REQUEST",
+          "type": "npc_line",
+          "speakerId": "KIOSK",
+          "text": "Define route scope.",
+          "next": "N061_SCOPE_CHOICE"
+        },
+        {
+          "id": "N061_SCOPE_CHOICE",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_SCOPE_TER_GENERIC",
+              "text": "[ask] TER-scoped fragment (recommended).",
+              "next": "N070_TER_INFO"
+            },
+            {
+              "id": "C_SCOPE_TER_GATED",
+              "text": "[ask] Print TER-scoped fragment. Include corridor identifiers and service access tags.",
+              "conditions": [
+                {
+                  "key": "player.factions",
+                  "op": "in",
+                  "value": [
+                    "OLEA"
+                  ]
+                }
+              ],
+              "next": "N071_TER_GATED_ACCEPT"
+            },
+            {
+              "id": "C_SCOPE_FULL",
+              "text": "[ask] Full facility representation.",
+              "next": "N080_FULL_NOTAVAIL"
+            },
+            {
+              "id": "C_SCOPE_USEFUL",
+              "text": "[ask] \u201cJust the useful parts.\u201d",
+              "next": "N081_USEFUL_INVALID"
+            },
+            {
+              "id": "C_SCOPE_CANCEL",
+              "text": "[leave] Cancel.",
+              "next": "N010_MENU"
+            }
+          ]
+        },
+        {
+          "id": "N080_FULL_NOTAVAIL",
+          "type": "npc_line",
+          "speakerId": "KIOSK",
+          "text": "\u201cFull facility\u201d is a claim.\nClaims create obligations. Obligations create interviews.\nAlso, there is no single \u201cfull\u201d representation. There are versions, and they disagree in writing.\n\nChoose a scope that can survive a records request.",
+          "next": "N062_BACK_TO_SCOPE"
+        },
+        {
+          "id": "N081_USEFUL_INVALID",
+          "type": "npc_line",
+          "speakerId": "KIOSK",
+          "text": "Scope rejected.\n\u201cUseful\u201d is not a bounded category. It is a confession.\nSelect a scope with corridor limits.",
+          "next": "N062_BACK_TO_SCOPE"
+        },
+        {
+          "id": "N062_BACK_TO_SCOPE",
+          "type": "redirect",
+          "target": "N061_SCOPE_CHOICE"
+        },
+        {
+          "id": "N070_TER_INFO",
+          "type": "npc_line",
+          "speakerId": "KIOSK",
+          "text": "Concourse and service corridors.\nIt will look incomplete because it is incomplete. That is the point.\nIf you need something else, you need a different TER, and then you need a different you.",
+          "next": "N072_PRINT_CONFIRM"
+        },
+        {
+          "id": "N071_TER_GATED_ACCEPT",
+          "type": "npc_line",
+          "speakerId": "KIOSK",
+          "text": "Accepted. That phrasing is\u2026 appropriately narrow.\nGenerating output as a route artifact, not as \u201cknowledge.\u201d Thank you.",
+          "next": "N072_PRINT_CONFIRM"
+        },
+        {
+          "id": "N072_PRINT_CONFIRM",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_PRINT",
+              "text": "[use] Print.",
+              "next": "N073_PRINTING"
+            },
+            {
+              "id": "C_BACK_MENU",
+              "text": "[leave] Back.",
+              "next": "N010_MENU"
+            }
+          ]
+        },
+        {
+          "id": "N073_PRINTING",
+          "type": "npc_line",
+          "speakerId": "KIOSK",
+          "text": "Printing.\nDo not remove paper until the cut. People get confident and then we have a tearing incident, and somehow it\u2019s my fault.",
+          "next": "N074_PRINT_NARR"
+        },
+        {
+          "id": "N074_PRINT_NARR",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The printer feeds a warm strip of paper, pauses as if reconsidering, then continues. The ink is slightly faded where it matters.",
+          "next": "N075_OUTPUT"
+        },
+        {
+          "id": "N075_OUTPUT",
+          "type": "npc_line",
+          "speakerId": "KIOSK",
+          "text": "OUTPUT: MAP FRAGMENT 1 \u2014 CONCOURSE + SERVICE CORRIDORS.\nClassification: operational support. Not navigational.\nIf you navigate with it, that\u2019s between you and your conscience, not me.",
+          "next": "N076_TAKE_FRAGMENT"
+        },
+        {
+          "id": "N076_TAKE_FRAGMENT",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You take the fragment. The kiosk screen goes blank like it has already moved on.",
+          "next": "N099_END_SUCCESS"
+        },
+        {
+          "id": "N099_END_SUCCESS",
+          "type": "end",
+          "speakerId": "NARRATOR",
+          "text": "Map Fragment 1 is added to your kit: concourse and service corridors, with just enough detail to be useful and just enough missing to be deniable.",
+          "outcomeId": "print_map_fragment_1",
+          "effects": [
+            {
+              "key": "act2.mapFragment1Printed",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "inventory.items",
+              "action": "add",
+              "value": "ITEM_MAP_FRAGMENT_1"
+            }
+          ]
+        },
+        {
+          "id": "N090_CANCEL",
+          "type": "npc_line",
+          "speakerId": "KIOSK",
+          "text": "Canceled.\nFor the record, I didn\u2019t refuse you. You declined to proceed. This distinction matters later.",
+          "next": "N091_CANCEL_NARR"
+        },
+        {
+          "id": "N091_CANCEL_NARR",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The kiosk returns to its idle screen, patiently pretending it has never met you.",
+          "next": "N098_END_CANCEL"
+        },
+        {
+          "id": "N098_END_CANCEL",
+          "type": "end",
+          "speakerId": "NARRATOR",
+          "text": "You step back from the kiosk without taking any output."
+        }
+      ]
+    }
+  ]
+}

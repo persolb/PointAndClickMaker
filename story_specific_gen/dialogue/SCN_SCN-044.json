@@ -9,7 +9,7 @@
           "id": "N_START_01",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The containment sphere is fully mirror-bright now.\nYour reflection arrives from a direction the room doesn\u2019t have.",
+          "text": "The containment sphere is mirror-bright now.\nYour reflection arrives from a direction the room doesn\u2019t have.",
           "conditions": [
             {
               "key": "ops.alignmentSequenceInitiated",
@@ -499,7 +499,7 @@
           "id": "N_STATUS_LOOK_01",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The indicator cluster shows green lamps with old labels: VERIFIED, WITNESS, SURFACE READY.\nA smaller amber lamp reads: TERMINOLOGY VARIANCE \u2014 NONE.",
+          "text": "The indicator cluster shows green lamps with old labels: VERIFIED, WITNESS, SURFACE READY. (pause)\nA smaller amber lamp reads: TERMINOLOGY VARIANCE \u2014 NONE.",
           "next": "N_STATUS_SYS_01"
         },
         {
@@ -845,7 +845,7 @@
           "id": "N_PROCEED_NARR_01",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The sphere\u2019s mirror surface stops reflecting the room and starts reflecting a flat, bright absence.\nYour weight shifts as if the floor forgot a rule.",
+          "text": "The sphere's mirror quits the room, reflecting flat bright absence. Your weight shifts; floor forgot rule.",
           "next": "N_PROCEED_SYS_03"
         },
         {

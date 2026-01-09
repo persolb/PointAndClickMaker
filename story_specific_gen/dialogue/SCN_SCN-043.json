@@ -21,7 +21,7 @@
               "value": false
             }
           ],
-          "text": "The main console is already on a LOAD-SHED RESPONSE overlay, pinned on top of the shutdown verification UI. A yellow banner persists: DEMAND EVENT ACTIVE \u2014 RESPONSE REQUIRED.\nUnder it, almost offended: VERIFICATION MODE: STABILITY REQUIRED.",
+          "text": "Main console: LOAD-SHED RESPONSE overlay, pinned atop shutdown verification UI. (pause) Yellow banner persists: DEMAND EVENT ACTIVE \u2014 RESPONSE REQUIRED. (pause) Under it, almost offended: VERIFICATION MODE: STABILITY REQUIRED.",
           "next": "N_DISPATCH_OPEN"
         },
         {
@@ -42,7 +42,7 @@
           "id": "N_MENU_INTRO",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The console shows big, friendly buttons that all look like liability: VIEW LOAD MAP. PRINT ACTION HEADER. CONFIGURE SHED. EXECUTE ROUTING.",
+          "text": "The console shows big, friendly buttons\u2014liability: VIEW/LOAD MAP. PRINT ACTION-HEADER. CONFIGURE SHED. EXECUTE ROUTING.",
           "next": "N_MAIN_MENU"
         },
         {
@@ -188,7 +188,7 @@
           "id": "N_MAP_NARR",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The screen redraws into a block diagram: feeder names, breaker groups, and three categories of load with mismatched fonts.\nCRITICAL includes chamber environmental, rotation frame lubrication, and a box labeled VERIFICATION SUPPORT that is, unhelpfully, most of the building.",
+          "text": "The screen redraws into a block diagram: feeder names and breaker groups. (pause) Three load categories appear with mismatched fonts. (pause) CRITICAL lists chamber environmental and rotation frame lubrication. (pause) It also shows a box labeled VERIFICATION SUPPORT\u2014unhelpfully most of the building.",
           "next": "N_MAP_OPS"
         },
         {
@@ -254,7 +254,7 @@
           "id": "N_GROUP_NARR",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "Several groups carry a warning: AUTO-RECOVER ENABLED \u2014 RESTART SURGE LIKELY.\nA few are annotated in terse maintenance shorthand: \u201cCHATTER RISK,\u201d \u201cTHERMAL LAG,\u201d \u201cDO NOT CYCLE.\u201d",
+          "text": "Several groups carry a warning: AUTO-RECOVER ENABLED. (pause) RESTART SURGE LIKELY. (pause)\nA few are annotated in terse maintenance shorthand: \u201cCHATTER RISK.\u201d (pause) \u201cTHERMAL LAG.\u201d (pause) \u201cDO NOT CYCLE.\u201d",
           "next": "N_GROUP_UTIL"
         },
         {
@@ -320,7 +320,7 @@
           "id": "N_CONFIG_INTRO",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "A configuration pane opens: TARGET SHED: 12 MW. The slider is disabled; only presets can be accepted.\nTwo tabs: STAGED and SINGLE-STEP. The cursor blinks like it wants a signature.",
+          "text": "A configuration pane opens: TARGET SHED 12 MW. (pause) Slider disabled. Presets only. (pause) Tabs: STAGED and SINGLE-STEP. (pause) Cursor blinks, like it wants a signature.",
           "next": "N_CONFIG_OPS"
         },
         {
@@ -438,7 +438,7 @@
           "id": "N_RECLASS_NARR",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "A dialog box appears with a legal tone and a petty request: SELECT JUSTIFICATION CODE.\nThe available codes are pre-filled. None are kind.",
+          "text": "A dialog box appears with a legal tone and a petty request: SELECT JUSTIFICATION CODE. (pause)\nThe available codes are pre-filled. None are kind.",
           "next": "N_RECLASS_OPS"
         },
         {
@@ -489,7 +489,7 @@
           "id": "N_SINGLESTEP_INTRO",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The console offers one macro: EXECUTE ROUTING: ALIGNMENT-SEQUENCE LOAD ROUTING (12 MW CLEAN).\nA warning line beneath it: NOTE: MAY ALTER VERIFICATION BASELINE. The word \u201cmay\u201d is doing too much work.",
+          "text": "The console offers one macro: EXECUTE ROUTING: ALIGNMENT-SEQUENCE LOAD ROUTING (12 MW CLEAN). (pause) Beneath it: NOTE: MAY ALTER VERIFICATION BASELINE. (pause) The word \u201cmay\u201d is doing too much work.",
           "next": "N_SINGLESTEP_OPS"
         },
         {
@@ -555,7 +555,7 @@
           "id": "N_FINAL_WARN_NARR",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The console asks for final confirmation in all caps, like volume is authority:\nACKNOWLEDGE: ROUTING WILL INITIATE AUTOMATED ALIGNMENT CONTROL.\nThe confirm button is labeled: I ACKNOWLEDGE.",
+          "text": "The console asks for final confirmation in all caps, like volume is authority. (pause)\nACKNOWLEDGE: ROUTING WILL INITIATE AUTOMATED ALIGNMENT CONTROL. (pause)\nThe confirm button is labeled: I ACKNOWLEDGE.",
           "next": "N_FINAL_MENU"
         },
         {
@@ -613,14 +613,14 @@
           "id": "N_LOG_NARR",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The console logs a new line item: ALIGNMENT CONTROL: ARMED. ROUTING: IN PROGRESS.\nIn the corner, the small chamber camera feed stutters.",
+          "text": "The console logs a new line item: ALIGNMENT CONTROL: ARMED. ROUTING: IN PROGRESS. (pause) In the corner, the small chamber camera feed stutters.",
           "next": "N_FLICKER_NARR"
         },
         {
           "id": "N_FLICKER_NARR",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The containment sphere\u2019s surface flickers\u2014matte to reflective, reflective to matte\u2014like a thought it isn\u2019t allowed to have.\nThe console continues counting down routing steps as if nothing visual is relevant.",
+          "text": "The containment sphere\u2019s surface flickers\u2014matte to reflective, reflective to matte\u2014like a thought it mustn\u2019t have. (pause)\nThe console continues counting down routing steps as if nothing visual is relevant.",
           "next": "N_ARMED_OPS"
         },
         {
@@ -634,7 +634,7 @@
           "id": "N_PRINT_NARR",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The log printer wakes with a reluctant whine. A strip curls into the tray:\nACTION HEADER \u2014 CONTROL ROOM CONSOLE, with a serial and timestamp.",
+          "text": "The log printer wakes with a reluctant whine. (pause) A strip curls into the tray. (pause) ACTION HEADER \u2014 CONTROL ROOM CONSOLE, serial and timestamp.",
           "next": "N_PRINT_OPS"
         },
         {
@@ -685,7 +685,7 @@
           "id": "N_STEP_AWAY_NARR",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You step back. The demand banner stays pinned, politely escalating itself at the edge of your vision.",
+          "text": "You step back. The demand banner stays pinned, politely escalating at the edge of your vision.",
           "next": "N_STEP_AWAY_OPS"
         },
         {

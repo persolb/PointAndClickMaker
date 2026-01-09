@@ -9,7 +9,7 @@
           "id": "N_START",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "SPINDLE Chamber Floor. The containment sphere fills the center of the room like an oversized insulator\u2014until it doesn\u2019t.\nA status indicator cluster ticks through load, interlocks, and an authority field you didn\u2019t enter.\nThe interface scan panel waits with the patience of a copier.",
+          "text": "SPINDLE Chamber Floor. The containment sphere fills the room\u2019s center like an oversized insulator\u2014until it doesn\u2019t. (pause) A status indicator cluster ticks through load and interlocks. (pause) Then it hits an authority field you didn\u2019t enter. (pause) The interface scan panel waits with the patience of a copier.",
           "next": "N_OPS_RULES"
         },
         {
@@ -105,7 +105,7 @@
           "id": "N_PANEL_BANNER",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "On the interface scan panel: a notice banner, formatted like a utility bill that learned to threaten people.",
+          "text": "On the scan panel: a banner, formatted like a utility bill that learned to threaten people.",
           "next": "N_MTA_NOTICE"
         },
         {
@@ -328,7 +328,7 @@
           "id": "N_PRINT_NOTICE",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The printer in the wall stutters awake like it resents being included.\nA banner prints with the notice header and the reference string, crisp enough to be weaponized.",
+          "text": "The printer in the wall stutters awake, like it resents being included. (pause) A banner prints: notice header and reference string, crisp enough to be weaponized.",
           "next": "N_OPS_STAPLE_IT"
         },
         {
@@ -342,7 +342,7 @@
           "id": "N_LOOK_SPHERE",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The sphere\u2019s surface is mostly matte\u2014until a thin band goes smooth and reflective, catching angles the room doesn\u2019t offer.\nIt doesn\u2019t brighten. It clarifies.",
+          "text": "The sphere\u2019s surface stays mostly matte\u2014(pause)\nuntil a thin band turns smooth, reflective,(pause)\ncatching angles the room can\u2019t offer.(pause)\nIt doesn\u2019t brighten. It clarifies.",
           "next": "N_OPS_VISUAL_CHANGE"
         },
         {
@@ -370,7 +370,7 @@
           "id": "N_LOOK_INDICATORS",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "Indicators: ROTATION FRAMES \u2014 SYNCH TIGHT.\nINTERLOCKS \u2014 ARMED.\nAUTHORITY \u2014 NON-LOCAL.\nA small light labeled RETIREMENT CHECKLIST blinks like it\u2019s asking permission.",
+          "text": "Indicators: ROTATION FRAMES \u2014 SYNCH TIGHT.\nINTERLOCKS \u2014 ARMED.\nAUTHORITY \u2014 NON-LOCAL. (pause)\nA small light labeled RETIREMENT CHECKLIST blinks like it\u2019s asking permission.",
           "next": "N_OPS_ARMED_WORD"
         },
         {
@@ -384,7 +384,7 @@
           "id": "N_LEAVE_OBS",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You step toward the stairs. The chamber doesn\u2019t follow you.\nThe panel continues to wait, as if you only paused a sentence.",
+          "text": "You step toward the stairs. (pause) The chamber doesn\u2019t follow you. (pause) The panel keeps waiting, like you only paused a sentence.",
           "next": "N_OPS_TIMESTAMP_WARNING"
         },
         {
@@ -398,7 +398,7 @@
           "id": "N_SHUTDOWN_INTRO",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The interface scan panel offers the official shutdown sequence: staged steps, each with a place for a reason phrase and a signature block you can\u2019t sign digitally.",
+          "text": "Scan panel shows official shutdown: staged steps, each with a reason line and non-digital signature block.",
           "next": "MENU_SHUTDOWN"
         },
         {
@@ -542,7 +542,7 @@
           "id": "N_NARRATOR_ROUTES_COLLAPSE",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You confirm. The panel accepts it the way a form accepts ink: without agreement, with permanence.\nThe status indicator cluster steps down in clean increments.\nRoutes collapse\u2014not dramatically, just decisively\u2014like doors closing in adjacent rooms you can\u2019t see.",
+          "text": "You confirm. (pause) The panel accepts it like a form accepts ink: without agreement, with permanence. (pause) The status indicator cluster steps down in clean increments. (pause) Routes collapse\u2014not dramatic, just decisive\u2014like doors closing in adjacent rooms you can\u2019t see.",
           "next": "N_OPS_PRINT_POSTSTATE"
         },
         {

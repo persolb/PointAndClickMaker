@@ -21,7 +21,7 @@
               "value": false
             }
           ],
-          "text": "The Non-Local Compliance Notices Room hasn\u2019t changed.\nYou have.\n\nForms racks sag under misfit templates. An envelope stack waits for hands that never arrive.\nAnd the clipped notice\u2014its barcode too clean\u2014now matches something you already logged.",
+          "text": "The Non-Local Compliance Notices Room hasn\u2019t changed. (pause)\nYou have. (pause)\nForms racks sag under misfit templates. (pause)\nAn envelope stack waits for hands that never arrive. (pause)\nAnd the clipped notice\u2014its barcode too clean\u2014now matches something you already logged.",
           "next": "N_MENU"
         },
         {
@@ -65,7 +65,7 @@
           "id": "N_FORMS_INTRO",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The rack starts in local language\u2014Retention, Posting, Public Notice\u2014\nthen switches to templates that assume a different court system.\n\nThe headers repeat like a chant:\n\u201cStanding Indicator.\u201d\n\u201cService Class.\u201d\n\u201cQueue Position.\u201d\n\nThe phrasing is tight in the way remote offices get tight when they\u2019ve been sued.",
+          "text": "The rack starts in local language\u2014Retention. Posting. Public Notice. (pause)\nThen it switches to templates assuming a different court system. (pause)\nThe headers repeat like a chant: (pause)\n\u201cStanding Indicator.\u201d (pause)\n\u201cService Class.\u201d (pause)\n\u201cQueue Position.\u201d (pause)\nThe phrasing is tight\u2014the way remote offices get tight when they've been sued.",
           "next": "N_FORMS_MENU"
         },
         {
@@ -103,7 +103,7 @@
           "id": "N_FORMS_FOOTER",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The footer isn\u2019t a signature. It\u2019s an origin story pretending not to be one:\n\u201cManaging Authority:\u201d and then a blank where a name should be,\nreplaced by a barcode block in the same high-contrast geometry as the clipped notice.",
+          "text": "The footer isn\u2019t a signature. (pause) It\u2019s an origin story pretending it isn\u2019t: (pause) \u201cManaging Authority:\u201d then a blank where a name should be. (pause) It\u2019s replaced by a barcode block, matching the clipped notice\u2019s high-contrast geometry.",
           "next": "N_FORMS_FOOTER_MENU"
         },
         {
@@ -129,28 +129,28 @@
           "id": "N_FORMS_COMPARE_NARR",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The angles match. The spacing matches.\nThe form isn\u2019t \u201cnon-local\u201d in the abstract.\nIt\u2019s from the same system that issued the HOLD.",
+          "text": "The angles match. (pause) The spacing matches. (pause)\nThe form isn\u2019t \u201cnon-local\u201d in the abstract. (pause)\nIt\u2019s from the same system that issued the HOLD.",
           "next": "R_TO_MENU"
         },
         {
           "id": "N_FORMS_STANDING_FOOTNOTE",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "There\u2019s no one here to answer.\nThe template answers anyway, in a footnote written like it resents the question:\n\n\u201cStanding: recognized eligibility to be processed.\u201d\n\u201cProcessed\u201d is underlined once\u2014perfectly straight, like a machine did it to win an argument.",
+          "text": "There\u2019s no one here to answer. (pause)\nThe template answers anyway, in a footnote written like it resents the question: (pause)\n\u201cStanding: recognized eligibility to be processed.\u201d (pause)\n\u201cProcessed\u201d is underlined once\u2014perfectly straight, like a machine did it to win an argument.",
           "next": "R_TO_MENU"
         },
         {
           "id": "N_FORMS_SKIM",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You skim until the sentences stop being local. Then you stop.\nThe forms go back into the rack like they were never out.\nThat is, technically, how systems survive.",
+          "text": "You skim until the sentences stop being local. (pause) Then you stop.\nThe forms slide back into the rack like they were never out. (pause)\nTechnically, that\u2019s how systems survive.",
           "next": "R_TO_MENU"
         },
         {
           "id": "N_ENV_INTRO",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "Pre-addressed envelopes. Windowed. Uniform weight.\nMost carry bland routing marks\u2014approved for travel through a system you don\u2019t see.\n\nA few have the same too-clean barcode format.\nThey\u2019re sealed with a pressure strip that assumes speed, and assumes you\u2019ll comply with it.",
+          "text": "Pre-addressed envelopes. Windowed. Uniform weight. (pause)\nMost carry bland routing marks\u2014approved to travel through a system you don\u2019t see. (pause)\nA few share the same too-clean barcode format. (pause)\nThey\u2019re sealed with a pressure strip. It assumes speed, and your compliance.",
           "next": "N_ENV_MENU"
         },
         {
@@ -182,21 +182,21 @@
           "id": "N_ENV_POCKET_NARR",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You take one without ceremony.\nIt feels like taking a blank form: harmless until someone decides it wasn\u2019t.",
+          "text": "You take it without ceremony.\nIt feels like a form: harmless until someone decides it wasn\u2019t.",
           "next": "R_TO_MENU"
         },
         {
           "id": "N_ENV_ROUTING_NARR",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The routing marks aren\u2019t municipal. They\u2019re docket logic.\nLane codes. Queue markers.\nA bureaucracy that measures time as \u201cnot yet.\u201d",
+          "text": "Routing marks aren\u2019t municipal. They\u2019re docket logic.\nLane codes. Queue marks.\nBureaucracy measuring time \u201cnot yet.\u201d",
           "next": "R_TO_MENU"
         },
         {
           "id": "N_NOTICE_INTRO",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The notice uses local nouns\u2014facility, operator, responsible party\u2014\nbut the verbs are wrong.\nNot \u201cmust comply.\u201d\n\u201cWill be held.\u201d\n\nThe barcode is pristine. No smearing. No aging.\nLike it arrived already archived.",
+          "text": "The notice uses local nouns\u2014facility, operator, responsible party\u2014 (pause)\nbut the verbs are wrong. (pause)\nNot \u201cmust comply.\u201d (pause)\n\u201cWill be held.\u201d (pause)\nThe barcode is pristine. No smearing. No aging. (pause)\nLike it arrived already archived.",
           "next": "N_NOTICE_MENU"
         },
         {
@@ -240,7 +240,7 @@
           "id": "N_NOTICE_BODY",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You read the first lines twice because they\u2019re trying not to be accusatory.\n\u201cNOTICE: Non-local compliance condition detected.\u201d\n\u201cAction: Hold state pending documentation.\u201d\n\u201cIncorrect service class assignments may affect standing.\u201d\n\nIt\u2019s the same tone as the tube printout.\nBland enough to pretend it\u2019s routine.",
+          "text": "You read the first lines twice because they\u2019re trying not to be accusatory. (pause)\n\u201cNOTICE: Non-local compliance condition detected.\u201d (pause)\n\u201cAction: Hold state pending documentation.\u201d (pause)\n\u201cIncorrect service class assignments may affect standing.\u201d (pause)\nIt\u2019s the same tone as the tube printout. (pause)\nBland enough to pretend it\u2019s routine.",
           "next": "N_NOTICE_BODY_MENU"
         },
         {
@@ -266,7 +266,7 @@
           "id": "N_NOTICE_COMPARE",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The reference field on the wall notice is half-obscured by copy quality.\nBut the barcode block isn\u2019t.\n\nThe format matches what you already logged.\nThis room isn\u2019t full of \u201cmiscellaneous compliance.\u201d\nIt\u2019s a spillover tray.",
+          "text": "The reference field on the wall notice is half-obscured by copy quality. (pause)\nBut the barcode block isn\u2019t. (pause)\nThe format matches what you already logged. (pause)\nThis room isn\u2019t full of \u201cmiscellaneous compliance.\u201d It\u2019s a spillover tray.",
           "next": "N_NOTICE_COMPARE_MENU"
         },
         {
@@ -292,7 +292,7 @@
           "id": "N_NOTICE_VARIANCE_PROCEDURE",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The notice doesn\u2019t answer questions.\nIt offers procedures instead, in smaller print at the bottom:\n\u201cTemporary Operating Variance available upon determination of service class and standing.\u201d\n\nLike permission is a product you can request.",
+          "text": "The notice doesn\u2019t answer questions. (pause)\nIt offers procedures instead, in smaller print at the bottom: (pause)\n\u201cTemporary Operating Variance available upon determination of service class and standing.\u201d (pause)\nLike permission is a product you can request.",
           "next": "N_NOTICE_VARIANCE_MENU"
         },
         {
@@ -325,7 +325,7 @@
           "id": "N_REINTERPRET_NARR",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You stop treating the posting as \u201cgeneric.\u201d\nYou read it like an MTA form: identify the lane, locate the exception, extract the language that makes \u201cheld\u201d negotiable.\n\nBehind the clipped notice, a thin packet is tucked the way offices tuck anything they don\u2019t want to explain.\n\u201cTEMPorary Operating Variance \u2014 TEMPLATE.\u201d\n\nIt\u2019s written to be filled by someone who knows not to sound surprised.",
+          "text": "You stop treating the posting as \u201cgeneric.\u201d (pause) You read it like an MTA form. (pause) Identify the lane. Locate the exception. Extract the language that makes \u201cheld\u201d negotiable. (pause) Behind the notice, a thin packet is tucked the way offices tuck what they won\u2019t explain. (pause) \u201cTEMPorary Operating Variance \u2014 TEMPLATE.\u201d (pause) It\u2019s written to be filled by someone who knows not to sound surprised.",
           "next": "N_TEMPLATE_MENU"
         },
         {
@@ -383,28 +383,28 @@
           "id": "N_IDENTIFY_PASS",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The header structure resolves into a family: docket lane, standing gate, then a variance carve-out designed to be cited.\nIt isn\u2019t \u201ca template.\u201d\nIt\u2019s an upstream permission format that expects to be filed against a HOLD.",
+          "text": "The header structure resolves into a family. (pause) Docket lane. Standing gate. (pause) Then a variance carve-out, designed to be cited. (pause) It isn\u2019t \u201ca template.\u201d (pause) It\u2019s an upstream permission format, expecting to be filed against a HOLD.",
           "next": "N_TEMPLATE_MENU"
         },
         {
           "id": "N_IDENTIFY_FAIL",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You can place the tone and the geometry, but not the exact family.\nIt\u2019s standardized on purpose.\nYou don\u2019t get to be certain without joining the queue that created it.",
+          "text": "You can place the tone and the geometry, but not the exact family. (pause) It\u2019s standardized on purpose. (pause) You don\u2019t get to be certain without joining the queue that created it.",
           "next": "N_TEMPLATE_MENU"
         },
         {
           "id": "N_SIGNATORY_NARR",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You translate the headings into the most defensible language you know: claims of presence, claims of custody, claims that can survive being read aloud.\nThe template doesn\u2019t become friendly.\nIt becomes usable.",
+          "text": "You translate the headings into defensible language: claims of presence. (pause) Claims of custody. (pause) Claims that survive being read aloud. (pause) The template doesn\u2019t become friendly. (pause) It becomes usable.",
           "next": "N_TEMPLATE_MENU"
         },
         {
           "id": "N_MEMORIZE_NARR",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You memorize the headings, because possession is a kind of commitment.\nBut you also know memory isn\u2019t admissible.\nNot when paper exists.",
+          "text": "You memorize the headings, because possession is a kind of commitment. (pause)\nBut you also know memory isn\u2019t admissible. (pause)\nNot when paper exists.",
           "next": "N_MEMORIZE_MENU"
         },
         {
@@ -430,7 +430,7 @@
           "id": "N_TAKE_TEMPLATE_NARR",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You remove the template from the stack.\nThe clipped notice stays behind, still pretending it\u2019s local.\nThe template does not pretend.\nIt assumes an upstream reader.",
+          "text": "You remove the template from the stack. (pause)\nThe clipped notice stays behind, still pretending it\u2019s local. (pause)\nThe template does not pretend. (pause)\nIt assumes an upstream reader.",
           "next": "END_REVEAL_MTA_ORIGIN"
         },
         {
@@ -459,7 +459,7 @@
           "id": "N_LEAVE_LOBBY_LINE",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You leave the notices where they are.\nThe door shuts with the soft finality of an office that expects paper to outlive people.",
+          "text": "You leave the notices where they are. (pause) The door shuts, soft with finality. (pause) An office expects paper to outlive people.",
           "next": "END_LEAVE_LOBBY"
         },
         {
@@ -470,7 +470,7 @@
           "id": "N_LEAVE_COPYFAX_LINE",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You step out toward the machines that turn originals into liabilities.\nBehind you, the clipped notice stays perfectly legible.\nLike it\u2019s been waiting to be recognized.",
+          "text": "You step toward the machines that turn originals into liabilities. (pause) Behind you, the clipped notice stays perfectly legible. (pause) Like it\u2019s been waiting to be recognized.",
           "next": "END_LEAVE_COPYFAX"
         },
         {

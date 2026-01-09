@@ -9,7 +9,7 @@
           "id": "N00_TABLEAU",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "A caged window marked SCHEDULING faces the corridor like a confession booth with forms.\nA \u201cNO-SHOW RECOVERY\u201d bin sits under the counter, sealed with a strip of tape that has been re-taped.\nA board of approved stamp substitutions hangs slightly crooked.\nA press labeled SLOT TOKEN\u2014AUTHORIZED IMPRESSIONS ONLY is bolted to the laminate.",
+          "text": "A caged window marked SCHEDULING faces the corridor like a confession booth with forms. (pause)\nA \u201cNO-SHOW RECOVERY\u201d bin sits under the counter, sealed with a strip of tape, re-taped. (pause)\nA board of approved stamp substitutions hangs slightly crooked. (pause)\nA press labeled SLOT TOKEN\u2014AUTHORIZED IMPRESSIONS ONLY is bolted to the laminate.",
           "next": "N01_CLERK_NEXT"
         },
         {
@@ -218,7 +218,7 @@
           "id": "N113_RULE_SETTLES",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The rule settles into place: time slots aren\u2019t granted here. They\u2019re taken, transferred, or recovered\u2014then defended as property.",
+          "text": "The rule sets: time slots aren\u2019t granted here. They\u2019re taken, transferred, or recovered\u2014defended as property.",
           "next": "END_LEARNED"
         },
         {

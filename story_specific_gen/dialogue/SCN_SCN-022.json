@@ -9,7 +9,7 @@
           "id": "N001_INTRO",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The Copy and Fax Room smells like hot plastic and old staples. The fax machine is idle in the way a machine looks idle when it\u2019s still warm.\n\nIn the tray: a curled, half-fed printout. Legal\u2019s Work Order, rendered in exhausted ink\u2014half text, half ghosts.",
+          "text": "Copy and Fax Room smells of hot plastic and old staples. (pause)\nThe fax machine is idle. The kind of idle that stays warm. (pause)\nIn the tray: a curled half-fed printout. (pause)\nLegal\u2019s Work Order, rendered in exhausted ink. Half text, half ghosts.",
           "next": "N010_MAIN_MENU"
         },
         {
@@ -66,7 +66,7 @@
           "id": "N020_PULL",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The top page is a Work Order template\u2014half text, half afterimage.\n\nThe signature block is present. The scope paragraph is not.\n\nIt\u2019s enough to start an argument, not enough to end one.",
+          "text": "The top page is a Work Order template\u2014half text, half afterimage. (pause)\nThe signature block is present. (pause)\nThe scope paragraph is not. (pause)\nIt\u2019s enough to start an argument. (pause)\nNot enough to end one.",
           "next": "N021_PULL_MENU"
         },
         {
@@ -100,7 +100,7 @@
           "id": "N030_HEADER",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The header line prints in blocky, exhausted characters:\n\nROUTE: OLEA LEGAL \u2014 OUTBOUND / DEST: FACILITY FAX (POSTED)\nREF: WO-RET-SP01\n\nThe timestamp is five minutes ago. The machine is still warm, like it wants credit.",
+          "text": "The header line prints in blocky, exhausted characters: (pause)\nROUTE: OLEA LEGAL \u2014 OUTBOUND / DEST: FACILITY FAX (POSTED) (pause)\nREF: WO-RET-SP01 (pause)\nThe timestamp is five minutes ago. (pause)\nThe machine is still warm, like it wants credit.",
           "next": "N031_AFTER_HEADER_MENU"
         },
         {
@@ -136,7 +136,7 @@
           "id": "N101_FIRST_RESULTS",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The fax machine wakes up with a complaint disguised as a motor.\n\nPage one prints crisp at the top and dissolves in the middle.\nPage two prints the middle perfectly and sacrifices the asset line to a smear.",
+          "text": "The fax machine wakes up with a complaint disguised as a motor. (pause)\n\nPage one prints crisp at the top and dissolves in the middle. (pause)\nPage two prints the middle perfectly and sacrifices the asset line to a smear.",
           "next": "N110_RERUN_MENU"
         },
         {
@@ -195,7 +195,7 @@
           "id": "N121_AGAIN_RESULTS",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The machine tries a new failure mode\u2014this time the header line is perfect and the signature is a bruise.\n\nLegal\u2019s name is readable, but the pen stroke looks like it was done while bracing for impact.",
+          "text": "The machine tries a new failure mode. (pause) This time the header line is perfect. (pause) The signature is a bruise. (pause) Legal\u2019s name is readable. (pause) But the pen stroke looks like it was done while bracing for impact.",
           "next": "N122_AGAIN_MENU"
         },
         {
@@ -229,7 +229,7 @@
           "id": "N140_PATCHWORK",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You lay the pages out, selecting sentences like you\u2019re building a body from acceptable parts.\n\nWhat you end up with reads like a fence built out of clauses:\n\n\u201cWORK ORDER \u2014 RETIREMENT SUPPORT (NARROW PURPOSE)\u201d\n\u201cASSET: SP-01 (as labeled on site)\u201d\n\u201cSCOPE: Closure-support activities limited to verification and documentation steps listed on the standard retirement checklist.\u201d\n\u201cEXCLUSIONS: No exploratory testing. No evaluation of anomalous conditions. No language implying \u2018authorization to enter.\u2019\u201d\n\u201cTHIS INSTRUMENT CONFIRMS TASK DESCRIPTION ONLY. It does not certify site condition, personnel training, or safety baseline.\u201d\n\nThe last line is underlined twice, like someone pressed too hard.",
+          "text": "You lay the pages out and select sentences like you\u2019re building a body from acceptable parts. (pause)\n\nWhat you end up with reads like a fence built out of clauses: (pause)\n\n\u201cWORK ORDER \u2014 RETIREMENT SUPPORT (NARROW PURPOSE)\u201d (pause)\n\n\u201cASSET: SP-01 (as labeled on site)\u201d (pause)\n\n\u201cSCOPE: Closure-support activities limited to verification and documentation steps listed on the standard retirement checklist.\u201d (pause)\n\n\u201cEXCLUSIONS: No exploratory testing. No evaluation of anomalous conditions. No language implying \u2018authorization to enter.\u2019\u201d (pause)\n\n\u201cTHIS INSTRUMENT CONFIRMS TASK DESCRIPTION ONLY.\u201d (pause)\n\n\u201cIt does not certify site condition, personnel training, or safety baseline.\u201d (pause)\n\nThe last line is underlined twice like someone pressed too hard.",
           "next": "N141_PATCHWORK_MENU"
         },
         {
@@ -265,7 +265,7 @@
           "id": "N205_SERVICE_MODE_NARR",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The sticker peels reluctantly, like it was saving itself for an emergency that mattered.\n\nYou key in a code that should not be common knowledge. The machine accepts it without comment, which is its own kind of comment.\n\nThe next print is darker. The words stop trying to disappear.",
+          "text": "The sticker peels reluctantly like it was saving itself for an emergency that mattered. (pause) You key in a code that should not be common knowledge. (pause) The machine accepts it without comment. (pause) The silence is a comment. (pause) The next print is darker. (pause) The words stop trying to disappear.",
           "next": "N210_SERVICE_MENU"
         },
         {
@@ -299,7 +299,7 @@
           "id": "N220_READ_SCOPE",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The scope language is narrow enough to fit through a mail slot.\n\nEvery helpful noun is paired with an unhelpful disclaimer, like Legal is stapling you to the document at a safe distance.",
+          "text": "The scope language is narrow enough to fit through a mail slot. (pause) Every helpful noun is paired with an unhelpful disclaimer, (pause) like Legal is stapling you to the document at a safe distance.",
           "next": "N221_READ_MENU"
         },
         {
@@ -333,14 +333,14 @@
           "id": "N201_SERVICE_FAIL",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You reach for the \u201cright numbers\u201d and come up short.\n\nEither you don\u2019t have the sticker, or you don\u2019t have the procedure down clean enough to risk it. The machine keeps its bland, default contrast\u2014perfect for receipts, terrible for liability.",
+          "text": "You reach for the \u201cright numbers\u201d and come up short. (pause)\n\nEither you don\u2019t have the sticker (pause)\nor you don\u2019t have the procedure down clean enough to risk it. (pause)\n\nThe machine keeps its bland, default contrast\u2014perfect for receipts and terrible for liability.",
           "next": "N110_RERUN_MENU"
         },
         {
           "id": "N160_SUCCESS_PRINT",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "On the next passes, the printer finally commits to the idea of ink.\n\nYou end up with two legible Work Order pages, duplicated, edges still warm. They agree with each other\u2014an institutional miracle.\n\nThe machine keeps its faint mechanical hum for a second longer than necessary, as if waiting for you to ask it to certify something.",
+          "text": "On the next passes the printer finally commits to ink. (pause)\nYou get two legible Work Order pages. (pause)\nThey are duplicates with edges still warm. (pause)\nThey match each other. An institutional miracle. (pause)\nThe machine keeps its faint mechanical hum a second too long. (pause)\nAs if it is waiting for you to ask it to certify something.",
           "next": "N170_END_SUCCESS"
         },
         {
@@ -413,7 +413,7 @@
           "id": "N940_END_ONE_SET",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You fold it carefully, avoiding the clean paragraph like it\u2019s a wound. One set isn\u2019t a binder. It\u2019s a promise you haven\u2019t backed up yet.",
+          "text": "You fold it carefully (pause) avoiding the clean paragraph like it\u2019s a wound. (pause) One set isn\u2019t a binder. (pause) It\u2019s a promise you haven\u2019t backed up yet.",
           "next": "N941_END_ONE_SET"
         },
         {

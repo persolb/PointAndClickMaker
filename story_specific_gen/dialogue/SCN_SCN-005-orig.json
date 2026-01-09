@@ -1,0 +1,60 @@
+{
+  "dialogueGraphs": [
+    {
+      "id": "SCN_005_GUARD_SHACK_EXTERIOR",
+      "sceneId": "SCN-005",
+      "startNodeId": "N_START",
+      "nodes": [
+        {
+          "id": "N_START",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The guard shack sits off the approach road like it was placed by a committee that feared weather and people equally.\nThe door has a steel pull handle. The card reader beside it glows faintly, as if embarrassed to be awake.",
+          "next": "PC_MAIN_MENU"
+        },
+        {
+          "id": "PC_MAIN_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_LEAVE",
+              "text": "Leave.",
+              "next": "END_LEAVE"
+            }
+          ]
+        },
+        {
+          "id": "N_LOOK_DOOR",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The door is closed flush. The latch side shows fresh wear where someone tested it recently and stopped.\nNo gap, no give. It\u2019s locked.",
+          "next": "PC_MAIN_MENU"
+        },
+        {
+          "id": "N_LOOK_TUBE",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "A brass plate, scuffed to dull gold, sits beside a capped tube port.\nIt\u2019s labeled in block letters: \u201cFORMS \u2014 INTAKE / OUTBOUND \u2014 DO NOT SEND FOOD.\u201d\nSomeone scratched an arrow under \u201cOUTBOUND\u201d like they didn\u2019t trust the printed one.",
+          "next": "PC_MAIN_MENU"
+        },
+        {
+          "id": "END_LOCKED_STATE",
+          "type": "end",
+          "outcomeId": "see_shack_locked_state",
+          "effects": [
+            {
+              "key": "world.guardShackLocked",
+              "action": "set",
+              "value": true
+            }
+          ]
+        },
+        {
+          "id": "END_LEAVE",
+          "type": "end"
+        }
+      ]
+    }
+  ]
+}

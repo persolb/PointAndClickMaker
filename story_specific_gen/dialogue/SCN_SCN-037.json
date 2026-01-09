@@ -9,7 +9,7 @@
           "id": "N_START",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The log printer tray sits half-open under the main console, like it never agreed to be part of \u201ccontrols.\u201d A narrow status light above it is dark.",
+          "text": "The log printer tray sits half-open under the main console. (pause) Like it never agreed to be part of \u201ccontrols.\u201d (pause) A narrow status light above it stays dark.",
           "conditions": [
             {
               "key": "paperwork.baselineLoggingActive",
@@ -23,7 +23,7 @@
           "id": "N_WAKE",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The status light blinks once, as if reconsidering. Inside, rollers wake with a dry, expensive-sounding squeal.",
+          "text": "The status light blinks once, as if reconsidering. Inside, rollers wake with a dry expensive-sounding squeal.",
           "next": "N_FORM"
         },
         {
@@ -37,7 +37,7 @@
           "id": "N_WAIT",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The paper advances one clean inch and stops. It is waiting for you to decide what \u201cinitialization\u201d means today.",
+          "text": "The paper moves an inch and stops. It waits while you decide what \u201cinitialization\u201d means today.",
           "next": "MENU_MAIN"
         },
         {
@@ -257,7 +257,7 @@
           "id": "N_WITNESS_LOCKED",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "There\u2019s a box for a witness signature, but no one is physically here to become one. The option sits there anyway, like a trap you can\u2019t afford yet.",
+          "text": "There\u2019s a box for a witness signature, but no one is physically here to become one. (pause) The option sits there anyway, like a trap you can\u2019t afford yet.",
           "next": "N_WITNESS_LOCKED2"
         },
         {
@@ -295,7 +295,7 @@
           "id": "N_COMMIT1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You press the tray inward until the latch catches. Your hand hesitates at the last millimeter, the way it does when you\u2019re about to create a document that can outlive you.",
+          "text": "You press the tray inward until the latch catches. (pause) Your hand hesitates at the last millimeter. (pause) The way it does when you\u2019re about to create a document that can outlive you.",
           "next": "N_COMMIT2"
         },
         {
@@ -316,7 +316,7 @@
           "id": "N_COMMIT4",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The printer engages fully. Paper feeds with brisk certainty, as if the facility prefers text to electricity.",
+          "text": "The printer engages. Paper feeds with brisk certainty, as if the facility prefers text to electricity.",
           "next": "N_COMMIT5"
         },
         {
@@ -330,7 +330,7 @@
           "id": "N_COMMIT6",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "A fresh printout slides into the tray\u2014warm, time-stamped, and immediately useful as evidence that you were here and did the boring thing first. Baseline logging continues.",
+          "text": "A fresh printout slides into the tray\u2014warm, time-stamped. (pause) Immediately useful evidence you were here, and you did the boring thing first. (pause) Baseline logging continues.",
           "next": "END_START_BASELINE"
         },
         {
@@ -359,7 +359,7 @@
           "id": "N_LEAVE1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You let the tray sit open. The printer stays quiet, pretending it wasn\u2019t waiting on you. The Control Room keeps running in the background, like that settles anything.",
+          "text": "You let the tray sit open. (pause) The printer stays quiet, pretending it wasn\u2019t waiting on you. (pause) The Control Room keeps running in the background\u2014as if that settles anything.",
           "next": "END_LEAVE"
         },
         {

@@ -9,14 +9,14 @@
           "id": "N_INTRO_01",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "Copy and Fax Room. Fluorescents that don\u2019t flicker so much as hesitate.\nA metal shelf labeled: BINDER SUPPLIES \u2014 TAKE ONE (1). Someone added \u201cPER CATEGORY\u201d in pen, then crossed it out, then underlined it.",
+          "text": "Copy and Fax Room. (pause)\nFluorescents don\u2019t flicker. They hesitate. (pause)\nA metal shelf: BINDER SUPPLIES \u2014 TAKE ONE (1). (pause)\nSomeone added \u201cPER CATEGORY\u201d in pen. Crossed it out. Underlined it.",
           "next": "N_INTRO_02"
         },
         {
           "id": "N_INTRO_02",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "A half-empty row of 3-ring binders. Divider tabs. Sheet protectors. A stapler that looks personally offended by misuse.",
+          "text": "A half-empty row of 3-ring binders. Divider tabs. Sheet protectors. A stapler, offended by misuse.",
           "next": "N_MAIN_MENU"
         },
         {
@@ -60,14 +60,14 @@
           "id": "N_INV_01",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "Binders: assorted, mostly intact.\nTabs: A\u2013Z, 1\u201312, and a set labeled \u201cMISC\u201d like it\u2019s a destination.\nSheet protectors: cloudy, but legal enough.\nFasteners: brads, clips, and one bag of zip ties that should not be here.",
+          "text": "Binders: assorted. Mostly intact. (pause) Tabs: A\u2013Z. 1\u201312. Plus a set labeled \u201cMISC\u201d like it\u2019s a destination. (pause) Sheet protectors: cloudy. Still legal enough. (pause) Fasteners: brads and clips. One bag of zip ties should not be here.",
           "next": "N_MAIN_MENU"
         },
         {
           "id": "N_OVERBUILD_01",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You could add: cover sheet, revision log, tab color standard, and a contents page that implies a universe where contents stop changing.",
+          "text": "Could add a cover sheet, revision log, tab-color standard plus a contents page for stable-contents fantasy.",
           "next": "N_OVERBUILD_CHOICE"
         },
         {
@@ -86,14 +86,14 @@
           "id": "N_OVERBUILD_02",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You step back before you start optimizing for an auditor that isn\u2019t physically here.\nThe shelf waits, patient, like it gets paid by the hour.",
+          "text": "You step back before optimizing for an auditor who isn\u2019t physically here. (pause) The shelf waits, patient, like it gets paid by the hour.",
           "next": "N_MAIN_MENU"
         },
         {
           "id": "N_EQUIP_01",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The copier control panel is smeared with fingerprints and good intentions.\nA stack of service code stickers sits like contraband pretending to be office supplies.\nThe fax tray holds curled paper that looks resentful.",
+          "text": "The copier control panel is smeared with fingerprints and good intentions. (pause)\nA stack of service code stickers sits like contraband pretending to be office supplies. (pause)\nThe fax tray holds curled paper that looks resentful.",
           "next": "N_EQUIP_MENU"
         },
         {
@@ -134,14 +134,14 @@
           "id": "N_EQUIP_STICKERS_01",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "Tiny numbers. Tiny adhesive squares. A whole taxonomy of access.\nYou don\u2019t pocket them. You don\u2019t need that kind of story later.",
+          "text": "Tiny numbers. Tiny adhesive squares. A whole taxonomy of access. (pause) You don\u2019t pocket them. You don\u2019t need that kind of story later.",
           "next": "N_MAIN_MENU"
         },
         {
           "id": "N_EQUIP_FAX_01",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The top page is a transmission confirmation from years ago.\nIt confirms nothing except that someone once believed paper could arrive somewhere safe.",
+          "text": "The top page is a transmission confirmation from years ago. (pause) It confirms nothing\u2014only that someone once believed paper could arrive somewhere safe.",
           "next": "N_MAIN_MENU"
         },
         {
@@ -240,14 +240,14 @@
           "id": "N_ASM_MINIMUM_01",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "Minimum means: it closes, it indexes, and it answers obvious questions before someone asks them out loud.",
+          "text": "Minimum means: it closes, it indexes, and it answers questions before someone asks them out loud.",
           "next": "N_ASM_MENU"
         },
         {
           "id": "N_ASM_WORKORDER_01",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You slide the work order behind a protector. The sheet catches on the corner, like it\u2019s trying to be important.",
+          "text": "You slide the work order behind a protector. It snags the corner, trying to look important.",
           "next": "N_ASM_MENU"
         },
         {
@@ -268,42 +268,42 @@
           "id": "N_ASM_CODES_01",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You don\u2019t write the codes on the binder. You don\u2019t \u201cstore\u201d them.\nYou include them, temporarily, in a sealed envelope, because words matter when blame is looking for handles.",
+          "text": "You don\u2019t write the codes on the binder. You don\u2019t \u201cstore\u201d them. (pause) You include them temporarily in a sealed envelope. (pause) Because words matter when blame is looking for handles.",
           "next": "N_ASM_MENU"
         },
         {
           "id": "N_ASM_TABS_01",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You pick tabs that won\u2019t start a fight: WORK ORDER, CHECKLIST, CODES, NOTES.\n\u201cNOTES\u201d is where uncertainty goes to become someone else\u2019s problem.",
+          "text": "You pick tabs that won\u2019t start a fight: WORK ORDER, CHECKLIST, CODES\u2014and NOTES. (pause) \u201cNOTES\u201d is where uncertainty goes to become someone else\u2019s problem.",
           "next": "N_ASM_MENU"
         },
         {
           "id": "N_ASM_MISSING_01",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You are missing: a current facility map, an asset registry addendum, and any page that says the site is normal in a way anyone would agree with.\nYou can compensate for two of those. The third is not a document problem.",
+          "text": "You are missing three things: a current facility map (pause) an asset registry addendum (pause) and a page saying the site is normal by any reasonable standard. (pause) You can cover two. (pause) The third is not a document problem.",
           "next": "N_ASM_MENU"
         },
         {
           "id": "N_ASM_CHAIN_01",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You tuck in a chain-of-custody form you hope you won\u2019t need.\nThe paper is too clean. That\u2019s the tell.",
+          "text": "You pocket a chain-of-custody form, praying you won\u2019t need it. Paper\u2019s too clean. That\u2019s the tell.",
           "next": "N_ASM_MENU"
         },
         {
           "id": "N_ASM_OLEA_ATTEST_01",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You find an OLEA internal template sheet: FIELD PRESENCE ATTESTATION \u2014 NON-INTERPRETIVE.\nYou add it behind the checklist. The language is aggressively modest. It does not describe anomalies. It describes attendance.",
+          "text": "You find an OLEA internal template sheet. (pause) FIELD PRESENCE ATTESTATION \u2014 NON-INTERPRETIVE. (pause) You add it behind the checklist. (pause) The language is aggressively modest. (pause) It does not describe anomalies. (pause) It describes attendance.",
           "next": "N_ASM_MENU"
         },
         {
           "id": "N_ASM_GENERIC_ATTEST_01",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "There\u2019s no authorized template for you. Only a blank page and the temptation to invent one.\nYou do not.",
+          "text": "There\u2019s no authorized template. Just a blank page, and the temptation to invent one. Don\u2019t.",
           "next": "N_ASM_MENU"
         },
         {
@@ -317,7 +317,7 @@
           "id": "N_COMMIT_01",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You press the rings shut. They click with the confidence of cheap hardware pretending it\u2019s policy.\nThe binder is now functional: indexed, legible, and annoying to dispute.\nThe shelf label still says TAKE ONE (1). You take none of its advice.",
+          "text": "You press the rings shut. (pause) They click with the confidence of cheap hardware pretending it\u2019s policy. (pause) The binder is functional now: indexed and legible, annoying to dispute. (pause) The shelf label still says TAKE ONE (1). (pause) You take none of its advice.",
           "next": "N_END_ASSEMBLE_MINIMUM"
         },
         {
@@ -353,7 +353,7 @@
           "id": "N_EXIT_DOWN_01",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "Down: Non-Local Compliance Notices Room. The signage is too careful, which is its own kind of warning.",
+          "text": "Down: Non-Local Compliance Notices Room. The signage is too careful, a warning in itself.",
           "next": "N_END_EXIT"
         },
         {

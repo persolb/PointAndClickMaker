@@ -9,7 +9,7 @@
           "id": "NARRATOR_ENTER",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The Control Room smells like warmed dust and laminated paper.\nThree consoles. One alarm panel with too many labeled lights. A log printer still feeding itself.\nA procedure binder sits open like it was abandoned mid-sentence.\n\nOn the wall: generic compliance notices. \u201cPOST THIS NOTICE.\u201d \u201cDO NOT REMOVE THIS NOTICE.\u201d None of them say who wrote them.",
+          "text": "The Control Room smells like warmed dust and laminated paper. (pause) Three consoles. (pause) One alarm panel with too many labeled lights. (pause) A log printer still feeding itself. (pause) A procedure binder sits open like it was abandoned mid-sentence. (pause) On the wall. Generic compliance notices. (pause) \u201cPOST THIS NOTICE.\u201d \u201cDO NOT REMOVE THIS NOTICE.\u201d (pause) None say who wrote them.",
           "next": "LIAISON_BASELINE"
         },
         {
@@ -65,7 +65,7 @@
           "id": "CONSOLE_DESC",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The main console is powered. The screen shows load routing and a status banner: CONTINUOUS BASELINE EXPORT.\nSomeone has taped a handwritten label over a switch: \u201cDO NOT CYCLE (ASK FIRST).\u201d",
+          "text": "The main console is powered. (pause) The screen shows load routing and a status banner: CONTINUOUS BASELINE EXPORT. (pause) A handwritten label is taped over a switch: \u201cDO NOT CYCLE (ASK FIRST).\u201d",
           "next": "CONSOLE_PLAYER_RUNNING"
         },
         {
@@ -117,7 +117,7 @@
           "id": "ALARM_DESC",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The alarm panel is quiet: no horns, no strobes.\nSeveral indicator lamps are lit anyway, labeled with comforting words like NORMAL and BYPASS.",
+          "text": "The alarm panel is quiet\u2014no horns or strobes. Still, several indicator lamps glow: comforting NORMAL, BYPASS.",
           "next": "ALARM_PLAYER_ACTIVE"
         },
         {
@@ -186,14 +186,14 @@
           "id": "PRINTER_DESC",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The log printer is warm.\nIt has been printing in the slow, stubborn way of a system that believes it will be read.",
+          "text": "The log printer is warm.\nIt prints slow, stubborn, sure it will be read.",
           "next": "PRINTER_NOTICE"
         },
         {
           "id": "PRINTER_NOTICE",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The top page: ROUTING SUMMARY / EXPORT LEDGER.\nBelow it: NON-LOCAL COMPLIANCE NOTICE \u2014 DO NOT DISCARD.",
+          "text": "Top page: ROUTING SUMMARY / EXPORT LEDGER.\nBelow it: NON-LOCAL COMPLIANCE NOTICE \u2014 DO NOT DISCARD.",
           "next": "PRINTER_PLAYER_NONLOCAL"
         },
         {
@@ -245,7 +245,7 @@
           "id": "BINDER_DESC",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The binder is tabbed, cross-referenced, and slightly swollen from humidity.\nThe cover sheet says: SPINDLE SITE \u2014 OPERATOR SHUTDOWN SEQUENCE (OFFICIAL).\nA sticky note at the top reads: \u201cREVISION CHECKED (I THINK).\u201d",
+          "text": "The binder is tabbed and cross-referenced. It\u2019s slightly swollen from humidity. (pause) The cover sheet says: SPINDLE SITE \u2014 OPERATOR SHUTDOWN SEQUENCE (OFFICIAL). (pause) A sticky note on top reads: \u201cREVISION CHECKED (I THINK).\u201d",
           "next": "BINDER_PLAYER"
         },
         {
@@ -377,7 +377,7 @@
           "id": "COMPLIANT_NARRATOR_ANNOTATE",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You annotate the binder\u2019s authorization gap with a field sign-off and timestamp.\nThe act feels heavier than the pen.",
+          "text": "You mark the binder\u2019s authorization gap with sign-off and timestamp. The act feels heavier than pen.",
           "next": "COMPLIANT_NARRATOR_ACCEPT"
         },
         {
@@ -391,7 +391,7 @@
           "id": "READY_NARRATOR_COMPLIANT",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "Operational controls unlock. Logging tabs appear: ROUTING, INTERLOCKS, EXPORT, EVENT HISTORY.\nThe cursor blinks on a prompt: SELECT CONTROL DOMAIN.\nThe room remains quiet.",
+          "text": "Operational controls unlock. Logging tabs appear: ROUTING / INTERLOCKS / EXPORT / EVENT HISTORY. (pause)\nThe cursor blinks at the prompt: SELECT CONTROL DOMAIN. (pause)\nThe room remains quiet.",
           "next": "END_READY_COMPLIANT"
         },
         {
@@ -429,7 +429,7 @@
           "id": "CONTINUITY_NARRATOR_REASON",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You flip into Operator Continuity.\nThe console requests a reason code. There are only three. Two are jokes.\nYou choose the one that looks least like a joke.",
+          "text": "You flip into Operator Continuity. (pause) The console requests a reason code. (pause) There are only three. Two are jokes. (pause) You choose the one that looks least like a joke.",
           "next": "CONTINUITY_LIAISON_HEADER"
         },
         {
@@ -443,14 +443,14 @@
           "id": "CONTINUITY_NARRATOR_PRINTS",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The log printer clicks and advances a line: OPERATOR OF RECORD: FIELD SYSTEMS SPECIALIST (CONTINUITY).\nIt prints it twice, as if to make sure.",
+          "text": "The log printer clicks and advances a line: OPERATOR OF RECORD: FIELD SYSTEMS SPECIALIST (CONTINUITY). (pause) It prints it twice, as if to make sure.",
           "next": "READY_NARRATOR_CONTINUITY"
         },
         {
           "id": "READY_NARRATOR_CONTINUITY",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "Operational controls unlock. Logging tabs appear: ROUTING, INTERLOCKS, EXPORT, EVENT HISTORY.\nThe cursor blinks on a prompt: SELECT CONTROL DOMAIN.\nThe room remains quiet.",
+          "text": "Operational controls unlock. Log tabs: ROUTING / INTERLOCKS / EXPORT / EVENT HISTORY. (pause)\nCursor blinks: SELECT CONTROL DOMAIN.\nQuiet.",
           "next": "END_READY_CONTINUITY"
         },
         {

@@ -21,7 +21,7 @@
               "value": true
             }
           ],
-          "text": "Window 0 is clean the way a form is clean\u2014because nothing personal has been allowed to touch it.",
+          "text": "Window 0 is clean like a form\u2014because nothing personal was allowed to touch it.",
           "next": "N_INTRO_2"
         },
         {
@@ -202,7 +202,7 @@
           "id": "N_FORM_SLIDE_1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The clerk slides a blank template forward, face-down, like it might learn you if you look directly at it.",
+          "text": "The clerk slides a template forward, face-down, like it\u2019ll learn you if you look at it.",
           "next": "N_FORM_SLIDE_2"
         },
         {
@@ -328,7 +328,7 @@
           "id": "N_TOOLBAG_5",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The clerk stamps the form twice, like the second stamp is for the parts of you that won\u2019t fit on paper.",
+          "text": "Clerk stamps the form twice, like the second stamp\u2019s for parts you can\u2019t fit on paper.",
           "next": "END_TOOLBAG_PATH"
         },
         {
@@ -401,7 +401,7 @@
           "id": "N_COACHED_2",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The clerk feeds the paper into a slot that was built for envelopes and now eats definitions.",
+          "text": "The clerk feeds paper into a slot built for envelopes and now eats definitions.",
           "next": "END_COACHED_PATH"
         },
         {

@@ -7,7 +7,7 @@
           "id": "N_ENTER",
           "next": "PC_PANEL",
           "speakerId": "NARRATOR",
-          "text": "The scan panel is mounted at waist height, clean enough to imply routine use.\nA camera. A palm reader. A small microphone grille.\nAbove it: WITNESS REQUIREMENT ZONE \u2014 TWO-PERSON PRESENCE BEYOND THIS LINE.\nThe line is the witness-marker tape. It encloses the panel and a narrow path toward the sphere, like a funnel.",
+          "text": "The scan panel is mounted at waist height. Clean enough to imply routine use. (pause) A camera. A palm reader. A small microphone grille. (pause) Above it: WITNESS REQUIREMENT ZONE \u2014 TWO-PERSON PRESENCE BEYOND THIS LINE. (pause) The witness-marker tape marks the line. It encloses the panel. (pause) It also encloses a narrow path toward the sphere. Like a funnel.",
           "type": "npc_line"
         },
         {
@@ -58,7 +58,7 @@
           "id": "N_PANEL_USE_FAIL",
           "next": "PC_PANEL_AFTER_FAIL",
           "speakerId": "NARRATOR",
-          "text": "The panel wakes with a soft tone that tries to sound neutral.\nPRESENCE CHECK: INSUFFICIENT.\nThen, defensively: THIS IS NOT A DENIAL. THIS IS A REQUIREMENT.\nSECOND PRESENCE NOT DETECTED. DO NOT PROCEED ALONE.\nA final line appears, almost petty: COMPLIANCE LIKES CONSISTENCY.",
+          "text": "The panel wakes with a soft tone that tries to sound neutral. (pause)\nPRESENCE CHECK: INSUFFICIENT. (pause)\nThen, defensively: THIS IS NOT A DENIAL. (pause)\nTHIS IS A REQUIREMENT. (pause)\nSECOND PRESENCE NOT DETECTED. (pause)\nDO NOT PROCEED ALONE. (pause)\nA final line appears, almost petty: COMPLIANCE LIKES CONSISTENCY.",
           "type": "npc_line"
         },
         {
@@ -96,7 +96,7 @@
           "id": "N_PANEL_USE_PASS",
           "next": "PC_PANEL_AFTER_PASS",
           "speakerId": "NARRATOR",
-          "text": "The panel tone shifts\u2014less defensive, more official.\nPRESENCE CHECK: SATISFIED.\nA prompt waits for you to make it a record.\nThe tape line doesn\u2019t move. The wording does: it stops being equipment and starts being testimony.",
+          "text": "The panel tone shifts. Less defensive. More official. (pause)\nPRESENCE CHECK: SATISFIED. (pause)\nA prompt waits. It wants you to make a record. (pause)\nThe tape line does not move. (pause)\nThe wording does. Not equipment anymore. Testimony now.",
           "type": "npc_line"
         },
         {
@@ -134,7 +134,7 @@
           "id": "N_PANEL_ACK",
           "next": "END",
           "speakerId": "NARRATOR",
-          "text": "You mark it mentally the way you\u2019d mark a live bus bar: not dramatic, just absolute.\nWhatever \u201cshutdown\u201d means here, it starts when you step over the witness line and let the panel record you doing it.\nYou now know where the facility stops being equipment and starts being testimony.",
+          "text": "You mark it mentally like a live bus bar. (pause) Not dramatic. Just absolute. (pause)\nWhatever \u201cshutdown\u201d is here, it starts when you cross the witness line. (pause) You let the panel record you doing it. (pause)\nYou now know where the facility stops being equipment and starts being testimony.",
           "type": "npc_line"
         },
         {

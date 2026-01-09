@@ -9,7 +9,7 @@
           "id": "NARR_ENTER",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The conference room is empty in the way a room gets empty when someone has already finished being here.\nA printer tray holds a single sheet, still warm at the corners.\nA checklist binder sits open to a tab labeled \u201cFINAL SIGN-OFF.\u201d\nOn the whiteboard: three bullet points under COMPARABILITY, underlined twice.",
+          "text": "The conference room is empty. (pause) Empty like someone already finished being here. (pause) A printer tray holds one sheet. Still warm at the corners. (pause) A checklist binder sits open. Tab reads \u201cFINAL SIGN-OFF.\u201d (pause) On the whiteboard are three bullet points under COMPARABILITY. Underlined twice.",
           "next": "MAIN_MENU"
         },
         {
@@ -76,7 +76,7 @@
           "id": "NARR_LOOK_TRAY",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "A pre-stamped form: EAC FINDING SLIP.\nRecipient: Field Systems Specialist (Closure).\nStatus: OPEN.\nBlocker: Final sign-off prohibited until one of the following attachments is provided:\n- Incident page (site event narrative)\n- Waiver (risk acceptance)\n- No-anomaly test printout from Operations\nSomeone has checked \u201cComparability required\u201d in careful penmanship. It feels personal, which is worse.",
+          "text": "A pre-stamped form. EAC FINDING SLIP. (pause)\nRecipient: Field Systems Specialist (Closure). Status: OPEN. (pause)\nBlocker: Final sign-off prohibited until one attachment is provided. (pause)\n- Incident page. Site event narrative. (pause)\n- Waiver. Risk acceptance. (pause)\n- No-anomaly test printout from Operations. (pause)\nSomeone checked \u201cComparability required\u201d in careful penmanship. (pause)\nIt feels personal. Worse.",
           "next": "PLAYER_LOOK_TRAY_TAG"
         },
         {
@@ -90,14 +90,14 @@
           "id": "NARR_LOOK_TRAY_QUOTE",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "At the bottom, a typed note reads like it expects to be quoted aloud.\n\n\u201cI'm not saying the site is unsafe.\nI'm saying the record is not comparable.\u201d\n\u2014EAC Senior Assurance Liaison",
+          "text": "At the bottom, a typed note reads like it expects to be quoted aloud. (pause)\n\n\u201cI'm not saying the site is unsafe. (pause)\nI'm saying the record is not comparable.\u201d (pause)\n\u2014EAC Senior Assurance Liaison",
           "next": "REDIRECT_MAIN"
         },
         {
           "id": "NARR_LOOK_CHECKLIST",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The closure checklist is intact until the last page.\nA yellow sticky flag marks a line item: EAC Finding Resolution Attachment \u2014 REQUIRED.\nThe paper smells like copier toner and someone else\u2019s confidence.",
+          "text": "The closure checklist is intact until the last page. (pause)\nA yellow sticky flag marks a line item: EAC Finding Resolution Attachment \u2014 REQUIRED. (pause)\nThe paper smells like copier toner and someone else\u2019s confidence.",
           "next": "PLAYER_LOOK_CHECKLIST_TAG"
         },
         {
@@ -118,7 +118,7 @@
           "id": "NARR_LOOK_WHITEBOARD",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "Under COMPARABILITY:\n- \u201cUnexpected reflective behavior\u201d (circled)\n- \u201cNear-miss, personnel\u201d (question mark)\n- \u201cEquipment drift / calibration anomaly\u201d (underlined)\nSomeone has added: \u201cDo not use novel terms in the finding summary.\u201d\nThe marker squeaked hard on that line, like it mattered.",
+          "text": "Under COMPARABILITY: (pause)\n- \u201cUnexpected reflective behavior\u201d (circled) (pause)\n- \u201cNear-miss: personnel\u201d (question mark) (pause)\n- \u201cEquipment drift / calibration anomaly\u201d (underlined) (pause)\nSomeone has added: \u201cDo not use novel terms in the finding summary.\u201d (pause)\nThe marker squeaked hard on that line. (pause)\nLike it mattered.",
           "next": "PLAYER_LOOK_WHITEBOARD_TAG"
         },
         {
@@ -132,7 +132,7 @@
           "id": "NARR_TALK_OPEN",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "There\u2019s no one to answer.\nBut the Finding Slip has a \u201cLiaison Notes\u201d section, written in a voice that expects compliance.",
+          "text": "No one answers.\nYet the Finding Slip\u2019s \u201cLiaison Notes\u201d expect compliance.",
           "next": "LIAISON_TALK_1"
         },
         {
@@ -209,7 +209,7 @@
           "id": "NARR_ASK_AUTH_TAG",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The checklist binder remains open to the last page, like it\u2019s waiting for your signature to become a mistake.",
+          "text": "The checklist binder lies open at the last page, like it\u2019s waiting\u2014your signature becomes a mistake.",
           "next": "REDIRECT_MAIN"
         },
         {
@@ -251,7 +251,7 @@
           "id": "NARR_TAKE_SLIP",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You lift the sheet from the tray. The toner hasn\u2019t fully set; your thumb smudges the word OPEN.\nThe checklist binder accepts it like it was missing a tooth.",
+          "text": "You lift the sheet from the tray. (pause) The toner hasn\u2019t fully set; your thumb smudges the word OPEN. (pause) The checklist binder accepts it like it was missing a tooth.",
           "next": "LIAISON_TAKE_SLIP"
         },
         {
@@ -265,7 +265,7 @@
           "id": "NARR_TAKE_SUMMARY",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "EAC Finding Slip added to inventory.\nObjective added: Resolve EAC Finding.\nFinal sign-off will be blocked until you attach: an incident page, a waiver, or a no-anomaly test printout from Operations.",
+          "text": "EAC Finding Slip added to inventory. (pause) Objective added: Resolve EAC Finding. (pause) Final sign-off blocked until you attach an incident page, a waiver, or a no-anomaly test printout. (pause) From Operations.",
           "next": "END_TAKE_OUTCOME"
         },
         {
@@ -299,7 +299,7 @@
           "id": "NARR_LEAVE",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You step back into the hallway.\nThe conference room stays behind you, holding its paperwork at the ready, like it knows you\u2019ll be back.",
+          "text": "You step back into the hallway. (pause) The conference room stays behind you, holding its paperwork at the ready. (pause) Like it knows you\u2019ll be back.",
           "next": "END_LEAVE"
         },
         {

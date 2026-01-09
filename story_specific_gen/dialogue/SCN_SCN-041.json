@@ -9,7 +9,7 @@
           "id": "N_ENTER",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The SPINDLE chamber floor smells like old coolant and new paperwork.\nA dull containment sphere sits in the center, three rotating frames around it\u2014each with maintenance markings that disagree by decade.\nNear the approach, a strip of witness-marker tape makes a neat, legal shape on the floor. It does not match any safety standard you recognize. It matches a form.",
+          "text": "The SPINDLE chamber floor smells like old coolant and new paperwork. (pause) A dull containment sphere sits at center. (pause) Three rotating frames circle it\u2014maintenance markings on each disagree by a decade. (pause) Near the approach, witness-marker tape makes a neat legal shape on the floor. (pause) It matches no safety standard you recognize. It matches a form.",
           "next": "PC_HUB"
         },
         {
@@ -49,7 +49,7 @@
           "id": "N_LEAVE_OBS_UNKNOWN",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You take one last look across the floor\u2014the sphere, the lights, the tape that pretends it\u2019s just tape.\nThen you head for the stairs down to the observation deck. The hum follows you, consistent as a policy.",
+          "text": "You take one last look across the floor\u2014the sphere, the lights, the tape. (pause)\nIt still pretends it\u2019s just tape. (pause)\nThen you head for the stairs down to the observation deck. (pause)\nThe hum follows you\u2014consistent as a policy.",
           "next": "END_OBS_UNKNOWN"
         },
         {
@@ -60,7 +60,7 @@
           "id": "N_LEAVE_OBS_KNOWN",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You take one last look at the witness perimeter, like it might move when you aren\u2019t watching. It doesn\u2019t.\nYou head for the stairs down to the observation deck. The hum follows you, consistent as a policy.",
+          "text": "You take one last look at the witness perimeter, (pause) like it might move when you aren\u2019t watching. (pause) It doesn\u2019t. (pause)\nYou head for the stairs down to the observation deck. (pause) The hum follows you, consistent as a policy.",
           "next": "END_OBS_KNOWN"
         },
         {
@@ -72,7 +72,7 @@
           "id": "N_LEAVE_OVERFLOW_UNKNOWN",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You angle back toward the overflow intake concourse.\nThe chamber stays behind you, quietly maintaining its version of \u201cnormal.\u201d",
+          "text": "You angle back toward the overflow intake concourse. (pause)\nThe chamber stays behind you, quietly maintaining its version of \u201cnormal.\u201d",
           "next": "END_OVERFLOW_UNKNOWN"
         },
         {
@@ -83,7 +83,7 @@
           "id": "N_LEAVE_OVERFLOW_KNOWN",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You angle back toward the overflow intake concourse with the tape line fixed in your mind as a procedural edge.\nThe chamber stays behind you, quietly maintaining its version of \u201cnormal.\u201d",
+          "text": "You angle back toward the overflow intake concourse\u2014tape line fixed in your mind. (pause) A procedural edge. The chamber stays behind you, quietly maintaining its version of \u201cnormal.\u201d",
           "next": "END_OVERFLOW_KNOWN"
         },
         {

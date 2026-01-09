@@ -7,13 +7,13 @@
           "id": "N_START",
           "next": "N_NOTE",
           "speakerId": "NARRATOR",
-          "text": "The ring is polished where gloves keep grabbing it. Someone has been here recently, and they were careful in the way people are careful when they want a record to show \"normal wear.\"",
+          "text": "The ring is polished where gloves keep grabbing it. (pause) Someone was here recently, careful like people are when they want record to show \"normal wear.\"",
           "type": "npc_line"
         },
         {
           "id": "N_NOTE",
           "speakerId": "NARRATOR",
-          "text": "A stenciled note on the lid: \"OPEN ONLY FOR AUTHORIZED SERVICE ACCESS.\"\nBelow it, a smaller sticker: \"AUTHORIZED \u2260 OPTIONAL.\"",
+          "text": "A stenciled note on the lid: \"OPEN ONLY FOR AUTHORIZED SERVICE ACCESS.\" (pause)\nBelow it, a smaller sticker: \"AUTHORIZED \u2260 OPTIONAL.\"",
           "type": "npc_line"
         }
       ],

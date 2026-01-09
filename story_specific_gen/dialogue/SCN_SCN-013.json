@@ -9,14 +9,14 @@
           "id": "N_START",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The card reader\u2019s indicator is green now. The plastic faceplate is still scuffed like it remembers being hit.",
+          "text": "The card reader indicator is green. The faceplate is still scuffed, like it remembers being hit.",
           "next": "N_INTRO2"
         },
         {
           "id": "N_INTRO2",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "A small display wakes up and immediately asks a question like it\u2019s been waiting to be right.",
+          "text": "A small display wakes up and immediately asks a question like it\u2019s waiting to be right.",
           "next": "N_READER_BADGE"
         },
         {
@@ -167,7 +167,7 @@
           "id": "N_USE_ENTER_DATE_NARR",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The keypad is membrane-soft. It feels like pressing on old office equipment that resents being asked to work.",
+          "text": "The keypad is membrane-soft. It feels like pressing old office equipment that resents being used.",
           "next": "N_USE_ENTER_DATE_READER"
         },
         {
@@ -250,7 +250,7 @@
           "id": "N_SLIP_LOOK_NARR",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The ink is sharp and official.\n\nTRAINING DATE REQUIRED.\nCONSULT RECORDS.\n\nThe message is short enough to be reused indefinitely.",
+          "text": "The ink is sharp, official.\n\nTRAINING DATE REQUIRED.\nCONSULT RECORDS.\n\nThe message can be reused indefinitely.",
           "next": "N_SLIP_MENU"
         },
         {
@@ -319,14 +319,14 @@
           "id": "N_LOOK_READER_NARR",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The casing is municipal-standard. The screws are not.\nA small sticker says LAST CERTIFIED: [illegible], like someone didn\u2019t want a year to be a promise.\n\nThe display waits, patiently hostile.",
+          "text": "The casing is municipal-standard. (pause) The screws are not. (pause)\nA small sticker says LAST CERTIFIED: [illegible], (pause) like someone didn\u2019t want a year to be a promise. (pause)\n\nThe display waits, patiently hostile.",
           "next": "N_READER_BADGE"
         },
         {
           "id": "N_LOOK_TUBE_NARR",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "A brass plate riveted to painted steel:\n\u201cRECORDS / FORMS \u2014 OUTBOUND ONLY.\u201d\nThe arrow points toward the shack like that\u2019s comforting.",
+          "text": "Brass plate, riveted to painted steel:\n\u201cRECORDS/FORMS\u2014OUTBOUND ONLY.\u201d\nArrow toward shack, as-if comforting.",
           "next": "N_MAIN_MENU"
         },
         {

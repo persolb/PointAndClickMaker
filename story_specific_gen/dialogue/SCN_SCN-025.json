@@ -9,7 +9,7 @@
           "id": "N_START",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The lobby kiosk terminal hums with the confidence of something that has never been wrong on paper.\nA green header reads: \u201cPRESENCE FILING / STAFFING COMPLIANCE.\u201d\nBelow it: \u201cUNFILED INDIVIDUAL DETECTED.\u201d",
+          "text": "The lobby kiosk terminal hums, sure of itself\u2014never wrong on paper. (pause) A green header reads: \u201cPRESENCE FILING / STAFFING COMPLIANCE.\u201d (pause) Below it: \u201cUNFILED INDIVIDUAL DETECTED.\u201d",
           "next": "K_WELCOME"
         },
         {
@@ -144,7 +144,7 @@
           "id": "N_READER_WAIT",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The reader\u2019s red light waits, patiently accusing\u2014then softens to green as the kiosk concedes you exist enough to be counted.",
+          "text": "The reader\u2019s red light waits, accusing\u2014then softens to green as the kiosk concedes you exist, countable.",
           "next": "MENU_MAIN"
         },
         {
@@ -292,20 +292,20 @@
           "type": "end",
           "outcomeId": "issue_tpr",
           "speakerId": "NARRATOR",
-          "text": "A warm strip of paper slides out: TEMPORARY PRESENCE RECEIPT.\nThe kiosk quietly updates its count as if you have always been here."
+          "text": "A warm strip of paper slides out: TEMPORARY PRESENCE RECEIPT. (pause) The kiosk quietly updates its count, as if you've always been here."
         },
         {
           "id": "END_FAIL_NOT_FILED",
           "type": "end",
           "outcomeId": "fail_without_badge_or_extension",
           "speakerId": "NARRATOR",
-          "text": "The kiosk displays: \u201cPRESENCE NOT FILED.\u201d\nUnder it, in smaller text: \u201cNon-filed individuals are not in violation. They are simply unhelpful.\u201d"
+          "text": "The kiosk displays: \u201cPRESENCE NOT FILED.\u201d (pause) Under it, in smaller text: \u201cNon-filed individuals are not in violation.\u201d (pause) \u201cThey are simply unhelpful.\u201d"
         },
         {
           "id": "END_CANCEL",
           "type": "end",
           "speakerId": "NARRATOR",
-          "text": "You step away from the kiosk. It continues to glow, ready to file anyone who can be made legible."
+          "text": "You step away from the kiosk. It keeps glowing, ready to file anyone made legible."
         }
       ]
     }

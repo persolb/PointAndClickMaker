@@ -21,7 +21,7 @@
               "value": false
             }
           ],
-          "text": "Window 3 is labeled ORIENTATION in peeling block letters. Behind glass: a clerk, a stamp pad, and a stack of thin pamphlets that look pre-handled. A placard lists rules in numbered paragraphs, as if the building is a person with boundaries.",
+          "text": "Window 3 reads ORIENTATION in peeling block letters. (pause) Behind glass: a clerk, a stamp pad, and thin pamphlets that look pre-handled. (pause) A placard lists rules in numbered paragraphs like the building has boundaries.",
           "next": "CLERK_OPEN"
         },
         {
@@ -132,7 +132,7 @@
           "id": "LOOK_NARR",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The top pamphlet is titled \u201cWELCOME / COMPLIANCE / STAY WITHIN YOUR AUTHORIZED SHAPE.\u201d Several have faint pen marks on the back\u2014quick lines like someone drew a way out and then tried to forget they had hands.",
+          "text": "The top pamphlet is titled \u201cWELCOME / COMPLIANCE / STAY WITHIN YOUR AUTHORIZED SHAPE.\u201d (pause) Several have faint pen marks on the back. (pause) Quick lines like someone drew a way out. (pause) Then tried to forget they had hands.",
           "next": "LOOK_REDIRECT"
         },
         {
@@ -151,7 +151,7 @@
           "id": "TAKE_NARR",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You take the pamphlet. On the back is a rough sketch in ballpoint: a corridor cut-through with a box labeled \u201cMAP KIOSK / CORRIDOR ACCESS,\u201d drawn like someone needed it once and then regretted needing it.",
+          "text": "You take the pamphlet. (pause) On the back: a rough ballpoint sketch. (pause) A corridor cut-through, a box labeled \u201cMAP KIOSK / CORRIDOR ACCESS.\u201d (pause) Drawn like someone needed it once, then regretted needing it.",
           "next": "TAKE_CLERK"
         },
         {

@@ -9,7 +9,7 @@
           "id": "N_START",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "Interconnection Bay Staging: a bright, over-labeled room pretending it\u2019s temporary.\nThe AMR reader loop hums with the confidence of something that has never been cross-examined.\nA clipboard station sits under a sign that says PLEASE PRINT, as if handwriting is the primary hazard.",
+          "text": "Interconnection Bay Staging: a bright, over-labeled room pretending it\u2019s temporary. (pause)\nThe AMR reader loop hums with the confidence of something never cross-examined. (pause)\nA clipboard station sits under a sign: PLEASE PRINT, as if handwriting is the primary hazard.",
           "next": "N_SUP_HOLD"
         },
         {

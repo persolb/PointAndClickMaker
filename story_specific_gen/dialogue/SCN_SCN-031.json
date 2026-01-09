@@ -9,7 +9,7 @@
           "id": "N_ENTER",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The Operations Corridor is narrow and bright in the way only institutional lighting can manage.\n\nFour things compete for your attention: an interlock panel with a calendar sticker, a main lockout point with a small forest of padlocks, a ventilation indicator with a sealed lens, and a stack of procedure placards that look handled often and obeyed rarely.",
+          "text": "The Operations Corridor is narrow and bright\u2014only institutional lighting pulls that off. (pause) Four things compete for your attention: (pause) An interlock panel with a calendar sticker. (pause) A main lockout point with a small forest of padlocks. (pause) A ventilation indicator with a sealed lens. (pause) A stack of procedure placards\u2014handled often and obeyed rarely.",
           "next": "PC_MENU_MAIN"
         },
         {
@@ -83,7 +83,7 @@
           "id": "N_CONTACTS_INTRO",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "There are multiple numbers, each promising authority. None promising help.\n\nNo one answers \u201cWho owns this corridor?\u201d out loud.\nPick a number: Compliance Desk, Safety Coordinator, or Facilities Operator.",
+          "text": "There are multiple numbers. Each promises authority. (pause)\nNone promises help. (pause)\n\nNo one answers \u201cWho owns this corridor?\u201d out loud. (pause)\nPick a number: Compliance Desk, Safety Coordinator, or Facilities Operator.",
           "next": "PC_CONTACTS_MENU"
         },
         {
@@ -142,7 +142,7 @@
           "id": "N_COMMIT_INTRO",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "Between the interlock, the lock point, and the ventilation indicator, the corridor has the shape of a closed fist.\n\nIt doesn\u2019t stop you by force. It stops you by making every next step require a previous step you cannot take.",
+          "text": "Between the interlock, the lock point, and the ventilation indicator the corridor is a closed fist. (pause)\nIt doesn\u2019t stop you by force. (pause)\nIt stops you by making each next step require a previous step. (pause)\nA step you cannot take.",
           "next": "PC_COMMIT"
         },
         {
@@ -168,7 +168,7 @@
           "id": "N_COMMIT_WRITEUP",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You write it in the only language that survives audits:\n\n- Training-date interlock blocks enable/access.\n- LOTO requirements prevent manipulation without personal lock and verified zero-energy state.\n- Ventilation status dependency requires NORMAL before access/verification steps, and the indicator is inhibited by the interlock.\n\nYour handwriting stays steady. Your jaw doesn\u2019t. That counts as composure.",
+          "text": "You write it in the only language that survives audits. (pause)\n\n- Training-date interlock blocks enable or access. (pause)\n- LOTO prevents manipulation without your lock and a verified zero-energy state. (pause)\n- Ventilation must be NORMAL before access or verification. (pause)\n- The interlock inhibits the indicator. (pause)\n\nYour handwriting stays steady. (pause)\nYour jaw doesn\u2019t. That counts as composure.",
           "next": "END_OPS_BARRIERS_IDENTIFIED"
         },
         {
@@ -187,7 +187,7 @@
           "id": "N_SHOW_NOTES",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You forward the summary without commentary. The system accepts it like a confession.\n\nNo reply arrives fast enough to be useful.",
+          "text": "You forward summary, no commentary. System takes it as confession. No reply comes in time.",
           "next": "PC_SHOW_NOTES_BACK"
         },
         {

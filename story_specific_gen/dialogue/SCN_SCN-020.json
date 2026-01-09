@@ -83,14 +83,14 @@
           "id": "N_LOOK_2",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "Someone punched the tag numbers hard enough to tear the paper\u2014like they wanted the numbers to survive blame.",
+          "text": "Someone punched the numbers hard enough to tear the paper\u2014like they wanted numbers to survive blame.",
           "next": "N_LOOK_3"
         },
         {
           "id": "N_LOOK_3",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "A placard above the slot reads: \u201cTUBE VARIANCE IS NORMAL. ALL TRANSFERS ARE NON\u2011CUSTODIAL UNTIL SIGNED.\u201d The word \u201csigned\u201d is underlined twice.",
+          "text": "A placard above the slot reads: \u201cTUBE VARIANCE IS NORMAL. ALL TRANSFERS ARE NON\u2011CUSTODIAL UNTIL SIGNED.\u201d (pause) \u201cSigned\u201d is underlined twice.",
           "next": "N_LOOK_MENU"
         },
         {
@@ -138,7 +138,7 @@
           "id": "N_ASK_2",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "A smaller sticker on the side: \u201cFOR DISCREPANCIES, CONTACT RECORDS INTAKE.\u201d The listed extension is smudged out, carefully, like a correction made to avoid creating a new problem.",
+          "text": "Side sticker: \u201cFOR DISCREPANCIES, CONTACT RECORDS INTAKE.\u201d Extension smudged out carefully, a fix to avoid trouble.",
           "next": "N_ASK_MENU"
         },
         {
@@ -186,7 +186,7 @@
           "id": "N_TALK_2",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The sentence is engineered to be true no matter what happens next. You can almost hear Legal clearing its throat.",
+          "text": "The sentence is engineered to be true no matter what happens next. (pause) You can almost hear Legal clearing its throat.",
           "next": "N_TALK_MENU"
         },
         {
@@ -217,7 +217,7 @@
           "id": "N_USE_1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You pull the ring free. The felt resists, then gives up with a tiny sigh, like it\u2019s relieved you\u2019re the one touching it.",
+          "text": "You pull the ring free. Felt resists, then yields with a tiny sigh, relieved it\u2019s you.",
           "next": "N_USE_2"
         },
         {
@@ -231,7 +231,7 @@
           "id": "N_USE_3",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "This expands what you can open without anyone ever authorizing access in a sentence that can be quoted later.",
+          "text": "This expands what you can open without anyone authorizing access, in a sentence to quote later.",
           "next": "N_POST_USE_MENU"
         },
         {
@@ -269,7 +269,7 @@
           "id": "N_USE_LOG_2",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You don\u2019t have a form for \u201cfound in tube station,\u201d so you\u2019ll call it a custody correction if anyone asks. It will be easier to defend than the truth.",
+          "text": "You don\u2019t have a form for \u201cfound in tube station.\u201d (pause) So call it a custody correction if anyone asks. (pause) Easier to defend than the truth.",
           "next": "N_END_COLLECT"
         },
         {

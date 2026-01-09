@@ -9,7 +9,7 @@
           "id": "N_START",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The reception desk is clean in the way abandoned things get when someone dusts around the idea of them.",
+          "text": "The reception desk is clean, like abandoned things get when someone dusts around the idea itself.",
           "conditions": [
             {
               "key": "tools.magnetFound",
@@ -44,7 +44,7 @@
           "id": "N_CONTENTS",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "Inside: carbon-copy request forms, a stapler with no staples, and three pens that all died believing they were essential.",
+          "text": "Inside: carbon-copy forms, a stapler without staples, and three pens that died thinking they mattered.",
           "next": "N_ANYTHING"
         },
         {
@@ -58,7 +58,7 @@
           "id": "N_ENVELOPE",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "In the back corner, an envelope has been torn and re-taped enough times to become a laminate. Something small is caught in the seam\u2014metallic, flat, with a faint pull when it slides past the stapler.",
+          "text": "In the back corner, an envelope has been torn and re-taped into a laminate. (pause) Something small is caught in the seam\u2014metallic and flat. (pause) It gives a faint pull when it slides past the stapler.",
           "next": "N_MENU"
         },
         {
@@ -106,7 +106,7 @@
           "id": "N_PULL_OUT_RESIST",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You pinch the seam and work it free. It resists, then releases abruptly\u2014your fingers go cold for a second from the metal.",
+          "text": "You pinch the seam and work it free. It resists, then releases abruptly. (pause) Your fingers go cold for a second from the metal.",
           "next": "N_PULL_OUT_IDENT"
         },
         {
@@ -142,14 +142,14 @@
           "id": "N_PULL_OUT_TEMP_FIX",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The envelope is stamped: \u201cKIOSK ACCESS \u2014 TEMP FIX.\u201d Someone underlined TEMP and then stopped believing in it.",
+          "text": "The envelope is stamped: \u201cKIOSK ACCESS \u2014 TEMP FIX.\u201d Someone underlined TEMP, then stopped believing.",
           "next": "N_PULL_OUT_MENU"
         },
         {
           "id": "N_INSPECT_LIGHT",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You hold the piece up to the lobby light. It\u2019s a thin magnet assembly with adhesive residue and a faint scuff pattern from a swipe path.",
+          "text": "You hold the piece up to the lobby light. (pause) It\u2019s a thin magnet assembly: adhesive residue, faint scuff pattern from a swipe path.",
           "next": "N_INSPECT_BADGE"
         },
         {
@@ -180,7 +180,7 @@
           "id": "N_LOG_SHEET",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "Under the forms is a half-sheet titled \u201cREMOVALS / RETURNS.\u201d It has six columns and one honest entry.",
+          "text": "Beneath the forms is a half-sheet, \u201cREMOVALS / RETURNS.\u201d Six columns, and one honest entry.",
           "next": "N_LOG_SIGNATURE"
         },
         {
@@ -247,14 +247,14 @@
           "id": "N_DOC_NOTE",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You tear the cleanest corner off a form and write a note with the least imaginative truth you can defend.",
+          "text": "You tear the cleanest corner off a form and write the dullest truth you can defend.",
           "next": "N_DOC_TEXT"
         },
         {
           "id": "N_DOC_TEXT",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "\u201cRecovered small magnet component from reception drawer; intended for access media continuity; to be logged upon network availability.\u201d It reads like a person trying not to exist in court.",
+          "text": "\u201cRecovered a small magnet component from the reception drawer.\u201d (pause) \u201cIntended for access media continuity.\u201d (pause) \u201cTo be logged when the network is available.\u201d (pause) It reads like a person trying not to exist in court.",
           "next": "N_DOC_MENU"
         },
         {

@@ -9,7 +9,7 @@
           "id": "N1_ESTABLISH",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The barcode kiosk is bolted to a waist-high pedestal like it\u2019s part of the floor plan.\nA green \u201cREADY\u201d light blinks with practiced patience.\nA thermal printer sits under a plastic hood, already slightly curled from old output.",
+          "text": "The barcode kiosk is bolted to a waist-high pedestal like it\u2019s part of the floor plan. (pause) A green \u201cREADY\u201d light blinks with practiced patience. (pause) A thermal printer sits under a plastic hood, already slightly curled from old output.",
           "next": "N2_HAVE_LABEL"
         },
         {
@@ -76,7 +76,7 @@
           "id": "N_LOOK_N1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "A laminated placard is taped beside the scanner. The tape has been replaced often; the placard hasn\u2019t.",
+          "text": "A laminated placard is taped beside the scanner. The tape\u2019s been replaced often; the placard hasn\u2019t.",
           "next": "N_LOOK_K1"
         },
         {
@@ -90,7 +90,7 @@
           "id": "N_LOOK_N2",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "Below that, in smaller print: \u201cUNALLOCATED MASS IS NOT AN ACCUSATION.\u201d\n\nThe READY light blinks as if trying not to blink too hard.",
+          "text": "Below, small print: \u201cUNALLOCATED MASS IS NOT AN ACCUSATION.\u201d The READY light blinks, holding back.",
           "next": "R_BACK_TO_MENU_1"
         },
         {
@@ -208,7 +208,7 @@
           "id": "N_LEAVE_N1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You step back. The kiosk remains ready, like it\u2019s waiting to witness you make a better decision.",
+          "text": "You step back. The kiosk remains ready, as if it's waiting for you to decide better.",
           "next": "END_LEAVE"
         },
         {

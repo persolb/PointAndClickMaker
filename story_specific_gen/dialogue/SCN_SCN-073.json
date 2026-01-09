@@ -9,21 +9,21 @@
           "id": "N_START",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "Control Room.\nThe air smells like warmed plastic and old coffee that never quite evaporated.\nThe main console displays three \u201cNORMAL\u201d indicators that do not share a definition.",
+          "text": "Control Room. (pause) The air smells like warmed plastic and old coffee that never quite evaporated. (pause) The main console displays three \u201cNORMAL\u201d indicators that do not share a definition.",
           "next": "N_START_2"
         },
         {
           "id": "N_START_2",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "In the log printer tray: a fresh stack of fanfold paper. The top page is still curling like it remembers heat.",
+          "text": "In the log printer tray: fresh fanfold paper. The top page curls like it remembers heat.",
           "next": "N_START_3"
         },
         {
           "id": "N_START_3",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The console is labeled in five different fonts.\nA strip of tape beneath the screen reads: \u201cDON\u2019T ADJECTIVIZE THE INCIDENT.\u201d",
+          "text": "The console is labeled in five fonts. Tape under the screen reads: \u201cDON\u2019T ADJECTIVIZE THE INCIDENT.\u201d",
           "next": "N_MAIN_MENU"
         },
         {
@@ -101,7 +101,7 @@
           "id": "N_BINDER_INTRO",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The binder is swollen with addenda.\nA tab reads: \u201cUNEXPECTED REFLECTIVE BEHAVIOR \u2014 WORDING GUIDANCE,\u201d underlined twice.",
+          "text": "The binder is swollen with addenda.\nTab reads: \u201cUNEXPECTED REFLECTIVE BEHAVIOR \u2014 WORDING GUIDANCE,\u201d underlined twice.",
           "next": "N_BINDER_MENU"
         },
         {
@@ -132,7 +132,7 @@
           "id": "N_THRESHOLDS_INTRO",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "Threshold settings display in tolerances and acronyms.\nA tiny note in the corner reads: \u201cWIDENING \u2260 HIDING,\u201d like someone got defensive in advance.",
+          "text": "Threshold settings display in tolerances and acronyms. (pause)\nA tiny note in the corner reads: \u201cWIDENING \u2260 HIDING,\u201d like someone got defensive in advance.",
           "next": "N_THRESHOLDS_MENU"
         },
         {
@@ -195,14 +195,14 @@
           "id": "N_ATTACH_MEMO",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "A text field opens. It feels accusatory.\nYou attach the closure-path memo.\nThe console accepts it without enthusiasm, like it\u2019s seen better lies.",
+          "text": "Text field opens, accusatory. You attach closure-path memo. Console accepts it cold, like seen better lies.",
           "next": "N_WIDEN_APPLIED"
         },
         {
           "id": "N_WIDEN_APPLIED",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The advisory line on the trend graph stays where it is.\nOnly the meaning of the line changes.",
+          "text": "The advisory line on the trend graph stays put.\nOnly its meaning changes.",
           "next": "N_MAIN_MENU"
         },
         {
@@ -223,7 +223,7 @@
           "id": "N_ROUTING_INTRO",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "Alarm routing is a map of who gets blamed first.\nMost destinations are crossed out and replaced with handwritten initials.",
+          "text": "Alarm routing maps who gets blamed first. Most destinations are crossed out, replaced with handwritten initials.",
           "next": "N_ROUTING_MENU"
         },
         {
@@ -266,7 +266,7 @@
           "id": "N_ROUTE_MAINT",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You select a destination queue titled \u201cMAINT \u2014 WEEKLY.\u201d\nIt has the soothing energy of a drawer.",
+          "text": "You select a queue titled \u201cMAINT \u2014 WEEKLY.\u201d\nIt has the soothing energy of a drawer.",
           "next": "N_ROUTE_MAINT_2"
         },
         {
@@ -287,7 +287,7 @@
           "id": "N_INTERLOCKS_INTRO",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "Interlocks read like a compromise between physics and office politics.\nA sticky note on the bezel says: \u201cAUTO-ANYTHING IS HOW WE GOT REPORTS.\u201d",
+          "text": "Interlocks read like a compromise between physics and office politics. (pause) A sticky note on the bezel says: \u201cAUTO-ANYTHING IS HOW WE GOT REPORTS.\u201d",
           "next": "N_INTERLOCKS_MENU"
         },
         {
@@ -359,14 +359,14 @@
           "id": "N_TWOSTEP_REFERENCE",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You reference the binder section: \u201cUnexpected Reflective Behavior \u2014 Wording Guidance.\u201d\nThe console links the gate to a document that insists nothing is happening.\nIt\u2019s a neat trick: you can only do the thing by affirming it\u2019s not a thing.",
+          "text": "You cite the binder section: \u201cUnexpected Reflective Behavior \u2014 Wording Guidance.\u201d (pause) The console links the gate to a document insisting nothing is happening. (pause) Neat trick: you can do it only by saying it isn\u2019t a thing.",
           "next": "N_MAIN_MENU"
         },
         {
           "id": "N_TWOSTEP_GENERIC",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The console accepts \u201cGENERIC SAFETY HOLD.\u201d\nGeneric is harder to defend later, but easier to sell now.",
+          "text": "Console accepts \u201cGENERIC SAFETY HOLD.\u201d\nGeneric is harder to defend later, but easier to sell now.",
           "next": "N_MAIN_MENU"
         },
         {
@@ -416,7 +416,7 @@
           "id": "N_PRINT_INTRO",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The print queue shows pending reports with timestamps clustered too neatly.\nSomeone likes clean intervals. Or fears them.",
+          "text": "The print queue: pending reports; timestamps cluster too neatly.\nSomeone likes clean intervals. Or fears them.",
           "next": "N_PRINT_MENU"
         },
         {
@@ -459,7 +459,7 @@
           "id": "N_PRINT_TREND",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The printer produces a graph with a line that never crosses anything, because you moved the anything.",
+          "text": "The printer produces graph with a line that never crosses anything, because you moved the anything.",
           "next": "N_MAIN_MENU"
         },
         {
@@ -497,7 +497,7 @@
           "id": "N_EXECUTE_RESULT",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The screen refreshes. \u201cNORMAL\u201d remains \u201cNORMAL.\u201d\nThe alignment trace continues its quiet behavior inside the newly acceptable band.\nIn the printer tray, a final page feeds out and stops halfway, like it\u2019s listening.\nThe room stays calm.\nOn paper, it always has.",
+          "text": "The screen refreshes. \u201cNORMAL\u201d remains \u201cNORMAL.\u201d (pause)\nThe alignment trace continues quietly inside the newly acceptable band. (pause)\nIn the printer tray a final page feeds out. It stops halfway like it\u2019s listening. (pause)\nThe room stays calm. (pause)\nOn paper it always has.",
           "next": "N_END_EXECUTE"
         },
         {

@@ -9,7 +9,7 @@
           "id": "N001_INTRO",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The wall phone list is laminated, updated, and slightly curled at the corners like it\u2019s been worried by too many careful hands. \u201cOLEA \u2014 LEGAL (Work Orders / Waivers)\u201d is circled in fading pen.",
+          "text": "The wall phone list is laminated, updated, and slightly curled at the corners (pause) like it\u2019s been worried by too many careful hands. (pause) \u201cOLEA \u2014 LEGAL (Work Orders / Waivers)\u201d is circled in fading pen.",
           "next": "N002_START_CHOICE"
         },
         {
@@ -33,7 +33,7 @@
           "id": "N003_DIALTONE",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The handset is heavier than it needs to be. The dial tone arrives with the patience of something that expects to be blamed later.",
+          "text": "The handset is heavier than it needs to be. (pause) The dial tone arrives with the patience of something that expects to be blamed later.",
           "next": "N004_PICKUP"
         },
         {

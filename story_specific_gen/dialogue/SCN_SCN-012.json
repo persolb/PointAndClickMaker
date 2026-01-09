@@ -9,7 +9,7 @@
           "id": "N_START_01",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The exterior ground service hatch sits flush with the concrete, painted the color of old utility rooms.\nA lifting ring lies flat, as if it\u2019s tired of being asked.\nA placard reads \u201cAUX,\u201d but the font doesn\u2019t match anything else on site.",
+          "text": "The exterior ground service hatch sits flush with the concrete (pause) painted the color of old utility rooms. (pause) A lifting ring lies flat as if it\u2019s tired of being asked. (pause) A placard reads \u201cAUX\u201d but the font doesn\u2019t match anything else on site.",
           "next": "N_START_02"
         },
         {
@@ -50,7 +50,7 @@
           "id": "N_LOOK_01",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The hatch has been opened often, but never recently. The grime pattern is consistent with \u201croutine\u201d neglect.",
+          "text": "The hatch was opened often, but never recently. The grime pattern is consistent with \u201croutine\u201d neglect.",
           "next": "N_LOOK_02"
         },
         {
@@ -64,7 +64,7 @@
           "id": "N_LOOK_03",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "Someone hand-scribed a breaker map on laminated paper. Half the abbreviations are crossed out and rewritten in a different pen.\nYou feel your teeth press together before you stop doing it.",
+          "text": "Someone hand-scribed a breaker map on laminated paper. (pause) Half the abbreviations are crossed out, rewritten in another pen. (pause) You feel your teeth press together, then you stop.",
           "next": "N_LOOK_P01"
         },
         {
@@ -78,7 +78,7 @@
           "id": "N_LOOK_04",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "A second placard, newer, reads: \u201cAUX POWER \u2014 NON-CRITICAL LOADS ONLY.\u201d\nBelow it, in smaller print: \u201cNon-critical per Facilities, not per Operations.\u201d",
+          "text": "A newer second placard reads: \u201cAUX POWER \u2014 NON-CRITICAL LOADS ONLY.\u201d (pause) Below: \u201cNon-critical per Facilities, not per Operations.\u201d",
           "next": "N_LOOK_05"
         },
         {
@@ -257,21 +257,21 @@
           "id": "N_OPEN_01",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You hook a finger into the lifting ring and pull. The ring bites back before it lifts, like it resents being useful.",
+          "text": "You hook a finger into the lifting ring and pull. It bites, then lifts, resentful.",
           "next": "N_OPEN_02"
         },
         {
           "id": "N_OPEN_02",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The hatch seal releases with a wet pop.\nYou pause a beat, because \u201cinhaled mold\u201d is a stupid way to become an incident.",
+          "text": "The hatch seal releases with a wet pop. (pause) You wait a beat. \u201cInhaled mold\u201d is a stupid way to become an incident.",
           "next": "N_OPEN_03"
         },
         {
           "id": "N_OPEN_03",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "A short ladder descends into a service pocket. A conduit bundle runs down the wall, tied off with tape that has turned amber.",
+          "text": "Short ladder descends into a service pocket. Conduit bundle runs down wall, taped off, amber now.",
           "next": "N_OPEN_MENU"
         },
         {
@@ -295,14 +295,14 @@
           "id": "N_CLOSE_01",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You set the hatch lid down and leave it as you found it. The lifting ring settles flat again, relieved.",
+          "text": "You set the hatch lid down and leave it as you found it. (pause) The lifting ring settles flat again, relieved.",
           "next": "N_BACK_TO_MAIN"
         },
         {
           "id": "N_DOWN_01",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "Below, the aux panel is exactly where it would be in a sane facility: left wall, waist height, with a deadfront that\u2019s been removed and reinstalled too many times.",
+          "text": "Below, the aux panel is sane-facility standard: left-wall, waist-high; deadfront\u2019s been off-and-on too many times.",
           "next": "N_DOWN_02"
         },
         {
@@ -323,14 +323,14 @@
           "id": "N_DOWN_03",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You set your multimeter leads. The display steadies after a moment, as if it also prefers decisions to be documented.",
+          "text": "You set multimeter leads. The display steadies after a moment, as if it prefers decisions documented.",
           "next": "N_DOWN_04"
         },
         {
           "id": "N_DOWN_04",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "There\u2019s available source, but the aux bus is not live.\nThat\u2019s good news in the boring way.",
+          "text": "There\u2019s source, but the aux bus isn\u2019t live.\nThat\u2019s good news in the boring way.",
           "next": "N_BREAKER_MENU"
         },
         {
@@ -359,14 +359,14 @@
           "id": "N_TRACE_01",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You trace the conductors by tag and termination instead of by faith.\nSomeone has re-terminated at least one run and kept the old label out of spite.",
+          "text": "You trace conductors by tag and termination, not by faith. (pause) Someone re-terminated a run and kept the old label out of spite.",
           "next": "N_TRACE_02"
         },
         {
           "id": "N_TRACE_02",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "A small charger cradle is mounted nearby\u2014label maker model, familiar.\nThe cradle\u2019s indicator is dark.\nYou feel an almost unreasonable irritation about that specific detail.",
+          "text": "A small charger cradle is mounted nearby\u2014label maker model, familiar. (pause) The cradle\u2019s indicator is dark. (pause) You feel an almost unreasonable irritation about that specific detail.",
           "next": "N_BACK_TO_BREAKER"
         },
         {
@@ -378,7 +378,7 @@
           "id": "N_BACK_OUT_01",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You climb back up and set the hatch lid down without latching it.\nThe ring settles flat again, relieved.",
+          "text": "You climb up and set the hatch lid down, unlatched.\nThe ring settles flat again, relieved.",
           "next": "N_BACK_TO_MAIN"
         },
         {
@@ -392,21 +392,21 @@
           "id": "N_THROW_01",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You throw the breaker in one clean motion, because hesitation looks like doubt on a security camera.",
+          "text": "You throw the breaker in one motion, because hesitation looks like doubt on a security camera.",
           "next": "N_THROW_02"
         },
         {
           "id": "N_THROW_02",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "A thin hum rises. Two indicator lamps wake in different colors, as if they can\u2019t agree what success looks like.",
+          "text": "A thin hum rises. Two indicator lamps wake, different colors, like they can\u2019t agree on success.",
           "next": "N_THROW_03"
         },
         {
           "id": "N_THROW_03",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "A small ventilation fan starts somewhere behind the wall, not fast, just determined.\nThe label maker cradle blinks, then holds steady: charging.",
+          "text": "A small ventilation fan starts somewhere behind the wall, not fast, just determined. (pause)\nThe label maker cradle blinks then holds steady: charging.",
           "next": "N_THROW_04"
         },
         {
@@ -434,7 +434,7 @@
           "id": "N_THROW_06",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The panel stays steady. The facility doesn\u2019t react.\nThat almost feels like a relief, which is not a metric you can file.",
+          "text": "The panel stays steady. The facility doesn\u2019t react. (pause)\nThat almost feels like relief. You can\u2019t file it as a metric.",
           "next": "N_END_AUX_POWER"
         },
         {
@@ -463,7 +463,7 @@
           "id": "N_LEAVE_01",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You step back from the hatch. The concrete is unchanged, which is its best feature.\nThe relay clicking below continues, patient and unclaimed.",
+          "text": "You step back from the hatch. (pause) The concrete is unchanged, its best feature. (pause) The relay clicking below continues, patient and unclaimed.",
           "next": "N_END_LEAVE"
         },
         {

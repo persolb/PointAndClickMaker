@@ -9,7 +9,7 @@
           "id": "N001_INTRO",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "Aperture Bay is lit like a loading dock that got promoted.\n\nThe aperture is a mirror-surface circle set into a frame that insists it is just another piece of municipal infrastructure.\n\nA floor mark\u2014RADIO SWEET-SPOT\u2014is painted where your boots already are, as if the building is trying to keep you from wandering into interpretation.",
+          "text": "Aperture Bay is lit like a loading dock that got promoted. (pause)\n\nThe aperture is a mirror-surface circle set into a frame. (pause)\nThat insists it is just another piece of municipal infrastructure. (pause)\n\nA floor mark\u2014RADIO SWEET-SPOT\u2014is painted where your boots already are. (pause)\nAs if the building is trying to keep you from wandering into interpretation.",
           "next": "N010_MAIN_MENU"
         },
         {
@@ -95,21 +95,21 @@
           "id": "N060_TUNE_PASS",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You press a thumb against the grille, adjust the angle by millimeters, and listen the way you listen for a bearing going bad.\n\nThe hiss changes.\n\nNot a channel. Not a call. Just cleaner bleed\u2014enough to confirm there is a world on the other side that would prefer not to be confirmed.",
+          "text": "You press a thumb to the grille. (pause)\nYou nudge the angle by millimeters and listen, like you listen for a bearing going bad. (pause)\nThe hiss changes. (pause)\nNot a channel. Not a call. (pause)\nJust cleaner bleed\u2014enough to confirm a world on the other side prefers not to be confirmed.",
           "next": "N011_REDIRECT_MAIN"
         },
         {
           "id": "N061_TUNE_FAIL",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You try to coax clarity out of the grille. It gives you the same exhausted hiss.\n\nIf there's a signal, it's not volunteering.",
+          "text": "You try to coax clarity out of the grille. (pause) It gives you the same exhausted hiss. (pause) If there's a signal, it's not volunteering.",
           "next": "N011_REDIRECT_MAIN"
         },
         {
           "id": "N100_APERTURE_DESC",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The surface reflects you with the accuracy of an inspection mirror.\n\nThen it reflects you from an angle you are not standing at.\n\nThe frame has three sets of bolt heads with three different paint codes, like three different crews tried to agree without meeting.",
+          "text": "The surface reflects you with inspection-mirror accuracy. (pause)\nThen it reflects you from an angle you\u2019re not standing at. (pause)\nThe frame has three bolt-head sets, three paint codes\u2014three crews trying to agree without meeting.",
           "next": "N110_APERTURE_MENU"
         },
         {
@@ -145,21 +145,21 @@
           "id": "N121_APERTURE_NORMAL_NARR",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The mirror does not answer.\n\nThe bay\u2019s status panel continues to display NORMAL OPERATION in a font that predates doubt.",
+          "text": "The mirror does not answer.\n\nThe bay panel reads NORMAL OPERATION, in a font predating doubt.",
           "next": "N011_REDIRECT_MAIN"
         },
         {
           "id": "N130_APERTURE_SEAM_NARR",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The seam is clean. Too clean.\n\nSomeone has been here with solvent and a sense of liability.",
+          "text": "The seam is clean. Too clean.\n\nSomeone has been here with solvent and liability.",
           "next": "N011_REDIRECT_MAIN"
         },
         {
           "id": "N200_SHROUD_DESC",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The control shroud has a laminated label zip-tied to it like a confession that refuses to be stapled.\n\nIt reads:\n\n\u201cSPINDLE NODE INTERFACE \u2014 ALIGNMENT LOCK CONTROL\u201d\n\u201cCAUTION: DO NOT INTERRUPT LOCK WITHOUT ROUTING INSTRUMENTS\u201d\n\nThe word \u201crouting\u201d is underlined once, carefully, like it\u2019s the only word anyone can defend.",
+          "text": "The control shroud has a laminated label. (pause) Zip-tied on like a confession that refuses to be stapled. (pause)\n\nIt reads: (pause)\n\n\u201cSPINDLE NODE INTERFACE \u2014 ALIGNMENT LOCK CONTROL\u201d (pause)\n\u201cCAUTION: DO NOT INTERRUPT LOCK WITHOUT ROUTING INSTRUMENTS\u201d (pause)\n\nThe word \u201crouting\u201d is underlined once. (pause) Carefully. (pause) Like it\u2019s the only word anyone can defend.",
           "next": "N210_SHROUD_MENU"
         },
         {
@@ -195,21 +195,21 @@
           "id": "N221_SHROUD_INSTRUMENTS_NARR",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The label does not list them.\n\nIt assumes you already have them\u2014or that you will be the instrument.",
+          "text": "The label does not list them.\n\nIt assumes you have them\u2014or that you are the instrument.",
           "next": "N011_REDIRECT_MAIN"
         },
         {
           "id": "N230_SHROUD_TAG_NARR",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "A brittle service tag hangs behind the shroud, dated in three different handwriting styles.\n\nThe latest entry is a blank line with a signature box nobody used.",
+          "text": "A brittle service tag hangs behind the shroud, dated in three different handwriting styles. (pause) The latest entry is a blank line with a signature box nobody used.",
           "next": "N011_REDIRECT_MAIN"
         },
         {
           "id": "N300_SWEETSPOT_DESC",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The floor mark is a rectangle of yellow paint with a stenciled caption: RADIO SWEET-SPOT.\n\nUnder the yellow are older outlines\u2014two previous \u201csweet-spots,\u201d shifted by inches, each crossed out with an X that looks angry for something so minor.",
+          "text": "The floor mark is a rectangle of yellow paint with a stenciled caption: RADIO SWEET-SPOT. (pause) Under the yellow are older outlines. (pause) Two previous \u201csweet-spots,\u201d shifted by inches. (pause) Each is crossed out with an X. (pause) It looks angry for something so minor.",
           "next": "N310_SWEETSPOT_MENU"
         },
         {
@@ -265,14 +265,14 @@
           "id": "N330_SWEETSPOT_SCUFF_NARR",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The heaviest scuffs are centered exactly where you\u2019re standing.\n\nPeople stood here a lot, and not for comfort.",
+          "text": "The heaviest scuffs are centered where you\u2019re standing.\n\nPeople stood here a lot, not for comfort.",
           "next": "N011_REDIRECT_MAIN"
         },
         {
           "id": "N340_SWEETSPOT_POSTURE_PASS",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You shift your boots until they align with the oldest outline under the yellow.\n\nThe bay\u2019s quiet changes\u2014subtle, like a system admitting you found the intended place to be.",
+          "text": "You shift your boots till they match the oldest outline under the yellow. (pause)\nThe bay\u2019s quiet changes\u2014subtle, a system admitting you found the intended place to be.",
           "next": "N011_REDIRECT_MAIN"
         },
         {
@@ -286,7 +286,7 @@
           "id": "N400_CHUTE_DESC",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The outgoing packet chute is labeled like a mailbox that resents being called a mailbox.\n\nA stack of thin routing slips sits in the throat\u2014pre-punched, pre-numbered, pre-justified.",
+          "text": "Outgoing packet chute: labeled like a mailbox that hates being called a mailbox. (pause) Thin routing slips sit in its throat\u2014pre-punched, pre-numbered, pre-justified.",
           "next": "N410_CHUTE_MENU"
         },
         {
@@ -315,7 +315,7 @@
           "id": "N420_CHUTE_LASTSLIP_NARR",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The last slip is stamped twice, as if the first stamp wasn\u2019t brave enough.\n\nDESTINATION: OVERFLOW INTAKE\nCLASS: TEMPORARY HOLD\nREASON: CAPACITY MANAGEMENT\n\nThe word \u201ctemporary\u201d is doing most of the work.",
+          "text": "The last slip is stamped twice, as if the first stamp wasn\u2019t brave enough. (pause)\n\nDESTINATION: OVERFLOW INTAKE (pause)\nCLASS: TEMPORARY HOLD (pause)\nREASON: CAPACITY MANAGEMENT (pause)\n\nThe word \u201ctemporary\u201d is doing most of the work.",
           "next": "N011_REDIRECT_MAIN"
         },
         {
@@ -329,14 +329,14 @@
           "id": "N431_CHUTE_FEED_NARR",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The chute accepts the slip without resistance.\n\nThat is either good design or a willingness to take anything as long as it\u2019s formatted.",
+          "text": "The chute accepts the slip without resistance. (pause) Either good design, or it\u2019ll take anything if it\u2019s formatted.",
           "next": "N011_REDIRECT_MAIN"
         },
         {
           "id": "N480_CONFIRM_INTRO",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The control recess waits under the shroud: a slot that looks like it was designed for a token, not a hand.\n\nIf you do this, you do it as maintenance. You do it with a paper trail. You do it without inventing verbs you can\u2019t defend.",
+          "text": "The control recess waits under the shroud. (pause) A slot, made for a token, not a hand.\n\nIf you do this it\u2019s maintenance. (pause) You do it with a paper trail. (pause) You do it without inventing verbs you can\u2019t defend.",
           "next": "N490_CONFIRM_MENU"
         },
         {
@@ -372,7 +372,7 @@
           "id": "N590_NO_TOKEN",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You reach for the recess and stop.\n\nWithout the slot token, this isn\u2019t a procedure. It\u2019s a story.\n\nThe bay offers you no help writing it.",
+          "text": "You reach for the recess and stop. (pause)\n\nWithout the slot token, this isn\u2019t a procedure. It\u2019s a story. (pause)\n\nThe bay offers you no help writing it.",
           "next": "N011_REDIRECT_MAIN"
         },
         {
@@ -386,14 +386,14 @@
           "id": "N501_COMMIT_NARR",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You seat the slot token in the control recess. It clicks like a stamp finding its ink.\n\nThe aperture\u2019s surface tightens\u2014subtle, like a muscle remembering it has a job.",
+          "text": "You seat the slot token in the control recess. (pause) It clicks, like a stamp finding its ink. (pause) The aperture\u2019s surface tightens\u2014subtle, like a muscle remembering it has a job.",
           "next": "N510_RADIO_BLEED"
         },
         {
           "id": "N510_RADIO_BLEED",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "A thin speaker grille above the bay hisses to life.\n\nNot a clean channel. Not even a proper call. Just bleed-through\u2014Earth-side radio fragments caught in the alignment.",
+          "text": "A thin speaker grille above the bay hisses to life. (pause)\n\nNot a clean channel. (pause)\n\nNot even a proper call. (pause)\n\nJust bleed-through\u2014Earth-side radio fragments caught in the alignment.",
           "next": "N511_RADIO_BUDGET_1"
         },
         {
@@ -442,7 +442,7 @@
           "id": "N517_CUT",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The radio cuts mid-sentence, like someone pulled a plug to prevent a precedent.\n\nThe mirror-surface aperture loses your reflection first.\n\nThen it loses the room.",
+          "text": "Radio cuts mid-sentence. Mirror-surface aperture loses your reflection, then the room; plug-pulled to block precedent.",
           "next": "N520_END_REVERSE_ROUTE"
         },
         {

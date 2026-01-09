@@ -14,7 +14,7 @@
           "id": "N1",
           "next": "N_MENU",
           "speakerId": "NARRATOR",
-          "text": "Someone has bolted a metal cover over it. The screws are mismatched, as if each one came from a different apology.",
+          "text": "Someone bolted a metal cover over it. Mismatched screws\u2014each from a different apology.",
           "type": "npc_line"
         },
         {
@@ -46,7 +46,7 @@
           "id": "N_LOOK_1",
           "next": "N_LOOK_2",
           "speakerId": "NARRATOR",
-          "text": "A paper routing chart is taped beside it, laminated, then cracked: \u201cRECORDS \u2192 ADMIN \u2192 SECURITY (REMOTE)\u201d with arrows that assume staffing like a religion.",
+          "text": "Taped beside it, a paper routing chart: laminated, cracked\u2014\u201cRECORDS\u2192ADMIN\u2192SECURITY (REMOTE)\u201d\u2014arrows assume staffing like religion.",
           "type": "npc_line"
         },
         {

@@ -9,7 +9,7 @@
           "id": "N_START_1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The badge insert dispenser is bolted to the wall at chest height.\nA laminated label above it reads: \u201cVISITOR BADGE INSERTS \u2014 TAKE ONE.\u201d\nThe stack behind the plastic window looks intact in the way abandoned things look: untouched, not maintained.",
+          "text": "The badge insert dispenser is bolted to the wall at chest height. (pause)\nA laminated label above it reads, \u201cVISITOR BADGE INSERTS\u2014TAKE ONE.\u201d (pause)\nBehind the plastic window the stack looks intact\u2014abandoned and untouched, not maintained.",
           "conditions": [
             {
               "key": "paperwork.badgeInsertCollected",
@@ -23,7 +23,7 @@
           "id": "N_START_2",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "A smaller sticker has been added later, slightly crooked: \u201cEXPIRED STOCK NOT TO BE DISCARDED.\u201d\nSomeone underlined \u201cNOT\u201d hard enough to wrinkle the laminate.",
+          "text": "A smaller sticker was added later, slightly crooked: \u201cEXPIRED STOCK NOT TO BE DISCARDED.\u201d (pause) Someone underlined \u201cNOT\u201d hard enough to wrinkle the laminate.",
           "next": "N_MAIN_MENU"
         },
         {
@@ -62,49 +62,49 @@
           "id": "N_LABELS_1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The main label is corporate-clean.\nThe expiration notice is handwritten on tape: \u201cKIOSK REJECTS WITHOUT INSERT.\u201d\nThe handwriting pauses on \u201crejects,\u201d like it enjoyed writing it.",
+          "text": "The main label is corporate-clean. (pause) The expiration notice is handwritten on tape: \u201cKIOSK REJECTS WITHOUT INSERT.\u201d (pause) The handwriting lingers on \u201crejects.\u201d (pause) Like it enjoyed writing it.",
           "next": "N_LABELS_2"
         },
         {
           "id": "N_LABELS_2",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "Below, in smaller print: \u201cInsert validity governed by issuance date.\u201d\nThat line is printed. The guilt is not.",
+          "text": "Below, in smaller print: \u201cInsert validity governed by issuance date.\u201d It\u2019s printed. The guilt is not.",
           "next": "N_BACK_TO_MENU"
         },
         {
           "id": "N_TEST_1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You press the plastic tab.\nThe mechanism gives with a soft, reluctant click\u2014like it\u2019s documenting your fingerprints.",
+          "text": "You press the plastic tab.\nThe mechanism gives with a reluctant click\u2014like it\u2019s documenting your fingerprints.",
           "next": "N_TEST_2"
         },
         {
           "id": "N_TEST_2",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "One insert shifts forward into the slot, ready to be taken.\nThe date stamp visible through the window is not recent.",
+          "text": "One insert slides into the slot, ready to grab.\nThe window\u2019s date stamp isn\u2019t recent.",
           "next": "N_BACK_TO_MENU"
         },
         {
           "id": "N_DRAWER_1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The desk drawer sticks, then opens with a dry pop.\nInside: old visitor badges, bent corners, faded photos, and inserts in plastic sleeves that have all gone cloudy.",
+          "text": "The desk drawer sticks then opens with a dry pop. (pause) Inside: old visitor badges with bent corners and faded photos. (pause) Also inserts in plastic sleeves. They\u2019ve all gone cloudy.",
           "next": "N_DRAWER_2"
         },
         {
           "id": "N_DRAWER_2",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "A rubber band is wrapped around a small bundle labeled \u201cTEMP \u2014 DO NOT SHRED.\u201d\nThe label is neat. The rubber band is not.",
+          "text": "A rubber band is wrapped around a small bundle labeled \u201cTEMP \u2014 DO NOT SHRED.\u201d (pause)\nThe label is neat. The rubber band is not.",
           "next": "N_BACK_TO_MENU"
         },
         {
           "id": "N_INTERCOM_OPEN_1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The speaker grille is painted over. The button isn\u2019t.\nWhen you press it, the line opens with a tone that sounds like a form being created.",
+          "text": "The speaker grille is painted over. (pause) The button isn\u2019t. (pause) Press it: the line opens with a tone like a form being created.",
           "next": "N_INTERCOM_VOICE_1"
         },
         {
@@ -184,7 +184,7 @@
           "id": "N_INTERCOM_PRESENCE_2",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The line stays open, waiting for you to stop making it one thing by calling it another.",
+          "text": "Line stays open, waiting for you to stop making it one thing by calling it another.",
           "next": "N_BACK_TO_MENU"
         },
         {
@@ -219,7 +219,7 @@
           "id": "N_INTERCOM_PERSUADE_PASS_3",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The voice stops, like it just slid a document across a table and doesn\u2019t want to watch you read it.",
+          "text": "Voice stops, like it slid a document across table and won\u2019t watch you read it.",
           "next": "N_BACK_TO_MENU"
         },
         {
@@ -233,21 +233,21 @@
           "id": "N_INTERCOM_ENDCALL_1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You release the button.\nThe line closes cleanly, as if it never existed in the first place.",
+          "text": "You release the button.\nThe line closes cleanly, as if it never existed.",
           "next": "N_BACK_TO_MENU"
         },
         {
           "id": "N_TAKE_1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You pull a single visitor badge insert from the dispenser.\nIt\u2019s expired, laminated, and perfectly usable in the way compliance hates: technically.",
+          "text": "You pull one visitor badge insert from the dispenser. Expired, laminated, usable\u2014the way compliance hates: technically.",
           "next": "N_TAKE_2"
         },
         {
           "id": "N_TAKE_2",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The slot behind it advances the next insert forward, ready to pretend this is a normal day.",
+          "text": "The slot behind it advances the insert forward, ready to pretend this is a normal day.",
           "next": "N_TAKE_END"
         },
         {

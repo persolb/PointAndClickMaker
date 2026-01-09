@@ -1,0 +1,328 @@
+{
+  "dialogueGraphs": [
+    {
+      "id": "SCN003_GATE_RECEIPT",
+      "sceneId": "SCN-003",
+      "startNodeId": "N_START",
+      "nodes": [
+        {
+          "id": "N_START",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The main gate has a keypad, a narrow receipt slot, and a plastic dome that suggests a camera without promising it.\nA faded sticker claims: \u201cALL ACCESS ATTEMPTS ARE RECORDED FOR YOUR PROTECTION.\u201d",
+          "conditions": [
+            {
+              "key": "paperwork.gateAttemptReceiptCollected",
+              "op": "==",
+              "value": false
+            }
+          ],
+          "next": "N_MAIN_MENU"
+        },
+        {
+          "id": "N_MAIN_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "CH_LOOK_GATE",
+              "text": "look: Inspect the keypad, slot, and stickers.",
+              "next": "N_LOOK_1"
+            },
+            {
+              "id": "CH_USE_KEYPAD",
+              "text": "use: Use the keypad.",
+              "next": "N_USE_1"
+            },
+            {
+              "id": "CH_LEAVE",
+              "text": "leave: Step away from the gate.",
+              "next": "N_END_LEAVE"
+            }
+          ]
+        },
+        {
+          "id": "N_LOOK_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The keypad is newer than the fence. The receipt slot is newer than the keypad.\nSomeone has hand-labeled the slot: \u201cEVIDENCE (DO NOT DISCARD).\u201d The ink looks annoyed.",
+          "next": "N_LOOK_2"
+        },
+        {
+          "id": "N_LOOK_2",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "A smaller notice, half-peeled: \u201cENTRY REQUIRES RECORDS AUTHORIZATION. QUESTIONS: RECORDS.\u201d\n\u201cRECORDS\u201d has been underlined twice, like it\u2019s a person who should feel shame.",
+          "next": "N_MAIN_MENU"
+        },
+        {
+          "id": "N_USE_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The keypad wakes with a soft beep that sounds like it\u2019s documenting you.\nThe display reads: \u201cENTER ACCESS CODE OR INITIATE ATTEMPT LOG.\u201d",
+          "next": "N_CODE_MENU"
+        },
+        {
+          "id": "N_CODE_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "CH_USE_OLEA_CRED",
+              "text": "use: Use my OLEA credential.",
+              "next": "N_OLEA_INPUT"
+            },
+            {
+              "id": "CH_USE_DEFAULT",
+              "text": "use: Try a default code.",
+              "next": "N_DEFAULT_INPUT"
+            },
+            {
+              "id": "CH_PERSUADE_OLEA_ASSERT",
+              "text": "persuade: State I'm OLEA and authorized.",
+              "conditions": [
+                {
+                  "key": "player.factions",
+                  "op": "in",
+                  "value": [
+                    "OLEA"
+                  ]
+                }
+              ],
+              "next": "N_OLEA_ASSERT"
+            },
+            {
+              "id": "CH_BACK_MAIN",
+              "text": "leave: Back.",
+              "next": "N_MAIN_MENU"
+            }
+          ]
+        },
+        {
+          "id": "N_OLEA_INPUT",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The keypad accepts the keystrokes with careful enthusiasm.\nThen it pauses, as if consulting a larger, more cautious memory.",
+          "next": "N_OLEA_DENIAL_1"
+        },
+        {
+          "id": "N_OLEA_DENIAL_1",
+          "type": "npc_line",
+          "speakerId": "GATE_SYSTEM",
+          "text": "ACCESS NOT GRANTED.\nSTATUS: NOT AUTHORIZED BY RECORDS.\nINITIATING ATTEMPT RECEIPT.",
+          "next": "N_OLEA_Q_MENU"
+        },
+        {
+          "id": "N_OLEA_ASSERT",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You say it to the keypad because there\u2019s no one else to say it to.\nThe keypad does not contradict you. It just reclassifies you.",
+          "next": "N_OLEA_DENIAL_2"
+        },
+        {
+          "id": "N_OLEA_DENIAL_2",
+          "type": "npc_line",
+          "speakerId": "GATE_SYSTEM",
+          "text": "PRESENCE ACKNOWLEDGED.\nAUTHORIZATION NOT FOUND IN RECORDS.\nINITIATING ATTEMPT RECEIPT.",
+          "next": "N_OLEA_Q_MENU"
+        },
+        {
+          "id": "N_OLEA_Q_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "CH_ASK_WHY_RECORDS",
+              "text": "ask: Why Records?",
+              "next": "N_OLEA_SYS_EXPLAIN"
+            },
+            {
+              "id": "CH_USE_CONTINUE_TO_PRINT",
+              "text": "use: Continue.",
+              "next": "N_PRINTING"
+            }
+          ]
+        },
+        {
+          "id": "N_OLEA_SYS_EXPLAIN",
+          "type": "npc_line",
+          "speakerId": "GATE_SYSTEM",
+          "text": "RECORDS IS THE AUTHORITY OF RECORD.\nTHIS IS NOT A JUDGMENT.\nTHIS IS A CLASSIFICATION.",
+          "next": "N_PRINTING"
+        },
+        {
+          "id": "N_DEFAULT_INPUT",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The keypad accepts the input politely, like it\u2019s heard worse.\nThe display pauses, then brightens with certainty.",
+          "next": "N_DEFAULT_DENIAL"
+        },
+        {
+          "id": "N_DEFAULT_DENIAL",
+          "type": "npc_line",
+          "speakerId": "GATE_SYSTEM",
+          "text": "ACCESS NOT GRANTED.\nSTATUS: CODE REJECTED.\nINITIATING ATTEMPT RECEIPT.",
+          "next": "N_DEFAULT_Q_MENU"
+        },
+        {
+          "id": "N_DEFAULT_Q_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "CH_ASK_DOC",
+              "text": "ask: Ask why it documents failure.",
+              "next": "N_DEFAULT_SYS_EXPLAIN"
+            },
+            {
+              "id": "CH_USE_CONTINUE_TO_PRINT2",
+              "text": "use: Continue.",
+              "next": "N_PRINTING"
+            }
+          ]
+        },
+        {
+          "id": "N_DEFAULT_SYS_EXPLAIN",
+          "type": "npc_line",
+          "speakerId": "GATE_SYSTEM",
+          "text": "FAILURE IS A STATUS.\nSTATUS REQUIRES DOCUMENTATION.\nDOCUMENTATION IS COMPLIANCE.",
+          "next": "N_PRINTING"
+        },
+        {
+          "id": "N_PRINTING",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "A motor whirs. Paper begins to feed into the slot with the confidence of a policy.",
+          "next": "N_RECEIPT_MENU"
+        },
+        {
+          "id": "N_RECEIPT_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "CH_TAKE_RECEIPT",
+              "text": "use: Take the receipt.",
+              "next": "N_TAKE_1"
+            },
+            {
+              "id": "CH_LOOK_RECEIPT",
+              "text": "look: Look at the receipt first.",
+              "next": "N_RECEIPT_LOOK_1"
+            },
+            {
+              "id": "CH_LEAVE_RECEIPT",
+              "text": "leave: Leave it.",
+              "next": "N_RECEIPT_LEAVE_1"
+            }
+          ]
+        },
+        {
+          "id": "N_RECEIPT_LOOK_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The paper hangs halfway out, trembling slightly in the wind like it\u2019s nervous to be official.\nYou can read enough to know it\u2019s formatted like a transaction.",
+          "next": "N_RECEIPT_LOOK_2"
+        },
+        {
+          "id": "N_RECEIPT_LOOK_2",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "\u201cGATE ACCESS ATTEMPT RECEIPT\u201d\n\u201cREQUESTOR: [UNVERIFIED]\u201d\n\u201cAUTHORITY REQUIRED: RECORDS\u201d\n\u201cDISPOSITION: DOCUMENTED\u201d",
+          "next": "N_RECEIPT_MENU_AFTER_LOOK"
+        },
+        {
+          "id": "N_RECEIPT_MENU_AFTER_LOOK",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "CH_TAKE_AFTER_LOOK",
+              "text": "use: Take the receipt.",
+              "next": "N_TAKE_1"
+            },
+            {
+              "id": "CH_LEAVE_AFTER_LOOK",
+              "text": "leave: Leave it.",
+              "next": "N_RECEIPT_LEAVE_1"
+            },
+            {
+              "id": "CH_BACK_TO_MAIN_AFTER_LOOK",
+              "text": "leave: Back.",
+              "next": "N_MAIN_MENU"
+            }
+          ]
+        },
+        {
+          "id": "N_RECEIPT_LEAVE_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The receipt stays in the slot, flapping with quiet insistence.\nThe gate does not reward restraint.",
+          "next": "N_RECEIPT_LEAVE_MENU"
+        },
+        {
+          "id": "N_RECEIPT_LEAVE_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "CH_TAKE_FROM_LEAVE",
+              "text": "use: Take the receipt.",
+              "next": "N_TAKE_1"
+            },
+            {
+              "id": "CH_BACK_FROM_LEAVE",
+              "text": "leave: Back.",
+              "next": "N_MAIN_MENU"
+            }
+          ]
+        },
+        {
+          "id": "N_TAKE_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You pull the receipt free. It tears cleanly on the perforation, like it\u2019s practiced.\nThe keypad beeps once\u2014satisfied, not helpful.",
+          "next": "N_TAKE_2"
+        },
+        {
+          "id": "N_TAKE_2",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The gate remains closed. Your attempt is now officially real.\nThe receipt is evidence that you were here, and that Records wasn\u2019t.",
+          "next": "N_END_RECEIPT"
+        },
+        {
+          "id": "N_END_RECEIPT",
+          "type": "end",
+          "outcomeId": "print_gate_receipt",
+          "effects": [
+            {
+              "key": "paperwork.gateAttemptReceiptCollected",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "inventory.items",
+              "action": "add",
+              "value": "ITEM_GATE_ACCESS_ATTEMPT_RECEIPT"
+            },
+            {
+              "key": "paperwork.completeness",
+              "action": "increment",
+              "value": 1
+            },
+            {
+              "key": "objectives.getRecordsAuthorization",
+              "action": "set",
+              "value": true
+            }
+          ]
+        },
+        {
+          "id": "N_END_LEAVE",
+          "type": "end"
+        }
+      ]
+    }
+  ]
+}

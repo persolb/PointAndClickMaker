@@ -1,0 +1,350 @@
+{
+  "dialogueGraphs": [
+    {
+      "id": "AMR_TRIAGE_READER",
+      "sceneId": "SCN-055",
+      "startNodeId": "NARR_START",
+      "nodes": [
+        {
+          "id": "NARR_START",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "conditions": [
+            {
+              "key": "act2.amrIssued",
+              "op": "==",
+              "value": false
+            },
+            {
+              "key": "act2.legacyMetadataSeen",
+              "op": "==",
+              "value": true
+            }
+          ],
+          "text": "The AMR registry reader sits under a hooded task light, as if it\u2019s being interrogated. A slot labeled PRINTOUT is jammed with old perforated stock. The screen displays: SPONSOR REQUIRED.",
+          "next": "TRIAGE_INTRO"
+        },
+        {
+          "id": "TRIAGE_INTRO",
+          "type": "npc_line",
+          "speakerId": "TRIAGE_MAINT",
+          "text": "You're staring at it like it'll blink first. (pause)\nIt won't. (pause)\nIt wants three fields: sponsor. (pause)\nScope. (pause)\nAcceptable failure mode. (pause)\nAnything else is\u2014 (cuts off) \u2014a story.",
+          "next": "MENU_MAIN"
+        },
+        {
+          "id": "MENU_MAIN",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "CH_AMR",
+              "text": "ask: \u201cAMR?\u201d",
+              "next": "TRIAGE_EXPLAIN_AMR"
+            },
+            {
+              "id": "CH_SPONSOR",
+              "text": "ask: \u201cSponsor. You?\u201d",
+              "next": "TRIAGE_EXPLAIN_SPONSOR"
+            },
+            {
+              "id": "CH_SHOW",
+              "text": "show: \u201cI\u2019ve got legacy metadata on the endpoint.\u201d",
+              "conditions": [
+                {
+                  "key": "act2.legacyMetadataSeen",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "next": "TRIAGE_READ_METADATA"
+            },
+            {
+              "id": "CH_FAILURE",
+              "text": "ask: \u201cAcceptable failure mode?\u201d",
+              "next": "TRIAGE_EXPLAIN_FAILURE"
+            },
+            {
+              "id": "CH_SCOPE",
+              "text": "ask: \u201cScope options?\u201d",
+              "next": "TRIAGE_SCOPE_OPTIONS"
+            },
+            {
+              "id": "CH_PERSUADE",
+              "text": "persuade: \u201cThis is OLEA closure work. I need an entry today.\u201d",
+              "checks": [
+                {
+                  "type": "skill",
+                  "skill": "BUREAUCRACY",
+                  "dc": 12
+                }
+              ],
+              "onPassNext": "TRIAGE_PERSUADE_PASS",
+              "onFailNext": "TRIAGE_PERSUADE_FAIL"
+            },
+            {
+              "id": "CH_THREAT",
+              "text": "threaten: \u201cFine. I\u2019ll log it as open anomaly and escalate.\u201d",
+              "next": "TRIAGE_THREAT_RESP"
+            },
+            {
+              "id": "CH_LEAVE",
+              "text": "leave: \u201cI\u2019ll come back.\u201d",
+              "next": "LEAVE_END"
+            }
+          ]
+        },
+        {
+          "id": "TRIAGE_EXPLAIN_AMR",
+          "type": "npc_line",
+          "speakerId": "TRIAGE_MAINT",
+          "text": "Attached Mass Registry. (pause)\nPaperwork hack. (pause)\nFile it without a new bucket. (pause)\nAttached: rides an existing endpoint record. (pause)\nMass: we don\u2019t litigate what it is. (pause)\nRegistry: it\u2019s in the system. (pause)\nOut of my hands. (pause)\nNow pick: scope. (pause)\nSponsor. (pause)\nFailure mode.",
+          "next": "MENU_MAIN"
+        },
+        {
+          "id": "TRIAGE_EXPLAIN_SPONSOR",
+          "type": "npc_line",
+          "speakerId": "TRIAGE_MAINT",
+          "text": "If I sponsor it it stays maintenance-class. (pause)\nOn the record. Period. (pause)\nI'll do that inside scope. (pause)\nI'm not putting my name on a mystery. (pause)\nGive me one sentence I can sign. (pause)\nNo hearings later. (pause)\nShow me the endpoint or the failure mode.",
+          "next": "MENU_MAIN"
+        },
+        {
+          "id": "TRIAGE_READ_METADATA",
+          "type": "npc_line",
+          "speakerId": "TRIAGE_MAINT",
+          "text": "Let's see it. (pause)\n(reads lips moving) Mm. Okay. Legacy helps. (pause)\nMeans there's already a record. (pause)\nTo hang this off. (pause)\nAnd yeah. The paper's what passes for reality. (pause)\nAround here. (pause)\nStill doesn't tell me. (pause)\nWhat you want the AMR to say. (pause)\nI need an acceptable failure mode. (pause)\nKeep it boring. (pause)\nKeep it stable.",
+          "next": "MENU_MAIN"
+        },
+        {
+          "id": "TRIAGE_EXPLAIN_FAILURE",
+          "type": "npc_line",
+          "speakerId": "TRIAGE_MAINT",
+          "text": "Acceptable: I can stand behind *our* fix. (pause) That\u2019s it. (pause)\nPick a label. (pause)\nMisclassification of endpoint. (pause)\nRouting error. (pause)\nDegraded seal geometry. (pause)\nSensor inversion. (pause)\nReflective behavior. (pause)\nAnd don\u2019t write \u201creflection.\u201d (pause)\nLegal people lose their minds over that word. (pause)\nTell me what you\u2019ll put in writing.",
+          "next": "MENU_MAIN"
+        },
+        {
+          "id": "TRIAGE_THREAT_RESP",
+          "type": "npc_line",
+          "speakerId": "TRIAGE_MAINT",
+          "text": "Sure. Log an open anomaly. (pause) Type \"unknown\" once. (pause) It spreads. (pause) Then Assurance shows up. (pause) Wants a comparison framework. (pause) You\u2019ll be back next week. (pause) With a binder and a migraine. (pause) I\u2019m handing you the boring way through. (pause) Pick scope. (pause) Pick sponsor. (pause) Pick failure mode.",
+          "next": "MENU_MAIN"
+        },
+        {
+          "id": "TRIAGE_PERSUADE_PASS",
+          "type": "npc_line",
+          "speakerId": "TRIAGE_MAINT",
+          "text": "I don\u2019t care if you\u2019re closing the moon (pause) by end of quarter. (pause) OLEA closure packets are piles of signatures. (pause) I\u2019m not adding mine unless it\u2019s clean. (pause) I can cut an AMR tag (pause) and hand you a tool (pause) that does one thing (pause) and doesn\u2019t read like permission. (pause) You keep this inside Interconnection Maintenance. (pause) Pick the failure mode. (pause) Then we move.",
+          "next": "TRIAGE_SCOPE_OPTIONS"
+        },
+        {
+          "id": "TRIAGE_PERSUADE_FAIL",
+          "type": "npc_line",
+          "speakerId": "TRIAGE_MAINT",
+          "text": "A deadline\u2019s not a failure mode. (pause)\nYou want my signature? (pause)\nGive me scope wording I can live with. (pause)\nAnything else lands on me. (pause)\nPick one: scope. Sponsor. Failure mode.",
+          "next": "MENU_MAIN"
+        },
+        {
+          "id": "TRIAGE_SCOPE_OPTIONS",
+          "type": "npc_line",
+          "speakerId": "TRIAGE_MAINT",
+          "text": "Scope keeps this from becoming tampering. (pause)\nOn the log. (pause)\nWith the tag you're allowed to identify. (pause)\nAttach. (pause)\nSeal. (pause)\nDocument. (pause)\nThat's it. (pause)\nNo testing. (pause)\nNo probing. (pause)\nNo exploring. (pause)\n(flat) (pause)\nNo go. (pause)\nIf you need a tool (pause)\nit'll be a seal tool. (pause)\nNothing that looks like a theory. (pause)\nSo. (pause)\nWhat are we calling it?",
+          "next": "FRAMING_MENU"
+        },
+        {
+          "id": "FRAMING_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "CH_ROUTING",
+              "text": "ask: \u201cCall it a routing error at an existing endpoint.\u201d",
+              "next": "TRIAGE_ROUTING_OK"
+            },
+            {
+              "id": "CH_MISCLASS",
+              "text": "ask: \u201cCall it misclassification. Existing endpoint, wrong label.\u201d",
+              "next": "TRIAGE_MISCLASS_OK"
+            },
+            {
+              "id": "CH_REFLECT",
+              "text": "ask: \u201cUse the legacy phrase. \u2018Unexpected reflective behavior.\u2019\u201d",
+              "next": "TRIAGE_REFLECT_OK"
+            },
+            {
+              "id": "CH_BARGAIN",
+              "text": "bargain: \u201cI\u2019ll keep it maintenance-class. You give me a tag, printout, and a tool.\u201d",
+              "next": "TRIAGE_BARGAIN_RESP"
+            },
+            {
+              "id": "CH_LEAVE2",
+              "text": "leave: \u201cNot today.\u201d",
+              "next": "LEAVE_END"
+            }
+          ]
+        },
+        {
+          "id": "TRIAGE_BARGAIN_RESP",
+          "type": "npc_line",
+          "speakerId": "TRIAGE_MAINT",
+          "text": "Fine. (pause) Maintenance-class in your reports. (pause)\nDon't get creative with my tag. (pause) Watch your verbs. (pause) Write it up. (pause)\nYou'll get the AMR entry. (pause) The physical tag. (pause) The printout. (pause)\nAnd one tool for one job. (pause)\nYou pick the sentence. (pause) I'm not picking it for you.",
+          "next": "FRAMING_MENU"
+        },
+        {
+          "id": "TRIAGE_ROUTING_OK",
+          "type": "npc_line",
+          "speakerId": "TRIAGE_MAINT",
+          "text": "Routing error\u2019s fine. (pause) Everyone hates it. (pause) That\u2019s why it survives. (pause) Blame stays in the pipes and the file. (pause) I\u2019ll sponsor it but I\u2019m adding one line. (pause) \u201cNo personnel transfer implied.\u201d (pause) Yeah. I know. (pause) I\u2019m putting it in so nobody writes nastier. (pause) You good? (pause) Then we issue.",
+          "next": "CONFIRM_ROUTING"
+        },
+        {
+          "id": "CONFIRM_ROUTING",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "CH_CONFIRM",
+              "text": "talk: \u201cAdd your wording. Issue it.\u201d",
+              "effects": [
+                {
+                  "key": "act2.amrFraming",
+                  "action": "set",
+                  "value": "routing_error"
+                }
+              ],
+              "next": "NARR_ISSUE_1"
+            }
+          ]
+        },
+        {
+          "id": "TRIAGE_MISCLASS_OK",
+          "type": "npc_line",
+          "speakerId": "TRIAGE_MAINT",
+          "text": "Misclassification. Yeah. I can work with that. (pause)\nEndpoint exists. Label is wrong. (pause)\nThat stays upstream. (pause)\nI'm adding: \"Corrective maintenance limited to seal.\" (pause)\nSeal and registry attachment only. (pause)\nAnything past that. You're on your own. (pause)\nAgree. And we issue.",
+          "next": "CONFIRM_MISCLASS"
+        },
+        {
+          "id": "CONFIRM_MISCLASS",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "CH_CONFIRM",
+              "text": "talk: \u201cAdd your wording. Issue it.\u201d",
+              "effects": [
+                {
+                  "key": "act2.amrFraming",
+                  "action": "set",
+                  "value": "misclassification"
+                }
+              ],
+              "next": "NARR_ISSUE_1"
+            }
+          ]
+        },
+        {
+          "id": "TRIAGE_REFLECT_OK",
+          "type": "npc_line",
+          "speakerId": "TRIAGE_MAINT",
+          "text": "We use the legacy phrase. (pause) It cleared one legal cycle. (pause) In the line I put \"reflective behavior\". (pause) Then I add \"non-reflection\". (pause) Yeah it's stupid. (pause) It holds up. (pause) You stick to scope-limited intervention, we issue.",
+          "next": "CONFIRM_REFLECT"
+        },
+        {
+          "id": "CONFIRM_REFLECT",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "CH_CONFIRM",
+              "text": "talk: \u201cAdd your wording. Issue it.\u201d",
+              "effects": [
+                {
+                  "key": "act2.amrFraming",
+                  "action": "set",
+                  "value": "unexpected_reflective_behavior"
+                }
+              ],
+              "next": "NARR_ISSUE_1"
+            }
+          ]
+        },
+        {
+          "id": "NARR_ISSUE_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The Maintainer keys in the entry with two fingers, like touching the wrong key could be construed as intent. The printer chatters and produces a single-page AMR printout with dense, aggressively boring language.",
+          "next": "TRIAGE_HANDOVER_1"
+        },
+        {
+          "id": "TRIAGE_HANDOVER_1",
+          "type": "npc_line",
+          "speakerId": "TRIAGE_MAINT",
+          "text": "Alright. AMR's attached to the endpoint record. (pause)\nTag. Don\u2019t lose it. (pause)\nReplacements turn into duplication, then somebody starts counting. (pause)\nPrintout. Keep it dry. (pause)\nAnd\u2014 (rummages; irritated) \u2014here.",
+          "next": "NARR_TOOL_1"
+        },
+        {
+          "id": "NARR_TOOL_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The Maintainer sets a compact, heavy tool on the bench: a seal punch with a depth stop and a serialized collar.",
+          "next": "TRIAGE_TOOL_SCOPE"
+        },
+        {
+          "id": "TRIAGE_TOOL_SCOPE",
+          "type": "npc_line",
+          "speakerId": "TRIAGE_MAINT",
+          "text": "Scope-limited seal punch. (pause)\nOne mark. One depth. (pause)\nApproved material only. (pause)\nIt won't open anything. (pause)\nIt won't test anything. (pause)\nNobody points at it as permission. (pause)\nIf anyone asks, it's a warranty boundary. (pause)\nThat's all.",
+          "next": "NARR_RECEIVE_1"
+        },
+        {
+          "id": "NARR_RECEIVE_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You receive an AMR tag, an AMR printout, and a scope-limited seal punch tool. The registry reader returns to its idle screen, satisfied in the way only a system can be when it has transferred responsibility.",
+          "next": "TRIAGE_SIGNOFF"
+        },
+        {
+          "id": "TRIAGE_SIGNOFF",
+          "type": "npc_line",
+          "speakerId": "TRIAGE_MAINT",
+          "text": "That's your paper. (pause) That's your scope. (pause) Please don't make me learn new nouns (pause) about this place.",
+          "next": "END_ISSUE_AMR"
+        },
+        {
+          "id": "END_ISSUE_AMR",
+          "type": "end",
+          "outcomeId": "issue_amr_entry",
+          "effects": [
+            {
+              "key": "act2.amrIssued",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "inventory.items",
+              "action": "add",
+              "value": "ITEM_AMR_TAG"
+            },
+            {
+              "key": "inventory.items",
+              "action": "add",
+              "value": "ITEM_AMR_PRINTOUT"
+            },
+            {
+              "key": "inventory.items",
+              "action": "add",
+              "value": "ITEM_SCOPE_TOOL_SEAL_PUNCH"
+            },
+            {
+              "key": "objectives.obtainIWO",
+              "action": "set",
+              "value": true
+            }
+          ]
+        },
+        {
+          "id": "LEAVE_END",
+          "type": "end"
+        }
+      ]
+    }
+  ]
+}

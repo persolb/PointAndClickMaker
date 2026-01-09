@@ -9,7 +9,7 @@
           "id": "N00_TABLEAU",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The scheduling counter is still a cage with glass and forms.\nThe press, the substitution board, the no-show bin\u2014nothing has moved.\nOnly you have: an AMR that calls you \u201cstanding,\u201d a TER that calls you \u201cprocessable,\u201d and a slot token that calls you \u201cin custody.\u201d",
+          "text": "The scheduling counter is still a cage of glass and forms. (pause)\nThe press. The substitution board. The no-show bin\u2014nothing has moved. (pause)\nOnly you have these. (pause)\nAn AMR calls you \u201cstanding.\u201d (pause)\nA TER calls you \u201cprocessable.\u201d (pause)\nA slot token calls you \u201cin custody.\u201d",
           "next": "N01_CLERK_NEXT"
         },
         {
@@ -556,7 +556,7 @@
           "id": "N33_LOOK_BOARD",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The substitution board hangs slightly crooked, corners curled from being handled and put back.\nApproved workarounds, formalized.\nIt reads like a promise: the chain can tolerate reality, as long as reality is stamped.",
+          "text": "The substitution board hangs slightly crooked, corners curled from being handled and put back. (pause)\nApproved workarounds, formalized. (pause)\nIt reads like a promise: the chain can tolerate reality as long as reality is stamped.",
           "next": "N32_PRESENT_MENU"
         },
         {
@@ -577,7 +577,7 @@
           "id": "N90_GIVE_TOKEN",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You slide the token into the tray.\nThe clerk doesn\u2019t pick it up at first\u2014just looks at the impression like it might change its mind.",
+          "text": "You slide the token into the tray. (pause) The clerk doesn\u2019t pick it up at first\u2014just studies impression, like it might change its mind.",
           "next": "N91_CLERK_VALIDATE"
         },
         {
@@ -591,7 +591,7 @@
           "id": "N92_CLERK_STAMPING",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "Paper moves behind the glass.\nA stamp lands, lifts, lands again\u2014measured, almost tender in its violence.",
+          "text": "Paper moves behind the glass.\nA stamp lands, lifts, lands again\u2014measured and tender in its violence.",
           "next": "N93_CLERK_PACKET"
         },
         {
@@ -605,7 +605,7 @@
           "id": "N94_PACKET_SLIDES",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "A thick envelope slides through the lower slot, edges square, corners already worn by expectation.\nAn extra insert rides with it\u2014paper that doesn\u2019t match the rest, folded like it was meant to be found later.",
+          "text": "A thick envelope slides through the lower slot. Edges square. (pause) Corners already worn by expectation. (pause) An extra insert rides with it\u2014paper that doesn\u2019t match the rest. (pause) Folded like it was meant to be found later.",
           "next": "N95_PLAYER_INSERT_Q"
         },
         {

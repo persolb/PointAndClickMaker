@@ -9,7 +9,7 @@
           "id": "N_START",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The conference room smells like dry toner and old coffee that no one admits to making.\nAn EAC Finding Slip sits in the printer tray, face-up, as if waiting to be countersigned.\nThe checklist folder is open to \u201cRETIREMENT \u2014 SEQUENCE CONFIRMATION.\u201d\nThe whiteboard reduces the facility to three boxes and a fiscal cutoff date.",
+          "text": "The conference room smells like dry toner and old coffee. (pause) No one admits to making it. (pause) An EAC Finding Slip sits face up in the printer tray. (pause) Waiting to be countersigned. (pause) The checklist folder is open to \u201cRETIREMENT \u2014 SEQUENCE CONFIRMATION.\u201d (pause) The whiteboard reduces the facility to three boxes and a fiscal cutoff date.",
           "conditions": [
             {
               "key": "act3.evidencePacketCompiled",
@@ -28,14 +28,14 @@
           "id": "N_START_2",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You have the Evidence Packet compiled.\nWhat you don\u2019t have is a sentence that survives other people.",
+          "text": "You have the Evidence Packet compiled.\nWhat you don\u2019t have is a sentence that survives people.",
           "next": "N_START_3"
         },
         {
           "id": "N_START_3",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "On the table: a memo template titled AUTHORIZED CLOSURE PATH \u2014 NARROW PURPOSE.\nCursor blinking. No witnesses. Yet.",
+          "text": "On the table: memo template, AUTHORIZED CLOSURE PATH\u2014NARROW PURPOSE. Cursor blinks. No witnesses. Yet.",
           "next": "N_MENU_DRAFT"
         },
         {
@@ -84,7 +84,7 @@
           "id": "N_REVIEW_1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You pull the EAC Finding Slip from the tray. The header is stamped, not signed.\nA checklist corner is dog-eared where someone hesitated at the word \u201cconfirm.\u201d",
+          "text": "You pull the EAC Finding Slip from the tray. (pause) The header is stamped, not signed. (pause) A checklist corner is dog-eared; someone hesitated at \u201cconfirm.\u201d",
           "next": "N_REVIEW_2"
         },
         {
@@ -140,7 +140,7 @@
           "id": "N_BORING_N2",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "A paragraph forms: dates, checklist references, attachment names.\nThe device becomes \u201casset,\u201d the behavior becomes \u201coperational state,\u201d the risk becomes \u201cliability closure.\u201d",
+          "text": "A paragraph forms: dates, checklist references, attachment names. (pause) The device becomes \u201casset.\u201d Behavior becomes \u201coperational state.\u201d Risk becomes \u201cliability closure.\u201d",
           "next": "N_CLAUSE_MENU"
         },
         {
@@ -238,7 +238,7 @@
           "id": "N_STABLE_N2",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You insert timestamps, action identifiers, and a sentence that reads like a promise without calling itself one.",
+          "text": "You insert timestamps, action identifiers, and sentence that reads like a promise without calling itself one.",
           "next": "N_CLAUSE_MENU"
         },
         {
@@ -280,7 +280,7 @@
           "id": "N_COMP_N2",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You write a paragraph that describes compliance as if it\u2019s weather: present, documented, and not up for debate.",
+          "text": "You write paragraph describing compliance as if it\u2019s weather: present, documented, and not up for debate.",
           "next": "N_CLAUSE_MENU"
         },
         {
@@ -319,7 +319,7 @@
           "id": "N_CLAUSE_ADD_N1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You add one sentence that looks harmless until it isn\u2019t:\n\u201cInterpretation is limited to the attached Evidence Packet; no additional inferences are intended or authorized.\u201d",
+          "text": "You add one sentence that looks harmless until it isn\u2019t: (pause)\n\u201cInterpretation is limited to the attached Evidence Packet; no additional inferences are intended or authorized.\u201d",
           "next": "N_CLAUSE_ADD_LEG1"
         },
         {
@@ -333,7 +333,7 @@
           "id": "N_CLAUSE_FAIL_1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You can write it, but you can\u2019t make it stick.\nWithout standing, that clause reads like you\u2019re trying to bind someone else\u2019s interpretation\u2014and it will be treated as overreach.",
+          "text": "You can write it but it won\u2019t stick. (pause) Without standing it reads like you\u2019re binding someone else\u2019s interpretation. (pause) It will be treated as overreach.",
           "next": "N_CLAUSE_SKIP_1"
         },
         {
@@ -365,7 +365,7 @@
           "type": "end",
           "outcomeId": null,
           "speakerId": "NARRATOR",
-          "text": "You leave the cursor blinking.\nUnfiled work has a way of becoming someone else\u2019s version of events."
+          "text": "You leave cursor blinking.\nUnfiled work has a way of becoming someone else\u2019s version of events."
         },
         {
           "id": "N_END_NOTYET",
@@ -385,7 +385,7 @@
           "id": "N_PRINT_N1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The printer wakes with a complaint disguised as a warm-up cycle.\nPaper feeds. Toner settles. The room stays quiet.",
+          "text": "The printer wakes, a complaint disguised as warm-up. Paper feeds. Toner settles. The room stays quiet.",
           "next": "N_PRINT_BUD1"
         },
         {
@@ -406,7 +406,7 @@
           "id": "N_PRINT_N2",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The memo slides into the tray: AUTHORIZED CLOSURE PATH \u2014 SIGNATURE LINE PRESENT.\nThere is space for your name, and plenty of space for future interpretations.",
+          "text": "The memo slides into the tray: AUTHORIZED CLOSURE PATH\u2014SIGNATURE LINE PRESENT. (pause)\nSpace for your name, and plenty for future interpretations.",
           "next": "N_PRINT_N3"
         },
         {
@@ -421,7 +421,7 @@
           "type": "end",
           "outcomeId": "draft_closure_path_memo",
           "speakerId": "NARRATOR",
-          "text": "ITEM ACQUIRED: Authorized Closure Path Memo.\nThe printer stops. The room doesn\u2019t react.\nNothing resolves yet. It just becomes official.",
+          "text": "ITEM ACQUIRED: Authorized Closure Path Memo.\nPrinter stops. Room doesn\u2019t react.\nNothing resolves. Just official now.",
           "effects": [
             {
               "key": "act3.closurePathMemoDrafted",

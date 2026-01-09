@@ -29,14 +29,14 @@
           "id": "N_LOOK_DOOR_1",
           "next": "N_LOOK_DOOR_2",
           "speakerId": "NARRATOR",
-          "text": "The door has no handle. It has a reader.\nThe reader has a polite little light that stays off, like it\u2019s conserving disbelief.",
+          "text": "The door has no handle. It has a reader. (pause)\nThe reader\u2019s polite little light stays off, like it\u2019s conserving disbelief.",
           "type": "npc_line"
         },
         {
           "id": "N_LOOK_DOOR_2",
           "next": "PC_SEALED_BAY_DOOR",
           "speakerId": "NARRATOR",
-          "text": "A posted procedure lists three steps.\nStep one is \u201cPRESENT TRANSFER ENTITLEMENT RECEIPT (TER).\u201d\nStep two is blank.\nStep three is \u201cDO NOT FORCE THE DOOR.\u201d",
+          "text": "A posted procedure lists three steps. (pause) Step one is \u201cPRESENT TRANSFER ENTITLEMENT RECEIPT (TER).\u201d (pause) Step two is blank. (pause) Step three is \u201cDO NOT FORCE THE DOOR.\u201d",
           "type": "npc_line"
         },
         {
@@ -174,14 +174,14 @@
           "id": "N_GET_TOKEN_INFO_5",
           "next": "N_GET_TOKEN_INFO_6",
           "speakerId": "NARRATOR",
-          "text": "The Coach points right, toward the Intake Hall signage, as if pointing is a legally safer form of escort.",
+          "text": "The Coach points toward Intake Hall signage, as if pointing is legally safer than escorting.",
           "type": "npc_line"
         },
         {
           "id": "N_GET_TOKEN_INFO_6",
           "next": "END_COMMIT_TOKENS_RULE",
           "speakerId": "NARRATOR",
-          "text": "On the kiosk, the prompt refreshes: \u201cPRESENT TOKEN.\u201d\nIt blinks once, like a reminder that the building has already moved on.",
+          "text": "On the kiosk, the prompt refreshes: \u201cPRESENT TOKEN.\u201d (pause)\nIt blinks once, like a reminder that the building has already moved on.",
           "type": "npc_line"
         },
         {

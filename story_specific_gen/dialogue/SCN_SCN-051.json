@@ -21,7 +21,7 @@
               "value": false
             }
           ],
-          "text": "Window 7 smells faintly of stamp ink and hand lotion.\nThe counter is the same, but your badge changes what the glass is willing to hear.",
+          "text": "Window 7 smells faintly of stamp ink and hand lotion. (pause) The counter is the same, but your badge changes what the glass is willing to hear.",
           "next": "N_INTRO_2"
         },
         {
@@ -140,7 +140,7 @@
           "id": "N_READY_TO_FILE_1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The clerk pulls a small slip from a tray that isn't labeled. They hesitate, then commit their hand to the stamp pad.",
+          "text": "The clerk pulls a small slip from an unlabeled tray. (pause) They hesitate, then press their hand to the stamp pad.",
           "next": "PC_FILE_MENU"
         },
         {
@@ -188,7 +188,7 @@
           "id": "N_PRINT_STUB_1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The stamp lands once, hard. The clerk slides the slip under the glass with two fingers, like it might accuse them.",
+          "text": "Stamp lands once hard. Clerk slides the slip under glass, two fingers, like it accuses them.",
           "next": "N_PRINT_STUB_2"
         },
         {

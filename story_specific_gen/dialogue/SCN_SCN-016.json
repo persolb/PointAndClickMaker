@@ -9,7 +9,7 @@
           "id": "N_INTRO",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The admin lobby smells like paper that gave up.\nA faded asset plaque hangs at shoulder height, half covered in contractor stickers that promise they were \u201ctemporary.\u201d",
+          "text": "The admin lobby smells like paper that gave up. (pause)\nA faded asset plaque hangs at shoulder height. (pause)\nContractor stickers half cover it and promise they were \u201ctemporary.\u201d",
           "conditions": [
             {
               "key": "paperwork.assetIdRecorded",
@@ -45,7 +45,7 @@
           "id": "N_LOOK_READ",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You tilt until the overhead lights stop reflecting.\nMost of the lettering is scuffed into bureaucracy: SERIAL, DIVISION, RESPONSIBLE PARTY\u2014then a sticker blocks the one line that matters.",
+          "text": "You tilt until the overhead lights stop reflecting. (pause) Most of the lettering is scuffed into bureaucracy: SERIAL, DIVISION, RESPONSIBLE PARTY. (pause) Then a sticker blocks the one line that matters.",
           "next": "PC_AFTER_LOOK"
         },
         {
@@ -74,14 +74,14 @@
           "id": "N_PEEL_1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The adhesive resists like it has a contract.\nA corner lifts, then another, and the sticker comes off in angry little flakes.",
+          "text": "Adhesive resists, like a contract.\nOne corner lifts, then another; the sticker flakes off angry.",
           "next": "N_PEEL_2"
         },
         {
           "id": "N_PEEL_2",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "Under it: an older sticker.\nUnder that: marker ink that tried to become official.\nUnder that: the original stamped handle, still clean where nobody\u2019s touched it in years.",
+          "text": "Under it: an older sticker. (pause) Under that: marker ink that tried to become official. (pause) Under that: the original stamped handle, still clean where nobody\u2019s touched it in years.",
           "next": "N_REVEAL_SP01"
         },
         {
@@ -139,7 +139,7 @@
           "id": "N_DOUBLECHECK",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The plaque doesn\u2019t clarify. It just sits there with the confidence of something that will outlast your audit cycle.\n\u201cSP-01\u201d is stamped deeper than the other text, which is usually how the \u201creal\u201d label behaves.",
+          "text": "The plaque doesn\u2019t clarify. It sits, outlasting your audit cycle. \u201cSP-01\u201d is stamped deeper\u2014the \u201creal\u201d label.",
           "next": "PC_AFTER_DOUBLECHECK"
         },
         {
@@ -173,7 +173,7 @@
           "id": "N_OLEA_CONFIRM",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "OLEA site handles, when they\u2019re being consistent, follow a short prefix plus an ordinal.\nConsistency is the tell: this is the only thing on the plaque that looks like it was meant to be referenced in a form.",
+          "text": "OLEA site handles follow a short prefix plus an ordinal when consistent. (pause) Consistency is the tell. (pause) It\u2019s the only plaque text that looks meant for a form.",
           "next": "PC_AFTER_OLEA"
         },
         {
@@ -207,7 +207,7 @@
           "id": "N_SCAN_LABELS",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You scan the remaining stickers: vendor logos, a phone number with too many digits, a \u201cRevised\u201d date with no year.\nNothing overrides the stamped handle. Nothing even tries.",
+          "text": "You scan the remaining stickers: vendor logos, a phone number with too many digits. (pause)\nA \u201cRevised\u201d date with no year. (pause)\nNothing overrides the stamped handle. (pause)\nNothing even tries.",
           "next": "PC_AFTER_SCAN"
         },
         {
@@ -236,7 +236,7 @@
           "id": "N_RECORDING",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You write it down exactly as stamped, because handwriting is where blame hides.\nThe pen squeaks on the form like it objects to being useful.\n\nThe plaque stays on the wall, looking newly exposed and vaguely offended.",
+          "text": "You write it down exactly as stamped, because handwriting is where blame hides. (pause)\nThe pen squeaks on the form, like it objects to being useful. (pause)\nThe plaque stays on the wall newly exposed and vaguely offended.",
           "next": "END_RECORDED"
         },
         {
@@ -272,7 +272,7 @@
           "id": "N_LEAVE_LATE",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You step back. The plaque returns to being background infrastructure, which is how most problems get to grow.",
+          "text": "You step back. The plaque returns to background infrastructure, which is how most problems grow.",
           "next": "END_LEAVE"
         },
         {

@@ -14,7 +14,7 @@
           "id": "N_PLACARDS_LOOK_2",
           "next": "END_PLACARDS_LOOKED",
           "speakerId": "NARRATOR",
-          "text": "Window 3: \u201cORIENTATION \u2014 SUBJECT TO VALID STATUS.\u201d\nWindow 5: \u201cSAFETY \u2014 INCIDENTS ONLY.\u201d\nWindow 7: \u201cPROPERTY \u2014 CLAIMS REQUIRE CLAIMANT.\u201d\nWindow 9: \u201cCOMPLAINTS \u2014 PROCESSED, NO ACTION.\u201d",
+          "text": "Window 3: \u201cORIENTATION \u2014 SUBJECT TO VALID STATUS.\u201d (pause) Window 5: \u201cSAFETY \u2014 INCIDENTS ONLY.\u201d (pause) Window 7: \u201cPROPERTY \u2014 CLAIMS REQUIRE CLAIMANT.\u201d (pause) Window 9: \u201cCOMPLAINTS \u2014 PROCESSED, NO ACTION.\u201d",
           "type": "npc_line"
         },
         {

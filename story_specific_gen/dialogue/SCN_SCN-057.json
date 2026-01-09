@@ -9,7 +9,7 @@
           "id": "N00_TABLEAU",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "A caged window marked SCHEDULING faces the corridor like a confession booth with forms.\nA \u201cNO-SHOW RECOVERY\u201d bin sits under the counter, sealed with tape that has been re-taped.\nA crooked board lists approved stamp substitutions.\nA press labeled SLOT TOKEN\u2014AUTHORIZED IMPRESSIONS ONLY is bolted to the laminate.",
+          "text": "A caged window marked SCHEDULING faces the corridor like a confession booth with forms. (pause) A \u201cNO-SHOW RECOVERY\u201d bin sits under the counter sealed with tape that\u2019s been re-taped. (pause) A crooked board lists approved stamp substitutions. (pause) A press labeled SLOT TOKEN\u2014AUTHORIZED IMPRESSIONS ONLY is bolted to the laminate.",
           "next": "N01_CLERK_NEXT"
         },
         {
@@ -191,7 +191,7 @@
           "id": "N30_USE_BIN_OPEN",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The tape gives with a tired sound, like it\u2019s done this before.\nInside: a stack of thin blanks and a small, sealed sleeve marked RECOVERY\u2014PENDING IMPRESSION.",
+          "text": "The tape gives with a tired sound, like it\u2019s done this before. (pause) Inside: a stack of thin blanks and a small, sealed sleeve marked RECOVERY\u2014PENDING IMPRESSION.",
           "next": "N31_CLERK_DO_CORRECTLY"
         },
         {
@@ -250,7 +250,7 @@
           "id": "N36_SLEEVE_TAKEN",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You take the sealed sleeve from the bin.\nIt\u2019s light, like it\u2019s waiting to become real when someone stamps it.",
+          "text": "You take the sealed sleeve from the bin.\nIt\u2019s light, unreal until someone stamps it.",
           "next": "N02_MAIN_SLEEVE"
         },
         {
@@ -303,7 +303,7 @@
           "id": "N40_LOOK_PRESS",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The press is bolted down like it has tried to leave before.\nA placard beneath it: AUTHORIZED IMPRESSIONS ONLY. \u201cAUTHORIZED\u201d is underlined twice.",
+          "text": "The press is bolted down, like it tried to leave before. (pause)\nA placard beneath it: AUTHORIZED IMPRESSIONS ONLY. \u201cAUTHORIZED\u201d is underlined twice.",
           "next": "N40B_LOOK_PRESS_MENU"
         },
         {
@@ -351,7 +351,7 @@
           "id": "N40S_LOOK_PRESS",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The press is bolted down like it has tried to leave before.\nA placard beneath it: AUTHORIZED IMPRESSIONS ONLY. \u201cAUTHORIZED\u201d is underlined twice.",
+          "text": "The press is bolted down, like it tried to leave before. (pause) A placard beneath it: AUTHORIZED IMPRESSIONS ONLY. (pause) \u201cAUTHORIZED\u201d is underlined twice.",
           "next": "N40S_LOOK_PRESS_MENU"
         },
         {
@@ -421,7 +421,7 @@
           "id": "N42_PRESS_DESC",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The press handle is cold and over-maintained.\nThe die face reads: CUSTODY IMPRESSION \u2014 VALID UNTIL CHALLENGED.",
+          "text": "The press handle is cold, over-maintained.\nThe die face reads: CUSTODY IMPRESSION \u2014 VALID UNTIL CHALLENGED.",
           "next": "N43_CLERK_DONT_HESITATE"
         },
         {
@@ -457,7 +457,7 @@
           "id": "N45_IMPRESS_RESULT",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You align the sleeve, set the blank, and pull the handle in one motion.\nThe token comes out with a clean impression and a serial that feels accusatory by design.",
+          "text": "Align the sleeve, set the blank, pull the handle in one motion. (pause) The token comes out clean; its serial feels accusatory by design.",
           "next": "N46_CLERK_ASSET_RECOVERED"
         },
         {
@@ -611,7 +611,7 @@
           "id": "N90_LOOK_BOARD",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "Approved stamp substitutions are listed in tidy rows.\nSeveral lines are crossed out and re-initialed, like grudges formalized.\nIt reads like an admission that the system anticipates failure and calls it \u201cprocess.\u201d",
+          "text": "Approved stamp substitutions sit in tidy rows. (pause) Several lines are crossed out, re-initialed\u2014grudges formalized. (pause) It reads as an admission: the system expects failure and calls it \u201cprocess.\u201d",
           "next": "N02_MAIN_SLEEVE"
         },
         {

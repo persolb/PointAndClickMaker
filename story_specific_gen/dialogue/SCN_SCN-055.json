@@ -21,7 +21,7 @@
               "value": true
             }
           ],
-          "text": "The AMR registry reader sits under a hooded task light, as if it\u2019s being interrogated. A slot labeled PRINTOUT is jammed with old perforated stock. The screen displays: SPONSOR REQUIRED.",
+          "text": "The AMR registry reader sits under a hooded task light, as if it\u2019s being interrogated. (pause) A slot labeled PRINTOUT is jammed with old perforated stock. (pause) The screen displays: SPONSOR REQUIRED.",
           "next": "TRIAGE_INTRO"
         },
         {
@@ -270,7 +270,7 @@
           "id": "NARR_ISSUE_1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The Maintainer keys in the entry with two fingers, like touching the wrong key could be construed as intent. The printer chatters and produces a single-page AMR printout with dense, aggressively boring language.",
+          "text": "The Maintainer keys in the entry with two fingers, (pause) like touching the wrong key could be construed as intent. (pause) The printer chatters and produces a single-page AMR printout (pause) with dense, aggressively boring language.",
           "next": "TRIAGE_HANDOVER_1"
         },
         {
@@ -284,7 +284,7 @@
           "id": "NARR_TOOL_1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The Maintainer sets a compact, heavy tool on the bench: a seal punch with a depth stop and a serialized collar.",
+          "text": "The Maintainer sets compact heavy tool on bench: seal punch, depth stop, serialized collar.",
           "next": "TRIAGE_TOOL_SCOPE"
         },
         {
@@ -298,7 +298,7 @@
           "id": "NARR_RECEIVE_1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You receive an AMR tag, an AMR printout, and a scope-limited seal punch tool. The registry reader returns to its idle screen, satisfied in the way only a system can be when it has transferred responsibility.",
+          "text": "You receive an AMR tag, an AMR printout and a scope-limited seal punch tool. (pause) The registry reader returns to its idle screen (pause) satisfied in the way only a system can be (pause) when it has transferred responsibility.",
           "next": "TRIAGE_SIGNOFF"
         },
         {

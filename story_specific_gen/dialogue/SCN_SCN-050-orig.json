@@ -1,0 +1,471 @@
+{
+  "dialogueGraphs": [
+    {
+      "id": "SCN_050_WINDOW5_SAFETY",
+      "sceneId": "SCN-050",
+      "startNodeId": "N00_ESTABLISH",
+      "nodes": [
+        {
+          "id": "N00_ESTABLISH",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "Window 5: SAFETY. The glass is cloudy where hundreds of fingerprints gave up. A narrow slot waits beneath a sign that says: \u201cISSUANCE IS NOT ACCESS.\u201d",
+          "conditions": [
+            {
+              "key": "act2.terIssued",
+              "op": "==",
+              "value": true
+            },
+            {
+              "key": "act2.gloveTagCollected",
+              "op": "==",
+              "value": false
+            }
+          ],
+          "next": "N01_WINDOW_ACK"
+        },
+        {
+          "id": "N01_WINDOW_ACK",
+          "type": "npc_line",
+          "speakerId": "SAFETY_WINDOW",
+          "text": "Window Five acknowledges presence.\nDo not state your destination. That creates a record we can\u2019t support.",
+          "next": "N02_PLAYER_NEED"
+        },
+        {
+          "id": "N02_PLAYER_NEED",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Need a glove tag.",
+          "next": "N03_WINDOW_EXPLAIN"
+        },
+        {
+          "id": "N03_WINDOW_EXPLAIN",
+          "type": "npc_line",
+          "speakerId": "SAFETY_WINDOW",
+          "text": "Glove tags are not \u201cneeded.\u201d\nThey are issued to reduce the number of hands that become\u2014 temporarily uncountable.\nWhich is a safety category. Not an incident category. We\u2019re not doing incidents today.",
+          "next": "N04_MAIN_MENU"
+        },
+        {
+          "id": "N04_MAIN_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_ISSUE",
+              "text": "talk: \u201cIssue it.\u201d",
+              "next": "N10_NEED_TER"
+            },
+            {
+              "id": "C_WHAT",
+              "text": "ask: \u201cWhat is it, exactly?\u201d",
+              "next": "N20_WHAT_IS"
+            },
+            {
+              "id": "C_ROUTING",
+              "text": "ask: \u201cWhy is Safety handling routing?\u201d",
+              "next": "N40_ROUTING_EXPLAIN"
+            },
+            {
+              "id": "C_SHOW_TER",
+              "text": "show: \u201cHere\u2019s my TER.\u201d",
+              "conditions": [
+                {
+                  "key": "act2.terIssued",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "next": "N50_TER_HOLD_UP"
+            },
+            {
+              "id": "C_OLEA",
+              "text": "persuade: \u201cLog this under OLEA audit trail. You\u2019ll want it.\u201d",
+              "conditions": [
+                {
+                  "key": "player.factions",
+                  "op": "in",
+                  "value": [
+                    "OLEA"
+                  ]
+                }
+              ],
+              "next": "N45_OLEA_GATE_RESPONSE"
+            },
+            {
+              "id": "C_LEAVE",
+              "text": "leave: \u201cBack.\u201d",
+              "next": "N_END_LEAVE"
+            }
+          ]
+        },
+        {
+          "id": "N10_NEED_TER",
+          "type": "npc_line",
+          "speakerId": "SAFETY_WINDOW",
+          "text": "I can\u2019t \u201cissue it\u201d to an unanchored record.\nProvide TER issuance confirmation.\nNot your name. Not your intent. Just the TER.\nI\u2019m protecting you. Also me.",
+          "next": "N11_REDIRECT_MAIN"
+        },
+        {
+          "id": "N11_REDIRECT_MAIN",
+          "type": "redirect",
+          "target": "N04_MAIN_MENU"
+        },
+        {
+          "id": "N20_WHAT_IS",
+          "type": "npc_line",
+          "speakerId": "SAFETY_WINDOW",
+          "text": "It is a glove tag.\nIt tags gloves. It also tags the person who says they have gloves.\nThe second part is the part everyone pretends is optional until it isn\u2019t.\nIf you require a comparable term: it is a service-route token. But do not call it that at the counter.",
+          "next": "N21_CATEGORY_PROMPT"
+        },
+        {
+          "id": "N21_CATEGORY_PROMPT",
+          "type": "npc_line",
+          "speakerId": "SAFETY_WINDOW",
+          "text": "Would you like it issued under \u201chand protection,\u201d or under \u201caccountability\u201d?\nThe physical object is the same. The paperwork behaves differently.",
+          "next": "N22_CATEGORY_MENU"
+        },
+        {
+          "id": "N22_CATEGORY_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_DIFF",
+              "text": "ask: \u201cWhat\u2019s the difference?\u201d",
+              "next": "N23_DIFF"
+            },
+            {
+              "id": "C_HP_NO_TER",
+              "text": "talk: \u201cHand protection.\u201d",
+              "next": "N10_NEED_TER"
+            },
+            {
+              "id": "C_ACC_NO_TER",
+              "text": "talk: \u201cAccountability.\u201d",
+              "next": "N10_NEED_TER"
+            },
+            {
+              "id": "C_SHOW_TER_2",
+              "text": "show: \u201cHere\u2019s my TER.\u201d",
+              "conditions": [
+                {
+                  "key": "act2.terIssued",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "next": "N50_TER_HOLD_UP"
+            },
+            {
+              "id": "C_BACK_MAIN",
+              "text": "leave: \u201cBack.\u201d",
+              "next": "N25_REDIRECT_MAIN"
+            }
+          ]
+        },
+        {
+          "id": "N23_DIFF",
+          "type": "npc_line",
+          "speakerId": "SAFETY_WINDOW",
+          "text": "\u201cHand protection\u201d assumes you will touch things you\u2019re allowed to touch.\n\u201cAccountability\u201d assumes you will touch things you were never briefed on.\nNeither option implies permission. I need to say that clearly.\n\nPick one so the printer stops asking me questions.",
+          "next": "N24_REDIRECT_CATEGORY_MENU"
+        },
+        {
+          "id": "N24_REDIRECT_CATEGORY_MENU",
+          "type": "redirect",
+          "target": "N22_CATEGORY_MENU"
+        },
+        {
+          "id": "N25_REDIRECT_MAIN",
+          "type": "redirect",
+          "target": "N04_MAIN_MENU"
+        },
+        {
+          "id": "N40_ROUTING_EXPLAIN",
+          "type": "npc_line",
+          "speakerId": "SAFETY_WINDOW",
+          "text": "Safety does not handle routing.\nSafety handles what happens when routing happens without a story attached.\nFacilities wanted to handle it. Legal wanted to handle it. Intake tried once and the forms came back\u2026 wet.\nSo we issue the token and we call it PPE. Everyone sleeps.\n\nIf you are about to say \u201cthat sounds like access,\u201d don\u2019t.\nAccess is a different window number. Different liability.",
+          "next": "N11_REDIRECT_MAIN"
+        },
+        {
+          "id": "N45_OLEA_GATE_RESPONSE",
+          "type": "npc_line",
+          "speakerId": "SAFETY_WINDOW",
+          "text": "Acknowledged: external audit language detected.\nAudit language does not substitute for TER issuance confirmation.\nIt does, however, make my log feel seen.",
+          "next": "N11_REDIRECT_MAIN"
+        },
+        {
+          "id": "N50_TER_HOLD_UP",
+          "type": "npc_line",
+          "speakerId": "SAFETY_WINDOW",
+          "text": "Hold it up to the glass.\nNot the slot. The slot is for objects that have already been approved by the slot.",
+          "next": "N51_TER_JUDGMENT"
+        },
+        {
+          "id": "N51_TER_JUDGMENT",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You press the TER against the cloudy pane. The speaker goes quiet long enough to feel like judgment.",
+          "next": "N52_TER_ACK"
+        },
+        {
+          "id": "N52_TER_ACK",
+          "type": "npc_line",
+          "speakerId": "SAFETY_WINDOW",
+          "text": "TER acknowledged.\nAct Two routing constraints detected. Love that for us.\n\nSelect issuance category: \u201chand protection\u201d or \u201caccountability.\u201d\nAnswer out loud. The system does not read nods.",
+          "next": "N53_TER_CATEGORY_MENU"
+        },
+        {
+          "id": "N53_TER_CATEGORY_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_TER_HP",
+              "text": "talk: \u201cHand protection.\u201d",
+              "next": "N60_HP_SELECTED"
+            },
+            {
+              "id": "C_TER_ACC",
+              "text": "talk: \u201cAccountability.\u201d",
+              "next": "N80_ACC_SELECTED"
+            },
+            {
+              "id": "C_ALIVE",
+              "text": "ask: \u201cWhich one keeps me alive?\u201d",
+              "next": "N54_ALIVE_RESPONSE"
+            },
+            {
+              "id": "C_BACK_MAIN_2",
+              "text": "leave: \u201cBack.\u201d",
+              "next": "N25_REDIRECT_MAIN"
+            }
+          ]
+        },
+        {
+          "id": "N54_ALIVE_RESPONSE",
+          "type": "npc_line",
+          "speakerId": "SAFETY_WINDOW",
+          "text": "Neither.\nThe tag does not keep you alive. It keeps you fileable.\nPlease answer the question as asked.",
+          "next": "N55_REDIRECT_TER_CATEGORY"
+        },
+        {
+          "id": "N55_REDIRECT_TER_CATEGORY",
+          "type": "redirect",
+          "target": "N53_TER_CATEGORY_MENU"
+        },
+        {
+          "id": "N60_HP_SELECTED",
+          "type": "npc_line",
+          "speakerId": "SAFETY_WINDOW",
+          "text": "Hand protection selected.\nThis does not imply the hands are yours. That\u2019s between you and Intake.",
+          "next": "N61_HP_INSERT_PROMPT"
+        },
+        {
+          "id": "N61_HP_INSERT_PROMPT",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "Something clacks behind the panel. A pneumatic tube coughs once, like it resents effort.",
+          "next": "N62_HP_INSERT_MENU"
+        },
+        {
+          "id": "N62_HP_INSERT_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_INSERT_HP",
+              "text": "use: \u201cInsert glove.\u201d",
+              "next": "N70_HP_INSERT_GLOVE"
+            },
+            {
+              "id": "C_NO_GLOVES_HP",
+              "text": "ask: \u201cI don\u2019t have gloves.\u201d",
+              "next": "N63_HP_NO_GLOVES"
+            },
+            {
+              "id": "C_BACK_MAIN_3",
+              "text": "leave: \u201cBack.\u201d",
+              "next": "N25_REDIRECT_MAIN"
+            }
+          ]
+        },
+        {
+          "id": "N63_HP_NO_GLOVES",
+          "type": "npc_line",
+          "speakerId": "SAFETY_WINDOW",
+          "text": "Then you are requesting a glove event, not a glove tag.\nDifferent checklist. Longer feelings.\n\nUse the orientation rack. Window 3. They love helping. It makes them feel real.\nThen come back and say \u201chand protection\u201d again, exactly. Not \u201cPPE.\u201d PPE is plural and the system panics.",
+          "next": "N64_REDIRECT_MAIN_FROM_HP_NOGLOVES"
+        },
+        {
+          "id": "N64_REDIRECT_MAIN_FROM_HP_NOGLOVES",
+          "type": "redirect",
+          "target": "N04_MAIN_MENU"
+        },
+        {
+          "id": "N70_HP_INSERT_GLOVE",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You feed a glove into the slot. The slot takes it without gratitude.",
+          "next": "N71_HP_GLOVE_DETECTED"
+        },
+        {
+          "id": "N71_HP_GLOVE_DETECTED",
+          "type": "npc_line",
+          "speakerId": "SAFETY_WINDOW",
+          "text": "Glove detected.\nIntegrity acceptable. We are not testing cleanliness. This is Safety, not Morality.",
+          "next": "N72_HP_TAG_DROPS"
+        },
+        {
+          "id": "N72_HP_TAG_DROPS",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "A small metal tag drops into the return tray. Stamped, numbered, and warm from the machine.",
+          "next": "N73_HP_WARN"
+        },
+        {
+          "id": "N73_HP_WARN",
+          "type": "npc_line",
+          "speakerId": "SAFETY_WINDOW",
+          "text": "Glove tag issued.\nDo not lend it. Do not trade it. Do not \u201ctemporarily\u201d hand it to anyone with a nicer badge.\nIf it ends up in a corridor without you attached, we will assume the corridor acquired you.",
+          "next": "N74_HP_TAKE_TAG"
+        },
+        {
+          "id": "N74_HP_TAKE_TAG",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You take the glove tag. It sits in your palm like a tiny permission that refuses to call itself permission.",
+          "next": "N_END_COLLECT_HP"
+        },
+        {
+          "id": "N_END_COLLECT_HP",
+          "type": "end",
+          "outcomeId": "collect_glove_tag",
+          "effects": [
+            {
+              "key": "act2.gloveTagCollected",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "inventory.items",
+              "action": "add",
+              "value": "ITEM_GLOVE_TAG_SERVICE_TOKEN"
+            }
+          ]
+        },
+        {
+          "id": "N80_ACC_SELECTED",
+          "type": "npc_line",
+          "speakerId": "SAFETY_WINDOW",
+          "text": "Accountability selected.\nThank you for your honesty. I cannot reward it, but I can document it.",
+          "next": "N81_ACC_PRINTER"
+        },
+        {
+          "id": "N81_ACC_PRINTER",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The window whirs. A printer somewhere produces a page you will never see.",
+          "next": "N82_ACC_INSERT_PROMPT"
+        },
+        {
+          "id": "N82_ACC_INSERT_PROMPT",
+          "type": "npc_line",
+          "speakerId": "SAFETY_WINDOW",
+          "text": "Insert one glove. Left or right. Not both.\nIf you do not have gloves, say so now so I can pretend this was your choice.",
+          "next": "N83_ACC_INSERT_MENU"
+        },
+        {
+          "id": "N83_ACC_INSERT_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_INSERT_ACC",
+              "text": "use: \u201cInsert glove.\u201d",
+              "next": "N90_ACC_INSERT_GLOVE"
+            },
+            {
+              "id": "C_NO_GLOVES_ACC",
+              "text": "talk: \u201cI don\u2019t have gloves.\u201d",
+              "next": "N84_ACC_NO_GLOVES"
+            },
+            {
+              "id": "C_BACK_MAIN_4",
+              "text": "leave: \u201cBack.\u201d",
+              "next": "N25_REDIRECT_MAIN"
+            }
+          ]
+        },
+        {
+          "id": "N84_ACC_NO_GLOVES",
+          "type": "npc_line",
+          "speakerId": "SAFETY_WINDOW",
+          "text": "Logged: \u201cNo gloves present at time of accountability selection.\u201d\nThat sentence will outlive you. In a good way. Mostly.\n\nAcquire gloves from Window 3. Return here. Repeat the same words.\nDo not improvise synonyms. This system treats synonyms as fraud.",
+          "next": "N85_REDIRECT_MAIN_FROM_ACC_NOGLOVES"
+        },
+        {
+          "id": "N85_REDIRECT_MAIN_FROM_ACC_NOGLOVES",
+          "type": "redirect",
+          "target": "N04_MAIN_MENU"
+        },
+        {
+          "id": "N90_ACC_INSERT_GLOVE",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You feed a glove into the slot. The machine takes it like evidence.",
+          "next": "N91_ACC_GLOVE_DETECTED"
+        },
+        {
+          "id": "N91_ACC_GLOVE_DETECTED",
+          "type": "npc_line",
+          "speakerId": "SAFETY_WINDOW",
+          "text": "Glove detected.\nAccountability chain initialized. Please remain\u2014 actually, do not remain. Remaining creates loitering.",
+          "next": "N92_ACC_TAG_DROPS"
+        },
+        {
+          "id": "N92_ACC_TAG_DROPS",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "A small metal tag drops into the tray. It\u2019s stamped with a number that looks more like a route than an ID.",
+          "next": "N93_ACC_WARN"
+        },
+        {
+          "id": "N93_ACC_WARN",
+          "type": "npc_line",
+          "speakerId": "SAFETY_WINDOW",
+          "text": "Glove tag issued.\nThis is not access. This is traceability.\nIf a door recognizes it, that is the door\u2019s personal failing.",
+          "next": "N94_ACC_TAKE_TAG"
+        },
+        {
+          "id": "N94_ACC_TAKE_TAG",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You take the glove tag. The window\u2019s speaker clicks off before you can ask the next question.",
+          "next": "N_END_COLLECT_ACC"
+        },
+        {
+          "id": "N_END_COLLECT_ACC",
+          "type": "end",
+          "outcomeId": "collect_glove_tag",
+          "effects": [
+            {
+              "key": "act2.gloveTagCollected",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "inventory.items",
+              "action": "add",
+              "value": "ITEM_GLOVE_TAG_SERVICE_TOKEN"
+            }
+          ]
+        },
+        {
+          "id": "N_END_LEAVE",
+          "type": "end"
+        }
+      ]
+    }
+  ]
+}

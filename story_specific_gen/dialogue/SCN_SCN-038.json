@@ -9,14 +9,14 @@
           "id": "N_START",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The procedure binder is open to a laminated divider: OPERATIONAL STATUS VERIFICATION \u2014 DO NOT INITIATE UNLESS READY TO COMPLETE. A sticky note covers part of the header: \u201cReady means paper-ready, not emotionally ready.\u201d",
+          "text": "The procedure binder is open to a laminated divider. (pause) OPERATIONAL STATUS VERIFICATION \u2014 DO NOT INITIATE UNLESS READY TO COMPLETE. (pause) A sticky note covers part of the header: \u201cReady means paper-ready, not emotionally ready.\u201d",
           "next": "N_PREREQS"
         },
         {
           "id": "N_PREREQS",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "Four prerequisites are stamped in green ink: Training Gate Cleared. LOTO Tagged. Vent Damper Open. There is no stamp for \u201cThis is a good idea.\u201d",
+          "text": "Four prerequisites are stamped in green ink: Training Gate Cleared. (pause) LOTO Tagged. Vent Damper Open. (pause) There is no stamp for \u201cThis is a good idea.\u201d",
           "next": "N_PLAYER_MURMUR"
         },
         {
@@ -57,14 +57,14 @@
           "id": "N_LOOK_SUMMARY_1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The summary page is written in a font that assumes it will be photocopied until the end of time.",
+          "text": "The summary page uses a font that expects to be photocopied until the end of time.",
           "next": "N_LOOK_SUMMARY_2"
         },
         {
           "id": "N_LOOK_SUMMARY_2",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "Step headings: Confirm control authority. Confirm load characteristics. Execute reflectivity test if indicated. Someone has underlined \u201cif indicated\u201d hard enough to crease the paper.",
+          "text": "Step headings: Confirm control authority. Confirm load characteristics. (pause) Execute reflectivity test if indicated. (pause) Someone has underlined \u201cif indicated\u201d hard enough to crease the paper.",
           "next": "N_LOOK_PLAYER_1"
         },
         {
@@ -78,7 +78,7 @@
           "id": "N_LOOK_FOOTNOTE",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "A footnote reads: \u201cReflectivity is a behavioral descriptor and does not imply optical compliance.\u201d The ink looks resentful.",
+          "text": "Footnote: \u201cReflectivity is a behavioral descriptor and does not imply optical compliance.\u201d The ink seems resentful.",
           "next": "N_MENU_POST_LOOK"
         },
         {
@@ -112,7 +112,7 @@
           "id": "N_TALK_PHONE_1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The console\u2019s desk phone has an extension label: EAC ASSURANCE \u2014 DOCUMENTATION SUPPORT ONLY. The handset cord is too short, as if designed to discourage pacing.",
+          "text": "The console\u2019s desk phone has an extension label: EAC ASSURANCE \u2014 DOCUMENTATION SUPPORT ONLY. (pause) The handset cord is too short, as if built to discourage pacing.",
           "next": "N_TALK_PLAYER_1"
         },
         {
@@ -365,14 +365,14 @@
           "id": "N_INITIATE_1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The initiation page is a single sheet on heavier paper, like it expects to be presented in a hearing.",
+          "text": "The initiation page is a heavier sheet, like it expects to be presented at a hearing.",
           "next": "N_INITIATE_2"
         },
         {
           "id": "N_INITIATE_2",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "Fields: Initiator Name. Badge. Time (24h). Scope. A boxed note reads: \u201cInitiation indicates readiness to document outcomes. It does not indicate predicted safety.\u201d The box is outlined twice.",
+          "text": "Fields: Initiator Name. Badge. Time (24h). Scope. (pause) A boxed note reads: \u201cInitiation indicates readiness to document outcomes. It does not indicate predicted safety.\u201d (pause) The box is outlined twice.",
           "next": "N_INITIATE_PLAYER_1"
         },
         {
@@ -403,7 +403,7 @@
           "id": "N_ACTIVATE_1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You enter your details and initial the margin. The pen drags, then bites, like the paper is laminated with reluctance.",
+          "text": "You enter details, initial the margin. The pen drags, then bites; like paper laminated with reluctance.",
           "next": "N_ACTIVATE_2"
         },
         {
@@ -417,7 +417,7 @@
           "id": "N_ACTIVATE_3",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "In the printer tray, the feed motor wakes up. The first page doesn\u2019t print yet. It just decides it will.",
+          "text": "In the printer tray, the feed motor wakes up. (pause) The first page doesn\u2019t print yet. (pause) It just decides it will.",
           "next": "N_ACTIVATE_4"
         },
         {

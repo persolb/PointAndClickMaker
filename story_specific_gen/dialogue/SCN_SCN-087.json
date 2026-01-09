@@ -7,7 +7,7 @@
           "id": "N_FORMS_INTRO",
           "next": "N_FORMS_MENU",
           "speakerId": "NARRATOR",
-          "text": "The rack is labeled in local terms\u2014Retention, Posting, Public Notice\u2014then abruptly switches to templates that assume different laws.\nThe phrasing is tight, standardized, and defensive in the way only a distant office can manage.\n\nA few headers repeat across unrelated forms:\n\u201cStanding Indicator.\u201d\n\u201cService Class.\u201d\n\u201cQueue Position.\u201d",
+          "text": "Rack labels use local terms\u2014Retention, Posting, Public Notice. (pause) Then it abruptly jumps to templates that assume other laws. (pause)\nThe phrasing is tight and standardized. (pause) Defensive too\u2014the kind only a distant office can manage. (pause)\n\nA few headers repeat on unrelated forms: (pause)\n\u201cStanding Indicator.\u201d (pause)\n\u201cService Class.\u201d (pause)\n\u201cQueue Position.\u201d",
           "type": "npc_line"
         },
         {
@@ -36,7 +36,7 @@
           "id": "N_STANDING_EXPLAIN",
           "next": "N_STANDING_MENU",
           "speakerId": "NARRATOR",
-          "text": "There\u2019s no one here to answer.\nThe template defines it anyway, in a footnote that sounds like it was written after an argument:\n\u201cStanding: the condition of recognized eligibility to be processed.\u201d\nThe word \u201cprocessed\u201d is underlined once, then copied imperfectly.",
+          "text": "There\u2019s no one here to answer. (pause)\nThe template defines it anyway. (pause)\nIn a footnote that sounds like it was written after an argument: (pause)\n\u201cStanding: the condition of recognized eligibility to be processed.\u201d (pause)\nThe word \u201cprocessed\u201d is underlined once, then copied imperfectly.",
           "type": "npc_line"
         },
         {
@@ -55,7 +55,7 @@
           "id": "N_FORMS_SKIM",
           "next": "N_FORMS_SKIM_MENU",
           "speakerId": "NARRATOR",
-          "text": "You skim until the sentences stop being local. Then you stop.\nThe forms go back into the rack like they were never out.",
+          "text": "You skim until the sentences stop being local. (pause) Then you stop. (pause)\nThe forms go back into the rack like they were never out.",
           "type": "npc_line"
         },
         {

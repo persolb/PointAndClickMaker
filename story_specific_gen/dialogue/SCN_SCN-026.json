@@ -16,7 +16,7 @@
           "id": "N1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The door has a handle that implies consent. The reader has a light that implies recognition. Neither implies you.",
+          "text": "The door handle implies consent. The reader light implies recognition. Neither implies you.",
           "next": "N_MAIN"
         },
         {
@@ -86,7 +86,7 @@
           "id": "N_VEST_LOCKED_1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You step to the threshold that would become the vestibule. The door remains closed, as if the building is waiting for a database to approve your legs.",
+          "text": "You step to the vestibule threshold. The door stays shut, like a database approves your legs.",
           "next": "N_MAIN"
         },
         {
@@ -145,7 +145,7 @@
           "id": "N_READER_2",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The reader blinks once\u2014an acknowledgement without obligation\u2014then returns to its default: waiting for a person who exists in the correct place.",
+          "text": "Reader blinks once\u2014acknowledgement without obligation\u2014then returns to default: waiting for a person in the correct place.",
           "next": "N_READER_MENU"
         },
         {
@@ -190,7 +190,7 @@
           "id": "N_TUBE_2",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "Someone has scratched a single word into it with a key: \u201cRECORDS.\u201d It\u2019s not instructions. It\u2019s blame allocation.",
+          "text": "Someone scratched one word into it with a key: \u201cRECORDS.\u201d Not instructions. Blame allocation.",
           "next": "N_TUBE_MENU"
         },
         {

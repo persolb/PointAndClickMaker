@@ -9,20 +9,20 @@
           "id": "N_INTRO_1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The approach road ends in a chain-link gate and a keypad mounted like an afterthought.\nBehind it: industrial quiet with a thin electrical hum that never quite stops. You feel it in your molars, briefly, and decide not to."
+          "text": "Road dead-ends at a chain-link gate. Keypad bolted on like an afterthought. (pause) Past it\u2014industrial quiet and that thin electrical hum that won\u2019t quit. (pause) You feel it in your teeth and decide you didn\u2019t."
         },
         {
           "id": "N_INTRO_2",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "A signpost stands by the keypad. Multiple placards are bolted to it in layers\u2014some sun-bleached, some newer, all \u201cofficial.\u201d",
+          "text": "A signpost sits by the keypad, layered with placards\u2014sun-bleached under newer\u2014trying to look official.",
           "next": "N_INTRO_3"
         },
         {
           "id": "N_INTRO_3",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "Hotspots: Car trunk / equipment case. Gate keypad and receipt slot. Layered signpost. Debris pile by fence line. Instrument conduit box. Exterior ground service hatch.",
+          "text": "Alright\u2014things to check: trunk/equipment case. (pause) Gate keypad and receipt slot. (pause) Layered signpost. Debris pile by fence line. (pause) Instrument conduit box. Exterior ground service hatch.",
           "next": "N_MAIN_MENU"
         },
         {
@@ -51,7 +51,7 @@
           "id": "N_INTERCOM_DESC",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "A brushed-metal speaker grille sits above the keypad. It looks newer than the fence.\nA small sticker says: FOR ASSISTANCE, PRESS AND STATE PURPOSE. The sticker has been re-applied at least twice.",
+          "text": "Brushed-metal speaker grille above the keypad\u2014newer than the fence. (pause) Sticker: FOR ASSISTANCE, PRESS AND STATE PURPOSE. (pause) It\u2019s been stuck back on at least twice.",
           "next": "N_INTERCOM_PLAYER_CALL"
         },
         {
@@ -139,7 +139,7 @@
           "id": "N_SECURITY_BADGE_B",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You hold your badge up to a small dome camera. The lens clicks as it tries to focus.",
+          "text": "You lift your badge to the little dome camera. The lens clicks, hunting focus.",
           "next": "N_SECURITY_BADGE_C"
         },
         {
@@ -307,7 +307,7 @@
           "id": "N_KEYPAD_DESC",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The keypad is clean enough to be used, which suggests someone is being paid to be nearby without being here.\nA narrow slot beneath it is labeled: RECEIPT \u2014 RETAIN FOR YOUR RECORDS.\n\nThe screen prompts: ENTER CODE OR SELECT: ASSISTANCE / VISITOR / MAINTENANCE.",
+          "text": "Keypad\u2019s clean enough to touch. (pause) Somebody\u2019s \u201caround,\u201d just not here. (pause) Slot under it: RECEIPT\u2014RETAIN FOR YOUR RECORDS. (pause) Screen: ENTER CODE OR SELECT: ASSISTANCE / VISITOR / MAINTENANCE.",
           "next": "N_KEYPAD_MENU"
         },
         {
@@ -341,7 +341,7 @@
           "id": "N_KEYPAD_MAINT",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You press MAINTENANCE. The screen pauses as if deciding whether you deserve to exist.\n\nIt displays: MAINTENANCE REQUIRES ACTIVE SIGN-IN LOCATION. PLEASE PROCEED TO KIOSK.\nA printer inside the box whirs and produces a blank strip of paper anyway.\n\nThe blank receipt feels accusatory in your hand.",
+          "text": "You hit MAINTENANCE. (pause)\nIt hangs for a second. (pause)\n\nMAINTENANCE REQUIRES ACTIVE SIGN-IN LOCATION. (pause)\nPLEASE PROCEED TO KIOSK. (pause)\n\nPrinter still whirs and spits a blank strip anyway. (pause)\n\nBlank receipt in your hand. (pause)\nLike that\u2019s your fault.",
           "next": "N_KEYPAD_MAINT_MENU"
         },
         {
@@ -378,7 +378,7 @@
           "id": "N_KEYPAD_VISITOR",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You press VISITOR. The screen immediately brightens, pleased with itself.\n\nIt displays: WELCOME. SITE CLOSED. PLEASE WAIT FOR ESCORT.\nA printer whirs and issues a receipt stamped: WAITING.\n\nThe gate remains closed.",
+          "text": "You press VISITOR. Screen brightens like it\u2019s happy about it. (pause)\n\nWELCOME. SITE CLOSED. PLEASE WAIT FOR ESCORT. (pause)\nReceipt prints: WAITING. (pause)\n\nGate stays shut.",
           "next": "N_KEYPAD_VISITOR_MENU"
         },
         {
@@ -431,7 +431,7 @@
           "id": "N_TRUNK_DESC",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "In the trunk: an equipment case with your label maker, inspection tags, a battered tablet, and a binder spine that says CLOSURE \u2014 SPINDLE in faded ink.\nThe binder is heavier than it needs to be, like it\u2019s trying to win an argument.",
+          "text": "In the trunk: an equipment case\u2014label maker, inspection tags, battered tablet. (pause) Binder spine reads CLOSURE\u2014SPINDLE in faded ink. (pause) The binder\u2019s heavier than it needs to be. Like it\u2019s daring you to argue with it.",
           "next": "N_TRUNK_MENU"
         },
         {
@@ -460,7 +460,7 @@
           "id": "N_TRUNK_TABLET",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You power the tablet. It boots into the OLEA field form stack without asking questions, which is the closest thing it has to kindness.",
+          "text": "You power up the tablet. It drops straight into the OLEA field form stack. No questions.",
           "next": "N_TRUNK_TABLET_MENU"
         },
         {
@@ -513,7 +513,7 @@
           "id": "N_TRUNK_TAGS",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You thumb through tags: DO NOT OPERATE, OUT OF SERVICE, PENDING REVIEW.\nNothing says THIS SIGN IS LYING, which feels like an omission.",
+          "text": "You thumb through tags: DO NOT OPERATE, OUT OF SERVICE, PENDING REVIEW. (pause)\nNothing says \u201cthis sign is lying.\u201d Of course.",
           "next": "N_TRUNK_TAGS_MENU"
         },
         {
@@ -566,7 +566,7 @@
           "id": "N_LEAVE_CONFIRM_ADMIN",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You can proceed, but you\u2019ll be doing it without a dated note that says the signs were nonconforming when you arrived. That omission will not be neutral later.",
+          "text": "You can go ahead. (pause) You won\u2019t have a dated note: the signs were wrong when you arrived. (pause) That gap won\u2019t stay quiet.",
           "next": "N_LEAVE_CONFIRM_ADMIN_MENU"
         },
         {
@@ -595,7 +595,7 @@
           "id": "N_LEAVE_CONFIRM_GUARD",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You can walk over, sure. But if you don\u2019t document the gate instructions first, you\u2019ll be explaining later why you followed one sign and ignored another. Your throat tightens at the thought.",
+          "text": "Walk over, sure. Get gate steps first. Or you'll later explain following one sign, ignoring another.",
           "next": "N_LEAVE_CONFIRM_GUARD_MENU"
         },
         {

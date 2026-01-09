@@ -1,0 +1,151 @@
+{
+  "dialogueGraphs": [
+    {
+      "id": "DG_STAGING_INTERCONNECTION_BAY",
+      "sceneId": "SCN-060",
+      "startNodeId": "N_START",
+      "nodes": [
+        {
+          "id": "N_START",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "Interconnection Bay Staging: a bright, over-labeled room pretending it\u2019s temporary.\nThe AMR reader loop hums with the confidence of something that has never been cross-examined.\nA clipboard station sits under a sign that says PLEASE PRINT, as if handwriting is the primary hazard.",
+          "next": "N_SUP_HOLD"
+        },
+        {
+          "id": "N_SUP_HOLD",
+          "type": "npc_line",
+          "speakerId": "BAY_SUPERVISOR",
+          "text": "Hold up. (pause) Hands off a sec. (pause) I need the work envelope. (pause) Three items in there. (pause) In front of me. (pause) If it's not in the file, (pause) it didn't happen.",
+          "next": "N_SUP_PREREQ"
+        },
+        {
+          "id": "N_SUP_PREREQ",
+          "type": "npc_line",
+          "speakerId": "BAY_SUPERVISOR",
+          "text": "Alright, IWO's on the sheet. (pause) Slot token's here. (pause) AMR's issued. (pause) Good. We stage. (pause) Keep calling it staging.",
+          "next": "N_HUB"
+        },
+        {
+          "id": "N_HUB",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_ASK_MISSING",
+              "text": "ask: What\u2019s missing?",
+              "next": "N_SUP_MISSING"
+            },
+            {
+              "id": "C_ASK_BALANCED",
+              "text": "ask: Define \u201cbalanced.\u201d",
+              "next": "N_SUP_BALANCED"
+            },
+            {
+              "id": "C_ASK_RUNNING",
+              "text": "ask: It looks like it\u2019s already running.",
+              "next": "N_SUP_RUNNING"
+            },
+            {
+              "id": "C_ASK_SHOW_AMR",
+              "text": "ask: Show me where you want the AMR.",
+              "next": "N_SUP_SHOW_AMR"
+            },
+            {
+              "id": "C_SHOW_PAPERWORK",
+              "text": "show: Show the IWO, token, and AMR issuance record.",
+              "next": "N_SUP_PAPERWORK"
+            },
+            {
+              "id": "C_USE_WORK",
+              "text": "use: Let me work.",
+              "next": "N_SUP_WORK"
+            },
+            {
+              "id": "C_PERSUADE_AUTH",
+              "text": "persuade: You have what you need. Log it and clear me.",
+              "checks": [
+                {
+                  "type": "faction_member",
+                  "faction": "OLEA"
+                }
+              ],
+              "onPassNext": "N_SUP_PERSUADE_PASS",
+              "onFailNext": "N_SUP_PERSUADE_FAIL"
+            },
+            {
+              "id": "C_LEAVE_END",
+              "text": "leave: Back.",
+              "next": "N_END_BACK"
+            }
+          ]
+        },
+        {
+          "id": "N_SUP_MISSING",
+          "type": "npc_line",
+          "speakerId": "BAY_SUPERVISOR",
+          "text": "Nothing's missing. (pause)\nIt's just not on the page yet\u2014in order. (pause)\nClip the AMR into the reader loop. (pause)\nSeat the dummy mass. (pause)\nThen set the test load panel. (pause)\nThen initial at the clipboard station. (pause)\nI need something I can point to. (pause)\nIn review.",
+          "next": "N_REDIRECT_HUB"
+        },
+        {
+          "id": "N_SUP_BALANCED",
+          "type": "npc_line",
+          "speakerId": "BAY_SUPERVISOR",
+          "text": "Balanced: test load stays inside tolerance (pause) for the phase-lock window. (pause) That\u2019s the maintenance window. (pause) We just watch it stay in spec (pause) while it does its thing. (pause) And don\u2019t put \"trigger\" in anyone\u2019s mouth (pause) depositions love that word.",
+          "next": "N_REDIRECT_HUB"
+        },
+        {
+          "id": "N_SUP_RUNNING",
+          "type": "npc_line",
+          "speakerId": "BAY_SUPERVISOR",
+          "text": "Yeah, it runs. (pause)\nJust don't say 'already'. (pause)\nPeople hear that and start asking why. (pause)\nIt 'should' have stopped. (pause)\nYou're here to correct routing\u2014reverse\u2014with authorization.",
+          "next": "N_REDIRECT_HUB"
+        },
+        {
+          "id": "N_SUP_SHOW_AMR",
+          "type": "npc_line",
+          "speakerId": "BAY_SUPERVISOR",
+          "text": "Brass oval at waist height. (pause) That\u2019s the reader loop. (pause)\nClip the AMR so the arrow (pause) points toward the hinge. (pause)\nIt\u2019ll read either way. (pause) Upside down makes the log (pause) look like you were winging it. (pause)\nAnd we\u2019ve had enough (pause) \u201cunexpected reflective behavior\u201d.",
+          "next": "N_REDIRECT_HUB"
+        },
+        {
+          "id": "N_SUP_PAPERWORK",
+          "type": "npc_line",
+          "speakerId": "BAY_SUPERVISOR",
+          "text": "I don\u2019t sign off on this. (pause) I log what\u2019s valid and in what order. (pause) If it\u2019s going to survive review (pause) it needs to read like wallpaper.",
+          "next": "N_REDIRECT_HUB"
+        },
+        {
+          "id": "N_SUP_WORK",
+          "type": "npc_line",
+          "speakerId": "BAY_SUPERVISOR",
+          "text": "Work. Sure. (pause) Stay in sequence. (pause)\nWatch what you say at the equipment. (pause)\nThe machine won\u2019t care. (pause) But somebody will.",
+          "next": "N_REDIRECT_HUB"
+        },
+        {
+          "id": "N_SUP_PERSUADE_PASS",
+          "type": "npc_line",
+          "speakerId": "BAY_SUPERVISOR",
+          "text": "You're OLEA. (pause)\nSo you want me to clear you. (pause)\nI can confirm what's on the sheet. (pause)\nAMR recognized. Token present. IWO valid. (pause)\nYou finish the checklist. (pause)\nLoad hits staging tolerance. (pause)\nI confirm that too. (pause)\nThat opens the next door. (pause)\nWithout landing me in a hearing.",
+          "next": "N_REDIRECT_HUB"
+        },
+        {
+          "id": "N_SUP_PERSUADE_FAIL",
+          "type": "npc_line",
+          "speakerId": "BAY_SUPERVISOR",
+          "text": "Clear me doesn't do anything here. (pause)\nRun the sequence. (pause)\nKeep the record clean. (pause)\nThen the door behaves.",
+          "next": "N_REDIRECT_HUB"
+        },
+        {
+          "id": "N_REDIRECT_HUB",
+          "type": "redirect",
+          "target": "N_HUB"
+        },
+        {
+          "id": "N_END_BACK",
+          "type": "end"
+        }
+      ]
+    }
+  ]
+}

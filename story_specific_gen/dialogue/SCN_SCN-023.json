@@ -9,7 +9,7 @@
           "id": "NARR_INTRO",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The copier control panel is awake in the way old office machines are awake: lights on, no help offered.\nA prompt waits for a service code.",
+          "text": "The copier control panel is awake, like old office machines. (pause) Lights on, no help offered. (pause) A prompt waits for a service code.",
           "next": "PLY_SERVICE_CODE_QUERY"
         },
         {
@@ -23,7 +23,7 @@
           "id": "NARR_STICKER_STACK_NOTICE",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "A stack of \u201cSERVICE UPDATE\u201d stickers sits beside the panel. The top sticker is newer, too clean, and placed with intent.",
+          "text": "A stack of \u201cSERVICE UPDATE\u201d stickers sits beside the panel. (pause) The top sticker is newer, too clean, and placed with intent.",
           "next": "MENU_COPIER_LOCKED"
         },
         {
@@ -57,7 +57,7 @@
           "id": "NARR_LAYERED_STICKER",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The sticker is layered. You can see an older edge under it, like a scab someone didn\u2019t want picked.\nThe top layer reads: \u201cCODE RELOCATED \u2014 SEE ADMIN.\u201d No admin. No note. Just adhesive.",
+          "text": "The sticker is layered. (pause) You can see an older edge under it, like a scab someone didn\u2019t want picked. (pause) The top layer reads: \u201cCODE RELOCATED \u2014 SEE ADMIN.\u201d (pause) No admin. No note. Just adhesive.",
           "next": "MENU_STICKER_STACK"
         },
         {
@@ -132,7 +132,7 @@
           "id": "NARR_GATE_NO_TAG",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You can remove it, physically. You cannot remove it, institutionally.\nWithout a temporary lift tag, it reads as vandalism no matter how careful you are.",
+          "text": "You can remove it physically. You cannot remove it institutionally. (pause) Without a temporary lift tag, it reads as vandalism, no matter how careful you are.",
           "next": "PLY_NOT_LIKE_THIS"
         },
         {
@@ -158,7 +158,7 @@
           "id": "NARR_DEFAULT_CODES_FAIL",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You enter the usual suspects. The panel rejects each one with the same polite tone.\nThe last beep sounds faintly judgmental.",
+          "text": "You enter the usual suspects. The panel rejects them politely. The last beep sounds faintly judgmental.",
           "next": "PLY_OKAY"
         },
         {
@@ -184,7 +184,7 @@
           "id": "NARR_LABEL_MAKER_READY",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The label maker is charged. The tape cartridge is half-full, which feels like a dare.\nThe screen blinks: ENTER TEXT.",
+          "text": "Label maker\u2019s charged. Tape cartridge half-full\u2014feels like a dare.\nScreen blinks: ENTER TEXT.",
           "next": "MENU_LABEL_MAKER"
         },
         {
@@ -220,7 +220,7 @@
           "id": "NARR_PRINTED_TEMP_LIFT",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The label prints with a slow mechanical confidence. The letters are crisp, almost smug.\nYou now have a tag that looks like permission.",
+          "text": "The label prints with a slow mechanical confidence. The letters are crisp, almost smug. (pause) You now have a tag that looks like permission.",
           "next": "LIAISON_TAG_IS_BETTER"
         },
         {
@@ -239,7 +239,7 @@
           "id": "NARR_PRINTED_VOID",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The label prints: VOID. It\u2019s extremely official-looking for something with no authority.\nIt will not solve the locked copier.",
+          "text": "The label prints: VOID. It\u2019s official-looking with no authority. It won\u2019t solve the locked copier.",
           "next": "LIAISON_VOID_TRIGGERS"
         },
         {
@@ -270,14 +270,14 @@
           "id": "NARR_APPLY_TAG_BRIDGE",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You place the \u201cTEMPORARY LIFT\u201d tag so it bridges sticker to panel, like a tiny legal hypothesis.",
+          "text": "You place the \u201cTEMPORARY LIFT\u201d tag so it bridges sticker to panel, like a legal hypothesis.",
           "next": "NARR_PEEL_REVEAL_CODE"
         },
         {
           "id": "NARR_PEEL_REVEAL_CODE",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "Then you peel the top layer. Under it: the original service code, printed in fading block text.",
+          "text": "Then you peel the layer. Under it: the original service code, printed in fading block text.",
           "next": "PLY_GOT_IT"
         },
         {
@@ -291,7 +291,7 @@
           "id": "NARR_ENTER_CODE_READY",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You enter the code. The copier accepts it immediately, as if it was never meant to be a secret.\nThe screen changes to READY.",
+          "text": "You enter the code. (pause) The copier accepts it immediately, like it was never meant to be secret. (pause) The screen changes to READY.",
           "next": "LIAISON_NOTE_NO_DESTRUCTION"
         },
         {
@@ -334,7 +334,7 @@
           "id": "NARR_BACK_AWAY",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You step back into the room\u2019s quiet. The fax tray sits untouched. Binder supplies wait in straight lines.\nThe copier remains locked, which is a kind of order.",
+          "text": "You step back into the room\u2019s quiet. (pause) The fax tray sits untouched. (pause) Binder supplies wait in straight lines. (pause) The copier remains locked. It\u2019s a kind of order.",
           "next": "END_DISENGAGE"
         },
         {

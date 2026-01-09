@@ -7,14 +7,14 @@
           "id": "N0_BINDER_DESC_1",
           "next": "N1_BINDER_DESC_2",
           "speakerId": "NARRATOR",
-          "text": "The procedure binder is swollen with addenda. Someone has re-tabbed it three times, like the binder itself kept failing inspections.",
+          "text": "The procedure binder is swollen with addenda. Someone re-tabbed it three times, like it failed inspections.",
           "type": "npc_line"
         },
         {
           "id": "N1_BINDER_DESC_2",
           "next": "N2_BINDER_MENU",
           "speakerId": "NARRATOR",
-          "text": "The shutdown sequence is present. The definitions section has been stapled over with a \u201ctemporary clarification\u201d that looks permanent.",
+          "text": "Shutdown sequence present. The definitions section is stapled to a \u201ctemporary clarification\u201d that looks permanent.",
           "type": "npc_line"
         },
         {
@@ -48,7 +48,7 @@
           "id": "N3_DEFINITIONS_1",
           "next": "N4_LIAISON_DEFINITIONS",
           "speakerId": "NARRATOR",
-          "text": "The definitions page defines \u201cpresence\u201d as \u201cverifiable occupancy within the operational envelope.\u201d Someone circled \u201cverifiable\u201d and wrote: PRINT.",
+          "text": "Definitions define \u201cpresence\u201d as \u201cverifiable occupancy in the operational envelope.\u201d Someone circled \u201cverifiable\u201d and wrote: PRINT.",
           "type": "npc_line"
         },
         {
@@ -74,7 +74,7 @@
           "id": "N6_SHUTDOWN_1",
           "next": "N7_LIAISON_SHUTDOWN",
           "speakerId": "NARRATOR",
-          "text": "The shutdown sequence begins with three steps of \u201cConfirm,\u201d then a step of \u201cNotify,\u201d then a step of \u201cConfirm\u201d that you notified. The last page is missing, replaced with a sheet titled \u201cCross-Jurisdictional Coordination (Do Not Execute Without Authority).\u201d",
+          "text": "Shutdown starts with three \u201cConfirm\u201d steps. (pause) Then \u201cNotify.\u201d (pause) Then \u201cConfirm\u201d you notified. (pause) The last page is missing. (pause) It\u2019s replaced by a sheet titled \u201cCross-Jurisdictional Coordination (Do Not Execute Without Authority).\u201d",
           "type": "npc_line"
         },
         {

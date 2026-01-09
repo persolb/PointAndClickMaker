@@ -7,7 +7,7 @@
           "id": "N_ENVELOPES_INTRO",
           "next": "N_ENVELOPES_MENU",
           "speakerId": "NARRATOR",
-          "text": "Pre-addressed envelopes. Windowed. Uniform weight.\nMost are stamped with the same bland routing marks, like they\u2019ve been approved for travel through a system you don\u2019t see.\n\nA few have the same too-clean barcode format as the clipped notice.\nThey\u2019re not sealed with glue. They\u2019re sealed with a pressure strip that assumes speed.",
+          "text": "Pre-addressed envelopes. Windowed. Uniform weight. (pause)\nMost are stamped with the same bland routing marks\u2014approved for travel through a system unseen. (pause)\nA few share the same too-clean barcode format as the clipped notice. (pause)\nThey\u2019re not sealed with glue. (pause)\nThey\u2019re sealed with a pressure strip that assumes speed.",
           "type": "npc_line"
         },
         {
@@ -36,7 +36,7 @@
           "id": "N_POCKET_ENVELOPE_LINE",
           "next": "END_ENVELOPE_STACK",
           "speakerId": "NARRATOR",
-          "text": "You take one without ceremony.\nIt feels like taking a blank form: harmless, until someone decides it wasn\u2019t.",
+          "text": "You take it.\nNo ceremony.\nIt\u2019s like a blank form: harmless, until someone decides it wasn\u2019t.",
           "type": "npc_line"
         },
         {

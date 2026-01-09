@@ -242,6 +242,7 @@ def main() -> None:
             print(f"Warning: invalid JSON in {path}")
             continue
         scene_name = path.name
+        print(scene_name)
         all_nodes.extend(build_nodes(data, character_id, scene_name))
 
     out_dir = base_dir / "dialogue"
@@ -402,9 +403,8 @@ def main() -> None:
         if not isinstance(scene, str) or not isinstance(node_id, str):
             continue
         if not isinstance(revised, str) or not revised.strip():
-            raise SystemExit(
-                f"Empty revisedLine for scene {scene} node {node_id}. Aborting."
-            )
+            print(f"Warning: empty revisedLine for scene {scene} node {node_id}; skipping.")
+            continue
         updates_by_scene.setdefault(scene, {})[node_id] = revised.strip()
 
     dialogue_dir = Path("story_specific_gen") / "dialogue"

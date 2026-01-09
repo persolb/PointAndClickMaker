@@ -9,7 +9,7 @@
           "id": "N00_ESTABLISH",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "Window 5: SAFETY. The glass is cloudy where hundreds of fingerprints gave up. A narrow slot waits beneath a sign that says: \u201cISSUANCE IS NOT ACCESS.\u201d",
+          "text": "Window 5: SAFETY. The glass is cloudy where hundreds of fingerprints gave up. (pause) A narrow slot waits beneath a sign: \u201cISSUANCE IS NOT ACCESS.\u201d",
           "conditions": [
             {
               "key": "act2.terIssued",
@@ -205,7 +205,7 @@
           "id": "N51_TER_JUDGMENT",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You press the TER against the cloudy pane. The speaker goes quiet long enough to feel like judgment.",
+          "text": "You press TER against the pane. The speaker goes quiet long enough to feel like judgment.",
           "next": "N52_TER_ACK"
         },
         {
@@ -334,7 +334,7 @@
           "id": "N74_HP_TAKE_TAG",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You take the glove tag. It sits in your palm like a tiny permission that refuses to call itself permission.",
+          "text": "You take the glove tag. It sits in your palm, permission too small to name itself.",
           "next": "N_END_COLLECT_HP"
         },
         {
@@ -427,7 +427,7 @@
           "id": "N92_ACC_TAG_DROPS",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "A small metal tag drops into the tray. It\u2019s stamped with a number that looks more like a route than an ID.",
+          "text": "A small metal tag drops into the tray. (pause) It\u2019s stamped with a number that looks more like a route than an ID.",
           "next": "N93_ACC_WARN"
         },
         {
@@ -441,7 +441,7 @@
           "id": "N94_ACC_TAKE_TAG",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You take the glove tag. The window\u2019s speaker clicks off before you can ask the next question.",
+          "text": "You take the glove tag. The window speaker clicks off before you can ask another question.",
           "next": "N_END_COLLECT_ACC"
         },
         {

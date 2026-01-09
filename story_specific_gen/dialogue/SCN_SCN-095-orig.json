@@ -1,0 +1,73 @@
+{
+  "dialogueGraphs": [
+    {
+      "id": "DG_STATUS_CLUSTER",
+      "nodes": [
+        {
+          "id": "N_STATUS_ENTER",
+          "next": "PC_STATUS",
+          "speakerId": "NARRATOR",
+          "text": "A cluster of indicator lamps and a numeric display sits on a pedestal, like it expects a person to stand here and feel responsible.\nLabels are hand-applied: some typed, some stamped, some written in pencil and then \u201cmade official\u201d with clear tape.\nThe readouts don\u2019t say ON or OFF. They say:\nROTATION: CONTINUOUS\nALIGNMENT: UNCONFIRMED / LAST: [blank]\nLOAD: STABLE (PER AGREEMENT)",
+          "type": "npc_line"
+        },
+        {
+          "choices": [
+            {
+              "id": "C_ASK_AGREEMENT",
+              "next": "N_STATUS_AGREEMENT",
+              "text": "ask: Per whose agreement?"
+            },
+            {
+              "checks": [
+                {
+                  "dc": 12,
+                  "skill": "compliance",
+                  "type": "skill"
+                }
+              ],
+              "id": "C_ASK_APPENDIX",
+              "onFailNext": "N_STATUS_APPENDIX_FAIL",
+              "onPassNext": "N_STATUS_APPENDIX_PASS",
+              "text": "ask: Interpret \u201cREFER TO APPENDIX D.\u201d"
+            },
+            {
+              "id": "C_LEAVE",
+              "next": "END",
+              "text": "leave: back"
+            }
+          ],
+          "id": "PC_STATUS",
+          "speakerId": "PLAYER",
+          "type": "player_choice"
+        },
+        {
+          "id": "N_STATUS_AGREEMENT",
+          "next": "END",
+          "speakerId": "NARRATOR",
+          "text": "There\u2019s no answer\u2014only the quiet insistence of the display.\nA tiny sticker beneath it says: IF QUESTIONED, REFER TO APPENDIX D.\nAppendix D is not present.",
+          "type": "npc_line"
+        },
+        {
+          "id": "N_STATUS_APPENDIX_PASS",
+          "next": "END",
+          "speakerId": "NARRATOR",
+          "text": "Appendix D is the kind of addendum that exists to make responsibility transferrable.\nIt usually defines witness thresholds, recording requirements, and what counts as \u201cpresence\u201d when someone later asks why a procedure happened without a second set of eyes.\nHere, it\u2019s referenced like a shield and missing like a confession.",
+          "type": "npc_line"
+        },
+        {
+          "id": "N_STATUS_APPENDIX_FAIL",
+          "next": "END",
+          "speakerId": "NARRATOR",
+          "text": "You can\u2019t reconstruct it from the labels alone.\nThe reference is doing its job: it points somewhere that can\u2019t contradict the panel today, but can contradict you later.",
+          "type": "npc_line"
+        },
+        {
+          "id": "END",
+          "type": "end"
+        }
+      ],
+      "sceneId": "SCN-095",
+      "startNodeId": "N_STATUS_ENTER"
+    }
+  ]
+}

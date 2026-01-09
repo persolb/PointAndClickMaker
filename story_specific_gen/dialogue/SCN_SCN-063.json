@@ -9,14 +9,14 @@
           "id": "N0_INTRO_1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The Control Room smells like hot dust and laminated paper. The main console is awake. The alarms are quiet in the way a system gets quiet when it has learned you\u2019re in charge.",
+          "text": "The Control Room smells like hot dust and laminated paper. (pause) The main console is awake. (pause) The alarms are quiet. (pause) It's the kind of quiet a system learns once you\u2019re in charge.",
           "next": "N1_INTRO_2"
         },
         {
           "id": "N1_INTRO_2",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "A stack of notices sits under a magnet that says OLEA FACILITIES ARE BORING. The notices are not from OLEA.",
+          "text": "A stack of notices sits under a magnet: OLEA FACILITIES ARE BORING. They\u2019re not from OLEA.",
           "next": "N2_MAIN_MENU"
         },
         {
@@ -45,7 +45,7 @@
           "id": "N5_NOTICES_1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The top sheet is titled NON-LOCAL COMPLIANCE ADVISORY, printed on thick stock that pretends to be municipal. The letterhead is a clean acronym you don\u2019t recognize. The date predates most of the binder downstairs.",
+          "text": "The top sheet is titled NON-LOCAL COMPLIANCE ADVISORY, printed on thick stock. (pause) It pretends to be municipal. (pause) The letterhead is a clean acronym you don\u2019t recognize. (pause) The date predates most of the binder downstairs.",
           "next": "N6_NOTICES_2"
         },
         {
@@ -59,7 +59,7 @@
           "id": "N7_NOTICES_3",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You can file it, ignore it, or treat it as evidence later. The room does not care.",
+          "text": "You can file it, ignore it, or treat it as evidence. The room does not care.",
           "next": "N8_NOTICES_MENU"
         },
         {
@@ -78,14 +78,14 @@
           "id": "N20_BINDER_DESC_1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The procedure binder is swollen with addenda. Someone has re-tabbed it three times, like the binder itself kept failing inspections.",
+          "text": "Procedure binder swollen with addenda. Someone re-tabbed it three times, as if it kept failing inspections.",
           "next": "N21_BINDER_DESC_2"
         },
         {
           "id": "N21_BINDER_DESC_2",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The shutdown sequence is present. The definitions section has been stapled over with a \u201ctemporary clarification\u201d that looks permanent.",
+          "text": "Shutdown sequence is present. Definitions section is stapled over with a \u201ctemporary clarification\u201d that looks permanent.",
           "next": "N22_BINDER_MENU"
         },
         {
@@ -119,7 +119,7 @@
           "id": "N23_DEFINITIONS_1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The definitions page defines \u201cpresence\u201d as \u201cverifiable occupancy within the operational envelope.\u201d Someone circled \u201cverifiable\u201d and wrote: PRINT.",
+          "text": "The definitions define \u201cpresence\u201d as \u201cverifiable occupancy within operational envelope.\u201d Someone circled \u201cverifiable\u201d and wrote: PRINT.",
           "next": "N24_LIAISON_DEFINITIONS"
         },
         {
@@ -145,7 +145,7 @@
           "id": "N25_SHUTDOWN_1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The shutdown sequence begins with three steps of \u201cConfirm,\u201d then a step of \u201cNotify,\u201d then a step of \u201cConfirm\u201d that you notified. The last page is missing, replaced with a sheet titled \u201cCross-Jurisdictional Coordination (Do Not Execute Without Authority).\u201d",
+          "text": "Shutdown starts with three \u201cConfirm\u201d steps. (pause) Then \u201cNotify.\u201d (pause) Then \u201cConfirm\u201d you notified. (pause) The last page is missing. (pause) It\u2019s replaced by a sheet titled \u201cCross-Jurisdictional Coordination (Do Not Execute Without Authority).\u201d",
           "next": "N26_LIAISON_SHUTDOWN"
         },
         {
@@ -204,7 +204,7 @@
           "id": "N90_LEAVE_CORRIDOR_1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You step toward the corridor. The Control Room stays lit behind you, as if it\u2019s keeping your seat warm for the report.",
+          "text": "You step toward the corridor. (pause) The Control Room stays lit behind you, like it\u2019s keeping your seat warm for the report.",
           "next": "N92_END_LEAVE_CORRIDOR"
         },
         {
@@ -215,7 +215,7 @@
           "id": "N91_LEAVE_DECK_1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You angle toward the observation deck access. The console fan sound follows for a beat longer than it should.",
+          "text": "You angle toward observation deck access. The console fan sound follows a beat too long.",
           "next": "N93_END_LEAVE_DECK"
         },
         {

@@ -9,7 +9,7 @@
           "id": "START",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The car trunk is open. An equipment case sits inside like it has been waiting to be blamed.\nNext to it: a binder shell. White plastic. Hand-labeled: \u201cClosure Package \u2013 SPINDLE Site (Draft).\u201d The label is slightly off-center.",
+          "text": "Trunk\u2019s open. (pause) Equipment case sits there, like it\u2019s waiting to get blamed. (pause) Next to it: the binder shell. (pause) White plastic, labeled \u201cClosure Package \u2013 SPINDLE Site (Draft).\u201d (pause) Label\u2019s a little crooked.",
           "conditions": [
             {
               "key": "inventory.kitCollected",
@@ -63,14 +63,14 @@
           "id": "CASE_DESC",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "Hardhat. Safety glasses. A multimeter with the calibration sticker half-peeled.\nA roll of temporary labels. Blank inspection tags. A label maker that politely advertises LOW BATT.\nIt\u2019s the kind of kit that assumes you will document your own survival.",
+          "text": "Hardhat. Safety glasses. Multimeter\u2014cal sticker half-peeled. (pause)\nTemp labels. Blank inspection tags. (pause)\nLabel maker flashing LOW BATT. (pause)\nYeah. The kit assumes you\u2019ll have to prove you were careful.",
           "next": "BACK_CHOICE"
         },
         {
           "id": "BINDER_DESC",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The cover reads \u201cClosure Package \u2013 SPINDLE Site (Draft).\u201d\n\u201cDraft\u201d is underlined once, like someone wanted that to be true.\nThe rings don\u2019t quite close without a shove.",
+          "text": "Cover: \u201cClosure Package \u2013 SPINDLE Site (Draft).\u201d \u201cDraft\u201d underlined. Rings won\u2019t close unless you shove.",
           "next": "BACK_CHOICE"
         },
         {
@@ -89,21 +89,21 @@
           "id": "PPE_FAIL",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "Procedure note (OLEA): Donning occurs beyond the perimeter signage.\nYou can\u2019t make \u201ccompliant\u201d start in the parking lot.",
+          "text": "OLEA note says PPE starts beyond the perimeter signage. (pause)\nSo no\u2014you can\u2019t call the parking lot \u201ccompliant.\u201d",
           "next": "MENU"
         },
         {
           "id": "PPE_PASS",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "Perimeter condition satisfied. You can don PPE here\u2014if you\u2019re willing to treat the trunk like a staging table instead of a boundary.",
+          "text": "Perimeter condition\u2019s met. You can gear up here\u2014if you\u2019re treating the trunk as your staging table.",
           "next": "MENU"
         },
         {
           "id": "COLLECT_LINE",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You take the starter kit and the empty closure binder shell. The trunk feels lighter in a way that isn\u2019t reassuring.\nItems secured: hardhat, safety glasses, multimeter, temporary label roll, blank inspection tag, label maker (low battery), closure binder shell.\nPaperwork completeness: +1.",
+          "text": "You grab the starter kit and the empty closure binder shell. (pause) Trunk\u2019s lighter. (pause) Doesn\u2019t feel better. (pause) Packed: hardhat; safety glasses; multimeter. (pause) Temporary label roll; blank inspection tag; label maker\u2014low battery; closure binder shell. (pause) Paperwork completeness: +1.",
           "next": "END_COLLECT"
         },
         {
@@ -162,7 +162,7 @@
           "id": "LEAVE_LINE",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You close the trunk. The latch catches on the first try, which is either luck or a future problem.\nNothing is collected.",
+          "text": "You close the trunk. Latch catches first try.\nNothing collected.",
           "next": "END_LEAVE"
         },
         {

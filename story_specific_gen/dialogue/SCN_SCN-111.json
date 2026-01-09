@@ -7,7 +7,7 @@
           "id": "N30_ALARM_DESC_1",
           "next": "N31_ALARM_DESC_2",
           "speakerId": "NARRATOR",
-          "text": "The alarm panel is an antique grid of labeled lights. Half the labels have been replaced by tape that insists it was always official.",
+          "text": "The alarm panel is an antique grid of labeled lights. (pause) Half the labels are replaced by tape, claiming it was always official.",
           "type": "npc_line"
         },
         {
@@ -93,7 +93,7 @@
           "id": "N37_ALARM_ACK_RESULT",
           "next": "N38_LIAISON_ACK",
           "speakerId": "NARRATOR",
-          "text": "You press ACK. The amber light goes from steady to steady, but now it\u2019s the steadiness of something that can say it was acknowledged.",
+          "text": "You press ACK. The amber light stays steady, now steady with the quiet certainty of acknowledged.",
           "type": "npc_line"
         },
         {

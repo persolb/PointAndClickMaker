@@ -9,14 +9,14 @@
           "id": "INTRO_1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The Operations Corridor narrows into a pocket of signage and hardware: a red-painted lock point, a laminated placard stack on a clip, and a label maker bolted down like it\u2019s part of the facility. A single inspection tag hangs on a wire ring. The rest is empty hooks and old adhesive shadows.",
+          "text": "The Operations Corridor narrows into a pocket of signage and hardware: (pause) a red-painted lock point. (pause) A laminated placard stack on a clip. (pause) A label maker bolted down, like it\u2019s part of the facility. (pause) A single inspection tag hangs on a wire ring. (pause) The rest is empty hooks and old adhesive shadows.",
           "next": "INTRO_2"
         },
         {
           "id": "INTRO_2",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "A placard above the hasp reads: \u201cLOCKOUT/TAGOUT \u2014 ALL ENERGY SOURCES.\u201d Someone has underlined \u201cALL\u201d twice, carefully.",
+          "text": "A placard over the hasp reads: \u201cLOCKOUT/TAGOUT \u2014 ALL ENERGY SOURCES.\u201d Someone underlined \u201cALL\u201d twice, carefully.",
           "next": "MAIN_MENU"
         },
         {
@@ -69,14 +69,14 @@
           "id": "LOOK_PLACARDS_1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The top placard is current enough to be embarrassing. It wants: date, work order, name, contact, device ID, and \u201creason for isolation.\u201d There\u2019s a handwritten note in the margin: \u201cTEMP TAGS OK IF PHOTO ATTACHED.\u201d The handwriting is precise, like someone trying not to be remembered.",
+          "text": "The top placard is current enough to be embarrassing. (pause) It wants: date; work order; name; contact; device ID; and \u201creason for isolation.\u201d (pause) There\u2019s a handwritten note in the margin: \u201cTEMP TAGS OK IF PHOTO ATTACHED.\u201d (pause) The handwriting is precise\u2014like someone trying not to be remembered.",
           "next": "R_MAIN_MENU"
         },
         {
           "id": "LOOK_SUBPOINTS_1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The subpoints list is longer than the hardware suggests: ventilation interlock, panel feed, auxiliary drive, and a \u201clegacy bypass\u201d that has no corresponding label. A sticker says: \u201cDO NOT REMOVE \u2014 HISTORICAL.\u201d It is peeling from the bottom up, stubbornly.",
+          "text": "The subpoints list runs longer than the hardware suggests: ventilation interlock and panel feed; auxiliary drive. (pause) And a \u201clegacy bypass\u201d with no corresponding label. (pause) A sticker says: \u201cDO NOT REMOVE \u2014 HISTORICAL.\u201d (pause) It is peeling from the bottom up\u2014stubbornly.",
           "next": "R_MAIN_MENU"
         },
         {
@@ -198,7 +198,7 @@
           "id": "SHOW_1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You hold your credential up to the phone camera mounted above the placard stack. The lens smears the text, but the seal is clear enough to be annoying.",
+          "text": "You hold credential to the camera above the placard stack. Text smears; seal is annoyingly clear.",
           "next": "EAC_OLEA_1"
         },
         {
@@ -241,14 +241,14 @@
           "id": "APPLY_1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The label maker wakes up with a thin, offended beep. The tape cartridge is half-full and slightly yellowed, like it\u2019s been waiting longer than it should. You type device IDs from the placard list, one at a time, and print TEMP tags with matching dates.",
+          "text": "The label maker wakes up with a thin, offended beep. (pause) The tape cartridge is half-full and slightly yellowed. (pause) It looks like it\u2019s been waiting longer than it should. (pause) You type device IDs from the placard list, one at a time. (pause) Then you print TEMP tags with matching dates.",
           "next": "APPLY_2"
         },
         {
           "id": "APPLY_2",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You apply the single real inspection tag to the main lock point, then affix the printed TEMP tags at the listed subpoints, aligning them so they look intentional. You annotate the placard: date/time, work order, device IDs, and the reason: \u201cInventory limitation \u2014 TEMP tags used at subpoints; primary isolation tagged at main.\u201d",
+          "text": "Apply the single real inspection tag at the main lock point. (pause) Then affix printed TEMP tags at listed subpoints. (pause) Align them so they look intentional. (pause) Annotate the placard: date/time; work order; device IDs. (pause) Add the reason: \u201cInventory limitation \u2014 TEMP tags used at subpoints; primary isolation tagged at main.\u201d",
           "next": "EAC_RECORD_1"
         },
         {
@@ -298,7 +298,7 @@
           "id": "LEAVE_1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You leave the lock point as you found it: one real tag on a ring, and a placard that expects a world with supplies. The corridor remains open to the adjacent screens.",
+          "text": "You leave the lock point as you found it: one real tag on a ring. (pause) And a placard that expects a world with supplies. (pause) The corridor stays open to the adjacent screens.",
           "next": "END_NO_ACTION"
         },
         {

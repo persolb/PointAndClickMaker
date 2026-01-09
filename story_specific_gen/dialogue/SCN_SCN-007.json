@@ -9,7 +9,7 @@
           "id": "N0_INTRO_A",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "A riveted label plate sits beside the pneumatic tube intake\u2014scratched clean where hands kept checking it long after the rest of the shack went quiet.",
+          "text": "A riveted label plate sits beside the pneumatic tube intake. (pause) Scratched clean from hands checking it after the shack went quiet.",
           "conditions": [
             {
               "key": "knowledge.tubeRoutesNoted",
@@ -96,7 +96,7 @@
           "id": "N4_ASK_NARR",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The plate doesn\u2019t answer. It does what signage always does here: insists someone once needed this to be true.",
+          "text": "The plate doesn\u2019t answer. It does what signage does here: insists someone once needed this true.",
           "next": "N2_MENU"
         },
         {
@@ -152,21 +152,21 @@
           "id": "N10_SHOW_PASS_A",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The call box has a slot for credentials. The slot is taped over with a strip that reads: \u201cTEMPORARY \u2014 DO NOT MAKE PERMANENT.\u201d",
+          "text": "The call box has a slot for credentials. (pause) It\u2019s taped over with a strip reading: \u201cTEMPORARY \u2014 DO NOT MAKE PERMANENT.\u201d",
           "next": "N10_SHOW_PASS_B"
         },
         {
           "id": "N10_SHOW_PASS_B",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "Even if you had the right token, access is still a story someone has to agree to.",
+          "text": "Even if you had the token, access is still a story someone has to agree to.",
           "next": "N2_MENU"
         },
         {
           "id": "N11_SHOW_FAIL_A",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The call box has a slot for credentials. The slot is taped over with a strip that reads: \u201cTEMPORARY \u2014 DO NOT MAKE PERMANENT.\u201d",
+          "text": "The call box has a credentials slot. (pause) It\u2019s taped over with a strip: \u201cTEMPORARY \u2014 DO NOT MAKE PERMANENT.\u201d",
           "next": "N11_SHOW_FAIL_B"
         },
         {
@@ -220,7 +220,7 @@
           "id": "N20_LEAVE_A",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You step back from the plate. The arrows stay in your head like they\u2019re part of the facility\u2019s circulatory system, whether the tubes move or not.",
+          "text": "You step back from the plate. (pause) The arrows stay in your head, part of the facility\u2019s circulatory system. (pause) The tubes may move or not.",
           "next": "N21_END_LEAVE"
         },
         {

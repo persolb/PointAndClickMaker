@@ -16,7 +16,7 @@
               "value": false
             }
           ],
-          "text": "Non-Local Compliance Notices Room. A fluorescent hum, a stale paper smell, and a rack of templates that don\u2019t quite belong anywhere.\nA notice on the wall carries a barcode format you don\u2019t recognize. It\u2019s been carefully re-taped, like that fixes the jurisdiction.",
+          "text": "Non-Local Compliance Notices Room. (pause) Fluorescent hum. Stale paper smell. (pause) A rack of templates that don\u2019t quite belong anywhere. (pause) A notice on the wall has a barcode format you don\u2019t recognize. (pause) It\u2019s been carefully re-taped. Like that fixes the jurisdiction.",
           "next": "N_PLAYER_LOOK_AROUND"
         },
         {
@@ -30,7 +30,7 @@
           "id": "N_OVERVIEW",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "Three hotspots compete for your attention: a forms rack labeled \u201cMISFITS / DO NOT DISCARD,\u201d an unsealed envelope stack, and the barcode notice with unfamiliar striping.",
+          "text": "Three hotspots vie: \u201cMISFITS / DO NOT DISCARD\u201d forms-rack; unsealed envelope-stack; barcode notice and unfamiliar striping.",
           "next": "N_MAIN_MENU"
         },
         {
@@ -64,7 +64,7 @@
           "id": "N_FORMS_DESC",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The rack holds templates that failed to integrate into local policy. The tabs are color-coded with the confidence of someone who\u2019s never had to defend them.\nOne folder is labeled: \u201cTRAINING WAIVER \u2014 FIELD PRESENCE / LIABILITY LIMITATION.\u201d",
+          "text": "The rack holds templates that failed to integrate into local policy. (pause) The tabs are color-coded with the confidence of someone who\u2019s never had to defend them. (pause)\nOne folder is labeled: \u201cTRAINING WAIVER \u2014 FIELD PRESENCE / LIABILITY LIMITATION.\u201d",
           "next": "N_FORMS_MENU"
         },
         {
@@ -98,7 +98,7 @@
           "id": "N_WAIVER_CLOSER",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The language is clean, aggressive, and oddly comforting. It doesn\u2019t say you\u2019re safe. It says everyone agreed on what \u201csafe\u201d means, which is usually the part that survives.\nA footer reads: \u201cNon-local equivalency accepted where local training is unavailable.\u201d The word \u201cequivalency\u201d is underlined twice.",
+          "text": "The language is clean. Aggressive. Oddly comforting. (pause) It doesn\u2019t say you\u2019re safe. (pause) It says everyone agreed on what \u201csafe\u201d means. (pause) That\u2019s usually the part that survives. (pause) A footer reads: \u201cNon-local equivalency accepted where local training is unavailable.\u201d (pause) The word \u201cequivalency\u201d is underlined twice.",
           "next": "N_WAIVER_MENU"
         },
         {
@@ -141,7 +141,7 @@
           "id": "N_ASK_EQUIVALENCY",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "There\u2019s no author, no department code, just a revision history that keeps renaming itself. The most recent revision is \u201cR5: Comparable Instruction Standard.\u201d\nYou can almost hear an auditor insisting that a thing can be true if it\u2019s comparable to something else.",
+          "text": "There\u2019s no author. No department code. (pause) Just a revision history that keeps renaming itself. (pause) Latest is \u201cR5: Comparable Instruction Standard.\u201d (pause) You can almost hear an auditor: true, if it\u2019s comparable to something else.",
           "next": "N_EQUIVALENCY_MENU"
         },
         {
@@ -165,7 +165,7 @@
           "id": "N_ASK_MISFITS",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "Someone wrote in pen: \u201cVALID BUT NOT OURS.\u201d Then crossed out \u201cours\u201d and wrote \u201cLOCAL.\u201d\nBeneath it, in smaller handwriting: \u201cDo not cite origin unless asked.\u201d",
+          "text": "Someone wrote in pen: \u201cVALID BUT NOT OURS.\u201d (pause) Then crossed out \u201cours\u201d and wrote \u201cLOCAL.\u201d (pause) Beneath it, in smaller handwriting: \u201cDo not cite origin unless asked.\u201d",
           "next": "N_MISFITS_MENU"
         },
         {
@@ -189,21 +189,21 @@
           "id": "N_AUDITOR_PASS",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "It\u2019s defensible. It defines \u201cfield presence\u201d as an operational necessity, ties it to a training acknowledgement, and limits liability by documenting the boundary conditions.\nIt won\u2019t make you safe. It will make you legible.",
+          "text": "It\u2019s defensible. (pause) It defines \u201cfield presence\u201d as operational necessity. (pause) It links it to a training acknowledgement. (pause) It documents boundary conditions to limit liability. (pause) It won\u2019t make you safe. (pause) It will make you legible.",
           "next": "N_WAIVER_MENU"
         },
         {
           "id": "N_AUDITOR_FAIL",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "It reads like someone trying to survive a question they already got asked once. Clean language. Hard edges.\nIf you have to explain it out loud, you\u2019ll lose time.",
+          "text": "It reads like someone trying to survive a question they\u2019ve already been asked once. (pause) Clean language. Hard edges. (pause) If you have to explain it out loud you\u2019ll lose time.",
           "next": "N_WAIVER_MENU"
         },
         {
           "id": "N_TAKE_TEMPLATE",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You pull the training waiver template free. The paper has that slightly waxy finish that says \u201cmeant to be copied until nobody remembers where it came from.\u201d\nIt will read well in a binder.",
+          "text": "You pull the training waiver template free. (pause) The paper has a slightly waxy finish. (pause) It whispers, \u201cmeant to be copied.\u201d (pause) \u201cUntil nobody remembers where it came from.\u201d (pause) It will read well in a binder.",
           "next": "N_PLAYER_KEEP_IT"
         },
         {
@@ -217,7 +217,7 @@
           "id": "N_ADDED_TEMPLATE",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "Added: Training Waiver Template.\nThe rack settles back into place like it\u2019s relieved you didn\u2019t ask for a second copy.",
+          "text": "Added: Training Waiver Template. The rack settles back, relieved you didn\u2019t ask for a second copy.",
           "next": "N_END_COLLECT"
         },
         {
@@ -241,7 +241,7 @@
           "id": "N_ENVELOPE_DESC",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "A stack of pre-addressed envelopes. No return address, just a stamp box that\u2019s been filled in with blocky, careful handwriting.\nThe destination lines reference \u201cAssurance Intake\u201d and \u201cCross-Region Compliance,\u201d like those are normal places you\u2019d mail things.",
+          "text": "A stack of pre-addressed envelopes. (pause) No return address. (pause) Only a stamp box, filled in with blocky careful handwriting. (pause) Destination lines: \u201cAssurance Intake\u201d and \u201cCross-Region Compliance.\u201d (pause) As if they\u2019re normal places you\u2019d mail things.",
           "next": "N_ENVELOPE_MENU"
         },
         {
@@ -270,14 +270,14 @@
           "id": "N_POSTMARKS",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The postmarks don\u2019t match any local carrier mark you\u2019ve seen. The dates are formatted with an extra digit, as if time needed a longer field.\nSomeone has written \u201cDO NOT LICK\u201d on the top envelope. Underlined.",
+          "text": "The postmarks don\u2019t match any local carrier mark you\u2019ve seen. (pause) The dates have an extra digit, like time needed a longer field. (pause) Someone has written \u201cDO NOT LICK\u201d on the top envelope. (pause) Underlined.",
           "next": "N_ENVELOPE_BACK"
         },
         {
           "id": "N_UNSEALED",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "There\u2019s no instruction sheet, just a sticky note: \u201cSeal only after attaching proof.\u201d\nProof of what isn\u2019t specified, which is its own kind of policy.",
+          "text": "There\u2019s no instruction sheet. (pause) Just a sticky note: \u201cSeal only after attaching proof.\u201d (pause) Proof of what isn\u2019t specified. (pause) That\u2019s its own kind of policy.",
           "next": "N_ENVELOPE_BACK"
         },
         {
@@ -296,7 +296,7 @@
           "id": "N_BARCODE_DESC",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "A compliance notice printed on heavier stock than it deserves. The barcode is wrong in a very deliberate way\u2014too dense, too tall, as if it expects a different reader.\nThe header says \u201cNOTICE OF NON-LOCAL COMPARABILITY REVIEW,\u201d and the body text avoids nouns like it\u2019s been sued before.",
+          "text": "A compliance notice printed on heavier stock than it deserves. (pause) The barcode is wrong in a deliberate way\u2014too dense, too tall. (pause) As if it expects a different reader. (pause) The header says \u201cNOTICE OF NON-LOCAL COMPARABILITY REVIEW.\u201d (pause) The body text avoids nouns like it\u2019s been sued before.",
           "next": "N_BARCODE_MENU"
         },
         {
@@ -325,14 +325,14 @@
           "id": "N_READ_NOTICE",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "It outlines a review process that assumes your facility is \u201coperationally adjacent\u201d to something else. It never says what.\nAt the bottom: \u201cFailure to respond constitutes acknowledgement of receipt.\u201d Someone circled \u201cacknowledgement\u201d like that\u2019s the dangerous word.",
+          "text": "It outlines a review process that assumes your facility is \u201coperationally adjacent\u201d to something else. (pause) It never says what. (pause) At the bottom: \u201cFailure to respond constitutes acknowledgement of receipt.\u201d (pause) Someone circled \u201cacknowledgement\u201d like that\u2019s the dangerous word.",
           "next": "N_BARCODE_BACK"
         },
         {
           "id": "N_COMPARABLE",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The notice doesn\u2019t answer questions. It only defines what counts as an answer.\nThere\u2019s a blank line labeled \u201cLocal Reference Facility,\u201d and it\u2019s been left blank with confidence.",
+          "text": "The notice doesn\u2019t answer questions. It only defines what counts as an answer. (pause) There\u2019s a blank line labeled \u201cLocal Reference Facility.\u201d (pause) It\u2019s been left blank with confidence.",
           "next": "N_BARCODE_BACK"
         },
         {
@@ -351,7 +351,7 @@
           "id": "N_LEAVE",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You step back from the paperwork long enough to remember you\u2019re here to finish a shutdown, not adopt a new bureaucracy.\nThe room stays exactly as it was, waiting to be cited.",
+          "text": "You step back from the paperwork long enough to remember: (pause) you\u2019re here to finish a shutdown, not adopt a new bureaucracy. (pause) The room stays exactly as it was, waiting to be cited.",
           "next": "N_END_LEAVE"
         },
         {

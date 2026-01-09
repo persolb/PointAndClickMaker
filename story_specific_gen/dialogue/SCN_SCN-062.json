@@ -9,7 +9,7 @@
           "id": "N_ENTER",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The SPINDLE Chamber Floor smells like cold dust and warmed insulation.\nThe containment sphere sits in its cradle, matte and over-insulated\u2014\nthen, for a fraction of a second, it isn\u2019t.\nThe surface flickers reflective, like a mirror that would prefer a different room.\nThe floor signage still reads NORMAL OPERATIONS, which is either optimism or fraud.",
+          "text": "The SPINDLE Chamber Floor smells like cold dust and warmed insulation. (pause) The containment sphere sits in its cradle. Matte. Over-insulated. (pause) Then for a fraction of a second it isn\u2019t. (pause) The surface flickers reflective. Like a mirror that would prefer a different room. (pause) The floor signage still reads NORMAL OPERATIONS. Either optimism or fraud.",
           "next": "N_MAIN_MENU"
         },
         {
@@ -28,7 +28,7 @@
           "id": "N_COMMIT_NARR",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You don\u2019t fix the hold. You make it legible.\nYou print the notice. You capture the reference number. You create a timestamped chain that says you were here, and you saw it, and you did not improvise alone.\nThe sphere flickers once more\u2014mirror, matte\u2014like it\u2019s being kept open on purpose.\nThe room accepts your paperwork the way it accepts power: without gratitude.",
+          "text": "You don\u2019t fix the hold. You make it legible. (pause)\nYou print the notice. You capture the reference number. (pause)\nYou create a timestamped chain. (pause)\nIt says you were here. You saw it. You did not improvise alone. (pause)\nThe sphere flickers once more\u2014mirror then matte\u2014like it\u2019s being kept open on purpose. (pause)\nThe room accepts your paperwork the way it accepts power: without gratitude.",
           "next": "END_ACT3_HELD_OPEN"
         },
         {

@@ -9,14 +9,14 @@
           "id": "N_INTRO_1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The Intake Hall is a straight corridor of windows and rules.\nIt feels like a DMV built by a risk committee.",
+          "text": "The Intake Hall is a straight corridor of windows and rules. (pause) It feels like a DMV built by a risk committee.",
           "next": "N_INTRO_2"
         },
         {
           "id": "N_INTRO_2",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "Five counters. Five numbers that skip comfort: 0, 3, 5, 7, 9.\nEach window has a placard like a verdict.\nA forms rack stands between them, stocked with \u201cMISROUTED CARGO TEMPLATES,\u201d all crisp, all wrong in advance.",
+          "text": "Five counters. (pause)\nFive numbers that skip comfort: 0 3 5 7 9. (pause)\nEach window has a placard like a verdict. (pause)\nA forms rack stands between them, stocked with \u201cMISROUTED CARGO TEMPLATES\u201d. (pause)\nAll crisp, all wrong in advance.",
           "next": "PC_MAIN"
         },
         {

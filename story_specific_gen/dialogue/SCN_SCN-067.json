@@ -26,7 +26,7 @@
               "value": true
             }
           ],
-          "text": "The SPINDLE Chamber Floor smells like cold dust and warmed insulation.\nThe containment sphere sits in its cradle, matte and over-insulated\u2014\nthen, for a fraction of a second, it isn\u2019t.\nThe surface flickers reflective, like a surface filing itself under a different room.\n\nThe interface scan panel waits with a polite prompt that assumes you\u2019ll cooperate.\nA label on the frame reads: SUBMISSIONS BECOME RECORD.\nSomeone has added, in pen: \u201cEspecially the wrong ones.\u201d",
+          "text": "The SPINDLE Chamber Floor smells like cold dust and warmed insulation. (pause)\nThe containment sphere sits in its cradle. Matte and over-insulated. (pause)\nThen for a fraction of a second it isn\u2019t. (pause)\nThe surface flickers reflective. Like a surface filing itself under a different room. (pause)\nThe interface scan panel waits with a polite prompt. It expects you\u2019ll cooperate. (pause)\nA label on the frame reads: SUBMISSIONS BECOME RECORD. (pause)\nSomeone has added in pen: \u201cEspecially the wrong ones.\u201d",
           "next": "N_MAIN_MENU"
         },
         {
@@ -70,7 +70,7 @@
           "id": "N_SPHERE_INTRO",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "Up close, the sphere is mostly matte\u2014industrial, honest, designed to be ignored.\nThen it catches the room wrong. The reflection doesn\u2019t resolve into any angle you\u2019re standing in.\nIt flickers back to matte before your eyes finish reporting it.",
+          "text": "Up close, the sphere is mostly matte\u2014industrial and honest, designed to be ignored. (pause)\nThen it catches the room wrong. (pause)\nThe reflection won\u2019t resolve into any angle you\u2019re standing in. (pause)\nIt flickers back to matte before your eyes finish reporting it.",
           "next": "N_SPHERE_OPS_WARN"
         },
         {
@@ -127,7 +127,7 @@
           "id": "N_STATUS_INTRO",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The status indicator cluster is lit with careful colors: greens that mean allowed, ambers that mean pending.\nOne amber lamp is labeled in a different font: HOLD / NON-LOCAL.\nBeneath it, a printed tag list includes: STANDING INDICATOR: UNKNOWN. SERVICE CLASS: UNRESOLVED.",
+          "text": "The status indicator cluster glows in careful colors: (pause) greens for allowed, ambers for pending. (pause) One amber lamp reads, in a different font: HOLD / NON-LOCAL. (pause) Beneath it the printed tag list includes: STANDING INDICATOR: UNKNOWN. SERVICE CLASS: UNRESOLVED.",
           "next": "N_STATUS_PLAYER_BEAT"
         },
         {
@@ -196,7 +196,7 @@
           "id": "N_ESTOP_INTRO",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The emergency stop is a red mushroom button under a clear flip cover.\nThe cover is scuffed from hands that stopped just short of being responsible.",
+          "text": "Emergency stop: red mushroom button under clear flip cover, scuffed by hands just short of responsibility.",
           "next": "N_ESTOP_OPS_WARN"
         },
         {
@@ -239,14 +239,14 @@
           "id": "N_ESTOP_PLACARD_NARR",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The placard reads: USE ONLY TO PREVENT IMMINENT HARM.\nBelow it: ACTIVATION REQUIRES POST-EVENT REPORT.\nSomeone underlined REPORT twice.",
+          "text": "Placard reads: USE ONLY TO PREVENT IMMINENT HARM. Below: ACTIVATION REQUIRES POST-EVENT REPORT. REPORT underlined twice.",
           "next": "N_ESTOP_MENU"
         },
         {
           "id": "N_SCAN_INTRO",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The interface scan panel is a waist-high slab of glass with a keypad that assumes obedience.\nIts prompt is cheerful in the way compliance software is cheerful: SELECT FORM / SUBMIT.",
+          "text": "The interface scan panel is a waist-high slab of glass (pause) with a keypad that assumes obedience.\nIts prompt is cheerful (pause) in the way compliance software is cheerful: SELECT FORM / SUBMIT.",
           "next": "N_SCAN_OPS_COACH"
         },
         {
@@ -260,7 +260,7 @@
           "id": "N_SCAN_NARR_LIST",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The panel offers a short list. One entry is already highlighted, like it\u2019s been waiting for you:\nTEMPORARY OPERATING VARIANCE \u2014 HOLD CONDITION (NON-LOCAL).",
+          "text": "The panel offers a short list. (pause) One entry is already highlighted, like it\u2019s been waiting for you: (pause) TEMPORARY OPERATING VARIANCE \u2014 HOLD CONDITION (NON-LOCAL).",
           "next": "N_SCAN_MENU"
         },
         {
@@ -333,7 +333,7 @@
           "id": "N_REQUIRED_FIELDS",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "Required fields populate in an unfriendly order:\nSUBJECT NODE (prefilled: SOL-EARTH-LOCAL)\nHOLD REFERENCE (blank)\nSERVICE CLASS (unresolved)\nSTANDING INDICATOR (unknown)\nREQUESTED ACTION (prefilled: TEMPORARY OPERATING VARIANCE)\n\nA final checkbox blinks:\nACKNOWLEDGE: SUBMISSION MAY AFFECT STANDING.\nYour hands stay steady anyway.",
+          "text": "Required fields populate in an unfriendly order: (pause)\nSUBJECT NODE prefilled SOL-EARTH-LOCAL. (pause)\nHOLD REFERENCE blank. (pause)\nSERVICE CLASS unresolved. (pause)\nSTANDING INDICATOR unknown. (pause)\nREQUESTED ACTION prefilled TEMPORARY OPERATING VARIANCE. (pause)\nA final checkbox blinks: (pause)\nACKNOWLEDGE: SUBMISSION MAY AFFECT STANDING. (pause)\nYour hands stay steady anyway.",
           "next": "R_TO_SCAN_MENU"
         },
         {
@@ -347,7 +347,7 @@
           "id": "N_ATTACH_REF_NARR",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The panel accepts the string too quickly, like it wanted to believe you.\nA secondary field appears: QUEUE POSITION (READ-ONLY).\nIt remains blank, which is its own kind of answer.",
+          "text": "The panel accepts the string too quickly, like it wanted to believe you. (pause)\nA secondary field appears: QUEUE POSITION (READ-ONLY). (pause)\nIt remains blank, which is its own kind of answer.",
           "next": "N_ATTACH_REF_OPS"
         },
         {
@@ -361,14 +361,14 @@
           "id": "N_INTERPRET_REF_PASS",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The reference string resolves into an external docket shape: prefix, jurisdiction stub, lane code, then a queue tail.\nIt\u2019s designed to be cited, not understood.",
+          "text": "The reference string resolves into a docket shape: prefix\u2014jurisdiction stub\u2014lane code\u2014then queue tail. (pause) It\u2019s designed to be cited\u2014not understood.",
           "next": "R_TO_SCAN_MENU"
         },
         {
           "id": "N_INTERPRET_REF_FAIL",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You can\u2019t place it with confidence. It\u2019s too clean, too standardized\u2014like it expects your systems to already agree with it.",
+          "text": "You can\u2019t place it confidently. Too clean, too standardized\u2014like it expects your systems to already agree.",
           "next": "R_TO_SCAN_MENU"
         },
         {
@@ -389,14 +389,14 @@
           "id": "N_SIGNATORY_NARR",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The panel adds a line item: PRESENCE ATTESTATION \u2014 RECEIVED.\nIt does not say accepted. It says received, like it\u2019s protecting itself.",
+          "text": "The panel adds a line item: PRESENCE ATTESTATION\u2014RECEIVED. (pause) It doesn\u2019t say accepted. It says received, like it\u2019s protecting itself.",
           "next": "R_TO_SCAN_MENU"
         },
         {
           "id": "N_LOAD_TEMPLATE",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You place the variance template against the glass, not because it needs to \u201csee\u201d paper\u2014\nbecause you want the act recorded as procedural, not improvised.\n\nThe panel chirps once, pleased with itself.\nThe form renders with fields mapped into non-local language.",
+          "text": "You place the variance template against the glass. (pause)\nNot because it needs to \u201csee\u201d paper\u2014 (pause)\nbecause you want the act recorded as procedural, not improvised. (pause)\nThe panel chirps once\u2014pleased with itself. (pause)\nThe form renders with fields mapped into non-local language.",
           "next": "N_LOAD_TEMPLATE_OPS"
         },
         {
@@ -437,7 +437,7 @@
           "id": "N_PREVIEW_SUMMARY",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The summary reads like it\u2019s been written by a distant office that hates adjectives:\nREQUEST: Temporary Operating Variance\nCONDITION: HOLD \u2014 NON-LOCAL COMPLIANCE\nSUBJECT NODE: SOL-EARTH-LOCAL\nSERVICE CLASS: UNRESOLVED (PENDING)\nSTANDING: UNKNOWN (PENDING)\nATTACHMENTS: [template]\n\nA small note at the bottom adds, defensively:\nPROCESSING ORDER DETERMINED BY QUEUE POSITION.",
+          "text": "The summary reads like it\u2019s from a distant office that hates adjectives: (pause) REQUEST: Temporary Operating Variance (pause) CONDITION: HOLD \u2014 NON-LOCAL COMPLIANCE (pause) SUBJECT NODE: SOL-EARTH-LOCAL (pause) SERVICE CLASS: UNRESOLVED (PENDING) (pause) STANDING: UNKNOWN (PENDING) (pause) ATTACHMENTS: [template] (pause) A small note at the bottom adds, defensively: (pause) PROCESSING ORDER DETERMINED BY QUEUE POSITION.",
           "next": "R_TO_SUBMIT_MENU"
         },
         {
@@ -451,14 +451,14 @@
           "id": "N_SUBMIT_AS_WRITTEN_NARR",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You submit the packet without dressing it up.\nNo motives. No theories. Just fields filled enough to become someone else\u2019s problem.",
+          "text": "You submit the packet without dressing it up. (pause) No motives. No theories. (pause) Just fields filled enough to become someone else\u2019s problem.",
           "next": "N_SUBMIT_RECEIVED"
         },
         {
           "id": "N_SUBMIT_WITH_NOTE_NARR",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You add one sentence. Clinical. Time-stamped.\n\u201cReflective behavior ongoing.\u201d\nNot because it will help them understand\u2014because it proves you saw it and didn\u2019t rename it.",
+          "text": "Add: clinical, time-stamped line: \u201cReflective behavior ongoing.\u201d Not because it helps\u2014because you saw it, unrenamed.",
           "next": "N_SUBMIT_WITH_NOTE_OPS"
         },
         {
@@ -472,21 +472,21 @@
           "id": "N_SUBMIT_RECEIVED",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The panel pauses\u2014long enough to feel like judgment, short enough to remain deniable.\nThen:\nSUBMISSION RECEIVED. STATUS: PROCESSING.",
+          "text": "Panel pauses\u2014long enough to feel like judgment, short enough to remain deniable.\nSUBMISSION RECEIVED. STATUS: PROCESSING.",
           "next": "N_ACK_PRINT"
         },
         {
           "id": "N_SUBMIT_RECEIVED_NOTE",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The panel pauses\u2014long enough to feel like judgment, short enough to remain deniable.\nThen:\nSUBMISSION RECEIVED. STATUS: PROCESSING.",
+          "text": "The panel pauses\u2014long to feel like judgment, short to stay deniable. Then\u2014SUBMISSION RECEIVED. STATUS: PROCESSING.",
           "next": "N_ACK_PRINT_NOTE"
         },
         {
           "id": "N_ACK_PRINT",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "A printer inside the panel wakes and feeds out a thin slip with a clean barcode.\nThe header reads: MTA \u2014 VARIANCE ACKNOWLEDGMENT (TEMPORARY).\nBeneath it: HOLD REMAINS IN EFFECT DURING PROCESSING.\nAnd, like a kindness that isn\u2019t one: PROCESSING WINDOW GRANTED. DO NOT ALTER SUBJECT STATE.",
+          "text": "A printer inside the panel wakes and feeds out a thin slip with a clean barcode. (pause) The header reads: MTA \u2014 VARIANCE ACKNOWLEDGMENT (TEMPORARY). (pause) Beneath it: HOLD REMAINS IN EFFECT DURING PROCESSING. (pause) And, like a kindness that isn\u2019t one: PROCESSING WINDOW GRANTED. (pause) DO NOT ALTER SUBJECT STATE.",
           "next": "N_MTA_TTS"
         },
         {
@@ -507,14 +507,14 @@
           "id": "N_OUTRO",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The sphere flickers reflective again\u2014mirror, matte\u2014like it\u2019s being kept open on purpose.\nThe acknowledgment slip is warm from the printer.\nWarmth is not reassurance. It\u2019s just heat.",
+          "text": "The sphere flickers reflective again\u2014mirror, matte\u2014like it\u2019s being kept open on purpose. (pause)\nThe acknowledgment slip is warm from the printer. (pause)\nWarmth is not reassurance. It\u2019s just heat.",
           "next": "END_SUBMIT_ACK"
         },
         {
           "id": "N_ACK_PRINT_NOTE",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "A printer inside the panel wakes and feeds out a thin slip with a clean barcode.\nThe header reads: MTA \u2014 VARIANCE ACKNOWLEDGMENT (TEMPORARY).\nBeneath it: HOLD REMAINS IN EFFECT DURING PROCESSING.\nA smaller line adds: CONDITION NOTE RECORDED (NON-DISPOSITIVE).\nIt\u2019s bureaucratic for \u201cwe heard you and it changes nothing.\u201d",
+          "text": "A printer inside the panel wakes, feeding a thin slip with a clean barcode. (pause) The header reads: MTA \u2014 VARIANCE ACKNOWLEDGMENT (TEMPORARY). (pause) Beneath it: HOLD REMAINS IN EFFECT DURING PROCESSING. (pause) A smaller line adds: CONDITION NOTE RECORDED (NON-DISPOSITIVE). (pause) It\u2019s bureaucratic for: we heard you, and it changes nothing.",
           "next": "N_MTA_TTS_NOTE"
         },
         {
@@ -542,7 +542,7 @@
           "id": "N_OUTRO_NOTE",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The sphere flickers again\u2014reflective, matte\u2014like it resents being described.\nYou pocket the slips anyway, turning delay into something you can cite.",
+          "text": "The sphere flickers again\u2014reflective, matte\u2014like it hates description.\nYou pocket the slips anyway, making delay citeable.",
           "next": "END_SUBMIT_ACK"
         },
         {
@@ -571,7 +571,7 @@
           "id": "N_LEAVE_OBS_LINE",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You step toward the stairs down to the Observation Deck.\nBehind you, the sphere keeps its own time, interrupting your vision like a clerical correction.",
+          "text": "You step toward the stairs down to the Observation Deck. (pause) Behind you, the sphere keeps its own time, interrupting your vision like a clerical correction.",
           "next": "END_LEAVE_OBS"
         },
         {
@@ -582,7 +582,7 @@
           "id": "N_LEAVE_OVERFLOW_LINE",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You angle toward the Overflow Intake Concourse.\nThe chamber stays behind glass and signage, still insisting\u2014quietly\u2014that someone should be on record.",
+          "text": "You angle toward the Overflow Intake Concourse. (pause) The chamber stays behind glass and signage, still insisting quietly that someone should be on record.",
           "next": "END_LEAVE_OVERFLOW"
         },
         {

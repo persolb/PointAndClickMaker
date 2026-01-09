@@ -9,7 +9,7 @@
           "id": "N_START",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "Records Hallway. Beige paint that gave up decades ago.\nA metal door labeled RECORDS. A pneumatic tube station with a cracked acrylic lid.\nA fire panel note taped like an apology. A fax placard with numbers that look corrected by committee.\nYour drafted memo sits in your hand like it\u2019s already tired of you.\n\nYou can either make this exist on paper, or make it exist fast.\nBoth have afterlives.",
+          "text": "Records Hallway. (pause) Beige paint that gave up decades ago. (pause) A metal door labeled RECORDS. (pause) A pneumatic tube station. Cracked acrylic lid. (pause) A fire panel note taped like an apology. (pause) A fax placard. Numbers that look corrected by committee. (pause) Your drafted memo sits in your hand. Like it is already tired of you. (pause) You can make this exist on paper. (pause) Or make it exist fast. (pause) Both have afterlives.",
           "next": "N_MAIN_MENU"
         },
         {
@@ -53,7 +53,7 @@
           "id": "N_FIRE_NOTE",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "A laminated note under the fire panel: \u201cDO NOT RESET WITHOUT INCIDENT NUMBER.\u201d\nSomeone has underlined INCIDENT and written \u201c(which one?)\u201d in pencil.",
+          "text": "A laminated note under the fire panel: \u201cDO NOT RESET WITHOUT INCIDENT NUMBER.\u201d (pause)\nSomeone underlined INCIDENT and wrote \u201c(which one?)\u201d in pencil.",
           "next": "N_BACK_FROM_FIRE"
         },
         {
@@ -72,7 +72,7 @@
           "id": "N_PLACARD",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "A placard with a posted fax number for \u201cRETIREMENT PROCESSING \u2014 OLEA.\u201d\nUnder it, a smaller sticker: \u201cNON-LOCAL COMPLIANCE NOTICES: DO NOT DISCUSS VERBALLY.\u201d",
+          "text": "Placard: fax number for \u201cRETIREMENT PROCESSING \u2014 OLEA.\u201d Sticker: \u201cNON-LOCAL COMPLIANCE NOTICES: DO NOT DISCUSS VERBALLY.\u201d",
           "next": "N_PLACARD_MENU"
         },
         {
@@ -537,7 +537,7 @@
           "id": "N_REC_COMMIT_TUBE_02",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You initial where the Clerk taps. The staples stay exactly where they are.\nThe packet goes into a tube capsule that smells like rubber and old air.\n\nThe capsule clicks shut. The station inhales it.\nThe hallway is quiet in the way paperwork likes.",
+          "text": "You initial where the Clerk taps. (pause)\nThe staples stay exactly where they are. (pause)\nThe packet goes into a tube capsule. It smells like rubber and old air. (pause)\nThe capsule clicks shut. (pause)\nThe station inhales it. (pause)\nThe hallway is quiet in the way paperwork likes.",
           "next": "END_EXECUTE"
         },
         {
@@ -620,7 +620,7 @@
           "id": "N_TUBE_INTRO",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The tube station has a slot, a destination dial, and a warning label that has been re-laminated over itself.\nA small placard reads: \u201cTUBE IS NOT A RECORD. TUBE IS A TRANSPORT.\u201d\nSomeone has added: \u201cTRANSPORT BECOMES RECORD IF IT GOES MISSING.\u201d",
+          "text": "The tube station has a slot and a destination dial. (pause) There is a warning label re-laminated over itself. (pause) A small placard reads: \u201cTUBE IS NOT A RECORD. TUBE IS A TRANSPORT.\u201d (pause) Someone has added: \u201cTRANSPORT BECOMES RECORD IF IT GOES MISSING.\u201d",
           "next": "N_TUBE_MENU"
         },
         {
@@ -673,14 +673,14 @@
           "id": "N_TUBE_SEND_01",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You seal the capsule. Your thumb hesitates on the latch like it wants a witness.\n\nThe station takes the capsule with a hard pull.\nNo receipt prints. The tube doesn\u2019t do reassurance.",
+          "text": "You seal the capsule. Your thumb hesitates on the latch, like it wants a witness. (pause) The station takes the capsule with a hard pull. (pause) No receipt prints. The tube doesn\u2019t do reassurance.",
           "next": "END_EXECUTE"
         },
         {
           "id": "N_TUBE_DEST_REC",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The destination clicks to RECORDS INTAKE, as if the building is trying to keep the story local.",
+          "text": "Destination clicks to RECORDS INTAKE, as if the building is trying to keep the story local.",
           "next": "N_TUBE_DEST_REC_BACK"
         },
         {

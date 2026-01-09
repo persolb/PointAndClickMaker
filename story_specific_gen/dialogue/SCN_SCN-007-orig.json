@@ -1,0 +1,233 @@
+{
+  "dialogueGraphs": [
+    {
+      "id": "DG_TUBE_LABEL_PLATE",
+      "sceneId": "SCN-007",
+      "startNodeId": "N0_INTRO_A",
+      "nodes": [
+        {
+          "id": "N0_INTRO_A",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "A riveted label plate sits beside the pneumatic tube intake\u2014scratched clean where hands kept checking it long after the rest of the shack went quiet.",
+          "conditions": [
+            {
+              "key": "knowledge.tubeRoutesNoted",
+              "op": "==",
+              "value": false
+            }
+          ],
+          "next": "N1_INTRO_B"
+        },
+        {
+          "id": "N1_INTRO_B",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "Black enamel text, arrows, and department names. The plate looks more maintained than the door.",
+          "next": "N2_MENU"
+        },
+        {
+          "id": "N2_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_LOOK",
+              "text": "look \u2014 Read the plate.",
+              "next": "N3_LOOK_A"
+            },
+            {
+              "id": "C_USE",
+              "text": "use \u2014 Record routing in notes.",
+              "next": "N6_LOG_PLAYER"
+            },
+            {
+              "id": "C_ASK",
+              "text": "ask \u2014 What does this imply?",
+              "next": "N4_ASK_PLAYER"
+            },
+            {
+              "id": "C_TALK",
+              "text": "talk \u2014 Try the call box about tube routes.",
+              "next": "N5_TALK_A"
+            },
+            {
+              "id": "C_SHOW",
+              "text": "show \u2014 Show OLEA credentials; request official routing diagram.",
+              "checks": [
+                {
+                  "type": "flag",
+                  "key": "auth.oleaOnSiteToken",
+                  "value": true
+                }
+              ],
+              "onPassNext": "N10_SHOW_PASS_A",
+              "onFailNext": "N11_SHOW_FAIL_A"
+            },
+            {
+              "id": "C_LEAVE",
+              "text": "leave \u2014 Back.",
+              "next": "N20_LEAVE_A"
+            }
+          ]
+        },
+        {
+          "id": "N3_LOOK_A",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The arrows form a clean loop, like someone wanted the order to be undeniable.",
+          "next": "N3_LOOK_B"
+        },
+        {
+          "id": "N3_LOOK_B",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "\u201cRECORDS \u2194 SECURITY \u2194 OPERATIONS\u201d (labeled even if dead)",
+          "next": "N2_MENU"
+        },
+        {
+          "id": "N4_ASK_PLAYER",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Why list routes on a dead system?",
+          "next": "N4_ASK_NARR"
+        },
+        {
+          "id": "N4_ASK_NARR",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The plate doesn\u2019t answer. It does what signage always does here: insists someone once needed this to be true.",
+          "next": "N2_MENU"
+        },
+        {
+          "id": "N5_TALK_A",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The call box speaker crackles as if it\u2019s been waiting to be blamed.",
+          "next": "N5_TALK_B"
+        },
+        {
+          "id": "N5_TALK_B",
+          "type": "npc_line",
+          "speakerId": "CALL_BOX",
+          "text": "\u201cRouting information is not operational guidance. For operational guidance, contact Security. For Security, contact Operations. For Operations\u2014\u201d",
+          "next": "N5_TALK_C"
+        },
+        {
+          "id": "N5_TALK_C",
+          "type": "npc_line",
+          "speakerId": "CALL_BOX",
+          "text": "\u201c\u2014contact Records.\u201d",
+          "next": "N5_TALK_D"
+        },
+        {
+          "id": "N5_TALK_D",
+          "type": "npc_line",
+          "speakerId": "CALL_BOX",
+          "text": "\u201cThis loop is for accountability, not speed. That\u2019s not an admission. It\u2019s terminology.\u201d",
+          "next": "N5_TALK_E"
+        },
+        {
+          "id": "N5_TALK_E",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "So the tubes connect them.",
+          "next": "N5_TALK_F"
+        },
+        {
+          "id": "N5_TALK_F",
+          "type": "npc_line",
+          "speakerId": "CALL_BOX",
+          "text": "\u201cConnect is informal.\u201d",
+          "next": "N5_TALK_G"
+        },
+        {
+          "id": "N5_TALK_G",
+          "type": "npc_line",
+          "speakerId": "CALL_BOX",
+          "text": "\u201cThey are related via labeled conveyance pathways. Related does not mean available.\u201d",
+          "next": "N2_MENU"
+        },
+        {
+          "id": "N10_SHOW_PASS_A",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The call box has a slot for credentials. The slot is taped over with a strip that reads: \u201cTEMPORARY \u2014 DO NOT MAKE PERMANENT.\u201d",
+          "next": "N10_SHOW_PASS_B"
+        },
+        {
+          "id": "N10_SHOW_PASS_B",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "Even if you had the right token, access is still a story someone has to agree to.",
+          "next": "N2_MENU"
+        },
+        {
+          "id": "N11_SHOW_FAIL_A",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The call box has a slot for credentials. The slot is taped over with a strip that reads: \u201cTEMPORARY \u2014 DO NOT MAKE PERMANENT.\u201d",
+          "next": "N11_SHOW_FAIL_B"
+        },
+        {
+          "id": "N11_SHOW_FAIL_B",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "Requires: on-site authorization token / active Security presence.",
+          "next": "N2_MENU"
+        },
+        {
+          "id": "N6_LOG_PLAYER",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Log it.",
+          "next": "N7_LOG_NARR_A"
+        },
+        {
+          "id": "N7_LOG_NARR_A",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You copy the routing exactly. Your pen hesitates on \u201cSECURITY\u201d like it might object.",
+          "next": "N8_LOG_NARR_B"
+        },
+        {
+          "id": "N8_LOG_NARR_B",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The plate\u2019s relationship goes into your paperwork as a procedural note, not a theory.",
+          "next": "N9_END_OUTCOME_NOTE"
+        },
+        {
+          "id": "N9_END_OUTCOME_NOTE",
+          "type": "end",
+          "speakerId": "NARRATOR",
+          "text": "Tube routing plate: RECORDS \u2194 SECURITY \u2194 OPERATIONS (labeled even if dead).",
+          "outcomeId": "note_tube_routes",
+          "effects": [
+            {
+              "key": "knowledge.tubeRoutesNoted",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "paperwork.notes",
+              "action": "add",
+              "value": "Tube routing plate: RECORDS \u2194 SECURITY \u2194 OPERATIONS (labeled even if dead)."
+            }
+          ]
+        },
+        {
+          "id": "N20_LEAVE_A",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You step back from the plate. The arrows stay in your head like they\u2019re part of the facility\u2019s circulatory system, whether the tubes move or not.",
+          "next": "N21_END_LEAVE"
+        },
+        {
+          "id": "N21_END_LEAVE",
+          "type": "end"
+        }
+      ]
+    }
+  ]
+}

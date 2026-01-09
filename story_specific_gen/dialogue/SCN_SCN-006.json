@@ -324,7 +324,7 @@
           "id": "N_NARR_COMMIT_1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You have your next step: get marked onsite by Records\u2014 because the facility only recognizes people once it can file them.",
+          "text": "Next step: get marked onsite by Records\u2014because the facility recognizes you once it can file you.",
           "next": "N_COMMIT_OUTCOME"
         },
         {
@@ -359,7 +359,7 @@
           "id": "N_EAC_INTRO_1",
           "next": "N_EAC_MENU",
           "speakerId": "NARRATOR",
-          "text": "The speaker pops. A breath. Then a voice that sounds like it\u2019s already composing an email about this.",
+          "text": "The speaker pops. A breath. Then voice that sounds like it\u2019s composing an email on this.",
           "type": "npc_line"
         },
         {
@@ -528,7 +528,7 @@
           "id": "N_EAC_CALL_END",
           "next": "N2",
           "speakerId": "NARRATOR",
-          "text": "The line disconnects cleanly. You\u2019re left with the door, the weak light, and a conversation that will outlive you in a folder.",
+          "text": "The line disconnects cleanly. (pause) You\u2019re left with the door, the weak light. (pause) And a conversation that will outlive you in a folder.",
           "type": "npc_line"
         },
         {
