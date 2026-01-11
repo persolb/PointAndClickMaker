@@ -1,0 +1,643 @@
+{
+  "dialogueGraphs": [
+    {
+      "id": "DG_SCN_065_MTA_NOTICE",
+      "sceneId": "SCN-065",
+      "startNodeId": "N_ENTER",
+      "nodes": [
+        {
+          "id": "N_ENTER",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The records hallway is built to erase urgency. (pause)\nBeige paint. Metal frames. (pause)\nSoft-close doors that keep arguments inside. (pause)\n\nThe pneumatic tube station doesn\u2019t match that philosophy. (pause)\nIts indicator lamp is lit\u2014steady, patient. Like it\u2019s been waiting to be acknowledged. (pause)\n\nIn the receiver tray: a dot-matrix printout. Still curled from the rollers.",
+          "next": "N_MAIN_MENU"
+        },
+        {
+          "id": "N_MAIN_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_LOOK_TUBE",
+              "text": "look: Pneumatic tube station.",
+              "next": "N_LOOK_TUBE"
+            },
+            {
+              "id": "C_LOOK_PRINTOUT",
+              "text": "look: Dot-matrix printout.",
+              "next": "N_LOOK_PRINT"
+            },
+            {
+              "id": "C_LOOK_RECORDS",
+              "text": "look: Records door.",
+              "next": "N_LOOK_RECORDS"
+            },
+            {
+              "id": "C_LOOK_FAX",
+              "text": "look: Wall fax placard.",
+              "next": "N_LOOK_FAX"
+            },
+            {
+              "id": "C_LOOK_FIRE",
+              "text": "look: Fire panel note.",
+              "next": "N_LOOK_FIRE"
+            },
+            {
+              "id": "C_ASK_WHO_SENT",
+              "text": "ask: \u201cWho sent this?\u201d",
+              "next": "N_ASK_WHO_SENT_PLAYER"
+            },
+            {
+              "id": "C_USE_TAKE",
+              "text": "use: Take the printout.",
+              "next": "N_TAKE_PRINTOUT"
+            },
+            {
+              "id": "C_USE_ACCEPT_LOG",
+              "text": "use: Accept and log the notice.",
+              "conditions": [
+                {
+                  "key": "act3.mtaNoticeReceived",
+                  "op": "==",
+                  "value": false
+                }
+              ],
+              "next": "N_ACCEPT_INTRO"
+            },
+            {
+              "id": "C_LEAVE_DOWN",
+              "text": "leave: Admin Lobby and Kiosk \u2014 down.",
+              "next": "N_LEAVE_DOWN_LINE"
+            },
+            {
+              "id": "C_LEAVE_RIGHT",
+              "text": "leave: Copy and Fax Room \u2014 right.",
+              "next": "N_LEAVE_RIGHT_LINE"
+            },
+            {
+              "id": "C_LEAVE_FORWARD",
+              "text": "leave: Operations Corridor \u2014 forward.",
+              "next": "N_LEAVE_FORWARD_LINE"
+            },
+            {
+              "id": "C_LEAVE_LEFT",
+              "text": "leave: SPINDLE Chamber Observation Deck \u2014 left.",
+              "next": "N_LEAVE_LEFT_LINE"
+            }
+          ]
+        },
+        {
+          "id": "N_LOOK_TUBE",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The tube station is older than the hallway signage and newer than the building\u2019s optimism. (pause)\nA laminated label reads: RECEIPTS ARE RECORDS. DO NOT DISCARD. (pause)\nBelow it, someone added in pen: \u201cUnless it\u2019s not ours.\u201d",
+          "next": "N_TUBE_MENU"
+        },
+        {
+          "id": "N_TUBE_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_TUBE_LOOK_PRINT",
+              "text": "look: Dot-matrix printout.",
+              "next": "N_LOOK_PRINT"
+            },
+            {
+              "id": "C_TUBE_USE_TAKE",
+              "text": "use: Take the printout.",
+              "next": "N_TAKE_PRINTOUT"
+            },
+            {
+              "id": "C_TUBE_USE_ACCEPT",
+              "text": "use: Accept and log the notice.",
+              "conditions": [
+                {
+                  "key": "act3.mtaNoticeReceived",
+                  "op": "==",
+                  "value": false
+                }
+              ],
+              "next": "N_ACCEPT_INTRO"
+            },
+            {
+              "id": "C_TUBE_BACK",
+              "text": "leave: Back.",
+              "next": "R_TO_MAIN"
+            }
+          ]
+        },
+        {
+          "id": "N_LOOK_PRINT",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "Paper's too clean. Perforations intact. Header centered, like the sender expects filing.",
+          "next": "N_NOTICE_READ_MTA"
+        },
+        {
+          "id": "N_NOTICE_READ_MTA",
+          "type": "npc_line",
+          "speakerId": "MTA_CONTACT",
+          "text": "Okay\u2014 (pause)\n\u201cNOTICE \u2014 NON-LOCAL COMPLIANCE CONDITION.\u201d (pause)\n\u201cSUBJECT NODE: SOL\u2011EARTH\u2011LOCAL.\u201d (pause)\n\u201cACTION: HOLD STATE PENDING DOCUMENTATION.\u201d (pause)\n\u201cMANAGING AUTHORITY: METASTABLE TRANSFER AUTHORITY (MTA).\u201d (pause)\n\u201cREFERENCE: MTA_NOTICE_REF.\u201d",
+          "next": "N_LOOK_PRINT_TAG"
+        },
+        {
+          "id": "N_LOOK_PRINT_TAG",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "A barcode block looks from another decade beside the dot-matrix text. It's crisp enough to accuse.",
+          "next": "N_PRINT_MENU"
+        },
+        {
+          "id": "N_PRINT_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_PRINT_ASK_STANDING",
+              "text": "ask: \u201cStanding?\u201d",
+              "next": "N_STANDING_PLAYER"
+            },
+            {
+              "id": "C_PRINT_ASK_SERVICE",
+              "text": "ask: \u201cService class?\u201d",
+              "next": "N_SERVICE_PLAYER"
+            },
+            {
+              "id": "C_PRINT_SHOW_REF",
+              "text": "show: \u201cReference number.\u201d",
+              "next": "N_SHOW_REF_PLAYER"
+            },
+            {
+              "id": "C_PRINT_INTERPRET_REF",
+              "text": "ask: Identify the reference format (for the log).",
+              "checks": [
+                {
+                  "type": "skill",
+                  "skill": "bureaucracy",
+                  "dc": 12
+                }
+              ],
+              "onPassNext": "N_INTERPRET_REF_PASS",
+              "onFailNext": "N_INTERPRET_REF_FAIL"
+            },
+            {
+              "id": "C_PRINT_LOOK_BARCODE",
+              "text": "look: Check the barcode format.",
+              "next": "N_LOOK_BARCODE"
+            },
+            {
+              "id": "C_PRINT_USE_TAKE",
+              "text": "use: Take the printout.",
+              "next": "N_TAKE_PRINTOUT"
+            },
+            {
+              "id": "C_PRINT_USE_ACCEPT",
+              "text": "use: Accept and log the notice.",
+              "conditions": [
+                {
+                  "key": "act3.mtaNoticeReceived",
+                  "op": "==",
+                  "value": false
+                }
+              ],
+              "next": "N_ACCEPT_INTRO"
+            },
+            {
+              "id": "C_PRINT_BACK",
+              "text": "leave: Back.",
+              "next": "R_TO_MAIN"
+            }
+          ]
+        },
+        {
+          "id": "N_STANDING_PLAYER",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Standing?",
+          "next": "N_STANDING_NARR"
+        },
+        {
+          "id": "N_STANDING_NARR",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The notice includes a definition in the margin, like it\u2019s tired of being questioned. (pause) \u201cStanding: recognized eligibility to be processed.\u201d (pause) \u201cProcessed\u201d is underlined once. (pause) The underline is perfectly straight. It\u2019s its own kind of threat.",
+          "next": "R_TO_PRINT_MENU"
+        },
+        {
+          "id": "N_SERVICE_PLAYER",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Service class?",
+          "next": "N_SERVICE_NARR"
+        },
+        {
+          "id": "N_SERVICE_NARR",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "Another margin block, pre-emptive. (pause)\n\n\u201cSERVICE CLASS: UNRESOLVED.\u201d (pause)\n\u201cIncorrect service class assignments may affect standing.\u201d (pause)\n\nThe sentence is written like an apology that learned to protect itself.",
+          "next": "R_TO_PRINT_MENU"
+        },
+        {
+          "id": "N_SHOW_REF_PLAYER",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "MTA_NOTICE_REF.",
+          "next": "N_SHOW_REF_NARR"
+        },
+        {
+          "id": "N_SHOW_REF_NARR",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "Saying it out loud makes it real, less defensible. Reference string looks like external docket. (pause) Prefix plus jurisdiction stub. A queue-like tail implies you\u2019re not first.",
+          "next": "R_TO_PRINT_MENU"
+        },
+        {
+          "id": "N_INTERPRET_REF_PASS",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "It reads like external docketing: jurisdiction stub; processing lane code; queue-position tail. (pause) It\u2019s designed to be cited, not understood.",
+          "next": "R_TO_PRINT_MENU"
+        },
+        {
+          "id": "N_INTERPRET_REF_FAIL",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You can\u2019t place it confidently. It\u2019s too-clean, too-standardized\u2014like it expects your systems already agree with it.",
+          "next": "R_TO_PRINT_MENU"
+        },
+        {
+          "id": "N_LOOK_BARCODE",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "High-contrast. Machine-friendly. No smearing. No aging. Formatted as if every reader already agrees on meaning.",
+          "next": "R_TO_PRINT_MENU"
+        },
+        {
+          "id": "N_LOOK_RECORDS",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The records door has three locks and a posted schedule. (pause)\nThe schedule is handwritten, then photocopied until it becomes law. (pause)\n\nSomeone has added: \u201cNO TUBE DROPS INSIDE RECORDS.\u201d (pause)\nUnder that: \u201cException: Compliance.\u201d",
+          "next": "N_RECORDS_MENU"
+        },
+        {
+          "id": "N_RECORDS_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_RECORDS_LOOK_PRINT",
+              "text": "look: Dot-matrix printout.",
+              "next": "N_LOOK_PRINT"
+            },
+            {
+              "id": "C_RECORDS_USE_TAKE",
+              "text": "use: Take the printout.",
+              "next": "N_TAKE_PRINTOUT"
+            },
+            {
+              "id": "C_RECORDS_USE_ACCEPT",
+              "text": "use: Accept and log the notice.",
+              "conditions": [
+                {
+                  "key": "act3.mtaNoticeReceived",
+                  "op": "==",
+                  "value": false
+                }
+              ],
+              "next": "N_ACCEPT_INTRO"
+            },
+            {
+              "id": "C_RECORDS_BACK",
+              "text": "leave: Back.",
+              "next": "R_TO_MAIN"
+            }
+          ]
+        },
+        {
+          "id": "N_LOOK_FAX",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "A placard above the wall fax lists numbers by jurisdiction, as if geography still solves things. (pause) There\u2019s a blank line labeled \u201cNON-LOCAL / OTHER.\u201d (pause) The blank line has been used often enough to be glossy.",
+          "next": "N_FAX_MENU"
+        },
+        {
+          "id": "N_FAX_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_FAX_LOOK_PRINT",
+              "text": "look: Dot-matrix printout.",
+              "next": "N_LOOK_PRINT"
+            },
+            {
+              "id": "C_FAX_ASK_MTA_FAX",
+              "text": "ask: \u201cMTA have a fax?\u201d",
+              "next": "N_ASK_MTA_FAX_PLAYER"
+            },
+            {
+              "id": "C_FAX_USE_TAKE",
+              "text": "use: Take the printout.",
+              "next": "N_TAKE_PRINTOUT"
+            },
+            {
+              "id": "C_FAX_USE_ACCEPT",
+              "text": "use: Accept and log the notice.",
+              "conditions": [
+                {
+                  "key": "act3.mtaNoticeReceived",
+                  "op": "==",
+                  "value": false
+                }
+              ],
+              "next": "N_ACCEPT_INTRO"
+            },
+            {
+              "id": "C_FAX_BACK",
+              "text": "leave: Back.",
+              "next": "R_TO_MAIN"
+            }
+          ]
+        },
+        {
+          "id": "N_ASK_MTA_FAX_PLAYER",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "MTA have a fax?",
+          "next": "N_ASK_MTA_FAX_NARR"
+        },
+        {
+          "id": "N_ASK_MTA_FAX_NARR",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The placard doesn\u2019t answer. (pause) It offers a procedure instead. (pause)\n\n\u201cIf the destination is unlisted: (pause) transmit to ADMIN SERVICES. (pause) NOTE \u2018NON-LOCAL\u2019 IN THE COVER SHEET.\u201d (pause)\n\nThe instruction feels like it was written after someone tried to be clever.",
+          "next": "R_TO_FAX_MENU"
+        },
+        {
+          "id": "N_LOOK_FIRE",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The fire panel has a taped note in block letters: \u201cDO NOT SILENCE WITHOUT INCIDENT NUMBER.\u201d (pause)\nBeneath it, smaller: \u201cEven if it\u2019s annoying.\u201d (pause)\nThe building\u2019s priorities are clear.",
+          "next": "N_FIRE_MENU"
+        },
+        {
+          "id": "N_FIRE_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_FIRE_LOOK_PRINT",
+              "text": "look: Dot-matrix printout.",
+              "next": "N_LOOK_PRINT"
+            },
+            {
+              "id": "C_FIRE_USE_TAKE",
+              "text": "use: Take the printout.",
+              "next": "N_TAKE_PRINTOUT"
+            },
+            {
+              "id": "C_FIRE_USE_ACCEPT",
+              "text": "use: Accept and log the notice.",
+              "conditions": [
+                {
+                  "key": "act3.mtaNoticeReceived",
+                  "op": "==",
+                  "value": false
+                }
+              ],
+              "next": "N_ACCEPT_INTRO"
+            },
+            {
+              "id": "C_FIRE_BACK",
+              "text": "leave: Back.",
+              "next": "R_TO_MAIN"
+            }
+          ]
+        },
+        {
+          "id": "N_ASK_WHO_SENT_PLAYER",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Who sent this?",
+          "next": "N_ASK_WHO_SENT_NARR"
+        },
+        {
+          "id": "N_ASK_WHO_SENT_NARR",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The printout answers like authority: it names a category, not a person. (pause)\n\n\u201cMANAGING AUTHORITY: METASTABLE TRANSFER AUTHORITY (MTA).\u201d (pause)\n\nNo signature. No phone tree. Just an acronym. It expects compliance as its own contact.",
+          "next": "R_TO_MAIN"
+        },
+        {
+          "id": "N_TAKE_PRINTOUT",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You lift the page from the tray. (pause) The paper resists, then releases. (pause) Like it wants to be on record. (pause)\n\nThe tube station light stays lit. (pause) It doesn\u2019t thank you. (pause) It just waits for the next step you didn\u2019t agree to.",
+          "next": "N_TAKE_MENU"
+        },
+        {
+          "id": "N_TAKE_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_TAKE_ACCEPT",
+              "text": "use: Accept and log the notice.",
+              "conditions": [
+                {
+                  "key": "act3.mtaNoticeReceived",
+                  "op": "==",
+                  "value": false
+                }
+              ],
+              "next": "N_ACCEPT_INTRO"
+            },
+            {
+              "id": "C_TAKE_BACK",
+              "text": "leave: Back to the hallway.",
+              "next": "R_TO_MAIN"
+            }
+          ]
+        },
+        {
+          "id": "N_ACCEPT_INTRO",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You treat it as evidence, not mail. (pause)\nYou keep the original. You note the header. You keep the barcodes intact. (pause)\nYou do not summarize from memory.",
+          "next": "N_ACCEPT_POST_MENU"
+        },
+        {
+          "id": "N_ACCEPT_POST_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_ACCEPT_INITIAL_OLEA",
+              "text": "use: Add OLEA signatory initials in the margin.",
+              "conditions": [
+                {
+                  "key": "player.oleaAuthorizedSignatory",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "next": "N_ACCEPT_INITIAL_OLEA_LINE"
+            },
+            {
+              "id": "C_ACCEPT_INITIAL_CHECK",
+              "text": "use: Add chain-of-custody initials anyway (boring, defensible).",
+              "conditions": [
+                {
+                  "key": "player.oleaAuthorizedSignatory",
+                  "op": "==",
+                  "value": false
+                }
+              ],
+              "checks": [
+                {
+                  "type": "skill",
+                  "skill": "bureaucracy",
+                  "dc": 10
+                }
+              ],
+              "onPassNext": "N_ACCEPT_INITIAL_PASS",
+              "onFailNext": "N_ACCEPT_INITIAL_FAIL"
+            },
+            {
+              "id": "C_ACCEPT_NO_INITIAL",
+              "text": "use: No annotation. Keep it clean.",
+              "next": "N_ACCEPT_NO_INITIAL_LINE"
+            }
+          ]
+        },
+        {
+          "id": "N_ACCEPT_INITIAL_OLEA_LINE",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You add small, boring OLEA signatory initials in the margin.\nChain of custody is dull handwriting.",
+          "next": "N_ACCEPT_RESOLVE"
+        },
+        {
+          "id": "N_ACCEPT_INITIAL_PASS",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You add initials and a timestamp in the margin\u2014nothing authoritative, just consistent. (pause)\nIt reads like a person who expects to be questioned and intends to survive it.",
+          "next": "N_ACCEPT_RESOLVE"
+        },
+        {
+          "id": "N_ACCEPT_INITIAL_FAIL",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You start to write, then stop.\nWithout standing to claim, handwriting can be argued about later.",
+          "next": "N_ACCEPT_RESOLVE"
+        },
+        {
+          "id": "N_ACCEPT_NO_INITIAL_LINE",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You don\u2019t initial it. You still handle it like it will be read aloud later. (pause) By someone paid to misunderstand you.",
+          "next": "N_ACCEPT_RESOLVE"
+        },
+        {
+          "id": "N_ACCEPT_RESOLVE",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The reference number\u2014MTA_NOTICE_REF\u2014becomes something you can cite. (pause) Without sounding like you made it up.\n\nThe tube station indicator finally clicks off. (pause) Not resolved. Just recorded.",
+          "next": "END_RECEIVE_MTA_NOTICE"
+        },
+        {
+          "id": "END_RECEIVE_MTA_NOTICE",
+          "type": "end",
+          "outcomeId": "receive_mta_notice",
+          "effects": [
+            {
+              "key": "act3.mtaNoticeReceived",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "inventory.items",
+              "action": "add",
+              "value": "ITEM_MTA_NOTICE"
+            },
+            {
+              "key": "act3.mtaNoticeRef",
+              "action": "set",
+              "value": "MTA_NOTICE_REF"
+            },
+            {
+              "key": "objectives.buildEvidencePacket",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "objectives.fileTemporaryVariance",
+              "action": "set",
+              "value": true
+            }
+          ]
+        },
+        {
+          "id": "N_LEAVE_DOWN_LINE",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You head toward Admin Lobby and Kiosk.\nThe hallway swallows the tube station\u2019s patience without argument.",
+          "next": "END_LEAVE_DOWN"
+        },
+        {
+          "id": "END_LEAVE_DOWN",
+          "type": "end"
+        },
+        {
+          "id": "N_LEAVE_RIGHT_LINE",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You turn to the Copy and Fax Room.\nMachines replicate paper, replicate blame. You go anyway.",
+          "next": "END_LEAVE_RIGHT"
+        },
+        {
+          "id": "END_LEAVE_RIGHT",
+          "type": "end"
+        },
+        {
+          "id": "N_LEAVE_FORWARD_LINE",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You move toward the Operations Corridor.\nBehind you, the tube station stays quiet\u2014done with its part. (pause) It's waiting to see if you do yours.",
+          "next": "END_LEAVE_FORWARD"
+        },
+        {
+          "id": "END_LEAVE_FORWARD",
+          "type": "end"
+        },
+        {
+          "id": "N_LEAVE_LEFT_LINE",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You head for SPINDLE observation deck.\nThe notice is a hold state, dressed as administrative routine.",
+          "next": "END_LEAVE_LEFT"
+        },
+        {
+          "id": "END_LEAVE_LEFT",
+          "type": "end"
+        },
+        {
+          "id": "R_TO_MAIN",
+          "type": "redirect",
+          "target": "N_MAIN_MENU"
+        },
+        {
+          "id": "R_TO_PRINT_MENU",
+          "type": "redirect",
+          "target": "N_PRINT_MENU"
+        },
+        {
+          "id": "R_TO_FAX_MENU",
+          "type": "redirect",
+          "target": "N_FAX_MENU"
+        }
+      ]
+    }
+  ]
+}

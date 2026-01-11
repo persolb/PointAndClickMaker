@@ -5,666 +5,846 @@
       "screenId": "HUB-01",
       "dialogueGraphId": "DG_SPINDLE_GATE_TUTORIAL",
       "path": "story_specific_gen/dialogue/SCN_SCN-001.json",
-      "hash": "7e8fd85bb6bac755c411c1f0915692024ad6b3854896919be7a354abef379991",
+      "hash": "c21bc63cb5f55f3f730f95fb173936625a7b02555da4310caeca46636d1a5c26",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.445803Z"
+      "generatedAt": "2026-01-11T00:14:28.612953Z"
     },
     {
       "sceneId": "SCN-002",
       "screenId": "HUB-01",
       "dialogueGraphId": "DG_SCN002_TRUNK_STARTER_KIT",
       "path": "story_specific_gen/dialogue/SCN_SCN-002.json",
-      "hash": "00fbf4ea65e1b7f2c6f5e59719fdc3d7885e62ab2fdf603c86325b68d99a1cd2",
+      "hash": "c7fb98ce14a2f25d41d4733dd050e99aa7e08e6bd134e777301e955dc7dabe88",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.445873Z"
+      "generatedAt": "2026-01-11T00:14:28.613005Z"
     },
     {
       "sceneId": "SCN-003",
       "screenId": "HUB-01",
       "dialogueGraphId": "SCN003_GATE_RECEIPT",
       "path": "story_specific_gen/dialogue/SCN_SCN-003.json",
-      "hash": "5210fdea63ffcc04b1564aea68f92eb3740f2271abdb7fee9ec074d1e72ce28b",
+      "hash": "9f7a0d8c155a23fa979fadd1d08bccc55d03b7ee8507641a83af6048f954bcc9",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.445932Z"
+      "generatedAt": "2026-01-11T00:14:28.613059Z"
     },
     {
       "sceneId": "SCN-004",
       "screenId": "HUB-01",
       "dialogueGraphId": "DG_SIGNPOST_CONFLICT",
       "path": "story_specific_gen/dialogue/SCN_SCN-004.json",
-      "hash": "42d0a7027587c737c5a5998c5bd97220ecd2568b844d4f4522665512be4a43f8",
+      "hash": "1700558ff9540e8ecd3d511810c13124fad511243a1f7cc3bf5e986caeb0a22b",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.445973Z"
+      "generatedAt": "2026-01-11T00:14:28.613098Z"
     },
     {
       "sceneId": "SCN-005",
       "screenId": "HUB-02",
       "dialogueGraphId": "SCN_005_GUARD_SHACK_EXTERIOR",
       "path": "story_specific_gen/dialogue/SCN_SCN-005.json",
-      "hash": "8357f30c49370fc16de10d7a036fcd96a0b2255a8606bcbad54e903fdad85e88",
+      "hash": "eb1e4aaedf2fbbba4d068c0a89e98e2166747252671a2159120ab80ba0488797",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.446023Z"
+      "generatedAt": "2026-01-11T00:14:28.613114Z"
     },
     {
       "sceneId": "SCN-006",
       "screenId": "HUB-02",
       "dialogueGraphId": "DG_SCN_006_CALLBOX",
       "path": "story_specific_gen/dialogue/SCN_SCN-006.json",
-      "hash": "0af6c4be19f3fc60620cc85066f92e146a96c1cf07588bb46738c82b78f748f4",
+      "hash": "5aad45806d66c1d136a29aac13f3f269546dd366baa3212eb8ed82aef27c9bab",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.446071Z"
+      "generatedAt": "2026-01-11T00:14:28.613191Z"
     },
     {
       "sceneId": "SCN-007",
       "screenId": "HUB-02",
       "dialogueGraphId": "DG_TUBE_LABEL_PLATE",
       "path": "story_specific_gen/dialogue/SCN_SCN-007.json",
-      "hash": "47936d270ca3552ee01473d0a78a197282bae90eab7755e659e1ea7ffeee473a",
+      "hash": "f5f7db59ad022376baa4f48ec46a54e1211e48be0e5fa3c1d9c81298f5303568",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.446111Z"
+      "generatedAt": "2026-01-11T00:14:28.613237Z"
     },
     {
       "sceneId": "SCN-008",
       "screenId": "HUB-03",
       "dialogueGraphId": "DG_SCN_008_VESTIBULE",
       "path": "story_specific_gen/dialogue/SCN_SCN-008.json",
-      "hash": "78355b8af71ef5369e31bc3165e188073ede30919aa073a3b0a8ba7993411596",
+      "hash": "e2b0ef20050935f96d99337e014927467fb71e4042a1d52824ae99770727898f",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.446204Z"
+      "generatedAt": "2026-01-11T00:14:28.613276Z"
     },
     {
       "sceneId": "SCN-009",
       "screenId": "HUB-03",
       "dialogueGraphId": "SCN009_BADGE_INSERT",
       "path": "story_specific_gen/dialogue/SCN_SCN-009.json",
-      "hash": "f972deb483f3fde33f204a2d208c07d192f3630f4adb621bd8e0037b81b6f996",
+      "hash": "200234b68f3fe6076bf9c1aaf08844eb03c97c021c9c97219b67ef5485fcb749",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.446264Z"
+      "generatedAt": "2026-01-11T00:14:28.613325Z"
     },
     {
       "sceneId": "SCN-010",
       "screenId": "HUB-03",
       "dialogueGraphId": "DG_SCN010_DRAWER_BADGES",
       "path": "story_specific_gen/dialogue/SCN_SCN-010.json",
-      "hash": "533b768022fc9f7fb0b9f3a2b78c57367cb55ca06a34f158286c0e5f393d7a7b",
+      "hash": "dafa4304b5bbebae3897e6db3a079e98a2ffa6b4aef3e3f4c940d287a73747b0",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.446321Z"
+      "generatedAt": "2026-01-11T00:14:28.613379Z"
     },
     {
       "sceneId": "SCN-011",
       "screenId": "HUB-04",
       "dialogueGraphId": "DG_SCN_011_SERVICE_HATCH",
       "path": "story_specific_gen/dialogue/SCN_SCN-011.json",
-      "hash": "3f9fde832b873ec3e46b05064aacaa957caa8788e0237ea176dda94e7bff66a4",
+      "hash": "09dde4928f09d66586d15f83f54f6d5766d3433a7cb2f14cd76d44daf7ef7ab8",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.446398Z"
+      "generatedAt": "2026-01-11T00:14:28.613395Z"
     },
     {
       "sceneId": "SCN-012",
       "screenId": "HUB-04",
       "dialogueGraphId": "DG_AUX_HATCH",
       "path": "story_specific_gen/dialogue/SCN_SCN-012.json",
-      "hash": "e5cbe583568544c540623ddc7e80bb34c9a6ac1c78edad1f68a94efddc78b6ea",
+      "hash": "c08401110762c753b7b415f6ffd7fa8faa2ea3a8e91bbea49305228c75de2e28",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.446471Z"
+      "generatedAt": "2026-01-11T00:14:28.613462Z"
     },
     {
       "sceneId": "SCN-013",
       "screenId": "HUB-02",
       "dialogueGraphId": "SCN_013_CARD_READER",
       "path": "story_specific_gen/dialogue/SCN_SCN-013.json",
-      "hash": "ba600503959c11d5f11dec1dd853636e2153f6b22d3a4c0639661ad675304114",
+      "hash": "52ad6834d8a78f95adf4f9362b6ff40ccf23e2bc74e4019d23900c054c70dccc",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.446523Z"
+      "generatedAt": "2026-01-11T00:14:28.613517Z"
     },
     {
       "sceneId": "SCN-014",
       "screenId": "HUB-06",
       "dialogueGraphId": "DG_SCN_014_ADMIN_LOBBY",
       "path": "story_specific_gen/dialogue/SCN_SCN-014.json",
-      "hash": "ef6b371fd194d5e46cb2b3878509da50674160646b01d58df7a63cc81301a991",
+      "hash": "032470b7ee77aaff7f4d1438fba4e093c14e6fa70232dbcaa0f6ae3241d2581b",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.446639Z"
+      "generatedAt": "2026-01-11T00:14:28.613534Z"
     },
     {
       "sceneId": "SCN-015",
       "screenId": "HUB-06",
       "dialogueGraphId": "SCN015_WALL_PHONE_LIST",
       "path": "story_specific_gen/dialogue/SCN_SCN-015.json",
-      "hash": "e3208ffe0fb223aed79497903020dfd117ab619b666c6c442e2cebee1faa4d1b",
+      "hash": "26a3bf2825cbf1b1ccd2bdf3adb023942b92b344a22cba1434abb42add4a3992",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.446698Z"
+      "generatedAt": "2026-01-11T00:14:28.613576Z"
     },
     {
       "sceneId": "SCN-016",
       "screenId": "HUB-06",
       "dialogueGraphId": "DG_PLAQUE_SP01",
       "path": "story_specific_gen/dialogue/SCN_SCN-016.json",
-      "hash": "de3d12c2127c21cad7942774cf7d75c2ca431c49d87dcb13a4d83433bc7b5a76",
+      "hash": "e85c341639ff65a3c98c42e30551cab69c24aed1ead42ddcb16b571372dcfe66",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.446745Z"
+      "generatedAt": "2026-01-11T00:14:28.613620Z"
     },
     {
       "sceneId": "SCN-017",
       "screenId": "HUB-06",
       "dialogueGraphId": "DG_RECEPTION_DRAWERS",
       "path": "story_specific_gen/dialogue/SCN_SCN-017.json",
-      "hash": "6d05d5b084a68887614b4e1fd1766ca783165352e5b0bfaf73c8239011ade42a",
+      "hash": "df6e34b569e6e765988f9a3b27b41e92c507aa49cb2c938c7fb417bff96bdbb7",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.446788Z"
+      "generatedAt": "2026-01-11T00:14:28.613662Z"
     },
     {
       "sceneId": "SCN-018",
       "screenId": "HUB-06",
       "dialogueGraphId": "DG_SCN018_CALL_LEGAL",
       "path": "story_specific_gen/dialogue/SCN_SCN-018.json",
-      "hash": "6531e9f5a2af0a4396b7980fb2a4366d58e8aa1902bbbe983226abe2fff7e1a6",
+      "hash": "e85106df63c6df51b98b3e3800f51ceb93cda374199126046ed13e167ad79c74",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.446845Z"
+      "generatedAt": "2026-01-11T00:14:28.613721Z"
     },
     {
       "sceneId": "SCN-019",
       "screenId": "HUB-07",
       "dialogueGraphId": "DG_SCN019_RECORDS_HALLWAY",
       "path": "story_specific_gen/dialogue/SCN_SCN-019.json",
-      "hash": "e8f5c31c10c00d47a9c90e339e43d0d6c6f27c7dcd684ba31cad81e449b28dc5",
+      "hash": "009e9b413b2e593fad5c2faf5ace7d4250b66f6066fd0078a4047d74b35c6e8f",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.446918Z"
+      "generatedAt": "2026-01-11T00:14:28.613747Z"
     },
     {
       "sceneId": "SCN-020",
       "screenId": "HUB-07",
       "dialogueGraphId": "DG_TUBE_TEMP_KEYS",
       "path": "story_specific_gen/dialogue/SCN_SCN-020.json",
-      "hash": "19ed6d84a22d7c33b22f7845376aa8ce538713821d4edb39a2d69ee9fdb1c698",
+      "hash": "47642c5689a9a228ee35c54893eff2d182f62b5ffdbbc91169654083413d7710",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.446960Z"
+      "generatedAt": "2026-01-11T00:14:28.613787Z"
     },
     {
       "sceneId": "SCN-021",
       "screenId": "HUB-08",
       "dialogueGraphId": "DG_SCN021_COPY_FAX_ROOM",
       "path": "story_specific_gen/dialogue/SCN_SCN-021.json",
-      "hash": "75d2e8a40b49a5649a1a97c8a210bc11eac801bbf38361551594a3524fb35a28",
+      "hash": "2d47ec49130e794527c3d22a9514cd005932d46583c1b60011fc96fd156048b4",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.447045Z"
+      "generatedAt": "2026-01-11T00:14:28.613804Z"
     },
     {
       "sceneId": "SCN-022",
       "screenId": "HUB-08",
       "dialogueGraphId": "DG_SCN022_FAX_TRAY_WORK_ORDER",
       "path": "story_specific_gen/dialogue/SCN_SCN-022.json",
-      "hash": "4dcd23c4cb28423dd56bc4b13503fa10235484530ca012186eab29744fd66c3b",
+      "hash": "e15895da8d6c4306aa5331bd5abd32d130c6ffc3669d89ce4226de6a45e4e244",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.447105Z"
+      "generatedAt": "2026-01-11T00:14:28.613859Z"
     },
     {
       "sceneId": "SCN-023",
       "screenId": "HUB-08",
       "dialogueGraphId": "DG_SCN023_COPIER_SERVICE_CODE",
       "path": "story_specific_gen/dialogue/SCN_SCN-023.json",
-      "hash": "ad70189eedb732b1b5719404622250821eba12f8113db1227a79086fe4d0d420",
+      "hash": "05f16f8da98667ddff2fb4503854671d4aa51a2a855e3fea7352cddf8146d7fa",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.447157Z"
+      "generatedAt": "2026-01-11T00:14:28.613913Z"
     },
     {
       "sceneId": "SCN-024",
       "screenId": "HUB-08",
       "dialogueGraphId": "DG_BINDER_SUPPLIES_MINIMUM",
       "path": "story_specific_gen/dialogue/SCN_SCN-024.json",
-      "hash": "f9684d31d2546724b9b41da2ec069f6ab25c614a3820ac8052a258839bfe8e74",
+      "hash": "f2c3d16b74abb1b160c49845c68d27a70fec59c438dde6ea99aa0000e5a14a0d",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.447210Z"
+      "generatedAt": "2026-01-11T00:14:28.613968Z"
     },
     {
       "sceneId": "SCN-025",
       "screenId": "HUB-06",
       "dialogueGraphId": "SCN025_KIOSK_PRESENCE",
       "path": "story_specific_gen/dialogue/SCN_SCN-025.json",
-      "hash": "493a7c07b06b9cac544598bddb7aa7e2a49099dad47c36914676a666813ea3e6",
+      "hash": "d49eda9c4f75937460a09a7ebaae4d5f0540ed286eee41738326865340f99b84",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.447257Z"
+      "generatedAt": "2026-01-11T00:14:28.614015Z"
     },
     {
       "sceneId": "SCN-026",
       "screenId": "HUB-02",
       "dialogueGraphId": "DG_SCN_026_GUARD_SHACK_EXTERIOR",
       "path": "story_specific_gen/dialogue/SCN_SCN-026.json",
-      "hash": "cf6a693d961f9695bd61831e0fe9632c1d204d15e6f313659b535a29c0b26f23",
+      "hash": "a7c983551e0f245e032ff4c577da5df471ea6bc310e91688c0d18e783a24f520",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.447326Z"
+      "generatedAt": "2026-01-11T00:14:28.614094Z"
     },
     {
       "sceneId": "SCN-027",
       "screenId": "HUB-09",
       "dialogueGraphId": "EAC_FINDING_INTRO",
       "path": "story_specific_gen/dialogue/SCN_SCN-027.json",
-      "hash": "be20f5066fd717fe42fc7ea07bde4a87f852fa697dfb28b3a56a6a3eedfe76fe",
+      "hash": "9a8ad9db90f84f2570787d475919b3bae7e90c63f8835a3e98f3db688b60d9b6",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.447385Z"
+      "generatedAt": "2026-01-11T00:14:28.614158Z"
     },
     {
       "sceneId": "SCN-028",
       "screenId": "HUB-14",
       "dialogueGraphId": "SCN028_NON_LOCAL_NOTICES",
       "path": "story_specific_gen/dialogue/SCN_SCN-028.json",
-      "hash": "323d44ac57ee5a76e527a39463acb04816924bd62b5e8c5d6b05a2db72b78317",
+      "hash": "2c2be5ce5c50c4ff5863f8213df664c48afa77d3f6a500b795257526c41690f3",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.447435Z"
+      "generatedAt": "2026-01-11T00:14:28.614174Z"
     },
     {
       "sceneId": "SCN-029",
       "screenId": "HUB-14",
       "dialogueGraphId": "DG_SCN_029_COMPLIANCE_NOTICES",
       "path": "story_specific_gen/dialogue/SCN_SCN-029.json",
-      "hash": "6c179bc6b0f2fd7005bdabc8ec796c5df8d4eb7dc499ae9cf905d3aaca0d63f6",
+      "hash": "7d0b70b950a95bbb3ab4bffb0df6a1e5b0c6607a8ec341f522dda449466952c5",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.447488Z"
+      "generatedAt": "2026-01-11T00:14:28.614228Z"
     },
     {
       "sceneId": "SCN-030",
       "screenId": "HUB-08",
       "dialogueGraphId": "DG_SCN030_TRAINING_WAIVER_RETURN",
       "path": "story_specific_gen/dialogue/SCN_SCN-030.json",
-      "hash": "30ae828b6e1daacd4406553c34118a0a901612313eaf8472f87296742bc5f479",
+      "hash": "7561872d975cac95c6e42181db3dc638b55f9b5fd7ab25d3dcca9b705c5d6056",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.447541Z"
+      "generatedAt": "2026-01-11T00:14:28.614289Z"
     },
     {
       "sceneId": "SCN-031",
       "screenId": "HUB-10",
       "dialogueGraphId": "OPS_CORRIDOR_INTERLOCKS_LOTO",
       "path": "story_specific_gen/dialogue/SCN_SCN-031.json",
-      "hash": "734f8db0ab941a6fdf401292cb632b2652de735e90a68ef2282ef4179e246a1b",
+      "hash": "5b5218b45c135e2a430c85eb1a7583d6080bcca99d579693819978d9d3263036",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.447666Z"
+      "generatedAt": "2026-01-11T00:14:28.614325Z"
     },
     {
       "sceneId": "SCN-032",
       "screenId": "HUB-10",
       "dialogueGraphId": "DG_TRAINING_INTERLOCK",
       "path": "story_specific_gen/dialogue/SCN_SCN-032.json",
-      "hash": "1c3c342e9e8206b6df0b135c3e5c924cf23344f73139e099449341166d3d7f4c",
+      "hash": "c73001e665eae0f10c2c4f178a090c44e444fca1ae6aa4c9eca52289650667c1",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.447731Z"
+      "generatedAt": "2026-01-11T00:14:28.614383Z"
     },
     {
       "sceneId": "SCN-033",
       "screenId": "HUB-10",
       "dialogueGraphId": "DG_LOTO_MAIN_LOCKPOINT",
       "path": "story_specific_gen/dialogue/SCN_SCN-033.json",
-      "hash": "c09d8d54ad186941d123923ecb63f9bbf9d4a91063a8f7619bb151d6e53c7e48",
+      "hash": "6334f34d5e604cd67441e599788642ab1a50ae0e4068e32497de0b1fcc007a24",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.447781Z"
+      "generatedAt": "2026-01-11T00:14:28.614438Z"
     },
     {
       "sceneId": "SCN-034",
       "screenId": "HUB-10",
       "dialogueGraphId": "OPS_VENT_DEPENDENCY",
       "path": "story_specific_gen/dialogue/SCN_SCN-034.json",
-      "hash": "306117d35336b3a86bb1dc65478d44f4527201e1e428ca30d965a5982741efea",
+      "hash": "93d2e50dc2415d5b66006cf5afd9857a30232e6515b2f5ce14bab245af53e4a3",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.447863Z"
+      "generatedAt": "2026-01-11T00:14:28.614526Z"
     },
     {
       "sceneId": "SCN-035",
       "screenId": "HUB-05",
       "dialogueGraphId": "SCN_035_VENT_PANEL",
       "path": "story_specific_gen/dialogue/SCN_SCN-035.json",
-      "hash": "0582c342d07942ba93c63f1059c34ca0c520c102ebb38f693639b9282675a167",
+      "hash": "a2c657484ce0c166c0ac1259a1e99c2660f243190f517b7e8e74f3361df6d4c0",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.447924Z"
+      "generatedAt": "2026-01-11T00:14:28.614596Z"
     },
     {
       "sceneId": "SCN-036",
       "screenId": "HUB-11",
       "dialogueGraphId": "CTRLROOM_PAPERTRAIL",
       "path": "story_specific_gen/dialogue/SCN_SCN-036.json",
-      "hash": "8c0e08aaf7adbe426910ce5aa497e574f8b537a691290cc1cb6cf1a05e6c3668",
+      "hash": "49db3b1b3dc0d31fec927d1812175e623e932ce6975a725cc43002b8d924ce35",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.447993Z"
+      "generatedAt": "2026-01-11T00:14:28.614670Z"
     },
     {
       "sceneId": "SCN-037",
       "screenId": "HUB-11",
       "dialogueGraphId": "DG_BASELINE_LOG_PRINTER_TRAY",
       "path": "story_specific_gen/dialogue/SCN_SCN-037.json",
-      "hash": "52d0470276d2d8ee580fe7bef8d854868700fdc4dc4b9e09d51fffbd3a03e4ee",
+      "hash": "8c992fc5d04b17bb5ee864fe7af30969a35fbddc066023bb880ce4159032269d",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.448045Z"
+      "generatedAt": "2026-01-11T00:14:28.614722Z"
     },
     {
       "sceneId": "SCN-038",
       "screenId": "HUB-11",
       "dialogueGraphId": "DG_OPERATIONAL_VERIFICATION_BINDER",
       "path": "story_specific_gen/dialogue/SCN_SCN-038.json",
-      "hash": "4fc4a57aa741add3e7e90e7825d4ac1e4c2d642bfffc4f037f95ae370ad82272",
+      "hash": "4a8e4ded75f374d36d559bbc77d77ffcd640c8fd2fad6357eb464db49b017dad",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.448105Z"
+      "generatedAt": "2026-01-11T00:14:28.614781Z"
     },
     {
       "sceneId": "SCN-039",
       "screenId": "HUB-12",
       "dialogueGraphId": "DG_SPNDLE_OBSERVE",
       "path": "story_specific_gen/dialogue/SCN_SCN-039.json",
-      "hash": "da61eac12b8239c7309f58ac07bfdb8540c8958ce8ed9b34075ccbd6dcc06254",
+      "hash": "57f74ed6728a0b1e29e826aadd005b5e53b6188cf4ba2fe6c2a7d4556d7f0943",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.448162Z"
+      "generatedAt": "2026-01-11T00:14:28.614802Z"
     },
     {
       "sceneId": "SCN-040",
       "screenId": "HUB-12",
       "dialogueGraphId": "DG_REFLECTIVITY_TEST_STATION",
       "path": "story_specific_gen/dialogue/SCN_SCN-040.json",
-      "hash": "71092867a88e0ce915f057fb6c6c06120c2727ad2b626ef0a46c7e85a0d466cc",
+      "hash": "39cf137b87d9c48ebe5a29fb5397de6f9d7a459d724c005d8f72ab093d36fa19",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.448242Z"
+      "generatedAt": "2026-01-11T00:14:28.614874Z"
     },
     {
       "sceneId": "SCN-041",
       "screenId": "HUB-13",
       "dialogueGraphId": "DG_WITNESS_ZONE_IDENTIFICATION",
       "path": "story_specific_gen/dialogue/SCN_SCN-041.json",
-      "hash": "e3c1b0312b1e824129c83518315c09e8c64dee7daadd5ac09963364bb8c9c74f",
+      "hash": "c8acc55a5dc3229498a8080049886995a22a964dd799c844ce47802b705dd804",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.448302Z"
+      "generatedAt": "2026-01-11T00:14:28.614892Z"
     },
     {
       "sceneId": "SCN-042",
       "screenId": "HUB-11",
       "dialogueGraphId": "DG_SCN_042_ALARM_PANEL",
       "path": "story_specific_gen/dialogue/SCN_SCN-042.json",
-      "hash": "1029995badd2d81c5232d5983210a383b81fc08576a625e7a04ccb461c3eff64",
+      "hash": "c9f6e0a7ce7ca054a5d7a6f46d9beca8e5f466d61ec85bbff3b6fccf1cfbca1c",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.448411Z"
+      "generatedAt": "2026-01-11T00:14:28.614993Z"
     },
     {
       "sceneId": "SCN-043",
       "screenId": "HUB-11",
       "dialogueGraphId": "DG_SCN_043_MAIN_CONSOLE",
       "path": "story_specific_gen/dialogue/SCN_SCN-043.json",
-      "hash": "3c2aabc10400ce2dc2693db3661c1848dba58f5de253c99f1fbe76d8cb686b67",
+      "hash": "286c116efaf026a09a4e597fa5eeb7d1d32d61513b82045e8c80a019f1db1672",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.448577Z"
+      "generatedAt": "2026-01-11T00:14:28.615148Z"
     },
     {
       "sceneId": "SCN-044",
       "screenId": "HUB-13",
       "dialogueGraphId": "DG_SPNDLE_ROUTING",
       "path": "story_specific_gen/dialogue/SCN_SCN-044.json",
-      "hash": "ec927f85bb3e4a61d25cbbfaa95134a7e7386759145059de9b123ba151a55cdf",
+      "hash": "a9c8114edbcd920e2d7a50ce588c69e08acb1f3e395e2c950cca057358ba3078",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.448703Z"
+      "generatedAt": "2026-01-11T00:14:28.615263Z"
     },
     {
       "sceneId": "SCN-045",
       "screenId": "LIM-01",
       "dialogueGraphId": "SCN_045_OVERFLOW_INTAKE",
       "path": "story_specific_gen/dialogue/SCN_SCN-045.json",
-      "hash": "ed056542fe48b19542c54f9a22b51021dbb7005a9f3376c340d9ff65f41222e4",
+      "hash": "da9cea18eca7ac81865e79e2035bc9e75d57bc8cff8af19ecb7c1b47f2ece04f",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.448813Z"
+      "generatedAt": "2026-01-11T00:14:28.615330Z"
     },
     {
       "sceneId": "SCN-046",
       "screenId": "LIM-01",
       "dialogueGraphId": "DG_UNALLOCATED_MASS_KIOSK",
       "path": "story_specific_gen/dialogue/SCN_SCN-046.json",
-      "hash": "ea9f46d28e529f53dd2c9ad597bedc4857718b34897c790286a37f406bd5841a",
+      "hash": "7db23007552a0af954e7e33a92cb99b5543f0f519f5f5beaba50aee973636854",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.448866Z"
+      "generatedAt": "2026-01-11T00:14:28.615375Z"
     },
     {
       "sceneId": "SCN-047",
       "screenId": "LIM-02",
       "dialogueGraphId": "SCN_047_INTAKE_HALL",
       "path": "story_specific_gen/dialogue/SCN_SCN-047.json",
-      "hash": "84430d9a317d4bca603eb963a4f091280965283df69c4a5cd0ba0abb9d684a06",
+      "hash": "44762912c4e7d4136b6fd0a0fec69d756f7698c3afe427155c1afb00502e1b01",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.448949Z"
+      "generatedAt": "2026-01-11T00:14:28.615412Z"
     },
     {
       "sceneId": "SCN-048",
       "screenId": "LIM-02",
       "dialogueGraphId": "SCN_048_WINDOW0_TER",
       "path": "story_specific_gen/dialogue/SCN_SCN-048.json",
-      "hash": "4b7ac00769ae06161e98d48b2474c8f3a504d0f6025c3d7bc278a1af6084e4ef",
+      "hash": "6b581c00d9b1c41c9dca8cb1f17e66332a5a1012f877d60b7df02d4ebd00e095",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.449019Z"
+      "generatedAt": "2026-01-11T00:14:28.615476Z"
     },
     {
       "sceneId": "SCN-049",
       "screenId": "LIM-02",
       "dialogueGraphId": "SCN_049_WINDOW3_ORIENTATION",
       "path": "story_specific_gen/dialogue/SCN_SCN-049.json",
-      "hash": "45928699dcac14cb80e6fc12bbbbead39b6e30b421d513ceb549a3d76d5f6bcc",
+      "hash": "7e5d0ba3206b4787a40c028645916dc6a8cd0f64f026cbfa63805a3ace6e9a47",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.449059Z"
+      "generatedAt": "2026-01-11T00:14:28.615514Z"
     },
     {
       "sceneId": "SCN-050",
       "screenId": "LIM-02",
       "dialogueGraphId": "SCN_050_WINDOW5_SAFETY",
       "path": "story_specific_gen/dialogue/SCN_SCN-050.json",
-      "hash": "a5f42ef7d379449dd0681017462cc64f542a875a35080d9487ab497e1a31a681",
+      "hash": "6b922b2b0d8406886f42e83ae35d8b45a95771b81fc8856aa75dbdd7dc14228b",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.449123Z"
+      "generatedAt": "2026-01-11T00:14:28.615577Z"
     },
     {
       "sceneId": "SCN-051",
       "screenId": "LIM-02",
       "dialogueGraphId": "SCN_051_WINDOW7_PROPERTY_STUB",
       "path": "story_specific_gen/dialogue/SCN_SCN-051.json",
-      "hash": "2d7893411794edac502fe58980dc23423fc1f2882bb1ceecb39ec0c257b25b61",
+      "hash": "e2796af4eb2f4049ebe606691d1058eac1d5fe72a0ee7598f34c78bfb90c732d",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.449186Z"
+      "generatedAt": "2026-01-11T00:14:28.615637Z"
     },
     {
       "sceneId": "SCN-052",
       "screenId": "LIM-02",
       "dialogueGraphId": "SCN_052_WINDOW9_COMPLAINTS",
       "path": "story_specific_gen/dialogue/SCN_SCN-052.json",
-      "hash": "5c21760270e78b07edf59d7e68ae70ae33b50b5a049aed3c784ac2f18682c2cd",
+      "hash": "15fa05b485671d8462344eef107bbd93f342beb8671169e037c00185c3fc56ba",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.449243Z"
+      "generatedAt": "2026-01-11T00:14:28.615692Z"
     },
     {
       "sceneId": "SCN-053",
       "screenId": "LIM-03",
       "dialogueGraphId": "DG_LIM03_MAP_KIOSK",
       "path": "story_specific_gen/dialogue/SCN_SCN-053.json",
-      "hash": "ece69f94c2b032fbe24c626e1df443cc907378647d574a073c053384b7849b16",
+      "hash": "e2d97f45b8da2a333ec973415e27f731535c77d43a0e53e3b3b719372ff0d6a4",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.449289Z"
+      "generatedAt": "2026-01-11T00:14:28.615738Z"
     },
     {
       "sceneId": "SCN-054",
       "screenId": "LIM-04",
       "dialogueGraphId": "DG_LEGACY_ARCHIVE",
       "path": "story_specific_gen/dialogue/SCN_SCN-054.json",
-      "hash": "928769fd6031b57b20a4a5b11e1326c7fb36dae510dd6eb1ad019635cfbb2124",
+      "hash": "93ebb806cbd955f65bc072771cacaae0b61811ef711da5b3e13dd4bbbd6cd72b",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.449345Z"
+      "generatedAt": "2026-01-11T00:14:28.615795Z"
     },
     {
       "sceneId": "SCN-055",
       "screenId": "LIM-05",
       "dialogueGraphId": "AMR_TRIAGE_READER",
       "path": "story_specific_gen/dialogue/SCN_SCN-055.json",
-      "hash": "425e2d7bdb80676023c9210f8b2b880ae58414ad365e067d113b5d35166ad0bf",
+      "hash": "7a3d312dc0342194ee79b8bbd8c778029595e89829a120892207faee267f6d26",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.449404Z"
+      "generatedAt": "2026-01-11T00:14:28.615852Z"
     },
     {
       "sceneId": "SCN-056",
       "screenId": "LIM-06",
       "dialogueGraphId": "SCN_056_SCHED_COUNTER",
       "path": "story_specific_gen/dialogue/SCN_SCN-056.json",
-      "hash": "258cb55dfa0975cd8698a47ec00691c1da0f03e713e92664e017fca0262011e1",
+      "hash": "28ef24d2221dcff5714858419bfb5e28f722660e9644e51ba5dd683fa4be0852",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.449457Z"
+      "generatedAt": "2026-01-11T00:14:28.615899Z"
     },
     {
       "sceneId": "SCN-057",
       "screenId": "LIM-06",
       "dialogueGraphId": "SCN_057_SLOT_TOKEN_RECOVERY",
       "path": "story_specific_gen/dialogue/SCN_SCN-057.json",
-      "hash": "72d29660bc6ecc0eb18413df9c137a52bf99e2ea99ebdfce323d53c9a69accfe",
+      "hash": "01c717959dca0bc526232674a7b31d02c8cacc25d10e9f930b7a3e8c5272b463",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.449549Z"
+      "generatedAt": "2026-01-11T00:14:28.615976Z"
     },
     {
       "sceneId": "SCN-058",
       "screenId": "LIM-06",
       "dialogueGraphId": "SCN_058_STAMP_SUBSTITUTION_BOARD",
       "path": "story_specific_gen/dialogue/SCN_SCN-058.json",
-      "hash": "ed9579055f13efc67f775b905e2c17244e1d7a057d21470ff21206209dfedbba",
+      "hash": "ea4b737cecaaaa6d90bc9e9d776cfaa0fe7c1a922b4c4e641bde11ffeb047223",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.449630Z"
+      "generatedAt": "2026-01-11T00:14:28.616055Z"
     },
     {
       "sceneId": "SCN-059",
       "screenId": "LIM-06",
       "dialogueGraphId": "SCN_059_IWO_CLEARANCE",
       "path": "story_specific_gen/dialogue/SCN_SCN-059.json",
-      "hash": "df26dc42ea93043f63c57cae624afa2a86777ffa4e0ca3df5d145fecda4e5f0e",
+      "hash": "3a631cd1709be41ca1c7c97e573559f0447ef2d6da42df9743742ac08faaa955",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.449718Z"
+      "generatedAt": "2026-01-11T00:14:28.616142Z"
     },
     {
       "sceneId": "SCN-060",
       "screenId": "LIM-07",
       "dialogueGraphId": "DG_STAGING_INTERCONNECTION_BAY",
       "path": "story_specific_gen/dialogue/SCN_SCN-060.json",
-      "hash": "f61e0a8da6818a8eccfa7d582c2d25f6a1f3eba7e5230055d8ff35140538c824",
+      "hash": "000fdeb1bdf4451d9a1b92d048710baac31e2e85f8ab9cba51b0ad700b5e8a87",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.449804Z"
+      "generatedAt": "2026-01-11T00:14:28.616178Z"
     },
     {
       "sceneId": "SCN-061",
       "screenId": "LIM-08",
       "dialogueGraphId": "DG_SCN061_APERTURE_BAY_MIRROR_SURFACE",
       "path": "story_specific_gen/dialogue/SCN_SCN-061.json",
-      "hash": "28b6cce0a1d05ef0b0daf3392c27e91c3188800db10b1fd8b6be9d5f2ec1629f",
+      "hash": "1f9c6785f5cb1f8c22c2f523f4565bc82785c9668d7b3bd55dfa4f636b152668",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.449874Z"
+      "generatedAt": "2026-01-11T00:14:28.616242Z"
     },
     {
       "sceneId": "SCN-062",
       "screenId": "HUB-13",
       "dialogueGraphId": "DG_SCN_062_HUB13_ACT3",
       "path": "story_specific_gen/dialogue/SCN_SCN-062.json",
-      "hash": "524ffa81044a7c3624e5240b3377cd44fb5e939ca5f0e96028b5e8eb4648f04c",
+      "hash": "fb1181f425cc83b76cb36210de1df84308e0645dc0451a64e0ec149311ce6215",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.449946Z"
+      "generatedAt": "2026-01-11T00:14:28.616265Z"
     },
     {
       "sceneId": "SCN-063",
       "screenId": "HUB-11",
       "dialogueGraphId": "SCN_063_CONTROL_ROOM_LOGGING",
       "path": "story_specific_gen/dialogue/SCN_SCN-063.json",
-      "hash": "cb12be17aa7beb227e4ee9ddbb7886c4a9ec384efeb1d311d7d3417e131333c3",
+      "hash": "8e5b025bccc88f9d72d8fdaf4688cc86cf6ef0019e381c1eb8cd7f9babfd9ea1",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.450040Z"
+      "generatedAt": "2026-01-11T00:14:28.616285Z"
     },
     {
       "sceneId": "SCN-064",
       "screenId": "HUB-11",
       "dialogueGraphId": "DG_SCN_064_LOG_PRINTER_TRAY",
       "path": "story_specific_gen/dialogue/SCN_SCN-064.json",
-      "hash": "82c2fb73173620adaa7c6f49467eabd7c4b7bdc31435aab9f48f0c4f17a7ebaa",
+      "hash": "d83f97ea05b21086b3c9202bd04897226a1ee60536c6fe87a2b2a408c71e6256",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.450088Z"
+      "generatedAt": "2026-01-11T00:14:28.616334Z"
     },
     {
       "sceneId": "SCN-065",
       "screenId": "HUB-07",
       "dialogueGraphId": "DG_SCN_065_MTA_NOTICE",
       "path": "story_specific_gen/dialogue/SCN_SCN-065.json",
-      "hash": "d8f0e65d521d7fba020c5a65bb2709c5d1d7809fe1c4fdd966e2393bb89389f9",
+      "hash": "18790c00253df1e04fae88d1a3155b7b8d455b1326f970286327c838f70cc435",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.450164Z"
+      "generatedAt": "2026-01-11T00:14:28.616413Z"
     },
     {
       "sceneId": "SCN-066",
       "screenId": "HUB-14",
-      "dialogueGraphId": "DG_SCN_066_NOTICES_REINTERPRET",
+      "dialogueGraphId": "DG_SCN_066_MTA_NOTICES",
       "path": "story_specific_gen/dialogue/SCN_SCN-066.json",
-      "hash": "a29491021b84b5f90dd44dc179185d838c2d27f38122fdbeacfd29b061bbdb14",
+      "hash": "a8c09a95558762cde2316c7c72115127bdc02d0f8d6de7b4f4cd0ce2d2a1da0f",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.450235Z"
+      "generatedAt": "2026-01-11T00:14:28.616462Z"
     },
     {
       "sceneId": "SCN-067",
       "screenId": "HUB-13",
       "dialogueGraphId": "DG_SCN_067_SUBMIT_VARIANCE_ACK",
       "path": "story_specific_gen/dialogue/SCN_SCN-067.json",
-      "hash": "83616cf094379364037193df6fd62acc8490aaff408778fcccd687faaea5318a",
+      "hash": "ad77dc59cf9f3289eddac78ac305245a1e46dade74e3449a6b97d9f9073a3274",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.450319Z"
+      "generatedAt": "2026-01-11T00:14:28.616542Z"
     },
     {
       "sceneId": "SCN-068",
       "screenId": "HUB-07",
       "dialogueGraphId": "SCN068_RECORDS_ACCESS",
       "path": "story_specific_gen/dialogue/SCN_SCN-068.json",
-      "hash": "d8733f1634fc31830667d2d3c26e4c804de0a67aace3c0ec40bb83153b40cd01",
+      "hash": "23456478064acac0475601e1de77254b891d0b452ba5c5c718df90694f908770",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.450389Z"
+      "generatedAt": "2026-01-11T00:14:28.616613Z"
     },
     {
       "sceneId": "SCN-069",
       "screenId": "HUB-08",
       "dialogueGraphId": "DG_SCN069_COPIER_EVIDENCE_PACKET",
       "path": "story_specific_gen/dialogue/SCN_SCN-069.json",
-      "hash": "f32260bdad7fa78d982798fdeef901c6270c106127315bceb36cd55bf41ce8e6",
+      "hash": "065cc3707d786da9be6158244f61c122d071bcd218440b776464e6843c3d1aee",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.450453Z"
+      "generatedAt": "2026-01-11T00:14:28.616674Z"
     },
     {
       "sceneId": "SCN-070",
       "screenId": "HUB-09",
       "dialogueGraphId": "DG_SCN074_CLOSURE_MEMO",
       "path": "story_specific_gen/dialogue/SCN_SCN-070.json",
-      "hash": "08d2f500485eee4ada75a9e1340b4902f69b12eb3bb1e8222a470bd2f7f66f3e",
+      "hash": "83c8ab9af25ccda94e1ea33009befdcff572e3bd0751c7c73dea81252cefd36b",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.450517Z"
+      "generatedAt": "2026-01-11T00:14:28.616736Z"
     },
     {
       "sceneId": "SCN-071",
       "screenId": "HUB-13",
       "dialogueGraphId": "SCN_074_TERMINAL_SHUTDOWN",
       "path": "story_specific_gen/dialogue/SCN_SCN-071.json",
-      "hash": "2aa802430493e415bf84760e9c1424ae519565531d08ad1530b7f5b5734877c2",
+      "hash": "658edba2aeb30c03d51840127eb0c9bbc990f778b793aa0a1d5c012c436594a5",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.450595Z"
+      "generatedAt": "2026-01-11T00:14:28.616814Z"
     },
     {
       "sceneId": "SCN-072",
       "screenId": "HUB-11",
       "dialogueGraphId": "DG_SCN074_RENEGOTIATION",
       "path": "story_specific_gen/dialogue/SCN_SCN-072.json",
-      "hash": "2737b0a841814a03052ec90d18eb38357ff30011444f59036b7f6b1cfa956810",
+      "hash": "b1a16cf93d6a6069be476a18bb126726b0987713e498fc48d1ece68116d69e28",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.450688Z"
+      "generatedAt": "2026-01-11T00:14:28.616918Z"
     },
     {
       "sceneId": "SCN-073",
       "screenId": "HUB-11",
       "dialogueGraphId": "DG_SCN_073_HIDE_ALIGNMENT",
       "path": "story_specific_gen/dialogue/SCN_SCN-073.json",
-      "hash": "03eb44fd4a9854b93e3666bca80ac902d44e3d83a048c8d6e6db530f6691b10e",
+      "hash": "61256c86ddbcd8e2c4fcab26da29cc8b2d41d7c41d59deffe8a3a5df3f6d639f",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.450761Z"
+      "generatedAt": "2026-01-11T00:14:28.616990Z"
     },
     {
       "sceneId": "SCN-074",
       "screenId": "HUB-07",
       "dialogueGraphId": "DG_LIABILITY_REDIRECT_SCN074",
       "path": "story_specific_gen/dialogue/SCN_SCN-074.json",
-      "hash": "262b3e373ca3d74f0587cfe7c90479d1ca7f3d49f39e6b28f0d5a11a425cf9d1",
+      "hash": "84956394dc257ddb2f034917d9c34cdfb22a67be9213ccee309d9923f9057993",
       "model": "gpt-5.2",
-      "generatedAt": "2026-01-04T20:39:08.450877Z"
+      "generatedAt": "2026-01-11T00:14:28.617080Z"
+    },
+    {
+      "sceneId": "SCN-075",
+      "screenId": "HUB-01",
+      "dialogueGraphId": "DG_DEBRIS_PILE",
+      "path": "story_specific_gen/dialogue/SCN_SCN-075.json",
+      "hash": "e36efa9fc9914b6cdad250740190b244cb9c415225e5ab2a3bd7ed8baa778070",
+      "model": "gpt-5.2",
+      "generatedAt": "2026-01-11T00:14:28.617108Z"
+    },
+    {
+      "sceneId": "SCN-076",
+      "screenId": "HUB-01",
+      "dialogueGraphId": "DG_INSTRUMENT_CONDUIT_BOX",
+      "path": "story_specific_gen/dialogue/SCN_SCN-076.json",
+      "hash": "9405d69182675cfafd821fa797f5b91e0d4125e26350dc6adf102c899b498b55",
+      "model": "gpt-5.2",
+      "generatedAt": "2026-01-11T00:14:28.617123Z"
+    },
+    {
+      "sceneId": "SCN-077",
+      "screenId": "HUB-01",
+      "dialogueGraphId": "DG_GROUND_SERVICE_HATCH",
+      "path": "story_specific_gen/dialogue/SCN_SCN-077.json",
+      "hash": "a6f06b5a1189636dbcaf58c06c460f3a81fc8603778dbd0efc866addde562256",
+      "model": "gpt-5.2",
+      "generatedAt": "2026-01-11T00:14:28.617136Z"
+    },
+    {
+      "sceneId": "SCN-079",
+      "screenId": "HUB-03",
+      "dialogueGraphId": "DG_SCN_079_SPEAKER_INTERCOM",
+      "path": "story_specific_gen/dialogue/SCN_SCN-079.json",
+      "hash": "c85e56f10ef6909995d97a2d6d168a21c681d2cc63f2a958da462879aca05128",
+      "model": "gpt-5.2",
+      "generatedAt": "2026-01-11T00:14:28.617172Z"
+    },
+    {
+      "sceneId": "SCN-080",
+      "screenId": "HUB-03",
+      "dialogueGraphId": "DG_SCN_080_DEAD_TUBE_PORT_COVER",
+      "path": "story_specific_gen/dialogue/SCN_SCN-080.json",
+      "hash": "b85288c40a1f7ec8d72210cc2c430bcfb6fc0b4f10b52be2729a392fc6afd786",
+      "model": "gpt-5.2",
+      "generatedAt": "2026-01-11T00:14:28.617196Z"
+    },
+    {
+      "sceneId": "SCN-083",
+      "screenId": "HUB-04",
+      "dialogueGraphId": "DG_SCN_083_HATCH_LID_RING",
+      "path": "story_specific_gen/dialogue/SCN_SCN-083.json",
+      "hash": "85a67a983ba23d35eefac13df555e710e8e4bd0b1dd72177ec961428928b6716",
+      "model": "gpt-5.2",
+      "generatedAt": "2026-01-11T00:14:28.617210Z"
+    },
+    {
+      "sceneId": "SCN-087",
+      "screenId": "HUB-14",
+      "dialogueGraphId": "SCN087_FORMS_RACK_LOOK",
+      "path": "story_specific_gen/dialogue/SCN_SCN-087.json",
+      "hash": "7d5555869b65785e18992517bdb3ce6201aa033920b37a909ddee0c6b9eec8d6",
+      "model": "gpt-5.2",
+      "generatedAt": "2026-01-11T00:14:28.617230Z"
+    },
+    {
+      "sceneId": "SCN-088",
+      "screenId": "HUB-14",
+      "dialogueGraphId": "SCN088_ENVELOPE_STACK",
+      "path": "story_specific_gen/dialogue/SCN_SCN-088.json",
+      "hash": "1ca9d87d579b2d0cab5364c7f0d6bc043ced8edc43fd6737e989efb00ee56239",
+      "model": "gpt-5.2",
+      "generatedAt": "2026-01-11T00:14:28.617248Z"
+    },
+    {
+      "sceneId": "SCN-092",
+      "screenId": "HUB-10",
+      "dialogueGraphId": "OPS_PROCEDURE_PLACARDS",
+      "path": "story_specific_gen/dialogue/SCN_SCN-092.json",
+      "hash": "7d900d2872ab3f36727ce3bf4cb8bf2c733facab9fb2b97aca802e487a5e8335",
+      "model": "gpt-5.2",
+      "generatedAt": "2026-01-11T00:14:28.617267Z"
+    },
+    {
+      "sceneId": "SCN-094",
+      "screenId": "HUB-13",
+      "dialogueGraphId": "DG_SPHERE_SURFACE_INSPECTION",
+      "path": "story_specific_gen/dialogue/SCN_SCN-094.json",
+      "hash": "482cb7a4233e2bb66b1f412da95315e4b86c1a2bddbabc1b007400ce9207b810",
+      "model": "gpt-5.2",
+      "generatedAt": "2026-01-11T00:14:28.617283Z"
+    },
+    {
+      "sceneId": "SCN-095",
+      "screenId": "HUB-13",
+      "dialogueGraphId": "DG_STATUS_CLUSTER",
+      "path": "story_specific_gen/dialogue/SCN_SCN-095.json",
+      "hash": "69be7a95afc34d2248a435375f6a8ce79a4748ada7838760ad2d62b8e93f2547",
+      "model": "gpt-5.2",
+      "generatedAt": "2026-01-11T00:14:28.617303Z"
+    },
+    {
+      "sceneId": "SCN-096",
+      "screenId": "HUB-13",
+      "dialogueGraphId": "DG_SCAN_PANEL_WITNESS_ZONE",
+      "path": "story_specific_gen/dialogue/SCN_SCN-096.json",
+      "hash": "4c40d14c40bb8ee2f2de6062820925ea7719c1cea46ca23f403b7457c233014a",
+      "model": "gpt-5.2",
+      "generatedAt": "2026-01-11T00:14:28.617329Z"
+    },
+    {
+      "sceneId": "SCN-097",
+      "screenId": "HUB-13",
+      "dialogueGraphId": "DG_EMERGENCY_STOP",
+      "path": "story_specific_gen/dialogue/SCN_SCN-097.json",
+      "hash": "9961797e81d7eeb095772ba94b4ce322dfdeed5620d1e3560dea4df5aa3c4876",
+      "model": "gpt-5.2",
+      "generatedAt": "2026-01-11T00:14:28.617350Z"
+    },
+    {
+      "sceneId": "SCN-098",
+      "screenId": "LIM-01",
+      "dialogueGraphId": "SCN_098_BARCODE_KIOSK",
+      "path": "story_specific_gen/dialogue/SCN_SCN-098.json",
+      "hash": "2d372ef3237d3baebddbae37668b1ac917047ecd8e5520dff9dbcb788848203f",
+      "model": "gpt-5.2",
+      "generatedAt": "2026-01-11T00:14:28.617365Z"
+    },
+    {
+      "sceneId": "SCN-100",
+      "screenId": "LIM-01",
+      "dialogueGraphId": "SCN_100_SEALED_BAY_DOOR",
+      "path": "story_specific_gen/dialogue/SCN_SCN-100.json",
+      "hash": "308f6d50959f2df9b9d2e8a4f154cfd025b08838ca508e46a3b077761ed6c172",
+      "model": "gpt-5.2",
+      "generatedAt": "2026-01-11T00:14:28.617396Z"
+    },
+    {
+      "sceneId": "SCN-101",
+      "screenId": "LIM-02",
+      "dialogueGraphId": "SCN_101_INTAKE_HALL_PLACARDS_LOOK",
+      "path": "story_specific_gen/dialogue/SCN_SCN-101.json",
+      "hash": "9d2579b2f2315e1fbb27ef0218fefe8b2f4c6b6cccf88e71370539b983737c2b",
+      "model": "gpt-5.2",
+      "generatedAt": "2026-01-11T00:14:28.617411Z"
+    },
+    {
+      "sceneId": "SCN-104",
+      "screenId": "LIM-07",
+      "dialogueGraphId": "DG_STAGING_INTERCONNECTION_BAY_HOTSPOT_BINDINGS",
+      "path": "story_specific_gen/dialogue/SCN_SCN-104.json",
+      "hash": "645993ef5bca282d43c27b0b44bb4a136644fbebb1a37e132a14f388345bde0e",
+      "model": "gpt-5.2",
+      "generatedAt": "2026-01-11T00:14:28.617479Z"
+    },
+    {
+      "sceneId": "SCN-110",
+      "screenId": "HUB-11",
+      "dialogueGraphId": "SCN_110_MAIN_CONSOLE_TALK",
+      "path": "story_specific_gen/dialogue/SCN_SCN-110.json",
+      "hash": "c41910333eeb9d4bfe3d6bdc995a979ef1734660b922e15366ff7059eb5c615b",
+      "model": "gpt-5.2",
+      "generatedAt": "2026-01-11T00:14:28.617527Z"
+    },
+    {
+      "sceneId": "SCN-111",
+      "screenId": "HUB-11",
+      "dialogueGraphId": "SCN_111_ALARM_PANEL_INTERACTION",
+      "path": "story_specific_gen/dialogue/SCN_SCN-111.json",
+      "hash": "44e3830004103a2c6264d687040394d2cbce20d84453fcc7f80131475d1a0658",
+      "model": "gpt-5.2",
+      "generatedAt": "2026-01-11T00:14:28.617552Z"
+    },
+    {
+      "sceneId": "SCN-112",
+      "screenId": "HUB-11",
+      "dialogueGraphId": "SCN_112_PROCEDURE_BINDER_INTERACT",
+      "path": "story_specific_gen/dialogue/SCN_SCN-112.json",
+      "hash": "d8a183dcd1c08b48f5ed581c56e60a35638d98617670cf43cf9813b414078cfc",
+      "model": "gpt-5.2",
+      "generatedAt": "2026-01-11T00:14:28.617576Z"
     }
   ]
 }

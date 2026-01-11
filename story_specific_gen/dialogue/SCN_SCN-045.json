@@ -55,7 +55,7 @@
           "id": "N_COACH_INTERCEPT_1",
           "type": "npc_line",
           "speakerId": "PROCESS_COACH",
-          "text": "Don\u2019t do that. (pause) It works, and then staff are on you. (pause) And I\u2019ve got nothing I can file.",
+          "text": "Don\u2019t. (pause) You\u2019ll ping staff, and they\u2019ll swarm. (pause) Then I\u2019m stuck here with nothing to file.",
           "next": "N_COACH_INTERCEPT_2"
         },
         {
@@ -69,7 +69,7 @@
           "id": "N_COACH_INTERCEPT_3",
           "type": "npc_line",
           "speakerId": "PROCESS_COACH",
-          "text": "You need a token. (pause)\n\u201cAccess\u201d just gets people hovering at the door (pause) and slows everything down.",
+          "text": "You need a token. (pause)\nSay \u201caccess\u201d and folks hover at the door. (pause)\nEverything jams up.",
           "next": "PC_COACH_START"
         },
         {
@@ -135,7 +135,7 @@
           "id": "N_TOKEN_FOR_WHAT_2",
           "type": "npc_line",
           "speakerId": "PROCESS_COACH",
-          "text": "For anything out here waving the \u201csafety\u201d flag. (pause)\nDoors. (pause)\nKiosks. (pause)\nWindow assignment. (pause)\nWhat you do gets tagged \u201cinquiry\u201d or \u201cinterference.\u201d (pause)\nUntil you\u2019ve got paper you\u2019re just extra. (pause)\nExtra in the line. (pause)\nThat\u2019s how the intake software got bought.",
+          "text": "For anything out here waving the \u201csafety\u201d flag. (pause)\nDoors. (pause)\nKiosks. (pause)\nWindow assignment. (pause)\nWhatever you touch gets tagged \u201cinquiry\u201d or \u201cinterference.\u201d (pause)\nTill you\u2019ve got paper, you\u2019re just extra. (pause)\nExtra in the line. (pause)\nThat\u2019s how the intake software got bought.",
           "next": "PC_COACH_FOLLOW"
         },
         {
@@ -149,7 +149,7 @@
           "id": "N_WHATS_TER_2",
           "type": "npc_line",
           "speakerId": "PROCESS_COACH",
-          "text": "Transfer Entitlement Receipt. (pause)\nYeah. The words are backwards. (pause)\nLegal did that. Don\u2019t ask me. (pause)\nIt\u2019s the slip. (pause)\nIt lets the system count you. (pause)\nAccounted-for mass. (pause)\nNot a random narrative.",
+          "text": "TER. Transfer Entitlement Receipt. (pause)\nYeah, the wording\u2019s backwards. (pause)\nLegal. Don\u2019t ask me. (pause)\nIt\u2019s the slip. (pause)\nIt lets the system count you. (pause)\nAccounted-for mass. (pause)\nIt won\u2019t take a whole story.",
           "next": "N_WHATS_TER_3"
         },
         {
@@ -163,21 +163,21 @@
           "id": "N_WHATS_TER_4",
           "type": "npc_line",
           "speakerId": "PROCESS_COACH",
-          "text": "You need a token (pause) that resolves to a TER (pause) when the door pings it. (pause)\nSay \u201caccess\u201d (pause) and people start looking around (pause) for who\u2019s responsible.",
+          "text": "You need a token (pause) that resolves to a TER (pause) when the door pings it. (pause)\nSay \u201caccess\u201d (pause) and people start looking around (pause) for who gets stuck owning it.",
           "next": "PC_COACH_FOLLOW"
         },
         {
           "id": "N_PERSUADE_PASS_1",
           "type": "npc_line",
           "speakerId": "PROCESS_COACH",
-          "text": "I believe you. (pause) Still can\u2019t shove a mandate (pause) through a door reader. (pause) You want this quiet? (pause) Get filed first. (pause) Then do your work.",
+          "text": "I hear you. (pause) Door reader doesn\u2019t take \u201cmandate.\u201d (pause) You want this quiet? (pause) Get filed first. (pause) Then do your work.",
           "next": "PC_COACH_FOLLOW"
         },
         {
           "id": "N_PERSUADE_FAIL_1",
           "type": "npc_line",
           "speakerId": "PROCESS_COACH",
-          "text": "Don\u2019t say that where it can hear. (pause) \u201cMandate\u201d starts escalation loops. (pause) Someone has to own it. (pause) Tokens slide through, no name attached.",
+          "text": "Don\u2019t say that where it can hear. (pause) \u201cMandate\u201d kicks off escalation loops. (pause) Then somebody has to own it. (pause) Tokens go through clean.",
           "next": "PC_COACH_FOLLOW"
         },
         {
@@ -220,14 +220,14 @@
           "id": "N_SHOW_OLEA_2",
           "type": "npc_line",
           "speakerId": "PROCESS_COACH",
-          "text": "Okay. OLEA Field Systems. (pause) Closure engineer. (pause) That helps me. (pause)\nThe kiosk still won\u2019t care. (pause) It wants an artifact. (pause)\nBe right all day. (pause) If you\u2019re not in the file, (pause) the door stays shut.",
+          "text": "Alright. OLEA Field Systems. (pause) Closure engineer. (pause) Helps me. (pause)\nKiosk still won\u2019t care. (pause) It wants an artifact. (pause)\nYou can be right all day. (pause) If you\u2019re not in the file, (pause) the door stays shut.",
           "next": "N_SHOW_OLEA_3"
         },
         {
           "id": "N_SHOW_OLEA_3",
           "type": "npc_line",
           "speakerId": "PROCESS_COACH",
-          "text": "Not you. (pause)\nSomething on you. Scannable. (pause)\nSomething that can take an incident category (pause)\nwithout crying about it.",
+          "text": "Something on you. (pause)\nScannable. (pause)\nSomething that can take an incident category (pause)\nwithout crying about it.",
           "next": "PC_SHOW_OLEA_MENU"
         },
         {
@@ -256,7 +256,7 @@
           "id": "N_CATEGORY_HINT_1",
           "type": "npc_line",
           "speakerId": "PROCESS_COACH",
-          "text": "Keep it low. (pause) Call it a misrouted equipment transfer. (pause) Drop \u201cauthority\u201d and \u201cmandate.\u201d (pause) Don\u2019t fight the window (pause) while they\u2019re logging.\nGet the token. (pause) Save the importance for someplace (pause) that actually files it.",
+          "text": "Keep it low. (pause) Call it \u201cmisrouted equipment transfer.\u201d (pause) Leave \u201cauthority\u201d and \u201cmandate\u201d out of it. (pause) Don\u2019t fight the window (pause) while they\u2019re logging.\nGet the token. (pause) Save the big speech for someplace (pause) that actually files it.",
           "next": "PC_CATEGORY_FOLLOW"
         },
         {
@@ -294,7 +294,7 @@
           "id": "N_USE_KIOSK_3",
           "type": "npc_line",
           "speakerId": "PROCESS_COACH",
-          "text": "It\u2019s a shortcut. (pause) If it spelled it all out, (pause) you\u2019d start negotiating with it\u2014 (pause) and then I\u2019m stuck logging (pause) a \u201cverbal incident.\u201d",
+          "text": "Yeah it\u2019s shorthand. (pause) If it spelled it all out (pause) you\u2019d start negotiating with it\u2014 (pause) and then I\u2019m stuck logging (pause) a \u201cverbal incident.\u201d",
           "next": "PC_KIOSK_MENU"
         },
         {
@@ -335,7 +335,7 @@
           "id": "N_FILE_AS_EQUIP_1",
           "type": "npc_line",
           "speakerId": "PROCESS_COACH",
-          "text": "Intake can file an object. (pause) It has a barcode. (pause) And an incident category. (pause) If you can\u2019t be listed. (pause) You attach to something that can. (pause) Then you\u2019re\u2014politely\u2014\u201cassociated mass.\u201d",
+          "text": "They\u2019ll file an object. (pause) Barcode. (pause) incident category. (pause) If you can\u2019t be listed. (pause) You hitch yourself to something that can. (pause) Then you\u2019re\u2014politely\u2014\u201cassociated mass.\u201d",
           "next": "PC_FILE_EQUIP_FOLLOW"
         },
         {
@@ -366,7 +366,7 @@
           "id": "N_GET_TOKEN_INFO_2",
           "type": "npc_line",
           "speakerId": "PROCESS_COACH",
-          "text": "Intake Hall. (pause) Windows 0/3/5/7/9. (pause)\nPick the one. (pause)\nLooks least hungry. (pause)\nFor your life story. (pause)\nGive them an incident category. (pause)\nThe system will accept. (pause)\nThey spit out a token. (pause)\nThat\u2019s what the doors listen to.",
+          "text": "Intake Hall. (pause) Windows 0/3/5/7/9. (pause)\nPick one that looks least hungry (pause)\nfor your life story. (pause)\nGive them an incident category. (pause)\nThey feed it to the system. (pause)\nToken prints. (pause)\nThat\u2019s what the doors listen to.",
           "next": "N_GET_TOKEN_INFO_3"
         },
         {
@@ -380,7 +380,7 @@
           "id": "N_GET_TOKEN_INFO_4",
           "type": "npc_line",
           "speakerId": "PROCESS_COACH",
-          "text": "Intake can\u2019t file a person. (pause)\nNot listed in any jurisdiction. (pause)\nThey can file an object. (pause)\nWith a barcode. (pause)\nAnd an incident category. (pause)\nSo you attach yourself. (pause)\nTo the object. (pause)\nYou\u2019re\u2014politely\u2014\u201cassociated mass.\u201d (pause)\nThey won\u2019t call it dehumanizing. (pause)\nThey\u2019ll call it efficient. (pause)\nOn paper.",
+          "text": "Intake won\u2019t file a person. (pause)\nYou\u2019re not listed in any jurisdiction. (pause)\nThey\u2019ll file an object. (pause)\nBarcode. (pause)\nIncident category. (pause)\nSo you attach yourself (pause)\nto the object. (pause)\nYou\u2019re\u2014politely\u2014\u201cassociated mass.\u201d (pause)\nNobody\u2019s gonna say \u201cdehumanizing.\u201d (pause)\nIt shows up as \u201cefficient.\u201d (pause)\nOn paper.",
           "next": "N_GET_TOKEN_INFO_5"
         },
         {

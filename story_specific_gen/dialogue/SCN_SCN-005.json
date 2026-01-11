@@ -9,50 +9,7 @@
           "id": "N_START",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The guard shack sits off the approach road (pause) like it was placed by a committee (pause) that feared weather and people equally. (pause)\nThe door has a steel pull handle. (pause) The card reader beside it glows faintly (pause) as if embarrassed to be awake.",
-          "next": "PC_MAIN_MENU"
-        },
-        {
-          "id": "PC_MAIN_MENU",
-          "type": "player_choice",
-          "speakerId": "PLAYER",
-          "choices": [
-            {
-              "id": "C_LEAVE",
-              "text": "Leave.",
-              "next": "END_LEAVE"
-            }
-          ]
-        },
-        {
-          "id": "N_LOOK_DOOR",
-          "type": "npc_line",
-          "speakerId": "NARRATOR",
-          "text": "The door is closed flush. Fresh wear on the latch side: tested recently, then stopped. (pause) No gap, no give. It\u2019s locked.",
-          "next": "PC_MAIN_MENU"
-        },
-        {
-          "id": "N_LOOK_TUBE",
-          "type": "npc_line",
-          "speakerId": "NARRATOR",
-          "text": "A brass plate, scuffed to dull gold, sits beside a capped tube port. (pause)\nBlock letters read: \u201cFORMS \u2014 INTAKE / OUTBOUND \u2014 DO NOT SEND FOOD.\u201d (pause)\nAn arrow\u2019s scratched under \u201cOUTBOUND.\u201d Like they didn\u2019t trust the printed one.",
-          "next": "PC_MAIN_MENU"
-        },
-        {
-          "id": "END_LOCKED_STATE",
-          "type": "end",
-          "outcomeId": "see_shack_locked_state",
-          "effects": [
-            {
-              "key": "world.guardShackLocked",
-              "action": "set",
-              "value": true
-            }
-          ]
-        },
-        {
-          "id": "END_LEAVE",
-          "type": "end"
+          "text": "The guard shack sits off the approach road (pause) like it was placed by a committee (pause) that feared weather and people equally. (pause)\nThe door has a steel pull handle. (pause) The card reader beside it glows faintly (pause) as if embarrassed to be awake."
         }
       ]
     }

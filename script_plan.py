@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
+from __future__ import annotations
+
 """
 End-to-end story planning pipeline: scenes, characters, hotspots, and dialogue.
 """
-"""Generate story_specific_gen outputs from story and screens using an LLM."""
-
-from __future__ import annotations
 
 import argparse
 import datetime
@@ -793,7 +792,11 @@ def assign_characters_to_scenes(args: argparse.Namespace) -> None:
     for idx, scene in enumerate(scenes_list, start=1):
         if not isinstance(scene, dict):
             continue
-        scene_id = scene.get("id", f"scene-{idx}")
+        scene_id_raw = scene.get("id")
+        if not isinstance(scene_id_raw, str) or not scene_id_raw.strip():
+            print(f"Skipping scene with missing id at index {idx}")
+            continue
+        scene_id = re.sub(r"[^A-Za-z0-9_-]+", "", scene_id_raw)
         if scene.get("characters"):
             continue
         screen_id = scene.get("screenId")
@@ -901,6 +904,7 @@ def build_dialogue_narrative_prompt(
         "Describe the flow, key beats, and intent of choices, without JSON.\n"
         "Keep it concise and focused on what the player sees and chooses.\n"
         "Then return draft dialog, script style, with duplicate indented dialog where there are multiple conversation paths. "
+        "The narrative should not include looking at other things in the scene, or options to leave the room. "
         "Return ONLY the narrative text and draft dialog."
     )
     parts = [
@@ -1033,10 +1037,21 @@ def generate_dialogue_for_scenes(args: argparse.Namespace) -> None:
     for idx, scene in enumerate(target_scenes, start=1):
         if not isinstance(scene, dict):
             continue
-        scene_id = scene.get("id", f"scene-{idx}")
+        scene_id = str(scene.get("id", f"scene-{idx}")).strip()
         screen_id = scene.get("screenId")
         output_path = os.path.join(args.dialogue_dir, f"SCN_{scene_id}.json")
-        if os.path.exists(output_path):
+        existing_path = output_path if os.path.exists(output_path) else None
+        if existing_path is None:
+            target_name = f"scn_{scene_id}.json".lower()
+            try:
+                for name in os.listdir(args.dialogue_dir):
+                    if name.lower() == target_name:
+                        existing_path = os.path.join(args.dialogue_dir, name)
+                        break
+            except FileNotFoundError:
+                existing_path = None
+        if existing_path:
+            output_path = existing_path
             print(f"Skipping existing dialogue: {output_path}")
             with open(output_path, "r", encoding="utf-8") as handle:
                 raw = handle.read()
@@ -1060,6 +1075,7 @@ def generate_dialogue_for_scenes(args: argparse.Namespace) -> None:
             }
             manifest_entries.append(entry)
             continue
+        print(f"Dialogue file not found for scene {scene_id}: {output_path}")
 
         screen = screens_by_id.get(screen_id, {})
         screen_context = {
@@ -1118,8 +1134,8 @@ def generate_dialogue_for_scenes(args: argparse.Namespace) -> None:
                 "screenId": s.get("screenId"),
                 "sharedCharacters": sorted(set(shared_non_player)),
             }
-            scene_id = s.get("id")
-            other_path = os.path.join(args.dialogue_dir, f"SCN_{scene_id}.json")
+            other_scene_id = s.get("id")
+            other_path = os.path.join(args.dialogue_dir, f"SCN_{other_scene_id}.json")
             if not os.path.exists(other_path):
                 # print(f"Warning: dialogue not found at {other_path}")
                 other_path = None
@@ -1133,7 +1149,7 @@ def generate_dialogue_for_scenes(args: argparse.Namespace) -> None:
                 formatted = format_dialogue_lines(other_content, current_character_ids)
                 other_dialogue.append(
                     {
-                        "sceneId": scene_id,
+                        "sceneId": other_scene_id,
                         "path": other_path,
                         "content": filtered,
                     }

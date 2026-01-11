@@ -1,634 +1,535 @@
 {
   "nodes": [
     {
-      "scene": "SCN_SCN-047.json",
-      "id": "N_WIN0_INTRO_2",
-      "priorLine": "Window 0 is the only counter without pamphlets.\nThe space is clean in the way a form is clean\u0014because nothing personal has been allowed to touch it.",
-      "lineToEdit": "Intake.\nState your filing category.",
-      "nextLine": "",
-      "revisedLine": "Intake.\nCategory?",
-      "changeSummary": "Shortened to a clipped, in-the-moment prompt."
-    },
-    {
-      "scene": "SCN_SCN-047.json",
-      "id": "N_WIN0_TER_1",
-      "priorLine": "ask: I need a Temporary Existence Receipt.",
-      "lineToEdit": "A TER is an output, not an input.",
-      "nextLine": "We do not issue existence. We issue a receipt acknowledging a recordable condition, in the normal sense.\nIf you are not listed in a jurisdiction, you cannot be filed as a person.",
-      "revisedLine": "TER comes after.\nStart with a category.",
-      "changeSummary": "Removed binary contrast; kept meaning with brisk sequencing pressure."
-    },
-    {
-      "scene": "SCN_SCN-047.json",
-      "id": "N_WIN0_TER_2",
-      "priorLine": "A TER is an output, not an input.",
-      "lineToEdit": "We do not issue existence. We issue a receipt acknowledging a recordable condition, in the normal sense.\nIf you are not listed in a jurisdiction, you cannot be filed as a person.",
-      "nextLine": "If you can present a barcoded object, we can file the object.\nAdditional mass may be marked \u001cassociated,\u001d without comment.",
-      "revisedLine": "I don't issue existence. (pause)\nI can stamp a receipt for something. (pause)\nI can log it in the normal sense. (pause)\nIf you're not listed in a jurisdiction. (pause)\nI can't file you as a person.",
-      "changeSummary": "Made it reactive and defensive; kept the jurisdiction/person filing constraint. | Split into short beats with (pause) markers to meet beat length. Removed the two commas without altering meaning or cadence."
-    },
-    {
-      "scene": "SCN_SCN-047.json",
-      "id": "N_WIN0_TER_3",
-      "priorLine": "We do not issue existence. We issue a receipt acknowledging a recordable condition, in the normal sense.\nIf you are not listed in a jurisdiction, you cannot be filed as a person.",
-      "lineToEdit": "If you can present a barcoded object, we can file the object.\nAdditional mass may be marked \u001cassociated,\u001d without comment.",
-      "nextLine": "",
-      "revisedLine": "Put something with a barcode on the counter. (pause) I can file that. (pause) Anything extra goes down as 'associated'. (pause) No comment.",
-      "changeSummary": "Converted formal phrasing into practical, desk-level shorthand. | Split into short beats using (pause) to meet the 8-word limit, removed the comma, and cleaned up the formatting around 'associated' without changing meaning."
-    },
-    {
-      "scene": "SCN_SCN-047.json",
-      "id": "N_WIN0_CATS_1",
-      "priorLine": "ask: What categories are accepted?",
-      "lineToEdit": "The acceptable categories are those currently accepted.",
-      "nextLine": "I understand that sounds circular. It prevents negotiation.\n\u001cMisrouted equipment transfer\u001d is usually non-escalatory.\n\u001cUnclaimed attachment\u001d is also available, but tends to invite questions, in the normal sense.",
-      "revisedLine": "Whatever's listed today is what I take.",
-      "changeSummary": "Replaced circular formalism with natural, gatekeeping shorthand. | Swapped \u201con the list\u201d to \u201clisted\u201d to cut one word and meet the 8-word beat limit without changing meaning."
-    },
-    {
-      "scene": "SCN_SCN-047.json",
-      "id": "N_WIN0_CATS_2",
-      "priorLine": "The acceptable categories are those currently accepted.",
-      "lineToEdit": "I understand that sounds circular. It prevents negotiation.\n\u001cMisrouted equipment transfer\u001d is usually non-escalatory.\n\u001cUnclaimed attachment\u001d is also available, but tends to invite questions, in the normal sense.",
-      "nextLine": "",
-      "revisedLine": "Yeah. It\u2019s circular. (pause) Keeps it from turning into debate. (pause) \u201cMisrouted equipment transfer\u201d usually stays quiet. (pause) \u201cUnclaimed attachment\u201d is there too. (pause) It gets questions in the normal sense.",
-      "changeSummary": "Kept options and risk; made it sound like someone shutting down negotiation. | Split the line into short beats using (pause) to meet the max beat word limit. Removed commas by switching to periods while keeping the same meaning and cadence."
-    },
-    {
-      "scene": "SCN_SCN-047.json",
-      "id": "N_WIN0_OLEA_1",
-      "priorLine": "show: OLEA credentials.",
-      "lineToEdit": "Employer credentials are not a category.",
-      "nextLine": "They are\u001c context. Context is not scannable.\nIf you want a TER, you will proceed through Intake as recordable mass.",
-      "revisedLine": "Employer credentials don't go in the category box.",
-      "changeSummary": "More conversational refusal without changing the underlying block."
-    },
-    {
-      "scene": "SCN_SCN-047.json",
-      "id": "N_WIN0_OLEA_2",
-      "priorLine": "Employer credentials are not a category.",
-      "lineToEdit": "They are\u001c context. Context is not scannable.\nIf you want a TER, you will proceed through Intake as recordable mass.",
-      "nextLine": "",
-      "revisedLine": "Sure. They're context. (pause) I can't scan context. (pause) Want a TER? Go through Intake. (pause) As recordable mass.",
-      "changeSummary": "Cut the lecture; kept the scan/Intake requirement. | Removed commas and split the line into shorter beats using (pause) while keeping the same meaning and cadence."
-    },
-    {
-      "scene": "SCN_SCN-047.json",
-      "id": "N_WIN0_BARGAIN_1",
-      "priorLine": "bargain: I\u0019ll keep it simple if you get me filed fast.",
-      "lineToEdit": "Simplicity is appreciated.",
-      "nextLine": "Speed is not promised. Speed implies discretion.\nWe provide sequence. Sequence produces receipts.",
-      "revisedLine": "Good. Keep it simple.",
-      "changeSummary": "Made the approval sound immediate and practical."
-    },
-    {
-      "scene": "SCN_SCN-047.json",
-      "id": "N_WIN0_BARGAIN_2",
-      "priorLine": "Simplicity is appreciated.",
-      "lineToEdit": "Speed is not promised. Speed implies discretion.\nWe provide sequence. Sequence produces receipts.",
-      "nextLine": "",
-      "revisedLine": "I don't promise speed. (pause) I do the order. (pause) The order gets you the receipt.",
-      "changeSummary": "Dropped institutional cadence; kept the no-speed/sequence point. | Inserted (pause) breaks to keep each beat under 8 words without changing meaning."
-    },
-    {
-      "scene": "SCN_SCN-047.json",
-      "id": "N_COMMIT_2",
-      "priorLine": "You point at the placard: \u001cINTAKE (TER).\u001d",
-      "lineToEdit": "Correct.\nIn the normal sense.",
-      "nextLine": "The clerk slides a blank form forward, face-down, like it might try to read you back if you look too directly.\nYou have identified the path. The actual filing comes next\u0014when you choose what you are willing to be called.",
-      "revisedLine": "Yeah.\nIn the normal sense.",
-      "changeSummary": "Made confirmation sound less scripted; preserved the tag phrase."
-    },
-    {
       "scene": "SCN_SCN-048.json",
       "id": "N_CLERK_OPEN_1",
       "priorLine": "The Intake Clerk\u0019s eyes track your Unallocated Mass Slip before they track you.",
-      "lineToEdit": "Intake. State your filing category.\nPresent the unallocated slip, if you intend to be processed in sequence\u0014in the normal sense.",
+      "lineToEdit": "Intake. (pause) Category. (pause) Slip on the counter (pause) if you want to stay in sequence, (pause) in the normal sense.",
       "nextLine": "",
-      "revisedLine": "Intake. (pause) Category. (pause) Slip on the counter (pause) if you want to stay in sequence, (pause) in the normal sense.",
-      "changeSummary": "Tightened and made it more physically present at the window. | Inserted pauses to keep each beat under 8 words, removed the stray character, and added one comma without changing meaning."
+      "revisedLine": "Intake. (pause) Category. (pause) Slip on the counter. (pause) If you want to stay in sequence\u0014normal sense.",
+      "changeSummary": "Trimmed the instruction into a sharper, in-the-moment demand; kept sequencing/\"normal sense\" intact."
     },
     {
       "scene": "SCN_SCN-048.json",
       "id": "N_PRESENT_SLIP_2",
       "priorLine": "Here.",
-      "lineToEdit": "Thank you. That is a document.\nIt does not establish personhood. It establishes unresolved mass. The distinction is important for blame\u0014in the normal sense.\nState your filing category.",
+      "lineToEdit": "Thanks. (pause)\nIt's paper. (pause)\nIt puts you down: unresolved mass. (pause)\nKeeps blame tidy, in normal sense. (pause)\nNow: category.",
       "nextLine": "",
-      "revisedLine": "Thanks. (pause)\nIt's paper. (pause)\nIt puts you down: unresolved mass. (pause)\nKeeps blame tidy, in normal sense. (pause)\nNow: category.",
-      "changeSummary": "Removed definitional tone while keeping personhood vs mass and blame implication. | Split the line into shorter beats using (pause) to meet the 8-word limit; kept only one comma; tightened wording without changing meaning."
+      "revisedLine": "Yeah. (pause)\nPaper. (pause)\nI\u0019m logging you as unresolved mass. (pause)\nKeeps blame tidy\u0014normal sense. (pause)\nNow. Category.",
+      "changeSummary": "Made it more curt and transactional; kept the same filing outcome and pressure to choose a category."
     },
     {
       "scene": "SCN_SCN-048.json",
       "id": "N_CATS_2",
       "priorLine": "What categories are accepted?",
-      "lineToEdit": "The categories currently accepted are those that do not trigger review.\nI understand that sounds interpretive. It is not. It is how Intake remains Intake\u0014in the normal sense.\n\u001cMisrouted equipment transfer\u001d is typically non-escalatory.\n\u001cNonhazardous backfeed residue\u001d is currently available, pending wording.\n\u001cUnclaimed attachment\u001d is available, but invites questions. Questions become incidents.",
-      "nextLine": "The clerk slides a blank template forward, face-down, like it might learn you if you look directly at it.",
-      "revisedLine": "Anything that doesn't kick you into review. (pause)\nDon't make me argue it. (pause)\n\"Misrouted equipment transfer\" usually slides through. (pause)\n\"Nonhazardous backfeed residue\" is on the sheet. (pause)\nRight now, wording's still moving. (pause)\n\"Unclaimed attachment\" is there. (pause)\nIt brings questions. (pause)\nQuestions become incidents.",
-      "changeSummary": "Kept the same category guidance but made it sharper and less expository. | Added (pause) breaks to keep each beat under 8 words, cleaned stray control characters, and limited punctuation to one comma without changing meaning."
+      "lineToEdit": "Anything that doesn't kick you into review. (pause)\nDon't make me argue it. (pause)\n\"Misrouted equipment transfer\" usually slides through. (pause)\n\"Nonhazardous backfeed residue\" is on the sheet. (pause)\nRight now, wording's still moving. (pause)\n\"Unclaimed attachment\" is there. (pause)\nIt brings questions. (pause)\nQuestions become incidents.",
+      "nextLine": "The clerk slides a template forward, face-down, like it\u0019ll learn you if you look at it.",
+      "revisedLine": "Anything that doesn\u0019t kick you into review. (pause)\nDon\u0019t make me litigate it. (pause)\n\u0018Misrouted equipment transfer\u0019 usually clears. (pause)\n\u0018Nonhazardous backfeed residue\u0019 is on the sheet. (pause)\nWording\u0019s still shifting. (pause)\n\u0018Unclaimed attachment\u0019 is listed. (pause)\nThat line pulls questions. (pause)\nQuestions turn into incidents.",
+      "changeSummary": "Kept the same acceptable examples and warning, but made it more irritated and window-level pragmatic."
     },
     {
       "scene": "SCN_SCN-048.json",
       "id": "N_PROPERTY_2",
       "priorLine": "Can I register property first?",
-      "lineToEdit": "Property requires a claimant. A claimant requires a fileable entity.\nYou are\u0014at present\u0014an accounting condition with shoes.\nIntake is how the building agrees to pretend you are something else\u0014in the normal sense.",
+      "lineToEdit": "Can't register property (pause)\nwithout a claimant on file. (pause)\nRight now (pause)\nyou're an accounting condition (pause)\nwith shoes. (pause)\nIntake is how the building lets you (pause)\nbe something fileable (pause)\nin the normal sense.",
       "nextLine": "",
-      "revisedLine": "Can't register property (pause)\nwithout a claimant on file. (pause)\nRight now (pause)\nyou're an accounting condition (pause)\nwith shoes. (pause)\nIntake is how the building lets you (pause)\nbe something fileable (pause)\nin the normal sense.",
-      "changeSummary": "More conversational refusal; preserved the claimant/entity constraint and tone. | Inserted (pause) breaks to keep each beat under 8 words; removed the stray character after \u201cfileable\u201d; kept wording and meaning intact with no added commas or explanations."
+      "revisedLine": "Can\u0019t register property (pause)\nwithout a claimant on file. (pause)\nRight now (pause)\nyou\u0019re an accounting condition (pause)\nwith shoes. (pause)\nDo Intake first. (pause)\nThen I can file you\u0014normal sense.",
+      "changeSummary": "Condensed the explanation into a hard procedural block; preserved claimant requirement and the same insult/phrasing."
     },
     {
       "scene": "SCN_SCN-048.json",
       "id": "N_OLEA_2",
       "priorLine": "OLEA Field Systems. Closure engineer.",
-      "lineToEdit": "Employer credentials are context. Context is not scannable.\nIf you require recognition, you will obtain it by becoming recordable mass first.\nThen you may be important somewhere that logs importance\u0014in the normal sense.",
+      "lineToEdit": "OLEA. Sure. (pause)\nStill just context. (pause)\nI can't scan it. (pause)\nYou want recognition? (pause)\nGet filed as recordable mass first. (pause)\nAfter that, maybe another window cares. (pause)\nIn the normal sense.",
       "nextLine": "",
-      "revisedLine": "OLEA. Sure. (pause)\nStill just context. (pause)\nI can't scan it. (pause)\nYou want recognition? (pause)\nGet filed as recordable mass first. (pause)\nAfter that, maybe another window cares. (pause)\nIn the normal sense.",
-      "changeSummary": "Kept the same gate; made it sound like a tired clerk under policy. | Inserted (pause) breaks to keep each beat under 8 words. Removed the comma after OLEA to stay within the comma limit, while preserving tone and meaning."
+      "revisedLine": "OLEA. Sure. (pause)\nThat\u0019s context. (pause)\nI can\u0019t scan it. (pause)\nGet filed as recordable mass first. (pause)\nAfter that, maybe another window cares\u0014normal sense.",
+      "changeSummary": "Removed the rhetorical flourish and kept the same denial: credentials don\u0019t help until intake filing happens."
     },
     {
       "scene": "SCN_SCN-048.json",
       "id": "N_PERSUADE_PASS_1",
       "priorLine": "",
-      "lineToEdit": "Use \u001cmisrouted equipment transfer.\u001d\nIf you require attachment language, write \u001cassociated mass (do not describe).\u001d\nDo not add adjectives. Adjectives are how people smuggle liability\u0014in the normal sense.",
-      "nextLine": "The clerk slides a blank template forward, face-down, like it might learn you if you look directly at it.",
-      "revisedLine": "Write \"misrouted equipment transfer.\" (pause)\nAdd attachment language. (pause)\nUse \"associated mass.\" Do not describe. (pause)\nSkip adjectives. (pause)\nThat's how liability walks in. (pause)\nIn the normal sense.",
-      "changeSummary": "Preserved exact phrases; made delivery more urgent and less instructional. | Removed stray control characters, broke the line into short beats with (pause) so each beat stays under 8 words, kept wording direct with no added explanation and no commas, preserved the original instructions and meaning."
+      "lineToEdit": "Write \"misrouted equipment transfer.\" (pause)\nAdd attachment language. (pause)\nUse \"associated mass.\" Do not describe. (pause)\nSkip adjectives. (pause)\nThat's how liability walks in. (pause)\nIn the normal sense.",
+      "nextLine": "The clerk slides a template forward, face-down, like it\u0019ll learn you if you look at it.",
+      "revisedLine": "Write \u0018misrouted equipment transfer\u0019. (pause)\nAdd the attachment line. (pause)\nUse \u0018associated mass\u0019. Do not describe. (pause)\nSkip adjectives. (pause)\nAdjectives are how liability shows up. (pause)\nNormal sense.",
+      "changeSummary": "Kept the same advised wording and liability caution; made it sound like quick, practiced shorthand."
     },
     {
       "scene": "SCN_SCN-048.json",
       "id": "N_PERSUADE_FAIL_1",
       "priorLine": "",
-      "lineToEdit": "I cannot endorse phrasing beyond the categories currently accepted.\nNegotiation creates incidents.\nState your filing category\u0014in the normal sense.",
+      "lineToEdit": "I'm not signing off on custom wording. (pause) That's how incidents get born. (pause) Pick a category in the normal sense.",
       "nextLine": "",
-      "revisedLine": "I'm not signing off on custom wording. (pause) That's how incidents get born. (pause) Pick a category in the normal sense.",
-      "changeSummary": "Shifted to defensive, liability-avoidant speech while keeping the refusal. | Inserted two (pause) breaks to keep each beat under 8 words and removed the stray character between \u201ccategory\u201d and \u201cin.\u201d"
+      "revisedLine": "I\u0019m not signing off on custom wording. (pause)\nThat\u0019s how incidents start. (pause)\nPick a category\u0014normal sense.",
+      "changeSummary": "Tightened phrasing while keeping the refusal and the consequence (incident risk) unchanged."
     },
     {
       "scene": "SCN_SCN-048.json",
       "id": "N_BARGAIN_2",
       "priorLine": "I\u0019ll keep it short. I need a receipt.",
-      "lineToEdit": "Simplicity reduces narrative. That helps.\nA receipt is an output, not an input.\nState your filing category.",
+      "lineToEdit": "Good. Less story.\nReceipt comes after filed.\nCategory.",
       "nextLine": "",
-      "revisedLine": "Good. Less story.\nReceipt comes after filed.\nCategory.",
-      "changeSummary": "Removed binary jargon; kept the same sequencing and demand. | Removed \u201cit\u2019s\u201d to reduce total words from 9 to 8 while preserving meaning and cadence."
+      "revisedLine": "Good. Keep it short.\nReceipts after filing.\nCategory.",
+      "changeSummary": "Minor naturalization; preserved order of operations (file first, receipt after) and impatience. | Shortened \u201cReceipts after it\u2019s filed\u201d to \u201cReceipts after filing\u201d to reduce the beat to 8 words while keeping meaning."
     },
     {
       "scene": "SCN_SCN-048.json",
       "id": "N_PROCEED_2",
       "priorLine": "Proceed.",
-      "lineToEdit": "Correct. In sequence\u0014in the normal sense.",
-      "nextLine": "The clerk slides a blank template forward, face-down, like it might learn you if you look directly at it.",
-      "revisedLine": "Then we go in sequence\u0014in the normal sense.",
-      "changeSummary": "More natural confirmation with the same procedural meaning."
+      "lineToEdit": "Then we go in sequence\u0014in the normal sense.",
+      "nextLine": "The clerk slides a template forward, face-down, like it\u0019ll learn you if you look at it.",
+      "revisedLine": "Alright. (pause)\nWe go in sequence\u0014normal sense.",
+      "changeSummary": "Made it more responsive to the player\u0019s cue; kept the same procedural meaning."
     },
     {
       "scene": "SCN_SCN-048.json",
       "id": "N_FORM_SLIDE_2",
-      "priorLine": "The clerk slides a blank template forward, face-down, like it might learn you if you look directly at it.",
-      "lineToEdit": "For unallocated mass, you will file an associated object.\nAdditional mass may be marked \u001cassociated.\u001d\nYou will not describe the additional mass. That is not a moral stance. It is a throughput stance.",
+      "priorLine": "The clerk slides a template forward, face-down, like it\u0019ll learn you if you look at it.",
+      "lineToEdit": "You're unallocated mass. (pause) File it as an associated object. (pause) Anything extra goes down as 'associated'. (pause) Don't describe it. (pause) I need this moving.",
       "nextLine": "",
-      "revisedLine": "You're unallocated mass. (pause) File it as an associated object. (pause) Anything extra goes down as 'associated'. (pause) Don't describe it. (pause) I need this moving.",
-      "changeSummary": "Kept all filing rules; removed the tidy moral/throughput explanation. | Split the line into short beats with (pause) to meet the 8-word limit, removed the comma, and kept wording tight without adding explainer phrases."
+      "revisedLine": "You\u0019re unallocated mass. (pause)\nFile an object as \u0018associated\u0019. (pause)\nAnything extra: \u0018associated\u0019. (pause)\nDon\u0019t describe it. (pause)\nI need this moving.",
+      "changeSummary": "Collapsed the wording into clerk shorthand while preserving the same filing instructions and urgency."
     },
     {
       "scene": "SCN_SCN-048.json",
       "id": "N_NEED_OBJECT_2",
       "priorLine": "So I need an object.",
-      "lineToEdit": "You need something the system can recognize without having to believe it.\nBarcodes. Serial numbers. Categories.\nBelief is for Orientation. This is Intake\u0014in the normal sense.",
+      "lineToEdit": "You need something the system can read. (pause)\nBarcodes. Serials. A category. (pause)\nBelief is for Orientation. (pause)\nThis is Intake. Normal sense.",
       "nextLine": "",
-      "revisedLine": "You need something the system can read. (pause)\nBarcodes. Serials. A category. (pause)\nBelief is for Orientation. (pause)\nThis is Intake. Normal sense.",
-      "changeSummary": "Collapsed jargon into shorthand while preserving the same constraint. | Split the last thought into a separate beat and added pauses so each beat stays under 8 words. Removed the stray character after \u201cIntake\u201d without changing meaning."
+      "revisedLine": "You need something the system can read. (pause)\nBarcode. Serial. Category\u2014something. (pause)\nOrientation does belief. (pause)\nThis is Intake. Normal sense.",
+      "changeSummary": "Kept the same requirement (machine-readable identifiers) but made it feel more impatient and immediate. | Removed extra commas by splitting the list into short sentences; cleaned the category line while keeping meaning and cadence."
     },
     {
       "scene": "SCN_SCN-048.json",
       "id": "N_PICK_WRONG_2",
       "priorLine": "What happens if I pick wrong?",
-      "lineToEdit": "You will be redirected.\nOr you will be held in review. Review is not punitive. Review is simply longer than you are comfortable admitting.\nChoose a category the building already knows how to forget.",
+      "lineToEdit": "Pick wrong. (pause) You get bounced. (pause)\nWorst case. (pause) You sit in review. (pause)\nReview drags. (pause)\nPick something the building knows how to forget.",
       "nextLine": "",
-      "revisedLine": "Pick wrong. (pause) You get bounced. (pause)\nWorst case. (pause) You sit in review. (pause)\nReview drags. (pause)\nPick something the building knows how to forget.",
-      "changeSummary": "Made consequences sound immediate and bureaucratically threatening without extra explanation. | Split the line into short beats with (pause) and removed commas while preserving the original meaning and punch."
+      "revisedLine": "Pick wrong, you get bounced. (pause)\nWorst case\u0014review. (pause)\nReview drags. (pause)\nPick something the building knows how to forget.",
+      "changeSummary": "Smoothed the cadence into spoken language; preserved the same consequences and advice."
     },
     {
       "scene": "SCN_SCN-048.json",
       "id": "N_BADGE_1",
       "priorLine": "ask: \u001cWhat does the badge say?\u001d",
-      "lineToEdit": "A temporary badge is an artifact indicating an active receipt.\nIt does not confer authority. It reduces questions\u0014in the normal sense.",
-      "nextLine": "It will print a category code and a validity window.\nIf you are looking for your name: that is not offered here.",
-      "revisedLine": "Temporary badge says you have an active receipt. (pause) It will not give you authority. (pause) It cuts down questions in the normal sense.",
-      "changeSummary": "Kept facts; switched to plainspoken, cautionary tone. | Split into shorter beats with pauses to meet the word limit. Replaced \"just means\" with \"says\" while keeping meaning. Cleaned punctuation and kept the original cadence."
+      "lineToEdit": "Temporary badge says you have an active receipt. (pause) It will not give you authority. (pause) It cuts down questions in the normal sense.",
+      "nextLine": "It prints the category code (pause) and the validity window. (pause) If you're looking for your name\u0014 (pause) we don't do names here.",
+      "revisedLine": "Temp badge says you\u0019ve got an active receipt. (pause)\nDoesn\u0019t give you authority. (pause)\nCuts down questions\u0014normal sense.",
+      "changeSummary": "More natural shorthand; kept the same limitations and purpose of the temporary badge."
     },
     {
       "scene": "SCN_SCN-048.json",
       "id": "N_BADGE_2",
-      "priorLine": "A temporary badge is an artifact indicating an active receipt.\nIt does not confer authority. It reduces questions\u0014in the normal sense.",
-      "lineToEdit": "It will print a category code and a validity window.\nIf you are looking for your name: that is not offered here.",
+      "priorLine": "Temporary badge says you have an active receipt. (pause) It will not give you authority. (pause) It cuts down questions in the normal sense.",
+      "lineToEdit": "It prints the category code (pause) and the validity window. (pause) If you're looking for your name\u0014 (pause) we don't do names here.",
       "nextLine": "",
-      "revisedLine": "It prints the category code (pause) and the validity window. (pause) If you're looking for your name\u2014 (pause) we don't do names here.",
-      "changeSummary": "More conversational; preserved printed fields and the no-name policy. | Added (pause) breaks to keep each beat under 8 words and corrected encoding artifacts (you\u2019re, em dash) without changing meaning."
+      "revisedLine": "It prints the category code (pause)\nand the validity window. (pause)\nIf you\u0019re looking for your name\u0014 (pause)\nwe don\u0019t do names here.",
+      "changeSummary": "Minimal adjustment for speakability; preserved the same printed fields and the no-names policy."
     },
     {
       "scene": "SCN_SCN-048.json",
       "id": "N_TOOLBAG_2",
       "priorLine": "Register my toolbag. I\u0019m attached accessory mass.",
-      "lineToEdit": "Toolbag. Category?",
+      "lineToEdit": "Toolbag. What are we calling it?",
       "nextLine": "Engineering service kit. Serialized.",
-      "revisedLine": "Toolbag. What are we calling it?",
-      "changeSummary": "Kept the prompt, made it sound like real desk talk."
+      "revisedLine": "Toolbag. (pause)\nWhat are we calling it on the form?",
+      "changeSummary": "Added paperwork framing; kept the same prompt for the item label."
     },
     {
       "scene": "SCN_SCN-048.json",
       "id": "N_TOOLBAG_4",
       "priorLine": "Engineering service kit. Serialized.",
-      "lineToEdit": "Good. Objects with serials have somewhere to go.\n\u001cAssociated mass\u001d will be recorded without description.\nThat is protective language. For both of us\u0014in the normal sense.",
-      "nextLine": "The clerk stamps the form twice, like the second stamp is for the parts of you that won\u0019t fit on paper.",
-      "revisedLine": "Good. (pause)\nSerial means I can park it somewhere. (pause)\nI\u2019ll note \u201cassociated mass\u201d with no description. (pause)\nThat wording keeps both of us covered\u2014normal sense.",
-      "changeSummary": "Reduced formal explanation; retained protective intent and no-description rule. | Split the line into short beats with (pause) so each stays under 8 words, removed stray control characters, and kept phrasing intact while avoiding extra commas and added explainers."
+      "lineToEdit": "Good. (pause)\nSerial means I can park it somewhere. (pause)\nI\u0019ll note \u001cassociated mass\u001d with no description. (pause)\nThat wording keeps both of us covered\u0014normal sense.",
+      "nextLine": "Clerk stamps the form twice, like the second stamp\u0019s for parts you can\u0019t fit on paper.",
+      "revisedLine": "Good. (pause)\nSerial means I can park it somewhere. (pause)\nI\u0019ll write \u0018associated mass\u0019\u0014no description. (pause)\nKeeps us covered. Normal sense.",
+      "changeSummary": "Kept the same rationale and exact key phrasing; reduced the polished tone."
     },
     {
       "scene": "SCN_SCN-048.json",
       "id": "N_RESIDUE_2",
       "priorLine": "File me as backfeed residue. Persistent, nonhazardous.",
-      "lineToEdit": "\u001cResidue\u001d implies remainder after a process.\nI am not asking you to describe the process. I am clarifying the word\u0014in the normal sense.\nPersistent is acceptable. Nonhazardous is acceptable.",
-      "nextLine": "You will be treated as a condition the building is permitted to ignore safely.",
-      "revisedLine": "\u2018Residue\u2019 sounds like a process. (pause) I\u2019m not asking about that. (pause) Just checking the word, normal sense. (pause) \u2018Persistent\u2019 is fine. (pause) \u2018Nonhazardous\u2019 is fine.",
-      "changeSummary": "Kept the semantic caution and approvals; made it less lecture-like. | Split the thought into five short beats under 8 words each, preserved meaning and cadence, and kept commas to one while avoiding explainer phrasing."
+      "lineToEdit": "\u0018Residue\u0019 sounds like a process. (pause) I\u0019m not asking about that. (pause) Just checking the word, normal sense. (pause) \u0018Persistent\u0019 is fine. (pause) \u0018Nonhazardous\u0019 is fine.",
+      "nextLine": "On paper, the building can safely ignore you.",
+      "revisedLine": "\u0018Residue\u0019 reads like process language. (pause)\nI\u0019m not getting into that. (pause)\nJust checking the word\u0014normal sense. (pause)\n\u0018Persistent\u0019 is fine. (pause)\n\u0018Nonhazardous\u0019 is fine.",
+      "changeSummary": "Maintained the same acceptance of terms while making the clerk\u0019s boundary-setting more immediate."
     },
     {
       "scene": "SCN_SCN-048.json",
       "id": "N_RESIDUE_3",
-      "priorLine": "\u001cResidue\u001d implies remainder after a process.\nI am not asking you to describe the process. I am clarifying the word\u0014in the normal sense.\nPersistent is acceptable. Nonhazardous is acceptable.",
-      "lineToEdit": "You will be treated as a condition the building is permitted to ignore safely.",
+      "priorLine": "\u0018Residue\u0019 sounds like a process. (pause) I\u0019m not asking about that. (pause) Just checking the word, normal sense. (pause) \u0018Persistent\u0019 is fine. (pause) \u0018Nonhazardous\u0019 is fine.",
+      "lineToEdit": "On paper, the building can safely ignore you.",
       "nextLine": "The stamp lands with a soft finality, as if closing a file closes a door somewhere.",
       "revisedLine": "On paper, the building can safely ignore you.",
-      "changeSummary": "Maintained the same outcome; tightened phrasing. | Condensed wording to meet the 8-word limit while preserving the idea that the building is permitted to ignore you safely."
+      "changeSummary": "Left as-is; already clipped and situational."
     },
     {
       "scene": "SCN_SCN-048.json",
       "id": "N_THIS_WEEK_2",
       "priorLine": "What\u0019s acceptable this week?",
-      "lineToEdit": "\u001cThis week\u001d is not an official interval.\nBut yes, categories drift. We receive bulletins. We comply.\nUse \u001cmisrouted equipment transfer.\u001d\nIf you require attachment language, write \u001cassociated mass (do not describe).\u001d\nDo not add adjectives\u0014in the normal sense.",
+      "lineToEdit": "We don't have a \"this week\" box. (pause)\nYeah. Categories drift. (pause)\nBulletins come down. (pause)\nFor now: \"misrouted equipment transfer.\" (pause)\nNeed attachment language? (pause)\n\"associated mass (do not describe).\" (pause)\nSkip the adjectives, normal sense.",
       "nextLine": "",
-      "revisedLine": "We don't have a \"this week\" box. (pause)\nYeah. Categories drift. (pause)\nBulletins come down. (pause)\nFor now: \"misrouted equipment transfer.\" (pause)\nNeed attachment language? (pause)\n\"associated mass (do not describe).\" (pause)\nSkip the adjectives, normal sense.",
-      "changeSummary": "Kept the bulletin drift and exact recommended wording; made it sound less official. | Split the line into short beats using (pause) so each beat stays under 8 words, kept meaning and cadence, and used only one comma."
+      "revisedLine": "There\u0019s no \u0018this week\u0019 box. (pause)\nYeah, categories drift. Bulletins come down. (pause)\nRight now: \u0018misrouted equipment transfer\u0019. (pause)\nNeed the attachment line? (pause)\n\u0018associated mass (do not describe)\u0019. (pause)\nSkip adjectives\u0014normal sense.",
+      "changeSummary": "Kept the same options and reasoning; tightened into faster, desk-level talk."
     },
     {
       "scene": "SCN_SCN-048.json",
       "id": "N_COACHED_1",
       "priorLine": "talk: \u001cMisrouted equipment transfer. Associated mass.\u001d",
-      "lineToEdit": "Accepted.\nYou have chosen a category that will not inspire curiosity. That is wise here.",
-      "nextLine": "The clerk feeds the paper into a slot that was built for envelopes and now eats definitions.",
-      "revisedLine": "Accepted.\nThat won\u0019t make anyone curious. Good.",
-      "changeSummary": "Kept acceptance and the 'low curiosity' point; removed the quotable maxim tone."
+      "lineToEdit": "Accepted.\nThat won\u0019t make anyone curious. Good.",
+      "nextLine": "The clerk feeds paper into a slot built for envelopes and now eats definitions.",
+      "revisedLine": "Accepted. (pause)\nGood. Nobody\u0019s going to get curious about that.",
+      "changeSummary": "Preserved approval and the \u0018won\u0019t draw attention\u0019 intent; made it sound less like a pronouncement."
     },
     {
       "scene": "SCN_SCN-051.json",
       "id": "N_INTRO_2",
-      "priorLine": "Window 7 smells faintly of stamp ink and hand lotion.\nThe counter is the same, but your badge changes what the glass is willing to hear.",
-      "lineToEdit": "Property. Claims.\nA claim requires a claimant, in the normal sense. You have\u0014sufficient filing to be inconvenient today.\nState the property basis. Do not state the narrative.",
+      "priorLine": "Window 7 smells faintly of stamp ink and hand lotion. (pause) The counter is the same, but your badge changes what the glass is willing to hear.",
+      "lineToEdit": "Property. Claims. (pause) You've got enough filing (pause) to count as a claimant today (pause) in the normal sense. (pause) Basis only. (pause) Don't give me the story.",
       "nextLine": "",
-      "revisedLine": "Property. Claims. (pause) You've got enough filing (pause) to count as a claimant today (pause) in the normal sense. (pause) Basis only. (pause) Don't give me the story.",
-      "changeSummary": "Preserved requirements; made it sound like a clerk controlling the interaction. | Inserted (pause) breaks to keep each beat under 8 words, and corrected apostrophes without changing meaning."
+      "revisedLine": "Property. Claims. (pause)\nYou've filed enough to be a claimant today. (pause)\nNormal sense. (pause)\nBasis only. (pause)\nDon't give me the story.",
+      "changeSummary": "Minor tightening; kept claimant status, basis-only restriction, and refusal of narrative. | Shortened the long beat by tightening phrasing and splitting out \u201cNormal sense\u201d into its own beat to keep each beat under 8 words without changing meaning."
     },
     {
       "scene": "SCN_SCN-051.json",
       "id": "N_STUB_OFFER_1",
       "priorLine": "talk: I need a property claim stub.",
-      "lineToEdit": "You can have a stub.\nA stub is a placeholder for a future argument. It is not an argument by itself.\nIdentify the item class you intend to claim.",
+      "lineToEdit": "You can get a stub. (pause)\nIt holds your place. (pause)\nFor the argument later. (pause)\nWhat item class?",
       "nextLine": "",
-      "revisedLine": "You can get a stub. (pause)\nIt holds your place. (pause)\nFor the argument later. (pause)\nWhat item class?",
-      "changeSummary": "Kept stub purpose; removed formal framing and tightened the ask. | Added (pause) breaks to keep each beat under 8 words; kept wording and meaning the same."
+      "revisedLine": "Yeah, I can issue a stub. (pause)\nHolds your place. (pause)\nGives you something to point at later. (pause)\nWhat item class?",
+      "changeSummary": "Kept the stub\u0019s purpose; shifted to more natural, slightly wary phrasing."
     },
     {
       "scene": "SCN_SCN-051.json",
       "id": "N_CLASS_EQUIP_1",
       "priorLine": "(multiple) (talk: Issued equipment. Service kit.) (talk: Issued equipment.)",
-      "lineToEdit": "\"Issued equipment\" is a class. It is not proof.\n\"Service kit\" implies a function, which implies a handler, which implies responsibility.\nI will record it as: Service kit; serialized if available; claimant present; entitlement pending verification.\nDo not correct my phrasing on the record.",
-      "nextLine": "The clerk pulls a small slip from a tray that isn't labeled. They hesitate, then commit their hand to the stamp pad.",
-      "revisedLine": "Issued equipment goes in the class box. (pause) It proves nothing. (pause) Service kit pulls in handler responsibility. (pause) I'm keeping the wording tight. (pause) I'm recording: service kit. (pause) Serialized if available. (pause) Claimant present. (pause) Entitlement pending verification. (pause) Don't correct my phrasing on the record.",
-      "changeSummary": "Maintained exact recorded wording and liability concern; made reasoning less formal. | Split the long sentence into short (pause) beats under 8 words, removed comma-heavy phrasing, and kept the same record details and intent."
+      "lineToEdit": "Issued equipment goes in the class box. (pause) It proves nothing. (pause) Service kit pulls in handler responsibility. (pause) I'm keeping the wording tight. (pause) I'm recording: service kit. (pause) Serialized if available. (pause) Claimant present. (pause) Entitlement pending verification. (pause) Don't correct my phrasing on the record.",
+      "nextLine": "The clerk pulls a small slip from an unlabeled tray. (pause) They hesitate, then press their hand to the stamp pad.",
+      "revisedLine": "Issued equipment goes in the class box. (pause)\nDoesn't prove anything. (pause)\nService kit drags handler responsibility. Keeping it tight. (pause)\nI'm recording: service kit. (pause)\nSerialized if available. (pause)\nClaimant present. (pause)\nEntitlement pending verification. (pause)\nDon't correct my phrasing on the record.",
+      "changeSummary": "Preserved every logged field and warning; made the responsibility concern sound more immediate. | Shortened the handler-responsibility beat to 8 words and removed the comma. Normalized apostrophes."
     },
     {
       "scene": "SCN_SCN-051.json",
       "id": "N_CLASS_DOCS_1",
       "priorLine": "(multiple) (talk: Facility documentation. Records packet.) (talk: Records packet.)",
-      "lineToEdit": "\"Facility documentation\" is not property. It is a liability with staples.\nWhich means, yes, it is often treated as property.\nI can issue a stub for: Records packet, unindexed; claimant present; disposition pending verification.",
-      "nextLine": "The clerk pulls a small slip from a tray that isn't labeled. They hesitate, then commit their hand to the stamp pad.",
-      "revisedLine": "Facility documentation is a liability with staples. (pause)\nYeah, it still gets treated like property. (pause)\nI can stub: Records packet unindexed; claimant present. (pause)\nDisposition pending verification.",
-      "changeSummary": "Kept the same classification and stub text; reduced speechmaking. | Split the line into shorter beats using (pause) so each beat is 8 words or fewer. Removed extra commas by dropping the comma in the stub list, keeping only the one after \u201cYeah,\u201d."
+      "lineToEdit": "Facility documentation is a liability with staples. (pause)\nYeah, it still gets treated like property. (pause)\nI can stub: Records packet unindexed; claimant present. (pause)\nDisposition pending verification.",
+      "nextLine": "The clerk pulls a small slip from an unlabeled tray. (pause) They hesitate, then press their hand to the stamp pad.",
+      "revisedLine": "Facility documentation is liability with staples. (pause)\nStill gets treated like property. (pause)\nI can stub: records packet unindexed; claimant present. (pause)\nDisposition pending verification.",
+      "changeSummary": "Shortened and roughened the delivery; kept the same classification and stub language."
     },
     {
       "scene": "SCN_SCN-051.json",
       "id": "N_WHY_WORDING_1",
       "priorLine": "ask: Why \"entitlement pending\"?",
-      "lineToEdit": "Because \"ownership\" is a word with friends.\nFriends arrive. Friends bring paperwork.\n\"Pending\" prevents me from promising anything, in the normal sense.",
+      "lineToEdit": "Ownership brings people in. (pause)\nAnd paperwork. (pause)\nPending keeps me from promising you anything\u0014normally.",
       "nextLine": "",
-      "revisedLine": "Ownership brings people in. (pause)\nAnd paperwork. (pause)\nPending keeps me from promising you anything\u2014normally.",
-      "changeSummary": "Kept the rationale; made it sharper and more spoken. | Added pauses to split into short beats and replaced \u201cin the normal sense\u201d with \u201cnormally\u201d to meet the 8-word beat limit without changing meaning."
+      "revisedLine": "If I write \u0018ownership\u0019, people show up. (pause)\nSo does paperwork. (pause)\n\u0018Pending\u0019 keeps me from promising you anything\u0014normally.",
+      "changeSummary": "Kept the same rationale; made it sound like a quick self-protective choice at the window."
     },
     {
       "scene": "SCN_SCN-051.json",
       "id": "N_VERIFICATION_1",
       "priorLine": "ask: What verification?",
-      "lineToEdit": "Serials. Assignment logs. Chain-of-custody notes. Incident recovery records.\nVerification is later, and preferably elsewhere.\nHere, we create a paper object that can survive a building pretending you weren't here.",
+      "lineToEdit": "Serials. Assignment logs. Chain-of-custody. Incident recovery. (pause)\nThat check happens later\u0014preferably not at my window. (pause)\nHere, you leave with paper. (pause)\nIt survives the building. (pause)\nPretending you weren\u0019t here.",
       "nextLine": "",
-      "revisedLine": "Serials. Assignment logs. Chain-of-custody. Incident recovery. (pause)\nThat check happens later\u2014preferably not at my window. (pause)\nHere, you leave with paper. (pause)\nIt survives the building. (pause)\nPretending you weren\u2019t here.",
-      "changeSummary": "Condensed the list and kept the same 'paper survives denial' point. | Added pause breaks to keep each beat under 8 words, removed the second comma by splitting the last thought into two short sentences, and cleaned up stray characters without changing meaning."
+      "revisedLine": "Serials. Assignment logs. Chain-of-custody. Incident recovery. (pause)\nThat gets checked later\u0014preferably away from my window. (pause)\nHere, you leave with paper. (pause)\nIt survives the building pretending you weren\u0019t here.",
+      "changeSummary": "Kept the same verification list and timing; tightened the cadence to feel less rehearsed."
     },
     {
       "scene": "SCN_SCN-051.json",
       "id": "N_PRINT_STUB_2",
-      "priorLine": "The stamp lands once, hard. The clerk slides the slip under the glass with two fingers, like it might accuse them.",
-      "lineToEdit": "Property Claim Stub issued. Processed, in the normal sense.",
+      "priorLine": "Stamp lands once hard. Clerk slides the slip under glass, two fingers, like it accuses them.",
+      "lineToEdit": "Stub\u0019s issued.\nProcessed\u0014in the normal sense.",
       "nextLine": "",
-      "revisedLine": "Stub\u0019s issued.\nProcessed\u0014in the normal sense.",
-      "changeSummary": "More natural confirmation while preserving the official beat."
+      "revisedLine": "Stub\u0019s issued. (pause)\nProcessed\u0014normal sense.",
+      "changeSummary": "Minor rhythm adjustment; preserved issuance and the \u0018processed\u0019 status."
     },
     {
       "scene": "SCN_SCN-051.json",
       "id": "N_CLASSES_ACCEPTABLE_1",
       "priorLine": "ask: What item classes are acceptable?",
-      "lineToEdit": "Acceptable classes are the ones that do not make me choose intent.\n\"Issued equipment.\" \"Personal effects,\" if you enjoy disputes.\n\"Records packet,\" if you prefer a different dispute.\nIf you say \"mine,\" I will hear \"hearing.\"",
+      "lineToEdit": "Whatever doesn\u0019t make me guess intent. (pause) Issued equipment. (pause) Personal effects if you want a dispute. (pause) Records packet if you want a different dispute. (pause) If you say \u0018mine\u0019 I start hearing \u0018hearing\u0019.",
       "nextLine": "",
-      "revisedLine": "Whatever doesn\u2019t make me guess intent. (pause) Issued equipment. (pause) Personal effects if you want a dispute. (pause) Records packet if you want a different dispute. (pause) If you say \u2018mine\u2019 I start hearing \u2018hearing\u2019.",
-      "changeSummary": "Kept options and warning; adjusted cadence to sound spoken. | Added (pause) breaks to keep each beat under 8 words. Removed extra commas by dropping comma punctuation in phrases and quotes without changing meaning."
+      "revisedLine": "Whatever doesn\u0019t make me guess intent. (pause)\nIssued equipment. (pause)\nPersonal effects if you want a dispute. (pause)\nRecords packet if you want a different one. (pause)\nIf you say \u0018mine\u0019, I start hearing \u0018hearing\u0019.",
+      "changeSummary": "Kept the same options and warning; smoothed one phrase without changing intent."
     },
     {
       "scene": "SCN_SCN-051.json",
       "id": "N_STUB_DOES_1",
       "priorLine": "ask: What does the stub actually do?",
-      "lineToEdit": "The stub does three things.\nOne: It timestamps that you were present and asserted a future claim.\nTwo: It prevents someone else from asserting you were not present, in the normal sense.\nThree: It gives you something to lose, which improves behavior. The last part is unofficial.",
+      "lineToEdit": "It time-stamps you showed up. (pause) And said you're coming back. (pause) To claim something. (pause) It also blocks someone. (pause) From saying you never showed. (pause) In the normal sense. (pause) And yeah, it gives you. (pause) Something to lose. (pause) That last part's unofficial.",
       "nextLine": "",
-      "revisedLine": "It time-stamps you showed up. (pause) And said you're coming back. (pause) To claim something. (pause) It also blocks someone. (pause) From saying you never showed. (pause) In the normal sense. (pause) And yeah, it gives you. (pause) Something to lose. (pause) That last part's unofficial.",
-      "changeSummary": "Removed numbered lecture structure; preserved all three functions. | Split the line into short (pause) beats under 8 words each, while keeping the same meaning and rhythm. Avoided adding commas or extra explainer phrasing."
+      "revisedLine": "It time-stamps you showed up. (pause)\nSays you\u0019re coming back to claim something. (pause)\nStops someone saying you never came. (pause)\nIn the normal sense. (pause)\nAnd yeah\u0014it gives you something to lose. (pause)\nThat part\u0019s unofficial.",
+      "changeSummary": "Reduced choppiness while keeping every function of the stub, including the unofficial downside."
     },
     {
       "scene": "SCN_SCN-051.json",
       "id": "N_ACCESS_NOT_PROPERTY_1",
       "priorLine": "ask: Does it grant access?",
-      "lineToEdit": "Access is not a property function.\nAccess is a safety function pretending to be a door.\nI issue stubs.",
+      "lineToEdit": "Stub doesn\u0019t open doors. (pause) Access is Safety\u0019s problem. (pause) I issue stubs.",
       "nextLine": "",
-      "revisedLine": "Stub doesn\u2019t open doors. (pause) Access is Safety\u2019s problem. (pause) I issue stubs.",
-      "changeSummary": "More direct refusal; kept the division between access and stub issuance. | Inserted (pause) breaks to keep each beat under 8 words; corrected apostrophes without changing meaning."
+      "revisedLine": "Stub doesn\u0019t open doors. (pause)\nAccess is Safety\u0019s mess. (pause)\nI issue stubs.",
+      "changeSummary": "Kept meaning; made it more curt and spoken."
     },
     {
       "scene": "SCN_SCN-051.json",
       "id": "N_BASIS_1",
       "priorLine": "ask: What's a \"property basis\"?",
-      "lineToEdit": "A \"property basis\" is the reason you get to argue without being removed.\nSerial numbers. Assignment logs. Incident recoveries. Sometimes just persistence.\nA basis is not a story. Stories invite counter-stories.",
+      "lineToEdit": "It's what lets you argue (pause) without getting removed. (pause) Serials. Assignment logs. (pause) Incident recovery. Sometimes (pause) you just keep showing up. (pause) Keep it to basis. (pause) Stories breed counter-stories.",
       "nextLine": "",
-      "revisedLine": "It's what lets you argue (pause) without getting removed. (pause) Serials. Assignment logs. (pause) Incident recovery. Sometimes (pause) you just keep showing up. (pause) Keep it to basis. (pause) Stories breed counter-stories.",
-      "changeSummary": "Kept definition and examples; made it sound less like a policy memo. | Added (pause) breaks to keep each beat under 8 words and corrected the apostrophe in \"It's\" without changing meaning."
+      "revisedLine": "It\u0019s what lets you argue (pause)\nwithout getting removed. (pause)\nSerials. Assignment logs. Incident recovery. (pause)\nSometimes you just keep showing up. (pause)\nKeep it to basis. (pause)\nStories breed counter-stories.",
+      "changeSummary": "Light cleanup for flow; preserved the same definition-by-practice and the warning against stories."
     },
     {
       "scene": "SCN_SCN-051.json",
       "id": "N_BASIS_TO_STUB_1",
       "priorLine": "(multiple) (talk: Issue the stub. I'll supply verification later.) (ask: So you can issue the stub or not?)",
-      "lineToEdit": "I can issue a stub.\nIt will not say you own anything. It will say you intend to claim something, pending proof that the thing is ownable.\nThe distinction is comforting to auditors.",
+      "lineToEdit": "I can issue it. (pause)\nIt\u0019ll say you intend to claim an item. (pause)\nPending proof it\u0019s even claimable. (pause)\nAuditors like it that way.",
       "nextLine": "",
-      "revisedLine": "I can issue it. (pause)\nIt\u2019ll say you intend to claim an item. (pause)\nPending proof it\u2019s even claimable. (pause)\nAuditors like it that way.",
-      "changeSummary": "Removed binary contrast; preserved the stub\u0019s non-ownership language and audit motivation. | Inserted (pause) breaks so each beat stays under 8 words; kept wording and meaning intact."
+      "revisedLine": "I can issue it. (pause)\nIt\u0019ll say you intend to claim an item. (pause)\nPending proof it\u0019s even claimable. (pause)\nAuditors sleep better that way.",
+      "changeSummary": "Kept the same stub language; swapped to a more human, tired aside about auditors."
     },
     {
       "scene": "SCN_SCN-051.json",
       "id": "N_TER_NOT_ENOUGH_1",
       "priorLine": "ask: Isn't the TER the basis?",
-      "lineToEdit": "The TER is proof you have been filed as a condition the building can tolerate.\nIt is not proof you have rights. \"Rights\" is a different window. Possibly a different building.\nIf you would like a document that implies less, I can help you.",
+      "lineToEdit": "TER just shows you are filed. (pause) A condition this building can tolerate. (pause)\nIt does not buy you rights. (pause) \"Rights\" is a different window. (pause) Maybe a different building. (pause)\nIf you want a document that implies less. (pause) I can do that.",
       "nextLine": "",
-      "revisedLine": "TER just shows you are filed. (pause) A condition this building can tolerate. (pause)\nIt does not buy you rights. (pause) \"Rights\" is a different window. (pause) Maybe a different building. (pause)\nIf you want a document that implies less. (pause) I can do that.",
-      "changeSummary": "Kept TER limitation and 'rights' deflection; made it more conversational. | Split the line into short (pause) beats under 8 words each, removed extra phrasing without altering meaning, and kept commas at zero."
+      "revisedLine": "TER just shows you\u0019re filed. (pause)\nA condition this building can tolerate. (pause)\nRights is a different window. (pause)\nMaybe a different building. (pause)\nIf you want a document that implies less\u0014 (pause)\nI can do that.",
+      "changeSummary": "Removed the lecturey phrasing while preserving the same distinction: TER = filed, not rights; offered a lesser-implying document."
     },
     {
       "scene": "SCN_SCN-051.json",
       "id": "N_STUB_IMPLIES_1",
       "priorLine": "(multiple) (talk: I want the stub.) (ask: What does the stub imply?)",
-      "lineToEdit": "The stub implies you will return.\nWhich is not a prediction. It is a filing posture.\nShall I prepare it?",
+      "lineToEdit": "It flags that you'll be back. (pause) That's just how it sits. (pause) In the file. (pause) Want me to print it?",
       "nextLine": "",
-      "revisedLine": "It flags that you'll be back. (pause) That's just how it sits. (pause) In the file. (pause) Want me to print it?",
-      "changeSummary": "Dropped the philosophical framing; kept the implication and offer. | Split the line into shorter beats using (pause) while keeping the same meaning and cadence; fixed apostrophe encoding."
+      "revisedLine": "It flags you\u0019ll be back. (pause)\nThat\u0019s how it sits in the file. (pause)\nWant me to print it?",
+      "changeSummary": "Slight tightening; kept the same implication and the offer to print."
     },
     {
       "scene": "SCN_SCN-051.json",
       "id": "N_ESCALATE_1",
       "priorLine": "threaten: I'll escalate.",
-      "lineToEdit": "Escalation is an incident category.\nIf you want an incident category attached to your file, in the normal sense\u0014keep talking.",
+      "lineToEdit": "You say \"escalate\". (pause)\nI tag an incident. (pause)\nIt attaches to your file. (pause)\nIn the normal sense. (pause)\nUp to you.",
       "nextLine": "",
-      "revisedLine": "You say \"escalate\". (pause)\nI tag an incident. (pause)\nIt attaches to your file. (pause)\nIn the normal sense. (pause)\nUp to you.",
-      "changeSummary": "Kept the threat warning; made it sound like a clerk protecting themselves. | Split into shorter beats with (pause) markers, cleaned up stray characters/quotes, and broke the file attachment line into two sentences without changing meaning."
+      "revisedLine": "You say \u0018escalate\u0019, I tag an incident. (pause)\nIt attaches to your file. (pause)\nIn the normal sense. (pause)\nUp to you.",
+      "changeSummary": "Kept the same warning and consequence; streamlined the opening to feel more reactive."
     },
     {
       "scene": "SCN_SCN-051.json",
       "id": "N_ESCALATE_WISE_1",
       "priorLine": "talk: Just the stub.",
-      "lineToEdit": "Wise.",
+      "lineToEdit": "Good.",
       "nextLine": "",
       "revisedLine": "Good.",
-      "changeSummary": "Varied the approval beat while keeping meaning."
+      "changeSummary": "Left as-is; already clipped and responsive."
     },
     {
       "scene": "SCN_SCN-051.json",
       "id": "N_OLEA_1",
       "priorLine": "show: OLEA credentials.",
-      "lineToEdit": "OLEA credentials are context. Context is not a claim basis.\nContext can, however, increase how carefully I word the denial later.\nIf you want something useful, request a stub.",
+      "lineToEdit": "OLEA credentials. Sure. That\u0019s context. (pause)\nNot a basis. (pause)\nStill I\u0019ll word the denial carefully later. (pause)\nWant something you can use? (pause)\nAsk for a stub.",
       "nextLine": "",
-      "revisedLine": "OLEA credentials. Sure. That\u2019s context. (pause)\nNot a basis. (pause)\nStill I\u2019ll word the denial carefully later. (pause)\nWant something you can use? (pause)\nAsk for a stub.",
-      "changeSummary": "Kept the same implications; smoothed into natural speech. | Split the line into short beats using (pause) to meet the 8-word limit; removed commas to stay under the comma cap; kept meaning and cadence intact."
+      "revisedLine": "OLEA credentials. Sure. (pause)\nContext. (pause)\nDoesn\u2019t count as basis. (pause)\nIf it\u2019s denied, I\u2019ll word it carefully. (pause)\nYou want paper you can use? (pause)\nAsk for a stub.",
+      "changeSummary": "Preserved the same treatment of credentials and the stub suggestion; made it sound more like cautious self-protection. | Shortened the denial line to stay under 8 words per beat and fixed apostrophe encoding while keeping meaning and cadence."
     },
     {
       "scene": "SCN_SCN-051.json",
       "id": "N_OLEA_NO_CLASS_1",
       "priorLine": "ask: Is there an OLEA class?",
-      "lineToEdit": "There is no \"OLEA class.\" There are items, and there are claimants, and there are disputes.\nI avoid disputes as a hobby, in the normal sense.",
+      "lineToEdit": "No OLEA class. (pause) There are items. (pause) There are claimants. (pause) Then there are disputes. (pause) I try to avoid disputes. (pause) In the normal sense.",
       "nextLine": "",
-      "revisedLine": "No OLEA class. (pause) There are items. (pause) There are claimants. (pause) Then there are disputes. (pause) I try to avoid disputes. (pause) In the normal sense.",
-      "changeSummary": "Kept the structure; made it less performative. | Split the long line into short beats using (pause) so each beat stays under 8 words. Removed the extra commas by breaking the list into separate sentences while keeping the same meaning and cadence."
+      "revisedLine": "No OLEA class. (pause)\nThere are items. Claimants. Then disputes. (pause)\nI\u0019m not starting a dispute\u0014normal sense.",
+      "changeSummary": "Kept the same point (no OLEA class, disputes follow); reduced the rhythmic listiness."
     },
     {
       "scene": "SCN_SCN-051.json",
       "id": "N_PERSUADE_PASS_1",
       "priorLine": "",
-      "lineToEdit": "Minimal detail is acceptable.\nBut you will still select an item class, because blank fields attract attention.\nProceed.",
+      "lineToEdit": "Keep it minimal, fine. (pause) Still need an item class. (pause) Blank fields get flagged. (pause) Proceed.",
       "nextLine": "",
-      "revisedLine": "Keep it minimal, fine. (pause) Still need an item class. (pause) Blank fields get flagged. (pause) Proceed.",
-      "changeSummary": "More natural, still enforcing the same requirement. | Split the line into shorter beats with (pause) markers and removed the stray character while preserving meaning and cadence."
+      "revisedLine": "Fine. Keep it minimal. (pause)\nI still need an item class. (pause)\nBlank fields get flagged. (pause)\nProceed.",
+      "changeSummary": "Minor reflow for natural irritation; preserved the requirement and the reason."
     },
     {
       "scene": "SCN_SCN-051.json",
       "id": "N_PERSUADE_FAIL_1",
       "priorLine": "",
-      "lineToEdit": "No.\nMinimal detail is how disputes are smuggled into tidy boxes.\nState the class, in the normal sense.",
+      "lineToEdit": "No. (pause) Minimal detail puts disputes in neat boxes. (pause) State the class, in the normal sense.",
       "nextLine": "",
-      "revisedLine": "No. (pause) Minimal detail puts disputes in neat boxes. (pause) State the class, in the normal sense.",
-      "changeSummary": "Kept refusal and rationale; tightened phrasing. | Added (pause) breaks to keep each beat under 8 words. Rephrased slightly to preserve meaning while staying concise, and kept commas to one."
+      "revisedLine": "No. (pause)\nMinimal detail still turns into disputes. (pause)\nState the class\u0014normal sense.",
+      "changeSummary": "Kept the refusal and demand for class; removed the tidy, aphoristic phrasing."
     },
     {
       "scene": "SCN_SCN-052.json",
       "id": "N_CLERK_OPEN_1",
-      "priorLine": "Window 9 is lit like a fish tank: bright, clean, and designed to discourage movement.\nA placard under the glass reads: \u001cCOMPLAINTS \u0014 PROCESSED, NO ACTION.\u001d\nThe stamp tray is already inked, like it\u0019s been waiting longer than you have.",
-      "lineToEdit": "Complaints.\nIf you are here to be heard, that is not offered.\nIf you are here to be processed, present the paper\u0014then stop adding meaning to it, in the normal sense.",
+      "priorLine": "Window 9 is lit like a fish tank: bright and clean. (pause) It\u0019s designed to discourage movement. (pause) A placard under the glass reads: \u001cCOMPLAINTS \u0014 PROCESSED NO ACTION.\u001d (pause) The stamp tray is already inked like it\u0019s been waiting longer than you have.",
+      "lineToEdit": "Complaints. (pause)\nIf you\u0019re here to be heard. Wrong window. (pause)\nIf you\u0019re here to be processed, (pause)\nslide the paper over. (pause)\nand stop feeding it meaning. (pause)\nIn the normal sense.",
       "nextLine": "",
-      "revisedLine": "Complaints. (pause)\nIf you\u2019re here to be heard. Wrong window. (pause)\nIf you\u2019re here to be processed, (pause)\nslide the paper over. (pause)\nand stop feeding it meaning. (pause)\nIn the normal sense.",
-      "changeSummary": "More immediate, situational gatekeeping; preserved the same limits. | Broke the line into short beats with (pause), removed extra commas by splitting the \u201cheard\u201d thought into two sentences, and kept one comma in the \u201cprocessed\u201d clause to preserve cadence and meaning."
+      "revisedLine": "Complaints. (pause)\nSlide the paper over. (pause)\nThis window stamps. (pause)\nDon\u0019t feed it meaning. (pause)\nIn the normal sense.",
+      "changeSummary": "Removed the binary \u0018heard vs processed\u0019 framing; kept the same instruction and tone of procedural shutdown."
     },
     {
       "scene": "SCN_SCN-052.json",
       "id": "N_STAMP_FAST_1",
       "priorLine": "talk: I need \u001cProcessed, no action.\u001d",
-      "lineToEdit": "Good. That is a request for ink, not justice.\n\u001cProcessed\u001d means it entered a queue.\n\u001cNo action\u001d means it exited the queue without changing the world.\nPeople find that upsetting. Which is\u001c common.",
-      "nextLine": "Place the form flat. Do not hold it while I stamp it.\nHolding implies transfer. Transfer implies consent, in the normal sense.",
-      "revisedLine": "Good. You're here for ink. (pause) 'Processed' means it hit the queue. (pause) 'No action' means it came back out. (pause) And nothing changed. (pause) People hate that. It's common.",
-      "changeSummary": "Kept definitions but delivered them as tired, desk-level reality. | Added (pause) breaks to keep each beat under 8 words, removed 'Which is common' to avoid extra explainer phrasing, and kept two 'means' explanations intact with no commas added."
+      "lineToEdit": "Good. You're here for ink. (pause) 'Processed' means it hit the queue. (pause) 'No action' means it came back out. (pause) And nothing changed. (pause) People hate that. It's common.",
+      "nextLine": "Flat on the counter. (pause)\nDon't hold it while I stamp. (pause)\nIf it's in your hand, (pause)\nit reads like a handoff. (pause)\nIn the normal sense.",
+      "revisedLine": "Good. You\u0019re here for ink. (pause)\n\u0018Processed\u0019: hit the queue. (pause)\n\u0018No action\u0019: came back out. (pause)\nNothing changed. (pause)\nPeople hate it. We do it all day.",
+      "changeSummary": "Kept the exact meaning of both stamp terms; tightened into blunt counter-talk."
     },
     {
       "scene": "SCN_SCN-052.json",
       "id": "N_STAMP_FAST_2",
-      "priorLine": "Good. That is a request for ink, not justice.\n\u001cProcessed\u001d means it entered a queue.\n\u001cNo action\u001d means it exited the queue without changing the world.\nPeople find that upsetting. Which is\u001c common.",
-      "lineToEdit": "Place the form flat. Do not hold it while I stamp it.\nHolding implies transfer. Transfer implies consent, in the normal sense.",
-      "nextLine": "The clerk stamps once, hard, like they\u0019re pinning the paper to the year it happened in.\nThey slide it back under the glass without looking at your hands.",
-      "revisedLine": "Flat on the counter. (pause)\nDon't hold it while I stamp. (pause)\nIf it's in your hand, (pause)\nit reads like a handoff. (pause)\nIn the normal sense.",
-      "changeSummary": "Preserved the transfer/consent liability concern; made it sound less formal. | Split the line into short beats using (pause) so each beat stays under 8 words; corrected apostrophes and kept the original meaning and cadence."
+      "priorLine": "Good. You're here for ink. (pause) 'Processed' means it hit the queue. (pause) 'No action' means it came back out. (pause) And nothing changed. (pause) People hate that. It's common.",
+      "lineToEdit": "Flat on the counter. (pause)\nDon't hold it while I stamp. (pause)\nIf it's in your hand, (pause)\nit reads like a handoff. (pause)\nIn the normal sense.",
+      "nextLine": "The clerk stamps once, hard, like pinning the paper to the year it happened in. (pause) They slide it back under the glass without looking at your hands.",
+      "revisedLine": "Flat on the counter. (pause)\nDon\u0019t hold it while I stamp. (pause)\nIn your hand, it reads like a handoff\u0014 (pause)\nnormal sense.",
+      "changeSummary": "Reduced explanation while preserving the liability concern about \u0018handoff\u0019 and the same instruction."
     },
     {
       "scene": "SCN_SCN-052.json",
       "id": "N_STAMP_FAST_4",
-      "priorLine": "The clerk stamps once, hard, like they\u0019re pinning the paper to the year it happened in.\nThey slide it back under the glass without looking at your hands.",
-      "lineToEdit": "Processed. No action.\nKeep it visible if you need a conversation to end.",
+      "priorLine": "The clerk stamps once, hard, like pinning the paper to the year it happened in. (pause) They slide it back under the glass without looking at your hands.",
+      "lineToEdit": "There. (pause) Processed. (pause) No action. (pause)\nLeave it up if you want it dead.",
       "nextLine": "",
-      "revisedLine": "There. (pause) Processed. (pause) No action. (pause)\nLeave it up if you want it dead.",
-      "changeSummary": "Kept meaning; made the second line more blunt and lived-in. | Shortened the final beat to 8 words while keeping the same intent; preserved the punchy cadence and added an explicit pause before the last line."
+      "revisedLine": "There. (pause)\nProcessed. (pause)\nNo action. (pause)\nLeave it up if you want it dead.",
+      "changeSummary": "Kept meaning; adjusted line breaks for a stamped, spoken cadence."
     },
     {
       "scene": "SCN_SCN-052.json",
       "id": "N_NO_ACTION_1",
       "priorLine": "ask: What does \u001cno action\u001d actually mean?",
-      "lineToEdit": "It means the office has achieved closure without achieving change.\nWe did something to the paper so we don\u0019t have to do something to the building.\nThat is the service, in the normal sense.",
-      "nextLine": "If you want \u001caction,\u001d you want Safety.\nSafety will ask you to define the problem. Defining creates responsibility.\nHere, you get a stamp and a clean exit.",
-      "revisedLine": "We close the file. (pause) Nothing in the building moves. (pause) We work the paper. (pause) Nobody works the place, in the normal sense.",
-      "changeSummary": "Condensed explanation; kept the closure-without-change idea and bureaucratic intent. | Split into shorter beats with (pause). Removed \u201cIt means\u201d and cleaned stray character while keeping meaning; kept comma count to one."
+      "lineToEdit": "We close the file. (pause) Nothing in the building moves. (pause) We work the paper. (pause) Nobody works the place, in the normal sense.",
+      "nextLine": "You want action. (pause) Go to Safety. (pause) They\u0019ll make you define the problem. (pause) Then it lands on someone. (pause) Here you get the stamp. (pause) You leave clean.",
+      "revisedLine": "We close the file. (pause)\nNothing in the building moves. (pause)\nWe work the paper. (pause)\nNobody works the place\u0014normal sense.",
+      "changeSummary": "Minimal change; preserved the core definition while keeping it terse."
     },
     {
       "scene": "SCN_SCN-052.json",
       "id": "N_NO_ACTION_2",
-      "priorLine": "It means the office has achieved closure without achieving change.\nWe did something to the paper so we don\u0019t have to do something to the building.\nThat is the service, in the normal sense.",
-      "lineToEdit": "If you want \u001caction,\u001d you want Safety.\nSafety will ask you to define the problem. Defining creates responsibility.\nHere, you get a stamp and a clean exit.",
+      "priorLine": "We close the file. (pause) Nothing in the building moves. (pause) We work the paper. (pause) Nobody works the place, in the normal sense.",
+      "lineToEdit": "You want action. (pause) Go to Safety. (pause) They\u0019ll make you define the problem. (pause) Then it lands on someone. (pause) Here you get the stamp. (pause) You leave clean.",
       "nextLine": "",
-      "revisedLine": "You want action. (pause) Go to Safety. (pause) They\u2019ll make you define the problem. (pause) Then it lands on someone. (pause) Here you get the stamp. (pause) You leave clean.",
-      "changeSummary": "Made the redirect sharper; preserved Safety\u0019s role and the consequence of defining. | Split the line into shorter beats by adding (pause) breaks, and removed commas by converting clauses into separate sentences while keeping the original meaning and cadence."
+      "revisedLine": "You want action, go to Safety. (pause)\nThey'll make you define the problem. (pause)\nThen it lands on someone. (pause)\nHere you get the stamp. (pause)\nYou leave clean.",
+      "changeSummary": "Kept the same direction to Safety and consequence chain; made it less sing-song. | Removed the comma after \u201cHere\u201d to meet the one-comma limit; fixed the apostrophe in \u201cThey'll.\u201d"
     },
     {
       "scene": "SCN_SCN-052.json",
       "id": "N_JUST_RECEIPT_1",
       "priorLine": "ask: So it\u0019s just\u001c a receipt?",
-      "lineToEdit": "\u001cJust\u001d is doing a lot of work there.\nIt\u0019s a receipt that prevents someone from demanding a better receipt later.\nWhich is the closest thing we have to relief, in the normal sense.",
+      "lineToEdit": "Don\u0019t say \u001cjust.\u001d (pause)\nIt\u0019s the receipt that stops someone (pause)\ndemanding a better receipt later. (pause)\nThat\u0019s about as close to relief (pause)\nas this window gets (pause)\nin the normal sense.",
       "nextLine": "",
-      "revisedLine": "Don\u2019t say \u201cjust.\u201d (pause)\nIt\u2019s the receipt that stops someone (pause)\ndemanding a better receipt later. (pause)\nThat\u2019s about as close to relief (pause)\nas this window gets (pause)\nin the normal sense.",
-      "changeSummary": "Kept the same point; made it more immediate and less rhetorical. | Inserted (pause) breaks so each beat stays under 8 words, normalized apostrophes/quotes, and replaced the dash break with pauses while preserving meaning and cadence."
+      "revisedLine": "Don't say 'just'. (pause)\nIt's the receipt. Stops demands for better later. (pause)\nClosest thing to relief this window does (pause)\nnormal sense.",
+      "changeSummary": "Preserved the point (receipt prevents future demands); tightened to sound more defensive and tired. | Shortened the second beat to 8 words while keeping the meaning and cadence; cleaned up punctuation/quotes."
     },
     {
       "scene": "SCN_SCN-052.json",
       "id": "N_INCIDENT_1",
       "priorLine": "ask: Does this create an incident record?",
-      "lineToEdit": "Not if you behave.\n\u001cIncident\u001d is a word with routing. Routing is a word with meetings.\nComplaints are a cul-de-sac by design, in the normal sense.",
-      "nextLine": "If you describe harm, hazard, intent, or blame, someone will reclassify it for you.\nThen yes, it becomes an incident.\nDo you want a stamp, or do you want a category?",
-      "revisedLine": "Only if you make it one. (pause) Incident gets routed. (pause) Routed turns into meetings. (pause) Complaints are built to die here. (pause) In the normal sense.",
-      "changeSummary": "Kept the warning and bureaucratic consequences; made it less preachy. | Inserted pauses to break the line into shorter beats and removed stray characters while keeping the original meaning and cadence."
+      "lineToEdit": "Only if you make it one. (pause) Incident gets routed. (pause) Routed turns into meetings. (pause) Complaints are built to die here. (pause) In the normal sense.",
+      "nextLine": "Start talking harm and hazard. (pause) Intent and blame. (pause) Someone reclasses it. (pause) Then it lands as an incident. (pause) You want the stamp or a category?",
+      "revisedLine": "Only if you push it there. (pause)\nIncident gets routed. (pause)\nRouted turns into meetings. (pause)\nComplaints die here\u0014 (pause)\nin the normal sense.",
+      "changeSummary": "Kept the same escalation path and warning; made it more immediate and less formal."
     },
     {
       "scene": "SCN_SCN-052.json",
       "id": "N_INCIDENT_2",
-      "priorLine": "Not if you behave.\n\u001cIncident\u001d is a word with routing. Routing is a word with meetings.\nComplaints are a cul-de-sac by design, in the normal sense.",
-      "lineToEdit": "If you describe harm, hazard, intent, or blame, someone will reclassify it for you.\nThen yes, it becomes an incident.\nDo you want a stamp, or do you want a category?",
+      "priorLine": "Only if you make it one. (pause) Incident gets routed. (pause) Routed turns into meetings. (pause) Complaints are built to die here. (pause) In the normal sense.",
+      "lineToEdit": "Start talking harm and hazard. (pause) Intent and blame. (pause) Someone reclasses it. (pause) Then it lands as an incident. (pause) You want the stamp or a category?",
       "nextLine": "",
-      "revisedLine": "Start talking harm and hazard. (pause) Intent and blame. (pause) Someone reclasses it. (pause) Then it lands as an incident. (pause) You want the stamp or a category?",
-      "changeSummary": "More direct and threat-adjacent; preserved the reclassification trigger list. | Split into short beats with (pause) to meet word limit, rewrote the list to remove extra commas, and removed the stray character without changing meaning."
+      "revisedLine": "Start talking harm and hazard. (pause)\nIntent. Blame. (pause)\nSomeone reclasses it. (pause)\nThen it lands as an incident. (pause)\nYou want the stamp or a category?",
+      "changeSummary": "Kept the same trigger words and outcome; tightened for spoken urgency."
     },
     {
       "scene": "SCN_SCN-052.json",
       "id": "N_NO_DESC_STAMP_1",
       "priorLine": "talk: No description. Just the stamp.",
-      "lineToEdit": "Perfect. That is how you keep your file small.",
-      "nextLine": "Placed flat. No narrative. Thank you.",
+      "lineToEdit": "Good. Keep it small.",
+      "nextLine": "Flat on the counter.\nNo story. Thanks.",
       "revisedLine": "Good. Keep it small.",
-      "changeSummary": "Shortened to a pragmatic approval without added commentary."
+      "changeSummary": "Left as-is; already fits the clipped, liability-aware tone."
     },
     {
       "scene": "SCN_SCN-052.json",
       "id": "N_SAFEST_LINE_1",
       "priorLine": "ask: What\u0019s the safest category line?",
-      "lineToEdit": "Safest is blank. Blank is also suspicious.\nWrite: \u001cService dissatisfaction.\u001d\nDo not specify the service. Specifying creates a service obligation, in the normal sense.",
+      "lineToEdit": "Safest line is blank. (pause) Blank gets noticed. (pause) Write: \u001cService dissatisfaction.\u001d (pause) Don\u0019t name the service. (pause) Naming starts obligations\u0014in the normal sense.",
       "nextLine": "",
-      "revisedLine": "Safest line is blank. (pause) Blank gets noticed. (pause) Write: \u201cService dissatisfaction.\u201d (pause) Don\u2019t name the service. (pause) Naming starts obligations\u2014in the normal sense.",
-      "changeSummary": "Kept the same recommended line and rationale; tightened delivery. | Inserted (pause) breaks to keep each beat under 8 words, cleaned up formatting/quotes, and preserved the original meaning and cadence."
+      "revisedLine": "Safest is leaving it blank. (pause)\nBlank gets noticed. (pause)\nWrite: \u0018Service dissatisfaction\u0019. (pause)\nDon\u0019t name the service. (pause)\nNames start obligations\u0014normal sense.",
+      "changeSummary": "Preserved the same safest option and the same recommended line; made the wording more conversational."
     },
     {
       "scene": "SCN_SCN-052.json",
       "id": "N_OLEA_1",
       "priorLine": "show: OLEA credentials.",
-      "lineToEdit": "Credentials are context. Context is flammable.\nIf you are important, be important somewhere that logs importance.\nHere, we log complaints. Which is not the same as solving anything, in the normal sense.",
-      "nextLine": "Do you want the stamp or do you want a conversation that can be quoted?",
-      "revisedLine": "Put the credentials away. (pause) That\u2019s context. (pause) Context burns. (pause) If you\u2019re important take it somewhere. (pause) Somewhere that logs importance. (pause) Here it\u2019s complaints and stamps. (pause) In the normal sense.",
-      "changeSummary": "Kept the warning about context and the office limitations; made it more immediate. | Split into short beats with (pause), removed commas by breaking clauses into sentences, and cleaned up punctuation/encoding (apostrophe, em dash)."
+      "lineToEdit": "Put the credentials away. (pause) That\u0019s context. (pause) Context burns. (pause) If you\u0019re important take it somewhere. (pause) Somewhere that logs importance. (pause) Here it\u0019s complaints and stamps. (pause) In the normal sense.",
+      "nextLine": "Stamp, or a conversation they can quote back?",
+      "revisedLine": "Put the credentials away. (pause)\nContext burns. (pause)\nNeed 'important' logged? Take it to logs. (pause)\nHere it\u2019s complaints and stamps. (pause)\nIn the normal sense.",
+      "changeSummary": "Kept the same dismissal of credentials and warning about context; tightened into sharper window-speak. | Shortened the third beat to 8 words max and cleaned up stray characters; kept meaning, tone, and pause placement."
     },
     {
       "scene": "SCN_SCN-052.json",
       "id": "N_OLEA_2",
-      "priorLine": "Credentials are context. Context is flammable.\nIf you are important, be important somewhere that logs importance.\nHere, we log complaints. Which is not the same as solving anything, in the normal sense.",
-      "lineToEdit": "Do you want the stamp or do you want a conversation that can be quoted?",
+      "priorLine": "Put the credentials away. (pause) That\u0019s context. (pause) Context burns. (pause) If you\u0019re important take it somewhere. (pause) Somewhere that logs importance. (pause) Here it\u0019s complaints and stamps. (pause) In the normal sense.",
+      "lineToEdit": "Stamp, or a conversation they can quote back?",
       "nextLine": "",
       "revisedLine": "Stamp, or a conversation they can quote back?",
-      "changeSummary": "Made the choice sound sharper and more threatening without changing meaning. | Trimmed the phrasing to fit the 8-word beat limit while preserving the meaning and cadence."
+      "changeSummary": "Left as-is; already natural and pressure-forward."
     },
     {
       "scene": "SCN_SCN-052.json",
       "id": "N_PERSUADE_PASS_1",
       "priorLine": "",
-      "lineToEdit": "Fine. You want language that implies nothing and still travels.\n\u001cProcessed, no action\u001d is the headline.\nUnder it: \u001cAcknowledged without admission.\u001d\nDo not add dates you can\u0019t prove. Dates invite calendars. Calendars invite auditors, in the normal sense.",
+      "lineToEdit": "Alright. (pause) You want wording that travels. (pause) It should not stick. (pause) Header: Processed no action. (pause) Under it: Acknowledged without admission. (pause) Do not add dates you cannot prove. (pause) Dates pull calendars. (pause) Calendars pull auditors in the normal sense.",
       "nextLine": "",
-      "revisedLine": "Alright. (pause) You want wording that travels. (pause) It should not stick. (pause) Header: Processed no action. (pause) Under it: Acknowledged without admission. (pause) Do not add dates you cannot prove. (pause) Dates pull calendars. (pause) Calendars pull auditors in the normal sense.",
-      "changeSummary": "Kept exact phrases and the dates/auditors warning; made it more spoken. | Broke the line into short pause beats under 8 words each, cleaned the header/under text formatting, and kept the same meaning while tightening phrasing and avoiding commas."
+      "revisedLine": "Alright. (pause)\nYou want wording that travels. (pause)\nHeader: Processed no action. (pause)\nUnder it: Acknowledged without admission. (pause)\nDon\u0019t add dates you can\u0019t prove. (pause)\nDates pull calendars. (pause)\nCalendars pull auditors\u0014normal sense.",
+      "changeSummary": "Kept all required phrasing and cautions; removed extra explanation and made it sound like quick drafting guidance."
     },
     {
       "scene": "SCN_SCN-052.json",
       "id": "N_PERSUADE_PASS_STAMP_1",
       "priorLine": "talk: Use that.",
-      "lineToEdit": "I did not advise you. I repeated an available phrase, in the normal sense.",
+      "lineToEdit": "I didn\u0019t advise you. (pause) I repeated an existing phrase, normally.",
       "nextLine": "The clerk stamps, then stamps again\u0014smaller\u0014like they\u0019re initialing their own denial.",
-      "revisedLine": "I didn\u2019t advise you. (pause) I repeated an existing phrase, normally.",
-      "changeSummary": "Kept liability dodge; made it more defensive and natural. | Added a pause to split beats under 8 words; tightened wording while keeping meaning; used only one comma."
+      "revisedLine": "I didn\u0019t advise you. (pause)\nI just repeated an existing phrase\u0014normally.",
+      "changeSummary": "Same denial of responsibility; made it less stiff and more defensive."
     },
     {
       "scene": "SCN_SCN-052.json",
       "id": "N_PERSUADE_FAIL_1",
       "priorLine": "",
-      "lineToEdit": "No.\nI do not help draft language. Drafting implies authorship. Authorship implies intent.\nChoose the stamp as provided, or leave with your thoughts intact, in the normal sense.",
+      "lineToEdit": "No. (pause)\nI don't draft language. (pause)\nDrafting makes it mine. (pause)\nMine becomes intent. (pause)\nTake the stamp as provided. (pause)\nOr leave with your thoughts intact. (pause)\nIn the normal sense.",
       "nextLine": "",
-      "revisedLine": "No. (pause)\nI don't draft language. (pause)\nDrafting makes it mine. (pause)\nMine becomes intent. (pause)\nTake the stamp as provided. (pause)\nOr leave with your thoughts intact. (pause)\nIn the normal sense.",
-      "changeSummary": "Preserved refusal and liability chain; made it less polished and more wary. | Split the line into shorter (pause) beats to meet the 8-word limit, removed the comma, and normalized punctuation/encoding while preserving meaning and cadence."
+      "revisedLine": "No. (pause)\nI don\u0019t draft language. (pause)\nIf I draft it, it\u0019s mine. (pause)\nThen it reads like intent. (pause)\nTake the stamp as provided. (pause)\nOr leave with your thoughts intact\u0014 (pause)\nin the normal sense.",
+      "changeSummary": "Kept the refusal and liability logic; made the causal chain sound more like real-time self-protection."
     },
     {
       "scene": "SCN_SCN-052.json",
       "id": "N_ESCALATE_1",
       "priorLine": "threaten: I\u0019ll escalate.",
-      "lineToEdit": "Escalation is a category. Categories create receipts.\nIf you want a receipt that follows you, keep going.\nOr you can take \u001cProcessed, no action\u001d and make your problem someone else\u0019s silence, in the normal sense.",
+      "lineToEdit": "Say 'escalate'. (pause) It becomes a category. (pause) Categories leave receipts. (pause) Want that following you? (pause) Keep going. (pause) If not take 'Processed\u0014no action'. (pause) And walk in the normal sense.",
       "nextLine": "",
-      "revisedLine": "Say 'escalate'. (pause) It becomes a category. (pause) Categories leave receipts. (pause) Want that following you? (pause) Keep going. (pause) If not take 'Processed\u2014no action'. (pause) And walk in the normal sense.",
-      "changeSummary": "Kept the escalation-to-record warning; reduced rhetorical flourish. | Split into short pause-separated beats under 8 words. Removed extra commas by changing 'Processed, no action' to 'Processed\u2014no action' and dropping the comma after 'Otherwise' while keeping meaning and cadence."
+      "revisedLine": "Say \u0018escalate\u0019. (pause)\nIt becomes a category. (pause)\nCategories leave receipts. (pause)\nWant that following you? (pause)\nKeep going. (pause)\nOtherwise take \u0018Processed\u0014no action\u0019 (pause)\nand walk\u0014normal sense.",
+      "changeSummary": "Preserved the same warning and choice; tightened the last instruction and kept key stamp wording."
     },
     {
       "scene": "SCN_SCN-052.json",
       "id": "N_ESCALATE_WISE_1",
       "priorLine": "talk: Stamp.",
-      "lineToEdit": "Wise.",
-      "nextLine": "Placed flat. No narrative. Thank you.",
+      "lineToEdit": "Alright.",
+      "nextLine": "Flat on the counter.\nNo story. Thanks.",
       "revisedLine": "Alright.",
-      "changeSummary": "Varied the approval response while keeping the same intent."
+      "changeSummary": "Left as-is; already a clean, reactive acceptance."
     },
     {
       "scene": "SCN_SCN-052.json",
       "id": "N_STAMP_CONFIRM_1",
-      "priorLine": "(multiple) (talk: Then stamp it.) (talk: Stamp it.) (Perfect. That is how you keep your file small.) (talk: Do it.) (talk: Stamp.) (talk: Then just stamp it.) (Wise.)",
-      "lineToEdit": "Placed flat. No narrative. Thank you.",
+      "priorLine": "(multiple) (talk: Then stamp it.) (talk: Stamp it.) (Good. Keep it small.) (talk: Do it.) (talk: Stamp.) (talk: Then just stamp it.) (Alright.)",
+      "lineToEdit": "Flat on the counter.\nNo story. Thanks.",
       "nextLine": "Ink. Paper. Finality.",
       "revisedLine": "Flat on the counter.\nNo story. Thanks.",
-      "changeSummary": "Kept the same handling instructions; made it sound like quick, repeated desk routine."
+      "changeSummary": "Left as-is; already fits the clerk\u0019s liability-avoidant routine."
     }
   ]
 }

@@ -16,7 +16,7 @@
           "id": "N01_CLERK_NEXT",
           "type": "npc_line",
           "speakerId": "SCHED_CLERK",
-          "text": "Next. Make it quick.",
+          "text": "Next. Quick.",
           "next": "N02_MAIN_MENU"
         },
         {
@@ -134,7 +134,7 @@
           "id": "N15_CLERK_GAP",
           "type": "npc_line",
           "speakerId": "SCHED_CLERK",
-          "text": "It won\u2019t \u201cclear\u201d anything. (pause)\nIt shoves the gap into a known bucket. (pause)\nThe chain already knows how to hold it. (pause)\nAuthorization reads \u201callowed.\u201d (pause)\nComplaint acknowledgment reads \u201cdisputed, recorded.\u201d (pause)\nEnough to process. (pause)\nAnd before you start: I\u2019m not approving. (pause)\nI\u2019m acknowledging. (pause)\nSafer in the minutes.",
+          "text": "It won\u2019t \u201cclear\u201d anything. (pause)\nIt drops the gap into a chain-known bucket. (pause)\nAuthorization reads \u201callowed.\u201d (pause)\nComplaint acknowledgment reads \u201cdisputed and recorded.\u201d (pause)\nThat\u2019s enough to process. (pause)\nAnd don\u2019t start\u2014 (pause)\nI\u2019m not approving. (pause)\nI\u2019m acknowledging. (pause)\nSafer in the minutes.",
           "next": "N15B_GAP_MENU"
         },
         {
@@ -163,14 +163,14 @@
           "id": "N50_PLAYER_POLICYASK",
           "type": "npc_line",
           "speakerId": "PLAYER",
-          "text": "So the complaint stamp is a policy-compliant substitute in the clearance chain.",
+          "text": "So the complaint stamp is policy-compliant. (pause) A substitute in the clearance chain.",
           "next": "N51_CLERK_POLICY"
         },
         {
           "id": "N51_CLERK_POLICY",
           "type": "npc_line",
           "speakerId": "SCHED_CLERK",
-          "text": "Yeah. Policy-compliant. (pause)\nIt won\u2019t feel good. (pause)\nThe chain prefers a stamped problem. (pause)\nNot a blank absence. (pause)\nBlanks force improvisation. (pause)\nThen someone\u2019s name ends up in it. (pause)\nI\u2019m trying to keep names out. (pause)\nOut of this.",
+          "text": "Yeah. Policy-compliant. (pause)\nNobody likes it. (pause)\nChain prefers a stamped problem. (pause)\nNot a blank space. (pause)\nBlanks make people improvise. (pause)\nThen somebody\u2019s name ends up on it. (pause)\nI\u2019m trying to keep names out of this.",
           "next": "N52_NARRATOR_IMPLICATION"
         },
         {
@@ -208,7 +208,7 @@
           "id": "N25_CLERK_WHO_APPROVED",
           "type": "npc_line",
           "speakerId": "SCHED_CLERK",
-          "text": "\u201cApproved\u201d is a generous word. (pause)\nIt survived review twice. (pause)\nNobody wanted to be the third signature. (pause)\nThe one that killed it. (pause)\nSo it sits on the board. (pause)\nAs precedent. (pause)\nReality keeps showing up on schedule. (pause)\nPolicy doesn\u2019t.",
+          "text": "\u201cApproved\u201d is generous. (pause)\nIt survived review twice. (pause)\nNobody wanted to be third and kill it. (pause)\nSo it stays on the board. (pause)\nPrecedent. (pause)\nReality shows up on schedule. (pause)\nPolicy\u2026 doesn\u2019t.",
           "next": "N26_WHO_MENU"
         },
         {
@@ -232,14 +232,14 @@
           "id": "N27_PLAYER_REFERENCE",
           "type": "npc_line",
           "speakerId": "PLAYER",
-          "text": "So it will pass clearance if I reference the substitution line.",
+          "text": "It passes clearance if I cite substitution line.",
           "next": "N28_CLERK_REFERENCE"
         },
         {
           "id": "N28_CLERK_REFERENCE",
           "type": "npc_line",
           "speakerId": "SCHED_CLERK",
-          "text": "Cite it cleanly, yeah. (pause) Start waving it like a loophole (pause) and it\u2019ll get bounced. (pause) Chain likes citations. (pause) It hates enthusiasm.",
+          "text": "Cite it clean, yeah. (pause)\nWave it like a loophole. It\u2019ll get bounced. (pause)\nChain likes citations. (pause)\nIt hates enthusiasm.",
           "next": "N29_NARRATOR_WORKAROUND"
         },
         {
@@ -284,7 +284,7 @@
           "id": "N31_CLERK_SURVIVABLE",
           "type": "npc_line",
           "speakerId": "SCHED_CLERK",
-          "text": "Review. (pause)\nIt happens after you\u2019ve left. (pause)\nYou can\u2019t fix anything. (pause)\nStamps outlive explanations.",
+          "text": "Review. (pause)\nHappens after you\u2019re gone. (pause)\nYou don\u2019t get to fix it. (pause)\nStamps outlive explanations.",
           "next": "N32_SURVIVABLE_MENU"
         },
         {
@@ -339,7 +339,7 @@
           "id": "N17C_CLERK_REMOVED",
           "type": "npc_line",
           "speakerId": "SCHED_CLERK",
-          "text": "Because people treated them like permission. (pause) This board is what the chain will tolerate, (pause) without dragging everyone into a meeting. (pause) \u201cTolerate\u201d keeps the minutes safer (pause) than \u201capprove.\u201d",
+          "text": "Because people started treating them like permission. (pause)\nThis board marks the chain\u2019s tolerance limit. (pause)\nNo one gets dragged into meetings. (pause)\n\u201cTolerate\u201d keeps the minutes safer than \u201capprove.\u201d",
           "next": "N17D_REMOVED_MENU"
         },
         {
@@ -365,14 +365,14 @@
           "id": "N19_CLERK_CONTINUITY",
           "type": "npc_line",
           "speakerId": "SCHED_CLERK",
-          "text": "Continuity in the chain. (pause) Ink you can follow. (pause) From \u201cclaimed\u201d to \u201crecorded\u201d. (pause) Without a gap. (pause) Gaps are where auditors set up camp.",
+          "text": "Continuity in the chain. (pause)\nInk you can follow\u2014claimed to recorded. (pause)\nNo gap. (pause)\nGaps are where auditors set up camp.",
           "next": "N11_BOARD_MENU"
         },
         {
           "id": "N20_CLERK_WHY",
           "type": "npc_line",
           "speakerId": "SCHED_CLERK",
-          "text": "Because the real world keeps happening. (pause) Some \u201cstandard\u201d stamps can\u2019t be sourced in time. (pause) So substitutions got written down. (pause) And everyone acts shocked we admitted it. (pause) Pick from the board or don\u2019t file.",
+          "text": "Because things happen. (pause)\nThe \u201cstandard\u201d stamp doesn\u2019t show up in time. (pause)\nSo substitutions got written down. (pause)\nPick from the board, or don\u2019t file.",
           "next": "N21_WHY_MENU"
         },
         {
@@ -401,7 +401,7 @@
           "id": "N32_CLERK_CLEAR_WORD",
           "type": "npc_line",
           "speakerId": "SCHED_CLERK",
-          "text": "\u201cClear\u201d is review\u2019s word not mine. (pause) Through the glass I can tell. (pause) What usually survives. (pause) That board is the survivable stuff.",
+          "text": "\u201cClear\u201d is review\u2019s word. (pause)\nThrough glass, I know what usually survives. (pause)\nThat board? That\u2019s the survivable stuff.",
           "next": "N33_COMPLIANT_MENU"
         },
         {
@@ -425,7 +425,7 @@
           "id": "N34_CLERK_WHICH_UPSTREAM",
           "type": "npc_line",
           "speakerId": "SCHED_CLERK",
-          "text": "Missing upstream authorization? (pause)\nDon\u2019t fake it. (pause)\nTurn absence into a dispute on record. (pause)\nGet a complaint acknowledgment stamp. (pause)\nCite the line. (pause)\nKeep the chain intact.",
+          "text": "Missing upstream authorization? (pause)\nDon\u2019t fake it. (pause)\nPut the absence on record as a dispute. (pause)\nComplaint acknowledgment stamp. (pause)\nCite the line. (pause)\nKeep the chain intact.",
           "next": "N35_NARRATOR_NOTE"
         },
         {
@@ -456,7 +456,7 @@
           "id": "N30_CLERK_SUB_CLEARANCE",
           "type": "npc_line",
           "speakerId": "SCHED_CLERK",
-          "text": "In clearance terms: they want ink tracking. (pause)\nFrom \u201cclaimed\u201d to \u201crecorded.\u201d (pause)\nNo gaps. (pause)\nGaps invite auditors. (pause)\nSubstitution is an ugly bridge. (pause)\nIt keeps continuity\u2014official, signed. (pause)\nNobody\u2019s happy about it.",
+          "text": "Clearance terms? They want ink they can track. (pause)\nClaimed to recorded. (pause)\nNo gaps. (pause)\nGaps invite auditors. (pause)\nSubstitution\u2019s an ugly bridge, but it keeps continuity\u2014signed. (pause)\nNobody\u2019s happy about it.",
           "next": "N31_SUB_CLEAR_MENU"
         },
         {
@@ -480,14 +480,14 @@
           "id": "N37_CLERK_BRIDGE_AUTH",
           "type": "npc_line",
           "speakerId": "SCHED_CLERK",
-          "text": "Complaint acknowledgment. (pause)\nIt puts \u201cchallenged\u201d \u201clogged\u201d \u201chandled\u201d on the page. (pause)\nWhen \u201cauthorized\u201d can\u2019t show up in time (pause)\n\u201chandled\u201d is what the chain will take.",
+          "text": "Complaint acknowledgment. (pause)\nIt gets \u201cchallenged\u201d \u201clogged\u201d \u201chandled\u201d on the page. (pause)\nWhen \u201cauthorized\u201d doesn\u2019t show up in time. (pause)\n\u201chandled\u201d is what the chain will take.",
           "next": "N35_NARRATOR_NOTE"
         },
         {
           "id": "N40_OLEA_PASS",
           "type": "npc_line",
           "speakerId": "SCHED_CLERK",
-          "text": "Standing noted. (pause)\nStill doesn\u2019t conjure an asset. (pause)\nOr a stamp. (pause)\nIf I escalate your question (pause)\nit becomes a discretionary record (pause)\nwith my name on it. (pause)\nThen it\u2019s precedent. (pause)\nUse the board. (pause)\nCite what\u2019s approved. (pause)\nDon\u2019t drag me into inventing lanes.",
+          "text": "Standing noted. (pause)\nStill doesn\u2019t conjure an asset. (pause)\nOr a stamp. (pause)\nIf I escalate it, it becomes discretionary. (pause)\nMy name goes on the record. (pause)\nThen it\u2019s precedent. (pause)\nUse the board. (pause)\nCite what\u2019s approved. (pause)\nDon\u2019t drag me into inventing lanes.",
           "next": "N40_OLEA_MENU"
         },
         {
@@ -521,7 +521,7 @@
           "id": "N41_OLEA_FAIL",
           "type": "npc_line",
           "speakerId": "SCHED_CLERK",
-          "text": "Declarations don\u2019t run this window. (pause)\nIf you can\u2019t show standing in-chain (pause)\nI can\u2019t route anything up. (pause)\nUse what\u2019s posted or bring a claimable asset. (pause)\nThose are the options that survive.",
+          "text": "Declarations don\u2019t run this window. (pause)\nNo standing in-chain, I can\u2019t route anything up. (pause)\nUse what\u2019s posted or bring a claimable asset. (pause)\nThose are the options that survive.",
           "next": "N41_OLEA_MENU"
         },
         {

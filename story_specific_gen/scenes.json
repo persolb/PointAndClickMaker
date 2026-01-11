@@ -3796,7 +3796,13 @@
       }
     },
     {
-      "characters": [],
+      "characters": [
+        {
+          "characterId": "PLAYER",
+          "role": "interactor",
+          "notes": "On-site and physically interacting with the hatch lid and lifting ring; no other characters appear or speak in this scene."
+        }
+      ],
       "id": "SCN-083",
       "sceneDescription": "",
       "screenId": "HUB-04",
@@ -3904,7 +3910,18 @@
       }
     },
     {
-      "characters": [],
+      "characters": [
+        {
+          "characterId": "PLAYER",
+          "role": "speaker",
+          "notes": "Interacts with the Barcode kiosk (unallocated mass) to attempt formal scanning/processing of the Act I misrouted-item barcode; stays concise and procedural."
+        },
+        {
+          "characterId": "PROCESS_COACH",
+          "role": "guide",
+          "notes": "Present in the concourse; can hover near the kiosk to offer practical category hints and warn against choices that trigger intake rejection loops. Blunt, survival-pragmatic; does not override policy."
+        }
+      ],
       "id": "SCN-098",
       "sceneDescription": "",
       "screenId": "LIM-01",
@@ -3931,7 +3948,23 @@
       }
     },
     {
-      "characters": [],
+      "characters": [
+        {
+          "characterId": "PLAYER",
+          "role": "pov / participant",
+          "notes": "Navigates the intake windows and forms rack to obtain TER, badge sleeve, glove tag, claim stub, and/or complaint stamp as needed; stays concise and procedurally literate."
+        },
+        {
+          "characterId": "INTAKE_CLERK",
+          "role": "speaker / gatekeeper",
+          "notes": "Primary window-clerk presence for issuing the Temporary Existence Receipt (TER); calm, rule-bound, and defensive about wording; repeats variations of 'in the normal sense' and avoids language implying transit."
+        },
+        {
+          "characterId": "PROCESS_COACH",
+          "role": "guide / companion",
+          "notes": "Roving intake helper who provides category/stamp/token hints without overriding policy; frames choices as survival ('You can be wrong, or you can be filed'); does not argue with clerks on the record."
+        }
+      ],
       "id": "SCN-101",
       "sceneDescription": "",
       "screenId": "LIM-02"

@@ -187,21 +187,7 @@
           "id": "N_SHOW_NOTES",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You forward summary, no commentary. System takes it as confession. No reply comes in time.",
-          "next": "PC_SHOW_NOTES_BACK"
-        },
-        {
-          "id": "PC_SHOW_NOTES_BACK",
-          "type": "player_choice",
-          "speakerId": "PLAYER",
-          "choices": [
-            {
-              "id": "LEAVE_BACK",
-              "text": "Leave: Back",
-              "verb": "leave",
-              "next": "R_BACK_TO_MENU"
-            }
-          ]
+          "text": "You forward summary, no commentary. System takes it as confession. No reply comes in time."
         },
         {
           "id": "R_BACK_TO_MENU",

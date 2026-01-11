@@ -1,0 +1,610 @@
+{
+  "dialogueGraphs": [
+    {
+      "id": "DG_SCN_067_SUBMIT_VARIANCE_ACK",
+      "sceneId": "SCN-067",
+      "startNodeId": "N_ENTER",
+      "nodes": [
+        {
+          "id": "N_ENTER",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "conditions": [
+            {
+              "key": "act3.varianceTemplateFound",
+              "op": "==",
+              "value": true
+            },
+            {
+              "key": "act3.varianceSubmitted",
+              "op": "==",
+              "value": false
+            },
+            {
+              "key": "world.sphereMirrorFlicker",
+              "op": "==",
+              "value": true
+            }
+          ],
+          "text": "The SPINDLE Chamber Floor smells like cold dust and warmed insulation. (pause)\nThe containment sphere sits in its cradle. Matte and over-insulated. (pause)\nThen for a fraction of a second it isn\u2019t. (pause)\nThe surface flickers reflective. Like a surface filing itself under a different room. (pause)\nThe interface scan panel waits with a polite prompt. It expects you\u2019ll cooperate. (pause)\nA label on the frame reads: SUBMISSIONS BECOME RECORD. (pause)\nSomeone has added in pen: \u201cEspecially the wrong ones.\u201d",
+          "next": "N_MAIN_MENU"
+        },
+        {
+          "id": "N_MAIN_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_LOOK_SPHERE",
+              "text": "look: Containment sphere surface.",
+              "next": "N_SPHERE_INTRO"
+            },
+            {
+              "id": "C_LOOK_STATUS",
+              "text": "look: Status indicator cluster.",
+              "next": "N_STATUS_INTRO"
+            },
+            {
+              "id": "C_USE_SCAN",
+              "text": "use: Interface scan panel.",
+              "next": "N_SCAN_INTRO"
+            },
+            {
+              "id": "C_LOOK_ESTOP",
+              "text": "look: Emergency stop.",
+              "next": "N_ESTOP_INTRO"
+            },
+            {
+              "id": "C_LEAVE_OBS",
+              "text": "leave: Observation Deck \u2014 down.",
+              "next": "N_LEAVE_OBS_LINE"
+            },
+            {
+              "id": "C_LEAVE_OVERFLOW",
+              "text": "leave: Overflow Intake Concourse \u2014 hotspot.",
+              "next": "N_LEAVE_OVERFLOW_LINE"
+            }
+          ]
+        },
+        {
+          "id": "N_SPHERE_INTRO",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "Up close, the sphere is mostly matte\u2014industrial and honest, designed to be ignored. (pause)\nThen it catches the room wrong. (pause)\nThe reflection won\u2019t resolve into any angle you\u2019re standing in. (pause)\nIt flickers back to matte before your eyes finish reporting it.",
+          "next": "N_SPHERE_OPS_WARN"
+        },
+        {
+          "id": "N_SPHERE_OPS_WARN",
+          "type": "npc_line",
+          "speakerId": "OPS_OPERATOR",
+          "text": "Don't name it. (pause) Log \"reflective behavior\"\u2014legacy wording. (pause) Already filed.",
+          "next": "N_SPHERE_MENU"
+        },
+        {
+          "id": "N_SPHERE_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_SPHERE_HOW_OFTEN",
+              "text": "ask: \u201cHow often?\u201d",
+              "next": "N_SPHERE_HOW_OFTEN_OPS"
+            },
+            {
+              "id": "C_SPHERE_LOG",
+              "text": "talk: \u201cLogging reflective behavior.\u201d",
+              "next": "N_SPHERE_LOG_OPS"
+            },
+            {
+              "id": "C_SPHERE_BACK",
+              "text": "leave: Back.",
+              "next": "R_TO_MAIN"
+            }
+          ]
+        },
+        {
+          "id": "N_SPHERE_HOW_OFTEN_OPS",
+          "type": "npc_line",
+          "speakerId": "OPS_OPERATOR",
+          "text": "Intermittent. (pause) Don\u2019t give it motives. (pause) Log \u201ccondition observed.\u201d (pause) Less blame that way.",
+          "next": "N_SPHERE_BEAT"
+        },
+        {
+          "id": "N_SPHERE_LOG_OPS",
+          "type": "npc_line",
+          "speakerId": "OPS_OPERATOR",
+          "text": "Good. Time and distance noted. (pause) You stayed outside the barrier stripe. (pause) Keep that sentence. (pause) It keeps your badge working.",
+          "next": "N_SPHERE_BEAT"
+        },
+        {
+          "id": "N_SPHERE_BEAT",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The sphere flickers once more, like a clerical correction applied to light.",
+          "next": "R_TO_MAIN"
+        },
+        {
+          "id": "N_STATUS_INTRO",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The status indicator cluster glows in careful colors: (pause) greens for allowed, ambers for pending. (pause) One amber lamp reads, in a different font: HOLD / NON-LOCAL. (pause) Beneath it the printed tag list includes: STANDING INDICATOR: UNKNOWN. SERVICE CLASS: UNRESOLVED.",
+          "next": "N_STATUS_PLAYER_BEAT"
+        },
+        {
+          "id": "N_STATUS_PLAYER_BEAT",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "That\u2019s new.",
+          "next": "N_STATUS_OPS_CORRECT"
+        },
+        {
+          "id": "N_STATUS_OPS_CORRECT",
+          "type": "npc_line",
+          "speakerId": "OPS_OPERATOR",
+          "text": "Don\u2019t say \u201cnew.\u201d (pause) Say \u201cnewly visible.\u201d (pause) One sounds like a system change. (pause) One sounds like we noticed.",
+          "next": "N_STATUS_MENU"
+        },
+        {
+          "id": "N_STATUS_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_STATUS_CLEAR",
+              "text": "ask: \u201cCan I clear it locally?\u201d",
+              "next": "N_STATUS_CLEAR_OPS"
+            },
+            {
+              "id": "C_STATUS_WHO",
+              "text": "ask: \u201cHeld by who?\u201d",
+              "next": "N_STATUS_WHO_OPS"
+            },
+            {
+              "id": "C_STATUS_READ",
+              "text": "look: Read the tag labels again.",
+              "next": "N_STATUS_READ_NARR"
+            },
+            {
+              "id": "C_STATUS_BACK",
+              "text": "leave: Back.",
+              "next": "R_TO_MAIN"
+            }
+          ]
+        },
+        {
+          "id": "N_STATUS_CLEAR_OPS",
+          "type": "npc_line",
+          "speakerId": "OPS_OPERATOR",
+          "text": "Clear an alarm locally. (pause) A hold won\u2019t clear here. (pause) Remote-office insurance.",
+          "next": "N_STATUS_MENU"
+        },
+        {
+          "id": "N_STATUS_WHO_OPS",
+          "type": "npc_line",
+          "speakerId": "OPS_OPERATOR",
+          "text": "No 'who' field. (pause) Just an authority tag. (pause)\nIf you do anything today, (pause) make sure it ends (pause) with a reference number.",
+          "next": "N_STATUS_MENU"
+        },
+        {
+          "id": "N_STATUS_READ_NARR",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The labels don\u2019t change when you stare at them. They just become more official.",
+          "next": "N_STATUS_MENU"
+        },
+        {
+          "id": "N_ESTOP_INTRO",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "Emergency stop: red mushroom button under clear flip cover, scuffed by hands just short of responsibility.",
+          "next": "N_ESTOP_OPS_WARN"
+        },
+        {
+          "id": "N_ESTOP_OPS_WARN",
+          "type": "npc_line",
+          "speakerId": "OPS_OPERATOR",
+          "text": "You can press it. (pause)\nJust know what you're doing. (pause)\nThat's a declaration. (pause)\nCommittees love those. (pause)\nIf you touch it I need. (pause)\nA reason phrase. (pause)\nAnd a timestamp.",
+          "next": "N_ESTOP_MENU"
+        },
+        {
+          "id": "N_ESTOP_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_ESTOP_WHAT",
+              "text": "ask: \u201cWhat does it actually stop?\u201d",
+              "next": "N_ESTOP_WHAT_OPS"
+            },
+            {
+              "id": "C_ESTOP_PLACARD",
+              "text": "look: Read the placard text.",
+              "next": "N_ESTOP_PLACARD_NARR"
+            },
+            {
+              "id": "C_ESTOP_BACK",
+              "text": "leave: Back.",
+              "next": "R_TO_MAIN"
+            }
+          ]
+        },
+        {
+          "id": "N_ESTOP_WHAT_OPS",
+          "type": "npc_line",
+          "speakerId": "OPS_OPERATOR",
+          "text": "It stops local motion control (pause) and trips the local breakers. (pause) Non-local holds stay. (pause) Paperwork stays. (pause) And it kills the story. (pause) \u201cWe followed the planned sequence.\u201d",
+          "next": "N_ESTOP_MENU"
+        },
+        {
+          "id": "N_ESTOP_PLACARD_NARR",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "Placard reads: USE ONLY TO PREVENT IMMINENT HARM. Below: ACTIVATION REQUIRES POST-EVENT REPORT. REPORT underlined twice.",
+          "next": "N_ESTOP_MENU"
+        },
+        {
+          "id": "N_SCAN_INTRO",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The interface scan panel is a waist-high slab of glass (pause) with a keypad that assumes obedience.\nIts prompt is cheerful (pause) in the way compliance software is cheerful: SELECT FORM / SUBMIT.",
+          "next": "N_SCAN_OPS_COACH"
+        },
+        {
+          "id": "N_SCAN_OPS_COACH",
+          "type": "npc_line",
+          "speakerId": "OPS_OPERATOR",
+          "text": "Treat it like a scanner. (pause) Pick the form. Submit. (pause) Start talking to it. (pause) You just created a stakeholder.",
+          "next": "N_SCAN_NARR_LIST"
+        },
+        {
+          "id": "N_SCAN_NARR_LIST",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The panel offers a short list. (pause) One entry is already highlighted, like it\u2019s been waiting for you: (pause) TEMPORARY OPERATING VARIANCE \u2014 HOLD CONDITION (NON-LOCAL).",
+          "next": "N_SCAN_MENU"
+        },
+        {
+          "id": "N_SCAN_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_SCAN_LOAD_TEMPLATE",
+              "text": "use: Load variance template and begin.",
+              "next": "N_LOAD_TEMPLATE"
+            },
+            {
+              "id": "C_SCAN_REQUIRED_FIELDS",
+              "text": "look: Review required fields.",
+              "next": "N_REQUIRED_FIELDS"
+            },
+            {
+              "id": "C_SCAN_ATTACH_REF",
+              "text": "show: Attach MTA reference number and notice citation.",
+              "conditions": [
+                {
+                  "key": "act3.mtaNoticeReceived",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "next": "N_ATTACH_REF"
+            },
+            {
+              "id": "C_SCAN_INTERPRET_REF",
+              "text": "ask: Identify the reference format (for the log).",
+              "conditions": [
+                {
+                  "key": "act3.mtaNoticeReceived",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "checks": [
+                {
+                  "type": "skill",
+                  "skill": "bureaucracy",
+                  "dc": 12
+                }
+              ],
+              "onPassNext": "N_INTERPRET_REF_PASS",
+              "onFailNext": "N_INTERPRET_REF_FAIL"
+            },
+            {
+              "id": "C_SCAN_OLEA_SIGNATORY",
+              "text": "persuade: Apply OLEA signatory language to standing/presence.",
+              "conditions": [
+                {
+                  "key": "player.oleaAuthorizedSignatory",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "next": "N_SIGNATORY_START"
+            },
+            {
+              "id": "C_SCAN_BACK",
+              "text": "leave: Back.",
+              "next": "R_TO_MAIN"
+            }
+          ]
+        },
+        {
+          "id": "N_REQUIRED_FIELDS",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "Required fields populate in an unfriendly order: (pause)\nSUBJECT NODE prefilled SOL-EARTH-LOCAL. (pause)\nHOLD REFERENCE blank. (pause)\nSERVICE CLASS unresolved. (pause)\nSTANDING INDICATOR unknown. (pause)\nREQUESTED ACTION prefilled TEMPORARY OPERATING VARIANCE. (pause)\nA final checkbox blinks: (pause)\nACKNOWLEDGE: SUBMISSION MAY AFFECT STANDING. (pause)\nYour hands stay steady anyway.",
+          "next": "R_TO_SCAN_MENU"
+        },
+        {
+          "id": "N_ATTACH_REF",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Reference: MTA_NOTICE_REF.",
+          "next": "N_ATTACH_REF_NARR"
+        },
+        {
+          "id": "N_ATTACH_REF_NARR",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The panel accepts the string too quickly, like it wanted to believe you. (pause)\nA secondary field appears: QUEUE POSITION (READ-ONLY). (pause)\nIt remains blank, which is its own kind of answer.",
+          "next": "N_ATTACH_REF_OPS"
+        },
+        {
+          "id": "N_ATTACH_REF_OPS",
+          "type": "npc_line",
+          "speakerId": "OPS_OPERATOR",
+          "text": "When you're done, print that screen. (pause) It shows the machine accepted your string. (pause) That's the whole point.",
+          "next": "R_TO_SCAN_MENU"
+        },
+        {
+          "id": "N_INTERPRET_REF_PASS",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The reference string resolves into a docket shape: prefix\u2014jurisdiction stub\u2014lane code\u2014then queue tail. (pause) It\u2019s designed to be cited\u2014not understood.",
+          "next": "R_TO_SCAN_MENU"
+        },
+        {
+          "id": "N_INTERPRET_REF_FAIL",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You can\u2019t place it confidently. Too clean, too standardized\u2014like it expects your systems to already agree.",
+          "next": "R_TO_SCAN_MENU"
+        },
+        {
+          "id": "N_SIGNATORY_START",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "OLEA signatory. On-site. Custody acknowledged.",
+          "next": "N_SIGNATORY_OPS"
+        },
+        {
+          "id": "N_SIGNATORY_OPS",
+          "type": "npc_line",
+          "speakerId": "OPS_OPERATOR",
+          "text": "Good. Keep it boring. (pause) On-site is defensible. (pause) Don\u2019t add motives or theories. (pause) Just the fact of presence.",
+          "next": "N_SIGNATORY_NARR"
+        },
+        {
+          "id": "N_SIGNATORY_NARR",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The panel adds a line item: PRESENCE ATTESTATION\u2014RECEIVED. (pause) It doesn\u2019t say accepted. It says received, like it\u2019s protecting itself.",
+          "next": "R_TO_SCAN_MENU"
+        },
+        {
+          "id": "N_LOAD_TEMPLATE",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You place the variance template against the glass. (pause)\nNot because it needs to \u201csee\u201d paper\u2014 (pause)\nbecause you want the act recorded as procedural, not improvised. (pause)\nThe panel chirps once\u2014pleased with itself. (pause)\nThe form renders with fields mapped into non-local language.",
+          "next": "N_LOAD_TEMPLATE_OPS"
+        },
+        {
+          "id": "N_LOAD_TEMPLATE_OPS",
+          "type": "npc_line",
+          "speakerId": "OPS_OPERATOR",
+          "text": "Don\u2019t explain. (pause) Explanations become questions. (pause) Questions become you owning it.",
+          "next": "N_SUBMIT_MENU"
+        },
+        {
+          "id": "N_SUBMIT_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_SUBMIT_AS_WRITTEN",
+              "text": "use: Submit as-written (minimal narrative).",
+              "next": "N_SUBMIT_AS_WRITTEN_NARR"
+            },
+            {
+              "id": "C_SUBMIT_WITH_NOTE",
+              "text": "use: Submit with added operational note: \u201creflective behavior ongoing.\u201d",
+              "next": "N_SUBMIT_WITH_NOTE_NARR"
+            },
+            {
+              "id": "C_SUBMIT_PREVIEW",
+              "text": "show: Preview the submission summary.",
+              "next": "N_PREVIEW_SUMMARY"
+            },
+            {
+              "id": "C_SUBMIT_BACK",
+              "text": "leave: Back (do not submit).",
+              "next": "N_BACK_OUT_NARR"
+            }
+          ]
+        },
+        {
+          "id": "N_PREVIEW_SUMMARY",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The summary reads like it\u2019s from a distant office that hates adjectives: (pause) REQUEST: Temporary Operating Variance (pause) CONDITION: HOLD \u2014 NON-LOCAL COMPLIANCE (pause) SUBJECT NODE: SOL-EARTH-LOCAL (pause) SERVICE CLASS: UNRESOLVED (PENDING) (pause) STANDING: UNKNOWN (PENDING) (pause) ATTACHMENTS: [template] (pause) A small note at the bottom adds, defensively: (pause) PROCESSING ORDER DETERMINED BY QUEUE POSITION.",
+          "next": "R_TO_SUBMIT_MENU"
+        },
+        {
+          "id": "N_BACK_OUT_NARR",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You step away from the panel.\nThe prompt stays cheerful. It doesn\u2019t care about your timing.",
+          "next": "R_TO_MAIN"
+        },
+        {
+          "id": "N_SUBMIT_AS_WRITTEN_NARR",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You submit the packet without dressing it up. (pause) No motives. No theories. (pause) Just fields filled enough to become someone else\u2019s problem.",
+          "next": "N_SUBMIT_RECEIVED"
+        },
+        {
+          "id": "N_SUBMIT_WITH_NOTE_NARR",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "Add: clinical, time-stamped line: \u201cReflective behavior ongoing.\u201d Not because it helps\u2014because you saw it, unrenamed.",
+          "next": "N_SUBMIT_WITH_NOTE_OPS"
+        },
+        {
+          "id": "N_SUBMIT_WITH_NOTE_OPS",
+          "type": "npc_line",
+          "speakerId": "OPS_OPERATOR",
+          "text": "Fine. One sentence is still a form. (pause) Don't add a second. (pause) A second makes a story. (pause) Then it has an author.",
+          "next": "N_SUBMIT_RECEIVED_NOTE"
+        },
+        {
+          "id": "N_SUBMIT_RECEIVED",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "Panel pauses\u2014long enough to feel like judgment, short enough to remain deniable.\nSUBMISSION RECEIVED. STATUS: PROCESSING.",
+          "next": "N_ACK_PRINT"
+        },
+        {
+          "id": "N_SUBMIT_RECEIVED_NOTE",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The panel pauses\u2014long to feel like judgment, short to stay deniable. Then\u2014SUBMISSION RECEIVED. STATUS: PROCESSING.",
+          "next": "N_ACK_PRINT_NOTE"
+        },
+        {
+          "id": "N_ACK_PRINT",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "A printer inside the panel wakes and feeds out a thin slip with a clean barcode. (pause) The header reads: MTA \u2014 VARIANCE ACKNOWLEDGMENT (TEMPORARY). (pause) Beneath it: HOLD REMAINS IN EFFECT DURING PROCESSING. (pause) And, like a kindness that isn\u2019t one: PROCESSING WINDOW GRANTED. (pause) DO NOT ALTER SUBJECT STATE.",
+          "next": "N_MTA_TTS"
+        },
+        {
+          "id": "N_MTA_TTS",
+          "type": "npc_line",
+          "speakerId": "MTA_CONTACT",
+          "text": "Alright. (pause) You\u2019re in the log. (pause) Standing\u2019s still pending. (pause) Service class too. (pause) You\u2019ve got a queue slot. (pause) Window\u2019s active.",
+          "next": "N_PLAYER_GOOD"
+        },
+        {
+          "id": "N_PLAYER_GOOD",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Good.",
+          "next": "N_OUTRO"
+        },
+        {
+          "id": "N_OUTRO",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The sphere flickers reflective again\u2014mirror, matte\u2014like it\u2019s being kept open on purpose. (pause)\nThe acknowledgment slip is warm from the printer. (pause)\nWarmth is not reassurance. It\u2019s just heat.",
+          "next": "END_SUBMIT_ACK"
+        },
+        {
+          "id": "N_ACK_PRINT_NOTE",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "A printer inside the panel wakes, feeding a thin slip with a clean barcode. (pause) The header reads: MTA \u2014 VARIANCE ACKNOWLEDGMENT (TEMPORARY). (pause) Beneath it: HOLD REMAINS IN EFFECT DURING PROCESSING. (pause) A smaller line adds: CONDITION NOTE RECORDED (NON-DISPOSITIVE). (pause) It\u2019s bureaucratic for: we heard you, and it changes nothing.",
+          "next": "N_MTA_TTS_NOTE"
+        },
+        {
+          "id": "N_MTA_TTS_NOTE",
+          "type": "npc_line",
+          "speakerId": "MTA_CONTACT",
+          "text": "Logged. (pause) Standing pending. Service class pending. (pause) Queue slot assigned. Window\u2019s active.",
+          "next": "N_PLAYER_PRINT_TWO"
+        },
+        {
+          "id": "N_PLAYER_PRINT_TWO",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Print two copies.",
+          "next": "N_DUPLICATE_PRINT_NARR"
+        },
+        {
+          "id": "N_DUPLICATE_PRINT_NARR",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The panel prints a duplicate without comment.\nPaper has weight. That\u2019s why it matters.",
+          "next": "N_OUTRO_NOTE"
+        },
+        {
+          "id": "N_OUTRO_NOTE",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The sphere flickers again\u2014reflective, matte\u2014like it hates description.\nYou pocket the slips anyway, making delay citeable.",
+          "next": "END_SUBMIT_ACK"
+        },
+        {
+          "id": "END_SUBMIT_ACK",
+          "type": "end",
+          "outcomeId": "submit_variance_and_receive_ack",
+          "effects": [
+            {
+              "key": "act3.varianceSubmitted",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "act3.varianceAcknowledged",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "inventory.items",
+              "action": "add",
+              "value": "ITEM_VARIANCE_ACK_SLIP"
+            }
+          ]
+        },
+        {
+          "id": "N_LEAVE_OBS_LINE",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You step toward the stairs down to the Observation Deck. (pause) Behind you, the sphere keeps its own time, interrupting your vision like a clerical correction.",
+          "next": "END_LEAVE_OBS"
+        },
+        {
+          "id": "END_LEAVE_OBS",
+          "type": "end"
+        },
+        {
+          "id": "N_LEAVE_OVERFLOW_LINE",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You angle toward the Overflow Intake Concourse. (pause) The chamber stays behind glass and signage, still insisting quietly that someone should be on record.",
+          "next": "END_LEAVE_OVERFLOW"
+        },
+        {
+          "id": "END_LEAVE_OVERFLOW",
+          "type": "end"
+        },
+        {
+          "id": "R_TO_MAIN",
+          "type": "redirect",
+          "target": "N_MAIN_MENU"
+        },
+        {
+          "id": "R_TO_SCAN_MENU",
+          "type": "redirect",
+          "target": "N_SCAN_MENU"
+        },
+        {
+          "id": "R_TO_SUBMIT_MENU",
+          "type": "redirect",
+          "target": "N_SUBMIT_MENU"
+        }
+      ]
+    }
+  ]
+}

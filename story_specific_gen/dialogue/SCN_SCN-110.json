@@ -52,12 +52,10 @@
             },
             {
               "id": "C_USE_PRINTER_FROM_CONSOLE",
-              "next": "N40_PRINTER_DESC_1",
               "text": "use \u201cLog printer tray.\u201d"
             },
             {
               "id": "C_USE_BINDER_FROM_CONSOLE",
-              "next": "N20_BINDER_DESC_1",
               "text": "use \u201cProcedure binder.\u201d"
             },
             {
@@ -100,12 +98,10 @@
             },
             {
               "id": "C_USE_PRINTER_FROM_CHECKLIST",
-              "next": "N40_PRINTER_DESC_1",
               "text": "use \u201cLog printer tray.\u201d"
             },
             {
               "id": "C_USE_BINDER_FROM_CHECKLIST",
-              "next": "N20_BINDER_DESC_1",
               "text": "use \u201cProcedure binder.\u201d"
             },
             {
@@ -171,12 +167,10 @@
             },
             {
               "id": "C_USE_PRINTER_FROM_WHAT",
-              "next": "N40_PRINTER_DESC_1",
               "text": "use \u201cLog printer tray.\u201d"
             },
             {
               "id": "C_USE_ALARM_FROM_WHAT",
-              "next": "N30_ALARM_DESC_1",
               "text": "use \u201cAlarm panel.\u201d"
             },
             {
@@ -214,12 +208,10 @@
           "choices": [
             {
               "id": "C_USE_PRINTER_FROM_OLEA",
-              "next": "N40_PRINTER_DESC_1",
               "text": "use \u201cLog printer tray.\u201d"
             },
             {
               "id": "C_USE_BINDER_FROM_OLEA",
-              "next": "N20_BINDER_DESC_1",
               "text": "use \u201cProcedure binder.\u201d"
             },
             {

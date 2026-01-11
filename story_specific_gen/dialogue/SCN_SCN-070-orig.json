@@ -1,0 +1,446 @@
+{
+  "dialogueGraphs": [
+    {
+      "id": "DG_SCN074_CLOSURE_MEMO",
+      "sceneId": "SCN-074",
+      "startNodeId": "N_START",
+      "nodes": [
+        {
+          "id": "N_START",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The conference room smells like dry toner and old coffee. (pause) No one admits to making it. (pause) An EAC Finding Slip sits face up in the printer tray. (pause) Waiting to be countersigned. (pause) The checklist folder is open to \u201cRETIREMENT \u2014 SEQUENCE CONFIRMATION.\u201d (pause) The whiteboard reduces the facility to three boxes and a fiscal cutoff date.",
+          "conditions": [
+            {
+              "key": "act3.evidencePacketCompiled",
+              "op": "==",
+              "value": true
+            },
+            {
+              "key": "act3.closurePathMemoDrafted",
+              "op": "==",
+              "value": false
+            }
+          ],
+          "next": "N_START_2"
+        },
+        {
+          "id": "N_START_2",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You have the Evidence Packet compiled.\nWhat you don\u2019t have is a sentence that survives people.",
+          "next": "N_START_3"
+        },
+        {
+          "id": "N_START_3",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "On the table: memo template, AUTHORIZED CLOSURE PATH\u2014NARROW PURPOSE. Cursor blinks. No witnesses. Yet.",
+          "next": "N_MENU_DRAFT"
+        },
+        {
+          "id": "N_MENU_DRAFT",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_DRAFT_BORING",
+              "text": "(talk) Draft: boring closure narrative.",
+              "next": "N_BORING_P1"
+            },
+            {
+              "id": "C_DRAFT_DEFENSIBLE",
+              "text": "(talk) Draft: defensible legal narrative.",
+              "next": "N_DEF_P1"
+            },
+            {
+              "id": "C_DRAFT_STABLE",
+              "text": "(talk) Draft: stability narrative.",
+              "next": "N_STABLE_P1"
+            },
+            {
+              "id": "C_DRAFT_COMPLIANT",
+              "text": "(talk) Draft: compliance narrative.",
+              "next": "N_COMP_P1"
+            },
+            {
+              "id": "C_REVIEW",
+              "text": "(look) Review sources again.",
+              "next": "N_REVIEW_1"
+            },
+            {
+              "id": "C_FINALIZE",
+              "text": "(use) Finalize memo.",
+              "next": "N_FINALIZE_MENU"
+            },
+            {
+              "id": "C_LEAVE",
+              "text": "(leave) Not yet.",
+              "next": "N_END_NOTYET"
+            }
+          ]
+        },
+        {
+          "id": "N_REVIEW_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You pull the EAC Finding Slip from the tray. (pause) The header is stamped, not signed. (pause) A checklist corner is dog-eared; someone hesitated at \u201cconfirm.\u201d",
+          "next": "N_REVIEW_2"
+        },
+        {
+          "id": "N_REVIEW_2",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "On the whiteboard, someone wrote:\n\u201cDON\u2019T NAME IT.\nDON\u2019T IMPROVE IT.\nDO CLOSE IT.\u201d",
+          "next": "N_REVIEW_3"
+        },
+        {
+          "id": "N_REVIEW_3",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The memo template waits like it\u2019s already been filed.\nYou return to the draft.",
+          "next": "N_MENU_DRAFT"
+        },
+        {
+          "id": "N_BORING_P1",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Make it boring.",
+          "next": "N_BORING_N1"
+        },
+        {
+          "id": "N_BORING_N1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You type as if the memo is a receipt.",
+          "next": "N_BORING_BUD1"
+        },
+        {
+          "id": "N_BORING_BUD1",
+          "type": "npc_line",
+          "speakerId": "OLEA_BUDGET",
+          "text": "Keep this a retirement deliverable. (pause) Don\u2019t kick it into (pause) a reclassification event. (pause) If it reads like a \u201cfinding,\u201d (pause) Finance makes it a category (pause) and it won\u2019t go away.",
+          "next": "N_BORING_P2"
+        },
+        {
+          "id": "N_BORING_P2",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "No findings. Just closure.",
+          "next": "N_BORING_BUD2"
+        },
+        {
+          "id": "N_BORING_BUD2",
+          "type": "npc_line",
+          "speakerId": "OLEA_BUDGET",
+          "text": "Good. Use: \u201ccompletion of standard retirement checklist steps.\u201d (pause)\nUse: \u201cdocumentation of operational state for retirement.\u201d (pause)\nUse: \u201cfiscal window compliance.\u201d (pause)\nNo \u201cdiscovery.\u201d Do not joke with it. (pause)\nKeep the tone flat. No impressed adjectives.",
+          "next": "N_BORING_N2"
+        },
+        {
+          "id": "N_BORING_N2",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "A paragraph forms: dates, checklist references, attachment names. (pause) The device becomes \u201casset.\u201d Behavior becomes \u201coperational state.\u201d Risk becomes \u201cliability closure.\u201d",
+          "next": "N_CLAUSE_MENU"
+        },
+        {
+          "id": "N_DEF_P1",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Make it defensible.",
+          "next": "N_DEF_N1"
+        },
+        {
+          "id": "N_DEF_N1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You rewrite verbs first. The facts can wait.",
+          "next": "N_DEF_LEG1"
+        },
+        {
+          "id": "N_DEF_LEG1",
+          "type": "npc_line",
+          "speakerId": "OLEA_LEGAL",
+          "text": "Define your terms. (pause) Then swing them around. (pause) Go easy on \u201cauthorized.\u201d (pause) People use it like a blanket. (pause) Then wonder why they can\u2019t breathe.",
+          "next": "N_DEF_P2"
+        },
+        {
+          "id": "N_DEF_P2",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "It\u2019s an Authorized Closure Path memo.",
+          "next": "N_DEF_LEG2"
+        },
+        {
+          "id": "N_DEF_LEG2",
+          "type": "npc_line",
+          "speakerId": "OLEA_LEGAL",
+          "text": "The title can say whatever it needs. (pause) The body is where you get bitten. (pause) Leave out \u201cevaluating.\u201d (pause) Leave out \u201cverifying safety.\u201d (pause) Leave out \u201cconfirming normalcy.\u201d (pause) It is comparison language. (pause) We have no baseline we can prove.",
+          "next": "N_DEF_P3"
+        },
+        {
+          "id": "N_DEF_P3",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "So what am I doing?",
+          "next": "N_DEF_LEG3"
+        },
+        {
+          "id": "N_DEF_LEG3",
+          "type": "npc_line",
+          "speakerId": "OLEA_LEGAL",
+          "text": "You\u2019re documenting operational state for retirement processing. (pause) Per the Evidence Packet. (pause) Describe anything you do as narrow-purpose. (pause) Non-exploratory. (pause)\nCut \u201cstill.\u201d (pause) \u201cStill operating\u201d reads like intent. (pause) Intent becomes governance. (pause) Governance becomes duty.",
+          "next": "N_DEF_N2"
+        },
+        {
+          "id": "N_DEF_N2",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The paragraph becomes a corridor with handrails: narrow, continuous, hard to misread.",
+          "next": "N_CLAUSE_MENU"
+        },
+        {
+          "id": "N_STABLE_P1",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Make it stable. Timestamped.",
+          "next": "N_STABLE_N1"
+        },
+        {
+          "id": "N_STABLE_N1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You start writing like a dispatcher is going to read it aloud.",
+          "next": "N_STABLE_UD1"
+        },
+        {
+          "id": "N_STABLE_UD1",
+          "type": "npc_line",
+          "speakerId": "UTIL_DISPATCH",
+          "text": "I need stability stated not implied. (pause) If it\u2019s not attributable it didn\u2019t happen\u2014legally.",
+          "next": "N_STABLE_P2"
+        },
+        {
+          "id": "N_STABLE_P2",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "This is a memo, not a control log.",
+          "next": "N_STABLE_UD2"
+        },
+        {
+          "id": "N_STABLE_UD2",
+          "type": "npc_line",
+          "speakerId": "UTIL_DISPATCH",
+          "text": "Everything becomes a control log (pause) when someone\u2019s looking for a cause. (pause)\nInclude time anchors. (pause) Include record IDs. (pause) Include that you will not introduce (pause) oscillatory loading. (pause)\nAnd\u2014this is procedural\u2014don\u2019t make it sound (pause) like you \u201ccouldn\u2019t.\u201d (pause) Make it sound like you \u201cdid.\u201d",
+          "next": "N_STABLE_N2"
+        },
+        {
+          "id": "N_STABLE_N2",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You insert timestamps, action identifiers, and sentence that reads like a promise without calling itself one.",
+          "next": "N_CLAUSE_MENU"
+        },
+        {
+          "id": "N_COMP_P1",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Make it compliant. MTA-safe.",
+          "next": "N_COMP_N1"
+        },
+        {
+          "id": "N_COMP_N1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You pull notice numbers from the Evidence Packet and treat them like scripture.",
+          "next": "N_COMP_MTA1"
+        },
+        {
+          "id": "N_COMP_MTA1",
+          "type": "npc_line",
+          "speakerId": "MTA_CONTACT",
+          "text": "Standing\u2019s pending. Service class is, too. (pause) You\u2019re in the queue. Window\u2019s active.",
+          "next": "N_COMP_P2"
+        },
+        {
+          "id": "N_COMP_P2",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "I need the hold lifted.",
+          "next": "N_COMP_MTA2"
+        },
+        {
+          "id": "N_COMP_MTA2",
+          "type": "npc_line",
+          "speakerId": "MTA_CONTACT",
+          "text": "You need the hold addressed. (pause)\n\u201cLifted\u201d sounds like we chose to. (pause)\nAdd the notice references. (pause)\nAdd the submission log. (pause)\nNo guessing on cause. (pause)\nNo story. (pause)\nStories make jurisdiction.",
+          "next": "N_COMP_N2"
+        },
+        {
+          "id": "N_COMP_N2",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You write paragraph describing compliance as if it\u2019s weather: present, documented, and not up for debate.",
+          "next": "N_CLAUSE_MENU"
+        },
+        {
+          "id": "N_CLAUSE_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_ADD_LIMITING_CLAUSE",
+              "text": "(persuade) Add \u201cEvidence Packet governs interpretation\u201d clause.",
+              "checks": [
+                {
+                  "type": "rep",
+                  "faction": "OLEA",
+                  "min": 55
+                }
+              ],
+              "onPassNext": "N_CLAUSE_ADD_P1",
+              "onFailNext": "N_CLAUSE_FAIL_1"
+            },
+            {
+              "id": "C_SKIP_CLAUSE",
+              "text": "(talk) Skip clause. Keep it short.",
+              "next": "N_CLAUSE_SKIP_1"
+            }
+          ]
+        },
+        {
+          "id": "N_CLAUSE_ADD_P1",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Add the clause.",
+          "next": "N_CLAUSE_ADD_N1"
+        },
+        {
+          "id": "N_CLAUSE_ADD_N1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You add one sentence that looks harmless until it isn\u2019t: (pause)\n\u201cInterpretation is limited to the attached Evidence Packet; no additional inferences are intended or authorized.\u201d",
+          "next": "N_CLAUSE_ADD_LEG1"
+        },
+        {
+          "id": "N_CLAUSE_ADD_LEG1",
+          "type": "npc_line",
+          "speakerId": "OLEA_LEGAL",
+          "text": "Yeah, that sentence will annoy people. (pause)\nGood. (pause)\nLet it.",
+          "next": "N_MENU_DRAFT"
+        },
+        {
+          "id": "N_CLAUSE_FAIL_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You can write it but it won\u2019t stick. (pause) Without standing it reads like you\u2019re binding someone else\u2019s interpretation. (pause) It will be treated as overreach.",
+          "next": "N_CLAUSE_SKIP_1"
+        },
+        {
+          "id": "N_CLAUSE_SKIP_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You keep it lean. Lean memos travel faster. They also get rewritten by other people.",
+          "next": "N_MENU_DRAFT"
+        },
+        {
+          "id": "N_FINALIZE_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_PRINT_SIGN",
+              "text": "(use) Print & sign: Authorized Closure Path memo.",
+              "next": "N_PRINT_P1"
+            },
+            {
+              "id": "C_DONT_PRINT",
+              "text": "(leave) Don\u2019t print yet.",
+              "next": "N_END_DONT_PRINT"
+            }
+          ]
+        },
+        {
+          "id": "N_END_DONT_PRINT",
+          "type": "end",
+          "outcomeId": null,
+          "speakerId": "NARRATOR",
+          "text": "You leave cursor blinking.\nUnfiled work has a way of becoming someone else\u2019s version of events."
+        },
+        {
+          "id": "N_END_NOTYET",
+          "type": "end",
+          "outcomeId": null,
+          "speakerId": "NARRATOR",
+          "text": "You step away from the table.\nThe template stays open, patient and unpaid."
+        },
+        {
+          "id": "N_PRINT_P1",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Print it.",
+          "next": "N_PRINT_N1"
+        },
+        {
+          "id": "N_PRINT_N1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The printer wakes, a complaint disguised as warm-up. Paper feeds. Toner settles. The room stays quiet.",
+          "next": "N_PRINT_BUD1"
+        },
+        {
+          "id": "N_PRINT_BUD1",
+          "type": "npc_line",
+          "speakerId": "OLEA_BUDGET",
+          "text": "On paper, it becomes the file\u2019s plan. (pause)\nFiling does that.",
+          "next": "N_PRINT_LEG1"
+        },
+        {
+          "id": "N_PRINT_LEG1",
+          "type": "npc_line",
+          "speakerId": "OLEA_LEGAL",
+          "text": "Don\u2019t write \u201cwe authorized.\u201d (pause)\nWrite: \u201cthis memo exists.\u201d (pause)\nThat\u2019s a fact I can defend.",
+          "next": "N_PRINT_N2"
+        },
+        {
+          "id": "N_PRINT_N2",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The memo slides into the tray: AUTHORIZED CLOSURE PATH\u2014SIGNATURE LINE PRESENT. (pause)\nSpace for your name, and plenty for future interpretations.",
+          "next": "N_PRINT_N3"
+        },
+        {
+          "id": "N_PRINT_N3",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You sign.",
+          "next": "N_END_MEMO_DRAFTED"
+        },
+        {
+          "id": "N_END_MEMO_DRAFTED",
+          "type": "end",
+          "outcomeId": "draft_closure_path_memo",
+          "speakerId": "NARRATOR",
+          "text": "ITEM ACQUIRED: Authorized Closure Path Memo.\nPrinter stops. Room doesn\u2019t react.\nNothing resolves. Just official now.",
+          "effects": [
+            {
+              "key": "act3.closurePathMemoDrafted",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "inventory.items",
+              "action": "add",
+              "value": "ITEM_AUTHORIZED_CLOSURE_PATH_MEMO"
+            },
+            {
+              "key": "act3.endgameChoice",
+              "action": "set",
+              "value": "UNSET"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

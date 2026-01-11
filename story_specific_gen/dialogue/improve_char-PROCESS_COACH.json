@@ -4,352 +4,271 @@
       "scene": "SCN_SCN-045.json",
       "id": "N_COACH_INTERCEPT_1",
       "priorLine": "talk: Call out for staff.",
-      "lineToEdit": "Don\u2019t do that.\nNot because it\u2019s forbidden\u2014because it works and then you get attention you can\u2019t file.",
+      "lineToEdit": "Don\u2019t do that. (pause) It works, and then staff are on you. (pause) And I\u2019ve got nothing I can file.",
       "nextLine": "I need access.",
-      "revisedLine": "Don\u2019t do that. (pause) It works, and then staff are on you. (pause) And I\u2019ve got nothing I can file.",
-      "changeSummary": "Removed binary contrast structure; made it immediate and paperwork-focused. | Inserted two (pause) breaks to keep each beat under 8 words, while preserving the original meaning and cadence."
+      "revisedLine": "Don\u2019t. (pause) You\u2019ll ping staff, and they\u2019ll swarm. (pause) Then I\u2019m stuck here with nothing to file.",
+      "changeSummary": "Made it more immediate and reactive; kept the same warning about staff response and lack of paperwork. | Shortened the second and third beats to stay under 8 words while keeping the same meaning and cadence."
     },
     {
       "scene": "SCN_SCN-045.json",
       "id": "N_COACH_INTERCEPT_3",
       "priorLine": "I need access.",
-      "lineToEdit": "You need a token.\nAccess is what tokens do. People just stand near doors and create delays.",
+      "lineToEdit": "You need a token. (pause)\n\u201cAccess\u201d just gets people hovering at the door (pause) and slows everything down.",
       "nextLine": "",
-      "revisedLine": "You need a token. (pause)\n\u201cAccess\u201d just gets people hovering at the door (pause) and slows everything down.",
-      "changeSummary": "Collapsed explanation into clipped, situational pushback. | Added pauses to keep each beat under 8 words; kept meaning and tone, and tightened 'slowing' to 'slows' without changing intent."
+      "revisedLine": "You need a token. (pause)\nSay \u201caccess\u201d and folks hover at the door. (pause)\nEverything jams up.",
+      "changeSummary": "Kept the instruction and consequence, tightened into more in-the-moment phrasing. | Trimmed the second beat to 8 words by replacing \u201cpeople start hovering\u201d with \u201cfolks hover,\u201d and made the last clause its own sentence to avoid a pause mid-sentence."
     },
     {
       "scene": "SCN_SCN-045.json",
       "id": "N_TOKEN_FOR_WHAT_2",
       "priorLine": "Token for what?",
-      "lineToEdit": "For everything that pretends it\u2019s about safety.\nDoors, kiosks, window assignment\u2014whether your questions count as \u201cinquiry\u201d or \u201cinterference.\u201d\nOut here, you\u2019re not a person until you have paperwork that says you\u2019re permitted to occupy a line.\nThat\u2019s not philosophy. That\u2019s how the intake software was purchased.",
+      "lineToEdit": "For anything out here waving the \u201csafety\u201d flag. (pause)\nDoors. (pause)\nKiosks. (pause)\nWindow assignment. (pause)\nWhat you do gets tagged \u201cinquiry\u201d or \u201cinterference.\u201d (pause)\nUntil you\u2019ve got paper you\u2019re just extra. (pause)\nExtra in the line. (pause)\nThat\u2019s how the intake software got bought.",
       "nextLine": "",
-      "revisedLine": "For anything out here waving the \u201csafety\u201d flag. (pause)\nDoors. (pause)\nKiosks. (pause)\nWindow assignment. (pause)\nWhat you do gets tagged \u201cinquiry\u201d or \u201cinterference.\u201d (pause)\nUntil you\u2019ve got paper you\u2019re just extra. (pause)\nExtra in the line. (pause)\nThat\u2019s how the intake software got bought.",
-      "changeSummary": "Made it more in-the-moment and less essay-like; kept key terms and meaning. | Broke the long list into short beats with (pause) to stay under 8 words each. Removed the em dash and avoided commas to meet the max comma limit while keeping the same meaning and cadence."
+      "revisedLine": "For anything out here waving the \u201csafety\u201d flag. (pause)\nDoors. (pause)\nKiosks. (pause)\nWindow assignment. (pause)\nWhatever you touch gets tagged \u201cinquiry\u201d or \u201cinterference.\u201d (pause)\nTill you\u2019ve got paper, you\u2019re just extra. (pause)\nExtra in the line. (pause)\nThat\u2019s how the intake software got bought.",
+      "changeSummary": "Light edits for natural cadence; preserved list, tags, and the intake software point."
     },
     {
       "scene": "SCN_SCN-045.json",
       "id": "N_WHATS_TER_2",
       "priorLine": "What\u2019s a TER?",
-      "lineToEdit": "Transfer Entitlement Receipt.\nReceipt first, entitlement second\u2014don\u2019t ask me why. That\u2019s Legal\u2019s little lullaby.\nIt\u2019s the thing that says the system may treat your presence as accounted-for mass instead of unsolicited narrative.",
+      "lineToEdit": "Transfer Entitlement Receipt. (pause)\nYeah. The words are backwards. (pause)\nLegal did that. Don\u2019t ask me. (pause)\nIt\u2019s the slip. (pause)\nIt lets the system count you. (pause)\nAccounted-for mass. (pause)\nNot a random narrative.",
       "nextLine": "So I need to obtain a TER.",
-      "revisedLine": "Transfer Entitlement Receipt. (pause)\nYeah. The words are backwards. (pause)\nLegal did that. Don\u2019t ask me. (pause)\nIt\u2019s the slip. (pause)\nIt lets the system count you. (pause)\nAccounted-for mass. (pause)\nNot a random narrative.",
-      "changeSummary": "Kept definition but made it curt, irritated, and less polished. | Split the final sentence into short beats with pauses to meet the 8-word limit per beat while keeping the same meaning and tone."
+      "revisedLine": "TER. Transfer Entitlement Receipt. (pause)\nYeah, the wording\u2019s backwards. (pause)\nLegal. Don\u2019t ask me. (pause)\nIt\u2019s the slip. (pause)\nIt lets the system count you. (pause)\nAccounted-for mass. (pause)\nIt won\u2019t take a whole story.",
+      "changeSummary": "Kept the definition and function, removed the punchline-y phrasing and made it sound more pressured."
     },
     {
       "scene": "SCN_SCN-045.json",
       "id": "N_WHATS_TER_4",
       "priorLine": "So I need to obtain a TER.",
-      "lineToEdit": "You need to obtain a token that resolves to a TER when a door asks.\nIf you ask for \u201caccess,\u201d people start thinking about responsibility.",
+      "lineToEdit": "You need a token (pause) that resolves to a TER (pause) when the door pings it. (pause)\nSay \u201caccess\u201d (pause) and people start looking around (pause) for who\u2019s responsible.",
       "nextLine": "",
-      "revisedLine": "You need a token (pause) that resolves to a TER (pause) when the door pings it. (pause)\nSay \u201caccess\u201d (pause) and people start looking around (pause) for who\u2019s responsible.",
-      "changeSummary": "Shifted to reactive phrasing; kept technical requirement intact. | Inserted (pause) breaks to keep each beat under 8 words; no wording changes."
+      "revisedLine": "You need a token (pause) that resolves to a TER (pause) when the door pings it. (pause)\nSay \u201caccess\u201d (pause) and people start looking around (pause) for who gets stuck owning it.",
+      "changeSummary": "Maintained mechanics and the blame dynamic; made the liability pressure sharper."
     },
     {
       "scene": "SCN_SCN-045.json",
       "id": "N_PERSUADE_PASS_1",
       "priorLine": "",
-      "lineToEdit": "I believe you.\nI still can\u2019t route a mandate through a door reader.\nIf you want this to stay quiet, you get filed first\u2014then you do your work.",
+      "lineToEdit": "I believe you. (pause) Still can\u2019t shove a mandate (pause) through a door reader. (pause) You want this quiet? (pause) Get filed first. (pause) Then do your work.",
       "nextLine": "",
-      "revisedLine": "I believe you. (pause) Still can\u2019t shove a mandate (pause) through a door reader. (pause) You want this quiet? (pause) Get filed first. (pause) Then do your work.",
-      "changeSummary": "Tightened cadence; reduced compliance voice while preserving intent. | Added (pause) breaks so each beat stays under 8 words; kept wording and meaning intact."
+      "revisedLine": "I hear you. (pause) Door reader doesn\u2019t take \u201cmandate.\u201d (pause) You want this quiet? (pause) Get filed first. (pause) Then do your work.",
+      "changeSummary": "Swapped the polished reassurance for a more clipped acknowledgment; kept the same constraint and steps."
     },
     {
       "scene": "SCN_SCN-045.json",
       "id": "N_PERSUADE_FAIL_1",
       "priorLine": "",
-      "lineToEdit": "Don\u2019t say that into the wrong space.\nMandates trigger escalation loops because someone has to own them.\nTokens don\u2019t require ownership. That\u2019s why they\u2019re used.",
+      "lineToEdit": "Don\u2019t say that where it can hear. (pause) \u201cMandate\u201d starts escalation loops. (pause) Someone has to own it. (pause) Tokens slide through, no name attached.",
       "nextLine": "",
-      "revisedLine": "Don\u2019t say that where it can hear. (pause) \u201cMandate\u201d starts escalation loops. (pause) Someone has to own it. (pause) Tokens slide through, no name attached.",
-      "changeSummary": "Made it more defensive and situational; softened the explanatory wrap-up. | Added (pause) breaks to keep each beat under 8 words, tightened the first sentence without changing meaning, and kept a single comma in the final beat."
+      "revisedLine": "Don\u2019t say that where it can hear. (pause) \u201cMandate\u201d kicks off escalation loops. (pause) Then somebody has to own it. (pause) Tokens go through clean.",
+      "changeSummary": "More conversational, less formal; preserved escalation/ownership risk and the token workaround."
     },
     {
       "scene": "SCN_SCN-045.json",
       "id": "N_SHOW_OLEA_2",
       "priorLine": "OLEA Field Systems. Closure engineer.",
-      "lineToEdit": "Okay. That helps me help you, not the kiosk.\nPolicy still holds. The kiosk doesn\u2019t recognize employers. It recognizes artifacts.\nYou can be right, or you can be filed.\nBeing right doesn\u2019t open doors.",
-      "nextLine": "Not \u201cyou.\u201d Something attached to you.\nSomething scannable. Something that can take an incident category without crying about it.",
-      "revisedLine": "Okay. OLEA Field Systems. (pause) Closure engineer. (pause) That helps me. (pause)\nThe kiosk still won\u2019t care. (pause) It wants an artifact. (pause)\nBe right all day. (pause) If you\u2019re not in the file, (pause) the door stays shut.",
-      "changeSummary": "Removed binary slogan structure; kept the same blocking logic with more pressure. | Split the line into short beats using (pause) so each beat stays under 8 words. Swapped the em dash for a period and kept only one comma."
+      "lineToEdit": "Okay. OLEA Field Systems. (pause) Closure engineer. (pause) That helps me. (pause)\nThe kiosk still won\u2019t care. (pause) It wants an artifact. (pause)\nBe right all day. (pause) If you\u2019re not in the file, (pause) the door stays shut.",
+      "nextLine": "Not you. (pause)\nSomething on you. Scannable. (pause)\nSomething that can take an incident category (pause)\nwithout crying about it.",
+      "revisedLine": "Alright. OLEA Field Systems. (pause) Closure engineer. (pause) Helps me. (pause)\nKiosk still won\u2019t care. (pause) It wants an artifact. (pause)\nYou can be right all day. (pause) If you\u2019re not in the file, (pause) the door stays shut.",
+      "changeSummary": "Reduced the explanatory tone while keeping the credential acknowledgment and the kiosk/file constraint."
     },
     {
       "scene": "SCN_SCN-045.json",
       "id": "N_SHOW_OLEA_3",
-      "priorLine": "Okay. That helps me help you, not the kiosk.\nPolicy still holds. The kiosk doesn\u2019t recognize employers. It recognizes artifacts.\nYou can be right, or you can be filed.\nBeing right doesn\u2019t open doors.",
-      "lineToEdit": "Not \u201cyou.\u201d Something attached to you.\nSomething scannable. Something that can take an incident category without crying about it.",
+      "priorLine": "Okay. OLEA Field Systems. (pause) Closure engineer. (pause) That helps me. (pause)\nThe kiosk still won\u2019t care. (pause) It wants an artifact. (pause)\nBe right all day. (pause) If you\u2019re not in the file, (pause) the door stays shut.",
+      "lineToEdit": "Not you. (pause)\nSomething on you. Scannable. (pause)\nSomething that can take an incident category (pause)\nwithout crying about it.",
       "nextLine": "",
-      "revisedLine": "Not you. (pause)\nSomething on you. Scannable. (pause)\nSomething that can take an incident category (pause)\nwithout crying about it.",
-      "changeSummary": "More clipped, spoken fragments; preserved required meaning and terms. | Inserted (pause) breaks to keep each beat under 8 words while preserving the original tone and meaning."
+      "revisedLine": "Something on you. (pause)\nScannable. (pause)\nSomething that can take an incident category (pause)\nwithout crying about it.",
+      "changeSummary": "Trimmed the definitional opener; kept the same requirement for a scannable artifact and incident category."
     },
     {
       "scene": "SCN_SCN-045.json",
       "id": "N_CATEGORY_HINT_1",
       "priorLine": "ask: What category?",
-      "lineToEdit": "Least-escalation phrasing: treat it like misrouted equipment transfer.\nDon\u2019t lead with \u201cauthority,\u201d don\u2019t lead with \u201cmandate,\u201d and don\u2019t argue with windows on the record.\nGet a token issued. Then you can be important somewhere that logs importance.",
+      "lineToEdit": "Keep it low. (pause) Call it a misrouted equipment transfer. (pause) Drop \u201cauthority\u201d and \u201cmandate.\u201d (pause) Don\u2019t fight the window (pause) while they\u2019re logging.\nGet the token. (pause) Save the importance for someplace (pause) that actually files it.",
       "nextLine": "",
-      "revisedLine": "Keep it low. (pause) Call it a misrouted equipment transfer. (pause) Drop \u201cauthority\u201d and \u201cmandate.\u201d (pause) Don\u2019t fight the window (pause) while they\u2019re logging.\nGet the token. (pause) Save the importance for someplace (pause) that actually files it.",
-      "changeSummary": "Converted formal guidance into reactive, liability-aware shorthand. | Inserted (pause) breaks to keep each beat at 8 words or fewer, without changing meaning or tone. | Tightened the middle instruction to keep the longest beat under 8 words by replacing \u201cDon\u2019t walk up swinging\u2026\u201d with \u201cDrop\u2026\u201d and swapping \u201cargue with the window\u201d to \u201cfight the window,\u201d preserving intent and cadence. | Inserted a (pause) after \u201ctransfer.\u201d to split an overlong beat (10 words) into two beats under the 8-word limit without changing meaning."
+      "revisedLine": "Keep it low. (pause) Call it \u201cmisrouted equipment transfer.\u201d (pause) Leave \u201cauthority\u201d and \u201cmandate\u201d out of it. (pause) Don\u2019t fight the window (pause) while they\u2019re logging.\nGet the token. (pause) Save the big speech for someplace (pause) that actually files it.",
+      "changeSummary": "Kept the same tactical guidance; made it sound more annoyed and situational."
     },
     {
       "scene": "SCN_SCN-045.json",
       "id": "N_USE_KIOSK_3",
       "priorLine": "That\u2019s a sentence.",
-      "lineToEdit": "It\u2019s a shortcut.\nIf it said the whole thing, you\u2019d start negotiating with it, and then I have to log a \u201cverbal incident.\u201d",
+      "lineToEdit": "It\u2019s a shortcut. (pause) If it spelled it all out, (pause) you\u2019d start negotiating with it\u2014 (pause) and then I\u2019m stuck logging (pause) a \u201cverbal incident.\u201d",
       "nextLine": "",
-      "revisedLine": "It\u2019s a shortcut. (pause) If it spelled it all out, (pause) you\u2019d start negotiating with it\u2014 (pause) and then I\u2019m stuck logging (pause) a \u201cverbal incident.\u201d",
-      "changeSummary": "Kept meaning; made it more conversational and stressed. | Inserted (pause) breaks to keep each beat under 8 words; preserved meaning, tone, and punctuation with only one comma."
+      "revisedLine": "Yeah it\u2019s shorthand. (pause) If it spelled it all out (pause) you\u2019d start negotiating with it\u2014 (pause) and then I\u2019m stuck logging (pause) a \u201cverbal incident.\u201d",
+      "changeSummary": "Minimal change; swapped to more natural spoken wording while preserving the same cause/effect. | Removed extra commas after \u201cYeah\u201d and \u201cout\u201d to meet the comma limit while keeping pauses and meaning."
     },
     {
       "scene": "SCN_SCN-045.json",
       "id": "N_FILE_AS_EQUIP_1",
       "priorLine": "ask: Can I file as equipment?",
-      "lineToEdit": "Intake can file an object with a barcode and an incident category.\nIf you can\u2019t be listed, you get attached.\nYou become\u2014politely\u2014\u201cassociated mass.\u201d",
+      "lineToEdit": "Intake can file an object. (pause) It has a barcode. (pause) And an incident category. (pause) If you can\u2019t be listed. (pause) You attach to something that can. (pause) Then you\u2019re\u2014politely\u2014\u201cassociated mass.\u201d",
       "nextLine": "",
-      "revisedLine": "Intake can file an object. (pause) It has a barcode. (pause) And an incident category. (pause) If you can\u2019t be listed. (pause) You attach to something that can. (pause) Then you\u2019re\u2014politely\u2014\u201cassociated mass.\u201d",
-      "changeSummary": "Smoothed into practical instruction; retained key term and process. | Split the line into short beats with (pause) so each beat stays under 8 words. Kept meaning and cadence, with no added commas or explainer phrases."
-    },
-    {
-      "scene": "SCN_SCN-045.json",
-      "id": "N_USE_DOOR_2",
-      "priorLine": "You present nothing to the reader.\nThe reader responds appropriately: not at all.",
-      "lineToEdit": "Yeah.\nIt won\u2019t even reject you. Rejection implies you were an input.",
-      "nextLine": "",
-      "revisedLine": "Yeah. (pause)\nIt doesn\u2019t even reject you. (pause)\nYou didn\u2019t register as input.",
-      "changeSummary": "Kept point but dropped the polished aphorism tone. | Added (pause) breaks to meet beat length limit, and trimmed \u201can\u201d to keep the final beat under 8 words."
-    },
-    {
-      "scene": "SCN_SCN-045.json",
-      "id": "N_TOKENS_RUN_2",
-      "priorLine": "So tokens run the facility.",
-      "lineToEdit": "Tokens run what can be audited.\nDoors, kiosks, windows\u2014they answer artifacts. Not faces.\nIf you want to move, you speak in tokens.",
-      "nextLine": "",
-      "revisedLine": "Tokens run whatever gets audited. (pause) Doors. Kiosks. Windows\u2014they answer artifacts. (pause) Not faces. (pause) You want to move. (pause) You do it in tokens.",
-      "changeSummary": "Reduced sermon cadence; kept the core constraint. | Added pauses to keep each beat under 8 words. Removed commas by breaking the list into short sentences, preserving the same meaning and cadence."
-    },
-    {
-      "scene": "SCN_SCN-045.json",
-      "id": "N_THREATEN_2",
-      "priorLine": "Open it, or I escalate.",
-      "lineToEdit": "You can escalate.\nAnd then the escalation needs a category.\nAnd then you\u2019re in the incident queue, waiting to be recognized as the kind of problem that\u2019s allowed to exist.\nI\u2019m not your enemy. I\u2019m throughput.\nLet me keep you moving.",
-      "nextLine": "",
-      "revisedLine": "Sure. Escalate. (pause) It needs a category. (pause) Then you sit in the incident queue. (pause) Until the system decides your problem type. (pause) I'm not here to fight you. (pause) I'm throughput. (pause) Let me keep you moving.",
-      "changeSummary": "More reactive and tense; preserved escalation/queue consequences. | Added (pause) breaks to keep each beat under 8 words. Kept wording tight and removed the long clause while preserving meaning and cadence. No commas added."
+      "revisedLine": "They\u2019ll file an object. (pause) Barcode. (pause) incident category. (pause) If you can\u2019t be listed. (pause) You hitch yourself to something that can. (pause) Then you\u2019re\u2014politely\u2014\u201cassociated mass.\u201d",
+      "changeSummary": "Collapsed institutional phrasing into shorthand while keeping the same filing workaround and term. | Removed extra comma and avoided pausing mid-sentence by splitting the conditional into two beats."
     },
     {
       "scene": "SCN_SCN-045.json",
       "id": "N_GET_TOKEN_INFO_2",
       "priorLine": "Where do I get it?",
-      "lineToEdit": "Intake Hall. Windows 0/3/5/7/9.\nPick the window that looks least interested in your life story.\nYou file an incident category the system can accept.\nThen the system issues a token.\nThen the token becomes your voice. That\u2019s the whole magic trick.",
+      "lineToEdit": "Intake Hall. (pause) Windows 0/3/5/7/9. (pause)\nPick the one. (pause)\nLooks least hungry. (pause)\nFor your life story. (pause)\nGive them an incident category. (pause)\nThe system will accept. (pause)\nThey spit out a token. (pause)\nThat\u2019s what the doors listen to.",
       "nextLine": "And if I file myself?",
-      "revisedLine": "Intake Hall. (pause) Windows 0/3/5/7/9. (pause)\nPick the one. (pause)\nLooks least hungry. (pause)\nFor your life story. (pause)\nGive them an incident category. (pause)\nThe system will accept. (pause)\nThey spit out a token. (pause)\nThat\u2019s what the doors listen to.",
-      "changeSummary": "Kept directions and steps; removed flourish and compliance tone. | Inserted (pause) breaks to keep each beat under 8 words while preserving the original meaning and cadence."
+      "revisedLine": "Intake Hall. (pause) Windows 0/3/5/7/9. (pause)\nPick one that looks least hungry (pause)\nfor your life story. (pause)\nGive them an incident category. (pause)\nThey feed it to the system. (pause)\nToken prints. (pause)\nThat\u2019s what the doors listen to.",
+      "changeSummary": "Kept location/windows and steps; made it more spoken and less instructional, with paperwork emphasis."
     },
     {
       "scene": "SCN_SCN-045.json",
       "id": "N_GET_TOKEN_INFO_4",
       "priorLine": "And if I file myself?",
-      "lineToEdit": "Intake can\u2019t file a person who isn\u2019t listed in any jurisdiction.\nBut Intake can file an object with a barcode and an incident category.\nYou attach yourself to the object. You become\u2014politely\u2014\u201cassociated mass.\u201d\nIt\u2019s not dehumanizing.\nIt\u2019s efficient. On paper.",
-      "nextLine": "The Coach points right, toward the Intake Hall signage, as if pointing is a legally safer form of escort.",
-      "revisedLine": "Intake can\u2019t file a person. (pause)\nNot listed in any jurisdiction. (pause)\nThey can file an object. (pause)\nWith a barcode. (pause)\nAnd an incident category. (pause)\nSo you attach yourself. (pause)\nTo the object. (pause)\nYou\u2019re\u2014politely\u2014\u201cassociated mass.\u201d (pause)\nThey won\u2019t call it dehumanizing. (pause)\nThey\u2019ll call it efficient. (pause)\nOn paper.",
-      "changeSummary": "Maintained facts; made it more defensive and less neatly framed. | Split long sentences into sub-8-word beats by inserting (pause) markers; preserved wording, tone, and meaning without adding commas or explainers."
-    },
-    {
-      "scene": "SCN_SCN-047-orig.json",
-      "id": "N_COACH_INTRO_2",
-      "priorLine": "The Process Coach stands where you can\u2019t tell if they\u2019re helping you or helping throughput.",
-      "lineToEdit": "Before you pick a window\u2014don\u2019t improvise a story.\nStories create responsibility. Categories create receipts.",
-      "nextLine": "",
-      "revisedLine": "Before you pick a window\u2014 (pause) don\u2019t improvise a story. (pause) Stories make somebody responsible. (pause) Categories get you a receipt.",
-      "changeSummary": "Kept warning but made it sound more like stressed, practical talk. | Added (pause) breaks to keep each beat under 8 words while preserving the original meaning, tone, and cadence."
-    },
-    {
-      "scene": "SCN_SCN-047-orig.json",
-      "id": "N_COACH_STANDING_1",
-      "priorLine": "ask: Which window gets me standing?",
-      "lineToEdit": "\u201cStanding\u201d is a legal word. Legal words bite.",
-      "nextLine": "You want a Temporary Existence Receipt. That\u2019s Window 0.\nDon\u2019t say \u201cI\u2019m a person\u201d and don\u2019t say \u201cI need access.\u201d\nSay what can be filed. Then you can be difficult after you\u2019re fileable.",
-      "revisedLine": "Don\u2019t say \u201cstanding\u201d at the glass. (pause) That\u2019s a Legal word. It bites.",
-      "changeSummary": "More immediate and wary; kept the same caution. | Inserted a pause after the first sentence to split the line into two beats of 6 words each, staying under the 8-word max per beat."
-    },
-    {
-      "scene": "SCN_SCN-047-orig.json",
-      "id": "N_COACH_STANDING_2",
-      "priorLine": "\u201cStanding\u201d is a legal word. Legal words bite.",
-      "lineToEdit": "You want a Temporary Existence Receipt. That\u2019s Window 0.\nDon\u2019t say \u201cI\u2019m a person\u201d and don\u2019t say \u201cI need access.\u201d\nSay what can be filed. Then you can be difficult after you\u2019re fileable.",
-      "nextLine": "",
-      "revisedLine": "Window 0. Ask for a Temporary Existence Receipt. (pause)\nDon\u2019t lead with \u201cI\u2019m a person.\u201d (pause)\nDon\u2019t lead with \u201cI need access.\u201d (pause)\nGive them something they can file. (pause)\nOnce you\u2019re fileable, you can get difficult.",
-      "changeSummary": "Broke up the instruction into tighter, spoken beats; preserved all directives. | Inserted (pause) breaks so each beat stays under 8 words; kept the original wording and meaning, with only one comma retained."
-    },
-    {
-      "scene": "SCN_SCN-047-orig.json",
-      "id": "N_COACH_WRONG_1",
-      "priorLine": "ask: What happens if I pick wrong?",
-      "lineToEdit": "They\u2019ll redirect you.",
-      "nextLine": "Or they\u2019ll log you as an interruption, if you insist on being specific.\nWorst case, you get an incident category you didn\u2019t choose.\nYou can be wrong, or you can be filed.",
-      "revisedLine": "They\u2019ll redirect you.",
-      "changeSummary": "Left as-is; already natural and minimal."
-    },
-    {
-      "scene": "SCN_SCN-047-orig.json",
-      "id": "N_COACH_WRONG_2",
-      "priorLine": "They\u2019ll redirect you.",
-      "lineToEdit": "Or they\u2019ll log you as an interruption, if you insist on being specific.\nWorst case, you get an incident category you didn\u2019t choose.\nYou can be wrong, or you can be filed.",
-      "nextLine": "",
-      "revisedLine": "Or they\u2019ll log you as an interruption. (pause)\nIf you keep insisting on specifics. (pause)\nWorst case you walk away. (pause)\nWith an incident category you didn\u2019t pick. (pause)\nGet yourself in the file. (pause)\nAnd you\u2019ll at least keep moving.",
-      "changeSummary": "Removed binary slogan; kept consequences and the pressure to get filed. | Split the line into short beats using (pause) so each beat stays under 8 words; removed the comma after \u201cWorst case\u201d and tightened phrasing without changing meaning."
-    },
-    {
-      "scene": "SCN_SCN-047-orig.json",
-      "id": "N_COACH_OLEA_1",
-      "priorLine": "show: OLEA credentials.",
-      "lineToEdit": "Okay. That means you have an employer.",
-      "nextLine": "It does not mean the windows have to care.\nIf you want this quiet, go to Window 0 and let Intake pretend you\u2019re cargo for five minutes.",
-      "revisedLine": "Okay. Means you\u2019ve got an employer.",
-      "changeSummary": "Clipped the delivery; kept meaning."
-    },
-    {
-      "scene": "SCN_SCN-047-orig.json",
-      "id": "N_COACH_OLEA_2",
-      "priorLine": "Okay. That means you have an employer.",
-      "lineToEdit": "It does not mean the windows have to care.\nIf you want this quiet, go to Window 0 and let Intake pretend you\u2019re cargo for five minutes.",
-      "nextLine": "",
-      "revisedLine": "Still doesn\u2019t mean the windows have to care. (pause) Want it quiet? Go to Window 0. (pause) Let Intake pretend you\u2019re cargo. (pause) For five minutes.",
-      "changeSummary": "Made it more conversational without changing instruction. | Split the second sentence into shorter beats with (pause) markers to keep each beat under 8 words, while preserving meaning and cadence."
-    },
-    {
-      "scene": "SCN_SCN-047-orig.json",
-      "id": "N_COACH_PERSUADE_PASS_1",
-      "priorLine": "",
-      "lineToEdit": "Fine.\nYou want something the system already knows how to swallow: \u201cmisrouted equipment transfer.\u201d",
-      "nextLine": "Keep it short. No biography. No motive.\nIf you need to attach yourself, you\u2019re \u201cassociated mass.\u201d\nAnd you do not describe it.",
-      "revisedLine": "Fine.\nUse what system swallows: \u201cmisrouted equipment transfer.\u201d",
-      "changeSummary": "Tightened and made it sound like reluctant compliance. | Removed \u201calready\u201d to bring the beat under 8 words without changing meaning. | Removed \u201cthe\u201d to reduce the total word count from 9 to 8 without changing meaning."
-    },
-    {
-      "scene": "SCN_SCN-047-orig.json",
-      "id": "N_COACH_PERSUADE_PASS_2",
-      "priorLine": "Fine.\nYou want something the system already knows how to swallow: \u201cmisrouted equipment transfer.\u201d",
-      "lineToEdit": "Keep it short. No biography. No motive.\nIf you need to attach yourself, you\u2019re \u201cassociated mass.\u201d\nAnd you do not describe it.",
-      "nextLine": "",
-      "revisedLine": "Keep it short. (pause) No biography. (pause) No motive. (pause) If you have to attach yourself, (pause) you\u2019re \u201cassociated mass.\u201d (pause) Don\u2019t describe it.",
-      "changeSummary": "Reduced polish; kept the same constraints and required term. | Inserted (pause) breaks to keep each beat under 8 words; kept wording and the single comma unchanged."
-    },
-    {
-      "scene": "SCN_SCN-047-orig.json",
-      "id": "N_COACH_PERSUADE_FAIL_1",
-      "priorLine": "",
-      "lineToEdit": "The least-escalation wording is: less.\nLess detail. Less insistence. Less you.",
-      "nextLine": "Go to Window 0. Ask what categories are accepted.\nDon\u2019t argue about the answer on the record.",
-      "revisedLine": "You want fewer alarms? Keep it thin. (pause) Less detail. Less insistence. Less you.",
-      "changeSummary": "Turned it into a reactive warning while keeping the 'less' structure. | Inserted a (pause) to split the line into two beats under 8 words, without changing meaning or tone."
-    },
-    {
-      "scene": "SCN_SCN-047-orig.json",
-      "id": "N_COACH_PERSUADE_FAIL_2",
-      "priorLine": "The least-escalation wording is: less.\nLess detail. Less insistence. Less you.",
-      "lineToEdit": "Go to Window 0. Ask what categories are accepted.\nDon\u2019t argue about the answer on the record.",
-      "nextLine": "",
-      "revisedLine": "Go to Window 0. (pause) Ask what categories are accepted. (pause) Don\u2019t argue about the answer on the record.",
-      "changeSummary": "Left mostly intact; already terse and procedural. | Inserted (pause) breaks to keep each beat at 8 words or fewer; preserved original wording and meaning."
+      "lineToEdit": "Intake can\u2019t file a person. (pause)\nNot listed in any jurisdiction. (pause)\nThey can file an object. (pause)\nWith a barcode. (pause)\nAnd an incident category. (pause)\nSo you attach yourself. (pause)\nTo the object. (pause)\nYou\u2019re\u2014politely\u2014\u201cassociated mass.\u201d (pause)\nThey won\u2019t call it dehumanizing. (pause)\nThey\u2019ll call it efficient. (pause)\nOn paper.",
+      "nextLine": "The Coach points right, toward Intake Hall signage, as if pointing is a legally safer escort.",
+      "revisedLine": "Intake won\u2019t file a person. (pause)\nYou\u2019re not listed in any jurisdiction. (pause)\nThey\u2019ll file an object. (pause)\nBarcode. (pause)\nIncident category. (pause)\nSo you attach yourself (pause)\nto the object. (pause)\nYou\u2019re\u2014politely\u2014\u201cassociated mass.\u201d (pause)\nNobody\u2019s gonna say \u201cdehumanizing.\u201d (pause)\nIt shows up as \u201cefficient.\u201d (pause)\nOn paper.",
+      "changeSummary": "Preserved all facts and terms; shifted to more defensive, liability-aware phrasing."
     },
     {
       "scene": "SCN_SCN-047.json",
       "id": "N_COACH_INTRO_2",
       "priorLine": "The Process Coach stands where you can\u2019t tell if they\u2019re helping you or helping throughput.",
-      "lineToEdit": "Before you pick a window\u2014don\u2019t improvise a story.\nStories create responsibility. Categories create receipts.",
+      "lineToEdit": "Before you pick a window\u2014don\u2019t improvise a story. (pause) Stories make somebody responsible. (pause) Categories get you a receipt.",
       "nextLine": "",
-      "revisedLine": "Before you pick a window\u2014don\u2019t improvise a story. (pause) Stories make somebody responsible. (pause) Categories get you a receipt.",
-      "changeSummary": "Matched prior edit; kept it sharp and liability-minded. | Added (pause) breaks so each beat stays within 8 words; kept wording and meaning the same."
+      "revisedLine": "Before you step up\u2014don\u2019t improvise a story. (pause) Stories make somebody responsible. (pause) Categories get you a receipt.",
+      "changeSummary": "Small adjustment for immediacy; kept the same warning about responsibility and categories/receipt."
     },
     {
       "scene": "SCN_SCN-047.json",
       "id": "N_COACH_STANDING_1",
       "priorLine": "ask: Which window gets me standing?",
-      "lineToEdit": "\u201cStanding\u201d is a legal word. Legal words bite.",
-      "nextLine": "You want a Temporary Existence Receipt. That\u2019s Window 0.\nDon\u2019t say \u201cI\u2019m a person\u201d and don\u2019t say \u201cI need access.\u201d\nSay what can be filed. Then you can be difficult after you\u2019re fileable.",
+      "lineToEdit": "Don\u2019t say \u201cstanding\u201d at glass.\nLegal word. Bites.",
+      "nextLine": "Window 0. (pause) Ask for a Temporary Existence Receipt. (pause) Don\u2019t lead with \u201cI\u2019m a person.\u201d (pause) Don\u2019t lead with \u201cI need access.\u201d (pause) Give them something they can file. (pause) Once you\u2019re fileable, you can get difficult.",
       "revisedLine": "Don\u2019t say \u201cstanding\u201d at glass.\nLegal word. Bites.",
-      "changeSummary": "Made it more immediate and spoken; same warning. | Cut filler words (\u201cthe,\u201d \u201cIt\u201d) to keep the same meaning and cadence while reducing total beat word count to 8."
+      "changeSummary": "Line already matched the desired clipped, cautionary tone; left meaning intact."
     },
     {
       "scene": "SCN_SCN-047.json",
       "id": "N_COACH_STANDING_2",
-      "priorLine": "\u201cStanding\u201d is a legal word. Legal words bite.",
-      "lineToEdit": "You want a Temporary Existence Receipt. That\u2019s Window 0.\nDon\u2019t say \u201cI\u2019m a person\u201d and don\u2019t say \u201cI need access.\u201d\nSay what can be filed. Then you can be difficult after you\u2019re fileable.",
+      "priorLine": "Don\u2019t say \u201cstanding\u201d at glass.\nLegal word. Bites.",
+      "lineToEdit": "Window 0. (pause) Ask for a Temporary Existence Receipt. (pause) Don\u2019t lead with \u201cI\u2019m a person.\u201d (pause) Don\u2019t lead with \u201cI need access.\u201d (pause) Give them something they can file. (pause) Once you\u2019re fileable, you can get difficult.",
       "nextLine": "",
-      "revisedLine": "Window 0. (pause) Ask for a Temporary Existence Receipt. (pause) Don\u2019t lead with \u201cI\u2019m a person.\u201d (pause) Don\u2019t lead with \u201cI need access.\u201d (pause) Give them something they can file. (pause) Once you\u2019re fileable, you can get difficult.",
-      "changeSummary": "Broke up the line; removed polished cadence while keeping meaning. | Inserted (pause) breaks so each beat stays under 8 words; kept original wording and meaning; left only one comma in the final sentence."
+      "revisedLine": "Window 0. (pause) Ask for a Temporary Existence Receipt. (pause) Don\u2019t open with \u201cI\u2019m a person.\u201d (pause) Don\u2019t open with \u201cI need access.\u201d (pause) Hand them something they can file. (pause) Once you\u2019re fileable, you can get difficult.",
+      "changeSummary": "Kept instructions and terms; swapped phrasing to sound more spoken and pressurized."
     },
     {
       "scene": "SCN_SCN-047.json",
       "id": "N_COACH_WRONG_1",
       "priorLine": "ask: What happens if I pick wrong?",
       "lineToEdit": "They\u2019ll redirect you.",
-      "nextLine": "Or they\u2019ll log you as an interruption, if you insist on being specific.\nWorst case, you get an incident category you didn\u2019t choose.\nYou can be wrong, or you can be filed.",
-      "revisedLine": "They\u2019ll redirect you.",
-      "changeSummary": "No change needed; already sounds like spoken deflection."
+      "nextLine": "Or they\u2019ll log you as an interruption. (pause) If you keep insisting on specifics. (pause) Worst case, you get an incident category. (pause) One you didn\u2019t choose. (pause) Get yourself in the file. (pause) You\u2019ll at least keep moving.",
+      "revisedLine": "They\u2019ll bounce you.",
+      "changeSummary": "More colloquial, still means being redirected."
     },
     {
       "scene": "SCN_SCN-047.json",
       "id": "N_COACH_WRONG_2",
       "priorLine": "They\u2019ll redirect you.",
-      "lineToEdit": "Or they\u2019ll log you as an interruption, if you insist on being specific.\nWorst case, you get an incident category you didn\u2019t choose.\nYou can be wrong, or you can be filed.",
+      "lineToEdit": "Or they\u2019ll log you as an interruption. (pause) If you keep insisting on specifics. (pause) Worst case, you get an incident category. (pause) One you didn\u2019t choose. (pause) Get yourself in the file. (pause) You\u2019ll at least keep moving.",
       "nextLine": "",
-      "revisedLine": "Or they\u2019ll log you as an interruption. (pause) If you keep insisting on specifics. (pause) Worst case, you get an incident category. (pause) One you didn\u2019t choose. (pause) Get yourself in the file. (pause) You\u2019ll at least keep moving.",
-      "changeSummary": "Removed binary catchphrase; kept the warning and pragmatic aim. | Split the long sentence into short beats with pauses; kept wording and meaning while staying under 8 words per beat."
+      "revisedLine": "Or they\u2019ll log you as an interruption. (pause) If you keep insisting on specifics. (pause) Worst case you get an incident category. (pause) One you didn\u2019t choose. (pause) Get yourself in the file. (pause) At least you keep moving.",
+      "changeSummary": "Tightened cadence and reduced formality; kept the same risks and outcome. | Removed commas by ending the first beat with a period and dropping the comma after \u201cWorst case,\u201d to meet max_commas without changing meaning."
     },
     {
       "scene": "SCN_SCN-047.json",
       "id": "N_COACH_OLEA_1",
       "priorLine": "show: OLEA credentials.",
-      "lineToEdit": "Okay. That means you have an employer.",
-      "nextLine": "It does not mean the windows have to care.\nIf you want this quiet, go to Window 0 and let Intake pretend you\u2019re cargo for five minutes.",
-      "revisedLine": "Okay. Means you\u2019ve got an employer.",
-      "changeSummary": "Shortened and made it sound less formal."
+      "lineToEdit": "Okay. Means you\u2019ve got an employer.",
+      "nextLine": "Still doesn\u2019t mean the windows have to care. (pause) If you want this quiet, (pause) go to Window 0 (pause) and let Intake pretend (pause) you\u2019re cargo for five minutes.",
+      "revisedLine": "Alright. Means you\u2019ve got an employer.",
+      "changeSummary": "Minor tweak for a more natural response; meaning unchanged."
     },
     {
       "scene": "SCN_SCN-047.json",
       "id": "N_COACH_OLEA_2",
-      "priorLine": "Okay. That means you have an employer.",
-      "lineToEdit": "It does not mean the windows have to care.\nIf you want this quiet, go to Window 0 and let Intake pretend you\u2019re cargo for five minutes.",
+      "priorLine": "Okay. Means you\u2019ve got an employer.",
+      "lineToEdit": "Still doesn\u2019t mean the windows have to care. (pause) If you want this quiet, (pause) go to Window 0 (pause) and let Intake pretend (pause) you\u2019re cargo for five minutes.",
       "nextLine": "",
-      "revisedLine": "Still doesn\u2019t mean the windows have to care. (pause) If you want this quiet, (pause) go to Window 0 (pause) and let Intake pretend (pause) you\u2019re cargo for five minutes.",
-      "changeSummary": "Kept content; adjusted to more natural, tired delivery. | Inserted (pause) breaks to keep each beat under 8 words; kept wording and meaning the same."
+      "revisedLine": "Doesn\u2019t mean the windows care. (pause) You want this quiet, (pause) go to Window 0 (pause) and let Intake pretend (pause) you\u2019re cargo for five minutes.",
+      "changeSummary": "Simplified phrasing and kept the same direction and \u2018cargo\u2019 framing."
     },
     {
       "scene": "SCN_SCN-047.json",
       "id": "N_COACH_PERSUADE_PASS_1",
       "priorLine": "",
-      "lineToEdit": "Fine.\nYou want something the system already knows how to swallow: \u201cmisrouted equipment transfer.\u201d",
-      "nextLine": "Keep it short. No biography. No motive.\nIf you need to attach yourself, you\u2019re \u201cassociated mass.\u201d\nAnd you do not describe it.",
+      "lineToEdit": "Fine.\nUse the system\u2019s label: \u201cmisrouted equipment transfer.\u201d",
+      "nextLine": "Keep it short. (pause) No biography. (pause) No motive. (pause)\nIf you have to attach yourself, (pause) you\u2019re \u201cassociated mass.\u201d (pause)\nDon\u2019t describe it.",
       "revisedLine": "Fine.\nUse the system\u2019s label: \u201cmisrouted equipment transfer.\u201d",
-      "changeSummary": "More colloquial and reactive; preserved key phrase. | Cut \u201cwhat\u201d and \u201calready swallows\u201d to meet the 8-word beat limit while keeping the same intent and phrasing."
+      "changeSummary": "Already blunt and in-voice; left intact."
     },
     {
       "scene": "SCN_SCN-047.json",
       "id": "N_COACH_PERSUADE_PASS_2",
-      "priorLine": "Fine.\nYou want something the system already knows how to swallow: \u201cmisrouted equipment transfer.\u201d",
-      "lineToEdit": "Keep it short. No biography. No motive.\nIf you need to attach yourself, you\u2019re \u201cassociated mass.\u201d\nAnd you do not describe it.",
+      "priorLine": "Fine.\nUse the system\u2019s label: \u201cmisrouted equipment transfer.\u201d",
+      "lineToEdit": "Keep it short. (pause) No biography. (pause) No motive. (pause)\nIf you have to attach yourself, (pause) you\u2019re \u201cassociated mass.\u201d (pause)\nDon\u2019t describe it.",
       "nextLine": "",
-      "revisedLine": "Keep it short. (pause) No biography. (pause) No motive. (pause)\nIf you have to attach yourself, (pause) you\u2019re \u201cassociated mass.\u201d (pause)\nDon\u2019t describe it.",
-      "changeSummary": "Reduced formality; kept constraints and terminology. | Inserted (pause) breaks to keep each beat under 8 words; preserved original wording and kept comma count within limit."
+      "revisedLine": "Keep it tight. (pause) No biography. (pause) No motive. (pause)\nIf you have to attach yourself, (pause) you\u2019re \u201cassociated mass.\u201d (pause)\nDon\u2019t describe it.",
+      "changeSummary": "Adjusted wording for a more spoken, impatient register; preserved constraints and term."
     },
     {
       "scene": "SCN_SCN-047.json",
       "id": "N_COACH_PERSUADE_FAIL_1",
       "priorLine": "",
-      "lineToEdit": "The least-escalation wording is: less.\nLess detail. Less insistence. Less you.",
-      "nextLine": "Go to Window 0. Ask what categories are accepted.\nDon\u2019t argue about the answer on the record.",
-      "revisedLine": "You want fewer alarms? Keep it thin. (pause) Less detail. Less insistence. Less you.",
-      "changeSummary": "Shifted to immediate warning; retained the 'less' emphasis. | Inserted a (pause) break to keep each beat under 8 words without altering meaning, tone, or cadence."
+      "lineToEdit": "You want fewer alarms? Keep it thin. (pause) Less detail. Less insistence. Less you.",
+      "nextLine": "Go to Window 0. (pause) Ask what categories are accepted. (pause) Don\u2019t argue about it on the record.",
+      "revisedLine": "You want fewer alarms? Keep it thin. (pause) Less detail. Less insisting. Just\u2026 less you.",
+      "changeSummary": "Kept meaning; made the rhythm messier and more human under pressure."
     },
     {
       "scene": "SCN_SCN-047.json",
       "id": "N_COACH_PERSUADE_FAIL_2",
-      "priorLine": "The least-escalation wording is: less.\nLess detail. Less insistence. Less you.",
-      "lineToEdit": "Go to Window 0. Ask what categories are accepted.\nDon\u2019t argue about the answer on the record.",
+      "priorLine": "You want fewer alarms? Keep it thin. (pause) Less detail. Less insistence. Less you.",
+      "lineToEdit": "Go to Window 0. (pause) Ask what categories are accepted. (pause) Don\u2019t argue about it on the record.",
       "nextLine": "",
-      "revisedLine": "Go to Window 0. (pause) Ask what categories are accepted. (pause) Don\u2019t argue about it on the record.",
-      "changeSummary": "Kept as-is; already terse and action-forward. | Inserted (pause) breaks to keep each beat under 8 words, and tightened the last sentence while preserving the same instruction."
+      "revisedLine": "Go to Window 0. (pause) Ask what categories they\u2019ll take. (pause) Don\u2019t argue about it on the record.",
+      "changeSummary": "Swapped formal wording for everyday shorthand; kept the same action and warning."
+    },
+    {
+      "scene": "SCN_SCN-100.json",
+      "id": "N_USE_DOOR_2",
+      "priorLine": "You present nothing to the reader.\nThe reader responds appropriately: not at all.",
+      "lineToEdit": "Yeah. (pause)\nIt doesn\u2019t even reject you. (pause)\nYou didn\u2019t register as input.",
+      "nextLine": "",
+      "revisedLine": "Yeah. (pause)\nIt didn\u2019t even flag you. (pause)\nReader got nothing to log.",
+      "changeSummary": "Less tech-explainer, more paperwork framing; same point that nothing registered."
+    },
+    {
+      "scene": "SCN_SCN-100.json",
+      "id": "N_TOKENS_RUN_2",
+      "priorLine": "So tokens run the facility.",
+      "lineToEdit": "Tokens run whatever gets audited. (pause) Doors. Kiosks. Windows\u2014they answer artifacts. (pause) Not faces. (pause) You want to move. (pause) You do it in tokens.",
+      "nextLine": "",
+      "revisedLine": "Tokens run whatever gets audited. (pause) Doors. Kiosks. Windows\u2014they answer artifacts. (pause) You want to move, (pause) you do it in tokens.",
+      "changeSummary": "Removed the face/artifact contrast wording; kept the same audited-systems and token requirement."
+    },
+    {
+      "scene": "SCN_SCN-100.json",
+      "id": "N_THREATEN_2",
+      "priorLine": "Open it, or I escalate.",
+      "lineToEdit": "Sure. Escalate. (pause) It needs a category. (pause) Then you sit in the incident queue. (pause) Until the system decides your problem type. (pause) I'm not here to fight you. (pause) I'm throughput. (pause) Let me keep you moving.",
+      "nextLine": "",
+      "revisedLine": "Sure. Escalate. (pause) They\u2019ll want a category. (pause) Then you sit in the incident queue (pause) till the system decides your problem type. (pause) I\u2019m not here for a fight. (pause) I\u2019m throughput. (pause) Let me keep you moving.",
+      "changeSummary": "Made it sound more like a tired, practical warning; preserved queue/category/problem-type facts."
+    },
+    {
+      "scene": "SCN_SCN-100.json",
+      "id": "N_GET_TOKEN_INFO_2",
+      "priorLine": "Where do I get it?",
+      "lineToEdit": "Intake Hall. (pause) Windows 0/3/5/7/9. (pause)\nPick the one. (pause)\nLooks least hungry. (pause)\nFor your life story. (pause)\nGive them an incident category. (pause)\nThe system will accept. (pause)\nThey spit out a token. (pause)\nThat\u2019s what the doors listen to.",
+      "nextLine": "And if I file myself?",
+      "revisedLine": "Intake Hall. (pause) Windows 0/3/5/7/9. (pause)\nPick one that isn\u2019t begging (pause)\nfor a life story. (pause)\nGive them an incident category. (pause)\nSystem takes it. (pause)\nToken prints. (pause)\nThat\u2019s what the doors listen to.",
+      "changeSummary": "Same directions and outcome, varied the wording to avoid repetition and keep it spoken."
+    },
+    {
+      "scene": "SCN_SCN-100.json",
+      "id": "N_GET_TOKEN_INFO_4",
+      "priorLine": "And if I file myself?",
+      "lineToEdit": "Intake can\u2019t file a person. (pause)\nNot listed in any jurisdiction. (pause)\nThey can file an object. (pause)\nWith a barcode. (pause)\nAnd an incident category. (pause)\nSo you attach yourself. (pause)\nTo the object. (pause)\nYou\u2019re\u2014politely\u2014\u201cassociated mass.\u201d (pause)\nThey won\u2019t call it dehumanizing. (pause)\nThey\u2019ll call it efficient. (pause)\nOn paper.",
+      "nextLine": "The Coach points toward Intake Hall signage, as if pointing is legally safer than escorting.",
+      "revisedLine": "Intake won\u2019t file a person. (pause)\nYou\u2019re not listed in any jurisdiction. (pause)\nThey\u2019ll file an object\u2014 (pause)\nbarcode, (pause)\nincident category. (pause)\nSo you attach yourself (pause)\nto the object. (pause)\nYou\u2019re\u2014politely\u2014\u201cassociated mass.\u201d (pause)\nWhat shows up is \u201cefficient.\u201d (pause)\nOn paper.",
+      "changeSummary": "Kept all required facts/terms, trimmed the moralizing beat and leaned into the record/paper framing."
     }
   ]
 }

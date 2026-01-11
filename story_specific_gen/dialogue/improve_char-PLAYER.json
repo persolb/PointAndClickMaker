@@ -1,0 +1,2767 @@
+{
+  "nodes": [
+    {
+      "scene": "SCN_SCN-004.json",
+      "id": "PLY_GOVERNS_01",
+      "priorLine": "ask: Which one governs?",
+      "lineToEdit": "Which sign governs access?",
+      "nextLine": "There is no answer posted.\nThe post is an argument without a referee.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-004.json",
+      "id": "PLY_UPDATE_01",
+      "priorLine": "ask: Why update a decommissioned site?",
+      "lineToEdit": "Why update a decommissioned site?",
+      "nextLine": "Someone needed the word \u201cOPERATIONAL\u201d to exist here.\nSomeone else needed \u201cDECOMMISSIONED\u201d not to disappear.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-004.json",
+      "id": "PLY_RECORD_01",
+      "priorLine": "talk: Record what I\u2019m seeing.",
+      "lineToEdit": "Log it as a conflict.",
+      "nextLine": "",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-007.json",
+      "id": "N4_ASK_PLAYER",
+      "priorLine": "ask \u2014 What does this imply?",
+      "lineToEdit": "Why list routes on a dead system?",
+      "nextLine": "The plate doesn\u2019t answer. It does what signage does here: insists someone once needed this true.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-007.json",
+      "id": "N5_TALK_E",
+      "priorLine": "\u201cThis loop is for accountability, not speed. That\u2019s not an admission. It\u2019s terminology.\u201d",
+      "lineToEdit": "So the tubes connect them.",
+      "nextLine": "\u201cConnect is informal.\u201d",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-007.json",
+      "id": "N6_LOG_PLAYER",
+      "priorLine": "use \u2014 Record routing in notes.",
+      "lineToEdit": "Log it.",
+      "nextLine": "You copy the routing exactly. Your pen hesitates on \u201cSECURITY\u201d like it might object.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-010.json",
+      "id": "P_LOOK_1",
+      "priorLine": "Entries are half names, full excuses: \u201cTEMP\u2014returning-after-calibration.\u201d \u201cBorrowed-for-audit-photos(not-use).\u201d \u201cRemoved-from-circulation(pending-decision).\u201d",
+      "lineToEdit": "Any of these still valid?",
+      "nextLine": "No one answers. (pause) Paper does not answer, because it only persists. (pause) The demagnetized badge has a sticker: DO NOT DISCARD. (pause) Someone wrote over it: DO NOT PROCESS.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-010.json",
+      "id": "P_USE_1",
+      "priorLine": "The badge insert dispenser is an old slot. (pause) A faded placard reads: INSERT \u2014 WAIT FOR GREEN \u2014 REMOVE. (pause) \u201cGREEN\u201d is circled twice. (pause) Like reassurance didn\u2019t take the first time.",
+      "lineToEdit": "Let\u2019s see.",
+      "nextLine": "You feed the demagnetized badge into the slot. The machine pulls it in with polite certainty.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-010.json",
+      "id": "P_USE_2",
+      "priorLine": "The light stays stubbornly amber. The badge returns, slightly warmer, as if that helped.",
+      "lineToEdit": "Demag.",
+      "nextLine": "The dispenser prints a slip: UNREADABLE \u2014 REFER TO SECURITY. The end curls, ashamed to exist.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-010.json",
+      "id": "P_TALK_1",
+      "priorLine": "The speaker grille is painted over. (pause) Then it\u2019s scraped clean in a rectangle, where a label used to be. (pause) The push-to-talk button is replaced with a toggle switch. (pause) It doesn\u2019t commit to either position.",
+      "lineToEdit": "Security, this is OLEA field. Anyone on?",
+      "nextLine": "[INTERCOM VOICE] This line is monitored for safety and training. (pause) Not in real time. (pause) Not the same as \u201cunmonitored\u201d\u2014 just manage your expectations.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-010.json",
+      "id": "P_TALK_2",
+      "priorLine": "[INTERCOM VOICE] This line is monitored for safety and training. (pause) Not in real time. (pause) Not the same as \u201cunmonitored\u201d\u2014 just manage your expectations.",
+      "lineToEdit": "Found old contractor badges in the vestibule drawer. One\u2019s demagnetized.",
+      "nextLine": "[INTERCOM VOICE] Okay. So. Don\u2019t use it. (pause) Using it creates an access attempt. (pause) That creates a question. (pause) That creates a file. (pause) We are not funded for additional files this quarter.",
+      "revisedLine": "Old contractor badges in vestibule drawer. One demagnetized.",
+      "changeSummary": "Trimmed wording to 8 words while keeping the same facts and cadence."
+    },
+    {
+      "scene": "SCN_SCN-010.json",
+      "id": "P_TALK_3",
+      "priorLine": "[INTERCOM VOICE] Okay. So. Don\u2019t use it. (pause) Using it creates an access attempt. (pause) That creates a question. (pause) That creates a file. (pause) We are not funded for additional files this quarter.",
+      "lineToEdit": "I\u2019m taking it.",
+      "nextLine": "[INTERCOM VOICE] I can\u2019t authorize that. (pause) I also can\u2019t stop you. (pause) Different form. (pause) Take it and it\u2019s \u201cin custody.\u201d (pause) I have to ask whose custody. (pause) You\u2019ll say your name. (pause) I\u2019ll write it down, and then\u2014",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-010.json",
+      "id": "P_ASK_RESP_1",
+      "priorLine": "[INTERCOM VOICE] Historically? Security. (pause) Practically? Nobody because \u201cnobody\u201d can\u2019t be subpoenaed. (pause) Formally? Facilities\u2014but only when the facility is active. (pause) And we are \u201cmothballed\u201d\u2014a status with feelings.",
+      "lineToEdit": "So it\u2019s orphaned.",
+      "nextLine": "[INTERCOM VOICE] It is \u201cunassigned.\u201d Orphaned implies duty.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-010.json",
+      "id": "P_ASK_RESTORE_1",
+      "priorLine": "[INTERCOM VOICE] You don\u2019t. (pause) Request a replacement through Admin. (pause) Admin denies it because the site is in retirement posture. (pause) You cite operational necessity. (pause) Legal asks what operation. (pause) If you mean physically, there\u2019s a mag encoder in the admin kiosk area. (pause) It may or may not be \u201cforbidden.\u201d (pause) The sticker fell off years ago.",
+      "lineToEdit": "Got it.",
+      "nextLine": "[INTERCOM VOICE] You did not \u201cget it.\u201d You acknowledged it. That\u2019s safer for both of us.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-010.json",
+      "id": "N_PERSUADE_1",
+      "priorLine": "Persuade: [OLEA] Log it as salvage for closure.",
+      "lineToEdit": "Log it as salvage for closure. I\u2019m maintaining chain-of-custody.",
+      "nextLine": "[INTERCOM VOICE] Chain-of-custody is a legal phrase. (pause) Please don\u2019t say it like that. (pause) But\u2014 fine. (pause) If you insist on being correct: (pause) write your name on the informal sheet. (pause) Do not date it. (pause) Take a photo of the drawer label. (pause) It stays \u201ccontext,\u201d not an \u201cevent.\u201d",
+      "revisedLine": "Log salvage for closure. I\u2019m maintaining chain-of-custody.",
+      "changeSummary": "Removed \u201cit as\u201d to cut one word and meet the 8-word beat limit without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-010.json",
+      "id": "P_PERSUADE_1",
+      "priorLine": "[INTERCOM VOICE] Chain-of-custody is a legal phrase. (pause) Please don\u2019t say it like that. (pause) But\u2014 fine. (pause) If you insist on being correct: (pause) write your name on the informal sheet. (pause) Do not date it. (pause) Take a photo of the drawer label. (pause) It stays \u201ccontext,\u201d not an \u201cevent.\u201d",
+      "lineToEdit": "That\u2019s not how\u2014",
+      "nextLine": "[INTERCOM VOICE] It is here. Please don\u2019t make me be innovative about this.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-012.json",
+      "id": "N_LOOK_P01",
+      "priorLine": "Someone hand-scribed a breaker map on laminated paper. (pause) Half the abbreviations are crossed out, rewritten in another pen. (pause) You feel your teeth press together, then you stop.",
+      "lineToEdit": "Labels don\u2019t match.",
+      "nextLine": "A newer second placard reads: \u201cAUX POWER \u2014 NON-CRITICAL LOADS ONLY.\u201d (pause) Below: \u201cNon-critical per Facilities, not per Operations.\u201d",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-012.json",
+      "id": "N_RADIO_P01",
+      "priorLine": "Field Systems Specialist\u2014hi. Yes. I\u2019m on. (pause)\nBefore you energize anything. (pause)\nWe should capture the comparability basis. (pause)\nLater someone may ask. \u201cComparable to what. Specifically.\u201d (pause)\nThey think specificity is an admission. (pause)",
+      "lineToEdit": "Aux bring-up only.",
+      "nextLine": "Right. (pause) \u201cAux\u201d reads \u201cminor\u201d until \u201cuncontrolled.\u201d (pause) I\u2019m not saying it will. (pause) I\u2019m saying the record should show we asked. (pause) That\u2019s different from implying you were reckless. (pause) Legally.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-012.json",
+      "id": "N_RADIO_ASK_01",
+      "priorLine": "Ask \u2014 Comparable to what?",
+      "lineToEdit": "Comparable to what?",
+      "nextLine": "Anything with auxiliary distribution in decommissioning context. (pause)\nA hospital wing. (pause)\nA pumping station. (pause)\nAn airport baggage system. (pause)\nNot because this is those\u2014because those have checklists. (pause)\nIf we can borrow a checklist (pause)\nwe can borrow the liability posture.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-012.json",
+      "id": "N_RADIO_PERSUADE_01",
+      "priorLine": "Persuade \u2014 I\u2019ll note: temporary aux for label printing.",
+      "lineToEdit": "I\u2019ll note: temporary aux for label printing.",
+      "nextLine": "Perfect. \u201cTemporary\u201d is a lovely word. (pause) It implies an intention to stop. (pause) That is what we want on paper. (pause) Even when the equipment disagrees.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-012.json",
+      "id": "N_RADIO_SHOW_01",
+      "priorLine": "Show \u2014 I\u2019ll send photos of the breaker map.",
+      "lineToEdit": "I\u2019ll send photos.",
+      "nextLine": "Great\u2014include the sticker. (pause) It says \u201cDO NOT RELABEL.\u201d (pause) Not a problem. (pause) It\u2019s a history. (pause) History is admissible.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-012.json",
+      "id": "N_RADIO_LEAVE_01",
+      "priorLine": "Leave \u2014 I\u2019m proceeding.",
+      "lineToEdit": "Proceeding.",
+      "nextLine": "Understood. (pause)\nFor the record, I did advise. (pause)\nCapturing comparability. (pause)\nNot because you need advice. (pause)\nBecause I need timestamps.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-012.json",
+      "id": "N_RADIO_OLEA_01",
+      "priorLine": "Persuade \u2014 Use OLEA authority: \u201cRecord it as standard aux verification per OLEA closure checklist.\u201d",
+      "lineToEdit": "Record: standard aux verification. OLEA closure checklist.",
+      "nextLine": "Yes\u2014good. (pause) If it\u2019s on your checklist\u2014 (pause) it becomes \u201cindustry practice,\u201d by proximity. (pause) That\u2019s not how physics works. (pause) But it is how funding works.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-012.json",
+      "id": "N_DOWN_P01",
+      "priorLine": "The breaker labels disagree with the breaker map.\nYou don\u2019t argue with paper. You verify.",
+      "lineToEdit": "Meter.",
+      "nextLine": "You set multimeter leads. The display steadies after a moment, as if it prefers decisions documented.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-012.json",
+      "id": "N_THROW_P01",
+      "priorLine": "Use \u2014 Throw AUX MAIN.",
+      "lineToEdit": "AUX MAIN. On.",
+      "nextLine": "You throw the breaker in one motion, because hesitation looks like doubt on a security camera.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-012.json",
+      "id": "N_THROW_P02",
+      "priorLine": "I heard that\u2014through the line. Not the air. (pause) The audio spike. (pause)\nThat\u2019s fine. (pause) That\u2019s normal. (pause)\nWe\u2019ll call it \u201cauxiliary loads coming online.\u201d (pause)\nNot \u201csystems waking up.\u201d (pause)\nBecause \u201cwaking\u201d implies prior awareness.",
+      "lineToEdit": "Aux live.",
+      "nextLine": "Great. (pause)\nI\u2019ll mark: limited energization achieved. (pause)\nFor documentation tools and minor services. (pause)\nAgain\u2014not me taking operational credit. (pause)\nMe taking narrative responsibility. (pause)\nThere\u2019s a difference.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-013.json",
+      "id": "N_USE_HERE",
+      "priorLine": "use: Present badge.",
+      "lineToEdit": "Here.",
+      "nextLine": "You swipe. The reader accepts the motion with a careful beep.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-013.json",
+      "id": "N_ASK_WHAT_TRAINING_PLAYER",
+      "priorLine": "ask: \u201cWhat training?\u201d",
+      "lineToEdit": "What training?",
+      "nextLine": "TRAINING DATE REQUIRED.\nCONSULT RECORDS.\nENTRY FIELD MUST MATCH RECORDS.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-013.json",
+      "id": "N_ASK_WHY_DOOR_PLAYER",
+      "priorLine": "ask: \u201cWhy does a door need a date?\u201d",
+      "lineToEdit": "Why does a door need a date?",
+      "nextLine": "ACCESS REQUIRES CURRENT TRAINING DATE.\n\u201cCURRENT\u201d DEFINED BY RECORDS.\nCONSULT RECORDS.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-013.json",
+      "id": "N_USE_ENTER_DATE_PLAYER",
+      "priorLine": "use: Try entering a date.",
+      "lineToEdit": "Try entering a date.",
+      "nextLine": "The keypad is membrane-soft. It feels like pressing old office equipment that resents being used.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-013.json",
+      "id": "N_PERSUADE_OLEA_PLAYER",
+      "priorLine": "persuade: \u201cOverride. OLEA field ops.\u201d",
+      "lineToEdit": "Override. OLEA field ops.",
+      "nextLine": "NO OVERRIDE CATEGORY LISTED FOR \u201cFIELD OPS.\u201d\nTHIS IS NOT A DENIAL. THIS IS A MISSING PATH.\nCONSULT RECORDS.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-013.json",
+      "id": "N_SLIP_LOOK_PLAYER",
+      "priorLine": "look: Read the slip.",
+      "lineToEdit": "That\u2019s it.",
+      "nextLine": "The ink is sharp, official.\n\nTRAINING DATE REQUIRED.\nCONSULT RECORDS.\n\nThe message can be reused indefinitely.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-013.json",
+      "id": "N_MAIN_ASK_TRAINING_PLAYER",
+      "priorLine": "ask: \u201cTraining date?\u201d",
+      "lineToEdit": "Training date?",
+      "nextLine": "ENTER TRAINING DATE.\nCONSULT RECORDS FOR ACCEPTED VALUE.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-013.json",
+      "id": "N_CALLBOX_PLAYER",
+      "priorLine": "This line is monitored for emergencies and compliance statements.\nState your badge number and your training date.",
+      "lineToEdit": "I don\u2019t have the date.",
+      "nextLine": "Then I can\u2019t log the call as a call.\nI can log it as an attempt.\nConsult Records.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-015.json",
+      "id": "LOOK_LEGAL_1",
+      "priorLine": "look: Scan for Legal.",
+      "lineToEdit": "Legal.",
+      "nextLine": "You find it twice. \u201cCounsel.\u201d \u201cIncident Containment (Administrative).\u201d Same extension. Someone wanted it to survive edits.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-017.json",
+      "id": "N_PLAYER_DRAWERS",
+      "priorLine": "A brass label holder reads: \u201cTEMPORARY.\u201d The paper inside has browned into permanence.",
+      "lineToEdit": "\u201cDrawers.\u201d",
+      "nextLine": "The top drawer sticks, then gives with a soft complaint, like it\u2019s documenting the force used.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-017.json",
+      "id": "N_ANYTHING",
+      "priorLine": "Inside: carbon-copy forms, a stapler without staples, and three pens that died thinking they mattered.",
+      "lineToEdit": "\u201cAnything not paper?\u201d",
+      "nextLine": "In the back corner, an envelope has been torn and re-taped into a laminate. (pause) Something small is caught in the seam\u2014metallic and flat. (pause) It gives a faint pull when it slides past the stapler.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-018.json",
+      "id": "N006_PLAYER_ID",
+      "priorLine": "Office of Legacy Energy Assets, Legal. (pause) Recorded line. (pause) Name and assignment.",
+      "lineToEdit": "Field Systems Specialist. SPINDLE closure.",
+      "nextLine": "\u201cClosure activities.\u201d (pause) Fine. (pause) I can put paper in place. (pause) I\u2019m not signing off on field work. (pause) Don\u2019t use \u201cauthorize\u201d on my line.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-019.json",
+      "id": "MAIN_MENU",
+      "priorLine": "(multiple) (The hallway smells like paper and warm dust. (pause)\nA door labeled RECORDS sits flush in a steel frame. (pause)\nIt\u2019s the kind that assumes you\u2019ll stop asking. (pause)\nTo its right: a pneumatic tube station with a yellowed instruction card. (pause)\nBelow a fire panel: a taped note with too many initials. (pause)\nA wall placard explains faxing like it\u2019s hazardous waste.) ((leave) Do nothing for now.)",
+      "lineToEdit": "What do I check?",
+      "nextLine": "",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-019.json",
+      "id": "COMMIT_PROMPT",
+      "priorLine": "(ask) Summarize and log the situation.",
+      "lineToEdit": "Records is locked. I\u2019ll route around it.",
+      "nextLine": "",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-019.json",
+      "id": "COMMIT_PLAYER_FINE",
+      "priorLine": "The pilot light on the tube station stays steady, indifferent, as if it\u2019s already filed you.",
+      "lineToEdit": "Fine.",
+      "nextLine": "You step back before the building can interpret that as agreement.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-020.json",
+      "id": "N_TALK_1",
+      "priorLine": "talk: read the placard out loud",
+      "lineToEdit": "Non-custodial. Until signed.",
+      "nextLine": "The sentence is engineered to be true no matter what happens next. (pause) You can almost hear Legal clearing its throat.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-020.json",
+      "id": "N_USE_LOG_1",
+      "priorLine": "talk: log it as a custody correction",
+      "lineToEdit": "Log it.",
+      "nextLine": "You don\u2019t have a form for \u201cfound in tube station.\u201d (pause) So call it a custody correction if anyone asks. (pause) Easier to defend than the truth.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-022.json",
+      "id": "N100_RERUN_START",
+      "priorLine": "(multiple) (use: Re-run the fax until the Work Order is legible (and make a duplicate).) (use: Re-run the fax until it\u2019s legible.) (use: Re-run the fax until the Work Order is legible (and make a duplicate).)",
+      "lineToEdit": "Run it again. Two clean sets.",
+      "nextLine": "The fax machine wakes up with a complaint disguised as a motor. (pause)\n\nPage one prints crisp at the top and dissolves in the middle. (pause)\nPage two prints the middle perfectly and sacrifices the asset line to a smear.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-022.json",
+      "id": "N120_RERUN_AGAIN",
+      "priorLine": "use: Re-run again.",
+      "lineToEdit": "Again.",
+      "nextLine": "The machine tries a new failure mode. (pause) This time the header line is perfect. (pause) The signature is a bruise. (pause) Legal\u2019s name is readable. (pause) But the pen stroke looks like it was done while bracing for impact.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-022.json",
+      "id": "N200_SERVICE_MODE",
+      "priorLine": "",
+      "lineToEdit": "Service mode. Darken.",
+      "nextLine": "The sticker peels reluctantly like it was saving itself for an emergency that mattered. (pause) You key in a code that should not be common knowledge. (pause) The machine accepts it without comment. (pause) The silence is a comment. (pause) The next print is darker. (pause) The words stop trying to disappear.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-022.json",
+      "id": "N910_END_BAD_COPY",
+      "priorLine": "leave: Keep the bad copy and move on.",
+      "lineToEdit": "Better than nothing.",
+      "nextLine": "You fold the pages anyway. The fold goes through the only readable sentence.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-023.json",
+      "id": "PLY_SERVICE_CODE_QUERY",
+      "priorLine": "The copier control panel is awake, like old office machines. (pause) Lights on, no help offered. (pause) A prompt waits for a service code.",
+      "lineToEdit": "Service code?",
+      "nextLine": "A stack of \u201cSERVICE UPDATE\u201d stickers sits beside the panel. (pause) The top sticker is newer, too clean, and placed with intent.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-023.json",
+      "id": "PLY_COMPARABILITY_TO_WHAT",
+      "priorLine": "That is not an accusation. (pause) For the record. (pause) We cannot house it. (pause) It is a process question. (pause) Who is the responsible custodian (pause) of the code display artifact. (pause) Because without that (pause) we cannot establish comparability.",
+      "lineToEdit": "Comparability to what?",
+      "nextLine": "To any other copier lockout event (pause) that didn\u2019t become a\u2014 (pause) \u2014a finding. (pause) I\u2019m not predicting a finding. (pause) I\u2019m saying the absence of a custodian (pause) reads like one.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-023.json",
+      "id": "PLY_NOT_LIKE_THIS",
+      "priorLine": "You can remove it physically. You cannot remove it institutionally. (pause) Without a temporary lift tag, it reads as vandalism, no matter how careful you are.",
+      "lineToEdit": "Not like this.",
+      "nextLine": "Thank you. That\u2014 that restraint matters. (pause) \u2018Peeling\u2019 becomes \u2018altering\u2019 (pause) the moment someone needs it to.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-023.json",
+      "id": "PLY_OKAY",
+      "priorLine": "You enter the usual suspects. The panel rejects them politely. The last beep sounds faintly judgmental.",
+      "lineToEdit": "Okay.",
+      "nextLine": "Just to be clear: repeated failed entries can (pause) be construed as \u2018bypass attempts.\u2019 (pause) Not by me. (pause) By the kind of person (pause) who writes training modules.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-023.json",
+      "id": "PLY_GOT_IT",
+      "priorLine": "Then you peel the layer. Under it: the original service code, printed in fading block text.",
+      "lineToEdit": "Got it.",
+      "nextLine": "You enter the code. (pause) The copier accepts it immediately, like it was never meant to be secret. (pause) The screen changes to READY.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-026.json",
+      "id": "N_COMMIT_3",
+      "priorLine": "Okay. I've got an onsite presence record. (pause) Under your name, today's date. (pause) Activity type: closeout. (pause) That's enough to actuate interior access. (pause) And it won't be on me.",
+      "lineToEdit": "Do it.",
+      "nextLine": "Initiating timed unlock on guard shack interior door. (pause) Short window. Move. (pause) If it relocks, that's the timer.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-027.json",
+      "id": "PLAYER_LOOK_TRAY_TAG",
+      "priorLine": "A pre-stamped form. EAC FINDING SLIP. (pause)\nRecipient: Field Systems Specialist (Closure). Status: OPEN. (pause)\nBlocker: Final sign-off prohibited until one attachment is provided. (pause)\n- Incident page. Site event narrative. (pause)\n- Waiver. Risk acceptance. (pause)\n- No-anomaly test printout from Operations. (pause)\nSomeone checked \u201cComparability required\u201d in careful penmanship. (pause)\nIt feels personal. Worse.",
+      "lineToEdit": "They issued this without me.",
+      "nextLine": "At the bottom, a typed note reads like it expects to be quoted aloud. (pause)\n\n\u201cI'm not saying the site is unsafe. (pause)\nI'm saying the record is not comparable.\u201d (pause)\n\u2014EAC Senior Assurance Liaison",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-027.json",
+      "id": "PLAYER_LOOK_CHECKLIST_TAG",
+      "priorLine": "The closure checklist is intact until the last page. (pause)\nA yellow sticky flag marks a line item: EAC Finding Resolution Attachment \u2014 REQUIRED. (pause)\nThe paper smells like copier toner and someone else\u2019s confidence.",
+      "lineToEdit": "So the shutdown\u2019s blocked.",
+      "nextLine": "In the margin, in tidy handwriting: \u201cIf it can\u2019t be categorized, it can\u2019t be closed.\u201d",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-027.json",
+      "id": "PLAYER_LOOK_WHITEBOARD_TAG",
+      "priorLine": "Under COMPARABILITY: (pause)\n- \u201cUnexpected reflective behavior\u201d (circled) (pause)\n- \u201cNear-miss: personnel\u201d (question mark) (pause)\n- \u201cEquipment drift / calibration anomaly\u201d (underlined) (pause)\nSomeone has added: \u201cDo not use novel terms in the finding summary.\u201d (pause)\nThe marker squeaked hard on that line. (pause)\nLike it mattered.",
+      "lineToEdit": "They\u2019re classifying it into existence.",
+      "nextLine": "",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-027.json",
+      "id": "PLAYER_TALK_QUESTION",
+      "priorLine": "You can resolve this three ways. (pause)\nIt is generous frankly. (pause)\n1) Attach an incident page. (pause)\nPlain narrative. (pause)\nWhat happened. (pause)\nWhat you observed. (pause)\nWhat you did. (pause)\nNo speculation. (pause)\n2) Attach a waiver. (pause)\nSomeone with authority accepts residual risk. (pause)\nNot you. (pause)\nNot me. (pause)\n3) Attach a no-anomaly test printout. (pause)\nFrom Operations. (pause)\nOps certifies nothing anomalous occurred. (pause)\nDuring a controlled run. (pause)\nThen the finding downgrades. (pause)\nTo \u201cdocumentation variance.\u201d (pause)\nReal category. (pause)\nIt exists in the framework. (pause)\nThat is what we need.",
+      "lineToEdit": "Why now?",
+      "nextLine": "Now is when you\u2019re trying to sign. (pause) Before sign-off this is \u201congoing work.\u201d (pause) After sign-off it becomes \u201ca closed site (pause) with an open question.\u201d (pause) That\u2019s how careers become collaborative. (pause) I\u2019m not threatening you. (pause) I\u2019m describing institutional behavior.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-027.json",
+      "id": "PLAYER_ASK_COMPARABLE_FOLLOWUP",
+      "priorLine": "Exactly. That\u2019s the issue. (pause)\nTell me it matches a reflection event. (pause)\nThen I anchor it to prior guidance. (pause)\nTell me it matches equipment drift. (pause)\nThen I anchor it to calibration controls. (pause)\nTell me it matches a near-miss. (pause)\nThen I anchor it to safety reporting. (pause)\nI\u2019m not asking for poetry. (pause)\nPick the least-wrong shelf.",
+      "lineToEdit": "And if I don\u2019t.",
+      "nextLine": "Then it stays open. (pause) Open things don\u2019t close themselves. (pause) They just change custodians.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-029.json",
+      "id": "N_PLAYER_LOOK_AROUND",
+      "priorLine": "Non-Local Compliance Notices Room. (pause) Fluorescent hum. Stale paper smell. (pause) A rack of templates that don\u2019t quite belong anywhere. (pause) A notice on the wall has a barcode format you don\u2019t recognize. (pause) It\u2019s been carefully re-taped. Like that fixes the jurisdiction.",
+      "lineToEdit": "Look around.",
+      "nextLine": "Three hotspots vie: \u201cMISFITS / DO NOT DISCARD\u201d forms-rack; unsealed envelope-stack; barcode notice and unfamiliar striping.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-029.json",
+      "id": "N_PLAYER_KEEP_IT",
+      "priorLine": "You pull the training waiver template free. (pause) The paper has a slightly waxy finish. (pause) It whispers, \u201cmeant to be copied.\u201d (pause) \u201cUntil nobody remembers where it came from.\u201d (pause) It will read well in a binder.",
+      "lineToEdit": "Keep it.",
+      "nextLine": "Added: Training Waiver Template. The rack settles back, relieved you didn\u2019t ask for a second copy.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-030.json",
+      "id": "N020_SEND_PLAYER",
+      "priorLine": "(multiple) (use: Fax the waiver template to OLEA Legal for signature.) (use: Fax the waiver template to OLEA Legal for signature.) (use: Fax the waiver template to OLEA Legal for signature.)",
+      "lineToEdit": "Send it. Mark it urgent.",
+      "nextLine": "The machine takes the first page, like it\u2019s accepting blame. (pause) It dials. It squeals. (pause) Then it goes quiet\u2014like \u201cquiet\u201d is a setting, with liability implications.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-030.json",
+      "id": "N040_SERVICE_MODE",
+      "priorLine": "",
+      "lineToEdit": "Service mode. Darker. Timestamp.",
+      "nextLine": "You key in numbers the machine should not accept from you. (pause) It accepts them anyway. (pause) The display adds \u201cCONFIRMATION: ON\u201d like it\u2019s a moral stance.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-030.json",
+      "id": "N120_PULL_PLAYER",
+      "priorLine": "(multiple) (use: Pull the returned pages from the tray.) (use: Pull the signed waiver from the tray.)",
+      "lineToEdit": "Take it.",
+      "nextLine": "The pages are warm at the edges (pause) as if heat counts as authentication. (pause) The signature is real. (pause) The language around it is a fence.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-032.json",
+      "id": "N_INTRO_5",
+      "priorLine": "If you\u2019re seeing \u201cNot Current,\u201d that means the system cannot confirm you are currently trained, which is different from you being untrained. It\u2019s a documentation state. It\u2019s not\u2014 it\u2019s not an insult.",
+      "lineToEdit": "It\u2019s blocking LOTO.",
+      "nextLine": "Correct. Because LOTO is a behavior, and behavior requires currency. Not because you\u2019re unsafe. Because we can\u2019t prove you\u2019re safe. There\u2019s a difference that matters in a deposition.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-032.json",
+      "id": "N_ASK_WHAT_1",
+      "priorLine": "(ask) \"What does it want, exactly?\"",
+      "lineToEdit": "What does it want?",
+      "nextLine": "A date. Not a metaphorical date. Not \u201cI did the training in spirit.\u201d A date the panel can parse.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-032.json",
+      "id": "N_ASK_WHAT_4",
+      "priorLine": "It will accept: a current training record via badge lookup, a stamped completion card, or a signed waiver with the correct wording. Correct wording meaning the wording Legal fought for, not the wording Safety prefers.",
+      "lineToEdit": "Badge lookup?",
+      "nextLine": "Unavailable. Network segmentation. Which is\u2014 it\u2019s deliberate. It\u2019s not negligence. It\u2019s containment. Different budget line.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-032.json",
+      "id": "N_ASK_WHY_1",
+      "priorLine": "(ask) \"Why is a date gate on a lock point?\"",
+      "lineToEdit": "Why is a date gate on a lock point?",
+      "nextLine": "Because the lock point is an interface, and interfaces are where people improvise. The date gate stops improvisation by forcing you to improvise in a documented manner.",
+      "revisedLine": "Why put a date gate on lock point?",
+      "changeSummary": "Removed one word by rephrasing the question to stay within the 8-word beat limit without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-032.json",
+      "id": "N_PERSUADE_1",
+      "priorLine": "(persuade) \"Override it. I\u2019m OLEA.\"",
+      "lineToEdit": "Override it. I\u2019m OLEA.",
+      "nextLine": "I hear you. And for the record, I respect the title. But this unit doesn\u2019t have an \u201coverride,\u201d it has an \u201cacceptable alternate.\u201d Language matters.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-032.json",
+      "id": "N_WAIVER_1",
+      "priorLine": "(show) \"Signed waiver.\"",
+      "lineToEdit": "Show waiver.",
+      "nextLine": "You hold the signed waiver up to the panel camera. (pause) The paper is creased where it\u2019s been folded and unfolded too many times. (pause) The signature block is darker, like someone pressed too hard.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-032.json",
+      "id": "N_STICKER_1",
+      "priorLine": "(use) Apply a token sticker to the reader.",
+      "lineToEdit": "Use sticker.",
+      "nextLine": "You peel a small token sticker\u2014glossy, date-colored, made because printers lie\u2014from its backing strip. (pause) You place it over the optical reader\u2019s worn window.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-032.json",
+      "id": "N_LEAVE_1",
+      "priorLine": "(leave) Step away.",
+      "lineToEdit": "Leave.",
+      "nextLine": "You step back. (pause) The panel keeps its screen lit, waiting to be satisfied. (pause) It does not time out. (pause) It just holds a grudge politely. (pause) You are still in the Operations Corridor. (pause) The training gate remains uncleared.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-033.json",
+      "id": "PLAYER_1",
+      "priorLine": "\u201cBefore you say anything, this line is recorded for \u2018process continuity.\u2019 Which is not surveillance. Contractually.\u201d",
+      "lineToEdit": "\u201cNeed LOTO coverage. I\u2019ve got one real tag.\u201d",
+      "nextLine": "\u201cRight, so: the question is not \u2018one tag.\u2019 The question is: are you creating a traceable isolation condition that is comparable to full application. Comparable doesn\u2019t mean identical. It means defensible, after the fact, in a room where nobody remembers you.\u201d",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-033.json",
+      "id": "PLAYER_CONFIRM_1",
+      "priorLine": "\u201cJust to be explicit: you are declaring the isolation condition established. I am recording your declaration. That is the cleanest wording we have.\u201d",
+      "lineToEdit": "\u201cLOTO set.\u201d",
+      "nextLine": "\u201cLOTO documented. Which is the version of reality that survives.\u201d",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-034.json",
+      "id": "N_P_ASK_BLOCKS",
+      "priorLine": "ask \"Does this block ops?\"",
+      "lineToEdit": "Does this block ops?",
+      "nextLine": "The indicator has no opinion, but the panel labels do. (pause)\n\u201cOPS PERMIT REQUIRES\u2026 VENT DAMPER OPEN.\u201d (pause)\nWhatever \u201cops\u201d means today, it\u2019s waiting on a damper to testify.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-034.json",
+      "id": "N_P_ASK_SO_VENT",
+      "priorLine": "ask \"So it\u2019s the vent.\"",
+      "lineToEdit": "So it\u2019s the vent.",
+      "nextLine": "The ops start sequence is interlocked until the ventilation damper reports OPEN. (pause) The corridor provides no further justification, only cross-references.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-034.json",
+      "id": "N_P_ASK_WHY_OPEN",
+      "priorLine": "ask \"Why OPEN for a shutdown sequence?\"",
+      "lineToEdit": "Why OPEN for a shutdown sequence?",
+      "nextLine": "The placard doesn\u2019t answer. It escalates. (pause) A sub-bullet under STOP reads: (pause) \u201cDamper must be OPEN to validate purge complete prior to SAFE state.\u201d (pause) Someone wrote in the margin: \u201cOPEN proves you can CLOSE. Don\u2019t argue with it.\u201d",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-034.json",
+      "id": "N_P_ASK_WHAT_IF_CLOSED",
+      "priorLine": "(multiple) (ask \"What happens if it\u2019s CLOSED?\") (ask \"What happens if it\u2019s CLOSED?\")",
+      "lineToEdit": "What happens if it\u2019s CLOSED?",
+      "nextLine": "A warning box. All caps: \u201cSEQUENCE WILL NOT ARM.\u201d (pause)\nUnder it a softer line like an apology: \u201cDo not bypass. If bypassed, document bypass.\u201d (pause)\nThe document reference is smudged as if the number itself was a liability.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-034.json",
+      "id": "N_P_ASK_BYPASS_FORM",
+      "priorLine": "ask \"Where\u2019s the bypass form?\"",
+      "lineToEdit": "Where\u2019s the bypass form?",
+      "nextLine": "A cross-reference number smears into ink and thumbprints. Form existed once, or exists somewhere, staying unfound.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-034.json",
+      "id": "N_P_ASK_WHERE_DAMPER",
+      "priorLine": "(multiple) (ask \"Where\u2019s the damper?\") (ask \"Where\u2019s the damper?\") (ask \"Where\u2019s the damper?\")",
+      "lineToEdit": "Where\u2019s the damper?",
+      "nextLine": "Directional sticker on the indicator\u2019s base points left: SERVICE CORRIDOR / DUCT ACCESS. (pause) First helpful thing in the hall. Suspect.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-034.json",
+      "id": "N_P_ASK_WHO_DECIDED",
+      "priorLine": "ask \"Who decided this?\"",
+      "lineToEdit": "Who decided this?",
+      "nextLine": "The placard cites \u201cSITE SAFETY BASIS \u2014 REV. 6,\u201d then lists revision history that stops mid-line. (pause) The corridor\u2019s position is clear: the decision exists; it is correct; it must be followed.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-034.json",
+      "id": "N_P_SHOW_INTERLOCK",
+      "priorLine": "show \"Show me the interlock condition again.\"",
+      "lineToEdit": "Show me the interlock condition again.",
+      "nextLine": "OPS PERMIT REQUIRES: TRAINING VALID. LOTO CLEAR. VENT DAMPER OPEN.\nNo nuance, no context, no appeal.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-034.json",
+      "id": "N_P_ASK_REQUIREMENT",
+      "priorLine": "ask \"Why is it a requirement?\"",
+      "lineToEdit": "Why is it a requirement?",
+      "nextLine": "The language is defensive and circular\u2014written to survive arguments. (pause) It doesn\u2019t ask for comfort ventilation. (pause) It asks for an OPEN signal it can point to later.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-034.json",
+      "id": "N_P_ASK_START_PERMIT",
+      "priorLine": "ask \"This is a start-permit gate, not comfort ventilation.\"",
+      "lineToEdit": "This is a start-permit gate, not comfort ventilation.",
+      "nextLine": "Yes. It\u2019s not asking for airflow for comfort. (pause) It\u2019s asking for the damper OPEN signal before the ops sequence can arm. (pause) The system isn\u2019t making air. (pause) It\u2019s making a statement it can point to later.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-034.json",
+      "id": "N_P_ASK_FAN_INTERLOCK",
+      "priorLine": "ask \"This is just a fan interlock?\"",
+      "lineToEdit": "This is just a fan interlock?",
+      "nextLine": "It\u2019s presented like that. (pause) But the wording is tighter than comfort logic. (pause) It\u2019s a permit gate. (pause) The OPEN indication is a prerequisite for the sequence to arm at all.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-034.json",
+      "id": "N_P_ASK_UNTIL_OPEN",
+      "priorLine": "(multiple) (ask \"So until it reads OPEN, nothing starts.\") (ask \"So until it reads OPEN, nothing starts.\") (ask \"So until it reads OPEN, nothing starts.\") (ask \"So until it reads OPEN, nothing starts.\")",
+      "lineToEdit": "So until it reads OPEN, nothing starts.",
+      "nextLine": "Correct. Ops start sequence is blocked until the ventilation damper reports OPEN.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-035.json",
+      "id": "CALL_LIAISON_MAIN_2",
+      "priorLine": "Just so I\u2019m clear (pause) you\u2019re using ventilation controls. (pause) Before we say \u201ccontrols\u201d (pause) is it an operational control (pause) or a maintenance control. (pause) We\u2019re tracking dependencies. (pause) Ventilation is not one. (pause) It\u2019s a prerequisite. (pause) Different box.",
+      "lineToEdit": "It needs to be open.",
+      "nextLine": "\u201cNeeds\u201d is a strong word. (pause)\nI\u2019m not disputing airflow\u2019s reality. (pause)\nI\u2019m saying procedurally. (pause)\nWhat is this comparable to? (pause)\n\nIf you set it OPEN (pause)\nI need a basis. (pause)\nSignage. Work order. Checklist line. (pause)\nNot because I doubt you. (pause)\nBecause I doubt future me. (pause)\nWhen I\u2019m asked why I didn\u2019t ask. (pause)",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-035.json",
+      "id": "CALL_LIAISON_AFTER_2",
+      "priorLine": "Just so I\u2019m clear. (pause) You\u2019re interacting with ventilation controls. (pause) Before we call them \u201ccontrols\u201d. (pause) Is it operational. (pause) Or maintenance. (pause) Because we\u2019re tracking dependencies. (pause) Ventilation isn\u2019t one. (pause) It\u2019s a prerequisite. (pause) Different box.",
+      "lineToEdit": "It\u2019s open.",
+      "nextLine": "\u201cOpen\u201d is good. (pause) \u201cOpen with basis\u201d is better. (pause) If you set it OPEN (pause) I need a basis. (pause) Signage. (pause) Work order. (pause) Or a checklist line. (pause) Not because I doubt you\u2014 (pause) I doubt future me (pause) when I\u2019m asked why (pause) I didn\u2019t ask.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-036.json",
+      "id": "CONSOLE_PLAYER_RUNNING",
+      "priorLine": "The main console is powered. (pause) The screen shows load routing and a status banner: CONTINUOUS BASELINE EXPORT. (pause) A handwritten label is taped over a switch: \u201cDO NOT CYCLE (ASK FIRST).\u201d",
+      "lineToEdit": "It\u2019s running.",
+      "nextLine": "It is not \u201crunning.\u201d (pause) Not discretionary operation. (pause) It is in continuous export mode. (pause) The least operable way to say \u201con.\u201d (pause) Legally. (pause) Call it \u201crunning\u201d (pause) and someone asks (pause) why you didn\u2019t shut it down. (pause) On sight.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-036.json",
+      "id": "CONSOLE_ASK_PLAYER",
+      "priorLine": "Ask: Who told you to call it that?",
+      "lineToEdit": "Who told you to call it that?",
+      "nextLine": "Nobody \u201ctold\u201d me. (pause) It\u2019s language drift. (pause) You learn it the first time. (pause) A transcript gets read back to you. (pause) With emphasis.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-036.json",
+      "id": "ALARM_PLAYER_ACTIVE",
+      "priorLine": "The alarm panel is quiet\u2014no horns or strobes. Still, several indicator lamps glow: comforting NORMAL, BYPASS.",
+      "lineToEdit": "Anything active?",
+      "nextLine": "\u201cActive\u201d is a loaded term. (pause)\nThe alarms are armed. (pause)\nSome are suppressed. (pause)\nOne is in \u201cadministrative silence.\u201d (pause)\nWhich means: true without urgency. (pause)\nDon\u2019t quote me.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-036.json",
+      "id": "PRINTER_PLAYER_NONLOCAL",
+      "priorLine": "Top page: ROUTING SUMMARY / EXPORT LEDGER.\nBelow it: NON-LOCAL COMPLIANCE NOTICE \u2014 DO NOT DISCARD.",
+      "lineToEdit": "Non-local.",
+      "nextLine": "That\u2019s probably a template header. (pause) \u201cNon-local\u201d may mean \u201cnot on this subnetwork.\u201d (pause) Not whatever your face is doing. (pause) But also do not discard it. (pause) Put it in the record. (pause) Templates are still discoverable.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-036.json",
+      "id": "BINDER_PLAYER",
+      "priorLine": "The binder is tabbed and cross-referenced. It\u2019s slightly swollen from humidity. (pause) The cover sheet says: SPINDLE SITE \u2014 OPERATOR SHUTDOWN SEQUENCE (OFFICIAL). (pause) A sticky note on top reads: \u201cREVISION CHECKED (I THINK).\u201d",
+      "lineToEdit": "This is the shutdown.",
+      "nextLine": "It is a shutdown. (pause)\nThe official one has a signature block. (pause)\nIt ties your hands. (pause)\nIt protects you later. (pause)\nThis one\u2014page seven is wrong. (pause)\nOr missing. (pause)\nOr replaced with a version meant right. (pause)\n\nPage seven is the control room access authorization. (pause)\nNot physical access\u2014everyone can enter, unfortunately. (pause)\nOperational access. (pause)\nLogging system access. (pause)\nThe part where you become the person. (pause)\nThe part where you did it.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-036.json",
+      "id": "TALK_NEED",
+      "priorLine": "Talk: I need operational controls and logs.",
+      "lineToEdit": "I need operational controls and logs.",
+      "nextLine": "Yes. (pause) Get them without becoming reality\u2019s sole author. (pause) Two paths. (pause) The compliant path. (pause) Find or recreate missing authorization. (pause) The continuity path. (pause) Assert operator continuity on the console. (pause) Let the system accept you. (pause) Because nobody else is here. (pause) To disagree.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-036.json",
+      "id": "CONTINUITY_PLAYER_LINE",
+      "priorLine": "Use: Assert \u201cOperator Continuity\u201d on the main console",
+      "lineToEdit": "Continuity mode.",
+      "nextLine": "For the record: (pause) I did not instruct you to do that. (pause)\nI described it. (pause) Descriptions are not directions. (pause)\nThat distinction has saved one career, once.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-037.json",
+      "id": "N_ASK2",
+      "priorLine": "(Console prompt)\nBaseline is the condition in which readings are legally comparable.\n\u201cComparable\u201d does not mean \u201csimilar.\u201d\nSimilarity is interpretive.",
+      "lineToEdit": "So it\u2019s running.",
+      "nextLine": "(Console prompt)\nIt is not \u201crunning.\u201d\nIt is in continuous operation.\n\u201cRunning\u201d implies discretion.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-037.json",
+      "id": "N_COMMIT3",
+      "priorLine": "(Console prompt)\nBaseline logging: INITIATE.\nOperator acknowledgement required.\nReminder: Acknowledgement is not admission.",
+      "lineToEdit": "Acknowledged.",
+      "nextLine": "The printer engages. Paper feeds with brisk certainty, as if the facility prefers text to electricity.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-038.json",
+      "id": "N_PLAYER_MURMUR",
+      "priorLine": "Four prerequisites are stamped in green ink: Training Gate Cleared. (pause) LOTO Tagged. Vent Damper Open. (pause) There is no stamp for \u201cThis is a good idea.\u201d",
+      "lineToEdit": "Operational verification.",
+      "nextLine": "",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-038.json",
+      "id": "N_LOOK_PLAYER_1",
+      "priorLine": "Step headings: Confirm control authority. Confirm load characteristics. (pause) Execute reflectivity test if indicated. (pause) Someone has underlined \u201cif indicated\u201d hard enough to crease the paper.",
+      "lineToEdit": "Reflectivity test.",
+      "nextLine": "Footnote: \u201cReflectivity is a behavioral descriptor and does not imply optical compliance.\u201d The ink seems resentful.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-038.json",
+      "id": "N_TALK_PLAYER_1",
+      "priorLine": "The console\u2019s desk phone has an extension label: EAC ASSURANCE \u2014 DOCUMENTATION SUPPORT ONLY. (pause) The handset cord is too short, as if built to discourage pacing.",
+      "lineToEdit": "Assurance line.",
+      "nextLine": "Hi\u2014yes. This is Assurance. (pause) Just to be crisp: we don\u2019t authorize operations. (pause) We observe the paperwork around operations.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-038.json",
+      "id": "N_ASK_COMP_PLAYER",
+      "priorLine": "Ask: Why do you need \u201ccomparable\u201d?",
+      "lineToEdit": "Why comparable.",
+      "nextLine": "Auditors don\u2019t audit \u201cunique.\u201d (pause) They audit categories. (pause) If we can\u2019t categorize it (pause) every question becomes original research. (pause) No one here is funded for that. (pause) Not you. (pause) Not me. (pause) Definitely not the municipality. (pause) So we pick the least-wrong cousin (pause) and document deviations. (pause) It\u2019s a kindness. (pause) It\u2019s also self-preservation.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-038.json",
+      "id": "N_COUSIN_PLAYER",
+      "priorLine": "Ask: So what\u2019s your least-wrong cousin?",
+      "lineToEdit": "Least-wrong cousin.",
+      "nextLine": "Substation return-to-service with unusual optical characteristics. (pause) I\u2019m not saying it\u2019s optical. (pause) I\u2019m saying the template exists. (pause) Templates survive discovery. (pause) Don\u2019t say \u201chazard\u201d on open comms. (pause) Say \u201ccharacteristic.\u201d",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-038.json",
+      "id": "N_ASK_OBJ_PLAYER",
+      "priorLine": "Ask: Any objection to me initiating?",
+      "lineToEdit": "Any objection.",
+      "nextLine": "I can\u2019t object. (pause) I can only note. (pause) I will note: initiation creates an obligation. (pause) Complete it\u2014or formally suspend, with justification. (pause) That\u2019s not a threat. (pause) It\u2019s how paperwork breeds. (pause) You\u2019re about to feed it.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-038.json",
+      "id": "N_INITIATE_PLAYER_1",
+      "priorLine": "Fields: Initiator Name. Badge. Time (24h). Scope. (pause) A boxed note reads: \u201cInitiation indicates readiness to document outcomes. It does not indicate predicted safety.\u201d (pause) The box is outlined twice.",
+      "lineToEdit": "Name. Time. Scope.",
+      "nextLine": "",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-040.json",
+      "id": "N_INTERCOM_PLAYER_1",
+      "priorLine": "External Assurance Contractor, Senior Liaison speaking. (pause) I\u2019m here for comparability. (pause) And to ensure we\u2019re not\u2014 (pause) I\u2019m not saying we\u2019re doing anything unusual. (pause) I\u2019m saying if something unusual happens (pause) it needs to resemble an existing appendix.",
+      "lineToEdit": "You monitoring this test?",
+      "nextLine": "Monitoring is a strong word. (pause)\nI\u2019m present in the documentation sense. (pause)\nOperationally you\u2019re the only one with hands. (pause)\nIn the room. (pause)\nJust for clarity\u2014 not my preference.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-040.json",
+      "id": "N_INTERCOM_ACCEPT_2",
+      "priorLine": "Acceptable is dull matte and consistent scatter (pause) and a sentence we can reuse next quarter. (pause) The ideal result is nothing happens (pause) in a way that requires a new noun. (pause) If it does we don\u2019t panic (pause) we just need to know what it\u2019s like.",
+      "lineToEdit": "If it isn\u2019t comparable?",
+      "nextLine": "Then we will make it comparable. (pause)\nThrough language.\nPreferably language already printed.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-040.json",
+      "id": "N_INTERCOM_GLINT_2",
+      "priorLine": "It\u2019s a legacy term. (pause)\nIt flags a transient surface condition. (pause)\nIt looks reflective without being reflection. (pause)\nThat matters because \u201creflection\u201d implies a mirror. (pause)\nMirrors imply intent. (pause)\nIntent implies\u2014 look. (pause)\nI\u2019m not litigating physics. (pause)\nI\u2019m protecting you from a forever word choice.",
+      "lineToEdit": "So if it shines, I write it down.",
+      "nextLine": "You write it down exactly, yes. (pause)\nAnd you don\u2019t add adjectives. (pause)\nThat invite curiosity. (pause)\n\u201cUnexpected reflective behavior\u201d (pause)\nis the approved container. (pause)\nContainers are safety equipment.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-040.json",
+      "id": "N_INTERCOM_PERSUADE_1",
+      "priorLine": "persuade: [OLEA] Classify it as Unexpected Reflective Behavior and move on.",
+      "lineToEdit": "Using OLEA wording. Unexpected reflective behavior. No expansion.",
+      "nextLine": "Thank you. (pause)\nThat phrasing is\u2014 not elegant. (pause)\nBut it\u2019s survivable. (pause)\nKeep it inside the approved term. (pause)\nIt stays in Operations. (pause)\nGive it a fresh description. (pause)\nIt becomes Research. (pause)\nAnd Research becomes a hearing.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-040.json",
+      "id": "N_INTERCOM_PERSUADE_3",
+      "priorLine": "Thank you. (pause)\nThat phrasing is\u2014 not elegant. (pause)\nBut it\u2019s survivable. (pause)\nKeep it inside the approved term. (pause)\nIt stays in Operations. (pause)\nGive it a fresh description. (pause)\nIt becomes Research. (pause)\nAnd Research becomes a hearing.",
+      "lineToEdit": "I\u2019m closing a site, not opening a category.",
+      "nextLine": "Exactly. (pause)\nWe want closure, not novelty. (pause)\nProceed when ready. (pause)\nI will be\u2014 documentation-present.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-040.json",
+      "id": "N_INTERCOM_POST_2",
+      "priorLine": "Tell me you did not say \u201cit vanished.\u201d (pause) Because \u201cvanished\u201d is not comparable (pause) to anything on our matrix.",
+      "lineToEdit": "It\u2019s gone.",
+      "nextLine": "\u201cGone\u201d is better. (pause)\n\u201cGone\u201d could mean mislaid. (pause)\nMislaid is human-scale. (pause)\nHuman-scale is insurable.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-040.json",
+      "id": "N_INTERCOM_WRITE_2",
+      "priorLine": "You write: \u201cObserved transient alignment.\u201d (pause)\n\u201cSurface response exhibited unexpected reflective behavior.\u201d (pause)\nThen you stop. (pause)\nNo metaphors. (pause)\nNo geometry. (pause)\nNo\u2014 no feelings.",
+      "lineToEdit": "And the missing puck.",
+      "nextLine": "\u201cItem not recovered.\u201d (pause)\nThat phrase keeps it in Operations. (pause)\n\u201cNot recovered\u201d implies a later recovery. (pause)\nSo we never lost control. (pause)\nControl is the product here.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-040.json",
+      "id": "N_INTERCOM_SHOW_1",
+      "priorLine": "show: Misrouted return label.",
+      "lineToEdit": "Return tray printed a label. Says \u201creturned.\u201d",
+      "nextLine": "Oh. (pause)\nThat\u2019s\u2014 that\u2019s excellent, actually. (pause)\nBecause it\u2019s terrible in a familiar way. (pause)\nMisrouting is comparable. (pause)\nMisrouting has forms. (pause)\nWe can file misrouting till sun burns out.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-040.json",
+      "id": "N_INTERCOM_SHOW_3",
+      "priorLine": "Oh. (pause)\nThat\u2019s\u2014 that\u2019s excellent, actually. (pause)\nBecause it\u2019s terrible in a familiar way. (pause)\nMisrouting is comparable. (pause)\nMisrouting has forms. (pause)\nWe can file misrouting till sun burns out.",
+      "lineToEdit": "So I attach it.",
+      "nextLine": "Yes. (pause) Attach it. (pause)\nAnd do not\u2014 do not speculate (pause)\nabout where it routed. (pause)\n\u201cOverflow\u201d is a word auditors recognize. (pause)\nThey don\u2019t ask what it\u2019s an overflow of (pause)\nbecause they\u2019d have to admit (pause)\nthey don\u2019t know.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-042.json",
+      "id": "N_ACK_PLAYER",
+      "priorLine": "(multiple) (talk: Acknowledge demand event.) (talk: Acknowledge demand event.)",
+      "lineToEdit": "Acknowledging demand event. Initiating load-shed response.",
+      "nextLine": "Acknowledged at 14:17:22. (pause) Provide your action record ID. (pause) Confirm you will maintain stability. (pause) I need that stated, not implied.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-042.json",
+      "id": "N_AUTH_PLAYER",
+      "priorLine": "persuade: Use standardized wording and record format (authorized signatory).",
+      "lineToEdit": "Acknowledged demand event. Initiating load-shed response under standard ops phrasing. Record ID pending printer header; stability maintained per interlock limits.",
+      "nextLine": "Accepted. Timestamp 14:17:26. (pause) Send the record ID when available. (pause) When you act, report shed amount. (pause) Report start time.",
+      "revisedLine": "Acknowledged demand event. (pause) Initiating load-shed response. (pause) Using standard ops phrasing. (pause) Record ID pending printer header. (pause) Stability maintained per interlock limits.",
+      "changeSummary": "Split into shorter beats with pauses; preserved meaning and ops tone; avoided commas."
+    },
+    {
+      "scene": "SCN_SCN-042.json",
+      "id": "N_MAINTAIN_PLAYER",
+      "priorLine": "talk: Will maintain stability. Stand by for record ID.",
+      "lineToEdit": "Will maintain stability. Stand by for record ID.",
+      "nextLine": "Good. (pause) Timestamp 14:17:31. (pause) Constraint: do not introduce oscillatory loading. (pause) If you don\u2019t know what\u2019s oscillatory, (pause) assume it is. (pause) Call back with shed amount and start time.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-042.json",
+      "id": "N_DEFINE_PLAYER",
+      "priorLine": "ask: Define \u201cmaintain stability\u201d for this event.",
+      "lineToEdit": "Define \u201cmaintain stability.\u201d",
+      "nextLine": "Stability means: no problem I must name. (pause)\nVoltage stays within band. (pause)\nFrequency support stays unchanged. (pause)\nNo step-load chatter. (pause)\nNo cycling. (pause)\nAnd\u2014because it comes up\u2014no undocumented behavior. (pause)\nThat\u2019s not technical. (pause)\nThat\u2019s legal.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-042.json",
+      "id": "N_UNDERSTOOD_PLAYER",
+      "priorLine": "talk: Understood. Proceeding. Record ID to follow.",
+      "lineToEdit": "Understood. Proceeding. Record ID to follow.",
+      "nextLine": "Timestamp 14:17:58. Accepted. (pause) Call when the first shed is complete. (pause) Don\u2019t wait for perfection.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-042.json",
+      "id": "N_TARGET_PLAYER",
+      "priorLine": "ask: Target MW and duration?",
+      "lineToEdit": "Target MW. Duration.",
+      "nextLine": "Target: twelve megawatts reduction at the node. (pause) Duration unknown. Minimum twenty minutes. (pause) Reassess at the half-hour mark. (pause) Do not shed anything that causes restart surge. (pause) If it auto-recovers it is not a shed.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-042.json",
+      "id": "N_COMMIT_DIRECT_PLAYER",
+      "priorLine": "talk: Acknowledged. Initiating response. Will report shed and time.",
+      "lineToEdit": "Acknowledged. Initiating response. Will report shed and time.",
+      "nextLine": "Timestamp 14:18:06. Logged.(pause) I still need your action record ID.(pause) If you can\u2019t generate one,(pause) give me the printer header serial.(pause) Something attributable.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-042.json",
+      "id": "N_DETAILS_PLAYER",
+      "priorLine": "ask: Details. Target MW? Duration?",
+      "lineToEdit": "Details. Target MW. Duration.",
+      "nextLine": "Good. (pause) Timestamp 14:17:12. (pause) Target: twelve-megawatt reduction at the node. (pause) Duration unknown. (pause) Minimum twenty minutes. (pause) Reassess at the half-hour mark. (pause) Do not shed anything. (pause) Nothing that causes restart surge. (pause) If it auto-recovers, it's not a shed.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-042.json",
+      "id": "N_DETAILS_ACK_PLAYER",
+      "priorLine": "talk: Acknowledged. Initiating response. Will report shed and time.",
+      "lineToEdit": "Acknowledged. Initiating response. Will report shed and time.",
+      "nextLine": "Timestamp 14:17:26. (pause) Logged. (pause) I still need your action record ID. (pause) If you can\u2019t generate one (pause) give me the printer header serial. (pause) Something attributable.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-042.json",
+      "id": "N_STAGED_PLAYER",
+      "priorLine": "ask: Do you want staged or single-step?",
+      "lineToEdit": "Staged or single-step?",
+      "nextLine": "Prefer staged if it adds no chatter. (pause) Avoid cycling loads. (pause) First action: clean, attributable. (pause) Reassess at the half-hour mark.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-042.json",
+      "id": "N_STAGED_COMMIT_PLAYER",
+      "priorLine": "talk: Acknowledged. Initiating staged shed. Will report first step time.",
+      "lineToEdit": "Acknowledged. Initiating staged shed. Will report first step time.",
+      "nextLine": "Timestamp 14:18:14. Logged. (pause) Proceed. (pause) Call when step one\u2019s complete.",
+      "revisedLine": "Acknowledged. Initiating staged shed. Will report step-one time.",
+      "changeSummary": "Reduced beat word count by replacing \u201cfirst step\u201d with \u201cstep-one.\u201d"
+    },
+    {
+      "scene": "SCN_SCN-042.json",
+      "id": "N_NOTICE_PLAYER",
+      "priorLine": "(multiple) (ask: Give me the event/notice number first.) (ask: Send notice number / event ID.)",
+      "lineToEdit": "Event number first.",
+      "nextLine": "It\u2019s Demand Event UTIL-DS-4419. (pause) Timestamp 14:17:15. (pause) For clarity: directive under the stability clause. (pause) Not a suggestion. (pause) Confirm you are acting.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-042.json",
+      "id": "N_CONF_PLAYER",
+      "priorLine": "(multiple) (talk: Confirmed. Acting under UTIL-DS-4419.) (talk: Confirmed. Acting under UTIL-DS-4419.)",
+      "lineToEdit": "Confirmed. Acting under UTIL-DS-4419.",
+      "nextLine": "Timestamp 14:17:24. Logged. (pause) Provide the record ID when available. (pause) I\u2019ll hold the line open two minutes. (pause) After that, call back\u2014don\u2019t just disappear.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-042.json",
+      "id": "N_BARGAIN_PLAYER",
+      "priorLine": "bargain: Confirm in writing and I\u2019ll prioritize shedding.",
+      "lineToEdit": "Confirm in writing and I\u2019ll prioritize shedding.",
+      "nextLine": "It\u2019s in writing. (pause) Recorded and timestamped; mirrored to the daily log. (pause) Email? You\u2019ll get it (pause) when the system feels like it. (pause) Confirm action now.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-042.json",
+      "id": "N_READBACK_PLAYER",
+      "priorLine": "show: Read back the printed event ID and header serial.",
+      "lineToEdit": "Event UTIL-DS-4419. Printer header serial CR-LP-0031.",
+      "nextLine": "Received. Timestamp 14:17:28. (pause) That\u2019s attributable. Proceed with shed. (pause) Report first action time.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-042.json",
+      "id": "N_PRINT_ACK_PLAYER",
+      "priorLine": "talk: Acknowledged. Initiating load-shed response.",
+      "lineToEdit": "Acknowledged. Initiating load-shed response.",
+      "nextLine": "Logged. Timestamp 14:17:33. (pause) Confirm you will maintain stability. (pause) And send a record ID when available.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-043.json",
+      "id": "N_AUTH_PLAYER",
+      "priorLine": "persuade: Use OLEA standard wording (authorized signatory).",
+      "lineToEdit": "Acknowledging demand event. Initiating load-shed response. Stability maintained per interlocks. Action record ID pending console header.",
+      "nextLine": "Accepted. (pause) Timestamp 14:22:11. (pause) Provide the record ID when available. (pause) Report shed start time when first action occurs.",
+      "revisedLine": "Acknowledging demand event. (pause) Initiating load-shed response. (pause) Stability maintained per interlocks. (pause) Action record ID pending console header.",
+      "changeSummary": "Inserted pauses between sentences to keep each beat under 8 words without changing meaning; no commas added."
+    },
+    {
+      "scene": "SCN_SCN-043.json",
+      "id": "N_THREAT_PASS_PLAYER",
+      "priorLine": "",
+      "lineToEdit": "Under the stability clause, I need escalation handling and a logged directive. Confirm you want the shed executed now, attributable and stable.",
+      "nextLine": "Noted. Timestamp 14:22:14. (pause) Directive stands. Execute shed now. (pause) Avoid cycling and step-load chatter. (pause) Provide record ID. (pause) Provide shed start time.",
+      "revisedLine": "Under the stability clause I need escalation handling. (pause) And a logged directive. (pause) Confirm you want the shed executed now. (pause) Attributable and stable.",
+      "changeSummary": "Split into short beats with (pause) and removed commas to meet limits, without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-043.json",
+      "id": "N_THREAT_FAIL_PLAYER",
+      "priorLine": "",
+      "lineToEdit": "Escalate this. I\u2019m not acting on an undocumented directive.",
+      "nextLine": "Negative. (pause) Timestamp 14:22:16. (pause) Directive is documented via recording and log mirror. (pause) Confirm action now. (pause) Do not delay shed for process language.",
+      "revisedLine": "Escalate this. I\u2019m not acting on undocumented orders.",
+      "changeSummary": "Reduced word count by replacing \u201can undocumented directive\u201d with \u201cundocumented orders\u201d to meet the max beat words limit without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-043.json",
+      "id": "N_MAP_ASK_PLAYER",
+      "priorLine": "ask: How much can I shed without touching \u201cverification support\u201d?",
+      "lineToEdit": "How much shed without touching verification support?",
+      "nextLine": "Three shed presets highlight. None meet the target alone.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-043.json",
+      "id": "N_DEFINE_PLAYER",
+      "priorLine": "ask: What does \u201cmaintain stability\u201d mean in this console?",
+      "lineToEdit": "Define \u201cmaintain stability\u201d in this console.",
+      "nextLine": "Stability means your node doesn't create a problem. (pause) I don't have to name. (pause) Voltage in band. (pause) No step-load chatter. (pause) No cycling. (pause) And\u2014because it comes up\u2014no undocumented behavior. (pause) That's not technical. (pause) That's legal.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-043.json",
+      "id": "N_STAGED_CONFIRM_PLAYER",
+      "priorLine": "talk: Confirmed. Initiating staged shed.",
+      "lineToEdit": "Confirmed. Initiating staged shed.",
+      "nextLine": "Timestamp 14:22:31. Logged. (pause) Provide action record ID when available. (pause) Report first step time when it occurs.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-043.json",
+      "id": "N_ALIGNNAME_PLAYER",
+      "priorLine": "ask: Why does it say \u201calignment-sequence\u201d?",
+      "lineToEdit": "Why \u201calignment-sequence\u201d?",
+      "nextLine": "Because Legal didn\u2019t want anyone describing it. (pause) In detail. (pause) Operationally: it balances load. (pause) Without chatter, it coordinates the frames. (pause) That\u2019s all we say.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-043.json",
+      "id": "N_EXEC_PLAYER",
+      "priorLine": "use: Execute alignment-sequence load routing.",
+      "lineToEdit": "Execute.",
+      "nextLine": "The console asks for final confirmation in all caps, like volume is authority. (pause)\nACKNOWLEDGE: ROUTING WILL INITIATE AUTOMATED ALIGNMENT CONTROL. (pause)\nThe confirm button is labeled: I ACKNOWLEDGE.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-043.json",
+      "id": "N_POST_ACK_PLAYER",
+      "priorLine": "Say it clean. Then watch the numbers.",
+      "lineToEdit": "Acting. Stability maintained per interlocks.",
+      "nextLine": "The console logs a new line item: ALIGNMENT CONTROL: ARMED. ROUTING: IN PROGRESS. (pause) In the corner, the small chamber camera feed stutters.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-043.json",
+      "id": "N_READBACK_PLAYER",
+      "priorLine": "show: Read back the header serial to Dispatch.",
+      "lineToEdit": "Action header serial CR-CON-0194.",
+      "nextLine": "Received. Timestamp 14:22:19. (pause) Proceed. (pause) Report shed start time. (pause) When the first action occurs.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-044.json",
+      "id": "N_ATTACHED_ASK_01",
+      "priorLine": "ask: Define \u201cattached mass.\u201d",
+      "lineToEdit": "Attached to what.",
+      "nextLine": "Attached mass is mass that remains associated with the witness during surface address.\nThis is not an allegation of adhesion. It is a tracking term.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-044.json",
+      "id": "N_DECLAIM_ASK_01",
+      "priorLine": "ask: Declaimed how.",
+      "lineToEdit": "How.",
+      "nextLine": "Declaiming requires a signed exclusion list and a physical placement boundary.\nThe placement boundary must be marked with tape of an approved color.\nThe approved color is listed in Appendix D, which is currently unavailable on this terminal.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-044.json",
+      "id": "N_APPENDIXD_ASK_01",
+      "priorLine": "ask: Appendix D is unavailable?",
+      "lineToEdit": "Why is it unavailable.",
+      "nextLine": "Appendix D was migrated to the non-local compliance library.\nAccess requires a network token.\nThis facility does not maintain tokens, as a cost-saving measure.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-044.json",
+      "id": "N_ASSOC_ASK_01",
+      "priorLine": "ask: Why am I \u201cassociated.\u201d",
+      "lineToEdit": "Associated how.",
+      "nextLine": "You have been observed in proximity during reflective behavior documentation.\nAssociation is established by witness requirement, not by preference.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-044.json",
+      "id": "N_RECOMMEND_ASK_01",
+      "priorLine": "ask: Recommend based on what.",
+      "lineToEdit": "Based on what.",
+      "nextLine": "Based on historical recordkeeping.\nMissing witnesses create reconciliation gaps.\nReconciliation gaps become interviews.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-044.json",
+      "id": "N_OVERFLOW_ASK_01",
+      "priorLine": "ask: Overflow intake for what?",
+      "lineToEdit": "Intake for what.",
+      "nextLine": "Overflow intake is an administrative capacity.\nWhen primary handling is saturated, intake receives and sorts.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-044.json",
+      "id": "N_PRIMARY_ASK_01",
+      "priorLine": "ask: Primary handling where.",
+      "lineToEdit": "Where is primary.",
+      "nextLine": "Primary handling is not on-site.\nOn-site language will not assist you.\nPlease select a local action.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-044.json",
+      "id": "N_SATURATED_ASK_01",
+      "priorLine": "ask: Saturated with what.",
+      "lineToEdit": "With what.",
+      "nextLine": "With routed items pending disposition.\nDisposition categories include: accepted, rejected, held, and misfiled.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-044.json",
+      "id": "N_REVIEW_ASK_01",
+      "priorLine": "ask: Review by who.",
+      "lineToEdit": "By who.",
+      "nextLine": "By the assurance function.\nThe assurance function is external.\nExternal functions prefer comparability.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-044.json",
+      "id": "N_SHUTDOWN_REQ_01",
+      "priorLine": "persuade: Flag this as shutdown verification, not routing.",
+      "lineToEdit": "Classify as shutdown verification.",
+      "nextLine": "Request logged: terminology preference.\nClassification remains: routing.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-044.json",
+      "id": "N_RECORD_ASK_01",
+      "priorLine": "ask: Record it where.",
+      "lineToEdit": "Where.",
+      "nextLine": "In the post-routing acknowledgment.\nAcknowledgment is mandatory.\nEmotional content is optional but appreciated for completeness.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-044.json",
+      "id": "N_UNAUTHORIZED_ASK_01",
+      "priorLine": "ask: Unauthorized terminology?",
+      "lineToEdit": "Define unauthorized.",
+      "nextLine": "Terms not present in the facility\u2019s approved vocabulary list.\nThe vocabulary list is maintained off-site.\nOff-site maintenance is more reliable, per policy.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-044.json",
+      "id": "N_PROCEED_01",
+      "priorLine": "(multiple) (talk: Proceed.) (talk: Proceed.) (talk: Proceed.) (talk: Proceed.) (talk: Proceed.) (talk: Proceed.) (talk: Proceed.) (talk: Proceed.) (talk: Proceed.) (talk: Proceed.) (talk: Proceed.) (talk: Proceed.) (talk: Proceed.) (talk: Proceed.) (talk: Proceed.) (talk: Proceed.)",
+      "lineToEdit": "Proceed.",
+      "nextLine": "Proceeding.\nPlease remain calm for record consistency.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-045.json",
+      "id": "N_COACH_INTERCEPT_2",
+      "priorLine": "Don\u2019t do that. (pause) It works, and then staff are on you. (pause) And I\u2019ve got nothing I can file.",
+      "lineToEdit": "I need access.",
+      "nextLine": "You need a token. (pause)\n\u201cAccess\u201d just gets people hovering at the door (pause) and slows everything down.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-045.json",
+      "id": "N_TOKEN_FOR_WHAT_1",
+      "priorLine": "ask: Token for what?",
+      "lineToEdit": "Token for what?",
+      "nextLine": "For anything out here waving the \u201csafety\u201d flag. (pause)\nDoors. (pause)\nKiosks. (pause)\nWindow assignment. (pause)\nWhat you do gets tagged \u201cinquiry\u201d or \u201cinterference.\u201d (pause)\nUntil you\u2019ve got paper you\u2019re just extra. (pause)\nExtra in the line. (pause)\nThat\u2019s how the intake software got bought.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-045.json",
+      "id": "N_WHATS_TER_1",
+      "priorLine": "ask: What\u2019s a TER?",
+      "lineToEdit": "What\u2019s a TER?",
+      "nextLine": "Transfer Entitlement Receipt. (pause)\nYeah. The words are backwards. (pause)\nLegal did that. Don\u2019t ask me. (pause)\nIt\u2019s the slip. (pause)\nIt lets the system count you. (pause)\nAccounted-for mass. (pause)\nNot a random narrative.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-045.json",
+      "id": "N_WHATS_TER_3",
+      "priorLine": "Transfer Entitlement Receipt. (pause)\nYeah. The words are backwards. (pause)\nLegal did that. Don\u2019t ask me. (pause)\nIt\u2019s the slip. (pause)\nIt lets the system count you. (pause)\nAccounted-for mass. (pause)\nNot a random narrative.",
+      "lineToEdit": "So I need to obtain a TER.",
+      "nextLine": "You need a token (pause) that resolves to a TER (pause) when the door pings it. (pause)\nSay \u201caccess\u201d (pause) and people start looking around (pause) for who\u2019s responsible.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-045.json",
+      "id": "N_SHOW_OLEA_1",
+      "priorLine": "(multiple) (show: Show OLEA credentials.) (show: Show OLEA credentials.) (show: Show OLEA credentials.)",
+      "lineToEdit": "OLEA Field Systems. Closure engineer.",
+      "nextLine": "Okay. OLEA Field Systems. (pause) Closure engineer. (pause) That helps me. (pause)\nThe kiosk still won\u2019t care. (pause) It wants an artifact. (pause)\nBe right all day. (pause) If you\u2019re not in the file, (pause) the door stays shut.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-045.json",
+      "id": "N_USE_KIOSK_2",
+      "priorLine": "The kiosk wakes halfway, like it\u2019s doing you a favor.\nA prompt: \u201cTOKEN REQUIRED FOR PERSONHOOD.\u201d",
+      "lineToEdit": "That\u2019s a sentence.",
+      "nextLine": "It\u2019s a shortcut. (pause) If it spelled it all out, (pause) you\u2019d start negotiating with it\u2014 (pause) and then I\u2019m stuck logging (pause) a \u201cverbal incident.\u201d",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-045.json",
+      "id": "N_GET_TOKEN_INFO_1",
+      "priorLine": "(multiple) (ask: Where do I get a token?) (ask: Where do I get a token?) (ask: Where do I get the TER?) (ask: Where do I get the TER?) (ask: So how do I become valid input?) (ask: Where do I get the token?)",
+      "lineToEdit": "Where do I get it?",
+      "nextLine": "Intake Hall. (pause) Windows 0/3/5/7/9. (pause)\nPick the one. (pause)\nLooks least hungry. (pause)\nFor your life story. (pause)\nGive them an incident category. (pause)\nThe system will accept. (pause)\nThey spit out a token. (pause)\nThat\u2019s what the doors listen to.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-045.json",
+      "id": "N_GET_TOKEN_INFO_3",
+      "priorLine": "Intake Hall. (pause) Windows 0/3/5/7/9. (pause)\nPick the one. (pause)\nLooks least hungry. (pause)\nFor your life story. (pause)\nGive them an incident category. (pause)\nThe system will accept. (pause)\nThey spit out a token. (pause)\nThat\u2019s what the doors listen to.",
+      "lineToEdit": "And if I file myself?",
+      "nextLine": "Intake can\u2019t file a person. (pause)\nNot listed in any jurisdiction. (pause)\nThey can file an object. (pause)\nWith a barcode. (pause)\nAnd an incident category. (pause)\nSo you attach yourself. (pause)\nTo the object. (pause)\nYou\u2019re\u2014politely\u2014\u201cassociated mass.\u201d (pause)\nThey won\u2019t call it dehumanizing. (pause)\nThey\u2019ll call it efficient. (pause)\nOn paper.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-046.json",
+      "id": "N_ASKM_P1",
+      "priorLine": "Ask: What is \u201cunallocated mass\u201d?",
+      "lineToEdit": "Unallocated mass?",
+      "nextLine": "UNALLOCATED MASS: mass with no confirmed custody endpoint.\nNot \u201cmissing.\u201d Missing implies a search obligation. This is a routing condition.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-046.json",
+      "id": "N_ASKA_P1",
+      "priorLine": "Ask: Why does it think it never arrived?",
+      "lineToEdit": "Why does it think it didn\u2019t arrive?",
+      "nextLine": "Because you are presenting a RETURN LABEL.\nReturns require an original INTAKE EVENT.\nNo intake event is recorded for this item at this facility.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-046.json",
+      "id": "N_PERS_P1",
+      "priorLine": "Persuade: Manual override. I\u2019m closing the site.",
+      "lineToEdit": "Manual override. I\u2019m OLEA. I\u2019m closing the site.",
+      "nextLine": "Acknowledged: OLEA-associated presence.\nClosure activities are categorized as \u201chigh sensitivity\u201d and \u201clow flexibility.\u201d",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-046.json",
+      "id": "N_USE_P1",
+      "priorLine": "Use: Scan the return label.",
+      "lineToEdit": "Scan it.",
+      "nextLine": "You pass the Misrouted Canister Return Label under the scanner.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-048.json",
+      "id": "N_PRESENT_SLIP_1",
+      "priorLine": "talk: \u201cHere.\u201d",
+      "lineToEdit": "Here.",
+      "nextLine": "Thanks. (pause)\nIt's paper. (pause)\nIt puts you down: unresolved mass. (pause)\nKeeps blame tidy, in normal sense. (pause)\nNow: category.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-048.json",
+      "id": "N_CATS_1",
+      "priorLine": "ask: \u201cWhat categories are accepted?\u201d",
+      "lineToEdit": "What categories are accepted?",
+      "nextLine": "Anything that doesn't kick you into review. (pause)\nDon't make me argue it. (pause)\n\"Misrouted equipment transfer\" usually slides through. (pause)\n\"Nonhazardous backfeed residue\" is on the sheet. (pause)\nRight now, wording's still moving. (pause)\n\"Unclaimed attachment\" is there. (pause)\nIt brings questions. (pause)\nQuestions become incidents.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-048.json",
+      "id": "N_PROPERTY_1",
+      "priorLine": "ask: \u201cCan I register property first?\u201d",
+      "lineToEdit": "Can I register property first?",
+      "nextLine": "Can't register property (pause)\nwithout a claimant on file. (pause)\nRight now (pause)\nyou're an accounting condition (pause)\nwith shoes. (pause)\nIntake is how the building lets you (pause)\nbe something fileable (pause)\nin the normal sense.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-048.json",
+      "id": "N_OLEA_1",
+      "priorLine": "show: \u201cOLEA credentials.\u201d",
+      "lineToEdit": "OLEA Field Systems. Closure engineer.",
+      "nextLine": "OLEA. Sure. (pause)\nStill just context. (pause)\nI can't scan it. (pause)\nYou want recognition? (pause)\nGet filed as recordable mass first. (pause)\nAfter that, maybe another window cares. (pause)\nIn the normal sense.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-048.json",
+      "id": "N_BARGAIN_1",
+      "priorLine": "bargain: \u201cI\u2019ll keep it short. I need a receipt.\u201d",
+      "lineToEdit": "I\u2019ll keep it short. I need a receipt.",
+      "nextLine": "Good. Less story.\nReceipt comes after filed.\nCategory.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-048.json",
+      "id": "N_PROCEED_1",
+      "priorLine": "talk: \u201cProceed.\u201d",
+      "lineToEdit": "Proceed.",
+      "nextLine": "Then we go in sequence\u0014in the normal sense.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-048.json",
+      "id": "N_NEED_OBJECT_1",
+      "priorLine": "ask: \u201cSo I need an object.\u201d",
+      "lineToEdit": "So I need an object.",
+      "nextLine": "You need something the system can read. (pause)\nBarcodes. Serials. A category. (pause)\nBelief is for Orientation. (pause)\nThis is Intake. Normal sense.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-048.json",
+      "id": "N_PICK_WRONG_1",
+      "priorLine": "ask: \u201cWhat happens if I pick wrong?\u201d",
+      "lineToEdit": "What happens if I pick wrong?",
+      "nextLine": "Pick wrong. (pause) You get bounced. (pause)\nWorst case. (pause) You sit in review. (pause)\nReview drags. (pause)\nPick something the building knows how to forget.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-048.json",
+      "id": "N_TOOLBAG_1",
+      "priorLine": "talk: \u201cRegister my toolbag. I\u2019m attached accessory mass.\u201d",
+      "lineToEdit": "Register my toolbag. I\u2019m attached accessory mass.",
+      "nextLine": "Toolbag. What are we calling it?",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-048.json",
+      "id": "N_TOOLBAG_3",
+      "priorLine": "Toolbag. What are we calling it?",
+      "lineToEdit": "Engineering service kit. Serialized.",
+      "nextLine": "Good. (pause)\nSerial means I can park it somewhere. (pause)\nI\u2019ll note \u201cassociated mass\u201d with no description. (pause)\nThat wording keeps both of us covered\u2014normal sense.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-048.json",
+      "id": "N_RESIDUE_1",
+      "priorLine": "talk: \u201cFile me as backfeed residue. Persistent, nonhazardous.\u201d",
+      "lineToEdit": "File me as backfeed residue. Persistent, nonhazardous.",
+      "nextLine": "\u2018Residue\u2019 sounds like a process. (pause) I\u2019m not asking about that. (pause) Just checking the word, normal sense. (pause) \u2018Persistent\u2019 is fine. (pause) \u2018Nonhazardous\u2019 is fine.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-048.json",
+      "id": "N_THIS_WEEK_1",
+      "priorLine": "ask: \u201cWhat\u2019s acceptable this week?\u201d",
+      "lineToEdit": "What\u2019s acceptable this week?",
+      "nextLine": "We don't have a \"this week\" box. (pause)\nYeah. Categories drift. (pause)\nBulletins come down. (pause)\nFor now: \"misrouted equipment transfer.\" (pause)\nNeed attachment language? (pause)\n\"associated mass (do not describe).\" (pause)\nSkip the adjectives, normal sense.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-050.json",
+      "id": "N02_PLAYER_NEED",
+      "priorLine": "Window Five acknowledges presence.\nDo not state your destination. That creates a record we can\u2019t support.",
+      "lineToEdit": "Need a glove tag.",
+      "nextLine": "Glove tags are not \u201cneeded.\u201d\nThey are issued to reduce the number of hands that become\u2014 temporarily uncountable.\nWhich is a safety category. Not an incident category. We\u2019re not doing incidents today.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-054.json",
+      "id": "PLAYER_USE_TERMINAL",
+      "priorLine": "No browsing. Pull something? State the proper heading.",
+      "lineToEdit": "Use terminal.",
+      "nextLine": "You scan your routing barcode. The reader chirps like it resents you for being scannable.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-056.json",
+      "id": "N02_MAIN_MENU",
+      "priorLine": "(multiple) (Next\u2014step up.) (The clerk\u2019s pen is already poised, as if denial is a checkbox they practice.) (leave: Back off and reassess.) (Call it that if you want. (pause)\nIf it\u2019s a service you\u2019d request it. (pause)\nWhat happens here is allocation. (pause)\nAllocation gets defended. (pause)\nThat\u2019s how I keep my job.) (It just means: you\u2019re holding an asset. (pause) The file reads \u201ccustody\u201d not \u201ctheft.\u201d (pause) I\u2019m not calling you anything. (pause) That\u2019s the category.) (The clerk taps the glass twice, as if the rule is physically stored in it.) (The clerk\u2019s voice stays level; their knuckles whiten on the pen.) (Don\u2019t put that on my desk. (pause)\nIf the site stays open it lands there. (pause)\nI hold claims here. (pause)\nYou assign me outcomes through the cage. (pause)\nIt reads as coercion in the minutes.) (\u201cClean\u201d doesn\u2019t tell me what to stamp. (pause)\nUsually it\u2019s the lead-in to \u201ccan you just\u2014\u201d. (pause)\nRun it through the custody chain. (pause)\nLet it survive review. (pause)\nThat\u2019s all I\u2019m here for.) (Standing, noted. (pause)\nStill doesn\u2019t put an asset on the tray. (pause)\nIf I kick a request upstairs (pause)\nmy name ends up on a discretionary entry. (pause)\nThat turns into precedent. (pause)\nBring a claim. (pause)\nA transfer. (pause)\nOr a recovery. (pause)\nThen I can record it clean.) (Declarations don\u2019t move anything here. (pause) Show standing in the chain. (pause) Or I can\u2019t route it up. (pause) Put a claimable asset on the counter. (pause) Or don\u2019t.)",
+      "lineToEdit": "At the caged scheduling window\u2026",
+      "nextLine": "",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-057.json",
+      "id": "N02_MAIN_BASE",
+      "priorLine": "(multiple) (Next\u2014come on.) (talk: Return to the counter options.) (talk: Return to the counter options.) (Then I deny it\u2014clean and simple. (pause) That denial won\u2019t clear you. (pause) It drags my name into your problem. (pause) I\u2019m not taking custody of that.) (talk: Return to the counter options.) (talk: Return to the counter options.) (talk: Return to the counter options.) (talk: Return to the counter options.) (talk: Return to the counter options.) (Standing noted. (pause) Still doesn\u2019t put an asset here. (pause) I escalate a request. (pause) It becomes a discretionary record. (pause) My name is on it. (pause) Then I own the precedent. (pause) Bring a claim. (pause) Or a transfer. (pause) Or a recovery. (pause) Then I can record without inventing.) (Declarations don\u2019t run this window. (pause) Show standing in-chain. (pause) Or I can\u2019t route anything up. (pause) Present a claimable asset. (pause) Or don\u2019t.)",
+      "lineToEdit": "At the scheduling counter\u2026",
+      "nextLine": "",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-057.json",
+      "id": "N10_PLAYER_NEXT",
+      "priorLine": "talk: Next.",
+      "lineToEdit": "Next.",
+      "nextLine": "Good. (pause) You\u2019re actually here. (pause) Keep the word \"slot\" out of it (pause) at the glass. (pause) You say it. (pause) I deny it. (pause) Then I have to write it. (pause) Once it\u2019s written (pause) it\u2019s a narrative. (pause) Narratives get audited like injuries.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-057.json",
+      "id": "N14_PLAYER_RECOVER_FROM",
+      "priorLine": "ask: Recover from what?",
+      "lineToEdit": "Recover from what?",
+      "nextLine": "From absence. (pause) Just the category. (pause) An unclaimed slot sits as abandoned property. (pause) Until somebody makes it legible again.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-057.json",
+      "id": "N18_PLAYER_REQUEST_ANYWAY",
+      "priorLine": "ask: And if I request anyway?",
+      "lineToEdit": "If I request anyway?",
+      "nextLine": "Then I deny it\u2014clean and simple. (pause) That denial won\u2019t clear you. (pause) It drags my name into your problem. (pause) I\u2019m not taking custody of that.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-057.json",
+      "id": "N33_PLAYER_AMR_IN_BIN",
+      "priorLine": "show: AMR. Issued.",
+      "lineToEdit": "AMR. Issued.",
+      "nextLine": "AMR checks out. Standing. (pause)\nIt keeps the \u201ctheft\u201d label off you. (pause)\nOnly if you\u2019re holding an asset. (pause)\nNothing personal. (pause)\nThose words ruin careers.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-057.json",
+      "id": "N02_MAIN_SLEEVE",
+      "priorLine": "(multiple) (You take the sealed sleeve from the bin.\nIt\u2019s light, unreal until someone stamps it.) (talk: Keep browsing the counter.) (talk: Keep browsing the counter.) (talk: Keep browsing the counter.) (Approved stamp substitutions sit in tidy rows. (pause) Several lines are crossed out, re-initialed\u2014grudges formalized. (pause) It reads as an admission: the system expects failure and calls it \u201cprocess.\u201d)",
+      "lineToEdit": "Sleeve in hand\u2026",
+      "nextLine": "",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-057.json",
+      "id": "N40C_PLAYER_AUTH_BY",
+      "priorLine": "(multiple) (ask: Authorized by who?) (ask: Authorized by who?)",
+      "lineToEdit": "Authorized by who?",
+      "nextLine": "By the chain. (pause) Yeah, it\u2019s circular. (pause) Keeps a name out your mouth.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-057.json",
+      "id": "N50_PLAYER_ASK_ASSET",
+      "priorLine": "ask: What's an \u201casset\u201d?",
+      "lineToEdit": "What\u2019s an asset?",
+      "nextLine": "Time. (pause)\nTied to a lane and a tolerance band. (pause)\nAnd an expiry everyone calls \u201cflexible\u201d. (pause)\nUntil audit shows up. (pause)\nThis window adjudicates custody.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-057.json",
+      "id": "N53_PLAYER_SO_RECOVER",
+      "priorLine": "ask: So I don\u2019t request. I recover.",
+      "lineToEdit": "So I recover.",
+      "nextLine": "Yeah. (pause)\nClaim it. Present it. I record it. (pause)\nIf it holds up it moves. (pause)\nIf it doesn\u2019t it stops here. (pause)\nThat\u2019s the job.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-057.json",
+      "id": "N60_PLAYER_SHOW_AMR",
+      "priorLine": "(multiple) (show: AMR. Issued.) (show: AMR. Issued.)",
+      "lineToEdit": "AMR. Issued.",
+      "nextLine": "AMR gives you standing. (pause) It doesn\u2019t open a slot. (pause) Not by itself. (pause) It keeps the system from calling custody \u201ctheft.\u201d",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-057.json",
+      "id": "N70_PLAYER_ASK_RULE",
+      "priorLine": "ask: Show me the rule.",
+      "lineToEdit": "Show me the rule.",
+      "nextLine": "Rule doesn\u2019t forbid asking. (pause) It says: requests aren\u2019t claims. (pause) People skim, still try making it my problem.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-058.json",
+      "id": "N02_MAIN_MENU",
+      "priorLine": "(multiple) (Next. Make it quick.) (talk: Back.) (talk: Back.) (talk: Back.) (talk: Back.) (talk: Back.) (talk: Back.)",
+      "lineToEdit": "At the stamp substitution board\u2026",
+      "nextLine": "",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-058.json",
+      "id": "N14_PLAYER_GAPASK",
+      "priorLine": "ask: Complaint stamp clears an authorization gap?",
+      "lineToEdit": "Complaint stamp clears an authorization gap?",
+      "nextLine": "It won\u2019t \u201cclear\u201d anything. (pause)\nIt shoves the gap into a known bucket. (pause)\nThe chain already knows how to hold it. (pause)\nAuthorization reads \u201callowed.\u201d (pause)\nComplaint acknowledgment reads \u201cdisputed, recorded.\u201d (pause)\nEnough to process. (pause)\nAnd before you start: I\u2019m not approving. (pause)\nI\u2019m acknowledging. (pause)\nSafer in the minutes.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-058.json",
+      "id": "N50_PLAYER_POLICYASK",
+      "priorLine": "ask: So the complaint stamp is a policy-compliant substitute in the clearance chain.",
+      "lineToEdit": "So the complaint stamp is a policy-compliant substitute in the clearance chain.",
+      "nextLine": "Yeah. Policy-compliant. (pause)\nIt won\u2019t feel good. (pause)\nThe chain prefers a stamped problem. (pause)\nNot a blank absence. (pause)\nBlanks force improvisation. (pause)\nThen someone\u2019s name ends up in it. (pause)\nI\u2019m trying to keep names out. (pause)\nOut of this.",
+      "revisedLine": "So the complaint stamp is policy-compliant. (pause) A substitute in the clearance chain.",
+      "changeSummary": "Split into two short beats with a pause; kept meaning and tone while meeting beat word limit."
+    },
+    {
+      "scene": "SCN_SCN-058.json",
+      "id": "N24_PLAYER_WHO_APPROVED",
+      "priorLine": "ask: Who approved that line?",
+      "lineToEdit": "Who approved that line?",
+      "nextLine": "\u201cApproved\u201d is a generous word. (pause)\nIt survived review twice. (pause)\nNobody wanted to be the third signature. (pause)\nThe one that killed it. (pause)\nSo it sits on the board. (pause)\nAs precedent. (pause)\nReality keeps showing up on schedule. (pause)\nPolicy doesn\u2019t.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-058.json",
+      "id": "N27_PLAYER_REFERENCE",
+      "priorLine": "ask: So it will pass clearance if I reference the substitution line.",
+      "lineToEdit": "So it will pass clearance if I reference the substitution line.",
+      "nextLine": "Cite it cleanly, yeah. (pause) Start waving it like a loophole (pause) and it\u2019ll get bounced. (pause) Chain likes citations. (pause) It hates enthusiasm.",
+      "revisedLine": "It passes clearance if I cite substitution line.",
+      "changeSummary": "Shortened the sentence to keep the beat under 8 words while preserving meaning."
+    },
+    {
+      "scene": "SCN_SCN-058.json",
+      "id": "N30_PLAYER_SURVIVABLE",
+      "priorLine": "ask: \u201cSurvivable\u201d to who?",
+      "lineToEdit": "\u201cSurvivable\u201d to who?",
+      "nextLine": "Review. (pause)\nIt happens after you\u2019ve left. (pause)\nYou can\u2019t fix anything. (pause)\nStamps outlive explanations.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-058.json",
+      "id": "N17B_PLAYER_REMOVED",
+      "priorLine": "ask: Why were these removed?",
+      "lineToEdit": "Why were these removed?",
+      "nextLine": "Because people treated them like permission. (pause) This board is what the chain will tolerate, (pause) without dragging everyone into a meeting. (pause) \u201cTolerate\u201d keeps the minutes safer (pause) than \u201capprove.\u201d",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-058.json",
+      "id": "N18_PLAYER_CONTINUITY",
+      "priorLine": "ask: \u201cContinuity\u201d of what, exactly?",
+      "lineToEdit": "\u201cContinuity\u201d of what, exactly?",
+      "nextLine": "Continuity in the chain. (pause) Ink you can follow. (pause) From \u201cclaimed\u201d to \u201crecorded\u201d. (pause) Without a gap. (pause) Gaps are where auditors set up camp.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-059.json",
+      "id": "N02_MAIN_MENU",
+      "priorLine": "(multiple) (Next. Tray forward.) (talk: Back.) (talk: Back.) (talk: Back.) (talk: Back.) (talk: Back.) (talk: Back.) (Fiscal cutoff doesn\u2019t change clearance. (pause)\nIt\u2019s your deadline. (pause)\nDeadlines don\u2019t go on my stamps. (pause)\nIf you\u2019ve got custody, keep the chain continuous.) (talk: Back.) (talk: Back.) (talk: Back.) (talk: Back.)",
+      "lineToEdit": "At the caged window\u2026",
+      "nextLine": "",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-059.json",
+      "id": "N10_PLAYER_NEXT",
+      "priorLine": "talk: Next.",
+      "lineToEdit": "Next.",
+      "nextLine": "Good. You\u2019re here. (pause)\nKeep \u201crequest\u201d and \u201cgrant\u201d out of your mouth\u2014 (pause)\nthose words make stories. (pause)\nYou present custody. (pause)\nI record custody. (pause)\nThat\u2019s the clean lane through glass.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-059.json",
+      "id": "N20_PLAYER_REQ",
+      "priorLine": "(multiple) (ask: What do you need, exactly, to issue the IWO?) (ask: What do you need, exactly, to issue the IWO?)",
+      "lineToEdit": "What do you need, exactly, to issue the IWO?",
+      "nextLine": "I need a claimable slot asset. (pause) In your custody. (pause) And a packet that doesn\u2019t make me guess. (pause) Slot token covers time-as-property. (pause) AMR covers you holding it. (pause) Without it becoming a felony noun. (pause) TER covers the site eligible today. (pause) Eligible\u2014 not \u201csafe.\u201d (pause) Then I can issue an Interconnection Work Order. (pause) Or Clearance packet. (pause) And \u201cissue\u201d here: I record it. (pause) What\u2019s already sitting in front of me.",
+      "revisedLine": "What do you need to issue the IWO? (pause) Exactly.",
+      "changeSummary": "Removed extra comma and split off \u201cExactly\u201d after a pause to keep the precision while reducing the beat to 8 words."
+    },
+    {
+      "scene": "SCN_SCN-059.json",
+      "id": "N23_PLAYER_CANT_GUARANTEE",
+      "priorLine": "ask: So what\u2019s the part you can\u2019t guarantee?",
+      "lineToEdit": "So what\u2019s the part you can\u2019t guarantee?",
+      "nextLine": "Outcomes. (pause)\nI can tell you what usually survives review. (pause)\nI can\u2019t promise what review decides. (pause)\nNeed guarantees? This isn\u2019t the window.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-059.json",
+      "id": "N24_PLAYER_TER",
+      "priorLine": "ask: Does the TER change anything for you?",
+      "lineToEdit": "Does the TER change anything for you?",
+      "nextLine": "It changes what I can write. (pause)\nWithout TER the slot token\u2019s just stamped. (pause)\nA nice object with nowhere legal. (pause)\nWith TER it\u2019s a time asset. (pause)\nIn a process lane. (pause)\nLanes keep my desk from precedent.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-059.json",
+      "id": "N40_PLAYER_FAILURE",
+      "priorLine": "(multiple) (ask: What\u2019s the failure mode. What gets returned?) (ask: What\u2019s the failure mode. What gets returned?) (ask: What\u2019s the failure mode. What gets returned?)",
+      "lineToEdit": "What\u2019s the failure mode. What gets returned?",
+      "nextLine": "In the file it comes back (pause) as \u201cReturned for deficiency.\u201d (pause)\nDeficiency can be chain continuity gaps. (pause)\nOr custody conflicts. (pause)\nOr upstream authority flags the node (pause)\nnot in good standing. (pause)\nThat last one isn\u2019t mine. (pause)\nI\u2019m saying it now. (pause)\nTo keep it off me later.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-059.json",
+      "id": "N43_PLAYER_NOT_STANDING",
+      "priorLine": "ask: Not in good standing how?",
+      "lineToEdit": "Not in good standing how?",
+      "nextLine": "Everything\u2019s filled out. It still won\u2019t move. (pause)\nOutstanding disputes. Unresolved incidents. Unclosed loops. (pause)\nSometimes upstream just\u2026 stops. (pause)\nIt won\u2019t treat the node as eligible. (pause)\nThat\u2019s routing. Don\u2019t make it a sermon.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-059.json",
+      "id": "N46_PLAYER_WHO_UPSTREAM",
+      "priorLine": "ask: Who is upstream?",
+      "lineToEdit": "Who is upstream?",
+      "nextLine": "Upstream is whoever can say \u201cno\u201d (pause) from somewhere else. (pause)\nI don\u2019t name names (pause) you\u2019ll go chase them (pause) then my diagram changes. (pause)\nSo it stays \u201cupstream.\u201d (pause) That\u2019s what gets recorded.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-059.json",
+      "id": "N50_PLAYER_UPSTREAM",
+      "priorLine": "ask: Upstream authorization\u2014who\u2019s upstream?",
+      "lineToEdit": "Upstream authorization\u2014who\u2019s upstream?",
+      "nextLine": "It\u2019s a direction on the chart. (pause)\nThat direction can refuse you. (pause)\nWithout walking in here. (pause)\nPut a person on it. (pause)\nAnd it turns into an argument. (pause)\nI\u2019m not running arguments through this glass.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-059.json",
+      "id": "N53_PLAYER_STALL",
+      "priorLine": "ask: So you\u2019re saying this can still stall.",
+      "lineToEdit": "So you\u2019re saying this can still stall.",
+      "nextLine": "Yeah it can still stall. (pause)\nPacket can be spotless. (pause)\nStill comes back. (pause)\nI stamp so the return reads (pause)\nlike policy not a story.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-059.json",
+      "id": "N60_PLAYER_BARGAIN",
+      "priorLine": "bargain: Fiscal cutoff. I need this to move.",
+      "lineToEdit": "Fiscal cutoff. I need this to move.",
+      "nextLine": "Fiscal cutoff doesn\u2019t change clearance. (pause)\nIt\u2019s your deadline. (pause)\nDeadlines don\u2019t go on my stamps. (pause)\nIf you\u2019ve got custody, keep the chain continuous.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-059.json",
+      "id": "N70_PLAYER_THREATEN",
+      "priorLine": "threaten: If this stalls, I document it as scheduling obstruction.",
+      "lineToEdit": "If this stalls, I document it as scheduling obstruction.",
+      "nextLine": "Document whatever you want. (pause) Use the right nouns. (pause) \u201cObstruction\u201d drags intent into it. (pause) Then it drags a person in. (pause) I\u2019m not volunteering. (pause) Present custody. (pause) Or leave.",
+      "revisedLine": "If this stalls, I document scheduling obstruction.",
+      "changeSummary": "Removed \u201cit as\u201d to reduce the line to 8 words max while keeping meaning."
+    },
+    {
+      "scene": "SCN_SCN-059.json",
+      "id": "N83_PLAYER_UPSTREAM_WATCH",
+      "priorLine": "ask: Upstream authority\u2014what are they watching for?",
+      "lineToEdit": "Upstream authority\u2014what are they watching for?",
+      "nextLine": "Continuity. (pause)\nNo blanks. (pause)\nNo cute handwriting. (pause)\nNo new verbs. (pause)\nIf the node\u2019s flagged, it\u2019ll bounce either way. (pause)\nStamps won\u2019t save it. (pause)\nThat\u2019s why I stamp like I\u2019m being watched.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-059.json",
+      "id": "N30_PLAYER_SHOW_FULL",
+      "priorLine": "(multiple) (show: Slot token. AMR. TER. Here for Interconnection Work Order / Clearance.) (show: Slot token. AMR. TER. Issue the IWO clearance.) (show: Slot token. AMR. TER. Do it.) (show: Slot token. AMR. TER. Issue the IWO clearance.) (show: Slot token. AMR. TER. Record it and issue the packet.) (show: Proceed. Issue the IWO clearance.) (show: Slot token. AMR. TER. Issue the IWO clearance packet.) (show: Slot token. AMR. TER. Issue the packet.) (show: Fine. Slot token. AMR. TER. Record and issue.) (show: Slot token. AMR. TER.)",
+      "lineToEdit": "Slot token. AMR. TER. Interconnection Work Order / Clearance.",
+      "nextLine": "Good. Actual objects. I can record those. (pause)\nSlide the token to the line. (pause)\nKeep the serial visible. (pause)\nAnd say it straight. \u201cInterconnection Work Order\u2014Clearance.\u201d (pause)\nStart calling it \u201cpermission\u201d or \u201capproval\u201d (pause)\nand it turns into a different disaster.",
+      "revisedLine": "Slot token. AMR. TER. Interconnection Work Order/Clearance.",
+      "changeSummary": "Merged \u201cOrder / Clearance\u201d into \u201cOrder/Clearance\u201d to reduce the word count while preserving meaning."
+    },
+    {
+      "scene": "SCN_SCN-059.json",
+      "id": "N32_PRESENT_MENU",
+      "priorLine": "(multiple) (Good. Actual objects. I can record those. (pause)\nSlide the token to the line. (pause)\nKeep the serial visible. (pause)\nAnd say it straight. \u201cInterconnection Work Order\u2014Clearance.\u201d (pause)\nStart calling it \u201cpermission\u201d or \u201capproval\u201d (pause)\nand it turns into a different disaster.) (The substitution board hangs slightly crooked, corners curled from being handled and put back. (pause)\nApproved workarounds, formalized. (pause)\nIt reads like a promise: the chain can tolerate reality as long as reality is stamped.) (Continuity. (pause)\nNo blank spaces. (pause)\nNo new verbs. (pause)\nIf the node\u2019s flagged, upstream bounces it. (pause)\nClean stamps or not. (pause)\nThat\u2019s routing.)",
+      "lineToEdit": "The tray waits under the glass\u2026",
+      "nextLine": "",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-059.json",
+      "id": "N34_PLAYER_UPSTREAM_NEEDS",
+      "priorLine": "ask: What does upstream need to see on this packet?",
+      "lineToEdit": "What does upstream need to see on this packet?",
+      "nextLine": "Continuity. (pause)\nNo blank spaces. (pause)\nNo new verbs. (pause)\nIf the node\u2019s flagged, upstream bounces it. (pause)\nClean stamps or not. (pause)\nThat\u2019s routing.",
+      "revisedLine": "What must upstream see on this packet?",
+      "changeSummary": "Cut one word to meet the 8-word beat limit by replacing \"does upstream need to see\" with \"must upstream see\" while keeping meaning."
+    },
+    {
+      "scene": "SCN_SCN-059.json",
+      "id": "N95_PLAYER_INSERT_Q",
+      "priorLine": "A thick envelope slides through the lower slot. Edges square. (pause) Corners already worn by expectation. (pause) An extra insert rides with it\u2014paper that doesn\u2019t match the rest. (pause) Folded like it was meant to be found later.",
+      "lineToEdit": "What\u2019s the insert?",
+      "nextLine": "Map fragment. Third set. (pause)\nYeah, I know. (pause)\nIt\u2019s part of the continuity kit. (pause)\nWhen the corridor signage contradicts itself\u2014 (pause)\nand it will\u2014 (pause)\nyou\u2019ll want something consistent.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-061.json",
+      "id": "N120_APERTURE_NORMAL_PLAYER",
+      "priorLine": "ask: Normal?",
+      "lineToEdit": "Normal?",
+      "nextLine": "The mirror does not answer.\n\nThe bay panel reads NORMAL OPERATION, in a font predating doubt.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-061.json",
+      "id": "N220_SHROUD_INSTRUMENTS_PLAYER",
+      "priorLine": "ask: What instruments.",
+      "lineToEdit": "What instruments.",
+      "nextLine": "The label does not list them.\n\nIt assumes you have them\u2014or that you are the instrument.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-061.json",
+      "id": "N320_SWEETSPOT_MOVE_PLAYER",
+      "priorLine": "ask: Why move it.",
+      "lineToEdit": "Why move it?",
+      "nextLine": "There\u2019s no note. Just revisions.\n\nThe building records location changes better than reasons.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-061.json",
+      "id": "N430_CHUTE_FEED_PLAYER",
+      "priorLine": "use: Feed a correction packet.",
+      "lineToEdit": "Correction packet.",
+      "nextLine": "The chute accepts the slip without resistance. (pause) Either good design, or it\u2019ll take anything if it\u2019s formatted.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-061.json",
+      "id": "N500_COMMIT_PLAYER",
+      "priorLine": "use: Insert the token and send the correction packet.",
+      "lineToEdit": "Reverse route. Maintenance framing.",
+      "nextLine": "You seat the slot token in the control recess. (pause) It clicks, like a stamp finding its ink. (pause) The aperture\u2019s surface tightens\u2014subtle, like a muscle remembering it has a job.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-064.json",
+      "id": "N2_PLAYER_OK",
+      "priorLine": "The header reads: \u201cCONTROL ROOM EVENT LOG \u2014 CONTINUOUS OUTPUT.\u201d (pause) A footer line repeats in small type: \u201cNON-LOCAL COMPLIANCE NOTICE: RETAIN FOR COMPARABILITY.\u201d",
+      "lineToEdit": "\u2026Okay.",
+      "nextLine": "",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-064.json",
+      "id": "N12_PLAYER_COMMENT",
+      "priorLine": "\u201cSHIFT STATUS: UNATTENDED \u2014 CONTINUITY MODE.\u201d (pause)\n\u201cOPERATOR PRESENCE: NOT REQUIRED.\u201d (pause)\n\u201cCONSOLE INTERACTION: REGISTERED.\u201d (pause)\nFooter, again: \u201cNON-LOCAL COMPLIANCE NOTICE: RETAIN FOR COMPARABILITY.\u201d",
+      "lineToEdit": "\u201cOperator presence: not required.\u201d Of course.",
+      "nextLine": "",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-064.json",
+      "id": "N22_PLAYER_QUEST",
+      "priorLine": "[PRINTER FOOTER TEXT]\n\u201cCONTINUOUS OUTPUT IS A RETENTION FEATURE.\nDISCONTINUOUS OUTPUT CREATES GAPS.\nGAPS CREATE QUESTIONS.\u201d",
+      "lineToEdit": "Questions for who?",
+      "nextLine": "[PRINTER FOOTER TEXT]\n\u201cQUESTIONS ARE NON-LOCAL.\nTHIS FORMAT IS COMPARABLE.\u201d",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-064.json",
+      "id": "N26_PLAYER_NO",
+      "priorLine": "[PRINTER FOOTER]\n\u201cNON-LOCAL: OUTSIDE THE RESPONSIBLE WORKGROUP.\nWORKGROUP: SUBJECT TO CHANGE WITHOUT NOTICE.\nNOTICE: PROVIDED HEREBY.\u201d",
+      "lineToEdit": "That doesn\u2019t answer it.",
+      "nextLine": "[PRINTER FOOTER TEXT]\n\u201cANSWERING CREATES A NEW RECORD.\nNEW RECORDS REQUIRE A FRAMEWORK.\u201d",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-064.json",
+      "id": "N32_PLAYER_GOOD",
+      "priorLine": "The timestamp is legible. The ink doesn\u2019t smear. (pause) It will fit in a binder without you having to explain why it\u2019s weird.",
+      "lineToEdit": "Good.",
+      "nextLine": "You fold it once, on purpose, and keep it.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-064.json",
+      "id": "N42_PLAYER_FILED",
+      "priorLine": "The footer\u2019s \u201cNON-LOCAL COMPLIANCE\u201d line feels wrong in OLEA templates.\nYou don\u2019t react. That\u2019s the point.",
+      "lineToEdit": "Filed.",
+      "nextLine": "You fold it once and keep it.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-065.json",
+      "id": "N_STANDING_PLAYER",
+      "priorLine": "ask: \u201cStanding?\u201d",
+      "lineToEdit": "Standing?",
+      "nextLine": "The notice includes a definition in the margin, like it\u2019s tired of being questioned. (pause) \u201cStanding: recognized eligibility to be processed.\u201d (pause) \u201cProcessed\u201d is underlined once. (pause) The underline is perfectly straight. It\u2019s its own kind of threat.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-065.json",
+      "id": "N_SERVICE_PLAYER",
+      "priorLine": "ask: \u201cService class?\u201d",
+      "lineToEdit": "Service class?",
+      "nextLine": "Another margin block, pre-emptive. (pause)\n\n\u201cSERVICE CLASS: UNRESOLVED.\u201d (pause)\n\u201cIncorrect service class assignments may affect standing.\u201d (pause)\n\nThe sentence is written like an apology that learned to protect itself.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-065.json",
+      "id": "N_SHOW_REF_PLAYER",
+      "priorLine": "show: \u201cReference number.\u201d",
+      "lineToEdit": "MTA_NOTICE_REF.",
+      "nextLine": "Saying it out loud makes it real, less defensible. Reference string looks like external docket. (pause) Prefix plus jurisdiction stub. A queue-like tail implies you\u2019re not first.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-065.json",
+      "id": "N_ASK_MTA_FAX_PLAYER",
+      "priorLine": "ask: \u201cMTA have a fax?\u201d",
+      "lineToEdit": "MTA have a fax?",
+      "nextLine": "The placard doesn\u2019t answer. (pause) It offers a procedure instead. (pause)\n\n\u201cIf the destination is unlisted: (pause) transmit to ADMIN SERVICES. (pause) NOTE \u2018NON-LOCAL\u2019 IN THE COVER SHEET.\u201d (pause)\n\nThe instruction feels like it was written after someone tried to be clever.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-065.json",
+      "id": "N_ASK_WHO_SENT_PLAYER",
+      "priorLine": "ask: \u201cWho sent this?\u201d",
+      "lineToEdit": "Who sent this?",
+      "nextLine": "The printout answers like authority: it names a category, not a person. (pause)\n\n\u201cMANAGING AUTHORITY: METASTABLE TRANSFER AUTHORITY (MTA).\u201d (pause)\n\nNo signature. No phone tree. Just an acronym. It expects compliance as its own contact.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-066.json",
+      "id": "N_BARCODE_2",
+      "priorLine": "The barcode has check digits and section breaks like a shipping label\u2014except the fields are jurisdictional, not geographic.\nYou\u2019ve seen this structure before. Not in OLEA. Upstream.",
+      "lineToEdit": "This is MTA.",
+      "nextLine": "Saying it out loud makes the rest of the room rearrange itself.\nThe \u201cgeneric\u201d notices aren\u2019t generic. They\u2019re translations. Bad ones.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-067.json",
+      "id": "N_STATUS_PLAYER_BEAT",
+      "priorLine": "The status indicator cluster glows in careful colors: (pause) greens for allowed, ambers for pending. (pause) One amber lamp reads, in a different font: HOLD / NON-LOCAL. (pause) Beneath it the printed tag list includes: STANDING INDICATOR: UNKNOWN. SERVICE CLASS: UNRESOLVED.",
+      "lineToEdit": "That\u2019s new.",
+      "nextLine": "Don\u2019t say \u201cnew.\u201d (pause) Say \u201cnewly visible.\u201d (pause) One sounds like a system change. (pause) One sounds like we noticed.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-067.json",
+      "id": "N_ATTACH_REF",
+      "priorLine": "show: Attach MTA reference number and notice citation.",
+      "lineToEdit": "Reference: MTA_NOTICE_REF.",
+      "nextLine": "The panel accepts the string too quickly, like it wanted to believe you. (pause)\nA secondary field appears: QUEUE POSITION (READ-ONLY). (pause)\nIt remains blank, which is its own kind of answer.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-067.json",
+      "id": "N_SIGNATORY_START",
+      "priorLine": "persuade: Apply OLEA signatory language to standing/presence.",
+      "lineToEdit": "OLEA signatory. On-site. Custody acknowledged.",
+      "nextLine": "Good. Keep it boring. (pause) On-site is defensible. (pause) Don\u2019t add motives or theories. (pause) Just the fact of presence.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-067.json",
+      "id": "N_PLAYER_GOOD",
+      "priorLine": "Alright. (pause) You\u2019re in the log. (pause) Standing\u2019s still pending. (pause) Service class too. (pause) You\u2019ve got a queue slot. (pause) Window\u2019s active.",
+      "lineToEdit": "Good.",
+      "nextLine": "The sphere flickers reflective again\u2014mirror, matte\u2014like it\u2019s being kept open on purpose. (pause)\nThe acknowledgment slip is warm from the printer. (pause)\nWarmth is not reassurance. It\u2019s just heat.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-067.json",
+      "id": "N_PLAYER_PRINT_TWO",
+      "priorLine": "Logged. (pause) Standing pending. Service class pending. (pause) Queue slot assigned. Window\u2019s active.",
+      "lineToEdit": "Print two copies.",
+      "nextLine": "The panel prints a duplicate without comment.\nPaper has weight. That\u2019s why it matters.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-068.json",
+      "id": "N_TALK_1",
+      "priorLine": "talk: Talk to Records.",
+      "lineToEdit": "Records.",
+      "nextLine": "Records. (pause)\nYou\u2019re not coming in. (pause)\nGive me a handle, I push copies. (pause)\nArchive stays shut.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-068.json",
+      "id": "N_HANDLE_1",
+      "priorLine": "ask: What handle do you need?",
+      "lineToEdit": "What handle.",
+      "nextLine": "Date. Scope. And your entitlement. (pause) Your name won\u2019t be last on it. (pause)\nDon\u2019t put \u201cclosure\u201d in the scope box. (pause)\nClosure\u2019s\u2026 a mood.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-068.json",
+      "id": "N_SEAL_1",
+      "priorLine": "ask: Why is there a new seal?",
+      "lineToEdit": "Why the new seal.",
+      "nextLine": "Old seal got cited wrong (pause) in a conversation that \u201cdidn\u2019t happen.\u201d (pause) So now we\u2019ve got a seal (pause) that matches what the record says. (pause) I don\u2019t run the story. (pause) I run the staples.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-068.json",
+      "id": "N_SHOW_PRES_1",
+      "priorLine": "(multiple) (show: Show the presence proof printout.) (show: Show the presence proof printout.) (show: Show the presence proof printout.) (show: Show the presence proof printout.) (show: Show the presence proof printout.)",
+      "lineToEdit": "Presence proof. Timestamped.",
+      "nextLine": "Hold it up. Closer.\nCopier prints fade fast.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-068.json",
+      "id": "N_SHOW_VAR_1",
+      "priorLine": "(multiple) (show: Show the variance acknowledgment reference.) (show: Show the variance acknowledgment reference.) (show: Show the variance acknowledgment reference.) (show: Show the variance acknowledgment reference.) (show: Show the variance acknowledgment reference.)",
+      "lineToEdit": "Variance acknowledgment. Reference code.",
+      "nextLine": "Slow. (pause) If it lands wrong in my log, (pause) it stays my problem.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-068.json",
+      "id": "N_SHOW_VAR_3",
+      "priorLine": "Slow. (pause) If it lands wrong in my log, (pause) it stays my problem.",
+      "lineToEdit": "(reads the reference)",
+      "nextLine": "Mm. Non-local compliance format. (pause)\nThose dashes don\u2019t match municipal. (pause)\nEnough to justify the seal swap entry.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-068.json",
+      "id": "N_PRESS_1",
+      "priorLine": "(multiple) (talk: Press for interpretation.) (talk: Press for interpretation.)",
+      "lineToEdit": "What is \u201cnon-local.\u201d",
+      "nextLine": "It\u2019s the tag. (pause) Lets me park the file. (pause) Without writing a jurisdiction. (pause)\nI\u2019m stopping there. (pause)\nYou want it filed, I file it.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-068.json",
+      "id": "N_REQ_1",
+      "priorLine": "(multiple) (ask: Request specific record sets.) (ask: Request specific record sets.) (ask: Request specific record sets.) (ask: Request specific record sets.)",
+      "lineToEdit": "Need billing ledgers, maintenance schedules, audit flags. Pre-incident.",
+      "nextLine": "That\u2019s three pulls\u2014 not one. (pause)\nFine. (pause)\nJust\u2014 billing plus maintenance plus flags. (pause)\nIt usually turns into a story. (pause)\nStories become reclassification events.",
+      "revisedLine": "Need billing ledgers and maintenance schedules. Audit flags. Pre-incident.",
+      "changeSummary": "Removed extra commas by splitting the list into two short sentences; kept the same items and cadence."
+    },
+    {
+      "scene": "SCN_SCN-068.json",
+      "id": "N_ALREADY_1",
+      "priorLine": "ask: Ask what they already have on SPINDLE.",
+      "lineToEdit": "What\u2019s already filed under SPINDLE.",
+      "nextLine": "Plenty. (pause) Half of it\u2019s labeled. (pause) So you don\u2019t have fun with it. (pause) If I start listing you start asking \u201cwhy.\u201d (pause) And I\u2019m not doing \u201cwhy.\u201d",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-068.json",
+      "id": "N_SHOW_BOTH_1",
+      "priorLine": "show: Show presence proof + variance reference together.",
+      "lineToEdit": "Standing and reference. Here.",
+      "nextLine": "Okay. That\u2019ll do. (pause)\nPresence plus the external-format variance (pause)\nlets me open a request (pause)\nand keep it out of Dispute.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-068.json",
+      "id": "N_PERSUADE_1",
+      "priorLine": "persuade: [OLEA] Cite closure authority and demand a release packet.",
+      "lineToEdit": "OLEA closure authority. Chain-of-custody release packet. Now.",
+      "nextLine": "Alright. That wording exists on paper. (pause)\nI can run it.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-068.json",
+      "id": "N_COMMIT_1",
+      "priorLine": "bargain: Request billing ledgers; maintenance schedules (non-local); pre-incident audit flags.",
+      "lineToEdit": "Billing ledgers. Non-local maintenance schedules. Pre-incident audit flags.",
+      "nextLine": "Accepted. (pause) You\u2019ll get what\u2019s there as filed. (pause) No summary. (pause) If something doesn\u2019t turn up (pause) the word in my log (pause) is \u201cunlocated.\u201d",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-070.json",
+      "id": "N_BORING_P1",
+      "priorLine": "(talk) Draft: boring closure narrative.",
+      "lineToEdit": "Make it boring.",
+      "nextLine": "You type as if the memo is a receipt.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-070.json",
+      "id": "N_BORING_P2",
+      "priorLine": "Keep this a retirement deliverable. (pause) Don\u2019t kick it into (pause) a reclassification event. (pause) If it reads like a \u201cfinding,\u201d (pause) Finance makes it a category (pause) and it won\u2019t go away.",
+      "lineToEdit": "No findings. Just closure.",
+      "nextLine": "Good. Use: \u201ccompletion of standard retirement checklist steps.\u201d (pause)\nUse: \u201cdocumentation of operational state for retirement.\u201d (pause)\nUse: \u201cfiscal window compliance.\u201d (pause)\nNo \u201cdiscovery.\u201d Do not joke with it. (pause)\nKeep the tone flat. No impressed adjectives.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-070.json",
+      "id": "N_DEF_P1",
+      "priorLine": "(talk) Draft: defensible legal narrative.",
+      "lineToEdit": "Make it defensible.",
+      "nextLine": "You rewrite verbs first. The facts can wait.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-070.json",
+      "id": "N_DEF_P2",
+      "priorLine": "Define your terms. (pause) Then swing them around. (pause) Go easy on \u201cauthorized.\u201d (pause) People use it like a blanket. (pause) Then wonder why they can\u2019t breathe.",
+      "lineToEdit": "It\u2019s an Authorized Closure Path memo.",
+      "nextLine": "The title can say whatever it needs. (pause) The body is where you get bitten. (pause) Leave out \u201cevaluating.\u201d (pause) Leave out \u201cverifying safety.\u201d (pause) Leave out \u201cconfirming normalcy.\u201d (pause) It is comparison language. (pause) We have no baseline we can prove.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-070.json",
+      "id": "N_DEF_P3",
+      "priorLine": "The title can say whatever it needs. (pause) The body is where you get bitten. (pause) Leave out \u201cevaluating.\u201d (pause) Leave out \u201cverifying safety.\u201d (pause) Leave out \u201cconfirming normalcy.\u201d (pause) It is comparison language. (pause) We have no baseline we can prove.",
+      "lineToEdit": "So what am I doing?",
+      "nextLine": "You\u2019re documenting operational state for retirement processing. (pause) Per the Evidence Packet. (pause) Describe anything you do as narrow-purpose. (pause) Non-exploratory. (pause)\nCut \u201cstill.\u201d (pause) \u201cStill operating\u201d reads like intent. (pause) Intent becomes governance. (pause) Governance becomes duty.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-070.json",
+      "id": "N_STABLE_P1",
+      "priorLine": "(talk) Draft: stability narrative.",
+      "lineToEdit": "Make it stable. Timestamped.",
+      "nextLine": "You start writing like a dispatcher is going to read it aloud.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-070.json",
+      "id": "N_STABLE_P2",
+      "priorLine": "I need stability stated not implied. (pause) If it\u2019s not attributable it didn\u2019t happen\u2014legally.",
+      "lineToEdit": "This is a memo, not a control log.",
+      "nextLine": "Everything becomes a control log (pause) when someone\u2019s looking for a cause. (pause)\nInclude time anchors. (pause) Include record IDs. (pause) Include that you will not introduce (pause) oscillatory loading. (pause)\nAnd\u2014this is procedural\u2014don\u2019t make it sound (pause) like you \u201ccouldn\u2019t.\u201d (pause) Make it sound like you \u201cdid.\u201d",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-070.json",
+      "id": "N_COMP_P1",
+      "priorLine": "(talk) Draft: compliance narrative.",
+      "lineToEdit": "Make it compliant. MTA-safe.",
+      "nextLine": "You pull notice numbers from the Evidence Packet and treat them like scripture.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-070.json",
+      "id": "N_COMP_P2",
+      "priorLine": "Standing\u2019s pending. Service class is, too. (pause) You\u2019re in the queue. Window\u2019s active.",
+      "lineToEdit": "I need the hold lifted.",
+      "nextLine": "You need the hold addressed. (pause)\n\u201cLifted\u201d sounds like we chose to. (pause)\nAdd the notice references. (pause)\nAdd the submission log. (pause)\nNo guessing on cause. (pause)\nNo story. (pause)\nStories make jurisdiction.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-070.json",
+      "id": "N_CLAUSE_ADD_P1",
+      "priorLine": "",
+      "lineToEdit": "Add the clause.",
+      "nextLine": "You add one sentence that looks harmless until it isn\u2019t: (pause)\n\u201cInterpretation is limited to the attached Evidence Packet; no additional inferences are intended or authorized.\u201d",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-070.json",
+      "id": "N_PRINT_P1",
+      "priorLine": "(use) Print & sign: Authorized Closure Path memo.",
+      "lineToEdit": "Print it.",
+      "nextLine": "The printer wakes, a complaint disguised as warm-up. Paper feeds. Toner settles. The room stays quiet.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-071.json",
+      "id": "N_PLAYER_REF_PROMPT",
+      "priorLine": "ask: Read back the reference number.",
+      "lineToEdit": "Reference number.",
+      "nextLine": "MTA_NOTICE_REF: [full string]. (pause) Submission log: [log string]. (pause) Queue position: [value]. (pause) Processing window: active.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-071.json",
+      "id": "N_PLAYER_PENDING_PROMPT",
+      "priorLine": "ask: What documentation is \u201cpending\u201d?",
+      "lineToEdit": "Pending what.",
+      "nextLine": "Three things. (pause) Proof: authorized standing for the transition. (pause) Proof: SOL\u2011EARTH\u2011LOCAL fits a service class now. (pause) Proof: operator-of-record is at the endpoint.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-071.json",
+      "id": "N_PLAYER_ONSITE_CLAIM",
+      "priorLine": "Three things. (pause) Proof: authorized standing for the transition. (pause) Proof: SOL\u2011EARTH\u2011LOCAL fits a service class now. (pause) Proof: operator-of-record is at the endpoint.",
+      "lineToEdit": "I\u2019m on-site.",
+      "nextLine": "On-site noted\u2014as a physical claim.\nStanding\u2019s still pending.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-071.json",
+      "id": "N_PLAYER_AND_HOLD",
+      "priorLine": "Make the next step look routine. (pause)\nUse the official sequence. (pause)\nKeep logging. Print before and after. (pause)\nHit the big red button. (pause)\nYou just signed up to be the author.",
+      "lineToEdit": "And the hold?",
+      "nextLine": "We don\u2019t clear holds. (pause) We document around them. (pause) Until someone upstream relents. (pause) Or you collapse routes. (pause) Until the hold is basically irrelevant. (pause) That didn\u2019t come from me.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-071.json",
+      "id": "N_PLAYER_SHUTTING_DOWN",
+      "priorLine": "Recorded line. (pause) Say what you\u2019re doing before you do it\u2014(pause) otherwise someone else will write the description later (pause) and you won\u2019t like their version.",
+      "lineToEdit": "I\u2019m shutting it down.",
+      "nextLine": "Then you\u2019re \u201cexecuting a retirement sequence\u201d (pause) \u201cas a safety containment measure,\u201d (pause) pursuant to the closure evidence packet. (pause)\nDon\u2019t say \u201cresponding to an anomaly.\u201d (pause)\nDrop \u201cstill operating.\u201d (pause) \u201cStill\u201d reads like intent. (pause) Intent becomes governance.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-071.json",
+      "id": "N_PLAYER_REASON_PHRASE_REQUEST",
+      "priorLine": "Then you\u2019re \u201cexecuting a retirement sequence\u201d (pause) \u201cas a safety containment measure,\u201d (pause) pursuant to the closure evidence packet. (pause)\nDon\u2019t say \u201cresponding to an anomaly.\u201d (pause)\nDrop \u201cstill operating.\u201d (pause) \u201cStill\u201d reads like intent. (pause) Intent becomes governance.",
+      "lineToEdit": "Give me a reason phrase.",
+      "nextLine": "Initiating terminal shutdown per retirement checklist (pause)\nas risk-limiting containment; (pause)\nmaintaining interlocks and continuous logging; (pause)\noperator present on-site. (pause)\nYes, it\u2019s going to irritate people. (pause)\nThat\u2019s fine.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-071.json",
+      "id": "N_PLAYER_READS_PHRASE",
+      "priorLine": "show: Read that reason phrase into the log.",
+      "lineToEdit": "Initiating terminal shutdown per retirement checklist as risk-limiting containment; maintaining interlocks and continuous logging; operator present on-site.",
+      "nextLine": "Good. That's attributable. (pause) When it echoes back, print it. (pause) People rewrite history later.",
+      "revisedLine": "Initiating terminal shutdown per retirement checklist. (pause) Risk-limiting containment in effect. (pause) Interlocks maintained and logging continuous. (pause) Operator present on-site.",
+      "changeSummary": "Split the line into four short beats with pauses to meet the max beat word limit while preserving all operational details and tone."
+    },
+    {
+      "scene": "SCN_SCN-071.json",
+      "id": "N_PLAYER_OUTSIDE_STRIPE",
+      "priorLine": "Log visual condition change. (pause) Note time and distance. (pause) Say you stayed outside the barrier stripe.",
+      "lineToEdit": "Outside the stripe.",
+      "nextLine": "Good. Don\u0019t change that wording.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-071.json",
+      "id": "N_EMERGENCY_STOP_PLAYER",
+      "priorLine": "use: Press Emergency Stop.",
+      "lineToEdit": "Emergency stop.",
+      "nextLine": "Don\u2019t write \u201cemergency stop\u201d in the log. (pause) Write \u201cLocal motion control trip\u201d. (pause) Add a reason phrase and timestamp. (pause) That entry starts a meeting. (pause) Make it defensible.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-071.json",
+      "id": "N_RUN_SEQUENCE_START",
+      "priorLine": "use: Execute official terminal shutdown sequence (use logged reason phrase).",
+      "lineToEdit": "Run the sequence.",
+      "nextLine": "Read the reason phrase again. (pause) Then run it. (pause) No improvising halfway through.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-071.json",
+      "id": "N_PLAYER_RECITES_LOGGED",
+      "priorLine": "Read the reason phrase again. (pause) Then run it. (pause) No improvising halfway through.",
+      "lineToEdit": "Initiating terminal shutdown per retirement checklist as risk-limiting containment; maintaining interlocks and continuous logging; operator present on-site.",
+      "nextLine": "Acceptable. Use the first one. (pause) It\u2019s harder to twist later.",
+      "revisedLine": "Initiating terminal shutdown per retirement checklist. (pause) Risk-limiting containment. (pause) Interlocks active and logging continuous. (pause) Operator present on-site.",
+      "changeSummary": "Split into four short beats to meet the 8-word limit. Kept all original details: checklist-driven shutdown, risk-limiting containment, interlocks and continuous logging, and on-site operator."
+    },
+    {
+      "scene": "SCN_SCN-071.json",
+      "id": "N_RUN_SEQUENCE_START_UNLOGGED",
+      "priorLine": "use: Execute official terminal shutdown sequence.",
+      "lineToEdit": "Run the sequence.",
+      "nextLine": "Do it in the order the console expects. (pause) Give a reason phrase when it asks. (pause) Add a timestamp when it asks.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-071.json",
+      "id": "N_PLAYER_RECITES_MINIMAL",
+      "priorLine": "Do it in the order the console expects. (pause) Give a reason phrase when it asks. (pause) Add a timestamp when it asks.",
+      "lineToEdit": "Terminal shutdown per checklist. Operator on-site. Logging maintained.",
+      "nextLine": "Acceptable. Use the first one. (pause) It\u2019s harder to twist later.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-072.json",
+      "id": "N_ASKCAT_P",
+      "priorLine": "ask: What category will you accept?",
+      "lineToEdit": "What category will you accept?",
+      "nextLine": "They\u2019ll only take an existing service class. (pause)\nThey won\u2019t clear an unauthorized node state. (pause)\nIf anything moves, it\u2019s a reclass. (pause)\nInto a licensed relationship\u2014once eligibility\u2019s demonstrated.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-072.json",
+      "id": "N_ASKAUTH_P",
+      "priorLine": "ask: What counts as authority chain?",
+      "lineToEdit": "Authority chain?",
+      "nextLine": "Authority chain needs operator-of-record ID. (pause)\nA statement: you\u2019re at the endpoint. (pause)\nA physical claim. (pause)\nAnd counterparty acknowledgment: inside licensed relationship category.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-072.json",
+      "id": "N_SUBMIT_P",
+      "priorLine": "Console: \u201cSUBMIT REQUEST \u2014 RELATIONSHIP/CLASS UPDATE (NON-LOCAL).\u201d Fields: SUBJECT-NODE; REQUESTED-CATEGORY; REASON-PHRASE; AUTHORITY-CHAIN; ATTACHMENTS.",
+      "lineToEdit": "MTA. We\u2019re submitting.",
+      "nextLine": "Keep the submission non-narrative. (pause)\nRequest category. (pause)\nService class basis. (pause)\nAuthority chain. (pause)\nDo not speculate on cause. (pause)\nNarrative creates jurisdiction.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-072.json",
+      "id": "N_REF_P",
+      "priorLine": "ask: Read back the hold reference",
+      "lineToEdit": "Read back the hold reference.",
+      "nextLine": "MTA_NOTICE_REF: [string]. (pause) Submission log: [string]. (pause) Queue position: maintained. (pause) Processing window: active.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-072.json",
+      "id": "N_REASON_GENERIC_P",
+      "priorLine": "(multiple) (give: Reason phrase \u2014 Retirement processing continuity; compliance hold resolution; continuous logging; operator present) (give: Reason phrase \u2014 Retirement processing continuity; compliance hold resolution; continuous logging; operator present)",
+      "lineToEdit": "Retirement processing continuity; compliance hold resolution; continuous logging; operator present.",
+      "nextLine": "Reason phrase logged. (pause)\nStill need the authority chain: (pause)\noperator-of-record ID (pause)\nand counterparty acknowledgment (pause)\nfor licensed relationship classification.",
+      "revisedLine": "Retirement-processing continuity; compliance-hold resolution; continuous-logging; operator present.",
+      "changeSummary": "Hyphenated key compound terms to reduce word count per beat while keeping the same meaning and cadence."
+    },
+    {
+      "scene": "SCN_SCN-072.json",
+      "id": "N_REASON_LEGACY_P",
+      "priorLine": "(multiple) (give: Reason phrase \u2014 Reclassify SOL\u2011EARTH\u2011LOCAL as legacy municipal infrastructure; acknowledge/accept licensed relationship) (give: Reason phrase \u2014 Reclassify SOL\u2011EARTH\u2011LOCAL as legacy municipal infrastructure; acknowledge/accept licensed relationship)",
+      "lineToEdit": "Reclassify SOL\u2011EARTH\u2011LOCAL as legacy municipal infrastructure; acknowledge/accept licensed relationship.",
+      "nextLine": "Strip anything that smells like novelty. (pause) \u201cLegacy\u201d is fine\u2014it reads like old paperwork. (pause) And cut \u201cstill.\u201d",
+      "revisedLine": "Reclassify SOL\u2011EARTH\u2011LOCAL: legacy municipal infrastructure; accept licensed relationship.",
+      "changeSummary": "Trimmed one word by dropping \u201cacknowledge/\u201d and tightened phrasing to meet the 8\u2011word beat limit without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-072.json",
+      "id": "N_OPONLY_P",
+      "priorLine": "give: Submit with operator-only authority chain",
+      "lineToEdit": "Operator-of-record: on-site. Submitting under retirement processing.",
+      "nextLine": "I\u2019m not telling you you can\u2019t. (pause) I\u2019m telling you you\u2019ll be alone. (pause) In the record. (pause) Alone isn\u2019t illegal. (pause) It\u2019s just expensive.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-072.json",
+      "id": "N_PERSUADE_P",
+      "priorLine": "persuade: Mark as municipal legacy asset under OLEA retirement authority",
+      "lineToEdit": "Mark it as municipal legacy asset under OLEA retirement authority. Operator-of-record present. Continuous logging. No narrative.",
+      "nextLine": "Requested framing recorded. (pause)\nMunicipal legacy service class proceeds. (pause)\nUnder a licensed relationship. (pause)\nWith a valid authority chain. (pause)\nThey still need counterparty acknowledgment.",
+      "revisedLine": "Mark it as municipal legacy asset. (pause) Under OLEA retirement authority. (pause) Operator-of-record present. (pause) Continuous logging. (pause) No narrative.",
+      "changeSummary": "Split the first sentence into two beats with a pause to keep each beat under 8 words; kept all facts and tone."
+    },
+    {
+      "scene": "SCN_SCN-072.json",
+      "id": "N_ATTACH_MEMO_P",
+      "priorLine": "show: Attach memo draft and hold reference printout",
+      "lineToEdit": "Memo and notice reference attached.",
+      "nextLine": "Attachments received. (pause) Indicator\u2019s a conditional pass\u2014pending operator-of-record identification.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-072.json",
+      "id": "N_ATTACH_FULL_P",
+      "priorLine": "show: Attach full retirement packet (binder scan)",
+      "lineToEdit": "Full retirement packet attached.",
+      "nextLine": "Attachments received. Standing indicator: conditional pass\u2014pending operator-of-record ID.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-072.json",
+      "id": "N_CONFIRM_ELIG_P",
+      "priorLine": "ask: Confirm service class eligibility",
+      "lineToEdit": "Confirm service class eligibility.",
+      "nextLine": "Eligibility: municipal legacy infrastructure service class is acceptable (pause) under a limited-purpose licensed relationship classification (pause) with a valid authority chain (pause) and an endpoint presence statement. (pause) Queue position maintained. (pause) Processing window active.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-072.json",
+      "id": "N_OPERATOR_ID_P",
+      "priorLine": "give: Operator-of-record identification and on-site statement",
+      "lineToEdit": "Operator-of-record: Field Systems Specialist. On-site.",
+      "nextLine": "Operator presence statement logged as a physical claim. (pause) Submission complete. Processing.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-074.json",
+      "id": "N_LEGAL_PLAYER_01",
+      "priorLine": "Legacy Energy Assets Legal. Consistency recording. Name, assignment.",
+      "lineToEdit": "Closure. Routing a memo.",
+      "nextLine": "Define \u201crouting.\u201d (pause) Say \u201cfile it for audit\u201d if that\u2019s it. (pause) If it\u2019s shifting liability don\u2019t say that. (pause) Not on a recorded line.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-074.json",
+      "id": "N_LEGAL_PLAYER_02",
+      "priorLine": "Define \u201crouting.\u201d (pause) Say \u201cfile it for audit\u201d if that\u2019s it. (pause) If it\u2019s shifting liability don\u2019t say that. (pause) Not on a recorded line.",
+      "lineToEdit": "I have the memo draft. Need the cleanest sentence.",
+      "nextLine": "One sentence. (pause) Don\u2019t give me two. (pause) Use this: (pause) \u201cThis memo exists to document retirement (pause) processing communications and compliance hold handling (pause) for SOL\u2011EARTH\u2011LOCAL under municipal legacy infrastructure (pause) service class; continuous logging maintained; (pause) operator present on-site.\u201d (pause) And don\u2019t add \u201cstill.\u201d (pause) Don\u2019t add \u201cbecause.\u201d (pause) \u201cBecause\u201d is how you argue causality.",
+      "revisedLine": "I have memo draft. Need the cleanest sentence.",
+      "changeSummary": "Removed one word (\u201cthe\u201d) to meet the 8-word beat limit without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-074.json",
+      "id": "N_BUDGET_PLAYER_01",
+      "priorLine": "Clock\u2019s yelling. Fiscal window too. (pause)\nWhere are we.",
+      "lineToEdit": "Memo\u2019s drafted. Need it filed.",
+      "nextLine": "\u201cFiled\u201d is the word. (pause) Keep it. (pause)\nStay inside \u201cretirement deliverable.\u201d (pause)\nIf it reads like a finding, (pause)\nFinance calls it an obligation. (pause)\nI can\u2019t fund obligations.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-074.json",
+      "id": "N_BUDGET_PLAYER_02",
+      "priorLine": "\u201cFiled\u201d is the word. (pause) Keep it. (pause)\nStay inside \u201cretirement deliverable.\u201d (pause)\nIf it reads like a finding, (pause)\nFinance calls it an obligation. (pause)\nI can\u2019t fund obligations.",
+      "lineToEdit": "Preferred route?",
+      "nextLine": "Records packet gets you defensibility. (pause)\nTube gets you plausible deniability. (pause)\nPacket\u2019s slower\u2014cheaper later. Tube\u2019s fast. (pause)\nAnd it tends to stick to you.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-074.json",
+      "id": "N_REC_PLAYER_01",
+      "priorLine": "Records. (pause)\nYou\u2019re not coming in. (pause)\nGive me a handle, I\u2019ll release copies. (pause)\nArchive stays shut.",
+      "lineToEdit": "I\u2019m submitting a memo packet.",
+      "nextLine": "Memo packet. Sure. Still need a handle. (pause)\nTitle. References. Date. (pause)\nAnd your entitlement. Your name isn\u2019t last there.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-074.json",
+      "id": "N_REC_GIVE_TITLE",
+      "priorLine": "Give: \u201cMemo title and references.\u201d",
+      "lineToEdit": "\u201cRetirement Processing Communication \u2014 SOL\u2011EARTH\u2011LOCAL.\u201d\nReferences: WO-RET-SP01. MTA notice ref. Submission log.",
+      "nextLine": "MTA reference\u2014slow.\nLog it wrong, it\u2019s mine forever.",
+      "revisedLine": "\u201cRetirement Processing Communication \u2014 SOL\u2011EARTH\u2011LOCAL.\u201d References: WO-RET-SP01. (pause) MTA notice ref. (pause) Submission log.",
+      "changeSummary": "Split references into short beats with pauses to keep each beat under 8 words; meaning unchanged."
+    },
+    {
+      "scene": "SCN_SCN-074.json",
+      "id": "N_REC_REF_SLOW",
+      "priorLine": "Give: \u201cRead MTA notice reference slowly.\u201d",
+      "lineToEdit": "[You read the reference string off the posted notice.]",
+      "nextLine": "Mm. Non-local compliance format. (pause) Those dashes aren\u2019t municipal. (pause) Good. Keeps me from writing a jurisdiction. (pause) Request goes in nouns. (pause) No verbs.",
+      "revisedLine": "[You read the reference off the posted notice.]",
+      "changeSummary": "Removed \u201cstring\u201d to keep the beat at 8 words without changing meaning."
+    },
+    {
+      "scene": "SCN_SCN-074.json",
+      "id": "N_REC_NOUNS_BASIC",
+      "priorLine": "Give: \u201cRequest in nouns.\u201d",
+      "lineToEdit": "Retirement processing memo. Evidence packet. Compliance hold notice. Authority chain acknowledgment.",
+      "nextLine": "Alright. (pause)\nThat\u2019s already on paper. (pause)\n\u201cAuthority chain.\u201d I can run it. (pause)\nKeep meaning off my counter. (pause)\n\nBilling needs a cost center. (pause)\nOr a charge code. (pause)\nChain-of-custody. Initial each page set. (pause)\nNo signatures. (pause)\nNo margin notes. (pause)\nWrite on it. (pause)\nYour writing becomes part of it. (pause)",
+      "revisedLine": "Retirement processing memo. (pause) Evidence packet. (pause) Compliance hold notice. (pause) Authority chain acknowledgment.",
+      "changeSummary": "Inserted (pause) breaks between fragments so each beat stays under 8 words without altering meaning."
+    },
+    {
+      "scene": "SCN_SCN-074.json",
+      "id": "N_REC_NOUNS_LEGAL",
+      "priorLine": "Give: \u201cAuthority chain acknowledgment sentence (exact).\u201d",
+      "lineToEdit": "\u201cOLEA Legal acknowledges submission for category update as a retirement processing instrument, limited purpose; accepts licensed relationship classification for SOL\u2011EARTH\u2011LOCAL under municipal legacy infrastructure service class; no admission of novelty; continuous logging maintained; operator present on-site.\u201d",
+      "nextLine": "Alright. (pause)\nThat\u2019s already on paper. (pause)\n\u201cAuthority chain.\u201d I can run it. (pause)\nKeep meaning off my counter. (pause)\n\nBilling needs a cost center. (pause)\nOr a charge code. (pause)\nChain-of-custody. Initial each page set. (pause)\nNo signatures. (pause)\nNo margin notes. (pause)\nWrite on it. (pause)\nYour writing becomes part of it. (pause)",
+      "revisedLine": "OLEA Legal acknowledges the category update submission (pause) as a retirement processing instrument, limited purpose (pause) Licensed relationship classification accepted for SOL\u2011EARTH\u2011LOCAL (pause) under municipal legacy infrastructure service class (pause) No admission of novelty (pause) Continuous logging maintained (pause) Operator present on-site",
+      "changeSummary": "Split the original semicolon chain into short pause-separated beats (\u22648 words each), kept only one comma, and preserved all original assertions and scope."
+    },
+    {
+      "scene": "SCN_SCN-074.json",
+      "id": "N_REC_COST_CENTER",
+      "priorLine": "Give: \u201cProvide cost center.\u201d",
+      "lineToEdit": "Use retirement processing cost center.",
+      "nextLine": "Accepted. (pause)\nControlled packet. Copies only. (pause)\nReceipt line gets initials. Initials. (pause)\n\nIf you want tube routing say it now. (pause)\nIf it goes through the tube first (pause)\nand comes back a mess I\u2019m \u201cafter-the-fact.\u201d (pause)\nI\u2019m not wearing that.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-079.json",
+      "id": "N_SECV_BADGES_4",
+      "priorLine": "If you can get a Records marker (pause) onto one of those\u2014stamp or kiosk or whatever\u2014(pause) then I can treat you as accountable (pause) and run doors.",
+      "lineToEdit": "Understood.",
+      "nextLine": "",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-080.json",
+      "id": "N_LOOK_2",
+      "priorLine": "Taped beside it, a paper routing chart: laminated, cracked\u2014\u201cRECORDS\u2192ADMIN\u2192SECURITY (REMOTE)\u201d\u2014arrows assume staffing like religion.",
+      "lineToEdit": "Everyone routed away.",
+      "nextLine": "The chart ends with a box: \u201cIF UNSURE, FILE ANYWAY.\u201d",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-100.json",
+      "id": "N_TOKENS_RUN_1",
+      "priorLine": "ask: So tokens run the facility.",
+      "lineToEdit": "So tokens run the facility.",
+      "nextLine": "Tokens run whatever gets audited. (pause) Doors. Kiosks. Windows\u2014they answer artifacts. (pause) Not faces. (pause) You want to move. (pause) You do it in tokens.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-100.json",
+      "id": "N_THREATEN_1",
+      "priorLine": "threaten: Open it or I\u2019ll escalate.",
+      "lineToEdit": "Open it, or I escalate.",
+      "nextLine": "Sure. Escalate. (pause) It needs a category. (pause) Then you sit in the incident queue. (pause) Until the system decides your problem type. (pause) I'm not here to fight you. (pause) I'm throughput. (pause) Let me keep you moving.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-100.json",
+      "id": "N_GET_TOKEN_INFO_1",
+      "priorLine": "(multiple) (ask: How do I get TER?) (ask: Where do I get the token?) (ask: How do I get TER?)",
+      "lineToEdit": "Where do I get it?",
+      "nextLine": "Intake Hall. (pause) Windows 0/3/5/7/9. (pause)\nPick the one. (pause)\nLooks least hungry. (pause)\nFor your life story. (pause)\nGive them an incident category. (pause)\nThe system will accept. (pause)\nThey spit out a token. (pause)\nThat\u2019s what the doors listen to.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-100.json",
+      "id": "N_GET_TOKEN_INFO_3",
+      "priorLine": "Intake Hall. (pause) Windows 0/3/5/7/9. (pause)\nPick the one. (pause)\nLooks least hungry. (pause)\nFor your life story. (pause)\nGive them an incident category. (pause)\nThe system will accept. (pause)\nThey spit out a token. (pause)\nThat\u2019s what the doors listen to.",
+      "lineToEdit": "And if I file myself?",
+      "nextLine": "Intake can\u2019t file a person. (pause)\nNot listed in any jurisdiction. (pause)\nThey can file an object. (pause)\nWith a barcode. (pause)\nAnd an incident category. (pause)\nSo you attach yourself. (pause)\nTo the object. (pause)\nYou\u2019re\u2014politely\u2014\u201cassociated mass.\u201d (pause)\nThey won\u2019t call it dehumanizing. (pause)\nThey\u2019ll call it efficient. (pause)\nOn paper.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-110.json",
+      "id": "N14_PLAYER_CHECKLIST",
+      "priorLine": "ask \u201cComparable to what\u2019s on the checklist.\u201d",
+      "lineToEdit": "Comparable to what\u2019s on the checklist.",
+      "nextLine": "Perfect, yes. (pause) The checklist is a kind of comparability. (pause) Unofficially. (pause) So when it says \u201cVerify operational status\u201d (pause) do we mean status like a generator (pause) or status like\u2014sorry\u2014an enclosure? (pause) I\u2019m not saying it\u2019s an enclosure. (pause) I\u2019m saying the word is doing (pause) a lot of work.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-110.json",
+      "id": "N15D_PLAYER_ALARMS_NORMAL",
+      "priorLine": "ask \u201cAre alarms normal.\u201d",
+      "lineToEdit": "Are alarms normal.",
+      "nextLine": "Normal is a category we assign (pause) after we survive. (pause)\nWant defensible language? (pause) \u201cNo emergent alarm escalation observed (pause) at time of entry.\u201d (pause)\nIt\u2019s boring. (pause) Boring is the goal.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-110.json",
+      "id": "N16_PLAYER_WHAT_IS_IT",
+      "priorLine": "ask \u201cWhat do you think it is.\u201d",
+      "lineToEdit": "What do you think it is.",
+      "nextLine": "I don\u2019t. Officially. (pause)\nUnofficially? Three systems wearing one name-tag. (pause)\nThat\u2019s always where incidents come from. (pause)\nNot this incident. Any incident.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-110.json",
+      "id": "N18_PLAYER_OLEA_LOG_FIRST",
+      "priorLine": "(multiple) (persuade \u201c[OLEA] I\u2019m logging baseline first. No interpretations.\u201d) (persuade \u201c[OLEA] Keep it to verification language.\u201d)",
+      "lineToEdit": "I\u2019m logging baseline first. No interpretations.",
+      "nextLine": "That is a defensible posture. (pause)\nI want it stated as: (pause)\n\u201cBaseline verification initiated prior to operational interaction.\u201d (pause)\nNot because I\u2019m precious. (pause)\nBecause if we don\u2019t say it that way (pause)\nsomeone later will say you interacted first.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-111.json",
+      "id": "N33_PLAYER_AMBIGUOUS",
+      "priorLine": "ask \u201cWhat\u2019s ambiguous.\u201d",
+      "lineToEdit": "What\u2019s ambiguous.",
+      "nextLine": "The panel offers no further detail. The ambiguity is apparently a completed state.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-111.json",
+      "id": "N36_PLAYER_ACK",
+      "priorLine": "use \u201cAcknowledge.\u201d",
+      "lineToEdit": "Acknowledging.",
+      "nextLine": "You press ACK. The amber light stays steady, now steady with the quiet certainty of acknowledged.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-112.json",
+      "id": "N8_PLAYER_SHOW_BINDER",
+      "priorLine": "show \u201cBinder to speaker.\u201d",
+      "lineToEdit": "Holding the binder up to the speaker link camera.",
+      "nextLine": "Thank you. Hold it still\u2014yes, like that. (pause)\nI\u2019m taking a screenshot. (pause)\nNot a record. A pre-record. (pause)\nIt becomes a record later. (pause)\nIf someone claims we never saw it.",
+      "revisedLine": "Holding binder up to speaker link camera.",
+      "changeSummary": "Removed 'the' to reduce word count to 7 without changing meaning."
+    }
+  ]
+}

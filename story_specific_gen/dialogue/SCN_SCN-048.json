@@ -35,7 +35,7 @@
           "id": "N_CLERK_OPEN_1",
           "type": "npc_line",
           "speakerId": "INTAKE_CLERK",
-          "text": "Intake. (pause) Category. (pause) Slip on the counter (pause) if you want to stay in sequence, (pause) in the normal sense.",
+          "text": "Intake. (pause) Category. (pause) Slip on the counter. (pause) If you want to stay in sequence\u0014normal sense.",
           "next": "PC_MAIN"
         },
         {
@@ -111,7 +111,7 @@
           "id": "N_PRESENT_SLIP_2",
           "type": "npc_line",
           "speakerId": "INTAKE_CLERK",
-          "text": "Thanks. (pause)\nIt's paper. (pause)\nIt puts you down: unresolved mass. (pause)\nKeeps blame tidy, in normal sense. (pause)\nNow: category.",
+          "text": "Yeah. (pause)\nPaper. (pause)\nI\u0019m logging you as unresolved mass. (pause)\nKeeps blame tidy\u0014normal sense. (pause)\nNow. Category.",
           "next": "R_TO_MAIN"
         },
         {
@@ -125,7 +125,7 @@
           "id": "N_CATS_2",
           "type": "npc_line",
           "speakerId": "INTAKE_CLERK",
-          "text": "Anything that doesn't kick you into review. (pause)\nDon't make me argue it. (pause)\n\"Misrouted equipment transfer\" usually slides through. (pause)\n\"Nonhazardous backfeed residue\" is on the sheet. (pause)\nRight now, wording's still moving. (pause)\n\"Unclaimed attachment\" is there. (pause)\nIt brings questions. (pause)\nQuestions become incidents.",
+          "text": "Anything that doesn\u0019t kick you into review. (pause)\nDon\u0019t make me litigate it. (pause)\n\u0018Misrouted equipment transfer\u0019 usually clears. (pause)\n\u0018Nonhazardous backfeed residue\u0019 is on the sheet. (pause)\nWording\u0019s still shifting. (pause)\n\u0018Unclaimed attachment\u0019 is listed. (pause)\nThat line pulls questions. (pause)\nQuestions turn into incidents.",
           "next": "N_FORM_SLIDE_1"
         },
         {
@@ -139,7 +139,7 @@
           "id": "N_PROPERTY_2",
           "type": "npc_line",
           "speakerId": "INTAKE_CLERK",
-          "text": "Can't register property (pause)\nwithout a claimant on file. (pause)\nRight now (pause)\nyou're an accounting condition (pause)\nwith shoes. (pause)\nIntake is how the building lets you (pause)\nbe something fileable (pause)\nin the normal sense.",
+          "text": "Can\u0019t register property (pause)\nwithout a claimant on file. (pause)\nRight now (pause)\nyou\u0019re an accounting condition (pause)\nwith shoes. (pause)\nDo Intake first. (pause)\nThen I can file you\u0014normal sense.",
           "next": "R_TO_MAIN"
         },
         {
@@ -153,21 +153,21 @@
           "id": "N_OLEA_2",
           "type": "npc_line",
           "speakerId": "INTAKE_CLERK",
-          "text": "OLEA. Sure. (pause)\nStill just context. (pause)\nI can't scan it. (pause)\nYou want recognition? (pause)\nGet filed as recordable mass first. (pause)\nAfter that, maybe another window cares. (pause)\nIn the normal sense.",
+          "text": "OLEA. Sure. (pause)\nThat\u0019s context. (pause)\nI can\u0019t scan it. (pause)\nGet filed as recordable mass first. (pause)\nAfter that, maybe another window cares\u0014normal sense.",
           "next": "R_TO_MAIN"
         },
         {
           "id": "N_PERSUADE_PASS_1",
           "type": "npc_line",
           "speakerId": "INTAKE_CLERK",
-          "text": "Write \"misrouted equipment transfer.\" (pause)\nAdd attachment language. (pause)\nUse \"associated mass.\" Do not describe. (pause)\nSkip adjectives. (pause)\nThat's how liability walks in. (pause)\nIn the normal sense.",
+          "text": "Write \u0018misrouted equipment transfer\u0019. (pause)\nAdd the attachment line. (pause)\nUse \u0018associated mass\u0019. Do not describe. (pause)\nSkip adjectives. (pause)\nAdjectives are how liability shows up. (pause)\nNormal sense.",
           "next": "N_FORM_SLIDE_1"
         },
         {
           "id": "N_PERSUADE_FAIL_1",
           "type": "npc_line",
           "speakerId": "INTAKE_CLERK",
-          "text": "I'm not signing off on custom wording. (pause) That's how incidents get born. (pause) Pick a category in the normal sense.",
+          "text": "I\u0019m not signing off on custom wording. (pause)\nThat\u0019s how incidents start. (pause)\nPick a category\u0014normal sense.",
           "next": "R_TO_MAIN"
         },
         {
@@ -181,7 +181,7 @@
           "id": "N_BARGAIN_2",
           "type": "npc_line",
           "speakerId": "INTAKE_CLERK",
-          "text": "Good. Less story.\nReceipt comes after filed.\nCategory.",
+          "text": "Good. Keep it short.\nReceipts after filing.\nCategory.",
           "next": "R_TO_MAIN"
         },
         {
@@ -195,7 +195,7 @@
           "id": "N_PROCEED_2",
           "type": "npc_line",
           "speakerId": "INTAKE_CLERK",
-          "text": "Then we go in sequence\u0014in the normal sense.",
+          "text": "Alright. (pause)\nWe go in sequence\u0014normal sense.",
           "next": "N_FORM_SLIDE_1"
         },
         {
@@ -209,7 +209,7 @@
           "id": "N_FORM_SLIDE_2",
           "type": "npc_line",
           "speakerId": "INTAKE_CLERK",
-          "text": "You're unallocated mass. (pause) File it as an associated object. (pause) Anything extra goes down as 'associated'. (pause) Don't describe it. (pause) I need this moving.",
+          "text": "You\u0019re unallocated mass. (pause)\nFile an object as \u0018associated\u0019. (pause)\nAnything extra: \u0018associated\u0019. (pause)\nDon\u0019t describe it. (pause)\nI need this moving.",
           "next": "PC_FILING_MENU"
         },
         {
@@ -265,7 +265,7 @@
           "id": "N_NEED_OBJECT_2",
           "type": "npc_line",
           "speakerId": "INTAKE_CLERK",
-          "text": "You need something the system can read. (pause)\nBarcodes. Serials. A category. (pause)\nBelief is for Orientation. (pause)\nThis is Intake. Normal sense.",
+          "text": "You need something the system can read. (pause)\nBarcode. Serial. Category\u2014something. (pause)\nOrientation does belief. (pause)\nThis is Intake. Normal sense.",
           "next": "R_TO_FILING_MENU"
         },
         {
@@ -279,21 +279,21 @@
           "id": "N_PICK_WRONG_2",
           "type": "npc_line",
           "speakerId": "INTAKE_CLERK",
-          "text": "Pick wrong. (pause) You get bounced. (pause)\nWorst case. (pause) You sit in review. (pause)\nReview drags. (pause)\nPick something the building knows how to forget.",
+          "text": "Pick wrong, you get bounced. (pause)\nWorst case\u0014review. (pause)\nReview drags. (pause)\nPick something the building knows how to forget.",
           "next": "R_TO_FILING_MENU"
         },
         {
           "id": "N_BADGE_1",
           "type": "npc_line",
           "speakerId": "INTAKE_CLERK",
-          "text": "Temporary badge says you have an active receipt. (pause) It will not give you authority. (pause) It cuts down questions in the normal sense.",
+          "text": "Temp badge says you\u0019ve got an active receipt. (pause)\nDoesn\u0019t give you authority. (pause)\nCuts down questions\u0014normal sense.",
           "next": "N_BADGE_2"
         },
         {
           "id": "N_BADGE_2",
           "type": "npc_line",
           "speakerId": "INTAKE_CLERK",
-          "text": "It prints the category code (pause) and the validity window. (pause) If you're looking for your name\u2014 (pause) we don't do names here.",
+          "text": "It prints the category code (pause)\nand the validity window. (pause)\nIf you\u0019re looking for your name\u0014 (pause)\nwe don\u0019t do names here.",
           "next": "R_TO_FILING_MENU"
         },
         {
@@ -307,7 +307,7 @@
           "id": "N_TOOLBAG_2",
           "type": "npc_line",
           "speakerId": "INTAKE_CLERK",
-          "text": "Toolbag. What are we calling it?",
+          "text": "Toolbag. (pause)\nWhat are we calling it on the form?",
           "next": "N_TOOLBAG_3"
         },
         {
@@ -321,7 +321,7 @@
           "id": "N_TOOLBAG_4",
           "type": "npc_line",
           "speakerId": "INTAKE_CLERK",
-          "text": "Good. (pause)\nSerial means I can park it somewhere. (pause)\nI\u2019ll note \u201cassociated mass\u201d with no description. (pause)\nThat wording keeps both of us covered\u2014normal sense.",
+          "text": "Good. (pause)\nSerial means I can park it somewhere. (pause)\nI\u0019ll write \u0018associated mass\u0019\u0014no description. (pause)\nKeeps us covered. Normal sense.",
           "next": "N_TOOLBAG_5"
         },
         {
@@ -342,7 +342,7 @@
           "id": "N_RESIDUE_2",
           "type": "npc_line",
           "speakerId": "INTAKE_CLERK",
-          "text": "\u2018Residue\u2019 sounds like a process. (pause) I\u2019m not asking about that. (pause) Just checking the word, normal sense. (pause) \u2018Persistent\u2019 is fine. (pause) \u2018Nonhazardous\u2019 is fine.",
+          "text": "\u0018Residue\u0019 reads like process language. (pause)\nI\u0019m not getting into that. (pause)\nJust checking the word\u0014normal sense. (pause)\n\u0018Persistent\u0019 is fine. (pause)\n\u0018Nonhazardous\u0019 is fine.",
           "next": "N_RESIDUE_3"
         },
         {
@@ -370,7 +370,7 @@
           "id": "N_THIS_WEEK_2",
           "type": "npc_line",
           "speakerId": "INTAKE_CLERK",
-          "text": "We don't have a \"this week\" box. (pause)\nYeah. Categories drift. (pause)\nBulletins come down. (pause)\nFor now: \"misrouted equipment transfer.\" (pause)\nNeed attachment language? (pause)\n\"associated mass (do not describe).\" (pause)\nSkip the adjectives, normal sense.",
+          "text": "There\u0019s no \u0018this week\u0019 box. (pause)\nYeah, categories drift. Bulletins come down. (pause)\nRight now: \u0018misrouted equipment transfer\u0019. (pause)\nNeed the attachment line? (pause)\n\u0018associated mass (do not describe)\u0019. (pause)\nSkip adjectives\u0014normal sense.",
           "next": "PC_COACHED_COMMIT"
         },
         {
@@ -394,7 +394,7 @@
           "id": "N_COACHED_1",
           "type": "npc_line",
           "speakerId": "INTAKE_CLERK",
-          "text": "Accepted.\nThat won\u0019t make anyone curious. Good.",
+          "text": "Accepted. (pause)\nGood. Nobody\u0019s going to get curious about that.",
           "next": "N_COACHED_2"
         },
         {

@@ -145,28 +145,28 @@
           "id": "N_AMR_CLIPPED_SUP",
           "next": "N_AMR_BACK_MENU",
           "speakerId": "BAY_SUPERVISOR",
-          "text": "AMR recognized. (pause)\nI'm logging it. That's all. (pause)\nApproval lives elsewhere\u2014 not in this room.",
+          "text": "AMR recognized. (pause)\nI\u0019m logging it. That\u0019s all. (pause)\nApproval\u0019s upstream.",
           "type": "npc_line"
         },
         {
           "id": "N_AMR_ALREADY",
           "next": "N_AMR_BACK_MENU",
           "speakerId": "BAY_SUPERVISOR",
-          "text": "It's seated. Leave it. Fiddling just adds entries.",
+          "text": "It\u0019s seated. Leave it. (pause) Fiddling just adds entries.",
           "type": "npc_line"
         },
         {
           "id": "N_AMR_AUTH",
           "next": "N_AMR_BACK_MENU",
           "speakerId": "BAY_SUPERVISOR",
-          "text": "It puts your name on the touch (pause) when the logs print. (pause)\nIt tags the touch as maintenance (pause) so it doesn\u2019t read as interference. (pause)\nThe machine couldn\u2019t care less. (pause) Committees do.",
+          "text": "It puts your name on the touch (pause)\nwhen the logs print. (pause)\nIt tags it as maintenance (pause)\nso it doesn\u0019t read as interference. (pause)\nThe machine couldn\u0019t care less. (pause)\nCommittees do.",
           "type": "npc_line"
         },
         {
           "id": "N_AMR_ARROW",
           "next": "N_AMR_BACK_MENU",
           "speakerId": "BAY_SUPERVISOR",
-          "text": "Because the arrow keeps the log consistent. (pause)\nOne way. Every time. (pause)\nConsistent reads boring. (pause)\nBoring keeps the site open. (pause)\nLong enough to finish.",
+          "text": "Arrow keeps the log consistent. (pause)\nOne way. Every time. (pause)\nBoring reads don\u0019t get flagged. (pause)\nFlags get the site shut. (pause)\nWe need time to finish.",
           "type": "npc_line"
         },
         {
@@ -255,35 +255,35 @@
           "id": "N_DUMMY_SEATED_SUP",
           "next": "N_DUMMY_BACK_MENU",
           "speakerId": "BAY_SUPERVISOR",
-          "text": "Dummy mass seated. (pause)\nWrite \u201cdummy\u201d on the form. (pause)\nDon\u2019t write \u201ccounterweight for non-local event.\u201d (pause)\nPeople panic. (pause)\nKeep your fingers out of the latch. (pause)\nIt bites.",
+          "text": "Dummy mass seated. (pause)\nOn the form, write \u001cdummy.\u001d (pause)\nSkip \u001ccounterweight for non-local event.\u001d (pause)\nThat wording makes people twitchy. (pause)\nAnd keep your fingers out of the latch. (pause)\nIt bites.",
           "type": "npc_line"
         },
         {
           "id": "N_OOS_DUMMY",
           "next": "N_DUMMY_BACK_MENU",
           "speakerId": "BAY_SUPERVISOR",
-          "text": "No. (pause) AMR first. (pause) Touch the mass. (pause) Before the loop records you. (pause) It reads as untracked adjustment. (pause) Then it\u2019s \u201cinterference\u201d on paper.",
+          "text": "No. (pause) AMR first. (pause)\nYou touch the mass (pause)\nbefore the reader loop catches you, (pause)\nit reads like an untracked adjustment. (pause)\nThen it\u0019s \u001cinterference\u001d on paper.",
           "type": "npc_line"
         },
         {
           "id": "N_DUMMY_ALREADY",
           "next": "N_DUMMY_BACK_MENU",
           "speakerId": "BAY_SUPERVISOR",
-          "text": "It\u2019s seated.\nDon\u2019t poke the latch again.",
+          "text": "It\u0019s seated. (pause)\nDon\u0019t poke the latch again.",
           "type": "npc_line"
         },
         {
           "id": "N_DUMMY_UNITS",
           "next": "N_DUMMY_BACK_MENU",
           "speakerId": "BAY_SUPERVISOR",
-          "text": "Who knows. Different hands. Different decades. (pause) Don't chase it. (pause) Make the final number match. (pause) Make it match the last audited number. (pause) If the paperwork doesn't line up, (pause) I'm the one explaining it.",
+          "text": "Who knows. Different hands. Different decades. (pause)\nDon't chase it. (pause)\nMake the final number match. (pause)\nMatch the last audited number. (pause)\nWhen the paperwork doesn't line up. (pause)\nI'm the one explaining it.",
           "type": "npc_line"
         },
         {
           "id": "N_DUMMY_LIGHT",
           "next": "N_DUMMY_BACK_MENU",
           "speakerId": "BAY_SUPERVISOR",
-          "text": "If it's light (pause) the system compensates. (pause) The report calls it 'instability'. (pause) That becomes questions. (pause) Then a budget line. (pause) Then visitors. (pause) Seat it to spec. (pause) I don't need visitors.",
+          "text": "If it's light. (pause)\nThe system compensates. (pause)\nThe report spits out \"instability.\" (pause)\nThen it's questions then budget lines then visitors. (pause)\nSeat it to spec. (pause)\nI don't need visitors.",
           "type": "npc_line"
         },
         {
@@ -372,35 +372,35 @@
           "id": "N_LOAD_SET_SUP",
           "next": "N_LOAD_BACK_MENU",
           "speakerId": "BAY_SUPERVISOR",
-          "text": "Load engaged. (pause)\nFile reads \"controlled demand\" in correction. (pause)\nControlled: written down before you flipped anything. (pause)\nThat\u2019s what holds up.",
+          "text": "Load engaged. (pause)\nFile wants \u001ccontrolled demand\u001d in correction. (pause)\n\u001cControlled\u001d means it was on paper (pause)\nbefore you flipped anything. (pause)\nThat\u0019s what holds up.",
           "type": "npc_line"
         },
         {
           "id": "N_OOS_LOAD",
           "next": "N_LOAD_BACK_MENU",
           "speakerId": "BAY_SUPERVISOR",
-          "text": "Not yet.(pause) Mass first.(pause) Without the mass,(pause) that load profile looks intentional.(pause) Like a stress test.(pause) I\u2019m not putting my name near that.",
+          "text": "Not yet. (pause) Mass first. (pause)\nWithout the mass, (pause)\nthat load profile looks intentional. (pause)\nLike a stress test. (pause)\nI\u0019m not putting my name near that.",
           "type": "npc_line"
         },
         {
           "id": "N_LOAD_ALREADY",
           "next": "N_LOAD_BACK_MENU",
           "speakerId": "BAY_SUPERVISOR",
-          "text": "It\u2019s set. (pause) Don\u2019t start tuning it. (pause) Or discoveries go in the log.",
+          "text": "It\u0019s set. (pause) Don\u0019t start tuning it. (pause)\nEvery little \u001cdiscovery\u001d goes in the log.",
           "type": "npc_line"
         },
         {
           "id": "N_LOAD_PROFILE",
           "next": "N_LOAD_BACK_MENU",
           "speakerId": "BAY_SUPERVISOR",
-          "text": "Enough load to keep the loop honest. (pause) Nothing that makes it show off. (pause)\nWe want readings that look like maintenance. (pause)\nOnce it reads like discovery, (pause) you get a liaison (pause) and a whole new vocabulary.",
+          "text": "Enough load to keep the loop honest. (pause)\nNothing that makes it show off. (pause)\nWe need readings that look like maintenance. (pause)\nStart reading like discovery and (pause)\nyou get a liaison (pause)\nand a whole new vocabulary.",
           "type": "npc_line"
         },
         {
           "id": "N_LOAD_HEROIC",
           "next": "N_LOAD_BACK_MENU",
           "speakerId": "BAY_SUPERVISOR",
-          "text": "Somebody got ambitious without authorization. (pause)\nSmart. Fast. (pause)\nNow they're a footnote, with a confidentiality clause. (pause)\nDon't do \"heroic\" in here.",
+          "text": "Somebody got ambitious without authorization. (pause)\nSmart. Fast. (pause)\nNow they\u0019re a footnote with a confidentiality clause. (pause)\nDon\u0019t do \u001cheroic\u001d in here.",
           "type": "npc_line"
         },
         {
@@ -489,35 +489,35 @@
           "id": "N_CLIP_INIT_SUP",
           "next": "N_CLIP_BACK_MENU",
           "speakerId": "BAY_SUPERVISOR",
-          "text": "Good. (pause) Now I've got a clean line: (pause) You did it when you did it (pause) with valid authorizations in hand. (pause) That's staging. (pause) Keep it that small\u2014 (pause) anyone making it bigger is shopping (pause) for trouble.",
+          "text": "Good. (pause) Now I\u0019ve got a clean line: (pause)\nyou did it when you did it (pause)\nwith valid authorizations in hand. (pause)\nStaging. (pause)\nKeep it that small\u0014 (pause)\nanything bigger turns into trouble.",
           "type": "npc_line"
         },
         {
           "id": "N_OOS_CLIP",
           "next": "N_CLIP_BACK_MENU",
           "speakerId": "BAY_SUPERVISOR",
-          "text": "No. (pause) Put initials after the load is on record. (pause) Otherwise it reads like you signed the outcome.",
+          "text": "No. (pause) Initial after the load\u0019s on record. (pause)\nOtherwise it reads like you signed the outcome.",
           "type": "npc_line"
         },
         {
           "id": "N_CLIP_ALREADY",
           "next": "N_CLIP_BACK_MENU",
           "speakerId": "BAY_SUPERVISOR",
-          "text": "You already initialed. (pause) Don\u2019t mark it twice. (pause) Then I\u2019ve got two timelines (pause) to reconcile.",
+          "text": "You already initialed. (pause) Don\u0019t mark it twice. (pause)\nThen I\u0019ve got two timelines (pause)\nto reconcile.",
           "type": "npc_line"
         },
         {
           "id": "N_CLIP_SIGN",
           "next": "N_CLIP_BACK_MENU",
           "speakerId": "BAY_SUPERVISOR",
-          "text": "I\u2019ll sign as observer. (pause)\nI saw the procedure, that\u2019s it. (pause)\nOutcomes stay off my paper unless Legal asks.",
+          "text": "I\u0019ll sign as observer. (pause)\nI saw the procedure. That\u0019s it. (pause)\nOutcomes stay off my paper (pause)\nunless Legal asks.",
           "type": "npc_line"
         },
         {
           "id": "N_CLIP_PROCEED",
           "next": "N_CLIP_BACK_MENU",
           "speakerId": "BAY_SUPERVISOR",
-          "text": "It gets us into the next controlled area. (pause) Don\u2019t say \u201cjust.\u201d (pause) Aperture bay\u2019s an energized work zone. (pause) We\u2019re staying on task\u2014just farther in.",
+          "text": "It gets us into the next controlled area. (pause)\nDon\u0019t say \u001cjust.\u001d (pause)\nAperture bay\u0019s an energized work zone. (pause)\nSame task\u0014 (pause)\njust farther in.",
           "type": "npc_line"
         },
         {
@@ -536,7 +536,7 @@
           "id": "N_FINAL_SUP",
           "next": "N_END_STAGING_READY",
           "speakerId": "BAY_SUPERVISOR",
-          "text": "Staging reads green.\n(pause)Test load is balanced.\n(pause)Proceed to the aperture bay.\n(pause)You\u2019ve initialed.\n(pause)On the way, keep the language boring.",
+          "text": "Staging\u0019s green. (pause)\nTest load\u0019s balanced. (pause)\nProceed to the aperture bay. (pause)\nYou\u0019ve initialed. (pause)\nOn the way\u0014 (pause)\nkeep the language boring.",
           "type": "npc_line"
         },
         {

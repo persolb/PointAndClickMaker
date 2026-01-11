@@ -63,27 +63,13 @@
           "id": "CASE_DESC",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "Hardhat. Safety glasses. Multimeter\u2014cal sticker half-peeled. (pause)\nTemp labels. Blank inspection tags. (pause)\nLabel maker flashing LOW BATT. (pause)\nYeah. The kit assumes you\u2019ll have to prove you were careful.",
-          "next": "BACK_CHOICE"
+          "text": "Hardhat. Safety glasses. Multimeter\u2014cal sticker half-peeled. (pause)\nTemp labels. Blank inspection tags. (pause)\nLabel maker flashing LOW BATT. (pause)\nYeah. The kit assumes you\u2019ll have to prove you were careful."
         },
         {
           "id": "BINDER_DESC",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "Cover: \u201cClosure Package \u2013 SPINDLE Site (Draft).\u201d \u201cDraft\u201d underlined. Rings won\u2019t close unless you shove.",
-          "next": "BACK_CHOICE"
-        },
-        {
-          "id": "BACK_CHOICE",
-          "type": "player_choice",
-          "speakerId": "PLAYER",
-          "choices": [
-            {
-              "id": "LEAVE_BACK",
-              "text": "leave: Back.",
-              "next": "MENU"
-            }
-          ]
+          "text": "Cover: \u201cClosure Package \u2013 SPINDLE Site (Draft).\u201d \u201cDraft\u201d underlined. Rings won\u2019t close unless you shove."
         },
         {
           "id": "PPE_FAIL",

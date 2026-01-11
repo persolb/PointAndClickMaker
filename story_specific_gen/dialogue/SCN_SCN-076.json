@@ -5,22 +5,9 @@
       "nodes": [
         {
           "id": "N_CONDUIT_DESC",
-          "next": "N_CONDUIT_MENU",
           "speakerId": "NARRATOR",
           "text": "A metal conduit box sits by the fence. (pause) A padlock hangs on it, newer than the bolts holding the box to the post. (pause) A label reads: INSTRUMENTATION\u2014DO NOT DE-ENERGIZE. (pause) Someone underlined \u201cDO\u201d twice.",
           "type": "npc_line"
-        },
-        {
-          "choices": [
-            {
-              "id": "C_END",
-              "next": "END",
-              "text": "leave Back."
-            }
-          ],
-          "id": "N_CONDUIT_MENU",
-          "speakerId": "PLAYER",
-          "type": "player_choice"
         }
       ],
       "sceneId": "SCN-076",

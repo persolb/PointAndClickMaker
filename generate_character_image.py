@@ -1309,6 +1309,21 @@ def classified_images_exist(sheet_path: str) -> bool:
             return True
     return False
 
+
+def delete_unknown_sprites(sheet_path: str) -> None:
+    base, _ext = os.path.splitext(sheet_path)
+    base_root = base.replace("-overview", "")
+    dir_path = os.path.dirname(base_root) or "."
+    patterns = [f"{base_root}-unknown*.png", f"{base_root}-unknown*-mask.png"]
+    for name in os.listdir(dir_path):
+        for pattern in patterns:
+            if fnmatch.fnmatch(name, pattern):
+                try:
+                    os.remove(os.path.join(dir_path, name))
+                except FileNotFoundError:
+                    pass
+                break
+
 def choose_best_variant(prompt_text: str, variant_paths: list[str], model: str) -> int:
     if not variant_paths:
         return 1
@@ -1548,6 +1563,18 @@ def resolve_unknowns_and_duplicates(base_root: str, model: str) -> None:
         if os.path.exists(src_mask):
             os.replace(src_mask, dest_mask)
 
+    def delete_unknown_pairs(paths: list[str]) -> None:
+        for src_img in paths:
+            src_mask = os.path.splitext(src_img)[0] + "-mask.png"
+            try:
+                os.remove(src_img)
+            except FileNotFoundError:
+                pass
+            try:
+                os.remove(src_mask)
+            except FileNotFoundError:
+                pass
+
     max_rounds = 3
     for _ in range(max_rounds):
         images = list_images()
@@ -1568,20 +1595,12 @@ def resolve_unknowns_and_duplicates(base_root: str, model: str) -> None:
                 rename_pair(src, dest)
             images = list_images()
             unknowns = [p for p in images if parse_direction(p) == "unknown"]
-            print(f"- Resolving unknown sprites ({len(unknowns)})")
+            delete_unknown_pairs(unknowns)
+            break
 
-        for src in sorted(unknowns):
-            facing = classify_facing(src, model, 0)
-            dest = f"{base_root}-{facing}.png"
-            if os.path.exists(dest):
-                idx = 2
-                while True:
-                    candidate = f"{base_root}-{facing}-{idx}.png"
-                    if not os.path.exists(candidate):
-                        dest = candidate
-                        break
-                    idx += 1
-            rename_pair(src, dest)
+        if unknowns:
+            delete_unknown_pairs(unknowns)
+            break
 
 
 def fill_internal_voids(mask: "np.ndarray", close_radius: int = 1) -> "np.ndarray":
@@ -1771,9 +1790,10 @@ def generate_character_assets(
             except FileNotFoundError:
                 pass
         print(f"Wrote: {out_path}")
-        if progress:
-            progress.advance(10)
+    if progress:
+        progress.advance(10)
 
+    delete_unknown_sprites(out_path)
     if classified_images_exist(out_path):
         print(f"- Skipping segmentation; labeled crops exist for {safe_name}")
     else:

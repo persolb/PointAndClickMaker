@@ -55,7 +55,7 @@
           "id": "N_LOOK_2",
           "type": "npc_line",
           "speakerId": "RECORDS_CLERK",
-          "text": "Don\u2019t read the placard out loud. (pause)\nOne binding\u2019s enough.",
+          "text": "Don\u2019t read it out loud. (pause)\nI\u2019ve already got one binding to answer for.",
           "next": "N_LOOK_3"
         },
         {
@@ -81,7 +81,7 @@
           "id": "N_TALK_2",
           "type": "npc_line",
           "speakerId": "RECORDS_CLERK",
-          "text": "Records. (pause)\nYou\u2019re not coming in. (pause)\nGive me a handle, I push copies. (pause)\nArchive stays shut.",
+          "text": "Records. (pause)\nYou\u2019re staying out here. (pause)\nGive me a handle, I\u2019ll push the copies. (pause)\nArchive stays shut.",
           "next": "N_TALK_MENU"
         },
         {
@@ -127,7 +127,7 @@
           "id": "N_HANDLE_2",
           "type": "npc_line",
           "speakerId": "RECORDS_CLERK",
-          "text": "Date. Scope. And your entitlement. (pause) Your name won\u2019t be last on it. (pause)\nDon\u2019t put \u201cclosure\u201d in the scope box. (pause)\nClosure\u2019s\u2026 a mood.",
+          "text": "Date. Scope. Entitlement. (pause) Your name won\u2019t be last on that line. (pause)\nAnd don\u2019t write \u201cclosure\u201d in scope. (pause)\nThat word causes problems.",
           "next": "N_HANDLE_MENU"
         },
         {
@@ -168,7 +168,7 @@
           "id": "N_SEAL_2",
           "type": "npc_line",
           "speakerId": "RECORDS_CLERK",
-          "text": "Old seal got cited wrong (pause) in a conversation that \u201cdidn\u2019t happen.\u201d (pause) So now we\u2019ve got a seal (pause) that matches what the record says. (pause) I don\u2019t run the story. (pause) I run the staples.",
+          "text": "Old seal got cited wrong. (pause)\nIn a conversation that \u201cdidn\u2019t happen.\u201d (pause)\nSo it\u2019s swapped. Seal matches the record now. (pause)\nI just keep the paper straight. (pause)\nStaples. Stamps. That\u2019s it.",
           "next": "N_SEAL_MENU"
         },
         {
@@ -209,7 +209,7 @@
           "id": "N_SHOW_PRES_2",
           "type": "npc_line",
           "speakerId": "RECORDS_CLERK",
-          "text": "Hold it up. Closer.\nCopier prints fade fast.",
+          "text": "Hold it up. Closer. (pause)\nCopier ink goes quick.",
           "next": "N_SHOW_PRES_3"
         },
         {
@@ -223,7 +223,7 @@
           "id": "N_SHOW_PRES_4",
           "type": "npc_line",
           "speakerId": "RECORDS_CLERK",
-          "text": "Alright. (pause) You\u2019re in the building, (pause) at a time it says was empty. (pause) I\u2019m not touching that. (pause) It gets you standing to request copies. (pause) Past that\u2014yeah. No.",
+          "text": "Alright. (pause)\nYou\u2019re in the building\u2014(pause)\u2014on a timestamp that says \u201cempty.\u201d (pause)\nI\u2019m not putting my name on that. (pause)\nIt\u2019s enough for standing to request copies. (pause)\nAnything past copies\u2014don\u2019t ask me.",
           "next": "N_PRES_MENU"
         },
         {
@@ -264,7 +264,7 @@
           "id": "N_SHOW_VAR_2",
           "type": "npc_line",
           "speakerId": "RECORDS_CLERK",
-          "text": "Slow. (pause) If it lands wrong in my log, (pause) it stays my problem.",
+          "text": "Slow. (pause)\nIf I log wrong, it sticks to me.",
           "next": "N_SHOW_VAR_3"
         },
         {
@@ -278,7 +278,7 @@
           "id": "N_SHOW_VAR_4",
           "type": "npc_line",
           "speakerId": "RECORDS_CLERK",
-          "text": "Mm. Non-local compliance format. (pause)\nThose dashes don\u2019t match municipal. (pause)\nEnough to justify the seal swap entry.",
+          "text": "Mm. Non-local compliance format. (pause)\nThose dashes don\u2019t match municipal. (pause)\nThat\u2019s enough for the seal-swap entry.",
           "next": "N_VAR_MENU"
         },
         {
@@ -319,21 +319,21 @@
           "id": "N_PRESS_2",
           "type": "npc_line",
           "speakerId": "RECORDS_CLERK",
-          "text": "It\u2019s the tag. (pause) Lets me park the file. (pause) Without writing a jurisdiction. (pause)\nI\u2019m stopping there. (pause)\nYou want it filed, I file it.",
+          "text": "It\u2019s the tag I can use. (pause)\nLets me park the file without writing jurisdiction. (pause)\nThat\u2019s as far as I\u2019m going. (pause)\nYou want it filed, I\u2019ll file it.",
           "next": "N_REDIRECT_MENU"
         },
         {
           "id": "N_REQ_1",
           "type": "npc_line",
           "speakerId": "PLAYER",
-          "text": "Need billing ledgers, maintenance schedules, audit flags. Pre-incident.",
+          "text": "Need billing ledgers and maintenance schedules. Audit flags. Pre-incident.",
           "next": "N_REQ_2"
         },
         {
           "id": "N_REQ_2",
           "type": "npc_line",
           "speakerId": "RECORDS_CLERK",
-          "text": "That\u2019s three pulls\u2014 not one. (pause)\nFine. (pause)\nJust\u2014 billing plus maintenance plus flags. (pause)\nIt usually turns into a story. (pause)\nStories become reclassification events.",
+          "text": "That\u2019s three pulls. (pause)\nFine. (pause)\nBilling and maintenance, flags\u2014log it that way. (pause)\nThis stuff turns into a story. (pause)\nThen somebody calls it a reclassification. (pause)\nIt\u2019s on my desk.",
           "next": "N_REQ_3"
         },
         {
@@ -347,7 +347,7 @@
           "id": "N_REQ_4",
           "type": "npc_line",
           "speakerId": "RECORDS_CLERK",
-          "text": "Billing\u2014cost center or charge code. (pause) Schedules\u2014servicing entity. (pause) Put \u201cUnknown\u201d in the unknown bucket. (pause) Flags\u2014date range and tripped standard. (pause) Memo title works if real.",
+          "text": "Billing\u2014cost center or charge code. (pause)\nSchedules\u2014servicing entity. (pause)\nIf you don\u2019t have it use \u201cUnknown.\u201d (pause)\nPut it in the unknown bucket. (pause)\nFlags\u2014date range and the standard it tripped. (pause)\nMemo title\u2019s fine. If it\u2019s real.",
           "next": "N_MENU_REQUEST_DETAILS"
         },
         {
@@ -395,7 +395,7 @@
           "id": "N_ALREADY_2",
           "type": "npc_line",
           "speakerId": "RECORDS_CLERK",
-          "text": "Plenty. (pause) Half of it\u2019s labeled. (pause) So you don\u2019t have fun with it. (pause) If I start listing you start asking \u201cwhy.\u201d (pause) And I\u2019m not doing \u201cwhy.\u201d",
+          "text": "Plenty. (pause)\nHalf of it\u2019s labeled so you don\u2019t improvise. (pause)\nIf I start listing, you start asking \u201cwhy.\u201d (pause)\nI don\u2019t do \u201cwhy.\u201d",
           "next": "N_REDIRECT_REQUEST_DETAILS"
         },
         {
@@ -414,7 +414,7 @@
           "id": "N_SHOW_BOTH_2",
           "type": "npc_line",
           "speakerId": "RECORDS_CLERK",
-          "text": "Okay. That\u2019ll do. (pause)\nPresence plus the external-format variance (pause)\nlets me open a request (pause)\nand keep it out of Dispute.",
+          "text": "Okay. That\u2019ll do. (pause)\nPresence plus external-format variance lets me open it. (pause)\nAnd I can keep it out of Dispute.",
           "next": "N_SHOW_BOTH_3"
         },
         {
@@ -428,7 +428,7 @@
           "id": "N_SHOW_BOTH_4",
           "type": "npc_line",
           "speakerId": "RECORDS_CLERK",
-          "text": "Nouns only.\nLeave the verbs off.",
+          "text": "Nouns only. (pause)\nLeave the verbs off.",
           "next": "N_MENU_COMMIT"
         },
         {
@@ -442,7 +442,7 @@
           "id": "N_PERSUADE_2",
           "type": "npc_line",
           "speakerId": "RECORDS_CLERK",
-          "text": "Alright. That wording exists on paper. (pause)\nI can run it.",
+          "text": "Alright. (pause)\nThat wording\u2019s on paper. I can run it.",
           "next": "N_PERSUADE_3"
         },
         {
@@ -456,7 +456,7 @@
           "id": "N_PERSUADE_4",
           "type": "npc_line",
           "speakerId": "RECORDS_CLERK",
-          "text": "Controlled packet. Copies only. (pause)\nSign the receipt. (pause)\nInitial each set. (pause)\nNo notes on the pages. (pause)\nDon\u2019t \u201cfix\u201d the staples. (pause)\nLast time somebody fixed staples, (pause)\nI had to log staples as evidence. (pause)\nI\u2019m not doing that again.",
+          "text": "Controlled packet. Copies only. (pause)\nReceipt gets a signature. (pause)\nInitial each set. (pause)\nNo notes on the pages. (pause)\nAnd don\u2019t \u201cfix\u201d the staples. (pause)\nLast time someone fixed them. (pause)\nI logged staples as evidence. (pause)\nI\u2019m not doing staples again.",
           "next": "N_MENU_COMMIT"
         },
         {
@@ -487,7 +487,7 @@
           "id": "N_COMMIT_2",
           "type": "npc_line",
           "speakerId": "RECORDS_CLERK",
-          "text": "Accepted. (pause) You\u2019ll get what\u2019s there as filed. (pause) No summary. (pause) If something doesn\u2019t turn up (pause) the word in my log (pause) is \u201cunlocated.\u201d",
+          "text": "Accepted. (pause)\nYou get what\u2019s there as filed. (pause)\nNo summary. (pause)\nIf it doesn\u2019t turn up, I log \u201cunlocated\u201d.",
           "next": "N_COMMIT_3"
         },
         {
@@ -501,7 +501,7 @@
           "id": "N_COMMIT_4",
           "type": "npc_line",
           "speakerId": "RECORDS_CLERK",
-          "text": "Initial here. Here.\nNo signature. Initials.\nFewer questions.",
+          "text": "Initial here. And here. (pause)\nInitials only. (pause)\nSignatures turn into follow-ups.",
           "next": "N_COMMIT_5"
         },
         {
@@ -515,7 +515,7 @@
           "id": "N_COMMIT_6",
           "type": "npc_line",
           "speakerId": "RECORDS_CLERK",
-          "text": "Before you ask again\u2014no originals. Compliant day.",
+          "text": "Before you ask\u2014no originals. (pause)\nCompliant day.",
           "next": "N_END_COLLECT"
         },
         {

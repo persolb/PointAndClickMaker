@@ -73,20 +73,6 @@
           "next": "N_BACK_TO_MENU"
         },
         {
-          "id": "N_TEST_1",
-          "type": "npc_line",
-          "speakerId": "NARRATOR",
-          "text": "You press the plastic tab.\nThe mechanism gives with a reluctant click\u2014like it\u2019s documenting your fingerprints.",
-          "next": "N_TEST_2"
-        },
-        {
-          "id": "N_TEST_2",
-          "type": "npc_line",
-          "speakerId": "NARRATOR",
-          "text": "One insert slides into the slot, ready to grab.\nThe window\u2019s date stamp isn\u2019t recent.",
-          "next": "N_BACK_TO_MENU"
-        },
-        {
           "id": "N_DRAWER_1",
           "type": "npc_line",
           "speakerId": "NARRATOR",
@@ -235,44 +221,6 @@
           "speakerId": "NARRATOR",
           "text": "You release the button.\nThe line closes cleanly, as if it never existed.",
           "next": "N_BACK_TO_MENU"
-        },
-        {
-          "id": "N_TAKE_1",
-          "type": "npc_line",
-          "speakerId": "NARRATOR",
-          "text": "You pull one visitor badge insert from the dispenser. Expired, laminated, usable\u2014the way compliance hates: technically.",
-          "next": "N_TAKE_2"
-        },
-        {
-          "id": "N_TAKE_2",
-          "type": "npc_line",
-          "speakerId": "NARRATOR",
-          "text": "The slot behind it advances the insert forward, ready to pretend this is a normal day.",
-          "next": "N_TAKE_END"
-        },
-        {
-          "id": "N_TAKE_END",
-          "type": "end",
-          "speakerId": "NARRATOR",
-          "text": "Visitor badge insert acquired.",
-          "outcomeId": "take_badge_insert",
-          "effects": [
-            {
-              "key": "paperwork.badgeInsertCollected",
-              "action": "set",
-              "value": true
-            },
-            {
-              "key": "inventory.items",
-              "action": "add",
-              "value": "ITEM_VISITOR_BADGE_INSERT_EXPIRED"
-            },
-            {
-              "key": "paperwork.completeness",
-              "action": "increment",
-              "value": 1
-            }
-          ]
         },
         {
           "id": "N_BACK_TO_MENU",

@@ -1,1012 +1,1012 @@
 {
   "nodes": [
     {
-      "scene": "SCN_SCN-005.json",
-      "id": "N_CALLBOX_EAC_1",
-      "priorLine": "The speaker pops. A breath. Then a voice that sounds like it\u2019s already composing an email about this.",
-      "lineToEdit": "External Assurance, line three\u2014no, sorry, the box still labels it \u201cGuard.\u201d\nGo ahead. State your purpose in a sentence. Two if you must. It helps with comparability.",
+      "scene": "SCN_SCN-006.json",
+      "id": "N_EAC_MENU",
+      "priorLine": "The speaker pops. A breath. Then voice that sounds like it\u2019s composing an email on this.",
+      "lineToEdit": "External Assurance line three\u2014no, sorry. (pause) The box still labels it \u201cGuard.\u201d (pause) Go ahead. (pause) State your purpose in a sentence. (pause) Two if you must. (pause) It helps with comparability.",
       "nextLine": "",
-      "revisedLine": "External Assurance line three\u2014no, sorry. (pause) The box still labels it \u201cGuard.\u201d (pause) Go ahead. (pause) State your purpose in a sentence. (pause) Two if you must. (pause) It helps with comparability.",
-      "changeSummary": "Split the line into shorter beats using (pause) so no beat exceeds 8 words. Replaced extra commas with punctuation/em dashes to keep total commas at 1 while preserving cadence and meaning."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
-      "scene": "SCN_SCN-005.json",
+      "scene": "SCN_SCN-006.json",
       "id": "N_EAC_ACCESS_1",
       "priorLine": "Ask: \u201cI need access to the shack.\u201d",
-      "lineToEdit": "Access is not a single action. It\u2019s a chain of custody.\nIf you mean \u201centry,\u201d entry is governed by the site\u2019s mothball status, which is\u2014just to be clear\u2014an operational posture, not abandonment.",
-      "nextLine": "So the correct first step is to confirm whether the access control is functional enough to produce a record.\nTry your badge. If it fails, don\u2019t repeat it more than twice. Repetition implies expectation, and expectation implies a test.\nTests imply scope.",
-      "revisedLine": "Access isn't one action. (pause) It's chain of custody. (pause)\nIf you mean entry, (pause) it's governed by the site's mothball status. (pause)\nThat's operational posture. (pause) Not abandonment.",
-      "changeSummary": "Split into short beats using (pause) to stay under 8 words per beat. Reduced commas to one by replacing comma-heavy clauses with shorter sentences and removing the parenthetical aside without changing meaning."
+      "lineToEdit": "Access isn't one action. (pause) It's chain of custody. (pause)\nIf you mean entry, (pause) it's governed by the site's mothball status. (pause)\nThat's operational posture. (pause) Not abandonment.",
+      "nextLine": "So the correct first step is (pause) confirm access control can log a record. (pause) Try your badge. (pause) If it fails, don\u2019t repeat more than twice. (pause) Repetition implies expectation. (pause) Expectation implies a test. (pause) Tests imply scope.",
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
-      "scene": "SCN_SCN-005.json",
+      "scene": "SCN_SCN-006.json",
       "id": "N_EAC_ACCESS_2",
-      "priorLine": "Access is not a single action. It\u2019s a chain of custody.\nIf you mean \u201centry,\u201d entry is governed by the site\u2019s mothball status, which is\u2014just to be clear\u2014an operational posture, not abandonment.",
-      "lineToEdit": "So the correct first step is to confirm whether the access control is functional enough to produce a record.\nTry your badge. If it fails, don\u2019t repeat it more than twice. Repetition implies expectation, and expectation implies a test.\nTests imply scope.",
+      "priorLine": "Access isn't one action. (pause) It's chain of custody. (pause)\nIf you mean entry, (pause) it's governed by the site's mothball status. (pause)\nThat's operational posture. (pause) Not abandonment.",
+      "lineToEdit": "So the correct first step is (pause) confirm access control can log a record. (pause) Try your badge. (pause) If it fails, don\u2019t repeat more than twice. (pause) Repetition implies expectation. (pause) Expectation implies a test. (pause) Tests imply scope.",
       "nextLine": "The speaker waits with the patience of a form.",
-      "revisedLine": "So the correct first step is (pause) confirm access control can log a record. (pause) Try your badge. (pause) If it fails, don\u2019t repeat more than twice. (pause) Repetition implies expectation. (pause) Expectation implies a test. (pause) Tests imply scope.",
-      "changeSummary": "Added (pause) breaks to keep each beat under 8 words, tightened wording without changing meaning, and removed the extra comma by splitting the expectation/test line into two sentences."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
-      "scene": "SCN_SCN-005.json",
+      "scene": "SCN_SCN-006.json",
       "id": "N_EAC_POWER_1",
       "priorLine": "Ask: \u201cCard reader\u2019s underpowered.\u201d",
-      "lineToEdit": "Underpowered is a strong word. I would say \u201cintermittently energized.\u201d\nWhich is consistent with mothball. Mothball doesn\u2019t mean off. It means minimized.",
-      "nextLine": "It may authenticate without actuating, yes. That\u2019s actually preferable for us.\nAuthentication creates a timestamp. Actuation creates liability.",
-      "revisedLine": "Underpowered is a strong word.(pause) I'd say \u201cintermittently energized.\u201d(pause) Consistent with mothball.(pause) Mothball isn't off.(pause) It's minimized.",
-      "changeSummary": "Inserted (pause) breaks to keep each beat under 8 words, trimmed phrasing, and removed the \"Which is\" construction while preserving meaning."
+      "lineToEdit": "Underpowered is a strong word.(pause) I'd say \u201cintermittently energized.\u201d(pause) Consistent with mothball.(pause) Mothball isn't off.(pause) It's minimized.",
+      "nextLine": "It may authenticate without actuating, yes. (pause) That\u2019s actually preferable for us. (pause) Authentication creates a timestamp. (pause) Actuation creates liability.",
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
-      "scene": "SCN_SCN-005.json",
+      "scene": "SCN_SCN-006.json",
       "id": "N_EAC_POWER_2",
-      "priorLine": "Underpowered is a strong word. I would say \u201cintermittently energized.\u201d\nWhich is consistent with mothball. Mothball doesn\u2019t mean off. It means minimized.",
-      "lineToEdit": "It may authenticate without actuating, yes. That\u2019s actually preferable for us.\nAuthentication creates a timestamp. Actuation creates liability.",
+      "priorLine": "Underpowered is a strong word.(pause) I'd say \u201cintermittently energized.\u201d(pause) Consistent with mothball.(pause) Mothball isn't off.(pause) It's minimized.",
+      "lineToEdit": "It may authenticate without actuating, yes. (pause) That\u2019s actually preferable for us. (pause) Authentication creates a timestamp. (pause) Actuation creates liability.",
       "nextLine": "Static crackles, like someone shuffling papers.",
-      "revisedLine": "It may authenticate without actuating, yes. (pause) That\u2019s actually preferable for us. (pause) Authentication creates a timestamp. (pause) Actuation creates liability.",
-      "changeSummary": "Inserted (pause) breaks so each beat stays under 8 words; kept wording and meaning the same."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
-      "scene": "SCN_SCN-005.json",
+      "scene": "SCN_SCN-006.json",
       "id": "N_EAC_ONSITE_1",
       "priorLine": "Ask: \u201cIs anyone on-site?\u201d",
-      "lineToEdit": "\u201cOn-site\u201d is geographic. \u201cPresent\u201d is procedural.\nThere is no staffed guard function, if that\u2019s what you\u2019re asking. Staffing was removed under the continuity amendment\u2014because the facility was considered stable.",
-      "nextLine": "Stable in the sense of \u201cnot moving.\u201d Not stable in the sense of \u201csafe.\u201d Different column.\nAssurance is remote. Contracted by your funders, not your office\u2014just so we don\u2019t muddle authority.\nI document deviations. I don\u2019t authorize solutions.",
-      "revisedLine": "\u201cOn-site\u201d is geographic. (pause)\n\u201cPresent\u201d is procedural. (pause)\nNo staffed guard function. (pause)\nIf that\u2019s what you\u2019re asking. (pause)\nStaffing was removed under the continuity amendment. (pause)\nBecause the facility was considered stable.",
-      "changeSummary": "Split the line into short (pause) beats under 8 words, removed the comma, and kept only one explicit explainer (\u201cBecause\u201d) while preserving meaning and cadence."
+      "lineToEdit": "\u201cOn-site\u201d is geographic. (pause)\n\u201cPresent\u201d is procedural. (pause)\nNo staffed guard function. (pause)\nIf that\u2019s what you\u2019re asking. (pause)\nStaffing was removed under the continuity amendment. (pause)\nBecause the facility was considered stable.",
+      "nextLine": "Stable as in \u201cnot moving.\u201d (pause) Not stable as in \u201csafe.\u201d (pause) Different column. (pause)\nAssurance is remote. (pause) Contracted by your funders, not your office. (pause) So we don\u2019t muddle authority. (pause)\nI document deviations. (pause) I don\u2019t authorize solutions.",
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
-      "scene": "SCN_SCN-005.json",
+      "scene": "SCN_SCN-006.json",
       "id": "N_EAC_ONSITE_2",
-      "priorLine": "\u201cOn-site\u201d is geographic. \u201cPresent\u201d is procedural.\nThere is no staffed guard function, if that\u2019s what you\u2019re asking. Staffing was removed under the continuity amendment\u2014because the facility was considered stable.",
-      "lineToEdit": "Stable in the sense of \u201cnot moving.\u201d Not stable in the sense of \u201csafe.\u201d Different column.\nAssurance is remote. Contracted by your funders, not your office\u2014just so we don\u2019t muddle authority.\nI document deviations. I don\u2019t authorize solutions.",
+      "priorLine": "\u201cOn-site\u201d is geographic. (pause)\n\u201cPresent\u201d is procedural. (pause)\nNo staffed guard function. (pause)\nIf that\u2019s what you\u2019re asking. (pause)\nStaffing was removed under the continuity amendment. (pause)\nBecause the facility was considered stable.",
+      "lineToEdit": "Stable as in \u201cnot moving.\u201d (pause) Not stable as in \u201csafe.\u201d (pause) Different column. (pause)\nAssurance is remote. (pause) Contracted by your funders, not your office. (pause) So we don\u2019t muddle authority. (pause)\nI document deviations. (pause) I don\u2019t authorize solutions.",
       "nextLine": "The call box hums, faintly pleased to be useful.",
-      "revisedLine": "Stable as in \u201cnot moving.\u201d (pause) Not stable as in \u201csafe.\u201d (pause) Different column. (pause)\nAssurance is remote. (pause) Contracted by your funders, not your office. (pause) So we don\u2019t muddle authority. (pause)\nI document deviations. (pause) I don\u2019t authorize solutions.",
-      "changeSummary": "Split into short (pause) beats under 8 words, kept only one comma, and preserved meaning and cadence while tightening phrasing."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
-      "scene": "SCN_SCN-005.json",
+      "scene": "SCN_SCN-006.json",
       "id": "N_EAC_OLEA_PASS_1",
       "priorLine": "",
-      "lineToEdit": "I hear you, and I\u2019m not disputing your badge color.\nBut \u201cactual access path\u201d implies there is one sanctioned route, and if I say it out loud, it becomes discoverable.\nSo what I can do is: confirm what is not available, for your record.",
-      "nextLine": "There is no on-site attendant. There is no remote door release.\nThe reader is budgeted to log attempts, not to drive the strike. That\u2019s why it\u2019s \u201cintermittently energized.\u201d\nIf you need entry, you\u2019ll need a different mechanism than the reader.",
-      "revisedLine": "I hear you, (pause) I\u2019m not disputing your badge color. (pause) But \u201cactual access path\u201d implies one sanctioned route. (pause) If I say it aloud it\u2019s discoverable. (pause) So I can confirm what\u2019s not available. (pause) For your record.",
-      "changeSummary": "Added (pause) breaks so each beat stays under 8 words. Removed extra commas by splitting into shorter sentences while preserving meaning and cadence."
+      "lineToEdit": "I hear you, (pause) I\u2019m not disputing your badge color. (pause) But \u201cactual access path\u201d implies one sanctioned route. (pause) If I say it aloud it\u2019s discoverable. (pause) So I can confirm what\u2019s not available. (pause) For your record.",
+      "nextLine": "There is no on-site attendant. (pause) There is no remote door release. (pause) The reader is budgeted to log attempts. (pause) Not to drive the strike. (pause) So it\u2019s \u201cintermittently energized.\u201d (pause) If you need entry, use another mechanism. (pause) Not the reader.",
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
-      "scene": "SCN_SCN-005.json",
+      "scene": "SCN_SCN-006.json",
       "id": "N_EAC_OLEA_PASS_2",
-      "priorLine": "I hear you, and I\u2019m not disputing your badge color.\nBut \u201cactual access path\u201d implies there is one sanctioned route, and if I say it out loud, it becomes discoverable.\nSo what I can do is: confirm what is not available, for your record.",
-      "lineToEdit": "There is no on-site attendant. There is no remote door release.\nThe reader is budgeted to log attempts, not to drive the strike. That\u2019s why it\u2019s \u201cintermittently energized.\u201d\nIf you need entry, you\u2019ll need a different mechanism than the reader.",
-      "nextLine": "Like a work order. Like a keyed override that may or may not exist where the signage claims it exists.\nLike\u2014my personal favorite\u2014routing your need through the pneumatic system, because then it becomes paper and everyone relaxes.",
-      "revisedLine": "There is no on-site attendant. (pause) There is no remote door release. (pause) The reader is budgeted to log attempts. (pause) Not to drive the strike. (pause) So it\u2019s \u201cintermittently energized.\u201d (pause) If you need entry, use another mechanism. (pause) Not the reader.",
-      "changeSummary": "Split the text into short (pause) beats under 8 words, removed extra comma usage, and kept the same meaning with a similar clipped cadence."
+      "priorLine": "I hear you, (pause) I\u2019m not disputing your badge color. (pause) But \u201cactual access path\u201d implies one sanctioned route. (pause) If I say it aloud it\u2019s discoverable. (pause) So I can confirm what\u2019s not available. (pause) For your record.",
+      "lineToEdit": "There is no on-site attendant. (pause) There is no remote door release. (pause) The reader is budgeted to log attempts. (pause) Not to drive the strike. (pause) So it\u2019s \u201cintermittently energized.\u201d (pause) If you need entry, use another mechanism. (pause) Not the reader.",
+      "nextLine": "Like a work order. (pause) Like a keyed override. (pause) It may or may not exist. (pause) Where the signage claims it exists. (pause) Like\u2014my personal favorite\u2014routing your need. (pause) Through the pneumatic system, because then it (pause) becomes paper. (pause) And everyone relaxes.",
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
-      "scene": "SCN_SCN-005.json",
+      "scene": "SCN_SCN-006.json",
       "id": "N_EAC_OLEA_PASS_3",
-      "priorLine": "There is no on-site attendant. There is no remote door release.\nThe reader is budgeted to log attempts, not to drive the strike. That\u2019s why it\u2019s \u201cintermittently energized.\u201d\nIf you need entry, you\u2019ll need a different mechanism than the reader.",
-      "lineToEdit": "Like a work order. Like a keyed override that may or may not exist where the signage claims it exists.\nLike\u2014my personal favorite\u2014routing your need through the pneumatic system, because then it becomes paper and everyone relaxes.",
+      "priorLine": "There is no on-site attendant. (pause) There is no remote door release. (pause) The reader is budgeted to log attempts. (pause) Not to drive the strike. (pause) So it\u2019s \u201cintermittently energized.\u201d (pause) If you need entry, use another mechanism. (pause) Not the reader.",
+      "lineToEdit": "Like a work order. (pause) Like a keyed override. (pause) It may or may not exist. (pause) Where the signage claims it exists. (pause) Like\u2014my personal favorite\u2014routing your need. (pause) Through the pneumatic system, because then it (pause) becomes paper. (pause) And everyone relaxes.",
       "nextLine": "The speaker clicks softly, as if it\u2019s smiling.",
-      "revisedLine": "Like a work order. (pause) Like a keyed override. (pause) It may or may not exist. (pause) Where the signage claims it exists. (pause) Like\u2014my personal favorite\u2014routing your need. (pause) Through the pneumatic system, because then it (pause) becomes paper. (pause) And everyone relaxes.",
-      "changeSummary": "Inserted (pause) breaks to keep each beat under 8 words; preserved meaning and cadence. Kept commas to 1 and retained only one explainer hit ('because')."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
-      "scene": "SCN_SCN-005.json",
+      "scene": "SCN_SCN-006.json",
       "id": "N_EAC_OLEA_FAIL_1",
       "priorLine": "",
-      "lineToEdit": "I can\u2019t validate authority from a call box.\nIf you want the conversation to be actionable, phrase it as an observation I can log, not an instruction I can transmit.",
+      "lineToEdit": "I can\u2019t validate authority from a call box. (pause) Want this to be actionable? (pause) Phrase it as an observation I can log. (pause) Not an instruction I can transmit.",
       "nextLine": "",
-      "revisedLine": "I can\u2019t validate authority from a call box. (pause) Want this to be actionable? (pause) Phrase it as an observation I can log. (pause) Not an instruction I can transmit.",
-      "changeSummary": "Split into shorter beats with (pause) breaks to meet max beat length. Removed commas by splitting clauses into separate sentences while preserving meaning and cadence."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
-      "scene": "SCN_SCN-005.json",
+      "scene": "SCN_SCN-006.json",
       "id": "N_EAC_CONFIRM_1",
       "priorLine": "Ask: \u201cConfirm for the record: locked door, reader can log but not actuate.\u201d",
-      "lineToEdit": "Confirmed as stated: the door state is locked, and the reader\u2019s power posture supports logging attempts without reliable actuation.\nThat is an acceptable boundary for outside documentation.",
+      "lineToEdit": "Confirmed as stated: door state is locked. (pause) The reader\u2019s power posture supports logging attempts. (pause) Reliable actuation is not supported. (pause) This boundary is acceptable for outside documentation.",
       "nextLine": "",
-      "revisedLine": "Confirmed as stated: door state is locked. (pause) The reader\u2019s power posture supports logging attempts. (pause) Reliable actuation is not supported. (pause) This boundary is acceptable for outside documentation.",
-      "changeSummary": "Split into short beats using (pause), removed the comma, and preserved the original meaning and formal cadence."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-012.json",
       "id": "N_RADIO_01",
       "priorLine": "Talk \u2014 Radio EAC liaison.",
-      "lineToEdit": "Field Systems Specialist, hi\u2014yes, I\u2019m on.\nBefore you energize anything, we should capture the comparability basis.\nJust so we\u2019re not later asked, \u201cComparable to what, specifically,\u201d by someone who thinks specificity is an admission.",
+      "lineToEdit": "Field Systems Specialist\u2014hi. Yes. I\u2019m on. (pause)\nBefore you energize anything. (pause)\nWe should capture the comparability basis. (pause)\nLater someone may ask. \u201cComparable to what. Specifically.\u201d (pause)\nThey think specificity is an admission. (pause)",
       "nextLine": "Aux bring-up only.",
-      "revisedLine": "Field Systems Specialist\u2014hi. Yes. I\u2019m on. (pause)\nBefore you energize anything. (pause)\nWe should capture the comparability basis. (pause)\nLater someone may ask. \u201cComparable to what. Specifically.\u201d (pause)\nThey think specificity is an admission. (pause)",
-      "changeSummary": "Split into short beats using (pause) to meet the 8-word limit. Removed commas by restructuring into shorter sentences while keeping the same meaning and cadence."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-012.json",
       "id": "N_RADIO_02",
       "priorLine": "Aux bring-up only.",
-      "lineToEdit": "Right, and \u201caux\u201d is a word that means \u201cminor\u201d until it means \u201cuncontrolled.\u201d\nI\u2019m not saying it will. I\u2019m saying the record should show we asked the question.\nWhich is different from implying you were reckless.\nLegally.",
+      "lineToEdit": "Right. (pause) \u201cAux\u201d reads \u201cminor\u201d until \u201cuncontrolled.\u201d (pause) I\u2019m not saying it will. (pause) I\u2019m saying the record should show we asked. (pause) That\u2019s different from implying you were reckless. (pause) Legally.",
       "nextLine": "",
-      "revisedLine": "Right. (pause) \u201cAux\u201d reads \u201cminor\u201d until \u201cuncontrolled.\u201d (pause) I\u2019m not saying it will. (pause) I\u2019m saying the record should show we asked. (pause) That\u2019s different from implying you were reckless. (pause) Legally.",
-      "changeSummary": "Split the line into short beats using (pause) to meet the 8-word limit, tightened phrasing while keeping the same meaning, and removed commas."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-012.json",
       "id": "N_RADIO_ASK_02",
       "priorLine": "Comparable to what?",
-      "lineToEdit": "Anything with auxiliary distribution in a decommissioning context.\nA hospital wing. A pumping station. An airport baggage system.\nNot because this is those\u2014because those have checklists.\nIf we can borrow a checklist, we can borrow the liability posture.",
-      "nextLine": "Also\u2014small note\u2014if you say \u201cnon-critical,\u201d someone will ask, \u201cNon-critical to whom?\u201d\nPlease don\u2019t answer that out loud. Put it in writing. Writing can be filed.",
-      "revisedLine": "Anything with auxiliary distribution in decommissioning context. (pause)\nA hospital wing. (pause)\nA pumping station. (pause)\nAn airport baggage system. (pause)\nNot because this is those\u2014because those have checklists. (pause)\nIf we can borrow a checklist (pause)\nwe can borrow the liability posture.",
-      "changeSummary": "Inserted (pause) breaks to keep each beat under 8 words, and removed commas to stay within the comma limit while preserving meaning and cadence."
+      "lineToEdit": "Anything with auxiliary distribution in decommissioning context. (pause)\nA hospital wing. (pause)\nA pumping station. (pause)\nAn airport baggage system. (pause)\nNot because this is those\u2014because those have checklists. (pause)\nIf we can borrow a checklist (pause)\nwe can borrow the liability posture.",
+      "nextLine": "Also \u2014 small note.(pause) If you say \u201cnon-critical\u201d.(pause) Someone will ask: \u201cNon-critical to whom?\u201d(pause) Please don\u2019t answer that out loud.(pause) Put it in writing.(pause) Writing can be filed.",
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-012.json",
       "id": "N_RADIO_ASK_03",
-      "priorLine": "Anything with auxiliary distribution in a decommissioning context.\nA hospital wing. A pumping station. An airport baggage system.\nNot because this is those\u2014because those have checklists.\nIf we can borrow a checklist, we can borrow the liability posture.",
-      "lineToEdit": "Also\u2014small note\u2014if you say \u201cnon-critical,\u201d someone will ask, \u201cNon-critical to whom?\u201d\nPlease don\u2019t answer that out loud. Put it in writing. Writing can be filed.",
+      "priorLine": "Anything with auxiliary distribution in decommissioning context. (pause)\nA hospital wing. (pause)\nA pumping station. (pause)\nAn airport baggage system. (pause)\nNot because this is those\u2014because those have checklists. (pause)\nIf we can borrow a checklist (pause)\nwe can borrow the liability posture.",
+      "lineToEdit": "Also \u2014 small note.(pause) If you say \u201cnon-critical\u201d.(pause) Someone will ask: \u201cNon-critical to whom?\u201d(pause) Please don\u2019t answer that out loud.(pause) Put it in writing.(pause) Writing can be filed.",
       "nextLine": "",
-      "revisedLine": "Also \u2014 small note.(pause) If you say \u201cnon-critical\u201d.(pause) Someone will ask: \u201cNon-critical to whom?\u201d(pause) Please don\u2019t answer that out loud.(pause) Put it in writing.(pause) Writing can be filed.",
-      "changeSummary": "Split into short (pause) beats to meet max words. Removed commas by swapping to periods/colon while keeping the same meaning and cadence. | Added a pause after \u201csmall note\u201d to shorten the first beat and keep each beat under 8 words without changing meaning."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-012.json",
       "id": "N_RADIO_PERSUADE_02",
       "priorLine": "I\u2019ll note: temporary aux for label printing.",
-      "lineToEdit": "Perfect. \u201cTemporary\u201d is a lovely word.\nIt implies an intention to stop, which is what we want on paper, even when the equipment disagrees.",
-      "nextLine": "And \u201clabel printing\u201d is mundane. Mundane is defensible.\nThank you for choosing the boring option.",
-      "revisedLine": "Perfect. \u201cTemporary\u201d is a lovely word. (pause) It implies an intention to stop. (pause) That is what we want on paper. (pause) Even when the equipment disagrees.",
-      "changeSummary": "Added (pause) breaks to keep each beat under 8 words. Removed commas and split the longer clause into short sentences while preserving meaning and cadence."
+      "lineToEdit": "Perfect. \u201cTemporary\u201d is a lovely word. (pause) It implies an intention to stop. (pause) That is what we want on paper. (pause) Even when the equipment disagrees.",
+      "nextLine": "And \u201clabel printing\u201d is mundane. (pause) Mundane is defensible. (pause) Thank you for choosing the boring option.",
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-012.json",
       "id": "N_RADIO_PERSUADE_03",
-      "priorLine": "Perfect. \u201cTemporary\u201d is a lovely word.\nIt implies an intention to stop, which is what we want on paper, even when the equipment disagrees.",
-      "lineToEdit": "And \u201clabel printing\u201d is mundane. Mundane is defensible.\nThank you for choosing the boring option.",
+      "priorLine": "Perfect. \u201cTemporary\u201d is a lovely word. (pause) It implies an intention to stop. (pause) That is what we want on paper. (pause) Even when the equipment disagrees.",
+      "lineToEdit": "And \u201clabel printing\u201d is mundane. (pause) Mundane is defensible. (pause) Thank you for choosing the boring option.",
       "nextLine": "",
-      "revisedLine": "And \u201clabel printing\u201d is mundane. (pause) Mundane is defensible. (pause) Thank you for choosing the boring option.",
-      "changeSummary": "Inserted two (pause) breaks to keep each beat under 8 words; no meaning or tone changes."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-012.json",
       "id": "N_RADIO_SHOW_02",
       "priorLine": "I\u2019ll send photos.",
-      "lineToEdit": "Great\u2014include the sticker that says \u201cDO NOT RELABEL.\u201d\nThat\u2019s not a problem, it\u2019s a history.\nHistory is admissible.",
-      "nextLine": "Also get the placard that says \u201cNon-critical per Facilities.\u201d\nI don\u2019t agree with it, but I respect that it exists.\nExistence is half of compliance.",
-      "revisedLine": "Great\u2014include the sticker. (pause) It says \u201cDO NOT RELABEL.\u201d (pause) Not a problem. (pause) It\u2019s a history. (pause) History is admissible.",
-      "changeSummary": "Split into shorter beats using (pause) and removed the comma by breaking \u201cThat\u2019s not a problem, it\u2019s a history\u201d into two sentences; meaning preserved."
+      "lineToEdit": "Great\u2014include the sticker. (pause) It says \u201cDO NOT RELABEL.\u201d (pause) Not a problem. (pause) It\u2019s a history. (pause) History is admissible.",
+      "nextLine": "Also get a placard: \u201cNon-critical per Facilities.\u201d (pause)\nI don\u2019t agree with it. (pause)\nBut I respect that it exists. (pause)\nExistence is half of compliance.",
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-012.json",
       "id": "N_RADIO_SHOW_03",
-      "priorLine": "Great\u2014include the sticker that says \u201cDO NOT RELABEL.\u201d\nThat\u2019s not a problem, it\u2019s a history.\nHistory is admissible.",
-      "lineToEdit": "Also get the placard that says \u201cNon-critical per Facilities.\u201d\nI don\u2019t agree with it, but I respect that it exists.\nExistence is half of compliance.",
+      "priorLine": "Great\u2014include the sticker. (pause) It says \u201cDO NOT RELABEL.\u201d (pause) Not a problem. (pause) It\u2019s a history. (pause) History is admissible.",
+      "lineToEdit": "Also get a placard: \u201cNon-critical per Facilities.\u201d (pause)\nI don\u2019t agree with it. (pause)\nBut I respect that it exists. (pause)\nExistence is half of compliance.",
       "nextLine": "",
-      "revisedLine": "Also get a placard: \u201cNon-critical per Facilities.\u201d (pause)\nI don\u2019t agree with it. (pause)\nBut I respect that it exists. (pause)\nExistence is half of compliance.",
-      "changeSummary": "Inserted (pause) breaks to keep each beat under 8 words, and lightly adjusted wording while preserving meaning and cadence."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-012.json",
       "id": "N_RADIO_LEAVE_02",
       "priorLine": "Proceeding.",
-      "lineToEdit": "Understood.\nFor the record, I did advise capturing comparability.\nNot because you need advice. Because I need timestamps.",
+      "lineToEdit": "Understood. (pause)\nFor the record, I did advise. (pause)\nCapturing comparability. (pause)\nNot because you need advice. (pause)\nBecause I need timestamps.",
       "nextLine": "",
-      "revisedLine": "Understood. (pause)\nFor the record, I did advise. (pause)\nCapturing comparability. (pause)\nNot because you need advice. (pause)\nBecause I need timestamps.",
-      "changeSummary": "Split the line into shorter beats using (pause) so no beat exceeds 8 words; kept the single comma and preserved the two 'because' statements without adding new explainers."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-012.json",
       "id": "N_RADIO_OLEA_02",
       "priorLine": "Record: standard aux verification. OLEA closure checklist.",
-      "lineToEdit": "Yes\u2014good. If it\u2019s in your checklist, it becomes \u201cindustry practice\u201d by proximity.\nThat\u2019s not how physics works.\nBut it is how funding works.",
-      "nextLine": "Proceed, and I\u2019ll annotate: \u201cEnergization limited to small systems for documentation readiness.\u201d\nWhich is a sentence that sounds like it came from a person with a budget.",
-      "revisedLine": "Yes\u2014good. (pause) If it\u2019s on your checklist\u2014 (pause) it becomes \u201cindustry practice,\u201d by proximity. (pause) That\u2019s not how physics works. (pause) But it is how funding works.",
-      "changeSummary": "Added (pause) breaks to keep each beat under 8 words; replaced the first comma with an em dash to stay within 1 comma while keeping the conditional meaning intact."
+      "lineToEdit": "Yes\u2014good. (pause) If it\u2019s on your checklist\u2014 (pause) it becomes \u201cindustry practice,\u201d by proximity. (pause) That\u2019s not how physics works. (pause) But it is how funding works.",
+      "nextLine": "Proceed, and I\u2019ll annotate. (pause) \u201cEnergization limited to small systems\u201d (pause) \u201cfor documentation readiness.\u201d (pause) Which is a sentence that sounds like (pause) it came from a person with a (pause) budget.",
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-012.json",
       "id": "N_RADIO_OLEA_03",
-      "priorLine": "Yes\u2014good. If it\u2019s in your checklist, it becomes \u201cindustry practice\u201d by proximity.\nThat\u2019s not how physics works.\nBut it is how funding works.",
-      "lineToEdit": "Proceed, and I\u2019ll annotate: \u201cEnergization limited to small systems for documentation readiness.\u201d\nWhich is a sentence that sounds like it came from a person with a budget.",
+      "priorLine": "Yes\u2014good. (pause) If it\u2019s on your checklist\u2014 (pause) it becomes \u201cindustry practice,\u201d by proximity. (pause) That\u2019s not how physics works. (pause) But it is how funding works.",
+      "lineToEdit": "Proceed, and I\u2019ll annotate. (pause) \u201cEnergization limited to small systems\u201d (pause) \u201cfor documentation readiness.\u201d (pause) Which is a sentence that sounds like (pause) it came from a person with a (pause) budget.",
       "nextLine": "",
-      "revisedLine": "Proceed, and I\u2019ll annotate. (pause) \u201cEnergization limited to small systems\u201d (pause) \u201cfor documentation readiness.\u201d (pause) Which is a sentence that sounds like (pause) it came from a person with a (pause) budget.",
-      "changeSummary": "Added pauses to keep each beat under 8 words. Kept meaning and tone while limiting commas to one."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-012.json",
       "id": "N_THROW_04",
-      "priorLine": "A small ventilation fan starts somewhere behind the wall, not fast, just determined.\nThe label maker cradle blinks, then holds steady: charging.",
-      "lineToEdit": "I heard that\u2014through the line, not the air. The audio spike.\nThat\u2019s fine. That\u2019s normal.\nWe\u2019ll call it \u201cauxiliary loads coming online,\u201d not \u201csystems waking up,\u201d because \u201cwaking\u201d implies prior awareness.",
+      "priorLine": "A small ventilation fan starts somewhere behind the wall, not fast, just determined. (pause)\nThe label maker cradle blinks then holds steady: charging.",
+      "lineToEdit": "I heard that\u2014through the line. Not the air. (pause) The audio spike. (pause)\nThat\u2019s fine. (pause) That\u2019s normal. (pause)\nWe\u2019ll call it \u201cauxiliary loads coming online.\u201d (pause)\nNot \u201csystems waking up.\u201d (pause)\nBecause \u201cwaking\u201d implies prior awareness.",
       "nextLine": "Aux live.",
-      "revisedLine": "I heard that\u2014through the line. Not the air. (pause) The audio spike. (pause)\nThat\u2019s fine. (pause) That\u2019s normal. (pause)\nWe\u2019ll call it \u201cauxiliary loads coming online.\u201d (pause)\nNot \u201csystems waking up.\u201d (pause)\nBecause \u201cwaking\u201d implies prior awareness.",
-      "changeSummary": "Inserted (pause) breaks to keep beats under 8 words, removed commas to meet the 1-comma limit, and kept a single explainer (\u201cBecause\u201d) while preserving meaning and cadence."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-012.json",
       "id": "N_THROW_05",
       "priorLine": "Aux live.",
-      "lineToEdit": "Great.\nI\u2019ll mark: limited energization achieved for documentation tools and minor services.\nWhich is\u2014again\u2014not me taking operational credit.\nIt\u2019s me taking narrative responsibility. There\u2019s a difference.",
-      "nextLine": "The panel stays steady. The facility doesn\u2019t react.\nThat almost feels like a relief, which is not a metric you can file.",
-      "revisedLine": "Great. (pause)\nI\u2019ll mark: limited energization achieved. (pause)\nFor documentation tools and minor services. (pause)\nAgain\u2014not me taking operational credit. (pause)\nMe taking narrative responsibility. (pause)\nThere\u2019s a difference.",
-      "changeSummary": "Split the line into shorter beats with (pause) markers to keep each beat under 8 words, and tightened phrasing by removing the \u201cWhich is\u2014\u201d lead-in while preserving the original meaning and cadence."
+      "lineToEdit": "Great. (pause)\nI\u2019ll mark: limited energization achieved. (pause)\nFor documentation tools and minor services. (pause)\nAgain\u2014not me taking operational credit. (pause)\nMe taking narrative responsibility. (pause)\nThere\u2019s a difference.",
+      "nextLine": "The panel stays steady. The facility doesn\u2019t react. (pause)\nThat almost feels like relief. You can\u2019t file it as a metric.",
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-023.json",
       "id": "LIAISON_NO_ACCUSATION",
       "priorLine": "(ask) Who covered it?",
-      "lineToEdit": "That is not\u2014 for the record\u2014 an accusation we can house.\nIt\u2019s a process question. Who is the responsible custodian of the code display artifact.\nBecause if we don\u2019t have that, we can\u2019t establish comparability.",
+      "lineToEdit": "That is not an accusation. (pause) For the record. (pause) We cannot house it. (pause) It is a process question. (pause) Who is the responsible custodian (pause) of the code display artifact. (pause) Because without that (pause) we cannot establish comparability.",
       "nextLine": "Comparability to what?",
-      "revisedLine": "That is not an accusation. (pause) For the record. (pause) We cannot house it. (pause) It is a process question. (pause) Who is the responsible custodian (pause) of the code display artifact. (pause) Because without that (pause) we cannot establish comparability.",
-      "changeSummary": "Split the line into short beats with (pause) markers, removed dashes, and kept meaning while staying under comma and explainer limits."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-023.json",
       "id": "LIAISON_EXPLAIN_COMPARABILITY",
       "priorLine": "Comparability to what?",
-      "lineToEdit": "To any other copier lockout event that did not become a\u2014\n\u2014a finding. I\u2019m not predicting a finding. I\u2019m saying the absence of a custodian reads like one.",
+      "lineToEdit": "To any other copier lockout event (pause) that didn\u2019t become a\u2014 (pause) \u2014a finding. (pause) I\u2019m not predicting a finding. (pause) I\u2019m saying the absence of a custodian (pause) reads like one.",
       "nextLine": "The sticker does not answer.",
-      "revisedLine": "To any other copier lockout event (pause) that didn\u2019t become a\u2014 (pause) \u2014a finding. (pause) I\u2019m not predicting a finding. (pause) I\u2019m saying the absence of a custodian (pause) reads like one.",
-      "changeSummary": "Inserted (pause) breaks to keep each beat under 8 words while preserving the original phrasing, tone, and meaning."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-023.json",
       "id": "LIAISON_RESTRAINT",
       "priorLine": "Not like this.",
-      "lineToEdit": "Thank you. That\u2014 that restraint matters.\n\u2018Peeling\u2019 becomes \u2018altering\u2019 the moment someone needs it to.",
+      "lineToEdit": "Thank you. That\u2014 that restraint matters. (pause) \u2018Peeling\u2019 becomes \u2018altering\u2019 (pause) the moment someone needs it to.",
       "nextLine": "",
-      "revisedLine": "Thank you. That\u2014 that restraint matters. (pause) \u2018Peeling\u2019 becomes \u2018altering\u2019 (pause) the moment someone needs it to.",
-      "changeSummary": "Inserted (pause) breaks to keep each beat under 8 words; no meaning or tone changes."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-023.json",
       "id": "LIAISON_BYPASS_WARNING",
       "priorLine": "Okay.",
-      "lineToEdit": "Just to be clear: repeated failed entries can be construed as \u2018bypass attempts.\u2019\nNot by me. By the kind of person who writes training modules.",
+      "lineToEdit": "Just to be clear: repeated failed entries can (pause) be construed as \u2018bypass attempts.\u2019 (pause) Not by me. (pause) By the kind of person (pause) who writes training modules.",
       "nextLine": "",
-      "revisedLine": "Just to be clear: repeated failed entries can (pause) be construed as \u2018bypass attempts.\u2019 (pause) Not by me. (pause) By the kind of person (pause) who writes training modules.",
-      "changeSummary": "Added pauses to keep each beat under 8 words; kept meaning and cadence; avoided extra commas and explainer phrases."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-023.json",
       "id": "LIAISON_TAG_IS_BETTER",
-      "priorLine": "The label prints with a slow mechanical confidence. The letters are crisp, almost smug.\nYou now have a tag that looks like permission.",
-      "lineToEdit": "That is\u2026 better.\nBecause now it\u2019s not \u2018tampering,\u2019 it\u2019s \u2018controlled access under temporary condition.\u2019\nWhich is a category we can at least pretend exists.",
+      "priorLine": "The label prints with a slow mechanical confidence. The letters are crisp, almost smug. (pause) You now have a tag that looks like permission.",
+      "lineToEdit": "That is\u2026 better. (pause)\nBecause now it\u2019s not \u201ctampering.\u201d (pause)\nIt\u2019s \u201ccontrolled access under temporary condition.\u201d (pause)\nWhich is a category we can pretend exists.",
       "nextLine": "",
-      "revisedLine": "That is\u2026 better. (pause)\nBecause now it\u2019s not \u201ctampering.\u201d (pause)\nIt\u2019s \u201ccontrolled access under temporary condition.\u201d (pause)\nWhich is a category we can pretend exists.",
-      "changeSummary": "Added (pause) breaks and split the long sentence into shorter beats under 8 words each. Removed the comma after \u201ctampering\u201d to stay within the comma limit, while keeping the same meaning and cadence."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-023.json",
       "id": "LIAISON_VOID_TRIGGERS",
-      "priorLine": "The label prints: VOID. It\u2019s extremely official-looking for something with no authority.\nIt will not solve the locked copier.",
-      "lineToEdit": "Please don\u2019t. \u2018VOID\u2019 triggers people.\nIt\u2019s a word that makes objects into evidence.",
+      "priorLine": "The label prints: VOID. It\u2019s official-looking with no authority. It won\u2019t solve the locked copier.",
+      "lineToEdit": "Please don\u2019t. \u2018VOID\u2019 triggers people. It\u2019s a word. (pause) It turns objects into evidence.",
       "nextLine": "",
-      "revisedLine": "Please don\u2019t. \u2018VOID\u2019 triggers people. It\u2019s a word. (pause) It turns objects into evidence.",
-      "changeSummary": "Split the final sentence into two beats with a pause and rephrased \u201cthat makes\u201d to \u201cIt turns\u201d to keep meaning while meeting the 8-word beat limit."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-023.json",
       "id": "LIAISON_NOTE_NO_DESTRUCTION",
-      "priorLine": "You enter the code. The copier accepts it immediately, as if it was never meant to be a secret.\nThe screen changes to READY.",
-      "lineToEdit": "And we will note: access was achieved without destruction of the underlying record.\nThe underlying record being\u2014 the code. Not the sticker. Stickers are\u2026 contentious.",
+      "priorLine": "You enter the code. (pause) The copier accepts it immediately, like it was never meant to be secret. (pause) The screen changes to READY.",
+      "lineToEdit": "And we will note: access was achieved (pause) without destruction of the underlying record. (pause) The underlying record being\u2014 the code. (pause) Not the sticker. (pause) Stickers are\u2026 contentious.",
       "nextLine": "The machine warms up. The room smells faintly of hot toner and old decisions.",
-      "revisedLine": "And we will note: access was achieved (pause) without destruction of the underlying record. (pause) The underlying record being\u2014 the code. (pause) Not the sticker. (pause) Stickers are\u2026 contentious.",
-      "changeSummary": "Inserted pauses to keep each beat under 8 words; preserved wording, meaning, and cadence; no commas added and no explainer phrases introduced."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-027.json",
       "id": "LIAISON_TALK_1",
-      "priorLine": "There\u2019s no one to answer.\nBut the Finding Slip has a \u201cLiaison Notes\u201d section, written in a voice that expects compliance.",
-      "lineToEdit": "For closure purposes, we need a comparable event category.\nI\u2019m not saying it is an incident. I\u2019m saying if it were treated as one, the documentation trail would be defensible.\nAnd defensible is the point. Not dramatic. Not\u2026 creative.",
-      "nextLine": "You can resolve this in one of three ways, which is generous, frankly:\n1) Attach an incident page. A plain narrative. What happened, what you observed, what you did. No speculation.\n2) Attach a waiver. Someone with authority accepts the residual risk. Not you. Not me.\n3) Attach a no-anomaly test printout from Operations. If Ops can certify nothing anomalous occurred during a controlled run, the finding downgrades to \u201cdocumentation variance.\u201d\nWhich is a real category. It exists in the framework. That\u2019s what we need.",
-      "revisedLine": "For closure we need a comparable event category. (pause)\nI\u2019m not saying it\u2019s an incident. (pause)\nI\u2019m saying if it were treated as one. (pause)\nThe documentation trail would be defensible. (pause)\nDefensible is the point. (pause)\nNot dramatic. (pause)\nNot\u2026 creative.",
-      "changeSummary": "Inserted (pause) breaks to keep each beat \u22648 words, removed the comma, and preserved the original meaning and cadence."
+      "priorLine": "No one answers.\nYet the Finding Slip\u2019s \u201cLiaison Notes\u201d expect compliance.",
+      "lineToEdit": "For closure we need a comparable event category. (pause)\nI\u2019m not saying it\u2019s an incident. (pause)\nI\u2019m saying if it were treated as one. (pause)\nThe documentation trail would be defensible. (pause)\nDefensible is the point. (pause)\nNot dramatic. (pause)\nNot\u2026 creative.",
+      "nextLine": "You can resolve this three ways. (pause)\nIt is generous frankly. (pause)\n1) Attach an incident page. (pause)\nPlain narrative. (pause)\nWhat happened. (pause)\nWhat you observed. (pause)\nWhat you did. (pause)\nNo speculation. (pause)\n2) Attach a waiver. (pause)\nSomeone with authority accepts residual risk. (pause)\nNot you. (pause)\nNot me. (pause)\n3) Attach a no-anomaly test printout. (pause)\nFrom Operations. (pause)\nOps certifies nothing anomalous occurred. (pause)\nDuring a controlled run. (pause)\nThen the finding downgrades. (pause)\nTo \u201cdocumentation variance.\u201d (pause)\nReal category. (pause)\nIt exists in the framework. (pause)\nThat is what we need.",
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-027.json",
       "id": "LIAISON_TALK_2",
-      "priorLine": "For closure purposes, we need a comparable event category.\nI\u2019m not saying it is an incident. I\u2019m saying if it were treated as one, the documentation trail would be defensible.\nAnd defensible is the point. Not dramatic. Not\u2026 creative.",
-      "lineToEdit": "You can resolve this in one of three ways, which is generous, frankly:\n1) Attach an incident page. A plain narrative. What happened, what you observed, what you did. No speculation.\n2) Attach a waiver. Someone with authority accepts the residual risk. Not you. Not me.\n3) Attach a no-anomaly test printout from Operations. If Ops can certify nothing anomalous occurred during a controlled run, the finding downgrades to \u201cdocumentation variance.\u201d\nWhich is a real category. It exists in the framework. That\u2019s what we need.",
+      "priorLine": "For closure we need a comparable event category. (pause)\nI\u2019m not saying it\u2019s an incident. (pause)\nI\u2019m saying if it were treated as one. (pause)\nThe documentation trail would be defensible. (pause)\nDefensible is the point. (pause)\nNot dramatic. (pause)\nNot\u2026 creative.",
+      "lineToEdit": "You can resolve this three ways. (pause)\nIt is generous frankly. (pause)\n1) Attach an incident page. (pause)\nPlain narrative. (pause)\nWhat happened. (pause)\nWhat you observed. (pause)\nWhat you did. (pause)\nNo speculation. (pause)\n2) Attach a waiver. (pause)\nSomeone with authority accepts residual risk. (pause)\nNot you. (pause)\nNot me. (pause)\n3) Attach a no-anomaly test printout. (pause)\nFrom Operations. (pause)\nOps certifies nothing anomalous occurred. (pause)\nDuring a controlled run. (pause)\nThen the finding downgrades. (pause)\nTo \u201cdocumentation variance.\u201d (pause)\nReal category. (pause)\nIt exists in the framework. (pause)\nThat is what we need.",
       "nextLine": "Why now?",
-      "revisedLine": "You can resolve this three ways. (pause)\nIt is generous frankly. (pause)\n1) Attach an incident page. (pause)\nPlain narrative. (pause)\nWhat happened. (pause)\nWhat you observed. (pause)\nWhat you did. (pause)\nNo speculation. (pause)\n2) Attach a waiver. (pause)\nSomeone with authority accepts residual risk. (pause)\nNot you. (pause)\nNot me. (pause)\n3) Attach a no-anomaly test printout. (pause)\nFrom Operations. (pause)\nOps certifies nothing anomalous occurred. (pause)\nDuring a controlled run. (pause)\nThen the finding downgrades. (pause)\nTo \u201cdocumentation variance.\u201d (pause)\nReal category. (pause)\nIt exists in the framework. (pause)\nThat is what we need.",
-      "changeSummary": "Split the long sentence into short beats with (pause) to meet the 8-word limit. Removed commas and rewrote the opening clause to avoid 'which' phrasing while preserving meaning and cadence."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-027.json",
       "id": "LIAISON_TALK_3",
       "priorLine": "Why now?",
-      "lineToEdit": "Because now is when you\u2019re trying to sign.\nBefore sign-off, this is \u201congoing work.\u201d After sign-off, it becomes \u201ca closed site with an open question,\u201d which is how careers become collaborative.\nI\u2019m not threatening you. I\u2019m describing the behavior of institutions.",
+      "lineToEdit": "Now is when you\u2019re trying to sign. (pause) Before sign-off this is \u201congoing work.\u201d (pause) After sign-off it becomes \u201ca closed site (pause) with an open question.\u201d (pause) That\u2019s how careers become collaborative. (pause) I\u2019m not threatening you. (pause) I\u2019m describing institutional behavior.",
       "nextLine": "",
-      "revisedLine": "Now is when you\u2019re trying to sign. (pause) Before sign-off this is \u201congoing work.\u201d (pause) After sign-off it becomes \u201ca closed site (pause) with an open question.\u201d (pause) That\u2019s how careers become collaborative. (pause) I\u2019m not threatening you. (pause) I\u2019m describing institutional behavior.",
-      "changeSummary": "Removed the opening \u201cBecause\u201d to cut explainer hits, removed commas to meet the comma limit, and added (pause) breaks so each beat stays under 8 words without changing meaning."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-027.json",
       "id": "LIAISON_ASK_COMPARABLE",
       "priorLine": "ask: \u201cComparable to what?\u201d",
-      "lineToEdit": "Exactly. That\u2019s the issue.\nIf you tell me it\u2019s comparable to a reflection event, I can anchor it to prior guidance.\nIf you tell me it\u2019s comparable to equipment drift, I can anchor it to calibration controls.\nIf you tell me it\u2019s comparable to a near-miss, I can anchor it to safety reporting.\nI\u2019m not asking you to be poetic. I\u2019m asking you to pick the least-wrong shelf.",
+      "lineToEdit": "Exactly. That\u2019s the issue. (pause)\nTell me it matches a reflection event. (pause)\nThen I anchor it to prior guidance. (pause)\nTell me it matches equipment drift. (pause)\nThen I anchor it to calibration controls. (pause)\nTell me it matches a near-miss. (pause)\nThen I anchor it to safety reporting. (pause)\nI\u2019m not asking for poetry. (pause)\nPick the least-wrong shelf.",
       "nextLine": "And if I don\u2019t.",
-      "revisedLine": "Exactly. That\u2019s the issue. (pause)\nTell me it matches a reflection event. (pause)\nThen I anchor it to prior guidance. (pause)\nTell me it matches equipment drift. (pause)\nThen I anchor it to calibration controls. (pause)\nTell me it matches a near-miss. (pause)\nThen I anchor it to safety reporting. (pause)\nI\u2019m not asking for poetry. (pause)\nPick the least-wrong shelf.",
-      "changeSummary": "Broke the long block into short beats with (pause) markers, removed commas, and tightened the repeated phrasing while keeping the same comparisons and intent."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-027.json",
       "id": "LIAISON_ASK_COMPARABLE_END",
       "priorLine": "And if I don\u2019t.",
-      "lineToEdit": "Then it stays open.\nOpen things don\u2019t close themselves. They just change custodians.",
+      "lineToEdit": "Then it stays open. (pause) Open things don\u2019t close themselves. (pause) They just change custodians.",
       "nextLine": "The slip sits in the tray, perfectly patient.",
-      "revisedLine": "Then it stays open. (pause) Open things don\u2019t close themselves. (pause) They just change custodians.",
-      "changeSummary": "Inserted (pause) breaks so each beat stays under 8 words; meaning unchanged."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-027.json",
       "id": "LIAISON_ASK_AUTH",
       "priorLine": "ask: \u201cWho authorized the finding?\u201d",
-      "lineToEdit": "Authorization is a strong word. I issued it under the assurance engagement scope.\nWhich is not operational authority.\nIt\u2019s documentation gravity. Different instrument. Same outcome.",
-      "nextLine": "If it helps: your funders want evidence you followed the checklist, not evidence you understood the machine.\nThose are separate deliverables. I don\u2019t decide that. I just format it.",
-      "revisedLine": "Authorization is a strong word. (pause) Issued under the assurance engagement scope. (pause) Not operational authority. (pause) Documentation gravity. (pause) Different instrument. Same outcome.",
-      "changeSummary": "Split into short beats with (pause), removed 'Which is' to avoid an explainer hit, and kept wording aligned to the original meaning with no commas."
+      "lineToEdit": "Authorization is a strong word. (pause) Issued under the assurance engagement scope. (pause) Not operational authority. (pause) Documentation gravity. (pause) Different instrument. Same outcome.",
+      "nextLine": "If it helps (pause) your funders want evidence (pause) you followed the checklist (pause) not evidence you understood the machine (pause) Those are separate deliverables (pause) I don\u2019t decide that (pause) I just format it.",
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-027.json",
       "id": "LIAISON_ASK_AUTH_2",
-      "priorLine": "Authorization is a strong word. I issued it under the assurance engagement scope.\nWhich is not operational authority.\nIt\u2019s documentation gravity. Different instrument. Same outcome.",
-      "lineToEdit": "If it helps: your funders want evidence you followed the checklist, not evidence you understood the machine.\nThose are separate deliverables. I don\u2019t decide that. I just format it.",
-      "nextLine": "The checklist binder remains open to the last page, like it\u2019s waiting for your signature to become a mistake.",
-      "revisedLine": "If it helps (pause) your funders want evidence (pause) you followed the checklist (pause) not evidence you understood the machine (pause) Those are separate deliverables (pause) I don\u2019t decide that (pause) I just format it.",
-      "changeSummary": "Split the line into short beats using (pause) so each beat stays under 8 words. Removed the comma to keep punctuation simple while preserving meaning and cadence."
+      "priorLine": "Authorization is a strong word. (pause) Issued under the assurance engagement scope. (pause) Not operational authority. (pause) Documentation gravity. (pause) Different instrument. Same outcome.",
+      "lineToEdit": "If it helps (pause) your funders want evidence (pause) you followed the checklist (pause) not evidence you understood the machine (pause) Those are separate deliverables (pause) I don\u2019t decide that (pause) I just format it.",
+      "nextLine": "The checklist binder lies open at the last page, like it\u2019s waiting\u2014your signature becomes a mistake.",
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-027.json",
       "id": "LIAISON_DEFER_PASS",
       "priorLine": "",
-      "lineToEdit": "If you have OLEA authority to defer assurance artifacts\u2014formally, in writing\u2014then I can mark this \u201cadministratively pending.\u201d\nNot closed. Pending. Words matter.\nBecause if it\u2019s closed and later re-opened, it reads like concealment, even when it isn\u2019t.\nI\u2019m protecting you from the shape of the allegation.",
-      "nextLine": "But the closure sign-off remains blocked until an attachment exists.\nThat\u2019s the point of the finding: it forces the attachment to exist while the people who remember the details are still alive and employed.",
-      "revisedLine": "If you have OLEA authority (pause) to defer assurance artifacts (pause) then I can mark this (pause) \u201cadministratively pending.\u201d (pause) Formally. In writing. (pause) Not closed. (pause) Pending. (pause) Words matter. (pause) Because if it\u2019s closed (pause) and later re-opened (pause) it reads like concealment (pause) even when it isn\u2019t. (pause) I\u2019m protecting you (pause) from the shape of the allegation.",
-      "changeSummary": "Inserted (pause) breaks to keep each beat under 8 words, and removed commas by splitting \u201cformally, in writing\u201d into short sentences. Meaning and cadence preserved."
+      "lineToEdit": "If you have OLEA authority (pause) to defer assurance artifacts (pause) then I can mark this (pause) \u201cadministratively pending.\u201d (pause) Formally. In writing. (pause) Not closed. (pause) Pending. (pause) Words matter. (pause) Because if it\u2019s closed (pause) and later re-opened (pause) it reads like concealment (pause) even when it isn\u2019t. (pause) I\u2019m protecting you (pause) from the shape of the allegation.",
+      "nextLine": "But the closure sign-off stays blocked (pause) until an attachment exists. (pause) That is the finding's point. (pause) It forces the attachment to exist (pause) while people still remember the details (pause) and are alive and employed.",
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-027.json",
       "id": "LIAISON_DEFER_PASS_2",
-      "priorLine": "If you have OLEA authority to defer assurance artifacts\u2014formally, in writing\u2014then I can mark this \u201cadministratively pending.\u201d\nNot closed. Pending. Words matter.\nBecause if it\u2019s closed and later re-opened, it reads like concealment, even when it isn\u2019t.\nI\u2019m protecting you from the shape of the allegation.",
-      "lineToEdit": "But the closure sign-off remains blocked until an attachment exists.\nThat\u2019s the point of the finding: it forces the attachment to exist while the people who remember the details are still alive and employed.",
+      "priorLine": "If you have OLEA authority (pause) to defer assurance artifacts (pause) then I can mark this (pause) \u201cadministratively pending.\u201d (pause) Formally. In writing. (pause) Not closed. (pause) Pending. (pause) Words matter. (pause) Because if it\u2019s closed (pause) and later re-opened (pause) it reads like concealment (pause) even when it isn\u2019t. (pause) I\u2019m protecting you (pause) from the shape of the allegation.",
+      "lineToEdit": "But the closure sign-off stays blocked (pause) until an attachment exists. (pause) That is the finding's point. (pause) It forces the attachment to exist (pause) while people still remember the details (pause) and are alive and employed.",
       "nextLine": "Even in \u201caccommodation,\u201d the framework keeps its teeth.",
-      "revisedLine": "But the closure sign-off stays blocked (pause) until an attachment exists. (pause) That is the finding's point. (pause) It forces the attachment to exist (pause) while people still remember the details (pause) and are alive and employed.",
-      "changeSummary": "Added pause breaks to keep each beat under 8 words, tightened phrasing without changing meaning, and avoided commas and extra explainer phrasing."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-027.json",
       "id": "LIAISON_DEFER_FAIL",
       "priorLine": "",
-      "lineToEdit": "I can\u2019t accept \u201clater\u201d as a control.\n\u201cLater\u201d isn\u2019t auditable. It\u2019s aspirational.\nIf you want it deferred, you need someone with OLEA authority to state it, in writing, with a date and an owner.\nOtherwise it stays open, and open means attached to you by default.",
+      "lineToEdit": "I can\u2019t accept \u201clater\u201d as a control. (pause)\n\u201cLater\u201d isn\u2019t auditable. (pause)\nIt\u2019s aspirational. (pause)\nIf you want it deferred (pause)\nget someone with OLEA authority to state it. (pause)\nPut it in writing. (pause)\nInclude a date. (pause)\nInclude an owner. (pause)\nOtherwise it stays open. (pause)\nOpen stays attached to you by default.",
       "nextLine": "The slip remains where it is, as if it never asked permission.",
-      "revisedLine": "I can\u2019t accept \u201clater\u201d as a control. (pause)\n\u201cLater\u201d isn\u2019t auditable. (pause)\nIt\u2019s aspirational. (pause)\nIf you want it deferred (pause)\nget someone with OLEA authority to state it. (pause)\nPut it in writing. (pause)\nInclude a date. (pause)\nInclude an owner. (pause)\nOtherwise it stays open. (pause)\nOpen stays attached to you by default.",
-      "changeSummary": "Split the line into short beats using (pause) so each beat stays under 8 words. Removed commas by breaking the long sentence into clean, punchy statements without changing meaning."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-027.json",
       "id": "LIAISON_TAKE_SLIP",
-      "priorLine": "You lift the sheet from the tray. The toner hasn\u2019t fully set; your thumb smudges the word OPEN.\nThe checklist binder accepts it like it was missing a tooth.",
-      "lineToEdit": "Good. Now it\u2019s real.\nReal means it can be resolved.\nAttach one of the three items and the final sign-off can proceed. Until then, it\u2019s blocked\u2014cleanly, predictably, on paper.\nWhich is the best kind of blocked.",
-      "nextLine": "EAC Finding Slip added to inventory.\nObjective added: Resolve EAC Finding.\nFinal sign-off will be blocked until you attach: an incident page, a waiver, or a no-anomaly test printout from Operations.",
-      "revisedLine": "Good. (pause)\nNow it\u2019s real. (pause)\nReal: it can be resolved. (pause)\nAttach one of the three items. (pause)\nThen the final sign-off can proceed. (pause)\nUntil then it\u2019s blocked\u2014cleanly. (pause)\nPredictably. (pause)\nOn paper. (pause)\nThe best kind of blocked.",
-      "changeSummary": "Split the long sentence into short beats using (pause), removed extra commas, and replaced \u201cReal means\u201d with \u201cReal:\u201d to keep the meaning while reducing explainer phrasing."
+      "priorLine": "You lift the sheet from the tray. (pause) The toner hasn\u2019t fully set; your thumb smudges the word OPEN. (pause) The checklist binder accepts it like it was missing a tooth.",
+      "lineToEdit": "Good. (pause)\nNow it\u2019s real. (pause)\nReal: it can be resolved. (pause)\nAttach one of the three items. (pause)\nThen the final sign-off can proceed. (pause)\nUntil then it\u2019s blocked\u2014cleanly. (pause)\nPredictably. (pause)\nOn paper. (pause)\nThe best kind of blocked.",
+      "nextLine": "EAC Finding Slip added to inventory. (pause) Objective added: Resolve EAC Finding. (pause) Final sign-off blocked until you attach an incident page, a waiver, or a no-anomaly test printout. (pause) From Operations.",
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-035.json",
       "id": "CALL_LIAISON_MAIN_1",
       "priorLine": "ask \"Call the EAC liaison.\"",
-      "lineToEdit": "Just so I\u2019m clear, you\u2019re interacting with ventilation controls. Which\u2014before we use the word \u201ccontrols\u201d\u2014is that an operational control, or a maintenance control?\n\nBecause we\u2019re tracking dependencies, and ventilation is not a dependency. It\u2019s a prerequisite. Different box.",
+      "lineToEdit": "Just so I\u2019m clear (pause) you\u2019re using ventilation controls. (pause) Before we say \u201ccontrols\u201d (pause) is it an operational control (pause) or a maintenance control. (pause) We\u2019re tracking dependencies. (pause) Ventilation is not one. (pause) It\u2019s a prerequisite. (pause) Different box.",
       "nextLine": "It needs to be open.",
-      "revisedLine": "Just so I\u2019m clear (pause) you\u2019re using ventilation controls. (pause) Before we say \u201ccontrols\u201d (pause) is it an operational control (pause) or a maintenance control. (pause) We\u2019re tracking dependencies. (pause) Ventilation is not one. (pause) It\u2019s a prerequisite. (pause) Different box.",
-      "changeSummary": "Split into short (pause) beats under 8 words, removed commas, and trimmed phrasing while keeping the same meaning and cadence."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-035.json",
       "id": "CALL_LIAISON_MAIN_3",
       "priorLine": "It needs to be open.",
-      "lineToEdit": "\u201cNeeds\u201d is a strong word. I\u2019m not disputing the physical reality of airflow, I\u2019m saying\u2014procedurally\u2014what is this comparable to?\n\nIf you are setting it OPEN, I need a basis: signage, work order, or a checklist line. Not because I doubt you\u2014because I doubt future me when I\u2019m asked why I didn\u2019t ask.",
+      "lineToEdit": "\u201cNeeds\u201d is a strong word. (pause)\nI\u2019m not disputing airflow\u2019s reality. (pause)\nI\u2019m saying procedurally. (pause)\nWhat is this comparable to? (pause)\n\nIf you set it OPEN (pause)\nI need a basis. (pause)\nSignage. Work order. Checklist line. (pause)\nNot because I doubt you. (pause)\nBecause I doubt future me. (pause)\nWhen I\u2019m asked why I didn\u2019t ask. (pause)",
       "nextLine": "",
-      "revisedLine": "\u201cNeeds\u201d is a strong word. (pause)\nI\u2019m not disputing airflow\u2019s reality. (pause)\nI\u2019m saying procedurally. (pause)\nWhat is this comparable to? (pause)\n\nIf you set it OPEN (pause)\nI need a basis. (pause)\nSignage. Work order. Checklist line. (pause)\nNot because I doubt you. (pause)\nBecause I doubt future me. (pause)\nWhen I\u2019m asked why I didn\u2019t ask. (pause)",
-      "changeSummary": "Split into short beats with (pause) markers to meet max beat length. Removed commas by converting the basis list into punchy fragments. Kept the two 'because' lines intact to preserve tone while staying within explainer-hit limit."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-035.json",
       "id": "SHOW_MAIN_2",
-      "priorLine": "You bring up the closure checklist entry and hold it to the panel like you\u2019re introducing them. Your thumb covers a date field out of habit.",
-      "lineToEdit": "Good. Great. That\u2019s\u2026 that\u2019s a line.\n\nOkay\u2014then it\u2019s not you \u201cadjusting ventilation,\u201d it\u2019s you \u201csatisfying an interlock prerequisite.\u201d Those are different risks. Same metal, different liability.",
+      "priorLine": "You lift closure checklist entry to the panel, introducing it; your thumb habitually covers date field.",
+      "lineToEdit": "Good. Great. That\u2019s\u2026 that\u2019s a line. (pause)\nOkay\u2014so it\u2019s not you \u201cadjusting ventilation.\u201d (pause)\nIt\u2019s you \u201csatisfying an interlock prerequisite.\u201d (pause)\nDifferent risks. (pause)\nSame metal. Different liability.",
       "nextLine": "",
-      "revisedLine": "Good. Great. That\u2019s\u2026 that\u2019s a line. (pause)\nOkay\u2014so it\u2019s not you \u201cadjusting ventilation.\u201d (pause)\nIt\u2019s you \u201csatisfying an interlock prerequisite.\u201d (pause)\nDifferent risks. (pause)\nSame metal. Different liability.",
-      "changeSummary": "Inserted (pause) breaks so each beat stays under 8 words. Removed extra comma by splitting into shorter sentences while keeping the same meaning and cadence."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-035.json",
       "id": "IF_CLOSED_MAIN",
       "priorLine": "ask \"What happens if it\u2019s closed?\"",
-      "lineToEdit": "Then the unrelated subsystem\u2014unrelated, but documented as related\u2014doesn\u2019t clear its permissive. Which means when you attempt the next sequence, you get a refusal.\n\nNot a failure. A refusal. \u201cFailure\u201d implies fault, and I can\u2019t assign fault to a duct.",
+      "lineToEdit": "Then the unrelated subsystem\u2014documented as related\u2014keeps permissive. (pause) So you attempt the next sequence. (pause) You get a refusal. (pause) Not a failure. (pause) A refusal. (pause) \u201cFailure\u201d implies fault. (pause) I can\u2019t assign fault to a duct.",
       "nextLine": "",
-      "revisedLine": "Then the unrelated subsystem\u2014documented as related\u2014keeps permissive. (pause) So you attempt the next sequence. (pause) You get a refusal. (pause) Not a failure. (pause) A refusal. (pause) \u201cFailure\u201d implies fault. (pause) I can\u2019t assign fault to a duct.",
-      "changeSummary": "Split into short beats with (pause) markers to meet max beat length. Removed commas and replaced \u201cWhich means\u201d with a causal phrasing that keeps the same meaning and cadence."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-035.json",
       "id": "PERSUADE_MAIN_PASS",
       "priorLine": "",
-      "lineToEdit": "Fine. I\u2019ll call it a prerequisite in the log. If anyone asks, I asked. That\u2019s the product.",
+      "lineToEdit": "Fine. (pause) I\u2019ll call it a prerequisite in the log. (pause) If anyone asks, I asked. (pause) That\u2019s the product.",
       "nextLine": "",
-      "revisedLine": "Fine. (pause) I\u2019ll call it a prerequisite in the log. (pause) If anyone asks, I asked. (pause) That\u2019s the product.",
-      "changeSummary": "Inserted (pause) breaks to keep each beat at 8 words or fewer; kept wording, meaning, and comma count the same."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-035.json",
       "id": "PERSUADE_MAIN_FAIL",
       "priorLine": "",
-      "lineToEdit": "I can\u2019t \u201cmove on\u201d without a basis. That\u2019s how the basis becomes \u201cI didn\u2019t feel like it.\u201d",
+      "lineToEdit": "I can\u2019t \u201cmove on\u201d without a basis. (pause) Otherwise, basis becomes \u201cI didn\u2019t feel like it.\u201d",
       "nextLine": "",
-      "revisedLine": "I can\u2019t \u201cmove on\u201d without a basis. (pause) Otherwise, basis becomes \u201cI didn\u2019t feel like it.\u201d",
-      "changeSummary": "Added a (pause) to split the line into two beats under 8 words each, and tightened the second sentence while keeping the same meaning. | Removed \u201cthe\u201d before \u201cbasis\u201d to keep the second beat under 8 words."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-035.json",
       "id": "END_CALL_MAIN",
       "priorLine": "leave \"End call.\"",
-      "lineToEdit": "Please just\u2014if you touch it again\u2014note time and position. Not because it matters. Because someone will insist it mattered.",
+      "lineToEdit": "Please\u2014if you touch it again\u2014(pause) note the time and position. (pause) Not because it matters. (pause) Because someone will insist it mattered.",
       "nextLine": "",
-      "revisedLine": "Please\u2014if you touch it again\u2014(pause) note the time and position. (pause) Not because it matters. (pause) Because someone will insist it mattered.",
-      "changeSummary": "Inserted (pause) breaks to keep each beat under 8 words, while preserving the original meaning and cadence. Kept both 'because' uses within the explainer limit and avoided commas."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-035.json",
       "id": "CALL_LIAISON_AFTER_1",
       "priorLine": "ask \"Call the EAC liaison.\"",
-      "lineToEdit": "Just so I\u2019m clear, you\u2019re interacting with ventilation controls. Which\u2014before we use the word \u201ccontrols\u201d\u2014is that an operational control, or a maintenance control?\n\nBecause we\u2019re tracking dependencies, and ventilation is not a dependency. It\u2019s a prerequisite. Different box.",
+      "lineToEdit": "Just so I\u2019m clear. (pause) You\u2019re interacting with ventilation controls. (pause) Before we call them \u201ccontrols\u201d. (pause) Is it operational. (pause) Or maintenance. (pause) Because we\u2019re tracking dependencies. (pause) Ventilation isn\u2019t one. (pause) It\u2019s a prerequisite. (pause) Different box.",
       "nextLine": "It\u2019s open.",
-      "revisedLine": "Just so I\u2019m clear. (pause) You\u2019re interacting with ventilation controls. (pause) Before we call them \u201ccontrols\u201d. (pause) Is it operational. (pause) Or maintenance. (pause) Because we\u2019re tracking dependencies. (pause) Ventilation isn\u2019t one. (pause) It\u2019s a prerequisite. (pause) Different box.",
-      "changeSummary": "Split into short beats using (pause). Removed commas and tightened phrasing while keeping the same questions and the dependency vs prerequisite distinction."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-035.json",
       "id": "CALL_LIAISON_AFTER_3",
       "priorLine": "It\u2019s open.",
-      "lineToEdit": "\u201cOpen\u201d is good. \u201cOpen with basis\u201d is better.\n\nIf you set it OPEN, I need a basis: signage, work order, or a checklist line. Not because I doubt you\u2014because I doubt future me when I\u2019m asked why I didn\u2019t ask.",
+      "lineToEdit": "\u201cOpen\u201d is good. (pause) \u201cOpen with basis\u201d is better. (pause) If you set it OPEN (pause) I need a basis. (pause) Signage. (pause) Work order. (pause) Or a checklist line. (pause) Not because I doubt you\u2014 (pause) I doubt future me (pause) when I\u2019m asked why (pause) I didn\u2019t ask.",
       "nextLine": "",
-      "revisedLine": "\u201cOpen\u201d is good. (pause) \u201cOpen with basis\u201d is better. (pause) If you set it OPEN (pause) I need a basis. (pause) Signage. (pause) Work order. (pause) Or a checklist line. (pause) Not because I doubt you\u2014 (pause) I doubt future me (pause) when I\u2019m asked why (pause) I didn\u2019t ask.",
-      "changeSummary": "Split the line into short beats using (pause) so each beat stays under 8 words. Removed commas by converting the list into short fragments. Reduced explainer phrasing to a single \u201cbecause\u201d while preserving the original meaning."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-035.json",
       "id": "SHOW_AFTER_2",
-      "priorLine": "You bring up the closure checklist entry and hold it to the open panel like you\u2019re introducing them. Your thumb covers a date field out of habit.",
-      "lineToEdit": "Good. Great. That\u2019s\u2026 that\u2019s a line.\n\nOkay\u2014then it\u2019s not you \u201cadjusting ventilation,\u201d it\u2019s you \u201csatisfying an interlock prerequisite.\u201d Those are different risks. Same metal, different liability.",
+      "priorLine": "You hold closure checklist entry to the open panel, introducing them. Your thumb hides the date.",
+      "lineToEdit": "Good. Great. That\u2019s\u2026 that\u2019s a line. (pause) Okay\u2014it's not you \u201cadjusting ventilation,\u201d. (pause) It's you \u201csatisfying an interlock prerequisite.\u201d (pause) Different risks. (pause) Same metal. Different liability.",
       "nextLine": "",
-      "revisedLine": "Good. Great. That\u2019s\u2026 that\u2019s a line. (pause) Okay\u2014it's not you \u201cadjusting ventilation,\u201d. (pause) It's you \u201csatisfying an interlock prerequisite.\u201d (pause) Different risks. (pause) Same metal. Different liability.",
-      "changeSummary": "Split the line into short beats using (pause) so each stays under 8 words. Removed the extra comma break and kept the same contrast and legal-risk meaning."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-035.json",
       "id": "IF_CLOSED_AFTER",
       "priorLine": "ask \"What happens if it\u2019s closed?\"",
-      "lineToEdit": "Then the unrelated subsystem\u2014unrelated, but documented as related\u2014doesn\u2019t clear its permissive. Which means when you attempt the next sequence, you get a refusal.\n\nNot a failure. A refusal. \u201cFailure\u201d implies fault, and I can\u2019t assign fault to a duct.",
+      "lineToEdit": "Then the subsystem is unrelated. (pause) It's documented as related. (pause) It doesn't clear its permissive. (pause) Which means you try the next sequence. (pause) Refused. (pause)\n\nNot a failure. (pause) A refusal. (pause) \u201cFailure\u201d implies fault. (pause) I can't assign fault to a duct.",
       "nextLine": "",
-      "revisedLine": "Then the subsystem is unrelated. (pause) It's documented as related. (pause) It doesn't clear its permissive. (pause) Which means you try the next sequence. (pause) Refused. (pause)\n\nNot a failure. (pause) A refusal. (pause) \u201cFailure\u201d implies fault. (pause) I can't assign fault to a duct.",
-      "changeSummary": "Split the long sentence into short beats with (pause) breaks to keep each beat under 8 words. Removed dashes and extra commas while preserving the same causal flow and emphasis."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-035.json",
       "id": "PERSUADE_AFTER_PASS",
       "priorLine": "",
-      "lineToEdit": "Fine. I\u2019ll log it as a prerequisite. I asked, you answered, the universe continues.",
+      "lineToEdit": "Fine. I\u2019ll log it as a prerequisite. (pause) I asked. You answered. (pause) The universe continues.",
       "nextLine": "",
-      "revisedLine": "Fine. I\u2019ll log it as a prerequisite. (pause) I asked. You answered. (pause) The universe continues.",
-      "changeSummary": "Added pauses to keep each beat under 8 words and removed commas by splitting the clause into short sentences without changing meaning."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-035.json",
       "id": "PERSUADE_AFTER_FAIL",
       "priorLine": "",
-      "lineToEdit": "I\u2019m not trying to be difficult. I\u2019m trying to be quotable in six months.",
+      "lineToEdit": "I\u2019m not trying to be difficult. (pause) I\u2019m trying to be quotable. (pause) In six months.",
       "nextLine": "",
-      "revisedLine": "I\u2019m not trying to be difficult. (pause) I\u2019m trying to be quotable. (pause) In six months.",
-      "changeSummary": "Added pauses to split the line into three beats of 8 words or fewer without changing meaning."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-035.json",
       "id": "END_CALL_AFTER",
       "priorLine": "leave \"End call.\"",
-      "lineToEdit": "Please just\u2014note time and position. Not because it matters. Because someone will insist it mattered.",
+      "lineToEdit": "Please just\u2014note time and position. (pause) Not because it matters. (pause) Because someone will insist it mattered.",
       "nextLine": "",
-      "revisedLine": "Please just\u2014note time and position. (pause) Not because it matters. (pause) Because someone will insist it mattered.",
-      "changeSummary": "Inserted two (pause) breaks so each beat stays under 8 words; kept wording and meaning the same."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-036.json",
       "id": "LIAISON_BASELINE",
-      "priorLine": "The Control Room smells like warmed dust and laminated paper.\nThree consoles. One alarm panel with too many labeled lights. A log printer still feeding itself.\nA procedure binder sits open like it was abandoned mid-sentence.\n\nOn the wall: generic compliance notices. \u201cPOST THIS NOTICE.\u201d \u201cDO NOT REMOVE THIS NOTICE.\u201d None of them say who wrote them.",
-      "lineToEdit": "Before you touch anything: we need a baseline.\nNot because I distrust you. Because the paperwork has to survive people who will.",
+      "priorLine": "The Control Room smells like warmed dust and laminated paper. (pause) Three consoles. (pause) One alarm panel with too many labeled lights. (pause) A log printer still feeding itself. (pause) A procedure binder sits open like it was abandoned mid-sentence. (pause) On the wall. Generic compliance notices. (pause) \u201cPOST THIS NOTICE.\u201d \u201cDO NOT REMOVE THIS NOTICE.\u201d (pause) None say who wrote them.",
+      "lineToEdit": "Before you touch anything: we need a baseline. (pause) Not because I distrust you. (pause) Because the paperwork must survive people who will.",
       "nextLine": "",
-      "revisedLine": "Before you touch anything: we need a baseline. (pause) Not because I distrust you. (pause) Because the paperwork must survive people who will.",
-      "changeSummary": "Added pause breaks to keep each beat at 8 words or fewer; swapped \u201chas to\u201d for \u201cmust\u201d to preserve meaning while fitting the beat limit; kept both \u201cbecause\u201d clauses and removed any need for commas."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-036.json",
       "id": "CONSOLE_LIAISON_LANGUAGE",
       "priorLine": "It\u2019s running.",
-      "lineToEdit": "It is not \u201crunning\u201d in the sense of discretionary operation.\nIt is in continuous export mode, which is the least operable-sounding way to say \u201con,\u201d legally.\nIf we call it \u201crunning,\u201d someone will ask why you didn\u2019t shut it down on sight.",
+      "lineToEdit": "It is not \u201crunning.\u201d (pause) Not discretionary operation. (pause) It is in continuous export mode. (pause) The least operable way to say \u201con.\u201d (pause) Legally. (pause) Call it \u201crunning\u201d (pause) and someone asks (pause) why you didn\u2019t shut it down. (pause) On sight.",
       "nextLine": "",
-      "revisedLine": "It is not \u201crunning.\u201d (pause) Not discretionary operation. (pause) It is in continuous export mode. (pause) The least operable way to say \u201con.\u201d (pause) Legally. (pause) Call it \u201crunning\u201d (pause) and someone asks (pause) why you didn\u2019t shut it down. (pause) On sight.",
-      "changeSummary": "Inserted (pause) breaks to keep each beat under 8 words, and rephrased to remove extra commas while preserving meaning and cadence."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-036.json",
       "id": "CONSOLE_ASK_LIAISON",
       "priorLine": "Who told you to call it that?",
-      "lineToEdit": "Nobody \u201ctold\u201d me.\nIt\u2019s language drift. You learn it the first time a transcript gets read back to you with emphasis.",
+      "lineToEdit": "Nobody \u201ctold\u201d me. (pause) It\u2019s language drift. (pause) You learn it the first time. (pause) A transcript gets read back to you. (pause) With emphasis.",
       "nextLine": "",
-      "revisedLine": "Nobody \u201ctold\u201d me. (pause) It\u2019s language drift. (pause) You learn it the first time. (pause) A transcript gets read back to you. (pause) With emphasis.",
-      "changeSummary": "Inserted (pause) breaks to keep each beat under 8 words, and split the final clause into its own beat without changing meaning."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-036.json",
       "id": "ALARM_LIAISON_TERMS",
       "priorLine": "Anything active?",
-      "lineToEdit": "\u201cActive\u201d is a loaded term.\nThe alarms are armed, some are suppressed, and one is in \u201cadministrative silence.\u201d\nWhich means: it can be true without being urgent. Don\u2019t quote me.",
+      "lineToEdit": "\u201cActive\u201d is a loaded term. (pause)\nThe alarms are armed. (pause)\nSome are suppressed. (pause)\nOne is in \u201cadministrative silence.\u201d (pause)\nWhich means: true without urgency. (pause)\nDon\u2019t quote me.",
       "nextLine": "",
-      "revisedLine": "\u201cActive\u201d is a loaded term. (pause)\nThe alarms are armed. (pause)\nSome are suppressed. (pause)\nOne is in \u201cadministrative silence.\u201d (pause)\nWhich means: true without urgency. (pause)\nDon\u2019t quote me.",
-      "changeSummary": "Added (pause) breaks to keep each beat under 8 words. Split the alarm list into short sentences to remove extra commas while preserving meaning. Kept a single explainer phrase (\u201cWhich means:\u201d) and tightened wording without changing facts."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-036.json",
       "id": "ALARM_WHICH_LIAISON",
       "priorLine": "Ask: Which one?",
-      "lineToEdit": "\u201cReflective Behavior Deviation.\u201d\nThat\u2019s a historical label. It doesn\u2019t mean reflections. It means the site once produced an optics-shaped problem and everyone agreed to file it as an optics-shaped problem.",
+      "lineToEdit": "\u201cReflective Behavior Deviation.\u201d (pause)\nThat\u2019s a historical label. (pause)\nIt isn\u2019t about reflections. (pause)\nThe site once produced an optics-shaped problem. (pause)\nEveryone agreed to file it that way.",
       "nextLine": "",
-      "revisedLine": "\u201cReflective Behavior Deviation.\u201d (pause)\nThat\u2019s a historical label. (pause)\nIt isn\u2019t about reflections. (pause)\nThe site once produced an optics-shaped problem. (pause)\nEveryone agreed to file it that way.",
-      "changeSummary": "Split the line into short beats with (pause) breaks, removed extra explanation phrasing, and kept the same historical/optics-classification meaning with no commas."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-036.json",
       "id": "ALARM_SUPPRESSED_LIAISON",
       "priorLine": "Ask: Is it suppressed?",
-      "lineToEdit": "It is not suppressed.\nIt is treated as non-actionable unless paired with a second condition.\nThe second condition is missing from the binder, which is not my favorite kind of symmetry.",
+      "lineToEdit": "It is not suppressed. (pause) It is non actionable without a second condition. (pause) That second condition is missing in the binder. (pause) Not my favorite symmetry.",
       "nextLine": "",
-      "revisedLine": "It is not suppressed. (pause) It is non actionable without a second condition. (pause) That second condition is missing in the binder. (pause) Not my favorite symmetry.",
-      "changeSummary": "Split into short beats with (pause) breaks, tightened phrasing to stay under 8 words per beat, and removed the comma while keeping the original meaning and cadence."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-036.json",
       "id": "PRINTER_LIAISON_TEMPLATE",
       "priorLine": "Non-local.",
-      "lineToEdit": "That\u2019s probably a template header.\n\u201cNon-local\u201d can mean \u201cnot on this subnetwork,\u201d not\u2014whatever your face is doing.\nBut also: do not discard it. Put it in the record. Templates are still discoverable.",
+      "lineToEdit": "That\u2019s probably a template header. (pause) \u201cNon-local\u201d may mean \u201cnot on this subnetwork.\u201d (pause) Not whatever your face is doing. (pause) But also do not discard it. (pause) Put it in the record. (pause) Templates are still discoverable.",
       "nextLine": "",
-      "revisedLine": "That\u2019s probably a template header. (pause) \u201cNon-local\u201d may mean \u201cnot on this subnetwork.\u201d (pause) Not whatever your face is doing. (pause) But also do not discard it. (pause) Put it in the record. (pause) Templates are still discoverable.",
-      "changeSummary": "Split into short (pause) beats under 8 words, removed the comma and dash, and kept meaning and cadence intact."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-036.json",
       "id": "PRINTER_SHOW_LIAISON",
       "priorLine": "You hold the page up. The paper curls like it resents being observed.",
-      "lineToEdit": "Okay. Now we have it on an informal capture, which is not evidence, but becomes evidence if someone decides it is.\nPlease bag the original in something clean. Not your pocket. Pockets are\u2026 narrative.",
+      "lineToEdit": "Okay. Now we have it. (pause) An informal capture. (pause) Not evidence. (pause) It becomes evidence if someone decides it is. (pause) Bag the original in something clean. (pause) Not your pocket. (pause) Pockets are\u2026 narrative.",
       "nextLine": "",
-      "revisedLine": "Okay. Now we have it. (pause) An informal capture. (pause) Not evidence. (pause) It becomes evidence if someone decides it is. (pause) Bag the original in something clean. (pause) Not your pocket. (pause) Pockets are\u2026 narrative.",
-      "changeSummary": "Split the line into short beats with pauses, removed extra commas, and kept the original meaning and cadence."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-036.json",
       "id": "BINDER_LIAISON_MISSING",
       "priorLine": "This is the shutdown.",
-      "lineToEdit": "It is a shutdown.\nThe official one has a signature block that ties your hands in a way that protects you later.\nThis one\u2014page seven is wrong. Or missing. Or replaced with a version that wanted to be right.\n\nPage seven is the control room access authorization.\nNot physical access\u2014everyone can walk into a room, unfortunately.\nOperational access. Logging system access. The part where you become the person who did it.",
+      "lineToEdit": "It is a shutdown. (pause)\nThe official one has a signature block. (pause)\nIt ties your hands. (pause)\nIt protects you later. (pause)\nThis one\u2014page seven is wrong. (pause)\nOr missing. (pause)\nOr replaced with a version meant right. (pause)\n\nPage seven is the control room access authorization. (pause)\nNot physical access\u2014everyone can enter, unfortunately. (pause)\nOperational access. (pause)\nLogging system access. (pause)\nThe part where you become the person. (pause)\nThe part where you did it.",
       "nextLine": "",
-      "revisedLine": "It is a shutdown. (pause)\nThe official one has a signature block. (pause)\nIt ties your hands. (pause)\nIt protects you later. (pause)\nThis one\u2014page seven is wrong. (pause)\nOr missing. (pause)\nOr replaced with a version meant right. (pause)\n\nPage seven is the control room access authorization. (pause)\nNot physical access\u2014everyone can enter, unfortunately. (pause)\nOperational access. (pause)\nLogging system access. (pause)\nThe part where you become the person. (pause)\nThe part where you did it.",
-      "changeSummary": "Added pause breaks to keep beats under eight words. Removed extra commas and tightened a few phrases without changing meaning."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-036.json",
       "id": "BINDER_PROCEED_LIAISON",
       "priorLine": "Ask: Can I proceed without it?",
-      "lineToEdit": "You can proceed.\nThe site will allow you to proceed. The equipment does not care about your forms.\nThe audit trail will care with a kind of long memory.",
+      "lineToEdit": "You can proceed. (pause) The site will let you. (pause) The equipment doesn't care about forms. (pause) The audit trail will care. Long memory.",
       "nextLine": "",
-      "revisedLine": "You can proceed. (pause) The site will let you. (pause) The equipment doesn't care about forms. (pause) The audit trail will care. Long memory.",
-      "changeSummary": "Split into shorter beats under 8 words and tightened phrasing while keeping the same meaning and cadence. Removed extra wording to fit the beat limit."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-036.json",
       "id": "TALK_LIAISON_PATHS",
       "priorLine": "I need operational controls and logs.",
-      "lineToEdit": "Yes. And I need you to get them in a way that doesn\u2019t turn you into the sole author of reality.\nThere are two paths:\nThe compliant path, where we find or recreate the missing authorization.\nThe continuity path, where you assert operator continuity on the console and let the system accept you because nobody else is here to disagree.",
+      "lineToEdit": "Yes. (pause) Get them without becoming reality\u2019s sole author. (pause) Two paths. (pause) The compliant path. (pause) Find or recreate missing authorization. (pause) The continuity path. (pause) Assert operator continuity on the console. (pause) Let the system accept you. (pause) Because nobody else is here. (pause) To disagree.",
       "nextLine": "",
-      "revisedLine": "Yes. (pause) Get them without becoming reality\u2019s sole author. (pause) Two paths. (pause) The compliant path. (pause) Find or recreate missing authorization. (pause) The continuity path. (pause) Assert operator continuity on the console. (pause) Let the system accept you. (pause) Because nobody else is here. (pause) To disagree.",
-      "changeSummary": "Inserted (pause) breaks to keep each beat under 8 words. Removed extra commas by splitting clauses into short sentences. Preserved the two-path structure and the reason the system accepts you."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-036.json",
       "id": "ACCESS_ASK_LIAISON",
       "priorLine": "Ask: What\u2019s faster?",
-      "lineToEdit": "Faster is continuity.\nSafer for you later is compliant, but it requires someone to bless the authorization.\nAnd \u201csomeone\u201d is a moving target in a mothballed facility. They don\u2019t stand still for signatures.",
+      "lineToEdit": "Faster is continuity. (pause)\nSafer for you later is compliant. (pause)\nBut it needs someone to bless authorization. (pause)\nAnd \u201csomeone\u201d keeps moving. (pause)\nIn a mothballed facility. (pause)\nThey don\u2019t stand still. (pause)\nNot for signatures.",
       "nextLine": "",
-      "revisedLine": "Faster is continuity. (pause)\nSafer for you later is compliant. (pause)\nBut it needs someone to bless authorization. (pause)\nAnd \u201csomeone\u201d keeps moving. (pause)\nIn a mothballed facility. (pause)\nThey don\u2019t stand still. (pause)\nNot for signatures.",
-      "changeSummary": "Inserted (pause) breaks to keep each beat under 8 words. Removed the comma and tightened phrasing without changing meaning."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-036.json",
       "id": "COMPLIANT_FAIL",
       "priorLine": "",
-      "lineToEdit": "I can\u2019t support that as written.\nIf you sign as OLEA without the right basis, it reads like you manufactured custody.\nEither we do continuity with an explicit reason code, or we stop and find a valid authorization path.",
+      "lineToEdit": "I can\u2019t support that as written. (pause)\nIf you sign as OLEA (pause)\nwithout the right basis (pause)\nit reads like you manufactured custody. (pause)\nEither we do continuity (pause)\nwith an explicit reason code (pause)\nor we stop and find (pause)\na valid authorization path.",
       "nextLine": "",
-      "revisedLine": "I can\u2019t support that as written. (pause)\nIf you sign as OLEA (pause)\nwithout the right basis (pause)\nit reads like you manufactured custody. (pause)\nEither we do continuity (pause)\nwith an explicit reason code (pause)\nor we stop and find (pause)\na valid authorization path.",
-      "changeSummary": "Added (pause) breaks to keep each beat under 8 words and removed the extra comma while preserving meaning and cadence."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-036.json",
       "id": "COMPLIANT_LIAISON_OK",
       "priorLine": "",
-      "lineToEdit": "If you sign as OLEA, you\u2019re not just operating\u2014you\u2019re representing continuity of custody.\nWhich is good.\nWhich is also why people get weird about it later.\n\nDo it cleanly.\nState the basis: emergency stabilization and fiscal closure timeline.\nNot \u201cbecause it was convenient.\u201d Convenience is not a recognized hazard category.",
-      "nextLine": "You annotate the binder\u2019s authorization gap with a field sign-off and timestamp.\nThe act feels heavier than the pen.",
-      "revisedLine": "If you sign as OLEA (pause) you\u2019re not just operating (pause) you\u2019re representing custody continuity. (pause)\nThat\u2019s good. (pause)\nAnd later (pause) people get weird. (pause)\n\nDo it cleanly. (pause)\nState the basis (pause) emergency stabilization (pause) and fiscal closure timeline. (pause)\nNot \u201cit was convenient.\u201d (pause) Convenience isn\u2019t a hazard category.",
-      "changeSummary": "Split the line into short (pause) beats under 8 words, removed explainer phrasing (\u201cwhich/why/because\u201d), and kept punctuation to \u22641 comma while preserving meaning and cadence."
+      "lineToEdit": "If you sign as OLEA (pause) you\u2019re not just operating (pause) you\u2019re representing custody continuity. (pause)\nThat\u2019s good. (pause)\nAnd later (pause) people get weird. (pause)\n\nDo it cleanly. (pause)\nState the basis (pause) emergency stabilization (pause) and fiscal closure timeline. (pause)\nNot \u201cit was convenient.\u201d (pause) Convenience isn\u2019t a hazard category.",
+      "nextLine": "You mark the binder\u2019s authorization gap with sign-off and timestamp. The act feels heavier than pen.",
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-036.json",
       "id": "CONTINUITY_LIAISON_DISCLAIMER",
       "priorLine": "Continuity mode.",
-      "lineToEdit": "For the record: I did not instruct you to do that.\nI described it. Descriptions are not directions.\nThat distinction has saved exactly one career, once.",
-      "nextLine": "You flip into Operator Continuity.\nThe console requests a reason code. There are only three. Two are jokes.\nYou choose the one that looks least like a joke.",
-      "revisedLine": "For the record: (pause) I did not instruct you to do that. (pause)\nI described it. (pause) Descriptions are not directions. (pause)\nThat distinction has saved one career, once.",
-      "changeSummary": "Inserted pauses to keep each beat under 8 words; kept wording and meaning intact with only minor formatting adjustments."
+      "lineToEdit": "For the record: (pause) I did not instruct you to do that. (pause)\nI described it. (pause) Descriptions are not directions. (pause)\nThat distinction has saved one career, once.",
+      "nextLine": "You flip into Operator Continuity. (pause) The console requests a reason code. (pause) There are only three. Two are jokes. (pause) You choose the one that looks least like a joke.",
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-036.json",
       "id": "CONTINUITY_LIAISON_HEADER",
-      "priorLine": "You flip into Operator Continuity.\nThe console requests a reason code. There are only three. Two are jokes.\nYou choose the one that looks least like a joke.",
-      "lineToEdit": "Good. Now don\u2019t touch anything else until we confirm the log header changed.\nI know that sounds trivial. Trivial is where the blame attaches.",
-      "nextLine": "The log printer clicks and advances a line: OPERATOR OF RECORD: FIELD SYSTEMS SPECIALIST (CONTINUITY).\nIt prints it twice, as if to make sure.",
-      "revisedLine": "Good. (pause) Now don\u2019t touch anything else. (pause) Not until we confirm the log header changed. (pause) I know that sounds trivial. (pause) Trivial is where the blame attaches.",
-      "changeSummary": "Split the line into shorter beats using (pause) so each beat stays under 8 words, without changing meaning or tone."
+      "priorLine": "You flip into Operator Continuity. (pause) The console requests a reason code. (pause) There are only three. Two are jokes. (pause) You choose the one that looks least like a joke.",
+      "lineToEdit": "Good. (pause) Now don\u2019t touch anything else. (pause) Not until we confirm the log header changed. (pause) I know that sounds trivial. (pause) Trivial is where the blame attaches.",
+      "nextLine": "The log printer clicks and advances a line: OPERATOR OF RECORD: FIELD SYSTEMS SPECIALIST (CONTINUITY). (pause) It prints it twice, as if to make sure.",
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-038.json",
       "id": "N_LIAISON_1",
       "priorLine": "Assurance line.",
-      "lineToEdit": "Hi\u2014yes. This is Assurance. Just to be crisp: we don\u2019t authorize operations. We observe the paperwork around operations.",
-      "nextLine": "And before you say \u201cstart,\u201d I need to know what you mean by \u201cstart.\u201d In our framework \u201cstart\u201d means you\u2019ve created a traceable state, not that you\u2019ve changed the facility. Which\u2014legally\u2014matters. Also: what is this comparable to? Turbine cold-start, boiler recommission, substation return-to-service\u2014pick one so the file has a spine.",
-      "revisedLine": "Hi\u2014yes. This is Assurance. (pause) Just to be crisp: we don\u2019t authorize operations. (pause) We observe the paperwork around operations.",
-      "changeSummary": "Inserted two (pause) breaks to keep each beat at 8 words or fewer without changing meaning, tone, or cadence."
+      "lineToEdit": "Hi\u2014yes. This is Assurance. (pause) Just to be crisp: we don\u2019t authorize operations. (pause) We observe the paperwork around operations.",
+      "nextLine": "And before you say \u201cstart\u201d (pause) I need to know what you mean (pause) by \u201cstart.\u201d (pause) \u201cStart\u201d here is a traceable state. (pause) It is not a facility change. (pause) Legally that matters. (pause) Also what is this comparable to. (pause) Turbine cold start. (pause) Boiler recommission. (pause) Substation return to service. (pause) Pick one (pause) so the file has a spine.",
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-038.json",
       "id": "N_LIAISON_2",
-      "priorLine": "Hi\u2014yes. This is Assurance. Just to be crisp: we don\u2019t authorize operations. We observe the paperwork around operations.",
-      "lineToEdit": "And before you say \u201cstart,\u201d I need to know what you mean by \u201cstart.\u201d In our framework \u201cstart\u201d means you\u2019ve created a traceable state, not that you\u2019ve changed the facility. Which\u2014legally\u2014matters. Also: what is this comparable to? Turbine cold-start, boiler recommission, substation return-to-service\u2014pick one so the file has a spine.",
+      "priorLine": "Hi\u2014yes. This is Assurance. (pause) Just to be crisp: we don\u2019t authorize operations. (pause) We observe the paperwork around operations.",
+      "lineToEdit": "And before you say \u201cstart\u201d (pause) I need to know what you mean (pause) by \u201cstart.\u201d (pause) \u201cStart\u201d here is a traceable state. (pause) It is not a facility change. (pause) Legally that matters. (pause) Also what is this comparable to. (pause) Turbine cold start. (pause) Boiler recommission. (pause) Substation return to service. (pause) Pick one (pause) so the file has a spine.",
       "nextLine": "",
-      "revisedLine": "And before you say \u201cstart\u201d (pause) I need to know what you mean (pause) by \u201cstart.\u201d (pause) \u201cStart\u201d here is a traceable state. (pause) It is not a facility change. (pause) Legally that matters. (pause) Also what is this comparable to. (pause) Turbine cold start. (pause) Boiler recommission. (pause) Substation return to service. (pause) Pick one (pause) so the file has a spine.",
-      "changeSummary": "Split the line into short beats using (pause) to meet the 8-word limit. Removed extra commas and dashes to stay under the comma cap. Rephrased \u201cIn our framework\u2026 means\u201d to preserve meaning while avoiding explainer phrasing."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-038.json",
       "id": "N_ASK_COMP_LIAISON",
       "priorLine": "Why comparable.",
-      "lineToEdit": "Because auditors don\u2019t audit \u201cunique.\u201d They audit categories. If we can\u2019t categorize it, then every question becomes original research, and no one here is funded for that. Not you. Not me. Definitely not the municipality. So we pick the least-wrong cousin and we document deviations. It\u2019s a kindness. It\u2019s also self-preservation.",
+      "lineToEdit": "Auditors don\u2019t audit \u201cunique.\u201d (pause) They audit categories. (pause) If we can\u2019t categorize it (pause) every question becomes original research. (pause) No one here is funded for that. (pause) Not you. (pause) Not me. (pause) Definitely not the municipality. (pause) So we pick the least-wrong cousin (pause) and document deviations. (pause) It\u2019s a kindness. (pause) It\u2019s also self-preservation.",
       "nextLine": "",
-      "revisedLine": "Auditors don\u2019t audit \u201cunique.\u201d (pause) They audit categories. (pause) If we can\u2019t categorize it (pause) every question becomes original research. (pause) No one here is funded for that. (pause) Not you. (pause) Not me. (pause) Definitely not the municipality. (pause) So we pick the least-wrong cousin (pause) and document deviations. (pause) It\u2019s a kindness. (pause) It\u2019s also self-preservation.",
-      "changeSummary": "Split into short (pause) beats under 8 words, removed extra commas, and rephrased the opening to avoid an explainer hit while preserving meaning and cadence."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-038.json",
       "id": "N_COUSIN_LIAISON",
       "priorLine": "Least-wrong cousin.",
-      "lineToEdit": "Substation return-to-service, with unusual optical characteristics. I\u2019m not saying it is optical. I\u2019m saying the template exists, and templates survive discovery. Also: don\u2019t say \u201chazard\u201d on open comms. Say \u201ccharacteristic.\u201d",
+      "lineToEdit": "Substation return-to-service with unusual optical characteristics. (pause) I\u2019m not saying it\u2019s optical. (pause) I\u2019m saying the template exists. (pause) Templates survive discovery. (pause) Don\u2019t say \u201chazard\u201d on open comms. (pause) Say \u201ccharacteristic.\u201d",
       "nextLine": "",
-      "revisedLine": "Substation return-to-service with unusual optical characteristics. (pause) I\u2019m not saying it\u2019s optical. (pause) I\u2019m saying the template exists. (pause) Templates survive discovery. (pause) Don\u2019t say \u201chazard\u201d on open comms. (pause) Say \u201ccharacteristic.\u201d",
-      "changeSummary": "Split into short beats with (pause), removed extra commas, and kept the same directives and meaning."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-038.json",
       "id": "N_ASK_OBJ_LIAISON",
       "priorLine": "Any objection.",
-      "lineToEdit": "I can\u2019t object. I can only note. And I will note that initiation creates an obligation to complete\u2014or formally suspend with justification. That\u2019s not a threat. It\u2019s how paperwork breeds. You\u2019re about to feed it.",
+      "lineToEdit": "I can\u2019t object. (pause) I can only note. (pause) I will note: initiation creates an obligation. (pause) Complete it\u2014or formally suspend, with justification. (pause) That\u2019s not a threat. (pause) It\u2019s how paperwork breeds. (pause) You\u2019re about to feed it.",
       "nextLine": "",
-      "revisedLine": "I can\u2019t object. (pause) I can only note. (pause) I will note: initiation creates an obligation. (pause) Complete it\u2014or formally suspend, with justification. (pause) That\u2019s not a threat. (pause) It\u2019s how paperwork breeds. (pause) You\u2019re about to feed it.",
-      "changeSummary": "Inserted (pause) breaks to keep each beat under 8 words. Trimmed phrasing while preserving meaning; used a colon and kept commas to one."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-038.json",
       "id": "N_PERSUADE_PASS",
       "priorLine": "",
-      "lineToEdit": "Accepted. \u201cSubstation return-to-service\u201d gives the file a spine. Keep your language categorical and boring. Boring survives.",
+      "lineToEdit": "Accepted. (pause) \u201cSubstation return-to-service\u201d gives the file a spine. (pause) Keep your language categorical and boring. (pause) Boring survives.",
       "nextLine": "",
-      "revisedLine": "Accepted. (pause) \u201cSubstation return-to-service\u201d gives the file a spine. (pause) Keep your language categorical and boring. (pause) Boring survives.",
-      "changeSummary": "Inserted (pause) breaks between sentences to keep each beat under 8 words; meaning and tone unchanged."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-038.json",
       "id": "N_PERSUADE_FAIL",
       "priorLine": "",
-      "lineToEdit": "I can\u2019t sign off on \u201ctight.\u201d Pick the comparable out loud, then document deviations. We do clarity, not bravery.",
+      "lineToEdit": "I can\u2019t sign off on \u201ctight.\u201d (pause) Pick the comparable out loud. (pause) Then document deviations. (pause) We do clarity not bravery.",
       "nextLine": "",
-      "revisedLine": "I can\u2019t sign off on \u201ctight.\u201d (pause) Pick the comparable out loud. (pause) Then document deviations. (pause) We do clarity not bravery.",
-      "changeSummary": "Split the line into shorter beats with (pause) breaks to stay under 8 words per beat, and removed both commas while preserving meaning and cadence."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-040.json",
       "id": "N_INTERCOM_EAC_1",
-      "priorLine": "The intercom button is labeled ASSURANCE \u2013 COMPARABILITY.\nThe label is newer than everything around it, which is its own kind of warning.",
-      "lineToEdit": "External Assurance Contractor, Senior Liaison speaking.\nI\u2019m on this line for comparability and to ensure we\u2019re not\u2014 I\u2019m not saying doing anything unusual.\nI\u2019m saying: if something unusual happens, we need it to resemble an existing appendix.",
+      "priorLine": "The intercom button is labeled ASSURANCE \u2013 COMPARABILITY. (pause) The label is newer than everything around it. A warning of its own.",
+      "lineToEdit": "External Assurance Contractor, Senior Liaison speaking. (pause) I\u2019m here for comparability. (pause) And to ensure we\u2019re not\u2014 (pause) I\u2019m not saying we\u2019re doing anything unusual. (pause) I\u2019m saying if something unusual happens (pause) it needs to resemble an existing appendix.",
       "nextLine": "You monitoring this test?",
-      "revisedLine": "External Assurance Contractor, Senior Liaison speaking. (pause) I\u2019m here for comparability. (pause) And to ensure we\u2019re not\u2014 (pause) I\u2019m not saying we\u2019re doing anything unusual. (pause) I\u2019m saying if something unusual happens (pause) it needs to resemble an existing appendix.",
-      "changeSummary": "Inserted (pause) breaks to keep each beat under 8 words. Rephrased slightly for flow and limited punctuation to a single comma while preserving meaning."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-040.json",
       "id": "N_INTERCOM_EAC_2",
       "priorLine": "You monitoring this test?",
-      "lineToEdit": "Monitoring is a strong word.\nI\u2019m present in the documentation sense.\nOperationally, you\u2019re the only one with hands in the room, which is\u2014 just for clarity\u2014 not my preference.",
+      "lineToEdit": "Monitoring is a strong word. (pause)\nI\u2019m present in the documentation sense. (pause)\nOperationally you\u2019re the only one with hands. (pause)\nIn the room. (pause)\nJust for clarity\u2014 not my preference.",
       "nextLine": "",
-      "revisedLine": "Monitoring is a strong word. (pause)\nI\u2019m present in the documentation sense. (pause)\nOperationally you\u2019re the only one with hands. (pause)\nIn the room. (pause)\nJust for clarity\u2014 not my preference.",
-      "changeSummary": "Split into short (pause) beats under 8 words, removed commas, and rephrased the last sentence to keep the same meaning and cadence without extra explanatory phrasing."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-040.json",
       "id": "N_INTERCOM_ACCEPT_1",
       "priorLine": "ask: What\u2019s the acceptable outcome?",
-      "lineToEdit": "Acceptable is: dull matte, consistent scatter, and a sentence we can reuse next quarter.\nThe ideal result is that nothing happens in a way that requires a new noun.\nIf it does, we don\u2019t panic\u2014 we just need to know what it\u2019s comparable to.",
+      "lineToEdit": "Acceptable is dull matte and consistent scatter (pause) and a sentence we can reuse next quarter. (pause) The ideal result is nothing happens (pause) in a way that requires a new noun. (pause) If it does we don\u2019t panic (pause) we just need to know what it\u2019s like.",
       "nextLine": "If it isn\u2019t comparable?",
-      "revisedLine": "Acceptable is dull matte and consistent scatter (pause) and a sentence we can reuse next quarter. (pause) The ideal result is nothing happens (pause) in a way that requires a new noun. (pause) If it does we don\u2019t panic (pause) we just need to know what it\u2019s like.",
-      "changeSummary": "Removed extra commas by converting the list to all-and phrasing. Added (pause) breaks so each beat stays within 8 words. Kept meaning while tightening the final clause to fit the beat limit."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-040.json",
       "id": "N_INTERCOM_ACCEPT_3",
       "priorLine": "If it isn\u2019t comparable?",
-      "lineToEdit": "Then we will make it comparable.\nThrough language.\nPreferably language already printed.",
+      "lineToEdit": "Then we will make it comparable. (pause)\nThrough language.\nPreferably language already printed.",
       "nextLine": "",
-      "revisedLine": "Then we will make it comparable. (pause)\nThrough language.\nPreferably language already printed.",
-      "changeSummary": "Inserted a pause after the first sentence to split the line into two beats under 8 words each; wording unchanged."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-040.json",
       "id": "N_INTERCOM_GLINT_1",
       "priorLine": "ask: What\u2019s \u201calignment glint\u201d?",
-      "lineToEdit": "It\u2019s a legacy term.\nIt indicates a transient surface condition that appears reflective without being a reflection.\nWhich matters, because \u201creflection\u201d implies a mirror, and mirrors imply intent, and intent implies\u2014 look, I\u2019m not litigating physics. I\u2019m protecting you from a word choice that lives forever.",
+      "lineToEdit": "It\u2019s a legacy term. (pause)\nIt flags a transient surface condition. (pause)\nIt looks reflective without being reflection. (pause)\nThat matters because \u201creflection\u201d implies a mirror. (pause)\nMirrors imply intent. (pause)\nIntent implies\u2014 look. (pause)\nI\u2019m not litigating physics. (pause)\nI\u2019m protecting you from a forever word choice.",
       "nextLine": "So if it shines, I write it down.",
-      "revisedLine": "It\u2019s a legacy term. (pause)\nIt flags a transient surface condition. (pause)\nIt looks reflective without being reflection. (pause)\nThat matters because \u201creflection\u201d implies a mirror. (pause)\nMirrors imply intent. (pause)\nIntent implies\u2014 look. (pause)\nI\u2019m not litigating physics. (pause)\nI\u2019m protecting you from a forever word choice.",
-      "changeSummary": "Split the line into short beats with (pause) to stay under 8 words each, removed commas by switching to periods and an em dash, and kept a single explainer hit (\"because\") while preserving the original meaning and cadence."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-040.json",
       "id": "N_INTERCOM_GLINT_3",
       "priorLine": "So if it shines, I write it down.",
-      "lineToEdit": "You write it down exactly, yes.\nAnd you don\u2019t add adjectives that invite curiosity.\n\u201cUnexpected reflective behavior\u201d is the approved container.\nContainers are safety equipment.",
+      "lineToEdit": "You write it down exactly, yes. (pause)\nAnd you don\u2019t add adjectives. (pause)\nThat invite curiosity. (pause)\n\u201cUnexpected reflective behavior\u201d (pause)\nis the approved container. (pause)\nContainers are safety equipment.",
       "nextLine": "",
-      "revisedLine": "You write it down exactly, yes. (pause)\nAnd you don\u2019t add adjectives. (pause)\nThat invite curiosity. (pause)\n\u201cUnexpected reflective behavior\u201d (pause)\nis the approved container. (pause)\nContainers are safety equipment.",
-      "changeSummary": "Inserted (pause) breaks to keep each beat under 8 words, and split one sentence into a fragment for cadence without changing meaning. Kept commas to one."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-040.json",
       "id": "N_INTERCOM_PERSUADE_2",
       "priorLine": "Using OLEA wording. Unexpected reflective behavior. No expansion.",
-      "lineToEdit": "Thank you.\nThat phrasing is\u2014 it\u2019s not elegant, but it\u2019s survivable.\nIf you keep it inside the approved term, it stays in Operations.\nIf you give it a fresh description, it becomes Research, and Research becomes a hearing.",
+      "lineToEdit": "Thank you. (pause)\nThat phrasing is\u2014 not elegant. (pause)\nBut it\u2019s survivable. (pause)\nKeep it inside the approved term. (pause)\nIt stays in Operations. (pause)\nGive it a fresh description. (pause)\nIt becomes Research. (pause)\nAnd Research becomes a hearing.",
       "nextLine": "I\u2019m closing a site, not opening a category.",
-      "revisedLine": "Thank you. (pause)\nThat phrasing is\u2014 not elegant. (pause)\nBut it\u2019s survivable. (pause)\nKeep it inside the approved term. (pause)\nIt stays in Operations. (pause)\nGive it a fresh description. (pause)\nIt becomes Research. (pause)\nAnd Research becomes a hearing.",
-      "changeSummary": "Split the line into short beats using (pause) so each beat stays under 8 words. Removed commas and rephrased the two conditional sentences into direct imperatives without changing meaning."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-040.json",
       "id": "N_INTERCOM_PERSUADE_4",
       "priorLine": "I\u2019m closing a site, not opening a category.",
-      "lineToEdit": "Exactly.\nWe want closure, not novelty.\nProceed when ready. I will be\u2014 documentation-present.",
+      "lineToEdit": "Exactly. (pause)\nWe want closure, not novelty. (pause)\nProceed when ready. (pause)\nI will be\u2014 documentation-present.",
       "nextLine": "",
-      "revisedLine": "Exactly. (pause)\nWe want closure, not novelty. (pause)\nProceed when ready. (pause)\nI will be\u2014 documentation-present.",
-      "changeSummary": "Inserted (pause) breaks to keep each beat under 8 words without changing wording or meaning."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-040.json",
       "id": "N_USE_PUCK_5",
-      "priorLine": "When the puck touches the pane, it doesn\u2019t clack or resist.\nIt simply stops being on your side.",
-      "lineToEdit": "Okay.\nThat\u2014 record that as\u2026 record that as exactly what the legacy term says, please.\nDon\u2019t\u2014 don\u2019t give it a new name.",
+      "priorLine": "When the puck touches pane, it doesn\u2019t clack or resist; it stops being on your side.",
+      "lineToEdit": "Okay. (pause) That\u2014 record it exactly as the legacy term. (pause) Please. (pause) Don\u2019t\u2014 don\u2019t rename it.",
       "nextLine": "",
-      "revisedLine": "Okay. (pause) That\u2014 record it exactly as the legacy term. (pause) Please. (pause) Don\u2019t\u2014 don\u2019t rename it.",
-      "changeSummary": "Split into short beats with (pause) so no beat exceeds 8 words, while keeping the original meaning and cadence."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-040.json",
       "id": "N_INTERCOM_POST_1",
       "priorLine": "(multiple) (ask: Intercom line.) (ask: Intercom line.)",
-      "lineToEdit": "Tell me you did not say \u201cit vanished.\u201d\nBecause \u201cvanished\u201d is not comparable to anything on our matrix.",
+      "lineToEdit": "Tell me you did not say \u201cit vanished.\u201d (pause) Because \u201cvanished\u201d is not comparable (pause) to anything on our matrix.",
       "nextLine": "It\u2019s gone.",
-      "revisedLine": "Tell me you did not say \u201cit vanished.\u201d (pause) Because \u201cvanished\u201d is not comparable (pause) to anything on our matrix.",
-      "changeSummary": "Inserted two (pause) breaks to keep each beat at 8 words or fewer without changing meaning."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-040.json",
       "id": "N_INTERCOM_POST_3",
       "priorLine": "It\u2019s gone.",
-      "lineToEdit": "\u201cGone\u201d is better.\n\u201cGone\u201d could mean mislaid.\nMislaid is human-scale.\nHuman-scale is insurable.",
+      "lineToEdit": "\u201cGone\u201d is better. (pause)\n\u201cGone\u201d could mean mislaid. (pause)\nMislaid is human-scale. (pause)\nHuman-scale is insurable.",
       "nextLine": "",
-      "revisedLine": "\u201cGone\u201d is better. (pause)\n\u201cGone\u201d could mean mislaid. (pause)\nMislaid is human-scale. (pause)\nHuman-scale is insurable.",
-      "changeSummary": "Inserted (pause) breaks between sentences so no beat exceeds 8 words; meaning and tone unchanged."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-040.json",
       "id": "N_INTERCOM_WRITE_1",
       "priorLine": "ask: What do I write?",
-      "lineToEdit": "You write: \u201cObserved transient alignment; surface response exhibited unexpected reflective behavior.\u201d\nThen you stop.\nNo metaphors. No geometry. No\u2014 no feelings.",
+      "lineToEdit": "You write: \u201cObserved transient alignment.\u201d (pause)\n\u201cSurface response exhibited unexpected reflective behavior.\u201d (pause)\nThen you stop. (pause)\nNo metaphors. (pause)\nNo geometry. (pause)\nNo\u2014 no feelings.",
       "nextLine": "And the missing puck.",
-      "revisedLine": "You write: \u201cObserved transient alignment.\u201d (pause)\n\u201cSurface response exhibited unexpected reflective behavior.\u201d (pause)\nThen you stop. (pause)\nNo metaphors. (pause)\nNo geometry. (pause)\nNo\u2014 no feelings.",
-      "changeSummary": "Split the semicolon quote into two sentences and inserted (pause) breaks so each beat stays under 8 words; meaning and cadence preserved."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-040.json",
       "id": "N_INTERCOM_WRITE_3",
       "priorLine": "And the missing puck.",
-      "lineToEdit": "\u201cItem not recovered.\u201d\nThat is the phrase that keeps it in Operations.\n\u201cNot recovered\u201d implies a later recovery, which implies we never lost control.\nControl is the product here.",
+      "lineToEdit": "\u201cItem not recovered.\u201d (pause)\nThat phrase keeps it in Operations. (pause)\n\u201cNot recovered\u201d implies a later recovery. (pause)\nSo we never lost control. (pause)\nControl is the product here.",
       "nextLine": "",
-      "revisedLine": "\u201cItem not recovered.\u201d (pause)\nThat phrase keeps it in Operations. (pause)\n\u201cNot recovered\u201d implies a later recovery. (pause)\nSo we never lost control. (pause)\nControl is the product here.",
-      "changeSummary": "Added (pause) breaks to keep each beat under 8 words, removed the comma, and simplified the implication chain without changing meaning."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-040.json",
       "id": "N_INTERCOM_SHOW_2",
       "priorLine": "Return tray printed a label. Says \u201creturned.\u201d",
-      "lineToEdit": "Oh.\nThat\u2019s\u2014 that\u2019s excellent, actually, because it\u2019s terrible in a familiar way.\nMisrouting is comparable.\nMisrouting has forms.\nWe can file misrouting until the sun burns out.",
+      "lineToEdit": "Oh. (pause)\nThat\u2019s\u2014 that\u2019s excellent, actually. (pause)\nBecause it\u2019s terrible in a familiar way. (pause)\nMisrouting is comparable. (pause)\nMisrouting has forms. (pause)\nWe can file misrouting till sun burns out.",
       "nextLine": "So I attach it.",
-      "revisedLine": "Oh. (pause)\nThat\u2019s\u2014 that\u2019s excellent, actually. (pause)\nBecause it\u2019s terrible in a familiar way. (pause)\nMisrouting is comparable. (pause)\nMisrouting has forms. (pause)\nWe can file misrouting till sun burns out.",
-      "changeSummary": "Added (pause) breaks to keep each beat under 8 words, removed an extra comma to meet the max-commas limit, and trimmed the final phrase slightly while keeping the same meaning."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
       "scene": "SCN_SCN-040.json",
       "id": "N_INTERCOM_SHOW_4",
       "priorLine": "So I attach it.",
-      "lineToEdit": "Yes. Attach it.\nAnd do not\u2014 do not speculate about where it routed.\n\u201cOverflow\u201d is a word auditors recognize.\nThey don\u2019t ask what the overflow is of, because then they\u2019d have to admit they don\u2019t know.",
+      "lineToEdit": "Yes. (pause) Attach it. (pause)\nAnd do not\u2014 do not speculate (pause)\nabout where it routed. (pause)\n\u201cOverflow\u201d is a word auditors recognize. (pause)\nThey don\u2019t ask what it\u2019s an overflow of (pause)\nbecause they\u2019d have to admit (pause)\nthey don\u2019t know.",
       "nextLine": "",
-      "revisedLine": "Yes. (pause) Attach it. (pause)\nAnd do not\u2014 do not speculate (pause)\nabout where it routed. (pause)\n\u201cOverflow\u201d is a word auditors recognize. (pause)\nThey don\u2019t ask what it\u2019s an overflow of (pause)\nbecause they\u2019d have to admit (pause)\nthey don\u2019t know.",
-      "changeSummary": "Inserted (pause) breaks so each beat stays under 8 words; preserved wording and intent, including the single explainer hit (\u201cbecause\u201d)."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
-      "scene": "SCN_SCN-063.json",
+      "scene": "SCN_SCN-064.json",
+      "id": "N_PRINT_BASELINE_2",
+      "priorLine": "The printer wakes with a dry, offended rattle. (pause) The room\u2019s status scrolls onto paper with timestamps that do not care who asked.",
+      "lineToEdit": "Good. (pause) That's you existing. (pause) We can't edit it later. (pause) Don't interpret anything yet. (pause) Just staple it. (pause) Stapling is weirdly a safety action.",
+      "nextLine": "The first page lands warm. (pause) It lists rotational frame rates and load draw. (pause) An \u201cexternal coordination flag\u201d reads ACTIVE, like that\u2019s normal.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-064.json",
+      "id": "N_PRINT_BASELINE_4",
+      "priorLine": "The first page lands warm. (pause) It lists rotational frame rates and load draw. (pause) An \u201cexternal coordination flag\u201d reads ACTIVE, like that\u2019s normal.",
+      "lineToEdit": "I\u2019m going to schedule a quick follow-up (pause) in\u2026 ten minutes. (pause) Not because ten minutes is meaningful. (pause) Because calendars respect round numbers.",
+      "nextLine": "The printer keeps humming like it expects you to do something that will require an explanation.",
+      "revisedLine": "",
+      "changeSummary": ""
+    },
+    {
+      "scene": "SCN_SCN-110.json",
       "id": "N11_LIAISON_1",
-      "priorLine": "When you touch the console lip, the speaker clicks. A polite tone that implies it was already listening.",
-      "lineToEdit": "I\u2019m seeing your entry ping. Good.\nBefore you do anything\u2014anything that could be construed as a control action\u2014can we establish what this is comparable to?",
-      "nextLine": "Not philosophically. Practically. Turbine hall. Substation. Lab rig.\nBecause I need to put it in the right paragraph, and paragraphs are how we keep people employed.",
-      "revisedLine": "I\u2019m seeing your entry ping. (pause) Good. (pause) Before you do anything (pause) anything that reads like a control action (pause) can we establish what this compares to?",
-      "changeSummary": "Added pauses to cap each beat at 8 words, tightened wording while preserving meaning, and avoided commas and explainer phrases."
+      "priorLine": "When you touch the console lip, the speaker clicks. A tone implying it was already listening.",
+      "lineToEdit": "I\u2019m seeing your entry ping. (pause) Good. (pause) Before you do anything (pause) anything that reads like a control action (pause) can we establish what this compares to?",
+      "nextLine": "Not philosophically. (pause) Practically. (pause) Turbine hall. (pause) Substation. (pause) Lab rig. (pause) Because I need it in the right paragraph, (pause) and paragraphs keep people employed.",
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
-      "scene": "SCN_SCN-063.json",
+      "scene": "SCN_SCN-110.json",
       "id": "N12_LIAISON_2",
-      "priorLine": "I\u2019m seeing your entry ping. Good.\nBefore you do anything\u2014anything that could be construed as a control action\u2014can we establish what this is comparable to?",
-      "lineToEdit": "Not philosophically. Practically. Turbine hall. Substation. Lab rig.\nBecause I need to put it in the right paragraph, and paragraphs are how we keep people employed.",
+      "priorLine": "I\u2019m seeing your entry ping. (pause) Good. (pause) Before you do anything (pause) anything that reads like a control action (pause) can we establish what this compares to?",
+      "lineToEdit": "Not philosophically. (pause) Practically. (pause) Turbine hall. (pause) Substation. (pause) Lab rig. (pause) Because I need it in the right paragraph, (pause) and paragraphs keep people employed.",
       "nextLine": "",
-      "revisedLine": "Not philosophically. (pause) Practically. (pause) Turbine hall. (pause) Substation. (pause) Lab rig. (pause) Because I need it in the right paragraph, (pause) and paragraphs keep people employed.",
-      "changeSummary": "Inserted (pause) breaks so each beat stays under 8 words; tightened wording in the last sentence without changing meaning; kept commas to one and retained the single explainer hit (\u201cBecause\u201d)."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
-      "scene": "SCN_SCN-063.json",
+      "scene": "SCN_SCN-110.json",
       "id": "N15_LIAISON_CHECKLIST_1",
       "priorLine": "Comparable to what\u2019s on the checklist.",
-      "lineToEdit": "Perfect, yes. The checklist is a kind of comparability, unofficially.\nSo when it says \u201cVerify operational status,\u201d do we mean status like a generator, or status like\u2014sorry\u2014like an enclosure?\nI\u2019m not saying it\u2019s an enclosure. I\u2019m saying the word is doing a lot of work.",
-      "nextLine": "Also: your last quarterly package said \u201cmothballed,\u201d and this is\u2026 not that.\n\u201cMothballed\u201d implies dormancy. Dormancy implies intention. Intention implies agency.\nI am not accusing the machine of agency. I\u2019m protecting the sentence.",
-      "revisedLine": "Perfect, yes. (pause) The checklist is a kind of comparability. (pause) Unofficially. (pause) So when it says \u201cVerify operational status\u201d (pause) do we mean status like a generator (pause) or status like\u2014sorry\u2014an enclosure? (pause) I\u2019m not saying it\u2019s an enclosure. (pause) I\u2019m saying the word is doing (pause) a lot of work.",
-      "changeSummary": "Split the line into short (pause) beats under 8 words, removed extra commas to keep only the original one, and kept the same meaning and cadence while preserving the generator vs enclosure distinction and the point about the word doing a lot of work."
+      "lineToEdit": "Perfect, yes. (pause) The checklist is a kind of comparability. (pause) Unofficially. (pause) So when it says \u201cVerify operational status\u201d (pause) do we mean status like a generator (pause) or status like\u2014sorry\u2014an enclosure? (pause) I\u2019m not saying it\u2019s an enclosure. (pause) I\u2019m saying the word is doing (pause) a lot of work.",
+      "nextLine": "Also: your last quarterly package said \u201cmothballed.\u201d (pause)\nThis is\u2026 not that. (pause)\n\u201cMothballed\u201d is dormancy. (pause)\nDormancy is intention. (pause)\nIntention is agency. (pause)\nI am not accusing the machine of agency. (pause)\nI\u2019m protecting the sentence.",
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
-      "scene": "SCN_SCN-063.json",
+      "scene": "SCN_SCN-110.json",
       "id": "N15B_LIAISON_CHECKLIST_2",
-      "priorLine": "Perfect, yes. The checklist is a kind of comparability, unofficially.\nSo when it says \u201cVerify operational status,\u201d do we mean status like a generator, or status like\u2014sorry\u2014like an enclosure?\nI\u2019m not saying it\u2019s an enclosure. I\u2019m saying the word is doing a lot of work.",
-      "lineToEdit": "Also: your last quarterly package said \u201cmothballed,\u201d and this is\u2026 not that.\n\u201cMothballed\u201d implies dormancy. Dormancy implies intention. Intention implies agency.\nI am not accusing the machine of agency. I\u2019m protecting the sentence.",
+      "priorLine": "Perfect, yes. (pause) The checklist is a kind of comparability. (pause) Unofficially. (pause) So when it says \u201cVerify operational status\u201d (pause) do we mean status like a generator (pause) or status like\u2014sorry\u2014an enclosure? (pause) I\u2019m not saying it\u2019s an enclosure. (pause) I\u2019m saying the word is doing (pause) a lot of work.",
+      "lineToEdit": "Also: your last quarterly package said \u201cmothballed.\u201d (pause)\nThis is\u2026 not that. (pause)\n\u201cMothballed\u201d is dormancy. (pause)\nDormancy is intention. (pause)\nIntention is agency. (pause)\nI am not accusing the machine of agency. (pause)\nI\u2019m protecting the sentence.",
       "nextLine": "",
-      "revisedLine": "Also: your last quarterly package said \u201cmothballed.\u201d (pause)\nThis is\u2026 not that. (pause)\n\u201cMothballed\u201d is dormancy. (pause)\nDormancy is intention. (pause)\nIntention is agency. (pause)\nI am not accusing the machine of agency. (pause)\nI\u2019m protecting the sentence.",
-      "changeSummary": "Split into short beats with (pause) to meet word limit. Removed the repeated \u201cimplies\u201d phrasing and avoided commas while preserving the same logical progression and tone."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
-      "scene": "SCN_SCN-063.json",
+      "scene": "SCN_SCN-110.json",
       "id": "N15E_LIAISON_ALARMS",
       "priorLine": "Are alarms normal.",
-      "lineToEdit": "Normal is a category we assign after we survive.\nIf you want defensible language: \u201cNo emergent alarm escalation observed at time of entry.\u201d\nIt\u2019s boring. Boring is what we\u2019re aiming for.",
+      "lineToEdit": "Normal is a category we assign (pause) after we survive. (pause)\nWant defensible language? (pause) \u201cNo emergent alarm escalation observed (pause) at time of entry.\u201d (pause)\nIt\u2019s boring. (pause) Boring is the goal.",
       "nextLine": "",
-      "revisedLine": "Normal is a category we assign (pause) after we survive. (pause)\nWant defensible language? (pause) \u201cNo emergent alarm escalation observed (pause) at time of entry.\u201d (pause)\nIt\u2019s boring. (pause) Boring is the goal.",
-      "changeSummary": "Added pauses to keep each beat under 8 words. Tightened phrasing slightly without changing meaning. Kept commas at zero and avoided added explainer language."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
-      "scene": "SCN_SCN-063.json",
+      "scene": "SCN_SCN-110.json",
       "id": "N17_LIAISON_WHAT_IS_IT_1",
       "priorLine": "What do you think it is.",
-      "lineToEdit": "I don\u2019t. Officially.\nUnofficially I think it\u2019s three systems wearing one name-tag, which is always where incidents come from. Not this incident. Any incident.",
-      "nextLine": "If it were comparable to a node\u2014just hypothetically\u2014we\u2019d need to know whose framework governs it.\nAnd if it\u2019s comparable to nothing, then that\u2019s still a category, and it\u2019s the category that makes auditors start sweating through their lanyards.",
-      "revisedLine": "I don\u2019t. Officially. (pause)\nUnofficially? Three systems wearing one name-tag. (pause)\nThat\u2019s always where incidents come from. (pause)\nNot this incident. Any incident.",
-      "changeSummary": "Inserted (pause) breaks to keep each beat under 8 words. Trimmed the long clause while preserving the meaning and cadence, and kept punctuation within limits."
+      "lineToEdit": "I don\u2019t. Officially. (pause)\nUnofficially? Three systems wearing one name-tag. (pause)\nThat\u2019s always where incidents come from. (pause)\nNot this incident. Any incident.",
+      "nextLine": "If it were comparable to a node (pause) just hypothetically (pause) we\u2019d need to know (pause) whose framework governs it. (pause)\nAnd if it\u2019s comparable to nothing (pause) that\u2019s still a category (pause) and it\u2019s the one (pause) that makes auditors start sweating (pause) through their lanyards.",
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
-      "scene": "SCN_SCN-063.json",
+      "scene": "SCN_SCN-110.json",
       "id": "N17B_LIAISON_WHAT_IS_IT_2",
-      "priorLine": "I don\u2019t. Officially.\nUnofficially I think it\u2019s three systems wearing one name-tag, which is always where incidents come from. Not this incident. Any incident.",
-      "lineToEdit": "If it were comparable to a node\u2014just hypothetically\u2014we\u2019d need to know whose framework governs it.\nAnd if it\u2019s comparable to nothing, then that\u2019s still a category, and it\u2019s the category that makes auditors start sweating through their lanyards.",
+      "priorLine": "I don\u2019t. Officially. (pause)\nUnofficially? Three systems wearing one name-tag. (pause)\nThat\u2019s always where incidents come from. (pause)\nNot this incident. Any incident.",
+      "lineToEdit": "If it were comparable to a node (pause) just hypothetically (pause) we\u2019d need to know (pause) whose framework governs it. (pause)\nAnd if it\u2019s comparable to nothing (pause) that\u2019s still a category (pause) and it\u2019s the one (pause) that makes auditors start sweating (pause) through their lanyards.",
       "nextLine": "",
-      "revisedLine": "If it were comparable to a node (pause) just hypothetically (pause) we\u2019d need to know (pause) whose framework governs it. (pause)\nAnd if it\u2019s comparable to nothing (pause) that\u2019s still a category (pause) and it\u2019s the one (pause) that makes auditors start sweating (pause) through their lanyards.",
-      "changeSummary": "Inserted (pause) breaks so each beat stays under 8 words. Removed commas and the dash while preserving meaning, tone, and cadence."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
-      "scene": "SCN_SCN-063.json",
+      "scene": "SCN_SCN-110.json",
       "id": "N18B_LIAISON_DEFENSIBLE",
       "priorLine": "I\u2019m logging baseline first. No interpretations.",
-      "lineToEdit": "That is a defensible posture.\nI want that stated as: \u201cBaseline verification initiated prior to operational interaction.\u201d\nNot because I\u2019m precious. Because if we don\u2019t say it that way, someone later will say you interacted first.",
-      "nextLine": "Printouts are good. Printouts are\u2014how do I phrase it\u2014harder to reinterpret.\nUnless they\u2019re missing timestamps. Please don\u2019t give me missing timestamps.",
-      "revisedLine": "That is a defensible posture. (pause)\nI want it stated as: (pause)\n\u201cBaseline verification initiated prior to operational interaction.\u201d (pause)\nNot because I\u2019m precious. (pause)\nBecause if we don\u2019t say it that way (pause)\nsomeone later will say you interacted first.",
-      "changeSummary": "Inserted (pause) breaks to keep each beat under 8 words, and lightly tightened phrasing while preserving meaning and tone. Kept commas at zero and retained only two explainer hits via the two 'because' statements."
+      "lineToEdit": "That is a defensible posture. (pause)\nI want it stated as: (pause)\n\u201cBaseline verification initiated prior to operational interaction.\u201d (pause)\nNot because I\u2019m precious. (pause)\nBecause if we don\u2019t say it that way (pause)\nsomeone later will say you interacted first.",
+      "nextLine": "Printouts are good. (pause) Printouts are\u2014how do I phrase it\u2014 (pause) harder to reinterpret. (pause) Unless they\u2019re missing timestamps. (pause) Please don\u2019t give me missing timestamps.",
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
-      "scene": "SCN_SCN-063.json",
+      "scene": "SCN_SCN-110.json",
       "id": "N18C_LIAISON_TIMESTAMPS",
-      "priorLine": "That is a defensible posture.\nI want that stated as: \u201cBaseline verification initiated prior to operational interaction.\u201d\nNot because I\u2019m precious. Because if we don\u2019t say it that way, someone later will say you interacted first.",
-      "lineToEdit": "Printouts are good. Printouts are\u2014how do I phrase it\u2014harder to reinterpret.\nUnless they\u2019re missing timestamps. Please don\u2019t give me missing timestamps.",
+      "priorLine": "That is a defensible posture. (pause)\nI want it stated as: (pause)\n\u201cBaseline verification initiated prior to operational interaction.\u201d (pause)\nNot because I\u2019m precious. (pause)\nBecause if we don\u2019t say it that way (pause)\nsomeone later will say you interacted first.",
+      "lineToEdit": "Printouts are good. (pause) Printouts are\u2014how do I phrase it\u2014 (pause) harder to reinterpret. (pause) Unless they\u2019re missing timestamps. (pause) Please don\u2019t give me missing timestamps.",
       "nextLine": "",
-      "revisedLine": "Printouts are good. (pause) Printouts are\u2014how do I phrase it\u2014 (pause) harder to reinterpret. (pause) Unless they\u2019re missing timestamps. (pause) Please don\u2019t give me missing timestamps.",
-      "changeSummary": "Added (pause) breaks to keep each beat under 8 words; no meaning or tone changes."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
-      "scene": "SCN_SCN-063.json",
+      "scene": "SCN_SCN-111.json",
       "id": "N35_LIAISON_AMBIGUOUS",
       "priorLine": "The panel offers no further detail. The ambiguity is apparently a completed state.",
-      "lineToEdit": "Ambiguous is a loaded term.\nIn assurance language it means \u201cwe knew this would happen and chose not to define it.\u201d\nWhich is not negligence. Legally.",
+      "lineToEdit": "Ambiguous is a loaded term. (pause)\nIn assurance language it means: (pause)\n\u201cWe knew this would happen.\u201d (pause)\n\u201cAnd chose not to define it.\u201d (pause)\nNot negligence. Legally.",
       "nextLine": "",
-      "revisedLine": "Ambiguous is a loaded term. (pause)\nIn assurance language it means: (pause)\n\u201cWe knew this would happen.\u201d (pause)\n\u201cAnd chose not to define it.\u201d (pause)\nNot negligence. Legally.",
-      "changeSummary": "Inserted (pause) breaks to keep each beat under 8 words. Kept meaning and cadence, and avoided extra commas or explainer phrases."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
-      "scene": "SCN_SCN-063.json",
+      "scene": "SCN_SCN-111.json",
       "id": "N38_LIAISON_ACK",
-      "priorLine": "You press ACK. The amber light goes from steady to steady, but now it\u2019s the steadiness of something that can say it was acknowledged.",
-      "lineToEdit": "Documented.\nAcknowledged alarms are easier to defend than unacknowledged alarms, even when nothing changes physically.\nThat sentence is why I drink water like it\u2019s a job.",
+      "priorLine": "You press ACK. The amber light stays steady, now steady with the quiet certainty of acknowledged.",
+      "lineToEdit": "Documented. (pause)\nAcknowledged alarms are easier to defend (pause)\nthan unacknowledged alarms, even when (pause)\nnothing changes physically. (pause)\nThat sentence is why I drink (pause)\nwater like it\u2019s a job.",
       "nextLine": "",
-      "revisedLine": "Documented. (pause)\nAcknowledged alarms are easier to defend (pause)\nthan unacknowledged alarms, even when (pause)\nnothing changes physically. (pause)\nThat sentence is why I drink (pause)\nwater like it\u2019s a job.",
-      "changeSummary": "Inserted (pause) breaks to keep each beat under 8 words; kept wording and single comma intact."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
-      "scene": "SCN_SCN-063.json",
-      "id": "N24_LIAISON_DEFINITIONS",
-      "priorLine": "The definitions page defines \u201cpresence\u201d as \u201cverifiable occupancy within the operational envelope.\u201d Someone circled \u201cverifiable\u201d and wrote: PRINT.",
-      "lineToEdit": "I love that. Not emotionally. Professionally.\n\u201cOperational envelope\u201d is vague enough to be safe, and \u201cverifiable\u201d tells me how to close the loop.\nIf you print, I can stop asking you questions that make you sound like a scientist.",
+      "scene": "SCN_SCN-112.json",
+      "id": "N4_LIAISON_DEFINITIONS",
+      "priorLine": "Definitions define \u201cpresence\u201d as \u201cverifiable occupancy in the operational envelope.\u201d Someone circled \u201cverifiable\u201d and wrote: PRINT.",
+      "lineToEdit": "I love that. (pause) Not emotionally. (pause) Professionally. (pause)\n\u201cOperational envelope\u201d is vague enough to be safe. (pause) And \u201cverifiable\u201d tells me how. (pause) To close the loop. (pause)\nIf you print, I can stop. (pause) Asking you questions that make you. (pause) Sound like a scientist.",
       "nextLine": "",
-      "revisedLine": "I love that. (pause) Not emotionally. (pause) Professionally. (pause)\n\u201cOperational envelope\u201d is vague enough to be safe. (pause) And \u201cverifiable\u201d tells me how. (pause) To close the loop. (pause)\nIf you print, I can stop. (pause) Asking you questions that make you. (pause) Sound like a scientist.",
-      "changeSummary": "Inserted (pause) breaks so each beat stays under 8 words. Removed the extra comma by splitting the \u201cOperational envelope\u201d sentence, keeping only one comma total."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
-      "scene": "SCN_SCN-063.json",
-      "id": "N26_LIAISON_SHUTDOWN",
-      "priorLine": "The shutdown sequence begins with three steps of \u201cConfirm,\u201d then a step of \u201cNotify,\u201d then a step of \u201cConfirm\u201d that you notified. The last page is missing, replaced with a sheet titled \u201cCross-Jurisdictional Coordination (Do Not Execute Without Authority).\u201d",
-      "lineToEdit": "That missing page is\u2014okay\u2014technically it\u2019s not missing, it\u2019s superseded.\nSuperseded by someone who isn\u2019t here. Which is its own kind of missing.",
+      "scene": "SCN_SCN-112.json",
+      "id": "N7_LIAISON_SHUTDOWN",
+      "priorLine": "Shutdown starts with three \u201cConfirm\u201d steps. (pause) Then \u201cNotify.\u201d (pause) Then \u201cConfirm\u201d you notified. (pause) The last page is missing. (pause) It\u2019s replaced by a sheet titled \u201cCross-Jurisdictional Coordination (Do Not Execute Without Authority).\u201d",
+      "lineToEdit": "That missing page is\u2014okay\u2014 (pause)\nTechnically it\u2019s not missing. (pause)\nIt\u2019s superseded. (pause)\nSuperseded by someone who isn\u2019t here. (pause)\nSo it\u2019s its own kind of missing.",
       "nextLine": "",
-      "revisedLine": "That missing page is\u2014okay\u2014 (pause)\nTechnically it\u2019s not missing. (pause)\nIt\u2019s superseded. (pause)\nSuperseded by someone who isn\u2019t here. (pause)\nSo it\u2019s its own kind of missing.",
-      "changeSummary": "Inserted (pause) breaks to keep each beat under 8 words, removed the comma to meet punctuation limits, and kept the original meaning and cadence."
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
-      "scene": "SCN_SCN-063.json",
-      "id": "N28_LIAISON_SCREENSHOT",
-      "priorLine": "Holding the binder up to the speaker link camera.",
-      "lineToEdit": "Thank you. Hold it still\u2014yes, like that.\nI\u2019m taking a screenshot, which is not a record, but it is a pre-record, which becomes a record if someone later claims we never saw it.",
-      "nextLine": "Please don\u2019t turn the page fast. Motion blur is how institutions escape responsibility.",
-      "revisedLine": "Thank you. Hold it still\u2014yes, like that. (pause)\nI\u2019m taking a screenshot. (pause)\nNot a record. A pre-record. (pause)\nIt becomes a record later. (pause)\nIf someone claims we never saw it.",
-      "changeSummary": "Split into short beats with (pause) markers, cut commas to stay under the limit, and replaced the chained clauses with short sentences while keeping the same meaning."
+      "scene": "SCN_SCN-112.json",
+      "id": "N9_LIAISON_SCREENSHOT",
+      "priorLine": "Holding binder up to speaker link camera.",
+      "lineToEdit": "Thank you. Hold it still\u2014yes, like that. (pause)\nI\u2019m taking a screenshot. (pause)\nNot a record. A pre-record. (pause)\nIt becomes a record later. (pause)\nIf someone claims we never saw it.",
+      "nextLine": "Please don\u2019t turn the page fast. (pause) Motion blur is how institutions escape responsibility.",
+      "revisedLine": "",
+      "changeSummary": ""
     },
     {
-      "scene": "SCN_SCN-063.json",
-      "id": "N29_LIAISON_MOTION_BLUR",
-      "priorLine": "Thank you. Hold it still\u2014yes, like that.\nI\u2019m taking a screenshot, which is not a record, but it is a pre-record, which becomes a record if someone later claims we never saw it.",
-      "lineToEdit": "Please don\u2019t turn the page fast. Motion blur is how institutions escape responsibility.",
+      "scene": "SCN_SCN-112.json",
+      "id": "N10_LIAISON_MOTION_BLUR",
+      "priorLine": "Thank you. Hold it still\u2014yes, like that. (pause)\nI\u2019m taking a screenshot. (pause)\nNot a record. A pre-record. (pause)\nIt becomes a record later. (pause)\nIf someone claims we never saw it.",
+      "lineToEdit": "Please don\u2019t turn the page fast. (pause) Motion blur is how institutions escape responsibility.",
       "nextLine": "",
-      "revisedLine": "Please don\u2019t turn the page fast. (pause) Motion blur is how institutions escape responsibility.",
-      "changeSummary": "Inserted a (pause) to split the line into two beats under 8 words each; meaning and tone unchanged."
-    },
-    {
-      "scene": "SCN_SCN-063.json",
-      "id": "N44_LIAISON_PRINTING",
-      "priorLine": "The printer wakes with a dry, offended rattle. The room\u2019s status scrolls onto paper with timestamps that do not care who asked.",
-      "lineToEdit": "Good.\nThat is you existing in a way we can\u2019t edit later.\nDon\u2019t interpret anything yet\u2014just staple it. Stapling is, weirdly, a safety action.",
-      "nextLine": "The first page lands warm. It lists rotational frame rates, load draw, and an \u201cexternal coordination flag\u201d marked ACTIVE, as if that\u2019s normal.",
-      "revisedLine": "Good. (pause) That's you existing. (pause) We can't edit it later. (pause) Don't interpret anything yet. (pause) Just staple it. (pause) Stapling is weirdly a safety action.",
-      "changeSummary": "Split the long sentence into short beats using (pause) to keep each beat under 8 words, and removed the extra commas from the last sentence while keeping the same meaning and cadence."
-    },
-    {
-      "scene": "SCN_SCN-063.json",
-      "id": "N46_LIAISON_FOLLOWUP",
-      "priorLine": "The first page lands warm. It lists rotational frame rates, load draw, and an \u201cexternal coordination flag\u201d marked ACTIVE, as if that\u2019s normal.",
-      "lineToEdit": "I\u2019m going to schedule a quick follow-up in\u2026 ten minutes.\nNot because ten minutes is meaningful. Because calendars respect round numbers.",
-      "nextLine": "The printer keeps humming like it expects you to do something that will require an explanation.",
-      "revisedLine": "I\u2019m going to schedule a quick follow-up (pause) in\u2026 ten minutes. (pause) Not because ten minutes is meaningful. (pause) Because calendars respect round numbers.",
-      "changeSummary": "Added (pause) breaks so each beat stays under 8 words; kept wording and meaning intact with two 'because' explainer hits and no commas."
+      "revisedLine": "",
+      "changeSummary": ""
     }
   ]
 }

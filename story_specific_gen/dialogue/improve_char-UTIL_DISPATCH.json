@@ -3,308 +3,272 @@
     {
       "scene": "SCN_SCN-042.json",
       "id": "N_DISPATCH_CALL",
-      "priorLine": "That\u2019s a demand event. It is not an alarm-alarm. It\u2019s a request with consequences.\nAnd before you say anything: don\u2019t say \u201cemergency.\u201d The word \u201cemergency\u201d drags in different people.",
-      "lineToEdit": "Control Room, this is Utility Dispatch. Timestamp 14:17:09.\nWe\u2019re issuing a load-shedding request for your node. Confirm receipt and give me your action record ID.",
-      "nextLine": "Confirm what, specifically.\nSay you \u201cacknowledge the demand event\u201d and you\u2019re \u201cinitiating a load-shed response.\u201d It matters because the transcript outlives us.",
-      "revisedLine": "Control Room, this is Utility Dispatch. (pause) Timestamp 14:17:09. (pause) Issuing load-shedding request for your node. (pause) Confirm receipt. (pause) Provide your action record ID.",
-      "changeSummary": "Split the line into shorter beats with (pause) markers to meet the max beat word limit, while keeping the single comma and preserving the original meaning and cadence."
+      "priorLine": "Demand event. (pause) Dispatch wants a shed, (pause) and it sticks. (pause) And don't say \u201cemergency\u201d\u2014 (pause) different people get dragged in.",
+      "lineToEdit": "Control Room, this is Utility Dispatch. (pause) Timestamp 14:17:09. (pause) Issuing load-shedding request for your node. (pause) Confirm receipt. (pause) Provide your action record ID.",
+      "nextLine": "Confirm the phrasing not your feelings. (pause) Say: \"acknowledge the demand event.\" (pause) And: \"initiating a load-shed response.\" (pause) It must read clean in transcript.",
+      "revisedLine": "Control Room, Utility Dispatch. (pause) Timestamp 14:17:09. (pause) Need load-shed on your node. (pause) Confirm you\u2019ve got it. (pause) And give me your action record ID.",
+      "changeSummary": "Cut formality, kept timestamp/request/receipt/ID; made it sound like a pressured call."
     },
     {
       "scene": "SCN_SCN-042.json",
       "id": "N_ACK_UTIL",
       "priorLine": "Acknowledging demand event. Initiating load-shed response.",
-      "lineToEdit": "Acknowledged at 14:17:22. Provide your action record ID.\nAnd confirm you will maintain stability. I need that stated, not implied.",
-      "nextLine": "They always say \u201cmaintain stability\u201d like it\u2019s a separate switch.\nAnswer it. Then we generate the ID off the printer header. If you freestyle an ID, auditors treat it like fiction.",
-      "revisedLine": "Acknowledged at 14:17:22. (pause) Provide your action record ID. (pause) Confirm you will maintain stability. (pause) I need that stated, not implied.",
-      "changeSummary": "Split the line into short beats using (pause) so each beat stays under 8 words; kept wording and intent intact, preserving the single comma."
+      "lineToEdit": "Acknowledged at 14:17:22. (pause) Provide your action record ID. (pause) Confirm you will maintain stability. (pause) I need that stated, not implied.",
+      "nextLine": "Yeah. Maintain stability. They want it said. (pause) Say it. (pause) Then use the printer header for the ID. (pause) Don\u2019t freestyle an ID. (pause) Auditors love that kind of blood.",
+      "revisedLine": "Copy, 14:17:22. (pause) What\u2019s your action record ID? (pause) And say you\u2019ll maintain stability\u2014for the tape. (pause) Say it out loud.",
+      "changeSummary": "Kept asks (ID + stability statement) but made it more clipped and transcript-driven."
     },
     {
       "scene": "SCN_SCN-042.json",
       "id": "N_AUTH_UTIL",
-      "priorLine": "Acknowledged demand event. Initiating load-shed response under standard ops phrasing. Record ID pending printer header; stability maintained per interlock limits.",
-      "lineToEdit": "Accepted. Timestamp 14:17:26.\nProvide the record ID when available. Report shed amount and start time when you act.",
-      "nextLine": "Good. Standard language, no new nouns.\nNow we move loads\u2014after we have paper.",
-      "revisedLine": "Accepted. Timestamp 14:17:26. (pause) Send the record ID when available. (pause) When you act, report shed amount. (pause) Report start time.",
-      "changeSummary": "Added pauses to keep each beat under 8 words; split the final instruction into two short beats without changing meaning."
+      "priorLine": "Acknowledged demand event. (pause) Initiating load-shed response. (pause) Using standard ops phrasing. (pause) Record ID pending printer header. (pause) Stability maintained per interlock limits.",
+      "lineToEdit": "Accepted. Timestamp 14:17:26. (pause) Send the record ID when available. (pause) When you act, report shed amount. (pause) Report start time.",
+      "nextLine": "Good. Don't add words. Get paper, move load.",
+      "revisedLine": "Accepted\u2014timestamp 14:17:26. (pause) Send the record ID when it shows up. (pause) On action, send shed amount and start time.",
+      "changeSummary": "Reduced broadcast cadence; preserved required reporting and timing. | Shortened the final beat to 8 words while keeping the same request; kept pauses between sentences and limited commas to one."
     },
     {
       "scene": "SCN_SCN-042.json",
       "id": "N_MAINTAIN_UTIL",
       "priorLine": "Will maintain stability. Stand by for record ID.",
-      "lineToEdit": "Good. Timestamp 14:17:31.\nConstraint: do not introduce oscillatory loading. If you don\u2019t know what\u2019s oscillatory on your side, assume it is.\nCall back with shed amount and start time.",
-      "nextLine": "\u201cAssume it is\u201d is my favorite engineering instruction.\nPrint the banner. Staple it. Then we move loads. In that order.",
-      "revisedLine": "Good. (pause) Timestamp 14:17:31. (pause) Constraint: do not introduce oscillatory loading. (pause) If you don\u2019t know what\u2019s oscillatory, (pause) assume it is. (pause) Call back with shed amount and start time.",
-      "changeSummary": "Inserted (pause) breaks to keep each beat to 8 words or fewer, while preserving all original instructions and details; kept commas to one total."
+      "lineToEdit": "Good. (pause) Timestamp 14:17:31. (pause) Constraint: do not introduce oscillatory loading. (pause) If you don\u2019t know what\u2019s oscillatory, (pause) assume it is. (pause) Call back with shed amount and start time.",
+      "nextLine": "Assume it is. (pause) Right. (pause) Print the banner. Staple it. Then we shed. (pause) Same order every time.",
+      "revisedLine": "Good. (pause) Timestamp 14:17:31. (pause) Keep it steady\u2014no oscillatory loading. (pause) Not sure? Assume oscillatory; don\u2019t do it. (pause) Call back with shed amount and start time.",
+      "changeSummary": "Kept constraint and callback requirements; tightened language into on-the-spot caution. | Shortened the longest beat by tightening the uncertainty instruction, keeping pauses between complete thoughts and preserving meaning."
     },
     {
       "scene": "SCN_SCN-042.json",
       "id": "N_DEFINE_UTIL",
       "priorLine": "Define \u201cmaintain stability.\u201d",
-      "lineToEdit": "Stability means your node does not create a problem I have to name.\nVoltage within band, frequency support unchanged, no step-load chatter, no cycling.\nAnd\u2014because it comes up\u2014no undocumented behavior. That\u2019s not technical. That\u2019s legal.",
-      "nextLine": "See? It\u2019s a feelings category with numbers attached.\nWe can comply. We just have to choose what we call \u201cnoncritical.\u201d",
-      "revisedLine": "Stability means: no problem I must name. (pause)\nVoltage stays within band. (pause)\nFrequency support stays unchanged. (pause)\nNo step-load chatter. (pause)\nNo cycling. (pause)\nAnd\u2014because it comes up\u2014no undocumented behavior. (pause)\nThat\u2019s not technical. (pause)\nThat\u2019s legal.",
-      "changeSummary": "Split into short beats using (pause). Removed commas by switching to periods and a colon. Kept the single explainer hit (\u201cbecause\u201d) and preserved all original points."
+      "lineToEdit": "Stability means: no problem I must name. (pause)\nVoltage stays within band. (pause)\nFrequency support stays unchanged. (pause)\nNo step-load chatter. (pause)\nNo cycling. (pause)\nAnd\u2014because it comes up\u2014no undocumented behavior. (pause)\nThat\u2019s not technical. (pause)\nThat\u2019s legal.",
+      "nextLine": "Yeah. It\u2019s vibes with a meter readout. (pause) We can comply\u2014 (pause) we pick what gets tagged \u201cnoncritical,\u201d (pause) and stick to it.",
+      "revisedLine": "Stability? Don\u2019t hand me a problem to name. (pause) Voltage stays in band. (pause) Frequency support doesn\u2019t shift. (pause) No step-load chatter. (pause) No cycling. (pause) And don\u2019t do anything you can\u2019t document. (pause) Legal will eat us alive on that.",
+      "changeSummary": "Preserved the checklist items and legal pressure; removed tidy definitional punchlines. | Shortened the first beat to stay under 8 words while preserving the same meaning and cadence; no other changes needed."
     },
     {
       "scene": "SCN_SCN-042.json",
       "id": "N_UNDERSTOOD_UTIL",
       "priorLine": "Understood. Proceeding. Record ID to follow.",
-      "lineToEdit": "Timestamp 14:17:58. Accepted.\nCall when the first shed is complete. Don\u2019t wait for perfection.",
+      "lineToEdit": "Timestamp 14:17:58. Accepted. (pause) Call when the first shed is complete. (pause) Don\u2019t wait for perfection.",
       "nextLine": "The alarm panel stops nagging and starts waiting.",
-      "revisedLine": "Timestamp 14:17:58. Accepted. (pause) Call when the first shed is complete. (pause) Don\u2019t wait for perfection.",
-      "changeSummary": "Inserted (pause) breaks to keep each beat under 8 words; meaning and tone unchanged."
+      "revisedLine": "Accepted, timestamp 14:17:58. (pause) Call me when the first shed lands. (pause) Don\u2019t sit there chasing perfect.",
+      "changeSummary": "Kept acceptance/timestamp and \u201ccall after first shed\u201d; made the impatience more natural."
     },
     {
       "scene": "SCN_SCN-042.json",
       "id": "N_TARGET_UTIL",
       "priorLine": "Target MW. Duration.",
-      "lineToEdit": "Target is twelve megawatts reduction at the node. Duration unknown\u2014minimum twenty minutes, reassess at the half-hour mark.\nDo not shed anything that causes a restart surge. If it \u201cauto-recovers,\u201d it\u2019s not a shed.",
-      "nextLine": "\u201cAuto-recovers\u201d is a trap category.\nWe shed clean if we redefine what counts as essential to verification. The checklist will complain. Let it.",
-      "revisedLine": "Target: twelve megawatts reduction at the node. (pause) Duration unknown. Minimum twenty minutes. (pause) Reassess at the half-hour mark. (pause) Do not shed anything that causes restart surge. (pause) If it auto-recovers it is not a shed.",
-      "changeSummary": "Split the line into short beats using (pause) to meet the 8-word limit. Removed the extra comma by rephrasing the second sentence without changing meaning."
+      "lineToEdit": "Target: twelve megawatts reduction at the node. (pause) Duration unknown. Minimum twenty minutes. (pause) Reassess at the half-hour mark. (pause) Do not shed anything that causes restart surge. (pause) If it auto-recovers it is not a shed.",
+      "nextLine": "\u201cAuto-recovers\u201d is where they call it noncompliance. (pause) We shed what stays down. (pause) If that means re-tagging what\u2019s essential (pause) for verification, so be it.",
+      "revisedLine": "Target is twelve megawatts off the node. (pause) Duration\u2019s unknown\u2014hold it twenty minutes minimum. (pause) Reassess at the half-hour. (pause) Don\u2019t pick anything with nasty restart surge. (pause) Auto-recovering loads don\u2019t count as shed.",
+      "changeSummary": "Same target/duration rules and exclusions; shifted to dispatcher shorthand with liability framing. | Shortened beats 4 and 5 to meet the 8-word limit while keeping meaning; removed the conditional phrasing in the final beat for brevity."
     },
     {
       "scene": "SCN_SCN-042.json",
       "id": "N_COMMIT_DIRECT_UTIL",
       "priorLine": "Acknowledged. Initiating response. Will report shed and time.",
-      "lineToEdit": "Timestamp 14:18:06. Logged.\nI still need your action record ID. If you can\u2019t generate one, give me the printer header serial. Something attributable.",
-      "nextLine": "That\u2019s fair, unfortunately.\nUse the printer. The tray is not optional. The tray is our alibi.",
-      "revisedLine": "Timestamp 14:18:06. Logged.(pause) I still need your action record ID.(pause) If you can\u2019t generate one,(pause) give me the printer header serial.(pause) Something attributable.",
-      "changeSummary": "Inserted (pause) breaks to keep each beat under 8 words; preserved wording and meaning with only one comma retained."
+      "lineToEdit": "Timestamp 14:18:06. Logged.(pause) I still need your action record ID.(pause) If you can\u2019t generate one,(pause) give me the printer header serial.(pause) Something attributable.",
+      "nextLine": "Yeah. Fair. (pause) Use the printer. (pause) Make sure it lands in the tray. (pause) That's our cover.",
+      "revisedLine": "Timestamp 14:18:06. Logged. (pause) I still need your action record ID. (pause) Can\u2019t generate one? Read me printer header serial. (pause) I just need something attributable.",
+      "changeSummary": "Kept all required asks; made it sound less like a template. | Shortened the third beat by splitting it into two short sentences to stay under 8 words per beat, while keeping the same request and meaning."
     },
     {
       "scene": "SCN_SCN-042.json",
       "id": "N_DETAILS_UTIL",
       "priorLine": "Details. Target MW. Duration.",
-      "lineToEdit": "Good. Timestamp 14:17:12.\nTarget is twelve megawatts reduction at the node, duration unknown\u2014minimum twenty minutes, reassess at the half-hour mark.\nDo not shed anything that causes a restart surge. If it \u201cauto-recovers,\u201d it\u2019s not a shed.",
-      "nextLine": "\u201cAuto-recovers\u201d is a trap category.\nWe can shed clean if we redefine what counts as essential to verification. Which is going to irritate the checklist.",
-      "revisedLine": "Good. (pause) Timestamp 14:17:12. (pause) Target: twelve-megawatt reduction at the node. (pause) Duration unknown. (pause) Minimum twenty minutes. (pause) Reassess at the half-hour mark. (pause) Do not shed anything. (pause) Nothing that causes restart surge. (pause) If it auto-recovers, it's not a shed.",
-      "changeSummary": "Split into short beats with (pause) so each beat stays under 8 words. Removed extra commas by breaking long clauses into separate sentences while keeping the same instructions and numbers."
+      "lineToEdit": "Good. (pause) Timestamp 14:17:12. (pause) Target: twelve-megawatt reduction at the node. (pause) Duration unknown. (pause) Minimum twenty minutes. (pause) Reassess at the half-hour mark. (pause) Do not shed anything. (pause) Nothing that causes restart surge. (pause) If it auto-recovers, it's not a shed.",
+      "nextLine": "Auto-recovers. They'll use that against us. (pause) We can do a clean shed, (pause) but we have to re-tag (pause) what's \"essential.\" (pause) Checklist won't be happy.",
+      "revisedLine": "Good. (pause) Timestamp 14:17:12. (pause) Need twelve megawatts off the node. (pause) Duration\u2019s open\u2014twenty minutes minimum. (pause) Reassess at the half-hour. (pause) Don\u2019t shed anything that\u2019s going to restart-surge. (pause) If it auto-recovers it doesn\u2019t count as shed.",
+      "changeSummary": "Preserved the same parameters; removed choppy over-explainer repetition. | Shortened the final beat by removing the comma and dropping \u201ca\u201d to meet the 8-word beat limit without changing meaning."
     },
     {
       "scene": "SCN_SCN-042.json",
       "id": "N_DETAILS_ACK_UTIL",
       "priorLine": "Acknowledged. Initiating response. Will report shed and time.",
-      "lineToEdit": "Timestamp 14:17:26. Logged.\nI still need your action record ID. If you can\u2019t generate one, give me the printer header serial. Something attributable.",
-      "nextLine": "That\u2019s fair, unfortunately.\nUse the printer. The tray is not optional. The tray is our alibi.",
-      "revisedLine": "Timestamp 14:17:26. (pause) Logged. (pause) I still need your action record ID. (pause) If you can\u2019t generate one (pause) give me the printer header serial. (pause) Something attributable.",
-      "changeSummary": "Inserted (pause) breaks to keep each beat under 8 words; kept wording and meaning intact and avoided commas."
+      "lineToEdit": "Timestamp 14:17:26. (pause) Logged. (pause) I still need your action record ID. (pause) If you can\u2019t generate one (pause) give me the printer header serial. (pause) Something attributable.",
+      "nextLine": "Yeah. Fair. (pause) Print the header. (pause) Tray needs to catch it. (pause) Otherwise we\u2019ve got nothing to point at.",
+      "revisedLine": "Timestamp 14:17:26. (pause) Logged. (pause) I still need your action record ID. (pause) If you can\u2019t generate it. (pause) Give me the printer header serial. (pause) Something attributable.",
+      "changeSummary": "Minimal change\u2014just tightened the phrasing while keeping the same demands. | Split the conditional line into two short sentences to keep each beat under 8 words, and removed the comma."
     },
     {
       "scene": "SCN_SCN-042.json",
       "id": "N_STAGED_UTIL",
       "priorLine": "Staged or single-step?",
-      "lineToEdit": "Prefer staged if it does not introduce chatter. Avoid cycling loads.\nFirst action should be clean and attributable. Then we reassess at the half-hour mark.",
-      "nextLine": "Staged is fine. It also means more timestamps.\nPrint first. Then we touch hardware.",
-      "revisedLine": "Prefer staged if it adds no chatter. (pause) Avoid cycling loads. (pause) First action: clean, attributable. (pause) Reassess at the half-hour mark.",
-      "changeSummary": "Split into short (pause) beats under 8 words each, kept meaning and cadence, and held commas to one."
+      "lineToEdit": "Prefer staged if it adds no chatter. (pause) Avoid cycling loads. (pause) First action: clean, attributable. (pause) Reassess at the half-hour mark.",
+      "nextLine": "Staged is fine. More timestamps, more babysitting. (pause) Print first. Then touch hardware.",
+      "revisedLine": "Stage it if you can, without chatter. (pause) Don\u2019t cycle loads. (pause) First move needs to be clean\u2014attributable. (pause) Reassess at the half-hour.",
+      "changeSummary": "Kept staged preference and constraints; made it more spoken and less checklist-y. | Shortened the first beat to 8 words by tightening phrasing; kept meaning, tone, and pauses intact."
     },
     {
       "scene": "SCN_SCN-042.json",
       "id": "N_STAGED_COMMIT_UTIL",
-      "priorLine": "Acknowledged. Initiating staged shed. Will report first step time.",
-      "lineToEdit": "Timestamp 14:18:14. Logged.\nProceed. Call when the first step is complete.",
+      "priorLine": "Acknowledged. Initiating staged shed. Will report step-one time.",
+      "lineToEdit": "Timestamp 14:18:14. Logged. (pause) Proceed. (pause) Call when step one\u2019s complete.",
       "nextLine": "",
-      "revisedLine": "Timestamp 14:18:14. Logged. (pause) Proceed. (pause) Call when step one\u2019s complete.",
-      "changeSummary": "Split the line with (pause) beats and tightened \u201cthe first step is complete\u201d to \u201cstep one\u2019s complete\u201d to meet the 8-words-per-beat limit without changing meaning."
+      "revisedLine": "Timestamp 14:18:14. Logged. (pause) Proceed. (pause) Call me when step one\u2019s done.",
+      "changeSummary": "Very light edit for natural cadence; meaning unchanged."
     },
     {
       "scene": "SCN_SCN-042.json",
       "id": "N_NOTICE_UTIL",
       "priorLine": "Event number first.",
-      "lineToEdit": "It\u2019s Demand Event UTIL-DS-4419. Timestamp 14:17:15.\nAnd for clarity: this is a directive under the stability clause. Not a suggestion.\nConfirm you are acting.",
-      "nextLine": "They said \u201cdirective.\u201d That\u2019s their comfort word.\nSay yes. Then print. Then we touch hardware.",
-      "revisedLine": "It\u2019s Demand Event UTIL-DS-4419. (pause) Timestamp 14:17:15. (pause) For clarity: directive under the stability clause. (pause) Not a suggestion. (pause) Confirm you are acting.",
-      "changeSummary": "Inserted (pause) breaks to keep each beat under 8 words, while preserving the original meaning, tone, and cadence."
+      "lineToEdit": "It\u2019s Demand Event UTIL-DS-4419. (pause) Timestamp 14:17:15. (pause) For clarity: directive under the stability clause. (pause) Not a suggestion. (pause) Confirm you are acting.",
+      "nextLine": "Directive: fine. Confirm you\u2019re acting. Print. Touch hardware.",
+      "revisedLine": "Demand Event UTIL-DS-4419. (pause) Timestamp 14:17:15. (pause) This is under the stability clause\u2014directive. (pause) Confirm you\u2019re acting.",
+      "changeSummary": "Removed the speechy emphasis; kept event ID, timestamp, clause, and required confirmation."
     },
     {
       "scene": "SCN_SCN-042.json",
       "id": "N_CONF_UTIL",
       "priorLine": "Confirmed. Acting under UTIL-DS-4419.",
-      "lineToEdit": "Timestamp 14:17:24. Logged.\nProvide record ID when available. I\u2019ll hold the line open for two minutes. After that, call back\u2014don\u2019t just disappear.",
+      "lineToEdit": "Timestamp 14:17:24. Logged. (pause) Provide the record ID when available. (pause) I\u2019ll hold the line open two minutes. (pause) After that, call back\u2014don\u2019t just disappear.",
       "nextLine": "The open channel hisses softly, impatient in a professional way.",
-      "revisedLine": "Timestamp 14:17:24. Logged. (pause) Provide the record ID when available. (pause) I\u2019ll hold the line open two minutes. (pause) After that, call back\u2014don\u2019t just disappear.",
-      "changeSummary": "Added pause breaks to keep each beat under 8 words; kept meaning and cadence, tightened \u201cfor two minutes\u201d to \u201ctwo minutes\u201d without changing intent."
+      "revisedLine": "Timestamp 14:17:24. Logged. (pause) Send the record ID when it\u2019s available. (pause) I\u2019m holding the line two minutes. (pause) After that, call back\u2014don\u2019t just vanish.",
+      "changeSummary": "Kept timing/ID/line-hold requirement; tightened into more human irritation."
     },
     {
       "scene": "SCN_SCN-042.json",
       "id": "N_BARGAIN_UTIL",
       "priorLine": "Confirm in writing and I\u2019ll prioritize shedding.",
-      "lineToEdit": "It is in writing. It\u2019s recorded, timestamped, and mirrored to the daily log.\nIf you mean an email: you\u2019ll get it when the system feels like it.\nConfirm action now.",
-      "nextLine": "Don\u2019t fight their delivery method. Fight their ambiguity.\nGet the number on paper and then comply loudly.",
-      "revisedLine": "It\u2019s in writing. (pause) Recorded and timestamped; mirrored to the daily log. (pause) Email? You\u2019ll get it (pause) when the system feels like it. (pause) Confirm action now.",
-      "changeSummary": "Split long phrases into shorter beats to meet the 8-word limit. Removed extra commas by rephrasing the log clause and used a semicolon. Broke the email sentence into two beats without changing meaning."
+      "lineToEdit": "It\u2019s in writing. (pause) Recorded and timestamped; mirrored to the daily log. (pause) Email? You\u2019ll get it (pause) when the system feels like it. (pause) Confirm action now.",
+      "nextLine": "Don\u2019t argue about delivery. (pause)\nGet the number down. (pause)\nConfirm action out loud and on-record.",
+      "revisedLine": "It\u2019s recorded and timestamped\u2014mirrored to the daily log. (pause) Email\u2019s when the system coughs it up. (pause) Confirm action now.",
+      "changeSummary": "Kept \u201cin writing\u201d and logging facts; made it sharper and less performative. | Removed \u201calready\u201d to keep the first beat within 8 words."
     },
     {
       "scene": "SCN_SCN-042.json",
       "id": "N_PRINT_UTIL",
-      "priorLine": "Thank you. Staple that to the verification packet.\nNot because it helps. Because it proves you weren\u2019t improvising alone.",
-      "lineToEdit": "Control Room, confirm receipt. Timestamp 14:17:19.\nAnd give me your record ID.",
+      "priorLine": "Good. (pause) Staple that to the verification packet. (pause) That's your receipt. (pause) This was real, not you making it up. (pause) In the room.",
+      "lineToEdit": "Control Room, confirm receipt. (pause) Timestamp 14:17:19. (pause) Give me your record ID.",
       "nextLine": "",
-      "revisedLine": "Control Room, confirm receipt. (pause) Timestamp 14:17:19. (pause) Give me your record ID.",
-      "changeSummary": "Inserted pauses to split the line into shorter beats while keeping the same meaning and maintaining the single comma."
+      "revisedLine": "Control Room\u2014confirm receipt. (pause) Timestamp 14:17:19. (pause) Give me your record ID.",
+      "changeSummary": "Minimal change; just made the address sound more immediate."
     },
     {
       "scene": "SCN_SCN-042.json",
       "id": "N_READBACK_UTIL",
       "priorLine": "Event UTIL-DS-4419. Printer header serial CR-LP-0031.",
-      "lineToEdit": "Received. Timestamp 14:17:28.\nThat\u2019s attributable. Proceed with shed. Report first action time.",
-      "nextLine": "Now we can do the dangerous part with a warm feeling in our pocket.\nGo to the console when you\u2019re ready.",
-      "revisedLine": "Received. Timestamp 14:17:28. (pause) That\u2019s attributable. Proceed with shed. (pause) Report first action time.",
-      "changeSummary": "Inserted two (pause) breaks to keep each beat under 8 words; wording and meaning unchanged."
+      "lineToEdit": "Received. Timestamp 14:17:28. (pause) That\u2019s attributable. Proceed with shed. (pause) Report first action time.",
+      "nextLine": "Alright. (pause) We\u2019ve got attribution. (pause) Go to the console when you\u2019re ready.",
+      "revisedLine": "Received, timestamp 14:17:28. (pause) Good\u2014attributable. Proceed with shed. (pause) Report the first action time.",
+      "changeSummary": "Kept attribution/proceed/report; made the approval sound less canned."
     },
     {
       "scene": "SCN_SCN-042.json",
       "id": "N_PRINT_ACK_UTIL",
       "priorLine": "Acknowledged. Initiating load-shed response.",
-      "lineToEdit": "Logged. Timestamp 14:17:33.\nConfirm you will maintain stability. And provide a record ID when available.",
-      "nextLine": "Answer stability. Then we move.\nIf you already have the header serial, use it. Attributable beats elegant.",
-      "revisedLine": "Logged. Timestamp 14:17:33. (pause) Confirm you will maintain stability. (pause) And send a record ID when available.",
-      "changeSummary": "Inserted two (pause) breaks to keep each beat under 8 words; preserved original meaning and tone without adding commas or explainer phrases."
+      "lineToEdit": "Logged. Timestamp 14:17:33. (pause) Confirm you will maintain stability. (pause) And send a record ID when available.",
+      "nextLine": "Say \u201cstability maintained.\u201d Then we move. (pause) If you have the header serial, use it. (pause) \u201cAttributable\u201d wins.",
+      "revisedLine": "Logged\u2014timestamp 14:17:33. (pause) Confirm you\u2019ll maintain stability. (pause) Send the record ID when it\u2019s available.",
+      "changeSummary": "Slight tightening; preserved the same two requirements."
     },
     {
       "scene": "SCN_SCN-043.json",
       "id": "N_DISPATCH_OPEN",
-      "priorLine": "The main console is already on a LOAD-SHED RESPONSE overlay, pinned on top of the shutdown verification UI. A yellow banner persists: DEMAND EVENT ACTIVE \u2014 RESPONSE REQUIRED.\nUnder it, almost offended: VERIFICATION MODE: STABILITY REQUIRED.",
-      "lineToEdit": "Control Room, Utility Dispatch. Timestamp 14:22:04.\nConfirm you are acting on the demand event. And I need your action record ID when you have it.\nAlso\u2014state you will maintain stability. Stated, not assumed.",
-      "nextLine": "Don\u2019t say \u201cemergency.\u201d Don\u2019t say \u201cwe\u2019ll try.\u201d\nSay: you acknowledge the demand event, you are initiating response, stability maintained per interlocks. It\u2019s ugly. It survives transcripts.",
-      "revisedLine": "Control Room. Utility Dispatch. (pause) Timestamp 14:22:04. (pause) Confirm you're acting on the demand event. (pause) I need your action record ID. (pause) Send it when you have it. (pause) Also\u2014state you will maintain stability. (pause) Stated. Not assumed.",
-      "changeSummary": "Inserted (pause) breaks so each beat stays under 8 words. Removed extra commas by splitting phrases into short sentences. Kept all original directives and timestamp intact."
+      "priorLine": "Main console: LOAD-SHED RESPONSE overlay, pinned atop shutdown verification UI. (pause) Yellow banner persists: DEMAND EVENT ACTIVE \u2014 RESPONSE REQUIRED. (pause) Under it, almost offended: VERIFICATION MODE: STABILITY REQUIRED.",
+      "lineToEdit": "Control Room. Utility Dispatch. (pause) Timestamp 14:22:04. (pause) Confirm you're acting on the demand event. (pause) I need your action record ID. (pause) Send it when you have it. (pause) Also\u2014state you will maintain stability. (pause) Stated. Not assumed.",
+      "nextLine": "Don\u2019t say \u201cemergency\u201d. (pause) Don\u2019t say \u201cwe\u2019ll try.\u201d (pause) Say: \u201cacknowledge the demand event.\u201d (pause) Say: \u201cinitiating response.\u201d (pause) Say: \u201cstability maintained per interlocks.\u201d (pause) Keep it ugly for the transcript.",
+      "revisedLine": "Control Room. Utility Dispatch. (pause) Timestamp 14:22:04. (pause) Confirm you\u2019re acting on the demand event. (pause) I need your action record ID. (pause) Send it once you have it. (pause) And state you\u2019ll maintain stability. (pause) I need it stated.",
+      "changeSummary": "Kept all required confirmations/ID/stability statement; reduced the scripted feel. | Split the long beat about the action record ID into two shorter beats to meet the 8-word limit, keeping meaning and cadence."
     },
     {
       "scene": "SCN_SCN-043.json",
       "id": "N_AUTH_UTIL",
-      "priorLine": "Acknowledging demand event. Initiating load-shed response. Stability maintained per interlocks. Action record ID pending console header.",
-      "lineToEdit": "Accepted. Timestamp 14:22:11.\nProvide the record ID when available. Report shed start time when the first action occurs.",
-      "nextLine": "Good. Standard language, no new nouns. Now we make the console do something attributable.",
-      "revisedLine": "Accepted. (pause) Timestamp 14:22:11. (pause) Provide the record ID when available. (pause) Report shed start time when first action occurs.",
-      "changeSummary": "Inserted pauses to split the line into shorter beats while preserving the original meaning and details."
+      "priorLine": "Acknowledging demand event. (pause) Initiating load-shed response. (pause) Stability maintained per interlocks. (pause) Action record ID pending console header.",
+      "lineToEdit": "Accepted. (pause) Timestamp 14:22:11. (pause) Provide the record ID when available. (pause) Report shed start time when first action occurs.",
+      "nextLine": "Good. Keep it standard. (pause)\nNow get the console to output (pause)\nsomething attributable.",
+      "revisedLine": "Accepted. (pause) Timestamp 14:22:11. (pause) Get me the record ID when it\u2019s available. (pause) When first action hits, report shed start time.",
+      "changeSummary": "Same requests; more in-the-moment phrasing. | Shortened the final beat to 8 words while keeping the same meaning; removed the extra lead-in so it fits the beat limit."
     },
     {
       "scene": "SCN_SCN-043.json",
       "id": "N_THREAT_PASS_UTIL",
-      "priorLine": "Under the stability clause, I need escalation handling and a logged directive. Confirm you want the shed executed now, attributable and stable.",
-      "lineToEdit": "Noted. Timestamp 14:22:14.\nDirective stands. Execute shed now, avoid cycling and step-load chatter. Provide record ID and shed start time.",
-      "nextLine": "That works because it\u2019s still a request for clarity, not a new fight. Now comply loudly and print something we can staple.",
-      "revisedLine": "Noted. Timestamp 14:22:14. (pause) Directive stands. Execute shed now. (pause) Avoid cycling and step-load chatter. (pause) Provide record ID. (pause) Provide shed start time.",
-      "changeSummary": "Split into short beats using (pause) while keeping wording and intent; removed the comma to meet punctuation limits."
+      "priorLine": "Under the stability clause I need escalation handling. (pause) And a logged directive. (pause) Confirm you want the shed executed now. (pause) Attributable and stable.",
+      "lineToEdit": "Noted. Timestamp 14:22:14. (pause) Directive stands. Execute shed now. (pause) Avoid cycling and step-load chatter. (pause) Provide record ID. (pause) Provide shed start time.",
+      "nextLine": "Okay. (pause) Don\u2019t push it further. (pause) Confirm action, then print. (pause) Something we can staple.",
+      "revisedLine": "Noted, timestamp 14:22:14. (pause) Directive stands\u2014execute shed now. (pause) No cycling. No step-load chatter. (pause) Then send record ID and shed start time.",
+      "changeSummary": "Kept directive/constraints/required reporting; tightened to a pressured command. | Removed one comma by splitting the cycling note into two sentences. Shortened the final beat to 8 words while keeping the same request."
     },
     {
       "scene": "SCN_SCN-043.json",
       "id": "N_THREAT_FAIL_UTIL",
-      "priorLine": "Escalate this. I\u2019m not acting on an undocumented directive.",
-      "lineToEdit": "Negative. Timestamp 14:22:16.\nDirective is documented via recording and log mirror. Confirm action now. Do not delay shed for process language.",
-      "nextLine": "They\u2019re right about the recording. You\u2019re right about attribution.\nPrint the header. Then act. Don\u2019t burn time on tone.",
-      "revisedLine": "Negative. (pause) Timestamp 14:22:16. (pause) Directive is documented via recording and log mirror. (pause) Confirm action now. (pause) Do not delay shed for process language.",
-      "changeSummary": "Inserted (pause) breaks so each beat stays under 8 words; kept wording and facts unchanged."
+      "priorLine": "Escalate this. I\u2019m not acting on undocumented orders.",
+      "lineToEdit": "Negative. (pause) Timestamp 14:22:16. (pause) Directive is documented via recording and log mirror. (pause) Confirm action now. (pause) Do not delay shed for process language.",
+      "nextLine": "Yeah, it\u2019s recorded. (pause) Still need that header. (pause) Print it. Then act. (pause) Don\u2019t burn time on tone.",
+      "revisedLine": "Negative. (pause) Timestamp 14:22:16. (pause) It\u2019s documented\u2014recording and log mirror. (pause) Confirm action now. (pause) Don\u2019t hold the shed up over process language.",
+      "changeSummary": "Preserved refusal/escalation block and documentation claim; made it more blunt."
     },
     {
       "scene": "SCN_SCN-043.json",
       "id": "N_GROUP_UTIL",
-      "priorLine": "Several groups carry a warning: AUTO-RECOVER ENABLED \u2014 RESTART SURGE LIKELY.\nA few are annotated in terse maintenance shorthand: \u201cCHATTER RISK,\u201d \u201cTHERMAL LAG,\u201d \u201cDO NOT CYCLE.\u201d",
-      "lineToEdit": "And to be clear: \u201cauto-recovers\u201d is not a shed. It\u2019s a delay.\nAvoid cycling. Avoid chatter. Give me something stable and attributable.",
+      "priorLine": "Several groups carry a warning: AUTO-RECOVER ENABLED. (pause) RESTART SURGE LIKELY. (pause)\nA few are annotated in terse maintenance shorthand: \u201cCHATTER RISK.\u201d (pause) \u201cTHERMAL LAG.\u201d (pause) \u201cDO NOT CYCLE.\u201d",
+      "lineToEdit": "And to be clear. (pause) \u201cAuto-recovers\u201d is not a shed. (pause) It is a delay. (pause) Avoid cycling. (pause) Avoid chatter. (pause) Give me something stable. (pause) Give me something attributable.",
       "nextLine": "",
-      "revisedLine": "And to be clear. (pause) \u201cAuto-recovers\u201d is not a shed. (pause) It is a delay. (pause) Avoid cycling. (pause) Avoid chatter. (pause) Give me something stable. (pause) Give me something attributable.",
-      "changeSummary": "Added pauses to cap each beat at 8 words and split the last sentence into two for clarity. Kept meaning and cadence; no commas or explainer phrases added."
+      "revisedLine": "Clear\u2014if it auto-recovers, it\u2019s not a shed. (pause) That\u2019s delay. (pause) Avoid cycling. (pause) Avoid chatter. (pause) I need it stable. (pause) I need it attributable.",
+      "changeSummary": "Kept the same operational rule and priorities; made it sound like a stressed reminder. | Shortened the first beat to 8 words by tightening phrasing while keeping the same meaning."
     },
     {
       "scene": "SCN_SCN-043.json",
       "id": "N_DEFINE_UTIL",
       "priorLine": "Define \u201cmaintain stability\u201d in this console.",
-      "lineToEdit": "Stability means your node does not create a problem I have to name. Voltage in band. No step-load chatter. No cycling.\nAnd\u2014because it comes up\u2014no undocumented behavior. That\u2019s not technical. That\u2019s legal.",
-      "nextLine": "Hear that? \u201cUndocumented.\u201d That\u2019s the real interlock.\nThe console can do staged shed with timestamps. Or single-step. The cleanest path to \u201cno chatter\u201d is the macro the checklist hates.",
-      "revisedLine": "Stability means your node doesn't create a problem. (pause) I don't have to name. (pause) Voltage in band. (pause) No step-load chatter. (pause) No cycling. (pause) And\u2014because it comes up\u2014no undocumented behavior. (pause) That's not technical. (pause) That's legal.",
-      "changeSummary": "Split the long opening sentence into short beats using (pause) so each beat stays under 8 words; kept the original points and cadence, and avoided adding commas or extra explanatory phrasing."
+      "lineToEdit": "Stability means your node doesn't create a problem. (pause) I don't have to name. (pause) Voltage in band. (pause) No step-load chatter. (pause) No cycling. (pause) And\u2014because it comes up\u2014no undocumented behavior. (pause) That's not technical. (pause) That's legal.",
+      "nextLine": "Undocumented. (pause) That's the word that matters. (pause) We can stage it with timestamps, (pause) or single-step it. (pause) The no-chatter macro is the one (pause) the checklist won't like.",
+      "revisedLine": "Stability: no surprise tasks I must name later. (pause) Voltage stays in band. (pause) No step-load chatter. (pause) No cycling. (pause) And don\u2019t do anything undocumented. (pause) Legal cares about that part.",
+      "changeSummary": "Retained the same stability checklist and legal emphasis; removed the neat two-line punch. | Shortened the first beat to 8 words while keeping the same intent; kept cadence and pauses; no added commas or explainers."
     },
     {
       "scene": "SCN_SCN-043.json",
       "id": "N_STAGED_UTIL",
-      "priorLine": "There it is. The box that decides whether you\u2019re \u201cfollowing procedure\u201d or \u201cmaking decisions.\u201d\nDon\u2019t invent a new category. Reclass with an existing code.",
-      "lineToEdit": "Confirm you\u2019re acting. I don\u2019t need your philosophy. I need a time stamp and a stable response.",
+      "priorLine": "There it is. TEMPORARY RECLASS REQUIRED. (pause) Use an existing code. (pause) Don\u2019t invent a category under pressure.",
+      "lineToEdit": "Confirm you\u2019re acting. (pause) I don\u2019t need your philosophy. (pause) I need a time stamp. (pause) And a stable response.",
       "nextLine": "",
-      "revisedLine": "Confirm you\u2019re acting. (pause) I don\u2019t need your philosophy. (pause) I need a time stamp. (pause) And a stable response.",
-      "changeSummary": "Inserted (pause) breaks and split the last sentence to keep each beat under 8 words without changing meaning."
+      "revisedLine": "Confirm you\u2019re acting. (pause) I don\u2019t need the philosophy. (pause) I need a timestamp. (pause) And I need it stable.",
+      "changeSummary": "Minimal edit\u2014kept the same demands, smoothed into more natural spoken pressure."
     },
     {
       "scene": "SCN_SCN-043.json",
       "id": "N_STAGED_CONFIRM_UTIL",
       "priorLine": "Confirmed. Initiating staged shed.",
-      "lineToEdit": "Timestamp 14:22:31. Logged.\nProvide action record ID when available. Report first step time when it occurs.",
-      "nextLine": "Good. Now make the reclass legitimate, or this becomes \u201ccycling in disguise.\u201d",
-      "revisedLine": "Timestamp 14:22:31. Logged. (pause) Provide action record ID when available. (pause) Report first step time when it occurs.",
-      "changeSummary": "Inserted two (pause) breaks to keep each beat under 8 words; wording unchanged."
+      "lineToEdit": "Timestamp 14:22:31. Logged. (pause) Provide action record ID when available. (pause) Report first step time when it occurs.",
+      "nextLine": "Good. Make the reclass airtight. (pause) Or they write \"cycling\" on you.",
+      "revisedLine": "Timestamp 14:22:31. Logged. (pause) Send the action record ID when it\u2019s available. (pause) And report first-step time as it happens.",
+      "changeSummary": "Kept logged/timestamp/ID/first-step reporting; made the urgency more immediate. | Shortened the final beat to stay within 8 words while keeping the same instruction."
     },
     {
       "scene": "SCN_SCN-043.json",
       "id": "N_POST_ACK_UTIL",
       "priorLine": "talk: I acknowledge.",
-      "lineToEdit": "Timestamp 14:22:57. Confirm you are acting and will maintain stability.",
-      "nextLine": "Say it clean. Then we watch the numbers.",
-      "revisedLine": "Timestamp 14:22:57. Confirm you're acting. (pause) Confirm you'll maintain stability.",
-      "changeSummary": "Split into two beats with a (pause) so each beat stays under 8 words; preserved intent by keeping both confirmation requests."
+      "lineToEdit": "Timestamp 14:22:57. Confirm you're acting. (pause) Confirm you'll maintain stability.",
+      "nextLine": "Say it clean. Then watch the numbers.",
+      "revisedLine": "Timestamp 14:22:57. Confirm you\u2019re acting. (pause) Confirm you\u2019ll maintain stability.",
+      "changeSummary": "Already natural and clipped; essentially unchanged."
     },
     {
       "scene": "SCN_SCN-043.json",
       "id": "N_READBACK_UTIL",
       "priorLine": "Action header serial CR-CON-0194.",
-      "lineToEdit": "Received. Timestamp 14:22:19.\nProceed. Report shed start time when the first action occurs.",
+      "lineToEdit": "Received. Timestamp 14:22:19. (pause) Proceed. (pause) Report shed start time. (pause) When the first action occurs.",
       "nextLine": "",
-      "revisedLine": "Received. Timestamp 14:22:19. (pause) Proceed. (pause) Report shed start time. (pause) When the first action occurs.",
-      "changeSummary": "Added (pause) breaks to keep each beat under 8 words; preserved wording and meaning."
-    },
-    {
-      "scene": "SCN_SCN-070-orig-orig.json",
-      "id": "N_STABLE_UD1",
-      "priorLine": "You start writing like a dispatcher is going to read it aloud.",
-      "lineToEdit": "I need stability stated, not implied.\nIf it\u2019s not attributable, it didn\u2019t happen\u2014legally.",
-      "nextLine": "This is a memo, not a control log.",
-      "revisedLine": "I need stability stated\u2014not implied. (pause)\nIf it\u2019s not attributable it didn\u2019t happen\u2014legally.",
-      "changeSummary": "Split into two beats with a (pause) to meet the 8-word limit. Replaced the first comma with an em dash and removed the second comma to stay within max_commas."
-    },
-    {
-      "scene": "SCN_SCN-070-orig-orig.json",
-      "id": "N_STABLE_UD2",
-      "priorLine": "This is a memo, not a control log.",
-      "lineToEdit": "Everything becomes a control log when someone\u2019s looking for a cause.\nInclude time anchors. Include record IDs. Include that you will not introduce oscillatory loading.\nAnd\u2014this is procedural\u2014don\u2019t make it sound like you \u201ccouldn\u2019t.\u201d Make it sound like you \u201cdid.\u201d",
-      "nextLine": "You insert timestamps, action identifiers, and a sentence that reads like a promise without calling itself one.",
-      "revisedLine": "Everything is a control log. (pause) When someone hunts for cause. (pause) Add time anchors. (pause) Add record IDs. (pause) State: no oscillatory loading. (pause) Procedural. (pause) Don\u2019t sound like you \u201ccouldn\u2019t.\u201d (pause) Sound like you \u201cdid.\u201d",
-      "changeSummary": "Split into short pause-delimited beats under 8 words, removed long clauses, kept the same directives and procedural cadence, and avoided commas and explainer phrasing."
-    },
-    {
-      "scene": "SCN_SCN-070-orig.json",
-      "id": "N_STABLE_UD1",
-      "priorLine": "You start writing like a dispatcher is going to read it aloud.",
-      "lineToEdit": "I need stability stated, not implied.\nIf it\u2019s not attributable, it didn\u2019t happen\u2014legally.",
-      "nextLine": "This is a memo, not a control log.",
-      "revisedLine": "I need stability stated not implied. (pause) If it\u2019s not attributable, it didn\u2019t happen\u2014legally.",
-      "changeSummary": "Split into two beats with a pause to meet the 8-word limit, and removed one comma to stay within the comma cap while preserving meaning."
-    },
-    {
-      "scene": "SCN_SCN-070-orig.json",
-      "id": "N_STABLE_UD2",
-      "priorLine": "This is a memo, not a control log.",
-      "lineToEdit": "Everything becomes a control log when someone\u2019s looking for a cause.\nInclude time anchors. Include record IDs. Include that you will not introduce oscillatory loading.\nAnd\u2014this is procedural\u2014don\u2019t make it sound like you \u201ccouldn\u2019t.\u201d Make it sound like you \u201cdid.\u201d",
-      "nextLine": "You insert timestamps, action identifiers, and a sentence that reads like a promise without calling itself one.",
-      "revisedLine": "Everything becomes a control log (pause) when someone hunts for a cause. (pause)\nInclude time anchors. (pause) Include record IDs. (pause)\nState you will not introduce oscillatory loading. (pause)\nAnd this is procedural (pause) do not sound like you could not. (pause)\nMake it sound like you did.",
-      "changeSummary": "Split into short beats with pauses, removed commas, kept instructions and cadence, and avoided explainer phrasing."
+      "revisedLine": "Received, timestamp 14:22:19. (pause) Proceed. (pause) Report shed start time at first action.",
+      "changeSummary": "Kept content; tightened cadence to sound less like a form readback. | Shortened the final beat to meet the 8-word limit while keeping meaning."
     },
     {
       "scene": "SCN_SCN-070.json",
       "id": "N_STABLE_UD1",
       "priorLine": "You start writing like a dispatcher is going to read it aloud.",
-      "lineToEdit": "I need stability stated, not implied.\nIf it\u2019s not attributable, it didn\u2019t happen\u2014legally.",
+      "lineToEdit": "I need stability stated not implied. (pause) If it\u2019s not attributable it didn\u2019t happen\u2014legally.",
       "nextLine": "This is a memo, not a control log.",
-      "revisedLine": "I need stability stated not implied. (pause) If it\u2019s not attributable it didn\u2019t happen\u2014legally.",
-      "changeSummary": "Inserted a (pause) to split the line into shorter beats and removed commas to stay within the comma limit without changing meaning."
+      "revisedLine": "I need \u201cstability\u201d stated not left hanging. (pause) If it isn\u2019t attributable Legal says never happened.",
+      "changeSummary": "Kept the legal/attribution pressure; made it sound like a tired internal note. | Shortened the second beat to meet the 8-word limit and removed extra commas to stay under the comma cap."
     },
     {
       "scene": "SCN_SCN-070.json",
       "id": "N_STABLE_UD2",
       "priorLine": "This is a memo, not a control log.",
-      "lineToEdit": "Everything becomes a control log when someone\u2019s looking for a cause.\nInclude time anchors. Include record IDs. Include that you will not introduce oscillatory loading.\nAnd\u2014this is procedural\u2014don\u2019t make it sound like you \u201ccouldn\u2019t.\u201d Make it sound like you \u201cdid.\u201d",
-      "nextLine": "You insert timestamps, action identifiers, and a sentence that reads like a promise without calling itself one.",
-      "revisedLine": "Everything becomes a control log (pause) when someone\u2019s looking for a cause. (pause)\nInclude time anchors. (pause) Include record IDs. (pause) Include that you will not introduce (pause) oscillatory loading. (pause)\nAnd\u2014this is procedural\u2014don\u2019t make it sound (pause) like you \u201ccouldn\u2019t.\u201d (pause) Make it sound like you \u201cdid.\u201d",
-      "changeSummary": "Added (pause) breaks so each beat stays under 8 words; kept wording, tone, and facts the same with no added commas or explainers."
+      "lineToEdit": "Everything becomes a control log (pause) when someone\u2019s looking for a cause. (pause)\nInclude time anchors. (pause) Include record IDs. (pause) Include that you will not introduce (pause) oscillatory loading. (pause)\nAnd\u2014this is procedural\u2014don\u2019t make it sound (pause) like you \u201ccouldn\u2019t.\u201d (pause) Make it sound like you \u201cdid.\u201d",
+      "nextLine": "You insert timestamps, action identifiers, and sentence that reads like a promise without calling itself one.",
+      "revisedLine": "Yeah. And the moment someone hunts for a cause. (pause)\nYour memo becomes the log. (pause)\nPut in time anchors. (pause) Put in record IDs. (pause)\nPut in: you won\u2019t introduce oscillatory loading. (pause)\nAnd don\u2019t write it like you \u201ccouldn\u2019t.\u201d (pause)\nWrite it like you \u201cdid.\u201d",
+      "changeSummary": "Kept the same required inclusions and wording pressure; made the voice more reactive and less procedural. | Split the long opening into two short beats under 8 words, removed commas to meet the comma limit, and kept the original directives and tone. | Shortened the \u201coscillatory loading\u201d beat by removing \u201cthat\u201d and adding a colon, keeping the same meaning while meeting the 8-word max per beat."
     }
   ]
 }

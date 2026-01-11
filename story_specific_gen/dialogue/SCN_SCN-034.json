@@ -388,20 +388,7 @@
           "id": "N_N_ANS_BYPASS_FORM",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "A cross-reference number smears into ink and thumbprints. Form existed once, or exists somewhere, staying unfound.",
-          "next": "N_BYPASS_MENU"
-        },
-        {
-          "id": "N_BYPASS_MENU",
-          "type": "player_choice",
-          "speakerId": "PLAYER",
-          "choices": [
-            {
-              "id": "C_LEAVE_BACK",
-              "text": "leave \"Back.\"",
-              "next": "N_MAIN"
-            }
-          ]
+          "text": "A cross-reference number smears into ink and thumbprints. Form existed once, or exists somewhere, staying unfound."
         },
         {
           "id": "N_P_ASK_WHERE_DAMPER",
@@ -414,25 +401,7 @@
           "id": "N_N_ANS_WHERE_DAMPER",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "Directional sticker on the indicator\u2019s base points left: SERVICE CORRIDOR / DUCT ACCESS. (pause) First helpful thing in the hall. Suspect.",
-          "next": "N_WHERE_DAMPER_MENU"
-        },
-        {
-          "id": "N_WHERE_DAMPER_MENU",
-          "type": "player_choice",
-          "speakerId": "PLAYER",
-          "choices": [
-            {
-              "id": "C_LEAVE_LEFT",
-              "text": "leave \"Head left to Service Corridor and Duct Access.\"",
-              "next": "N_END_EXIT_SERVICE"
-            },
-            {
-              "id": "C_LEAVE_BACK",
-              "text": "leave \"Back.\"",
-              "next": "N_MAIN"
-            }
-          ]
+          "text": "Directional sticker on the indicator\u2019s base points left: SERVICE CORRIDOR / DUCT ACCESS. (pause) First helpful thing in the hall. Suspect."
         },
         {
           "id": "N_P_ASK_WHO_DECIDED",
@@ -686,11 +655,6 @@
         {
           "id": "N_END_EXIT_BACK",
           "type": "end"
-        },
-        {
-          "id": "N_END_EXIT_SERVICE",
-          "type": "end",
-          "transitionHint": "Service Corridor and Duct Access"
         }
       ]
     }

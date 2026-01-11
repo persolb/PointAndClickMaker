@@ -3,128 +3,128 @@
     {
       "scene": "SCN_SCN-054.json",
       "id": "TECH_OPENING",
-      "priorLine": "The Legacy Interconnections Archive smells like dust that passed inspection.\nA catalog terminal waits under a plastic hood labeled: USE IS A FORM OF CREATION.",
-      "lineToEdit": "If you\u0019re here to browse, you\u0019re not.\nIf you\u0019re here to retrieve, state the proper heading.",
+      "priorLine": "The Legacy Interconnections Archive smells like dust that passed inspection. (pause) A catalog terminal waits under a plastic hood labeled: USE IS A FORM OF CREATION.",
+      "lineToEdit": "No browsing. Pull something? State the proper heading.",
       "nextLine": "Use terminal.",
-      "revisedLine": "No browsing. Pull something? State the proper heading.",
-      "changeSummary": "Made it more immediate and gatekeeping; kept the same block and requirement. | Condensed both sentences to fit the 8-word beat limit while preserving the directive tone and meaning; removed extra words without adding commas or explainer phrases."
+      "revisedLine": "Don\u2019t browse. (pause) Want a pull? (pause) Say the proper heading.",
+      "changeSummary": "Made it more immediate and clipped while keeping the same gatekeeping requirement. | Added pauses to break the line into shorter beats and removed \u201cYou\u201d without changing meaning."
     },
     {
       "scene": "SCN_SCN-054.json",
       "id": "TECH_FAST_RESULTS",
-      "priorLine": "The screen populates with a legacy match before you finish exhaling.\n\nA record header blinks: \u001cENDPOINT: SOL\u0011EARTH\u0011LOCAL.\u001d\nBelow it: \u001cMAINTENANCE LINEAGE: ACTIVE / RECURRING.\u001d\nA final line is half-obscured by an access banner: \u001cMANAGING AUTHORITY: UPSTREAM / EXTERNAL (UNNAMED).\u001d",
-      "lineToEdit": "That was fast.\nFast results are the ones that get misfiled.\nNot by me. By\u001f people.",
+      "priorLine": "The screen populates with a legacy match before you finish exhaling. (pause)\n\nA record header blinks: \u201cENDPOINT: SOL\u2011EARTH\u2011LOCAL.\u201d (pause)\nBelow it: \u201cMAINTENANCE LINEAGE: ACTIVE / RECURRING.\u201d (pause)\nA final line is half-obscured by an access banner: \u201cMANAGING AUTHORITY: UPSTREAM / EXTERNAL (UNNAMED).\u201d",
+      "lineToEdit": "Yeah. Fast. (pause) Fast pulls end up in the wrong drawer. (pause) I don't do it. Other people do.",
       "nextLine": "",
-      "revisedLine": "Yeah. Fast. (pause) Fast pulls end up in the wrong drawer. (pause) I don't do it. Other people do.",
-      "changeSummary": "Kept suspicion about speed/misfiling; tightened into stressed, defensive speech. | Added pauses to keep each beat under 8 words and corrected the apostrophe in \"don't\" without changing meaning or tone."
+      "revisedLine": "Yeah. Fast. (pause) And fast pulls land in the wrong drawer. (pause) I don\u2019t do those. Somebody else can.",
+      "changeSummary": "Kept the warning and refusal, tightened to sound defensive and in-the-moment."
     },
     {
       "scene": "SCN_SCN-054.json",
       "id": "TECH_PROPER_HEADING",
       "priorLine": "ask Proper heading for this record.",
-      "lineToEdit": "\u001cEndpoint Interconnections \u0014 Legacy.\u001d\nSubheading: \u001cContinuity Exceptions.\u001d\nDo not say \u001cincident,\u001d do not say \u001canomaly.\u001d Those are interpretive categories.\nWe file facts. Even when the facts behave.",
+      "lineToEdit": "Endpoint Interconnections. Legacy. (pause) Then: Continuity Exceptions. (pause) And don\u2019t say \u201cincident\u201d or \u201canomaly.\u201d (pause) I\u2019m not tagging that. (pause) Facts only\u2014even when they won\u2019t sit still.",
       "nextLine": "",
-      "revisedLine": "Endpoint Interconnections. Legacy. (pause) Then: Continuity Exceptions. (pause) And don\u2019t say \u201cincident\u201d or \u201canomaly.\u201d (pause) I\u2019m not tagging that. (pause) Facts only\u2014even when they won\u2019t sit still.",
-      "changeSummary": "Preserved exact headings and the prohibition; made it more reactive and paperwork-driven. | Added (pause) breaks to keep each beat under 8 words; preserved meaning and tone; no commas or explainer phrasing added."
+      "revisedLine": "Endpoint Interconnections. Legacy. (pause) Then: Continuity Exceptions. (pause) Don\u2019t say \u201cincident\u201d or \u201canomaly.\u201d (pause) I\u2019m not tagging that. (pause) Just what\u2019s in front of us\u2014won\u2019t sit still.",
+      "changeSummary": "Reduced polish, kept headings and the refusal to use certain terms. | Shortened final beat to 8 words by removing \u201ceven if,\u201d keeping the same meaning."
     },
     {
       "scene": "SCN_SCN-054.json",
       "id": "TECH_DEFINE_CONTINUITY",
-      "priorLine": "ask Define \u001ccontinuity exception\u001d.",
-      "lineToEdit": "A continuity exception is a catalog constraint tag.\nIt marks a record that survives scheme changes without becoming a different record.\nIt\u0019s not a story. It\u0019s a filing survival trait.",
+      "priorLine": "ask Define \u201ccontinuity exception\u201d.",
+      "lineToEdit": "It's a tag. (pause) Continuity exception. (pause) The record survives. (pause) Even when the scheme shifts. (pause) Don't turn it into a story.",
       "nextLine": "",
-      "revisedLine": "It's a tag. (pause) Continuity exception. (pause) The record survives. (pause) Even when the scheme shifts. (pause) Don't turn it into a story.",
-      "changeSummary": "Collapsed definition into shorthand while keeping the same meaning and boundary. | Inserted (pause) breaks to keep each beat under 8 words, corrected apostrophes, and kept the original meaning and cadence without adding commas or extra explanation."
+      "revisedLine": "It\u2019s a tag. (pause) \u201cContinuity exception.\u201d (pause) Record stays put even when the scheme shifts. (pause) Don\u2019t make it a story.",
+      "changeSummary": "Kept the definition minimal but more speakable; preserved intent to shut down storytelling."
     },
     {
       "scene": "SCN_SCN-054.json",
       "id": "TECH_NO_CITATION_NO_NAMES",
       "priorLine": "ask Who assigned the managing authority line.",
-      "lineToEdit": "Names require citation.\nCitation requires a document that already names it.\nIf it isn\u0019t named in-record, I won\u0019t invent a name by request.",
+      "lineToEdit": "I can\u2019t put names in without citation. (pause)\nIf it\u2019s not in the record, unnamed. (pause)\nI\u2019m not making this up for you.",
       "nextLine": "",
-      "revisedLine": "I can\u2019t put names in without citation. (pause)\nIf it\u2019s not in the record, unnamed. (pause)\nI\u2019m not making this up for you.",
-      "changeSummary": "Kept the same refusal and citation requirement; reduced formal repetition. | Inserted (pause) breaks to keep each beat under 8 words; tightened phrasing in line two while preserving meaning; kept comma use to one."
+      "revisedLine": "No citation. No names. (pause) If the record says unnamed, it stays unnamed. (pause) I\u2019m not inventing entries for you.",
+      "changeSummary": "Made it terser and more defensive while keeping the same constraint. | Removed the first comma and tightened the second beat to eight words while keeping meaning and cadence."
     },
     {
       "scene": "SCN_SCN-054.json",
       "id": "TECH_WHY_NOT_HEADING",
-      "priorLine": "ask Why does it say \u001cmaintenance lineage\u001d.",
-      "lineToEdit": "\u001cWhy\u001d is not a heading.\n\u001cLineage\u001d is a constraint tag. It indicates you are attached to a continuity chain.\nWhich means the archive believes you belong to a system that predates your request to exist in it.\nThat\u0019s not personal. That\u0019s formatting.",
+      "priorLine": "ask Why does it say \u201cmaintenance lineage\u201d.",
+      "lineToEdit": "Why doesn't help me. (pause)\n\u201cLineage\u201d is the tag they slapped on it. (pause)\nIt means you're tied to a continuity chain. (pause)\nSo yeah, the archive thinks you belong. (pause)\nTo something older than your request. (pause)\nThat's just how it's filed.",
       "nextLine": "",
-      "revisedLine": "Why doesn't help me. (pause)\n\u201cLineage\u201d is the tag they slapped on it. (pause)\nIt means you're tied to a continuity chain. (pause)\nSo yeah, the archive thinks you belong. (pause)\nTo something older than your request. (pause)\nThat's just how it's filed.",
-      "changeSummary": "Preserved the same implications; shifted to reactive, pragmatic phrasing. | Split into short (pause) beats to meet the 8-word limit; kept wording and tone, with no added commas and only one explainer hit (\u201cmeans\u201d)."
+      "revisedLine": "Don\u2019t ask me why. (pause) \u201cMaintenance lineage\u201d is the tag slapped on it. (pause) It ties you to a continuity chain. (pause) So the archive marks you as belonging. (pause) Older than your request. (pause) That\u2019s how it\u2019s filed.",
+      "changeSummary": "Shifted from explanatory to reactive, kept all the same facts and implications. | Trimmed one word in the second beat (\u201cthey\u201d) to keep beat length at 8 words max; meaning and cadence preserved."
     },
     {
       "scene": "SCN_SCN-054.json",
       "id": "TECH_GIVE_HEADING_PRAISE",
-      "priorLine": "ask Under what heading is \u001cmaintenance lineage\u001d assigned.",
-      "lineToEdit": "\u001cEndpoint Interconnections \u0014 Legacy.\u001d\nSubheading: \u001cContinuity Exceptions.\u001d\nYou\u0019re doing better. That sounded like a person who won\u0019t make me write a correction memo.",
+      "priorLine": "ask Under what heading is \u201cmaintenance lineage\u201d assigned.",
+      "lineToEdit": "Endpoint Interconnections \u2014 Legacy. (pause) Subheading: Continuity Exceptions. (pause) Good. (pause) That's the kind of wording (pause) that keeps me out (pause) of correction memos.",
       "nextLine": "",
-      "revisedLine": "Endpoint Interconnections \u2014 Legacy. (pause) Subheading: Continuity Exceptions. (pause) Good. (pause) That's the kind of wording (pause) that keeps me out (pause) of correction memos.",
-      "changeSummary": "Kept headings and praise; made the compliment more clipped and liability-minded. | Inserted (pause) breaks to keep each beat under 8 words, without changing meaning, tone, or facts."
+      "revisedLine": "Endpoint Interconnections\u2014Legacy. (pause) Subheading: Continuity Exceptions. (pause) Good. (pause) Those words keep me out of correction memos.",
+      "changeSummary": "Removed extra rhythmic pauses and made the praise sound more weary/pragmatic."
     },
     {
       "scene": "SCN_SCN-054.json",
       "id": "TECH_STATE_HEADING_REQUIRED",
       "priorLine": "ask Pull the legacy metadata.",
-      "lineToEdit": "State the heading.\nNot because I\u0019m difficult\u0015because the system logs your phrasing, and then it becomes true in a way you can\u0019t appeal.",
+      "lineToEdit": "State the heading. (pause) The system logs your phrasing. (pause) Then I\u2019m stuck with it.",
       "nextLine": "",
-      "revisedLine": "State the heading. (pause) The system logs your phrasing. (pause) Then I\u2019m stuck with it.",
-      "changeSummary": "Removed the banned contrast structure; retained the same pressure about logged phrasing. | Inserted (pause) breaks to keep each beat under 8 words and corrected the apostrophe in \u201cI\u2019m\u201d without changing meaning."
+      "revisedLine": "State the heading. (pause) The system logs your phrasing. (pause) Then it\u2019s stuck to my file.",
+      "changeSummary": "Kept the warning but made it more personal and pressured without changing meaning."
     },
     {
       "scene": "SCN_SCN-054.json",
       "id": "TECH_UPSTREAM_EXPLAIN",
-      "priorLine": "ask Who is \u001cupstream/external\u001d.",
-      "lineToEdit": "That is not a question. That is a solicitation for narrative.\n\u001cUpstream/external\u001d is a relationship flag. It indicates directionality of authority without naming it.\nNames require citation. Citation requires a document that already names it.\nThis is how we stay consistent.",
+      "priorLine": "ask Who is \u201cupstream/external\u201d.",
+      "lineToEdit": "I'm not doing \"who.\" (pause)\nIt says \"UPSTREAM / EXTERNAL (UNNAMED).\" (pause)\nThat's a flag, not a person. (pause)\nNo citation. No name. (pause)\nThat's it.",
       "nextLine": "",
-      "revisedLine": "I'm not doing \"who.\" (pause)\nIt says \"UPSTREAM / EXTERNAL (UNNAMED).\" (pause)\nThat's a flag, not a person. (pause)\nNo citation. No name. (pause)\nThat's it.",
-      "changeSummary": "Kept the same refusal and meaning of the flag; stripped lecture tone and repetition. | Split into short beats with (pause) to meet max beat length. Removed one comma by changing \"No citation, no name\" to two sentences while keeping meaning and cadence."
+      "revisedLine": "I\u2019m not doing \u201cwho.\u201d (pause) It says \u201cUPSTREAM / EXTERNAL (UNNAMED).\u201d (pause) That line\u2019s a flag. (pause) No person I can name. (pause) No citation. It stays unnamed. (pause) That\u2019s it.",
+      "changeSummary": "Avoided the hard binary phrasing while preserving the same refusal and citation rule. | Split the overlong beat by adding a pause after \u201cThat line\u2019s a flag.\u201d Shortened \u201cDoesn\u2019t point\u2026\u201d to \u201cNo person I can name.\u201d Replaced \u201cSo it stays unnamed\u201d with \u201cIt stays unnamed\u201d to keep beats under 8 words."
     },
     {
       "scene": "SCN_SCN-054.json",
       "id": "TECH_CIRCLE",
       "priorLine": "ask Pull the document that cites the name.",
-      "lineToEdit": "If you had a citation, you wouldn\u0019t be asking me for one.\nThat\u0019s not a reprimand. It\u0019s a circle.\nWe live in circles.",
+      "lineToEdit": "If you had the citation (pause) you wouldn\u2019t ask me. (pause)\nThat\u2019s the loop we\u2019re in.",
       "nextLine": "",
-      "revisedLine": "If you had the citation (pause) you wouldn\u2019t ask me. (pause)\nThat\u2019s the loop we\u2019re in.",
-      "changeSummary": "Preserved the circular dead-end; cut the aphoristic phrasing. | Split the first sentence with a (pause) to keep beats under 8 words, removed the comma, and tightened \u201cbe asking me\u201d to \u201cask me\u201d without changing meaning. | Inserted a pause after \u201cme.\u201d to split the second beat under the 8-word limit."
+      "revisedLine": "If you had the citation, (pause) you wouldn\u2019t be asking me. (pause) That\u2019s the loop.",
+      "changeSummary": "Smoothed into natural speech; kept the same dead-end point."
     },
     {
       "scene": "SCN_SCN-054.json",
       "id": "TECH_GIVE_HEADING_PROCEED",
       "priorLine": "ask Pull the legacy metadata under the proper heading.",
-      "lineToEdit": "\u001cEndpoint Interconnections \u0014 Legacy.\u001d\n\u001cContinuity Exceptions.\u001d\nProceed.",
+      "lineToEdit": "Endpoint Interconnections \u0014 Legacy.\u001d\n\u001cContinuity Exceptions.\u001d\nProceed.",
       "nextLine": "The access banner clears. The abstract expands. A drawer reference appears.",
-      "revisedLine": "\u001cEndpoint Interconnections \u0014 Legacy.\u001d\n\u001cContinuity Exceptions.\u001d\nProceed.",
-      "changeSummary": "Already spoke cleanly; left essentially unchanged."
+      "revisedLine": "Endpoint Interconnections\u2014Legacy. (pause) Continuity Exceptions. (pause) Proceed.",
+      "changeSummary": "Cleaned stray control characters; kept the same command sequence and tone."
     },
     {
       "scene": "SCN_SCN-054.json",
       "id": "TECH_OLEA_ACCEPT",
       "priorLine": "persuade I have OLEA closure authority. I need maintenance lineage metadata, not ownership.",
-      "lineToEdit": "That is\u001f appropriately framed.\nYou\u0019re requesting continuity context for safe closure activities, not attribution.\nAttribution breeds correspondence. Correspondence breeds time.\n\nProper heading: \u001cEndpoint Interconnections \u0014 Legacy / Continuity Exceptions.\u001d\nI will initiate retrieval services. I am not endorsing your conclusions. I do not have conclusions.",
+      "lineToEdit": "Okay. That\u2019s framed clean enough. (pause) Continuity context for OLEA closure. (pause) Not ownership. Fine. (pause) Proper heading: Endpoint Interconnections\u2014Legacy / Continuity Exceptions. (pause) I\u2019ll initiate retrieval. (pause) Don\u2019t hang my name on your conclusion.",
       "nextLine": "The access banner clears. The abstract expands. A drawer reference appears.",
-      "revisedLine": "Okay. That\u2019s framed clean enough. (pause) Continuity context for OLEA closure. (pause) Not ownership. Fine. (pause) Proper heading: Endpoint Interconnections\u2014Legacy / Continuity Exceptions. (pause) I\u2019ll initiate retrieval. (pause) Don\u2019t hang my name on your conclusion.",
-      "changeSummary": "Kept acceptance under OLEA framing and the disclaimer; made it brisk and risk-averse. | Split the line into short beats using (pause) so each beat stays under 8 words; removed the comma to meet comma limit; kept meaning, tone, and the exact heading text."
+      "revisedLine": "Alright. That\u2019s clean enough for the log. (pause) Continuity context for OLEA closure. (pause) Keep ownership out of it. (pause) Proper heading: Endpoint Interconnections\u2014Legacy / Continuity Exceptions. (pause) I\u2019ll initiate retrieval. (pause) Don\u2019t stick my name under your conclusion.",
+      "changeSummary": "Made it more liability-driven and conversational while preserving agreement, heading, and warning."
     },
     {
       "scene": "SCN_SCN-054.json",
       "id": "TECH_PLACEMENT_NOT_MEANING",
-      "priorLine": "The terminal requests an authorization string you already have, which feels less like security and more like a dare.",
-      "lineToEdit": "Before you type: this retrieval does not certify meaning.\nIt certifies placement. That distinction keeps my job uncomplicated.",
+      "priorLine": "The terminal asks for the authorization string you already have; less security, more a dare.",
+      "lineToEdit": "Before you type (pause) this retrieval certifies placement. (pause) That's all. (pause) Meaning doesn't go in my file.",
       "nextLine": "You enter the string. The access banner clears.",
-      "revisedLine": "Before you type (pause) this retrieval certifies placement. (pause) That's all. (pause) Meaning doesn't go in my file.",
-      "changeSummary": "Removed the formal contrast structure; kept the same liability boundary. | Added (pause) breaks to keep each beat under 8 words, and fixed garbled characters without changing meaning."
+      "revisedLine": "Before you type\u2014(pause) this pull only certifies placement. (pause) That\u2019s it. (pause) Meaning stays out of my file.",
+      "changeSummary": "Tightened and made more spoken; kept the same limitation (placement only)."
     },
     {
       "scene": "SCN_SCN-054.json",
       "id": "TECH_DONT_REMOVE_ORIGINALS",
       "priorLine": "Drawer bank.",
-      "lineToEdit": "Don\u0019t remove originals.\nPeople do, and then they become originals. It\u0019s a whole problem.",
-      "nextLine": "Inside: a thin cartographic insert, brittle at the folds.\nA fragment of a network map with SOL\u0011EARTH\u0011LOCAL circled in a hand that learned control by being denied it.",
-      "revisedLine": "Don't remove originals.(pause) Somebody walks off with one,(pause) and suddenly the copy becomes \"the original\"(pause) and I get stuck writing it up.",
-      "changeSummary": "Kept the same warning and consequence; made it more concrete and paperwork-stressed. | Added pauses to keep each beat under 8 words; kept meaning and kept commas to one."
+      "lineToEdit": "Don't remove originals.(pause) Somebody walks off with one,(pause) and suddenly the copy becomes \"the original\"(pause) and I get stuck writing it up.",
+      "nextLine": "Inside: thin cartographic insert, brittle at the folds. (pause) Network map fragment: SOL\u2011EARTH\u2011LOCAL circled, by a hand schooled in control through denial.",
+      "revisedLine": "Don\u2019t remove originals. (pause) Somebody walks off with one. (pause) The copy becomes \u201cthe original.\u201d (pause) And I\u2019m the one writing it up.",
+      "changeSummary": "Kept the same warning and consequence; adjusted to a more immediate, irritated cadence. | Removed commas by turning two clauses into full sentences while keeping the same meaning and pause cadence."
     }
   ]
 }

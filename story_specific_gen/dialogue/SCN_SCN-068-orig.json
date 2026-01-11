@@ -1,0 +1,555 @@
+{
+  "dialogueGraphs": [
+    {
+      "id": "SCN068_RECORDS_ACCESS",
+      "sceneId": "SCN-068",
+      "startNodeId": "N_START",
+      "nodes": [
+        {
+          "id": "N_START",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The Records door has a newer seal over an older one. (pause) Someone replaced the rule and left proof of the old rule. (pause) There is a narrow window slot and a chain-of-custody placard that looks recently wiped.",
+          "next": "N_MENU_ACCESS"
+        },
+        {
+          "id": "N_MENU_ACCESS",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_LOOK",
+              "text": "look: Examine the seal and placard.",
+              "next": "N_LOOK_1"
+            },
+            {
+              "id": "C_TALK",
+              "text": "talk: Talk to Records.",
+              "next": "N_TALK_1"
+            },
+            {
+              "id": "C_SHOW_PRESENCE",
+              "text": "show: Show the presence proof printout.",
+              "next": "N_SHOW_PRES_1"
+            },
+            {
+              "id": "C_SHOW_VARIANCE",
+              "text": "show: Show the variance acknowledgment reference.",
+              "next": "N_SHOW_VAR_1"
+            },
+            {
+              "id": "C_LEAVE",
+              "text": "leave: Step back into the hallway.",
+              "next": "N_END_LEAVE"
+            }
+          ]
+        },
+        {
+          "id": "N_LOOK_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The placard lists three ways to be denied. (pause) None of them are \u201cwrong.\u201d (pause) A thin strip of adhesive still holds lint, like it\u2019s preserving a timeline.",
+          "next": "N_LOOK_2"
+        },
+        {
+          "id": "N_LOOK_2",
+          "type": "npc_line",
+          "speakerId": "RECORDS_CLERK",
+          "text": "Don\u2019t read the placard out loud. (pause)\nOne binding\u2019s enough.",
+          "next": "N_LOOK_3"
+        },
+        {
+          "id": "N_LOOK_3",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The slot reads: SUBMIT IDENTIFIERS ONLY. (pause) Someone scratched \u201cNO QUESTIONS\u201d in the corner, then tried to buff it off.",
+          "next": "N_REDIRECT_MENU"
+        },
+        {
+          "id": "N_REDIRECT_MENU",
+          "type": "redirect",
+          "target": "N_MENU_ACCESS"
+        },
+        {
+          "id": "N_TALK_1",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Records.",
+          "next": "N_TALK_2"
+        },
+        {
+          "id": "N_TALK_2",
+          "type": "npc_line",
+          "speakerId": "RECORDS_CLERK",
+          "text": "Records. (pause)\nYou\u2019re not coming in. (pause)\nGive me a handle, I push copies. (pause)\nArchive stays shut.",
+          "next": "N_TALK_MENU"
+        },
+        {
+          "id": "N_TALK_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_ASK_HANDLE",
+              "text": "ask: What handle do you need?",
+              "next": "N_HANDLE_1"
+            },
+            {
+              "id": "C_ASK_SEAL",
+              "text": "ask: Why is there a new seal?",
+              "next": "N_SEAL_1"
+            },
+            {
+              "id": "C_SHOW_PRESENCE_FROM_TALK",
+              "text": "show: Show the presence proof printout.",
+              "next": "N_SHOW_PRES_1"
+            },
+            {
+              "id": "C_SHOW_VARIANCE_FROM_TALK",
+              "text": "show: Show the variance acknowledgment reference.",
+              "next": "N_SHOW_VAR_1"
+            },
+            {
+              "id": "C_LEAVE_FROM_TALK",
+              "text": "leave: Step back.",
+              "next": "N_END_LEAVE"
+            }
+          ]
+        },
+        {
+          "id": "N_HANDLE_1",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "What handle.",
+          "next": "N_HANDLE_2"
+        },
+        {
+          "id": "N_HANDLE_2",
+          "type": "npc_line",
+          "speakerId": "RECORDS_CLERK",
+          "text": "Date. Scope. And your entitlement. (pause) Your name won\u2019t be last on it. (pause)\nDon\u2019t put \u201cclosure\u201d in the scope box. (pause)\nClosure\u2019s\u2026 a mood.",
+          "next": "N_HANDLE_MENU"
+        },
+        {
+          "id": "N_HANDLE_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_SHOW_PRESENCE_FROM_HANDLE",
+              "text": "show: Show the presence proof printout.",
+              "next": "N_SHOW_PRES_1"
+            },
+            {
+              "id": "C_SHOW_VARIANCE_FROM_HANDLE",
+              "text": "show: Show the variance acknowledgment reference.",
+              "next": "N_SHOW_VAR_1"
+            },
+            {
+              "id": "C_ASK_REQUEST_SETS",
+              "text": "ask: Request specific record sets.",
+              "next": "N_REQ_1"
+            },
+            {
+              "id": "C_LEAVE_FROM_HANDLE",
+              "text": "leave: Step back.",
+              "next": "N_END_LEAVE"
+            }
+          ]
+        },
+        {
+          "id": "N_SEAL_1",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Why the new seal.",
+          "next": "N_SEAL_2"
+        },
+        {
+          "id": "N_SEAL_2",
+          "type": "npc_line",
+          "speakerId": "RECORDS_CLERK",
+          "text": "Old seal got cited wrong (pause) in a conversation that \u201cdidn\u2019t happen.\u201d (pause) So now we\u2019ve got a seal (pause) that matches what the record says. (pause) I don\u2019t run the story. (pause) I run the staples.",
+          "next": "N_SEAL_MENU"
+        },
+        {
+          "id": "N_SEAL_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_SHOW_PRESENCE_FROM_SEAL",
+              "text": "show: Show the presence proof printout.",
+              "next": "N_SHOW_PRES_1"
+            },
+            {
+              "id": "C_SHOW_VARIANCE_FROM_SEAL",
+              "text": "show: Show the variance acknowledgment reference.",
+              "next": "N_SHOW_VAR_1"
+            },
+            {
+              "id": "C_ASK_REQUEST_SETS_FROM_SEAL",
+              "text": "ask: Request specific record sets.",
+              "next": "N_REQ_1"
+            },
+            {
+              "id": "C_LEAVE_FROM_SEAL",
+              "text": "leave: Step back.",
+              "next": "N_END_LEAVE"
+            }
+          ]
+        },
+        {
+          "id": "N_SHOW_PRES_1",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Presence proof. Timestamped.",
+          "next": "N_SHOW_PRES_2"
+        },
+        {
+          "id": "N_SHOW_PRES_2",
+          "type": "npc_line",
+          "speakerId": "RECORDS_CLERK",
+          "text": "Hold it up. Closer.\nCopier prints fade fast.",
+          "next": "N_SHOW_PRES_3"
+        },
+        {
+          "id": "N_SHOW_PRES_3",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The clerk\u2019s pen pauses mid-air, just long enough to be noticed.",
+          "next": "N_SHOW_PRES_4"
+        },
+        {
+          "id": "N_SHOW_PRES_4",
+          "type": "npc_line",
+          "speakerId": "RECORDS_CLERK",
+          "text": "Alright. (pause) You\u2019re in the building, (pause) at a time it says was empty. (pause) I\u2019m not touching that. (pause) It gets you standing to request copies. (pause) Past that\u2014yeah. No.",
+          "next": "N_PRES_MENU"
+        },
+        {
+          "id": "N_PRES_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_SHOW_VARIANCE_FROM_PRES",
+              "text": "show: Show the variance acknowledgment reference.",
+              "next": "N_SHOW_VAR_1"
+            },
+            {
+              "id": "C_ASK_REQUEST_SETS_FROM_PRES",
+              "text": "ask: Request specific record sets.",
+              "next": "N_REQ_1"
+            },
+            {
+              "id": "C_TALK_PRESS_INTERP_FROM_PRES",
+              "text": "talk: Press for interpretation.",
+              "next": "N_PRESS_1"
+            },
+            {
+              "id": "C_LEAVE_FROM_PRES",
+              "text": "leave: Step back.",
+              "next": "N_END_LEAVE"
+            }
+          ]
+        },
+        {
+          "id": "N_SHOW_VAR_1",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Variance acknowledgment. Reference code.",
+          "next": "N_SHOW_VAR_2"
+        },
+        {
+          "id": "N_SHOW_VAR_2",
+          "type": "npc_line",
+          "speakerId": "RECORDS_CLERK",
+          "text": "Slow. (pause) If it lands wrong in my log, (pause) it stays my problem.",
+          "next": "N_SHOW_VAR_3"
+        },
+        {
+          "id": "N_SHOW_VAR_3",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "(reads the reference)",
+          "next": "N_SHOW_VAR_4"
+        },
+        {
+          "id": "N_SHOW_VAR_4",
+          "type": "npc_line",
+          "speakerId": "RECORDS_CLERK",
+          "text": "Mm. Non-local compliance format. (pause)\nThose dashes don\u2019t match municipal. (pause)\nEnough to justify the seal swap entry.",
+          "next": "N_VAR_MENU"
+        },
+        {
+          "id": "N_VAR_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_SHOW_PRESENCE_FROM_VAR",
+              "text": "show: Show the presence proof printout.",
+              "next": "N_SHOW_PRES_1"
+            },
+            {
+              "id": "C_ASK_REQUEST_SETS_FROM_VAR",
+              "text": "ask: Request specific record sets.",
+              "next": "N_REQ_1"
+            },
+            {
+              "id": "C_TALK_PRESS_INTERP_FROM_VAR",
+              "text": "talk: Press for interpretation.",
+              "next": "N_PRESS_1"
+            },
+            {
+              "id": "C_LEAVE_FROM_VAR",
+              "text": "leave: Step back.",
+              "next": "N_END_LEAVE"
+            }
+          ]
+        },
+        {
+          "id": "N_PRESS_1",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "What is \u201cnon-local.\u201d",
+          "next": "N_PRESS_2"
+        },
+        {
+          "id": "N_PRESS_2",
+          "type": "npc_line",
+          "speakerId": "RECORDS_CLERK",
+          "text": "It\u2019s the tag. (pause) Lets me park the file. (pause) Without writing a jurisdiction. (pause)\nI\u2019m stopping there. (pause)\nYou want it filed, I file it.",
+          "next": "N_REDIRECT_MENU"
+        },
+        {
+          "id": "N_REQ_1",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Need billing ledgers, maintenance schedules, audit flags. Pre-incident.",
+          "next": "N_REQ_2"
+        },
+        {
+          "id": "N_REQ_2",
+          "type": "npc_line",
+          "speakerId": "RECORDS_CLERK",
+          "text": "That\u2019s three pulls\u2014 not one. (pause)\nFine. (pause)\nJust\u2014 billing plus maintenance plus flags. (pause)\nIt usually turns into a story. (pause)\nStories become reclassification events.",
+          "next": "N_REQ_3"
+        },
+        {
+          "id": "N_REQ_3",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The clerk taps the counter twice, like they can wake the correct form up.",
+          "next": "N_REQ_4"
+        },
+        {
+          "id": "N_REQ_4",
+          "type": "npc_line",
+          "speakerId": "RECORDS_CLERK",
+          "text": "Billing\u2014cost center or charge code. (pause) Schedules\u2014servicing entity. (pause) Put \u201cUnknown\u201d in the unknown bucket. (pause) Flags\u2014date range and tripped standard. (pause) Memo title works if real.",
+          "next": "N_MENU_REQUEST_DETAILS"
+        },
+        {
+          "id": "N_MENU_REQUEST_DETAILS",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_SHOW_BOTH",
+              "text": "show: Show presence proof + variance reference together.",
+              "next": "N_SHOW_BOTH_1"
+            },
+            {
+              "id": "C_PERSUADE_OLEA",
+              "text": "persuade: [OLEA] Cite closure authority and demand a release packet.",
+              "conditions": [
+                {
+                  "key": "player.hasFaction.OLEA",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "next": "N_PERSUADE_1"
+            },
+            {
+              "id": "C_ASK_ALREADY",
+              "text": "ask: Ask what they already have on SPINDLE.",
+              "next": "N_ALREADY_1"
+            },
+            {
+              "id": "C_LEAVE_REQUEST",
+              "text": "leave: Back out to hallway.",
+              "next": "N_END_LEAVE"
+            }
+          ]
+        },
+        {
+          "id": "N_ALREADY_1",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "What\u2019s already filed under SPINDLE.",
+          "next": "N_ALREADY_2"
+        },
+        {
+          "id": "N_ALREADY_2",
+          "type": "npc_line",
+          "speakerId": "RECORDS_CLERK",
+          "text": "Plenty. (pause) Half of it\u2019s labeled. (pause) So you don\u2019t have fun with it. (pause) If I start listing you start asking \u201cwhy.\u201d (pause) And I\u2019m not doing \u201cwhy.\u201d",
+          "next": "N_REDIRECT_REQUEST_DETAILS"
+        },
+        {
+          "id": "N_REDIRECT_REQUEST_DETAILS",
+          "type": "redirect",
+          "target": "N_MENU_REQUEST_DETAILS"
+        },
+        {
+          "id": "N_SHOW_BOTH_1",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Standing and reference. Here.",
+          "next": "N_SHOW_BOTH_2"
+        },
+        {
+          "id": "N_SHOW_BOTH_2",
+          "type": "npc_line",
+          "speakerId": "RECORDS_CLERK",
+          "text": "Okay. That\u2019ll do. (pause)\nPresence plus the external-format variance (pause)\nlets me open a request (pause)\nand keep it out of Dispute.",
+          "next": "N_SHOW_BOTH_3"
+        },
+        {
+          "id": "N_SHOW_BOTH_3",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The clerk sets out a form like it was waiting under the counter the whole time.",
+          "next": "N_SHOW_BOTH_4"
+        },
+        {
+          "id": "N_SHOW_BOTH_4",
+          "type": "npc_line",
+          "speakerId": "RECORDS_CLERK",
+          "text": "Nouns only.\nLeave the verbs off.",
+          "next": "N_MENU_COMMIT"
+        },
+        {
+          "id": "N_PERSUADE_1",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "OLEA closure authority. Chain-of-custody release packet. Now.",
+          "next": "N_PERSUADE_2"
+        },
+        {
+          "id": "N_PERSUADE_2",
+          "type": "npc_line",
+          "speakerId": "RECORDS_CLERK",
+          "text": "Alright. That wording exists on paper. (pause)\nI can run it.",
+          "next": "N_PERSUADE_3"
+        },
+        {
+          "id": "N_PERSUADE_3",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The clerk\u2019s shoulders drop a fraction, as if \u201cauthority\u201d is a contagious liability.",
+          "next": "N_PERSUADE_4"
+        },
+        {
+          "id": "N_PERSUADE_4",
+          "type": "npc_line",
+          "speakerId": "RECORDS_CLERK",
+          "text": "Controlled packet. Copies only. (pause)\nSign the receipt. (pause)\nInitial each set. (pause)\nNo notes on the pages. (pause)\nDon\u2019t \u201cfix\u201d the staples. (pause)\nLast time somebody fixed staples, (pause)\nI had to log staples as evidence. (pause)\nI\u2019m not doing that again.",
+          "next": "N_MENU_COMMIT"
+        },
+        {
+          "id": "N_MENU_COMMIT",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_BARGAIN_COMMIT",
+              "text": "bargain: Request billing ledgers; maintenance schedules (non-local); pre-incident audit flags.",
+              "next": "N_COMMIT_1"
+            },
+            {
+              "id": "C_LEAVE_ABORT",
+              "text": "leave: Abort.",
+              "next": "N_END_LEAVE"
+            }
+          ]
+        },
+        {
+          "id": "N_COMMIT_1",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Billing ledgers. Non-local maintenance schedules. Pre-incident audit flags.",
+          "next": "N_COMMIT_2"
+        },
+        {
+          "id": "N_COMMIT_2",
+          "type": "npc_line",
+          "speakerId": "RECORDS_CLERK",
+          "text": "Accepted. (pause) You\u2019ll get what\u2019s there as filed. (pause) No summary. (pause) If something doesn\u2019t turn up (pause) the word in my log (pause) is \u201cunlocated.\u201d",
+          "next": "N_COMMIT_3"
+        },
+        {
+          "id": "N_COMMIT_3",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "Paper slips through the slot in three clipped bundles. (pause) Like the building is exhaling receipts. (pause) Each packet is stamped in a color that looks defensive.",
+          "next": "N_COMMIT_4"
+        },
+        {
+          "id": "N_COMMIT_4",
+          "type": "npc_line",
+          "speakerId": "RECORDS_CLERK",
+          "text": "Initial here. Here.\nNo signature. Initials.\nFewer questions.",
+          "next": "N_COMMIT_5"
+        },
+        {
+          "id": "N_COMMIT_5",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You take: (pause)\n- Billing ledgers with charges that don\u2019t match municipal templates. (pause)\n- Maintenance schedules listing crews from elsewhere. Routed through codes you\u2019ve only seen on the notice. (pause)\n- Audit flags dated before the \u201cincident.\u201d (pause)\nWritten like someone tried to warn a future reader without sounding like a person.",
+          "next": "N_COMMIT_6"
+        },
+        {
+          "id": "N_COMMIT_6",
+          "type": "npc_line",
+          "speakerId": "RECORDS_CLERK",
+          "text": "Before you ask again\u2014no originals. Compliant day.",
+          "next": "N_END_COLLECT"
+        },
+        {
+          "id": "N_END_COLLECT",
+          "type": "end",
+          "outcomeId": "collect_evidence_pieces",
+          "effects": [
+            {
+              "key": "act3.recordsEvidenceCollected",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "inventory.items",
+              "action": "add",
+              "value": "ITEM_EVIDENCE_BILLING_LEDGERS"
+            },
+            {
+              "key": "inventory.items",
+              "action": "add",
+              "value": "ITEM_EVIDENCE_MAINT_SCHEDULES_NONLOCAL"
+            },
+            {
+              "key": "inventory.items",
+              "action": "add",
+              "value": "ITEM_EVIDENCE_AUDIT_FLAGS_PREINCIDENT"
+            }
+          ]
+        },
+        {
+          "id": "N_END_LEAVE",
+          "type": "end"
+        }
+      ]
+    }
+  ]
+}

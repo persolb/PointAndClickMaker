@@ -53,22 +53,9 @@
         },
         {
           "id": "N4_LIAISON_DEFINITIONS",
-          "next": "N5_DEFINITIONS_MENU",
           "speakerId": "EAC_LIAISON",
           "text": "I love that. (pause) Not emotionally. (pause) Professionally. (pause)\n\u201cOperational envelope\u201d is vague enough to be safe. (pause) And \u201cverifiable\u201d tells me how. (pause) To close the loop. (pause)\nIf you print, I can stop. (pause) Asking you questions that make you. (pause) Sound like a scientist.",
           "type": "npc_line"
-        },
-        {
-          "choices": [
-            {
-              "id": "C_END_FROM_DEFS",
-              "next": "N99_END",
-              "text": "leave."
-            }
-          ],
-          "id": "N5_DEFINITIONS_MENU",
-          "speakerId": "PLAYER",
-          "type": "player_choice"
         },
         {
           "id": "N6_SHUTDOWN_1",
@@ -79,28 +66,15 @@
         },
         {
           "id": "N7_LIAISON_SHUTDOWN",
-          "next": "N7B_SHUTDOWN_MENU",
           "speakerId": "EAC_LIAISON",
           "text": "That missing page is\u2014okay\u2014 (pause)\nTechnically it\u2019s not missing. (pause)\nIt\u2019s superseded. (pause)\nSuperseded by someone who isn\u2019t here. (pause)\nSo it\u2019s its own kind of missing.",
           "type": "npc_line"
         },
         {
-          "choices": [
-            {
-              "id": "C_END_FROM_SHUTDOWN",
-              "next": "N99_END",
-              "text": "leave."
-            }
-          ],
-          "id": "N7B_SHUTDOWN_MENU",
-          "speakerId": "PLAYER",
-          "type": "player_choice"
-        },
-        {
           "id": "N8_PLAYER_SHOW_BINDER",
           "next": "N9_LIAISON_SCREENSHOT",
           "speakerId": "PLAYER",
-          "text": "Holding the binder up to the speaker link camera.",
+          "text": "Holding binder up to speaker link camera.",
           "type": "npc_line"
         },
         {
@@ -112,22 +86,9 @@
         },
         {
           "id": "N10_LIAISON_MOTION_BLUR",
-          "next": "N10B_SHOW_MENU",
           "speakerId": "EAC_LIAISON",
           "text": "Please don\u2019t turn the page fast. (pause) Motion blur is how institutions escape responsibility.",
           "type": "npc_line"
-        },
-        {
-          "choices": [
-            {
-              "id": "C_END_FROM_SHOW",
-              "next": "N99_END",
-              "text": "leave."
-            }
-          ],
-          "id": "N10B_SHOW_MENU",
-          "speakerId": "PLAYER",
-          "type": "player_choice"
         },
         {
           "id": "N99_END",

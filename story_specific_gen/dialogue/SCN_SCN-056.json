@@ -16,7 +16,7 @@
           "id": "N01_CLERK_NEXT",
           "type": "npc_line",
           "speakerId": "SCHED_CLERK",
-          "text": "Next\u2014step up.",
+          "text": "Next. Step up.",
           "next": "N02_MAIN_MENU"
         },
         {
@@ -96,7 +96,7 @@
           "id": "N10_ASK_SLOT",
           "type": "npc_line",
           "speakerId": "SCHED_CLERK",
-          "text": "Don\u2019t ask me for a slot. (pause)\nBring me an asset you already hold. (pause)\nIt has to come with a slot. (pause)\nSay \u201cslot\u201d and I log denial. (pause)\nThen it becomes a whole story. (pause)\nI\u2019m not doing stories through the cage.",
+          "text": "Don\u2019t come up here asking for a slot. (pause)\nBring me an asset you already hold. (pause)\nIf it\u2019s real the slot\u2019s already attached. (pause)\nYou say \u201cslot\u201d I have to log \u201cdenied.\u201d (pause)\nThen it\u2019s a whole story in the minutes. (pause)\nI\u2019m not doing stories through a cage.",
           "next": "N11_DENIAL_POISED"
         },
         {
@@ -110,7 +110,7 @@
           "id": "N20_ASSET_EXPLAIN",
           "type": "npc_line",
           "speakerId": "SCHED_CLERK",
-          "text": "Time. (pause)\nLane. Tolerance band. Expiry. The whole bundle. (pause)\nEverybody calls the expiry \u201cflexible\u201d (pause)\nright up until audit week. (pause)\nThis window\u2019s custody. (pause)\nThat\u2019s what I can record.",
+          "text": "Time. (pause)\nLane. Tolerance band. Expiry. The whole bundle. (pause)\nEverybody calls expiry \u201cflexible\u201d\u2026 (pause)\nright up until audit week. (pause)\nHere? I\u2019m custody. (pause)\nThat\u2019s what I can put in the log.",
           "next": "N21_ASSET_FOLLOWUP"
         },
         {
@@ -134,28 +134,28 @@
           "id": "N22_SCHEDULING_REBUT",
           "type": "npc_line",
           "speakerId": "SCHED_CLERK",
-          "text": "Call it that if you want. (pause)\nIf it\u2019s a service you\u2019d request it. (pause)\nWhat happens here is allocation. (pause)\nAllocation gets defended. (pause)\nThat\u2019s how I keep my job.",
+          "text": "Call it whatever. (pause)\nPeople \u201crequest\u201d services. (pause)\nWhat I touch here has to be defendable. (pause)\nI get stuck with it when review hits.",
           "next": "N02_MAIN_MENU"
         },
         {
           "id": "N30_SHOW_AMR",
           "type": "npc_line",
           "speakerId": "SCHED_CLERK",
-          "text": "AMR checks out as standing. (pause)\nStill doesn\u2019t hand you a slot. (pause)\nYou push an AMR at me. (pause)\nWant me to turn identity into property. (pause)\nOn my signature... that\u2019s discretion. (pause)\nDiscretion comes with names attached.",
+          "text": "AMR checks out. Standing. (pause)\nStill no slot. (pause)\nYou slide an AMR at me. (pause)\nYou\u2019re pushing me to sign identity into property. (pause)\nThat\u2019s discretion. (pause)\nMy name ends up on it.",
           "next": "N31_AMR_FOLLOWUP"
         },
         {
           "id": "N31_AMR_FOLLOWUP",
           "type": "npc_line",
           "speakerId": "SCHED_CLERK",
-          "text": "It just means: you\u2019re holding an asset. (pause) The file reads \u201ccustody\u201d not \u201ctheft.\u201d (pause) I\u2019m not calling you anything. (pause) That\u2019s the category.",
+          "text": "It just means you\u2019re holding an asset. (pause)\nThe file says \u201ccustody.\u201d (pause)\nI\u2019m not labeling you. (pause)\nThat\u2019s the bucket it goes in.",
           "next": "N02_MAIN_MENU"
         },
         {
           "id": "N40_RULE",
           "type": "npc_line",
           "speakerId": "SCHED_CLERK",
-          "text": "The rule doesn\u2019t bother banning asking. (pause)\nIt says plain: Requests aren\u2019t claims. (pause)\nPeople read it, slide it to my desk. (pause)\nAll I can log: claims. Transfers. Recoveries.",
+          "text": "The rule doesn\u2019t care if you ask. (pause)\nIt won\u2019t let me treat requests as claims. (pause)\nPeople shove the page at me anyway. (pause)\nI only write: claims and transfers and recoveries.",
           "next": "N41_RULE_GLASS"
         },
         {
@@ -169,7 +169,7 @@
           "id": "N80_PRIORITY",
           "type": "npc_line",
           "speakerId": "SCHED_CLERK",
-          "text": "I can\u2019t sell you \u201cpriority\u201d through this window. (pause)\nSay the word. (pause)\nIt turns into a complaint either way. (pause)\nIf you\u2019ve got an asset you defend it. (pause)\nIn the chain. (pause)\nIf you don\u2019t this counter can\u2019t. (pause)\nMake one heavier.",
+          "text": "I can\u2019t write \u201cpriority\u201d from this window. (pause)\nYou say it. It becomes a complaint anyway. (pause)\nWith an asset, you defend it upchain. (pause)\nWithout one this counter can\u2019t add weight.",
           "next": "N81_PRIORITY_KNUCKLES"
         },
         {
@@ -183,35 +183,35 @@
           "id": "N90_THREAT",
           "type": "npc_line",
           "speakerId": "SCHED_CLERK",
-          "text": "Don\u2019t put that on my desk. (pause)\nIf the site stays open it lands there. (pause)\nI hold claims here. (pause)\nYou assign me outcomes through the cage. (pause)\nIt reads as coercion in the minutes.",
+          "text": "Don\u2019t shove that onto my desk. (pause)\nIf the site stays open it lands here. (pause)\nI\u2019m holding claims. That\u2019s it. (pause)\nYou start assigning outcomes through the cage\u2014 (pause)\nit reads like coercion in the minutes.",
           "next": "N02_MAIN_MENU"
         },
         {
           "id": "N100_PERSUADE",
           "type": "npc_line",
           "speakerId": "SCHED_CLERK",
-          "text": "\u201cClean\u201d doesn\u2019t tell me what to stamp. (pause)\nUsually it\u2019s the lead-in to \u201ccan you just\u2014\u201d. (pause)\nRun it through the custody chain. (pause)\nLet it survive review. (pause)\nThat\u2019s all I\u2019m here for.",
+          "text": "\u201cClean\u201d doesn\u2019t tell me what to stamp. (pause)\nI hear \u201cclean\u201d and wait for \u201ccan you\u2014\u201d. (pause)\nRun it through the custody chain. (pause)\nMake it something that survives review. (pause)\nThat\u2019s my lane.",
           "next": "N02_MAIN_MENU"
         },
         {
           "id": "N105_OLEA_PASS",
           "type": "npc_line",
           "speakerId": "SCHED_CLERK",
-          "text": "Standing, noted. (pause)\nStill doesn\u2019t put an asset on the tray. (pause)\nIf I kick a request upstairs (pause)\nmy name ends up on a discretionary entry. (pause)\nThat turns into precedent. (pause)\nBring a claim. (pause)\nA transfer. (pause)\nOr a recovery. (pause)\nThen I can record it clean.",
+          "text": "Standing. Noted. (pause)\nStill nothing on the tray. (pause)\nIf I send upstairs, it tags me discretionary. (pause)\nThen it\u2019s precedent. (pause)\nBring a claim. (pause)\nTransfer. (pause)\nRecovery. (pause)\nThen I can log it clean.",
           "next": "N02_MAIN_MENU"
         },
         {
           "id": "N106_OLEA_FAIL",
           "type": "npc_line",
           "speakerId": "SCHED_CLERK",
-          "text": "Declarations don\u2019t move anything here. (pause) Show standing in the chain. (pause) Or I can\u2019t route it up. (pause) Put a claimable asset on the counter. (pause) Or don\u2019t.",
+          "text": "Declarations don\u2019t move anything here. (pause)\nShow standing in-chain. (pause)\nOtherwise I can\u2019t route it up. (pause)\nPut a claimable asset on the counter. (pause)\nOr don\u2019t.",
           "next": "N02_MAIN_MENU"
         },
         {
           "id": "N112_CLERK_CONFIRM",
           "type": "npc_line",
           "speakerId": "SCHED_CLERK",
-          "text": "Yeah. (pause)\nClaim it. Present it. I record it. (pause)\nIf it holds up, it moves. (pause)\nIf it doesn\u2019t it stops here. (pause)\nThat\u2019s why I\u2019m behind the glass.",
+          "text": "Yeah. (pause)\nClaim it. On the tray. I record. (pause)\nIf it holds up it moves. (pause)\nIf it doesn\u2019t it dies at the glass. (pause)\nThat\u2019s why I\u2019m back here.",
           "next": "N113_RULE_SETTLES"
         },
         {

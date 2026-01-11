@@ -1,0 +1,275 @@
+{
+  "dialogueGraphs": [
+    {
+      "id": "DG_SCN_066_MTA_NOTICES",
+      "sceneId": "SCN-066",
+      "startNodeId": "N_INTRO_1",
+      "nodes": [
+        {
+          "id": "N_INTRO_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "A \u201cNON-LOCAL COMPLIANCE NOTICE\u201d hangs in a clear sleeve like it\u2019s meant to be ignored.\nThe barcode isn\u2019t any local format you\u2019ve ever seen.",
+          "conditions": [
+            {
+              "key": "act3.mtaNoticeReceived",
+              "op": "==",
+              "value": true
+            },
+            {
+              "key": "act3.nonLocalNoticesReinterpreted",
+              "op": "==",
+              "value": false
+            }
+          ],
+          "next": "N_INTRO_2"
+        },
+        {
+          "id": "N_INTRO_2",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "Under the bland header, the phrasing is\u2026 not municipal.\nIt reads like a queue talking to a node.",
+          "next": "PC_INITIAL"
+        },
+        {
+          "id": "PC_INITIAL",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "LOOK_SKIM",
+              "text": "(look) Skim the notice.",
+              "next": "N_SKIM_1"
+            },
+            {
+              "id": "LOOK_READ_LINE_BY_LINE",
+              "text": "(look) Read the notice line by line.",
+              "next": "N_READ_1"
+            },
+            {
+              "id": "LOOK_CHECK_BARCODE",
+              "text": "(look) Check the barcode.",
+              "next": "N_BARCODE_1"
+            },
+            {
+              "id": "LEAVE",
+              "text": "(leave) Leave it for later.",
+              "next": "END_LEAVE"
+            }
+          ]
+        },
+        {
+          "id": "N_SKIM_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You skim. It\u2019s all holds and references and the word \u201cpending\u201d doing too much work.\nIt still feels like somebody else\u2019s problem\u2014until you remember: you\u2019re the endpoint.",
+          "next": "N_SKIM_2"
+        },
+        {
+          "id": "N_SKIM_2",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The barcode keeps sitting there, patient as a docket number.",
+          "next": "PC_MAIN_MENU"
+        },
+        {
+          "id": "N_READ_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "NOTICE \u2014 NON-LOCAL COMPLIANCE CONDITION.\nSUBJECT NODE: SOL\u2011EARTH\u2011LOCAL.\nACTION: HOLD STATE PENDING DOCUMENTATION.\nMANAGING AUTHORITY: METASTABLE TRANSFER AUTHORITY (MTA).\nREFERENCE: [a long, segmented reference string].\nSomeone has underlined \u201cHOLD STATE\u201d twice, like that will make it negotiable.",
+          "next": "N_READ_2"
+        },
+        {
+          "id": "N_READ_2",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "No signature. No local stamp.\nJust routing marks in pencil: copied, posted, re-posted.",
+          "next": "PC_MAIN_MENU"
+        },
+        {
+          "id": "N_BARCODE_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The barcode has check digits and section breaks like a shipping label\u2014except the fields are jurisdictional, not geographic.\nYou\u2019ve seen this structure before. Not in OLEA. Upstream.",
+          "next": "N_BARCODE_2"
+        },
+        {
+          "id": "N_BARCODE_2",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "This is MTA.",
+          "next": "N_REFRAME_1"
+        },
+        {
+          "id": "N_REFRAME_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "Saying it out loud makes the rest of the room rearrange itself.\nThe \u201cgeneric\u201d notices aren\u2019t generic. They\u2019re translations. Bad ones.",
+          "next": "PC_MAIN_MENU"
+        },
+        {
+          "id": "PC_MAIN_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "LOOK_COMPARE_OTHER_NOTICES",
+              "text": "(look) Compare the other notices.",
+              "next": "N_COMPARE_1"
+            },
+            {
+              "id": "LOOK_FORMS_RACK",
+              "text": "(look) Cross-check the forms rack.",
+              "next": "N_FORMS_1"
+            },
+            {
+              "id": "LOOK_ENVELOPE_STACK",
+              "text": "(look) Check the envelope stack.",
+              "next": "N_ENVELOPES_1"
+            },
+            {
+              "id": "LOOK_REREAD_REFERENCE_FIELDS",
+              "text": "(look) Re-read the notice for reference fields.",
+              "next": "N_REREAD_1"
+            },
+            {
+              "id": "USE_EXTRACT_VARIANCE_LANGUAGE",
+              "text": "(use) Extract variance language from the misfit templates.",
+              "checks": [
+                {
+                  "type": "faction",
+                  "faction": "OLEA",
+                  "min": 1
+                }
+              ],
+              "onPassNext": "N_EXTRACT_PASS_1",
+              "onFailNext": "N_EXTRACT_FAIL_1"
+            },
+            {
+              "id": "LEAVE_MAIN",
+              "text": "(leave) Stop digging for now.",
+              "next": "END_LEAVE"
+            }
+          ]
+        },
+        {
+          "id": "N_COMPARE_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "Same sentence bones. Same obsession with standing. Same \u201cprocessing window active\u201d cadence.\nDifferent local headers pasted on top like name tags at a conference.",
+          "next": "PC_MAIN_MENU"
+        },
+        {
+          "id": "N_FORMS_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The rack is full of templates that almost match local forms, but not quite.\nMargins tuned for different scanners. Section titles that don\u2019t correspond to any city department.",
+          "next": "N_FORMS_2"
+        },
+        {
+          "id": "N_FORMS_2",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "One template uses the same reference-string pattern as the notice\u2014down to the punctuation.\nIt\u2019s labeled, in small print: TEMPORARY OPERATING VARIANCE (LIMITED\u2011PURPOSE).",
+          "next": "N_FORMS_3"
+        },
+        {
+          "id": "N_FORMS_3",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You can take it now, or keep confirming what it\u2019s for.",
+          "next": "PC_MAIN_MENU"
+        },
+        {
+          "id": "N_ENVELOPES_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The envelopes are pre-addressed with local destinations\u2014city offices, contractor P.O. boxes\u2014\nbut the return block is a blank rectangle where an authority mark should be.",
+          "next": "N_ENVELOPES_2"
+        },
+        {
+          "id": "N_ENVELOPES_2",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "Inside the flap, there\u2019s a routing code printed in tiny type.\nIt matches the notice barcode\u2019s field breaks. Not local mail. Forwarded, then disguised.",
+          "next": "N_ENVELOPES_3"
+        },
+        {
+          "id": "N_ENVELOPES_3",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "Which means the \u201cnon-local\u201d part wasn\u2019t a metaphor. It was the sender.",
+          "next": "PC_MAIN_MENU"
+        },
+        {
+          "id": "N_REREAD_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The reference string isn\u2019t random. It\u2019s structured: authority, category, queue, and a time marker pretending it\u2019s not time.\nThere\u2019s even a slot for \u201creason phrase,\u201d left blank like a dare.",
+          "next": "N_REREAD_2"
+        },
+        {
+          "id": "N_REREAD_2",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The room isn\u2019t a warning board. It\u2019s a filing system for an argument you haven\u2019t made yet.",
+          "next": "PC_MAIN_MENU"
+        },
+        {
+          "id": "N_EXTRACT_PASS_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You select the template that matches the notice\u2019s grammar\u2014the one that treats existence as a credential.\nThe variance section is written to satisfy a hold without admitting fault.",
+          "next": "N_EXTRACT_PASS_2"
+        },
+        {
+          "id": "N_EXTRACT_PASS_2",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "A category line is preformatted in a way local paperwork never would be:\nRETIREMENT PROCESSING \u2014 LIMITED\u2011PURPOSE LICENSED RELATIONSHIP \u2014 MUNICIPAL LEGACY INFRASTRUCTURE.\nIt reads like someone trying not to say \u201cthis is normal.\u201d",
+          "next": "END_COMMIT"
+        },
+        {
+          "id": "N_EXTRACT_FAIL_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You select the template that matches the notice\u2019s grammar\u2014the one that treats existence as a credential.\nThe variance section is written to satisfy a hold without admitting fault.",
+          "next": "N_EXTRACT_FAIL_2"
+        },
+        {
+          "id": "N_EXTRACT_FAIL_2",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The category field is present, but the acceptable values are footnoted in a separate appendix you don\u2019t have.\nA handwritten sticky note is attached: \u201cDO NOT INVENT A CATEGORY. IT COMES BACK.\u201d",
+          "next": "END_COMMIT"
+        },
+        {
+          "id": "END_COMMIT",
+          "type": "end",
+          "outcomeId": "reveal_notices_are_mta_origin",
+          "effects": [
+            {
+              "key": "act3.nonLocalNoticesReinterpreted",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "act3.varianceTemplateFound",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "inventory.items",
+              "action": "add",
+              "value": "ITEM_TEMP_OPERATING_VARIANCE_TEMPLATE"
+            }
+          ]
+        },
+        {
+          "id": "END_LEAVE",
+          "type": "end"
+        }
+      ]
+    }
+  ]
+}

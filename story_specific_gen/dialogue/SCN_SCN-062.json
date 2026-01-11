@@ -52,11 +52,6 @@
               "value": true
             }
           ]
-        },
-        {
-          "id": "R_TO_MENU",
-          "type": "redirect",
-          "target": "N_MAIN_MENU"
         }
       ]
     }

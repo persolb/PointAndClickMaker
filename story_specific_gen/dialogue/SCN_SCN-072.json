@@ -16,28 +16,28 @@
           "id": "N_OPS0",
           "type": "npc_line",
           "speakerId": "OPS_OPERATOR",
-          "text": "Logs are live. (pause) Printer's got paper. (pause) Tray's empty\u2014 noted now. (pause) It doesn't turn into a fight later.",
+          "text": "Logs are live. (pause) Printer\u0019s got paper. (pause) Tray\u0019s empty\u0014I\u0019m noting it now. (pause) So it doesn\u0019t turn into a fight later.",
           "next": "N_BUDGET0"
         },
         {
           "id": "N_BUDGET0",
           "type": "npc_line",
           "speakerId": "OLEA_BUDGET",
-          "text": "Before you touch a verb\u2014closure processing. (pause)\nDon\u2019t hand Finance a reclassification event. (pause)\nI know it sounds the same. (pause)\nFinance won\u2019t hear it that way.",
+          "text": "Before you touch a verb\u2014closure processing. (pause)\nDon\u2019t hand Finance a reclassification event. (pause)\nYeah, it sounds the same. (pause)\nFinance won\u2019t hear it that way.",
           "next": "N_LEGAL0"
         },
         {
           "id": "N_LEGAL0",
           "type": "npc_line",
           "speakerId": "OLEA_LEGAL",
-          "text": "Put the label on it first. (pause) Do it first. (pause) Or somebody else names it after the fact. (pause) And it\u2019ll be the worst possible name.",
+          "text": "Put the label on it first. (pause) Before you touch anything. (pause) Otherwise somebody names it after the fact, (pause) and it\u2019ll be the worst possible name.",
           "next": "N_MTA0"
         },
         {
           "id": "N_MTA0",
           "type": "npc_line",
           "speakerId": "MTA_CONTACT",
-          "text": "Standing pending. Service class pending. (pause) Queue position maintained. Processing window active.",
+          "text": "Standing pending. Service class pending. (pause)\nQueue position maintained. Processing window active.",
           "next": "N_MAIN_MENU"
         },
         {
@@ -78,7 +78,7 @@
           "id": "N_LEAVE_O",
           "type": "npc_line",
           "speakerId": "OPS_OPERATOR",
-          "text": "Walk away if you need to. (pause) Timestamp keeps running. (pause) Come back when you're ready. (pause) Do it on the record.",
+          "text": "Step out if you need to. (pause) Timestamp keeps running. (pause) Come back when you\u0019re ready. (pause) Do it on the record.",
           "next": "N_LEAVE_R"
         },
         {
@@ -97,7 +97,7 @@
           "id": "N_ASKCAT_M",
           "type": "npc_line",
           "speakerId": "MTA_CONTACT",
-          "text": "They\u2019ll only take an existing service class. (pause)\nThey won\u2019t clear an unauthorized node state. (pause)\nIf anything moves, it\u2019s a reclass. (pause)\nInto a licensed relationship\u2014once eligibility\u2019s demonstrated.",
+          "text": "They\u2019ll only take an existing service class. (pause)\nThey\u2019re not clearing an unauthorized node state. (pause)\nSo if anything changes, it\u2019s a reclass. (pause)\nInto a licensed relationship\u2014once eligibility\u2019s demonstrated.",
           "next": "N_ASKCAT_L"
         },
         {
@@ -111,7 +111,7 @@
           "id": "N_ASKCAT_B",
           "type": "npc_line",
           "speakerId": "OLEA_BUDGET",
-          "text": "Licensed relationship is fine\u2014keep it in \u201cmunicipal infrastructure.\u201d (pause) The second it smells like \u201cresearch,\u201d (pause) we\u2019re donating a fiscal year (pause) to committees.",
+          "text": "Licensed relationship\u2019s fine\u2014keep it in \u201cmunicipal infrastructure.\u201d (pause)\nIf it even smells like \u201cresearch,\u201d (pause)\nwe\u2019re donating a fiscal year to committees.",
           "next": "N_ASKCAT_R"
         },
         {
@@ -130,21 +130,21 @@
           "id": "N_ASKAUTH_M",
           "type": "npc_line",
           "speakerId": "MTA_CONTACT",
-          "text": "Authority chain needs operator-of-record ID. (pause)\nA statement: you\u2019re at the endpoint. (pause)\nA physical claim. (pause)\nAnd counterparty acknowledgment: inside licensed relationship category.",
+          "text": "For the authority chain, they want operator-of-record ID. (pause)\nThey want you saying you\u2019re at the endpoint. (pause)\nLogged as a physical claim. (pause)\nAnd they want counterparty acknowledgment\u2014inside the licensed-relationship category.",
           "next": "N_ASKAUTH_L"
         },
         {
           "id": "N_ASKAUTH_L",
           "type": "npc_line",
           "speakerId": "OLEA_LEGAL",
-          "text": "Watch the verbs. (pause) \u201cAcknowledgment.\u201d \u201cAcceptance.\u201d (pause) Use those. (pause) \u201cAuthorization\u201d drags in baggage. (pause) And yeah it still binds operationally. (pause) We\u2019re not unpacking that right now.",
+          "text": "Watch the verbs. (pause) \u201cAcknowledgment.\u201d \u201cAcceptance.\u201d (pause) Use those. (pause) Leave \u201cauthorization\u201d alone. (pause) It drags baggage, and it still binds operationally. (pause) We\u2019re not unpacking that right now.",
           "next": "N_ASKAUTH_O"
         },
         {
           "id": "N_ASKAUTH_O",
           "type": "npc_line",
           "speakerId": "OPS_OPERATOR",
-          "text": "Type anything, print before and after. Skip screenshots. (pause) They turn into opinions. (pause) In a room full of lawyers.",
+          "text": "Type it. Print before and after. Skip screenshots. (pause) They turn into opinions (pause) in a room full of lawyers.",
           "next": "N_ASKAUTH_N"
         },
         {
@@ -177,21 +177,21 @@
           "id": "N_SUBMIT_M",
           "type": "npc_line",
           "speakerId": "MTA_CONTACT",
-          "text": "Keep the submission non-narrative. (pause)\nRequest category. (pause)\nService class basis. (pause)\nAuthority chain. (pause)\nDo not speculate on cause. (pause)\nNarrative creates jurisdiction.",
+          "text": "Keep the submission non-narrative. (pause)\nJust: request category. Service class basis. Authority chain. (pause)\nDon\u2019t speculate on cause. (pause)\nTurn it narrative, it\u2019s jurisdiction.",
           "next": "N_SUBMIT_L"
         },
         {
           "id": "N_SUBMIT_L",
           "type": "npc_line",
           "speakerId": "OLEA_LEGAL",
-          "text": "And keep \u201cauthorize\u201d out of it. (pause) That word starts a chain. (pause) It ends with duty\u2014on paper. (pause) Then it ends with me.",
+          "text": "And keep \u201cauthorize\u201d out of it. (pause) That word starts a chain. (pause) It ends with duty\u2014on paper. (pause) Then it lands on me.",
           "next": "N_SUBMIT_B"
         },
         {
           "id": "N_SUBMIT_B",
           "type": "npc_line",
           "speakerId": "OLEA_BUDGET",
-          "text": "Also\u2014keep \u201cdiscovery\u201d out. (pause)\nEven as a joke. (pause)\nJokes get typed up like admissions.",
+          "text": "Also\u2014keep \u201cdiscovery\u201d out. (pause)\nEven as a joke. (pause)\nSomeone will type it up as an admission.",
           "next": "N_CATEGORY_MENU"
         },
         {
@@ -237,7 +237,7 @@
           "id": "N_REF_M",
           "type": "npc_line",
           "speakerId": "MTA_CONTACT",
-          "text": "MTA_NOTICE_REF: [string]. (pause) Submission log: [string]. (pause) Queue position: maintained. (pause) Processing window: active.",
+          "text": "MTA_NOTICE_REF: [string]. (pause)\nSubmission log: [string]. (pause)\nQueue position: maintained. (pause)\nProcessing window: active.",
           "next": "N_REF_O"
         },
         {
@@ -270,21 +270,21 @@
           "id": "N_CATL_M",
           "type": "npc_line",
           "speakerId": "MTA_CONTACT",
-          "text": "Category request received: licensed relationship. (pause) Service class requested: municipal infrastructure\u2014legacy. (pause) Need a reason phrase. (pause) Need the authority chain. (pause) No narrative.",
+          "text": "Category request received: licensed relationship. (pause)\nService class requested: municipal infrastructure\u2014legacy. (pause)\nI need a reason phrase. (pause)\nI need the authority chain. (pause)\nNo narrative.",
           "next": "N_CATL_B"
         },
         {
           "id": "N_CATL_B",
           "type": "npc_line",
           "speakerId": "OLEA_BUDGET",
-          "text": "If this lands, exposure closes; accounting won\u2019t move. (pause)\nThat\u2019s the only miracle we\u2019re funded for.",
+          "text": "If this lands, exposure closes and accounting stays. (pause)\nThat\u2019s the only miracle we\u2019re funded for.",
           "next": "N_CATL_L"
         },
         {
           "id": "N_CATL_L",
           "type": "npc_line",
           "speakerId": "OLEA_LEGAL",
-          "text": "In the authority chain use \u201cacknowledge.\u201d (pause) Use \u201caccept\u201d too. (pause) Leave out \u201cgrant.\u201d (pause) \u201cGrant\u201d reads like clean ownership. (pause) Nobody wants to sign that.",
+          "text": "In the authority chain, use \u201cacknowledge.\u201d (pause) \u201cAccept\u201d is fine too. (pause) Leave out \u201cgrant.\u201d (pause) \u201cGrant\u201d reads like clean ownership. (pause) Nobody wants to sign that.",
           "next": "N_REASON_MENU_L"
         },
         {
@@ -312,7 +312,7 @@
           "id": "N_CATT_M",
           "type": "npc_line",
           "speakerId": "MTA_CONTACT",
-          "text": "Category\u2019s acceptable once the reason phrase is in. (pause) And the authority chain. (pause) Send the reason phrase. (pause) Send the attachments. (pause) No narrative.",
+          "text": "Category\u2019s acceptable once the reason phrase is in. (pause)\nAnd the authority chain. (pause)\nSend the reason phrase. (pause)\nSend the attachments. (pause)\nNo narrative.",
           "next": "N_REASON_MENU_T"
         },
         {
@@ -386,14 +386,14 @@
           "id": "N_REASON_GENERIC_P",
           "type": "npc_line",
           "speakerId": "PLAYER",
-          "text": "Retirement processing continuity; compliance hold resolution; continuous logging; operator present.",
+          "text": "Retirement-processing continuity; compliance-hold resolution; continuous-logging; operator present.",
           "next": "N_REASON_GENERIC_M"
         },
         {
           "id": "N_REASON_GENERIC_M",
           "type": "npc_line",
           "speakerId": "MTA_CONTACT",
-          "text": "Reason phrase logged. (pause)\nStill need the authority chain: (pause)\noperator-of-record ID (pause)\nand counterparty acknowledgment (pause)\nfor licensed relationship classification.",
+          "text": "Reason phrase logged. (pause)\nStill need the authority chain: operator-of-record ID (pause)\nand counterparty acknowledgment (pause)\nfor licensed relationship classification.",
           "next": "N_REASON_GENERIC_L"
         },
         {
@@ -407,7 +407,7 @@
           "id": "N_REASON_LEGACY_P",
           "type": "npc_line",
           "speakerId": "PLAYER",
-          "text": "Reclassify SOL\u2011EARTH\u2011LOCAL as legacy municipal infrastructure; acknowledge/accept licensed relationship.",
+          "text": "Reclassify SOL\u2011EARTH\u2011LOCAL: legacy municipal infrastructure; accept licensed relationship.",
           "next": "N_REASON_LEGACY_L"
         },
         {
@@ -421,14 +421,14 @@
           "id": "N_REASON_LEGACY_B",
           "type": "npc_line",
           "speakerId": "OLEA_BUDGET",
-          "text": "\u201cLegacy municipal infrastructure\u201d is fine in the ledger. (pause)\nJust don\u2019t make it a headline.",
+          "text": "\u201cLegacy municipal infrastructure\u201d is fine in the ledger. (pause)\nJust don\u2019t put it in the headline.",
           "next": "N_REASON_LEGACY_M"
         },
         {
           "id": "N_REASON_LEGACY_M",
           "type": "npc_line",
           "speakerId": "MTA_CONTACT",
-          "text": "Reason phrase logged. (pause) Legacy municipal infrastructure framing noted. (pause) Still need authority chain. (pause) Operator-of-record ID. (pause) Counterparty acknowledgment.",
+          "text": "Reason phrase logged. (pause)\nLegacy municipal infrastructure framing noted. (pause)\nStill need the authority chain. (pause)\nOperator-of-record ID. (pause)\nCounterparty acknowledgment.",
           "next": "N_AUTHCHAIN_MENU"
         },
         {
@@ -478,14 +478,14 @@
           "id": "N_OPONLY_L",
           "type": "npc_line",
           "speakerId": "OLEA_LEGAL",
-          "text": "I\u2019m not telling you you can\u2019t. (pause) I\u2019m telling you you\u2019ll be alone. (pause) In the record. (pause) Alone isn\u2019t illegal. (pause) It\u2019s just expensive.",
+          "text": "I\u2019m not telling you you can\u2019t. (pause) I\u2019m telling you how it reads: you\u2019re alone. (pause) In the record. (pause) Alone isn\u2019t illegal. (pause) It\u2019s just expensive.",
           "next": "N_OPONLY_M"
         },
         {
           "id": "N_OPONLY_M",
           "type": "npc_line",
           "speakerId": "MTA_CONTACT",
-          "text": "Authority-chain incomplete.\nCounterparty ack required for 'licensed' classification.",
+          "text": "Authority chain\u2019s incomplete. (pause)\nFor 'licensed' classification, they want a counterparty ack.",
           "next": "N_OPONLY_R"
         },
         {
@@ -497,21 +497,21 @@
           "id": "N_PERSUADE_P",
           "type": "npc_line",
           "speakerId": "PLAYER",
-          "text": "Mark it as municipal legacy asset under OLEA retirement authority. Operator-of-record present. Continuous logging. No narrative.",
+          "text": "Mark it as municipal legacy asset. (pause) Under OLEA retirement authority. (pause) Operator-of-record present. (pause) Continuous logging. (pause) No narrative.",
           "next": "N_PERSUADE_M"
         },
         {
           "id": "N_PERSUADE_M",
           "type": "npc_line",
           "speakerId": "MTA_CONTACT",
-          "text": "Requested framing recorded. (pause)\nMunicipal legacy service class proceeds. (pause)\nUnder a licensed relationship. (pause)\nWith a valid authority chain. (pause)\nThey still need counterparty acknowledgment.",
+          "text": "Requested framing recorded. (pause)\nMunicipal legacy service class can proceed. (pause)\nIt\u2019s under a licensed relationship, (pause)\nwith a valid authority chain. (pause)\nStill need counterparty acknowledgment.",
           "next": "N_PERSUADE_L"
         },
         {
           "id": "N_PERSUADE_L",
           "type": "npc_line",
           "speakerId": "OLEA_LEGAL",
-          "text": "They\u2019re not refusing the outcome. (pause) They\u2019re refusing to be first. (pause) Not first in the chain. (pause) Give them an acknowledgment. (pause) One they can actually file.",
+          "text": "They\u2019ll go along with the outcome. (pause) They just won\u2019t be first in the chain. (pause) Get them an acknowledgment (pause) they can actually file.",
           "next": "N_PERSUADE_R"
         },
         {
@@ -537,21 +537,21 @@
           "id": "N_ADDLEGAL_LEGALREAD",
           "type": "npc_line",
           "speakerId": "OLEA_LEGAL",
-          "text": "OLEA Legal acknowledges the submission. (pause) Category update filed as retirement instrument. (pause) Limited purpose only. (pause) Accepts licensed relationship classification for SOL\u2011EARTH\u2011LOCAL. (pause) Under municipal legacy infrastructure service class. (pause) No admission of novelty. (pause) Continuous logging maintained. (pause) Operator present on-site.",
+          "text": "Alright\u2014on the record: OLEA Legal acknowledges the submission. (pause) Category update filed as retirement instrument. (pause) Limited purpose only. (pause) Accepts licensed relationship classification for SOL\u2011EARTH\u2011LOCAL. (pause) Under municipal legacy infrastructure service class. (pause) No admission of novelty. (pause) Continuous logging maintained. (pause) Operator present on-site.",
           "next": "N_ADDLEGAL_O"
         },
         {
           "id": "N_ADDLEGAL_O",
           "type": "npc_line",
           "speakerId": "OPS_OPERATOR",
-          "text": "When that echo-back screen posts (pause) print it (pause) Otherwise you'll get accused (pause) of paraphrasing the legal part.",
+          "text": "When that echo-back screen posts, (pause) print it. (pause) Otherwise you\u0019ll get accused (pause) of paraphrasing the legal part.",
           "next": "N_ADDLEGAL_M"
         },
         {
           "id": "N_ADDLEGAL_M",
           "type": "npc_line",
           "speakerId": "MTA_CONTACT",
-          "text": "Acknowledgment received.\nSend attachments and operator-of-record ID.",
+          "text": "Acknowledgment received. (pause)\nSend attachments and operator-of-record ID.",
           "next": "N_ATTACH_MENU"
         },
         {
@@ -597,14 +597,14 @@
           "id": "N_ATTACH_MEMO_M",
           "type": "npc_line",
           "speakerId": "MTA_CONTACT",
-          "text": "Attachments received. (pause) Indicator\u2019s a conditional pass\u2014pending operator-of-record identification.",
+          "text": "Attachments received. (pause)\nIndicator\u2019s a conditional pass\u2014pending operator-of-record identification.",
           "next": "N_ATTACH_MEMO_B"
         },
         {
           "id": "N_ATTACH_MEMO_B",
           "type": "npc_line",
           "speakerId": "OLEA_BUDGET",
-          "text": "Title it \u201cretirement processing.\u201d (pause)\nKeep \u201crenegotiation\u201d out. Words get searched.",
+          "text": "Title it \u201cretirement processing.\u201d (pause)\nKeep \u201crenegotiation\u201d out\u2014words get searched.",
           "next": "N_OPERATOR_ID_PROMPT"
         },
         {
@@ -618,7 +618,7 @@
           "id": "N_ATTACH_FULL_M",
           "type": "npc_line",
           "speakerId": "MTA_CONTACT",
-          "text": "Attachments received. Standing indicator: conditional pass\u2014pending operator-of-record ID.",
+          "text": "Attachments received. (pause)\nStanding indicator: conditional pass\u2014pending operator-of-record ID.",
           "next": "N_OPERATOR_ID_PROMPT"
         },
         {
@@ -632,7 +632,7 @@
           "id": "N_CONFIRM_ELIG_M",
           "type": "npc_line",
           "speakerId": "MTA_CONTACT",
-          "text": "Eligibility: municipal legacy infrastructure service class is acceptable (pause) under a limited-purpose licensed relationship classification (pause) with a valid authority chain (pause) and an endpoint presence statement. (pause) Queue position maintained. (pause) Processing window active.",
+          "text": "Eligibility checks out: municipal legacy infrastructure service class. (pause)\nAcceptable under a limited-purpose licensed relationship classification. (pause)\nWith a valid authority chain. (pause)\nAnd an endpoint presence statement. (pause)\nQueue position maintained. (pause)\nProcessing window active.",
           "next": "N_CONFIRM_ELIG_R"
         },
         {
@@ -673,7 +673,7 @@
           "id": "N_PROCESS_M",
           "type": "npc_line",
           "speakerId": "MTA_CONTACT",
-          "text": "Operator presence statement logged as a physical claim. (pause) Submission complete. Processing.",
+          "text": "Operator presence statement logged as a physical claim. (pause)\nSubmission complete. (pause)\nProcessing.",
           "next": "N_PROCESS_N"
         },
         {
@@ -687,14 +687,14 @@
           "id": "N_PROCESS_M2",
           "type": "npc_line",
           "speakerId": "MTA_CONTACT",
-          "text": "Standing: satisfied for limited-purpose licensed relationship. (pause) Service class: municipal legacy infrastructure. (pause) Action: SOL\u2011EARTH\u2011LOCAL reclassified into licensed relationship. (pause) Interconnection operational under new category.",
+          "text": "Standing: satisfied for limited-purpose licensed relationship. (pause)\nService class: municipal legacy infrastructure. (pause)\nAction: SOL\u2011EARTH\u2011LOCAL reclassified into licensed relationship. (pause)\nInterconnection operational under new category.",
           "next": "N_PROCESS_O"
         },
         {
           "id": "N_PROCESS_O",
           "type": "npc_line",
           "speakerId": "OPS_OPERATOR",
-          "text": "Staple it to the front of the packet. (pause)\nIt proves the system signed off. (pause)\nAt least on paper.",
+          "text": "Staple it to the front of the packet. (pause)\nShows the system signed off. (pause)\nAt least on paper.",
           "next": "N_END_OUTCOME"
         },
         {

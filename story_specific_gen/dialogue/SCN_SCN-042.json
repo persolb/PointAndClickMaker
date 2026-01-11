@@ -16,21 +16,21 @@
           "id": "N_OPS_WARN",
           "type": "npc_line",
           "speakerId": "OPS_OPERATOR",
-          "text": "Demand event. (pause) Dispatch wants a shed, (pause) and it sticks. (pause) And don't say \u201cemergency\u201d\u2014 (pause) different people get dragged in.",
+          "text": "Demand event. (pause) Dispatch wants a shed and it\u2019s sticking. (pause) And don\u2019t say \u201cemergency\u201d\u2014you\u2019ll pull in another crowd.",
           "next": "N_DISPATCH_CALL"
         },
         {
           "id": "N_DISPATCH_CALL",
           "type": "npc_line",
           "speakerId": "UTIL_DISPATCH",
-          "text": "Control Room, this is Utility Dispatch. (pause) Timestamp 14:17:09. (pause) Issuing load-shedding request for your node. (pause) Confirm receipt. (pause) Provide your action record ID.",
+          "text": "Control Room, Utility Dispatch. (pause) Timestamp 14:17:09. (pause) Need load-shed on your node. (pause) Confirm you\u2019ve got it. (pause) And give me your action record ID.",
           "next": "N_OPS_COACH"
         },
         {
           "id": "N_OPS_COACH",
           "type": "npc_line",
           "speakerId": "OPS_OPERATOR",
-          "text": "Confirm the phrasing not your feelings. (pause) Say: \"acknowledge the demand event.\" (pause) And: \"initiating a load-shed response.\" (pause) It must read clean in transcript.",
+          "text": "Just stick to the phrasing. (pause) Say: \u001cacknowledge the demand event.\u001d (pause) Then: \u001cinitiating a load-shed response.\u001d (pause) Needs to read clean on the transcript.",
           "next": "N_MENU_INTRO"
         },
         {
@@ -106,14 +106,14 @@
           "id": "N_ACK_UTIL",
           "type": "npc_line",
           "speakerId": "UTIL_DISPATCH",
-          "text": "Acknowledged at 14:17:22. (pause) Provide your action record ID. (pause) Confirm you will maintain stability. (pause) I need that stated, not implied.",
+          "text": "Copy, 14:17:22. (pause) What\u2019s your action record ID? (pause) And say you\u2019ll maintain stability\u2014for the tape. (pause) Say it out loud.",
           "next": "N_ACK_OPS"
         },
         {
           "id": "N_ACK_OPS",
           "type": "npc_line",
           "speakerId": "OPS_OPERATOR",
-          "text": "Yeah. Maintain stability. They want it said. (pause) Say it. (pause) Then use the printer header for the ID. (pause) Don\u2019t freestyle an ID. (pause) Auditors love that kind of blood.",
+          "text": "Yeah. Maintain stability. They want it on tape. (pause) Say it. (pause) Then pull the ID off the printer header. (pause) Don\u2019t make one up. (pause) Auditors can smell it.",
           "next": "N_ACK_MENU"
         },
         {
@@ -173,21 +173,21 @@
           "id": "N_AUTH_PLAYER",
           "type": "npc_line",
           "speakerId": "PLAYER",
-          "text": "Acknowledged demand event. Initiating load-shed response under standard ops phrasing. Record ID pending printer header; stability maintained per interlock limits.",
+          "text": "Acknowledged demand event. (pause) Initiating load-shed response. (pause) Using standard ops phrasing. (pause) Record ID pending printer header. (pause) Stability maintained per interlock limits.",
           "next": "N_AUTH_UTIL"
         },
         {
           "id": "N_AUTH_UTIL",
           "type": "npc_line",
           "speakerId": "UTIL_DISPATCH",
-          "text": "Accepted. Timestamp 14:17:26. (pause) Send the record ID when available. (pause) When you act, report shed amount. (pause) Report start time.",
+          "text": "Accepted\u2014timestamp 14:17:26. (pause) Send the record ID when it shows up. (pause) On action, send shed amount and start time.",
           "next": "N_AUTH_OPS"
         },
         {
           "id": "N_AUTH_OPS",
           "type": "npc_line",
           "speakerId": "OPS_OPERATOR",
-          "text": "Good. Don't add words. Get paper, move load.",
+          "text": "Good. Don\u2019t add anything. (pause) Get the paper, then move the load.",
           "next": "N_COMMIT_END"
         },
         {
@@ -201,14 +201,14 @@
           "id": "N_MAINTAIN_UTIL",
           "type": "npc_line",
           "speakerId": "UTIL_DISPATCH",
-          "text": "Good. (pause) Timestamp 14:17:31. (pause) Constraint: do not introduce oscillatory loading. (pause) If you don\u2019t know what\u2019s oscillatory, (pause) assume it is. (pause) Call back with shed amount and start time.",
+          "text": "Good. (pause) Timestamp 14:17:31. (pause) Keep it steady\u2014no oscillatory loading. (pause) Not sure? Assume oscillatory; don\u2019t do it. (pause) Call back with shed amount and start time.",
           "next": "N_MAINTAIN_OPS"
         },
         {
           "id": "N_MAINTAIN_OPS",
           "type": "npc_line",
           "speakerId": "OPS_OPERATOR",
-          "text": "Assume it is. (pause) Right. (pause) Print the banner. Staple it. Then we shed. (pause) Same order every time.",
+          "text": "Assume it\u0019s oscillatory. (pause) Right. (pause) Print the banner. Staple it. Then we shed. (pause) Same order, every time.",
           "next": "N_COMMIT_HOLD_NARR"
         },
         {
@@ -229,14 +229,14 @@
           "id": "N_DEFINE_UTIL",
           "type": "npc_line",
           "speakerId": "UTIL_DISPATCH",
-          "text": "Stability means: no problem I must name. (pause)\nVoltage stays within band. (pause)\nFrequency support stays unchanged. (pause)\nNo step-load chatter. (pause)\nNo cycling. (pause)\nAnd\u2014because it comes up\u2014no undocumented behavior. (pause)\nThat\u2019s not technical. (pause)\nThat\u2019s legal.",
+          "text": "Stability? Don\u2019t hand me a problem to name. (pause) Voltage stays in band. (pause) Frequency support doesn\u2019t shift. (pause) No step-load chatter. (pause) No cycling. (pause) And don\u2019t do anything you can\u2019t document. (pause) Legal will eat us alive on that.",
           "next": "N_DEFINE_OPS"
         },
         {
           "id": "N_DEFINE_OPS",
           "type": "npc_line",
           "speakerId": "OPS_OPERATOR",
-          "text": "Yeah. It\u2019s vibes with a meter readout. (pause) We can comply\u2014 (pause) we pick what gets tagged \u201cnoncritical,\u201d (pause) and stick to it.",
+          "text": "Yeah. It\u0019s vibes with a meter readout. (pause) We can comply. (pause) Pick what gets tagged \u001cnoncritical\u001d and don\u0019t wander.",
           "next": "N_DEFINE_MENU"
         },
         {
@@ -281,7 +281,7 @@
           "id": "N_UNDERSTOOD_UTIL",
           "type": "npc_line",
           "speakerId": "UTIL_DISPATCH",
-          "text": "Timestamp 14:17:58. Accepted. (pause) Call when the first shed is complete. (pause) Don\u2019t wait for perfection.",
+          "text": "Accepted, timestamp 14:17:58. (pause) Call me when the first shed lands. (pause) Don\u2019t sit there chasing perfect.",
           "next": "N_UNDERSTOOD_NARR"
         },
         {
@@ -302,14 +302,14 @@
           "id": "N_TARGET_UTIL",
           "type": "npc_line",
           "speakerId": "UTIL_DISPATCH",
-          "text": "Target: twelve megawatts reduction at the node. (pause) Duration unknown. Minimum twenty minutes. (pause) Reassess at the half-hour mark. (pause) Do not shed anything that causes restart surge. (pause) If it auto-recovers it is not a shed.",
+          "text": "Target is twelve megawatts off the node. (pause) Duration\u2019s unknown\u2014hold it twenty minutes minimum. (pause) Reassess at the half-hour. (pause) Don\u2019t pick anything with nasty restart surge. (pause) Auto-recovering loads don\u2019t count as shed.",
           "next": "N_TARGET_OPS"
         },
         {
           "id": "N_TARGET_OPS",
           "type": "npc_line",
           "speakerId": "OPS_OPERATOR",
-          "text": "\u201cAuto-recovers\u201d is where they call it noncompliance. (pause) We shed what stays down. (pause) If that means re-tagging what\u2019s essential (pause) for verification, so be it.",
+          "text": "\u201cAuto-recovers\u201d is where they call it noncompliance. (pause) Shed what stays down. (pause) We re-tag \u201cessential\u201d to verify, if needed.",
           "next": "N_TARGET_MENU"
         },
         {
@@ -346,14 +346,14 @@
           "id": "N_COMMIT_DIRECT_UTIL",
           "type": "npc_line",
           "speakerId": "UTIL_DISPATCH",
-          "text": "Timestamp 14:18:06. Logged.(pause) I still need your action record ID.(pause) If you can\u2019t generate one,(pause) give me the printer header serial.(pause) Something attributable.",
+          "text": "Timestamp 14:18:06. Logged. (pause) I still need your action record ID. (pause) Can\u2019t generate one? Read me printer header serial. (pause) I just need something attributable.",
           "next": "N_COMMIT_DIRECT_OPS"
         },
         {
           "id": "N_COMMIT_DIRECT_OPS",
           "type": "npc_line",
           "speakerId": "OPS_OPERATOR",
-          "text": "Yeah. Fair. (pause) Use the printer. (pause) Make sure it lands in the tray. (pause) That's our cover.",
+          "text": "Yeah. Fair. (pause) Use the printer. (pause) Make sure it actually lands in the tray. (pause) That\u0019s our cover.",
           "next": "N_COMMIT_END"
         },
         {
@@ -367,14 +367,14 @@
           "id": "N_DETAILS_UTIL",
           "type": "npc_line",
           "speakerId": "UTIL_DISPATCH",
-          "text": "Good. (pause) Timestamp 14:17:12. (pause) Target: twelve-megawatt reduction at the node. (pause) Duration unknown. (pause) Minimum twenty minutes. (pause) Reassess at the half-hour mark. (pause) Do not shed anything. (pause) Nothing that causes restart surge. (pause) If it auto-recovers, it's not a shed.",
+          "text": "Good. (pause) Timestamp 14:17:12. (pause) Need twelve megawatts off the node. (pause) Duration\u2019s open\u2014twenty minutes minimum. (pause) Reassess at the half-hour. (pause) Don\u2019t shed anything that\u2019s going to restart-surge. (pause) If it auto-recovers it doesn\u2019t count as shed.",
           "next": "N_DETAILS_OPS"
         },
         {
           "id": "N_DETAILS_OPS",
           "type": "npc_line",
           "speakerId": "OPS_OPERATOR",
-          "text": "Auto-recovers. They'll use that against us. (pause) We can do a clean shed, (pause) but we have to re-tag (pause) what's \"essential.\" (pause) Checklist won't be happy.",
+          "text": "Auto-recovers. They'll use that against us. (pause) We can do a clean shed. (pause) We'll re-tag what's essential. (pause) Checklist's gonna howl.",
           "next": "N_DETAILS_MENU"
         },
         {
@@ -427,14 +427,14 @@
           "id": "N_DETAILS_ACK_UTIL",
           "type": "npc_line",
           "speakerId": "UTIL_DISPATCH",
-          "text": "Timestamp 14:17:26. (pause) Logged. (pause) I still need your action record ID. (pause) If you can\u2019t generate one (pause) give me the printer header serial. (pause) Something attributable.",
+          "text": "Timestamp 14:17:26. (pause) Logged. (pause) I still need your action record ID. (pause) If you can\u2019t generate it. (pause) Give me the printer header serial. (pause) Something attributable.",
           "next": "N_DETAILS_ACK_OPS"
         },
         {
           "id": "N_DETAILS_ACK_OPS",
           "type": "npc_line",
           "speakerId": "OPS_OPERATOR",
-          "text": "Yeah. Fair. (pause) Print the header. (pause) Tray needs to catch it. (pause) Otherwise we\u2019ve got nothing to point at.",
+          "text": "Yeah. Fair. (pause) Print the header. (pause) Tray has to catch it. (pause) Otherwise we\u0019ve got nothing to point at.",
           "next": "N_COMMIT_END"
         },
         {
@@ -448,7 +448,7 @@
           "id": "N_STAGED_UTIL",
           "type": "npc_line",
           "speakerId": "UTIL_DISPATCH",
-          "text": "Prefer staged if it adds no chatter. (pause) Avoid cycling loads. (pause) First action: clean, attributable. (pause) Reassess at the half-hour mark.",
+          "text": "Stage it if you can, without chatter. (pause) Don\u2019t cycle loads. (pause) First move needs to be clean\u2014attributable. (pause) Reassess at the half-hour.",
           "next": "N_STAGED_OPS"
         },
         {
@@ -485,14 +485,14 @@
           "id": "N_STAGED_COMMIT_PLAYER",
           "type": "npc_line",
           "speakerId": "PLAYER",
-          "text": "Acknowledged. Initiating staged shed. Will report first step time.",
+          "text": "Acknowledged. Initiating staged shed. Will report step-one time.",
           "next": "N_STAGED_COMMIT_UTIL"
         },
         {
           "id": "N_STAGED_COMMIT_UTIL",
           "type": "npc_line",
           "speakerId": "UTIL_DISPATCH",
-          "text": "Timestamp 14:18:14. Logged. (pause) Proceed. (pause) Call when step one\u2019s complete.",
+          "text": "Timestamp 14:18:14. Logged. (pause) Proceed. (pause) Call me when step one\u2019s done.",
           "next": "N_COMMIT_END"
         },
         {
@@ -506,14 +506,14 @@
           "id": "N_NOTICE_UTIL",
           "type": "npc_line",
           "speakerId": "UTIL_DISPATCH",
-          "text": "It\u2019s Demand Event UTIL-DS-4419. (pause) Timestamp 14:17:15. (pause) For clarity: directive under the stability clause. (pause) Not a suggestion. (pause) Confirm you are acting.",
+          "text": "Demand Event UTIL-DS-4419. (pause) Timestamp 14:17:15. (pause) This is under the stability clause\u2014directive. (pause) Confirm you\u2019re acting.",
           "next": "N_NOTICE_OPS"
         },
         {
           "id": "N_NOTICE_OPS",
           "type": "npc_line",
           "speakerId": "OPS_OPERATOR",
-          "text": "Directive: fine. Confirm you\u2019re acting. Print. Touch hardware.",
+          "text": "Fine. Directive. (pause) Confirm you\u0019re acting. (pause) Print. Then touch hardware.",
           "next": "N_NOTICE_MENU"
         },
         {
@@ -558,7 +558,7 @@
           "id": "N_CONF_UTIL",
           "type": "npc_line",
           "speakerId": "UTIL_DISPATCH",
-          "text": "Timestamp 14:17:24. Logged. (pause) Provide the record ID when available. (pause) I\u2019ll hold the line open two minutes. (pause) After that, call back\u2014don\u2019t just disappear.",
+          "text": "Timestamp 14:17:24. Logged. (pause) Send the record ID when it\u2019s available. (pause) I\u2019m holding the line two minutes. (pause) After that, call back\u2014don\u2019t just vanish.",
           "next": "N_CONF_NARR"
         },
         {
@@ -579,14 +579,14 @@
           "id": "N_BARGAIN_UTIL",
           "type": "npc_line",
           "speakerId": "UTIL_DISPATCH",
-          "text": "It\u2019s in writing. (pause) Recorded and timestamped; mirrored to the daily log. (pause) Email? You\u2019ll get it (pause) when the system feels like it. (pause) Confirm action now.",
+          "text": "It\u2019s recorded and timestamped\u2014mirrored to the daily log. (pause) Email\u2019s when the system coughs it up. (pause) Confirm action now.",
           "next": "N_BARGAIN_OPS"
         },
         {
           "id": "N_BARGAIN_OPS",
           "type": "npc_line",
           "speakerId": "OPS_OPERATOR",
-          "text": "Don\u2019t argue about delivery. (pause)\nGet the number down. (pause)\nConfirm action out loud and on-record.",
+          "text": "Don\u0019t fight about delivery. (pause)\nGet the number down. (pause)\nConfirm action\u0014out loud, on the record.",
           "next": "N_BARGAIN_MENU"
         },
         {
@@ -623,14 +623,14 @@
           "id": "N_PRINT_OPS",
           "type": "npc_line",
           "speakerId": "OPS_OPERATOR",
-          "text": "Good. (pause) Staple that to the verification packet. (pause) That's your receipt. (pause) This was real, not you making it up. (pause) In the room.",
+          "text": "Good. (pause) Staple it to the verification packet. (pause) That\u0019s your receipt. (pause) It shows it happened here\u0014in the room.",
           "next": "N_PRINT_UTIL"
         },
         {
           "id": "N_PRINT_UTIL",
           "type": "npc_line",
           "speakerId": "UTIL_DISPATCH",
-          "text": "Control Room, confirm receipt. (pause) Timestamp 14:17:19. (pause) Give me your record ID.",
+          "text": "Control Room\u2014confirm receipt. (pause) Timestamp 14:17:19. (pause) Give me your record ID.",
           "next": "N_PRINT_MENU"
         },
         {
@@ -675,14 +675,14 @@
           "id": "N_READBACK_UTIL",
           "type": "npc_line",
           "speakerId": "UTIL_DISPATCH",
-          "text": "Received. Timestamp 14:17:28. (pause) That\u2019s attributable. Proceed with shed. (pause) Report first action time.",
+          "text": "Received, timestamp 14:17:28. (pause) Good\u2014attributable. Proceed with shed. (pause) Report the first action time.",
           "next": "N_READBACK_OPS"
         },
         {
           "id": "N_READBACK_OPS",
           "type": "npc_line",
           "speakerId": "OPS_OPERATOR",
-          "text": "Alright. (pause) We\u2019ve got attribution. (pause) Go to the console when you\u2019re ready.",
+          "text": "Alright. (pause) We\u0019ve got attribution. (pause) Go to the console when you\u0019re set.",
           "next": "N_COMMIT_END"
         },
         {
@@ -696,14 +696,14 @@
           "id": "N_PRINT_ACK_UTIL",
           "type": "npc_line",
           "speakerId": "UTIL_DISPATCH",
-          "text": "Logged. Timestamp 14:17:33. (pause) Confirm you will maintain stability. (pause) And send a record ID when available.",
+          "text": "Logged\u2014timestamp 14:17:33. (pause) Confirm you\u2019ll maintain stability. (pause) Send the record ID when it\u2019s available.",
           "next": "N_PRINT_ACK_OPS"
         },
         {
           "id": "N_PRINT_ACK_OPS",
           "type": "npc_line",
           "speakerId": "OPS_OPERATOR",
-          "text": "Say \u201cstability maintained.\u201d Then we move. (pause) If you have the header serial, use it. (pause) \u201cAttributable\u201d wins.",
+          "text": "Say \u001cstability maintained.\u001d Then we move. (pause) Got the header serial? Use it. (pause) \u001cAttributable\u001d is what they care about.",
           "next": "N_COMMIT_END"
         },
         {
@@ -717,7 +717,7 @@
           "id": "N_REVIEW_OPS",
           "type": "npc_line",
           "speakerId": "OPS_OPERATOR",
-          "text": "Yeah\u2014disclaimers wall to wall. (pause) Do the shed. (pause) Annotate what you did, then move on.",
+          "text": "Yeah\u0014disclaimers wall to wall. (pause) Do the shed. (pause) Note what you did, then keep moving.",
           "next": "N_REVIEW_MENU"
         },
         {
@@ -762,40 +762,12 @@
           "id": "N_STEP_AWAY_OPS",
           "type": "npc_line",
           "speakerId": "OPS_OPERATOR",
-          "text": "Walk away if you need a second. (pause) Timestamp still runs. (pause)\nWhen you're ready, answer Dispatch. (pause) Keep it record-clean.",
-          "next": "N_STEP_AWAY_MENU"
-        },
-        {
-          "id": "N_STEP_AWAY_MENU",
-          "type": "player_choice",
-          "speakerId": "PLAYER",
-          "choices": [
-            {
-              "id": "C_RETURN",
-              "text": "leave: Return to the alarm panel.",
-              "conditions": [],
-              "checks": [],
-              "effects": [],
-              "next": "N_RED_BACK_TO_MAIN"
-            },
-            {
-              "id": "C_OTHER",
-              "text": "leave: Go to another hotspot.",
-              "conditions": [],
-              "checks": [],
-              "effects": [],
-              "next": "N_END_GO_OTHER"
-            }
-          ]
+          "text": "Take a second if you need it. (pause) Timestamp still runs. (pause)\nWhen you\u0019re back, answer Dispatch. (pause) Keep it clean for the record."
         },
         {
           "id": "N_RED_BACK_TO_MAIN",
           "type": "redirect",
           "target": "N_MAIN_MENU"
-        },
-        {
-          "id": "N_END_GO_OTHER",
-          "type": "end"
         },
         {
           "id": "N_COMMIT_END",

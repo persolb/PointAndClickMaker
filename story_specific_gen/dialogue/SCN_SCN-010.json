@@ -160,7 +160,7 @@
           "id": "P_TALK_2",
           "type": "npc_line",
           "speakerId": "PLAYER",
-          "text": "Found old contractor badges in the vestibule drawer. One\u2019s demagnetized.",
+          "text": "Old contractor badges in vestibule drawer. One demagnetized.",
           "next": "N_TALK_3"
         },
         {
@@ -264,7 +264,7 @@
           "id": "N_PERSUADE_1",
           "type": "npc_line",
           "speakerId": "PLAYER",
-          "text": "Log it as salvage for closure. I\u2019m maintaining chain-of-custody.",
+          "text": "Log salvage for closure. I\u2019m maintaining chain-of-custody.",
           "next": "N_PERSUADE_2"
         },
         {
@@ -354,33 +354,7 @@
           "id": "N_CLOSE_2",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "Nothing in the vestibule changes. Which is usually how the facility signals agreement.",
-          "next": "PC_EXIT_MENU"
-        },
-        {
-          "id": "PC_EXIT_MENU",
-          "type": "player_choice",
-          "speakerId": "PLAYER",
-          "choices": [
-            {
-              "id": "LEAVE_DOWN",
-              "text": "Leave down to Guard Shack Exterior.",
-              "next": "END_EXIT_DOWN"
-            },
-            {
-              "id": "LEAVE_RIGHT",
-              "text": "Leave right to Admin Lobby and Kiosk.",
-              "next": "END_EXIT_RIGHT"
-            }
-          ]
-        },
-        {
-          "id": "END_EXIT_DOWN",
-          "type": "end"
-        },
-        {
-          "id": "END_EXIT_RIGHT",
-          "type": "end"
+          "text": "Nothing in the vestibule changes. Which is usually how the facility signals agreement."
         }
       ]
     }

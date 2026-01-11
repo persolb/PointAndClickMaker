@@ -1,0 +1,633 @@
+{
+  "dialogueGraphs": [
+    {
+      "id": "DG_SCN_026_GUARD_SHACK_EXTERIOR",
+      "sceneId": "SCN-026",
+      "startNodeId": "N0",
+      "nodes": [
+        {
+          "id": "N0",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The guard shack sits where it has always sat: between the road and the liability.",
+          "next": "N1"
+        },
+        {
+          "id": "N1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The door handle implies consent. The reader light implies recognition. Neither implies you.",
+          "next": "N_MAIN"
+        },
+        {
+          "id": "N_MAIN",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "USE_DOOR",
+              "text": "(use) Guard shack door.",
+              "checks": [],
+              "next": "N_DOOR_1"
+            },
+            {
+              "id": "USE_READER",
+              "text": "(use) Card reader.",
+              "checks": [],
+              "next": "N_READER_1"
+            },
+            {
+              "id": "USE_CALLBOX",
+              "text": "(use) Call box speaker and button.",
+              "checks": [],
+              "next": "N_CALLBOX_0"
+            },
+            {
+              "id": "LOOK_TUBE",
+              "text": "(look) Pneumatic tube label plate.",
+              "checks": [],
+              "next": "N_TUBE_1"
+            },
+            {
+              "id": "LEAVE_LEFT",
+              "text": "(leave) Approach Road and Main Gate \u2014 left.",
+              "checks": [],
+              "next": "N_END_LEAVE_LEFT"
+            },
+            {
+              "id": "LEAVE_VESTIBULE",
+              "text": "(leave) Guard Shack Vestibule \u2014 hotspot.",
+              "conditions": [
+                {
+                  "key": "world.guardShackUnlocked",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "checks": [],
+              "next": "N_END_ENTER_VESTIBULE"
+            },
+            {
+              "id": "TRY_VESTIBULE_LOCKED",
+              "text": "(leave) Guard Shack Vestibule \u2014 hotspot.",
+              "conditions": [
+                {
+                  "key": "world.guardShackUnlocked",
+                  "op": "==",
+                  "value": false
+                }
+              ],
+              "checks": [],
+              "next": "N_VEST_LOCKED_1"
+            }
+          ]
+        },
+        {
+          "id": "N_VEST_LOCKED_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You step to the vestibule threshold. The door stays shut, like a database approves your legs.",
+          "next": "N_MAIN"
+        },
+        {
+          "id": "N_DOOR_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The handle turns with bureaucratic optimism.",
+          "next": "N_DOOR_2"
+        },
+        {
+          "id": "N_DOOR_2",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The latch does not. The door remains closed as a policy statement.",
+          "next": "N_DOOR_MENU"
+        },
+        {
+          "id": "N_DOOR_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "USE_CALLBOX",
+              "text": "(use) Call box speaker and button.",
+              "checks": [],
+              "next": "N_CALLBOX_0"
+            },
+            {
+              "id": "USE_READER",
+              "text": "(use) Card reader.",
+              "checks": [],
+              "next": "N_READER_1"
+            },
+            {
+              "id": "LOOK_TUBE",
+              "text": "(look) Pneumatic tube label plate.",
+              "checks": [],
+              "next": "N_TUBE_1"
+            },
+            {
+              "id": "LEAVE_BACK",
+              "text": "(leave) Step back.",
+              "checks": [],
+              "next": "N_MAIN"
+            }
+          ]
+        },
+        {
+          "id": "N_READER_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You present what the system would have accepted in a staffed decade.",
+          "next": "N_READER_2"
+        },
+        {
+          "id": "N_READER_2",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "Reader blinks once\u2014acknowledgement without obligation\u2014then returns to default: waiting for a person in the correct place.",
+          "next": "N_READER_MENU"
+        },
+        {
+          "id": "N_READER_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "USE_CALLBOX",
+              "text": "(use) Call box speaker and button.",
+              "checks": [],
+              "next": "N_CALLBOX_0"
+            },
+            {
+              "id": "USE_DOOR",
+              "text": "(use) Guard shack door.",
+              "checks": [],
+              "next": "N_DOOR_1"
+            },
+            {
+              "id": "LOOK_TUBE",
+              "text": "(look) Pneumatic tube label plate.",
+              "checks": [],
+              "next": "N_TUBE_1"
+            },
+            {
+              "id": "LEAVE_BACK",
+              "text": "(leave) Step back.",
+              "checks": [],
+              "next": "N_MAIN"
+            }
+          ]
+        },
+        {
+          "id": "N_TUBE_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "A metal plate riveted under the tube label: ROUTING / AUTHORIZATION.",
+          "next": "N_TUBE_2"
+        },
+        {
+          "id": "N_TUBE_2",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "Someone scratched one word into it with a key: \u201cRECORDS.\u201d Not instructions. Blame allocation.",
+          "next": "N_TUBE_MENU"
+        },
+        {
+          "id": "N_TUBE_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "USE_CALLBOX",
+              "text": "(use) Call box speaker and button.",
+              "checks": [],
+              "next": "N_CALLBOX_0"
+            },
+            {
+              "id": "USE_DOOR",
+              "text": "(use) Guard shack door.",
+              "checks": [],
+              "next": "N_DOOR_1"
+            },
+            {
+              "id": "USE_READER",
+              "text": "(use) Card reader.",
+              "checks": [],
+              "next": "N_READER_1"
+            },
+            {
+              "id": "LEAVE_BACK",
+              "text": "(leave) Step back.",
+              "checks": [],
+              "next": "N_MAIN"
+            }
+          ]
+        },
+        {
+          "id": "N_CALLBOX_0",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The speaker grille is polished in the center from repeated requests.",
+          "next": "N_CALLBOX_1"
+        },
+        {
+          "id": "N_CALLBOX_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "A label plate beneath it is sun-faded: SECV \u2014 REMOTE ATTENDANCE.",
+          "next": "N_SECV_0"
+        },
+        {
+          "id": "N_SECV_0",
+          "type": "npc_line",
+          "speakerId": "SECV_OPERATOR",
+          "text": "SECV remote attendance. (pause) Recorded line-quality and liability. (pause) What do you need?",
+          "next": "N_SECV_MENU"
+        },
+        {
+          "id": "N_SECV_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "ASK_UNLOCK",
+              "text": "(ask) Unlock the guard shack interior.",
+              "checks": [],
+              "next": "N_UNLOCK_1"
+            },
+            {
+              "id": "SHOW_RECEIPT",
+              "text": "(show) I have a Temporary Presence Receipt. Marked onsite.",
+              "checks": [],
+              "next": "N_SHOW_1"
+            },
+            {
+              "id": "ASK_SCHEDULE",
+              "text": "(ask) Confirm my schedule details for my trail.",
+              "checks": [],
+              "next": "N_SCHED_1"
+            },
+            {
+              "id": "PERSUADE_OLEA",
+              "text": "(persuade) I\u2019m OLEA. Closeout activity. Treat the work order as authority.",
+              "conditions": [
+                {
+                  "key": "player.factions",
+                  "op": "in",
+                  "value": [
+                    "OLEA"
+                  ]
+                }
+              ],
+              "checks": [],
+              "next": "N_OLEA_1"
+            },
+            {
+              "id": "LEAVE_ENDCALL",
+              "text": "(leave) End call.",
+              "checks": [],
+              "next": "N_ENDCALL_1"
+            }
+          ]
+        },
+        {
+          "id": "N_UNLOCK_1",
+          "type": "npc_line",
+          "speakerId": "SECV_OPERATOR",
+          "text": "I can unlock the guard shack interior (pause) when the system shows (pause) an authorized onsite presence. (pause) If I do it off a voice request, (pause) the authorization becomes me (pause) and I\u2019m not cleared for that.",
+          "next": "N_UNLOCK_2"
+        },
+        {
+          "id": "N_UNLOCK_2",
+          "type": "npc_line",
+          "speakerId": "SECV_OPERATOR",
+          "text": "Do you have a Presence Receipt (pause) worded \"onsite\" not \"expected\"? (pause) Yeah. The wording matters. (pause) I hate it too.",
+          "next": "N_UNLOCK_MENU"
+        },
+        {
+          "id": "N_UNLOCK_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "SHOW_YES_ONSITE",
+              "text": "(show) Yes. Receipt is issued and marked onsite.",
+              "checks": [],
+              "next": "N_COMMIT_0"
+            },
+            {
+              "id": "ASK_SYSTEM_INDICATES",
+              "text": "(ask) What do you mean \u201csystem indicates\u201d?",
+              "checks": [],
+              "next": "N_INDICATES_1"
+            },
+            {
+              "id": "LEAVE_ENDCALL",
+              "text": "(leave) End call.",
+              "checks": [],
+              "next": "N_ENDCALL_1"
+            }
+          ]
+        },
+        {
+          "id": "N_INDICATES_1",
+          "type": "npc_line",
+          "speakerId": "SECV_OPERATOR",
+          "text": "I mean a record I can hang (pause) my action on: name; date; (pause) activity type; site designation set to onsite; (pause) plus a Records authority marker.",
+          "next": "N_INDICATES_2"
+        },
+        {
+          "id": "N_INDICATES_2",
+          "type": "npc_line",
+          "speakerId": "SECV_OPERATOR",
+          "text": "I\u2019m not looking for your face. (pause) I\u2019m looking for the box. (pause) It puts responsibility where it belongs\u2014Records. (pause) In the log. (pause) Somewhere that isn\u2019t me.",
+          "next": "N_INDICATES_MENU"
+        },
+        {
+          "id": "N_INDICATES_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "SHOW_HAVE_IT",
+              "text": "(show) I have it. Marked onsite.",
+              "checks": [],
+              "next": "N_COMMIT_0"
+            },
+            {
+              "id": "LEAVE_ENDCALL",
+              "text": "(leave) End call.",
+              "checks": [],
+              "next": "N_ENDCALL_1"
+            }
+          ]
+        },
+        {
+          "id": "N_SHOW_1",
+          "type": "npc_line",
+          "speakerId": "SECV_OPERATOR",
+          "text": "Okay good. (pause)\nThanks for saying it like that. (pause)\nI still can\u2019t verify identity over a speaker. (pause)\nJust so nobody gets clever later. (pause)\nI can check for an onsite presence record. (pause)\nUnder your name.",
+          "next": "N_SHOW_MENU"
+        },
+        {
+          "id": "N_SHOW_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "ASK_CHECK_UNLOCK",
+              "text": "(ask) Check it. Then unlock.",
+              "checks": [],
+              "next": "N_COMMIT_0"
+            },
+            {
+              "id": "ASK_READBACK",
+              "text": "(ask) Before you unlock, read back the minimum fields you can.",
+              "checks": [],
+              "next": "N_READBACK_1"
+            },
+            {
+              "id": "LEAVE_ENDCALL",
+              "text": "(leave) End call.",
+              "checks": [],
+              "next": "N_ENDCALL_1"
+            }
+          ]
+        },
+        {
+          "id": "N_READBACK_1",
+          "type": "npc_line",
+          "speakerId": "SECV_OPERATOR",
+          "text": "Minimum, sure. (pause) If I read the rest (pause) it becomes personal information. (pause) Then I have a whole new report. (pause) To write.",
+          "next": "N_READBACK_2"
+        },
+        {
+          "id": "N_READBACK_2",
+          "type": "npc_line",
+          "speakerId": "SECV_OPERATOR",
+          "text": "I can confirm: (pause) scheduled party matches a Field Systems Specialist (pause) under OLEA closeout activity dated today (pause) status: onsite. (pause) That's all I'm allowed to say.",
+          "next": "N_READBACK_MENU"
+        },
+        {
+          "id": "N_READBACK_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "ASK_UNLOCK",
+              "text": "(ask) Unlock.",
+              "checks": [],
+              "next": "N_COMMIT_0"
+            },
+            {
+              "id": "LEAVE_ENDCALL",
+              "text": "(leave) End call.",
+              "checks": [],
+              "next": "N_ENDCALL_1"
+            }
+          ]
+        },
+        {
+          "id": "N_SCHED_1",
+          "type": "npc_line",
+          "speakerId": "SECV_OPERATOR",
+          "text": "I can confirm your name is scheduled. (pause) It's in the database. (pause) I can't confirm you're you. (pause) That's a judgment call, and my contract (pause) doesn't cover judgment calls.",
+          "next": "N_SCHED_2"
+        },
+        {
+          "id": "N_SCHED_2",
+          "type": "npc_line",
+          "speakerId": "SECV_OPERATOR",
+          "text": "If you're marked onsite with a Presence Receipt (pause) I can attach the confirmation (pause) to that event. (pause) Then it lives as operational data.",
+          "next": "N_SCHED_MENU"
+        },
+        {
+          "id": "N_SCHED_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "SHOW_MARKED_ONSITE",
+              "text": "(show) I\u2019m marked onsite. Attach it. Then unlock.",
+              "checks": [],
+              "next": "N_COMMIT_0"
+            },
+            {
+              "id": "ASK_WHY_SCHED_NOT_ENOUGH",
+              "text": "(ask) If I\u2019m scheduled, why wasn\u2019t that enough?",
+              "checks": [],
+              "next": "N_SCHED_WHY_1"
+            },
+            {
+              "id": "LEAVE_ENDCALL",
+              "text": "(leave) End call.",
+              "checks": [],
+              "next": "N_ENDCALL_1"
+            }
+          ]
+        },
+        {
+          "id": "N_SCHED_WHY_1",
+          "type": "npc_line",
+          "speakerId": "SECV_OPERATOR",
+          "text": "Scheduled is what was planned. (pause) The doors want onsite, time-stamped status. (pause) They can audit it later. (pause) Someone\u2019s tied to it. (pause) That\u2019s how the system is built.",
+          "next": "N_SCHED_WHY_MENU"
+        },
+        {
+          "id": "N_SCHED_WHY_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "SHOW_ONSITE_USE_IT",
+              "text": "(show) Onsite status exists. Use it.",
+              "checks": [],
+              "next": "N_COMMIT_0"
+            },
+            {
+              "id": "LEAVE_ENDCALL",
+              "text": "(leave) End call.",
+              "checks": [],
+              "next": "N_ENDCALL_1"
+            }
+          ]
+        },
+        {
+          "id": "N_OLEA_1",
+          "type": "npc_line",
+          "speakerId": "SECV_OPERATOR",
+          "text": "The work order tells me you're expected. (pause)\nIt doesn't give me permission to act. (pause)\nNot off a speaker. (pause)\nWhat I can act on is this. (pause)\nWhat's in the database.",
+          "next": "N_OLEA_2"
+        },
+        {
+          "id": "N_OLEA_2",
+          "type": "npc_line",
+          "speakerId": "SECV_OPERATOR",
+          "text": "If Records marks you onsite (pause) the work order has a location (pause) to attach to. (pause) Then I can run doors (pause) without inventing anything.",
+          "next": "N_OLEA_MENU"
+        },
+        {
+          "id": "N_OLEA_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "SHOW_PROCEED",
+              "text": "(show) Records marked me onsite. Proceed.",
+              "checks": [],
+              "next": "N_COMMIT_0"
+            },
+            {
+              "id": "ASK_TIME_SENSITIVE",
+              "text": "(ask) You understand this is time-sensitive.",
+              "checks": [],
+              "next": "N_TIME_1"
+            },
+            {
+              "id": "LEAVE_ENDCALL",
+              "text": "(leave) End call.",
+              "checks": [],
+              "next": "N_ENDCALL_1"
+            }
+          ]
+        },
+        {
+          "id": "N_TIME_1",
+          "type": "npc_line",
+          "speakerId": "SECV_OPERATOR",
+          "text": "Yeah, I hear you. (pause) I still can't waive check-in. (pause) \"Urgent\" isn't an option on my screen.",
+          "next": "N_TIME_MENU"
+        },
+        {
+          "id": "N_TIME_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "SHOW_ONSITE_PROCEED",
+              "text": "(show) Onsite marker exists. Proceed.",
+              "checks": [],
+              "next": "N_COMMIT_0"
+            },
+            {
+              "id": "LEAVE_ENDCALL",
+              "text": "(leave) End call.",
+              "checks": [],
+              "next": "N_ENDCALL_1"
+            }
+          ]
+        },
+        {
+          "id": "N_COMMIT_0",
+          "type": "npc_line",
+          "speakerId": "SECV_OPERATOR",
+          "text": "Copy. I\u2019m pulling the onsite ledger now. (pause) Give it a second. (pause) This system stalls right before it takes responsibility.",
+          "next": "N_COMMIT_1"
+        },
+        {
+          "id": "N_COMMIT_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The call box speaker emits the soft hiss of distance and servers.",
+          "next": "N_COMMIT_2"
+        },
+        {
+          "id": "N_COMMIT_2",
+          "type": "npc_line",
+          "speakerId": "SECV_OPERATOR",
+          "text": "Okay. I've got an onsite presence record. (pause) Under your name, today's date. (pause) Activity type: closeout. (pause) That's enough to actuate interior access. (pause) And it won't be on me.",
+          "next": "N_COMMIT_3"
+        },
+        {
+          "id": "N_COMMIT_3",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Do it.",
+          "next": "N_COMMIT_4"
+        },
+        {
+          "id": "N_COMMIT_4",
+          "type": "npc_line",
+          "speakerId": "SECV_OPERATOR",
+          "text": "Initiating timed unlock on guard shack interior door. (pause) Short window. Move. (pause) If it relocks, that's the timer.",
+          "next": "N_COMMIT_5"
+        },
+        {
+          "id": "N_COMMIT_5",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "A relay clicks somewhere behind the door. The reader light changes its mind for a moment.",
+          "next": "N_END_UNLOCK"
+        },
+        {
+          "id": "N_END_UNLOCK",
+          "type": "end",
+          "outcomeId": "unlock_guard_shack",
+          "effects": [
+            {
+              "key": "world.guardShackUnlocked",
+              "action": "set",
+              "value": true
+            }
+          ]
+        },
+        {
+          "id": "N_ENDCALL_1",
+          "type": "npc_line",
+          "speakerId": "SECV_OPERATOR",
+          "text": "Copy. Ending the call. (pause) Need another door action? (pause) Hit the call button again. (pause) I\u2019ll tie it to the record.",
+          "next": "N_MAIN"
+        },
+        {
+          "id": "N_END_LEAVE_LEFT",
+          "type": "end"
+        },
+        {
+          "id": "N_END_ENTER_VESTIBULE",
+          "type": "end"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,490 @@
+{
+  "dialogueGraphs": [
+    {
+      "id": "SCN_051_WINDOW7_PROPERTY_STUB",
+      "sceneId": "SCN-051",
+      "startNodeId": "N_INTRO_1",
+      "nodes": [
+        {
+          "id": "N_INTRO_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "conditions": [
+            {
+              "key": "act2.terIssued",
+              "op": "==",
+              "value": true
+            },
+            {
+              "key": "act2.propertyClaimStubCollected",
+              "op": "==",
+              "value": false
+            }
+          ],
+          "text": "Window 7 smells faintly of stamp ink and hand lotion. (pause) The counter is the same, but your badge changes what the glass is willing to hear.",
+          "next": "N_INTRO_2"
+        },
+        {
+          "id": "N_INTRO_2",
+          "type": "npc_line",
+          "speakerId": "INTAKE_CLERK",
+          "text": "Property. Claims. (pause) You've got enough filing (pause) to count as a claimant today (pause) in the normal sense. (pause) Basis only. (pause) Don't give me the story.",
+          "next": "PC_MAIN"
+        },
+        {
+          "id": "PC_MAIN",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_TALK_NEED_STUB",
+              "text": "talk: I need a property claim stub.",
+              "next": "N_STUB_OFFER_1"
+            },
+            {
+              "id": "C_ASK_BASIS",
+              "text": "ask: What's a \"property basis\"?",
+              "next": "N_BASIS_1"
+            },
+            {
+              "id": "C_ASK_TER_BASIS",
+              "text": "ask: Isn't the TER the basis?",
+              "next": "N_TER_NOT_ENOUGH_1"
+            },
+            {
+              "id": "C_SHOW_OLEA",
+              "text": "show: OLEA credentials.",
+              "conditions": [
+                {
+                  "key": "player.hasFaction.OLEA",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "next": "N_OLEA_1"
+            },
+            {
+              "id": "C_PERSUADE_SKIP_DETAIL",
+              "text": "persuade: Can you issue the stub with minimal detail? I'll supply verification later.",
+              "checks": [
+                {
+                  "type": "skill",
+                  "skill": "persuasion",
+                  "dc": 11
+                }
+              ],
+              "onPassNext": "N_PERSUADE_PASS_1",
+              "onFailNext": "N_PERSUADE_FAIL_1"
+            },
+            {
+              "id": "C_LEAVE_BACK",
+              "text": "leave: Back.",
+              "next": "END_BACK"
+            }
+          ]
+        },
+        {
+          "id": "N_STUB_OFFER_1",
+          "type": "npc_line",
+          "speakerId": "INTAKE_CLERK",
+          "text": "You can get a stub. (pause)\nIt holds your place. (pause)\nFor the argument later. (pause)\nWhat item class?",
+          "next": "PC_CLASS_MENU"
+        },
+        {
+          "id": "PC_CLASS_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_TALK_CLASS_EQUIP",
+              "text": "talk: Issued equipment. Service kit.",
+              "next": "N_CLASS_EQUIP_1"
+            },
+            {
+              "id": "C_TALK_CLASS_DOCS",
+              "text": "talk: Facility documentation. Records packet.",
+              "next": "N_CLASS_DOCS_1"
+            },
+            {
+              "id": "C_ASK_CLASSES",
+              "text": "ask: What item classes are acceptable?",
+              "next": "N_CLASSES_ACCEPTABLE_1"
+            },
+            {
+              "id": "C_ASK_STUB_DOES",
+              "text": "ask: What does the stub actually do?",
+              "next": "N_STUB_DOES_1"
+            },
+            {
+              "id": "C_LEAVE_CLASS_BACK",
+              "text": "leave: Back.",
+              "next": "R_TO_MAIN"
+            }
+          ]
+        },
+        {
+          "id": "N_CLASS_EQUIP_1",
+          "type": "npc_line",
+          "speakerId": "INTAKE_CLERK",
+          "text": "Issued equipment goes in the class box. (pause) It proves nothing. (pause) Service kit pulls in handler responsibility. (pause) I'm keeping the wording tight. (pause) I'm recording: service kit. (pause) Serialized if available. (pause) Claimant present. (pause) Entitlement pending verification. (pause) Don't correct my phrasing on the record.",
+          "next": "N_READY_TO_FILE_1"
+        },
+        {
+          "id": "N_CLASS_DOCS_1",
+          "type": "npc_line",
+          "speakerId": "INTAKE_CLERK",
+          "text": "Facility documentation is a liability with staples. (pause)\nYeah, it still gets treated like property. (pause)\nI can stub: Records packet unindexed; claimant present. (pause)\nDisposition pending verification.",
+          "next": "N_READY_TO_FILE_1"
+        },
+        {
+          "id": "N_READY_TO_FILE_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The clerk pulls a small slip from an unlabeled tray. (pause) They hesitate, then press their hand to the stamp pad.",
+          "next": "PC_FILE_MENU"
+        },
+        {
+          "id": "PC_FILE_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_TALK_FILE_IT",
+              "text": "talk: File it.",
+              "next": "N_PRINT_STUB_1"
+            },
+            {
+              "id": "C_ASK_WHY_WORDING",
+              "text": "ask: Why \"entitlement pending\"?",
+              "next": "N_WHY_WORDING_1"
+            },
+            {
+              "id": "C_ASK_VERIFICATION",
+              "text": "ask: What verification?",
+              "next": "N_VERIFICATION_1"
+            },
+            {
+              "id": "C_LEAVE_FILE_BACK",
+              "text": "leave: Back.",
+              "next": "R_TO_CLASS_MENU"
+            }
+          ]
+        },
+        {
+          "id": "N_WHY_WORDING_1",
+          "type": "npc_line",
+          "speakerId": "INTAKE_CLERK",
+          "text": "Ownership brings people in. (pause)\nAnd paperwork. (pause)\nPending keeps me from promising you anything\u2014normally.",
+          "next": "R_TO_FILE_MENU"
+        },
+        {
+          "id": "N_VERIFICATION_1",
+          "type": "npc_line",
+          "speakerId": "INTAKE_CLERK",
+          "text": "Serials. Assignment logs. Chain-of-custody. Incident recovery. (pause)\nThat check happens later\u2014preferably not at my window. (pause)\nHere, you leave with paper. (pause)\nIt survives the building. (pause)\nPretending you weren\u2019t here.",
+          "next": "R_TO_FILE_MENU"
+        },
+        {
+          "id": "N_PRINT_STUB_1",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "Stamp lands once hard. Clerk slides the slip under glass, two fingers, like it accuses them.",
+          "next": "N_PRINT_STUB_2"
+        },
+        {
+          "id": "N_PRINT_STUB_2",
+          "type": "npc_line",
+          "speakerId": "INTAKE_CLERK",
+          "text": "Stub\u0019s issued.\nProcessed\u0014in the normal sense.",
+          "next": "END_COLLECT_STUB"
+        },
+        {
+          "id": "N_CLASSES_ACCEPTABLE_1",
+          "type": "npc_line",
+          "speakerId": "INTAKE_CLERK",
+          "text": "Whatever doesn\u2019t make me guess intent. (pause) Issued equipment. (pause) Personal effects if you want a dispute. (pause) Records packet if you want a different dispute. (pause) If you say \u2018mine\u2019 I start hearing \u2018hearing\u2019.",
+          "next": "PC_CLASSES_FOLLOW"
+        },
+        {
+          "id": "PC_CLASSES_FOLLOW",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_TALK_PICK_EQUIP",
+              "text": "talk: Issued equipment.",
+              "next": "N_CLASS_EQUIP_1"
+            },
+            {
+              "id": "C_TALK_PICK_DOCS",
+              "text": "talk: Records packet.",
+              "next": "N_CLASS_DOCS_1"
+            },
+            {
+              "id": "C_LEAVE_CLASSES_BACK",
+              "text": "leave: Back.",
+              "next": "R_TO_CLASS_MENU"
+            }
+          ]
+        },
+        {
+          "id": "N_STUB_DOES_1",
+          "type": "npc_line",
+          "speakerId": "INTAKE_CLERK",
+          "text": "It time-stamps you showed up. (pause) And said you're coming back. (pause) To claim something. (pause) It also blocks someone. (pause) From saying you never showed. (pause) In the normal sense. (pause) And yeah, it gives you. (pause) Something to lose. (pause) That last part's unofficial.",
+          "next": "PC_STUB_DOES_FOLLOW"
+        },
+        {
+          "id": "PC_STUB_DOES_FOLLOW",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_TALK_THEN_ISSUE",
+              "text": "talk: Then issue it.",
+              "next": "R_TO_CLASS_MENU"
+            },
+            {
+              "id": "C_ASK_ACCESS",
+              "text": "ask: Does it grant access?",
+              "next": "N_ACCESS_NOT_PROPERTY_1"
+            },
+            {
+              "id": "C_LEAVE_STUB_DOES_BACK",
+              "text": "leave: Back.",
+              "next": "R_TO_CLASS_MENU"
+            }
+          ]
+        },
+        {
+          "id": "N_ACCESS_NOT_PROPERTY_1",
+          "type": "npc_line",
+          "speakerId": "INTAKE_CLERK",
+          "text": "Stub doesn\u2019t open doors. (pause) Access is Safety\u2019s problem. (pause) I issue stubs.",
+          "next": "R_TO_STUB_DOES_FOLLOW"
+        },
+        {
+          "id": "N_BASIS_1",
+          "type": "npc_line",
+          "speakerId": "INTAKE_CLERK",
+          "text": "It's what lets you argue (pause) without getting removed. (pause) Serials. Assignment logs. (pause) Incident recovery. Sometimes (pause) you just keep showing up. (pause) Keep it to basis. (pause) Stories breed counter-stories.",
+          "next": "PC_BASIS_MENU"
+        },
+        {
+          "id": "PC_BASIS_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_TALK_ISSUE_STUB_VERIFY_LATER",
+              "text": "talk: Issue the stub. I'll supply verification later.",
+              "next": "N_BASIS_TO_STUB_1"
+            },
+            {
+              "id": "C_ASK_CAN_YOU_OR_NOT",
+              "text": "ask: So you can issue the stub or not?",
+              "next": "N_BASIS_TO_STUB_1"
+            },
+            {
+              "id": "C_LEAVE_BASIS_BACK",
+              "text": "leave: Back.",
+              "next": "R_TO_MAIN"
+            }
+          ]
+        },
+        {
+          "id": "N_BASIS_TO_STUB_1",
+          "type": "npc_line",
+          "speakerId": "INTAKE_CLERK",
+          "text": "I can issue it. (pause)\nIt\u2019ll say you intend to claim an item. (pause)\nPending proof it\u2019s even claimable. (pause)\nAuditors like it that way.",
+          "next": "R_TO_CLASS_MENU"
+        },
+        {
+          "id": "N_TER_NOT_ENOUGH_1",
+          "type": "npc_line",
+          "speakerId": "INTAKE_CLERK",
+          "text": "TER just shows you are filed. (pause) A condition this building can tolerate. (pause)\nIt does not buy you rights. (pause) \"Rights\" is a different window. (pause) Maybe a different building. (pause)\nIf you want a document that implies less. (pause) I can do that.",
+          "next": "PC_TER_MENU"
+        },
+        {
+          "id": "PC_TER_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_TALK_WANT_STUB",
+              "text": "talk: I want the stub.",
+              "next": "N_STUB_IMPLIES_1"
+            },
+            {
+              "id": "C_ASK_STUB_IMPLIES",
+              "text": "ask: What does the stub imply?",
+              "next": "N_STUB_IMPLIES_1"
+            },
+            {
+              "id": "C_THREATEN_ESCALATE",
+              "text": "threaten: I'll escalate.",
+              "next": "N_ESCALATE_1"
+            },
+            {
+              "id": "C_LEAVE_TER_BACK",
+              "text": "leave: Back.",
+              "next": "R_TO_MAIN"
+            }
+          ]
+        },
+        {
+          "id": "N_STUB_IMPLIES_1",
+          "type": "npc_line",
+          "speakerId": "INTAKE_CLERK",
+          "text": "It flags that you'll be back. (pause) That's just how it sits. (pause) In the file. (pause) Want me to print it?",
+          "next": "PC_STUB_IMPLIES_MENU"
+        },
+        {
+          "id": "PC_STUB_IMPLIES_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_TALK_PREPARE",
+              "text": "talk: Prepare it.",
+              "next": "R_TO_CLASS_MENU"
+            },
+            {
+              "id": "C_LEAVE_IMPLIES_BACK",
+              "text": "leave: Back.",
+              "next": "R_TO_MAIN"
+            }
+          ]
+        },
+        {
+          "id": "N_ESCALATE_1",
+          "type": "npc_line",
+          "speakerId": "INTAKE_CLERK",
+          "text": "You say \"escalate\". (pause)\nI tag an incident. (pause)\nIt attaches to your file. (pause)\nIn the normal sense. (pause)\nUp to you.",
+          "next": "PC_ESCALATE_MENU"
+        },
+        {
+          "id": "PC_ESCALATE_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_TALK_JUST_STUB",
+              "text": "talk: Just the stub.",
+              "next": "N_ESCALATE_WISE_1"
+            },
+            {
+              "id": "C_LEAVE_ESCALATE_BACK",
+              "text": "leave: Back.",
+              "next": "R_TO_MAIN"
+            }
+          ]
+        },
+        {
+          "id": "N_ESCALATE_WISE_1",
+          "type": "npc_line",
+          "speakerId": "INTAKE_CLERK",
+          "text": "Good.",
+          "next": "R_TO_CLASS_MENU"
+        },
+        {
+          "id": "N_OLEA_1",
+          "type": "npc_line",
+          "speakerId": "INTAKE_CLERK",
+          "text": "OLEA credentials. Sure. That\u2019s context. (pause)\nNot a basis. (pause)\nStill I\u2019ll word the denial carefully later. (pause)\nWant something you can use? (pause)\nAsk for a stub.",
+          "next": "PC_OLEA_MENU"
+        },
+        {
+          "id": "PC_OLEA_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_TALK_OLEA_ISSUE",
+              "text": "talk: Issue the stub.",
+              "next": "R_TO_CLASS_MENU"
+            },
+            {
+              "id": "C_ASK_OLEA_CLASS",
+              "text": "ask: Is there an OLEA class?",
+              "next": "N_OLEA_NO_CLASS_1"
+            },
+            {
+              "id": "C_LEAVE_OLEA_BACK",
+              "text": "leave: Back.",
+              "next": "R_TO_MAIN"
+            }
+          ]
+        },
+        {
+          "id": "N_OLEA_NO_CLASS_1",
+          "type": "npc_line",
+          "speakerId": "INTAKE_CLERK",
+          "text": "No OLEA class. (pause) There are items. (pause) There are claimants. (pause) Then there are disputes. (pause) I try to avoid disputes. (pause) In the normal sense.",
+          "next": "R_TO_OLEA_MENU"
+        },
+        {
+          "id": "N_PERSUADE_PASS_1",
+          "type": "npc_line",
+          "speakerId": "INTAKE_CLERK",
+          "text": "Keep it minimal, fine. (pause) Still need an item class. (pause) Blank fields get flagged. (pause) Proceed.",
+          "next": "R_TO_CLASS_MENU"
+        },
+        {
+          "id": "N_PERSUADE_FAIL_1",
+          "type": "npc_line",
+          "speakerId": "INTAKE_CLERK",
+          "text": "No. (pause) Minimal detail puts disputes in neat boxes. (pause) State the class, in the normal sense.",
+          "next": "R_TO_MAIN"
+        },
+        {
+          "id": "R_TO_MAIN",
+          "type": "redirect",
+          "target": "PC_MAIN"
+        },
+        {
+          "id": "R_TO_CLASS_MENU",
+          "type": "redirect",
+          "target": "PC_CLASS_MENU"
+        },
+        {
+          "id": "R_TO_FILE_MENU",
+          "type": "redirect",
+          "target": "PC_FILE_MENU"
+        },
+        {
+          "id": "R_TO_STUB_DOES_FOLLOW",
+          "type": "redirect",
+          "target": "PC_STUB_DOES_FOLLOW"
+        },
+        {
+          "id": "R_TO_OLEA_MENU",
+          "type": "redirect",
+          "target": "PC_OLEA_MENU"
+        },
+        {
+          "id": "END_COLLECT_STUB",
+          "type": "end",
+          "outcomeId": "collect_property_claim_stub",
+          "effects": [
+            {
+              "key": "act2.propertyClaimStubCollected",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "inventory.items",
+              "action": "add",
+              "value": "ITEM_PROPERTY_CLAIM_STUB"
+            }
+          ]
+        },
+        {
+          "id": "END_BACK",
+          "type": "end"
+        }
+      ]
+    }
+  ]
+}

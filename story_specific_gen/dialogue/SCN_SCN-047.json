@@ -57,7 +57,7 @@
           "id": "N_COACH_INTRO_2",
           "type": "npc_line",
           "speakerId": "PROCESS_COACH",
-          "text": "Before you pick a window\u2014don\u2019t improvise a story. (pause) Stories make somebody responsible. (pause) Categories get you a receipt.",
+          "text": "Before you step up\u2014don\u2019t improvise a story. (pause) Stories make somebody responsible. (pause) Categories get you a receipt.",
           "next": "PC_COACH_MENU"
         },
         {
@@ -118,35 +118,35 @@
           "id": "N_COACH_STANDING_2",
           "type": "npc_line",
           "speakerId": "PROCESS_COACH",
-          "text": "Window 0. (pause) Ask for a Temporary Existence Receipt. (pause) Don\u2019t lead with \u201cI\u2019m a person.\u201d (pause) Don\u2019t lead with \u201cI need access.\u201d (pause) Give them something they can file. (pause) Once you\u2019re fileable, you can get difficult.",
+          "text": "Window 0. (pause) Ask for a Temporary Existence Receipt. (pause) Don\u2019t open with \u201cI\u2019m a person.\u201d (pause) Don\u2019t open with \u201cI need access.\u201d (pause) Hand them something they can file. (pause) Once you\u2019re fileable, you can get difficult.",
           "next": "R_TO_COACH_MENU_1"
         },
         {
           "id": "N_COACH_WRONG_1",
           "type": "npc_line",
           "speakerId": "PROCESS_COACH",
-          "text": "They\u2019ll redirect you.",
+          "text": "They\u2019ll bounce you.",
           "next": "N_COACH_WRONG_2"
         },
         {
           "id": "N_COACH_WRONG_2",
           "type": "npc_line",
           "speakerId": "PROCESS_COACH",
-          "text": "Or they\u2019ll log you as an interruption. (pause) If you keep insisting on specifics. (pause) Worst case, you get an incident category. (pause) One you didn\u2019t choose. (pause) Get yourself in the file. (pause) You\u2019ll at least keep moving.",
+          "text": "Or they\u2019ll log you as an interruption. (pause) If you keep insisting on specifics. (pause) Worst case you get an incident category. (pause) One you didn\u2019t choose. (pause) Get yourself in the file. (pause) At least you keep moving.",
           "next": "R_TO_COACH_MENU_2"
         },
         {
           "id": "N_COACH_OLEA_1",
           "type": "npc_line",
           "speakerId": "PROCESS_COACH",
-          "text": "Okay. Means you\u2019ve got an employer.",
+          "text": "Alright. Means you\u2019ve got an employer.",
           "next": "N_COACH_OLEA_2"
         },
         {
           "id": "N_COACH_OLEA_2",
           "type": "npc_line",
           "speakerId": "PROCESS_COACH",
-          "text": "Still doesn\u2019t mean the windows have to care. (pause) If you want this quiet, (pause) go to Window 0 (pause) and let Intake pretend (pause) you\u2019re cargo for five minutes.",
+          "text": "Doesn\u2019t mean the windows care. (pause) You want this quiet, (pause) go to Window 0 (pause) and let Intake pretend (pause) you\u2019re cargo for five minutes.",
           "next": "R_TO_COACH_MENU_3"
         },
         {
@@ -160,155 +160,25 @@
           "id": "N_COACH_PERSUADE_PASS_2",
           "type": "npc_line",
           "speakerId": "PROCESS_COACH",
-          "text": "Keep it short. (pause) No biography. (pause) No motive. (pause)\nIf you have to attach yourself, (pause) you\u2019re \u201cassociated mass.\u201d (pause)\nDon\u2019t describe it.",
+          "text": "Keep it tight. (pause) No biography. (pause) No motive. (pause)\nIf you have to attach yourself, (pause) you\u2019re \u201cassociated mass.\u201d (pause)\nDon\u2019t describe it.",
           "next": "R_TO_COACH_MENU_4"
         },
         {
           "id": "N_COACH_PERSUADE_FAIL_1",
           "type": "npc_line",
           "speakerId": "PROCESS_COACH",
-          "text": "You want fewer alarms? Keep it thin. (pause) Less detail. Less insistence. Less you.",
+          "text": "You want fewer alarms? Keep it thin. (pause) Less detail. Less insisting. Just\u2026 less you.",
           "next": "N_COACH_PERSUADE_FAIL_2"
         },
         {
           "id": "N_COACH_PERSUADE_FAIL_2",
           "type": "npc_line",
           "speakerId": "PROCESS_COACH",
-          "text": "Go to Window 0. (pause) Ask what categories are accepted. (pause) Don\u2019t argue about it on the record.",
+          "text": "Go to Window 0. (pause) Ask what categories they\u2019ll take. (pause) Don\u2019t argue about it on the record.",
           "next": "R_TO_COACH_MENU_5"
         },
         {
-          "id": "N_WIN7_1",
-          "type": "npc_line",
-          "speakerId": "NARRATOR",
-          "text": "Window 7 has a stamp pad that looks loved.",
-          "next": "N_WIN7_2"
-        },
-        {
-          "id": "N_WIN7_2",
-          "type": "npc_line",
-          "speakerId": "PROPERTY_CLERK",
-          "text": "Property is for claims.\nClaims require a claimant, in the normal sense.\nIntake can create a fileable entity.\nOnce you\u2019re fileable, you can claim things and be disappointed like everyone else.\nWindow 0.",
-          "next": "PC_WIN7_MENU"
-        },
-        {
-          "id": "PC_WIN7_MENU",
-          "type": "player_choice",
-          "speakerId": "PLAYER",
-          "choices": [
-            {
-              "id": "C_ASK_TOKEN_ISSUE",
-              "text": "ask: So you can\u2019t issue a token?",
-              "next": "N_WIN7_TOKEN_1"
-            },
-            {
-              "id": "C_LEAVE_WIN7",
-              "text": "leave: Back.",
-              "next": "R_TO_MAIN_8"
-            }
-          ]
-        },
-        {
-          "id": "N_WIN7_TOKEN_1",
-          "type": "npc_line",
-          "speakerId": "PROPERTY_CLERK",
-          "text": "I can issue a stub.",
-          "next": "N_WIN7_TOKEN_2"
-        },
-        {
-          "id": "N_WIN7_TOKEN_2",
-          "type": "npc_line",
-          "speakerId": "PROPERTY_CLERK",
-          "text": "A stub is not a token. A token is not a receipt. A receipt is not an entitlement.\nIntake handles the receipt part.\nWindow 0.",
-          "next": "R_TO_MAIN_9"
-        },
-        {
-          "id": "N_WIN9_1",
-          "type": "npc_line",
-          "speakerId": "NARRATOR",
-          "text": "Window 9 has a stack of forms already stamped.",
-          "next": "N_WIN9_2"
-        },
-        {
-          "id": "N_WIN9_2",
-          "type": "npc_line",
-          "speakerId": "COMPLAINTS_CLERK",
-          "text": "Complaints are processed. No action.\nIf you need Intake, that is Window 0.\nIf you need a stamp that ends a conversation, come back after you exist.",
-          "next": "PC_WIN9_MENU"
-        },
-        {
-          "id": "PC_WIN9_MENU",
-          "type": "player_choice",
-          "speakerId": "PLAYER",
-          "choices": [
-            {
-              "id": "C_ASK_STAMP_PROCESSED",
-              "text": "ask: Can you stamp me as \u201cprocessed\u201d?",
-              "next": "N_WIN9_STAMP_1"
-            },
-            {
-              "id": "C_LEAVE_WIN9",
-              "text": "leave: Back.",
-              "next": "R_TO_MAIN_10"
-            }
-          ]
-        },
-        {
-          "id": "N_WIN9_STAMP_1",
-          "type": "npc_line",
-          "speakerId": "COMPLAINTS_CLERK",
-          "text": "I can stamp paper. I cannot stamp\u2026 circumstances.",
-          "next": "N_WIN9_STAMP_2"
-        },
-        {
-          "id": "N_WIN9_STAMP_2",
-          "type": "npc_line",
-          "speakerId": "COMPLAINTS_CLERK",
-          "text": "Also, that would be action. Which is not offered.",
-          "next": "R_TO_MAIN_11"
-        },
-        {
           "id": "R_TO_MAIN_3",
-          "type": "redirect",
-          "target": "PC_MAIN"
-        },
-        {
-          "id": "R_TO_MAIN_4",
-          "type": "redirect",
-          "target": "PC_MAIN"
-        },
-        {
-          "id": "R_TO_MAIN_5",
-          "type": "redirect",
-          "target": "PC_MAIN"
-        },
-        {
-          "id": "R_TO_MAIN_8",
-          "type": "redirect",
-          "target": "PC_MAIN"
-        },
-        {
-          "id": "R_TO_MAIN_9",
-          "type": "redirect",
-          "target": "PC_MAIN"
-        },
-        {
-          "id": "R_TO_MAIN_10",
-          "type": "redirect",
-          "target": "PC_MAIN"
-        },
-        {
-          "id": "R_TO_MAIN_11",
-          "type": "redirect",
-          "target": "PC_MAIN"
-        },
-        {
-          "id": "R_TO_MAIN_12",
-          "type": "redirect",
-          "target": "PC_MAIN"
-        },
-        {
-          "id": "R_TO_MAIN_13",
           "type": "redirect",
           "target": "PC_MAIN"
         },
@@ -336,18 +206,6 @@
           "id": "R_TO_COACH_MENU_5",
           "type": "redirect",
           "target": "PC_COACH_MENU"
-        },
-        {
-          "id": "END_RULES_ESTABLISHED",
-          "type": "end",
-          "outcomeId": "intake_hall_rules_established",
-          "effects": [
-            {
-              "key": "knowledge.intakeWindowsKnown",
-              "action": "set",
-              "value": true
-            }
-          ]
         },
         {
           "id": "END_TO_OVERFLOW",

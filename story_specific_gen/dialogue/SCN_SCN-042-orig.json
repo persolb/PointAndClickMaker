@@ -1,0 +1,792 @@
+{
+  "dialogueGraphs": [
+    {
+      "id": "DG_SCN_042_ALARM_PANEL",
+      "sceneId": "SCN-042",
+      "startNodeId": "N_START_NARR",
+      "nodes": [
+        {
+          "id": "N_START_NARR",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The alarm panel is already lit with the soft, constant status. (pause) A system proving it is allowed to exist. (pause) A new banner overlays the verification checklist: DEMAND EVENT \u2014 LOAD SHED REQUESTED.",
+          "next": "N_OPS_WARN"
+        },
+        {
+          "id": "N_OPS_WARN",
+          "type": "npc_line",
+          "speakerId": "OPS_OPERATOR",
+          "text": "Demand event. (pause) Dispatch wants a shed, (pause) and it sticks. (pause) And don't say \u201cemergency\u201d\u2014 (pause) different people get dragged in.",
+          "next": "N_DISPATCH_CALL"
+        },
+        {
+          "id": "N_DISPATCH_CALL",
+          "type": "npc_line",
+          "speakerId": "UTIL_DISPATCH",
+          "text": "Control Room, this is Utility Dispatch. (pause) Timestamp 14:17:09. (pause) Issuing load-shedding request for your node. (pause) Confirm receipt. (pause) Provide your action record ID.",
+          "next": "N_OPS_COACH"
+        },
+        {
+          "id": "N_OPS_COACH",
+          "type": "npc_line",
+          "speakerId": "OPS_OPERATOR",
+          "text": "Confirm the phrasing not your feelings. (pause) Say: \"acknowledge the demand event.\" (pause) And: \"initiating a load-shed response.\" (pause) It must read clean in transcript.",
+          "next": "N_MENU_INTRO"
+        },
+        {
+          "id": "N_MENU_INTRO",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The panel shows three quick links: VIEW DETAILS, PRINT EVENT, ACKNOWLEDGE/RESPOND.",
+          "next": "N_MAIN_MENU"
+        },
+        {
+          "id": "N_MAIN_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_ACK",
+              "text": "talk: Acknowledge demand event.",
+              "conditions": [],
+              "checks": [],
+              "effects": [],
+              "next": "N_ACK_PLAYER"
+            },
+            {
+              "id": "C_DETAILS",
+              "text": "ask: Details. Target MW? Duration?",
+              "conditions": [],
+              "checks": [],
+              "effects": [],
+              "next": "N_DETAILS_PLAYER"
+            },
+            {
+              "id": "C_NOTICE",
+              "text": "ask: Give me the event/notice number first.",
+              "conditions": [],
+              "checks": [],
+              "effects": [],
+              "next": "N_NOTICE_PLAYER"
+            },
+            {
+              "id": "C_PRINT",
+              "text": "use: Print the event banner to the log tray.",
+              "conditions": [],
+              "checks": [],
+              "effects": [],
+              "next": "N_PRINT_NARR"
+            },
+            {
+              "id": "C_REVIEW",
+              "text": "look: Review demand event details on the panel.",
+              "conditions": [],
+              "checks": [],
+              "effects": [],
+              "next": "N_REVIEW_NARR"
+            },
+            {
+              "id": "C_STEP_AWAY",
+              "text": "leave: Step away from the alarm panel.",
+              "conditions": [],
+              "checks": [],
+              "effects": [],
+              "next": "N_STEP_AWAY_NARR"
+            }
+          ]
+        },
+        {
+          "id": "N_ACK_PLAYER",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Acknowledging demand event. Initiating load-shed response.",
+          "next": "N_ACK_UTIL"
+        },
+        {
+          "id": "N_ACK_UTIL",
+          "type": "npc_line",
+          "speakerId": "UTIL_DISPATCH",
+          "text": "Acknowledged at 14:17:22. (pause) Provide your action record ID. (pause) Confirm you will maintain stability. (pause) I need that stated, not implied.",
+          "next": "N_ACK_OPS"
+        },
+        {
+          "id": "N_ACK_OPS",
+          "type": "npc_line",
+          "speakerId": "OPS_OPERATOR",
+          "text": "Yeah. Maintain stability. They want it said. (pause) Say it. (pause) Then use the printer header for the ID. (pause) Don\u2019t freestyle an ID. (pause) Auditors love that kind of blood.",
+          "next": "N_ACK_MENU"
+        },
+        {
+          "id": "N_ACK_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_MAINTAIN",
+              "text": "talk: Will maintain stability. Stand by for record ID.",
+              "conditions": [],
+              "checks": [],
+              "effects": [],
+              "next": "N_MAINTAIN_PLAYER"
+            },
+            {
+              "id": "C_DEFINE",
+              "text": "ask: Define \u201cmaintain stability\u201d for this event.",
+              "conditions": [],
+              "checks": [],
+              "effects": [],
+              "next": "N_DEFINE_PLAYER"
+            },
+            {
+              "id": "C_PRINT_HEADER",
+              "text": "use: Print header and start a record ID.",
+              "conditions": [],
+              "checks": [],
+              "effects": [],
+              "next": "N_PRINT_NARR"
+            },
+            {
+              "id": "C_AUTH_PHRASE",
+              "text": "persuade: Use standardized wording and record format (authorized signatory).",
+              "conditions": [
+                {
+                  "key": "player.oleaAuthorizedSignatory",
+                  "op": "==",
+                  "value": true
+                }
+              ],
+              "checks": [],
+              "effects": [],
+              "next": "N_AUTH_PLAYER"
+            },
+            {
+              "id": "C_BACK",
+              "text": "leave: Return to alarm panel menu.",
+              "conditions": [],
+              "checks": [],
+              "effects": [],
+              "next": "N_RED_BACK_TO_MAIN"
+            }
+          ]
+        },
+        {
+          "id": "N_AUTH_PLAYER",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Acknowledged demand event. Initiating load-shed response under standard ops phrasing. Record ID pending printer header; stability maintained per interlock limits.",
+          "next": "N_AUTH_UTIL"
+        },
+        {
+          "id": "N_AUTH_UTIL",
+          "type": "npc_line",
+          "speakerId": "UTIL_DISPATCH",
+          "text": "Accepted. Timestamp 14:17:26. (pause) Send the record ID when available. (pause) When you act, report shed amount. (pause) Report start time.",
+          "next": "N_AUTH_OPS"
+        },
+        {
+          "id": "N_AUTH_OPS",
+          "type": "npc_line",
+          "speakerId": "OPS_OPERATOR",
+          "text": "Good. Don't add words. Get paper, move load.",
+          "next": "N_COMMIT_END"
+        },
+        {
+          "id": "N_MAINTAIN_PLAYER",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Will maintain stability. Stand by for record ID.",
+          "next": "N_MAINTAIN_UTIL"
+        },
+        {
+          "id": "N_MAINTAIN_UTIL",
+          "type": "npc_line",
+          "speakerId": "UTIL_DISPATCH",
+          "text": "Good. (pause) Timestamp 14:17:31. (pause) Constraint: do not introduce oscillatory loading. (pause) If you don\u2019t know what\u2019s oscillatory, (pause) assume it is. (pause) Call back with shed amount and start time.",
+          "next": "N_MAINTAIN_OPS"
+        },
+        {
+          "id": "N_MAINTAIN_OPS",
+          "type": "npc_line",
+          "speakerId": "OPS_OPERATOR",
+          "text": "Assume it is. (pause) Right. (pause) Print the banner. Staple it. Then we shed. (pause) Same order every time.",
+          "next": "N_COMMIT_HOLD_NARR"
+        },
+        {
+          "id": "N_COMMIT_HOLD_NARR",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The scene holds on the blinking ACK light, like it wants a signature.",
+          "next": "N_COMMIT_END"
+        },
+        {
+          "id": "N_DEFINE_PLAYER",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Define \u201cmaintain stability.\u201d",
+          "next": "N_DEFINE_UTIL"
+        },
+        {
+          "id": "N_DEFINE_UTIL",
+          "type": "npc_line",
+          "speakerId": "UTIL_DISPATCH",
+          "text": "Stability means: no problem I must name. (pause)\nVoltage stays within band. (pause)\nFrequency support stays unchanged. (pause)\nNo step-load chatter. (pause)\nNo cycling. (pause)\nAnd\u2014because it comes up\u2014no undocumented behavior. (pause)\nThat\u2019s not technical. (pause)\nThat\u2019s legal.",
+          "next": "N_DEFINE_OPS"
+        },
+        {
+          "id": "N_DEFINE_OPS",
+          "type": "npc_line",
+          "speakerId": "OPS_OPERATOR",
+          "text": "Yeah. It\u2019s vibes with a meter readout. (pause) We can comply\u2014 (pause) we pick what gets tagged \u201cnoncritical,\u201d (pause) and stick to it.",
+          "next": "N_DEFINE_MENU"
+        },
+        {
+          "id": "N_DEFINE_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_UNDERSTOOD",
+              "text": "talk: Understood. Proceeding. Record ID to follow.",
+              "conditions": [],
+              "checks": [],
+              "effects": [],
+              "next": "N_UNDERSTOOD_PLAYER"
+            },
+            {
+              "id": "C_TARGET",
+              "text": "ask: Target MW and duration?",
+              "conditions": [],
+              "checks": [],
+              "effects": [],
+              "next": "N_TARGET_PLAYER"
+            },
+            {
+              "id": "C_BACK",
+              "text": "leave: Return to alarm panel menu.",
+              "conditions": [],
+              "checks": [],
+              "effects": [],
+              "next": "N_RED_BACK_TO_MAIN"
+            }
+          ]
+        },
+        {
+          "id": "N_UNDERSTOOD_PLAYER",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Understood. Proceeding. Record ID to follow.",
+          "next": "N_UNDERSTOOD_UTIL"
+        },
+        {
+          "id": "N_UNDERSTOOD_UTIL",
+          "type": "npc_line",
+          "speakerId": "UTIL_DISPATCH",
+          "text": "Timestamp 14:17:58. Accepted. (pause) Call when the first shed is complete. (pause) Don\u2019t wait for perfection.",
+          "next": "N_UNDERSTOOD_NARR"
+        },
+        {
+          "id": "N_UNDERSTOOD_NARR",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The alarm panel stops nagging and starts waiting.",
+          "next": "N_COMMIT_END"
+        },
+        {
+          "id": "N_TARGET_PLAYER",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Target MW. Duration.",
+          "next": "N_TARGET_UTIL"
+        },
+        {
+          "id": "N_TARGET_UTIL",
+          "type": "npc_line",
+          "speakerId": "UTIL_DISPATCH",
+          "text": "Target: twelve megawatts reduction at the node. (pause) Duration unknown. Minimum twenty minutes. (pause) Reassess at the half-hour mark. (pause) Do not shed anything that causes restart surge. (pause) If it auto-recovers it is not a shed.",
+          "next": "N_TARGET_OPS"
+        },
+        {
+          "id": "N_TARGET_OPS",
+          "type": "npc_line",
+          "speakerId": "OPS_OPERATOR",
+          "text": "\u201cAuto-recovers\u201d is where they call it noncompliance. (pause) We shed what stays down. (pause) If that means re-tagging what\u2019s essential (pause) for verification, so be it.",
+          "next": "N_TARGET_MENU"
+        },
+        {
+          "id": "N_TARGET_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_COMMIT",
+              "text": "talk: Acknowledged. Initiating response. Will report shed and time.",
+              "conditions": [],
+              "checks": [],
+              "effects": [],
+              "next": "N_COMMIT_DIRECT_PLAYER"
+            },
+            {
+              "id": "C_BACK",
+              "text": "leave: Return to alarm panel menu.",
+              "conditions": [],
+              "checks": [],
+              "effects": [],
+              "next": "N_RED_BACK_TO_MAIN"
+            }
+          ]
+        },
+        {
+          "id": "N_COMMIT_DIRECT_PLAYER",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Acknowledged. Initiating response. Will report shed and time.",
+          "next": "N_COMMIT_DIRECT_UTIL"
+        },
+        {
+          "id": "N_COMMIT_DIRECT_UTIL",
+          "type": "npc_line",
+          "speakerId": "UTIL_DISPATCH",
+          "text": "Timestamp 14:18:06. Logged.(pause) I still need your action record ID.(pause) If you can\u2019t generate one,(pause) give me the printer header serial.(pause) Something attributable.",
+          "next": "N_COMMIT_DIRECT_OPS"
+        },
+        {
+          "id": "N_COMMIT_DIRECT_OPS",
+          "type": "npc_line",
+          "speakerId": "OPS_OPERATOR",
+          "text": "Yeah. Fair. (pause) Use the printer. (pause) Make sure it lands in the tray. (pause) That's our cover.",
+          "next": "N_COMMIT_END"
+        },
+        {
+          "id": "N_DETAILS_PLAYER",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Details. Target MW. Duration.",
+          "next": "N_DETAILS_UTIL"
+        },
+        {
+          "id": "N_DETAILS_UTIL",
+          "type": "npc_line",
+          "speakerId": "UTIL_DISPATCH",
+          "text": "Good. (pause) Timestamp 14:17:12. (pause) Target: twelve-megawatt reduction at the node. (pause) Duration unknown. (pause) Minimum twenty minutes. (pause) Reassess at the half-hour mark. (pause) Do not shed anything. (pause) Nothing that causes restart surge. (pause) If it auto-recovers, it's not a shed.",
+          "next": "N_DETAILS_OPS"
+        },
+        {
+          "id": "N_DETAILS_OPS",
+          "type": "npc_line",
+          "speakerId": "OPS_OPERATOR",
+          "text": "Auto-recovers. They'll use that against us. (pause) We can do a clean shed, (pause) but we have to re-tag (pause) what's \"essential.\" (pause) Checklist won't be happy.",
+          "next": "N_DETAILS_MENU"
+        },
+        {
+          "id": "N_DETAILS_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_ACK_INIT",
+              "text": "talk: Acknowledged. Initiating response. Will report shed and time.",
+              "conditions": [],
+              "checks": [],
+              "effects": [],
+              "next": "N_DETAILS_ACK_PLAYER"
+            },
+            {
+              "id": "C_STAGED",
+              "text": "ask: Do you want staged or single-step?",
+              "conditions": [],
+              "checks": [],
+              "effects": [],
+              "next": "N_STAGED_PLAYER"
+            },
+            {
+              "id": "C_NOTICE",
+              "text": "ask: Send notice number / event ID.",
+              "conditions": [],
+              "checks": [],
+              "effects": [],
+              "next": "N_NOTICE_PLAYER"
+            },
+            {
+              "id": "C_BACK",
+              "text": "leave: Return to alarm panel menu.",
+              "conditions": [],
+              "checks": [],
+              "effects": [],
+              "next": "N_RED_BACK_TO_MAIN"
+            }
+          ]
+        },
+        {
+          "id": "N_DETAILS_ACK_PLAYER",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Acknowledged. Initiating response. Will report shed and time.",
+          "next": "N_DETAILS_ACK_UTIL"
+        },
+        {
+          "id": "N_DETAILS_ACK_UTIL",
+          "type": "npc_line",
+          "speakerId": "UTIL_DISPATCH",
+          "text": "Timestamp 14:17:26. (pause) Logged. (pause) I still need your action record ID. (pause) If you can\u2019t generate one (pause) give me the printer header serial. (pause) Something attributable.",
+          "next": "N_DETAILS_ACK_OPS"
+        },
+        {
+          "id": "N_DETAILS_ACK_OPS",
+          "type": "npc_line",
+          "speakerId": "OPS_OPERATOR",
+          "text": "Yeah. Fair. (pause) Print the header. (pause) Tray needs to catch it. (pause) Otherwise we\u2019ve got nothing to point at.",
+          "next": "N_COMMIT_END"
+        },
+        {
+          "id": "N_STAGED_PLAYER",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Staged or single-step?",
+          "next": "N_STAGED_UTIL"
+        },
+        {
+          "id": "N_STAGED_UTIL",
+          "type": "npc_line",
+          "speakerId": "UTIL_DISPATCH",
+          "text": "Prefer staged if it adds no chatter. (pause) Avoid cycling loads. (pause) First action: clean, attributable. (pause) Reassess at the half-hour mark.",
+          "next": "N_STAGED_OPS"
+        },
+        {
+          "id": "N_STAGED_OPS",
+          "type": "npc_line",
+          "speakerId": "OPS_OPERATOR",
+          "text": "Staged is fine. More timestamps, more babysitting. (pause) Print first. Then touch hardware.",
+          "next": "N_STAGED_MENU"
+        },
+        {
+          "id": "N_STAGED_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_COMMIT",
+              "text": "talk: Acknowledged. Initiating staged shed. Will report first step time.",
+              "conditions": [],
+              "checks": [],
+              "effects": [],
+              "next": "N_STAGED_COMMIT_PLAYER"
+            },
+            {
+              "id": "C_BACK",
+              "text": "leave: Return to alarm panel menu.",
+              "conditions": [],
+              "checks": [],
+              "effects": [],
+              "next": "N_RED_BACK_TO_MAIN"
+            }
+          ]
+        },
+        {
+          "id": "N_STAGED_COMMIT_PLAYER",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Acknowledged. Initiating staged shed. Will report first step time.",
+          "next": "N_STAGED_COMMIT_UTIL"
+        },
+        {
+          "id": "N_STAGED_COMMIT_UTIL",
+          "type": "npc_line",
+          "speakerId": "UTIL_DISPATCH",
+          "text": "Timestamp 14:18:14. Logged. (pause) Proceed. (pause) Call when step one\u2019s complete.",
+          "next": "N_COMMIT_END"
+        },
+        {
+          "id": "N_NOTICE_PLAYER",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Event number first.",
+          "next": "N_NOTICE_UTIL"
+        },
+        {
+          "id": "N_NOTICE_UTIL",
+          "type": "npc_line",
+          "speakerId": "UTIL_DISPATCH",
+          "text": "It\u2019s Demand Event UTIL-DS-4419. (pause) Timestamp 14:17:15. (pause) For clarity: directive under the stability clause. (pause) Not a suggestion. (pause) Confirm you are acting.",
+          "next": "N_NOTICE_OPS"
+        },
+        {
+          "id": "N_NOTICE_OPS",
+          "type": "npc_line",
+          "speakerId": "OPS_OPERATOR",
+          "text": "Directive: fine. Confirm you\u2019re acting. Print. Touch hardware.",
+          "next": "N_NOTICE_MENU"
+        },
+        {
+          "id": "N_NOTICE_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_CONF",
+              "text": "talk: Confirmed. Acting under UTIL-DS-4419.",
+              "conditions": [],
+              "checks": [],
+              "effects": [],
+              "next": "N_CONF_PLAYER"
+            },
+            {
+              "id": "C_BARGAIN",
+              "text": "bargain: Confirm in writing and I\u2019ll prioritize shedding.",
+              "conditions": [],
+              "checks": [],
+              "effects": [],
+              "next": "N_BARGAIN_PLAYER"
+            },
+            {
+              "id": "C_BACK",
+              "text": "leave: Return to alarm panel menu.",
+              "conditions": [],
+              "checks": [],
+              "effects": [],
+              "next": "N_RED_BACK_TO_MAIN"
+            }
+          ]
+        },
+        {
+          "id": "N_CONF_PLAYER",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Confirmed. Acting under UTIL-DS-4419.",
+          "next": "N_CONF_UTIL"
+        },
+        {
+          "id": "N_CONF_UTIL",
+          "type": "npc_line",
+          "speakerId": "UTIL_DISPATCH",
+          "text": "Timestamp 14:17:24. Logged. (pause) Provide the record ID when available. (pause) I\u2019ll hold the line open two minutes. (pause) After that, call back\u2014don\u2019t just disappear.",
+          "next": "N_CONF_NARR"
+        },
+        {
+          "id": "N_CONF_NARR",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The open channel hisses softly, impatient in a professional way.",
+          "next": "N_COMMIT_END"
+        },
+        {
+          "id": "N_BARGAIN_PLAYER",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Confirm in writing and I\u2019ll prioritize shedding.",
+          "next": "N_BARGAIN_UTIL"
+        },
+        {
+          "id": "N_BARGAIN_UTIL",
+          "type": "npc_line",
+          "speakerId": "UTIL_DISPATCH",
+          "text": "It\u2019s in writing. (pause) Recorded and timestamped; mirrored to the daily log. (pause) Email? You\u2019ll get it (pause) when the system feels like it. (pause) Confirm action now.",
+          "next": "N_BARGAIN_OPS"
+        },
+        {
+          "id": "N_BARGAIN_OPS",
+          "type": "npc_line",
+          "speakerId": "OPS_OPERATOR",
+          "text": "Don\u2019t argue about delivery. (pause)\nGet the number down. (pause)\nConfirm action out loud and on-record.",
+          "next": "N_BARGAIN_MENU"
+        },
+        {
+          "id": "N_BARGAIN_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_CONF",
+              "text": "talk: Confirmed. Acting under UTIL-DS-4419.",
+              "conditions": [],
+              "checks": [],
+              "effects": [],
+              "next": "N_CONF_PLAYER"
+            },
+            {
+              "id": "C_BACK",
+              "text": "leave: Return to alarm panel menu.",
+              "conditions": [],
+              "checks": [],
+              "effects": [],
+              "next": "N_RED_BACK_TO_MAIN"
+            }
+          ]
+        },
+        {
+          "id": "N_PRINT_NARR",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The log printer wakes up like it was pretending not to hear you. (pause) A strip of paper curls into the tray. (pause) DEMAND EVENT UTIL-DS-4419, time-stamped, header serial number.",
+          "next": "N_PRINT_OPS"
+        },
+        {
+          "id": "N_PRINT_OPS",
+          "type": "npc_line",
+          "speakerId": "OPS_OPERATOR",
+          "text": "Good. (pause) Staple that to the verification packet. (pause) That's your receipt. (pause) This was real, not you making it up. (pause) In the room.",
+          "next": "N_PRINT_UTIL"
+        },
+        {
+          "id": "N_PRINT_UTIL",
+          "type": "npc_line",
+          "speakerId": "UTIL_DISPATCH",
+          "text": "Control Room, confirm receipt. (pause) Timestamp 14:17:19. (pause) Give me your record ID.",
+          "next": "N_PRINT_MENU"
+        },
+        {
+          "id": "N_PRINT_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_READBACK",
+              "text": "show: Read back the printed event ID and header serial.",
+              "conditions": [],
+              "checks": [],
+              "effects": [],
+              "next": "N_READBACK_PLAYER"
+            },
+            {
+              "id": "C_ACK",
+              "text": "talk: Acknowledged. Initiating load-shed response.",
+              "conditions": [],
+              "checks": [],
+              "effects": [],
+              "next": "N_PRINT_ACK_PLAYER"
+            },
+            {
+              "id": "C_BACK",
+              "text": "leave: Return to alarm panel menu.",
+              "conditions": [],
+              "checks": [],
+              "effects": [],
+              "next": "N_RED_BACK_TO_MAIN"
+            }
+          ]
+        },
+        {
+          "id": "N_READBACK_PLAYER",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Event UTIL-DS-4419. Printer header serial CR-LP-0031.",
+          "next": "N_READBACK_UTIL"
+        },
+        {
+          "id": "N_READBACK_UTIL",
+          "type": "npc_line",
+          "speakerId": "UTIL_DISPATCH",
+          "text": "Received. Timestamp 14:17:28. (pause) That\u2019s attributable. Proceed with shed. (pause) Report first action time.",
+          "next": "N_READBACK_OPS"
+        },
+        {
+          "id": "N_READBACK_OPS",
+          "type": "npc_line",
+          "speakerId": "OPS_OPERATOR",
+          "text": "Alright. (pause) We\u2019ve got attribution. (pause) Go to the console when you\u2019re ready.",
+          "next": "N_COMMIT_END"
+        },
+        {
+          "id": "N_PRINT_ACK_PLAYER",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Acknowledged. Initiating load-shed response.",
+          "next": "N_PRINT_ACK_UTIL"
+        },
+        {
+          "id": "N_PRINT_ACK_UTIL",
+          "type": "npc_line",
+          "speakerId": "UTIL_DISPATCH",
+          "text": "Logged. Timestamp 14:17:33. (pause) Confirm you will maintain stability. (pause) And send a record ID when available.",
+          "next": "N_PRINT_ACK_OPS"
+        },
+        {
+          "id": "N_PRINT_ACK_OPS",
+          "type": "npc_line",
+          "speakerId": "OPS_OPERATOR",
+          "text": "Say \u201cstability maintained.\u201d Then we move. (pause) If you have the header serial, use it. (pause) \u201cAttributable\u201d wins.",
+          "next": "N_COMMIT_END"
+        },
+        {
+          "id": "N_REVIEW_NARR",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The demand event detail page is mostly disclaimers: \u201cbest effort,\u201d \u201cno guarantee,\u201d \u201coperator responsible.\u201d (pause) The shed target is clear; the definitions are not.",
+          "next": "N_REVIEW_OPS"
+        },
+        {
+          "id": "N_REVIEW_OPS",
+          "type": "npc_line",
+          "speakerId": "OPS_OPERATOR",
+          "text": "Yeah\u2014disclaimers wall to wall. (pause) Do the shed. (pause) Annotate what you did, then move on.",
+          "next": "N_REVIEW_MENU"
+        },
+        {
+          "id": "N_REVIEW_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_ACK",
+              "text": "talk: Acknowledge demand event.",
+              "conditions": [],
+              "checks": [],
+              "effects": [],
+              "next": "N_ACK_PLAYER"
+            },
+            {
+              "id": "C_PRINT",
+              "text": "use: Print event banner.",
+              "conditions": [],
+              "checks": [],
+              "effects": [],
+              "next": "N_PRINT_NARR"
+            },
+            {
+              "id": "C_BACK",
+              "text": "leave: Return to alarm panel menu.",
+              "conditions": [],
+              "checks": [],
+              "effects": [],
+              "next": "N_RED_BACK_TO_MAIN"
+            }
+          ]
+        },
+        {
+          "id": "N_STEP_AWAY_NARR",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You step back. The demand event banner stays up, patiently escalating itself in the background.",
+          "next": "N_STEP_AWAY_OPS"
+        },
+        {
+          "id": "N_STEP_AWAY_OPS",
+          "type": "npc_line",
+          "speakerId": "OPS_OPERATOR",
+          "text": "Walk away if you need a second. (pause) Timestamp still runs. (pause)\nWhen you're ready, answer Dispatch. (pause) Keep it record-clean."
+        },
+        {
+          "id": "N_RED_BACK_TO_MAIN",
+          "type": "redirect",
+          "target": "N_MAIN_MENU"
+        },
+        {
+          "id": "N_COMMIT_END",
+          "type": "end",
+          "outcomeId": "grid_requests_load_shedding",
+          "effects": [
+            {
+              "key": "ops.loadSheddingEventActive",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "objectives.rerouteBreakers",
+              "action": "set",
+              "value": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

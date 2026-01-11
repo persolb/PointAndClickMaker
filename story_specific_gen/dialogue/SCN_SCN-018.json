@@ -61,7 +61,7 @@
           "id": "N007_LEGAL_SCOPE",
           "type": "npc_line",
           "speakerId": "OLEA_LEGAL",
-          "text": "\u201cClosure activities.\u201d (pause) Fine. (pause) I can put paper in place. (pause) I\u2019m not signing off on field work. (pause) Don\u2019t use \u201cauthorize\u201d on my line.",
+          "text": "\u201cClosure activities.\u201d (pause) Okay. (pause) I\u2019ll get the paper moving. (pause) I\u2019m not signing anything that looks like fieldwork. (pause) And don\u2019t say \u201cauthorize\u201d on my line.",
           "next": "N010_MAIN_MENU"
         },
         {
@@ -95,7 +95,7 @@
           "id": "N020_AUTH_REBUKE",
           "type": "npc_line",
           "speakerId": "OLEA_LEGAL",
-          "text": "I can\u2019t give you \u201cauthorization to enter.\u201d (pause) That wording sounds like we assessed conditions. (pause) We haven\u2019t. (pause) I can issue a Work Order\u2014 (pause) tight scope; one asset; closure documentation. (pause) That\u2019s what I\u2019m allowed to sign.",
+          "text": "I can\u2019t give you \u201cauthorization to enter.\u201d (pause) That makes it sound like we checked conditions. (pause) We haven\u2019t. (pause) What I can sign is a Work Order\u2014 (pause) tight scope: one asset and closure documentation. (pause) That\u2019s what I\u2019m allowed to sign.",
           "next": "N021_REPHRASE_MENU"
         },
         {
@@ -139,7 +139,7 @@
           "id": "N022_ALLOWED_SAY",
           "type": "npc_line",
           "speakerId": "OLEA_LEGAL",
-          "text": "Say you\u2019re \u201con site for closure documentation.\u201d (pause)\nDon\u2019t say \u201cinvestigating.\u201d (pause)\nDon\u2019t say \u201cevaluating anomalous conditions.\u201d (pause)\nDon\u2019t say \u201cconfirming safety.\u201d (pause)\nDon\u2019t put those words in your mouth. (pause)\nThat\u2019s baseline talk. (pause)\nWe\u2019ve got a checklist. (pause)\nWe\u2019ve got a funding deadline. (pause)\nThat\u2019s it.",
+          "text": "Say you\u2019re \u201con site for closure documentation.\u201d (pause)\nKeep \u201cinvestigating\u201d out. (pause)\nSame with \u201cevaluating anomalous conditions.\u201d (pause)\nSame with \u201cconfirming safety.\u201d (pause)\nDon\u2019t put those words in your mouth. (pause)\nStick to the checklist. (pause)\nFunding deadline\u2019s on us. (pause)\nThat\u2019s it.",
           "next": "N022B_ALLOWED_MENU"
         },
         {
@@ -168,14 +168,14 @@
           "id": "N023_COVERAGE",
           "type": "npc_line",
           "speakerId": "OLEA_LEGAL",
-          "text": "I can cover a narrow task (pause) on a specific asset. (pause) I\u2019m not giving you a blanket line (pause) that reads like we knew things. (pause) You want coverage? (pause) Keep it boring. (pause) Specific.",
+          "text": "I can cover one narrow task (pause) on one specific asset. (pause) I\u2019m not giving you a blanket line. (pause) It can't read like we saw it coming. (pause) You want coverage\u2014 (pause) keep it boring. (pause) Keep it specific.",
           "next": "N021_REPHRASE_MENU"
         },
         {
           "id": "N030_WRITING",
           "type": "npc_line",
           "speakerId": "OLEA_LEGAL",
-          "text": "A Work Order. (pause) A waiver. (pause) A memo saying the call happened. (pause) I\u2019m not writing that. (pause) Nothing that reads like we predicted outcomes. (pause) Or endorsed conditions. (pause) Or \u201cauthorized entry.\u201d (pause) That turns a building into a promise.",
+          "text": "A Work Order. (pause) A waiver. (pause) A memo: the call happened. (pause) I\u2019m not writing anything (pause) that says we predicted outcomes or endorsed conditions (pause) or \u201cauthorized entry.\u201d (pause) That turns a building into a promise.",
           "next": "N031_WRITING_MENU"
         },
         {
@@ -204,14 +204,14 @@
           "id": "N040_WORKORDER_DIRECT",
           "type": "npc_line",
           "speakerId": "OLEA_LEGAL",
-          "text": "Good. Work Order I can do. (pause) It has to hang off an asset. (pause) Give me the asset ID.",
+          "text": "Alright. Work Order I can do. (pause) It has to hang off an asset. (pause) Give me the asset ID.",
           "next": "N060_ASSET_MENU"
         },
         {
           "id": "N050_NEED_ASSET_ID",
           "type": "npc_line",
           "speakerId": "OLEA_LEGAL",
-          "text": "I can\u2014once I have the asset identifier. (pause) The one on the register. (pause) Save me the nickname, the acronym. (pause) People freestyle this part. (pause) Then we spend six months. (pause) Calling it a \u201cclerical error.\u201d",
+          "text": "I can\u2014once I have the asset identifier. (pause) The one in the register. (pause) Save me the nickname, the acronym. (pause) People freestyle this part. (pause) Then we spend six months (pause) calling it a \u201cclerical error.\u201d",
           "next": "N060_ASSET_MENU"
         },
         {
@@ -270,7 +270,7 @@
           "id": "N070_SP01_CONFIRM",
           "type": "npc_line",
           "speakerId": "OLEA_LEGAL",
-          "text": "SP-zero-one. Good. (pause)\nI\u2019m issuing a Work Order. (pause)\nClosure-support only. (pause)\nVerification and documentation only. (pause)\nPer the standard retirement checklist. (pause)\nNo deviation. (pause)\nDon\u2019t write anything that sounds like \u201ctesting\u201d. (pause)\nI\u2019ll fax it to the facility\u2019s posted number.",
+          "text": "SP-zero-one. Good. (pause)\nI\u2019m issuing the Work Order now. (pause)\nClosure-support only\u2014verification and documentation. (pause)\nStandard retirement checklist. (pause)\nNo deviation. (pause)\nDon\u2019t write anything that sounds like \u201ctesting.\u201d (pause)\nI\u2019ll fax it to the facility\u2019s posted number.",
           "next": "N071_CLOSE_MENU"
         },
         {
@@ -294,42 +294,42 @@
           "id": "N072_REFNUM",
           "type": "npc_line",
           "speakerId": "OLEA_LEGAL",
-          "text": "Reference number\u2019s WO-RET-SP01. (pause) Write that. (pause) Don\u2019t write \u201cauthorized.\u201d (pause) Write: \u201cWork Order issued for SP-01 closure documentation.\u201d",
+          "text": "Reference number\u2019s WO-RET-SP01. (pause) Write that. (pause) Leave \u201cauthorized\u201d out. (pause) Write: \u201cWork Order issued for SP-01 closure documentation.\u201d",
           "next": "N800_END_WITH_ID"
         },
         {
           "id": "N073_SEND",
           "type": "npc_line",
           "speakerId": "OLEA_LEGAL",
-          "text": "I\u2019m sending it. (pause)\nAnd don\u2019t call it \u201cauthorization.\u201d (pause)\nCall it: \u201cWork Order issued for SP-01 (pause) closure documentation.\u201d (pause)\nGoodbye.",
+          "text": "I\u2019m sending it. (pause)\nDon\u2019t call it \u201cauthorization.\u201d (pause)\nCall it: \u201cWork Order issued for SP-01 (pause) closure documentation.\u201d (pause)\nBye.",
           "next": "N800_END_WITH_ID"
         },
         {
           "id": "N080_NO_ID",
           "type": "npc_line",
           "speakerId": "OLEA_LEGAL",
-          "text": "Then I can\u2019t issue anything. (pause)\nWrong asset on the Work Order (pause)\nturns \u201ccoverage\u201d into a discrepancy. (pause)\nDiscrepancies grow legs. (pause)\nFind the plaque. (pause)\nFind the posted register. (pause)\nFind the asset tag\u2014whatever passes for ID. (pause)\nout there\u2014and call me back.",
+          "text": "Then I can\u2019t issue anything. (pause)\nWrong asset on the Work Order (pause)\nturns \u201ccoverage\u201d into a discrepancy. (pause)\nAnd discrepancies grow legs. (pause)\nFind the plaque. (pause)\nFind the posted register. (pause)\nFind the asset tag. (pause)\nWhatever passes for ID out there. (pause)\nCall me back.",
           "next": "N810_END_WITHOUT_ID"
         },
         {
           "id": "N090_LOOKUP_REFUSAL",
           "type": "npc_line",
           "speakerId": "OLEA_LEGAL",
-          "text": "I\u2019m not your registry service. (pause)\nYes. There is an Asset Register. (pause)\nNo. I will not read it on record. (pause)\nNo later fight over what I knew. (pause)\nOr when. (pause)\nYou are onsite. Use the onsite label. (pause)\nCall me with the plaque text.",
+          "text": "I\u2019m not your registry service. (pause)\nYeah there\u2019s an Asset Register. (pause)\nNo, I\u2019m not reading it on record. (pause)\nI\u2019m not buying a later fight over knowledge\u2014 (pause)\nor when. (pause)\nYou\u2019re onsite. Use the onsite label. (pause)\nCall me with the plaque text.",
           "next": "N810_END_WITHOUT_ID"
         },
         {
           "id": "N100_PERSUADE_PASS",
           "type": "npc_line",
           "speakerId": "OLEA_LEGAL",
-          "text": "Cute. No. (pause)\n\u201cProvisional\u201d doesn\u2019t land. (pause)\nNowhere I can file it. (pause)\nIf you need something to say (pause)\nright now, use this: (pause)\n\u201cI am conducting site preservation and closure documentation. (pause)\nPending issuance of a Work Order.\u201d (pause)\nBring me the asset ID. (pause)\nI\u2019ll issue the actual instrument.",
+          "text": "Cute. (pause) No. (pause)\n\u201cProvisional\u201d doesn\u2019t land\u2014 (pause)\nnowhere to file it. (pause)\nNeed something to say now, use this: (pause)\n\u201cI am conducting site preservation and closure documentation. (pause)\nPending issuance of a Work Order.\u201d (pause)\nBring me the asset ID. (pause)\nI\u2019ll issue the actual instrument.",
           "next": "N810_END_WITHOUT_ID"
         },
         {
           "id": "N101_PERSUADE_FAIL",
           "type": "npc_line",
           "speakerId": "OLEA_LEGAL",
-          "text": "No. (pause) I can give you wording. (pause) I can\u2019t give you instruments (pause) without an identifier. (pause) Call back with the ID. (pause) The system likes specifics. (pause) It hates rush jobs.",
+          "text": "No. (pause) I can give you wording. (pause) I can\u2019t issue instruments (pause) without an identifier. (pause) Call back with the ID. (pause) The system only behaves with specifics. (pause) Rush jobs get ugly.",
           "next": "N810_END_WITHOUT_ID"
         },
         {

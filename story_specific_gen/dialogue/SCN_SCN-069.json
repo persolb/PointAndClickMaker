@@ -148,20 +148,7 @@
           "id": "N_CHECKLIST_01",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "A laminated checklist hangs beside the panel. (pause) Edges browned from fluorescent light. (pause) Line 4 reads: \u201cCross-check identifiers, dates, and recurring charges.\u201d (pause) Line 5 reads: \u201cDo not editorialize. Editorialization is discoverable.\u201d (pause) In pen someone added: \u201cIf it feels like a story it isn\u2019t evidence.\u201d (pause) The handwriting gets smaller on the last words. (pause) Like it\u2019s trying not to be quoted.",
-          "next": "PC_CHECKLIST_BACK"
-        },
-        {
-          "id": "PC_CHECKLIST_BACK",
-          "type": "player_choice",
-          "speakerId": "PLAYER",
-          "choices": [
-            {
-              "id": "LEAVE_BACK",
-              "text": "leave: Back to the panel.",
-              "next": "PC_MAIN_MENU"
-            }
-          ]
+          "text": "A laminated checklist hangs beside the panel. (pause) Edges browned from fluorescent light. (pause) Line 4 reads: \u201cCross-check identifiers, dates, and recurring charges.\u201d (pause) Line 5 reads: \u201cDo not editorialize. Editorialization is discoverable.\u201d (pause) In pen someone added: \u201cIf it feels like a story it isn\u2019t evidence.\u201d (pause) The handwriting gets smaller on the last words. (pause) Like it\u2019s trying not to be quoted."
         },
         {
           "id": "N_TEST_01",
@@ -210,20 +197,7 @@
           "id": "N_SERVICE_DENIED_01",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The panel requests an authorization code you do not possess. (pause) It offers a helpful explanation: \u201cUNAUTHORIZED USE CREATES DISCOVERABLE INTENT.\u201d",
-          "next": "PC_SERVICE_DENIED_BACK"
-        },
-        {
-          "id": "PC_SERVICE_DENIED_BACK",
-          "type": "player_choice",
-          "speakerId": "PLAYER",
-          "choices": [
-            {
-              "id": "LEAVE_BACK",
-              "text": "leave: \u201cFine.\u201d",
-              "next": "PC_MAIN_MENU"
-            }
-          ]
+          "text": "The panel requests an authorization code you do not possess. (pause) It offers a helpful explanation: \u201cUNAUTHORIZED USE CREATES DISCOVERABLE INTENT.\u201d"
         },
         {
           "id": "N_COMPLIANCE_01",
@@ -409,20 +383,7 @@
           "id": "N_FAX_01",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "You lift the handset and feed the first page like backing up your own conscience. (pause)\nThe machine whines. (pause)\nThe tray spits a status slip. Reassuring and useless. (pause)\n\u201cTRANSMISSION PARTIAL \u2014 RECEIPT SUCCESSFUL.\u201d (pause)\nYou did not create redundancy. You created another version of events.",
-          "next": "PC_FAX_BACK"
-        },
-        {
-          "id": "PC_FAX_BACK",
-          "type": "player_choice",
-          "speakerId": "PLAYER",
-          "choices": [
-            {
-              "id": "LEAVE_BACK",
-              "text": "leave: Put the handset back.",
-              "next": "PC_MAIN_MENU"
-            }
-          ]
+          "text": "You lift the handset and feed the first page like backing up your own conscience. (pause)\nThe machine whines. (pause)\nThe tray spits a status slip. Reassuring and useless. (pause)\n\u201cTRANSMISSION PARTIAL \u2014 RECEIPT SUCCESSFUL.\u201d (pause)\nYou did not create redundancy. You created another version of events."
         },
         {
           "id": "N_LEAVE_01",

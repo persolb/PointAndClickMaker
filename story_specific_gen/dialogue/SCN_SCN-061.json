@@ -400,42 +400,42 @@
           "id": "N511_RADIO_BUDGET_1",
           "type": "npc_line",
           "speakerId": "OLEA_BUDGET",
-          "text": "\u2026don\u2019t put \u201creturn\u201d in there. (pause)\nIt\u2019s\u2014 it\u2019s a reversion to the prior state. (pause)\nFunding chases the wording\u2014",
+          "text": "\u2026don\u2019t type \u201creturn.\u201d (pause)\nUse \u201creversion to the prior state.\u201d (pause)\nFunding follows whatever ends up in that line\u2014",
           "next": "N512_RADIO_LEGAL_1"
         },
         {
           "id": "N512_RADIO_LEGAL_1",
           "type": "npc_line",
           "speakerId": "OLEA_LEGAL",
-          "text": "\u201cReturn\u201d reads like you left. (pause)\nIf you left then somebody consented. (pause)\nIf somebody consented then somebody reviewed. (pause)\nWe did not\u2014 we\u2019re not on record\u2014 (pause)",
+          "text": "\u201cReturn\u201d reads like you left. (pause)\nIf the record says you left, somebody consented. (pause)\nThen it looks like somebody reviewed. (pause)\nWe did not\u2014 we\u2019re not on record\u2014 (pause)",
           "next": "N513_RADIO_BUDGET_2"
         },
         {
           "id": "N513_RADIO_BUDGET_2",
           "type": "npc_line",
           "speakerId": "OLEA_BUDGET",
-          "text": "I\u2019m not doing verb court. (pause)\nCompletion bonus ties to presence at closure site\u2014 (pause)\nso we define the site as\u2014",
+          "text": "I\u2019m not doing verb court. (pause)\nCompletion bonus pays only if we\u2019re \u201cpresent.\u201d (pause)\nAt closure, the site must read as\u2014",
           "next": "N514_RADIO_LEGAL_2"
         },
         {
           "id": "N514_RADIO_LEGAL_2",
           "type": "npc_line",
           "speakerId": "OLEA_LEGAL",
-          "text": "Call it \u201coccupied for documentation.\u201d (pause) Don\u2019t put \u201cabandoned\u201d or \u201cleft\u201d in there. (pause) \u201cAbandoned\u201d invites a third party to claim\u2014",
+          "text": "Call it \u201coccupied for documentation.\u201d (pause) Keep \u201cabandoned\u201d and \u201cleft\u201d out. (pause) \u201cAbandoned\u201d invites a third party to claim\u2014",
           "next": "N515_RADIO_BUDGET_3"
         },
         {
           "id": "N515_RADIO_BUDGET_3",
           "type": "npc_line",
           "speakerId": "OLEA_BUDGET",
-          "text": "Third party? (pause)\nThere isn\u2019t one. It\u2019s municipal infrastructure. (pause)\nIt\u2019s ours by default\u2014",
+          "text": "Third party? (pause)\nWho. It\u2019s municipal infrastructure. (pause)\nIt\u2019s ours by default\u2014",
           "next": "N516_RADIO_LEGAL_3"
         },
         {
           "id": "N516_RADIO_LEGAL_3",
           "type": "npc_line",
           "speakerId": "OLEA_LEGAL",
-          "text": "\u201cBy default\u201d won\u2019t hold up. (pause) Not as chain of title. (pause)\nAnd stop saying \u201cstill.\u201d (pause) \u201cStill operating\u201d reads like we chose. (pause) to keep it\u2014",
+          "text": "\u201cBy default\u201d won\u2019t hold up. (pause) Not as chain of title. (pause)\nAnd stop saying \u201cstill.\u201d (pause) \u201cStill operating\u201d reads like we chose (pause)\nto keep it\u2014",
           "next": "N517_CUT"
         },
         {

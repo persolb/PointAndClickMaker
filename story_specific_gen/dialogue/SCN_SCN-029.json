@@ -270,27 +270,13 @@
           "id": "N_POSTMARKS",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The postmarks don\u2019t match any local carrier mark you\u2019ve seen. (pause) The dates have an extra digit, like time needed a longer field. (pause) Someone has written \u201cDO NOT LICK\u201d on the top envelope. (pause) Underlined.",
-          "next": "N_ENVELOPE_BACK"
+          "text": "The postmarks don\u2019t match any local carrier mark you\u2019ve seen. (pause) The dates have an extra digit, like time needed a longer field. (pause) Someone has written \u201cDO NOT LICK\u201d on the top envelope. (pause) Underlined."
         },
         {
           "id": "N_UNSEALED",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "There\u2019s no instruction sheet. (pause) Just a sticky note: \u201cSeal only after attaching proof.\u201d (pause) Proof of what isn\u2019t specified. (pause) That\u2019s its own kind of policy.",
-          "next": "N_ENVELOPE_BACK"
-        },
-        {
-          "id": "N_ENVELOPE_BACK",
-          "type": "player_choice",
-          "speakerId": "PLAYER",
-          "choices": [
-            {
-              "id": "C_LEAVE_BACK_MAIN_3",
-              "text": "leave (back)",
-              "next": "N_MAIN_MENU"
-            }
-          ]
+          "text": "There\u2019s no instruction sheet. (pause) Just a sticky note: \u201cSeal only after attaching proof.\u201d (pause) Proof of what isn\u2019t specified. (pause) That\u2019s its own kind of policy."
         },
         {
           "id": "N_BARCODE_DESC",
@@ -325,27 +311,13 @@
           "id": "N_READ_NOTICE",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "It outlines a review process that assumes your facility is \u201coperationally adjacent\u201d to something else. (pause) It never says what. (pause) At the bottom: \u201cFailure to respond constitutes acknowledgement of receipt.\u201d (pause) Someone circled \u201cacknowledgement\u201d like that\u2019s the dangerous word.",
-          "next": "N_BARCODE_BACK"
+          "text": "It outlines a review process that assumes your facility is \u201coperationally adjacent\u201d to something else. (pause) It never says what. (pause) At the bottom: \u201cFailure to respond constitutes acknowledgement of receipt.\u201d (pause) Someone circled \u201cacknowledgement\u201d like that\u2019s the dangerous word."
         },
         {
           "id": "N_COMPARABLE",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The notice doesn\u2019t answer questions. It only defines what counts as an answer. (pause) There\u2019s a blank line labeled \u201cLocal Reference Facility.\u201d (pause) It\u2019s been left blank with confidence.",
-          "next": "N_BARCODE_BACK"
-        },
-        {
-          "id": "N_BARCODE_BACK",
-          "type": "player_choice",
-          "speakerId": "PLAYER",
-          "choices": [
-            {
-              "id": "C_LEAVE_BACK_MAIN_5",
-              "text": "leave (back)",
-              "next": "N_MAIN_MENU"
-            }
-          ]
+          "text": "The notice doesn\u2019t answer questions. It only defines what counts as an answer. (pause) There\u2019s a blank line labeled \u201cLocal Reference Facility.\u201d (pause) It\u2019s been left blank with confidence."
         },
         {
           "id": "N_LEAVE",

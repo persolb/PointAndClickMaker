@@ -53,20 +53,7 @@
           "id": "N_FIRE_NOTE",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "A laminated note under the fire panel: \u201cDO NOT RESET WITHOUT INCIDENT NUMBER.\u201d (pause)\nSomeone underlined INCIDENT and wrote \u201c(which one?)\u201d in pencil.",
-          "next": "N_BACK_FROM_FIRE"
-        },
-        {
-          "id": "N_BACK_FROM_FIRE",
-          "type": "player_choice",
-          "speakerId": "PLAYER",
-          "choices": [
-            {
-              "id": "C_BACK",
-              "text": "Leave: \u201cBack.\u201d",
-              "next": "N_MAIN_MENU"
-            }
-          ]
+          "text": "A laminated note under the fire panel: \u201cDO NOT RESET WITHOUT INCIDENT NUMBER.\u201d (pause)\nSomeone underlined INCIDENT and wrote \u201c(which one?)\u201d in pencil."
         },
         {
           "id": "N_PLACARD",
@@ -106,7 +93,7 @@
           "id": "N_LEGAL_HELLO",
           "type": "npc_line",
           "speakerId": "OLEA_LEGAL",
-          "text": "Legacy Energy Assets Legal. Consistency recording. Name, assignment.",
+          "text": "Legacy Energy Assets Legal. (pause) Consistency recording. (pause) Name, assignment.",
           "next": "N_LEGAL_PLAYER_01"
         },
         {
@@ -120,21 +107,21 @@
           "id": "N_LEGAL_02",
           "type": "npc_line",
           "speakerId": "OLEA_LEGAL",
-          "text": "Define \u201crouting.\u201d (pause) Say \u201cfile it for audit\u201d if that\u2019s it. (pause) If it\u2019s shifting liability don\u2019t say that. (pause) Not on a recorded line.",
+          "text": "What do you mean by \u201crouting.\u201d (pause) If it\u2019s \u201cfile it for audit\u201d say so. (pause) If it\u2019s shifting liability don\u2019t say that. (pause) Not on a recorded line.",
           "next": "N_LEGAL_PLAYER_02"
         },
         {
           "id": "N_LEGAL_PLAYER_02",
           "type": "npc_line",
           "speakerId": "PLAYER",
-          "text": "I have the memo draft. Need the cleanest sentence.",
+          "text": "I have memo draft. Need the cleanest sentence.",
           "next": "N_LEGAL_03"
         },
         {
           "id": "N_LEGAL_03",
           "type": "npc_line",
           "speakerId": "OLEA_LEGAL",
-          "text": "One sentence. (pause) Don\u2019t give me two. (pause) Use this: (pause) \u201cThis memo exists to document retirement (pause) processing communications and compliance hold handling (pause) for SOL\u2011EARTH\u2011LOCAL under municipal legacy infrastructure (pause) service class; continuous logging maintained; (pause) operator present on-site.\u201d (pause) And don\u2019t add \u201cstill.\u201d (pause) Don\u2019t add \u201cbecause.\u201d (pause) \u201cBecause\u201d is how you argue causality.",
+          "text": "One sentence. (pause) Don\u2019t give me two. (pause) Use this: (pause) \u201cThis memo exists to document retirement (pause) processing communications and compliance hold handling (pause) for SOL\u2011EARTH\u2011LOCAL under municipal legacy infrastructure (pause) service class; continuous logging maintained; (pause) operator present on-site.\u201d (pause) Don\u2019t add \u201cstill.\u201d (pause) Don\u2019t add \u201cbecause.\u201d (pause) \u201cBecause\u201d turns into a causality fight.",
           "next": "N_LEGAL_MENU"
         },
         {
@@ -175,39 +162,13 @@
           "id": "N_LEGAL_ACK",
           "type": "npc_line",
           "speakerId": "OLEA_LEGAL",
-          "text": "Good. (pause) Those are already in the world. (pause)\nHere\u2019s the acknowledgment\u2014keep it verb-limited: (pause)\n\u201cOLEA Legal acknowledges submission for category update (pause)\nas a retirement processing instrument, limited purpose; (pause)\naccepts licensed relationship classification (pause)\nfor SOL\u2011EARTH\u2011LOCAL under municipal legacy infrastructure service class; (pause)\nno admission of novelty; continuous logging maintained; (pause)\noperator present on-site.\u201d (pause)\nCopy it exactly. (pause)\nParaphrase it and it becomes yours.",
-          "next": "N_LEGAL_ACK_BACK"
-        },
-        {
-          "id": "N_LEGAL_ACK_BACK",
-          "type": "player_choice",
-          "speakerId": "PLAYER",
-          "choices": [
-            {
-              "id": "C_BACK",
-              "text": "Leave: \u201cBack.\u201d",
-              "next": "N_PLACARD_MENU"
-            }
-          ]
+          "text": "Good. (pause) Those are already in the world. (pause)\nHere\u2019s the acknowledgment\u2014keep it verb-limited: (pause)\n\u201cOLEA Legal acknowledges submission for category update (pause)\nas a retirement processing instrument, limited purpose; (pause)\naccepts licensed relationship classification (pause)\nfor SOL\u2011EARTH\u2011LOCAL under municipal legacy infrastructure service class; (pause)\nno admission of novelty; continuous logging maintained; (pause)\noperator present on-site.\u201d (pause)\nCopy it exactly. (pause)\nParaphrase it and you own it."
         },
         {
           "id": "N_LEGAL_NOREF",
           "type": "npc_line",
           "speakerId": "OLEA_LEGAL",
-          "text": "Then you don\u2019t have a chain. (pause) You\u2019ve got a feeling. (pause)\nFile the memo as \u201cretirement processing communication,\u201d sure\u2014 (pause) but don\u2019t staple my voice to it. (pause)\nFind the notice reference string. (pause) Find the Work Order number. (pause) Call me back. (pause)\nThis system runs on specifics. (pause) It chews up speed.",
-          "next": "N_LEGAL_NOREF_BACK"
-        },
-        {
-          "id": "N_LEGAL_NOREF_BACK",
-          "type": "player_choice",
-          "speakerId": "PLAYER",
-          "choices": [
-            {
-              "id": "C_BACK",
-              "text": "Leave: \u201cBack.\u201d",
-              "next": "N_PLACARD_MENU"
-            }
-          ]
+          "text": "Then you don\u2019t have a chain. (pause) You\u2019ve got a feeling. (pause)\nFile the memo as \u201cretirement processing communication,\u201d sure\u2014 (pause) just don\u2019t staple my voice to it. (pause)\nFind the notice reference string. (pause) Find the Work Order number. (pause) Call me back. (pause)\nThis system runs on specifics. (pause) Speed gets chewed up."
         },
         {
           "id": "N_BUDGET_HELLO",
@@ -227,7 +188,7 @@
           "id": "N_BUDGET_02",
           "type": "npc_line",
           "speakerId": "OLEA_BUDGET",
-          "text": "\u201cFiled\u201d is the word. (pause) Keep it. (pause)\nStay inside \u201cretirement deliverable.\u201d (pause)\nIf it reads like a finding, (pause)\nFinance calls it an obligation. (pause)\nI can\u2019t fund obligations.",
+          "text": "\u201cFiled.\u201d That\u2019s the word. (pause)\nStay inside \u201cretirement deliverable.\u201d (pause)\nIf it reads like a finding, (pause)\nFinance calls it an obligation. (pause)\nI can\u2019t fund obligations.",
           "next": "N_BUDGET_PLAYER_02"
         },
         {
@@ -241,7 +202,7 @@
           "id": "N_BUDGET_03",
           "type": "npc_line",
           "speakerId": "OLEA_BUDGET",
-          "text": "Records packet gets you defensibility. (pause)\nTube gets you plausible deniability. (pause)\nPacket\u2019s slower\u2014cheaper later. Tube\u2019s fast. (pause)\nAnd it tends to stick to you.",
+          "text": "Records packet gives you cover. (pause)\nTube gives you plausible deniability. (pause)\nPacket\u2019s slower\u2014cheaper later. Tube\u2019s fast. (pause)\nAnd it tends to stick to you.",
           "next": "N_BUDGET_MENU"
         },
         {
@@ -265,53 +226,27 @@
           "id": "N_BUDGET_COST",
           "type": "npc_line",
           "speakerId": "OLEA_BUDGET",
-          "text": "Use the retirement processing code. (pause)\nThe boring one. (pause)\nDon't make up a code. (pause)\nIt turns into a new program. (pause)\nThen somebody asks why we started a program.",
-          "next": "N_BUDGET_COST_BACK"
-        },
-        {
-          "id": "N_BUDGET_COST_BACK",
-          "type": "player_choice",
-          "speakerId": "PLAYER",
-          "choices": [
-            {
-              "id": "C_BACK",
-              "text": "Leave: \u201cBack.\u201d",
-              "next": "N_PLACARD_MENU"
-            }
-          ]
+          "text": "Use the retirement processing code. (pause)\nThe boring one. (pause)\nDon\u2019t make up a code. (pause)\nThat turns into a new program. (pause)\nThen somebody asks why we started a program."
         },
         {
           "id": "N_VM_01",
           "type": "npc_line",
           "speakerId": "CONTRACTOR_VM",
-          "text": "Hi. (pause) Field Interface Support for SECV legacy devices. (pause) If this is abnormal output (pause) or anomalous imaging (pause) or unexpected reflective behavior (pause) anything you\u2019d call \u201cnonstandard\u201d (pause) we can\u2019t cover it.",
+          "text": "Hi. (pause) You\u2019ve got Field-Interface Support for SECV legacy devices. (pause) If it\u2019s abnormal output (pause) anomalous imaging (pause) unexpected reflective behavior\u2014 (pause) anything you\u2019d call \u201cnonstandard,\u201d (pause) we can\u2019t cover it.",
           "next": "N_VM_02"
         },
         {
           "id": "N_VM_02",
           "type": "npc_line",
           "speakerId": "CONTRACTOR_VM",
-          "text": "We handle jams. (pause) Rollers. (pause) Trays. (pause) Manufacturer-listed error codes. (pause)\nFacilities / incidents / atmospheres / situations? (pause) Don\u2019t put those on this line. (pause)\nIf this is a service code, (pause) Authorization has to clear it. (pause)\nThanks for understanding. (pause) It\u2019s required.",
+          "text": "We handle jams. (pause) Rollers. (pause) Trays. (pause) Error codes the manufacturer actually lists. (pause)\nFacilities. Incidents. Atmospheres. Situations\u2014 (pause) don\u2019t put that on this line. (pause)\nIf it\u2019s a service code. (pause) Authorization has to clear it. (pause)\nThanks. (pause) It\u2019s required.",
           "next": "N_VM_03"
         },
         {
           "id": "N_VM_03",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "The voicemail ends like a door latch.\nThe exclusions are weirdly reusable.",
-          "next": "N_VM_BACK"
-        },
-        {
-          "id": "N_VM_BACK",
-          "type": "player_choice",
-          "speakerId": "PLAYER",
-          "choices": [
-            {
-              "id": "C_BACK",
-              "text": "Leave: \u201cBack.\u201d",
-              "next": "N_PLACARD_MENU"
-            }
-          ]
+          "text": "The voicemail ends like a door latch.\nThe exclusions are weirdly reusable."
         },
         {
           "id": "N_REC_BUZZ",
@@ -338,7 +273,7 @@
           "id": "N_REC_02",
           "type": "npc_line",
           "speakerId": "RECORDS_CLERK",
-          "text": "Memo packet. Sure. Still need a handle. (pause)\nTitle. References. Date. (pause)\nAnd your entitlement. Your name isn\u2019t last there.",
+          "text": "Memo packet, sure. (pause)\nStill need a handle. (pause)\nTitle. References. Date. (pause)\nAnd your entitlement\u2014your name won't be last there.",
           "next": "N_REC_MENU"
         },
         {
@@ -372,14 +307,14 @@
           "id": "N_REC_GIVE_TITLE",
           "type": "npc_line",
           "speakerId": "PLAYER",
-          "text": "\u201cRetirement Processing Communication \u2014 SOL\u2011EARTH\u2011LOCAL.\u201d\nReferences: WO-RET-SP01. MTA notice ref. Submission log.",
+          "text": "\u201cRetirement Processing Communication \u2014 SOL\u2011EARTH\u2011LOCAL.\u201d References: WO-RET-SP01. (pause) MTA notice ref. (pause) Submission log.",
           "next": "N_REC_03"
         },
         {
           "id": "N_REC_03",
           "type": "npc_line",
           "speakerId": "RECORDS_CLERK",
-          "text": "MTA reference\u2014slow.\nLog it wrong, it\u2019s mine forever.",
+          "text": "MTA reference\u2014slow. (pause)\nIf I log wrong, I\u2019m married to it.",
           "next": "N_REC_REF_MENU"
         },
         {
@@ -403,14 +338,14 @@
           "id": "N_REC_REF_SLOW",
           "type": "npc_line",
           "speakerId": "PLAYER",
-          "text": "[You read the reference string off the posted notice.]",
+          "text": "[You read the reference off the posted notice.]",
           "next": "N_REC_04"
         },
         {
           "id": "N_REC_04",
           "type": "npc_line",
           "speakerId": "RECORDS_CLERK",
-          "text": "Mm. Non-local compliance format. (pause) Those dashes aren\u2019t municipal. (pause) Good. Keeps me from writing a jurisdiction. (pause) Request goes in nouns. (pause) No verbs.",
+          "text": "Mm. Non-local compliance format. (pause)\nThose dashes aren\u2019t municipal. (pause)\nGood. I don\u2019t have to write a jurisdiction. (pause)\nRequest goes in nouns. (pause)\nNo verbs.",
           "next": "N_REC_NOUNS_MENU"
         },
         {
@@ -456,21 +391,21 @@
           "id": "N_REC_NOUNS_BASIC",
           "type": "npc_line",
           "speakerId": "PLAYER",
-          "text": "Retirement processing memo. Evidence packet. Compliance hold notice. Authority chain acknowledgment.",
+          "text": "Retirement processing memo. (pause) Evidence packet. (pause) Compliance hold notice. (pause) Authority chain acknowledgment.",
           "next": "N_REC_05"
         },
         {
           "id": "N_REC_NOUNS_LEGAL",
           "type": "npc_line",
           "speakerId": "PLAYER",
-          "text": "\u201cOLEA Legal acknowledges submission for category update as a retirement processing instrument, limited purpose; accepts licensed relationship classification for SOL\u2011EARTH\u2011LOCAL under municipal legacy infrastructure service class; no admission of novelty; continuous logging maintained; operator present on-site.\u201d",
+          "text": "OLEA Legal acknowledges the category update submission (pause) as a retirement processing instrument, limited purpose (pause) Licensed relationship classification accepted for SOL\u2011EARTH\u2011LOCAL (pause) under municipal legacy infrastructure service class (pause) No admission of novelty (pause) Continuous logging maintained (pause) Operator present on-site",
           "next": "N_REC_05"
         },
         {
           "id": "N_REC_05",
           "type": "npc_line",
           "speakerId": "RECORDS_CLERK",
-          "text": "Alright. (pause)\nThat\u2019s already on paper. (pause)\n\u201cAuthority chain.\u201d I can run it. (pause)\nKeep meaning off my counter. (pause)\n\nBilling needs a cost center. (pause)\nOr a charge code. (pause)\nChain-of-custody. Initial each page set. (pause)\nNo signatures. (pause)\nNo margin notes. (pause)\nWrite on it. (pause)\nYour writing becomes part of it. (pause)",
+          "text": "Alright. (pause)\nThat\u2019s already on paper. (pause)\n\u201cAuthority chain.\u201d I can run it. (pause)\nJust\u2014keep the interpretation off my counter. (pause)\n\nBilling needs a cost center. (pause)\nOr a charge code. (pause)\nChain-of-custody: initial each page set. (pause)\nNo signatures. (pause)\nNo margin notes. (pause)\nIf you write on it\u2014(pause)\u2014your writing becomes part of it.",
           "next": "N_REC_BILL_MENU"
         },
         {
@@ -501,7 +436,7 @@
           "id": "N_REC_06",
           "type": "npc_line",
           "speakerId": "RECORDS_CLERK",
-          "text": "Accepted. (pause)\nControlled packet. Copies only. (pause)\nReceipt line gets initials. Initials. (pause)\n\nIf you want tube routing say it now. (pause)\nIf it goes through the tube first (pause)\nand comes back a mess I\u2019m \u201cafter-the-fact.\u201d (pause)\nI\u2019m not wearing that.",
+          "text": "Accepted. (pause)\nControlled packet. Copies only. (pause)\nReceipt line gets initials. Initials. (pause)\n\nTube routing\u2014say it now. (pause)\nThrough the tube. Back a mess. (pause)\nI\u2019m after-the-fact. (pause)\nI\u2019m not taking that.",
           "next": "N_REC_COMMIT_MENU"
         },
         {
@@ -530,7 +465,7 @@
           "id": "N_REC_COMMIT_TUBE_01",
           "type": "npc_line",
           "speakerId": "RECORDS_CLERK",
-          "text": "Fine. (pause)\nI stamp the receipt. (pause)\nI log the release. (pause)\nI watch you seal the capsule. (pause)\nI need eyes on it. (pause)\nFor the log. (pause)\n\nDon\u2019t write on the capsule. (pause)\nPeople get cute. (pause)\nThen it ends up as an exhibit.",
+          "text": "Fine. (pause)\nI stamp the receipt. I log the release. (pause)\nI watch you seal the capsule. (pause)\nI need eyes on it for the log. (pause)\n\nAnd don\u2019t write on the capsule. (pause)\nPeople get cute. (pause)\nThen it winds up as an exhibit.",
           "next": "N_REC_COMMIT_TUBE_02"
         },
         {
@@ -544,77 +479,25 @@
           "id": "N_REC_PACKET_ONLY",
           "type": "npc_line",
           "speakerId": "RECORDS_CLERK",
-          "text": "Then you hand-carry. (pause)\nThat makes you chain-of-custody. (pause)\nDon\u2019t take it as a compliment.",
-          "next": "N_REC_PACKET_ONLY_BACK"
-        },
-        {
-          "id": "N_REC_PACKET_ONLY_BACK",
-          "type": "player_choice",
-          "speakerId": "PLAYER",
-          "choices": [
-            {
-              "id": "C_BACK",
-              "text": "Leave: \u201cBack.\u201d",
-              "next": "N_MAIN_MENU"
-            }
-          ]
+          "text": "Then you hand-carry. (pause)\nThat puts you on chain-of-custody. (pause)\nDon\u2019t get excited."
         },
         {
           "id": "N_REC_CATEGORY",
           "type": "npc_line",
           "speakerId": "RECORDS_CLERK",
-          "text": "Category is \u201cRetirement processing communication.\u201d (pause)\nDon\u2019t call it \u201cincident\u201d or \u201cinvestigation\u201d or \u201cfinding\u201d (pause)\non my counter. (pause)\nI\u2019m keeping the index clean.",
-          "next": "N_REC_CATEGORY_BACK"
-        },
-        {
-          "id": "N_REC_CATEGORY_BACK",
-          "type": "player_choice",
-          "speakerId": "PLAYER",
-          "choices": [
-            {
-              "id": "C_BACK_TO_NOUNS",
-              "text": "Leave: \u201cBack.\u201d",
-              "next": "N_REC_NOUNS_MENU"
-            }
-          ]
+          "text": "Category\u2019s \u201cRetirement processing communication.\u201d (pause)\nDon\u2019t say \u201cincident\u201d or \u201cinvestigation\u201d or \u201cfinding.\u201d (pause)\nNot on my counter. (pause)\nI\u2019m keeping the index clean."
         },
         {
           "id": "N_REC_TUBE_REQ",
           "type": "npc_line",
           "speakerId": "RECORDS_CLERK",
-          "text": "Use an existing destination code. (pause) Make one up. (pause) You create a paper department. (pause) Then I answer emails all week.",
-          "next": "N_REC_TUBE_REQ_BACK"
-        },
-        {
-          "id": "N_REC_TUBE_REQ_BACK",
-          "type": "player_choice",
-          "speakerId": "PLAYER",
-          "choices": [
-            {
-              "id": "C_BACK",
-              "text": "Leave: \u201cBack.\u201d",
-              "next": "N_REC_MENU"
-            }
-          ]
+          "text": "Use an existing destination code. (pause)\nDon\u2019t invent one. (pause)\nIf you do, you\u2019ve made a paper department. (pause)\nAnd I\u2019m answering emails all week."
         },
         {
           "id": "N_REC_STAMP",
           "type": "npc_line",
           "speakerId": "RECORDS_CLERK",
-          "text": "You want a stamp. (pause)\nI can do \u201creceived.\u201d (pause)\nI\u2019m not stamping anything that reads like approval. (pause)\nIf you ask me to explain the difference\u2014 (pause)\ndidn\u2019t hear you.",
-          "next": "N_REC_STAMP_BACK"
-        },
-        {
-          "id": "N_REC_STAMP_BACK",
-          "type": "player_choice",
-          "speakerId": "PLAYER",
-          "choices": [
-            {
-              "id": "C_BACK",
-              "text": "Leave: \u201cBack.\u201d",
-              "next": "N_REC_MENU"
-            }
-          ]
+          "text": "You want a stamp. (pause)\nI can do \u201creceived.\u201d (pause)\nI\u2019m not stamping anything that looks like approval. (pause)\nIf you want the difference\u2014 (pause)\nI didn\u2019t hear that."
         },
         {
           "id": "N_TUBE_INTRO",
@@ -680,20 +563,7 @@
           "id": "N_TUBE_DEST_REC",
           "type": "npc_line",
           "speakerId": "NARRATOR",
-          "text": "Destination clicks to RECORDS INTAKE, as if the building is trying to keep the story local.",
-          "next": "N_TUBE_DEST_REC_BACK"
-        },
-        {
-          "id": "N_TUBE_DEST_REC_BACK",
-          "type": "player_choice",
-          "speakerId": "PLAYER",
-          "choices": [
-            {
-              "id": "C_BACK",
-              "text": "Leave: \u201cBack.\u201d",
-              "next": "N_TUBE_MENU"
-            }
-          ]
+          "text": "Destination clicks to RECORDS INTAKE, as if the building is trying to keep the story local."
         },
         {
           "id": "N_MTA_NOTICE",
@@ -728,39 +598,13 @@
           "id": "N_MTA_DOCS",
           "type": "npc_line",
           "speakerId": "MTA_CONTACT",
-          "text": "Proof of authorized standing (pause) for the requested transition. (pause)\nProof of service class eligibility (pause) for SOL\u2011EARTH\u2011LOCAL (pause) under current conditions. (pause)\nProof of operator-of-record presence (pause) at the endpoint. (pause)\nNo speculating on cause. (pause)\nNo narrative. (pause)\nNarrative creates jurisdiction.",
-          "next": "N_MTA_BACK_01"
-        },
-        {
-          "id": "N_MTA_BACK_01",
-          "type": "player_choice",
-          "speakerId": "PLAYER",
-          "choices": [
-            {
-              "id": "C_BACK",
-              "text": "Leave: \u201cBack.\u201d",
-              "next": "N_MTA_MENU"
-            }
-          ]
+          "text": "Proof of authorized standing (pause)\nfor the requested transition. (pause)\nProof of service class eligibility (pause)\nfor SOL\u2011EARTH\u2011LOCAL (pause)\nunder current conditions. (pause)\nProof of operator-of-record presence (pause)\nat the endpoint. (pause)\nNo speculating on cause. (pause)\nNo narrative. (pause)\nIf it reads narrative, it becomes jurisdiction."
         },
         {
           "id": "N_MTA_FRAMING",
           "type": "npc_line",
           "speakerId": "MTA_CONTACT",
-          "text": "Minimal path available. (pause) Reason phrase on record. (pause) Affirm continuous logging. (pause) State operator of record is physically present. (pause) Submit under retirement processing. (pause) Do not narrate cause. (pause) Queue position maintained. (pause) Processing window active.",
-          "next": "N_MTA_BACK_02"
-        },
-        {
-          "id": "N_MTA_BACK_02",
-          "type": "player_choice",
-          "speakerId": "PLAYER",
-          "choices": [
-            {
-              "id": "C_BACK",
-              "text": "Leave: \u201cBack.\u201d",
-              "next": "N_MTA_MENU"
-            }
-          ]
+          "text": "Minimal path available. (pause)\nGet the reason phrase on record. (pause)\nAffirm continuous logging. (pause)\nState operator of record is physically present. (pause)\nSubmit under retirement processing. (pause)\nDon\u2019t narrate cause. (pause)\nQueue position maintained. (pause)\nProcessing window active."
         },
         {
           "id": "END_EXECUTE",

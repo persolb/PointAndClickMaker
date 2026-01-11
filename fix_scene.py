@@ -858,7 +858,7 @@ def apply_missing_trigger_logic():
 
 
 def report_orphan_nodes():
-    # Report nodes that are not reachable from startNodeId or any node.next/choice.next.
+    # Report nodes that are not reachable from startNodeId via any next/check transitions.
     for path in sorted(DIALOGUE_DIR.glob("SCN_*.json")):
         dialogue = load_json(path)
         if not dialogue:
@@ -872,39 +872,104 @@ def report_orphan_nodes():
             nodes = graph.get("nodes", [])
             if not isinstance(nodes, list):
                 continue
-            node_ids = {n.get("id") for n in nodes if isinstance(n, dict) and n.get("id")}
-            incoming = set()
-            start_id = graph.get("startNodeId")
-            if isinstance(start_id, str):
-                incoming.add(start_id)
+            leave_only_ids = set()
             for node in nodes:
                 if not isinstance(node, dict):
                     continue
-                next_id = node.get("next")
-                if isinstance(next_id, str):
-                    incoming.add(next_id)
-                on_pass = node.get("onPassNext")
-                if isinstance(on_pass, str):
-                    incoming.add(on_pass)
-                on_fail = node.get("onFailNext")
-                if isinstance(on_fail, str):
-                    incoming.add(on_fail)
-                for choice in node.get("choices", []) if isinstance(node.get("choices"), list) else []:
-                    if not isinstance(choice, dict):
+                choices = node.get("choices", [])
+                if not isinstance(choices, list) or not choices:
+                    continue
+                texts = [
+                    c.get("text", "") for c in choices if isinstance(c, dict)
+                ]
+                if texts and all(str(t).strip().lower().startswith("leave") for t in texts):
+                    graph_id = graph.get("id") or "UNKNOWN_GRAPH"
+                    node_id = node.get("id") or "UNKNOWN_NODE"
+                    print(f"All-leave choices in {path.name} ({graph_id}) node {node_id}")
+                    if isinstance(node.get("id"), str):
+                        leave_only_ids.add(node["id"])
+            if leave_only_ids:
+                graph["nodes"] = [
+                    n for n in nodes
+                    if not (isinstance(n, dict) and n.get("id") in leave_only_ids)
+                ]
+                nodes = graph.get("nodes", [])
+                for node in nodes:
+                    if not isinstance(node, dict):
                         continue
-                    next_id = choice.get("next")
-                    if isinstance(next_id, str):
-                        incoming.add(next_id)
-                    on_pass = choice.get("onPassNext")
-                    if isinstance(on_pass, str):
-                        incoming.add(on_pass)
-                    on_fail = choice.get("onFailNext")
-                    if isinstance(on_fail, str):
-                        incoming.add(on_fail)
-            orphans = sorted(node_ids - incoming)
+                    for key in ("next", "onPassNext", "onFailNext"):
+                        if node.get(key) in leave_only_ids:
+                            node.pop(key, None)
+                    choices = node.get("choices", [])
+                    if isinstance(choices, list):
+                        for choice in choices:
+                            if not isinstance(choice, dict):
+                                continue
+                            for key in ("next", "onPassNext", "onFailNext"):
+                                if choice.get(key) in leave_only_ids:
+                                    choice.pop(key, None)
+            node_ids = {n.get("id") for n in nodes if isinstance(n, dict) and n.get("id")}
+            node_by_id = {
+                n.get("id"): n for n in nodes if isinstance(n, dict) and n.get("id")
+            }
+            missing_refs = []
+            start_id = graph.get("startNodeId")
+            visited = set()
+            stack = [start_id] if isinstance(start_id, str) else []
+            while stack:
+                node_id = stack.pop()
+                if node_id in visited:
+                    continue
+                visited.add(node_id)
+                node = node_by_id.get(node_id)
+                if not isinstance(node, dict):
+                    continue
+                for key in ("next", "onPassNext", "onFailNext"):
+                    next_id = node.get(key)
+                    if isinstance(next_id, str) and next_id not in visited:
+                        stack.append(next_id)
+                choices = node.get("choices", [])
+                if isinstance(choices, list):
+                    for choice in choices:
+                        if not isinstance(choice, dict):
+                            continue
+                        for key in ("next", "onPassNext", "onFailNext"):
+                            next_id = choice.get(key)
+                            if isinstance(next_id, str) and next_id not in visited:
+                                stack.append(next_id)
+            for node in nodes:
+                if not isinstance(node, dict):
+                    continue
+                for key in ("next", "onPassNext", "onFailNext"):
+                    if isinstance(node.get(key), str) and node.get(key) not in node_ids:
+                        missing_refs.append((node.get("id"), key, node.get(key)))
+                        node.pop(key, None)
+                choices = node.get("choices", [])
+                if isinstance(choices, list):
+                    for choice in choices:
+                        if not isinstance(choice, dict):
+                            continue
+                        for key in ("next", "onPassNext", "onFailNext"):
+                            if isinstance(choice.get(key), str) and choice.get(key) not in node_ids:
+                                missing_refs.append((node.get("id"), f"choice.{key}", choice.get(key)))
+                                choice.pop(key, None)
+            orphans = sorted(node_ids - visited)
             if orphans:
                 graph_id = graph.get("id") or "UNKNOWN_GRAPH"
                 print(f"Orphan nodes in {path.name} ({graph_id}): {', '.join(orphans)}")
+                graph["nodes"] = [
+                    n for n in nodes
+                    if not (isinstance(n, dict) and n.get("id") in orphans)
+                ]
+            if missing_refs:
+                graph_id = graph.get("id") or "UNKNOWN_GRAPH"
+                for node_id, key, target in missing_refs:
+                    print(
+                        f"Missing target in {path.name} ({graph_id}) "
+                        f"node {node_id} {key} -> {target}"
+                    )
+        with path.open("w", encoding="utf-8") as handle:
+            json.dump(dialogue, handle, indent=2, ensure_ascii=True)
 
 
 def collect_used_scene_ids(scenes_list):

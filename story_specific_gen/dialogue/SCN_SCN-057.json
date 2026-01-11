@@ -16,7 +16,7 @@
           "id": "N01_CLERK_NEXT",
           "type": "npc_line",
           "speakerId": "SCHED_CLERK",
-          "text": "Next\u2014come on.",
+          "text": "Next. Come on.",
           "next": "N02_MAIN_BASE"
         },
         {
@@ -98,14 +98,14 @@
           "id": "N11_CLERK_NARRATIVE_WARN",
           "type": "npc_line",
           "speakerId": "SCHED_CLERK",
-          "text": "Good. (pause) You\u2019re actually here. (pause) Keep the word \"slot\" out of it (pause) at the glass. (pause) You say it. (pause) I deny it. (pause) Then I have to write it. (pause) Once it\u2019s written (pause) it\u2019s a narrative. (pause) Narratives get audited like injuries.",
+          "text": "Good. (pause) You showed up. (pause)\nAt the glass. Keep \u201cslot\u201d out of it. (pause)\nYou say it. I deny it. (pause)\nThen I have to write it. (pause)\nOnce it\u2019s in writing, it\u2019s a narrative. (pause)\nNarratives get audited like injuries.",
           "next": "N12_CLERK_RECOVER_RULE"
         },
         {
           "id": "N12_CLERK_RECOVER_RULE",
           "type": "npc_line",
           "speakerId": "SCHED_CLERK",
-          "text": "If you\u2019ve got standing, you recover an asset. (pause) If you don\u2019t you take a swing. (pause) At recovery. (pause) Granting isn\u2019t on my menu. (pause) I record what survives.",
+          "text": "Standing means you recover an asset. (pause)\nNo asset, you\u2019re swinging at recovery. (pause)\nGranting isn\u2019t on my menu. (pause)\nI just record what survives.",
           "next": "N13_TALK_MENU"
         },
         {
@@ -141,14 +141,14 @@
           "id": "N15_CLERK_RECOVER_FROM",
           "type": "npc_line",
           "speakerId": "SCHED_CLERK",
-          "text": "From absence. (pause) Just the category. (pause) An unclaimed slot sits as abandoned property. (pause) Until somebody makes it legible again.",
+          "text": "From absence. (pause)\nJust the category name. (pause)\nUnclaimed slot sits like abandoned property. (pause)\nUntil someone makes it legible again.",
           "next": "N16_CLERK_RECOVER_WORDS"
         },
         {
           "id": "N16_CLERK_RECOVER_WORDS",
           "type": "npc_line",
           "speakerId": "SCHED_CLERK",
-          "text": "That\u2019s what the bin is for\u2014recovery. (pause) \u201cRequest\u201d lands in the minutes. (pause) A whole different way.",
+          "text": "That bin\u2019s for recovery. (pause)\n\u201cRequest\u201d goes into the minutes a different way.",
           "next": "N17_RECOVER_MENU"
         },
         {
@@ -184,7 +184,7 @@
           "id": "N19_CLERK_REQUEST_ANYWAY",
           "type": "npc_line",
           "speakerId": "SCHED_CLERK",
-          "text": "Then I deny it\u2014clean and simple. (pause) That denial won\u2019t clear you. (pause) It drags my name into your problem. (pause) I\u2019m not taking custody of that.",
+          "text": "Then I deny it. (pause)\nDoesn\u2019t clear you. (pause)\nIt just drags my name into your mess. (pause)\nI\u2019m not taking custody of that.",
           "next": "N02_MAIN_BASE"
         },
         {
@@ -198,7 +198,7 @@
           "id": "N31_CLERK_DO_CORRECTLY",
           "type": "npc_line",
           "speakerId": "SCHED_CLERK",
-          "text": "If you\u2019re doing this, do it clean. (pause) Bad recoveries turn into disputes. (pause) Disputes turn into meetings.",
+          "text": "If you\u2019re doing it, do it clean. (pause)\nBad recovery turns into a dispute. (pause)\nDispute turns into a meeting.",
           "next": "N32_BIN_OPEN_MENU"
         },
         {
@@ -236,14 +236,14 @@
           "id": "N34_CLERK_AMR_ACK",
           "type": "npc_line",
           "speakerId": "SCHED_CLERK",
-          "text": "AMR checks out. Standing. (pause)\nIt keeps the \u201ctheft\u201d label off you. (pause)\nOnly if you\u2019re holding an asset. (pause)\nNothing personal. (pause)\nThose words ruin careers.",
+          "text": "AMR checks out. Standing. (pause)\nIt keeps \u201ctheft\u201d out of the paperwork. (pause)\nAs long as you\u2019re holding an asset. (pause)\nNothing personal. (pause)\nThose words ruin careers.",
           "next": "N35_CLERK_ONE_SLEEVE"
         },
         {
           "id": "N35_CLERK_ONE_SLEEVE",
           "type": "npc_line",
           "speakerId": "SCHED_CLERK",
-          "text": "One sleeve. That\u2019s it. (pause) Take two. I have to write it down.",
+          "text": "One sleeve. (pause)\nTake two and I\u2019m writing it up.",
           "next": "N32_BIN_OPEN_MENU"
         },
         {
@@ -344,7 +344,7 @@
           "id": "N40D_CLERK_AUTH_BY",
           "type": "npc_line",
           "speakerId": "SCHED_CLERK",
-          "text": "By the chain. (pause) Yeah, it\u2019s circular. (pause) Keeps a name out your mouth.",
+          "text": "By the chain. (pause)\nYeah, it loops. (pause)\nKeeps names out of it.",
           "next": "N40B_LOOK_PRESS_MENU"
         },
         {
@@ -385,7 +385,7 @@
           "id": "N41_USE_PRESS_BLOCKED",
           "type": "npc_line",
           "speakerId": "SCHED_CLERK",
-          "text": "Stop. (pause)\nNo recovery sleeve on that press. (pause)\nNo transferred blank either. (pause)\nDo it like this. (pause)\nIt reads invented. (pause)\nInvented assets can look fine today. (pause)\nThen blow up in review. (pause)\nWhen you\u2019re gone. (pause)\nThen it comes back to me. (pause)\nAs a historical mess.",
+          "text": "Stop. (pause)\nNo recovery sleeve on that press. (pause)\nNo transferred blank either. (pause)\nStamp it like that. It reads invented. (pause)\nIt can look fine today. (pause)\nThen review lights it up after you\u2019re gone\u2014 (pause)\nand it crawls back to me. Historical mess.",
           "next": "N41B_BLOCK_MENU"
         },
         {
@@ -428,7 +428,7 @@
           "id": "N43_CLERK_DONT_HESITATE",
           "type": "npc_line",
           "speakerId": "SCHED_CLERK",
-          "text": "All the way down. (pause) Half an impression reads like fraud, (pause) even if it\u2019s just nerves.",
+          "text": "All the way down. (pause)\nHalf an impression reads like fraud. (pause)\nEven if it\u2019s just nerves.",
           "next": "N44_PRESS_MENU"
         },
         {
@@ -464,7 +464,7 @@
           "id": "N46_CLERK_ASSET_RECOVERED",
           "type": "npc_line",
           "speakerId": "SCHED_CLERK",
-          "text": "Asset recovered. (pause)\nThat\u2019s the word for the log. (pause)\nKeep it visible at checkpoints. (pause)\nVisibility does most of the work.",
+          "text": "Asset recovered. (pause)\nThat\u2019s what goes in the log. (pause)\nKeep it out and visible at checkpoints. (pause)\nVisibility does the heavy lifting.",
           "next": "END_COLLECT_SLOT_TOKEN"
         },
         {
@@ -478,7 +478,7 @@
           "id": "N51_CLERK_ASSET_EXPLAIN",
           "type": "npc_line",
           "speakerId": "SCHED_CLERK",
-          "text": "Time. (pause)\nTied to a lane and a tolerance band. (pause)\nAnd an expiry everyone calls \u201cflexible\u201d. (pause)\nUntil audit shows up. (pause)\nThis window adjudicates custody.",
+          "text": "Time. (pause)\nTied to a lane, a tolerance band. (pause)\nExpiry everybody calls \u201cflexible\u201d\u2026 (pause)\nuntil audit shows up. (pause)\nThis window\u2019s custody.",
           "next": "N52_ASSET_MENU"
         },
         {
@@ -514,7 +514,7 @@
           "id": "N54_CLERK_SO_RECOVER",
           "type": "npc_line",
           "speakerId": "SCHED_CLERK",
-          "text": "Yeah. (pause)\nClaim it. Present it. I record it. (pause)\nIf it holds up it moves. (pause)\nIf it doesn\u2019t it stops here. (pause)\nThat\u2019s the job.",
+          "text": "Yeah. (pause)\nClaim it. Present it. I record it. (pause)\nIf it holds up, it moves. (pause)\nIf it doesn\u2019t it stops here. (pause)\nThat\u2019s the job.",
           "next": "N52_ASSET_MENU"
         },
         {
@@ -528,14 +528,14 @@
           "id": "N61_CLERK_AMR_RULE",
           "type": "npc_line",
           "speakerId": "SCHED_CLERK",
-          "text": "AMR gives you standing. (pause) It doesn\u2019t open a slot. (pause) Not by itself. (pause) It keeps the system from calling custody \u201ctheft.\u201d",
+          "text": "AMR gives you standing. (pause)\nIt doesn\u2019t open a slot by itself. (pause)\nIt stops \u201ctheft\u201d replacing custody in the record.",
           "next": "N62_CLERK_DISCRETION"
         },
         {
           "id": "N62_CLERK_DISCRETION",
           "type": "npc_line",
           "speakerId": "SCHED_CLERK",
-          "text": "If you need something to hold, (pause) recover it. (pause) Don\u2019t ask me to turn your identity (pause) into property on my signature. (pause) That\u2019s discretion. (pause) Discretion leaves fingerprints.",
+          "text": "If you need something to hold\u2014 (pause)\nrecover it. (pause)\nDon\u2019t push me. (pause)\nDon\u2019t make your identity property on my signature. (pause)\nThat\u2019s discretion. (pause)\nDiscretion leaves fingerprints.",
           "next": "N63_AMR_MENU"
         },
         {
@@ -566,14 +566,14 @@
           "id": "N71_CLERK_RULE_1",
           "type": "npc_line",
           "speakerId": "SCHED_CLERK",
-          "text": "Rule doesn\u2019t forbid asking. (pause) It says: requests aren\u2019t claims. (pause) People skim, still try making it my problem.",
+          "text": "Rule doesn\u2019t forbid asking. (pause)\nIt won\u2019t let me treat requests as claims. (pause)\nPeople skim it, drop it on my desk.",
           "next": "N72_CLERK_RULE_2"
         },
         {
           "id": "N72_CLERK_RULE_2",
           "type": "npc_line",
           "speakerId": "SCHED_CLERK",
-          "text": "I can log a claim. (pause) A transfer. (pause) Or a recovery.\nEverything else becomes a story. (pause) And I\u2019m not filing stories.",
+          "text": "I can log a claim. (pause)\nA transfer. (pause)\nA recovery. (pause)\nAnything else turns into a story. (pause)\nI\u2019m not filing stories.",
           "next": "N73_RULE_MENU"
         },
         {
@@ -597,14 +597,14 @@
           "id": "N80_OLEA_PASS",
           "type": "npc_line",
           "speakerId": "SCHED_CLERK",
-          "text": "Standing noted. (pause) Still doesn\u2019t put an asset here. (pause) I escalate a request. (pause) It becomes a discretionary record. (pause) My name is on it. (pause) Then I own the precedent. (pause) Bring a claim. (pause) Or a transfer. (pause) Or a recovery. (pause) Then I can record without inventing.",
+          "text": "Standing noted. (pause)\nStill no asset here. (pause)\nI escalate a request. (pause)\nIt becomes a discretionary record. (pause)\nMy name\u2019s on it. (pause)\nThen I\u2019m married to the precedent. (pause)\nBring a claim. (pause)\nTransfer. (pause)\nRecovery. (pause)\nThen I can record it without inventing.",
           "next": "N02_MAIN_BASE"
         },
         {
           "id": "N81_OLEA_FAIL",
           "type": "npc_line",
           "speakerId": "SCHED_CLERK",
-          "text": "Declarations don\u2019t run this window. (pause) Show standing in-chain. (pause) Or I can\u2019t route anything up. (pause) Present a claimable asset. (pause) Or don\u2019t.",
+          "text": "Declarations don\u2019t run this window. (pause)\nShow standing in-chain or I can\u2019t route anything. (pause)\nPresent a claimable asset. (pause)\nOr don\u2019t.",
           "next": "N02_MAIN_BASE"
         },
         {

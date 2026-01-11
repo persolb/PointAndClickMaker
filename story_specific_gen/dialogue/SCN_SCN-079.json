@@ -40,7 +40,7 @@
           "id": "N_SECV_0",
           "next": "N_SECV_MENU",
           "speakerId": "SECV_OPERATOR",
-          "text": "SECV remote attendance. (pause) Recorded line quality and liability, (pause) you know the deal. (pause) Tell me what\u2019s happening. (pause) so nobody gets hurt. (pause) and I don\u2019t end up writing it up.",
+          "text": "SECV remote attendance. (pause) Recorded line\u0014quality, liability\u0014you know the deal. (pause) What\u0019s happening? (pause) Keep it tight so nobody gets hurt (pause) and I don\u0019t have to write it up.",
           "type": "npc_line"
         },
         {
@@ -87,21 +87,21 @@
           "id": "N_SECV_ONSITE_1",
           "next": "N_SECV_ONSITE_2",
           "speakerId": "SECV_OPERATOR",
-          "text": "Vestibule doesn\u2019t count as onsite in the system.",
+          "text": "Vestibule doesn\u0019t count as onsite in the system.",
           "type": "npc_line"
         },
         {
           "id": "N_SECV_ONSITE_2",
           "next": "N_SECV_ONSITE_3",
           "speakerId": "SECV_OPERATOR",
-          "text": "It\u2019s basically a buffer room. (pause) You\u2019re contained. (pause) Still not showing up as here.",
+          "text": "It\u0019s a buffer room. (pause) You\u0019re contained in there. (pause) System still doesn\u0019t see you as \u0018here\u0019.",
           "type": "npc_line"
         },
         {
           "id": "N_SECV_ONSITE_3",
           "next": "N_SECV_ONSITE_MENU",
           "speakerId": "SECV_OPERATOR",
-          "text": "Onsite means a timestamp (pause) and an accountable name (pause) in the log. (pause) If I can't tie door action to it, (pause) I can't open it.",
+          "text": "Onsite is a timestamp (pause) and a name the log will take. (pause) If I can't tie the door to that, (pause) I can't open it.",
           "type": "npc_line"
         },
         {
@@ -127,42 +127,42 @@
           "id": "N_SECV_ROOM_1",
           "next": "N_SECV_ROOM_2",
           "speakerId": "SECV_OPERATOR",
-          "text": "Use what\u2019s there; get something Records accepts.",
+          "text": "Use what\u0019s there. (pause) You need something Records accepts.",
           "type": "npc_line"
         },
         {
           "id": "N_SECV_ROOM_2",
           "next": "N_SECV_ROOM_3",
           "speakerId": "SECV_OPERATOR",
-          "text": "A Presence Receipt. (pause) A stamp. (pause) A kiosk printout. (pause) Anything that gives me a legit condition (pause) to hang a door unlock on.",
+          "text": "A Presence Receipt. (pause) A stamp. (pause) A kiosk printout. (pause) Anything I can point to in the log (pause) when I hit the door.",
           "type": "npc_line"
         },
         {
           "id": "N_SECV_ROOM_3",
           "next": "N_END",
           "speakerId": "SECV_OPERATOR",
-          "text": "I help when there\u2019s paper. Can\u2019t be it.",
+          "text": "Give me paper. I can help. (pause) Without it I can\u2019t be the one.",
           "type": "npc_line"
         },
         {
           "id": "N_SECV_BADGES_1",
           "next": "N_SECV_BADGES_2",
           "speakerId": "SECV_OPERATOR",
-          "text": "Like any blank form, it takes a mark.",
+          "text": "Blank forms don\u2019t do much until marked.",
           "type": "npc_line"
         },
         {
           "id": "N_SECV_BADGES_2",
           "next": "N_SECV_BADGES_3",
           "speakerId": "SECV_OPERATOR",
-          "text": "It won\u2019t authorize you. (pause) But it gives you something on record. (pause) Later you can say: I followed procedure. (pause) Sort of.",
+          "text": "It won\u2019t authorize you. (pause) But it\u2019s something on paper. (pause) Later you can still say you signed in. (pause) Sort of.",
           "type": "npc_line"
         },
         {
           "id": "N_SECV_BADGES_3",
           "next": "N_SECV_BADGES_4",
           "speakerId": "SECV_OPERATOR",
-          "text": "If you can get a Records marker (pause) onto one of those\u2014stamp or kiosk or whatever\u2014(pause) then I can treat you as accountable (pause) and run doors.",
+          "text": "If you can get a Records marker (pause) onto one of those stamp or kiosk things (pause) then I can treat you as accountable (pause) and run doors.",
           "type": "npc_line"
         },
         {
@@ -176,21 +176,21 @@
           "id": "N_SECV_OLEA_1",
           "next": "N_SECV_OLEA_2",
           "speakerId": "SECV_OPERATOR",
-          "text": "I can log that you called. (pause) I can\u2019t log you onsite from this box.",
+          "text": "I can log that you called. (pause) I can\u0019t log you onsite from this box.",
           "type": "npc_line"
         },
         {
           "id": "N_SECV_OLEA_2",
           "next": "N_SECV_OLEA_3",
           "speakerId": "SECV_OPERATOR",
-          "text": "That onsite flag comes from Records. (pause) Or the kiosk workflow. (pause) It\u2019s database fields. (pause) Not something I can take on faith. (pause) Over audio.",
+          "text": "That onsite flag has to come from Records. (pause) Or the kiosk workflow. (pause) It\u0019s database fields. (pause) I\u0019m not taking it on faith over audio.",
           "type": "npc_line"
         },
         {
           "id": "N_SECV_OLEA_3",
           "next": "N_SECV_OLEA_MENU",
           "speakerId": "SECV_OPERATOR",
-          "text": "If I mark you present without it (pause) the audit trail points at me. (pause) I'm only cleared to respond (pause) to a record, not create one.",
+          "text": "If I mark you present without it, (pause) the audit trail points straight at me. (pause) I\u0019m cleared to respond to a record\u0014(pause) not create one.",
           "type": "npc_line"
         },
         {
@@ -216,21 +216,21 @@
           "id": "N_SECV_MIN_1",
           "next": "N_SECV_MIN_2",
           "speakerId": "SECV_OPERATOR",
-          "text": "Minimum: name/date/type; site=onsite; Records authority marker.",
+          "text": "Minimum? Name. Date. Type. (pause) Site\u2019s set to onsite. (pause) And a Records authority marker.",
           "type": "npc_line"
         },
         {
           "id": "N_SECV_MIN_2",
           "next": "N_END",
           "speakerId": "SECV_OPERATOR",
-          "text": "Stamp is best. (pause) Kiosk receipt works. (pause) Handwritten note: people love it. (pause) It falls apart fast if anyone pushes.",
+          "text": "Stamp is cleanest. (pause) Kiosk receipt works. (pause) Handwritten note\u0014people love it. (pause) It falls apart the second anyone pushes.",
           "type": "npc_line"
         },
         {
           "id": "N_SECV_ENDCALL_1",
           "next": "N_END",
           "speakerId": "SECV_OPERATOR",
-          "text": "Okay. (pause) Call me back when you're marked onsite. (pause) I know you're boxed in right now. (pause) Stay safe.",
+          "text": "Okay. (pause) Call me back when you\u0019re marked onsite. (pause) I know you\u0019re boxed in right now. (pause) Watch yourself.",
           "type": "npc_line"
         },
         {

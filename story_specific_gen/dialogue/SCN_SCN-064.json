@@ -387,18 +387,6 @@
           "speakerId": "NARRATOR",
           "text": "The printer keeps humming like it expects you to do something that will require an explanation.",
           "type": "npc_line"
-        },
-        {
-          "effects": [
-            {
-              "action": "set",
-              "key": "objectives.printPresenceProof",
-              "value": true
-            }
-          ],
-          "id": "END_PRINT_BASELINE_LOGGING",
-          "outcomeId": "act3_logging_priority",
-          "type": "end"
         }
       ]
     }

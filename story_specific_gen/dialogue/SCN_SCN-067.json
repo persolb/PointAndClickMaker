@@ -77,7 +77,7 @@
           "id": "N_SPHERE_OPS_WARN",
           "type": "npc_line",
           "speakerId": "OPS_OPERATOR",
-          "text": "Don't name it. (pause) Log \"reflective behavior\"\u2014legacy wording. (pause) Already filed.",
+          "text": "Don\u0019t name it. (pause) Log \u001creflective behavior\u001d\u0014legacy wording. (pause) It\u0019s already in the file.",
           "next": "N_SPHERE_MENU"
         },
         {
@@ -106,14 +106,14 @@
           "id": "N_SPHERE_HOW_OFTEN_OPS",
           "type": "npc_line",
           "speakerId": "OPS_OPERATOR",
-          "text": "Intermittent. (pause) Don\u2019t give it motives. (pause) Log \u201ccondition observed.\u201d (pause) Less blame that way.",
+          "text": "Intermittent. (pause) Don\u0019t give it motives. (pause) Just log \u001ccondition observed.\u001d (pause) Less for anyone to pin on you.",
           "next": "N_SPHERE_BEAT"
         },
         {
           "id": "N_SPHERE_LOG_OPS",
           "type": "npc_line",
           "speakerId": "OPS_OPERATOR",
-          "text": "Good. Time and distance noted. (pause) You stayed outside the barrier stripe. (pause) Keep that sentence. (pause) It keeps your badge working.",
+          "text": "Good. Time and distance. (pause) And: you stayed outside the barrier stripe. (pause) Keep that sentence verbatim. (pause) Your badge likes that.",
           "next": "N_SPHERE_BEAT"
         },
         {
@@ -141,7 +141,7 @@
           "id": "N_STATUS_OPS_CORRECT",
           "type": "npc_line",
           "speakerId": "OPS_OPERATOR",
-          "text": "Don\u2019t say \u201cnew.\u201d (pause) Say \u201cnewly visible.\u201d (pause) One sounds like a system change. (pause) One sounds like we noticed.",
+          "text": "Don\u0019t say \u001cnew.\u001d (pause) Say \u001cnewly visible.\u001d (pause) \u001cNew\u001d turns into a system-change fight.",
           "next": "N_STATUS_MENU"
         },
         {
@@ -175,14 +175,14 @@
           "id": "N_STATUS_CLEAR_OPS",
           "type": "npc_line",
           "speakerId": "OPS_OPERATOR",
-          "text": "Clear an alarm locally. (pause) A hold won\u2019t clear here. (pause) Remote-office insurance.",
+          "text": "You can clear local alarms. (pause) This isn\u0019t one of those. It\u0019s a hold. (pause) Remote-office insurance.",
           "next": "N_STATUS_MENU"
         },
         {
           "id": "N_STATUS_WHO_OPS",
           "type": "npc_line",
           "speakerId": "OPS_OPERATOR",
-          "text": "No 'who' field. (pause) Just an authority tag. (pause)\nIf you do anything today, (pause) make sure it ends (pause) with a reference number.",
+          "text": "No \u001cwho\u001d field. (pause) Just an authority tag. (pause)\nWhatever you do today, (pause) make it end (pause) with a reference number.",
           "next": "N_STATUS_MENU"
         },
         {
@@ -203,7 +203,7 @@
           "id": "N_ESTOP_OPS_WARN",
           "type": "npc_line",
           "speakerId": "OPS_OPERATOR",
-          "text": "You can press it. (pause)\nJust know what you're doing. (pause)\nThat's a declaration. (pause)\nCommittees love those. (pause)\nIf you touch it I need. (pause)\nA reason phrase. (pause)\nAnd a timestamp.",
+          "text": "You can press it. (pause)\nJust\u0014know what you\u0019re doing. (pause)\nThat\u0019s a declaration. (pause)\nCommittees love declarations. (pause)\nIf you touch it, I need (pause)\na reason phrase (pause)\nand a timestamp.",
           "next": "N_ESTOP_MENU"
         },
         {
@@ -232,7 +232,7 @@
           "id": "N_ESTOP_WHAT_OPS",
           "type": "npc_line",
           "speakerId": "OPS_OPERATOR",
-          "text": "It stops local motion control (pause) and trips the local breakers. (pause) Non-local holds stay. (pause) Paperwork stays. (pause) And it kills the story. (pause) \u201cWe followed the planned sequence.\u201d",
+          "text": "It stops local motion control (pause) and trips the local breakers. (pause) Non-local holds stay. (pause) Paperwork stays. (pause) Forget we followed the planned sequence after that.",
           "next": "N_ESTOP_MENU"
         },
         {
@@ -253,7 +253,7 @@
           "id": "N_SCAN_OPS_COACH",
           "type": "npc_line",
           "speakerId": "OPS_OPERATOR",
-          "text": "Treat it like a scanner. (pause) Pick the form. Submit. (pause) Start talking to it. (pause) You just created a stakeholder.",
+          "text": "Treat it like a copier. (pause) Pick the form. Submit. (pause) Don\u0019t start talking to it. (pause) You\u0019ll end up with a stakeholder.",
           "next": "N_SCAN_NARR_LIST"
         },
         {
@@ -354,7 +354,7 @@
           "id": "N_ATTACH_REF_OPS",
           "type": "npc_line",
           "speakerId": "OPS_OPERATOR",
-          "text": "When you're done, print that screen. (pause) It shows the machine accepted your string. (pause) That's the whole point.",
+          "text": "When you\u0019re done, print that screen. (pause) It shows the machine accepted the string. (pause) That\u0019s what we need.",
           "next": "R_TO_SCAN_MENU"
         },
         {
@@ -382,7 +382,7 @@
           "id": "N_SIGNATORY_OPS",
           "type": "npc_line",
           "speakerId": "OPS_OPERATOR",
-          "text": "Good. Keep it boring. (pause) On-site is defensible. (pause) Don\u2019t add motives or theories. (pause) Just the fact of presence.",
+          "text": "Good. Keep it boring. (pause) \u001cOn-site\u001d is defensible. (pause) Don\u0019t add motives or theories. (pause) Just presence.",
           "next": "N_SIGNATORY_NARR"
         },
         {
@@ -403,7 +403,7 @@
           "id": "N_LOAD_TEMPLATE_OPS",
           "type": "npc_line",
           "speakerId": "OPS_OPERATOR",
-          "text": "Don\u2019t explain. (pause) Explanations become questions. (pause) Questions become you owning it.",
+          "text": "Don\u0019t explain. (pause) Extra words turn into questions. (pause) Then it\u0019s yours.",
           "next": "N_SUBMIT_MENU"
         },
         {
@@ -465,7 +465,7 @@
           "id": "N_SUBMIT_WITH_NOTE_OPS",
           "type": "npc_line",
           "speakerId": "OPS_OPERATOR",
-          "text": "Fine. One sentence is still a form. (pause) Don't add a second. (pause) A second makes a story. (pause) Then it has an author.",
+          "text": "Fine. One sentence is still a form. (pause) Don\u0019t add a second. (pause) Two lines starts reading like a story. (pause) Then it has an author.",
           "next": "N_SUBMIT_RECEIVED_NOTE"
         },
         {
@@ -493,7 +493,7 @@
           "id": "N_MTA_TTS",
           "type": "npc_line",
           "speakerId": "MTA_CONTACT",
-          "text": "Alright. (pause) You\u2019re in the log. (pause) Standing\u2019s still pending. (pause) Service class too. (pause) You\u2019ve got a queue slot. (pause) Window\u2019s active.",
+          "text": "Alright. (pause)\nYou\u2019re in the log. (pause)\nStanding\u2019s still pending. Service class too. (pause)\nYou\u2019ve got a queue slot. (pause)\nWindow\u2019s active.",
           "next": "N_PLAYER_GOOD"
         },
         {
@@ -521,7 +521,7 @@
           "id": "N_MTA_TTS_NOTE",
           "type": "npc_line",
           "speakerId": "MTA_CONTACT",
-          "text": "Logged. (pause) Standing pending. Service class pending. (pause) Queue slot assigned. Window\u2019s active.",
+          "text": "Logged. (pause)\nStanding pending. Service class pending. (pause)\nQueue slot assigned. (pause)\nWindow\u2019s active.",
           "next": "N_PLAYER_PRINT_TWO"
         },
         {

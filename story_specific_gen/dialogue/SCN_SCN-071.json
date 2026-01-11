@@ -16,7 +16,7 @@
           "id": "N_OPS_RULES",
           "type": "npc_line",
           "speakerId": "OPS_OPERATOR",
-          "text": "Hold up. (pause) Watch your words. (pause) No emergency. (pause) No it's trying. (pause) No still. (pause) Print the header. (pause) Then act. (pause) I like my job.",
+          "text": "Hold up. (pause) Watch your words. (pause) No \u001cemergency.\u001d (pause) No \u001cit\u0019s trying.\u001d (pause) Don\u0019t call it \u001cstill.\u001d (pause) Print the header. (pause) Then act. (pause) I\u0019m not taking the hit.",
           "next": "MENU_MAIN"
         },
         {
@@ -98,7 +98,7 @@
           "id": "N_OPS_STATUS",
           "type": "npc_line",
           "speakerId": "OPS_OPERATOR",
-          "text": "Local motion: permissive. (pause) Proximity is clear. (pause)\nNon-local shows a hold. (pause) Not my category. (pause)\nLogs are live. (pause) Don't make me chase timestamps.",
+          "text": "Local motion: permissive. (pause) Proximity\u0019s clear. (pause)\nNon-local shows a hold. (pause) Not my lane. (pause)\nLogs are live. (pause) Don\u0019t make me chase timestamps.",
           "next": "MENU_MAIN"
         },
         {
@@ -119,7 +119,7 @@
           "id": "N_OPS_ATTRIBUTION_PUSH",
           "type": "npc_line",
           "speakerId": "OPS_OPERATOR",
-          "text": "We can\u2019t clear it locally. (pause) So we document. (pause) Read the reference number back. (pause) Then print it. (pause) I want attribution.",
+          "text": "We can\u0019t clear it locally. (pause) So we document. (pause) Read the reference number back. (pause) Then print it. (pause) I want attribution.",
           "next": "MENU_MAIN"
         },
         {
@@ -133,14 +133,14 @@
           "id": "N_MTA_REF_READBACK",
           "type": "npc_line",
           "speakerId": "MTA_CONTACT",
-          "text": "MTA_NOTICE_REF: [full string]. (pause) Submission log: [log string]. (pause) Queue position: [value]. (pause) Processing window: active.",
+          "text": "MTA_NOTICE_REF: [full string]. (pause)\nSubmission log: [log string]. (pause)\nQueue position: [value]. (pause)\nProcessing window: active.",
           "next": "N_OPS_REF_INSTRUCTIONS"
         },
         {
           "id": "N_OPS_REF_INSTRUCTIONS",
           "type": "npc_line",
           "speakerId": "OPS_OPERATOR",
-          "text": "Good. Don\u2019t summarize. Attach the original. (pause) Print it from the tray. (pause) Screenshots turn into debates.",
+          "text": "Good. Don\u0019t summarize. Attach the original. (pause) Print it from the tray. (pause) Screenshots turn into debates.",
           "next": "MENU_MAIN"
         },
         {
@@ -154,7 +154,7 @@
           "id": "N_MTA_PENDING_DOCS",
           "type": "npc_line",
           "speakerId": "MTA_CONTACT",
-          "text": "Three things. (pause) Proof: authorized standing for the transition. (pause) Proof: SOL\u2011EARTH\u2011LOCAL fits a service class now. (pause) Proof: operator-of-record is at the endpoint.",
+          "text": "Three things. (pause)\nProof of authorized standing for the transition. (pause)\nProof SOL\u2011EARTH\u2011LOCAL fits a service class right now. (pause)\nProof the operator-of-record is at the endpoint.",
           "next": "N_PLAYER_ONSITE_CLAIM"
         },
         {
@@ -168,35 +168,35 @@
           "id": "N_MTA_ONSITE_ACK",
           "type": "npc_line",
           "speakerId": "MTA_CONTACT",
-          "text": "On-site noted\u2014as a physical claim.\nStanding\u2019s still pending.",
+          "text": "On-site\u2014fine. (pause) I\u2019ll log it as a physical claim. (pause) Standing\u2019s still pending.",
           "next": "N_OPS_PERSONALITY_NOTE"
         },
         {
           "id": "N_OPS_PERSONALITY_NOTE",
           "type": "npc_line",
           "speakerId": "OPS_OPERATOR",
-          "text": "They heard you. (pause) They're still sitting on 'standing.' (pause) That's how they work.",
+          "text": "They heard you. (pause) They\u0019re still sitting on \u001cstanding.\u001d (pause) That\u0019s how they do it.",
           "next": "MENU_MAIN"
         },
         {
           "id": "N_MTA_COMPLIANCE_PATH_PASS",
           "type": "npc_line",
           "speakerId": "MTA_CONTACT",
-          "text": "There\u2019s a minimal path. (pause)\nReason phrase on record. (pause)\nAffirm continuous logging. (pause)\nOperator-of-record physically present. (pause)\nSubmit under retirement processing. (pause)\nLeave cause out. (pause)\nQueue position maintained. (pause)\nProcessing window active.",
+          "text": "There\u2019s a minimal path. (pause)\nGet a reason phrase on the record. (pause)\nAffirm continuous logging. (pause)\nOperator-of-record physically present. (pause)\nSubmit under retirement processing. (pause)\nLeave cause out. (pause)\nQueue position maintained. (pause)\nProcessing window active.",
           "next": "MENU_MAIN"
         },
         {
           "id": "N_MTA_COMPLIANCE_PATH_FAIL",
           "type": "npc_line",
           "speakerId": "MTA_CONTACT",
-          "text": "Rejected. (pause) Hold state blocks state transitions. (pause) Shutdown counts. (pause) Standing pending. (pause) Service class pending. (pause) Queue position assigned.",
+          "text": "Rejected. (pause)\nHold state blocks state transitions. (pause)\nShutdown counts. (pause)\nStanding pending. Service class pending. (pause)\nQueue position assigned.",
           "next": "MENU_MAIN"
         },
         {
           "id": "N_OPS_DEFENSIBLE",
           "type": "npc_line",
           "speakerId": "OPS_OPERATOR",
-          "text": "Make the next step look routine. (pause)\nUse the official sequence. (pause)\nKeep logging. Print before and after. (pause)\nHit the big red button. (pause)\nYou just signed up to be the author.",
+          "text": "Make the next step look routine. (pause)\nUse the official sequence. (pause)\nKeep logging. Print before and after. (pause)\nYou hit the big red button\u0014 (pause)\nyou\u0019re the author.",
           "next": "N_PLAYER_AND_HOLD"
         },
         {
@@ -210,7 +210,7 @@
           "id": "N_OPS_HOLD_REALITY",
           "type": "npc_line",
           "speakerId": "OPS_OPERATOR",
-          "text": "We don\u2019t clear holds. (pause) We document around them. (pause) Until someone upstream relents. (pause) Or you collapse routes. (pause) Until the hold is basically irrelevant. (pause) That didn\u2019t come from me.",
+          "text": "We don\u0019t clear holds. (pause) We document around them. (pause) Until someone upstream relents. (pause) Or you collapse routes (pause) until the hold doesn\u0019t matter. (pause) That didn\u0019t come from me.",
           "next": "MENU_MAIN"
         },
         {
@@ -224,7 +224,7 @@
           "id": "N_LEGAL_FRAMING",
           "type": "npc_line",
           "speakerId": "OLEA_LEGAL",
-          "text": "Recorded line. (pause) Say what you\u2019re doing before you do it\u2014(pause) otherwise someone else will write the description later (pause) and you won\u2019t like their version.",
+          "text": "Recorded line. (pause) Say what you\u2019re doing before you do it\u2014 (pause) otherwise somebody writes it up later, (pause) and you\u2019re stuck with their version.",
           "next": "N_PLAYER_SHUTTING_DOWN"
         },
         {
@@ -238,7 +238,7 @@
           "id": "N_LEGAL_DEFINITIONS",
           "type": "npc_line",
           "speakerId": "OLEA_LEGAL",
-          "text": "Then you\u2019re \u201cexecuting a retirement sequence\u201d (pause) \u201cas a safety containment measure,\u201d (pause) pursuant to the closure evidence packet. (pause)\nDon\u2019t say \u201cresponding to an anomaly.\u201d (pause)\nDrop \u201cstill operating.\u201d (pause) \u201cStill\u201d reads like intent. (pause) Intent becomes governance.",
+          "text": "Then call it \u201cexecuting a retirement sequence\u201d (pause) \u201cas a safety containment measure,\u201d (pause) per the closure evidence packet. (pause)\nKeep \u201cresponding to an anomaly\u201d out. (pause)\nDrop \u201cstill operating.\u201d (pause) \u201cStill\u201d reads like intent. (pause) Intent becomes governance.",
           "next": "N_PLAYER_REASON_PHRASE_REQUEST"
         },
         {
@@ -252,7 +252,7 @@
           "id": "N_LEGAL_REASON_PHRASE",
           "type": "npc_line",
           "speakerId": "OLEA_LEGAL",
-          "text": "Initiating terminal shutdown per retirement checklist (pause)\nas risk-limiting containment; (pause)\nmaintaining interlocks and continuous logging; (pause)\noperator present on-site. (pause)\nYes, it\u2019s going to irritate people. (pause)\nThat\u2019s fine.",
+          "text": "Use this: (pause)\nInitiating terminal shutdown per retirement checklist (pause)\nas risk-limiting containment; (pause)\nmaintaining interlocks and continuous logging; (pause)\noperator present on-site. (pause)\nYeah, it\u2019s going to irritate people. (pause)\nFine.",
           "next": "MENU_LEGAL"
         },
         {
@@ -300,28 +300,28 @@
           "id": "N_PLAYER_READS_PHRASE",
           "type": "npc_line",
           "speakerId": "PLAYER",
-          "text": "Initiating terminal shutdown per retirement checklist as risk-limiting containment; maintaining interlocks and continuous logging; operator present on-site.",
+          "text": "Initiating terminal shutdown per retirement checklist. (pause) Risk-limiting containment in effect. (pause) Interlocks maintained and logging continuous. (pause) Operator present on-site.",
           "next": "N_OPS_ATTRIBUTABLE_THANKS"
         },
         {
           "id": "N_OPS_ATTRIBUTABLE_THANKS",
           "type": "npc_line",
           "speakerId": "OPS_OPERATOR",
-          "text": "Good. That's attributable. (pause) When it echoes back, print it. (pause) People rewrite history later.",
+          "text": "Good. That\u0019s attributable. (pause) When it echoes back, print it. (pause) People rewrite history later.",
           "next": "N_LEGAL_ONE_SENTENCE"
         },
         {
           "id": "N_LEGAL_ONE_SENTENCE",
           "type": "npc_line",
           "speakerId": "OLEA_LEGAL",
-          "text": "And stop at one sentence. (pause) Add a second. (pause) It turns into a narrative.",
+          "text": "Keep it to one sentence. (pause) Add a second (pause) and it starts reading like a narrative.",
           "next": "MENU_MAIN"
         },
         {
           "id": "N_LEGAL_HOLD_LANGUAGE",
           "type": "npc_line",
           "speakerId": "OLEA_LEGAL",
-          "text": "Describe it like this: (pause)\n\u201cNon-local compliance hold notice received.\u201d (pause)\n\u201cReference logged.\u201d (pause)\n\u201cShutdown executed per retirement checklist.\u201d (pause)\n\u201cRisk-limiting containment.\u201d (pause)\n\u201cContinuous logging.\u201d (pause)\nDon\u2019t add why. (pause)\nDon\u2019t add motive. (pause)\nJust receipt and procedure.",
+          "text": "Describe it like this\u2014no extras: (pause)\n\u201cNon-local compliance hold notice received.\u201d (pause)\n\u201cReference logged.\u201d (pause)\n\u201cShutdown executed per retirement checklist.\u201d (pause)\n\u201cRisk-limiting containment.\u201d (pause)\n\u201cContinuous logging.\u201d (pause)\nThen stop. (pause)\nNo why. (pause)\nNo motive. (pause)\nJust receipt and procedure.",
           "next": "MENU_MAIN"
         },
         {
@@ -335,7 +335,7 @@
           "id": "N_OPS_STAPLE_IT",
           "type": "npc_line",
           "speakerId": "OPS_OPERATOR",
-          "text": "Staple it to the front. (pause) Proof you were there. (pause) When it didn't fix itself.",
+          "text": "Staple it to the front. (pause) Proof you were there (pause) when it didn\u0019t fix itself.",
           "next": "MENU_MAIN"
         },
         {
@@ -349,7 +349,7 @@
           "id": "N_OPS_VISUAL_CHANGE",
           "type": "npc_line",
           "speakerId": "OPS_OPERATOR",
-          "text": "Log visual condition change. (pause) Note time and distance. (pause) Say you stayed outside the barrier stripe.",
+          "text": "Log the visual condition change. (pause) Time and distance. (pause) And say you stayed outside the barrier stripe.",
           "next": "N_PLAYER_OUTSIDE_STRIPE"
         },
         {
@@ -377,7 +377,7 @@
           "id": "N_OPS_ARMED_WORD",
           "type": "npc_line",
           "speakerId": "OPS_OPERATOR",
-          "text": "Armed is a bad label. (pause) Still, the panel prints it. (pause) We get judged on it.",
+          "text": "Armed\u001d is a bad label. (pause) Still, the panel prints it. (pause) We get judged on it.",
           "next": "MENU_MAIN"
         },
         {
@@ -391,7 +391,7 @@
           "id": "N_OPS_TIMESTAMP_WARNING",
           "type": "npc_line",
           "speakerId": "OPS_OPERATOR",
-          "text": "Walk away if you need to. (pause) Timestamp keeps running. (pause) Come back when you're ready. (pause) Do it on the record.",
+          "text": "Step away if you need to. (pause) Timestamp keeps running. (pause) Come back when you\u0019re ready. (pause) Do it on the record.",
           "next": "MENU_MAIN"
         },
         {
@@ -453,21 +453,21 @@
           "id": "N_OPS_DONT_CALL_IT",
           "type": "npc_line",
           "speakerId": "OPS_OPERATOR",
-          "text": "Don\u2019t write \u201cemergency stop\u201d in the log. (pause) Write \u201cLocal motion control trip\u201d. (pause) Add a reason phrase and timestamp. (pause) That entry starts a meeting. (pause) Make it defensible.",
+          "text": "Don\u0019t put \u001cemergency stop\u001d in the log. (pause) Put \u001cLocal motion control trip.\u001d (pause) Add a reason phrase and a timestamp. (pause) That line starts a meeting. (pause) Make it defensible.",
           "next": "N_MTA_LOCAL_INTERRUPTION"
         },
         {
           "id": "N_MTA_LOCAL_INTERRUPTION",
           "type": "npc_line",
           "speakerId": "MTA_CONTACT",
-          "text": "Local interruption acknowledged. (pause) Hold state remains. (pause) Standing evaluation pending. (pause) Processing window active.",
+          "text": "Alright\u2014local interruption acknowledged. (pause)\nHold state remains. (pause)\nStanding evaluation pending. (pause)\nProcessing window active.",
           "next": "N_LEGAL_EMERGENCY_LANGUAGE"
         },
         {
           "id": "N_LEGAL_EMERGENCY_LANGUAGE",
           "type": "npc_line",
           "speakerId": "OLEA_LEGAL",
-          "text": "If you\u2019re going through, call it. (pause) Risk-limiting interruption. (pause) Pending retirement processing. (pause) Keep \u201cpanic\u201d and \u201creaction\u201d out. (pause) Those words stick.",
+          "text": "If you\u2019re going through, name it. (pause) Risk-limiting interruption. (pause) Pending retirement processing. (pause) Keep \u201cpanic\u201d and \u201creaction\u201d out. (pause) Those words stick.",
           "next": "N_NARRATOR_HAND_HOVER"
         },
         {
@@ -493,14 +493,14 @@
           "id": "N_OPS_READ_ONCE_MORE",
           "type": "npc_line",
           "speakerId": "OPS_OPERATOR",
-          "text": "Read the reason phrase again. (pause) Then run it. (pause) No improvising halfway through.",
+          "text": "Read the reason phrase again. (pause) Then run it. (pause) Don\u0019t improvise halfway through.",
           "next": "N_PLAYER_RECITES_LOGGED"
         },
         {
           "id": "N_PLAYER_RECITES_LOGGED",
           "type": "npc_line",
           "speakerId": "PLAYER",
-          "text": "Initiating terminal shutdown per retirement checklist as risk-limiting containment; maintaining interlocks and continuous logging; operator present on-site.",
+          "text": "Initiating terminal shutdown per retirement checklist. (pause) Risk-limiting containment. (pause) Interlocks active and logging continuous. (pause) Operator present on-site.",
           "next": "N_LEGAL_ACCEPTABLE_BETTER"
         },
         {
@@ -514,7 +514,7 @@
           "id": "N_OPS_NO_IMPROV",
           "type": "npc_line",
           "speakerId": "OPS_OPERATOR",
-          "text": "Do it in the order the console expects. (pause) Give a reason phrase when it asks. (pause) Add a timestamp when it asks.",
+          "text": "Do it in the order it expects. (pause) If it asks for reason phrase give one. (pause) If it asks for a timestamp, give it.",
           "next": "N_PLAYER_RECITES_MINIMAL"
         },
         {
@@ -528,14 +528,14 @@
           "id": "N_LEGAL_ACCEPTABLE_BETTER",
           "type": "npc_line",
           "speakerId": "OLEA_LEGAL",
-          "text": "Acceptable. Use the first one. (pause) It\u2019s harder to twist later.",
+          "text": "That\u2019s acceptable. (pause) Use the first one. (pause) It\u2019s harder to twist later.",
           "next": "N_MTA_CONFLICT_NOTED"
         },
         {
           "id": "N_MTA_CONFLICT_NOTED",
           "type": "npc_line",
           "speakerId": "MTA_CONTACT",
-          "text": "State transition request received. Hold state conflict noted. (pause) Processing window active. Queue position maintained.",
+          "text": "Got the state transition request. (pause)\nIt conflicts with the hold\u2014flagged. (pause)\nProcessing window active. Queue position maintained.",
           "next": "N_NARRATOR_ROUTES_COLLAPSE"
         },
         {
@@ -549,7 +549,7 @@
           "id": "N_OPS_PRINT_POSTSTATE",
           "type": "npc_line",
           "speakerId": "OPS_OPERATOR",
-          "text": "Alright. (pause) Fewer options now. (pause) Print the post-state, staple it. (pause) Stay where you are. (pause) Presence goes in the record.",
+          "text": "Alright. (pause) Fewer options now. (pause) Print the post-state. Staple it. (pause) Stay where you are. (pause) Presence goes in the record.",
           "next": "N_END_SHUTDOWN"
         },
         {

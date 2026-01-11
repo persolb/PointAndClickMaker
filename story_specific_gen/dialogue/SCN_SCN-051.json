@@ -28,7 +28,7 @@
           "id": "N_INTRO_2",
           "type": "npc_line",
           "speakerId": "INTAKE_CLERK",
-          "text": "Property. Claims. (pause) You've got enough filing (pause) to count as a claimant today (pause) in the normal sense. (pause) Basis only. (pause) Don't give me the story.",
+          "text": "Property. Claims. (pause)\nYou've filed enough to be a claimant today. (pause)\nNormal sense. (pause)\nBasis only. (pause)\nDon't give me the story.",
           "next": "PC_MAIN"
         },
         {
@@ -87,7 +87,7 @@
           "id": "N_STUB_OFFER_1",
           "type": "npc_line",
           "speakerId": "INTAKE_CLERK",
-          "text": "You can get a stub. (pause)\nIt holds your place. (pause)\nFor the argument later. (pause)\nWhat item class?",
+          "text": "Yeah, I can issue a stub. (pause)\nHolds your place. (pause)\nGives you something to point at later. (pause)\nWhat item class?",
           "next": "PC_CLASS_MENU"
         },
         {
@@ -126,14 +126,14 @@
           "id": "N_CLASS_EQUIP_1",
           "type": "npc_line",
           "speakerId": "INTAKE_CLERK",
-          "text": "Issued equipment goes in the class box. (pause) It proves nothing. (pause) Service kit pulls in handler responsibility. (pause) I'm keeping the wording tight. (pause) I'm recording: service kit. (pause) Serialized if available. (pause) Claimant present. (pause) Entitlement pending verification. (pause) Don't correct my phrasing on the record.",
+          "text": "Issued equipment goes in the class box. (pause)\nDoesn't prove anything. (pause)\nService kit drags handler responsibility. Keeping it tight. (pause)\nI'm recording: service kit. (pause)\nSerialized if available. (pause)\nClaimant present. (pause)\nEntitlement pending verification. (pause)\nDon't correct my phrasing on the record.",
           "next": "N_READY_TO_FILE_1"
         },
         {
           "id": "N_CLASS_DOCS_1",
           "type": "npc_line",
           "speakerId": "INTAKE_CLERK",
-          "text": "Facility documentation is a liability with staples. (pause)\nYeah, it still gets treated like property. (pause)\nI can stub: Records packet unindexed; claimant present. (pause)\nDisposition pending verification.",
+          "text": "Facility documentation is liability with staples. (pause)\nStill gets treated like property. (pause)\nI can stub: records packet unindexed; claimant present. (pause)\nDisposition pending verification.",
           "next": "N_READY_TO_FILE_1"
         },
         {
@@ -174,14 +174,14 @@
           "id": "N_WHY_WORDING_1",
           "type": "npc_line",
           "speakerId": "INTAKE_CLERK",
-          "text": "Ownership brings people in. (pause)\nAnd paperwork. (pause)\nPending keeps me from promising you anything\u2014normally.",
+          "text": "If I write \u0018ownership\u0019, people show up. (pause)\nSo does paperwork. (pause)\n\u0018Pending\u0019 keeps me from promising you anything\u0014normally.",
           "next": "R_TO_FILE_MENU"
         },
         {
           "id": "N_VERIFICATION_1",
           "type": "npc_line",
           "speakerId": "INTAKE_CLERK",
-          "text": "Serials. Assignment logs. Chain-of-custody. Incident recovery. (pause)\nThat check happens later\u2014preferably not at my window. (pause)\nHere, you leave with paper. (pause)\nIt survives the building. (pause)\nPretending you weren\u2019t here.",
+          "text": "Serials. Assignment logs. Chain-of-custody. Incident recovery. (pause)\nThat gets checked later\u0014preferably away from my window. (pause)\nHere, you leave with paper. (pause)\nIt survives the building pretending you weren\u0019t here.",
           "next": "R_TO_FILE_MENU"
         },
         {
@@ -195,14 +195,14 @@
           "id": "N_PRINT_STUB_2",
           "type": "npc_line",
           "speakerId": "INTAKE_CLERK",
-          "text": "Stub\u0019s issued.\nProcessed\u0014in the normal sense.",
+          "text": "Stub\u0019s issued. (pause)\nProcessed\u0014normal sense.",
           "next": "END_COLLECT_STUB"
         },
         {
           "id": "N_CLASSES_ACCEPTABLE_1",
           "type": "npc_line",
           "speakerId": "INTAKE_CLERK",
-          "text": "Whatever doesn\u2019t make me guess intent. (pause) Issued equipment. (pause) Personal effects if you want a dispute. (pause) Records packet if you want a different dispute. (pause) If you say \u2018mine\u2019 I start hearing \u2018hearing\u2019.",
+          "text": "Whatever doesn\u0019t make me guess intent. (pause)\nIssued equipment. (pause)\nPersonal effects if you want a dispute. (pause)\nRecords packet if you want a different one. (pause)\nIf you say \u0018mine\u0019, I start hearing \u0018hearing\u0019.",
           "next": "PC_CLASSES_FOLLOW"
         },
         {
@@ -231,7 +231,7 @@
           "id": "N_STUB_DOES_1",
           "type": "npc_line",
           "speakerId": "INTAKE_CLERK",
-          "text": "It time-stamps you showed up. (pause) And said you're coming back. (pause) To claim something. (pause) It also blocks someone. (pause) From saying you never showed. (pause) In the normal sense. (pause) And yeah, it gives you. (pause) Something to lose. (pause) That last part's unofficial.",
+          "text": "It time-stamps you showed up. (pause)\nSays you\u0019re coming back to claim something. (pause)\nStops someone saying you never came. (pause)\nIn the normal sense. (pause)\nAnd yeah\u0014it gives you something to lose. (pause)\nThat part\u0019s unofficial.",
           "next": "PC_STUB_DOES_FOLLOW"
         },
         {
@@ -260,14 +260,14 @@
           "id": "N_ACCESS_NOT_PROPERTY_1",
           "type": "npc_line",
           "speakerId": "INTAKE_CLERK",
-          "text": "Stub doesn\u2019t open doors. (pause) Access is Safety\u2019s problem. (pause) I issue stubs.",
+          "text": "Stub doesn\u0019t open doors. (pause)\nAccess is Safety\u0019s mess. (pause)\nI issue stubs.",
           "next": "R_TO_STUB_DOES_FOLLOW"
         },
         {
           "id": "N_BASIS_1",
           "type": "npc_line",
           "speakerId": "INTAKE_CLERK",
-          "text": "It's what lets you argue (pause) without getting removed. (pause) Serials. Assignment logs. (pause) Incident recovery. Sometimes (pause) you just keep showing up. (pause) Keep it to basis. (pause) Stories breed counter-stories.",
+          "text": "It\u0019s what lets you argue (pause)\nwithout getting removed. (pause)\nSerials. Assignment logs. Incident recovery. (pause)\nSometimes you just keep showing up. (pause)\nKeep it to basis. (pause)\nStories breed counter-stories.",
           "next": "PC_BASIS_MENU"
         },
         {
@@ -296,14 +296,14 @@
           "id": "N_BASIS_TO_STUB_1",
           "type": "npc_line",
           "speakerId": "INTAKE_CLERK",
-          "text": "I can issue it. (pause)\nIt\u2019ll say you intend to claim an item. (pause)\nPending proof it\u2019s even claimable. (pause)\nAuditors like it that way.",
+          "text": "I can issue it. (pause)\nIt\u0019ll say you intend to claim an item. (pause)\nPending proof it\u0019s even claimable. (pause)\nAuditors sleep better that way.",
           "next": "R_TO_CLASS_MENU"
         },
         {
           "id": "N_TER_NOT_ENOUGH_1",
           "type": "npc_line",
           "speakerId": "INTAKE_CLERK",
-          "text": "TER just shows you are filed. (pause) A condition this building can tolerate. (pause)\nIt does not buy you rights. (pause) \"Rights\" is a different window. (pause) Maybe a different building. (pause)\nIf you want a document that implies less. (pause) I can do that.",
+          "text": "TER just shows you\u0019re filed. (pause)\nA condition this building can tolerate. (pause)\nRights is a different window. (pause)\nMaybe a different building. (pause)\nIf you want a document that implies less\u0014 (pause)\nI can do that.",
           "next": "PC_TER_MENU"
         },
         {
@@ -337,7 +337,7 @@
           "id": "N_STUB_IMPLIES_1",
           "type": "npc_line",
           "speakerId": "INTAKE_CLERK",
-          "text": "It flags that you'll be back. (pause) That's just how it sits. (pause) In the file. (pause) Want me to print it?",
+          "text": "It flags you\u0019ll be back. (pause)\nThat\u0019s how it sits in the file. (pause)\nWant me to print it?",
           "next": "PC_STUB_IMPLIES_MENU"
         },
         {
@@ -361,7 +361,7 @@
           "id": "N_ESCALATE_1",
           "type": "npc_line",
           "speakerId": "INTAKE_CLERK",
-          "text": "You say \"escalate\". (pause)\nI tag an incident. (pause)\nIt attaches to your file. (pause)\nIn the normal sense. (pause)\nUp to you.",
+          "text": "You say \u0018escalate\u0019, I tag an incident. (pause)\nIt attaches to your file. (pause)\nIn the normal sense. (pause)\nUp to you.",
           "next": "PC_ESCALATE_MENU"
         },
         {
@@ -392,7 +392,7 @@
           "id": "N_OLEA_1",
           "type": "npc_line",
           "speakerId": "INTAKE_CLERK",
-          "text": "OLEA credentials. Sure. That\u2019s context. (pause)\nNot a basis. (pause)\nStill I\u2019ll word the denial carefully later. (pause)\nWant something you can use? (pause)\nAsk for a stub.",
+          "text": "OLEA credentials. Sure. (pause)\nContext. (pause)\nDoesn\u2019t count as basis. (pause)\nIf it\u2019s denied, I\u2019ll word it carefully. (pause)\nYou want paper you can use? (pause)\nAsk for a stub.",
           "next": "PC_OLEA_MENU"
         },
         {
@@ -421,21 +421,21 @@
           "id": "N_OLEA_NO_CLASS_1",
           "type": "npc_line",
           "speakerId": "INTAKE_CLERK",
-          "text": "No OLEA class. (pause) There are items. (pause) There are claimants. (pause) Then there are disputes. (pause) I try to avoid disputes. (pause) In the normal sense.",
+          "text": "No OLEA class. (pause)\nThere are items. Claimants. Then disputes. (pause)\nI\u0019m not starting a dispute\u0014normal sense.",
           "next": "R_TO_OLEA_MENU"
         },
         {
           "id": "N_PERSUADE_PASS_1",
           "type": "npc_line",
           "speakerId": "INTAKE_CLERK",
-          "text": "Keep it minimal, fine. (pause) Still need an item class. (pause) Blank fields get flagged. (pause) Proceed.",
+          "text": "Fine. Keep it minimal. (pause)\nI still need an item class. (pause)\nBlank fields get flagged. (pause)\nProceed.",
           "next": "R_TO_CLASS_MENU"
         },
         {
           "id": "N_PERSUADE_FAIL_1",
           "type": "npc_line",
           "speakerId": "INTAKE_CLERK",
-          "text": "No. (pause) Minimal detail puts disputes in neat boxes. (pause) State the class, in the normal sense.",
+          "text": "No. (pause)\nMinimal detail still turns into disputes. (pause)\nState the class\u0014normal sense.",
           "next": "R_TO_MAIN"
         },
         {

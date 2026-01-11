@@ -1,31 +1,22 @@
 {
   "nodes": [
     {
-      "scene": "SCN_SCN-021.json",
-      "id": "N_VM_LINE",
-      "priorLine": "The line rings once, like it already knows you\u0019re there.\nThen a voicemail answers, bright and pre-defensive.",
-      "lineToEdit": "Hi! You\u0019ve reached Field Interface Support for SECV legacy devices.\nIf you\u0019re calling about abnormal output, anomalous imaging, unexpected reflective behavior, or anything that could be described as \u0018nonstandard,\u0019 that is not covered.\n\nWe support: jams, rollers, trays, and manufacturer-listed error codes.\nWe do not support: facilities, incidents, atmospheres, or \u0018situations.\u0019\n\nIf this is about a service code\u0014service codes are not a service issue.\nThey are an authorization issue.\nThank you for understanding, which is required.",
-      "nextLine": "The voicemail hangs up first, like a practiced skill.",
-      "revisedLine": "Hi. (pause) You've reached Field Interface Support. (pause) For SECV legacy devices. (pause)\nIf you're calling about abnormal output. (pause) Or anomalous imaging. (pause) Or unexpected reflective behavior. (pause) Or anything you'd call 'nonstandard'. (pause) We can't cover it. (pause)\nWe handle jams. (pause) Rollers. (pause) Trays. (pause) Manufacturer listed error codes. (pause)\nFacilities. (pause) Incidents. (pause) Atmospheres. (pause) 'Situations'. (pause) Don't put those on this line. (pause)\nIf this is about a service code. (pause) Yeah stop there. (pause) That goes through authorization. (pause)\nThanks for understanding. (pause) It's required.",
-      "changeSummary": "Made the voicemail sound more in-the-moment and defensive; tightened phrasing, kept all exclusions/support categories and the service-code-as-authorization requirement. | Split the line into short beats using (pause) so each beat stays under 8 words. Replaced comma-heavy lists with sentence fragments and line breaks to keep commas under the limit, without changing meaning or tone."
-    },
-    {
       "scene": "SCN_SCN-074.json",
       "id": "N_VM_01",
-      "priorLine": "Use: \u001cCall Contractor support line.\u001d",
-      "lineToEdit": "Hi! You\u0019ve reached Field Interface Support for SECV legacy devices.\nIf you\u0019re calling about abnormal output, anomalous imaging, unexpected reflective behavior, or anything that could be described as \u001cnonstandard,\u001d that is not covered.",
-      "nextLine": "We support: jams, rollers, trays, and manufacturer-listed error codes.\nWe do not support: facilities, incidents, atmospheres, or \u001csituations.\u001d\n\nIf this is about a service code\u0014service codes are not a service issue.\nThey are an authorization issue.\nThank you for understanding, which is required.",
-      "revisedLine": "Hi. (pause) Field Interface Support for SECV legacy devices. (pause) If this is abnormal output (pause) or anomalous imaging (pause) or unexpected reflective behavior (pause) anything you\u2019d call \u201cnonstandard\u201d (pause) we can\u2019t cover it.",
-      "changeSummary": "Trimmed and roughened the greeting; kept the same triggers and the same exclusion (nonstandard not covered) without adding explanation. | Split the line into short beats using (pause) to keep each beat under 8 words. Removed list commas while keeping the same exclusions and tone."
+      "priorLine": "Use: \u201cCall Contractor support line.\u201d",
+      "lineToEdit": "Hi. (pause) Field Interface Support for SECV legacy devices. (pause) If this is abnormal output (pause) or anomalous imaging (pause) or unexpected reflective behavior (pause) anything you\u2019d call \u201cnonstandard\u201d (pause) we can\u2019t cover it.",
+      "nextLine": "We handle jams. (pause) Rollers. (pause) Trays. (pause) Manufacturer-listed error codes. (pause)\nFacilities / incidents / atmospheres / situations? (pause) Don\u2019t put those on this line. (pause)\nIf this is a service code, (pause) Authorization has to clear it. (pause)\nThanks for understanding. (pause) It\u2019s required.",
+      "revisedLine": "Hi. (pause) You\u2019ve got Field-Interface Support for SECV legacy devices. (pause) If it\u2019s abnormal output (pause) anomalous imaging (pause) unexpected reflective behavior\u2014 (pause) anything you\u2019d call \u201cnonstandard,\u201d (pause) we can\u2019t cover it.",
+      "changeSummary": "Made the greeting more in-the-moment and clipped while keeping the same exclusions and required terms. | Hyphenated \u201cField-Interface\u201d to keep the same meaning while reducing the second beat to 8 words."
     },
     {
       "scene": "SCN_SCN-074.json",
       "id": "N_VM_02",
-      "priorLine": "Hi! You\u0019ve reached Field Interface Support for SECV legacy devices.\nIf you\u0019re calling about abnormal output, anomalous imaging, unexpected reflective behavior, or anything that could be described as \u001cnonstandard,\u001d that is not covered.",
-      "lineToEdit": "We support: jams, rollers, trays, and manufacturer-listed error codes.\nWe do not support: facilities, incidents, atmospheres, or \u001csituations.\u001d\n\nIf this is about a service code\u0014service codes are not a service issue.\nThey are an authorization issue.\nThank you for understanding, which is required.",
+      "priorLine": "Hi. (pause) Field Interface Support for SECV legacy devices. (pause) If this is abnormal output (pause) or anomalous imaging (pause) or unexpected reflective behavior (pause) anything you\u2019d call \u201cnonstandard\u201d (pause) we can\u2019t cover it.",
+      "lineToEdit": "We handle jams. (pause) Rollers. (pause) Trays. (pause) Manufacturer-listed error codes. (pause)\nFacilities / incidents / atmospheres / situations? (pause) Don\u2019t put those on this line. (pause)\nIf this is a service code, (pause) Authorization has to clear it. (pause)\nThanks for understanding. (pause) It\u2019s required.",
       "nextLine": "The voicemail ends like a door latch.\nThe exclusions are weirdly reusable.",
-      "revisedLine": "We handle jams. (pause) Rollers. (pause) Trays. (pause) Manufacturer-listed error codes. (pause)\nFacilities / incidents / atmospheres / situations? (pause) Don\u2019t put those on this line. (pause)\nIf this is a service code, (pause) Authorization has to clear it. (pause)\nThanks for understanding. (pause) It\u2019s required.",
-      "changeSummary": "Converted listy compliance phrasing into clipped support-line shorthand; preserved supported items, excluded items, and the service-code/authorization requirement. | Split into short (pause) beats under 8 words. Removed extra commas by switching the second list to slashes; kept one comma in the service-code line."
+      "revisedLine": "We handle jams. (pause) Rollers. (pause) Trays. (pause) Error codes the manufacturer actually lists. (pause)\nFacilities. Incidents. Atmospheres. Situations\u2014 (pause) don\u2019t put that on this line. (pause)\nIf it\u2019s a service code. (pause) Authorization has to clear it. (pause)\nThanks. (pause) It\u2019s required.",
+      "changeSummary": "Trimmed compliance polish into more practical shorthand, kept the same scope limits and authorization requirement. | Removed commas by splitting the list into short sentences and dropping the comma after \u201cservice code.\u201d Kept all beats under 8 words and preserved meaning and cadence."
     }
   ]
 }

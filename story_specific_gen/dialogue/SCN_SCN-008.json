@@ -98,18 +98,6 @@
           "speakerId": "NARRATOR",
           "text": "A faded sticker: \u201cTEMP BADGE INSERTS \u2014 PRINT FROM KIOSK / RECORDS AUTHORIZATION REQUIRED.\u201d (pause) \u201cRequired\u201d is underlined twice, as if the pen could enforce it.",
           "next": "N_MAIN_MENU"
-        },
-        {
-          "id": "N_COMMIT_DISCOVER",
-          "type": "end",
-          "outcomeId": "discover_badge_materials",
-          "effects": [
-            {
-              "key": "knowledge.badgeArtifactsMatter",
-              "action": "set",
-              "value": true
-            }
-          ]
         }
       ]
     }

@@ -119,7 +119,7 @@
           "id": "N_BORING_BUD1",
           "type": "npc_line",
           "speakerId": "OLEA_BUDGET",
-          "text": "Keep this a retirement deliverable. (pause) Don\u2019t kick it into (pause) a reclassification event. (pause) If it reads like a \u201cfinding,\u201d (pause) Finance makes it a category (pause) and it won\u2019t go away.",
+          "text": "Keep this a retirement deliverable. (pause)\nDon\u2019t kick it into a reclassification event. (pause)\nIf it reads like a \u201cfinding,\u201d (pause)\nFinance tags it as a category. (pause)\nAnd it won\u2019t die.",
           "next": "N_BORING_P2"
         },
         {
@@ -133,7 +133,7 @@
           "id": "N_BORING_BUD2",
           "type": "npc_line",
           "speakerId": "OLEA_BUDGET",
-          "text": "Good. Use: \u201ccompletion of standard retirement checklist steps.\u201d (pause)\nUse: \u201cdocumentation of operational state for retirement.\u201d (pause)\nUse: \u201cfiscal window compliance.\u201d (pause)\nNo \u201cdiscovery.\u201d Do not joke with it. (pause)\nKeep the tone flat. No impressed adjectives.",
+          "text": "Good. Put: \u201ccompletion of standard retirement checklist steps.\u201d (pause)\nThen: \u201cdocumentation of operational state for retirement.\u201d (pause)\nThen: \u201cfiscal window compliance.\u201d (pause)\nAnd no \u201cdiscovery.\u201d (pause)\nNo jokes. Keep it flat\u2014no impressed adjectives.",
           "next": "N_BORING_N2"
         },
         {
@@ -161,7 +161,7 @@
           "id": "N_DEF_LEG1",
           "type": "npc_line",
           "speakerId": "OLEA_LEGAL",
-          "text": "Define your terms. (pause) Then swing them around. (pause) Go easy on \u201cauthorized.\u201d (pause) People use it like a blanket. (pause) Then wonder why they can\u2019t breathe.",
+          "text": "Spell your terms out first. (pause) Then swing them around. (pause) Go easy on \u201cauthorized.\u201d (pause) People throw it on everything and then\u2014 (pause) they\u2019re stuck with it.",
           "next": "N_DEF_P2"
         },
         {
@@ -175,7 +175,7 @@
           "id": "N_DEF_LEG2",
           "type": "npc_line",
           "speakerId": "OLEA_LEGAL",
-          "text": "The title can say whatever it needs. (pause) The body is where you get bitten. (pause) Leave out \u201cevaluating.\u201d (pause) Leave out \u201cverifying safety.\u201d (pause) Leave out \u201cconfirming normalcy.\u201d (pause) It is comparison language. (pause) We have no baseline we can prove.",
+          "text": "Title can say whatever it needs. (pause) The body\u2019s where you get bitten. (pause) Leave out \u201cevaluating.\u201d (pause) Leave out \u201cverifying safety.\u201d (pause) Leave out \u201cconfirming normalcy.\u201d (pause) That\u2019s comparison language, (pause) and we can\u2019t prove a baseline.",
           "next": "N_DEF_P3"
         },
         {
@@ -189,7 +189,7 @@
           "id": "N_DEF_LEG3",
           "type": "npc_line",
           "speakerId": "OLEA_LEGAL",
-          "text": "You\u2019re documenting operational state for retirement processing. (pause) Per the Evidence Packet. (pause) Describe anything you do as narrow-purpose. (pause) Non-exploratory. (pause)\nCut \u201cstill.\u201d (pause) \u201cStill operating\u201d reads like intent. (pause) Intent becomes governance. (pause) Governance becomes duty.",
+          "text": "You\u2019re documenting operational state for retirement processing. (pause) Per the Evidence Packet. (pause) Anything you do, keep it narrow-purpose. (pause) Non-exploratory. (pause)\nCut \u201cstill.\u201d (pause) \u201cStill operating\u201d reads like intent. (pause) Then it turns into governance. (pause) Then duty.",
           "next": "N_DEF_N2"
         },
         {
@@ -217,7 +217,7 @@
           "id": "N_STABLE_UD1",
           "type": "npc_line",
           "speakerId": "UTIL_DISPATCH",
-          "text": "I need stability stated not implied. (pause) If it\u2019s not attributable it didn\u2019t happen\u2014legally.",
+          "text": "I need \u201cstability\u201d stated not left hanging. (pause) If it isn\u2019t attributable Legal says never happened.",
           "next": "N_STABLE_P2"
         },
         {
@@ -231,7 +231,7 @@
           "id": "N_STABLE_UD2",
           "type": "npc_line",
           "speakerId": "UTIL_DISPATCH",
-          "text": "Everything becomes a control log (pause) when someone\u2019s looking for a cause. (pause)\nInclude time anchors. (pause) Include record IDs. (pause) Include that you will not introduce (pause) oscillatory loading. (pause)\nAnd\u2014this is procedural\u2014don\u2019t make it sound (pause) like you \u201ccouldn\u2019t.\u201d (pause) Make it sound like you \u201cdid.\u201d",
+          "text": "Yeah. And the moment someone hunts for a cause. (pause)\nYour memo becomes the log. (pause)\nPut in time anchors. (pause) Put in record IDs. (pause)\nPut in: you won\u2019t introduce oscillatory loading. (pause)\nAnd don\u2019t write it like you \u201ccouldn\u2019t.\u201d (pause)\nWrite it like you \u201cdid.\u201d",
           "next": "N_STABLE_N2"
         },
         {
@@ -259,7 +259,7 @@
           "id": "N_COMP_MTA1",
           "type": "npc_line",
           "speakerId": "MTA_CONTACT",
-          "text": "Standing\u2019s pending. Service class is, too. (pause) You\u2019re in the queue. Window\u2019s active.",
+          "text": "Standing\u2019s pending. Service class too. (pause)\nYou\u2019re in the queue. Window\u2019s active.",
           "next": "N_COMP_P2"
         },
         {
@@ -273,7 +273,7 @@
           "id": "N_COMP_MTA2",
           "type": "npc_line",
           "speakerId": "MTA_CONTACT",
-          "text": "You need the hold addressed. (pause)\n\u201cLifted\u201d sounds like we chose to. (pause)\nAdd the notice references. (pause)\nAdd the submission log. (pause)\nNo guessing on cause. (pause)\nNo story. (pause)\nStories make jurisdiction.",
+          "text": "You need the hold addressed. (pause)\nDon\u2019t write \u201clifted.\u201d (pause)\nPut in the notice references. (pause)\nPut in the submission log. (pause)\nNo guessing on cause. (pause)\nNo story. (pause)\nIf it reads like story, they\u2019ll grab jurisdiction.",
           "next": "N_COMP_N2"
         },
         {
@@ -326,7 +326,7 @@
           "id": "N_CLAUSE_ADD_LEG1",
           "type": "npc_line",
           "speakerId": "OLEA_LEGAL",
-          "text": "Yeah, that sentence will annoy people. (pause)\nGood. (pause)\nLet it.",
+          "text": "Yeah, that sentence is going to annoy people. (pause)\nFine. (pause)\nLet it.",
           "next": "N_MENU_DRAFT"
         },
         {
@@ -392,14 +392,14 @@
           "id": "N_PRINT_BUD1",
           "type": "npc_line",
           "speakerId": "OLEA_BUDGET",
-          "text": "On paper, it becomes the file\u2019s plan. (pause)\nFiling does that.",
+          "text": "Once it\u2019s on paper, it\u2019s the file\u2019s plan. (pause)\nFiling does that.",
           "next": "N_PRINT_LEG1"
         },
         {
           "id": "N_PRINT_LEG1",
           "type": "npc_line",
           "speakerId": "OLEA_LEGAL",
-          "text": "Don\u2019t write \u201cwe authorized.\u201d (pause)\nWrite: \u201cthis memo exists.\u201d (pause)\nThat\u2019s a fact I can defend.",
+          "text": "Don\u2019t write \u201cwe authorized.\u201d (pause)\nWrite: \u201cthis memo exists.\u201d (pause)\nThat\u2019s what I can defend.",
           "next": "N_PRINT_N2"
         },
         {

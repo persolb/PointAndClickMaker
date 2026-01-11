@@ -28,7 +28,7 @@
           "id": "N_CLERK_OPEN_1",
           "type": "npc_line",
           "speakerId": "INTAKE_CLERK",
-          "text": "Complaints. (pause)\nIf you\u2019re here to be heard. Wrong window. (pause)\nIf you\u2019re here to be processed, (pause)\nslide the paper over. (pause)\nand stop feeding it meaning. (pause)\nIn the normal sense.",
+          "text": "Complaints. (pause)\nSlide the paper over. (pause)\nThis window stamps. (pause)\nDon\u0019t feed it meaning. (pause)\nIn the normal sense.",
           "next": "PC_MAIN"
         },
         {
@@ -92,14 +92,14 @@
           "id": "N_STAMP_FAST_1",
           "type": "npc_line",
           "speakerId": "INTAKE_CLERK",
-          "text": "Good. You're here for ink. (pause) 'Processed' means it hit the queue. (pause) 'No action' means it came back out. (pause) And nothing changed. (pause) People hate that. It's common.",
+          "text": "Good. You\u0019re here for ink. (pause)\n\u0018Processed\u0019: hit the queue. (pause)\n\u0018No action\u0019: came back out. (pause)\nNothing changed. (pause)\nPeople hate it. We do it all day.",
           "next": "N_STAMP_FAST_2"
         },
         {
           "id": "N_STAMP_FAST_2",
           "type": "npc_line",
           "speakerId": "INTAKE_CLERK",
-          "text": "Flat on the counter. (pause)\nDon't hold it while I stamp. (pause)\nIf it's in your hand, (pause)\nit reads like a handoff. (pause)\nIn the normal sense.",
+          "text": "Flat on the counter. (pause)\nDon\u0019t hold it while I stamp. (pause)\nIn your hand, it reads like a handoff\u0014 (pause)\nnormal sense.",
           "next": "N_STAMP_FAST_3"
         },
         {
@@ -113,21 +113,21 @@
           "id": "N_STAMP_FAST_4",
           "type": "npc_line",
           "speakerId": "INTAKE_CLERK",
-          "text": "There. (pause) Processed. (pause) No action. (pause)\nLeave it up if you want it dead.",
+          "text": "There. (pause)\nProcessed. (pause)\nNo action. (pause)\nLeave it up if you want it dead.",
           "next": "END_COLLECT_COMPLAINT_STAMP"
         },
         {
           "id": "N_NO_ACTION_1",
           "type": "npc_line",
           "speakerId": "INTAKE_CLERK",
-          "text": "We close the file. (pause) Nothing in the building moves. (pause) We work the paper. (pause) Nobody works the place, in the normal sense.",
+          "text": "We close the file. (pause)\nNothing in the building moves. (pause)\nWe work the paper. (pause)\nNobody works the place\u0014normal sense.",
           "next": "N_NO_ACTION_2"
         },
         {
           "id": "N_NO_ACTION_2",
           "type": "npc_line",
           "speakerId": "INTAKE_CLERK",
-          "text": "You want action. (pause) Go to Safety. (pause) They\u2019ll make you define the problem. (pause) Then it lands on someone. (pause) Here you get the stamp. (pause) You leave clean.",
+          "text": "You want action, go to Safety. (pause)\nThey'll make you define the problem. (pause)\nThen it lands on someone. (pause)\nHere you get the stamp. (pause)\nYou leave clean.",
           "next": "PC_NO_ACTION_FOLLOW"
         },
         {
@@ -156,7 +156,7 @@
           "id": "N_JUST_RECEIPT_1",
           "type": "npc_line",
           "speakerId": "INTAKE_CLERK",
-          "text": "Don\u2019t say \u201cjust.\u201d (pause)\nIt\u2019s the receipt that stops someone (pause)\ndemanding a better receipt later. (pause)\nThat\u2019s about as close to relief (pause)\nas this window gets (pause)\nin the normal sense.",
+          "text": "Don't say 'just'. (pause)\nIt's the receipt. Stops demands for better later. (pause)\nClosest thing to relief this window does (pause)\nnormal sense.",
           "next": "PC_RECEIPT_FOLLOW"
         },
         {
@@ -180,14 +180,14 @@
           "id": "N_INCIDENT_1",
           "type": "npc_line",
           "speakerId": "INTAKE_CLERK",
-          "text": "Only if you make it one. (pause) Incident gets routed. (pause) Routed turns into meetings. (pause) Complaints are built to die here. (pause) In the normal sense.",
+          "text": "Only if you push it there. (pause)\nIncident gets routed. (pause)\nRouted turns into meetings. (pause)\nComplaints die here\u0014 (pause)\nin the normal sense.",
           "next": "N_INCIDENT_2"
         },
         {
           "id": "N_INCIDENT_2",
           "type": "npc_line",
           "speakerId": "INTAKE_CLERK",
-          "text": "Start talking harm and hazard. (pause) Intent and blame. (pause) Someone reclasses it. (pause) Then it lands as an incident. (pause) You want the stamp or a category?",
+          "text": "Start talking harm and hazard. (pause)\nIntent. Blame. (pause)\nSomeone reclasses it. (pause)\nThen it lands as an incident. (pause)\nYou want the stamp or a category?",
           "next": "PC_INCIDENT_FOLLOW"
         },
         {
@@ -223,7 +223,7 @@
           "id": "N_SAFEST_LINE_1",
           "type": "npc_line",
           "speakerId": "INTAKE_CLERK",
-          "text": "Safest line is blank. (pause) Blank gets noticed. (pause) Write: \u201cService dissatisfaction.\u201d (pause) Don\u2019t name the service. (pause) Naming starts obligations\u2014in the normal sense.",
+          "text": "Safest is leaving it blank. (pause)\nBlank gets noticed. (pause)\nWrite: \u0018Service dissatisfaction\u0019. (pause)\nDon\u0019t name the service. (pause)\nNames start obligations\u0014normal sense.",
           "next": "PC_SAFEST_LINE_FOLLOW"
         },
         {
@@ -247,7 +247,7 @@
           "id": "N_OLEA_1",
           "type": "npc_line",
           "speakerId": "INTAKE_CLERK",
-          "text": "Put the credentials away. (pause) That\u2019s context. (pause) Context burns. (pause) If you\u2019re important take it somewhere. (pause) Somewhere that logs importance. (pause) Here it\u2019s complaints and stamps. (pause) In the normal sense.",
+          "text": "Put the credentials away. (pause)\nContext burns. (pause)\nNeed 'important' logged? Take it to logs. (pause)\nHere it\u2019s complaints and stamps. (pause)\nIn the normal sense.",
           "next": "N_OLEA_2"
         },
         {
@@ -278,7 +278,7 @@
           "id": "N_PERSUADE_PASS_1",
           "type": "npc_line",
           "speakerId": "INTAKE_CLERK",
-          "text": "Alright. (pause) You want wording that travels. (pause) It should not stick. (pause) Header: Processed no action. (pause) Under it: Acknowledged without admission. (pause) Do not add dates you cannot prove. (pause) Dates pull calendars. (pause) Calendars pull auditors in the normal sense.",
+          "text": "Alright. (pause)\nYou want wording that travels. (pause)\nHeader: Processed no action. (pause)\nUnder it: Acknowledged without admission. (pause)\nDon\u0019t add dates you can\u0019t prove. (pause)\nDates pull calendars. (pause)\nCalendars pull auditors\u0014normal sense.",
           "next": "PC_PERSUADE_PASS_FOLLOW"
         },
         {
@@ -302,7 +302,7 @@
           "id": "N_PERSUADE_PASS_STAMP_1",
           "type": "npc_line",
           "speakerId": "INTAKE_CLERK",
-          "text": "I didn\u2019t advise you. (pause) I repeated an existing phrase, normally.",
+          "text": "I didn\u0019t advise you. (pause)\nI just repeated an existing phrase\u0014normally.",
           "next": "N_PERSUADE_PASS_STAMP_2"
         },
         {
@@ -316,7 +316,7 @@
           "id": "N_PERSUADE_FAIL_1",
           "type": "npc_line",
           "speakerId": "INTAKE_CLERK",
-          "text": "No. (pause)\nI don't draft language. (pause)\nDrafting makes it mine. (pause)\nMine becomes intent. (pause)\nTake the stamp as provided. (pause)\nOr leave with your thoughts intact. (pause)\nIn the normal sense.",
+          "text": "No. (pause)\nI don\u0019t draft language. (pause)\nIf I draft it, it\u0019s mine. (pause)\nThen it reads like intent. (pause)\nTake the stamp as provided. (pause)\nOr leave with your thoughts intact\u0014 (pause)\nin the normal sense.",
           "next": "PC_PERSUADE_FAIL_FOLLOW"
         },
         {
@@ -340,7 +340,7 @@
           "id": "N_ESCALATE_1",
           "type": "npc_line",
           "speakerId": "INTAKE_CLERK",
-          "text": "Say 'escalate'. (pause) It becomes a category. (pause) Categories leave receipts. (pause) Want that following you? (pause) Keep going. (pause) If not take 'Processed\u2014no action'. (pause) And walk in the normal sense.",
+          "text": "Say \u0018escalate\u0019. (pause)\nIt becomes a category. (pause)\nCategories leave receipts. (pause)\nWant that following you? (pause)\nKeep going. (pause)\nOtherwise take \u0018Processed\u0014no action\u0019 (pause)\nand walk\u0014normal sense.",
           "next": "PC_ESCALATE_FOLLOW"
         },
         {

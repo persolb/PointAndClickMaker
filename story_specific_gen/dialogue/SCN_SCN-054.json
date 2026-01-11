@@ -16,7 +16,7 @@
           "id": "TECH_OPENING",
           "type": "npc_line",
           "speakerId": "ARCHIVE_TECH",
-          "text": "No browsing. Pull something? State the proper heading.",
+          "text": "Don\u2019t browse. (pause) Want a pull? (pause) Say the proper heading.",
           "next": "PLAYER_USE_TERMINAL"
         },
         {
@@ -44,7 +44,7 @@
           "id": "TECH_FAST_RESULTS",
           "type": "npc_line",
           "speakerId": "ARCHIVE_TECH",
-          "text": "Yeah. Fast. (pause) Fast pulls end up in the wrong drawer. (pause) I don't do it. Other people do.",
+          "text": "Yeah. Fast. (pause) And fast pulls land in the wrong drawer. (pause) I don\u2019t do those. Somebody else can.",
           "next": "MENU_QUERY_FRAME"
         },
         {
@@ -83,7 +83,7 @@
           "id": "TECH_PROPER_HEADING",
           "type": "npc_line",
           "speakerId": "ARCHIVE_TECH",
-          "text": "Endpoint Interconnections. Legacy. (pause) Then: Continuity Exceptions. (pause) And don\u2019t say \u201cincident\u201d or \u201canomaly.\u201d (pause) I\u2019m not tagging that. (pause) Facts only\u2014even when they won\u2019t sit still.",
+          "text": "Endpoint Interconnections. Legacy. (pause) Then: Continuity Exceptions. (pause) Don\u2019t say \u201cincident\u201d or \u201canomaly.\u201d (pause) I\u2019m not tagging that. (pause) Just what\u2019s in front of us\u2014won\u2019t sit still.",
           "next": "MENU_UNDER_HEADING"
         },
         {
@@ -117,21 +117,21 @@
           "id": "TECH_DEFINE_CONTINUITY",
           "type": "npc_line",
           "speakerId": "ARCHIVE_TECH",
-          "text": "It's a tag. (pause) Continuity exception. (pause) The record survives. (pause) Even when the scheme shifts. (pause) Don't turn it into a story.",
+          "text": "It\u2019s a tag. (pause) \u201cContinuity exception.\u201d (pause) Record stays put even when the scheme shifts. (pause) Don\u2019t make it a story.",
           "next": "MENU_UNDER_HEADING"
         },
         {
           "id": "TECH_NO_CITATION_NO_NAMES",
           "type": "npc_line",
           "speakerId": "ARCHIVE_TECH",
-          "text": "I can\u2019t put names in without citation. (pause)\nIf it\u2019s not in the record, unnamed. (pause)\nI\u2019m not making this up for you.",
+          "text": "No citation. No names. (pause) If the record says unnamed, it stays unnamed. (pause) I\u2019m not inventing entries for you.",
           "next": "MENU_UNDER_HEADING"
         },
         {
           "id": "TECH_WHY_NOT_HEADING",
           "type": "npc_line",
           "speakerId": "ARCHIVE_TECH",
-          "text": "Why doesn't help me. (pause)\n\u201cLineage\u201d is the tag they slapped on it. (pause)\nIt means you're tied to a continuity chain. (pause)\nSo yeah, the archive thinks you belong. (pause)\nTo something older than your request. (pause)\nThat's just how it's filed.",
+          "text": "Don\u2019t ask me why. (pause) \u201cMaintenance lineage\u201d is the tag slapped on it. (pause) It ties you to a continuity chain. (pause) So the archive marks you as belonging. (pause) Older than your request. (pause) That\u2019s how it\u2019s filed.",
           "next": "MENU_REPHRASE"
         },
         {
@@ -165,14 +165,14 @@
           "id": "TECH_GIVE_HEADING_PRAISE",
           "type": "npc_line",
           "speakerId": "ARCHIVE_TECH",
-          "text": "Endpoint Interconnections \u2014 Legacy. (pause) Subheading: Continuity Exceptions. (pause) Good. (pause) That's the kind of wording (pause) that keeps me out (pause) of correction memos.",
+          "text": "Endpoint Interconnections\u2014Legacy. (pause) Subheading: Continuity Exceptions. (pause) Good. (pause) Those words keep me out of correction memos.",
           "next": "MENU_UNDER_HEADING"
         },
         {
           "id": "TECH_STATE_HEADING_REQUIRED",
           "type": "npc_line",
           "speakerId": "ARCHIVE_TECH",
-          "text": "State the heading. (pause) The system logs your phrasing. (pause) Then I\u2019m stuck with it.",
+          "text": "State the heading. (pause) The system logs your phrasing. (pause) Then it\u2019s stuck to my file.",
           "next": "MENU_STATE_HEADING"
         },
         {
@@ -196,7 +196,7 @@
           "id": "TECH_UPSTREAM_EXPLAIN",
           "type": "npc_line",
           "speakerId": "ARCHIVE_TECH",
-          "text": "I'm not doing \"who.\" (pause)\nIt says \"UPSTREAM / EXTERNAL (UNNAMED).\" (pause)\nThat's a flag, not a person. (pause)\nNo citation. No name. (pause)\nThat's it.",
+          "text": "I\u2019m not doing \u201cwho.\u201d (pause) It says \u201cUPSTREAM / EXTERNAL (UNNAMED).\u201d (pause) That line\u2019s a flag. (pause) No person I can name. (pause) No citation. It stays unnamed. (pause) That\u2019s it.",
           "next": "MENU_PUSH_OR_COMPLY"
         },
         {
@@ -239,21 +239,21 @@
           "id": "TECH_CIRCLE",
           "type": "npc_line",
           "speakerId": "ARCHIVE_TECH",
-          "text": "If you had the citation (pause) you wouldn\u2019t ask me. (pause)\nThat\u2019s the loop we\u2019re in.",
+          "text": "If you had the citation, (pause) you wouldn\u2019t be asking me. (pause) That\u2019s the loop.",
           "next": "MENU_PUSH_OR_COMPLY"
         },
         {
           "id": "TECH_GIVE_HEADING_PROCEED",
           "type": "npc_line",
           "speakerId": "ARCHIVE_TECH",
-          "text": "Endpoint Interconnections \u0014 Legacy.\u001d\n\u001cContinuity Exceptions.\u001d\nProceed.",
+          "text": "Endpoint Interconnections\u2014Legacy. (pause) Continuity Exceptions. (pause) Proceed.",
           "next": "NARRATOR_ACCESS_CLEAR_SHORT"
         },
         {
           "id": "TECH_OLEA_ACCEPT",
           "type": "npc_line",
           "speakerId": "ARCHIVE_TECH",
-          "text": "Okay. That\u2019s framed clean enough. (pause) Continuity context for OLEA closure. (pause) Not ownership. Fine. (pause) Proper heading: Endpoint Interconnections\u2014Legacy / Continuity Exceptions. (pause) I\u2019ll initiate retrieval. (pause) Don\u2019t hang my name on your conclusion.",
+          "text": "Alright. That\u2019s clean enough for the log. (pause) Continuity context for OLEA closure. (pause) Keep ownership out of it. (pause) Proper heading: Endpoint Interconnections\u2014Legacy / Continuity Exceptions. (pause) I\u2019ll initiate retrieval. (pause) Don\u2019t stick my name under your conclusion.",
           "next": "NARRATOR_ACCESS_CLEAR_SHORT"
         },
         {
@@ -296,7 +296,7 @@
           "id": "TECH_PLACEMENT_NOT_MEANING",
           "type": "npc_line",
           "speakerId": "ARCHIVE_TECH",
-          "text": "Before you type (pause) this retrieval certifies placement. (pause) That's all. (pause) Meaning doesn't go in my file.",
+          "text": "Before you type\u2014(pause) this pull only certifies placement. (pause) That\u2019s it. (pause) Meaning stays out of my file.",
           "next": "NARRATOR_ACCESS_CLEARS_LONG"
         },
         {
@@ -324,7 +324,7 @@
           "id": "TECH_DONT_REMOVE_ORIGINALS",
           "type": "npc_line",
           "speakerId": "ARCHIVE_TECH",
-          "text": "Don't remove originals.(pause) Somebody walks off with one,(pause) and suddenly the copy becomes \"the original\"(pause) and I get stuck writing it up.",
+          "text": "Don\u2019t remove originals. (pause) Somebody walks off with one. (pause) The copy becomes \u201cthe original.\u201d (pause) And I\u2019m the one writing it up.",
           "next": "NARRATOR_MAP_FRAGMENT"
         },
         {

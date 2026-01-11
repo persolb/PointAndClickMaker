@@ -5,27 +5,9 @@
       "nodes": [
         {
           "id": "N_HATCH_DESC",
-          "next": "N_HATCH_MENU",
           "speakerId": "NARRATOR",
           "text": "A ground-level hatch sits in the pavement, off to the side. (pause) A service number is stamped into it. (pause) Paint marks from at least three survey crews. (pause) It looks like an alternate way in. (pause) One you are not authorized to discover.",
           "type": "npc_line"
-        },
-        {
-          "choices": [
-            {
-              "id": "C_LEAVE_BACK_FROM_HATCH",
-              "next": "END_BACK_TO_GATE_SCREEN",
-              "text": "leave Back."
-            }
-          ],
-          "id": "N_HATCH_MENU",
-          "speakerId": "PLAYER",
-          "type": "player_choice"
-        },
-        {
-          "exitTo": "Back to Gate (HUB-01)",
-          "id": "END_BACK_TO_GATE_SCREEN",
-          "type": "end"
         }
       ],
       "sceneId": "SCN-077",

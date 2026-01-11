@@ -1,0 +1,666 @@
+{
+  "dialogueGraphs": [
+    {
+      "id": "SCN_059_IWO_CLEARANCE",
+      "sceneId": "SCN-059",
+      "startNodeId": "N00_TABLEAU",
+      "nodes": [
+        {
+          "id": "N00_TABLEAU",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The scheduling counter is still a cage of glass and forms. (pause)\nThe press. The substitution board. The no-show bin\u2014nothing has moved. (pause)\nOnly you have these. (pause)\nAn AMR calls you \u201cstanding.\u201d (pause)\nA TER calls you \u201cprocessable.\u201d (pause)\nA slot token calls you \u201cin custody.\u201d",
+          "next": "N01_CLERK_NEXT"
+        },
+        {
+          "id": "N01_CLERK_NEXT",
+          "type": "npc_line",
+          "speakerId": "SCHED_CLERK",
+          "text": "Next. Tray forward.",
+          "next": "N02_MAIN_MENU"
+        },
+        {
+          "id": "N02_MAIN_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "text": "At the caged window\u2026",
+          "choices": [
+            {
+              "id": "C_TALK_NEXT",
+              "text": "talk: Next.",
+              "next": "N10_PLAYER_NEXT"
+            },
+            {
+              "id": "C_SHOW_FULL",
+              "text": "show: Slot token. AMR. TER. Here for Interconnection Work Order / Clearance.",
+              "next": "N30_PLAYER_SHOW_FULL"
+            },
+            {
+              "id": "C_ASK_REQUIREMENTS",
+              "text": "ask: What do you need, exactly, to issue the IWO?",
+              "next": "N20_PLAYER_REQ"
+            },
+            {
+              "id": "C_ASK_TER",
+              "text": "ask: Does the TER change anything for you?",
+              "next": "N24_PLAYER_TER"
+            },
+            {
+              "id": "C_ASK_FAILURE",
+              "text": "ask: What\u2019s the failure mode. What gets returned?",
+              "next": "N40_PLAYER_FAILURE"
+            },
+            {
+              "id": "C_ASK_UPSTREAM",
+              "text": "ask: Upstream authorization\u2014who\u2019s upstream?",
+              "next": "N50_PLAYER_UPSTREAM"
+            },
+            {
+              "id": "C_BARGAIN_CUTOFF",
+              "text": "bargain: Fiscal cutoff. I need this to move.",
+              "next": "N60_PLAYER_BARGAIN"
+            },
+            {
+              "id": "C_THREATEN_DOC",
+              "text": "threaten: If this stalls, I document it as scheduling obstruction.",
+              "next": "N70_PLAYER_THREATEN"
+            },
+            {
+              "id": "C_SHOW_OLEA_ESCALATE",
+              "text": "show: Cite OLEA standing. Request escalation.",
+              "checks": [
+                {
+                  "type": "rep",
+                  "faction": "OLEA",
+                  "min": 2
+                }
+              ],
+              "onPassNext": "N80_OLEA_PASS",
+              "onFailNext": "N81_OLEA_FAIL"
+            },
+            {
+              "id": "C_LEAVE",
+              "text": "leave: Step away from the cage.",
+              "next": "END_LEAVE"
+            }
+          ]
+        },
+        {
+          "id": "N10_PLAYER_NEXT",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Next.",
+          "next": "N11_CLERK_VERBS"
+        },
+        {
+          "id": "N11_CLERK_VERBS",
+          "type": "npc_line",
+          "speakerId": "SCHED_CLERK",
+          "text": "Good. You\u2019re here. (pause)\nKeep \u201crequest\u201d and \u201cgrant\u201d out of your mouth\u2014 (pause)\nthose words make stories. (pause)\nYou present custody. (pause)\nI record custody. (pause)\nThat\u2019s the clean lane through glass.",
+          "next": "N12_TALK_MENU"
+        },
+        {
+          "id": "N12_TALK_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_SHOW_FROM_TALK",
+              "text": "show: Slot token. AMR. TER. Issue the IWO clearance.",
+              "next": "N30_PLAYER_SHOW_FULL"
+            },
+            {
+              "id": "C_ASK_REQ_FROM_TALK",
+              "text": "ask: What do you need, exactly, to issue the IWO?",
+              "next": "N20_PLAYER_REQ"
+            },
+            {
+              "id": "C_ASK_FAIL_FROM_TALK",
+              "text": "ask: What\u2019s the failure mode. What gets returned?",
+              "next": "N40_PLAYER_FAILURE"
+            },
+            {
+              "id": "C_TALK_BACK_MAIN",
+              "text": "talk: Back.",
+              "next": "N02_MAIN_MENU"
+            },
+            {
+              "id": "C_LEAVE_FROM_TALK",
+              "text": "leave: Step away.",
+              "next": "END_LEAVE"
+            }
+          ]
+        },
+        {
+          "id": "N20_PLAYER_REQ",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "What do you need, exactly, to issue the IWO?",
+          "next": "N21_CLERK_REQ"
+        },
+        {
+          "id": "N21_CLERK_REQ",
+          "type": "npc_line",
+          "speakerId": "SCHED_CLERK",
+          "text": "I need a claimable slot asset. (pause) In your custody. (pause) And a packet that doesn\u2019t make me guess. (pause) Slot token covers time-as-property. (pause) AMR covers you holding it. (pause) Without it becoming a felony noun. (pause) TER covers the site eligible today. (pause) Eligible\u2014 not \u201csafe.\u201d (pause) Then I can issue an Interconnection Work Order. (pause) Or Clearance packet. (pause) And \u201cissue\u201d here: I record it. (pause) What\u2019s already sitting in front of me.",
+          "next": "N22_REQ_MENU"
+        },
+        {
+          "id": "N22_REQ_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_SHOW_FROM_REQ",
+              "text": "show: Slot token. AMR. TER. Do it.",
+              "next": "N30_PLAYER_SHOW_FULL"
+            },
+            {
+              "id": "C_ASK_CANT_GUARANTEE",
+              "text": "ask: So what\u2019s the part you can\u2019t guarantee?",
+              "next": "N23_PLAYER_CANT_GUARANTEE"
+            },
+            {
+              "id": "C_TALK_BACK_MAIN_FROM_REQ",
+              "text": "talk: Back.",
+              "next": "N02_MAIN_MENU"
+            },
+            {
+              "id": "C_LEAVE_FROM_REQ",
+              "text": "leave: Step away.",
+              "next": "END_LEAVE"
+            }
+          ]
+        },
+        {
+          "id": "N23_PLAYER_CANT_GUARANTEE",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "So what\u2019s the part you can\u2019t guarantee?",
+          "next": "N23B_CLERK_CANT_GUARANTEE"
+        },
+        {
+          "id": "N23B_CLERK_CANT_GUARANTEE",
+          "type": "npc_line",
+          "speakerId": "SCHED_CLERK",
+          "text": "Outcomes. (pause)\nI can tell you what usually survives review. (pause)\nI can\u2019t promise what review decides. (pause)\nNeed guarantees? This isn\u2019t the window.",
+          "next": "N22_REQ_MENU"
+        },
+        {
+          "id": "N24_PLAYER_TER",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Does the TER change anything for you?",
+          "next": "N25_CLERK_TER"
+        },
+        {
+          "id": "N25_CLERK_TER",
+          "type": "npc_line",
+          "speakerId": "SCHED_CLERK",
+          "text": "It changes what I can write. (pause)\nWithout TER the slot token\u2019s just stamped. (pause)\nA nice object with nowhere legal. (pause)\nWith TER it\u2019s a time asset. (pause)\nIn a process lane. (pause)\nLanes keep my desk from precedent.",
+          "next": "N26_TER_MENU"
+        },
+        {
+          "id": "N26_TER_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_SHOW_FROM_TER",
+              "text": "show: Slot token. AMR. TER. Issue the IWO clearance.",
+              "next": "N30_PLAYER_SHOW_FULL"
+            },
+            {
+              "id": "C_ASK_FAIL_FROM_TER",
+              "text": "ask: What\u2019s the failure mode. What gets returned?",
+              "next": "N40_PLAYER_FAILURE"
+            },
+            {
+              "id": "C_TALK_BACK_MAIN_FROM_TER",
+              "text": "talk: Back.",
+              "next": "N02_MAIN_MENU"
+            },
+            {
+              "id": "C_LEAVE_FROM_TER",
+              "text": "leave: Step away.",
+              "next": "END_LEAVE"
+            }
+          ]
+        },
+        {
+          "id": "N40_PLAYER_FAILURE",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "What\u2019s the failure mode. What gets returned?",
+          "next": "N41_CLERK_FAILURE"
+        },
+        {
+          "id": "N41_CLERK_FAILURE",
+          "type": "npc_line",
+          "speakerId": "SCHED_CLERK",
+          "text": "In the file it comes back (pause) as \u201cReturned for deficiency.\u201d (pause)\nDeficiency can be chain continuity gaps. (pause)\nOr custody conflicts. (pause)\nOr upstream authority flags the node (pause)\nnot in good standing. (pause)\nThat last one isn\u2019t mine. (pause)\nI\u2019m saying it now. (pause)\nTo keep it off me later.",
+          "next": "N42_FAILURE_MENU"
+        },
+        {
+          "id": "N42_FAILURE_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_ASK_NOT_STANDING",
+              "text": "ask: Not in good standing how?",
+              "next": "N43_PLAYER_NOT_STANDING"
+            },
+            {
+              "id": "C_SHOW_FROM_FAILURE",
+              "text": "show: Slot token. AMR. TER. Record it and issue the packet.",
+              "next": "N30_PLAYER_SHOW_FULL"
+            },
+            {
+              "id": "C_TALK_BACK_MAIN_FROM_FAILURE",
+              "text": "talk: Back.",
+              "next": "N02_MAIN_MENU"
+            },
+            {
+              "id": "C_LEAVE_FROM_FAILURE",
+              "text": "leave: Step away.",
+              "next": "END_LEAVE"
+            }
+          ]
+        },
+        {
+          "id": "N43_PLAYER_NOT_STANDING",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Not in good standing how?",
+          "next": "N44_CLERK_NOT_STANDING"
+        },
+        {
+          "id": "N44_CLERK_NOT_STANDING",
+          "type": "npc_line",
+          "speakerId": "SCHED_CLERK",
+          "text": "Everything\u2019s filled out. It still won\u2019t move. (pause)\nOutstanding disputes. Unresolved incidents. Unclosed loops. (pause)\nSometimes upstream just\u2026 stops. (pause)\nIt won\u2019t treat the node as eligible. (pause)\nThat\u2019s routing. Don\u2019t make it a sermon.",
+          "next": "N45_NOT_STANDING_MENU"
+        },
+        {
+          "id": "N45_NOT_STANDING_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_ASK_WHO_UPSTREAM_FROM_STANDING",
+              "text": "ask: Who is upstream?",
+              "next": "N46_PLAYER_WHO_UPSTREAM"
+            },
+            {
+              "id": "C_SHOW_FROM_STANDING",
+              "text": "show: Proceed. Issue the IWO clearance.",
+              "next": "N30_PLAYER_SHOW_FULL"
+            },
+            {
+              "id": "C_TALK_BACK_MAIN_FROM_STANDING",
+              "text": "talk: Back.",
+              "next": "N02_MAIN_MENU"
+            },
+            {
+              "id": "C_LEAVE_FROM_STANDING",
+              "text": "leave: Step away.",
+              "next": "END_LEAVE"
+            }
+          ]
+        },
+        {
+          "id": "N46_PLAYER_WHO_UPSTREAM",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Who is upstream?",
+          "next": "N47_CLERK_WHO_UPSTREAM"
+        },
+        {
+          "id": "N47_CLERK_WHO_UPSTREAM",
+          "type": "npc_line",
+          "speakerId": "SCHED_CLERK",
+          "text": "Upstream is whoever can say \u201cno\u201d (pause) from somewhere else. (pause)\nI don\u2019t name names (pause) you\u2019ll go chase them (pause) then my diagram changes. (pause)\nSo it stays \u201cupstream.\u201d (pause) That\u2019s what gets recorded.",
+          "next": "N45_NOT_STANDING_MENU"
+        },
+        {
+          "id": "N50_PLAYER_UPSTREAM",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Upstream authorization\u2014who\u2019s upstream?",
+          "next": "N51_CLERK_UPSTREAM"
+        },
+        {
+          "id": "N51_CLERK_UPSTREAM",
+          "type": "npc_line",
+          "speakerId": "SCHED_CLERK",
+          "text": "It\u2019s a direction on the chart. (pause)\nThat direction can refuse you. (pause)\nWithout walking in here. (pause)\nPut a person on it. (pause)\nAnd it turns into an argument. (pause)\nI\u2019m not running arguments through this glass.",
+          "next": "N52_UPSTREAM_MENU"
+        },
+        {
+          "id": "N52_UPSTREAM_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_SHOW_FROM_UPSTREAM",
+              "text": "show: Slot token. AMR. TER. Issue the IWO clearance packet.",
+              "next": "N30_PLAYER_SHOW_FULL"
+            },
+            {
+              "id": "C_ASK_STALL",
+              "text": "ask: So you\u2019re saying this can still stall.",
+              "next": "N53_PLAYER_STALL"
+            },
+            {
+              "id": "C_TALK_BACK_MAIN_FROM_UPSTREAM",
+              "text": "talk: Back.",
+              "next": "N02_MAIN_MENU"
+            },
+            {
+              "id": "C_LEAVE_FROM_UPSTREAM",
+              "text": "leave: Step away.",
+              "next": "END_LEAVE"
+            }
+          ]
+        },
+        {
+          "id": "N53_PLAYER_STALL",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "So you\u2019re saying this can still stall.",
+          "next": "N54_CLERK_STALL"
+        },
+        {
+          "id": "N54_CLERK_STALL",
+          "type": "npc_line",
+          "speakerId": "SCHED_CLERK",
+          "text": "Yeah it can still stall. (pause)\nPacket can be spotless. (pause)\nStill comes back. (pause)\nI stamp so the return reads (pause)\nlike policy not a story.",
+          "next": "N52_UPSTREAM_MENU"
+        },
+        {
+          "id": "N60_PLAYER_BARGAIN",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Fiscal cutoff. I need this to move.",
+          "next": "N61_CLERK_BARGAIN"
+        },
+        {
+          "id": "N61_CLERK_BARGAIN",
+          "type": "npc_line",
+          "speakerId": "SCHED_CLERK",
+          "text": "Fiscal cutoff doesn\u2019t change clearance. (pause)\nIt\u2019s your deadline. (pause)\nDeadlines don\u2019t go on my stamps. (pause)\nIf you\u2019ve got custody, keep the chain continuous.",
+          "next": "N02_MAIN_MENU"
+        },
+        {
+          "id": "N70_PLAYER_THREATEN",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "If this stalls, I document it as scheduling obstruction.",
+          "next": "N71_CLERK_THREATEN"
+        },
+        {
+          "id": "N71_CLERK_THREATEN",
+          "type": "npc_line",
+          "speakerId": "SCHED_CLERK",
+          "text": "Document whatever you want. (pause) Use the right nouns. (pause) \u201cObstruction\u201d drags intent into it. (pause) Then it drags a person in. (pause) I\u2019m not volunteering. (pause) Present custody. (pause) Or leave.",
+          "next": "N72_THREAT_MENU"
+        },
+        {
+          "id": "N72_THREAT_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_SHOW_FROM_THREAT",
+              "text": "show: Slot token. AMR. TER. Issue the packet.",
+              "next": "N30_PLAYER_SHOW_FULL"
+            },
+            {
+              "id": "C_TALK_BACK_MAIN_FROM_THREAT",
+              "text": "talk: Back.",
+              "next": "N02_MAIN_MENU"
+            },
+            {
+              "id": "C_LEAVE_FROM_THREAT",
+              "text": "leave: Step away.",
+              "next": "END_LEAVE"
+            }
+          ]
+        },
+        {
+          "id": "N80_OLEA_PASS",
+          "type": "npc_line",
+          "speakerId": "SCHED_CLERK",
+          "text": "Standing. Noted. (pause)\nStill doesn\u2019t make a slot. (pause)\nStill no room to invent process. (pause)\nIf I escalate, it\u2019s discretionary. (pause)\nMy name goes on the record. (pause)\nPrecedent brings review. (pause)\nI\u2019m not feeding that.",
+          "next": "N82_OLEA_MENU"
+        },
+        {
+          "id": "N82_OLEA_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_SHOW_FROM_OLEA_PASS",
+              "text": "show: Fine. Slot token. AMR. TER. Record and issue.",
+              "next": "N30_PLAYER_SHOW_FULL"
+            },
+            {
+              "id": "C_ASK_UPSTREAM_WATCH",
+              "text": "ask: Upstream authority\u2014what are they watching for?",
+              "next": "N83_PLAYER_UPSTREAM_WATCH"
+            },
+            {
+              "id": "C_TALK_BACK_MAIN_FROM_OLEA_PASS",
+              "text": "talk: Back.",
+              "next": "N02_MAIN_MENU"
+            },
+            {
+              "id": "C_LEAVE_FROM_OLEA_PASS",
+              "text": "leave: Step away.",
+              "next": "END_LEAVE"
+            }
+          ]
+        },
+        {
+          "id": "N83_PLAYER_UPSTREAM_WATCH",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Upstream authority\u2014what are they watching for?",
+          "next": "N84_CLERK_UPSTREAM_WATCH"
+        },
+        {
+          "id": "N84_CLERK_UPSTREAM_WATCH",
+          "type": "npc_line",
+          "speakerId": "SCHED_CLERK",
+          "text": "Continuity. (pause)\nNo blanks. (pause)\nNo cute handwriting. (pause)\nNo new verbs. (pause)\nIf the node\u2019s flagged, it\u2019ll bounce either way. (pause)\nStamps won\u2019t save it. (pause)\nThat\u2019s why I stamp like I\u2019m being watched.",
+          "next": "N82_OLEA_MENU"
+        },
+        {
+          "id": "N81_OLEA_FAIL",
+          "type": "npc_line",
+          "speakerId": "SCHED_CLERK",
+          "text": "Declarations don\u2019t run this window. (pause) Show standing in-chain before you invoke it. (pause) Escalation won\u2019t replace custody.",
+          "next": "N85_OLEA_FAIL_MENU"
+        },
+        {
+          "id": "N85_OLEA_FAIL_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "choices": [
+            {
+              "id": "C_SHOW_FROM_OLEA_FAIL",
+              "text": "show: Slot token. AMR. TER.",
+              "next": "N30_PLAYER_SHOW_FULL"
+            },
+            {
+              "id": "C_TALK_BACK_MAIN_FROM_OLEA_FAIL",
+              "text": "talk: Back.",
+              "next": "N02_MAIN_MENU"
+            },
+            {
+              "id": "C_LEAVE_FROM_OLEA_FAIL",
+              "text": "leave: Step away.",
+              "next": "END_LEAVE"
+            }
+          ]
+        },
+        {
+          "id": "N30_PLAYER_SHOW_FULL",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "Slot token. AMR. TER. Interconnection Work Order / Clearance.",
+          "next": "N31_CLERK_ACK_OBJECTS"
+        },
+        {
+          "id": "N31_CLERK_ACK_OBJECTS",
+          "type": "npc_line",
+          "speakerId": "SCHED_CLERK",
+          "text": "Good. Actual objects. I can record those. (pause)\nSlide the token to the line. (pause)\nKeep the serial visible. (pause)\nAnd say it straight. \u201cInterconnection Work Order\u2014Clearance.\u201d (pause)\nStart calling it \u201cpermission\u201d or \u201capproval\u201d (pause)\nand it turns into a different disaster.",
+          "next": "N32_PRESENT_MENU"
+        },
+        {
+          "id": "N32_PRESENT_MENU",
+          "type": "player_choice",
+          "speakerId": "PLAYER",
+          "text": "The tray waits under the glass\u2026",
+          "choices": [
+            {
+              "id": "C_GIVE_TOKEN",
+              "text": "give: Hand over the slot token.",
+              "next": "N90_GIVE_TOKEN"
+            },
+            {
+              "id": "C_ASK_UPSTREAM_NEEDS",
+              "text": "ask: What does upstream need to see on this packet?",
+              "next": "N34_PLAYER_UPSTREAM_NEEDS"
+            },
+            {
+              "id": "C_LOOK_BOARD",
+              "text": "look: Look at the stamp substitution board.",
+              "next": "N33_LOOK_BOARD"
+            },
+            {
+              "id": "C_TALK_BACK_MAIN_FROM_PRESENT",
+              "text": "talk: Back.",
+              "next": "N02_MAIN_MENU"
+            },
+            {
+              "id": "C_LEAVE_FROM_PRESENT",
+              "text": "leave: Step away.",
+              "next": "END_LEAVE"
+            }
+          ]
+        },
+        {
+          "id": "N33_LOOK_BOARD",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "The substitution board hangs slightly crooked, corners curled from being handled and put back. (pause)\nApproved workarounds, formalized. (pause)\nIt reads like a promise: the chain can tolerate reality as long as reality is stamped.",
+          "next": "N32_PRESENT_MENU"
+        },
+        {
+          "id": "N34_PLAYER_UPSTREAM_NEEDS",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "What does upstream need to see on this packet?",
+          "next": "N35_CLERK_UPSTREAM_NEEDS"
+        },
+        {
+          "id": "N35_CLERK_UPSTREAM_NEEDS",
+          "type": "npc_line",
+          "speakerId": "SCHED_CLERK",
+          "text": "Continuity. (pause)\nNo blank spaces. (pause)\nNo new verbs. (pause)\nIf the node\u2019s flagged, upstream bounces it. (pause)\nClean stamps or not. (pause)\nThat\u2019s routing.",
+          "next": "N32_PRESENT_MENU"
+        },
+        {
+          "id": "N90_GIVE_TOKEN",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "You slide the token into the tray. (pause) The clerk doesn\u2019t pick it up at first\u2014just studies impression, like it might change its mind.",
+          "next": "N91_CLERK_VALIDATE"
+        },
+        {
+          "id": "N91_CLERK_VALIDATE",
+          "type": "npc_line",
+          "speakerId": "SCHED_CLERK",
+          "text": "Serial matches the recovery ledger. (pause)\nTolerance band\u2019s tight. (pause)\nDon\u2019t treat it like a suggestion. (pause)\nAMR standing is valid. (pause)\nTER is current. (pause)\nSo I can do my part, (pause)\nand stay boring.",
+          "next": "N92_CLERK_STAMPING"
+        },
+        {
+          "id": "N92_CLERK_STAMPING",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "Paper moves behind the glass.\nA stamp lands, lifts, lands again\u2014measured and tender in its violence.",
+          "next": "N93_CLERK_PACKET"
+        },
+        {
+          "id": "N93_CLERK_PACKET",
+          "type": "npc_line",
+          "speakerId": "SCHED_CLERK",
+          "text": "Interconnection Work Order. (pause) Clearance packet. (pause)\nProvisional pending upstream review. (pause) That\u2019s the wording. (pause)\nKeep it closed until a checkpoint says. (pause) Otherwise leave it shut. (pause)\nOpen it early and it reads like tampering. (pause) Don\u2019t argue. (pause) This rule\u2019s older than both of us.",
+          "next": "N94_PACKET_SLIDES"
+        },
+        {
+          "id": "N94_PACKET_SLIDES",
+          "type": "npc_line",
+          "speakerId": "NARRATOR",
+          "text": "A thick envelope slides through the lower slot. Edges square. (pause) Corners already worn by expectation. (pause) An extra insert rides with it\u2014paper that doesn\u2019t match the rest. (pause) Folded like it was meant to be found later.",
+          "next": "N95_PLAYER_INSERT_Q"
+        },
+        {
+          "id": "N95_PLAYER_INSERT_Q",
+          "type": "npc_line",
+          "speakerId": "PLAYER",
+          "text": "What\u2019s the insert?",
+          "next": "N96_CLERK_INSERT_EXPLAIN"
+        },
+        {
+          "id": "N96_CLERK_INSERT_EXPLAIN",
+          "type": "npc_line",
+          "speakerId": "SCHED_CLERK",
+          "text": "Map fragment. Third set. (pause)\nYeah, I know. (pause)\nIt\u2019s part of the continuity kit. (pause)\nWhen the corridor signage contradicts itself\u2014 (pause)\nand it will\u2014 (pause)\nyou\u2019ll want something consistent.",
+          "next": "N97_CLERK_FINAL_NEXT"
+        },
+        {
+          "id": "N97_CLERK_FINAL_NEXT",
+          "type": "npc_line",
+          "speakerId": "SCHED_CLERK",
+          "text": "Next\u2014move.",
+          "next": "END_ISSUE_IWO"
+        },
+        {
+          "id": "END_ISSUE_IWO",
+          "type": "end",
+          "outcomeId": "issue_iwo_clearance",
+          "effects": [
+            {
+              "key": "act2.iwoIssued",
+              "action": "set",
+              "value": true
+            },
+            {
+              "key": "inventory.items",
+              "action": "add",
+              "value": "ITEM_IWO_CLEARANCE_PACKET"
+            },
+            {
+              "key": "inventory.items",
+              "action": "add",
+              "value": "ITEM_MAP_FRAGMENT_3"
+            },
+            {
+              "key": "knowledge.upstreamAuthorityHinted",
+              "action": "set",
+              "value": true
+            }
+          ]
+        },
+        {
+          "id": "END_LEAVE",
+          "type": "end"
+        }
+      ]
+    }
+  ]
+}

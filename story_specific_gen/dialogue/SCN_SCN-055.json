@@ -28,7 +28,7 @@
           "id": "TRIAGE_INTRO",
           "type": "npc_line",
           "speakerId": "TRIAGE_MAINT",
-          "text": "You're staring at it like it'll blink first. (pause)\nIt won't. (pause)\nIt wants three fields: sponsor. (pause)\nScope. (pause)\nAcceptable failure mode. (pause)\nAnything else is\u2014 (cuts off) \u2014a story.",
+          "text": "You're staring at it like it's gonna give. (pause)\nIt won't. (pause)\nThree boxes. Sponsor. (pause)\nScope. (pause)\nAcceptable failure mode. (pause)\nAnything else is\u2014 (cuts off) an argument.",
           "next": "MENU_MAIN"
         },
         {
@@ -97,56 +97,56 @@
           "id": "TRIAGE_EXPLAIN_AMR",
           "type": "npc_line",
           "speakerId": "TRIAGE_MAINT",
-          "text": "Attached Mass Registry. (pause)\nPaperwork hack. (pause)\nFile it without a new bucket. (pause)\nAttached: rides an existing endpoint record. (pause)\nMass: we don\u2019t litigate what it is. (pause)\nRegistry: it\u2019s in the system. (pause)\nOut of my hands. (pause)\nNow pick: scope. (pause)\nSponsor. (pause)\nFailure mode.",
+          "text": "Attached Mass Registry. (pause)\nYeah, it's a paperwork hack. (pause)\nGets it filed. No new bucket. (pause)\n\"Attached\": under an existing endpoint record. (pause)\n\"Mass\"\u2014we don't fight that word. (pause)\n\"Registry\": in the system. I'm stuck with it. (pause)\nSo. Scope. (pause)\nSponsor. (pause)\nFailure mode.",
           "next": "MENU_MAIN"
         },
         {
           "id": "TRIAGE_EXPLAIN_SPONSOR",
           "type": "npc_line",
           "speakerId": "TRIAGE_MAINT",
-          "text": "If I sponsor it it stays maintenance-class. (pause)\nOn the record. Period. (pause)\nI'll do that inside scope. (pause)\nI'm not putting my name on a mystery. (pause)\nGive me one sentence I can sign. (pause)\nNo hearings later. (pause)\nShow me the endpoint or the failure mode.",
+          "text": "If I sponsor it it stays maintenance-class. (pause)\nMy name goes on the file. (pause)\nI'll do it if it's inside scope. (pause)\nI'm not signing a mystery. (pause)\nGive me one sentence I can live with. (pause)\nSomething that doesn't drag me into a hearing. (pause)\nEndpoint or failure mode. Pick.",
           "next": "MENU_MAIN"
         },
         {
           "id": "TRIAGE_READ_METADATA",
           "type": "npc_line",
           "speakerId": "TRIAGE_MAINT",
-          "text": "Let's see it. (pause)\n(reads lips moving) Mm. Okay. Legacy helps. (pause)\nMeans there's already a record. (pause)\nTo hang this off. (pause)\nAnd yeah. The paper's what passes for reality. (pause)\nAround here. (pause)\nStill doesn't tell me. (pause)\nWhat you want the AMR to say. (pause)\nI need an acceptable failure mode. (pause)\nKeep it boring. (pause)\nKeep it stable.",
+          "text": "Alright. Show me. (pause)\n(reads; lips moving) ...Okay. Yeah, legacy helps. (pause)\nThere's already a record to hang this on. (pause)\nAnd here? Paper's the only thing that counts. (pause)\nStill need the line though. (pause)\nWhat do you want the AMR to say? (pause)\nGive me an acceptable failure mode. (pause)\nKeep it boring. Keep it stable.",
           "next": "MENU_MAIN"
         },
         {
           "id": "TRIAGE_EXPLAIN_FAILURE",
           "type": "npc_line",
           "speakerId": "TRIAGE_MAINT",
-          "text": "Acceptable: I can stand behind *our* fix. (pause) That\u2019s it. (pause)\nPick a label. (pause)\nMisclassification of endpoint. (pause)\nRouting error. (pause)\nDegraded seal geometry. (pause)\nSensor inversion. (pause)\nReflective behavior. (pause)\nAnd don\u2019t write \u201creflection.\u201d (pause)\nLegal people lose their minds over that word. (pause)\nTell me what you\u2019ll put in writing.",
+          "text": "\"Acceptable\" means I sign off on the fix. (pause)\nThat's all it means. (pause)\nPick the label. (pause)\nMisclassification of endpoint. (pause)\nRouting error. (pause)\nDegraded seal geometry. (pause)\nSensor inversion. (pause)\nReflective behavior. (pause)\nAnd don't type \"reflection.\" (pause)\nLegal goes sideways on that word. (pause)\nWhat are you putting in writing?",
           "next": "MENU_MAIN"
         },
         {
           "id": "TRIAGE_THREAT_RESP",
           "type": "npc_line",
           "speakerId": "TRIAGE_MAINT",
-          "text": "Sure. Log an open anomaly. (pause) Type \"unknown\" once. (pause) It spreads. (pause) Then Assurance shows up. (pause) Wants a comparison framework. (pause) You\u2019ll be back next week. (pause) With a binder and a migraine. (pause) I\u2019m handing you the boring way through. (pause) Pick scope. (pause) Pick sponsor. (pause) Pick failure mode.",
+          "text": "Go ahead. Open anomaly. (pause)\nType \"unknown\" once. It snowballs. (pause)\nThen Assurance walks in. (pause)\nThey'll ask for a comparison framework. (pause)\nNext week you return with a binder. (pause)\nAnd a headache. (pause)\nI'm trying to keep this boring. (pause)\nScope. (pause)\nSponsor. (pause)\nFailure mode.",
           "next": "MENU_MAIN"
         },
         {
           "id": "TRIAGE_PERSUADE_PASS",
           "type": "npc_line",
           "speakerId": "TRIAGE_MAINT",
-          "text": "I don\u2019t care if you\u2019re closing the moon (pause) by end of quarter. (pause) OLEA closure packets are piles of signatures. (pause) I\u2019m not adding mine unless it\u2019s clean. (pause) I can cut an AMR tag (pause) and hand you a tool (pause) that does one thing (pause) and doesn\u2019t read like permission. (pause) You keep this inside Interconnection Maintenance. (pause) Pick the failure mode. (pause) Then we move.",
+          "text": "I don't care if you're closing the moon (pause)\nby end of quarter. (pause)\nOLEA closure packets are just stacks of signatures. (pause)\nMine isn't going on a mess. (pause)\nI can cut an AMR tag (pause)\nand hand you a tool (pause)\nthat does one thing (pause)\nand doesn't look like permission. (pause)\nYou keep this inside Interconnection Maintenance. (pause)\nPick the failure mode. (pause)\nThen we move.",
           "next": "TRIAGE_SCOPE_OPTIONS"
         },
         {
           "id": "TRIAGE_PERSUADE_FAIL",
           "type": "npc_line",
           "speakerId": "TRIAGE_MAINT",
-          "text": "A deadline\u2019s not a failure mode. (pause)\nYou want my signature? (pause)\nGive me scope wording I can live with. (pause)\nAnything else lands on me. (pause)\nPick one: scope. Sponsor. Failure mode.",
+          "text": "A deadline isn't a failure mode. (pause)\nYou want my signature? (pause)\nGive me scope wording I can actually sign. (pause)\nOtherwise it lands on me. (pause)\nScope. Sponsor. Failure mode. Choose.",
           "next": "MENU_MAIN"
         },
         {
           "id": "TRIAGE_SCOPE_OPTIONS",
           "type": "npc_line",
           "speakerId": "TRIAGE_MAINT",
-          "text": "Scope keeps this from becoming tampering. (pause)\nOn the log. (pause)\nWith the tag you're allowed to identify. (pause)\nAttach. (pause)\nSeal. (pause)\nDocument. (pause)\nThat's it. (pause)\nNo testing. (pause)\nNo probing. (pause)\nNo exploring. (pause)\n(flat) (pause)\nNo go. (pause)\nIf you need a tool (pause)\nit'll be a seal tool. (pause)\nNothing that looks like a theory. (pause)\nSo. (pause)\nWhat are we calling it?",
+          "text": "Scope keeps this from reading like tampering. (pause)\nIn the log. (pause)\nWith the tag you're cleared to: identify. (pause)\nAttach. (pause)\nSeal. (pause)\nDocument. (pause)\nDone. (pause)\nNo testing. (pause)\nNo probing. (pause)\nNo exploring. (pause)\n(flat) (pause)\nDon't. (pause)\nIf you need a tool, (pause)\nit's a seal tool. (pause)\nNothing that looks like a theory. (pause)\nSo. (pause)\nwhat are we calling it?",
           "next": "FRAMING_MENU"
         },
         {
@@ -185,14 +185,14 @@
           "id": "TRIAGE_BARGAIN_RESP",
           "type": "npc_line",
           "speakerId": "TRIAGE_MAINT",
-          "text": "Fine. (pause) Maintenance-class in your reports. (pause)\nDon't get creative with my tag. (pause) Watch your verbs. (pause) Write it up. (pause)\nYou'll get the AMR entry. (pause) The physical tag. (pause) The printout. (pause)\nAnd one tool for one job. (pause)\nYou pick the sentence. (pause) I'm not picking it for you.",
+          "text": "Fine. (pause)\nMaintenance-class in your reports. (pause)\nDon't get cute with my tag. Watch verbs. (pause)\nWrite it clean. (pause)\nYou'll get the AMR entry. (pause)\nThe physical tag. (pause)\nThe printout. (pause)\nAnd one tool. One job. (pause)\nYou choose the sentence. (pause)\nI'm not choosing it for you.",
           "next": "FRAMING_MENU"
         },
         {
           "id": "TRIAGE_ROUTING_OK",
           "type": "npc_line",
           "speakerId": "TRIAGE_MAINT",
-          "text": "Routing error\u2019s fine. (pause) Everyone hates it. (pause) That\u2019s why it survives. (pause) Blame stays in the pipes and the file. (pause) I\u2019ll sponsor it but I\u2019m adding one line. (pause) \u201cNo personnel transfer implied.\u201d (pause) Yeah. I know. (pause) I\u2019m putting it in so nobody writes nastier. (pause) You good? (pause) Then we issue.",
+          "text": "Routing error works. (pause)\nEverybody hates it. (pause)\nSo nobody fights the wording. (pause)\nBlame stays in pipes and file. (pause)\nI'll sponsor but I'm adding a line. (pause)\n\"No personnel transfer implied.\" (pause)\nYeah I know. (pause)\nIt's there so nobody writes worse later. (pause)\nYou good? (pause)\nThen we issue.",
           "next": "CONFIRM_ROUTING"
         },
         {
@@ -218,7 +218,7 @@
           "id": "TRIAGE_MISCLASS_OK",
           "type": "npc_line",
           "speakerId": "TRIAGE_MAINT",
-          "text": "Misclassification. Yeah. I can work with that. (pause)\nEndpoint exists. Label is wrong. (pause)\nThat stays upstream. (pause)\nI'm adding: \"Corrective maintenance limited to seal.\" (pause)\nSeal and registry attachment only. (pause)\nAnything past that. You're on your own. (pause)\nAgree. And we issue.",
+          "text": "Misclassification. (pause)\nYeah. I can sign that. (pause)\nEndpoint exists, label's wrong. (pause)\nThat stays upstream. (pause)\nI'm adding: \"Corrective maintenance limited to seal.\" (pause)\nSeal and registry attachment only. (pause)\nAnything past that\u2014that's you. (pause)\nAgree? (pause)\nThen we issue.",
           "next": "CONFIRM_MISCLASS"
         },
         {
@@ -244,7 +244,7 @@
           "id": "TRIAGE_REFLECT_OK",
           "type": "npc_line",
           "speakerId": "TRIAGE_MAINT",
-          "text": "We use the legacy phrase. (pause) It cleared one legal cycle. (pause) In the line I put \"reflective behavior\". (pause) Then I add \"non-reflection\". (pause) Yeah it's stupid. (pause) It holds up. (pause) You stick to scope-limited intervention, we issue.",
+          "text": "Okay. Legacy phrase. (pause)\nIt got through one legal cycle. (pause)\nI put \"reflective behavior\" in the line. (pause)\nthen I tack on \"non-reflection.\" (pause)\nYeah. It\u2019s stupid. (pause)\nIt survives review. (pause)\nYou stay scope-limited and we issue.",
           "next": "CONFIRM_REFLECT"
         },
         {
@@ -277,7 +277,7 @@
           "id": "TRIAGE_HANDOVER_1",
           "type": "npc_line",
           "speakerId": "TRIAGE_MAINT",
-          "text": "Alright. AMR's attached to the endpoint record. (pause)\nTag. Don\u2019t lose it. (pause)\nReplacements turn into duplication, then somebody starts counting. (pause)\nPrintout. Keep it dry. (pause)\nAnd\u2014 (rummages; irritated) \u2014here.",
+          "text": "Alright. It's attached to the endpoint record. (pause)\nTag\u2014don't lose it. (pause)\nYou ask for a replacement. (pause)\nIt turns into a duplicate. (pause)\nThen somebody starts counting. (pause)\nPrintout. Keep it dry. (pause)\nAnd\u2014 (rummages; irritated) here.",
           "next": "NARR_TOOL_1"
         },
         {
@@ -291,7 +291,7 @@
           "id": "TRIAGE_TOOL_SCOPE",
           "type": "npc_line",
           "speakerId": "TRIAGE_MAINT",
-          "text": "Scope-limited seal punch. (pause)\nOne mark. One depth. (pause)\nApproved material only. (pause)\nIt won't open anything. (pause)\nIt won't test anything. (pause)\nNobody points at it as permission. (pause)\nIf anyone asks, it's a warranty boundary. (pause)\nThat's all.",
+          "text": "Scope-limited seal punch. (pause)\nOne mark. One depth. (pause)\nApproved material only. (pause)\nIt doesn't open anything. (pause)\nIt doesn't test anything. (pause)\nNobody gets to wave this around like permission. (pause)\nIf asked, this is a warranty boundary. (pause)\nThat's it.",
           "next": "NARR_RECEIVE_1"
         },
         {
@@ -305,7 +305,7 @@
           "id": "TRIAGE_SIGNOFF",
           "type": "npc_line",
           "speakerId": "TRIAGE_MAINT",
-          "text": "That's your paper. (pause) That's your scope. (pause) Please don't make me learn new nouns (pause) about this place.",
+          "text": "That's your paper. (pause)\nThat's your scope. (pause)\nDo me a favor. (pause)\nDon't make me learn new nouns (pause)\nabout this place.",
           "next": "END_ISSUE_AMR"
         },
         {

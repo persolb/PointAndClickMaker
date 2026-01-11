@@ -50,7 +50,7 @@
           "id": "N_USE_DOOR_2",
           "next": "PC_DOOR_MENU",
           "speakerId": "PROCESS_COACH",
-          "text": "Yeah. (pause)\nIt doesn\u2019t even reject you. (pause)\nYou didn\u2019t register as input.",
+          "text": "Yeah. (pause)\nIt didn\u2019t even flag you. (pause)\nReader got nothing to log.",
           "type": "npc_line"
         },
         {
@@ -91,7 +91,7 @@
           "id": "N_TOKENS_RUN_2",
           "next": "PC_DOOR_FOLLOW",
           "speakerId": "PROCESS_COACH",
-          "text": "Tokens run whatever gets audited. (pause) Doors. Kiosks. Windows\u2014they answer artifacts. (pause) Not faces. (pause) You want to move. (pause) You do it in tokens.",
+          "text": "Tokens run whatever gets audited. (pause) Doors. Kiosks. Windows\u2014they answer artifacts. (pause) You want to move, (pause) you do it in tokens.",
           "type": "npc_line"
         },
         {
@@ -122,7 +122,7 @@
           "id": "N_THREATEN_2",
           "next": "PC_AFTER_THREAT",
           "speakerId": "PROCESS_COACH",
-          "text": "Sure. Escalate. (pause) It needs a category. (pause) Then you sit in the incident queue. (pause) Until the system decides your problem type. (pause) I'm not here to fight you. (pause) I'm throughput. (pause) Let me keep you moving.",
+          "text": "Sure. Escalate. (pause) They\u2019ll want a category. (pause) Then you sit in the incident queue (pause) till the system decides your problem type. (pause) I\u2019m not here for a fight. (pause) I\u2019m throughput. (pause) Let me keep you moving.",
           "type": "npc_line"
         },
         {
@@ -153,7 +153,7 @@
           "id": "N_GET_TOKEN_INFO_2",
           "next": "N_GET_TOKEN_INFO_3",
           "speakerId": "PROCESS_COACH",
-          "text": "Intake Hall. (pause) Windows 0/3/5/7/9. (pause)\nPick the one. (pause)\nLooks least hungry. (pause)\nFor your life story. (pause)\nGive them an incident category. (pause)\nThe system will accept. (pause)\nThey spit out a token. (pause)\nThat\u2019s what the doors listen to.",
+          "text": "Intake Hall. (pause) Windows 0/3/5/7/9. (pause)\nPick one that isn\u2019t begging (pause)\nfor a life story. (pause)\nGive them an incident category. (pause)\nSystem takes it. (pause)\nToken prints. (pause)\nThat\u2019s what the doors listen to.",
           "type": "npc_line"
         },
         {
@@ -167,7 +167,7 @@
           "id": "N_GET_TOKEN_INFO_4",
           "next": "N_GET_TOKEN_INFO_5",
           "speakerId": "PROCESS_COACH",
-          "text": "Intake can\u2019t file a person. (pause)\nNot listed in any jurisdiction. (pause)\nThey can file an object. (pause)\nWith a barcode. (pause)\nAnd an incident category. (pause)\nSo you attach yourself. (pause)\nTo the object. (pause)\nYou\u2019re\u2014politely\u2014\u201cassociated mass.\u201d (pause)\nThey won\u2019t call it dehumanizing. (pause)\nThey\u2019ll call it efficient. (pause)\nOn paper.",
+          "text": "Intake won\u2019t file a person. (pause)\nYou\u2019re not listed in any jurisdiction. (pause)\nThey\u2019ll file an object\u2014 (pause)\nbarcode, (pause)\nincident category. (pause)\nSo you attach yourself (pause)\nto the object. (pause)\nYou\u2019re\u2014politely\u2014\u201cassociated mass.\u201d (pause)\nWhat shows up is \u201cefficient.\u201d (pause)\nOn paper.",
           "type": "npc_line"
         },
         {

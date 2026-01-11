@@ -6,20 +6,6 @@
       "startNodeId": "N_EAC_INTRO_1",
       "nodes": [
         {
-          "id": "N0",
-          "type": "npc_line",
-          "speakerId": "NARRATOR",
-          "text": "The guard shack door has a handle that implies consent. The call box does not.",
-          "next": "N1"
-        },
-        {
-          "id": "N1",
-          "type": "npc_line",
-          "speakerId": "NARRATOR",
-          "text": "A label plate beneath the speaker is sun-faded: SECV \u2014 REMOTE ATTENDANCE.",
-          "next": "N2"
-        },
-        {
           "id": "N2",
           "type": "player_choice",
           "speakerId": "PLAYER",
@@ -42,7 +28,7 @@
           "id": "N3",
           "type": "npc_line",
           "speakerId": "SECV_OPERATOR",
-          "text": "SECV remote attendance. (pause) You're on a recorded line\u2014quality and yeah liability. (pause) Alright. (pause) What do you need (pause) so you stay safe (pause) and this doesn't land in my lap?",
+          "text": "SECV remote attendance. (pause) You\u2019re on a recorded line\u2014quality, yeah. Liability. (pause) Alright. What do you need (pause) so you don\u2019t get hurt (pause) and I don\u2019t end up owning it?",
           "next": "N4"
         },
         {
@@ -80,28 +66,28 @@
           "id": "N_OPEN_1",
           "type": "npc_line",
           "speakerId": "SECV_OPERATOR",
-          "text": "I can't pop the vestibule (pause) just because you asked. (pause) I need the system to show (pause) an authorized onsite presence first. (pause) Otherwise it's my name (pause) on the why.",
+          "text": "I can\u2019t pop the vestibule by voice. (pause) I need the system to show onsite auth. (pause) Otherwise the \u201cwhy\u201d comes back to my name.",
           "next": "N_MAIN_MENU"
         },
         {
           "id": "N_VERIFY_1",
           "type": "npc_line",
           "speakerId": "SECV_OPERATOR",
-          "text": "I can't verify identity over the speaker. (pause) I can check the schedule for your name. (pause) That's all. (pause) It keeps the paper happy.",
+          "text": "Over the speaker? I can\u0019t \u0018verify\u0019 you. (pause) I can check the schedule for your name. (pause) That\u0019s it. (pause) Keeps the paper off my desk.",
           "next": "N_MAIN_MENU"
         },
         {
           "id": "N_SCHED_1",
           "type": "npc_line",
           "speakerId": "SECV_OPERATOR",
-          "text": "Yeah. (pause) You\u2019re scheduled today under OLEA closeout. (pause) Activity. (pause) That\u2019s your name in the system, anyway. (pause) Anything past that gets sticky for me.",
+          "text": "Yeah. (pause) You\u0019re in the system today under OLEA closeout\u0014activity. (pause) That\u0019s what it shows. (pause) Anything past that gets sticky for me.",
           "next": "N_SCHED_2"
         },
         {
           "id": "N_SCHED_2",
           "type": "npc_line",
           "speakerId": "SECV_OPERATOR",
-          "text": "Scheduled doesn't flip you to onsite. (pause)\nOnsite is the box with a timestamp. (pause)\nSomething I can point to later. (pause)\nWithout it I'm not opening a door. (pause)\nThen explaining how you got hurt. (pause)\nWith no record.",
+          "text": "Being scheduled doesn't light you up onsite. (pause) I need the onsite box and a timestamp. (pause) Something I can point to later. (pause) No timestamp, no door. (pause) I'm not writing the injury report. (pause) With nothing in the log.",
           "next": "N_MAIN_MENU"
         },
         {
@@ -154,14 +140,14 @@
           "id": "N_UNLOCKA_1",
           "type": "npc_line",
           "speakerId": "SECV_OPERATOR",
-          "text": "I can't. (pause) If I unlock it on a call, (pause) the log tags me as authorization. (pause) I don't have clearance for that.",
+          "text": "I can't. (pause) If I pop it here, log tags me. (pause) It pins the authorization on me. (pause) I don't have that clearance.",
           "next": "N_UNLOCKA_2"
         },
         {
           "id": "N_UNLOCKA_2",
           "type": "npc_line",
           "speakerId": "SECV_OPERATOR",
-          "text": "If there's a clean onsite record, sure. (pause) Right now it's just a voice. (pause) On a speaker. (pause) And for what it's worth you've been polite. (pause) Thanks.",
+          "text": "If there\u2019s a clean onsite record, sure. (pause) Right now you\u2019re just a voice on speaker. (pause) For what it\u2019s worth\u2014thanks for staying polite.",
           "next": "N_UNLOCKA_MENU"
         },
         {
@@ -193,21 +179,21 @@
           "id": "N_REQ_1",
           "type": "npc_line",
           "speakerId": "SECV_OPERATOR",
-          "text": "Temporary Presence Receipt, or whatever it\u2019s called now.",
+          "text": "Temporary Presence Receipt. (pause) Or whatever they\u0019re calling it now.",
           "next": "N_REQ_2"
         },
         {
           "id": "N_REQ_2",
           "type": "npc_line",
           "speakerId": "SECV_OPERATOR",
-          "text": "It needs your name and date. (pause) Activity type too. (pause) The site field must read 'onsite'. (pause) Not 'expected'. (pause) Once it's in the file, (pause) I can hit the vestibule door. (pause) No making you up in the log.",
+          "text": "Needs your name and date. (pause) Activity type too. (pause) And the site line has to say 'onsite'. (pause) If it says 'expected' I can't use it. (pause) Once it's filed, I hit the vestibule door. (pause) I'm not making you up in the log.",
           "next": "N_REQ_3"
         },
         {
           "id": "N_REQ_3",
           "type": "npc_line",
           "speakerId": "SECV_OPERATOR",
-          "text": "Used to be you walked there. (pause) To the Records window. (pause) Now it\u2019s: find whoever has Records authority. (pause) Or find the stamp. (pause) Or follow pneumatic tube instructions. (pause) They act like Records still has staff. (pause) I\u2019m not joking. (pause) That\u2019s the procedure.",
+          "text": "Used to be you walked to Records. (pause) Now it's find whoever still has Records authority. (pause) Or find the stamp. (pause) Or follow the pneumatic tube instructions. (pause) They act like Records has staff. (pause) I'm not kidding. (pause) That's the procedure.",
           "next": "N_REQ_MENU"
         },
         {
@@ -239,21 +225,21 @@
           "id": "N_REQ_CONFIRM_1",
           "type": "npc_line",
           "speakerId": "SECV_OPERATOR",
-          "text": "Yeah. (pause) Get the onsite mark, then call me. (pause) I can't move a door without paper. (pause) It says you're here.",
+          "text": "Yeah. (pause) Get the onsite mark. Then call me. (pause) Need paper: you're here. Can't move a door.",
           "next": "N_NARR_COMMIT_1"
         },
         {
           "id": "N_DETAILS_1",
           "type": "npc_line",
           "speakerId": "SECV_OPERATOR",
-          "text": "What I\u2019m seeing: Field Systems Specialist, OLEA. (pause) Closure verification. (pause) Staged shutdown prep. (pause) Today through end-of-day. (pause) Tagged \u201csubject to onsite confirmation.\u201d (pause) That tag is the only reason. (pause) I can even say this much.",
+          "text": "What I'm seeing, Field Systems Specialist\u2014OLEA. (pause) Closure verification. (pause) Staged shutdown prep. (pause) Today through end-of-day. (pause) And it's tagged 'subject to onsite confirmation.' (pause) I'm only saying this much.",
           "next": "N_DETAILS_2"
         },
         {
           "id": "N_DETAILS_2",
           "type": "npc_line",
           "speakerId": "SECV_OPERATOR",
-          "text": "I can't read personal schedule details. (pause) Not to an unverified caller. (pause) Get a Presence Receipt from Records marked onsite. (pause) I can attach it to that event. (pause) Then it's treated as ops.",
+          "text": "I can't share personal schedules with unverified callers. (pause) Get a Presence Receipt from Records marked onsite. (pause) I'll attach it to that event. (pause) Then it's ops.",
           "next": "N_DETAILS_MENU"
         },
         {
@@ -285,14 +271,14 @@
           "id": "N_OLEA_1",
           "type": "npc_line",
           "speakerId": "SECV_OPERATOR",
-          "text": "I'm looking at the work order. (pause) It tells me you're scheduled. (pause) Over this speaker I can't act. (pause) It doesn't give me anything usable. (pause) I need Records to tag you onsite. (pause) Then the work order has somewhere to land.",
+          "text": "Yeah. I\u2019m looking at the work order. (pause) It shows you\u2019re scheduled. (pause) But I can\u2019t act on it here. (pause) I need Records to tag you onsite. (pause) Then the work order has somewhere to land.",
           "next": "N_OLEA_2"
         },
         {
           "id": "N_OLEA_2",
           "type": "npc_line",
           "speakerId": "SECV_OPERATOR",
-          "text": "Once Records flips you to onsite (pause) I can do doors and cameras (pause) and timed unlocks. (pause) Until then (pause) I'm stuck on the phone (pause) and I'm about out of bandwidth.",
+          "text": "Once Records flips you to onsite. (pause) I can do doors, cameras and timed unlocks. (pause) Until then I'm stuck on this line. (pause) And I'm about out of bandwidth.",
           "next": "N_OLEA_MENU"
         },
         {
@@ -348,7 +334,7 @@
           "id": "N_END_CALL_LINE",
           "type": "npc_line",
           "speakerId": "SECV_OPERATOR",
-          "text": "Alright. (pause) Call back once you're marked onsite. (pause) I get it. (pause) You can't do that from where you are. (pause) Stay safe.",
+          "text": "Alright. (pause) Call back once you\u2019re marked onsite. (pause) I get it\u2014you can\u2019t do that there. (pause) Watch yourself.",
           "next": "N_END_NOOUTCOME"
         },
         {
